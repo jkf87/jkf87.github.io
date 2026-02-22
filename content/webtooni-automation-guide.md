@@ -1,5 +1,5 @@
 ---
-title: 웹툰이(Webtooni)로 자동으로 캐릭터 만들기 가이드
+title: 웹툰이를 자동으로 만든다, 캐릭터 가이드
 date: 2025-03-26
 tags:
   - 웹툰이
@@ -10,7 +10,7 @@ description: 웹툰이(Webtooni)를 사용하여 AI 캐릭터를 자동으로 �
 publishDate: 2025-03-26
 ---
 
-# 웹툰이(Webtooni)로 자동으로 캐릭터 만들기
+# 웹툰이를 자동으로 캐릭터 만들기
 
 > 참고: [Webtooni](https://webtooni.com) - AI 캐릭터 생성 서비스
 
