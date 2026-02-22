@@ -20,6 +20,9 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      LC_ALL: ko_KR.UTF-8
+      LANG: ko_KR.UTF-8
     steps:
       - uses: actions/checkout@v4
         with:
