@@ -12,19 +12,13 @@ publishDate: 2025-03-26
 
 # 웹툰이-자동으로-만들어진다
 
-> 참고: [Webtooni](https://webtooni.com) - AI 캐릭터 생성 서비스
-
 웹툰이는 자연어 프롬프트를 입력하면 다양한 스타일의 캐릭터를 자동으로 생성해주는 AI 서비스입니다.
 
 ---
 
-## 🎨 스타일 변경
+## 🎨 캐릭터 스타일 옵션
 
-![스타일 변경 예시](images/webtooni-01-style-options.png){width=600}
-
----
-
-## 🔹 표정 (Facial Expressions)
+### 🔹 표정 (Facial Expressions)
 
 - bright smiling
 - slightly embarrassed
@@ -35,7 +29,7 @@ publishDate: 2025-03-26
 - sleepy eyes
 - laughing with eyes closed
 
-![표정 옵션 예시](images/webtooni-02-facial-expressions.png){width=600}
+![표정 옵션 예시](images/webtooni-01-style-options.png)
 
 ---
 
@@ -50,7 +44,7 @@ publishDate: 2025-03-26
 - resting head on hand
 - jumping in the air
 
-![포즈 옵션 예시](images/webtooni-03-4comics.png){width=600}
+![포즈 옵션 예시](images/webtooni-02-facial-expressions.png)
 
 ---
 
@@ -65,7 +59,7 @@ publishDate: 2025-03-26
 - lab coat (science/AI vibe)
 - sportswear
 
-![의상 옵션 예시](images/webtooni-04-transparent-bg.png){width=600}
+![의상 옵션 예시](images/webtooni-03-4comics.png)
 
 ---
 
@@ -80,7 +74,7 @@ publishDate: 2025-03-26
 - futuristic AI lab
 - on a stage (presentation or performance)
 
-![배경 옵션 예시](images/webtooni-05-text-layering.png){width=600}
+![배경 옵션 예시](images/webtooni-04-transparent-bg.png)
 
 ---
 
@@ -95,7 +89,7 @@ publishDate: 2025-03-26
 - robot assistant
 - camera
 
-![아이템 옵션 예시](images/webtooni-06-sketch.png){width=600}
+![아이템 옵션 예시](images/webtooni-05-text-layering.png)
 
 ---
 
@@ -109,7 +103,7 @@ publishDate: 2025-03-26
 - retro anime feel
 - minimal flat design
 
-![스타일/무드 옵션 예시](images/webtooni-07-detailed-directions.png){width=600}
+![스타일/무드 옵션 예시](images/webtooni-06-sketch.png)
 
 ---
 
@@ -119,7 +113,7 @@ publishDate: 2025-03-26
 
 프롬프트에 캐릭터의 4장의 일러스트를 생성해달라고 요청합니다.
 
-![4컷 만화 그리기 예시](images/webtooni-08-character-consistency.png){width=600}
+![4컷 만화 그리기 예시](images/webtooni-07-detailed-directions.png)
 
 ### 2. 투명 이미지 만들기
 
@@ -152,6 +146,8 @@ publishDate: 2025-03-26
 12. "openAI"를 필기체로 작성
 ```
 
+![디테일드 디렉션 예시](images/webtooni-08-character-consistency.png)
+
 ### 6. 캐릭터 일관성 유지
 
 동일한 캐릭터가 여러 장면에서 등장하도록 요청합니다.
@@ -166,7 +162,7 @@ publishDate: 2025-03-26
 
 - **자연어 사용:** "화려한 학교 교복을 입고 웃는 소녀 캐릭터" 같이 구체적으로 묘사
 - **참고 이미지 제공:** 원하는 스타일이 있다면 참고 이미지를 함께 제공
-- **스타일 조합:** 여러 스타일 요소를 섞어 독창적인 캐릭터 생성
+- **스타일 조합:** 여러 스타일 요소를 섞어 독착적인 캐릭터 생성
 - **반복 생성:** 여러 버전을 만들어서 최고 결과물 선택
 
 ---
