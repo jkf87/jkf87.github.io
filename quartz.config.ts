@@ -23,8 +23,9 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
+        // 한글 글리프가 안정적으로 표시되는 폰트로 교체
+        header: "Noto Sans KR",
+        body: "Noto Sans KR",
         code: "IBM Plex Mono",
       },
       colors: {
