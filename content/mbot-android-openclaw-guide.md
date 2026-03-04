@@ -54,6 +54,10 @@ mbot은 **서랍 속 안드로이드폰을 24시간 AI 어시스턴트 서버로
 ![mbot 가이드 썸네일 6](./images/mbot-guide/mbot-guide-16x9-06.jpg)
 ![mbot 가이드 썸네일 7](./images/mbot-guide/mbot-guide-16x9-07.jpg)
 ![mbot 가이드 썸네일 8](./images/mbot-guide/mbot-guide-16x9-08.jpg)
+![mbot 가이드 썸네일 9](./images/mbot-guide/mbot-guide-16x9-09.jpg)
+![mbot 가이드 썸네일 10](./images/mbot-guide/mbot-guide-16x9-10.jpg)
+![mbot 가이드 썸네일 11](./images/mbot-guide/mbot-guide-16x9-11.jpg)
+![mbot 가이드 썸네일 12](./images/mbot-guide/mbot-guide-16x9-12.jpg)
 
 ## 이런 분께 추천
 
