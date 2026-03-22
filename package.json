@@ -61,7 +61,7 @@
     "mdast-util-to-string": "^4.0.0",
     "micromorph": "^0.4.5",
     "minimatch": "^10.2.4",
-    "pixi.js": "^8.17.0",
+    "pixi.js": "^8.17.1",
     "preact": "^10.29.0",
     "preact-render-to-string": "^6.6.6",
     "pretty-bytes": "^7.1.0",
@@ -83,7 +83,7 @@
     "remark-rehype": "^11.1.2",
     "remark-smartypants": "^3.0.2",
     "rfdc": "^1.4.1",
-    "satori": "^0.25.0",
+    "satori": "^0.26.0",
     "serve-handler": "^6.1.7",
     "sharp": "^0.34.5",
     "shiki": "^4.0.2",
@@ -94,7 +94,7 @@
     "unist-util-visit": "^5.1.0",
     "vfile": "^6.0.3",
     "workerpool": "^10.0.1",
-    "ws": "^8.19.0",
+    "ws": "^8.20.0",
     "yargs": "^18.0.0"
   },
   "devDependencies": {
