@@ -48,7 +48,7 @@
     "esbuild-sass-plugin": "^3.7.0",
     "flexsearch": "^0.8.212",
     "github-slugger": "^2.0.0",
-    "globby": "^16.1.1",
+    "globby": "^16.2.0",
     "gray-matter": "^4.0.3",
     "hast-util-to-html": "^9.0.5",
     "hast-util-to-jsx-runtime": "^2.3.6",
@@ -61,9 +61,9 @@
     "mdast-util-to-string": "^4.0.0",
     "micromorph": "^0.4.5",
     "minimatch": "^10.2.4",
-    "pixi.js": "^8.17.0",
+    "pixi.js": "^8.17.1",
     "preact": "^10.29.0",
-    "preact-render-to-string": "^6.6.6",
+    "preact-render-to-string": "^6.6.7",
     "pretty-bytes": "^7.1.0",
     "pretty-time": "^1.1.0",
     "reading-time": "^1.5.0",
@@ -83,7 +83,7 @@
     "remark-rehype": "^11.1.2",
     "remark-smartypants": "^3.0.2",
     "rfdc": "^1.4.1",
-    "satori": "^0.25.0",
+    "satori": "^0.26.0",
     "serve-handler": "^6.1.7",
     "sharp": "^0.34.5",
     "shiki": "^4.0.2",
@@ -94,7 +94,7 @@
     "unist-util-visit": "^5.1.0",
     "vfile": "^6.0.3",
     "workerpool": "^10.0.1",
-    "ws": "^8.19.0",
+    "ws": "^8.20.0",
     "yargs": "^18.0.0"
   },
   "devDependencies": {
@@ -109,6 +109,6 @@
     "esbuild": "^0.27.4",
     "prettier": "^3.8.1",
     "tsx": "^4.21.0",
-    "typescript": "^5.9.3"
+    "typescript": "^6.0.2"
   }
 }
