@@ -1,6 +1,6 @@
 ---
 title: "코딩 에이전트의 6가지 핵심 구성요소: 모델보다 하네스가 중요한 이유"
-date: 2026-04-04
+date: 2026-04-05
 tags:
   - ai
   - coding-agent
@@ -10,276 +10,174 @@ tags:
   - llm
   - agent-harness
   - sebastian-raschka
-description: "Sebastian Raschka의 Components of A Coding Agent를 바탕으로, 코딩 에이전트 성능을 결정하는 6가지 하네스 요소를 한국어로 정리했습니다."
+description: "Sebastian Raschka의 Components of A Coding Agent를 바탕으로, 코딩 에이전트 성능을 결정하는 6가지 하네스 요소를 정리했습니다."
 ---
 
-최근 읽은 글 중에서, 코딩 에이전트를 가장 명확하게 설명한 글 하나를 꼽으라면 저는 Sebastian Raschka의 **_Components of A Coding Agent_**를 고를 것 같습니다.
+이 글은 Sebastian Raschka의 원문 **Components of A Coding Agent**를 바탕으로, 코딩 에이전트와 하네스의 핵심 구조를 이해하기 쉽게 정리한 글입니다. 특히 옵시디언에 저장한 원문 노트를 기준으로 그림과 핵심 문장을 다시 맞췄습니다.
 
 원문 링크:
 - https://magazine.sebastianraschka.com/p/components-of-a-coding-agent
 
-이 글이 좋은 이유는 단순히 “에이전트가 중요하다”는 이야기를 반복하지 않고, **코딩 에이전트가 실제로 어떤 부품들로 이루어져 있는지**를 꽤 구체적으로 설명하기 때문입니다. 특히 Claude Code, Codex, OpenClaw 같은 도구를 이미 써본 분들이라면, 왜 어떤 도구는 유난히 더 똑똑하게 느껴지는지 감이 잡히게 됩니다.
+# Components of A Coding Agent - by Sebastian Raschka, PhD
 
-한 줄 요약부터 해보면 이렇습니다.
+[Source](https://magazine.sebastianraschka.com/p/components-of-a-coding-agent "Components of A Coding Agent - by Sebastian Raschka, PhD")
 
-> **코딩 에이전트의 성능은 모델 자체보다, 그 모델을 감싸는 하네스(harness) 설계에 더 크게 좌우될 수 있습니다.**
+In this article, I want to cover the overall design of coding agents and agent harnesses: what they are, how they work, and how the different pieces fit together in practice. Readers of my _Build a Large Language Model (From Scratch)_ and _Build a Large Reasoning Model (From Scratch)_ books often ask about agents, so I thought it would be useful to write a reference I can point to.
 
-![](./images/components-of-a-coding-agent/505a385f.png)
+More generally, agents have become an important topic because much of the recent progress in practical LLM systems is not just about better models, but about how we use them. In many real-world applications, the surrounding system, such as tool use, context management, and memory, plays as much of a role as the model itself. This also helps explain why systems like Claude Code or Codex can feel significantly more capable than the same models used in a plain chat interface.
 
-## 왜 이 글이 중요한가
+In this article, I lay out six of the main building blocks of a coding agent.
 
-요즘 많은 사람이 Claude Code, Codex, Cursor, Continue 같은 도구를 쓰면서 “이 모델은 코딩을 잘한다”, “저 모델은 별로다”라고 말합니다. 그런데 Raschka의 글은 한발 물러서서 이런 질문을 던집니다.
+You are probably familiar with Claude Code or the Codex CLI, but just to set the stage, they are essentially agentic coding tools that wrap an LLM in an application layer, a so-called agentic harness, to be more convenient and better-performing for coding tasks.
 
-- 정말 모델 차이일까?
-- 아니면 **하네스 차이**일까?
-- 우리가 “모델 성능”이라고 느끼는 것 중 상당수가 사실 **컨텍스트 관리, 도구 사용, 메모리 구조**의 차이는 아닐까?
+![](./images/components-of-a-coding-agent/fig14_c90147bc-4574-4b52-914f-8bda96620063_3467x2270.png)
+_Figure 1: Claude Code CLI, Codex CLI, and my Mini Coding Agent._
 
-이 질문은 꽤 중요합니다. 왜냐하면 실제 코딩 작업은 단순한 다음 토큰 예측이 아니라,
+Coding agents are engineered for software work where the notable parts are not only the model choice but the surrounding system, including repo context, tool design, prompt-cache stability, memory, and long-session continuity.
 
-- 저장소 구조 파악
-- 관련 파일 탐색
-- 함수/심볼 검색
-- diff 적용
-- 테스트 실행
-- 오류 로그 해석
-- 긴 세션 동안 맥락 유지
+That distinction matters because when we talk about the coding capabilities of LLMs, people often collapse the model, the reasoning behavior, and the agent product into one thing. But before getting into the coding agent specifics, let me briefly provide a bit more context on the difference between the broader concepts, the LLMs, reasoning models, and agents.
 
-같은 작업들의 조합이기 때문입니다. 즉, **코딩은 모델 하나만 잘한다고 되는 일이 아니라, 주변 시스템 전체가 잘 설계되어야 하는 작업**이라는 거죠.
+An LLM is the core next-token model. A reasoning model is still an LLM, but usually one that was trained and/or prompted to spend more inference-time compute on intermediate reasoning, verification, or search over candidate answers.
 
-## LLM, Reasoning Model, Agent, Harness를 구분해야 한다
+An agent is a layer on top, which can be understood as a control loop around the model. Typically, given a goal, the agent layer (or harness) decides what to inspect next, which tools to call, how to update its state, and when to stop, etc.
 
-글에서 가장 먼저 짚는 포인트는 개념 구분입니다.
+Roughly, we can think about the relationship as this: the LLM is the engine, a reasoning model is a beefed-up engine (more powerful, but more expensive to use), and an agent harness helps us the model. The analogy is not perfect, because we can also use conventional and reasoning LLMs as standalone models (in a chat UI or Python session), but I hope it conveys the main point.
 
-### 1. LLM
-가장 기본이 되는 next-token 모델입니다. 엔진에 가깝습니다.
+![](./images/components-of-a-coding-agent/fig05_09a4d839-d572-4eab-a2ee-47f644a746e5_3501x885.png)
+_Figure 2: The relationship between conventional LLM, reasoning LLM (or reasoning model), and an LLM wrapped in an agent harness._
 
-### 2. Reasoning Model
-여전히 LLM이지만, 중간 추론 과정이나 검증을 더 잘 수행하도록 학습되거나 유도된 모델입니다. 더 강한 엔진에 가깝지만, 비용도 더 듭니다.
+In other words, the agent is the system that repeatedly calls the model inside an environment.
 
-### 3. Agent
-모델 위에 올라가는 제어 루프입니다. 목표가 주어졌을 때,
+So, in short, we can summarize it like this:
 
-- 무엇을 먼저 볼지
-- 어떤 도구를 쓸지
-- 상태를 어떻게 갱신할지
-- 언제 멈출지
+- _LLM:_ the raw model
+- _Reasoning model_: an LLM optimized to output intermediate reasoning traces and to verify itself more
+- _Agent:_ a loop that uses a model plus tools, memory, and environment feedback
+- _Agent harness:_ the software scaffold around an agent that manages context, tool use, prompts, state, and control flow
+- _Coding harness:_ a special case of an agent harness; i.e., a task-specific harness for software engineering that manages code context, tools, execution, and iterative feedback
 
-를 결정하는 층입니다.
+As listed above, in the context of agents and coding tools, we also have the two popular terms _agent harness_ and (agentic) _coding harness_. A coding harness is the software scaffold around a model that helps it write and edit code effectively. And an agent harness is a bit broader and not specific to coding (e.g., think of OpenClaw). Codex and Claude Code can be considered coding harnesses.
 
-### 4. Harness
-여기서 핵심입니다. 하네스는 모델과 에이전트를 실제로 쓸 수 있게 만드는 **소프트웨어 스캐폴드**입니다.
+Anyways, A better LLM provides a better foundation for a reasoning model (which involves additional training), and a harness gets more out of this reasoning model.
 
-원문 표현을 빌리면,
+Sure, LLMs and reasoning models are also capable of solving coding tasks by themselves (without a harness), but coding work is only partly about next-token generation. A lot of it is about repo navigation, search, function lookup, diff application, test execution, error inspection, and keeping all the relevant information in context.
 
-> **A coding harness is the software scaffold around a model that helps it write and edit code effectively.**
+![](./images/components-of-a-coding-agent/fig08_76f2c37e-1996-4f30-96cd-e2e555169873_2227x992.png)
+_Figure 3. A coding harness combines three layers: the model family, an agent loop, and runtime supports._
 
-즉, 모델을 그냥 채팅창에 넣는 것이 아니라, **도구, 프롬프트, 상태, 권한, 메모리, 세션, 실행 환경**까지 감싸서 코딩 작업을 잘하게 만드는 소프트웨어 층이 하네스입니다.
+The takeaway here is that a good coding harness can make a reasoning and a non-reasoning model feel much stronger than it does in a plain chat box, because it helps with context management and more.
 
-![](./images/components-of-a-coding-agent/4c3f31be.png)
+Since, in my view, the vanilla versions of LLMs nowadays have very similar capabilities (e.g., the vanilla versions of GPT-5.4, Opus 4.6, and GLM-5 or so), the harness can often be the distinguishing factor that makes one LLM work better than another.
 
-## 핵심 주장: 하네스가 모델보다 더 중요할 수 있다
+![](./images/components-of-a-coding-agent/fig04_82c0f343-afec-4a9f-b8fe-b60f7ad5db5f_3396x971.png)
+_Figure 4: Main harness features of a coding agent / coding harness._
 
-이 글에서 가장 인상적인 주장은 바로 이 부분입니다.
+![](./images/components-of-a-coding-agent/fig01_89ec8895-15ba-4f84-b600-190a40b58d62_2069x1285.png)
+_Figure 5: Minimal but fully working, from-scratch Mini Coding Agent (implemented in pure Python)_
 
-저자는 요즘의 바닐라 LLM들은 생각보다 능력이 비슷하며, 실제 체감 성능 차이는 **하네스가 만드는 경우가 많다**고 봅니다. 저도 이 부분에는 꽤 공감합니다.
+Below are six main components of coding agents:
 
-왜냐하면 사용자가 체감하는 코딩 능력은 보통 이런 요소에서 갈리기 때문입니다.
+```
+##############################
+#### Six Agent Components ####
+##############################
+# 1) Live Repo Context -> WorkspaceContext
+# 2) Prompt Shape And Cache Reuse -> build_prefix, memory_text, prompt
+# 3) Structured Tools, Validation, And Permissions -> build_tools, run_tool, validate_tool, approve, parse, path, tool_*
+# 4) Context Reduction And Output Management -> clip, history_text
+# 5) Transcripts, Memory, And Resumption -> SessionStore, record, note_tool, ask, reset
+# 6) Delegation And Bounded Subagents -> tool_delegate
+```
 
-- 필요한 파일을 얼마나 빨리 찾는가
-- 긴 로그를 어떻게 압축하는가
-- 도구 사용이 얼마나 안정적인가
-- 이전 맥락을 얼마나 자연스럽게 이어가는가
-- 실수했을 때 복구 흐름이 잘 설계되어 있는가
+## 1) Live Repo Context
 
-즉, **좋은 코딩 에이전트는 좋은 모델 + 좋은 하네스의 조합**입니다. 모델만 좋아도 안 되고, 하네스만 좋아도 한계가 있습니다. 하지만 실제 사용자 경험에서는 하네스가 생각보다 훨씬 큰 비중을 차지합니다.
+This is maybe the most obvious component, but it is also one of the most important ones.
 
-## 코딩 에이전트의 6가지 핵심 구성요소
+When a user says "fix the tests" or "implement xyz," the model should know whether it is inside a Git repo, what branch it is on, which project documents might contain instructions, and so on.
 
-Raschka는 코딩 에이전트를 이루는 핵심 컴포넌트를 6가지로 정리합니다.
+![](./images/components-of-a-coding-agent/fig09_2e3a1e6a-4eb5-4b60-b52f-0a4ee880dbca_2085x1428.png)
+_Figure 6: The agent harness first builds a small workspace summary that gets combined with the user request for additional project context._
 
-![](./images/components-of-a-coding-agent/336031af.png)
+The takeaway is that the coding agent collects info ("stable facts" as a workspace summary) upfront before doing any work, so that it's is not starting from zero, without context, on every prompt.
 
-### 1. Live Repo Context
-에이전트는 일을 시작하기 전에, 현재 저장소와 작업 환경을 먼저 이해해야 합니다.
+## 2) Prompt Shape And Cache Reuse
 
-예를 들면 이런 것들입니다.
+Once the agent has a repo view, the next question is how to feed that information to the model. In practice, it would be relatively wasteful to combine and re-process the workspace summary on every user query.
 
-- 현재 Git 브랜치
-- 변경 중인 파일
-- 프로젝트 구조
-- README, AGENTS.md 같은 지침 파일
-- 테스트 실행 방법
-- 저장소 루트 위치
+Coding sessions are repetitive, and the agent rules usually stay the same. The tool descriptions usually stay the same, too. The main changes are usually the latest user request, the recent transcript, and maybe the short-term memory.
 
-이걸 먼저 모아야 “테스트 고쳐줘”, “기능 추가해줘” 같은 요청을 제대로 해석할 수 있습니다. 결국 좋은 에이전트는 **매번 0에서 시작하지 않고, 워크스페이스 요약을 먼저 구축**합니다.
+![](./images/components-of-a-coding-agent/fig06_92d9467c-1333-40f3-8d5d-c8bc0ffebb11_2698x1001.png)
+_Figure 7: The agent harness builds a stable prompt prefix, adds the changing session state, and then feeds that combined prompt to the model._
 
-![](./images/components-of-a-coding-agent/8072331f.png)
+The "Stable prompt prefix" usually contains the general instructions, tool descriptions, and the workspace summary. A smart runtime tries to reuse that part and only update the changing components each turn.
 
-### 2. Prompt Shape and Cache Reuse
-코딩 세션에서는 매번 같은 정보가 반복됩니다.
+## 3) Structured Tools, Validation, And Permissions
 
-- 일반 지시사항
-- 도구 설명
-- 워크스페이스 요약
-- 시스템 프롬프트
+Tool access and tool use are where it starts to feel less like chat and more like an agent.
 
-반대로 자주 바뀌는 건 보통 이쪽입니다.
+Instead of letting the model improvise arbitrary syntax, the harness usually provides a pre-defined list of allowed and named tools with clear inputs and clear boundaries.
 
-- 최신 사용자 요청
-- 최근 대화 기록
-- 단기 메모리
+![](./images/components-of-a-coding-agent/fig13_7aff251f-0ce2-44f1-9792-5449c24d5600_2172x927.png)
+_Figure 8: The model emits a structured action, the harness validates it, optionally asks for approval, executes it, and feeds the bounded result back into the loop._
 
-그래서 좋은 하네스는 전체 프롬프트를 매 턴마다 새로 조립하지 않고, **안정적인 접두사(stable prefix)**를 캐싱하고 재사용합니다. 이건 비용 절감뿐 아니라, 일관성과 응답 품질에도 영향을 줍니다.
+![](./images/components-of-a-coding-agent/fig11_6ff4770e-c3a5-442f-a657-ef9bec6b9862_2493x2031.png)
+_Figure 9: Illustration of a tool call approval request in the Mini Coding Agent._
 
-![](./images/components-of-a-coding-agent/a69f1a3e.png)
+When the model asks to do something, the runtime can stop and run programmatic checks:
+- "Is this a known tool?"
+- "Are the arguments valid?"
+- "Does this need user approval?"
+- "Is the requested path even inside the workspace?"
 
-### 3. Structured Tools, Validation, and Permissions
-채팅형 모델은 명령을 “추천”할 수 있지만, 에이전트는 실제로 도구를 “실행”합니다. 여기서 하네스가 꼭 필요합니다.
+Only after those checks pass does anything actually run.
 
-좋은 하네스는 도구를 구조화합니다.
+## 4) Context Reduction And Output Management
 
-- 허용된 도구 목록
-- 명확한 입력 스키마
-- 경로 제한
-- 사용자 승인 여부
-- 실행 전 검증
+Context bloat is not a unique problem of coding agents but an issue for LLMs in general. Coding agents are even more susceptible because of repeated file reads, lengthy tool outputs, logs, etc.
 
-즉, 모델이 아무 명령이나 내뱉는 것이 아니라, **하네스가 이해할 수 있는 형식으로 행동을 제안하고**, 그 행동을 검증한 뒤 실행합니다.
+![](./images/components-of-a-coding-agent/fig07_1d61d701-1f2b-4010-9a1f-2cefc7265bde_2495x1213.png)
+_Figure 10: Large outputs are clipped, older reads are deduplicated, and the transcript is compressed before it goes back into the prompt._
 
-이 구조 덕분에 안전성도 올라가고, 신뢰성도 올라갑니다.
+A minimal harness uses at least two compaction strategies:
+1. **Clipping**: shortens long document snippets, large tool outputs, memory notes, and transcript entries
+2. **Transcript reduction**: turns the full session history into a smaller promptable summary
 
-![](./images/components-of-a-coding-agent/6d444470.png)
+A key trick: keep recent events richer, compress older events more aggressively, and deduplicate older file reads.
 
-### 4. Context Reduction and Output Management
-이 부분은 생각보다 정말 중요합니다.
+> A lot of apparent "model quality" is really context quality.
 
-코딩 에이전트는 대화형 챗봇보다 컨텍스트가 훨씬 빨리 부풀어 오릅니다.
+## 5) Transcripts, Memory, And Resumption
 
-- 파일 읽기 반복
-- 테스트 로그
-- 긴 명령 출력
-- 이전 도구 결과 누적
+A coding agent separates state into (at least) two layers:
+- **Working memory**: the small, distilled state the agent keeps explicitly
+- **Full transcript**: all the user requests, tool outputs, and LLM responses
 
-이걸 그대로 다 넣으면 컨텍스트가 금방 터집니다. 그래서 좋은 하네스는 아래 전략을 씁니다.
+![](./images/components-of-a-coding-agent/fig12_e58efdfb-9c19-42e8-a016-90b41b51ef15_2438x1346.png)
+_Figure 11: New events get appended to a full transcript and summarized in a working memory._
 
-- **클리핑**: 긴 출력 잘라내기
-- **중복 제거**: 같은 파일/로그 반복 방지
-- **요약**: 오래된 기록 압축
-- **최신성 우선**: 최근 정보는 풍부하게, 오래된 정보는 더 공격적으로 압축
+The compact transcript is for **prompt reconstruction** — giving the model a compressed view of recent history. The working memory is for **task continuity** — keeping a small summary of what matters across turns.
 
-원문의 표현을 빌리면, **겉보기 모델 품질의 상당 부분은 사실 컨텍스트 품질**입니다.
+## 6) Delegation And Bounded Subagents
 
-![](./images/components-of-a-coding-agent/0e6ef00c.png)
+Delegation allows parallelizing certain work into subtasks via subagents. The main agent may need a side answer — which file defines a symbol, what a config says, or why a test is failing.
 
-### 5. Transcripts, Memory, and Resumption
-좋은 에이전트는 상태를 최소 두 층으로 나눕니다.
+![](./images/components-of-a-coding-agent/fig03_81b2ae42-ea42-40bf-b2ba-fdfcf9b87912_2438x990.png)
+_Figure 12: The subagent inherits enough context to be useful, but it runs inside tighter boundaries than the main agent._
 
-#### Full Transcript
-- 전체 대화 기록
-- 도구 출력
-- 사용자 요청
-- 모델 응답
-- 세션 재개용 영구 로그
+The trick: the subagent inherits enough context to be useful, but also has it constrained (for example, read-only and restricted in recursion depth).
 
-#### Working Memory
-- 현재 작업의 핵심 요약
-- 중요한 파일
-- 최근 메모
-- 이어서 일하기 위한 소형 상태
+## Summary
 
-이 둘은 비슷해 보이지만 역할이 다릅니다.
+![](./images/components-of-a-coding-agent/fig10_4fe9e9f0-b04f-4c3e-be1f-fbd74b41c4aa_3396x971.png)
+_Figure 13: Six main features of a coding harness._
 
-- transcript는 **전체 기록**을 보존하는 역할
-- working memory는 **현재 일의 연속성**을 유지하는 역할
+If you are interested in seeing these implemented in clean, minimalist Python code: [Mini Coding Agent](https://github.com/rasbt/mini-coding-agent).
 
-이 구분이 없으면, 에이전트는 매번 다 기억하려다가 무거워지고, 결국 중요한 정보를 제대로 못 챙깁니다.
+## OpenClaw Comparison
 
-![](./images/components-of-a-coding-agent/f6d51560.png)
+OpenClaw is more like a local, general agent platform that can also code, rather than being a specialized coding assistant. Overlaps include:
+- Prompt and instruction files in the workspace (AGENTS.md, SOUL.md, TOOLS.md)
+- JSONL session files with transcript compaction
+- Helper sessions and subagents
 
-### 6. Delegation and Bounded Subagents
-복잡한 작업에서는 한 루프가 모든 걸 다 하려 하면 금방 산만해집니다. 그래서 서브에이전트가 필요합니다.
-
-예를 들면 메인 에이전트가 작업 중일 때,
-
-- 특정 심볼이 정의된 파일 찾기
-- 설정 파일 조사
-- 테스트 실패 원인 파악
-- 레퍼런스 검색
-
-같은 사이드 태스크를 별도 서브에이전트에 위임할 수 있습니다.
-
-하지만 여기서 핵심은 “그냥 분리”가 아닙니다. **충분한 컨텍스트는 상속하되, 권한과 범위는 더 좁혀야 한다**는 점입니다.
-
-이 균형이 중요합니다.
-
-- 너무 제한하면 서브에이전트가 쓸모없고
-- 너무 풀어주면 중복 작업, 파일 충돌, 재귀 폭증이 생깁니다
-
-![](./images/components-of-a-coding-agent/424c2060.png)
-
-## 이 글을 읽고 더 선명해진 점
-
-개인적으로 이 글을 읽고 더 분명해진 건, **코딩 에이전트는 “좋은 모델”의 문제가 아니라 “좋은 운영체제”의 문제에 가깝다**는 점입니다.
-
-즉, 모델은 엔진이고, 하네스는 그 엔진을 실제 도로 위에서 달리게 만드는 차체와 제어장치입니다. 사용자 입장에서는 엔진보다 **차가 어떻게 움직이는지**가 더 크게 체감될 수 있습니다.
-
-그래서 앞으로 코딩 에이전트를 볼 때는 이렇게 봐야 합니다.
-
-- 어떤 모델을 쓰는가?
-- 어떤 도구를 연결했는가?
-- 프롬프트는 어떻게 안정화했는가?
-- 긴 세션 컨텍스트는 어떻게 압축하는가?
-- 메모리는 어떻게 저장하는가?
-- 서브에이전트는 어떻게 제한하는가?
-
-이 질문들이 곧 성능 질문이 됩니다.
-
-## OpenClaw와 비교해 보면
-
-원문에서도 OpenClaw를 비교 대상으로 잠깐 언급합니다. 이 비교가 꽤 적절합니다.
-
-- **Claude Code / Codex**: 저장소 작업에 특화된 코딩 하네스
-- **OpenClaw**: 코딩도 가능하지만, 더 넓은 범용 로컬 에이전트 플랫폼
-
-공통점도 있습니다.
-
-- 워크스페이스 지침 파일 사용
-- 세션 기록 저장
-- 트랜스크립트 압축
-- 서브에이전트/헬퍼 세션 분리
-
-하지만 초점은 다릅니다. 코딩 하네스는 **repo-centric**, OpenClaw는 **workspace/chat/channel-centric**에 더 가깝습니다.
-
-이 차이를 이해하면 도구 선택도 더 쉬워집니다.
-
-## 마무리
-
-Sebastian Raschka의 이 글은 단순한 에이전트 소개 글이 아니라, **코딩 에이전트를 구성하는 실제 설계 원리**를 설명하는 꽤 좋은 참고 자료입니다.
-
-특히 아래 질문에 관심 있는 분들에게 추천할 만합니다.
-
-- 왜 Claude Code나 Codex가 일반 챗보다 더 강력하게 느껴질까?
-- 코딩 에이전트는 정확히 어떤 구조로 돌아갈까?
-- 좋은 하네스는 무엇을 신경 써야 할까?
-- 모델보다 시스템 설계가 더 중요하다는 말은 무슨 뜻일까?
-
-한 문장으로 정리하면 이렇습니다.
-
-> **좋은 코딩 에이전트는 좋은 모델 위에, 좋은 하네스를 올린 결과물이다.**
-
-## FAQ
-
-### Q1. 이 글의 핵심 주장은 무엇인가요?
-코딩 에이전트의 성능은 모델 자체보다, 모델을 감싸는 하네스의 설계에 크게 좌우된다는 점입니다.
-
-### Q2. 하네스는 정확히 무엇인가요?
-프롬프트, 도구, 권한, 세션, 메모리, 실행 흐름을 관리해서 모델이 실제 코딩 작업을 잘 수행하게 만드는 소프트웨어 층입니다.
-
-### Q3. 왜 컨텍스트 관리가 중요한가요?
-코딩 에이전트는 파일 읽기, 로그, 테스트 결과 등으로 컨텍스트가 매우 빠르게 커지기 때문에, 압축·중복 제거·최신성 우선 전략이 필수입니다.
-
-### Q4. 서브에이전트는 왜 중요한가요?
-메인 작업과 별개인 사이드 태스크를 분리해서 병렬로 처리할 수 있기 때문입니다. 다만 충분한 컨텍스트와 제한된 권한의 균형이 중요합니다.
-
-### Q5. OpenClaw와 Claude Code는 같은 종류인가요?
-비슷한 점은 있지만 초점이 다릅니다. Claude Code는 코딩 하네스에 가깝고, OpenClaw는 코딩도 가능한 범용 로컬 에이전트 플랫폼에 더 가깝습니다.
+Coding agents are optimized for a person working in a repository. OpenClaw is more optimized for running many long-lived local agents across chats, channels, and workspaces.
