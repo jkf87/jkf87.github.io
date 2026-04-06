@@ -25,7 +25,7 @@ description: "오픈클로 신간이 드디어 나왔다. 《오픈클로 완벽
 
 먼저 가장 많이 찾을 링크부터 적겠습니다.
 
-- **오픈클로 책 도서 페이지 / 찜하기 링크**: <https://goldenrabbit.co.kr/books/9791124516034>
+- **오픈클로 책 예스24 예판 링크**: <https://www.yes24.com/product/goods/185166276>
 - **오픈클로 책 독자 이벤트 링크**: <https://goldenrabbit.co.kr/events/EVT_20260402_vELlwf>
 
 검색창에서 아마 이런 식으로 찾는 분들이 많을 겁니다.
@@ -114,7 +114,7 @@ description: "오픈클로 신간이 드디어 나왔다. 《오픈클로 완벽
 만약 이 글을 검색으로 보셨다면, 지금 궁금한 건 대체로 이 셋 중 하나일 가능성이 높습니다.
 
 ### 오픈클로 책 예판 링크가 궁금하다
-- 도서 페이지: <https://goldenrabbit.co.kr/books/9791124516034>
+- 예스24 예판 링크: <https://www.yes24.com/product/goods/185166276>
 
 ### 오픈클로 책 이벤트 링크가 궁금하다
 - 이벤트 페이지: <https://goldenrabbit.co.kr/events/EVT_20260402_vELlwf>
@@ -151,13 +151,13 @@ AI 책은 많지만, 기억에 남는 책은 보통 두 종류입니다.
 
 관심 있으시면 아래 링크부터 먼저 확인해 보세요.
 
-- **오픈클로 책 예판/찜하기 링크**: <https://goldenrabbit.co.kr/books/9791124516034>
+- **오픈클로 책 예스24 예판 링크**: <https://www.yes24.com/product/goods/185166276>
 - **오픈클로 독자 이벤트 링크**: <https://goldenrabbit.co.kr/events/EVT_20260402_vELlwf>
 
 ## FAQ
 
 ### Q1. 오픈클로 책 예판 링크는 어디인가요?
-도서 페이지는 여기입니다: <https://goldenrabbit.co.kr/books/9791124516034>
+예스24 예판 링크는 여기입니다: <https://www.yes24.com/product/goods/185166276>
 
 ### Q2. 오픈클로 책 이벤트 링크는 어디인가요?
 이벤트 페이지는 여기입니다: <https://goldenrabbit.co.kr/events/EVT_20260402_vELlwf>
