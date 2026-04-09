@@ -37,6 +37,9 @@ jobs:
 
       - name: Build Quartz
         run: npx quartz build
+        
+      - name: Copy verification files to root                                                                                                      
+        run: cp quartz/static/naver*.html public/ 2>/dev/null || true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
