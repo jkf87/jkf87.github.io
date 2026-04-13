@@ -43,6 +43,10 @@ Llama 3.2 3B 모델의 경우:
 
 이는 점진적 저하가 아니라 **질적 전환(qualitative change)**이다. 256배의 용량 축소가 일어나는 2비트 체제에서는 근본적으로 다른 접근이 필요하다.
 
+> 아래 표는 논문 원문에서 직접 추출한 자료다. 3 bpp에서는 여유가 있지만, 2 bpp에서는 표현 용량이 급격히 부족해지는 점이 핵심이다.
+
+![논문 원문 표, 3 bpp와 2 bpp의 representational ratio 비교](./images/2bit-quantization-paper/paper-table-rho-regime.png)
+
 ## OA-EM: 출력을 고려한 EM 초기화
 
 논문이 제안하는 **OA-EM(Output-Aware Expectation-Maximisation)**은 코드북 초기화를 개선하는 방법이다:
@@ -63,6 +67,10 @@ Llama 3.2 3B 모델의 경우:
 - OA-EM 초기화 (beam 8, PV-tuning 후): **11.53**
 - 더 놀라운 점: beam width를 8→16으로 늘리면 greedy는 12.01로 **악화**, OA-EM은 11.49로 **개선**
 
+> 아래 표는 PV-tuning 전 결과다. 같은 2 bpp 조건에서도 greedy 초기화는 beam width를 아무리 키워도 크게 망가지고, OA-EM은 훨씬 안정적이다.
+
+![논문 원문 표, 2 bpp에서 pre-PV 결과 비교](./images/2bit-quantization-paper/paper-table-pre-pv-2bpp.png)
+
 ### Llama 3.1 8B & Qwen 2.5 3B
 
 모든 beam width, epoch budget, 압축률 설정에서 OA-EM이 우위를 유지했다. 특히 Pareto frontier(품질-연산 트레이드오프)에서 완전히 지배적인 성능을 보여줬다.
@@ -70,6 +78,10 @@ Llama 3.2 3B 모델의 경우:
 ### Basin Persistence (분지 지속성)
 
 PV-tuning 전에는 43점 차이가 나던 perplexity gap이 PV-tuning 후에도 0.23점까지 줄어들 뿐, OA-EM의 우위는 **모든 설정에서 지속**되었다. 즉, 초기화가 결정한 최적화 분지는 fine-tuning으로도 뒤집을 수 없다.
+
+> 아래 표가 이 논문의 핵심 주장이다. PV-tuning이라는 강한 후처리를 거쳐도, 더 좋은 초기화에서 시작한 모델이 끝까지 더 좋은 위치에 남는다.
+
+![논문 원문 표, 2 bpp에서 post-PV 결과 비교](./images/2bit-quantization-paper/paper-table-post-pv-2bpp.png)
 
 ## 실제 응용: Apple Silicon에서 70B+ 모델 구동?
 
