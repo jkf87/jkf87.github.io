@@ -57,7 +57,7 @@ AI의 성능이 좋아질수록 환경 부담도 커집니다. Grok 4의 추정 
 
 ## 3. 미국의 인재 흡인력이 약해지고 있다 (America’s Draw Fades)
 
-![America's Draw Fades](./images/stanford-ai-index-2026-12-takeaways-korean-guide/americas-draw-fades-v6.jpg)
+![America's Draw Fades](./images/stanford-ai-index-2026-12-takeaways-korean-guide/americas-draw-fades-v3.jpg)
 
 미국은 여전히 세계에서 가장 많은 AI 연구자와 개발자가 모여 있는 나라입니다. 하지만 **미국으로 유입되는 AI 인재 흐름은 급격히 둔화**하고 있습니다. 미국으로 이동하는 AI 학자는 2017년 이후 **89% 감소**했고, 최근 1년만 놓고 봐도 **80% 감소**했습니다.
 
