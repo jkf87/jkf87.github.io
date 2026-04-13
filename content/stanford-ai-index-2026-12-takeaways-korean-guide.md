@@ -67,7 +67,7 @@ AI의 성능이 좋아질수록 환경 부담도 커집니다. Grok 4의 추정 
 
 ## 4. 수학 올림피아드는 풀지만, 시계는 잘 못 본다 (AI Can Win a Mathematical Olympiad But Can’t Tell Time)
 
-![Capability Gap](./images/stanford-ai-index-2026-12-takeaways-korean-guide/capability-gap-v2.jpg)
+![Capability Gap](./images/stanford-ai-index-2026-12-takeaways-korean-guide/capability-gap-v3.jpg?rev=20260413c)
 
 AI는 전반적으로 더 많은 벤치마크에서 더 높은 점수를 받고 있습니다. 최전선 모델은 이제 **박사급 과학 문제, 멀티모달 추론, 경시 수학** 같은 항목에서 인간 수준에 도달하거나 넘어섰습니다. 실제 업무 과제를 수행하는 에이전트 성공률은 Terminal-Bench 기준 **2025년 20%에서 77.3%**로 크게 뛰었고, 사이버보안 문제 해결 에이전트는 **2024년 15%에서 93%** 수준까지 올라왔습니다.
 
