@@ -8,6 +8,8 @@ tags:
   - local-ai
   - paper-review
 description: "2비트 양자화에서 LLM이 망가지는 진짜 원인을 밝혀낸 논문 리뷰. 코드북 초기화가 최적화 분지를 결정하며, OA-EM 방법이 이를 해결한다."
+aliases:
+  - 2bit-llm-quantization-oaem-2026-04-13/index
 ---
 
 ## 들어가며: 왜 2비트 양자화가 중요한가?
