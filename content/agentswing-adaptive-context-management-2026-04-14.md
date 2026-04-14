@@ -9,6 +9,8 @@ tags:
   - paper-review
 description: "알리바바 통의연구소가 발표한 AgentSwing 논문 리뷰. LLM 에이전트가 긴 탐색 과정에서 컨텍스트 윈도우 한계를 극복하기 위해 상태에 따라 최적의 컨텍스트 관리 전략을 동적으로 선택하는 적응형 프레임워크를 제안합니다."
 aliases:
+  - agentswing-adaptive-context-management-2026-04-14/index
+aliases:
   - agentswing-adaptive-context-management
   - agentswing
 draft: false
