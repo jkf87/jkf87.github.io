@@ -161,11 +161,110 @@ Claude Opus 4.7은 오늘부터 다음 플랫폼에서 사용 가능:
 - 긴 작업의 중간 실패에도 스스로 복구하여 완주
 - 기존 프롬프트 재튜닝 필요 (지시 수행 강화로 인해)
 
-### 도입 전 체크리스트
-1. [ ] 기존 Claude 프롬프트를 Opus 4.7에 맞게 재튜닝
-2. [ ] 지시를 더 구체적으로 작성 (느슨한 해석 기대 불가)
-3. [ ] 이미지 해상도 향상 활용 검토 (스크린샷, 다이어그램)
-4. [ ] 멀티스텝 자동화 워크플로우 신뢰성 테스트
+## 마이그레이션 가이드: Opus 4.6 → 4.7
+
+> 원문: [Claude Migration Guide](https://platform.claude.com/docs/en/about-claude/models/migration-guide#migrating-to-claude-opus-4-7)
+
+Opus 4.7은 기존 Opus 4.6 코드에 대해 **강력한 out-of-the-box 성능**을 보이지만, 몇 가지 API 파괴적 변경과 행동 변화가 있다. 가격은 동일하게 $5/$25 per MTok을 유지한다.
+
+### 지원 기능 (Opus 4.6 동일)
+
+1M 토큰 컨텍스트 윈도우 (추가 비용 없음), 128k 최대 출력, Adaptive Thinking, 프롬프트 캐싱, 배치 처리, Files API, PDF, 비전, 서버/클라이언트 툴 (bash, 코드 실행, 컴퓨터 사용, 웹 검색, MCP 커넥터, 메모리)
+
+### ⚡ 파괴적 변경 (Breaking Changes)
+
+| 변경 사항 | Opus 4.6 | Opus 4.7 | 대응 방법 |
+|----------|----------|----------|----------|
+| **Extended Thinking** | `thinking: {type: "enabled", budget_tokens: N}` 지원 | ❌ 400 에러 반환 | `thinking: {type: "adaptive"}` + `effort` 파라미터 사용 |
+| **샘플링 파라미터** | `temperature`, `top_p`, `top_k` 설정 가능 | ❌ 400 에러 반환 | 파라미터 제거, 프롬프트로 제어 |
+| **생각 내용 기본 비공개** | 요약된 생각 텍스트 반환 | 기본 `"omitted"` | `thinking.display: "summarized"` 명시 |
+| **토큰 카운팅 변경** | 기존 토크나이저 | 새 토크나이저 (1x~1.35x 더 많은 토큰) | `max_tokens` 여유 확보, `/v1/messages/count_tokens` 재검증 |
+| **Prefill 제거** | 어시스턴트 메시지 프리필 가능 | ❌ 400 에러 반환 | Structured Outputs, 시스템 프롬프트, `output_config.format` 사용 |
+
+### 코드 변경 예시
+
+```python
+# ❌ Before (Opus 4.6)
+client.messages.create(
+    model="claude-opus-4-6",
+    max_tokens=64000,
+    thinking={"type": "enabled", "budget_tokens": 32000},
+    messages=[{"role": "user", "content": "..."}],
+)
+
+# ✅ After (Opus 4.7)
+client.messages.create(
+    model="claude-opus-4-7",
+    max_tokens=64000,
+    thinking={"type": "adaptive"},
+    output_config={"effort": "high"},  # "max", "xhigh", "medium", "low"
+    messages=[{"role": "user", "content": "..."}],
+)
+```
+
+### 🎯 에포트(Effort) 레벨 선택 가이드
+
+| 레벨 | 설명 | 권장 용도 |
+|------|------|----------|
+| `max` | 최대 지능, 토큰 과다사용 위험 | 지능 집약적 태스크 테스트 |
+| **`xhigh`** 🆕 | 코딩/에이전트에 최적 | **대부분의 코딩, 에이전트 워크플로우** |
+| `high` | 지능/비용 균형 | 지능 민감 대부분의 유스케이스 |
+| `medium` | 비용 절감, 지능 트레이드오프 | 비용 민감 유스케이스 |
+| `low` | 단순 작업, 낮은 지연시간 | 단기 범위 작업, 지연시간 민감 |
+
+> **핵심:** 이전 Opus보다 에포트가 **훨씬 중요**하다. 업그레이드 후 활발하게 실험할 것.
+
+### 🔄 행동 변화 (프롬프트 재튜닝 필요)
+
+1. **응답 길이 자동 조절:** 작업 복잡도에 따라 길이가 달라짐. 단순 질문엔 짧게, 복잡 분석엔 길게. 길이 제어가 필요하면 프롬프트에 명시
+2. **더 엄격한 지시 해석:** 이전 모델이 느슨하게 해석하던 것을 문자 그대로 따름. 암묵적 일반화 ❌. 구체적 프롬프트 작성 필수
+3. **더 직접적인 어조:** Opus 4.6보다 덜 따뜻하고 더 의견이 명확함. 이모지 사용 감소. 특정 톤이 필요하면 스타일 프롬프트 재검토
+4. **에이전트 진행 상황 자동 업데이트:** 긴 에이전트 작업 중 더 정기적으로 상태 전달. 기존 스캐폴딩("3번 툴 호출마다 요약") 제거 고려
+5. **기본 서브에이전트 수 감소:** 프롬프트로 명시적 가이드 필요시 추가
+6. **더 엄격한 에포트 준수:** `low`/`medium`에서 복잡한 문제에 얕은 추론 위험. 복잡한 작업은 `high` 이상 권장
+7. **기본 도구 호출 감소:** 추론을 더 활용. 도구 사용 늘리려면 `high`/`xhigh` 에포트 또는 프롬프트 명시
+8. **사이버 보안 실시간 가드:** 금지/고위험 요청 자동 차단. 합법적 보안 작업은 [Cyber Verification Program](https://claude.com/form/cyber-use-case) 신청
+9. **고해상도 이미지 자동 지원:** 2576px (기존 1568px에서 3배 향상). 자동 활성화. 이미지 토큰 최대 3배 증가 가능 (최대 4,784 토큰/이미지)
+
+### 💡 권장 변경 사항
+
+1. **`max_tokens` 재설정:** 새 토크나이저로 더 많은 토큰 소모 → `max_tokens` 여유 확보. `max`/`xhigh` 에포트 시 최소 64k 권장
+2. **클라이언트 토큰 카운트 재검증:** 고정 토큰-문자 비율 가정 코드 재테스트
+3. **Task Budgets (베타) 도입:** 에이전트 전체 루프에 토큰 예산 설정
+   ```python
+   output_config = {
+       "effort": "high",
+       "task_budget": {"type": "tokens", "total": 128000},
+   }
+   ```
+   > `task_budget`은 모델에게 보이는 **조언적 상한** (스스로 조절). `max_tokens`는 모델이 모르는 **강제 상한**. 목적에 따라 분리 사용.
+4. **불필요한 고해상도 이미지 다운샘플링:** 고해상도가 필요 없으면 전송 전 축소하여 토큰 절약
+
+### ✅ 마이그레이션 체크리스트
+
+- [ ] 모델 이름: `claude-opus-4-6` → `claude-opus-4-7`
+- [ ] `temperature`, `top_p`, `top_k` 제거
+- [ ] `thinking: {type: "enabled", budget_tokens: N}` → `thinking: {type: "adaptive"}` + `effort` 추가
+- [ ] 어시스턴트 메시지 프리필 제거
+- [ ] UI에 생각 내용 표시 시 `thinking.display: "summarized"` 명시
+- [ ] 토크나이저 변경에 따른 비용/지연시간 재벤치마크
+- [ ] `max_tokens` 여유 확보 (새 토크나이저 반영)
+- [ ] 클라이언트 토큰 카운트 재검증
+- [ ] 이미지 전송 시 고해상도 토큰 비용 재예산 (최대 3배)
+- [ ] 프롬프트 행동 변화 재검토 (길이, 엄격함, 어조, 도구 호출 등)
+- [ ] `xhigh`/`max` 에포트 사용 시 `max_tokens` 최소 64k 설정
+- [ ] Task Budgets (베타) 도입 검토
+- [ ] 합법적 보안 작업 시 Cyber Verification Program 신청
+
+### Claude Code에서 자동 마이그레이션
+
+Claude Code 사용자는 내장 스킬로 자동 마이그레이션 가능:
+
+```bash
+/claude-api migrate this project to claude-opus-4-7
+```
+
+모델 ID 교체, 파괴적 파라미터 변경, 프리필 제거, 에포트 보정을 코드베이스 전체에 적용하고, 수동 확인 체크리스트를 생성한다.
 
 ## FAQ
 
