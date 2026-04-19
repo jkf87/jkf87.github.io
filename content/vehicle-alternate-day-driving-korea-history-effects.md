@@ -24,8 +24,6 @@ description: "미국-이란 전쟁으로 다시 주목받는 차량 2부제. 197
 
 ![도심 교통 흐름 이미지](./images/vehicle-alternate-driving/gifgrep/traffic-aerial-still.png)
 
-*gifgrep로 찾은 교통 정체 GIF에서 추출한 스틸 이미지입니다. 정책 효과를 설명하는 도입부용 시각 자료로 넣었습니다.*
-
 ---
 
 ## 먼저 답부터 보면
@@ -153,8 +151,6 @@ description: "미국-이란 전쟁으로 다시 주목받는 차량 2부제. 197
 즉, **“효과가 있느냐 없느냐”**보다는 **“어떤 조건에서 얼마나 효과가 나느냐”**로 묻는 편이 더 정확합니다.
 
 ![도심 교차로 차량 흐름 이미지](./images/vehicle-alternate-driving/gifgrep/city-traffic-still.png)
-
-*이 이미지 역시 gifgrep 검색 결과에서 추출했습니다. 장기 시행에서 우회 행동과 혼잡 전이가 왜 함께 논의되는지 보여 주는 보조 시각 자료입니다.*
 
 ---
 
