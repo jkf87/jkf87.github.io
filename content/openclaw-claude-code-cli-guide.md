@@ -28,7 +28,7 @@ Claude Code CLI로 OpenClaw 연결은 됨.
 Anthropic이 허용한 건 **공식 Claude Code CLI 자체**였음.
 근데 제3자 도구가 그 CLI를 대신 호출해서 구독 인증을 재사용하는 건 다른 얘기였음.
 
-## 2. 연결 방법은 단순함
+## 2. 연결 방법은 더 단순함
 
 ### 1) Claude Code CLI에 먼저 로그인하면 됨
 
@@ -39,17 +39,15 @@ claude auth login
 여기까지는 공식 경로였음.
 Anthropic이 제공한 공식 CLI를 본인 PC에서 직접 쓰는 흐름이었음.
 
-### 2) 그 다음 OpenClaw에서 CLI 위임을 잡으면 됨
+### 2) OpenClaw에서는 먼저 `openclaw onboard`를 하면 됨
 
 ```bash
-openclaw models auth login --provider anthropic --method cli --set-default
+openclaw onboard
 ```
 
-이 명령은 OpenClaw가 로컬 `claude` 바이너리를 호출해서 로그인 상태를 재사용하는 방식임.
-즉 OpenClaw가 OAuth 토큰 문자열을 직접 들고 가는 구조는 아님.
-공식 Claude CLI가 세션을 관리하는 쪽이었음.
-
-### 3) 온보딩 화면에서는 이렇게 고르면 됨
+여기서 Anthropic 쪽으로 들어가서 `Anthropic Claude CLI`를 고르면 됨.
+실사용 기준으로는 이게 먼저였음.
+대부분은 여기서 끝남.
 
 ![OpenClaw 온보딩에서 Anthropic Claude CLI 인증 방식을 선택하는 화면](./images/openclaw-claude-code-cli-guide/openclaw-claude-cli-guide.jpg)
 *OpenClaw 온보딩 화면에서 `Anthropic Claude CLI`를 고르면, 이 호스트의 로컬 Claude CLI 로그인 정보를 재사용하는 방식으로 연결됨.*
@@ -63,6 +61,16 @@ openclaw models auth login --provider anthropic --method cli --set-default
 여기까지 보면 꽤 좋아 보임.
 편함.
 바로 됨.
+
+### 3) 온보드에서 안 되거나, 나중에 프로바이더를 다시 바꿔야 하면 그때 명령어를 넣으면 됨
+
+```bash
+openclaw models auth login --provider anthropic --method cli --set-default
+```
+
+이 명령은 OpenClaw가 로컬 `claude` 바이너리를 호출해서 로그인 상태를 재사용하도록 기본 프로바이더를 다시 잡는 방식이었음.
+즉 OpenClaw가 OAuth 토큰 문자열을 직접 들고 가는 구조는 아님.
+공식 Claude CLI가 세션을 관리하는 쪽이었음.
 
 ## 3. 왜 사람들이 이 방식에 관심을 가졌나
 
