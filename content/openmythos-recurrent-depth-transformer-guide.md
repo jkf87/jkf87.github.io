@@ -121,37 +121,86 @@ output = model.generate(input_ids, max_new_tokens=8, n_loops=8)
 
 ---
 
-## 시사점과 의의
+## OpenMythos의 의미 — 왜 이 프로젝트가 중요한가
 
-### 1. 파라미터보다 추론 연산량
-770M RDT가 1.3B 고정깊이 트랜스포머와 동등. 새로운 스케일링 패러다임.
+### 가중치 없는 아키텍처 코드가 왜 가치 있는가?
 
-### 2. 추론 시 깊이 조절
-쉬운 질문 4루프, 어려운 질문 16루프. 깊이 외삽 가능.
+"가중치도 없는 코드가 무슨 의미가 있냐"고 물을 수 있습니다. OpenMythos의 진짜 가치는 **생각의 도구**에 있습니다. 비공개 모델의 동작 원리를 추측하고 검증 가능한 코드로 표현함으로써, AI 연구자와 개발자들이 최신 아키텍처를 **직접 만져보고 실험할 수 있는 출발점**을 제공합니다.
 
-### 3. 오픈소스 커뮤니티의 힘
-비공개 모델을 24시간 안에 재구현. 실제 일치 여부는 불명.
+### 구체적으로 어떻게 써볼 수 있나?
 
-### 4. AI 보안의 지정학
-백악관 접근 추진, IBM 성명. 기술을 넘어 지정학적 영향력.
+**1. 아키텍처 학습 도구로 활용**
+
+트랜스포머 내부를 공부하는 사람에게 1,014줄짜리 단일 파일은 최고의 교재입니다. MLA, MoE, ACT 같은 최신 기법이 실제로 어떻게 결합되는지 코드 레벨에서 따라갈 수 있습니다.
+
+```bash
+pip install open-mythos
+python3 -c "from open_mythos.main import OpenMythos, MythosConfig; print('OK')"
+```
+
+**2. 소규모 실험으로 RDT 가설 검증**
+
+1B 프리셋으로 작은 데이터셋에 학습시켜, 루프 횟수(n_loops)를 바꿔가며 실제로 "깊이 외삽"이 가능한지 직접 실험해볼 수 있습니다.
+
+```python
+# 4루프로 학습한 모델을 8루프로 추론하면 성능이 오를까?
+logits_4 = model(input_ids, n_loops=4)
+logits_8 = model(input_ids, n_loops=8)  # 더 깊은 추론
+```
+
+**3. 자체 모델 개발의 참고 아키텍처**
+
+LTI-Stable Injection이나 Depth-wise LoRA 같은 개별 모듈을 떼어다 자신의 프로젝트에 적용할 수 있습니다. MIT 라이선스이므로 상업적 사용도 자유롭습니다.
+
+**4. AI 보안 연구의 맥락 이해**
+
+Claude Mythos가 사이버보안에서 보여준 능력의 **아키텍처적 근거**를 이해하는 데 도움이 됩니다. "왜 루프 트랜스포머가 취약점 발견에 강할 수 있는가?"라는 질문에 대한 하나의 가설을 제공합니다.
+
+### 더 큰 그림 — AI 스케일링의 전환점
+
+OpenMythos가 시사하는 가장 큰 메시지는 이것입니다: **"모델을 더 크게 만드는 것"만이 성능 향상의 길이 아닐 수 있다**는 것입니다.
+
+Parcae 논문에 따르면 770M RDT가 1.3B 고정깊이 트랜스포머와 동등한 성능을 보였습니다. 파라미터를 늘리는 대신 **추론 시간에 연산량을 늘리는**(루프를 더 도는) 접근이 새로운 스케일링 패러다임이 될 수 있습니다. 이는 GPU 메모리가 제한된 환경에서 특히 의미 있는 방향입니다.
+
+또한 백악관의 정부기관 Mythos 접근 추진, IBM의 "Mythos 이후 오픈소스" 성명, EU의 검토 불가 우려 등은 AI 모델이 기술을 넘어 **지정학적 자산**이 되었음을 보여줍니다.
 
 ---
 
-## FAQ
+## 자주 묻는 질문 (FAQ)
 
-**Q: OpenMythos로 Claude Mythos를 사용할 수 있나요?**
-아닙니다. 아키텍처 코드만 제공되며 가중치가 없습니다.
+**Q: OpenMythos를 설치하면 Claude Mythos를 사용할 수 있나요?**
+
+아닙니다. OpenMythos는 아키텍처 코드만 제공합니다. 학습된 가중치가 없으므로 실제 추론이나 취약점 탐지는 불가능합니다. 연구와 학습 목적의 구조 분석 도구로 보시면 됩니다.
 
 **Q: RDT 가설이 실제 Mythos와 일치하나요?**
-확인 불가. "이론적 추측"이라고 명시합니다.
+
+확인할 방법이 없습니다. Anthropic은 Mythos의 아키텍처를 공개하지 않았습니다. OpenMythos도 "이론적 추측"이라고 명시합니다. 공개 논문 바탕의 가장 그럴듯한 가설 정도로 이해하시면 됩니다.
+
+**Q: 코드를 직접 학습시킬 수 있나요?**
+
+가능하지만 별도 학습 스크립트나 데이터셋은 없습니다. 1B 프리셋으로 소규모 실험은 할 수 있으나, 의미 있는 성능을 위해서는 상당한 GPU 자원이 필요합니다.
+
+**Q: 770M으로 1.3B 성능이 정말 가능한가요?**
+
+Parcae 논문(Prairie et al., 2026)의 결과를 인용한 것이며, OpenMythos 자체가 검증한 것은 아닙니다. 루프 트랜스포머의 효율성은 여러 독립 연구에서 보고되고 있습니다.
+
+**Q: Kye Gomez는 누구인가요?**
+
+22세의 오픈소스 AI 개발자로, Swarms 에이전트 프레임워크 창시자입니다. X에서 5,500+좋아요를 받은 프로젝트이지만, 학술 논문으로 발표된 것은 아닙니다.
 
 ---
 
 ## 참고 자료
+
 - [OpenMythos GitHub](https://github.com/kyegomez/OpenMythos)
-- [Claude Mythos Preview](https://red.anthropic.com/2026/mythos-preview/)
+- [Claude Mythos Preview 공식 발표](https://red.anthropic.com/2026/mythos-preview/)
 - [Project Glasswing](https://www.anthropic.com/glasswing)
-- [UK AISI 평가](https://www.aisi.gov.uk/blog/our-evaluation-of-claude-mythos-previews-cyber-capabilities)
+- [UK AISI 평가 보고서](https://www.aisi.gov.uk/blog/our-evaluation-of-claude-mythos-previews-cyber-capabilities)
+- [Fortune Mythos 최초 보도](https://fortune.com/2026/03/26/anthropic-says-testing-mythos-powerful-new-ai-model-after-data-leak-reveals-its-existence-step-change-in-capabilities/)
+- [Kye Gomez X 발표](https://x.com/KyeGomezB/status/2045659150340723107)
+
+---
 
 ## About the Author
-OpenMythos GitHub 코드 구조 분석과 Anthropic 공식 발표 자료를 종합한 기술 분석입니다.
+
+이 글은 OpenMythos GitHub 리포지토리의 전체 코드 구조 분석(main.py 1,014줄, variants.py, test_main.py)과 Anthropic 공식 발표, UK AISI 평가 보고서를 종합하여 작성되었습니다.
