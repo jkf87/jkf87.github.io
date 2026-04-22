@@ -1,5 +1,5 @@
 ---
-title: "Claude Code Pro에서 빠진다더니 다시 돌아왔다, Anthropic 실수인지 철회인지"
+title: "Anthropic, Claude Code Pro 제외했다가 되돌렸나"
 date: 2026-04-22
 tags:
   - Claude
