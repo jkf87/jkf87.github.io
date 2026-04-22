@@ -10,166 +10,213 @@ tags:
   - SaaS
   - 개발도구
   - AI
-description: "몇 시간 전엔 Pro 플랜의 Claude Code가 X로 보였는데, 지금은 다시 체크로 돌아왔습니다. Anthropic 가격 페이지 오표기인지, 정책 철회인지, 아직 남은 의문까지 정리했습니다."
+description: "Claude 가격표에서 Pro의 Claude Code가 빠졌다가 다시 돌아온 것처럼 보였습니다. 단순 실수인지, 정책 흔들림인지, 그리고 그 뒤에 있는 Anthropic의 인프라 압박까지 같이 봐야 하는 이유를 정리했습니다."
 ---
 
 - **가격 페이지**: [claude.com/pricing](https://claude.com/pricing)
-- **도움말 1**: [Using Claude Code with your Pro or Max plan](https://support.claude.com/en/articles/11145838-using-claude-code-with-your-pro-or-max-plan)
-- **도움말 2**: [Choosing a Claude plan](https://support.claude.com/en/articles/11049762-choosing-a-claude-plan)
+- **Anthropic 공식 1**: [Anthropic and Amazon expand collaboration for up to 5 gigawatts of new compute](https://www.anthropic.com/news/anthropic-amazon-compute)
+- **Anthropic 공식 2**: [Powering the next generation of AI development with AWS](https://www.anthropic.com/news/anthropic-amazon-trainium)
+- **Anthropic 공식 3**: [Expanding our use of Google Cloud TPUs and Services](https://www.anthropic.com/news/expanding-our-use-of-google-cloud-tpus-and-services)
+- **도움말**: [Using Claude Code with your Pro or Max plan](https://support.claude.com/en/articles/11145838-using-claude-code-with-your-pro-or-max-plan)
 - **직전 글**: [Claude Pro에서 Claude Code 빠지나, Anthropic 가격 페이지에 뜬 이상 신호](./claude-code-pro-pricing-confusion-2026-04-22)
 
-Anthropic 가격 페이지가 오늘 꽤 시끄럽습니다.
+Anthropic 가격표가 하루 동안 두 번 말을 바꾼 것처럼 보였음.
 
-몇 시간 전만 해도 `claude.com/pricing` 비교표에서 **Pro 플랜의 Claude Code가 X처럼 보이는 화면**이 퍼졌습니다.
-그래서 다들 "이제 Pro에서는 Claude Code 못 쓰는 거냐"고 반응했습니다.
+처음엔 Pro 플랜의 Claude Code가 **X**로 보였음.
+그래서 다들 이렇게 읽었음.
 
-근데 지금은 또 다릅니다.
-이번에는 같은 자리에서 **Pro 플랜의 Claude Code가 다시 체크**로 보입니다.
+- 이제 Pro에서는 Claude Code 못 씀
+- Max로 올리라는 뜻임
+- 개발자 요금제가 사실상 다시 짜이는 중임
 
-그러면 질문은 하나로 줄어듭니다.
-**이게 실수였나, 잠깐 넣었다 뺀 테스트였나, 아니면 반응 보고 바로 철회한 건가.**
+근데 몇 시간 뒤 다시 보니 체크로 돌아와 있었음.
 
-먼저 문제를 키운 장면은 이거였습니다.
+즉 지금 질문은 하나임.
+**실수였나, 철회였나, 아니면 내부 검토 흔적이 잠깐 밖으로 튄 건가.**
+
+먼저 논란을 키운 장면은 이거였음.
 
 ![Claude 가격 페이지에서 Pro 플랜의 Claude Code가 X로 보이는 화면](./images/claude-code-pro-reversal-2026-04-22/claude-pricing-pro-code-x.jpg)
 *이전 캡처. Claude Code 행의 Pro 칸이 X로 표시되어 있었음.*
 
-그리고 지금은 이렇게 다시 보입니다.
+그리고 지금은 이렇게 다시 보임.
 
 ![Claude 가격 페이지에서 Pro 플랜의 Claude Code가 다시 체크로 보이는 화면](./images/claude-code-pro-reversal-2026-04-22/claude-pricing-pro-code-restored.jpg)
 *현재 캡처. Claude Code 행의 Pro 칸이 다시 체크로 보임.*
 
-## 1. 지금 핵심은 “정책 변경”보다 “가격 페이지가 흔들렸다”는 점임
+## 1. 이건 가격표 한 칸 문제가 아니었음
 
-오늘 흐름을 시간순으로 보면 이렇습니다.
+Claude Code는 부가 기능이 아님.
+많은 사람한테는 Claude 구독의 핵심임.
 
-1. Pro 칸의 Claude Code가 X처럼 보이는 화면이 확인됨
-2. 사용자들은 "Pro에서 Claude Code 빼는 것 아니냐"고 해석함
-3. 공식 도움말 문서는 여전히 **Pro 또는 Max** 지원이라고 적혀 있었음
-4. 그런데 다시 가격 페이지를 보니 이번엔 **Pro 칸이 체크**로 돌아와 있음
+그래서 Pro에서 이게 빠지면 해석이 바로 달라짐.
 
-즉 지금 확정된 건 하나입니다.
+- Pro는 일반 채팅용
+- Claude Code는 Max 이상용
+- 개발자는 더 비싼 플랜으로 올려야 함
 
-**Anthropic 가격 페이지 표기가 짧은 시간 안에 흔들렸고, 그 과정에서 사용자 혼선이 실제로 발생했다는 것.**
+문제는 여기서 끝이 아니었음.
+공식 도움말은 계속 **Pro 또는 Max**라고 적고 있었음.
 
-이건 꽤 큽니다.
-가격표는 그냥 디자인 요소가 아니라, 사용자가 상품 정책을 이해하는 가장 직접적인 문서이기 때문입니다.
+그러니까 사용자는 당연히 헷갈릴 수밖에 없음.
 
-## 2. 그래서 지금 가능한 해석은 세 가지 정도임
+- 가격표는 빼는 것처럼 보임
+- 도움말은 여전히 된다고 함
+- 몇 시간 뒤엔 다시 체크가 돌아옴
 
-### 1) 단순 오표기였고, 뒤늦게 바로 수정했을 가능성
+이건 그냥 디자인 실수가 아니라, **상품 메시지가 흔들린 사건**이었음.
 
-이 해석이 가장 깔끔합니다.
+## 2. 근데 이번 일은 배경까지 같이 봐야 함
 
-- 도움말 문서는 계속 Pro 지원으로 남아 있었고
-- 가격 페이지 상단 요약도 Pro에 Claude Code 포함처럼 읽혔고
-- 지금은 비교표도 다시 체크로 보임
+여기서 중요한 게 하나 더 있음.
+이번 혼선은 단순 오표기일 수도 있음.
+근데 Anthropic이 최근 직접 밝힌 내용들을 보면, 왜 이런 민감한 흔들림이 나왔는지 배경이 보임.
 
-이 흐름이면 그냥 **비교표 한 칸이 잘못 들어갔다가 수정된 것**일 수 있습니다.
+Anthropic은 공식 글에서 이렇게 말했음.
 
-### 2) 실제로 정책 조정을 검토하다가 바로 되돌렸을 가능성
+- 2026년에 Claude 수요가 급증했음
+- free, Pro, Max, Team 전반에서 소비자 사용이 크게 늘었음
+- 이 성장 속도가 인프라에 **inevitable strain**, 즉 피할 수 없는 부담을 줬음
+- 특히 피크 시간대에는 reliability와 performance에도 영향이 갔다고 설명했음
 
-이 경우가 더 흥미롭습니다.
+이건 꽤 중요함.
 
-- 한때는 Max 중심으로 재편하려는 UI가 올라왔고
-- 커뮤니티 반응이 즉시 퍼졌고
-- 문서 정합성이 안 맞는 상태가 드러나자 빠르게 원복했을 수 있음
+즉 지금 Anthropic은 그냥 마케팅 문구를 다듬는 단계가 아니라,
+**실제로 수요가 너무 빨리 늘어서 계산 자원과 서비스 안정성을 같이 맞춰야 하는 국면**에 들어가 있다는 뜻임.
 
-즉 완전한 실수라기보다 **내부 검토 흔적이 외부에 먼저 노출된 시나리오**입니다.
+## 3. 정확히는 GPU 쇼티지라기보다, compute 쇼티지에 가까움
 
-### 3) A/B 테스트나 롤아웃 차이가 잠깐 섞였을 가능성
+여기서 표현은 조금 정확하게 잡는 게 좋음.
 
-이것도 SaaS 서비스에서는 자주 나옵니다.
+사용자 입장에서는 보통 이걸 **GPU 쇼티지**라고 부름.
+그 말이 완전히 틀린 건 아님.
 
-- 국가별 표기 차이
-- 로그인 상태 차이
-- 실험군/대조군 차이
-- 캐시 반영 지연
+근데 Anthropic 공식 문구 기준으로는 더 넓음.
+이 회사는 지금 GPU 하나만 보는 게 아니라, **전체 compute capacity**를 문제로 보고 있음.
 
-이런 조건이 겹치면 같은 날에도 서로 다른 화면 캡처가 돌 수 있습니다.
+Anthropic은 공식적으로 이렇게 적었음.
 
-## 3. 왜 다들 민감하게 반응했냐면 이유가 너무 분명함
+- Google TPU를 최대 100만 개까지 확대하겠다고 했음
+- AWS Trainium을 주요 훈련 인프라로 더 깊게 묶고 있음
+- 자사 compute 전략을 **Google TPU + Amazon Trainium + NVIDIA GPU**의 다변화 구조라고 설명했음
 
-Claude Code는 그냥 부가 기능이 아닙니다.
-많은 사람에게는 **Claude 구독의 핵심 이유**에 가깝습니다.
+이 말은 곧 이런 뜻임.
 
-만약 Pro에서 Claude Code가 진짜 빠지면 가격 구조가 이렇게 바뀝니다.
+**“GPU가 부족해서 힘들다” 수준이 아니라, Claude를 계속 키우려면 칩, 클라우드, 전력, 데이터센터를 다 묶어서 더 크게 깔아야 하는 단계라는 것.**
 
-- Pro: 월 20달러
-- Max 5x: 월 100달러
-- Max 20x: 월 200달러
+## 4. AWS 확대는 그냥 제휴 뉴스가 아니었음
 
-즉 개발자 입장에서는 사실상 **입장권이 5배 뛰는 변화**가 됩니다.
+이 부분이 이번 글에서 제일 중요함.
 
-그러니까 사용자들이 예민하게 반응한 건 과장이 아닙니다.
-그 표 하나가 진짜라면, Anthropic의 상품 전략이 완전히 달라지는 신호였기 때문입니다.
+Anthropic은 AWS 관련 공식 발표에서 두 가지를 분명히 말했음.
 
-## 4. 지금 시점에서 오히려 더 강해진 포인트도 있음
+첫째,
+AWS를 **primary cloud and training partner**로 두고 더 깊게 묶고 있음.
 
-재미있는 건, 이번에 체크로 다시 돌아오면서 오히려 한 가지가 더 선명해졌다는 점입니다.
+둘째,
+Amazon과 새 계약을 맺고 **최대 5GW 규모의 compute capacity**를 확보하겠다고 했음.
 
-**적어도 지금 시점에서는 “Pro에서 Claude Code가 완전히 빠졌다”라고 말하면 안 됨.**
+여기서 숫자가 무거움.
+Anthropic은 이 계약이:
 
-왜냐하면:
+- 앞으로 10년 동안 AWS 기술에 1,000억 달러 이상 커밋하는 구조이고
+- 2026년 안에 의미 있는 신규 capacity가 빠르게 들어오며
+- 올해 말까지 거의 1GW 규모가 순차적으로 붙는다고 설명했음
 
-- 가격 페이지는 현재 다시 체크로 보이고
-- 도움말 문서도 계속 Pro 지원이라고 적고 있고
-- Max 안내 역시 "더 많은 사용량" 중심으로 설명하지, Pro 차단 확정처럼 쓰지 않기 때문입니다.
+한마디로 이거임.
 
-그러니까 지금 맞는 문장은 이쪽입니다.
+**Anthropic은 지금 Claude 수요를 감당하려고 AWS 쪽 인프라를 크게 늘리고 있음.**
 
-**“Anthropic이 Pro의 Claude Code를 막았다고 확정하기는 어렵다. 다만 가격 페이지가 실제로 흔들렸고, 그 흔들림 자체가 의미 있는 신호다.”**
+그냥 “협력 강화” 수준이 아님.
+**실사용 폭증을 버티기 위한 인프라 증설** 성격이 더 강함.
 
-## 5. 실수인지 철회인지, 저는 이쪽이 더 의심됨
+## 5. 그래서 Pro 가격표 흔들림이 더 의미심장해짐
 
-제 느낌은 단순합니다.
+이제 다시 가격표 얘기로 돌아오면 그림이 보임.
 
-완전한 실수일 수도 있습니다.
-근데 그냥 실수라고 보기엔 파장이 너무 큰 칸이었습니다.
+배경지식은 이거였음.
 
-Claude Code는 지금 Anthropic 상품 전략에서 제일 민감한 축 중 하나입니다.
-그런데 하필 그 칸이 Pro에서 X로 보였다가 다시 체크로 돌아왔다면, 사용자 입장에서는 이런 의심을 하게 됩니다.
+- Claude 수요가 급증했음
+- Anthropic은 공식적으로 인프라 부담을 인정했음
+- AWS와 Google 양쪽으로 compute를 더 크게 당기고 있음
+- 칩 전략도 TPU, Trainium, NVIDIA GPU로 분산 중임
 
-- 내부에서 Max 중심 재편을 검토한 것 아닌가
-- 가격 페이지 실험이 외부에 잠깐 노출된 것 아닌가
-- 반응이 커지니까 일단 되돌린 것 아닌가
+근데 이런 상황이면 당연히 다음 고민이 생김.
 
-물론 지금은 확정 증거가 없습니다.
-하지만 적어도 **“아무 일도 없었다”라고 넘길 상황도 아닙니다.**
+**누구에게 어느 정도 용량을 열어줄 건가.**
 
-왜냐하면 가격표는 사용자의 결제 판단에 직결되고, 이번 혼선은 실제로 구독 의사결정에 영향을 줄 수 있었기 때문입니다.
+특히 Claude Code는 일반 채팅보다 무거운 사용 패턴이 많음.
 
-## 6. 지금 사용자들이 확인해야 할 건 오히려 더 명확함
+- 세션이 김
+- 저장소를 통째로 넣음
+- 반복 호출이 많음
+- 에이전트성 작업이 많음
+- 토큰 사용량이 큼
 
-### 첫째, 내 Pro 계정에서 Claude Code 인증이 실제로 붙는가
+그러니까 Anthropic 입장에선 이걸 모든 Pro 사용자에게 지금처럼 유지할지,
+아니면 Max 중심으로 재분류할지,
+계속 내부적으로 고민할 가능성이 높음.
 
-제일 중요한 건 가격표보다 실사용입니다.
-실제 Pro 계정으로 Claude Code 로그인과 사용이 계속 되는지 먼저 보는 게 맞습니다.
+그래서 이번 가격표 흔들림은 더 묘함.
 
-### 둘째, 도움말 문서 제목과 문구가 바뀌는가
+그냥 디자이너 실수일 수도 있음.
+근데 **인프라 압박이 실제로 있는 회사에서, 하필 가장 민감한 기능 칸이 흔들렸다는 것** 자체가 의미가 있음.
 
-정책이 진짜 바뀌면 결국 도움말 문서도 따라옵니다.
-특히 아래 문서가 바뀌면 거의 확정 신호에 가깝습니다.
+## 6. 지금 가능한 해석은 세 개임
 
-- Using Claude Code with your Pro or Max plan
-- Choosing a Claude plan
-- What is the Max plan
+### 1) 진짜 단순 실수였음
 
-### 셋째, pricing 페이지가 다시 또 바뀌는가
+이게 제일 무난함.
+가격표 한 칸이 잘못 들어갔다가 다시 수정됐다는 해석임.
 
-이건 오늘의 핵심입니다.
-지금 한 번 흔들렸기 때문에, 앞으로 며칠은 pricing 페이지 변화 자체가 중요한 신호가 됩니다.
+### 2) 내부 검토 흔적이 잠깐 노출됐음
 
-## 7. 한 줄 결론
+이쪽도 충분히 가능함.
+특히 compute 압박이 있는 상황이면,
+Pro와 Max 사이의 경계를 다시 만지는 시도가 내부적으로 아예 없다고 보기 어려움.
 
-지금 상황을 제일 정확하게 요약하면 이겁니다.
+### 3) 실험군, 캐시, 롤아웃 차이였음
 
-**Claude Pro에서 Claude Code를 막는다고 확정하기엔 이르다. 그런데 가격 페이지가 실제로 X에서 체크로 다시 바뀌었다면, 이건 단순 해프닝이라기보다 Anthropic 내부 메시지 관리가 흔들렸다는 신호일 가능성이 크다.**
+이것도 SaaS에서는 흔함.
+페이지 실험, 지역별 노출, 로그인 상태 차이, 캐시 반영 문제로 서로 다른 화면이 잠깐 섞일 수 있음.
 
-쉽게 말하면 이렇습니다.
+## 7. 지금 제일 팩트에 가까운 문장
 
-- 아까는 "빼는 거 아냐?"였고
-- 지금은 "어? 다시 있네?"가 됐고
-- 그래서 남은 질문은 **실수였나, 철회였나**로 좁혀졌음
+지금 이렇게 말하면 됨.
 
-이 질문 자체가 이미 꽤 큰 뉴스입니다.
+**Anthropic이 Claude Code를 Pro에서 완전히 뺐다고 확정하긴 이르다. 근데 가격표는 실제로 흔들렸고, 그 흔들림은 수요 폭증과 compute 압박 속에서 나온 장면이라 더 가볍게 보기 어렵다.**
+
+핵심은 이거임.
+
+- 처음엔 X였음
+- 지금은 체크임
+- 도움말은 여전히 Pro 지원임
+- Anthropic은 동시에 인프라 부담과 capacity 확장을 공식적으로 말하고 있음
+
+그러면 남는 질문은 결국 하나임.
+
+**이건 단순 실수였나, 아니면 아직 발표 안 된 상품 조정의 그림자가 먼저 보인 건가.**
+
+## 8. 당장 뭘 보면 되냐면
+
+### 첫째, pricing 페이지가 다시 또 흔들리는지
+
+이건 며칠 더 보면 됨.
+한 번 흔들린 페이지는 다시 흔들릴 수도 있음.
+
+### 둘째, 도움말 문구가 바뀌는지
+
+정책이 진짜 바뀌면 결국 여기가 따라옴.
+
+### 셋째, Claude Code 제한 체감이 달라지는지
+
+이게 제일 현실적임.
+사용자들이 실제로 Pro에서 더 빨리 막히는지, Max 쪽으로 더 강하게 유도되는지 보면 됨.
+
+## 출처
+
+- Anthropic, [Anthropic and Amazon expand collaboration for up to 5 gigawatts of new compute](https://www.anthropic.com/news/anthropic-amazon-compute)
+- Anthropic, [Powering the next generation of AI development with AWS](https://www.anthropic.com/news/anthropic-amazon-trainium)
+- Anthropic, [Expanding our use of Google Cloud TPUs and Services](https://www.anthropic.com/news/expanding-our-use-of-google-cloud-tpus-and-services)
+- Anthropic Help, [Using Claude Code with your Pro or Max plan](https://support.claude.com/en/articles/11145838-using-claude-code-with-your-pro-or-max-plan)
+- Claude Help, [Usage limit best practices](https://support.claude.com/en/articles/9797557-usage-limit-best-practices)
