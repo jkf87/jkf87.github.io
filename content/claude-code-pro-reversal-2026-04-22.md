@@ -29,6 +29,13 @@ Anthropic 가격 페이지가 오늘 꽤 시끄럽습니다.
 그러면 질문은 하나로 줄어듭니다.
 **이게 실수였나, 잠깐 넣었다 뺀 테스트였나, 아니면 반응 보고 바로 철회한 건가.**
 
+먼저 문제를 키운 장면은 이거였습니다.
+
+![Claude 가격 페이지에서 Pro 플랜의 Claude Code가 X로 보이는 화면](./images/claude-code-pro-reversal-2026-04-22/claude-pricing-pro-code-x.jpg)
+*이전 캡처. Claude Code 행의 Pro 칸이 X로 표시되어 있었음.*
+
+그리고 지금은 이렇게 다시 보입니다.
+
 ![Claude 가격 페이지에서 Pro 플랜의 Claude Code가 다시 체크로 보이는 화면](./images/claude-code-pro-reversal-2026-04-22/claude-pricing-pro-code-restored.jpg)
 *현재 캡처. Claude Code 행의 Pro 칸이 다시 체크로 보임.*
 
