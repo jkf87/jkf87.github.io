@@ -297,6 +297,42 @@ No watermark, no brand logos, no sci-fi effects, no extra text.
 
 ![바로 써먹을 4가지 사용 시나리오](./images/chatgpt-images-2-0-2026-04-22/03-use-cases.png)
 
+### 6-7. 코난쌤이 실제로 돌려본 생성 결과, 순서대로 보면 이런 흐름이었음
+
+이번에는 코난쌤이 직접 생성한 결과 이미지를 **생성 순서 그대로** 붙였습니다. 이 섹션이 좋은 이유는, 모델 소개용 데모가 아니라 **실제로 프롬프트를 밀고 당기면서 어떤 그림이 나오는지**를 한 번에 보여주기 때문입니다.
+
+![생성 1](./images/chatgpt-images-2-0-2026-04-22/user-real-tests/prompt-seq-01.png)
+*생성 1. 노트북 화면으로 ChatGPT Images 2.0의 이미지 생성 인터페이스를 보여주는 장면입니다.*
+
+![생성 2](./images/chatgpt-images-2-0-2026-04-22/user-real-tests/prompt-seq-02.png)
+*생성 2. ChatGPT Images 2.0 출시를 강조한 유튜브 썸네일 스타일의 홍보 이미지입니다.*
+
+![생성 3](./images/chatgpt-images-2-0-2026-04-22/user-real-tests/prompt-seq-03.png)
+*생성 3. AI 이미지 프롬프트의 5가지 핵심 요소를 한눈에 정리한 인포그래픽입니다.*
+
+![생성 4](./images/chatgpt-images-2-0-2026-04-22/user-real-tests/prompt-seq-04.png)
+*생성 4. AI 이미지 프롬프트가 작동하는 방식을 쉽고 깔끔하게 설명한 안내 이미지입니다.*
+
+![생성 5](./images/chatgpt-images-2-0-2026-04-22/user-real-tests/prompt-seq-05.png)
+*생성 5. 인물의 표정, 포즈, 스타일까지 정리한 프로필 가이드 시트 예시입니다.*
+
+![생성 6](./images/chatgpt-images-2-0-2026-04-22/user-real-tests/prompt-seq-06.png)
+*생성 6. 미니멀한 배경에서 이니스프리 크림 제품을 깔끔하게 담아낸 제품 사진입니다.*
+
+![생성 7](./images/chatgpt-images-2-0-2026-04-22/user-real-tests/prompt-seq-07.png)
+*생성 7. 교사가 AI 도구를 보며 수업 아이디어를 정리하는 따뜻한 작업 장면입니다.*
+
+![생성 8](./images/chatgpt-images-2-0-2026-04-22/user-real-tests/prompt-seq-08.png)
+*생성 8. 책상 위에서 자료를 검토하며 AI 도우미와 함께 일하는 모습을 담은 이미지입니다.*
+
+이렇게 순서대로 보면 포인트가 보입니다.
+
+- 초반에는 **제품 소개/썸네일 계열**이 잘 나오고
+- 중간에는 **인포그래픽, 가이드 시트 같은 구조화 이미지**가 붙고
+- 후반에는 **교육 현장 문맥의 삽화형 장면**으로 확장됨
+
+즉, 이 모델은 단순 일러스트 한 장보다도 **썸네일, 설명 이미지, 제품컷, 강의자료 비주얼**처럼 목적이 분명한 작업에서 더 잘 써먹기 좋습니다.
+
 ## 7. 이 모델은 누구에게 제일 빨리 체감되냐면, 이 사람들임
 
 | 사용자 유형 | 체감 포인트 |
