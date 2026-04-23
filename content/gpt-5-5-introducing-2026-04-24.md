@@ -19,6 +19,8 @@ description: OpenAI가 2026-04-23 GPT-5.5 출시. Terminal-Bench 2.0 82.7%, GDPv
 
 3. 코딩 벤치 핵심 두 개. **Terminal-Bench 2.0에서 82.7%** (GPT-5.4는 75.1%, Opus 4.7은 69.4%, Gemini 3.1 Pro는 68.5%). **Expert-SWE**라는 OpenAI 내부 20시간짜리 장기 코딩 작업도 73.1%. 근데 "SWE-Bench Pro"에서는 Opus 4.7이 64.3%로 더 높음. 이건 메모리화 증거가 있다고 각주가 달려있긴 함.
 
+![](./images/gpt-5-5-introducing-2026-04-24/bench-1-coding.png)
+
 4. 그리고 숫자보다 무서운 건 **토큰 효율**임. 같은 Codex 과제를 GPT-5.4보다 토큰 더 적게 써서 푼다는 얘기. 가격이 높아도 실사용 비용은 비슷하거나 더 쌈. Artificial Analysis의 Coding Index에서는 "동급 프론티어 모델 절반 비용에 SOTA"라고 못박아 뒀음.
 
 5. 초기 테스터들 멘트가 꽤 세게 나옴. Dan Shipper(Every CEO)는 "serious conceptual clarity를 가진 첫 코딩 모델"이라고 표현. 런치 후 디버깅 망한 코드를 시니어가 재작성한 걸, GPT-5.5한테 초기 상태 주고 돌려봤더니 같은 결론을 내놓더라는 거. GPT-5.4는 못 하던 거임.
@@ -31,9 +33,17 @@ description: OpenAI가 2026-04-23 GPT-5.5 출시. Terminal-Bench 2.0 82.7%, GDPv
 
 7. 코딩 밖으로 나가면 **지식 업무**가 본격적으로 붙음. OSWorld-Verified(실제 컴퓨터 환경 조작) 78.7%, GDPval(44개 직무 지식업무) 84.9%, Tau2-bench Telecom(고객 응대) 98%. 이건 "에이전트가 화면 보고 클릭해서 일을 끝낸다"는 시나리오가 이제 벤치 수치로 확인된다는 얘기.
 
+![](./images/gpt-5-5-introducing-2026-04-24/bench-2-professional.png)
+
+![](./images/gpt-5-5-introducing-2026-04-24/bench-3-tool-use.png)
+
+![](./images/gpt-5-5-introducing-2026-04-24/bench-4-computer-use.png)
+
 8. OpenAI 내부에서 85% 직원이 매주 Codex 쓴다고 밝혔음. 인상적인 예시 세 개. 홍보팀이 6개월치 강연 요청을 스코어링+리스크 프레임워크로 정리해서 Slack 에이전트로 자동 분류. 재무팀은 **K-1 세무서류 24,771건(71,637페이지)을 개인정보 제외 워크플로로 리뷰**하면서 작년 대비 2주 단축. Go-to-Market 팀은 주간 비즈니스 리포트 자동화로 주당 5~10시간 벎. 이게 "AI가 업무한다"의 실제 모습임.
 
-9. 과학 쪽에서 진짜 재밌는 건 **Ramsey number에 대한 새 증명**을 내놨다는 거. 조합론에서 수십 년 묵은 비대칭 Ramsey 수의 점근 성질에 대한 증명인데, Lean으로 검증까지 했다고 함. GeneBench(유전체 다단계 데이터 분석)에서도 GPT-5.4 19%에서 25%로 점프. BixBench에서도 공개 점수 중 최고.
+9. 과학 쪽에서 진짜 재밌는 건 **Ramsey number에 대한 새 증명**을 내놨다는 거. 조합론에서 수십 년 묵은 비대칭 Ramsey 수의 점근 성질에 대한 증명인데, Lean으로 검증까지 했다고 함. GeneBench(유전체 다단계 데이터 분석)에서도 GPT-5.4 19%에서 25%로 점프. BixBench에서도 공개 점수 중 최고. FrontierMath Tier 4(최난도)도 27.1%에서 35.4%로 올라감.
+
+![](./images/gpt-5-5-introducing-2026-04-24/bench-5-academic.png)
 
 ![](./images/gpt-5-5-introducing-2026-04-24/blog3-gene-research.webp)
 
@@ -45,9 +55,17 @@ description: OpenAI가 2026-04-23 GPT-5.5 출시. Terminal-Bench 2.0 82.7%, GDPv
 
 11. 추론 인프라 쪽 디테일도 재밌음. GB200/GB300 NVL72에서 co-design. 그리고 **Codex로 몇 주치 프로덕션 트래픽 분석해서 load balancing 휴리스틱을 다시 짰더니 토큰 생성 속도 20%+ 상승**. 모델이 자기를 돌리는 인프라를 직접 개선한 사례임. 이게 진짜 self-improving 루프의 초기 모습.
 
-12. 사이버보안은 Preparedness Framework에서 **High**로 분류. Critical은 아직 아니지만 GPT-5.4보다 명확히 한 단계 위. 그래서 기본 ChatGPT에서는 cyber 요청에 더 빡센 분류기가 붙고, 대신 `chatgpt.com/cyber`에서 방어 목적 인증된 사용자에게는 풀어줌. CyberGym 81.8%로 Opus 4.7(73.1%) 앞섬.
+12. 사이버보안은 Preparedness Framework에서 **High**로 분류. Critical은 아직 아니지만 GPT-5.4보다 명확히 한 단계 위. 그래서 기본 ChatGPT에서는 cyber 요청에 더 빡센 분류기가 붙고, 대신 `chatgpt.com/cyber`에서 방어 목적 인증된 사용자에게는 풀어줌. CyberGym 81.8%로 Opus 4.7(73.1%) 앞섬. 내부 CTF 테스트도 83.7%에서 88.1%로 상승.
 
-13. 긴 컨텍스트도 따로 짚어야 함. OpenAI MRCR v2 **512K–1M 범위에서 74.0%**. GPT-5.4는 36.6%였음. 두 배임. 1M 컨텍스트가 진짜로 쓸만해졌다는 얘기. ARC-AGI-2도 85.0%로 GPT-5.4의 73.3%에서 뛰어오름.
+![](./images/gpt-5-5-introducing-2026-04-24/bench-6-cybersecurity.png)
+
+13. 긴 컨텍스트도 따로 짚어야 함. OpenAI MRCR v2 **512K–1M 범위에서 74.0%**. GPT-5.4는 36.6%였음. 두 배임. 1M 컨텍스트가 진짜로 쓸만해졌다는 얘기. 아래 그래프에서 128K 넘는 순간부터 격차가 벌어지는 게 보임.
+
+![](./images/gpt-5-5-introducing-2026-04-24/bench-7-long-context.png)
+
+추상 추론 쪽 ARC-AGI-2도 85.0%로 GPT-5.4의 73.3%에서 뛰어오름. 11.7%p 점프.
+
+![](./images/gpt-5-5-introducing-2026-04-24/bench-8-abstract-reasoning.png)
 
 14. 근데 여기서 개발자 관점으로 진짜 중요한 게 하나 더 있음. **Codex에서 Fast 모드**. 토큰 생성 1.5배 빠르고 비용 2.5배. 400K 컨텍스트. 이걸 오픈클로 같은 멀티 에이전트 하네스에 태우면 planner는 Pro, executor는 Fast로 라우팅하는 설계가 자연스럽게 나옴.
 
