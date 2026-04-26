@@ -7,8 +7,10 @@ tags:
   - Gemini
   - AI Agent
   - Vertex AI
+  - AWS Bedrock
+  - AgentCore
   - 에이전트
-description: 구글 클라우드가 Vertex AI를 후속작 Gemini Enterprise Agent Platform으로 재편함. 모델 중심에서 에이전트 운영 인프라로 무게중심을 옮긴 신호.
+description: 구글의 Gemini Enterprise Agent Platform과 AWS의 Bedrock AgentCore를 나란히 놓고 비교. 모델 시대에서 에이전트 운영 시대로 넘어가는 두 가지 답안.
 ---
 
 1\. 2026년 4월 23일, 구글 클라우드가 새 플랫폼을 냈음. 이름은 **Gemini Enterprise Agent Platform**임.
@@ -87,11 +89,36 @@ description: 구글 클라우드가 Vertex AI를 후속작 Gemini Enterprise Age
 
 38\. **ID, 메모리, 거버넌스, 평가**. 이 네 가지를 다룰 줄 모르면 결국 시연용 장난감만 만드는 거임.
 
-39\. 구글이 이 시점에 가장 빠르게 깃발 꽂음. AWS Bedrock, MS Copilot Studio도 곧 비슷한 통합 발표할 가능성 큼.
+39\. 근데 사실 **AWS는 이미 깃발 꽂은 상태**임. **Bedrock AgentCore**라는 답안이 먼저 나와있었음.
 
-40\. 모델 시대는 끝났음. 운영 시대로 넘어왔음.
+40\. AgentCore 구성을 보면 구글하고 거의 1:1 대응됨. **Runtime / Gateway / Identity / Memory / Tools / Observability / Evaluation / Policy**. 8개 프리미티브임.
+
+41\. Google이 4영역(Build/Scale/Govern/Optimize)으로 묶어서 보여준 걸 AWS는 8개 독립 서비스로 쪼개놨음. 같은 문제, 다른 포장.
+
+42\. 매핑하면 단순함. Runtime은 둘 다 동일. Memory도 동일. Gateway는 양쪽 다 API/Lambda를 MCP 도구로 바꿔주는 역할. Identity도 같은 그림.
+
+43\. 근데 거버넌스에서 결이 다름. 구글은 **Model Armor**로 프롬프트 인젝션·데이터 유출을 LLM 런타임에서 막음. AWS는 **Cedar 정책**으로 IAM 스타일 세밀 권한 통제.
+
+44\. 철학 차이임. 구글은 "AI가 이상한 짓 하기 전에 잡자". AWS는 "애초에 권한이 없으면 못 한다". 클라우드 출신 회사답게 AWS가 더 정적·선언적.
+
+45\. 도구 전략도 다름. AWS는 **Code Interpreter, Browser Tool을 관리형 프리미티브**로 바로 줌. 구글은 ADK + MCP 위에서 직접 짜는 흐름. AWS가 "갖다 쓰면 됨" 쪽에 더 가까움.
+
+46\. 프레임워크 호환성도 차이. Google은 자기네 ADK 중심에 외부 모델 200개 지원. AWS는 한 발 더 나가서 **Strands Agents, CrewAI, LangGraph** 등 어떤 프레임워크 코드든 수정 없이 올릴 수 있다고 광고함.
+
+47\. 발표 순서도 보면 AWS가 먼저였음. AgentCore가 깔린 상태에서 구글이 통합 콘솔로 답한 격임.
+
+48\. 패턴이 보임. AWS는 **레고 블록 전략**임. 프리미티브 8개 골라서 조립. 클라우드 엔지니어 친화.
+
+49\. 구글은 **올인원 콘솔 전략**임. Build/Scale/Govern/Optimize 한 화면에서 다 보이게. 비개발자·PM도 끌어들이려는 의도.
+
+50\. 그래서 누가 이기냐? 아직 모름. 근데 한국 기업 입장에서는 어느 쪽 택하든 똑같은 4가지를 운영해야 한다는 결론은 같음.
+
+51\. **ID, 메모리, 거버넌스, 평가**. 이름만 다를 뿐 양쪽 다 이 네 개를 박아놨음. 못 다루면 결국 시연용 장난감만 만드는 거임.
+
+52\. 모델 시대는 끝났음. 운영 시대로 넘어왔음.
 
 ---
 
 **원문**: [Introducing Gemini Enterprise Agent Platform — Google Cloud Blog](https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform)
+**비교 대상**: [Amazon Bedrock AgentCore Samples — GitHub](https://github.com/awslabs/agentcore-samples)
 **소스**: [GeekNews 토픽](https://news.hada.io/topic?id=28882)
