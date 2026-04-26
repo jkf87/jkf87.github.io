@@ -12,7 +12,7 @@ tags:
 description: YC S24 창업자 Austin Wang이 만든 cmux는 단순 터미널이 아님. 수십~수백 개 AI 코딩 에이전트를 동시에 돌리는 워크플로우 전용 OS 레이어임. 메르체식 정리.
 ---
 
-![수십 개 에이전트 동시 운영하는 카오스 — 그게 cmux가 풀려는 문제임](./images/cmux-yc-s24-terminal-ai-agents-2026-04-26/multitasking.gif)
+![cmux 메인 화면](./images/cmux-yc-s24-terminal-ai-agents-2026-04-26/main-first-image.png)
 
 1\. 새 터미널이 떴음. 이름은 **cmux**.
 
@@ -30,7 +30,7 @@ description: YC S24 창업자 Austin Wang이 만든 cmux는 단순 터미널이 
 
 8\. 그래서 cmux가 들고 온 답이 **알림 링(Notification Rings)**.
 
-![에이전트 100개 띄워놨을 때 알림이 안 울리면 이 짤대로 됨](./images/cmux-yc-s24-terminal-ai-agents-2026-04-26/notification-ring.gif)
+![알림 링 — 에이전트가 입력 기다리면 파란 링이 들어옴](./images/cmux-yc-s24-terminal-ai-agents-2026-04-26/notification-rings.png)
 
 9\. 에이전트가 입력 기다리면 그 패널에 **파란 링**이 들어옴. 탭에도 동일하게 표시.
 
@@ -38,7 +38,7 @@ description: YC S24 창업자 Austin Wang이 만든 cmux는 단순 터미널이 
 
 11\. 두 번째 무기는 **사이드바**. 일반 터미널엔 없는 정보가 박혀있음.
 
-![터미널 띄워놓고 사이드바에 git/PR/포트까지 보면 사실상 이 짤 됨](./images/cmux-yc-s24-terminal-ai-agents-2026-04-26/hacker-terminal.gif)
+![수직 탭 + 가로 분할로 워크스페이스 정리](./images/cmux-yc-s24-terminal-ai-agents-2026-04-26/vertical-horizontal-tabs-and-splits.png)
 
 12\. git 브랜치, PR 상태, 작업 디렉토리, 열린 포트, 알림 컨텍스트가 워크스페이스마다 표시됨.
 
@@ -54,7 +54,7 @@ description: YC S24 창업자 Austin Wang이 만든 cmux는 단순 터미널이 
 
 18\. 다섯 번째 — **Claude Code Teams** 네이티브 통합. 팀원이 띄운 에이전트랑 실시간 협업되는 모드.
 
-![Claude Code Teams 모드 — 팀원 에이전트랑 같이 끌고 가는 그림](./images/cmux-yc-s24-terminal-ai-agents-2026-04-26/teamwork.gif)
+![Claude Code Teams 모드 — 팀원 에이전트와 협업](./images/cmux-yc-s24-terminal-ai-agents-2026-04-26/claude-code-teams.png)
 
 19\. 여섯 번째 — **세션 복원**. 레이아웃, 디렉토리, 스크롤백, 브라우저 히스토리까지 다 보존됨.
 
