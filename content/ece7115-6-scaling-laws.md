@@ -1,31 +1,28 @@
 ---
-title: "ECE7115 6강: Scaling Laws"
+title: "ECE7115 6강 정리: Scaling Laws"
 date: 2026-04-26
+slug: ece7115-6-scaling-laws
 tags:
-  - ai
-  - llm
-  - lecture-notes
   - ece7115
   - scaling-laws
-  - chinchilla
-  - kaplan
-description: "ECE7115 6강 Scaling Laws 정리. Kaplan과 Chinchilla 법칙, compute-optimal 학습, 모델·데이터·연산량 사이의 거듭제곱 관계, 그리고 over-training 트렌드까지 짧게 정리함."
+  - llm
+  - lecture-note
+description: "ECE7115 6강 Scaling Laws를 데이터/모델 규모, 하이퍼파라미터 추정, compute allocation 관점으로 짧게 정리한 노트."
+aliases:
+  - ece7115-6-scaling-laws/index
 ---
 
-# ECE7115 6강: Scaling Laws
+ECE7115 6강은 큰 모델을 감으로 키우는 대신, 작은 실험에서 나온 scaling law로 큰 모델을 예측하는 방법을 정리한다. 데이터, 모델 크기, compute 배분을 같은 틀에서 보는 강의다.
 
-![Scaling laws cover](./images/ece7115-6-scaling-laws/cover.png)
+![](./images/ece7115-6-scaling-laws/cover.png)
 
-## 한줄 정리
-Scaling law는 작은 모델 몇 개로 큰 모델의 손실을 예측하는 거듭제곱(power-law) 규칙으로, 하이퍼파라미터 선택과 compute 분배를 데이터 기반으로 결정하게 해줌.
-
-## 핵심 포인트
-- Kaplan(2020)은 데이터·모델 크기와 test loss가 log-log 공간에서 선형(거듭제곱) 관계를 가지며, 데이터 구성은 기울기가 아니라 offset만 바꾼다는 점을 보였음. 모델 모양(aspect ratio, depth/width)은 성능에 약하게만 영향을 줌.
-- 작은 모델로 scaling law를 먼저 fit한 뒤 큰 모델로 외삽하면, optimizer·architecture(Transformer vs LSTM)·MoE 같은 설계 선택을 큰 학습 비용 없이 비교할 수 있음. critical batch size는 목표 loss가 낮아질수록 커진다는 점도 같은 방식으로 예측됨.
-- Kaplan 법칙은 "데이터보다 모델 키우기"를 권했지만, Chinchilla(Hoffmann+ 2022)는 cosine LR scheduler의 T_max 설정 오류를 지적하며 모델 크기를 과대평가했다고 반박함.
-- Chinchilla는 IsoFLOPs 등 3가지 방법으로 fit한 결과, compute-optimal 비율로 파라미터당 약 20 토큰(20:1)을 학습해야 한다고 제안함. 즉, 같은 compute라면 모델은 더 작고 데이터는 더 많아야 함.
-- 다만 실제 배포에서는 inference 비용이 지배적이라 일부러 over-train함. GPT-3는 2 tokens/param, Chinchilla는 20, LLaMA 2 70B는 29, LLaMA 3 70B는 215 tokens/param까지 늘어났고, downstream 성능 scaling은 upstream loss만큼 깔끔하게 예측되지 않는다는 점도 주의해야 함.
+- scaling laws는 작은 모델 결과를 바탕으로 큰 모델 성능을 예측하는 실용 규칙이다.
+- 데이터 크기와 오류, 모델 크기와 오류는 둘 다 power-law 형태로 설명되는 경우가 많다.
+- 데이터 구성은 보통 slope보다 offset에 더 큰 영향을 준다.
+- 실제로는 제한된 데이터에서 반복 학습과 데이터 필터링 전략도 scale에 맞춰 조정해야 한다.
+- 모델 크기를 볼 때는 embedding 파라미터보다 non-embedding 파라미터를 기준으로 보는 경우가 많다.
+- 결론은 compute allocation이다. 더 많은 데이터를 쓸지, 더 큰 모델을 쓸지, scaling law로 먼저 가늠한다.
 
 ## Source
-- 원본 PDF: [6_scaling_laws.pdf](https://gcl-inha.github.io/ece7115/slides/6_scaling_laws.pdf)
+- 원문 PDF: [6_scaling_laws.pdf](https://gcl-inha.github.io/ece7115/slides/6_scaling_laws.pdf)
 - 강의 페이지: [ECE7115](https://gcl-inha.github.io/ece7115/)
