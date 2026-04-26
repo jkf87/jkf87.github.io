@@ -28,3 +28,10 @@ LLM은 단순히 더 큰 Transformer가 아니라, pre-training 이후에 fine-t
 ## Source
 - 원본 PDF: [3_basics_llm.pdf](https://gcl-inha.github.io/ece7115/slides/3_basics_llm.pdf)
 - 강의 페이지: [ECE7115](https://gcl-inha.github.io/ece7115/)
+
+
+---
+
+**시리즈 네비**
+
+[← 이전 편: ECE7115 2강 — Transformer Basics](./ece7115-2-basics-transformer)  |  [ECE7115 4강 — Modern LLM Architecture 다음 편 →](./ece7115-4-modern-llm-architecture)

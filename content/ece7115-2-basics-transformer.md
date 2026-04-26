@@ -28,3 +28,10 @@ description: "ECE7115 2강 Transformer 기초를 정리한 노트. attention, se
 ## Source
 - 원본 PDF: [2_basics_transformer.pdf](https://gcl-inha.github.io/ece7115/slides/2_basics_transformer.pdf)
 - 강의 페이지: [ECE7115](https://gcl-inha.github.io/ece7115/)
+
+
+---
+
+**시리즈 네비**
+
+[← 이전 편: ECE7115 1강 — Resource Accounting](./ece7115-1-resource-accounting)  |  [ECE7115 3강 — LLM Basics 다음 편 →](./ece7115-3-basics-llm)

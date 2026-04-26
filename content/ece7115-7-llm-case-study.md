@@ -30,3 +30,10 @@ LLM은 완전히 새로운 구조를 계속 만든다기보다, 검증된 뼈대
 ## Source
 - 원본 PDF: [7_llm_case_study.pdf](https://gcl-inha.github.io/ece7115/slides/7_llm_case_study.pdf)
 - 강의 페이지: [ECE7115](https://gcl-inha.github.io/ece7115/)
+
+
+---
+
+**시리즈 네비**
+
+[← 이전 편: ECE7115 6강 — Scaling Laws](./ece7115-6-scaling-laws)  |  [ECE7115 8강 — Understanding GPUs 다음 편 →](./ece7115-8-understanding-gpus)

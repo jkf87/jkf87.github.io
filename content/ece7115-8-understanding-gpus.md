@@ -31,3 +31,10 @@ GPU 성능을 이해하려면 연산량만 볼 게 아니라, **데이터를 얼
 ## Source
 - 원본 PDF: [8_understanding_gpus.pdf](https://gcl-inha.github.io/ece7115/slides/8_understanding_gpus.pdf)
 - 강의 페이지: [ECE7115](https://gcl-inha.github.io/ece7115/)
+
+
+---
+
+**시리즈 네비**
+
+[← 이전 편: ECE7115 7강 — LLM Case Study](./ece7115-7-llm-case-study)  |  [ECE7115 9강 — Parallelism 다음 편 →](./ece7115-9-parallelism)
