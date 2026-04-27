@@ -57,13 +57,25 @@ aliases:
 
 16. 멀티 레포 그룹 기능도 있음. `gitnexus group create`로 마이크로서비스 묶음을 정의하고 `group sync`로 레포 간 컨트랙트(API 콜, 메시지 큐 같은 것)를 추출해서 매칭함. 그러면 "프론트의 이 호출이 백엔드 어느 핸들러로 가는지"를 그래프에서 직접 따라갈 수 있음.
 
-17. 라이선스는 PolyForm Noncommercial임. 개인 학습/사이드 프로젝트는 자유, 회사에서 매출 일으키는 용도면 별도 상용 라이선스가 필요함. 엔터프라이즈는 akonlabs.com에서 SaaS와 셀프호스트로 팔고, PR 자동 영향 분석, 자동 갱신 위키, 멀티레포, OCaml 지원 같은 게 추가됨.
+17. 직접 한번 돌려봄. `npx gitnexus@latest serve`만 치면 로컬 서버가 뜨고, 브라우저로 들어가면 첫 화면이 이렇게 깔끔하게 받아줌. GitHub URL 탭에 분석하고 싶은 레포 주소 붙여넣고 `Analyze Repository` 누르면 끝. 데이터는 다 로컬에 머문다고 친절하게 적혀 있음(Public repos only · Cloned locally · No data leaves your machine).
 
-18. 한계도 분명함. 첫째, 색인 시간이 큰 레포에서는 꽤 걸림. 임베딩 빼고 빠르게 돌리는 `--skip-embeddings` 옵션이 있는 이유임. 둘째, Tree-sitter 기반이라 지원 언어 밖이면 그래프 품질이 떨어짐. 셋째, 코드 변경이 잦으면 stale 상태 관리가 중요함(다행히 PostToolUse 훅이 어느 정도 받쳐줌).
+![GitNexus 로컬 서버 첫 화면 - GitHub URL 입력창에 jkf87/ohmyclaw 주소 붙여넣은 모습](./images/gitnexus-knowledge-graph-code-agents-2026-04-27/screenshot-1-paste-url.jpg)
 
-19. 그래도 의미 있는 이유는, "에이전트가 코드를 텍스트로만 본다"는 가정 자체를 깨려 한다는 점임. 같은 모델이 같은 토큰 예산으로 더 멀리 보게 만드는 가장 빠른 방법은 모델이 아니라 컨텍스트 파이프라인을 손보는 거임. GitNexus는 그 파이프라인 한 칸을 그래프로 채움.
+18. 작은 레포부터 시험. 직접 만든 ohmyclaw 레포(에이전트/도큐멘트 정도만 들어 있는 가벼운 저장소)를 넣어보니 514 노드 / 503 엣지짜리 그래프가 금방 떴음. 좌측 익스플로러에 `agents/`, `docs/`, `examples/`, `orchestration/` 폴더 트리가 그대로 보이고, 그래프에서는 prompts와 skills가 중앙에 모여 있고 docs/state/routing 같은 작은 클러스터가 가장자리에 흩어져 있음. 이 정도 규모는 인간이 한눈에 구조를 파악할 수 있음.
 
-20. 정리하면, 큰 레포를 코딩 에이전트와 같이 굴리는 사람한테는 한 번 깔아볼 만함. CLI는 그냥 `npx gitnexus analyze` → `npx gitnexus setup` 두 줄임. 결과가 별로면 `gitnexus clean`으로 깔끔히 지우면 됨. 깃허브 별 30k가 한 달 만에 모인 데는 이유가 있는 도구임.
+![GitNexus로 ohmyclaw 레포 분석 결과 - 514 노드 503 엣지의 단정한 그래프](./images/gitnexus-knowledge-graph-code-agents-2026-04-27/screenshot-2-ohmyclaw-graph.jpg)
+
+19. 큰 레포는 이야기가 다름. openclaw(메인 레포) 넣었더니 240,796 노드 / 801,087 엣지가 나오면서 화면이 핑크-블루 폭발 상태가 됨. 좌측 트리도 `docs/`, `apps/` 같은 폴더 안쪽이 빽빽하게 차 있고 하단에 `Layout optimizing...`이 한참 도는 중이었음. 가운데에 `Sponsor: need to buy some API credits to run SWE-bench` 토스트까지 뜨는 걸 보면 임베딩/AI 호출 비용이 만만치 않다는 것도 같이 알게 됨. 큰 레포에 무턱대고 돌리면 매우 느려지고 자원도 많이 먹으니 `--skip-embeddings`나 작은 서브폴더부터 시작하는 게 안전함.
+
+![GitNexus로 openclaw 메인 레포 분석 결과 - 240,796 노드 801,087 엣지의 거대 그래프](./images/gitnexus-knowledge-graph-code-agents-2026-04-27/screenshot-3-openclaw-graph.jpg)
+
+20. 라이선스는 PolyForm Noncommercial임. 개인 학습/사이드 프로젝트는 자유, 회사에서 매출 일으키는 용도면 별도 상용 라이선스가 필요함. 엔터프라이즈는 akonlabs.com에서 SaaS와 셀프호스트로 팔고, PR 자동 영향 분석, 자동 갱신 위키, 멀티레포, OCaml 지원 같은 게 추가됨.
+
+21. 한계도 분명함. 첫째, 색인 시간이 큰 레포에서는 꽤 걸림. 임베딩 빼고 빠르게 돌리는 `--skip-embeddings` 옵션이 있는 이유임. 둘째, Tree-sitter 기반이라 지원 언어 밖이면 그래프 품질이 떨어짐. 셋째, 코드 변경이 잦으면 stale 상태 관리가 중요함(다행히 PostToolUse 훅이 어느 정도 받쳐줌).
+
+22. 그래도 의미 있는 이유는, "에이전트가 코드를 텍스트로만 본다"는 가정 자체를 깨려 한다는 점임. 같은 모델이 같은 토큰 예산으로 더 멀리 보게 만드는 가장 빠른 방법은 모델이 아니라 컨텍스트 파이프라인을 손보는 거임. GitNexus는 그 파이프라인 한 칸을 그래프로 채움.
+
+23. 정리하면, 큰 레포를 코딩 에이전트와 같이 굴리는 사람한테는 한 번 깔아볼 만함. CLI는 그냥 `npx gitnexus@latest serve`로 띄우고 작은 레포부터 넣어보면 됨. 결과가 별로면 `gitnexus clean`으로 깔끔히 지우면 됨. 깃허브 별 30k가 한 달 만에 모인 데는 이유가 있는 도구임.
 
 ---
 
