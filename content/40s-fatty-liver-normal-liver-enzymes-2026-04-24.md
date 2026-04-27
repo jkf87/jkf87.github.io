@@ -48,3 +48,10 @@ aliases:
 12. 결론은 단순함. 40대 건강검진에서 간수치 정상은 좋은 신호이긴 한데 끝난 신호는 아님. 피검사 숫자 하나로 안심하기보다 생활습관과 복부초음파까지 같이 봐야 지방간을 덜 놓침.
 
 13. 같이 보면 좋은 자료도 분명함. 질병관리청 국가건강정보포털 알코올 간질환(https://health.kdca.go.kr/healthinfo/biz/health/gnrlzHealthInfo/gnrlzHealthInfo/gnrlzHealthInfoView.do?cntnts_sn=5310), 서울대학교병원 지방간 안내(https://www.snuh.org/health/nMedInfo/nView.do?category=DIS&medid=AA000321), 서울아산병원 간기능 검사 설명(https://www.amc.seoul.kr/asan/mobile/healthinfo/management/managementDetail.do?managementId=36)임.
+
+---
+
+**같이 보면 좋은 글**
+- [[40s-waistline-90-85-metabolic-syndrome-2026-04-26|40대 허리둘레 남자 90·여자 85cm, 대사증후군 기준]]
+- [[40s-triglycerides-200-not-just-cheat-day-2026-04-27|40대 중성지방 200, 회식 탓만 할 수 없는 이유]]
+- [[40s-prediabetes-fasting-glucose-100-2026-04-22|40대 공복혈당 100, 당뇨 전단계 신호 7가지]]

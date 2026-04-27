@@ -1,5 +1,5 @@
 ---
-title: "별 53k 받은 TradingAgents, LLM 4명한테 종목 토론시키고 결정 받는 오픈소스"
+title: "TradingAgents 사용법 — LLM 9명이 주식 분석·매매 결정하는 멀티에이전트 오픈소스"
 date: 2026-04-28
 slug: tradingagents-multi-agent-trading-llm-2026-04-28
 tags:
@@ -12,7 +12,7 @@ tags:
   - 백테스트
   - 재테크
   - 깃허브트렌딩
-description: "한 사람의 분석가가 아니라 펀더멘털·뉴스·심리·기술 분석가 4명에 강세파·약세파 연구원, 트레이더, 리스크 매니저까지 9명이 LLM으로 협력해서 매수·매도를 결정하는 오픈소스. 누적 별 5만 3천, arXiv 논문도 같이 있음. 어떤 구조이고 어떻게 돌리는지 정리함."
+description: "TradingAgents는 LLM 9명이 주식을 토론해 매수·매도를 결정하는 멀티에이전트 오픈소스. GitHub 별 53k, LangGraph 기반. 펀더멘털·뉴스·심리·기술 분석부터 리스크 검토까지, 설치법·구조·한계 한국어 정리."
 aliases:
   - tradingagents-multi-agent-trading-llm-2026-04-28/index
 ---
@@ -73,3 +73,10 @@ aliases:
 - 디스코드 커뮤니티: [TradingResearch](https://discord.com/invite/hk9PGKShPK)
 
 > 이 글은 정보 제공 목적이며, 매매 자문이 아님. 실제 투자 결정은 본인 책임임.
+
+---
+
+**같이 보면 좋은 글**
+- [[mattpocock-skills-real-engineers-claude-2026-04-27|Claude Code Skills 22개 — mattpocock .claude 폴더 공개]]
+- [[chatgpt-gpt5-5-40s-work-2026-04-24|ChatGPT GPT-5.5 — 40대 직장인이 당장 건질 게 뭔지 정리]]
+- [[cmux-yc-s24-terminal-ai-agents-2026-04-26|cmux — AI 에이전트 100개 돌리는 터미널]]

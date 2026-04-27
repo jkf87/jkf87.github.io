@@ -47,3 +47,10 @@ aliases:
 12. 결론은 단순함. 40대 허리둘레 남 90cm, 여 85cm는 아직 괜찮다는 말이 아니라 지금부터 관리하면 늦지 않았다는 신호에 가까움. 체중계보다 줄자를 먼저 꺼내는 사람이 결국 혈압, 혈당, 지방간까지 덜 끌려감.
 
 13. 같이 보면 되는 자료는 질병관리청 국가건강정보포털 비만 관리 자료(https://health.kdca.go.kr/healthinfo/biz/health/ntcnInfo/healthSourc/thtimtCntnts/thtimtCntntsView.do?thtimt_cntnts_sn=65), 서울아산병원 건강증진센터 대사증후군 클리닉(https://health.amc.seoul.kr/health/maintain/clinic.do), 서울아산병원 가정의학과 비만 설명(https://www.amc.seoul.kr/asan/depts/fm/K/bbsDetail.do?contentId=248826&menuId=378), 서울아산병원 뉴스룸 복부비만 측정 안내(https://news.amc.seoul.kr/news/con/detail.do?cntId=7642)임.
+
+---
+
+**같이 보면 좋은 글**
+- [[40s-blood-pressure-130-80-warning-2026-04-25|40대 혈압 130/80, 정상 끝자락이 아님]]
+- [[40s-prediabetes-fasting-glucose-100-2026-04-22|40대 공복혈당 100, 당뇨 전단계 신호 7가지]]
+- [[40s-fatty-liver-normal-liver-enzymes-2026-04-24|40대 지방간, 간수치 정상인데도 놓치는 이유 7가지]]

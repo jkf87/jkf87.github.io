@@ -49,3 +49,10 @@ aliases:
 13. 결론은 이 정도임. 40대 요산 수치 7은 아무 증상 없으니 잊어도 되는 숫자도 아니고, 바로 겁먹고 약부터 찾을 숫자도 아님. 대신 생활습관을 손보기 시작해야 하는 애매한 출발선에 더 가까움. 이 시점에 방향을 바꾸면 통풍 발작 오기 전에 끊을 수 있고, 그냥 넘기면 나중에 발가락이 대신 말해줄 가능성이 커짐.
 
 14. 같이 보면 좋은 자료는 질병관리청 국가건강정보포털 임상 화학 검사(https://health.kdca.go.kr/healthinfo/biz/health/gnrlzHealthInfo/gnrlzHealthInfo/gnrlzHealthInfoView.do?cntnts_sn=5531), 서울대학교병원 통풍 안내(https://www.snuh.org/health/nMedInfo/nView.do?category=DIS&medid=AA000056), 서울아산병원 통풍 질환백과(https://www.amc.seoul.kr/asan/mobile/healthinfo/disease/diseaseDetail.do?contentId=30832), 서울아산병원 저퓨린 식사요법(https://www.amc.seoul.kr/asan/healthinfo/mealtherapy/mealTherapyDetail.do?mtId=96)임.
+
+---
+
+**같이 보면 좋은 글**
+- [[40s-blood-pressure-130-80-warning-2026-04-25|40대 혈압 130/80, 정상 끝자락이 아님]]
+- [[40s-prediabetes-fasting-glucose-100-2026-04-22|40대 공복혈당 100, 당뇨 전단계 신호 7가지]]
+- [[40s-waistline-90-85-metabolic-syndrome-2026-04-26|40대 허리둘레 남자 90·여자 85cm, 대사증후군 기준]]

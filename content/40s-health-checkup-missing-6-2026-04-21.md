@@ -89,3 +89,10 @@ aliases:
 - [2026년 국가건강검진 변경점 정리](https://blog.naver.com/PostView.naver?blogId=gesu13&logNo=224189731712&redirect=Dlog)
 - [40세 이상 필수 건강검진 리스트 — 김훈하 약사](https://www.youtube.com/watch?v=uTtVCJhFVDg)
 - [40대 추가 검사 6가지 — 치아/녹내장/복부초음파](https://www.instagram.com/p/DRttUlmEadj/)
+
+---
+
+**같이 보면 좋은 글**
+- [[40s-blood-pressure-130-80-warning-2026-04-25|40대 혈압 130/80, 정상 끝자락이 아님]]
+- [[40s-male-menopause-signals-2026-04-22|40대 남자 갱년기 신호 7가지]]
+- [[40s-prediabetes-fasting-glucose-100-2026-04-22|40대 공복혈당 100, 당뇨 전단계 신호 7가지]]

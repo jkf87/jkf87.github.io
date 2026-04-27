@@ -1,5 +1,5 @@
 ---
-title: "27k 별 받은 mattpocock의 클로드 스킬 22개, 본인 .claude 폴더를 통째 공개해버림"
+title: "Claude Code Skills 22개 한국어 정리 — mattpocock .claude 폴더 공개, TDD·PRD·grill-me 설치·활용법"
 date: 2026-04-27
 slug: mattpocock-skills-real-engineers-claude-2026-04-27
 tags:
@@ -12,7 +12,7 @@ tags:
   - 개발도구
   - 코딩에이전트
   - 깃허브트렌딩
-description: "TypeScript 인플루언서 mattpocock가 본인이 매일 쓰는 Claude 스킬 22개를 .claude/skills 폴더 그대로 공개함. 하루에 별 5,500개 받으면서 깃허브 트렌딩 1위. 'vibe coding 말고 진짜 엔지니어링'이라는 메시지가 핵심. 어떤 스킬이 들었고 왜 화제인지 정리함."
+description: "Claude Code Skills 22개 한국어 정리. mattpocock이 실제 쓰는 TDD·PRD·grill-me·git-guardrails 스킬 설치법과 구조. npx skills@latest add로 골라 쓰는 방법, 한국 팀 적용 가이드까지."
 aliases:
   - mattpocock-skills-real-engineers-claude-2026-04-27/index
 ---
@@ -56,3 +56,10 @@ aliases:
 - GitHub: [mattpocock/skills](https://github.com/mattpocock/skills) (★ 27,702 / 오늘 +5,551)
 - AI Hero 뉴스레터: [aihero.dev/s/skills-newsletter](https://www.aihero.dev/s/skills-newsletter)
 - 설치: `npx skills@latest add mattpocock/skills/<skill-name>`
+
+---
+
+**같이 보면 좋은 글**
+- [[tradingagents-multi-agent-trading-llm-2026-04-28|TradingAgents — LLM 9명이 주식 분석하는 멀티에이전트 오픈소스]]
+- [[awesome-codex-skills-composio-2026-04-26|Codex CLI Skill 생태계 — ComposioHQ awesome 리스트]]
+- [[cmux-yc-s24-terminal-ai-agents-2026-04-26|cmux — AI 에이전트 100개 돌리는 터미널]]

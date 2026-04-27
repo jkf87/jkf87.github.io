@@ -49,3 +49,10 @@ aliases:
 13. 결론은 단순함. 40대 혈압 130/80은 아직 괜찮다는 뜻이 아니라 지금부터 누적되기 시작했다는 뜻에 가까움. 숫자가 더 오르기 전에 기록하고, 줄이고, 걷고, 필요하면 진료실 확인까지 붙이는 사람이 결국 오래 덜 고생함.
 
 14. 같이 보면 되는 자료는 질병관리청 국가건강정보포털 혈압 안내(https://health.kdca.go.kr/healthinfo/biz/health/ntcnInfo/healthSourc/thtimtCntnts/thtimtCntntsView.do?thtimt_cntnts_sn=28), 주요 고위험군 관리법 중 고혈압 항목(https://health.kdca.go.kr/healthinfo/biz/health/ntcnInfo/healthSourc/thtimtCntnts/thtimtCntntsView.do?thtimt_cntnts_sn=124), 고혈압 예방 Q&A(https://health.kdca.go.kr/healthinfo/biz/health/ntcnInfo/healthSourc/thtimtCntnts/thtimtCntntsView.do?thtimt_cntnts_sn=57), 서울아산병원 가정의학과 고혈압 설명(https://www.amc.seoul.kr/asan/depts/fm/K/bbsDetail.do?contentId=215975&menuId=378), 질병관리청 운동과 혈압 관리 자료(https://health.kdca.go.kr/healthinfo/biz/health/ntcnInfo/healthSourc/thtimtCntnts/thtimtCntntsView.do?thtimt_cntnts_sn=44), 질병관리청 고혈압성 콩팥병 자료(https://health.kdca.go.kr/healthinfo/biz/health/gnrlzHealthInfo/gnrlzHealthInfo/gnrlzHealthInfoView.do?cntnts_sn=6013)임.
+
+---
+
+**같이 보면 좋은 글**
+- [[40s-waistline-90-85-metabolic-syndrome-2026-04-26|40대 허리둘레 남자 90·여자 85cm, 대사증후군 기준]]
+- [[40s-prediabetes-fasting-glucose-100-2026-04-22|40대 공복혈당 100, 당뇨 전단계 신호 7가지]]
+- [[40s-triglycerides-200-not-just-cheat-day-2026-04-27|40대 중성지방 200, 회식 탓만 할 수 없는 이유]]

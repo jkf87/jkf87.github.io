@@ -54,3 +54,10 @@ aliases: [40s-prediabetes-fasting-glucose-100-2026-04-22/index]
 13. 결론은 간단함. 40대 공복혈당 **100**은 괜찮은 숫자에 걸친 게 아니라 멈춰서 생활을 점검하라는 첫 신호였음.
 
 14. 같이 보면 되는 자료도 분명함. [대한진단검사의학회 공복혈당장애와 HbA1c 검사 안내](https://www.kslm.org/public/content/diagnostic/sub03.html), [질병관리청 국가건강정보포털 당뇨병 기본 정보](https://health.kdca.go.kr/healthinfo/biz/health/gnrlzHealthInfo/gnrlzHealthInfo/gnrlzHealthInfoView.do?cntnts_sn=5305), [국민건강보험공단 건강iN 공복혈당장애 안내](https://www.nhis.or.kr/magazin/mobile/201706/c02.html), [서울시 건강증진 자료실 당뇨병 전단계 안내](https://www.seoulhp.com/seoul/bbs/BMSR00054/view.do?boardId=2615&menuNo=200154)를 같이 보면 흐름이 더 잘 보임.
+
+---
+
+**같이 보면 좋은 글**
+- [[40s-fatty-liver-normal-liver-enzymes-2026-04-24|40대 지방간, 간수치 정상인데도 놓치는 이유 7가지]]
+- [[40s-waistline-90-85-metabolic-syndrome-2026-04-26|40대 허리둘레 남자 90·여자 85cm, 대사증후군 기준]]
+- [[40s-triglycerides-200-not-just-cheat-day-2026-04-27|40대 중성지방 200, 회식 탓만 할 수 없는 이유]]

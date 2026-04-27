@@ -51,3 +51,10 @@ aliases:
 14. 결론은 이 정도임. 40대 중성지방 200은 전날 회식 탓일 수도 있음. 근데 그 말만 믿고 끝내기엔 이미 높음 구간이고, 혈관 위험과 생활습관 문제를 같이 시사하는 숫자임. 재검은 하되 방심은 하지 않는 쪽이 맞음. 한 번의 숫자를 무시하지 않는 사람이 결국 약 먹기 전 구간에서 방향을 바꾸게 됨.
 
 15. 같이 보면 좋은 자료는 질병관리청 국가건강정보포털 이상지질혈증 관리 자료(https://health.kdca.go.kr/healthinfo/biz/health/ntcnInfo/healthSourc/thtimtCntnts/thtimtCntntsView.do?thtimt_cntnts_sn=124), 서울아산병원 중성지방 검사 안내(https://www.amc.seoul.kr/asan/mobile/healthinfo/management/managementDetail.do?managementId=82), 서울아산병원 이상지질혈증 질환백과(https://cancer.amc.seoul.kr/asan/mobile/healthinfo/disease/diseaseDetail.do?contentId=31326)임.
+
+---
+
+**같이 보면 좋은 글**
+- [[40s-waistline-90-85-metabolic-syndrome-2026-04-26|40대 허리둘레 남자 90·여자 85cm, 대사증후군 기준]]
+- [[40s-fatty-liver-normal-liver-enzymes-2026-04-24|40대 지방간, 간수치 정상인데도 놓치는 이유 7가지]]
+- [[40s-prediabetes-fasting-glucose-100-2026-04-22|40대 공복혈당 100, 당뇨 전단계 신호 7가지]]
