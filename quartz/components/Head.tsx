@@ -86,6 +86,7 @@ export default (() => {
         <meta name="description" content={description} />
         <meta name="generator" content="Quartz" />
         <meta name="google-site-verification" content="zTUVPCoug30S_y-ADQ9oYUkAQyOXxBI6DebT4srSINk" />
+        <meta name="google-adsense-account" content="ca-pub-4778921872258874" />
 
         {css.map((resource) => CSSResourceToStyleElement(resource, true))}
         {js
