@@ -39,7 +39,7 @@ npx getdesign@latest add apple
 
 ## Apple 디자인 시스템
 
-![](./images/getdesign-md-apple-bmw-starbucks-design-system-2026-04-29/apple-logo.png)
+![getDesign.md Apple 디자인 시스템 페이지](./images/getdesign-md-apple-bmw-starbucks-design-system-2026-04-29/apple-screenshot.png)
 
 **한 줄 요약:** "사진이 박물관 갤러리처럼 보이는 인터페이스"
 
@@ -91,7 +91,7 @@ npx getdesign@latest add apple
 
 ## BMW 디자인 시스템
 
-![](./images/getdesign-md-apple-bmw-starbucks-design-system-2026-04-29/bmw-logo.png)
+![getDesign.md BMW 디자인 시스템 페이지](./images/getdesign-md-apple-bmw-starbucks-design-system-2026-04-29/bmw-screenshot.png)
 
 **한 줄 요약:** "독일 엔지니어링 정밀도 — 직사각형과 두 가지 굵기만으로"
 
@@ -145,7 +145,7 @@ npx getdesign@latest add bmw
 
 ## Starbucks 디자인 시스템
 
-![](./images/getdesign-md-apple-bmw-starbucks-design-system-2026-04-29/starbucks-logo.png)
+![getDesign.md Starbucks 디자인 시스템 페이지](./images/getdesign-md-apple-bmw-starbucks-design-system-2026-04-29/starbucks-screenshot.png)
 
 **한 줄 요약:** "카페 앞치마 초록을 4단 그린 시스템으로 — 따뜻한 크림 캔버스 위에"
 
