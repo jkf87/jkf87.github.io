@@ -27,6 +27,9 @@ Addy Osmani는 그 프레임 자체가 틀렸다고 함.
 
    Claude Code, Cursor, Codex, Aider, Cline 전부 하네스임. 밑에 깔린 모델이 같아도 동작이 다른 이유가 이거임.
 
+![하네스 구조 해부도](./images/agent-harness-engineering/harness-anatomy.jpeg)
+*하네스 구조: 모델을 중심으로 컨텍스트 주입, 제어 흐름, 액션, 영속성, 관찰이 둘러싸고 있다.*
+
 2. **좋은 하네스 > 좋은 모델**
 
    Osmani가 직접 경험한 사례: Viv 팀이 코딩 에이전트를 Terminal Bench 2.0 순위 Top 30 → Top 5로 올림. 모델 바꾼 게 아님. **하네스만 바꿨음.**
@@ -74,6 +77,9 @@ Addy Osmani는 그 프레임 자체가 틀렸다고 함.
 
    툴도 마찬가지. 10개 집중된 툴 > 50개 중복 툴. 그리고 MCP 서버 설명이 프롬프트에 들어가니 악성 MCP가 프롬프트 인젝션할 수 있음 — 보안 리스크 있음.
 
+![하네스 동작 매핑](./images/agent-harness-engineering/harness-behavior-mapping.jpeg)
+*원하는 동작 → 하네스 설계 매핑: 각 구성요소는 모델이 혼자 달성할 수 없는 동작에서 도출된다.*
+
 7. **하네스는 줄어들지 않음, 이동할 뿐임**
 
    "모델이 좋아지면 하네스 필요 없어지는 거 아님?"
@@ -82,6 +88,9 @@ Addy Osmani는 그 프레임 자체가 틀렸다고 함.
 
    **가정이 바뀌면 scaffolding도 바뀌는 것이지, 없어지는 게 아님.**
 
+![모델-하네스 트레이닝 루프](./images/agent-harness-engineering/harness-training-loop.jpeg)
+*모델-하네스 트레이닝 루프: 하네스에서 유용한 프리미티브 발견 → 표준화 → 다음 세대 모델 훈련에 활용 → 반복.*
+
 8. **HaaS: 하네스 서비스로서의 에이전트**
 
    Claude Agent SDK, Codex SDK, OpenAI Agents SDK — 전부 같은 방향임.
@@ -89,6 +98,9 @@ Addy Osmani는 그 프레임 자체가 틀렸다고 함.
    이제 루프, 툴, 컨텍스트 관리, 훅, 샌드박스를 직접 만들지 않아도 됨. 설정하면 됨. 작업 포인트가 "루프 만들기"에서 "도메인 특화 프롬프트/툴 설계"로 이동함.
 
    Viv의 결론: "좋은 에이전트 개발은 반복의 연속. v0.1 없이는 반복도 없음."
+
+![Claude Code 아키텍처](./images/agent-harness-engineering/claude-code-architecture.jpeg)
+*Claude Code 아키텍처 레이어: 입력층·지식층·통합층·실행층·출력층·관찰층·멀티에이전트층으로 구성된 완성된 하네스 구조.*
 
 ---
 
