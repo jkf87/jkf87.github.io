@@ -120,7 +120,7 @@ AionUi에는 Team Mode도 있음. 구조는 리더-팀원 방식임.
 - 결과를 비동기 메일박스와 작업 보드로 공유함
 - Leader가 집계함
 
-공식 문서에서는 Claude Code, Codex, Gemini, Snow CLI, Aion CLI 등을 Leader 또는 Teammate 백엔드로 언급함. ACP(Agent Communication Protocol) 기반의 멀티 에이전트 조정 레이어도 함께 설명되어 있음.
+공식 문서에서는 Claude Code, Codex, Gemini, Snow CLI, Aion CLI 등을 Leader 또는 Teammate 백엔드로 언급함. ACP(Agent Client Protocol) 기반의 에이전트 클라이언트 연결 계층도 함께 설명되어 있음.
 
 이 구조는 단순히 “채팅창 여러 개”가 아님. 한 작업을 여러 에이전트에게 나눠 맡기는 오케스트레이션에 가까움. 예를 들어 블로그 자동화 프로젝트라면 한 에이전트는 자료 조사, 한 에이전트는 원고 초안, 한 에이전트는 코드 수정, 한 에이전트는 배포 검증을 맡는 식으로 설계할 수 있음.
 
