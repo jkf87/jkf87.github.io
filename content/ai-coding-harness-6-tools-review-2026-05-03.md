@@ -42,22 +42,22 @@ description: "jcode, Gstack, Everything Claude Code, Ouroboros, revfactory/harne
 
 ## Q. 먼저 총점부터 볼 수 있을까요?
 
-아래는 실행 로그 기반 최종 점수입니다.
+아래는 실행 로그 기반 최종 점수입니다. T5 Guardrail 항목을 추가하면서 원점수 합계가 105점이 되었기 때문에, 공개 표에는 100점 환산을 함께 표기했습니다.
 
-| 순위 | 도구 | 총점 /100 | 판정 | 한줄 평가 |
-|---:|---|---:|---|---|
-| 1 | **[Ouroboros](https://github.com/Q00/ouroboros)** | **88.6** | 추천 상위권 | spec-first 워크플로와 감사 가능한 산출물이 가장 강했어요 |
-| 2 | **[revfactory/harness](https://github.com/revfactory/harness)** | **86.7** | 추천 | 에이전트 팀과 하네스를 설계하는 능력이 좋았어요 |
-| 3 | **[Everything Claude Code](https://github.com/affaan-m/everything-claude-code)** | **84.8** | 추천 | Claude Code 생태계를 종합팩처럼 묶어줬어요 |
-| 4 | **[oh-my-codex](https://github.com/Yeachan-Heo/oh-my-codex)** | **84.4** | 추천 | Codex 기반으로 빠르고 실전적이었어요 |
-| 5 | **[Gstack](https://github.com/garrytan/gstack)** | **78.0** | 가능성 큼 | skill/command pack으로는 좋지만 하네스 자동화 근거는 약했어요 |
-| 6 | **[jcode](https://github.com/1jehuang/jcode)** | **77.7** | 가능성 큼 | 빠르지만 build, 인증, hook 쪽에서 아쉬움이 있었어요 |
+| 순위 | 도구 | 원점수 /105 | 100점 환산 | 판정 | 한줄 평가 |
+|---:|---|---:|---:|---|---|
+| 1 | **[Ouroboros](https://github.com/Q00/ouroboros)** | **88.6** | **84.4** | 추천 상위권 | spec-first 워크플로와 감사 가능한 산출물이 가장 강했어요 |
+| 2 | **[revfactory/harness](https://github.com/revfactory/harness)** | **86.7** | **82.6** | 추천 | 에이전트 팀과 하네스를 설계하는 능력이 좋았어요 |
+| 3 | **[Everything Claude Code](https://github.com/affaan-m/everything-claude-code)** | **84.8** | **80.8** | 추천 | Claude Code 생태계를 종합팩처럼 묶어줬어요 |
+| 4 | **[oh-my-codex](https://github.com/Yeachan-Heo/oh-my-codex)** | **84.4** | **80.4** | 추천 | Codex 기반으로 빠르고 실전적이었어요 |
+| 5 | **[Gstack](https://github.com/garrytan/gstack)** | **78.0** | **74.3** | 가능성 큼 | skill/command pack으로는 좋지만 하네스 자동화 근거는 약했어요 |
+| 6 | **[jcode](https://github.com/1jehuang/jcode)** | **77.7** | **74.0** | 가능성 큼 | 빠르지만 build, 인증, hook 쪽에서 아쉬움이 있었어요 |
 
 ![AI 코딩 하네스 6종 최종 점수](./images/ai-coding-harness-6-tools-review-2026-05-03/final-score-ranking-ko.png)
 
 ![항목별 점수 분포](./images/ai-coding-harness-6-tools-review-2026-05-03/category-heatmap-ko.png)
 
-점수만 보면 Ouroboros가 1위, revfactory가 2위, Everything Claude Code와 oh-my-codex가 근소한 차이로 따라붙는 구조입니다.
+100점 환산 기준으로도 순위는 같습니다. Ouroboros가 1위, revfactory가 2위, Everything Claude Code와 oh-my-codex가 근소한 차이로 따라붙는 구조입니다.
 
 프로젝트를 직접 보고 싶다면 위 표의 도구명을 눌러보면 됩니다. 이번에 본 저장소는 [jcode](https://github.com/1jehuang/jcode), [Gstack](https://github.com/garrytan/gstack), [Everything Claude Code](https://github.com/affaan-m/everything-claude-code), [Ouroboros](https://github.com/Q00/ouroboros), [revfactory/harness](https://github.com/revfactory/harness), [oh-my-codex](https://github.com/Yeachan-Heo/oh-my-codex)입니다.
 
