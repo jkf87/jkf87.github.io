@@ -11,7 +11,7 @@ description: 아이디 하나 입력하면 소셜미디어·포럼·데이팅앱
 
 닉네임 하나면 됨. 이메일도, 전화번호도, 실명도 필요 없음.
 
-<img src="./images/maigret-osint-username-search-2026-05-02/detective-mode.gif" style="max-width: 600px; margin: 20px auto; display: block;" alt="Detective mode" />
+<img src="./images/maigret-osint-username-search-2026-05-02/maigret-search-flow.jpg" style="max-width: 900px; margin: 20px auto; display: block;" alt="maigret search flow" />
 
 1. 셜록(Sherlock)이라는 OSINT 툴이 예전부터 있었음. 아이디 하나 넣으면 400개 사이트에서 계정 존재 여부를 확인해주는 도구. 당시엔 그것도 꽤 충격적이었음. 근데 '있다/없다'만 알려주는 게 전부였음.
 
@@ -19,7 +19,7 @@ description: 아이디 하나 입력하면 소셜미디어·포럼·데이팅앱
 
 3. 프로필 페이지에서 실제 데이터를 뽑아옴. 이름, 프로필 사진, 바이오 텍스트, 위치, 팔로워 수, 가입일, 이메일·전화(공개된 경우), 다른 계정으로 연결된 링크까지. 링크 발견되면 자동으로 그 계정도 타고 들어감. **재귀 탐색**임.
 
-<img src="./images/maigret-osint-username-search-2026-05-02/terminal-search.gif" style="max-width: 600px; margin: 20px auto; display: block;" alt="Terminal search" />
+<img src="./images/maigret-osint-username-search-2026-05-02/web-interface-d3-graph.png" style="max-width: 900px; margin: 20px auto; display: block;" alt="Web interface D3.js graph" />
 
 4. GitHub 스타 2만 1,600개. MIT 라이선스. **API 키 없이 무료**로 씀. 기본으로 상위 500개 사이트만 검색하고, 전체 3,000개 다 돌리려면 `-a` 플래그 붙이면 됨.
 
@@ -34,7 +34,7 @@ description: 아이디 하나 입력하면 소셜미디어·포럼·데이팅앱
 
 6. 결과는 D3.js 그래프로 시각화도 됨. 어떤 사이트의 어떤 계정이 어떻게 연결되는지 노드-링크 그래프로 보여줌. 조사 업무나 CTF 풀 때 특히 유용함.
 
-<img src="./images/maigret-osint-username-search-2026-05-02/osint-scan.gif" style="max-width: 600px; margin: 20px auto; display: block;" alt="OSINT scan" />
+<img src="./images/maigret-osint-username-search-2026-05-02/html-report-results.png" style="max-width: 900px; margin: 20px auto; display: block;" alt="HTML report results" />
 
 7. 근데 짚어야 할 지점이 있음. 한국은 **개인정보보호법**이 있음. 정보가 공개돼 있어도 동의 없이 타인 정보를 집적·조합하면 법적으로 문제 될 수 있음. 자기 자신 계정 점검 용도, 보안 연구, CTF 등 목적이 명확한 경우에만 씀.
 
