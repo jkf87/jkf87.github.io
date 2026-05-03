@@ -30,7 +30,7 @@ const explorerSortFn = (a: FileTrieNode, b: FileTrieNode) => {
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
-  header: [],
+  header: [Component.TopNav()],
   afterBody: [
     Component.ConditionalRender({
       component: Component.RecentNotes({
@@ -38,6 +38,10 @@ export const sharedPageComponents: SharedLayout = {
         limit: 5,
         linkToMore: "posts" as never,
         showTags: true,
+        filter: (file) =>
+          !["index", "posts", "about", "contact", "privacy-policy", "categories", "editorial-policy"].includes(
+            file.slug ?? "",
+          ),
       }),
       condition: (page) => page.fileData.slug === "index",
     }),
@@ -48,8 +52,10 @@ export const sharedPageComponents: SharedLayout = {
   ],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/jackyzha0/quartz",
-      "Discord Community": "https://discord.gg/cRFFHYye7t",
+      소개: "/about",
+      연락처: "/contact",
+      개인정보처리방침: "/privacy-policy",
+      "전체 글": "/posts",
     },
   }),
 }
