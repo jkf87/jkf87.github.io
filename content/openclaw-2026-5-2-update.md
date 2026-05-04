@@ -7,7 +7,7 @@ slug: openclaw-2026-5-2-update
 category: AI도구
 ---
 
-![오픈클로 2026.5.2~5.3 업데이트 히어로 이미지](../assets/openclaw_52_hero.png)
+![오픈클로 2026.5.2~5.3 업데이트](./images/openclaw_52_hero.png)
 
 오픈클로(OpenClaw)가 5월 2일, 3일 연속 업데이트를 올렸음.
 
