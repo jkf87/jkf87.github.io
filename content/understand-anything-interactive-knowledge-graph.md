@@ -113,8 +113,69 @@ Understand Anything의 결과물은 단순한 텍스트 그래프가 아니다. 
 
 이게 Understand Anything의 진짜 가치다. **코드를 이해하기 위해 텍스트 설명이 필요 없어진다.** 그래프가 구조를 말하고, 대시보드가 목적을 말한다.
 
+**지금 바로 시작하기:**
+
+설치는 30초면 된다. Claude Code를 쓴다면:
+
+```
+/plugin marketplace add Lum1104/Understand-Anything
+/plugin install understand-anything
+/understand
+```
+
+끝이다. Cursor, VS Code + Copilot, Codex, OpenCode, Gemini CLI 같은 다른 에디터도 전부 지원한다. 어디서 일하든 플러그인 설치 후 한 줄이면 끝난다.
+
+**실전 명령어들:**
+
+1. `/understand` — 전체 코드베이스 분석. 결과가 `.understand-anything/knowledge-graph.json`에 저장된다.
+
+2. `/understand-dashboard` — 인터랙티브 대시보드 띄우기. 이 화면에서 전체 구조를 한눈에 본다.
+
+3. `/understand-chat How does the payment flow work?` — AI와 질문 주고받기. 그래프를 기반으로 답해준다.
+
+4. `/understand-diff` — PR 전에 변경사항의 영향도 분석. 어느 부분이 연쇄적으로 영향받는지 미리 본다.
+
+5. `/understand-explain src/auth/login.ts` — 특정 파일이나 함수에 대한 깊이 있는 설명.
+
+6. `/understand-onboard` — 신입 온보딩 가이드 자동 생성. 배워야 할 순서 그대로.
+
+7. `/understand-domain` — 비즈니스 로직 추출. 기술 용어 없이 "도메인 → 플로우 → 스텝"으로 재구성.
+
+8. `/understand-knowledge ~/path/to/wiki` — 당신의 사내 위키를 그래프로 변환. Karpathy-패턴 LLM wiki 지원.
+
+**팀이 함께 쓰는 방법:**
+
+그래프는 JSON 파일이라 깃에 커밋할 수 있다. `.understand-anything/` 디렉토리를 커밋하면 된다. (중간 파일은 제외)
+
+```
+.understand-anything/
+├── knowledge-graph.json  # 이걸 커밋
+├── intermediate/         # X
+└── diff-overlay.json     # X
+```
+
+팀원들은 다시 `/understand`를 돌릴 필요 없이, JSON을 읽어서 대시보드를 띄운다. 큰 프로젝트라면 git-lfs를 쓴다.
+
+**누구나 쓸 수 있다:**
+
+- **신입 개발자**: 아키텍처 가이드부터 특정 함수까지, 배워야 할 것들이 의존도순으로 나온다. 문서 읽는 것보다 훨씬 빠르게 온보드된다.
+
+- **리드/아키텍트**: 전체 구조를 한눈에 파악. 각 컴포넌트의 책임이 명확한지, 레이어링이 맞는지 시각적으로 점검.
+
+- **PM/비즈니스**: "주문 → 결제 → 배송" 같은 프로세스가 코드에서 정확히 어떻게 구현되는지 본다. 기술 용어 없이.
+
+- **QA/테스트**: 변경사항이 전체 시스템에 미치는 영향을 미리 파악. "이 버튼을 건드리면 저쪽까지 영향갈까?"에 답이 나온다.
+
+**비용:**
+
+오픈소스다. MIT 라이선스. 무료다.
+
 **정리:**
 
 Understand Anything은 단순히 "코드 구조를 그려주는 도구"가 아니다. AI 기반 그래프 분석으로 전체 시스템을 이해하고, 그 이해를 바탕으로 사용자 친화적인 대시보드와 인터페이스를 만드는 시작점이다.
 
-코드가 복잡할수록, 팀이 클수록, 새로운 사람이 들어올수록 — Understand Anything은 더 빛난다. 한 번 시도해보자.
+코드가 복잡할수록, 팀이 클수록, 새로운 사람이 들어올수록 — Understand Anything은 더 빛난다. 
+
+[GitHub](https://github.com/Lum1104/Understand-Anything) | [라이브 데모](https://understand-anything.com/demo/) | [Discord 커뮤니티](https://discord.gg/pydat66RY)
+
+한 번 시도해보자.
