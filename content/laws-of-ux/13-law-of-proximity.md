@@ -6,7 +6,7 @@ slug: "law-of-proximity"
 parent: "laws-of-ux-index"
 ---
 
-![](./images/laws-of-ux/law-of-proximity.png)
+![](https://lawsofux.com/law-of-proximity/social.png)
 
 > 서로 가까이 있는 객체들은 같은 그룹으로 인식된다.
 

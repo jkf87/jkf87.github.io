@@ -6,7 +6,7 @@ slug: "flow-state"
 parent: "laws-of-ux-index"
 ---
 
-![](./images/laws-of-ux/flow.png)
+![](https://lawsofux.com/flow/social.png)
 
 
 # 플로우 상태 (Flow)

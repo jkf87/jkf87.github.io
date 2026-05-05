@@ -6,7 +6,7 @@ slug: "postels-law"
 parent: "laws-of-ux-index"
 ---
 
-![](./images/laws-of-ux/postels-law.png)
+![](https://lawsofux.com/postels-law/social.png)
 
 > 보내는 쪽에서는 엄격하게, 받는 쪽에서는 관대하게. 인터넷의 견고성 원칙이다.
 

@@ -4,10 +4,10 @@ date: 2025-05-06
 tags: [UX, 디자인, UX심리학, LawsOfUX, HCI]
 slug: "laws-of-ux"
 description: "lawsofux.com의 UX 심리학 기반 법칙 30개를 6가지 카테고리로 정리한 총괄 가이드. 각 법칙을 클릭하면 세부 설명으로 이동합니다."
-featured_image: "./images/laws-of-ux/hero-laws-of-ux.png"
+featured_image: "https://lawsofux.com/law-of-pragnanz/social.png"
 ---
 
-![](./images/laws-of-ux/hero-laws-of-ux.png)
+![](https://lawsofux.com/law-of-pragnanz/social.png)
 
 # UX 심리학 법칙 30선 — 디자이너와 개발자가 알아야 할 인간의 법칙들
 

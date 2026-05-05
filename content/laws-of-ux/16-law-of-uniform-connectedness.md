@@ -6,7 +6,7 @@ slug: "law-of-uniform-connectedness"
 parent: "laws-of-ux-index"
 ---
 
-![](./images/laws-of-ux/law-of-uniform-connectedness.png)
+![](https://lawsofux.com/law-of-uniform-connectedness/social.png)
 
 > 시각적으로 연결된 요소들은 연결되지 않은 요소보다 더 관련 있는 것으로 인식된다.
 

@@ -6,7 +6,7 @@ slug: "zeigarnik-effect"
 parent: "laws-of-ux-index"
 ---
 
-![](./images/laws-of-ux/zeigarnik-effect.png)
+![](https://lawsofux.com/zeigarnik-effect/social.png)
 
 > 사람은 완료하지 못한 작업을 완료한 작업보다 더 잘 기억한다.
 

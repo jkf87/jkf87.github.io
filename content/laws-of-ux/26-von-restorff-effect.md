@@ -6,7 +6,7 @@ slug: "von-restorff-effect"
 parent: "laws-of-ux-index"
 ---
 
-![](./images/laws-of-ux/von-restorff-effect.png)
+![](https://lawsofux.com/von-restorff-effect/social.png)
 
 > 여러 비슷한 항목 사이에서 다른 하나가 가장 잘 기억된다. '고립 효과(Isolation Effect)'라고도 부른다.
 

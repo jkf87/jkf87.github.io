@@ -6,7 +6,7 @@ slug: "working-memory"
 parent: "laws-of-ux-index"
 ---
 
-![](./images/laws-of-ux/working-memory.png)
+![](https://lawsofux.com/working-memory/social.png)
 
 > 작업 기억은 정보를 일시적으로 보관하고 조작하는 뇌의 인지 시스템. UI 설계의 보이지 않는 천장이다.
 

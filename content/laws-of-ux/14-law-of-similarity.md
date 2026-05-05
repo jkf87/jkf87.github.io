@@ -6,7 +6,7 @@ slug: "law-of-similarity"
 parent: "laws-of-ux-index"
 ---
 
-![](./images/laws-of-ux/law-of-similarity.png)
+![](https://lawsofux.com/law-of-similarity/social.png)
 
 > 시각적으로 유사한 요소들은 분리되어 있어도 하나의 그룹으로 인식된다.
 

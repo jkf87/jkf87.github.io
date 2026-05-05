@@ -6,7 +6,7 @@ slug: "mental-model"
 parent: "laws-of-ux-index"
 ---
 
-![](./images/laws-of-ux/mental-model.png)
+![](https://lawsofux.com/mental-model/social.png)
 
 > 멘탈 모델은 우리가 시스템이 어떻게 작동하는지 '생각하는' 압축된 모델이다.
 

@@ -6,7 +6,7 @@ slug: "fittss-law"
 parent: "laws-of-ux-index"
 ---
 
-![](./images/laws-of-ux/fittss-law.png)
+![](https://lawsofux.com/fittss-law/social.png)
 
 
 # 핏츠의 법칙 (Fitts's Law)

@@ -6,7 +6,7 @@ slug: "law-of-pragnanz"
 parent: "laws-of-ux-index"
 ---
 
-![](./images/laws-of-ux/law-of-pragnanz.png)
+![](https://lawsofux.com/law-of-pragnanz/social.png)
 
 > 사람은 모호하거나 복잡한 이미지를 가능한 가장 단순한 형태로 인식한다.
 

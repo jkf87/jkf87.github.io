@@ -6,7 +6,7 @@ slug: "serial-position-effect"
 parent: "laws-of-ux-index"
 ---
 
-![](./images/laws-of-ux/serial-position-effect.png)
+![](https://lawsofux.com/serial-position-effect/social.png)
 
 > 사람은 목록의 처음과 마지막 항목을 가장 잘 기억한다. 중간은 잘 기억하지 못한다.
 

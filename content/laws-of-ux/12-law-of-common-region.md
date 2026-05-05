@@ -6,7 +6,7 @@ slug: "law-of-common-region"
 parent: "laws-of-ux-index"
 ---
 
-![](./images/laws-of-ux/law-of-common-region.png)
+![](https://lawsofux.com/law-of-common-region/social.png)
 
 > 명확한 경계로 둘러싸인 영역 안의 요소들은 하나의 그룹으로 인식된다.
 

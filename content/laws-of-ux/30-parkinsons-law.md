@@ -6,7 +6,7 @@ slug: "parkinsons-law"
 parent: "laws-of-ux-index"
 ---
 
-![](./images/laws-of-ux/parkinsons-law.png)
+![](https://lawsofux.com/parkinsons-law/social.png)
 
 > 어떤 작업이든 주어진 시간을 모두 소진할 때까지 팽창한다.
 
