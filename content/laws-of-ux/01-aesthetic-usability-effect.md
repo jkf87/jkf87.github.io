@@ -6,7 +6,7 @@ slug: "aesthetic-usability-effect"
 parent: "laws-of-ux-index"
 ---
 
-![](./images/aesthetic-usability-effect.png)
+![](./images/laws-of-ux/aesthetic-usability-effect.png)
 
 
 # 심미적 사용성 효과 (Aesthetic-Usability Effect)

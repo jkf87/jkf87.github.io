@@ -6,7 +6,7 @@ slug: "teslers-law"
 parent: "laws-of-ux-index"
 ---
 
-![](./images/teslers-law.png)
+![](./images/laws-of-ux/teslers-law.png)
 
 > 모든 시스템에는 더 이상 줄일 수 없는 복잡성이 존재한다. '복잡성 보존의 법칙'이라고도 부른다.
 

@@ -6,7 +6,7 @@ slug: "doherty-threshold"
 parent: "laws-of-ux-index"
 ---
 
-![](./images/doherty-threshold.png)
+![](./images/laws-of-ux/doherty-threshold.png)
 
 
 # 도허티 임계값 (Doherty Threshold)

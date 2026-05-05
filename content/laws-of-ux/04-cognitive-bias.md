@@ -6,7 +6,7 @@ slug: "cognitive-bias"
 parent: "laws-of-ux-index"
 ---
 
-![](./images/cognitive-bias.png)
+![](./images/laws-of-ux/cognitive-bias.png)
 
 
 # 인지 편향 (Cognitive Bias)

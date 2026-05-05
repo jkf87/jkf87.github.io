@@ -6,7 +6,7 @@ slug: "hicks-law"
 parent: "laws-of-ux-index"
 ---
 
-![](./images/hicks-law.png)
+![](./images/laws-of-ux/hicks-law.png)
 
 
 # 힉의 법칙 (Hick's Law)

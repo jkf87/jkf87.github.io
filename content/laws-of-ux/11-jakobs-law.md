@@ -6,7 +6,7 @@ slug: "jakobs-law"
 parent: "laws-of-ux-index"
 ---
 
-![](./images/jakobs-law.png)
+![](./images/laws-of-ux/jakobs-law.png)
 
 > 사용자는 대부분의 시간을 다른 사이트에서 보낸다. 그래서 당신의 사이트도 다른 사이트들처럼 작동하기를 원한다.
 

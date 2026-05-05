@@ -6,7 +6,7 @@ slug: "occams-razor"
 parent: "laws-of-ux-index"
 ---
 
-![](./images/occams-razor.png)
+![](./images/laws-of-ux/occams-razor.png)
 
 > 경쟁하는 가설들이 동일하게 잘 예측한다면, 가정이 가장 적은 것을 선택해야 한다.
 

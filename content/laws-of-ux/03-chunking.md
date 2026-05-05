@@ -6,7 +6,7 @@ slug: "chunking"
 parent: "laws-of-ux-index"
 ---
 
-![](./images/chunking.png)
+![](./images/laws-of-ux/chunking.png)
 
 
 # 청킹 (Chunking)

@@ -6,7 +6,7 @@ slug: "millers-law"
 parent: "laws-of-ux-index"
 ---
 
-![](./images/millers-law.png)
+![](./images/laws-of-ux/millers-law.png)
 
 > 평균적인 사람은 작업 기억에 7(±2)개 항목만 유지할 수 있다.
 

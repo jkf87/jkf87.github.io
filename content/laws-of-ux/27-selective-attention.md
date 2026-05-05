@@ -6,7 +6,7 @@ slug: "selective-attention"
 parent: "laws-of-ux-index"
 ---
 
-![](./images/selective-attention.png)
+![](./images/laws-of-ux/selective-attention.png)
 
 > 사람은 현재 작업과 관련된 자극에만 주의를 집중하고 나머지는 보이지도 않는다.
 

@@ -6,7 +6,7 @@ slug: "choice-overload"
 parent: "laws-of-ux-index"
 ---
 
-![](./images/choice-overload.png)
+![](./images/laws-of-ux/choice-overload.png)
 
 
 # 선택 과부하 (Choice Overload)

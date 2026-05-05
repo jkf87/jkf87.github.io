@@ -6,7 +6,7 @@ slug: "paradox-of-the-active-user"
 parent: "laws-of-ux-index"
 ---
 
-![](./images/paradox-of-the-active-user.png)
+![](./images/laws-of-ux/paradox-of-the-active-user.png)
 
 > 사용자는 매뉴얼을 읽지 않고 바로 사용하려고 한다. 그래서 더 많은 실수를 하고, 더 오래 걸린다.
 

@@ -6,7 +6,7 @@ slug: "cognitive-load"
 parent: "laws-of-ux-index"
 ---
 
-![](./images/cognitive-load.png)
+![](./images/laws-of-ux/cognitive-load.png)
 
 
 # 인지 부하 (Cognitive Load)

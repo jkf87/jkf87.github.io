@@ -6,7 +6,7 @@ slug: "peak-end-rule"
 parent: "laws-of-ux-index"
 ---
 
-![](./images/peak-end-rule.png)
+![](./images/laws-of-ux/peak-end-rule.png)
 
 
 # 피크-엔드 룰 (Peak-End Rule)

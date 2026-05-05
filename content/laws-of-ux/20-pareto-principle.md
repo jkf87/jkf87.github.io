@@ -6,7 +6,7 @@ slug: "pareto-principle"
 parent: "laws-of-ux-index"
 ---
 
-![](./images/pareto-principle.png)
+![](./images/laws-of-ux/pareto-principle.png)
 
 > 많은 사건에서 대략 80%의 효과가 20%의 원인에서 나온다.
 

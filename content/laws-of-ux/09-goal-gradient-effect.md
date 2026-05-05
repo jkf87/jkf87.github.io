@@ -6,7 +6,7 @@ slug: "goal-gradient-effect"
 parent: "laws-of-ux-index"
 ---
 
-![](./images/goal-gradient-effect.png)
+![](./images/laws-of-ux/goal-gradient-effect.png)
 
 
 # 목표-경사 효과 (Goal-Gradient Effect)
