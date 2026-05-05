@@ -216,6 +216,95 @@ n8n은 **"트리거 → 데이터 처리 → 액션"** 파이프라인에 특화
 
 굳이 다 옮길 필요 없다. **n8n-MCP로 n8n 워크플로우를 짤 때 AI의 도움을 받는** 용도로 보는 게 맞다. n8n-MCP가 해결하는 문제도 "n8n 노드가 너무 많아서 AI가 정확한 설정을 못 짜준다"였다. 도구를 교체하는 게 아니라, 도구를 더 잘 쓰게 돕는 쪽이다.
 
+## Q: n8n과 OpenClaw를 웹훅으로 연동할 수 있나?
+
+할 수 있다. 양방향 모두 가능하다.
+
+실제로 [awesome-openclaw-usecases](https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/n8n-workflow-orchestration.md)에 이 패턴이 정식 유스케이스로 등록되어 있고, [n8nlab](https://n8nlab.io/blog/openclaw-n8n-integration-guide)에서도 OpenClaw Skill로 n8n 워크플로우를 트리거하는 가이드를 제공한다.
+
+### 방향 1: n8n → OpenClaw
+
+n8n이 트리거를 받아 OpenClaw 에이전트에 웹훅을 쏘는 패턴이다.
+
+![n8n에서 OpenClaw로 웹훅 연동 구조도](images/n8n-mcp-ai-workflow-automation-2026-05-05/n8n-to-openclaw-webhook.jpg)
+
+**흐름:**
+1. n8n에서 Schedule Trigger나 RSS Feed, GitHub Webhook 등으로 이벤트를 수신한다
+2. HTTP Request 노드로 OpenClaw 웹훅 엔드포인트에 POST 요청을 보낸다
+3. OpenClaw 에이전트가 메시지를 받아 AI로 처리한다
+4. 결과를 Telegram, Discord 등 연결된 채널로 응답한다
+
+**실제 예시:**
+- 매일 아침 RSS를 수집해서 → OpenClaw가 요약 → Telegram으로 브리핑
+- GitHub PR이 열리면 → OpenClaw가 코드 리뷰 → Slack으로 코멘트
+- 새 리드가 CRM에 들어오면 → OpenClaw가 분석 → 이메일 초안 작성
+
+```bash
+# n8n HTTP Request 노드에서 OpenClaw 웹훅 호출
+curl -X POST https://your-openclaw-gateway/api/webhook/agent \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer YOUR_KEY" \
+  -d '{"message": "새로운 리드가 들어왔어. 분석해줘."}'
+```
+
+### 방향 2: OpenClaw → n8n
+
+OpenClaw 에이전트가 사용자 요청을 받아 n8n 워크플로우를 실행하는 패턴이다. 이게 더 강력하다.
+
+![OpenClaw에서 n8n으로 웹훅 연동 구조도](images/n8n-mcp-ai-workflow-automation-2026-05-05/openclaw-to-n8n-webhook.jpg)
+
+**핵심 원칙:** OpenClaw는 **API 키를 직접 들지 않는다**. 모든 자격증명은 n8n 워크플로우에 격리된다.
+
+**흐름:**
+1. 사용자가 "Slack에 이 메시지 올려줘"라고 OpenClaw에 요청한다
+2. OpenClaw가 n8n 웹훅 URL에 JSON 페이로드를 POST한다
+3. n8n이 인증된 API 키로 실제 Slack API를 호출한다
+4. 결과를 OpenClaw로 콜백하거나, n8n에서 직접 완료 처리한다
+
+**실제 예시:**
+- "보고서 만들어줘" → OpenClaw가 n8n 웹훅 호출 → n8n이 Google Sheets API로 데이터 조회 → 결과를 OpenClaw로 반환
+- "Slack에 배포 완료 알림 보내" → OpenClaw → n8n → Slack API
+- "이 데이터 HubSpot에 등록해" → OpenClaw → n8n → HubSpot API (API 키는 n8n에만 존재)
+
+```bash
+# OpenClaw에서 n8n 웹훅 호출 (Skill 정의로 자동화)
+curl -X POST https://your-n8n.com/webhook/openclaw-slack-send \
+  -H "Content-Type: application/json" \
+  -d '{"channel": "#general", "message": "배포 완료!"}'
+```
+
+n8n 워크플로우 네이밍 컨벤션도 정해져 있다:
+
+```
+openclaw-{service}-{action}
+예: openclaw-slack-send-message
+예: openclaw-googlesheets-append
+예: openclaw-hubspot-create-contact
+```
+
+### 왜 이 조합이 강력한가
+
+세 가지 이유가 있다:
+
+1. **관측 가능성(Observability)**: n8n의 시각적 UI에서 모든 API 호출 이력을 확인할 수 있다. OpenClaw가 무슨 짓을 했는지 블랙박스가 아니다
+
+2. **보안(Credential Isolation)**: API 키가 OpenClaw 환경에 노출되지 않는다. n8n에 Lock을 걸어두면 에이전트도, 개발자도 실수로 키를 유출할 수 없다
+
+3. **비용 효율**: 반복적이고 결정적인 작업은 n8n 워크플로우로 처리하고, 복잡한 판단이 필요한 작업만 AI 토큰을 소모한다. 매번 LLM을 호출할 필요가 없다
+
+### 실전 아키텍처 요약
+
+```
+┌──────────────┐    webhook    ┌─────────────────┐    API call    ┌──────────────┐
+│  OpenClaw    │ ────────────→ │  n8n Workflow   │ ────────────→ │  External    │
+│  (agent)     │               │  (credentials)  │               │  Service     │
+│              │ ←──────────── │                 │               │  (Slack,     │
+│              │    callback   │  🔒 locked      │               │   Sheets...) │
+└──────────────┘               └─────────────────┘               └──────────────┘
+```
+
+에이전트는 판단만 하고, 실행은 n8n이 한다. API 키는 n8n에만 있고, 모든 이력은 n8n UI에 남는다. 이게 OpenClaw + n8n 연동의 핵심이다.
+
 ## 누가 만들었나
 
 [Cole Zlonkowksi](https://github.com/czlonkowksi)가 개인 프로젝트로 시작했다. 지금은 수만 명의 개발자가 사용하는 오픈소스 도구가 됐다. MIT 라이선스로 공개되어 있고, [npm 패키지](https://www.npmjs.com/package/n8n-mcp)와 [Docker 이미지](https://github.com/czlonkowksi/n8n-mcp/pkgs/container/n8n-mcp) 모두 제공한다.
