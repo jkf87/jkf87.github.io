@@ -44,6 +44,18 @@ jobs:
       - name: Copy ads.txt to root
         run: cp quartz/static/ads.txt public/ 2>/dev/null || true
 
+      - name: Create pretty-link directories
+        run: |
+          cd public
+          for f in *.html; do
+            slug="${f%.html}"
+            # Skip index, 404, and already-directory-matched files
+            [ "$slug" = "index" ] || [ "$slug" = "404" ] && continue
+            [ -d "$slug" ] && continue
+            mkdir -p "$slug"
+            cp "$f" "$slug/index.html"
+          done
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
