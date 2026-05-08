@@ -39,9 +39,19 @@ OpenAI 쪽에는 `openai/chat-latest`를 명시적으로 쓸 수 있는 모델 o
 
 ## 3. 크론 CLI JSON에 상태가 들어감
 
+크론 작업 목록을 JSON으로 확인하는 명령어는 아래와 같다.
+
+```bash
+openclaw cron list --json
+```
+
+![openclaw cron list --json 실행 화면](./images/openclaw-2026-5-7-update/cron-list-json-screenshot.jpg)
+
 `openclaw cron list --json`, `openclaw cron show --json` 출력에 계산된 `status`가 포함된다.
 
 기존에는 외부 도구가 크론 작업을 읽어도 그 작업이 지금 disabled인지, running인지, ok/error/skipped/idle인지 직접 추론해야 했다. 이제 JSON에 상태가 같이 나오니 모니터링이나 대시보드 만들기가 훨씬 쉬워진다.
+
+스크린샷처럼 `jobs` 배열 안에서 각 작업의 `id`, `name`, `description`, `enabled`, `schedule`, `sessionTarget`, `wakeMode`, `payload`, `delivery` 같은 정보를 한 번에 확인할 수 있다. 예를 들어 `schedule.kind`가 `cron`이고 `expr`이 `0 3 * * *`이면 매일 새벽 3시에 실행되는 작업이라는 뜻이다.
 
 에이전트를 주기 작업으로 오래 돌리는 사람에게는 작은 듯 큰 개선이다.
 
