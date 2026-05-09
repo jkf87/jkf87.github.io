@@ -125,7 +125,17 @@ UX 품질은:
 
 GAN 비유로 설명하는 사람이 있는데, 한계가 있다. GAN은 generator와 discriminator가 같이 학습해서 discriminator가 generator의 약점을 따라잡는다. 하네스는 학습이 없다. inference만 한다. 그래서 LLM judge는 generator 약점을 영원히 못 따라잡는다.
 
-해결은 단순하다. verifier 안에 비-LLM 신호 비중을 늘리는 거다. 코드면 test exit code, type-check, lint, build 성공. 번역이면 COMET이나 BLEU 수치, 고유명사 보존률. 블로그면 link liveness, spell-check. UI면 스크린샷 diff, WCAG 대비비.
+해결은 단순하다. verifier 안에 비-LLM 신호 비중을 늘리는 거다.
+
+도메인별로 쓸 수 있는 정량 신호를 정리해보면 이렇다.
+
+코드 — test exit code(테스트가 통과했는지 여부, 0이면 성공 1이면 실패), type-check(TypeScript 같은 정적 타입 언어에서 타입 오류가 없는지), lint(코드 스타일 규칙 위반 여부), build 성공(컴파일·빌드가 에러 없이 끝났는지). 이 네 가지면 코드 품질의 80%는 기계적으로 판정할 수 있다.
+
+번역 — COMET(문장 단위 번역 품질 점수, 원문과 번역문의 의미 유사도를 측정), BLEU(기계번역 평가의 고전 지표, 번역문과 정답문 사이 n-gram 중첩률), length ratio(원문과 번역문의 길이 비율, 1.0에 가까워야 함), 고유명사 보존률(원문의 고유명사가 번역에서 누락되거나 변형되지 않았는지).
+
+블로그 — link liveness(본문 링크가 실제로 열리는지, 403/404가 없는지), spell-check(맞춤법 검사), image alt 존재(이미지에 대체 텍스트가 있는지, 접근성과 SEO 모두에 필요).
+
+UI — 스크린샷 diff(이전 버전과 현재 버전의 화면을 픽셀 단위로 비교, 의도치 않은 시각 변화 탐지), DOM snapshot(HTML 구조를 저장해두고 회귀 테스트에 활용), WCAG 대비비(Web Content Accessibility Guidelines에서 정한 최소 색상 대비 기준, 글자와 배경 사이 대비가 4.5 대 1 이상이어야 함).
 
 정량 신호가 하나라도 박혀 있으면 LLM judge가 무한 PASS를 못 낸다. 정량이 FAIL인데 PASS를 낼 수는 없으니까. 하네스 IQ를 올리는 진짜 수단은 LLM을 안 쓰는 verifier의 비중을 늘리는 거다.
 
