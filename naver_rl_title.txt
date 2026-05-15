@@ -1,0 +1,1 @@
+Hugging Face 'RL for Agents' 워크샵 정리 — 모델이 아니라 에이전트를 훈련하는 시대

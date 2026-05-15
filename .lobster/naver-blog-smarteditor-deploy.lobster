@@ -44,7 +44,7 @@ notes:
   - 기존 Chrome 사용자 세션(profile="user")에서는 file upload가 한 번에 하나씩만 가능한 경우가 있다.
   - 이미지 업로드 경로는 OpenClaw browser upload 정책상 /tmp/openclaw/uploads 아래여야 한다.
   - 이미지 저작권/출처를 보존하기 위해 원문 URL과 이미지 출처 목록 또는 원문 링크를 글 하단에 남긴다.
-  - Markdown 제목 문법(##)은 네이버에서 자동 서식 변환되지 않을 수 있으므로 필요하면 후처리한다.
+  - Markdown 제목/목록/코드펜스 문법은 네이버에서 자동 서식 변환되지 않는다. 발행 전 반드시 네이버용 텍스트/컴포넌트로 정규화한다.
   - 예상 소요 시간은 이미지 수와 승인 대기에 따라 대략 5~15분이다.
 
 ---
@@ -520,6 +520,39 @@ return {
 - 코드 블록 내부 단어가 한 줄에 한 토큰씩 쪼개지지 않는다.
 - 일반 문단/목록/이미지 배치에는 회귀가 없다.
 
+## 2026-05-08 업데이트: 마크다운 그대로 발행 금지
+
+`https://blog.naver.com/jjoongoo/224279163873` 배포에서 `##` heading과 ```python 코드펜스가 일반 텍스트로 그대로 발행되는 문제가 확인되었다. 원인은 “코드펜스가 보존됨”을 “네이버 코드블럭 컴포넌트로 변환됨”으로 잘못 판단한 것이다.
+
+발행 전 필수 정규화:
+
+- `##`, `###` 등 Markdown heading 표시는 제거하거나 네이버 heading/문단 서식으로 변환한다.
+- `- item` 목록은 최소한 `• item` 텍스트로 바꾸거나 네이버 목록 컴포넌트/서식으로 변환한다.
+- 인라인 코드 백틱 `` `code` ``은 백틱을 제거하고 텍스트만 남긴다.
+- fenced code block(```python ... ```)은 절대 그대로 발행하지 않는다.
+- 네이버 `소스코드 추가` 컴포넌트 구조를 아직 모를 때는 fallback으로 `【코드: python】 ... 【/코드】`처럼 명시 구획하고 줄바꿈을 유지한다.
+
+발행 전 추가 검증:
+
+```js
+const w = document.querySelector('iframe#mainFrame').contentWindow;
+const ed = w.SmartEditor._editors.blogpc001;
+const text = ed.getContentText();
+return {
+  hasMarkdownHeading: /(^|\n)#{1,6}\s/.test(text),
+  hasFence: text.includes('```'),
+  hasCodeMarker: text.includes('【코드'),
+  textLen: text.length,
+};
+```
+
+검증 기준:
+
+- `hasMarkdownHeading === false`
+- `hasFence === false`
+- 코드가 있는 글이면 `hasCodeMarker === true` 또는 실제 네이버 code/source component가 존재해야 한다.
+- 발행 후 공개 페이지에서도 `##`, ```가 노출되지 않는지 확인한다.
+
 ## 트러블슈팅
 
 ### 일반 붙여넣기가 먹지 않을 때
@@ -572,11 +605,11 @@ existing-session file uploads currently support one file at a time.
 ### Markdown 문법이 그대로 보일 때
 
 네이버 스마트에디터는 `## 제목`, `- 목록` 등을 자동으로 완전한 서식으로 바꾸지 않을 수 있다.
-긴급 배포라면 그대로 발행할 수 있지만, 품질 배포라면 다음 중 하나를 선택한다.
+그대로 발행하지 않는다. 다음 중 하나를 선택한다.
 
 - 발행 전 서식 버튼으로 제목/목록 수동 적용
 - SmartEditor 문서 JSON에서 heading/list 컴포넌트 구조를 추가 연구
-- Markdown을 네이버 HTML/컴포넌트 구조로 변환하는 후속 워크플로 작성
+- Markdown을 네이버용 일반 텍스트로 정규화한다. 최소 fallback은 heading 기호 제거, 목록 `•` 변환, 코드펜스 제거와 `【코드】` 구획이다.
 
 ## 안전 원칙
 

@@ -1,0 +1,58 @@
+Anthropic이 금융 서비스 산업을 위한 전문 AI 에이전트와 스킬 모음을 GitHub에 오픈소스로 공개했습니다. 투자은행, 애널리스트 리서치, 프라이빗에쿼티, 자산관리, 펀드 어드민까지 금융 실무에서 반복되는 핵심 워크플로를 AI가 자동화하는 것이 목표입니다.
+
+리포지토리: https://github.com/anthropics/financial-services
+
+핵심 구성 요소
+
+이 프로젝트는 "에이전트"와 "버티컬 플러그인" 두 가지 축으로 구성되어 있습니다. 에이전트는 특정 업무를 처음부터 끝까지 처리하는 이름 붙여진 워크플로 단위이고, 버티컬 플러그인은 금융 세부 산업별 스킬과 데이터 커넥터 묶음입니다.
+
+10개 전문 에이전트
+
+① Pitch Agent — 비교상장사 분석, 선례거래 분석, LBO 모델링 결과를 브랜디드 피치덱으로 만들어냅니다.
+
+② Meeting Prep Agent — 클라이언트 미팅 전 브리핑 패키지를 자동 생성합니다.
+
+③ Market Researcher — 특정 섹터나 테마에 대해 산업 개관, 경쟁 구도, 피어 컴프, 아이디어 숏리스트까지 도출합니다.
+
+④ Earnings Reviewer — 실적 발표 콜과 공시 자료를 분석해 모델 업데이트와 리서치 노트 초안을 작성합니다.
+
+⑤ Model Builder — DCF, LBO, 3-스테이트먼트, 컴프 모델을 엑셀에서 실시간으로 작성합니다.
+
+⑥ Valuation Reviewer — GP 패키지를 수집해 밸류에이션 템플릿을 실행하고 LP 리포팅을 준비합니다.
+
+⑦ GL Reconciler — 총계정원장 불일치를 찾아 원인을 추적하고 결재 라인에 올립니다.
+
+⑧ Month-End Closer — 월말 마감 시 발생하는 Accrual, Roll-forward, Variance 코멘트리를 작성합니다.
+
+⑨ Statement Auditor — LP 스테이트먼트를 배포 전에 감사합니다.
+
+⑩ KYC Screener — 온보딩 서류를 파싱하고 규칙 엔진을 돌려 누락을 플래그합니다.
+
+산업별 버티컬 플러그인 8종
+
+• financial-analysis (코어) — 컴프, DCF, LBO, 3-스테이트먼트, 덱 QC, 엑셀 감사. 11개 데이터 커넥터 포함
+• investment-banking — CIM, 티저, 프로세스 레터, 바이어 리스트, 머저 모델, 딜 트래킹
+• equity-research — 실적 노트, 커버리지 개시, 모델 업데이트, 테시스/촉매 트래킹
+• private-equity — 딜 소싱, 스크리닝, 딜리전스 체크리스트, IC 메모, 포트폴리오 모니터링
+• wealth-management — 고객 리뷰, 파이낸셜 플랜, 리밸런싱, 리포팅, 세금손실 수확
+• fund-admin — GL 리콘, 브레이크 추적, accrual, NAV 타이아웃
+• operations — KYC 문서 파싱 및 규칙 평가
+• LSEG, S&P Global (파트너 빌트) — 각 데이터 플랫폼 기반 분석 스킬
+
+11개 MCP 데이터 커넥터
+
+Daloopa, Morningstar, S&P Global, FactSet, Moody's, MT Newswires, Aiera, LSEG, PitchBook, Chronograph, Egnyte까지 금융 데이터 생태계 주요 플랫폼이 MCP(Model Context Protocol) 서버로 연결됩니다.
+
+배포 방식
+
+Claude Cowork 플러그인으로 설치하거나, Claude Managed Agents API를 통해 자체 워크플로 엔진 뒤에 배포할 수 있습니다. 같은 시스템 프롬프트와 스킬을 공유하므로 실행 환경만 선택하면 됩니다.
+
+모든 것은 마크다운과 YAML 기반이라 빌드 과정 없이 포크하고 수정하고 PR할 수 있습니다. 자사의 용어, 프로세스, 포매팅 표준을 스킬 파일에 추가해 커스터마이징하는 구조입니다.
+
+중요한 점은 이 에이전트들이 투자 권고나 거래 실행, 리스크 바인딩, 원장 포스팅, 온보딩 승인을 직접 하지 않는다는 것입니다. 모든 산출물은 전문가의 검토와 승인을 거치도록 설계되어 있습니다.
+
+Microsoft 365 연동도 지원합니다. Excel, PowerPoint, Word, Outlook에서 Claude를 실행하는 애드인 프로비저닝 도구가 포함되어 있어 자체 클라우드(Vertex AI, Bedrock, 내부 LLM 게이트웨이)에 배포할 수 있습니다.
+
+이 프로젝트는 금융 AI가 단순한 챗봇을 넘어 실무 워크플로 전체를 커버하는 전문 에이전트 단계로 진입했음을 보여줍니다. 컴프 분석, DCF 모델링, 실적 리뷰 같은 반복 업무를 AI가 초안 수준에서 처리하고, 최종 판단은 인간이 하는 협업 모델이 본격화되고 있습니다.
+
+원문: https://github.com/anthropics/financial-services

@@ -1,0 +1,41 @@
+import puppeteer from 'puppeteer-core';
+import { readFileSync } from 'fs';
+const title = readFileSync('naver_symphony_title.txt','utf8').trim();
+const body = readFileSync('naver_symphony_body.txt','utf8');
+const browser = await puppeteer.connect({ browserURL:'http://127.0.0.1:9222' });
+const pages = await browser.pages();
+let page = pages.find(p => p.url().includes('Redirect=Update') && p.url().includes('224279288342')) || pages.find(p => p.url().includes('blog.naver.com'));
+if (!page) throw new Error('update page not found');
+await page.bringToFront();
+await new Promise(r=>setTimeout(r,1200));
+const result = await page.evaluate(({title, body}) => {
+  const w = document.querySelector('iframe#mainFrame')?.contentWindow || window;
+  const ed = w.SmartEditor?._editors?.blogpc001;
+  if (!ed) return {error:'SmartEditor not found'};
+  const data = ed.getDocumentData();
+  const imgs = data.document.components.filter(c=>c['@ctype']==='image');
+  const uuid = ()=>'SE-'+crypto.randomUUID();
+  const cleanText = v => String(v ?? '').replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F\u007F]/g,'').trim();
+  const para = value => ({id:uuid(), nodes:[{id:uuid(), value:cleanText(value), '@ctype':'textNode'}], '@ctype':'paragraph'});
+  const textComp = ps => ({id:uuid(), layout:'default', value:ps.map(para), '@ctype':'text'});
+  const titleComp = data.document.components.find(c=>c['@ctype']==='documentTitle') || {'@ctype':'documentTitle'};
+  titleComp.title=[para(title)];
+  const paras=body.split(/\n\n+/).map(s=>s.trim()).filter(Boolean);
+  const anchors=['1. 왜 Symphony가 나왔나','3. 이슈 트래커가 컨트롤 플레인이 된다','7. 참조 구현은 Elixir다'];
+  const pos=anchors.map((a,i)=>{const idx=paras.findIndex(p=>p.includes(a)); return idx<0?Math.min(paras.length,2+i*15):idx;});
+  let out=[titleComp], start=0;
+  for (let i=0;i<imgs.length;i++) {
+    const end=Math.max(start,pos[i] ?? paras.length);
+    if (end>start) out.push(textComp(paras.slice(start,end)));
+    out.push(imgs[i]);
+    start=end;
+  }
+  if (start<paras.length) out.push(textComp(paras.slice(start)));
+  data.document.components=out.filter(Boolean);
+  ed.setDocumentData(data);
+  const txt=ed.getContentText();
+  return {title:ed.getDocumentTitle(), images:ed.getDocumentData().document.components.filter(c=>c['@ctype']==='image').length, textLen:txt.length, hasConcept:txt.includes('코딩 에이전트용 작업반장'), hasMarkdownHeading:/(^|\n)#{1,6}\s/.test(txt), hasFence:txt.includes('```'), hasCodeMarker:txt.includes('【코드'), hasSources:txt.includes('https://github.com/openai/symphony')};
+}, {title, body});
+console.log(JSON.stringify(result,null,2));
+await page.screenshot({path:'symphony-updated-draft.png', fullPage:false});
+await browser.disconnect();
