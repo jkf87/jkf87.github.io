@@ -25,11 +25,15 @@ aliases: [metaagent-x-end-to-end-rl-automatic-mas-2026-05-19/index]
 
 이것이 바로 **"동결된 실행자 천장(Frozen-Executor Ceiling)"**이다. 아무리 훌륭한 시스템 설계를 만들어도, 실행하는 쪽이 변하지 않으면 한계가 있다. 설계자와 실행자 사이에 파라미터 수준의 연결이 없으면 진정한 공동 진화(co-evolution)가 불가능하다.
 
+![Figure 1: 기존 자동 MAS 패러다임 비교 — Training-Free, Semi-Trainable, End-to-End Trainable. MetaAgent-X는 설계자와 실행자 모두를 학습한다.](./images/metaagent-x-2026-05-19/fig1-overview.png)
+
 ## MetaAgent-X: 설계자와 실행자를 동시에 학습시킨다
 
 [MetaAgent-X](https://arxiv.org/abs/2605.14212)의 핵심 아이디어는 단순하다.
 
 **디자이너(설계자)와 익스큐터(실행자)를 같이 강화학습으로 훈련시킨다.**
+
+![Figure 2: MetaAgent-X 학습 프레임워크 전체 구조. 작업 질의에서 시작해 설계→인스턴스화→환경 상호작용→크레딧 할당→정책 업데이트의 파이프라인을 보여준다.](./images/metaagent-x-2026-05-19/fig2-framework.png)
 
 구체적으로 이렇게 작동한다.
 
@@ -51,6 +55,8 @@ MetaAgent-X는 **트리 구조 롤아웃**으로 이 문제를 푼다.
 - 각 설계에 대해 익스큐터가 **N개**의 독립적 실행 롤아웃을 수행한다.
 - M×N 평가 행렬이 만들어진다.
 
+![Figure 3: 디자이너 학습 과정 — 여러 템플릿(voting, reflection, single-agent 등)으로 M개의 설계 후보를 생성하고, 각각을 N번 롤아웃하여 평균 보상으로 설계자를 평가한다.](./images/metaagent-x-2026-05-19/fig3-results.png)
+
 **디자이너 어드밴티지:** 각 설계의 평균 실행 성과를 다른 설계들과 비교한다. N번의 실행을 평균내면 실행 수준의 무작위성이 제거되고, 설계 자체의 질이 드러난다.
 
 **익스큐터 어드밴티지:** 같은 질문에 대한 모든 실행 트rajектory를 하나의 GRPO 그룹으로 묶어 비교한다. 설계가 다르더라도 실행자의 능력을 독립적으로 평가할 수 있다.
@@ -66,6 +72,8 @@ MetaAgent-X는 이를 **단계적 학습**으로 해결한다.
 - **이후:** 교대로, 혹은 동시에 학습하면서 점진적으로 공동 진화시킨다.
 
 이 단계적 접근이 중요한 이유는 초기부터 양쪽을 동시에 움직이면 학습 신호가 너무 시끄럽기 때문이다.
+
+![Figure 4: 단계적 공동 진화의 효과 — Designer Only, Executor Only, Train w/o Stage, Train w/ Stage를 비교. 교대 학습이 가장 높은 성능을 달성하며, 적절한 교대 주기(10-step)가 안정적인 학습에 중요함을 보여준다.](./images/metaagent-x-2026-05-19/fig4-ablation.png)
 
 ## 실험 결과: 최대 21.7% 성능 향상
 
