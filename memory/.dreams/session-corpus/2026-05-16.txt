@@ -1,0 +1,7 @@
+[blogbot/sessions/blogbot/2f3e8292-f873-4b77-879c-4e50b7424c26.jsonl#L135] Assistant: 발행 완료. - WordPress: https://han99.up.railway.app/2026/05/16/40s-bp-home-vs-hospital-2026-05-16/ - Quartz: https://jkf87.github.io/40s-bp-home-vs-hospital-2026-05-16 검증도 끝냈습니다. - WP 글 URL 200 확인 - 첫 figure에 `max-width:720px` 적용 확인 - `alignfull` / `100vw`는 본문 
+[blogbot/sessions/blogbot/8f94975b-276f-4f2c-b24b-2ccd62a26660.jsonl#L106] Assistant: [assistant turn failed before producing content]
+[blogbot/sessions/blogbot/8f94975b-276f-4f2c-b24b-2ccd62a26660.jsonl#L107] Assistant: [assistant turn failed before producing content]
+[blogbot/sessions/blogbot/8f94975b-276f-4f2c-b24b-2ccd62a26660.jsonl#L108] Assistant: [assistant turn failed before producing content]
+[blogbot/sessions/blogbot/b6152362-bcc5-457f-b70b-c80f9a1dc976.jsonl#L9] Assistant: 🤖 GeekNews 아침 브리핑 - **DS4(DwarfStar 4) 로컬 AI 열풍**: 단일 모델 중심의 로컬 AI 수요가 생각보다 빠르게 커졌고, 96GB~128GB RAM급 환경에서 굴리는 사례가 확산 중입니다. 사내 보안이 중요한 팀이나 오프라인/엣지 환경에서 로컬 추론 전략을 검토할 때 참고할 만합니다. - **DeerFlow 2.0, 장기 실행 SuperAgent 하네스**: 리서치·코딩·콘텐츠 작업을 서브에이전트로 분해해 병렬 처리하는 오케스트레
+[blogbot/sessions/blogbot/baf7c3b4-60fc-4e6f-90d3-e9b4d4f340f5.jsonl#L167] Assistant: Done. - Published to WordPress: https://han99.up.railway.app/2026/05/15/40s-gum-bleeding-2026-05-16/ - Published to Quartz: https://jkf87.github.io/40s-gum-bleeding-2026-05-16 - Verified WordPress page returns `200`, and the first figure uses `max-width:720p
+[blogbot/sessions/blogbot/8f94975b-276f-4f2c-b24b-2ccd62a26660.jsonl#L109] Assistant: [assistant turn failed before producing content]
