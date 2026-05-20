@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>Kimi K2.6 — 오픈소스가 12시간 혼자 코딩해서 LM Studio보다 20% 빨라진 얘기</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans KR:wght@400;700&amp;family=Noto Sans KR:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="코난쌤 블로그"/><meta property="og:title" content="Kimi K2.6 — 오픈소스가 12시간 혼자 코딩해서 LM Studio보다 20% 빨라진 얘기"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Kimi K2.6 — 오픈소스가 12시간 혼자 코딩해서 LM Studio보다 20% 빨라진 얘기"/><meta name="twitter:description" content="중국 Moonshot AI가 2026년 4월 20일 공개한 오픈소스 1T MoE 모델 Kimi K2.6. 4000번+ 도구 호출, 12시간 연속 실행, 300개 서브에이전트까지. GPT-5.4·Claude Opus 4.6과 실제로 붙는 벤치마크와 실전 사례 정리."/><meta property="og:description" content="중국 Moonshot AI가 2026년 4월 20일 공개한 오픈소스 1T MoE 모델 Kimi K2.6. 4000번+ 도구 호출, 12시간 연속 실행, 300개 서브에이전트까지. GPT-5.4·Claude Opus 4.6과 실제로 붙는 벤치마크와 실전 사례 정리."/><meta property="og:image:alt" content="중국 Moonshot AI가 2026년 4월 20일 공개한 오픈소스 1T MoE 모델 Kimi K2.6. 4000번+ 도구 호출, 12시간 연속 실행, 300개 서브에이전트까지. GPT-5.4·Claude Opus 4.6과 실제로 붙는 벤치마크와 실전 사례 정리."/><meta property="twitter:domain" content="jkf87.github.io"/><meta property="og:url" content="https://jkf87.github.io/kimi-k2-6-open-source-coding-agent-2026-04-21"/><meta property="twitter:url" content="https://jkf87.github.io/kimi-k2-6-open-source-coding-agent-2026-04-21"/><link rel="icon" href="./static/icon.png"/><meta name="description" content="중국 Moonshot AI가 2026년 4월 20일 공개한 오픈소스 1T MoE 모델 Kimi K2.6. 4000번+ 도구 호출, 12시간 연속 실행, 300개 서브에이전트까지. GPT-5.4·Claude Opus 4.6과 실제로 붙는 벤치마크와 실전 사례 정리."/><meta name="generator" content="Quartz"/><meta name="google-site-verification" content="JqDMbJFwNjfQ-7_hxP4LIajSQf1iMnw46F1nXUPclng"/><meta name="google-adsense-account" content="ca-pub-4778921872258874"/><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4778921872258874" crossorigin="anonymous"></script><link href="./index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1lcm1haWQuaW5saW5lLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUdGO0VBQ0U7OztBQUtGO0VBQ0U7RUFDQTs7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAgIHRyYW5zZm9ybS1vcmlnaW46IDAgMDtcbiAgICAgIHRyYW5zaXRpb246IHRyYW5zZm9ybSAwLjFzIGVhc2U7XG4gICAgICBvdmVyZmxvdzogdmlzaWJsZTtcbiAgICAgIG1pbi1oZWlnaHQ6IDIwMHB4O1xuICAgICAgbWluLXdpZHRoOiAyMDBweDtcblxuICAgICAgcHJlIHtcbiAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICBib3JkZXI6IG5vbmU7XG4gICAgICB9XG5cbiAgICAgIHN2ZyB7XG4gICAgICAgIG1heC13aWR0aDogbm9uZTtcbiAgICAgICAgaGVpZ2h0OiBhdXRvO1xuICAgICAgfVxuICAgIH1cblxuICAgICYgPiAubWVybWFpZC1jb250cm9scyB7XG4gICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICBib3R0b206IDIwcHg7XG4gICAgICByaWdodDogMjBweDtcbiAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICBnYXA6IDhweDtcbiAgICAgIHBhZGRpbmc6IDhweDtcbiAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICBib3JkZXItcmFkaXVzOiA2cHg7XG4gICAgICBib3gtc2hhZG93OiAwIDJweCA0cHggcmdiYSgwLCAwLCAwLCAwLjEpO1xuICAgICAgei1pbmRleDogMjtcblxuICAgICAgLm1lcm1haWQtY29udHJvbC1idXR0b24ge1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICAgICAgd2lkdGg6IDMycHg7XG4gICAgICAgIGhlaWdodDogMzJweDtcbiAgICAgICAgcGFkZGluZzogMDtcbiAgICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgICBjb2xvcjogdmFyKC0tZGFyayk7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgICAgIGZvbnQtZmFtaWx5OiB2YXIoLS1ib2R5Rm9udCk7XG4gICAgICAgIHRyYW5zaXRpb246IGFsbCAwLjJzIGVhc2U7XG5cbiAgICAgICAgJjpob3ZlciB7XG4gICAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgfVxuXG4gICAgICAgICY6YWN0aXZlIHtcbiAgICAgICAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMXB4KTtcbiAgICAgICAgfVxuXG4gICAgICAgIC8vIFN0eWxlIHRoZSByZXNldCBidXR0b24gZGlmZmVyZW50bHlcbiAgICAgICAgJjpudGgtY2hpbGQoMikge1xuICAgICAgICAgIHdpZHRoOiBhdXRvO1xuICAgICAgICAgIHBhZGRpbmc6IDAgMTJweDtcbiAgICAgICAgICBmb250LXNpemU6IDE0cHg7XG4gICAgICAgIH1cbiAgICAgIH1cbiAgICB9XG4gIH1cbn1cbiJdfQ== */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="./prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("./static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://jkf87.github.io/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://jkf87.github.io/kimi-k2-6-open-source-coding-agent-2026-04-21-og-image.webp"/><meta property="og:image:url" content="https://jkf87.github.io/kimi-k2-6-open-source-coding-agent-2026-04-21-og-image.webp"/><meta name="twitter:image" content="https://jkf87.github.io/kimi-k2-6-open-source-coding-agent-2026-04-21-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="kimi-k2-6-open-source-coding-agent-2026-04-21"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href=".">코난쌤 블로그</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="리더 모드"><title>리더 모드</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>{if(a.isFolder&amp;&amp;b.isFolder)return a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;});if(a.isFolder)return-1;if(b.isFolder)return 1;let aDates=a.data?.dates,bDates=b.data?.dates,aDate=aDates?.created??aDates?.modified??aDates?.published,bDate=bDates?.created??bDates?.modified??bDates?.published;if(aDate&amp;&amp;bDate){let at=new Date(aDate).getTime(),bt=new Date(bDate).getTime();if(bt!==at)return bt-at}return a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;})}&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-281"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-281" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><header><nav class="top-nav " aria-label="주요 메뉴"><a href="/">홈</a><a href="/posts">전체 글</a><a href="/categories">카테고리</a><a href="/about">소개</a><a href="/contact">연락처</a><a href="/privacy-policy">개인정보처리방침</a></nav></header><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="./">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Kimi K2.6 — 오픈소스가 12시간 혼자 코딩해서 LM Studio보다 20% 빨라진 얘기</a></div></nav><h1 class="article-title">Kimi K2.6 — 오픈소스가 12시간 혼자 코딩해서 LM Studio보다 20% 빨라진 얘기</h1><p show-comma="true" class="content-meta"><time datetime="2026-04-20T15:00:00.000Z">2026년 4월 21일</time><span>14 min read</span></p><ul class="tags"><li><a href="./tags/AI" class="internal tag-link">AI</a></li><li><a href="./tags/LLM" class="internal tag-link">LLM</a></li><li><a href="./tags/Kimi" class="internal tag-link">Kimi</a></li><li><a href="./tags/Moonshot" class="internal tag-link">Moonshot</a></li><li><a href="./tags/오픈소스" class="internal tag-link">오픈소스</a></li><li><a href="./tags/코딩에이전트" class="internal tag-link">코딩에이전트</a></li><li><a href="./tags/Agent-Swarm" class="internal tag-link">Agent-Swarm</a></li></ul></div></div><article class="popover-hint"><p><img src="./images/kimi-k2-6/hero.jpg" alt="Kimi K2.6 hero"/></p>
+<p>Moonshot이 2026년 4월 20일에 Kimi K2.6을 오픈소스로 공개했음. 가중치까지 다 풀었음.</p>
+<p>핵심 한 줄로 말하면, <strong>오픈소스인데 GPT-5.4(xhigh)와 Claude Opus 4.6(max effort)을 코딩·에이전트 벤치마크 몇 개에서 이김</strong>.</p>
+<h2 id="배경부터-짚고-감">배경부터 짚고 감<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#배경부터-짚고-감" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>GPT-5.4가 올해 초에 나오고, Claude Opus 4.6이 나오고, Gemini 3.1 Pro까지 Thinking 모드 달고 나오면서, “프론티어 = 클로즈드 소스”가 거의 공식처럼 굳어졌었음.</p>
+<p>오픈소스 쪽에서 가장 가까이 붙었던 게 Qwen3, DeepSeek, 그리고 Moonshot의 Kimi K2 라인이었음. 특히 K2.5는 100개짜리 Agent Swarm, 네이티브 비전까지 달고 나와서 오픈 웨이트 중 1등이긴 했음.</p>
+<p>근데 여전히 아쉬운 게 있었음.</p>
+<p><strong>오래 달리는 작업에서 무너짐.</strong></p>
+<p>10분, 30분짜리 벤치마크에선 점수가 잘 나왔지만, 실제로 개발자가 시키는 건 그게 아님. “이 레포 리팩터링해”, “벤치마크 성능 1.5배로 끌어올려” 같은 시간 단위 작업임. 여기 들어가면 오픈소스 모델은 중간에 맥락 놓치거나, 같은 실수 반복하거나, 엉뚱한 방향으로 드리프트했음.</p>
+<p>Claude Opus, GPT-5.4는 이 구간에서 여전히 혼자 잘 달렸음. 그래서 “실무에서 쓸 건 결국 유료”라는 분위기였음.</p>
+<p>K2.6은 여기에 정면으로 들어옴.</p>
+<h2 id="조치1--12시간-4000번-이상-도구-호출">조치1 — 12시간, 4000번 이상 도구 호출<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#조치1--12시간-4000번-이상-도구-호출" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Moonshot이 공개한 첫 번째 실제 케이스가 인상적임.</p>
+<p>K2.6한테 맥북에서 <strong>Qwen3.5-0.8B 모델을 다운받고 Zig로 직접 추론 엔진을 짜라</strong>고 시켰음. Zig는 아주 마이너한 언어고, 학습 데이터에도 많이 없음. 말 그대로 out-of-distribution 과제임.</p>
+<p><img src="./images/kimi-k2-6/qwen-mac.jpg" alt="Kimi K2.6 Mac M3에서 Qwen3.5-0.8B 추론 최적화 — 시간당 성능 추이"/></p>
+<p>결과:</p>
+<ul>
+<li><strong>4000번 이상 도구 호출</strong></li>
+<li><strong>12시간 이상 연속 실행, 14번 이터레이션</strong></li>
+<li>시작: 약 15 tok/s → 마지막: <strong>193 tok/s</strong></li>
+<li>최종적으로 <strong>LM Studio보다 20% 더 빠름</strong></li>
+</ul>
+<p>보통 모델을 12시간 돌리면 중간에 한 번쯤은 꼬임. 같은 버그 고친다고 3번쯤 왕복하고, 나중엔 자기가 뭘 했는지 잊어버림. K2.6은 그 구간을 끝까지 돌려냄.</p>
+<p>그다음 케이스가 더 과격함.</p>
+<p><strong>exchange-core</strong>라는 8년 된 오픈소스 매칭 엔진을, K2.6한테 혼자 13시간 리팩터링시킴. 이미 최적화된 코드라 일반적인 “더 빠르게 만들어줘”는 안 먹힘. K2.6이 한 일은:</p>
+<ul>
+<li>CPU flame graph, allocation flame graph 직접 분석</li>
+<li>숨은 병목 찾아내고 <strong>코어 스레드 토폴로지 자체를 재구성</strong> (4ME+2RE → 2ME+1RE)</li>
+<li>12번의 서로 다른 최적화 전략</li>
+<li>1000번 이상 도구 호출로 4000줄 이상 수정</li>
+</ul>
+<p><img src="./images/kimi-k2-6/exchange-core.jpg" alt="exchange-core 최적화 결과 — Perf +133%, Medium +185%"/></p>
+<p>최종 성능: <strong>Medium throughput 0.43 → 1.24 MT/s (+185%)</strong>, <strong>Perf throughput 1.23 → 2.86 MT/s (+133%)</strong>.</p>
+<p>이 정도면 시니어 아키텍트 1주일치 작업임. K2.6은 13시간에 해치움.</p>
+<p>Kimi Code Bench에서도 K2.5 대비 큰 폭으로 올라옴.</p>
+<p><img src="./images/kimi-k2-6/code-bench.jpg" alt="Kimi Code Bench — K2.6 vs K2.5"/></p>
+<h2 id="근데-혼자-잘하는-건-한계가-있었음">근데 혼자 잘하는 건 한계가 있었음<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#근데-혼자-잘하는-건-한계가-있었음" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>12시간 혼자 달릴 수 있어도, 진짜 현업 작업은 이렇지 않음.</p>
+<p>리서치 하나, 벤치마크 하나, 데모 하나, 프론트엔드 하나, 영상 하나 — 이런 걸 하나의 프로젝트에서 동시에 해야 하는 경우가 훨씬 많음.</p>
+<p>K2.5 때 Moonshot이 이미 “Agent Swarm”을 냈었음. 오케스트레이터 모델 하나가 서브에이전트 여럿을 만들어서 병렬로 돌리는 방식. 근데 K2.5는 <strong>100개 서브에이전트, 1500단계</strong>가 한계였음. 더 키우면 서브에이전트끼리 꼬이거나 오케스트레이터가 맥락을 놓침.</p>
+<p>K2.6은 여기서 한 번 더 점프함.</p>
+<h2 id="조치2--300개-에이전트-4000단계-병렬">조치2 — 300개 에이전트, 4000단계 병렬<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#조치2--300개-에이전트-4000단계-병렬" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>K2.6 Agent Swarm은 <strong>300개 서브에이전트가 4000단계를 동시에 돌림</strong>. 3배 확장임.</p>
+<p>단순히 개수만 늘어난 게 아니고, 이질적인 스킬들이 섞일 수 있게 됐음. 웹 리서치 + 장문 문서 분석 + 슬라이드 생성 + 스프레드시트 — 이런 걸 한 번의 자율 실행 안에서 묶어서 뽑아냄.</p>
+<p>그리고 <strong>Skills</strong>라는 재밌는 장치가 들어옴. PDF, 슬라이드, 워드 파일을 넣으면 그 파일의 <strong>구조적·스타일적 DNA를 학습해서 나중에 같은 품질·같은 포맷으로 재생산</strong>함. 내가 잘 만든 자료가 바로 재사용 가능한 스킬이 되는 구조임.</p>
+<p><img src="./images/kimi-k2-6/design-bench.jpg" alt="Kimi Design Bench — K2.6 Agent vs Gemini 3.1 Pro (Google AI Studio)"/></p>
+<p>프론트엔드 쪽에서도 꽤 독함. Kimi Design Bench라는 걸 따로 만들어서 Gemini 3.1 Pro의 Google AI Studio랑 붙여봤는데, Visual Input / Landing Page / Full-Stack / Creative Programming 네 카테고리에서 대부분 K2.6이 유리함.</p>
+<h2 id="proactive-agent--5일-동안-멈추지-않은-에이전트">Proactive Agent — 5일 동안 멈추지 않은 에이전트<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#proactive-agent--5일-동안-멈추지-않은-에이전트" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Moonshot의 RL 인프라팀이 K2.6으로 <strong>5일 연속 자율 운영되는 에이전트</strong>를 돌려봤음. 모니터링, 인시던트 대응, 시스템 운영까지 사람 없이.</p>
+<p>결과는 공개된 Claw Bench에서 나옴.</p>
+<p><img src="./images/kimi-k2-6/claw-bench.jpg" alt="Kimi Claw Bench — K2.6 vs K2.5"/></p>
+<p>5개 영역(코딩, IM 생태계 연동, 리서치·분석, 스케줄 관리, 메모리 활용)에서 K2.5 대비 일관된 개선. 특히 “사람 개입 없이 오래 달리는” 워크플로우에서 tool invocation 정확도가 유의미하게 올라감.</p>
+<p>실제로 이걸 이미 쓰는 자율 에이전트가 두 개 있음:</p>
+<ul>
+<li><strong>OpenClaw</strong> — 멀티 앱 24/7 실행 에이전트</li>
+<li><strong>Hermes</strong> (Nous Research) — 프로액티브 에이전트</li>
+</ul>
+<p>두 쪽 다 K2.6 출시와 함께 “기존 K2.5 대비 long-context 안정성, 도구 호출 품질이 체감 상승”이라고 직접 평가함.</p>
+<h2 id="벤치마크-요약--이긴-데가-꽤-있음">벤치마크 요약 — 이긴 데가 꽤 있음<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#벤치마크-요약--이긴-데가-꽤-있음" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>벤치마크</th><th>Kimi K2.6</th><th>GPT-5.4 (xhigh)</th><th>Claude Opus 4.6 (max)</th><th>Gemini 3.1 Pro</th><th>K2.5</th></tr></thead><tbody><tr><td>HLE-Full w/ tools</td><td><strong>54.0</strong></td><td>52.1</td><td>53.0</td><td>51.4</td><td>50.2</td></tr><tr><td>DeepSearchQA (f1)</td><td><strong>92.5</strong></td><td>78.6</td><td>91.3</td><td>81.9</td><td>89.0</td></tr><tr><td>Toolathlon</td><td>50.0</td><td><strong>54.6</strong></td><td>47.2</td><td>48.8</td><td>27.8</td></tr><tr><td>SWE-Bench Pro</td><td><strong>58.6</strong></td><td>57.7</td><td>53.4</td><td>54.2</td><td>50.7</td></tr><tr><td>SWE-Bench Verified</td><td>80.2</td><td>—</td><td><strong>80.8</strong></td><td>80.6</td><td>76.8</td></tr><tr><td>Terminal-Bench 2.0</td><td>66.7</td><td>65.4</td><td>65.4</td><td><strong>68.5</strong></td><td>50.8</td></tr><tr><td>LiveCodeBench (v6)</td><td>89.6</td><td>—</td><td>88.8</td><td><strong>91.7</strong></td><td>85.0</td></tr><tr><td>AIME 2026</td><td>96.4</td><td><strong>99.2</strong></td><td>96.7</td><td>98.3</td><td>95.8</td></tr><tr><td>GPQA-Diamond</td><td>90.5</td><td>92.8</td><td>91.3</td><td><strong>94.3</strong></td><td>87.6</td></tr><tr><td>V* w/ python</td><td><strong>96.9</strong></td><td>98.4</td><td>86.4</td><td><strong>96.9</strong></td><td>86.9</td></tr></tbody></table></div>
+<p>훑어보면 보이는 경향:</p>
+<ul>
+<li><strong>에이전트·코딩 쪽 실무 지표(HLE w/ tools, DeepSearchQA, SWE-Bench Pro)</strong>: K2.6이 이김</li>
+<li><strong>순수 추론 벤치마크(AIME, GPQA, IMO)</strong>: GPT-5.4, Gemini 3.1이 앞섬</li>
+<li><strong>Vision·수학+도구 혼용</strong>: 상위권 박빙</li>
+</ul>
+<p>즉, “시험 잘 보는 머리 좋은 학생”으로는 여전히 클로즈드 소스가 앞인데, <strong>“실무에서 오래 써먹을 에이전트”로는 오픈소스가 붙기 시작</strong>했다는 그림임.</p>
+<h2 id="아키텍처--1t-파라미터-32b-활성">아키텍처 — 1T 파라미터, 32B 활성<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#아키텍처--1t-파라미터-32b-활성" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Hugging Face 모델 카드에 따르면 스펙은 이럼.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th>값</th></tr></thead><tbody><tr><td>아키텍처</td><td>Mixture-of-Experts (MoE)</td></tr><tr><td>전체 파라미터</td><td>1T</td></tr><tr><td>활성 파라미터</td><td>32B</td></tr><tr><td>레이어 수</td><td>61</td></tr><tr><td>어텐션</td><td>MLA, 64 heads, hidden 7168</td></tr><tr><td>Expert 수</td><td>384개 (토큰당 8개 선택)</td></tr><tr><td>컨텍스트 길이</td><td>256K</td></tr><tr><td>활성화</td><td>SwiGLU</td></tr><tr><td>Vision Encoder</td><td>MoonViT (400M)</td></tr><tr><td>어휘 크기</td><td>160K</td></tr></tbody></table></div>
+<p><strong>네이티브 INT4 양자화</strong>를 기본으로 지원함. Kimi-K2-Thinking에서 쓰던 방식과 동일. 덕분에 같은 하드웨어에서 추론 속도 약 2배.</p>
+<p>라이선스는 <strong>Modified MIT</strong> — 가중치까지 상업 사용 가능. vLLM, SGLang, KTransformers로 셀프 호스팅 가능.</p>
+<h2 id="써보려면">써보려면<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#써보려면" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>웹/앱</strong>: <a href="https://www.kimi.com/" class="external">kimi.com<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>, Kimi App</li>
+<li><strong>CLI</strong>: <a href="https://www.kimi.com/code" class="external">Kimi Code<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> — 터미널 코딩 에이전트</li>
+<li><strong>공식 API</strong>: <a href="https://platform.moonshot.ai" class="external">platform.moonshot.ai<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> — OpenAI/Anthropic 호환 포맷</li>
+<li><strong>오픈 가중치</strong>: <a href="https://huggingface.co/moonshotai/Kimi-K2.6" class="external">huggingface.co/moonshotai/Kimi-K2.6<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><strong>Cloudflare Workers AI</strong>: <code>@cf/moonshotai/kimi-k2.6</code> (Day 0 지원)</li>
+<li><strong>Agent Swarm</strong>: <a href="https://www.kimi.com/agent-swarm" class="external">kimi.com/agent-swarm<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<p>Thinking 모드 기본 temperature 1.0, Instant 모드는 0.6. top_p는 둘 다 0.95 권장.</p>
+<p>멀티턴에서 추론 흐름을 유지하고 싶으면 <code>preserve_thinking</code> 옵션을 키면 됨. 코딩 에이전트 시나리오에서 성능이 올라감.</p>
+<h2 id="그래서-어떻게-봐야-하나">그래서 어떻게 봐야 하나<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#그래서-어떻게-봐야-하나" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Moonshot의 릴리즈 주기가 빨라지는 흐름이 보임.</p>
+<ul>
+<li>K2 (2025-07): 트릴리언급 MoE 최초 오픈소스</li>
+<li>K2 Thinking (2025-11): 200~300번 tool call</li>
+<li>K2.5 (2026-01): 비전 + Agent Swarm 100 agents</li>
+<li><strong>K2.6 (2026-04): long-horizon + 300 agents + Skills</strong></li>
+</ul>
+<p>약 3개월 주기로 한 단계씩 올라옴. 이번 K2.6은 “벤치마크 점수 따기 모델”에서 “현업에서 며칠 돌려도 되는 모델”로 축을 옮긴 버전임.</p>
+<p>평가할 포인트를 정리하면,</p>
+<ol>
+<li><strong>오픈소스로 실무 에이전트 쓰는 게 현실이 됨.</strong> Claw Groups, Kimi Code 같은 인터페이스가 함께 풀려서 바로 붙여볼 수 있음.</li>
+<li><strong>코딩·에이전트 지표는 앞섬, 순수 추론은 뒷서열.</strong> 논리 퍼즐·올림피아드 난이도 문제에는 GPT-5.4, Gemini 3.1이 여전히 유리함. 둘 중 뭐 쓸지는 작업 성격으로 갈라짐.</li>
+<li><strong>Skills 개념이 먹히면 판이 또 바뀜.</strong> 내가 쌓아둔 문서·슬라이드가 바로 재사용 가능한 에이전트 역량이 됨. 지식 노동자의 포트폴리오 자체가 자산이 되는 구조임.</li>
+</ol>
+<p>개인적으로 제일 눈길이 가는 건 12시간 Zig 추론 엔진 작성 케이스임. 클로즈드 소스 프론티어 모델이 아니라도 그런 작업을 안정적으로 맡길 수 있는 오픈 웨이트가 나왔다는 사실 자체가 흐름을 바꿈.</p>
+<p>이제 한국어 개발자 커뮤니티에서도 자연스레 “주 모델은 Claude·GPT, 장시간 배치 작업은 Kimi K2.6” 같은 혼성 스택이 표준이 되지 않을까 싶음.</p>
+<h2 id="faq">FAQ<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#faq" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Q1. K2.5랑 뭐가 가장 크게 달라졌음?</strong>
+세 가지. (1) long-horizon 코딩 — 12시간+ 단일 세션에서도 안정적으로 달림. (2) Agent Swarm 확장 — 100개 → 300개, 1500단계 → 4000단계. (3) Skills — 문서·슬라이드·스프레드시트를 학습해 그 구조·스타일을 재생산함.</p>
+<p><strong>Q2. Claude Opus 4.6이나 GPT-5.4 대신 쓸 만함?</strong>
+작업 종류에 따라 다름. 에이전트·코딩·long-context 작업에서는 K2.6이 대등하거나 일부 앞섬. 순수 추론(올림피아드·GPQA 같은)에서는 여전히 클로즈드 소스가 앞임. 혼성 구성이 현실적임.</p>
+<p><strong>Q3. 셀프 호스팅 가능함?</strong>
+가능. Modified MIT 라이선스로 가중치까지 풀려 있고, vLLM/SGLang/KTransformers 지원. 네이티브 INT4 양자화로 추론 속도 2배.</p>
+<p><strong>Q4. 한국어로 써도 괜찮음?</strong>
+K2.5부터 한국어 품질이 확실히 좋아졌고, K2.6도 SWE-Bench Multilingual 76.7점으로 다국어 코딩에서 Claude/Gemini와 박빙. 일상 한국어 사용에는 문제 없는 수준임.</p>
+<p><strong>Q5. 가장 현실적인 첫 시도는?</strong>
+kimi.com/code 설치해서 기존 Claude Code/OpenClaw 대체해보는 게 제일 빠름. 기존 도구 체인 유지하면서 모델만 바꿔 끼울 수 있음.</p>
+<h2 id="출처">출처<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#출처" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="https://www.kimi.com/blog/kimi-k2-6" class="external">Kimi K2.6 공식 블로그 (Moonshot AI, 2026-04-20)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://huggingface.co/moonshotai/Kimi-K2.6" class="external">moonshotai/Kimi-K2.6 — Hugging Face 모델 카드<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://siliconangle.com/2026/04/20/moonshot-ai-releases-kimi-k2-6-model-1t-parameters-attention-optimizations/" class="external">SiliconANGLE — Moonshot AI releases Kimi-K2.6 with 1T parameters (2026-04-20)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://blog.kilo.ai/p/kimi-k26-has-arrived-an-open-weight" class="external">Kilo Blog — Kimi K2.6 Has Arrived (2026-04-20)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://developers.cloudflare.com/changelog/post/2026-04-20-kimi-k2-6-workers-ai/" class="external">Cloudflare Changelog — Kimi K2.6 on Workers AI (2026-04-20)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>그래프 뷰</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-83" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#배경부터-짚고-감" data-for="배경부터-짚고-감">배경부터 짚고 감</a></li><li class="depth-0"><a href="#조치1--12시간-4000번-이상-도구-호출" data-for="조치1--12시간-4000번-이상-도구-호출">조치1 — 12시간, 4000번 이상 도구 호출</a></li><li class="depth-0"><a href="#근데-혼자-잘하는-건-한계가-있었음" data-for="근데-혼자-잘하는-건-한계가-있었음">근데 혼자 잘하는 건 한계가 있었음</a></li><li class="depth-0"><a href="#조치2--300개-에이전트-4000단계-병렬" data-for="조치2--300개-에이전트-4000단계-병렬">조치2 — 300개 에이전트, 4000단계 병렬</a></li><li class="depth-0"><a href="#proactive-agent--5일-동안-멈추지-않은-에이전트" data-for="proactive-agent--5일-동안-멈추지-않은-에이전트">Proactive Agent — 5일 동안 멈추지 않은 에이전트</a></li><li class="depth-0"><a href="#벤치마크-요약--이긴-데가-꽤-있음" data-for="벤치마크-요약--이긴-데가-꽤-있음">벤치마크 요약 — 이긴 데가 꽤 있음</a></li><li class="depth-0"><a href="#아키텍처--1t-파라미터-32b-활성" data-for="아키텍처--1t-파라미터-32b-활성">아키텍처 — 1T 파라미터, 32B 활성</a></li><li class="depth-0"><a href="#써보려면" data-for="써보려면">써보려면</a></li><li class="depth-0"><a href="#그래서-어떻게-봐야-하나" data-for="그래서-어떻게-봐야-하나">그래서 어떻게 봐야 하나</a></li><li class="depth-0"><a href="#faq" data-for="faq">FAQ</a></li><li class="depth-0"><a href="#출처" data-for="출처">출처</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="/about">소개</a></li><li><a href="/contact">연락처</a></li><li><a href="/privacy-policy">개인정보처리방침</a></li><li><a href="/posts">전체 글</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}container;content;isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="./postscript.js" type="module" data-persist="true"></script></html>

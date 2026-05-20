@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>FinMCP-Bench: MCP 기반 금융 에이전트 벤치마크가 중요한 이유</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans KR:wght@400;700&amp;family=Noto Sans KR:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="코난쌤 블로그"/><meta property="og:title" content="FinMCP-Bench: MCP 기반 금융 에이전트 벤치마크가 중요한 이유"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="FinMCP-Bench: MCP 기반 금융 에이전트 벤치마크가 중요한 이유"/><meta name="twitter:description" content="FinMCP-Bench 논문을 바탕으로 MCP 기반 금융 에이전트 벤치마크의 구조, 평가 방식, 핵심 결과, 그리고 왜 이 연구가 실전 에이전트 시대에 중요한지 정리했습니다."/><meta property="og:description" content="FinMCP-Bench 논문을 바탕으로 MCP 기반 금융 에이전트 벤치마크의 구조, 평가 방식, 핵심 결과, 그리고 왜 이 연구가 실전 에이전트 시대에 중요한지 정리했습니다."/><meta property="og:image:alt" content="FinMCP-Bench 논문을 바탕으로 MCP 기반 금융 에이전트 벤치마크의 구조, 평가 방식, 핵심 결과, 그리고 왜 이 연구가 실전 에이전트 시대에 중요한지 정리했습니다."/><meta property="twitter:domain" content="jkf87.github.io"/><meta property="og:url" content="https://jkf87.github.io/finmcp-bench-mcp-financial-agent-benchmark"/><meta property="twitter:url" content="https://jkf87.github.io/finmcp-bench-mcp-financial-agent-benchmark"/><link rel="icon" href="./static/icon.png"/><meta name="description" content="FinMCP-Bench 논문을 바탕으로 MCP 기반 금융 에이전트 벤치마크의 구조, 평가 방식, 핵심 결과, 그리고 왜 이 연구가 실전 에이전트 시대에 중요한지 정리했습니다."/><meta name="generator" content="Quartz"/><meta name="google-site-verification" content="JqDMbJFwNjfQ-7_hxP4LIajSQf1iMnw46F1nXUPclng"/><meta name="google-adsense-account" content="ca-pub-4778921872258874"/><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4778921872258874" crossorigin="anonymous"></script><link href="./index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1lcm1haWQuaW5saW5lLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUdGO0VBQ0U7OztBQUtGO0VBQ0U7RUFDQTs7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAgIHRyYW5zZm9ybS1vcmlnaW46IDAgMDtcbiAgICAgIHRyYW5zaXRpb246IHRyYW5zZm9ybSAwLjFzIGVhc2U7XG4gICAgICBvdmVyZmxvdzogdmlzaWJsZTtcbiAgICAgIG1pbi1oZWlnaHQ6IDIwMHB4O1xuICAgICAgbWluLXdpZHRoOiAyMDBweDtcblxuICAgICAgcHJlIHtcbiAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICBib3JkZXI6IG5vbmU7XG4gICAgICB9XG5cbiAgICAgIHN2ZyB7XG4gICAgICAgIG1heC13aWR0aDogbm9uZTtcbiAgICAgICAgaGVpZ2h0OiBhdXRvO1xuICAgICAgfVxuICAgIH1cblxuICAgICYgPiAubWVybWFpZC1jb250cm9scyB7XG4gICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICBib3R0b206IDIwcHg7XG4gICAgICByaWdodDogMjBweDtcbiAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICBnYXA6IDhweDtcbiAgICAgIHBhZGRpbmc6IDhweDtcbiAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICBib3JkZXItcmFkaXVzOiA2cHg7XG4gICAgICBib3gtc2hhZG93OiAwIDJweCA0cHggcmdiYSgwLCAwLCAwLCAwLjEpO1xuICAgICAgei1pbmRleDogMjtcblxuICAgICAgLm1lcm1haWQtY29udHJvbC1idXR0b24ge1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICAgICAgd2lkdGg6IDMycHg7XG4gICAgICAgIGhlaWdodDogMzJweDtcbiAgICAgICAgcGFkZGluZzogMDtcbiAgICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgICBjb2xvcjogdmFyKC0tZGFyayk7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgICAgIGZvbnQtZmFtaWx5OiB2YXIoLS1ib2R5Rm9udCk7XG4gICAgICAgIHRyYW5zaXRpb246IGFsbCAwLjJzIGVhc2U7XG5cbiAgICAgICAgJjpob3ZlciB7XG4gICAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgfVxuXG4gICAgICAgICY6YWN0aXZlIHtcbiAgICAgICAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMXB4KTtcbiAgICAgICAgfVxuXG4gICAgICAgIC8vIFN0eWxlIHRoZSByZXNldCBidXR0b24gZGlmZmVyZW50bHlcbiAgICAgICAgJjpudGgtY2hpbGQoMikge1xuICAgICAgICAgIHdpZHRoOiBhdXRvO1xuICAgICAgICAgIHBhZGRpbmc6IDAgMTJweDtcbiAgICAgICAgICBmb250LXNpemU6IDE0cHg7XG4gICAgICAgIH1cbiAgICAgIH1cbiAgICB9XG4gIH1cbn1cbiJdfQ== */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="./prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("./static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://jkf87.github.io/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://jkf87.github.io/finmcp-bench-mcp-financial-agent-benchmark-og-image.webp"/><meta property="og:image:url" content="https://jkf87.github.io/finmcp-bench-mcp-financial-agent-benchmark-og-image.webp"/><meta name="twitter:image" content="https://jkf87.github.io/finmcp-bench-mcp-financial-agent-benchmark-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="finmcp-bench-mcp-financial-agent-benchmark"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href=".">코난쌤 블로그</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="리더 모드"><title>리더 모드</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>{if(a.isFolder&amp;&amp;b.isFolder)return a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;});if(a.isFolder)return-1;if(b.isFolder)return 1;let aDates=a.data?.dates,bDates=b.data?.dates,aDate=aDates?.created??aDates?.modified??aDates?.published,bDate=bDates?.created??bDates?.modified??bDates?.published;if(aDate&amp;&amp;bDate){let at=new Date(aDate).getTime(),bt=new Date(bDate).getTime();if(bt!==at)return bt-at}return a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;})}&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-208"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-208" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><header><nav class="top-nav " aria-label="주요 메뉴"><a href="/">홈</a><a href="/posts">전체 글</a><a href="/categories">카테고리</a><a href="/about">소개</a><a href="/contact">연락처</a><a href="/privacy-policy">개인정보처리방침</a></nav></header><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="./">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>FinMCP Bench: MCP 기반 금융 에이전트 벤치마크가 중요한 이유</a></div></nav><h1 class="article-title">FinMCP-Bench: MCP 기반 금융 에이전트 벤치마크가 중요한 이유</h1><p show-comma="true" class="content-meta"><time datetime="2026-03-29T15:00:00.000Z">2026년 3월 30일</time><span>16 min read</span></p><ul class="tags"><li><a href="./tags/ai" class="internal tag-link">ai</a></li><li><a href="./tags/llm" class="internal tag-link">llm</a></li><li><a href="./tags/agent" class="internal tag-link">agent</a></li><li><a href="./tags/mcp" class="internal tag-link">mcp</a></li><li><a href="./tags/benchmark" class="internal tag-link">benchmark</a></li><li><a href="./tags/finance" class="internal tag-link">finance</a></li><li><a href="./tags/quartz" class="internal tag-link">quartz</a></li></ul></div></div><article class="popover-hint"><p>금융 도메인에서 LLM 에이전트가 진짜 일을 하려면 단순히 답을 잘 말하는 것만으로는 부족합니다. <strong>사용자 의도를 해석하고, 적절한 도구를 호출하고, 여러 단계의 의존성을 가진 워크플로를 끝까지 수행하는 능력</strong>이 필요합니다. 그런 점에서 오늘 고른 논문 <strong>FinMCP-Bench</strong>는 아주 실전적인 질문을 던집니다.</p>
+<blockquote>
+<p><strong>“MCP를 붙인 금융 에이전트는 실제 업무형 질문에서 얼마나 잘 도구를 호출하고 추론할까?”</strong></p>
+</blockquote>
+<p>이 글에서는 논문 **<a href="https://arxiv.org/abs/2603.24943" class="external">FinMCP-Bench: Benchmarking LLM Agents for Real-World Financial Tool Use under the Model Context Protocol<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>**를 바탕으로, 왜 이 벤치마크가 중요한지, 무엇을 측정하는지, 어떤 결과가 나왔는지, 그리고 우리가 실전 에이전트 설계에서 어떤 힌트를 얻을 수 있는지 정리해보겠습니다.</p>
+<h2 id="논문-한-줄-요약">논문 한 줄 요약<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#논문-한-줄-요약" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>FinMCP-Bench는 MCP(Model Context Protocol)를 사용하는 금융 LLM 에이전트의 실제 도구 호출 능력을 평가하기 위해 만든 벤치마크다.</strong></p>
+<p>단순 질의응답이 아니라,</p>
+<ul>
+<li>단일 도구 호출</li>
+<li>여러 도구를 한 턴에서 연쇄적으로 호출하는 작업</li>
+<li>여러 턴에 걸쳐 도구와 대화를 섞어가며 문제를 해결하는 작업</li>
+</ul>
+<p>까지 포함한다는 점이 핵심입니다.</p>
+<h2 id="왜-이-논문이-중요할까">왜 이 논문이 중요할까?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#왜-이-논문이-중요할까" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>기존 벤치마크 상당수는 최종 답변의 정확도나 단발성 태스크에 집중합니다. 그런데 실제 금융 상담이나 투자 분석 업무는 훨씬 더 복잡합니다.</p>
+<p>예를 들어 이런 식입니다.</p>
+<ol>
+<li>사용자의 투자 목적을 파악하고</li>
+<li>시장 데이터 도구를 호출하고</li>
+<li>상품 정보 도구를 호출하고</li>
+<li>포트폴리오 분석 도구를 연결하고</li>
+<li>그 결과를 바탕으로 다시 설명하고</li>
+<li>추가 질문이 오면 이전 맥락을 이어서 응답해야 합니다.</li>
+</ol>
+<p>즉, **현실 세계의 에이전트는 “정답 생성기”라기보다 “도구 오케스트레이터”**에 가깝습니다. FinMCP-Bench는 바로 이 지점을 측정하려고 합니다.</p>
+<p>특히 코난쌤처럼 <strong>MCP, 에이전트, 자동화 워크플로</strong>에 관심이 많은 분들에게는 거의 정면으로 꽂히는 논문입니다.</p>
+<h2 id="finmcp-bench는-무엇을-담고-있나">FinMCP-Bench는 무엇을 담고 있나?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#finmcp-bench는-무엇을-담고-있나" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>논문에 따르면 이 벤치마크는 다음과 같이 구성됩니다.</p>
+<ul>
+<li><strong>총 613개 샘플</strong></li>
+<li><strong>10개 주요 시나리오</strong></li>
+<li><strong>33개 하위 시나리오</strong></li>
+<li><strong>65개 실제 금융 MCP 도구</strong></li>
+<li><strong>실제 사용자 로그 + 합성 데이터</strong> 혼합</li>
+</ul>
+<p>샘플은 세 가지 유형으로 나뉩니다.</p>
+<h3 id="1-single-tool">1. Single-tool<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-single-tool" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>한 번의 대화 턴에서 <strong>도구 하나만 호출</strong>하면 해결되는 작업입니다.</p>
+<ul>
+<li>145개 샘플</li>
+<li>가장 단순한 유형</li>
+<li>도구 선택의 정확성이 중요</li>
+</ul>
+<h3 id="2-multi-tool">2. Multi-tool<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-multi-tool" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>한 번의 턴 안에서 <strong>여러 도구를 순차적 또는 병렬로 호출</strong>해야 하는 작업입니다.</p>
+<ul>
+<li>249개 샘플</li>
+<li>평균 7.32개 도구 호출</li>
+<li>평균 5.72단계</li>
+<li>일부는 병렬 호출 포함</li>
+</ul>
+<h3 id="3-multi-turn">3. Multi-turn<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-multi-turn" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>여러 대화 턴에 걸쳐 도구를 호출하며 문제를 해결합니다.</p>
+<ul>
+<li>219개 샘플</li>
+<li>평균 5.95턴</li>
+<li>평균 5개 도구 호출</li>
+<li>가장 실전적이지만 가장 어렵습니다</li>
+</ul>
+<h2 id="figure-1-벤치마크가-다루는-금융-시나리오">Figure 1. 벤치마크가 다루는 금융 시나리오<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#figure-1-벤치마크가-다루는-금융-시나리오" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><img src="./images/finmcp-bench/finmcp-fig1.png" alt="FinMCP-Bench Figure 1"/></p>
+<p><em>FinMCP-Bench는 10개 주요 금융 시나리오와 33개 하위 시나리오를 포함합니다. 시장 분석과 투자 계획 같은 실제 금융 상담 흐름을 폭넓게 포괄한다는 점이 강점입니다.</em></p>
+<p>이 그림은 FinMCP-Bench가 단순한 장난감 데이터셋이 아니라는 걸 보여줍니다. 논문은 특히 다음과 같은 실제 금융 상황을 포괄하려고 합니다.</p>
+<ul>
+<li>시장 분석 및 리서치</li>
+<li>투자 계획 및 자산 배분</li>
+<li>포트폴리오 관리</li>
+<li>위험 평가</li>
+<li>금융 상품 추천</li>
+<li>데이터 조회 및 리포팅</li>
+</ul>
+<p>즉, “금융 QA”를 넘어 <strong>금융 업무형 도구 사용</strong>을 평가하려는 시도입니다.</p>
+<h2 id="데이터는-어떻게-만들었나">데이터는 어떻게 만들었나?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#데이터는-어떻게-만들었나" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>이 논문의 인상적인 점 중 하나는 데이터 구성 방식입니다.</p>
+<h3 id="실제-로그-기반">실제 로그 기반<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#실제-로그-기반" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>연구진은 실제 금융 앱(Qieman APP)의 AI 어시스턴트 로그 1만 건을 수집하고, 여기서 품질이 높은 샘플을 선별했습니다.</p>
+<p>조건은 대략 이렇습니다.</p>
+<ul>
+<li>실제 금융 니즈를 반영하는가</li>
+<li>문제 해결에 실제 도구 호출이 필요한가</li>
+<li>결과가 충분히 만족스러운가</li>
+</ul>
+<h3 id="합성-데이터-보강">합성 데이터 보강<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#합성-데이터-보강" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>실제 로그만으로는 복잡한 멀티툴/멀티턴 패턴이 부족할 수 있으므로, 연구진은 추가로 합성 데이터를 만듭니다.</p>
+<h4 id="체인-기반-멀티툴-샘플-생성">체인 기반 멀티툴 샘플 생성<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#체인-기반-멀티툴-샘플-생성" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ol>
+<li>도구 간 의존성 그래프를 만들고</li>
+<li>도구 체인에 맞는 사용자 질의를 생성하고</li>
+<li>해당 질의에 대한 전체 실행 트라젝토리를 생성합니다.</li>
+</ol>
+<h4 id="역할극-기반-멀티턴-샘플-생성">역할극 기반 멀티턴 샘플 생성<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#역할극-기반-멀티턴-샘플-생성" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>planner가 사용자 페르소나와 목표를 정의하고</li>
+<li>모델이 사용자와 상담사 역할을 동시에 수행하며</li>
+<li>실제처럼 여러 턴에 걸친 대화를 생성합니다.</li>
+</ul>
+<p>이 방식은 단순 복붙형 데이터셋보다 훨씬 더 <strong>워크플로 지향적</strong>입니다.</p>
+<h2 id="무엇으로-평가하나">무엇으로 평가하나?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#무엇으로-평가하나" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>FinMCP-Bench는 단순히 최종 답변이 맞았는지만 보지 않습니다. 대신 <strong>도구 호출 능력 자체</strong>를 측정합니다.</p>
+<h3 id="1-tool-recall-tr">1. Tool Recall (TR)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-tool-recall-tr" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>정답 도구 중 모델이 맞게 호출한 비율</p>
+<h3 id="2-tool-precision-tp">2. Tool Precision (TP)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-tool-precision-tp" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>모델이 호출한 도구 중 실제로 맞는 도구의 비율</p>
+<h3 id="3-tool-f1-tf1">3. Tool F1 (TF1)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-tool-f1-tf1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Recall과 Precision의 균형 점수</p>
+<h3 id="4-exact-match-rate-emr">4. Exact Match Rate (EMR)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-exact-match-rate-emr" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>도구 호출의 <strong>구성 자체</strong>가 정답과 완전히 일치하는지 보는 가장 엄격한 지표</p>
+<p>이 평가 방식이 중요한 이유는 분명합니다. 실전에서는 “결과가 얼추 맞는 것처럼 보이는 답변”보다 <strong>적절한 도구를 적절한 순서로 불러오는 능력</strong>이 훨씬 중요하기 때문입니다.</p>
+<h2 id="결과는-어땠나">결과는 어땠나?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#결과는-어땠나" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>논문에서 보고한 대표 결과는 다음과 같습니다.</p>
+<ul>
+<li><strong>Qwen3-235B-A22B-Thinking</strong>: 최고 성능</li>
+<li><strong>Qwen3-30B-A3B-Thinking</strong>: 강력한 균형형</li>
+<li><strong>Qwen3-4B-Thinking</strong>: 작은 모델인데도 꽤 잘함</li>
+<li><strong>DeepSeek-R1 / Seed-OSS-36B</strong>: 중간권</li>
+<li><strong>GPT-OSS-20B</strong>: 상대적으로 낮은 성능</li>
+</ul>
+<p>흥미로운 포인트는 세 가지입니다.</p>
+<h3 id="1-모델-크기--성능-항상-성립하지-않는다">1. 모델 크기 = 성능, 항상 성립하지 않는다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-모델-크기--성능-항상-성립하지-않는다" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>더 큰 모델이 항상 이기는 건 아니었습니다. 즉, <strong>에이전트형 툴 사용에서는 단순 파라미터 규모보다 계획/호출 품질이 중요</strong>하다는 해석이 가능합니다.</p>
+<h3 id="2-single-tool은-쉬워-보여도-과호출-문제가-있다">2. Single-tool은 쉬워 보여도 과호출 문제가 있다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-single-tool은-쉬워-보여도-과호출-문제가-있다" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>도구 하나만 쓰면 되는 문제에서 오히려 모델들이 불필요한 도구를 추가 호출하는 경향이 나타났습니다. 즉, <strong>과잉 행동(over-calling)</strong> 문제가 존재합니다.</p>
+<h3 id="3-multi-turn이-가장-어렵다">3. Multi-turn이 가장 어렵다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-multi-turn이-가장-어렵다" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>여러 턴에 걸쳐 맥락을 유지하고 도구를 이어 붙이는 문제에서 성능이 크게 떨어졌습니다. 이건 지금 대부분의 에이전트 프레임워크가 겪는 문제와도 정확히 연결됩니다.</p>
+<h2 id="figure-4-시나리오별-성능-비교">Figure 4. 시나리오별 성능 비교<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#figure-4-시나리오별-성능-비교" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><img src="./images/finmcp-bench/finmcp-fig4.png" alt="FinMCP-Bench Figure 4"/></p>
+<p><em>시나리오별 TF1 성능을 비교한 결과입니다. 상위 모델은 특정 영역만 잘하는 것이 아니라, 여러 금융 시나리오에서 비교적 고르게 성능을 유지합니다.</em></p>
+<p>이 그림의 포인트는 단순 최고점이 아니라 <strong>균형감</strong>입니다. 강한 모델은 한두 시나리오만 잘하는 게 아니라, 여러 금융 시나리오에서 고르게 버틴다는 점이 인상적입니다.</p>
+<p>실전 서비스에선 이 균형이 정말 중요합니다. 특정 태스크에서만 반짝하는 모델은 운영에 투입했을 때 불안정할 수 있기 때문입니다.</p>
+<h2 id="figure-5-난이도별-성능-변화">Figure 5. 난이도별 성능 변화<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#figure-5-난이도별-성능-변화" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><img src="./images/finmcp-bench/finmcp-fig5.png" alt="FinMCP-Bench Figure 5"/></p>
+<p><em>흥미롭게도 상위 모델은 쉬운 문제보다 오히려 더 복잡한 문제에서 TF1이 상승하는 경향을 보입니다. 더 많은 제약과 더 풍부한 도구 연결 기회가 오히려 올바른 호출을 유도했을 가능성이 있습니다.</em></p>
+<p>이 결과는 꽤 재미있습니다.</p>
+<p>보통은 어려운 문제일수록 성능이 떨어질 거라고 생각하지만, 상위 모델들은 오히려 Hard 구간에서 더 나은 TF1을 보이기도 합니다. 논문은 그 이유를 이렇게 해석합니다.</p>
+<ul>
+<li>쉬운 문제는 도구를 적게 불러야 해서 과호출이 감점 요소가 됨</li>
+<li>어려운 문제는 더 많은 제약과 더 복잡한 계획이 필요해, 잘하는 모델이 오히려 강점을 발휘함</li>
+</ul>
+<p>이건 실전 에이전트 설계에서도 시사점이 큽니다. <strong>문제를 너무 단순화하면 오히려 에이전트의 과잉 행동을 유발할 수 있다</strong>는 점이죠.</p>
+<h2 id="이-논문이-주는-실전-인사이트">이 논문이 주는 실전 인사이트<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#이-논문이-주는-실전-인사이트" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>제가 보기엔 이 논문의 핵심 가치는 세 가지입니다.</p>
+<h3 id="1-mcp-시대엔-모델-성능보다-도구-사용-성능이-중요하다">1. MCP 시대엔 “모델 성능”보다 “도구 사용 성능”이 중요하다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-mcp-시대엔-모델-성능보다-도구-사용-성능이-중요하다" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>앞으로 에이전트는 모델 하나로 끝나지 않습니다. MCP처럼 표준화된 인터페이스를 통해 여러 도구를 연결하게 되고, 그때 중요한 건 “답변 품질”만이 아니라 <strong>호출 선택, 순서, 의존성 처리, 멀티턴 지속성</strong>입니다.</p>
+<h3 id="2-벤치마크도-이제-워크플로-중심으로-가야-한다">2. 벤치마크도 이제 워크플로 중심으로 가야 한다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-벤치마크도-이제-워크플로-중심으로-가야-한다" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>정답 텍스트 하나 맞히는 벤치마크만으로는 실전성을 보기 어렵습니다. FinMCP-Bench는 벤치마크가 <strong>실행 흐름 전체</strong>를 평가해야 한다는 방향을 보여줍니다.</p>
+<h3 id="3-멀티턴-안정성은-아직-큰-숙제다">3. 멀티턴 안정성은 아직 큰 숙제다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-멀티턴-안정성은-아직-큰-숙제다" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>도구를 잘 부르는 것보다 더 어려운 건 <strong>상황을 이어서 일관되게 수행하는 것</strong>입니다. 이건 지금 에이전트 제품들이 왜 중간에 삽질하고, 왜 컨텍스트가 길어질수록 이상해지는지 설명해줍니다.</p>
+<h2 id="한계도-분명하다">한계도 분명하다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#한계도-분명하다" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>좋은 논문이지만 한계도 있습니다.</p>
+<ul>
+<li>특정 금융 플랫폼 로그 기반이라 범용성에 한계가 있을 수 있음</li>
+<li>중국어/중국 금융 생태계 중심이라 다른 시장에 바로 일반화하긴 어려움</li>
+<li>최종 답변 품질보다 도구 호출 성능에 초점이 맞춰져 있음</li>
+<li>613개 샘플은 충분히 의미 있지만, 장기적으로는 더 큰 규모가 필요할 수도 있음</li>
+</ul>
+<p>그럼에도 불구하고 이 논문은 <strong>실전형 에이전트 평가의 방향</strong>을 아주 선명하게 보여줍니다.</p>
+<h2 id="마무리">마무리<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#마무리" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>FinMCP-Bench는 단순히 금융 벤치마크 하나가 아닙니다. 저는 이 논문을 **“MCP 시대의 에이전트 평가가 어디로 가야 하는지 보여주는 시금석”**처럼 봤습니다.</p>
+<p>특히 코딩 에이전트, 리서치 에이전트, 업무 자동화 에이전트를 다루는 분들이라면 금융 도메인이 아니더라도 꼭 볼 가치가 있습니다. 결국 핵심 질문은 같기 때문입니다.</p>
+<blockquote>
+<p><strong>에이전트는 도구를 붙였을 때 정말 일을 잘하는가?</strong></p>
+</blockquote>
+<p>이 질문에 대해, FinMCP-Bench는 꽤 실전적인 방식으로 답을 시도한 논문입니다.</p>
+<hr/>
+<h2 id="참고-링크">참고 링크<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#참고-링크" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>논문 페이지: <a href="https://arxiv.org/abs/2603.24943" class="external">arXiv 2603.24943<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>PDF: <a href="https://arxiv.org/pdf/2603.24943" class="external">https://arxiv.org/pdf/2603.24943<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>HTML: <a href="https://arxiv.org/html/2603.24943v1" class="external">https://arxiv.org/html/2603.24943v1<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>MCP 소개: <a href="https://docs.anthropic.com/en/docs/agents-and-tools/mcp" class="external">Anthropic MCP Docs<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>그래프 뷰</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-54" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#논문-한-줄-요약" data-for="논문-한-줄-요약">논문 한 줄 요약</a></li><li class="depth-0"><a href="#왜-이-논문이-중요할까" data-for="왜-이-논문이-중요할까">왜 이 논문이 중요할까?</a></li><li class="depth-0"><a href="#finmcp-bench는-무엇을-담고-있나" data-for="finmcp-bench는-무엇을-담고-있나">FinMCP-Bench는 무엇을 담고 있나?</a></li><li class="depth-1"><a href="#1-single-tool" data-for="1-single-tool">1. Single-tool</a></li><li class="depth-1"><a href="#2-multi-tool" data-for="2-multi-tool">2. Multi-tool</a></li><li class="depth-1"><a href="#3-multi-turn" data-for="3-multi-turn">3. Multi-turn</a></li><li class="depth-0"><a href="#figure-1-벤치마크가-다루는-금융-시나리오" data-for="figure-1-벤치마크가-다루는-금융-시나리오">Figure 1. 벤치마크가 다루는 금융 시나리오</a></li><li class="depth-0"><a href="#데이터는-어떻게-만들었나" data-for="데이터는-어떻게-만들었나">데이터는 어떻게 만들었나?</a></li><li class="depth-1"><a href="#실제-로그-기반" data-for="실제-로그-기반">실제 로그 기반</a></li><li class="depth-1"><a href="#합성-데이터-보강" data-for="합성-데이터-보강">합성 데이터 보강</a></li><li class="depth-0"><a href="#무엇으로-평가하나" data-for="무엇으로-평가하나">무엇으로 평가하나?</a></li><li class="depth-1"><a href="#1-tool-recall-tr" data-for="1-tool-recall-tr">1. Tool Recall (TR)</a></li><li class="depth-1"><a href="#2-tool-precision-tp" data-for="2-tool-precision-tp">2. Tool Precision (TP)</a></li><li class="depth-1"><a href="#3-tool-f1-tf1" data-for="3-tool-f1-tf1">3. Tool F1 (TF1)</a></li><li class="depth-1"><a href="#4-exact-match-rate-emr" data-for="4-exact-match-rate-emr">4. Exact Match Rate (EMR)</a></li><li class="depth-0"><a href="#결과는-어땠나" data-for="결과는-어땠나">결과는 어땠나?</a></li><li class="depth-1"><a href="#1-모델-크기--성능-항상-성립하지-않는다" data-for="1-모델-크기--성능-항상-성립하지-않는다">1. 모델 크기 = 성능, 항상 성립하지 않는다</a></li><li class="depth-1"><a href="#2-single-tool은-쉬워-보여도-과호출-문제가-있다" data-for="2-single-tool은-쉬워-보여도-과호출-문제가-있다">2. Single-tool은 쉬워 보여도 과호출 문제가 있다</a></li><li class="depth-1"><a href="#3-multi-turn이-가장-어렵다" data-for="3-multi-turn이-가장-어렵다">3. Multi-turn이 가장 어렵다</a></li><li class="depth-0"><a href="#figure-4-시나리오별-성능-비교" data-for="figure-4-시나리오별-성능-비교">Figure 4. 시나리오별 성능 비교</a></li><li class="depth-0"><a href="#figure-5-난이도별-성능-변화" data-for="figure-5-난이도별-성능-변화">Figure 5. 난이도별 성능 변화</a></li><li class="depth-0"><a href="#이-논문이-주는-실전-인사이트" data-for="이-논문이-주는-실전-인사이트">이 논문이 주는 실전 인사이트</a></li><li class="depth-1"><a href="#1-mcp-시대엔-모델-성능보다-도구-사용-성능이-중요하다" data-for="1-mcp-시대엔-모델-성능보다-도구-사용-성능이-중요하다">1. MCP 시대엔 “모델 성능”보다 “도구 사용 성능”이 중요하다</a></li><li class="depth-1"><a href="#2-벤치마크도-이제-워크플로-중심으로-가야-한다" data-for="2-벤치마크도-이제-워크플로-중심으로-가야-한다">2. 벤치마크도 이제 워크플로 중심으로 가야 한다</a></li><li class="depth-1"><a href="#3-멀티턴-안정성은-아직-큰-숙제다" data-for="3-멀티턴-안정성은-아직-큰-숙제다">3. 멀티턴 안정성은 아직 큰 숙제다</a></li><li class="depth-0"><a href="#한계도-분명하다" data-for="한계도-분명하다">한계도 분명하다</a></li><li class="depth-0"><a href="#마무리" data-for="마무리">마무리</a></li><li class="depth-0"><a href="#참고-링크" data-for="참고-링크">참고 링크</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>백링크</h3><ul id="list-2" class="overflow"><li><a href="./agentic-evals-workshop-future-of-agent-evaluations" class="internal">Agentic Evaluations Workshop 핵심 정리 — 에이전트 평가의 다음 과제</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="/about">소개</a></li><li><a href="/contact">연락처</a></li><li><a href="/privacy-policy">개인정보처리방침</a></li><li><a href="/posts">전체 글</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}container;content;isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="./postscript.js" type="module" data-persist="true"></script></html>

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>UX 심리학 법칙 30선 — 디자이너와 개발자가 알아야 할 인간의 법칙들</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans KR:wght@400;700&amp;family=Noto Sans KR:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="코난쌤 블로그"/><meta property="og:title" content="UX 심리학 법칙 30선 — 디자이너와 개발자가 알아야 할 인간의 법칙들"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="UX 심리학 법칙 30선 — 디자이너와 개발자가 알아야 할 인간의 법칙들"/><meta name="twitter:description" content="lawsofux.com의 UX 심리학 기반 법칙 30개를 6가지 카테고리로 정리한 총괄 가이드. 각 법칙을 클릭하면 세부 설명으로 이동합니다."/><meta property="og:description" content="lawsofux.com의 UX 심리학 기반 법칙 30개를 6가지 카테고리로 정리한 총괄 가이드. 각 법칙을 클릭하면 세부 설명으로 이동합니다."/><meta property="og:image:alt" content="lawsofux.com의 UX 심리학 기반 법칙 30개를 6가지 카테고리로 정리한 총괄 가이드. 각 법칙을 클릭하면 세부 설명으로 이동합니다."/><meta property="twitter:domain" content="jkf87.github.io"/><meta property="og:url" content="https://jkf87.github.io/laws-of-ux/index"/><meta property="twitter:url" content="https://jkf87.github.io/laws-of-ux/index"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="lawsofux.com의 UX 심리학 기반 법칙 30개를 6가지 카테고리로 정리한 총괄 가이드. 각 법칙을 클릭하면 세부 설명으로 이동합니다."/><meta name="generator" content="Quartz"/><meta name="google-site-verification" content="JqDMbJFwNjfQ-7_hxP4LIajSQf1iMnw46F1nXUPclng"/><meta name="google-adsense-account" content="ca-pub-4778921872258874"/><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4778921872258874" crossorigin="anonymous"></script><link href="../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1lcm1haWQuaW5saW5lLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUdGO0VBQ0U7OztBQUtGO0VBQ0U7RUFDQTs7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAgIHRyYW5zZm9ybS1vcmlnaW46IDAgMDtcbiAgICAgIHRyYW5zaXRpb246IHRyYW5zZm9ybSAwLjFzIGVhc2U7XG4gICAgICBvdmVyZmxvdzogdmlzaWJsZTtcbiAgICAgIG1pbi1oZWlnaHQ6IDIwMHB4O1xuICAgICAgbWluLXdpZHRoOiAyMDBweDtcblxuICAgICAgcHJlIHtcbiAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICBib3JkZXI6IG5vbmU7XG4gICAgICB9XG5cbiAgICAgIHN2ZyB7XG4gICAgICAgIG1heC13aWR0aDogbm9uZTtcbiAgICAgICAgaGVpZ2h0OiBhdXRvO1xuICAgICAgfVxuICAgIH1cblxuICAgICYgPiAubWVybWFpZC1jb250cm9scyB7XG4gICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICBib3R0b206IDIwcHg7XG4gICAgICByaWdodDogMjBweDtcbiAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICBnYXA6IDhweDtcbiAgICAgIHBhZGRpbmc6IDhweDtcbiAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICBib3JkZXItcmFkaXVzOiA2cHg7XG4gICAgICBib3gtc2hhZG93OiAwIDJweCA0cHggcmdiYSgwLCAwLCAwLCAwLjEpO1xuICAgICAgei1pbmRleDogMjtcblxuICAgICAgLm1lcm1haWQtY29udHJvbC1idXR0b24ge1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICAgICAgd2lkdGg6IDMycHg7XG4gICAgICAgIGhlaWdodDogMzJweDtcbiAgICAgICAgcGFkZGluZzogMDtcbiAgICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgICBjb2xvcjogdmFyKC0tZGFyayk7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgICAgIGZvbnQtZmFtaWx5OiB2YXIoLS1ib2R5Rm9udCk7XG4gICAgICAgIHRyYW5zaXRpb246IGFsbCAwLjJzIGVhc2U7XG5cbiAgICAgICAgJjpob3ZlciB7XG4gICAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgfVxuXG4gICAgICAgICY6YWN0aXZlIHtcbiAgICAgICAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMXB4KTtcbiAgICAgICAgfVxuXG4gICAgICAgIC8vIFN0eWxlIHRoZSByZXNldCBidXR0b24gZGlmZmVyZW50bHlcbiAgICAgICAgJjpudGgtY2hpbGQoMikge1xuICAgICAgICAgIHdpZHRoOiBhdXRvO1xuICAgICAgICAgIHBhZGRpbmc6IDAgMTJweDtcbiAgICAgICAgICBmb250LXNpemU6IDE0cHg7XG4gICAgICAgIH1cbiAgICAgIH1cbiAgICB9XG4gIH1cbn1cbiJdfQ== */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://jkf87.github.io/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://jkf87.github.io/laws-of-ux/index-og-image.webp"/><meta property="og:image:url" content="https://jkf87.github.io/laws-of-ux/index-og-image.webp"/><meta name="twitter:image" content="https://jkf87.github.io/laws-of-ux/index-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="laws-of-ux/index"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">코난쌤 블로그</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>{if(a.isFolder&amp;&amp;b.isFolder)return a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;});if(a.isFolder)return-1;if(b.isFolder)return 1;let aDates=a.data?.dates,bDates=b.data?.dates,aDate=aDates?.created??aDates?.modified??aDates?.published,bDate=bDates?.created??bDates?.modified??bDates?.published;if(aDate&amp;&amp;bDate){let at=new Date(aDate).getTime(),bt=new Date(bDate).getTime();if(bt!==at)return bt-at}return a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;})}&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-8"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-8" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-3"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><header><nav class="top-nav " aria-label="주요 메뉴"><a href="/">홈</a><a href="/posts">전체 글</a><a href="/categories">카테고리</a><a href="/about">소개</a><a href="/contact">연락처</a><a href="/privacy-policy">개인정보처리방침</a></nav></header><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>UX 심리학 법칙 30선 — 디자이너와 개발자가 알아야 할 인간의 법칙들</a></div></nav><h1 class="article-title">UX 심리학 법칙 30선 — 디자이너와 개발자가 알아야 할 인간의 법칙들</h1><p show-comma="true" class="content-meta"><time datetime="2025-05-05T15:00:00.000Z">2025년 5월 06일</time><span>9 min read</span></p></div></div><div class="popover-hint"><article class><p><img src="https://lawsofux.com/law-of-pragnanz/social.png" alt/></p>
+<h1 id="ux-심리학-법칙-30선--디자이너와-개발자가-알아야-할-인간의-법칙들">UX 심리학 법칙 30선 — 디자이너와 개발자가 알아야 할 인간의 법칙들<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ux-심리학-법칙-30선--디자이너와-개발자가-알아야-할-인간의-법칙들" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>“이 버튼 왜 아무도 안 누르지?” “설명을 그렇게 자세히 썼는데 왜 다들 헤매지?”</p>
+<p>답은 심리학에 있다. 사용자는 우리가 의도한 대로 행동하지 않는다. 인간의 뇌가 정해놓은 법칙대로 행동한다. <a href="https://lawsofux.com" class="external">Laws of UX<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>는 그 법칙 30개를 모아놓은 사이트다. 100년 된 게슈탈트 심리학부터 최신 인터랙션 연구까지, UX 디자인의 기반이 되는 원칙들을 한눈에 볼 수 있게 정리했다.</p>
+<p>이 글에서는 30개 법칙을 6가지 카테고리로 나누어 핵심만 짚는다. 각 법칙을 클릭하면 정의, 심리학적 배경, 실무 적용 사례가 담긴 세부 페이지로 이동한다.</p>
+<hr/>
+<h2 id="-인지와-지각--뇌가-세상을-받아들이는-방식">🧠 인지와 지각 — 뇌가 세상을 받아들이는 방식<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-인지와-지각--뇌가-세상을-받아들이는-방식" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>사람의 뇌는 매초 엄청난 양의 정보를 처리한다. 그 과정에서 뇌가 사용하는 ‘지름길’이 곧 UX 법칙의 출발점이다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>#</th><th>법칙</th><th>핵심</th><th>세부 보기</th></tr></thead><tbody><tr><td>1</td><td><strong>심미적 사용성 효과</strong></td><td>예쁘면 쓰기 쉬워 보인다</td><td><a href="../laws-of-ux/01-aesthetic-usability-effect" class="internal alias" data-slug="laws-of-ux/01-aesthetic-usability-effect">→ 자세히</a></td></tr><tr><td>2</td><td><strong>선택 과부하</strong></td><td>너무 많은 옵션은 마비시킨다</td><td><a href="../laws-of-ux/02-choice-overload" class="internal alias" data-slug="laws-of-ux/02-choice-overload">→ 자세히</a></td></tr><tr><td>3</td><td><strong>청킹</strong></td><td>정보를 덩어리로 나누면 기억이 잘 된다</td><td><a href="../laws-of-ux/03-chunking" class="internal alias" data-slug="laws-of-ux/03-chunking">→ 자세히</a></td></tr><tr><td>4</td><td><strong>인지 편향</strong></td><td>사고의 체계적 오류가 판단을 왜곡한다</td><td><a href="../laws-of-ux/04-cognitive-bias" class="internal alias" data-slug="laws-of-ux/04-cognitive-bias">→ 자세히</a></td></tr><tr><td>5</td><td><strong>인지 부하</strong></td><td>인터페이스가 요구하는 정신적 자원의 양</td><td><a href="../laws-of-ux/05-cognitive-load" class="internal alias" data-slug="laws-of-ux/05-cognitive-load">→ 자세히</a></td></tr></tbody></table></div>
+<hr/>
+<h2 id="️-의사결정과-행동--선택의-심리학">⚖️ 의사결정과 행동 — 선택의 심리학<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#️-의사결정과-행동--선택의-심리학" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>선택지가 많을수록 좋을까? 아니다. 인간의 의사결정은 ‘합리적 경제인’ 모델과 거리가 멀다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>#</th><th>법칙</th><th>핵심</th><th>세부 보기</th></tr></thead><tbody><tr><td>6</td><td><strong>도허티 임계값</strong></td><td>반응 400ms 이하에서 생산성 급증</td><td><a href="../laws-of-ux/06-doherty-threshold" class="internal alias" data-slug="laws-of-ux/06-doherty-threshold">→ 자세히</a></td></tr><tr><td>7</td><td><strong>핏츠의 법칙</strong></td><td>거리·크기가 선택 시간을 결정</td><td><a href="../laws-of-ux/07-fitts-law" class="internal alias" data-slug="laws-of-ux/07-fitts-law">→ 자세히</a></td></tr><tr><td>8</td><td><strong>플로우</strong></td><td>완전히 몰입한 최적 경험</td><td><a href="../laws-of-ux/08-flow-state" class="internal alias" data-slug="laws-of-ux/08-flow-state">→ 자세히</a></td></tr><tr><td>9</td><td><strong>목표-경사 효과</strong></td><td>목표에 가까워질수록 속도가 빨라진다</td><td><a href="../laws-of-ux/09-goal-gradient-effect" class="internal alias" data-slug="laws-of-ux/09-goal-gradient-effect">→ 자세히</a></td></tr><tr><td>10</td><td><strong>힉의 법칙</strong></td><td>선택지가 많을수록 결정이 느려진다</td><td><a href="../laws-of-ux/10-hicks-law" class="internal alias" data-slug="laws-of-ux/10-hicks-law">→ 자세히</a></td></tr></tbody></table></div>
+<hr/>
+<h2 id="-게슈탈트-원칙--뇌가-패턴을-만드는-방식">🔗 게슈탈트 원칙 — 뇌가 패턴을 만드는 방식<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-게슈탈트-원칙--뇌가-패턴을-만드는-방식" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>1920년대 독일에서 시작된 게슈탈트 심리학. “전체는 부분의 합 이상”이라고 말한다. 뇌는 개별 요소를 보지 않고 관계와 구조를 본다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>#</th><th>법칙</th><th>핵심</th><th>세부 보기</th></tr></thead><tbody><tr><td>11</td><td><strong>야콥의 법칙</strong></td><td>사용자는 다른 사이트처럼 작동하길 원한다</td><td><a href="../laws-of-ux/11-jakobs-law" class="internal alias" data-slug="laws-of-ux/11-jakobs-law">→ 자세히</a></td></tr><tr><td>12</td><td><strong>공통 영역의 법칙</strong></td><td>같은 경계 안이면 같은 그룹</td><td><a href="../laws-of-ux/12-law-of-common-region" class="internal alias" data-slug="laws-of-ux/12-law-of-common-region">→ 자세히</a></td></tr><tr><td>13</td><td><strong>근접성의 법칙</strong></td><td>가까이 있으면 같은 그룹</td><td><a href="../laws-of-ux/13-law-of-proximity" class="internal alias" data-slug="laws-of-ux/13-law-of-proximity">→ 자세히</a></td></tr><tr><td>14</td><td><strong>유사성의 법칙</strong></td><td>비슷하면 같은 그룹</td><td><a href="../laws-of-ux/14-law-of-similarity" class="internal alias" data-slug="laws-of-ux/14-law-of-similarity">→ 자세히</a></td></tr><tr><td>15</td><td><strong>간결성의 법칙</strong></td><td>복잡한 건 단순한 형태로 인식</td><td><a href="../laws-of-ux/15-law-of-pragnanz" class="internal alias" data-slug="laws-of-ux/15-law-of-pragnanz">→ 자세히</a></td></tr></tbody></table></div>
+<hr/>
+<h2 id="-정보-구조화--복잡성을-다루는-기술">📐 정보 구조화 — 복잡성을 다루는 기술<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-정보-구조화--복잡성을-다루는-기술" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>정보를 어떻게 나누고, 얼마나 보여줄지 결정하는 일은 UX 설계의 핵심이다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>#</th><th>법칙</th><th>핵심</th><th>세부 보기</th></tr></thead><tbody><tr><td>16</td><td><strong>균일 연결의 법칙</strong></td><td>연결된 것은 더 관련 있어 보인다</td><td><a href="../laws-of-ux/16-law-of-uniform-connectedness" class="internal alias" data-slug="laws-of-ux/16-law-of-uniform-connectedness">→ 자세히</a></td></tr><tr><td>17</td><td><strong>멘탈 모델</strong></td><td>사용자가 시스템을 어떻게 이해하는가</td><td><a href="../laws-of-ux/17-mental-model" class="internal alias" data-slug="laws-of-ux/17-mental-model">→ 자세히</a></td></tr><tr><td>18</td><td><strong>밀러의 법칙</strong></td><td>작업기억 7±2개 한계</td><td><a href="../laws-of-ux/18-millers-law" class="internal alias" data-slug="laws-of-ux/18-millers-law">→ 자세히</a></td></tr><tr><td>19</td><td><strong>오컴의 면도날</strong></td><td>가장 단순한 설명이 보통 맞다</td><td><a href="../laws-of-ux/19-occams-razor" class="internal alias" data-slug="laws-of-ux/19-occams-razor">→ 자세히</a></td></tr><tr><td>20</td><td><strong>파레토 법칙</strong></td><td>80% 효과가 20% 원인에서</td><td><a href="../laws-of-ux/20-pareto-principle" class="internal alias" data-slug="laws-of-ux/20-pareto-principle">→ 자세히</a></td></tr></tbody></table></div>
+<hr/>
+<h2 id="-설계-원칙--화면에-옮기는-기준">🔧 설계 원칙 — 화면에 옮기는 기준<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-설계-원칙--화면에-옮기는-기준" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>이론을 실제 인터페이스에 적용할 때 필요한 원칙들. 400ms의 마법부터 “보내는 쪽은 엄격하게”라는 인터넷의 철학까지.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>#</th><th>법칙</th><th>핵심</th><th>세부 보기</th></tr></thead><tbody><tr><td>21</td><td><strong>테슬러의 법칙</strong></td><td>줄일 수 없는 복잡성은 존재한다</td><td><a href="../laws-of-ux/21-teslers-law" class="internal alias" data-slug="laws-of-ux/21-teslers-law">→ 자세히</a></td></tr><tr><td>22</td><td><strong>작업 기억</strong></td><td>정보를 일시 보관·조작하는 인지 시스템</td><td><a href="../laws-of-ux/22-working-memory" class="internal alias" data-slug="laws-of-ux/22-working-memory">→ 자세히</a></td></tr><tr><td>23</td><td><strong>포스텔의 법칙</strong></td><td>보내는 쪽은 엄격, 받는 쪽은 관대</td><td><a href="../laws-of-ux/23-postels-law" class="internal alias" data-slug="laws-of-ux/23-postels-law">→ 자세히</a></td></tr><tr><td>24</td><td><strong>활성 사용자의 역설</strong></td><td>사용자는 매뉴얼 안 읽고 바로 쓴다</td><td><a href="../laws-of-ux/24-paradox-of-the-active-user" class="internal alias" data-slug="laws-of-ux/24-paradox-of-the-active-user">→ 자세히</a></td></tr><tr><td>25</td><td><strong>직렬 위치 효과</strong></td><td>처음과 마지막을 가장 잘 기억</td><td><a href="../laws-of-ux/25-serial-position-effect" class="internal alias" data-slug="laws-of-ux/25-serial-position-effect">→ 자세히</a></td></tr></tbody></table></div>
+<hr/>
+<h2 id="️-몰입동기시간--행동을-이끄는-힘">⏱️ 몰입·동기·시간 — 행동을 이끄는 힘<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#️-몰입동기시간--행동을-이끄는-힘" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>사용자가 끝까지 갈지, 중간에 포기할지를 결정하는 심리.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>#</th><th>법칙</th><th>핵심</th><th>세부 보기</th></tr></thead><tbody><tr><td>26</td><td><strong>폰 레스토르프 효과</strong></td><td>눈에 띄는 것을 가장 잘 기억</td><td><a href="../laws-of-ux/26-von-restorff-effect" class="internal alias" data-slug="laws-of-ux/26-von-restorff-effect">→ 자세히</a></td></tr><tr><td>27</td><td><strong>선택적 주의</strong></td><td>관련 자극에만 주의 집중</td><td><a href="../laws-of-ux/27-selective-attention" class="internal alias" data-slug="laws-of-ux/27-selective-attention">→ 자세히</a></td></tr><tr><td>28</td><td><strong>자이가르닉 효과</strong></td><td>끝내지 못한 일을 더 잘 기억</td><td><a href="../laws-of-ux/28-zeigarnik-effect" class="internal alias" data-slug="laws-of-ux/28-zeigarnik-effect">→ 자세히</a></td></tr><tr><td>29</td><td><strong>피크-엔드 룰</strong></td><td>정점과 끝이 전체 평가를 좌우</td><td><a href="../laws-of-ux/29-peak-end-rule" class="internal alias" data-slug="laws-of-ux/29-peak-end-rule">→ 자세히</a></td></tr><tr><td>30</td><td><strong>파킨슨의 법칙</strong></td><td>작업은 주어진 시간을 꽉 채운다</td><td><a href="../laws-of-ux/30-parkinsons-law" class="internal alias" data-slug="laws-of-ux/30-parkinsons-law">→ 자세히</a></td></tr></tbody></table></div>
+<hr/>
+<h2 id="왜-ux-법칙을-알아야-하는가">왜 UX 법칙을 알아야 하는가<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#왜-ux-법칙을-알아야-하는가" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>2024년 Nielsen Norman Group의 연구에 따르면, 사용자는 웹페이지의 <strong>평균 28%만 읽는다</strong>. 72%는 스크롤만 하고 지나간다. 아무리 좋은 기능을 만들어도, 사용자의 뇌가 이해할 수 있는 형태로 전달하지 않으면 아무 소용이 없다.</p>
+<p>UX 법칙은 “왜 사용자가 이렇게 행동하지?”에 대한 답이다. 30개라고 많아 보이지만 결국 세 가지로 귀결된다.</p>
+<ol>
+<li><strong>인지 부하를 줄여라</strong> — 뇌가 처리해야 할 정보의 양을 최소화</li>
+<li><strong>기대에 부합하라</strong> — 사용자가 이미 아는 패턴을 활용</li>
+<li><strong>행동을 유도하라</strong> — 목표에 가까워지는 느낌을 주고 몰입을 방해하지 마라</li>
+</ol>
+<hr/>
+<h2 id="참고-자료">참고 자료<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#참고-자료" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Laws of UX</strong> — <a href="https://lawsofux.com" class="external">lawsofux.com<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><strong>GeekNews 소개글</strong> — <a href="https://news.hada.io/topic?id=29034" class="external">news.hada.io/topic?id=29034<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><strong>Nielsen Norman Group</strong> — <a href="https://www.nngroup.com" class="external">nngroup.com<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><strong>게슈탈트 심리학</strong> — Max Wertheimer, Kurt Koffka, Wolfgang Köhler (1920s)</li>
+</ul>
+<hr/>
+<p><em>이 글은 <a href="https://lawsofux.com" class="external">Laws of UX<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>를 참고하여 작성했습니다. 각 법칙의 세부 페이지에서 더 깊은 설명과 실무 사례를 확인할 수 있습니다.</em></p></article><div class="page-listing"><p>30건의 항목</p><div><ul class="section-ul"><li class="section-li"><div class="section"><p class="meta"><time datetime="2025-05-05T15:00:00.000Z">2025년 5월 06일</time></p><div class="desc"><h3><a href="../laws-of-ux/01-aesthetic-usability-effect" class="internal">심미적 사용성 효과 (Aesthetic-Usability Effect)</a></h3></div><ul class="tags"><li><a class="internal tag-link" href="../tags/UX">UX</a></li><li><a class="internal tag-link" href="../tags/디자인">디자인</a></li><li><a class="internal tag-link" href="../tags/UX심리학">UX심리학</a></li><li><a class="internal tag-link" href="../tags/LawsOfUX">LawsOfUX</a></li></ul></div></li><li class="section-li"><div class="section"><p class="meta"><time datetime="2025-05-05T15:00:00.000Z">2025년 5월 06일</time></p><div class="desc"><h3><a href="../laws-of-ux/02-choice-overload" class="internal">선택 과부하 (Choice Overload)</a></h3></div><ul class="tags"><li><a class="internal tag-link" href="../tags/UX">UX</a></li><li><a class="internal tag-link" href="../tags/디자인">디자인</a></li><li><a class="internal tag-link" href="../tags/UX심리학">UX심리학</a></li><li><a class="internal tag-link" href="../tags/LawsOfUX">LawsOfUX</a></li></ul></div></li><li class="section-li"><div class="section"><p class="meta"><time datetime="2025-05-05T15:00:00.000Z">2025년 5월 06일</time></p><div class="desc"><h3><a href="../laws-of-ux/03-chunking" class="internal">청킹 (Chunking)</a></h3></div><ul class="tags"><li><a class="internal tag-link" href="../tags/UX">UX</a></li><li><a class="internal tag-link" href="../tags/디자인">디자인</a></li><li><a class="internal tag-link" href="../tags/UX심리학">UX심리학</a></li><li><a class="internal tag-link" href="../tags/LawsOfUX">LawsOfUX</a></li></ul></div></li><li class="section-li"><div class="section"><p class="meta"><time datetime="2025-05-05T15:00:00.000Z">2025년 5월 06일</time></p><div class="desc"><h3><a href="../laws-of-ux/04-cognitive-bias" class="internal">인지 편향 (Cognitive Bias)</a></h3></div><ul class="tags"><li><a class="internal tag-link" href="../tags/UX">UX</a></li><li><a class="internal tag-link" href="../tags/디자인">디자인</a></li><li><a class="internal tag-link" href="../tags/UX심리학">UX심리학</a></li><li><a class="internal tag-link" href="../tags/LawsOfUX">LawsOfUX</a></li></ul></div></li><li class="section-li"><div class="section"><p class="meta"><time datetime="2025-05-05T15:00:00.000Z">2025년 5월 06일</time></p><div class="desc"><h3><a href="../laws-of-ux/05-cognitive-load" class="internal">인지 부하 (Cognitive Load)</a></h3></div><ul class="tags"><li><a class="internal tag-link" href="../tags/UX">UX</a></li><li><a class="internal tag-link" href="../tags/디자인">디자인</a></li><li><a class="internal tag-link" href="../tags/UX심리학">UX심리학</a></li><li><a class="internal tag-link" href="../tags/LawsOfUX">LawsOfUX</a></li></ul></div></li><li class="section-li"><div class="section"><p class="meta"><time datetime="2025-05-05T15:00:00.000Z">2025년 5월 06일</time></p><div class="desc"><h3><a href="../laws-of-ux/06-doherty-threshold" class="internal">도허티 임계값 (Doherty Threshold)</a></h3></div><ul class="tags"><li><a class="internal tag-link" href="../tags/UX">UX</a></li><li><a class="internal tag-link" href="../tags/디자인">디자인</a></li><li><a class="internal tag-link" href="../tags/UX심리학">UX심리학</a></li><li><a class="internal tag-link" href="../tags/LawsOfUX">LawsOfUX</a></li></ul></div></li><li class="section-li"><div class="section"><p class="meta"><time datetime="2025-05-05T15:00:00.000Z">2025년 5월 06일</time></p><div class="desc"><h3><a href="../laws-of-ux/07-fitts-law" class="internal">핏츠의 법칙 (Fitts's Law)</a></h3></div><ul class="tags"><li><a class="internal tag-link" href="../tags/UX">UX</a></li><li><a class="internal tag-link" href="../tags/디자인">디자인</a></li><li><a class="internal tag-link" href="../tags/UX심리학">UX심리학</a></li><li><a class="internal tag-link" href="../tags/LawsOfUX">LawsOfUX</a></li></ul></div></li><li class="section-li"><div class="section"><p class="meta"><time datetime="2025-05-05T15:00:00.000Z">2025년 5월 06일</time></p><div class="desc"><h3><a href="../laws-of-ux/08-flow-state" class="internal">플로우 상태 (Flow)</a></h3></div><ul class="tags"><li><a class="internal tag-link" href="../tags/UX">UX</a></li><li><a class="internal tag-link" href="../tags/디자인">디자인</a></li><li><a class="internal tag-link" href="../tags/UX심리학">UX심리학</a></li><li><a class="internal tag-link" href="../tags/LawsOfUX">LawsOfUX</a></li></ul></div></li><li class="section-li"><div class="section"><p class="meta"><time datetime="2025-05-05T15:00:00.000Z">2025년 5월 06일</time></p><div class="desc"><h3><a href="../laws-of-ux/09-goal-gradient-effect" class="internal">목표-경사 효과 (Goal-Gradient Effect)</a></h3></div><ul class="tags"><li><a class="internal tag-link" href="../tags/UX">UX</a></li><li><a class="internal tag-link" href="../tags/디자인">디자인</a></li><li><a class="internal tag-link" href="../tags/UX심리학">UX심리학</a></li><li><a class="internal tag-link" href="../tags/LawsOfUX">LawsOfUX</a></li></ul></div></li><li class="section-li"><div class="section"><p class="meta"><time datetime="2025-05-05T15:00:00.000Z">2025년 5월 06일</time></p><div class="desc"><h3><a href="../laws-of-ux/10-hicks-law" class="internal">힉의 법칙 (Hick's Law)</a></h3></div><ul class="tags"><li><a class="internal tag-link" href="../tags/UX">UX</a></li><li><a class="internal tag-link" href="../tags/디자인">디자인</a></li><li><a class="internal tag-link" href="../tags/UX심리학">UX심리학</a></li><li><a class="internal tag-link" href="../tags/LawsOfUX">LawsOfUX</a></li></ul></div></li><li class="section-li"><div class="section"><p class="meta"><time datetime="2025-05-05T15:00:00.000Z">2025년 5월 06일</time></p><div class="desc"><h3><a href="../laws-of-ux/11-jakobs-law" class="internal">야콥의 법칙 (Jakob's Law)</a></h3></div><ul class="tags"><li><a class="internal tag-link" href="../tags/UX">UX</a></li><li><a class="internal tag-link" href="../tags/디자인">디자인</a></li><li><a class="internal tag-link" href="../tags/UX심리학">UX심리학</a></li><li><a class="internal tag-link" href="../tags/LawsOfUX">LawsOfUX</a></li></ul></div></li><li class="section-li"><div class="section"><p class="meta"><time datetime="2025-05-05T15:00:00.000Z">2025년 5월 06일</time></p><div class="desc"><h3><a href="../laws-of-ux/12-law-of-common-region" class="internal">공통 영역의 법칙 (Law of Common Region)</a></h3></div><ul class="tags"><li><a class="internal tag-link" href="../tags/UX">UX</a></li><li><a class="internal tag-link" href="../tags/디자인">디자인</a></li><li><a class="internal tag-link" href="../tags/UX심리학">UX심리학</a></li><li><a class="internal tag-link" href="../tags/LawsOfUX">LawsOfUX</a></li></ul></div></li><li class="section-li"><div class="section"><p class="meta"><time datetime="2025-05-05T15:00:00.000Z">2025년 5월 06일</time></p><div class="desc"><h3><a href="../laws-of-ux/13-law-of-proximity" class="internal">근접성의 법칙 (Law of Proximity)</a></h3></div><ul class="tags"><li><a class="internal tag-link" href="../tags/UX">UX</a></li><li><a class="internal tag-link" href="../tags/디자인">디자인</a></li><li><a class="internal tag-link" href="../tags/UX심리학">UX심리학</a></li><li><a class="internal tag-link" href="../tags/LawsOfUX">LawsOfUX</a></li></ul></div></li><li class="section-li"><div class="section"><p class="meta"><time datetime="2025-05-05T15:00:00.000Z">2025년 5월 06일</time></p><div class="desc"><h3><a href="../laws-of-ux/14-law-of-similarity" class="internal">유사성의 법칙 (Law of Similarity)</a></h3></div><ul class="tags"><li><a class="internal tag-link" href="../tags/UX">UX</a></li><li><a class="internal tag-link" href="../tags/디자인">디자인</a></li><li><a class="internal tag-link" href="../tags/UX심리학">UX심리학</a></li><li><a class="internal tag-link" href="../tags/LawsOfUX">LawsOfUX</a></li></ul></div></li><li class="section-li"><div class="section"><p class="meta"><time datetime="2025-05-05T15:00:00.000Z">2025년 5월 06일</time></p><div class="desc"><h3><a href="../laws-of-ux/15-law-of-pragnanz" class="internal">간결성의 법칙 (Law of Prägnanz)</a></h3></div><ul class="tags"><li><a class="internal tag-link" href="../tags/UX">UX</a></li><li><a class="internal tag-link" href="../tags/디자인">디자인</a></li><li><a class="internal tag-link" href="../tags/UX심리학">UX심리학</a></li><li><a class="internal tag-link" href="../tags/LawsOfUX">LawsOfUX</a></li></ul></div></li><li class="section-li"><div class="section"><p class="meta"><time datetime="2025-05-05T15:00:00.000Z">2025년 5월 06일</time></p><div class="desc"><h3><a href="../laws-of-ux/16-law-of-uniform-connectedness" class="internal">균일 연결의 법칙 (Law of Uniform Connectedness)</a></h3></div><ul class="tags"><li><a class="internal tag-link" href="../tags/UX">UX</a></li><li><a class="internal tag-link" href="../tags/디자인">디자인</a></li><li><a class="internal tag-link" href="../tags/UX심리학">UX심리학</a></li><li><a class="internal tag-link" href="../tags/LawsOfUX">LawsOfUX</a></li></ul></div></li><li class="section-li"><div class="section"><p class="meta"><time datetime="2025-05-05T15:00:00.000Z">2025년 5월 06일</time></p><div class="desc"><h3><a href="../laws-of-ux/17-mental-model" class="internal">멘탈 모델 (Mental Model)</a></h3></div><ul class="tags"><li><a class="internal tag-link" href="../tags/UX">UX</a></li><li><a class="internal tag-link" href="../tags/디자인">디자인</a></li><li><a class="internal tag-link" href="../tags/UX심리학">UX심리학</a></li><li><a class="internal tag-link" href="../tags/LawsOfUX">LawsOfUX</a></li></ul></div></li><li class="section-li"><div class="section"><p class="meta"><time datetime="2025-05-05T15:00:00.000Z">2025년 5월 06일</time></p><div class="desc"><h3><a href="../laws-of-ux/18-millers-law" class="internal">밀러의 법칙 (Miller's Law)</a></h3></div><ul class="tags"><li><a class="internal tag-link" href="../tags/UX">UX</a></li><li><a class="internal tag-link" href="../tags/디자인">디자인</a></li><li><a class="internal tag-link" href="../tags/UX심리학">UX심리학</a></li><li><a class="internal tag-link" href="../tags/LawsOfUX">LawsOfUX</a></li></ul></div></li><li class="section-li"><div class="section"><p class="meta"><time datetime="2025-05-05T15:00:00.000Z">2025년 5월 06일</time></p><div class="desc"><h3><a href="../laws-of-ux/19-occams-razor" class="internal">오컴의 면도날 (Occam's Razor)</a></h3></div><ul class="tags"><li><a class="internal tag-link" href="../tags/UX">UX</a></li><li><a class="internal tag-link" href="../tags/디자인">디자인</a></li><li><a class="internal tag-link" href="../tags/UX심리학">UX심리학</a></li><li><a class="internal tag-link" href="../tags/LawsOfUX">LawsOfUX</a></li></ul></div></li><li class="section-li"><div class="section"><p class="meta"><time datetime="2025-05-05T15:00:00.000Z">2025년 5월 06일</time></p><div class="desc"><h3><a href="../laws-of-ux/20-pareto-principle" class="internal">파레토 법칙 (Pareto Principle)</a></h3></div><ul class="tags"><li><a class="internal tag-link" href="../tags/UX">UX</a></li><li><a class="internal tag-link" href="../tags/디자인">디자인</a></li><li><a class="internal tag-link" href="../tags/UX심리학">UX심리학</a></li><li><a class="internal tag-link" href="../tags/LawsOfUX">LawsOfUX</a></li></ul></div></li><li class="section-li"><div class="section"><p class="meta"><time datetime="2025-05-05T15:00:00.000Z">2025년 5월 06일</time></p><div class="desc"><h3><a href="../laws-of-ux/21-teslers-law" class="internal">테슬러의 법칙 (Tesler's Law)</a></h3></div><ul class="tags"><li><a class="internal tag-link" href="../tags/UX">UX</a></li><li><a class="internal tag-link" href="../tags/디자인">디자인</a></li><li><a class="internal tag-link" href="../tags/UX심리학">UX심리학</a></li><li><a class="internal tag-link" href="../tags/LawsOfUX">LawsOfUX</a></li></ul></div></li><li class="section-li"><div class="section"><p class="meta"><time datetime="2025-05-05T15:00:00.000Z">2025년 5월 06일</time></p><div class="desc"><h3><a href="../laws-of-ux/22-working-memory" class="internal">작업 기억 (Working Memory)</a></h3></div><ul class="tags"><li><a class="internal tag-link" href="../tags/UX">UX</a></li><li><a class="internal tag-link" href="../tags/디자인">디자인</a></li><li><a class="internal tag-link" href="../tags/UX심리학">UX심리학</a></li><li><a class="internal tag-link" href="../tags/LawsOfUX">LawsOfUX</a></li></ul></div></li><li class="section-li"><div class="section"><p class="meta"><time datetime="2025-05-05T15:00:00.000Z">2025년 5월 06일</time></p><div class="desc"><h3><a href="../laws-of-ux/23-postels-law" class="internal">포스텔의 법칙 (Postel's Law)</a></h3></div><ul class="tags"><li><a class="internal tag-link" href="../tags/UX">UX</a></li><li><a class="internal tag-link" href="../tags/디자인">디자인</a></li><li><a class="internal tag-link" href="../tags/UX심리학">UX심리학</a></li><li><a class="internal tag-link" href="../tags/LawsOfUX">LawsOfUX</a></li></ul></div></li><li class="section-li"><div class="section"><p class="meta"><time datetime="2025-05-05T15:00:00.000Z">2025년 5월 06일</time></p><div class="desc"><h3><a href="../laws-of-ux/24-paradox-of-the-active-user" class="internal">활성 사용자의 역설 (Paradox of the Active User)</a></h3></div><ul class="tags"><li><a class="internal tag-link" href="../tags/UX">UX</a></li><li><a class="internal tag-link" href="../tags/디자인">디자인</a></li><li><a class="internal tag-link" href="../tags/UX심리학">UX심리학</a></li><li><a class="internal tag-link" href="../tags/LawsOfUX">LawsOfUX</a></li></ul></div></li><li class="section-li"><div class="section"><p class="meta"><time datetime="2025-05-05T15:00:00.000Z">2025년 5월 06일</time></p><div class="desc"><h3><a href="../laws-of-ux/25-serial-position-effect" class="internal">직렬 위치 효과 (Serial Position Effect)</a></h3></div><ul class="tags"><li><a class="internal tag-link" href="../tags/UX">UX</a></li><li><a class="internal tag-link" href="../tags/디자인">디자인</a></li><li><a class="internal tag-link" href="../tags/UX심리학">UX심리학</a></li><li><a class="internal tag-link" href="../tags/LawsOfUX">LawsOfUX</a></li></ul></div></li><li class="section-li"><div class="section"><p class="meta"><time datetime="2025-05-05T15:00:00.000Z">2025년 5월 06일</time></p><div class="desc"><h3><a href="../laws-of-ux/26-von-restorff-effect" class="internal">폰 레스토르프 효과 (Von Restorff Effect)</a></h3></div><ul class="tags"><li><a class="internal tag-link" href="../tags/UX">UX</a></li><li><a class="internal tag-link" href="../tags/디자인">디자인</a></li><li><a class="internal tag-link" href="../tags/UX심리학">UX심리학</a></li><li><a class="internal tag-link" href="../tags/LawsOfUX">LawsOfUX</a></li></ul></div></li><li class="section-li"><div class="section"><p class="meta"><time datetime="2025-05-05T15:00:00.000Z">2025년 5월 06일</time></p><div class="desc"><h3><a href="../laws-of-ux/27-selective-attention" class="internal">선택적 주의 (Selective Attention)</a></h3></div><ul class="tags"><li><a class="internal tag-link" href="../tags/UX">UX</a></li><li><a class="internal tag-link" href="../tags/디자인">디자인</a></li><li><a class="internal tag-link" href="../tags/UX심리학">UX심리학</a></li><li><a class="internal tag-link" href="../tags/LawsOfUX">LawsOfUX</a></li></ul></div></li><li class="section-li"><div class="section"><p class="meta"><time datetime="2025-05-05T15:00:00.000Z">2025년 5월 06일</time></p><div class="desc"><h3><a href="../laws-of-ux/28-zeigarnik-effect" class="internal">자이가르닉 효과 (Zeigarnik Effect)</a></h3></div><ul class="tags"><li><a class="internal tag-link" href="../tags/UX">UX</a></li><li><a class="internal tag-link" href="../tags/디자인">디자인</a></li><li><a class="internal tag-link" href="../tags/UX심리학">UX심리학</a></li><li><a class="internal tag-link" href="../tags/LawsOfUX">LawsOfUX</a></li></ul></div></li><li class="section-li"><div class="section"><p class="meta"><time datetime="2025-05-05T15:00:00.000Z">2025년 5월 06일</time></p><div class="desc"><h3><a href="../laws-of-ux/29-peak-end-rule" class="internal">피크-엔드 룰 (Peak-End Rule)</a></h3></div><ul class="tags"><li><a class="internal tag-link" href="../tags/UX">UX</a></li><li><a class="internal tag-link" href="../tags/디자인">디자인</a></li><li><a class="internal tag-link" href="../tags/UX심리학">UX심리학</a></li><li><a class="internal tag-link" href="../tags/LawsOfUX">LawsOfUX</a></li></ul></div></li><li class="section-li"><div class="section"><p class="meta"><time datetime="2025-05-05T15:00:00.000Z">2025년 5월 06일</time></p><div class="desc"><h3><a href="../laws-of-ux/30-parkinsons-law" class="internal">파킨슨의 법칙 (Parkinson's Law)</a></h3></div><ul class="tags"><li><a class="internal tag-link" href="../tags/UX">UX</a></li><li><a class="internal tag-link" href="../tags/디자인">디자인</a></li><li><a class="internal tag-link" href="../tags/UX심리학">UX심리학</a></li><li><a class="internal tag-link" href="../tags/LawsOfUX">LawsOfUX</a></li></ul></div></li></ul></div></div></div><hr/><div class="page-footer"></div></div><div class="right sidebar"></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="/about">소개</a></li><li><a href="/contact">연락처</a></li><li><a href="/privacy-policy">개인정보처리방침</a></li><li><a href="/posts">전체 글</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}container;content;isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../postscript.js" type="module" data-persist="true"></script></html>

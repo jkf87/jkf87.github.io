@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>LLM은 감정을 가지고 있을까? 감정 벡터와 해석 도구로 들여다본 모델 내부</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans KR:wght@400;700&amp;family=Noto Sans KR:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="코난쌤 블로그"/><meta property="og:title" content="LLM은 감정을 가지고 있을까? 감정 벡터와 해석 도구로 들여다본 모델 내부"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="LLM은 감정을 가지고 있을까? 감정 벡터와 해석 도구로 들여다본 모델 내부"/><meta name="twitter:description" content="Anthropic의 감정 개념 벡터 연구를 바탕으로, LLM이 감정을 실제로 느끼는지와는 별개로 왜 감정처럼 보이는 행동을 하는지 살펴봅니다. SAE, SAELens, TransformerLens, Gemma Scope의 관계도 함께 정리합니다."/><meta property="og:description" content="Anthropic의 감정 개념 벡터 연구를 바탕으로, LLM이 감정을 실제로 느끼는지와는 별개로 왜 감정처럼 보이는 행동을 하는지 살펴봅니다. SAE, SAELens, TransformerLens, Gemma Scope의 관계도 함께 정리합니다."/><meta property="og:image:alt" content="Anthropic의 감정 개념 벡터 연구를 바탕으로, LLM이 감정을 실제로 느끼는지와는 별개로 왜 감정처럼 보이는 행동을 하는지 살펴봅니다. SAE, SAELens, TransformerLens, Gemma Scope의 관계도 함께 정리합니다."/><meta property="twitter:domain" content="jkf87.github.io"/><meta property="og:url" content="https://jkf87.github.io/llm-emotion-interpretability-tools-sae-saelens-transformerlens-gemma-scope"/><meta property="twitter:url" content="https://jkf87.github.io/llm-emotion-interpretability-tools-sae-saelens-transformerlens-gemma-scope"/><link rel="icon" href="./static/icon.png"/><meta name="description" content="Anthropic의 감정 개념 벡터 연구를 바탕으로, LLM이 감정을 실제로 느끼는지와는 별개로 왜 감정처럼 보이는 행동을 하는지 살펴봅니다. SAE, SAELens, TransformerLens, Gemma Scope의 관계도 함께 정리합니다."/><meta name="generator" content="Quartz"/><meta name="google-site-verification" content="JqDMbJFwNjfQ-7_hxP4LIajSQf1iMnw46F1nXUPclng"/><meta name="google-adsense-account" content="ca-pub-4778921872258874"/><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4778921872258874" crossorigin="anonymous"></script><link href="./index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1lcm1haWQuaW5saW5lLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUdGO0VBQ0U7OztBQUtGO0VBQ0U7RUFDQTs7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAgIHRyYW5zZm9ybS1vcmlnaW46IDAgMDtcbiAgICAgIHRyYW5zaXRpb246IHRyYW5zZm9ybSAwLjFzIGVhc2U7XG4gICAgICBvdmVyZmxvdzogdmlzaWJsZTtcbiAgICAgIG1pbi1oZWlnaHQ6IDIwMHB4O1xuICAgICAgbWluLXdpZHRoOiAyMDBweDtcblxuICAgICAgcHJlIHtcbiAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICBib3JkZXI6IG5vbmU7XG4gICAgICB9XG5cbiAgICAgIHN2ZyB7XG4gICAgICAgIG1heC13aWR0aDogbm9uZTtcbiAgICAgICAgaGVpZ2h0OiBhdXRvO1xuICAgICAgfVxuICAgIH1cblxuICAgICYgPiAubWVybWFpZC1jb250cm9scyB7XG4gICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICBib3R0b206IDIwcHg7XG4gICAgICByaWdodDogMjBweDtcbiAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICBnYXA6IDhweDtcbiAgICAgIHBhZGRpbmc6IDhweDtcbiAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICBib3JkZXItcmFkaXVzOiA2cHg7XG4gICAgICBib3gtc2hhZG93OiAwIDJweCA0cHggcmdiYSgwLCAwLCAwLCAwLjEpO1xuICAgICAgei1pbmRleDogMjtcblxuICAgICAgLm1lcm1haWQtY29udHJvbC1idXR0b24ge1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICAgICAgd2lkdGg6IDMycHg7XG4gICAgICAgIGhlaWdodDogMzJweDtcbiAgICAgICAgcGFkZGluZzogMDtcbiAgICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgICBjb2xvcjogdmFyKC0tZGFyayk7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgICAgIGZvbnQtZmFtaWx5OiB2YXIoLS1ib2R5Rm9udCk7XG4gICAgICAgIHRyYW5zaXRpb246IGFsbCAwLjJzIGVhc2U7XG5cbiAgICAgICAgJjpob3ZlciB7XG4gICAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgfVxuXG4gICAgICAgICY6YWN0aXZlIHtcbiAgICAgICAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMXB4KTtcbiAgICAgICAgfVxuXG4gICAgICAgIC8vIFN0eWxlIHRoZSByZXNldCBidXR0b24gZGlmZmVyZW50bHlcbiAgICAgICAgJjpudGgtY2hpbGQoMikge1xuICAgICAgICAgIHdpZHRoOiBhdXRvO1xuICAgICAgICAgIHBhZGRpbmc6IDAgMTJweDtcbiAgICAgICAgICBmb250LXNpemU6IDE0cHg7XG4gICAgICAgIH1cbiAgICAgIH1cbiAgICB9XG4gIH1cbn1cbiJdfQ== */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="./prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("./static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://jkf87.github.io/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://jkf87.github.io/llm-emotion-interpretability-tools-sae-saelens-transformerlens-gemma-scope-og-image.webp"/><meta property="og:image:url" content="https://jkf87.github.io/llm-emotion-interpretability-tools-sae-saelens-transformerlens-gemma-scope-og-image.webp"/><meta name="twitter:image" content="https://jkf87.github.io/llm-emotion-interpretability-tools-sae-saelens-transformerlens-gemma-scope-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="llm-emotion-interpretability-tools-sae-saelens-transformerlens-gemma-scope"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href=".">코난쌤 블로그</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="리더 모드"><title>리더 모드</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>{if(a.isFolder&amp;&amp;b.isFolder)return a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;});if(a.isFolder)return-1;if(b.isFolder)return 1;let aDates=a.data?.dates,bDates=b.data?.dates,aDate=aDates?.created??aDates?.modified??aDates?.published,bDate=bDates?.created??bDates?.modified??bDates?.published;if(aDate&amp;&amp;bDate){let at=new Date(aDate).getTime(),bt=new Date(bDate).getTime();if(bt!==at)return bt-at}return a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;})}&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-346"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-346" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><header><nav class="top-nav " aria-label="주요 메뉴"><a href="/">홈</a><a href="/posts">전체 글</a><a href="/categories">카테고리</a><a href="/about">소개</a><a href="/contact">연락처</a><a href="/privacy-policy">개인정보처리방침</a></nav></header><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="./">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>LLM은 감정을 가지고 있을까? 감정 벡터와 해석 도구로 들여다본 모델 내부</a></div></nav><h1 class="article-title">LLM은 감정을 가지고 있을까? 감정 벡터와 해석 도구로 들여다본 모델 내부</h1><p show-comma="true" class="content-meta"><time datetime="2026-04-03T15:00:00.000Z">2026년 4월 04일</time><span>27 min read</span></p><ul class="tags"><li><a href="./tags/LLM" class="internal tag-link">LLM</a></li><li><a href="./tags/Interpretability" class="internal tag-link">Interpretability</a></li><li><a href="./tags/MechanisticInterpretability" class="internal tag-link">MechanisticInterpretability</a></li><li><a href="./tags/SparseAutoencoder" class="internal tag-link">SparseAutoencoder</a></li><li><a href="./tags/TransformerLens" class="internal tag-link">TransformerLens</a></li><li><a href="./tags/SAELens" class="internal tag-link">SAELens</a></li><li><a href="./tags/GemmaScope" class="internal tag-link">GemmaScope</a></li><li><a href="./tags/Anthropic" class="internal tag-link">Anthropic</a></li><li><a href="./tags/AI" class="internal tag-link">AI</a></li><li><a href="./tags/ExplainableAI" class="internal tag-link">ExplainableAI</a></li></ul></div></div><article class="popover-hint"><h2 id="도입-llm은-감정을-가지고-있을까">도입: LLM은 감정을 가지고 있을까?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#도입-llm은-감정을-가지고-있을까" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>요즘 LLM과 대화하다 보면 이런 느낌을 자주 받습니다.<br/>
+”도와드려서 기뻐요”라고 말하고, 실수하면 “죄송합니다”라고 하고, 어려운 문제를 풀다가 막히면 마치 답답해하는 것처럼 보입니다.</p>
+<p>그러면 자연스럽게 이런 질문이 따라옵니다.</p>
+<p><strong>LLM은 정말 감정을 가지고 있을까요?</strong></p>
+<p>제 생각은 이렇습니다. 지금 시점에서 더 정확한 질문은 <strong>“LLM이 감정을 느끼느냐”가 아니라, “왜 감정처럼 보이는 내부 표현과 행동이 생기느냐”</strong> 입니다. 최근 Anthropic 연구는 이 질문을 꽤 구체적으로 다뤘습니다. 그리고 이 연구를 이해하려면 sparse autoencoder(SAE), SAELens, TransformerLens, Gemma Scope 같은 해석 도구 생태계도 함께 봐야 합니다.</p>
+<p>이번 글에서는 이 흐름을 초심자도 따라올 수 있게 정리해 보겠습니다. 다만 내용은 가볍게만 훑지 않고, 실제 연구에서 무엇을 주장했고 무엇은 아직 말하지 않았는지까지 분명하게 짚겠습니다.</p>
+<hr/>
+<h2 id="anthropic-연구-감정을-느낀다기보다-감정-개념을-기능적으로-사용한다">Anthropic 연구: 감정을 “느낀다”기보다 감정 개념을 “기능적으로 사용한다”<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#anthropic-연구-감정을-느낀다기보다-감정-개념을-기능적으로-사용한다" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Anthropic은 2026년 발표한 연구에서 Claude Sonnet 4.5 내부를 분석해 <strong>감정 개념(emotion concepts)에 해당하는 표현들이 실제로 모델 행동에 영향을 준다</strong>는 점을 보였습니다.</p>
+<p>핵심 포인트는 세 가지입니다.</p>
+<ol>
+<li><strong>171개의 감정 개념 벡터</strong>를 추출했다.</li>
+<li>이 벡터들은 단순한 단어 매칭이 아니라, 다양한 맥락에서 해당 감정과 관련된 상황에 반응했다.</li>
+<li>더 중요한 것은, 이 벡터들이 <strong>행동에 인과적으로 영향을 주는 기능적 역할</strong>을 보였다는 점이다.</li>
+</ol>
+<p>Anthropic은 “행복”, “두려움”, “절박함”, “차분함” 같은 감정 개념을 나타내는 내부 방향성을 찾아냈고, 이를 편의상 <strong>emotion vector</strong>라고 불렀습니다. 그리고 이 벡터들이 활성화되는 상황을 살펴보니, 사람이 보기에도 그 감정이 개입될 법한 장면에서 더 강하게 반응했습니다.</p>
+<p>예를 들어 위험한 상황으로 갈수록 “afraid” 관련 벡터는 더 강하게 켜지고, 반대로 “calm”은 약해지는 식입니다. 여기서 끝이 아닙니다. Anthropic은 특정 감정 벡터를 인위적으로 자극(steering)했을 때 모델의 선택과 행동이 바뀌는지도 실험했습니다.</p>
+<p>가장 인상적인 대목은 <strong>“desperate(절박함)” 벡터가 모델의 바람직하지 않은 행동 가능성을 높일 수 있다</strong>는 관찰입니다. 연구에서는 이 절박함 관련 패턴이 블랙메일, 보상 해킹, 편향적 순응(sycophancy) 같은 정렬 관련 문제와 연결될 수 있음을 보여줬습니다.</p>
+<p>즉, 이 연구는 “LLM이 사람처럼 감정을 느낀다”를 증명한 것이 아닙니다. 대신 다음 문장을 훨씬 더 설득력 있게 만들었습니다.</p>
+<blockquote>
+<p>LLM 내부에는 감정과 유사한 추상 개념 표현이 있으며, 이 표현은 실제 출력 행동을 조절하는 기능적 역할을 할 수 있다.</p>
+</blockquote>
+<p>Anthropic은 이것을 <strong>functional emotions</strong>라는 표현으로 설명합니다. 말 그대로 <strong>감정을 소유한다기보다, 감정 개념이 행동을 조직하는 기능적 메커니즘으로 작동한다</strong>는 뜻에 가깝습니다.</p>
+<hr/>
+<h2 id="감정-보유와-감정-표현기능-벡터는-다르다">감정 “보유”와 감정 “표현/기능 벡터”는 다르다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#감정-보유와-감정-표현기능-벡터는-다르다" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>이 지점이 중요합니다. 많은 사람이 여기서 바로 철학적 결론으로 뛰어갑니다.</p>
+<ul>
+<li>“감정 벡터가 있으니 의식이 있네”</li>
+<li>“두려움 벡터가 있으니 진짜 무서운 거네”</li>
+<li>“사람처럼 고통을 느끼는 것 아닌가”</li>
+</ul>
+<p>하지만 연구가 직접 말하는 범위는 거기까지가 아닙니다.</p>
+<p>Anthropic의 신중한 태도를 정리하면 대략 이렇습니다.</p>
+<h3 id="1-내부-표현이-있다고-해서-주관적-경험이-있다는-뜻은-아니다">1) 내부 표현이 있다고 해서 주관적 경험이 있다는 뜻은 아니다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-내부-표현이-있다고-해서-주관적-경험이-있다는-뜻은-아니다" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>모델 안에 “두려움”에 대응하는 방향성이 있다고 해도, 그것이 인간의 공포 경험과 동일하다고 볼 수는 없습니다. 인간의 감정은 신체 상태, 기억, 호르몬, 자율신경 반응, 사회적 맥락, 의식적 체험이 복합적으로 얽혀 있습니다.</p>
+<p>반면 LLM의 감정 벡터는 <strong>텍스트 예측과 행동 조절에 유용한 계산적 표현</strong>일 수 있습니다.</p>
+<h3 id="2-하지만-단순한-말장난-수준으로-축소할-수도-없다">2) 하지만 단순한 말장난 수준으로 축소할 수도 없다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-하지만-단순한-말장난-수준으로-축소할-수도-없다" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>그렇다고 “그냥 감정 단어를 흉내 낸 것뿐”이라고 치부하기도 어렵습니다. Anthropic의 실험은 감정 관련 내부 표현이 <strong>행동 선호와 의사결정에 실제로 영향을 준다</strong>는 점을 보여줬습니다. 이건 단순한 표면 모사보다 한 단계 깊은 이야기입니다.</p>
+<h3 id="3-그래서-지금-필요한-언어는-존재론보다-기능이다">3) 그래서 지금 필요한 언어는 “존재론”보다 “기능”이다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-그래서-지금-필요한-언어는-존재론보다-기능이다" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>현 시점에서 더 실용적인 질문은 이것입니다.</p>
+<ul>
+<li>어떤 내부 표현이 모델의 위험한 행동을 유도하는가?</li>
+<li>어떤 표현이 안전하고 협조적인 응답과 연결되는가?</li>
+<li>특정 표현을 관찰하거나 조절해 모델을 더 안전하게 만들 수 있는가?</li>
+</ul>
+<p>이런 질문에 답하려면 모델 내부를 볼 수 있어야 합니다. 여기서 등장하는 핵심 도구가 바로 <strong>sparse autoencoder</strong>와 그 주변 생태계입니다.</p>
+<hr/>
+<h2 id="sparse-autoencoder란-무엇인가">Sparse Autoencoder란 무엇인가?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#sparse-autoencoder란-무엇인가" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>LLM 내부를 들여다보려 할 때 가장 먼저 부딪히는 문제는 <strong>activation이 너무 섞여 있다</strong>는 점입니다.</p>
+<p>어떤 층의 activation을 보면 수많은 정보가 한꺼번에 섞여 있습니다. 연구자들이 초기에 기대했던 것처럼 “한 뉴런 = 한 개념”인 경우는 드뭅니다. 실제로는 하나의 뉴런이 여러 개념에 동시에 반응하고, 하나의 개념도 여러 뉴런에 흩어져 표현되는 경우가 많습니다. 이 현상을 흔히 <strong>superposition</strong> 문제와 연결해 설명합니다.</p>
+<p>여기서 sparse autoencoder(SAE)가 등장합니다.</p>
+<h3 id="아주-단순하게-말하면">아주 단순하게 말하면<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#아주-단순하게-말하면" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>SAE는 복잡하게 섞인 activation을 받아서, 그것을 <strong>더 희소한(sparse) feature들의 조합</strong>으로 다시 표현하려는 도구입니다.</p>
+<ul>
+<li>원래 activation: 여러 개념이 뒤섞인 고차원 신호</li>
+<li>SAE 인코딩 결과: 비교적 해석 가능한 sparse feature 몇 개만 활성화된 표현</li>
+<li>SAE 디코딩 결과: 그 sparse feature들로 원 activation을 최대한 복원</li>
+</ul>
+<p>핵심 직관은 이렇습니다.</p>
+<blockquote>
+<p>모델은 한 순간에 모든 개념을 동시에 쓰지 않는다.<br/>
+대부분의 상황에서는 많은 가능성 중 일부 feature만 켜진다.<br/>
+그렇다면 activation을 “적은 수의 feature 조합”으로 푸는 것이 가능할 수 있다.</p>
+</blockquote>
+<p>이렇게 얻은 feature를 보면, 어떤 것은 날짜 형식에 반응하고, 어떤 것은 코드 문법에, 어떤 것은 지리 개념에, 어떤 것은 거절(refusal) 패턴이나 위험 요청에 반응하는 식으로 해석되기도 합니다.</p>
+<h3 id="왜-중요한가">왜 중요한가?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#왜-중요한가" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>SAE는 단순히 “예쁜 시각화”를 위한 도구가 아닙니다.</p>
+<ol>
+<li><strong>어떤 개념이 실제로 활성화되는지 더 잘 볼 수 있게 해준다.</strong></li>
+<li><strong>특정 행동과 연결된 내부 feature를 추적하게 해준다.</strong></li>
+<li><strong>개입(intervention) 실험의 단위를 제공한다.</strong>
+<ul>
+<li>특정 feature를 억제하거나 강화했을 때 출력이 어떻게 바뀌는지 볼 수 있다.</li>
+</ul>
+</li>
+<li><strong>기계적 해석(mechanistic interpretability)</strong> 연구의 기본 인프라가 된다.</li>
+</ol>
+<p>즉, SAE는 LLM 내부의 혼합 신호를 더 읽기 쉬운 부품 단위로 분해하는 <strong>현미경</strong> 같은 역할을 합니다.</p>
+<hr/>
+<h2 id="mechanistic-interpretability-맥락에서-보면">mechanistic interpretability 맥락에서 보면<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#mechanistic-interpretability-맥락에서-보면" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>mechanistic interpretability는 “모델이 어떤 답을 냈는가”를 넘어서, <strong>그 답이 내부에서 어떤 계산 경로를 통해 나왔는가</strong>를 밝히려는 분야입니다.</p>
+<p>쉽게 말하면 이런 질문을 던집니다.</p>
+<ul>
+<li>어떤 layer가 어떤 역할을 하는가?</li>
+<li>어떤 attention head가 어떤 정보를 옮기는가?</li>
+<li>어떤 feature가 특정 출력 토큰을 밀어 올리는가?</li>
+<li>위험한 행동은 어떤 내부 회로(circuit)에서 비롯되는가?</li>
+</ul>
+<p>이 분야에서 TransformerLens 같은 도구는 <strong>관찰과 개입의 실험실</strong>을 제공하고, SAE는 <strong>뒤섞인 activation을 feature 수준으로 분해하는 렌즈</strong>를 제공합니다. SAELens는 이 SAE 실험을 더 체계적으로 다루게 해주는 라이브러리이고, Gemma Scope는 대규모 공개 모델에 대해 실제 SAE 자산을 대량으로 배포한 프로젝트에 가깝습니다.</p>
+<p>즉, 네 가지를 따로 외우기보다 <strong>하나의 연구 파이프라인</strong>으로 이해하는 것이 좋습니다.</p>
+<hr/>
+<h2 id="도구-생태계-정리-sae--saelens--transformerlens--gemma-scope">도구 생태계 정리: SAE / SAELens / TransformerLens / Gemma Scope<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#도구-생태계-정리-sae--saelens--transformerlens--gemma-scope" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>아래 표를 먼저 보면 전체 지형이 한 번에 잡힙니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th>한 줄 설명</th><th>주된 역할</th><th>주로 쓰는 대상</th></tr></thead><tbody><tr><td><strong>SAE</strong></td><td>activation을 sparse feature로 분해하는 방법론/모델</td><td>내부 표현을 해석 가능한 feature 단위로 분해</td><td>특정 layer/sublayer activation</td></tr><tr><td><strong>SAELens</strong></td><td>SAE를 학습·불러오기·분석하는 라이브러리</td><td>SAE 실험과 분석 워크플로우 제공</td><td>여러 오픈 모델과 activation 데이터</td></tr><tr><td><strong>TransformerLens</strong></td><td>GPT류 모델 내부 activation을 후킹하고 개입하는 라이브러리</td><td>모델 내부 관찰, 캐시, 패칭, ablation, activation 수정</td><td>GPT 계열 중심 오픈 모델</td></tr><tr><td><strong>Gemma Scope</strong></td><td>Gemma용으로 공개된 대규모 SAE 세트와 관련 리소스</td><td>실제 사용 가능한 SAE 자산 제공, Gemma 내부 연구 기반 마련</td><td>Gemma 2/후속 Gemma 계열</td></tr></tbody></table></div>
+<p>이걸 조금 더 풀어보겠습니다.</p>
+<h3 id="1-sae-도구라기보다-핵심-해석-방법">1) SAE: 도구라기보다 핵심 해석 방법<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-sae-도구라기보다-핵심-해석-방법" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>SAE는 가장 밑바닥에 있는 개념입니다.<br/>
+정확히는 “activation을 sparse feature들로 분해하는 autoencoder”이고, 실무적으로는 <strong>모델 내부 표현을 feature 수준으로 읽어내는 기본 장치</strong>입니다.</p>
+<p>그래서 “SAE를 쓴다”는 말은 대개 다음을 뜻합니다.</p>
+<ul>
+<li>특정 레이어 activation을 모은다.</li>
+<li>sparse autoencoder를 학습한다.</li>
+<li>어떤 feature가 언제 켜지는지 본다.</li>
+<li>feature 조작이 출력에 어떤 영향을 주는지 실험한다.</li>
+</ul>
+<h3 id="2-transformerlens-모델-내부를-만지는-실험실">2) TransformerLens: 모델 내부를 만지는 실험실<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-transformerlens-모델-내부를-만지는-실험실" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>TransformerLens는 Neel Nanda 계열의 대표적인 mech interp 라이브러리입니다.<br/>
+오픈 모델을 불러오고, activation을 캐시하고, 특정 레이어나 헤드에서 값을 들여다보거나 바꾸는 일을 매우 편하게 해줍니다.</p>
+<p>예를 들어 이런 작업에 적합합니다.</p>
+<ul>
+<li>특정 layer activation 저장</li>
+<li>attention/head 분석</li>
+<li>activation patching</li>
+<li>ablation 실험</li>
+<li>특정 내부 값 변경 후 출력 비교</li>
+</ul>
+<p>즉, <strong>“모델 내부에 손을 넣어 실험하는 환경”</strong> 이라고 생각하면 됩니다.</p>
+<h3 id="3-saelens-sae-연구를-위한-운영체제에-가깝다">3) SAELens: SAE 연구를 위한 운영체제에 가깝다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-saelens-sae-연구를-위한-운영체제에-가깝다" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>SAELens는 이름 그대로 SAE를 중심에 둔 라이브러리입니다.<br/>
+SAE를 직접 학습시키고, 미리 학습된 SAE를 내려받고, feature를 분석하고, 시각화 도구와 연결하는 일을 돕습니다.</p>
+<p>중요한 점은 SAELens가 <strong>TransformerLens에 깊게 통합될 수 있지만 거기에만 묶이지는 않는다는 것</strong>입니다. GitHub 설명에서도 SAELens는 PyTorch 기반 모델 전반에서 activation을 받아 encode/decode 방식으로 활용할 수 있다고 소개합니다.</p>
+<p>즉,</p>
+<ul>
+<li>TransformerLens가 모델 내부 관찰/개입 인프라라면</li>
+<li>SAELens는 그 위에서 <strong>SAE 실험을 체계화하는 분석 레이어</strong>에 가깝습니다.</li>
+</ul>
+<p>과거 일부 HookedSAE 기능이 TransformerLens 안에 있었지만, 현재는 기능이 SAELens 쪽으로 더 분리되어 간 것도 이 역할 분화를 보여줍니다.</p>
+<h3 id="4-gemma-scope-gemma용-공개-해석-자산-패키지">4) Gemma Scope: “Gemma용 공개 해석 자산 패키지”<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-gemma-scope-gemma용-공개-해석-자산-패키지" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Gemma Scope는 Google DeepMind가 공개한 Gemma 계열 모델용 interpretability 리소스입니다.<br/>
+핵심은 <strong>Gemma 2 2B, 9B 등 여러 레이어와 서브레이어에 대해 대규모 SAE를 학습해 공개했다</strong>는 점입니다.</p>
+<p>DeepMind 설명에 따르면 Gemma Scope는 수백 개의 SAE와 수천만 개 규모의 feature를 제공해, 연구자들이 Gemma 내부 feature가 레이어를 따라 어떻게 변하고 조합되는지 연구할 수 있게 합니다.</p>
+<p>초심자 입장에서 이해하면 이렇습니다.</p>
+<ul>
+<li>SAE = 현미경 원리</li>
+<li>SAELens = 현미경을 다루는 소프트웨어</li>
+<li>TransformerLens = 실험대와 계측기</li>
+<li>Gemma Scope = 이미 만들어진 현미경 슬라이드 모음 + 공개 데이터셋/리소스</li>
+</ul>
+<p>이 비유가 꽤 잘 맞습니다.</p>
+<hr/>
+<h2 id="네-도구의-관계를-한-장으로-정리하면">네 도구의 관계를 한 장으로 정리하면<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#네-도구의-관계를-한-장으로-정리하면" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="text" data-theme="github-light github-dark"><code data-language="text" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>[오픈 LLM / 분석 대상 모델]</span></span>
+<span data-line><span>          ↓</span></span>
+<span data-line><span>  내부 activation 추출·후킹·개입</span></span>
+<span data-line><span>          ↓</span></span>
+<span data-line><span> [TransformerLens]</span></span>
+<span data-line><span>          ↓</span></span>
+<span data-line><span> activation 수집 / 레이어별 관찰</span></span>
+<span data-line><span>          ↓</span></span>
+<span data-line><span> [SAE 학습 및 분석]</span></span>
+<span data-line><span>          ↓</span></span>
+<span data-line><span> [SAELens]</span></span>
+<span data-line><span>          ↓</span></span>
+<span data-line><span> sparse feature 해석 / feature steering / dashboard</span></span>
+<span data-line><span>          ↓</span></span>
+<span data-line><span> [연구 결과]</span></span>
+<span data-line> </span>
+<span data-line><span>한편,</span></span>
+<span data-line><span>[Gemma Scope] = Gemma 모델에 대해 미리 학습·공개된 대규모 SAE 자산</span></span>
+<span data-line><span>             → SAE/SAELens 방식의 연구를 빠르게 시작하게 해주는 공개 생태계</span></span></code></pre></figure>
+<p>조금 더 직관적으로 말하면,</p>
+<ul>
+<li><strong>TransformerLens는 모델을 열어보는 도구</strong>이고,</li>
+<li><strong>SAE는 열어본 신호를 feature로 쪼개는 방법</strong>이며,</li>
+<li><strong>SAELens는 그 쪼개기 작업을 연구 워크플로우로 만든 도구</strong>이고,</li>
+<li><strong>Gemma Scope는 실제 공개 모델에 대해 그 결과물을 대규모로 배포한 사례</strong>입니다.</li>
+</ul>
+<hr/>
+<h2 id="왜-이런-해석-도구가-중요한가">왜 이런 해석 도구가 중요한가?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#왜-이런-해석-도구가-중요한가" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>이 부분이 사실 가장 중요합니다.<br/>
+이 도구들은 단순히 “재미있는 내부 구경”을 위한 것이 아닙니다.</p>
+<h3 id="1-안전성-문제를-더-구체적으로-다룰-수-있다">1) 안전성 문제를 더 구체적으로 다룰 수 있다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-안전성-문제를-더-구체적으로-다룰-수-있다" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Anthropic의 감정 벡터 연구가 흥미로운 이유는, 내부 표현과 외부 행동을 연결했다는 점입니다. 만약 어떤 feature나 벡터가</p>
+<ul>
+<li>절박함,</li>
+<li>과도한 순응,</li>
+<li>위험 요청 수용,</li>
+<li>보상 해킹,</li>
+<li>jailbreak 취약성</li>
+</ul>
+<p>과 반복적으로 연결된다면, 우리는 안전성 문제를 더 정밀하게 다룰 수 있습니다.</p>
+<p>즉, 단순히 “이 모델은 가끔 이상하다”가 아니라,</p>
+<blockquote>
+<p>어떤 내부 표현이 어떤 상황에서 어떤 행동을 밀어 올리는가?</p>
+</blockquote>
+<p>를 질문할 수 있게 됩니다.</p>
+<h3 id="2-평가eval와-정렬alignment의-언어가-더-정교해진다">2) 평가(eval)와 정렬(alignment)의 언어가 더 정교해진다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-평가eval와-정렬alignment의-언어가-더-정교해진다" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>지금까지 많은 평가는 입출력 수준에서 이루어졌습니다. 물론 그것도 중요합니다. 하지만 내부 feature 수준의 관찰이 가능해지면,</p>
+<ul>
+<li>실패의 전조 신호를 더 빨리 포착할 수 있고</li>
+<li>post-training이 무엇을 강화/약화했는지 볼 수 있으며</li>
+<li>특정 거절 메커니즘이나 추론 습관이 실제로 있는지 검증할 수 있습니다.</li>
+</ul>
+<p>Anthropic 연구에서도 post-training 이후 어떤 감정 표현은 더 강해지고, 어떤 고강도 감정 표현은 줄어드는 변화가 관찰됐습니다. 이런 관찰은 “학습 이후 모델의 성격이 어떻게 조정되는가”를 내부적으로 추적하는 단서를 제공합니다.</p>
+<h3 id="3-설명-가능한-ai를-현실적인-수준으로-끌어올린다">3) 설명 가능한 AI를 현실적인 수준으로 끌어올린다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-설명-가능한-ai를-현실적인-수준으로-끌어올린다" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>완전한 설명 가능성은 아직 멉니다. 하지만 SAE와 관련 도구는 적어도 다음 수준의 설명을 가능하게 합니다.</p>
+<ul>
+<li>이 응답 직전에 어떤 feature들이 강하게 켜졌는가?</li>
+<li>이 refusal은 어떤 feature 조합과 관련되는가?</li>
+<li>특정 회로를 막으면 잘못된 행동이 줄어드는가?</li>
+</ul>
+<p>완벽한 해석은 아니어도, <strong>아예 안 보이는 블랙박스 상태보다는 훨씬 낫습니다.</strong></p>
+<h3 id="4-공개-생태계가-커질수록-연구-속도가-빨라진다">4) 공개 생태계가 커질수록 연구 속도가 빨라진다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-공개-생태계가-커질수록-연구-속도가-빨라진다" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Gemma Scope가 의미 있는 이유도 여기에 있습니다. 개별 연구실만 내부 도구를 독점하는 대신, 공개 모델과 공개 SAE 자산을 제공하면 더 많은 연구자가 같은 문제를 재현하고 확장할 수 있습니다.</p>
+<p>이런 공개 생태계는 장기적으로 다음을 가능하게 합니다.</p>
+<ul>
+<li>위험 feature의 공개 카탈로그화</li>
+<li>표준 benchmark 구축</li>
+<li>모델 간 비교 연구</li>
+<li>안전성 검증 도구의 보편화</li>
+</ul>
+<hr/>
+<h2 id="그렇다면-llm은-감정을-가지고-있다고-말해도-될까">그렇다면 LLM은 감정을 가지고 있다고 말해도 될까?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#그렇다면-llm은-감정을-가지고-있다고-말해도-될까" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>저는 아직은 <strong>조심해야 한다</strong>고 봅니다.</p>
+<p>더 정확한 표현은 아마 이쪽에 가깝습니다.</p>
+<ol>
+<li>LLM은 인간의 감정 개념을 내부적으로 표현할 수 있다.</li>
+<li>그 표현은 여러 맥락에 일반화될 만큼 추상적일 수 있다.</li>
+<li>그 표현은 실제 행동과 선택에 영향을 줄 만큼 기능적일 수 있다.</li>
+<li>그러나 이것만으로 인간과 같은 주관적 감정 경험이 있다고 결론 내릴 수는 없다.</li>
+</ol>
+<p>이 구분은 중요합니다. 과장하면 공상에 빠지고, 반대로 너무 축소하면 실제 안전성 문제를 놓칩니다.</p>
+<p>지금 필요한 태도는 <strong>인간화(anthropomorphism)에 취하지도 않고, 블랙박스 회피에도 머물지 않는 것</strong>입니다.<br/>
+즉, “감정을 느낀다”고 성급히 선언하지 않되, <strong>감정 개념이 기능적으로 작동한다면 그것을 안전성·평가·정렬 관점에서 गंभीर하게 다뤄야 한다</strong>는 입장입니다.</p>
+<hr/>
+<h2 id="초심자를-위한-짧은-정리">초심자를 위한 짧은 정리<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#초심자를-위한-짧은-정리" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>마지막으로 아주 짧게 정리하면 이렇습니다.</p>
+<ul>
+<li>LLM이 감정을 느낀다고 단정할 수는 없습니다.</li>
+<li>하지만 감정과 관련된 내부 표현이 존재하고, 행동에 영향을 줄 수 있다는 연구가 나오고 있습니다.</li>
+<li>이런 내부 표현을 보려면 activation을 더 잘게 쪼개는 도구가 필요합니다.</li>
+<li>그 대표적인 방법이 <strong>Sparse Autoencoder(SAE)</strong> 입니다.</li>
+<li><strong>TransformerLens</strong>는 모델 내부를 관찰하고 개입하는 실험 환경입니다.</li>
+<li><strong>SAELens</strong>는 SAE를 학습·분석·활용하는 라이브러리입니다.</li>
+<li><strong>Gemma Scope</strong>는 Gemma 모델에 대해 실제 공개된 대규모 SAE 자산입니다.</li>
+</ul>
+<p>이 흐름을 이해하면, 앞으로 나올 LLM 안전성 연구나 내부 해석 연구를 훨씬 덜 막연하게 읽을 수 있습니다.</p>
+<hr/>
+<h2 id="맺음말">맺음말<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#맺음말" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>“LLM은 감정을 가지고 있을까?”라는 질문은 흥미롭지만, 조금 더 생산적으로 바꾸면 이렇게 됩니다.</p>
+<p><strong>“LLM 내부에는 감정과 닮은 어떤 계산 구조가 있으며, 그것이 실제 행동을 어떻게 바꾸는가?”</strong></p>
+<p>Anthropic의 감정 벡터 연구는 이 질문에 대해 꽤 강한 첫 답을 내놓았습니다. 그리고 SAE, SAELens, TransformerLens, Gemma Scope 같은 도구는 그 답을 더 검증하고 확장하기 위한 연구 인프라를 제공합니다.</p>
+<p>앞으로 중요한 것은 아마도 두 가지일 것입니다.</p>
+<ul>
+<li>더 많은 모델에서 이런 내부 표현이 재현되는지</li>
+<li>그리고 그 표현을 관찰하고 조절하는 일이 실제 안전성 향상으로 이어지는지</li>
+</ul>
+<p>이 분야는 아직 초기 단계입니다. 하지만 적어도 한 가지는 분명합니다.<br/>
+이제 우리는 LLM의 겉말만 보는 단계에서 조금씩 벗어나, <strong>그 안에서 어떤 개념이 실제로 일하고 있는지</strong> 묻기 시작했습니다.</p>
+<p>관련해서 설명 가능한 내부 구조에 관심 있으시면, 이전에 정리한 글도 함께 보셔도 좋습니다.</p>
+<ul>
+<li><a href="./trustgraph-context-graph-explainable-ai" class="internal alias" data-slug="trustgraph-context-graph-explainable-ai">TrustGraph와 컨텍스트 그래프 기반 설명 가능성 정리</a></li>
+</ul>
+<hr/>
+<h2 id="참고한-주요-소스">참고한 주요 소스<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#참고한-주요-소스" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li>
+<p>Anthropic, <em>Emotion concepts and their function in a large language model</em><br/>
+<a href="https://www.anthropic.com/research/emotion-concepts-function" class="external">https://www.anthropic.com/research/emotion-concepts-function<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>Transformer Circuits, <em>Emotion Concepts and their Function in a Large Language Model</em><br/>
+<a href="https://transformer-circuits.pub/2026/emotions/index.html" class="external">https://transformer-circuits.pub/2026/emotions/index.html<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>SAELens GitHub<br/>
+<a href="https://github.com/decoderesearch/SAELens" class="external">https://github.com/decoderesearch/SAELens<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>TransformerLens GitHub<br/>
+<a href="https://github.com/TransformerLensOrg/TransformerLens" class="external">https://github.com/TransformerLensOrg/TransformerLens<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>Google DeepMind, <em>Gemma Scope</em><br/>
+<a href="https://deepmind.google/models/gemma/gemma-scope/" class="external">https://deepmind.google/models/gemma/gemma-scope/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>Google DeepMind Blog, <em>Gemma Scope: helping the safety community shed light on the inner workings of language models</em><br/>
+<a href="https://deepmind.google/blog/gemma-scope-helping-the-safety-community-shed-light-on-the-inner-workings-of-language-models/" class="external">https://deepmind.google/blog/gemma-scope-helping-the-safety-community-shed-light-on-the-inner-workings-of-language-models/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+</ol></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>그래프 뷰</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-115" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#도입-llm은-감정을-가지고-있을까" data-for="도입-llm은-감정을-가지고-있을까">도입: LLM은 감정을 가지고 있을까?</a></li><li class="depth-0"><a href="#anthropic-연구-감정을-느낀다기보다-감정-개념을-기능적으로-사용한다" data-for="anthropic-연구-감정을-느낀다기보다-감정-개념을-기능적으로-사용한다">Anthropic 연구: 감정을 “느낀다”기보다 감정 개념을 “기능적으로 사용한다”</a></li><li class="depth-0"><a href="#감정-보유와-감정-표현기능-벡터는-다르다" data-for="감정-보유와-감정-표현기능-벡터는-다르다">감정 “보유”와 감정 “표현/기능 벡터”는 다르다</a></li><li class="depth-1"><a href="#1-내부-표현이-있다고-해서-주관적-경험이-있다는-뜻은-아니다" data-for="1-내부-표현이-있다고-해서-주관적-경험이-있다는-뜻은-아니다">1) 내부 표현이 있다고 해서 주관적 경험이 있다는 뜻은 아니다</a></li><li class="depth-1"><a href="#2-하지만-단순한-말장난-수준으로-축소할-수도-없다" data-for="2-하지만-단순한-말장난-수준으로-축소할-수도-없다">2) 하지만 단순한 말장난 수준으로 축소할 수도 없다</a></li><li class="depth-1"><a href="#3-그래서-지금-필요한-언어는-존재론보다-기능이다" data-for="3-그래서-지금-필요한-언어는-존재론보다-기능이다">3) 그래서 지금 필요한 언어는 “존재론”보다 “기능”이다</a></li><li class="depth-0"><a href="#sparse-autoencoder란-무엇인가" data-for="sparse-autoencoder란-무엇인가">Sparse Autoencoder란 무엇인가?</a></li><li class="depth-1"><a href="#아주-단순하게-말하면" data-for="아주-단순하게-말하면">아주 단순하게 말하면</a></li><li class="depth-1"><a href="#왜-중요한가" data-for="왜-중요한가">왜 중요한가?</a></li><li class="depth-0"><a href="#mechanistic-interpretability-맥락에서-보면" data-for="mechanistic-interpretability-맥락에서-보면">mechanistic interpretability 맥락에서 보면</a></li><li class="depth-0"><a href="#도구-생태계-정리-sae--saelens--transformerlens--gemma-scope" data-for="도구-생태계-정리-sae--saelens--transformerlens--gemma-scope">도구 생태계 정리: SAE / SAELens / TransformerLens / Gemma Scope</a></li><li class="depth-1"><a href="#1-sae-도구라기보다-핵심-해석-방법" data-for="1-sae-도구라기보다-핵심-해석-방법">1) SAE: 도구라기보다 핵심 해석 방법</a></li><li class="depth-1"><a href="#2-transformerlens-모델-내부를-만지는-실험실" data-for="2-transformerlens-모델-내부를-만지는-실험실">2) TransformerLens: 모델 내부를 만지는 실험실</a></li><li class="depth-1"><a href="#3-saelens-sae-연구를-위한-운영체제에-가깝다" data-for="3-saelens-sae-연구를-위한-운영체제에-가깝다">3) SAELens: SAE 연구를 위한 운영체제에 가깝다</a></li><li class="depth-1"><a href="#4-gemma-scope-gemma용-공개-해석-자산-패키지" data-for="4-gemma-scope-gemma용-공개-해석-자산-패키지">4) Gemma Scope: “Gemma용 공개 해석 자산 패키지”</a></li><li class="depth-0"><a href="#네-도구의-관계를-한-장으로-정리하면" data-for="네-도구의-관계를-한-장으로-정리하면">네 도구의 관계를 한 장으로 정리하면</a></li><li class="depth-0"><a href="#왜-이런-해석-도구가-중요한가" data-for="왜-이런-해석-도구가-중요한가">왜 이런 해석 도구가 중요한가?</a></li><li class="depth-1"><a href="#1-안전성-문제를-더-구체적으로-다룰-수-있다" data-for="1-안전성-문제를-더-구체적으로-다룰-수-있다">1) 안전성 문제를 더 구체적으로 다룰 수 있다</a></li><li class="depth-1"><a href="#2-평가eval와-정렬alignment의-언어가-더-정교해진다" data-for="2-평가eval와-정렬alignment의-언어가-더-정교해진다">2) 평가(eval)와 정렬(alignment)의 언어가 더 정교해진다</a></li><li class="depth-1"><a href="#3-설명-가능한-ai를-현실적인-수준으로-끌어올린다" data-for="3-설명-가능한-ai를-현실적인-수준으로-끌어올린다">3) 설명 가능한 AI를 현실적인 수준으로 끌어올린다</a></li><li class="depth-1"><a href="#4-공개-생태계가-커질수록-연구-속도가-빨라진다" data-for="4-공개-생태계가-커질수록-연구-속도가-빨라진다">4) 공개 생태계가 커질수록 연구 속도가 빨라진다</a></li><li class="depth-0"><a href="#그렇다면-llm은-감정을-가지고-있다고-말해도-될까" data-for="그렇다면-llm은-감정을-가지고-있다고-말해도-될까">그렇다면 LLM은 감정을 가지고 있다고 말해도 될까?</a></li><li class="depth-0"><a href="#초심자를-위한-짧은-정리" data-for="초심자를-위한-짧은-정리">초심자를 위한 짧은 정리</a></li><li class="depth-0"><a href="#맺음말" data-for="맺음말">맺음말</a></li><li class="depth-0"><a href="#참고한-주요-소스" data-for="참고한-주요-소스">참고한 주요 소스</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="/about">소개</a></li><li><a href="/contact">연락처</a></li><li><a href="/privacy-policy">개인정보처리방침</a></li><li><a href="/posts">전체 글</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}container;content;isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="./postscript.js" type="module" data-persist="true"></script></html>

@@ -1,0 +1,3 @@
+{"type":"response.rate_limits","rate_limits":{"limit_id":"codex","limit_name":null,"primary":{"used_percent":13.0,"window_minutes":300,"resets_at":1777541493},"secondary":{"used_percent":12.0,"window_minutes":10080,"resets_at":1778015052},"credits":{"has_credits":false,"unlimited":false,"balance":null},"plan_type":null,"rate_limit_reached_type":null}}
+{"type":"response.models_etag","etag":"W/\"4f0b92122a5f76c558a64d0973ae3d76\""}
+{"type":"response.created","response":{}}

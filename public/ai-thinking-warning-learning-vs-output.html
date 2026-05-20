@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>AI가 사고력을 대신하기 시작할 때, 진짜 위험은 어디에 있을까?</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans KR:wght@400;700&amp;family=Noto Sans KR:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="코난쌤 블로그"/><meta property="og:title" content="AI가 사고력을 대신하기 시작할 때, 진짜 위험은 어디에 있을까?"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="AI가 사고력을 대신하기 시작할 때, 진짜 위험은 어디에 있을까?"/><meta name="twitter:description" content="Hacker News에서 화제가 된 ‘The machines are fine. I’m worried about us.’를 바탕으로, AI가 생산성은 높이지만 사고력과 학습 과정을 약화시킬 수 있다는 문제를 교육과 연구의 관점에서 정리합니다."/><meta property="og:description" content="Hacker News에서 화제가 된 ‘The machines are fine. I’m worried about us.’를 바탕으로, AI가 생산성은 높이지만 사고력과 학습 과정을 약화시킬 수 있다는 문제를 교육과 연구의 관점에서 정리합니다."/><meta property="og:image:alt" content="Hacker News에서 화제가 된 ‘The machines are fine. I’m worried about us.’를 바탕으로, AI가 생산성은 높이지만 사고력과 학습 과정을 약화시킬 수 있다는 문제를 교육과 연구의 관점에서 정리합니다."/><meta property="twitter:domain" content="jkf87.github.io"/><meta property="og:url" content="https://jkf87.github.io/ai-thinking-warning-learning-vs-output"/><meta property="twitter:url" content="https://jkf87.github.io/ai-thinking-warning-learning-vs-output"/><link rel="icon" href="./static/icon.png"/><meta name="description" content="Hacker News에서 화제가 된 ‘The machines are fine. I’m worried about us.’를 바탕으로, AI가 생산성은 높이지만 사고력과 학습 과정을 약화시킬 수 있다는 문제를 교육과 연구의 관점에서 정리합니다."/><meta name="generator" content="Quartz"/><meta name="google-site-verification" content="JqDMbJFwNjfQ-7_hxP4LIajSQf1iMnw46F1nXUPclng"/><meta name="google-adsense-account" content="ca-pub-4778921872258874"/><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4778921872258874" crossorigin="anonymous"></script><link href="./index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1lcm1haWQuaW5saW5lLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUdGO0VBQ0U7OztBQUtGO0VBQ0U7RUFDQTs7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAgIHRyYW5zZm9ybS1vcmlnaW46IDAgMDtcbiAgICAgIHRyYW5zaXRpb246IHRyYW5zZm9ybSAwLjFzIGVhc2U7XG4gICAgICBvdmVyZmxvdzogdmlzaWJsZTtcbiAgICAgIG1pbi1oZWlnaHQ6IDIwMHB4O1xuICAgICAgbWluLXdpZHRoOiAyMDBweDtcblxuICAgICAgcHJlIHtcbiAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICBib3JkZXI6IG5vbmU7XG4gICAgICB9XG5cbiAgICAgIHN2ZyB7XG4gICAgICAgIG1heC13aWR0aDogbm9uZTtcbiAgICAgICAgaGVpZ2h0OiBhdXRvO1xuICAgICAgfVxuICAgIH1cblxuICAgICYgPiAubWVybWFpZC1jb250cm9scyB7XG4gICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICBib3R0b206IDIwcHg7XG4gICAgICByaWdodDogMjBweDtcbiAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICBnYXA6IDhweDtcbiAgICAgIHBhZGRpbmc6IDhweDtcbiAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICBib3JkZXItcmFkaXVzOiA2cHg7XG4gICAgICBib3gtc2hhZG93OiAwIDJweCA0cHggcmdiYSgwLCAwLCAwLCAwLjEpO1xuICAgICAgei1pbmRleDogMjtcblxuICAgICAgLm1lcm1haWQtY29udHJvbC1idXR0b24ge1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICAgICAgd2lkdGg6IDMycHg7XG4gICAgICAgIGhlaWdodDogMzJweDtcbiAgICAgICAgcGFkZGluZzogMDtcbiAgICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgICBjb2xvcjogdmFyKC0tZGFyayk7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgICAgIGZvbnQtZmFtaWx5OiB2YXIoLS1ib2R5Rm9udCk7XG4gICAgICAgIHRyYW5zaXRpb246IGFsbCAwLjJzIGVhc2U7XG5cbiAgICAgICAgJjpob3ZlciB7XG4gICAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgfVxuXG4gICAgICAgICY6YWN0aXZlIHtcbiAgICAgICAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMXB4KTtcbiAgICAgICAgfVxuXG4gICAgICAgIC8vIFN0eWxlIHRoZSByZXNldCBidXR0b24gZGlmZmVyZW50bHlcbiAgICAgICAgJjpudGgtY2hpbGQoMikge1xuICAgICAgICAgIHdpZHRoOiBhdXRvO1xuICAgICAgICAgIHBhZGRpbmc6IDAgMTJweDtcbiAgICAgICAgICBmb250LXNpemU6IDE0cHg7XG4gICAgICAgIH1cbiAgICAgIH1cbiAgICB9XG4gIH1cbn1cbiJdfQ== */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="./prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("./static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://jkf87.github.io/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://jkf87.github.io/ai-thinking-warning-learning-vs-output-og-image.webp"/><meta property="og:image:url" content="https://jkf87.github.io/ai-thinking-warning-learning-vs-output-og-image.webp"/><meta name="twitter:image" content="https://jkf87.github.io/ai-thinking-warning-learning-vs-output-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="ai-thinking-warning-learning-vs-output"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href=".">코난쌤 블로그</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="리더 모드"><title>리더 모드</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>{if(a.isFolder&amp;&amp;b.isFolder)return a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;});if(a.isFolder)return-1;if(b.isFolder)return 1;let aDates=a.data?.dates,bDates=b.data?.dates,aDate=aDates?.created??aDates?.modified??aDates?.published,bDate=bDates?.created??bDates?.modified??bDates?.published;if(aDate&amp;&amp;bDate){let at=new Date(aDate).getTime(),bt=new Date(bDate).getTime();if(bt!==at)return bt-at}return a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;})}&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-105"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-105" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><header><nav class="top-nav " aria-label="주요 메뉴"><a href="/">홈</a><a href="/posts">전체 글</a><a href="/categories">카테고리</a><a href="/about">소개</a><a href="/contact">연락처</a><a href="/privacy-policy">개인정보처리방침</a></nav></header><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="./">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>AI가 사고력을 대신하기 시작할 때, 진짜 위험은 어디에 있을까?</a></div></nav><h1 class="article-title">AI가 사고력을 대신하기 시작할 때, 진짜 위험은 어디에 있을까?</h1><p show-comma="true" class="content-meta"><time datetime="2026-04-05T15:00:00.000Z">2026년 4월 06일</time><span>20 min read</span></p><ul class="tags"><li><a href="./tags/ai" class="internal tag-link">ai</a></li><li><a href="./tags/education" class="internal tag-link">education</a></li><li><a href="./tags/learning" class="internal tag-link">learning</a></li><li><a href="./tags/llm" class="internal tag-link">llm</a></li><li><a href="./tags/research" class="internal tag-link">research</a></li><li><a href="./tags/hacker-news" class="internal tag-link">hacker-news</a></li><li><a href="./tags/thinking" class="internal tag-link">thinking</a></li></ul></div></div><article class="popover-hint"><blockquote>
+<p><strong>원문</strong>: <a href="https://ergosphere.blog/posts/the-machines-are-fine/" class="external">The machines are fine. I’m worried about us.<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</blockquote>
+<p>최근 Hacker News에서 꽤 인상적인 글 하나가 올라왔습니다. 제목은 <strong>“The machines are fine. I’m worried about us.”</strong> 입니다. 직역하면 “기계는 괜찮다. 내가 걱정하는 건 우리다.” 정도가 됩니다.</p>
+<p>이 문장은 묘하게 오래 남습니다. 왜냐하면 지금 AI 논쟁의 핵심을 아주 정확하게 찌르기 때문입니다. 많은 사람들은 AI의 성능, 환각, 비용, 속도, 모델 경쟁 같은 것에 주목합니다. 물론 그것도 중요합니다. 하지만 이 글이 던지는 더 본질적인 질문은 이것입니다.</p>
+<blockquote>
+<p><strong>AI가 점점 더 많은 일을 대신해 줄 때, 우리는 정말 더 똑똑해지고 있는가? 아니면 결과물만 빨라졌을 뿐, 생각하는 힘은 오히려 약해지고 있는가?</strong></p>
+</blockquote>
+<p>저는 이 질문이 특히 <strong>교육</strong>과 <strong>학습</strong>의 관점에서 중요하다고 봤습니다. 그래서 오늘은 원문에서 던진 핵심 메시지를 바탕으로, 왜 이 글이 단순한 ‘AI 비판’이 아니라 <strong>사고력과 성장 과정에 대한 경고</strong>인지 정리해보려 합니다.</p>
+<h2 id="이-글이-던지는-핵심-비유-alice와-bob">이 글이 던지는 핵심 비유: Alice와 Bob<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#이-글이-던지는-핵심-비유-alice와-bob" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>원문은 아주 강력한 가정 실험으로 시작합니다.</p>
+<p>어느 신임 교수가 대학에서 첫 박사과정 학생 두 명을 받습니다. 이름은 Alice와 Bob입니다. 둘 다 비슷한 수준의 프로젝트를 맡습니다. 둘 다 1년 동안 연구를 진행하고, 결국 비슷한 수준의 논문을 하나씩 냅니다. 겉으로 보면 둘은 똑같이 성공한 것처럼 보입니다.</p>
+<p>그런데 차이가 있습니다.</p>
+<ul>
+<li><strong>Alice</strong>는 직접 논문을 읽고,</li>
+<li>직접 막히고,</li>
+<li>직접 오류를 만나고,</li>
+<li>다시 읽고,</li>
+<li>계산하고,</li>
+<li>생각하고,</li>
+<li>틀리면서 배웁니다.</li>
+</ul>
+<p>반면 <strong>Bob</strong>은 AI 에이전트를 적극적으로 사용합니다.</p>
+<ul>
+<li>논문 요약도 AI,</li>
+<li>새로운 방법 이해도 AI,</li>
+<li>코드 디버깅도 AI,</li>
+<li>글쓰기 초안도 AI,</li>
+<li>중간에 생기는 문제 해결도 AI.</li>
+</ul>
+<p>결과만 놓고 보면 둘 다 논문을 냈습니다. 관리자의 눈으로 보면 둘은 비슷한 성과를 만든 학생입니다. 하지만 글쓴이는 말합니다.</p>
+<blockquote>
+<p><strong>논문은 같을 수 있어도, 연구자는 같지 않다.</strong></p>
+</blockquote>
+<p>이 문장이 이 글의 핵심입니다.</p>
+<p>Alice는 1년 동안 자기 머릿속에 구조를 쌓았습니다. 새로운 논문을 읽어도 따라갈 수 있고, 그래프를 보면 이상한 점을 감지할 수 있고, 문제가 생기면 어디부터 의심해야 할지 감이 생깁니다. 반면 Bob은 결과물을 냈을지 몰라도, AI를 치우는 순간 사실상 아직 출발선에 서 있는 상태일 수 있습니다.</p>
+<p>즉, <strong>성과는 같아 보여도 성장의 밀도는 전혀 다를 수 있다</strong>는 것이죠.</p>
+<h2 id="왜-이게-무서운가-시스템은-이-차이를-잘-구분하지-못한다">왜 이게 무서운가: 시스템은 이 차이를 잘 구분하지 못한다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#왜-이게-무서운가-시스템은-이-차이를-잘-구분하지-못한다" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>더 무서운 부분은 여기서 시작됩니다.</p>
+<p>학교, 연구기관, 기업, 조직은 대개 <strong>측정 가능한 결과</strong>를 봅니다.</p>
+<ul>
+<li>논문 몇 편을 썼는가</li>
+<li>프로젝트를 몇 개 끝냈는가</li>
+<li>얼마나 빨리 결과를 냈는가</li>
+<li>가시적인 산출물이 있는가</li>
+</ul>
+<p>이 기준으로 보면 Alice와 Bob은 비슷합니다. 아니, 어떤 경우에는 Bob이 더 효율적일 수도 있습니다. 더 빨리, 더 많이 결과를 만들 수 있으니까요.</p>
+<p>문제는 바로 여기에 있습니다.</p>
+<blockquote>
+<p><strong>진짜 중요한 것은 종종 숫자로 잘 보이지 않는다.</strong></p>
+</blockquote>
+<p>사람이 스스로 생각하는 힘, 문제를 해석하는 감각, 실패 속에서 축적되는 직관, 설명할 수 있는 이해력은 표면적인 성과표에 잘 드러나지 않습니다. 그런데 교육과 연구, 그리고 장기적으로는 일의 본질은 바로 거기에 있습니다.</p>
+<p>원문은 냉정하게 말합니다. 시스템이 이 차이를 못 보는 것이 아니라, <strong>굳이 보려 하지 않을 수도 있다</strong>고요. 단기 성과가 나오면 조직은 일단 만족하기 쉽기 때문입니다.</p>
+<p>이 부분은 학교 현장에서도 꽤 익숙한 장면입니다. 학생이 스스로 이해해서 푼 것인지, 아니면 정답 비슷한 것을 빠르게 조합해서 제출한 것인지 겉으로는 잘 구분되지 않을 때가 많습니다. 그래서 지금의 AI 시대에는 결과물만 보는 평가가 점점 더 취약해질 가능성이 큽니다.</p>
+<h2 id="ai가-틀릴-수-있다보다-더-본질적인-문제">“AI가 틀릴 수 있다”보다 더 본질적인 문제<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ai가-틀릴-수-있다보다-더-본질적인-문제" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>많은 사람들은 AI 문제를 주로 <strong>환각</strong> 관점에서 봅니다.</p>
+<ul>
+<li>가짜 정보를 만든다</li>
+<li>틀린 코드를 만든다</li>
+<li>자신감 있게 거짓말한다</li>
+<li>그럴듯하지만 실제론 부정확하다</li>
+</ul>
+<p>맞는 말입니다. 하지만 원문은 그보다 더 중요한 지점을 짚습니다.</p>
+<blockquote>
+<p><strong>설령 AI가 훨씬 더 정확해진다고 해도, 사고를 대신하게 만드는 구조 자체는 여전히 위험할 수 있다.</strong></p>
+</blockquote>
+<p>왜냐하면 병목은 AI 성능이 아니라 <strong>인간의 감독 능력</strong>이기 때문입니다.</p>
+<p>즉,</p>
+<ul>
+<li>무엇을 의심해야 하는지 알고,</li>
+<li>어떤 검증을 해야 하는지 알고,</li>
+<li>결과가 그럴듯해 보여도 어디가 이상한지 감지하고,</li>
+<li>답이 맞는지 확인하는 기준을 갖고 있는 사람</li>
+</ul>
+<p>이 있어야 AI를 제대로 쓸 수 있습니다.</p>
+<p>문제는 이런 능력이 그냥 생기지 않는다는 점입니다. 그것은 오랫동안 직접 부딪히고, 틀리고, 고치고, 다시 시도하는 과정에서 생깁니다. 다시 말해, <strong>AI가 없었을 때는 귀찮고 오래 걸린다고 여겼던 그 과정 자체가 사실은 학습의 핵심</strong>이었다는 말입니다.</p>
+<h2 id="교육에서-특히-위험한-이유-실패의-시간이-사라질-수-있다">교육에서 특히 위험한 이유: “실패의 시간”이 사라질 수 있다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#교육에서-특히-위험한-이유-실패의-시간이-사라질-수-있다" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>이 글을 읽으면서 저는 교육자로서 이 대목이 가장 크게 와닿았습니다.</p>
+<p>우리는 오래전부터 알고 있었습니다.</p>
+<ul>
+<li>수학은 풀이를 보는 것만으로는 안 된다.</li>
+<li>과학은 실험 결과만 외워서는 안 된다.</li>
+<li>글쓰기는 남이 써준 문장을 읽는 것으로 실력이 생기지 않는다.</li>
+<li>코딩은 작동하는 코드를 보는 것만으로는 늘지 않는다.</li>
+</ul>
+<p>왜냐하면 <strong>배움은 시도와 실패 속에서 일어나기 때문</strong>입니다.</p>
+<p>틀리는 경험은 불편합니다. 오래 걸립니다. 답답합니다. 하지만 그 시간이 바로 사고력의 근육을 키웁니다. 에러 메시지를 읽고, 어디가 잘못됐는지 추적하고, 처음엔 몰랐던 개념을 다시 찾아보고, 자기 언어로 정리하는 과정에서 비로소 내 것이 됩니다.</p>
+<p>그런데 AI는 너무 친절합니다. 너무 빠릅니다. 너무 그럴듯합니다.</p>
+<p>그래서 사용자는 자기도 모르게 이렇게 흐르기 쉽습니다.</p>
+<ol>
+<li>직접 읽기 전에 요약부터 본다.</li>
+<li>직접 풀기 전에 정답에 가까운 답안을 받는다.</li>
+<li>직접 구현하기 전에 코드를 생성한다.</li>
+<li>직접 설명하기 전에 문장을 정리받는다.</li>
+</ol>
+<p>이 흐름이 반복되면, 학습자는 시간을 절약한 것이 아니라 <strong>학습이 일어나야 할 구간을 통과해 버린 것</strong>일 수 있습니다.</p>
+<p>원문 표현을 빌리면, 진짜 위험은 대재앙이 아니라 이런 것입니다.</p>
+<blockquote>
+<p><strong>내가 무엇을 하고 있는지 모른 채, 그럴듯한 결과를 계속 생산하게 되는 조용한 표류</strong></p>
+</blockquote>
+<p>정말 무서운 표현입니다. 그리고 너무 현실적입니다.</p>
+<h2 id="그렇다고-ai를-금지해야-할까-그건-또-아닙니다">그렇다고 AI를 금지해야 할까? 그건 또 아닙니다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#그렇다고-ai를-금지해야-할까-그건-또-아닙니다" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>원문도 AI 전면 금지를 주장하지는 않습니다. 저 역시 그건 현실적이지도 않고 바람직하지도 않다고 봅니다.</p>
+<p>AI는 분명히 유용합니다.</p>
+<ul>
+<li>아이디어를 정리할 수 있고,</li>
+<li>초안을 빠르게 만들 수 있고,</li>
+<li>문장을 다듬을 수 있고,</li>
+<li>막힌 부분을 다시 출발하게 도와줄 수 있고,</li>
+<li>반복 작업을 줄여줄 수 있습니다.</li>
+</ul>
+<p>문제는 <strong>사용 여부</strong>가 아니라 <strong>사용 방식</strong>입니다.</p>
+<p>저는 이 구분이 앞으로 정말 중요해질 거라고 봅니다.</p>
+<h3 id="괜찮은-사용">괜찮은 사용<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#괜찮은-사용" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>내가 이미 이해한 내용을 정리할 때</li>
+<li>내가 하려는 바가 분명할 때 표현을 다듬을 때</li>
+<li>문법, 문체, 형식, 검색 시간을 줄일 때</li>
+<li>초안을 빠르게 만들고 최종 판단은 내가 할 때</li>
+</ul>
+<h3 id="위험한-사용">위험한 사용<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#위험한-사용" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>이해하기 전에 요약부터 대체할 때</li>
+<li>사고하기 전에 결론을 받아들일 때</li>
+<li>검증 없이 결과를 신뢰할 때</li>
+<li>왜 그런 답이 나왔는지 설명하지 못하면서 사용하는 때</li>
+</ul>
+<p>핵심은 이것입니다.</p>
+<blockquote>
+<p><strong>AI는 사고를 보조하는 도구여야지, 사고를 외주 주는 대상이 되어서는 안 된다.</strong></p>
+</blockquote>
+<h2 id="학교와-학부모-교사가-지금-고민해야-할-질문">학교와 학부모, 교사가 지금 고민해야 할 질문<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#학교와-학부모-교사가-지금-고민해야-할-질문" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>이 글은 연구 현장을 예로 들었지만, 사실 학교 교육에도 거의 그대로 적용됩니다.</p>
+<p>지금 학생들은 이미 AI와 함께 자라고 있습니다. 앞으로는 더 자연스럽게 사용할 겁니다. 그렇다면 중요한 질문은 “AI를 쓸까, 말까?”가 아닙니다.</p>
+<p>오히려 이런 질문이 더 중요합니다.</p>
+<ul>
+<li>학생이 <strong>스스로 설명할 수 있는가?</strong></li>
+<li>답은 맞는데, <strong>왜 맞는지 말할 수 있는가?</strong></li>
+<li>AI 도움을 받았더라도, <strong>과정을 다시 재구성할 수 있는가?</strong></li>
+<li>결과물을 냈을 뿐 아니라, <strong>실제로 배웠는가?</strong></li>
+</ul>
+<p>앞으로 좋은 수업과 평가는 단순한 정답 생산보다,</p>
+<ul>
+<li>설명,</li>
+<li>재구성,</li>
+<li>비교,</li>
+<li>반박,</li>
+<li>적용,</li>
+<li>자기 언어화</li>
+</ul>
+<p>를 더 중요하게 보게 될 가능성이 큽니다. 왜냐하면 이 부분은 아직까지도 ‘생각한 흔적’을 가장 잘 드러내기 때문입니다.</p>
+<p>저는 초등 AI 교육에서도 이 점이 핵심이라고 생각합니다. 아이들에게 AI를 아예 못 쓰게 하는 것이 아니라, <strong>AI가 대신 생각해주는 구조</strong>가 아니라 <strong>아이 스스로 생각하게 만드는 구조</strong> 안에서 쓰게 해야 합니다.</p>
+<p>예를 들어,</p>
+<ul>
+<li>먼저 자기 생각을 말해보고,</li>
+<li>그다음 AI 답과 비교하고,</li>
+<li>무엇이 다른지 토론하고,</li>
+<li>마지막에 자신의 답을 다시 수정하는 식의 흐름이 더 중요해질 것입니다.</li>
+</ul>
+<h2 id="제-생각-앞으로-더-중요한-역량은-설명할-수-있는-이해력">제 생각: 앞으로 더 중요한 역량은 ‘설명할 수 있는 이해력’<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#제-생각-앞으로-더-중요한-역량은-설명할-수-있는-이해력" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>AI 시대에는 정보를 빨리 찾는 능력만으로는 차별화가 어렵습니다. 정리된 문장을 빠르게 만드는 것도 점점 희소하지 않게 될 겁니다.</p>
+<p>오히려 더 중요해지는 것은 이런 역량일 겁니다.</p>
+<ul>
+<li>낯선 문제를 보고 구조를 파악하는 힘</li>
+<li>그럴듯한 답을 의심하는 힘</li>
+<li>왜 이상한지 설명하는 힘</li>
+<li>틀렸을 때 다시 세우는 힘</li>
+<li>자기 언어로 개념을 재구성하는 힘</li>
+</ul>
+<p>이건 결국 <strong>사고력</strong>이고, <strong>이해력</strong>이며, <strong>설명력</strong>입니다.</p>
+<p>AI는 이 역량을 가진 사람에게는 엄청난 증폭기가 됩니다. 하지만 그 역량이 만들어지기 전에 AI가 모든 마찰을 제거해버리면, 겉으로는 똑똑해 보이지만 실제로는 취약한 상태가 될 수도 있습니다.</p>
+<p>그래서 저는 앞으로 교육 현장에서 이렇게 말해야 한다고 생각합니다.</p>
+<blockquote>
+<p><strong>AI를 잘 쓰는 사람은, AI 없이도 어느 정도 생각할 수 있는 사람이다.</strong></p>
+</blockquote>
+<p>이 기준은 꽤 중요합니다.</p>
+<h2 id="마무리-기계보다-사람이-더-걱정된다는-말의-의미">마무리: 기계보다 사람이 더 걱정된다는 말의 의미<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#마무리-기계보다-사람이-더-걱정된다는-말의-의미" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>“The machines are fine. I’m worried about us.”</p>
+<p>이 문장은 AI 공포론처럼 들릴 수 있지만, 사실은 그 반대에 가깝습니다. 글쓴이는 기계가 무섭다고 말하는 것이 아닙니다. 오히려 인간이 너무 쉽게 편리함에 적응하고, 어느 순간 생각하는 일을 조용히 내려놓을 수 있다는 점을 걱정합니다.</p>
+<p>AI는 앞으로 더 좋아질 겁니다. 더 자연스럽고, 더 정확하고, 더 빠르고, 더 유용해질 겁니다. 그래서 더더욱 중요한 것은 “AI를 쓰지 말자”가 아니라,</p>
+<blockquote>
+<p><strong>AI를 쓰더라도, 생각하는 책임만큼은 놓치지 말자</strong></p>
+</blockquote>
+<p>는 태도일 겁니다.</p>
+<p>결과를 빨리 만드는 능력도 중요합니다. 하지만 교육과 성장의 관점에서 더 중요한 것은, 그 결과를 <strong>내 힘으로 설명할 수 있는가</strong>입니다.</p>
+<p>그 기준이 무너지기 시작하면, 우리는 똑똑한 도구를 얻는 대신 <strong>생각하는 힘을 조금씩 잃어버리는 방향</strong>으로 갈 수도 있습니다.</p>
+<p>그리고 아마 원문이 진짜로 걱정한 것도 바로 그것일 겁니다.</p>
+<h2 id="같이-읽으면-좋은-글">같이 읽으면 좋은 글<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#같이-읽으면-좋은-글" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="./vibe-physics-ai-graduate-student" class="internal alias" data-slug="vibe-physics-ai-graduate-student">Vibe Physics - AI 대학원생</a></li>
+<li><a href="https://ergosphere.blog/posts/the-machines-are-fine/" class="external">The machines are fine. I’m worried about us.<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h2 id="faq">FAQ<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#faq" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="q1-ai가-학습을-방해하니-학생들은-쓰지-말아야-하나요">Q1. AI가 학습을 방해하니 학생들은 쓰지 말아야 하나요?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#q1-ai가-학습을-방해하니-학생들은-쓰지-말아야-하나요" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>그렇게 단순하게 볼 문제는 아닙니다. AI는 설명 보조, 초안 작성, 피드백 도구로 매우 유용할 수 있습니다. 다만 학생이 스스로 이해하고 설명하는 과정을 완전히 건너뛰게 만들면 학습 효과는 약해질 수 있습니다.</p>
+<h3 id="q2-ai를-잘-쓰는-것과-사고력이-좋은-것은-같은-말인가요">Q2. AI를 잘 쓰는 것과 사고력이 좋은 것은 같은 말인가요?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#q2-ai를-잘-쓰는-것과-사고력이-좋은-것은-같은-말인가요" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>아닙니다. AI를 잘 쓰는 능력과 사고력은 겹치는 부분이 있지만 동일하지 않습니다. 오히려 사고력이 있는 사람이 AI를 더 잘 검증하고 더 효과적으로 활용하는 경우가 많습니다.</p>
+<h3 id="q3-교사는-ai-시대에-무엇을-더-평가해야-할까요">Q3. 교사는 AI 시대에 무엇을 더 평가해야 할까요?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#q3-교사는-ai-시대에-무엇을-더-평가해야-할까요" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>정답 자체보다 설명, 재구성, 비교, 반박, 적용 능력을 더 많이 봐야 합니다. 학생이 왜 그렇게 생각했는지, AI 도움을 받았더라도 자기 언어로 이해를 드러낼 수 있는지가 중요해집니다.</p>
+<h3 id="q4-이-글은-ai-반대-글인가요">Q4. 이 글은 AI 반대 글인가요?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#q4-이-글은-ai-반대-글인가요" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>그보다는 AI 사용의 방향에 대한 경고에 가깝습니다. AI 자체보다, 사람이 사고 과정을 너무 쉽게 외주화하는 흐름을 경계하는 글로 보는 편이 더 정확합니다.</p></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>그래프 뷰</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-14" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#이-글이-던지는-핵심-비유-alice와-bob" data-for="이-글이-던지는-핵심-비유-alice와-bob">이 글이 던지는 핵심 비유: Alice와 Bob</a></li><li class="depth-0"><a href="#왜-이게-무서운가-시스템은-이-차이를-잘-구분하지-못한다" data-for="왜-이게-무서운가-시스템은-이-차이를-잘-구분하지-못한다">왜 이게 무서운가: 시스템은 이 차이를 잘 구분하지 못한다</a></li><li class="depth-0"><a href="#ai가-틀릴-수-있다보다-더-본질적인-문제" data-for="ai가-틀릴-수-있다보다-더-본질적인-문제">“AI가 틀릴 수 있다”보다 더 본질적인 문제</a></li><li class="depth-0"><a href="#교육에서-특히-위험한-이유-실패의-시간이-사라질-수-있다" data-for="교육에서-특히-위험한-이유-실패의-시간이-사라질-수-있다">교육에서 특히 위험한 이유: “실패의 시간”이 사라질 수 있다</a></li><li class="depth-0"><a href="#그렇다고-ai를-금지해야-할까-그건-또-아닙니다" data-for="그렇다고-ai를-금지해야-할까-그건-또-아닙니다">그렇다고 AI를 금지해야 할까? 그건 또 아닙니다</a></li><li class="depth-1"><a href="#괜찮은-사용" data-for="괜찮은-사용">괜찮은 사용</a></li><li class="depth-1"><a href="#위험한-사용" data-for="위험한-사용">위험한 사용</a></li><li class="depth-0"><a href="#학교와-학부모-교사가-지금-고민해야-할-질문" data-for="학교와-학부모-교사가-지금-고민해야-할-질문">학교와 학부모, 교사가 지금 고민해야 할 질문</a></li><li class="depth-0"><a href="#제-생각-앞으로-더-중요한-역량은-설명할-수-있는-이해력" data-for="제-생각-앞으로-더-중요한-역량은-설명할-수-있는-이해력">제 생각: 앞으로 더 중요한 역량은 ‘설명할 수 있는 이해력’</a></li><li class="depth-0"><a href="#마무리-기계보다-사람이-더-걱정된다는-말의-의미" data-for="마무리-기계보다-사람이-더-걱정된다는-말의-의미">마무리: 기계보다 사람이 더 걱정된다는 말의 의미</a></li><li class="depth-0"><a href="#같이-읽으면-좋은-글" data-for="같이-읽으면-좋은-글">같이 읽으면 좋은 글</a></li><li class="depth-0"><a href="#faq" data-for="faq">FAQ</a></li><li class="depth-1"><a href="#q1-ai가-학습을-방해하니-학생들은-쓰지-말아야-하나요" data-for="q1-ai가-학습을-방해하니-학생들은-쓰지-말아야-하나요">Q1. AI가 학습을 방해하니 학생들은 쓰지 말아야 하나요?</a></li><li class="depth-1"><a href="#q2-ai를-잘-쓰는-것과-사고력이-좋은-것은-같은-말인가요" data-for="q2-ai를-잘-쓰는-것과-사고력이-좋은-것은-같은-말인가요">Q2. AI를 잘 쓰는 것과 사고력이 좋은 것은 같은 말인가요?</a></li><li class="depth-1"><a href="#q3-교사는-ai-시대에-무엇을-더-평가해야-할까요" data-for="q3-교사는-ai-시대에-무엇을-더-평가해야-할까요">Q3. 교사는 AI 시대에 무엇을 더 평가해야 할까요?</a></li><li class="depth-1"><a href="#q4-이-글은-ai-반대-글인가요" data-for="q4-이-글은-ai-반대-글인가요">Q4. 이 글은 AI 반대 글인가요?</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>백링크</h3><ul id="list-2" class="overflow"><li><a href="./categories" class="internal">카테고리</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="/about">소개</a></li><li><a href="/contact">연락처</a></li><li><a href="/privacy-policy">개인정보처리방침</a></li><li><a href="/posts">전체 글</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}container;content;isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="./postscript.js" type="module" data-persist="true"></script></html>

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>Claude Code 내부가 이렇게 보인다고? ccunpacked.dev 한눈에 보기</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans KR:wght@400;700&amp;family=Noto Sans KR:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="코난쌤 블로그"/><meta property="og:title" content="Claude Code 내부가 이렇게 보인다고? ccunpacked.dev 한눈에 보기"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Claude Code 내부가 이렇게 보인다고? ccunpacked.dev 한눈에 보기"/><meta name="twitter:description" content="ccunpacked.dev는 Claude Code의 에이전트 루프, 도구 체계, 명령어 카탈로그, 숨겨진 기능까지 시각적으로 정리해 보여주는 사이트입니다. 왜 흥미로운지와 어떻게 보면 좋은지 정리했습니다."/><meta property="og:description" content="ccunpacked.dev는 Claude Code의 에이전트 루프, 도구 체계, 명령어 카탈로그, 숨겨진 기능까지 시각적으로 정리해 보여주는 사이트입니다. 왜 흥미로운지와 어떻게 보면 좋은지 정리했습니다."/><meta property="og:image:alt" content="ccunpacked.dev는 Claude Code의 에이전트 루프, 도구 체계, 명령어 카탈로그, 숨겨진 기능까지 시각적으로 정리해 보여주는 사이트입니다. 왜 흥미로운지와 어떻게 보면 좋은지 정리했습니다."/><meta property="twitter:domain" content="jkf87.github.io"/><meta property="og:url" content="https://jkf87.github.io/claude-code-unpacked-visual-guide"/><meta property="twitter:url" content="https://jkf87.github.io/claude-code-unpacked-visual-guide"/><link rel="icon" href="./static/icon.png"/><meta name="description" content="ccunpacked.dev는 Claude Code의 에이전트 루프, 도구 체계, 명령어 카탈로그, 숨겨진 기능까지 시각적으로 정리해 보여주는 사이트입니다. 왜 흥미로운지와 어떻게 보면 좋은지 정리했습니다."/><meta name="generator" content="Quartz"/><meta name="google-site-verification" content="JqDMbJFwNjfQ-7_hxP4LIajSQf1iMnw46F1nXUPclng"/><meta name="google-adsense-account" content="ca-pub-4778921872258874"/><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4778921872258874" crossorigin="anonymous"></script><link href="./index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1lcm1haWQuaW5saW5lLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUdGO0VBQ0U7OztBQUtGO0VBQ0U7RUFDQTs7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAgIHRyYW5zZm9ybS1vcmlnaW46IDAgMDtcbiAgICAgIHRyYW5zaXRpb246IHRyYW5zZm9ybSAwLjFzIGVhc2U7XG4gICAgICBvdmVyZmxvdzogdmlzaWJsZTtcbiAgICAgIG1pbi1oZWlnaHQ6IDIwMHB4O1xuICAgICAgbWluLXdpZHRoOiAyMDBweDtcblxuICAgICAgcHJlIHtcbiAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICBib3JkZXI6IG5vbmU7XG4gICAgICB9XG5cbiAgICAgIHN2ZyB7XG4gICAgICAgIG1heC13aWR0aDogbm9uZTtcbiAgICAgICAgaGVpZ2h0OiBhdXRvO1xuICAgICAgfVxuICAgIH1cblxuICAgICYgPiAubWVybWFpZC1jb250cm9scyB7XG4gICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICBib3R0b206IDIwcHg7XG4gICAgICByaWdodDogMjBweDtcbiAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICBnYXA6IDhweDtcbiAgICAgIHBhZGRpbmc6IDhweDtcbiAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICBib3JkZXItcmFkaXVzOiA2cHg7XG4gICAgICBib3gtc2hhZG93OiAwIDJweCA0cHggcmdiYSgwLCAwLCAwLCAwLjEpO1xuICAgICAgei1pbmRleDogMjtcblxuICAgICAgLm1lcm1haWQtY29udHJvbC1idXR0b24ge1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICAgICAgd2lkdGg6IDMycHg7XG4gICAgICAgIGhlaWdodDogMzJweDtcbiAgICAgICAgcGFkZGluZzogMDtcbiAgICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgICBjb2xvcjogdmFyKC0tZGFyayk7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgICAgIGZvbnQtZmFtaWx5OiB2YXIoLS1ib2R5Rm9udCk7XG4gICAgICAgIHRyYW5zaXRpb246IGFsbCAwLjJzIGVhc2U7XG5cbiAgICAgICAgJjpob3ZlciB7XG4gICAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgfVxuXG4gICAgICAgICY6YWN0aXZlIHtcbiAgICAgICAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMXB4KTtcbiAgICAgICAgfVxuXG4gICAgICAgIC8vIFN0eWxlIHRoZSByZXNldCBidXR0b24gZGlmZmVyZW50bHlcbiAgICAgICAgJjpudGgtY2hpbGQoMikge1xuICAgICAgICAgIHdpZHRoOiBhdXRvO1xuICAgICAgICAgIHBhZGRpbmc6IDAgMTJweDtcbiAgICAgICAgICBmb250LXNpemU6IDE0cHg7XG4gICAgICAgIH1cbiAgICAgIH1cbiAgICB9XG4gIH1cbn1cbiJdfQ== */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="./prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("./static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://jkf87.github.io/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://jkf87.github.io/claude-code-unpacked-visual-guide-og-image.webp"/><meta property="og:image:url" content="https://jkf87.github.io/claude-code-unpacked-visual-guide-og-image.webp"/><meta name="twitter:image" content="https://jkf87.github.io/claude-code-unpacked-visual-guide-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="claude-code-unpacked-visual-guide"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href=".">코난쌤 블로그</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="리더 모드"><title>리더 모드</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>{if(a.isFolder&amp;&amp;b.isFolder)return a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;});if(a.isFolder)return-1;if(b.isFolder)return 1;let aDates=a.data?.dates,bDates=b.data?.dates,aDate=aDates?.created??aDates?.modified??aDates?.published,bDate=bDates?.created??bDates?.modified??bDates?.published;if(aDate&amp;&amp;bDate){let at=new Date(aDate).getTime(),bt=new Date(bDate).getTime();if(bt!==at)return bt-at}return a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;})}&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-143"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-143" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><header><nav class="top-nav " aria-label="주요 메뉴"><a href="/">홈</a><a href="/posts">전체 글</a><a href="/categories">카테고리</a><a href="/about">소개</a><a href="/contact">연락처</a><a href="/privacy-policy">개인정보처리방침</a></nav></header><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="./">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Claude Code 내부가 이렇게 보인다고? ccunpacked.dev 한눈에 보기</a></div></nav><h1 class="article-title">Claude Code 내부가 이렇게 보인다고? ccunpacked.dev 한눈에 보기</h1><p show-comma="true" class="content-meta"><time datetime="2026-04-04T15:00:00.000Z">2026년 4월 05일</time><span>16 min read</span></p><ul class="tags"><li><a href="./tags/ai" class="internal tag-link">ai</a></li><li><a href="./tags/claude-code" class="internal tag-link">claude-code</a></li><li><a href="./tags/coding-agent" class="internal tag-link">coding-agent</a></li><li><a href="./tags/developer-tools" class="internal tag-link">developer-tools</a></li><li><a href="./tags/agent" class="internal tag-link">agent</a></li><li><a href="./tags/visualization" class="internal tag-link">visualization</a></li><li><a href="./tags/anthropic" class="internal tag-link">anthropic</a></li></ul></div></div><article class="popover-hint"><p>최근 AI 개발자 커뮤니티에서 꽤 흥미로운 링크 하나가 돌고 있습니다. 바로 <strong><a href="https://ccunpacked.dev" class="external">ccunpacked.dev<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></strong> 입니다.</p>
+<p>이 사이트는 Claude Code를 이루는 내부 구조를 <strong>시각적으로 풀어 보여주는 비공식 가이드</strong>입니다. 단순히 “툴이 많다” 수준이 아니라, 사용자가 메시지를 입력한 뒤 응답이 화면에 그려질 때까지 어떤 흐름을 거치는지, 어떤 종류의 도구와 명령어가 들어 있는지, 아직 공개되지 않은 기능 힌트까지 한 화면에서 탐색할 수 있게 정리해두었습니다.</p>
+<p><img src="./images/claude-code-unpacked-visual-guide/og-image.png" alt="Claude Code Unpacked 대표 이미지"/></p>
+<p>개인적으로는 이런 사이트가 단순한 구경거리를 넘어서, <strong>요즘 코딩 에이전트가 왜 강력하게 느껴지는지 이해하는 학습 자료</strong>로도 꽤 좋다고 봤습니다.</p>
+<h2 id="ccunpackeddev가-뭔가요">ccunpacked.dev가 뭔가요?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ccunpackeddev가-뭔가요" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>사이트 제목은 <strong>Claude Code Unpacked</strong>입니다. 이름 그대로 Claude Code를 “뜯어서” 보여주는 방식입니다.</p>
+<p>첫 화면에서 바로 이런 정보를 압축해 보여줍니다.</p>
+<ul>
+<li>약 <strong>1,900개+ 파일</strong></li>
+<li>약 <strong>519K+ 라인</strong> 규모</li>
+<li><strong>53개+ 도구</strong></li>
+<li><strong>95개+ 명령어</strong></li>
+</ul>
+<p>그리고 아래로 내려가면 크게 다섯 축으로 내용을 구성합니다.</p>
+<ol>
+<li><strong>The Agent Loop</strong><br/>
+사용자가 입력한 요청이 어떤 단계를 거쳐 처리되는지</li>
+<li><strong>Architecture Explorer</strong><br/>
+코드베이스가 어떤 영역으로 나뉘어 있는지</li>
+<li><strong>Tool System</strong><br/>
+Claude Code가 쓸 수 있는 도구를 기능별로 정리</li>
+<li><strong>Command Catalog</strong><br/>
+슬래시 커맨드 전체를 범주별로 정리</li>
+<li><strong>Hidden Features</strong><br/>
+아직 정식 노출되지 않았거나 feature-gated 상태로 보이는 기능들 소개</li>
+</ol>
+<p>즉, 이 사이트는 단순한 소개 페이지가 아니라, <strong>코딩 에이전트 제품을 구조적으로 읽게 해주는 인터랙티브 아카이브</strong>에 가깝습니다.</p>
+<h2 id="왜-이-사이트가-재미있나">왜 이 사이트가 재미있나<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#왜-이-사이트가-재미있나" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>저는 이 사이트의 가치가 단순히 “Claude Code에 이런 기능이 있대”를 보여주는 데서 끝나지 않는다고 봅니다.</p>
+<p>핵심은 오히려 이런 질문에 답을 준다는 점입니다.</p>
+<ul>
+<li>코딩 에이전트는 실제로 어떤 루프로 움직일까?</li>
+<li>파일 읽기, 실행, 검색, 서브에이전트 같은 기능은 어떤 구조로 묶일까?</li>
+<li>좋은 개발용 AI 도구는 모델 말고 무엇이 중요할까?</li>
+</ul>
+<p>요즘 많은 분들이 GPT, Claude, Gemini 같은 <strong>모델 이름</strong> 위주로 비교합니다. 물론 중요합니다. 하지만 실제 사용감은 모델만으로 설명되지 않는 경우가 많습니다.</p>
+<p>같은 계열 모델이어도 어떤 도구는 훨씬 유능하게 느껴지고, 어떤 도구는 답답하게 느껴지는 이유가 있죠. ccunpacked.dev는 그 차이를 <strong>하네스(harness)</strong>, 즉 모델을 감싸는 소프트웨어 구조 관점에서 생각하게 만들어 줍니다.</p>
+<h2 id="1-agent-loop-메시지-하나-뒤에-있는-실제-흐름">1. Agent Loop: “메시지 하나” 뒤에 있는 실제 흐름<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-agent-loop-메시지-하나-뒤에-있는-실제-흐름" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>제가 가장 먼저 눌러본 영역은 <strong>The Agent Loop</strong>였습니다.</p>
+<p>이 섹션은 사용자가 입력한 메시지가 실제로 어떤 단계를 거치는지 순서대로 보여줍니다. 사이트 기준으로 보면 대략 이런 흐름입니다.</p>
+<ul>
+<li>User Input</li>
+<li>Message Creation</li>
+<li>History Append</li>
+<li>System Prompt Assembly</li>
+<li>API Streaming</li>
+<li>Token Parsing</li>
+<li>Tool Detection</li>
+<li>Tool Execution Loop</li>
+<li>Response Rendering</li>
+<li>Post-Sampling Hooks</li>
+<li>Await Next Input</li>
+</ul>
+<p>이걸 보고 있으면 중요한 포인트가 하나 보입니다.</p>
+<blockquote>
+<p>코딩 에이전트는 “질문하면 답하는 챗봇”이 아니라, <strong>입력 → 조립 → 추론 → 도구 호출 → 결과 반영</strong>의 반복 루프를 가진 시스템에 가깝다는 점입니다.</p>
+</blockquote>
+<p>즉, 진짜 차별점은 모델 응답 한 줄이 아니라, <strong>그 응답 전후를 어떻게 설계했는가</strong>에 있습니다.</p>
+<h2 id="2-tool-system-에이전트는-결국-도구-설계의-싸움">2. Tool System: 에이전트는 결국 도구 설계의 싸움<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-tool-system-에이전트는-결국-도구-설계의-싸움" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>세 번째 섹션인 <strong>Tool System</strong>도 아주 흥미롭습니다. 도구를 단순 나열하지 않고 카테고리로 보여주는데, 대략 이런 식입니다.</p>
+<ul>
+<li>File Operations</li>
+<li>Execution</li>
+<li>Search &amp; Fetch</li>
+<li>Agents &amp; Tasks</li>
+<li>Planning</li>
+<li>MCP</li>
+<li>System</li>
+<li>Experimental</li>
+</ul>
+<p>예시로 보이는 도구도 꽤 구체적입니다.</p>
+<ul>
+<li>파일 읽기/수정/쓰기</li>
+<li>Bash 실행</li>
+<li>웹 검색 / 웹 가져오기</li>
+<li>서브에이전트 생성</li>
+<li>태스크 생성/조회/업데이트/중지</li>
+<li>계획 모드 진입</li>
+<li>MCP 리소스 읽기</li>
+<li>사용자 질문 / 투두 관리 / 설정 수정</li>
+</ul>
+<p>이걸 보면 요즘 에이전트가 왜 강해 보이는지 더 명확해집니다.</p>
+<p><strong>에이전트의 성능은 모델만의 성능이 아니라, 도구를 얼마나 구조적으로 연결했는지의 결과</strong>이기 때문입니다.</p>
+<p>특히 코딩 작업은 원래부터 이런 일들의 조합입니다.</p>
+<ul>
+<li>파일 열기</li>
+<li>심볼 찾기</li>
+<li>명령 실행</li>
+<li>결과 해석</li>
+<li>작업을 쪼개기</li>
+<li>다시 합치기</li>
+</ul>
+<p>그래서 코딩 에이전트는 본질적으로 <strong>“말 잘하는 모델”</strong> 이 아니라 <strong>“도구를 잘 쓰는 작업 시스템”</strong> 으로 봐야 합니다.</p>
+<h2 id="3-command-catalog-생각보다-제품이-깊다">3. Command Catalog: 생각보다 제품이 깊다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-command-catalog-생각보다-제품이-깊다" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>네 번째 섹션은 <strong>Command Catalog</strong>입니다. Claude Code의 슬래시 명령어를 범주별로 정리해 둡니다.</p>
+<p>카테고리만 봐도 범위가 꽤 넓습니다.</p>
+<ul>
+<li>Setup &amp; Config</li>
+<li>Daily Workflow</li>
+<li>Code Review &amp; Git</li>
+<li>Debugging &amp; Diagnostics</li>
+<li>Advanced &amp; Experimental</li>
+</ul>
+<p>눈에 띄는 명령어들도 많습니다.</p>
+<ul>
+<li><code>/config</code>, <code>/permissions</code>, <code>/model</code></li>
+<li><code>/compact</code>, <code>/memory</code>, <code>/context</code>, <code>/summary</code></li>
+<li><code>/review</code>, <code>/commit</code>, <code>/diff</code>, <code>/issue</code></li>
+<li><code>/status</code>, <code>/stats</code>, <code>/cost</code>, <code>/usage</code></li>
+<li><code>/voice</code>, <code>/ide</code>, <code>/plugin</code>, <code>/remote-control</code></li>
+</ul>
+<p>이걸 보면 Claude Code가 단순히 “코드 수정기”가 아니라, <strong>세션 운영, 컨텍스트 관리, 작업 추적, 디버깅, 협업 흐름</strong>까지 포함한 하나의 작업 환경으로 확장되고 있다는 걸 알 수 있습니다.</p>
+<p>즉, 사용자는 채팅창 하나를 보고 있지만, 실제 제품은 <strong>IDE + 터미널 + 태스크 시스템 + 세션 메모리 + 권한 관리</strong>가 합쳐진 구조에 더 가깝습니다.</p>
+<h2 id="4-hidden-features-제품의-미래-방향이-살짝-보인다">4. Hidden Features: 제품의 미래 방향이 살짝 보인다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-hidden-features-제품의-미래-방향이-살짝-보인다" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>가장 구경하는 재미가 있는 구간은 역시 <strong>Hidden Features</strong> 입니다.</p>
+<p>여기에는 정식 공개 전이거나 feature-gated로 보이는 항목들이 정리되어 있습니다. 예를 들면 이런 이름들이 보입니다.</p>
+<ul>
+<li>Buddy</li>
+<li>Kairos</li>
+<li>UltraPlan</li>
+<li>Coordinator Mode</li>
+<li>Bridge</li>
+<li>Daemon Mode</li>
+<li>UDS Inbox</li>
+<li>Auto-Dream</li>
+</ul>
+<p>물론 이런 항목은 실제 출시 여부나 최종 형태가 바뀔 수 있습니다. 그래서 그대로 확정 정보처럼 받아들이는 건 조심해야 합니다.</p>
+<p>그럼에도 불구하고 방향성은 읽을 수 있습니다.</p>
+<p>예를 들면 이런 흐름이 보이죠.</p>
+<ul>
+<li><strong>더 긴 계획 세션</strong></li>
+<li><strong>여러 에이전트의 분업</strong></li>
+<li><strong>원격 제어와 모바일 연결</strong></li>
+<li><strong>세션 간 기억 정리</strong></li>
+<li><strong>백그라운드 실행</strong></li>
+</ul>
+<p>이건 결국 코딩 에이전트가 앞으로 <strong>단일 응답형 도구</strong>에서 <strong>지속형 작업 환경</strong>으로 이동하고 있다는 신호로 읽힙니다.</p>
+<h2 id="이-사이트를-어떻게-보면-좋을까">이 사이트를 어떻게 보면 좋을까<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#이-사이트를-어떻게-보면-좋을까" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>ccunpacked.dev는 그냥 “와 기능 많네” 하고 끝내기엔 아깝습니다. 저는 세 가지 관점으로 보면 좋다고 생각합니다.</p>
+<h3 id="1-개발자라면-에이전트-제품-설계-참고-자료">1) 개발자라면: 에이전트 제품 설계 참고 자료<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-개발자라면-에이전트-제품-설계-참고-자료" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>에이전트 제품을 만들거나 MCP, 툴콜링, 워크플로우 자동화에 관심 있다면 꽤 좋은 참고 자료입니다.</p>
+<p>특히 아래 같은 질문에 도움이 됩니다.</p>
+<ul>
+<li>도구 카테고리는 어떻게 나누는가?</li>
+<li>세션 기능은 어디까지 제품으로 넣는가?</li>
+<li>서브에이전트와 태스크 시스템은 어떤 식으로 엮는가?</li>
+</ul>
+<h3 id="2-사용자라면-왜-어떤-도구는-더-똑똑하게-느껴지는가-이해">2) 사용자라면: “왜 어떤 도구는 더 똑똑하게 느껴지는가” 이해<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-사용자라면-왜-어떤-도구는-더-똑똑하게-느껴지는가-이해" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>좋은 에이전트는 모델만 좋은 게 아니라,</p>
+<ul>
+<li>컨텍스트를 잘 모으고</li>
+<li>도구를 잘 구조화하고</li>
+<li>작업을 계속 이어가고</li>
+<li>명령과 상태를 잘 관리합니다.</li>
+</ul>
+<p>이 사이트는 그걸 아주 직관적으로 보여줍니다.</p>
+<h3 id="3-교육자라면-ai-에이전트-구조를-설명하는-사례">3) 교육자라면: AI 에이전트 구조를 설명하는 사례<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-교육자라면-ai-에이전트-구조를-설명하는-사례" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>코난쌤처럼 AI를 교육적으로 설명해야 하는 입장에서는, 이 사이트가 꽤 좋은 사례가 될 수 있습니다.</p>
+<p>왜냐하면 “에이전트”라는 말을 추상적으로 설명하는 대신,</p>
+<ul>
+<li>입력</li>
+<li>프롬프트 조립</li>
+<li>API 호출</li>
+<li>도구 감지</li>
+<li>실행 루프</li>
+<li>결과 렌더링</li>
+</ul>
+<p>처럼 <strong>실제 구조</strong>로 풀어 설명할 수 있기 때문입니다.</p>
+<h2 id="아쉬운-점도-있다">아쉬운 점도 있다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#아쉬운-점도-있다" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>물론 이 사이트를 볼 때 주의할 점도 있습니다.</p>
+<p>첫째, <strong>비공식 정리</strong>입니다. 사이트 하단에도 공식 소속이 아니고, 공개적으로 확인 가능한 소스 기준이며 일부는 틀리거나 오래됐을 수 있다고 적혀 있습니다.</p>
+<p>둘째, 이런 구조 해설은 어디까지나 <strong>큐레이션된 해석</strong>입니다. 즉, 전체 맥락을 모두 보여준다기보다, 흥미로운 부분을 사람이 읽기 좋게 재배열한 결과물에 가깝습니다.</p>
+<p>셋째, 숨겨진 기능 섹션은 특히 더 조심해서 봐야 합니다. “있다”와 “곧 나온다”는 전혀 다른 이야기이기 때문입니다.</p>
+<p>그래도 저는 이런 한계까지 포함해서, 이 사이트가 충분히 볼 가치가 있다고 생각합니다. 오히려 공식 문서보다 더 빠르게 감을 잡게 해주는 면도 있습니다.</p>
+<h2 id="한-줄-정리">한 줄 정리<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#한-줄-정리" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>ccunpacked.dev는 Claude Code의 내부 구조를 구경하는 사이트가 아니라, 현대 코딩 에이전트가 어떤 방식으로 설계되는지 감각적으로 이해하게 해주는 시각 자료</strong>입니다.</p>
+<p>AI 코딩 도구를 그냥 “성능 좋은 챗봇” 정도로 보고 있었다면, 이 사이트를 보면 생각이 조금 바뀔 수 있습니다. 진짜 차이는 모델 이름 하나보다, 그 위에 얹힌 <strong>도구·상태·메모리·작업 루프 설계</strong>에서 더 많이 나오기 때문입니다.</p>
+<p>관심 있으시면 직접 둘러보세요.</p>
+<ul>
+<li>사이트: <a href="https://ccunpacked.dev" class="external">https://ccunpacked.dev<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Hacker News 반응도 함께 보면 흐름 읽기에 좋습니다.</li>
+</ul>
+<h2 id="faq">FAQ<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#faq" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="q1-ccunpackeddev는-공식-anthropic-사이트인가요">Q1. ccunpacked.dev는 공식 Anthropic 사이트인가요?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#q1-ccunpackeddev는-공식-anthropic-사이트인가요" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>아닙니다. 비공식 시각 가이드입니다. 공개적으로 확인 가능한 소스 기준으로 정리된 사이트로 보는 편이 맞습니다.</p>
+<h3 id="q2-이-사이트에서-가장-볼만한-섹션은-무엇인가요">Q2. 이 사이트에서 가장 볼만한 섹션은 무엇인가요?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#q2-이-사이트에서-가장-볼만한-섹션은-무엇인가요" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>개인적으로는 <strong>The Agent Loop</strong>와 <strong>Tool System</strong>이 가장 좋았습니다. 코딩 에이전트가 왜 단순 챗봇과 다른지 바로 감이 옵니다.</p>
+<h3 id="q3-hidden-features는-믿어도-되나요">Q3. Hidden Features는 믿어도 되나요?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#q3-hidden-features는-믿어도-되나요" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>재미있게 볼 수는 있지만, 출시 확정 정보처럼 받아들이면 안 됩니다. 기능 플래그나 실험 흔적 수준으로 보는 게 안전합니다.</p>
+<h3 id="q4-교육-자료로-활용할-만한가요">Q4. 교육 자료로 활용할 만한가요?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#q4-교육-자료로-활용할-만한가요" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>그렇습니다. 에이전트 구조를 추상적으로 설명하는 대신, 입력→프롬프트 조립→도구 호출→응답 생성 흐름으로 구체적으로 보여줄 수 있어서 설명용 사례로 좋습니다.</p>
+<h3 id="q5-이-사이트를-보면-결국-무엇을-배우게-되나요">Q5. 이 사이트를 보면 결국 무엇을 배우게 되나요?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#q5-이-사이트를-보면-결국-무엇을-배우게-되나요" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>요즘 강한 코딩 에이전트는 모델 하나로 설명되지 않고, <strong>하네스와 도구 체계, 메모리와 태스크 구조</strong>까지 포함한 시스템 설계로 이해해야 한다는 점입니다.</p></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>그래프 뷰</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-29" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#ccunpackeddev가-뭔가요" data-for="ccunpackeddev가-뭔가요">ccunpacked.dev가 뭔가요?</a></li><li class="depth-0"><a href="#왜-이-사이트가-재미있나" data-for="왜-이-사이트가-재미있나">왜 이 사이트가 재미있나</a></li><li class="depth-0"><a href="#1-agent-loop-메시지-하나-뒤에-있는-실제-흐름" data-for="1-agent-loop-메시지-하나-뒤에-있는-실제-흐름">1. Agent Loop: “메시지 하나” 뒤에 있는 실제 흐름</a></li><li class="depth-0"><a href="#2-tool-system-에이전트는-결국-도구-설계의-싸움" data-for="2-tool-system-에이전트는-결국-도구-설계의-싸움">2. Tool System: 에이전트는 결국 도구 설계의 싸움</a></li><li class="depth-0"><a href="#3-command-catalog-생각보다-제품이-깊다" data-for="3-command-catalog-생각보다-제품이-깊다">3. Command Catalog: 생각보다 제품이 깊다</a></li><li class="depth-0"><a href="#4-hidden-features-제품의-미래-방향이-살짝-보인다" data-for="4-hidden-features-제품의-미래-방향이-살짝-보인다">4. Hidden Features: 제품의 미래 방향이 살짝 보인다</a></li><li class="depth-0"><a href="#이-사이트를-어떻게-보면-좋을까" data-for="이-사이트를-어떻게-보면-좋을까">이 사이트를 어떻게 보면 좋을까</a></li><li class="depth-1"><a href="#1-개발자라면-에이전트-제품-설계-참고-자료" data-for="1-개발자라면-에이전트-제품-설계-참고-자료">1) 개발자라면: 에이전트 제품 설계 참고 자료</a></li><li class="depth-1"><a href="#2-사용자라면-왜-어떤-도구는-더-똑똑하게-느껴지는가-이해" data-for="2-사용자라면-왜-어떤-도구는-더-똑똑하게-느껴지는가-이해">2) 사용자라면: “왜 어떤 도구는 더 똑똑하게 느껴지는가” 이해</a></li><li class="depth-1"><a href="#3-교육자라면-ai-에이전트-구조를-설명하는-사례" data-for="3-교육자라면-ai-에이전트-구조를-설명하는-사례">3) 교육자라면: AI 에이전트 구조를 설명하는 사례</a></li><li class="depth-0"><a href="#아쉬운-점도-있다" data-for="아쉬운-점도-있다">아쉬운 점도 있다</a></li><li class="depth-0"><a href="#한-줄-정리" data-for="한-줄-정리">한 줄 정리</a></li><li class="depth-0"><a href="#faq" data-for="faq">FAQ</a></li><li class="depth-1"><a href="#q1-ccunpackeddev는-공식-anthropic-사이트인가요" data-for="q1-ccunpackeddev는-공식-anthropic-사이트인가요">Q1. ccunpacked.dev는 공식 Anthropic 사이트인가요?</a></li><li class="depth-1"><a href="#q2-이-사이트에서-가장-볼만한-섹션은-무엇인가요" data-for="q2-이-사이트에서-가장-볼만한-섹션은-무엇인가요">Q2. 이 사이트에서 가장 볼만한 섹션은 무엇인가요?</a></li><li class="depth-1"><a href="#q3-hidden-features는-믿어도-되나요" data-for="q3-hidden-features는-믿어도-되나요">Q3. Hidden Features는 믿어도 되나요?</a></li><li class="depth-1"><a href="#q4-교육-자료로-활용할-만한가요" data-for="q4-교육-자료로-활용할-만한가요">Q4. 교육 자료로 활용할 만한가요?</a></li><li class="depth-1"><a href="#q5-이-사이트를-보면-결국-무엇을-배우게-되나요" data-for="q5-이-사이트를-보면-결국-무엇을-배우게-되나요">Q5. 이 사이트를 보면 결국 무엇을 배우게 되나요?</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="/about">소개</a></li><li><a href="/contact">연락처</a></li><li><a href="/privacy-policy">개인정보처리방침</a></li><li><a href="/posts">전체 글</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}container;content;isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="./postscript.js" type="module" data-persist="true"></script></html>

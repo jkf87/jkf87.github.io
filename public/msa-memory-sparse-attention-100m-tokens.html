@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>AI가 1억 토큰을 기억한다? MSA가 여는 장기 메모리의 시대</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans KR:wght@400;700&amp;family=Noto Sans KR:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="코난쌤 블로그"/><meta property="og:title" content="AI가 1억 토큰을 기억한다? MSA가 여는 장기 메모리의 시대"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="AI가 1억 토큰을 기억한다? MSA가 여는 장기 메모리의 시대"/><meta name="twitter:description" content="MSA(Memory Sparse Attention) 논문을 바탕으로, 왜 1억 토큰 메모리가 중요한지와 장기 컨텍스트 AI의 흐름을 교육·실무 관점에서 쉽게 정리한 글입니다."/><meta property="og:description" content="MSA(Memory Sparse Attention) 논문을 바탕으로, 왜 1억 토큰 메모리가 중요한지와 장기 컨텍스트 AI의 흐름을 교육·실무 관점에서 쉽게 정리한 글입니다."/><meta property="og:image:alt" content="MSA(Memory Sparse Attention) 논문을 바탕으로, 왜 1억 토큰 메모리가 중요한지와 장기 컨텍스트 AI의 흐름을 교육·실무 관점에서 쉽게 정리한 글입니다."/><meta property="twitter:domain" content="jkf87.github.io"/><meta property="og:url" content="https://jkf87.github.io/msa-memory-sparse-attention-100m-tokens"/><meta property="twitter:url" content="https://jkf87.github.io/msa-memory-sparse-attention-100m-tokens"/><link rel="icon" href="./static/icon.png"/><meta name="description" content="MSA(Memory Sparse Attention) 논문을 바탕으로, 왜 1억 토큰 메모리가 중요한지와 장기 컨텍스트 AI의 흐름을 교육·실무 관점에서 쉽게 정리한 글입니다."/><meta name="generator" content="Quartz"/><meta name="google-site-verification" content="JqDMbJFwNjfQ-7_hxP4LIajSQf1iMnw46F1nXUPclng"/><meta name="google-adsense-account" content="ca-pub-4778921872258874"/><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4778921872258874" crossorigin="anonymous"></script><link href="./index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1lcm1haWQuaW5saW5lLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUdGO0VBQ0U7OztBQUtGO0VBQ0U7RUFDQTs7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAgIHRyYW5zZm9ybS1vcmlnaW46IDAgMDtcbiAgICAgIHRyYW5zaXRpb246IHRyYW5zZm9ybSAwLjFzIGVhc2U7XG4gICAgICBvdmVyZmxvdzogdmlzaWJsZTtcbiAgICAgIG1pbi1oZWlnaHQ6IDIwMHB4O1xuICAgICAgbWluLXdpZHRoOiAyMDBweDtcblxuICAgICAgcHJlIHtcbiAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICBib3JkZXI6IG5vbmU7XG4gICAgICB9XG5cbiAgICAgIHN2ZyB7XG4gICAgICAgIG1heC13aWR0aDogbm9uZTtcbiAgICAgICAgaGVpZ2h0OiBhdXRvO1xuICAgICAgfVxuICAgIH1cblxuICAgICYgPiAubWVybWFpZC1jb250cm9scyB7XG4gICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICBib3R0b206IDIwcHg7XG4gICAgICByaWdodDogMjBweDtcbiAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICBnYXA6IDhweDtcbiAgICAgIHBhZGRpbmc6IDhweDtcbiAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICBib3JkZXItcmFkaXVzOiA2cHg7XG4gICAgICBib3gtc2hhZG93OiAwIDJweCA0cHggcmdiYSgwLCAwLCAwLCAwLjEpO1xuICAgICAgei1pbmRleDogMjtcblxuICAgICAgLm1lcm1haWQtY29udHJvbC1idXR0b24ge1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICAgICAgd2lkdGg6IDMycHg7XG4gICAgICAgIGhlaWdodDogMzJweDtcbiAgICAgICAgcGFkZGluZzogMDtcbiAgICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgICBjb2xvcjogdmFyKC0tZGFyayk7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgICAgIGZvbnQtZmFtaWx5OiB2YXIoLS1ib2R5Rm9udCk7XG4gICAgICAgIHRyYW5zaXRpb246IGFsbCAwLjJzIGVhc2U7XG5cbiAgICAgICAgJjpob3ZlciB7XG4gICAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgfVxuXG4gICAgICAgICY6YWN0aXZlIHtcbiAgICAgICAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMXB4KTtcbiAgICAgICAgfVxuXG4gICAgICAgIC8vIFN0eWxlIHRoZSByZXNldCBidXR0b24gZGlmZmVyZW50bHlcbiAgICAgICAgJjpudGgtY2hpbGQoMikge1xuICAgICAgICAgIHdpZHRoOiBhdXRvO1xuICAgICAgICAgIHBhZGRpbmc6IDAgMTJweDtcbiAgICAgICAgICBmb250LXNpemU6IDE0cHg7XG4gICAgICAgIH1cbiAgICAgIH1cbiAgICB9XG4gIH1cbn1cbiJdfQ== */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="./prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("./static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://jkf87.github.io/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://jkf87.github.io/msa-memory-sparse-attention-100m-tokens-og-image.webp"/><meta property="og:image:url" content="https://jkf87.github.io/msa-memory-sparse-attention-100m-tokens-og-image.webp"/><meta name="twitter:image" content="https://jkf87.github.io/msa-memory-sparse-attention-100m-tokens-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="msa-memory-sparse-attention-100m-tokens"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href=".">코난쌤 블로그</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="리더 모드"><title>리더 모드</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>{if(a.isFolder&amp;&amp;b.isFolder)return a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;});if(a.isFolder)return-1;if(b.isFolder)return 1;let aDates=a.data?.dates,bDates=b.data?.dates,aDate=aDates?.created??aDates?.modified??aDates?.published,bDate=bDates?.created??bDates?.modified??bDates?.published;if(aDate&amp;&amp;bDate){let at=new Date(aDate).getTime(),bt=new Date(bDate).getTime();if(bt!==at)return bt-at}return a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;})}&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-373"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-373" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><header><nav class="top-nav " aria-label="주요 메뉴"><a href="/">홈</a><a href="/posts">전체 글</a><a href="/categories">카테고리</a><a href="/about">소개</a><a href="/contact">연락처</a><a href="/privacy-policy">개인정보처리방침</a></nav></header><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="./">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>AI가 1억 토큰을 기억한다? MSA가 여는 장기 메모리의 시대</a></div></nav><h1 class="article-title">AI가 1억 토큰을 기억한다? MSA가 여는 장기 메모리의 시대</h1><p show-comma="true" class="content-meta"><time datetime="2026-03-29T15:00:00.000Z">2026년 3월 30일</time><span>19 min read</span></p><ul class="tags"><li><a href="./tags/ai" class="internal tag-link">ai</a></li><li><a href="./tags/llm" class="internal tag-link">llm</a></li><li><a href="./tags/논문리뷰" class="internal tag-link">논문리뷰</a></li><li><a href="./tags/long-context" class="internal tag-link">long-context</a></li><li><a href="./tags/memory" class="internal tag-link">memory</a></li><li><a href="./tags/attention" class="internal tag-link">attention</a></li><li><a href="./tags/ai교육" class="internal tag-link">ai교육</a></li></ul></div></div><article class="popover-hint"><p><img src="./images/msa-memory-sparse-attention-100m-tokens/figure-1.png" alt="MSA 논문 Figure 1"/>
+<em>그림 1: MSA의 전체 구조를 보여주는 개념도입니다. 거대 메모리에서 질문과 관련된 부분만 선택적으로 attends하는 방식을 시각화합니다.</em></p>
+<p>AI가 긴 글을 잘 읽는다고 말할 때, 우리는 보통 “컨텍스트 윈도우가 커졌다”고 표현합니다. 그런데 이번 논문은 그 한 걸음을 더 밀어붙입니다. <strong>MSA(Memory Sparse Attention)</strong> 는 단순히 입력 길이를 늘리는 수준이 아니라, <strong>1억 토큰 규모의 메모리</strong>를 다룰 수 있는 구조를 제안합니다.</p>
+<p>숫자만 보면 감이 잘 안 옵니다. 1억 토큰은 책 수백 권, 기업 문서 아카이브, 혹은 한 사람의 장기 기록에 가까운 규모입니다. 그래서 이 논문은 단순한 모델 개선이 아니라, <strong>“AI가 얼마나 긴 시간과 많은 자료를 기억할 수 있는가”</strong> 라는 질문에 꽤 본격적으로 답하려는 시도라고 볼 수 있습니다.</p>
+<p>오늘은 이 논문을 어렵지 않게 정리해보겠습니다.</p>
+<h2 id="한눈에-보는-핵심">한눈에 보는 핵심<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#한눈에-보는-핵심" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>논문명: <strong>MSA: Memory Sparse Attention for Efficient End-to-End Memory Model Scaling to 100M Tokens</strong></li>
+<li>핵심 주장: <strong>16K에서 100M 토큰 규모로 확장하면서도 성능 저하를 9% 미만으로 억제</strong></li>
+<li>핵심 아이디어: <strong>필요한 메모리만 골라 보는 sparse attention 구조</strong></li>
+<li>실무 포인트: RAG를 완전히 대체한다기보다, <strong>매우 긴 문맥과 복잡한 추론이 필요한 영역</strong>에서 강력한 선택지가 될 수 있음</li>
+<li>교육 포인트: “AI는 모든 것을 한 번에 읽는 게 아니라, 필요한 기억을 골라 접근한다”는 개념을 설명하기 좋음</li>
+</ul>
+<h2 id="왜-이-논문이-중요한가">왜 이 논문이 중요한가<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#왜-이-논문이-중요한가" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>지금까지의 대형 언어모델은 컨텍스트 길이가 계속 늘어났습니다.</p>
+<ul>
+<li>몇 년 전: 4K~8K 토큰</li>
+<li>그다음: 32K~128K 토큰</li>
+<li>최근: 수십만~100만 토큰 수준</li>
+</ul>
+<p>이 정도만 해도 엄청난 발전이지만, 실제 활용에서는 여전히 부족한 경우가 많습니다.</p>
+<p>예를 들면 이런 상황입니다.</p>
+<ul>
+<li>회사 전체 매뉴얼과 회의록을 모두 참고해야 하는 AI</li>
+<li>수천 페이지짜리 판례·법률 문서를 읽어야 하는 AI</li>
+<li>학생의 장기 학습 이력과 피드백을 기억해야 하는 AI 튜터</li>
+<li>몇 달간 이어지는 프로젝트 맥락을 놓치지 않아야 하는 에이전트</li>
+</ul>
+<p>즉, “긴 문서 하나”가 아니라 <strong>아주 많은 기억을 장기간 다루는 문제</strong>가 중요해지고 있습니다.</p>
+<h2 id="기존-방식은-왜-한계가-있었을까">기존 방식은 왜 한계가 있었을까<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#기존-방식은-왜-한계가-있었을까" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>긴 문맥 문제를 해결하려는 접근은 이미 많았습니다. 하지만 다 장단점이 있습니다.</p>
+<h3 id="1-rag검색-기반-접근">1. RAG(검색 기반 접근)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-rag검색-기반-접근" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>가장 널리 쓰이는 방법입니다. 필요한 문서를 검색해서 일부만 모델에게 넣어주는 방식이죠.</p>
+<p>장점은 효율적이라는 점입니다. 하지만 단점도 분명합니다.</p>
+<ul>
+<li>검색이 잘못되면 중요한 정보를 놓칠 수 있음</li>
+<li>검색 시스템과 생성 모델이 분리되어 있음</li>
+<li>여러 문서를 엮는 복합 추론에서는 한계가 생길 수 있음</li>
+</ul>
+<h3 id="2-긴-컨텍스트를-그대로-늘리는-방식">2. 긴 컨텍스트를 그대로 늘리는 방식<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-긴-컨텍스트를-그대로-늘리는-방식" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>모델 입력 창 자체를 계속 키우는 방식입니다.</p>
+<p>직관적이지만, 모든 토큰이 서로를 보는 attention 구조는 계산 비용이 너무 큽니다. 길이가 커질수록 연산량과 메모리 사용량이 빠르게 폭증합니다.</p>
+<h3 id="3-선형-어텐션압축-메모리-계열">3. 선형 어텐션·압축 메모리 계열<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-선형-어텐션압축-메모리-계열" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>효율성은 좋지만, 아주 긴 범위로 가면 세부 정보 손실이나 정밀도 저하 문제가 생길 수 있습니다.</p>
+<p>그래서 이 논문의 질문은 분명합니다.</p>
+<blockquote>
+<p><strong>정확도를 유지하면서, 정말 큰 메모리를, end-to-end로 학습 가능한 방식으로 다룰 수 없을까?</strong></p>
+</blockquote>
+<p><img src="./images/msa-memory-sparse-attention-100m-tokens/figure-2.png" alt="MSA 논문 Figure 2"/>
+<em>그림 2: 기존 방식들과 MSA의 구조적 차이를 비교한 다이어그램입니다.</em></p>
+<h2 id="msa는-무엇을-바꿨나">MSA는 무엇을 바꿨나<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#msa는-무엇을-바꿨나" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>MSA의 핵심은 의외로 직관적입니다.</p>
+<p><strong>모든 메모리를 다 보지 말고, 지금 질문에 필요한 메모리만 골라서 보자.</strong></p>
+<p>즉, 전체 문서를 무식하게 전부 훑는 것이 아니라, 먼저 관련성이 높은 문서 후보를 추리고, 그다음 그 문서들에 집중해서 attention을 수행합니다.</p>
+<p>이 발상 자체는 검색과 비슷해 보일 수 있지만, 논문은 이를 <strong>모델 내부 메커니즘으로 더 긴밀하게 통합</strong>하려고 합니다.</p>
+<h3 id="핵심-기술-1-top-k-sparse-attention">핵심 기술 1. Top-k Sparse Attention<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#핵심-기술-1-top-k-sparse-attention" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>논문은 문서별로 라우팅 키를 만들고, 질문과의 유사도를 계산한 뒤 <strong>상위 k개 문서만 선택</strong>합니다.</p>
+<p>쉽게 말하면,</p>
+<ul>
+<li>전체 도서관을 다 읽는 것이 아니라</li>
+<li>먼저 “지금 질문과 관련 있을 책”을 추린 뒤</li>
+<li>그 책들만 정밀하게 읽는 방식입니다.</li>
+</ul>
+<p>이렇게 하면 계산량을 크게 줄이면서도 필요한 정보에 집중할 수 있습니다.</p>
+<h3 id="핵심-기술-2-document-wise-rope">핵심 기술 2. Document-wise RoPE<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#핵심-기술-2-document-wise-rope" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>긴 문맥을 다룰 때 흔히 생기는 문제 중 하나가 위치 정보 처리입니다. 문서가 너무 길어지면 위치 인코딩이 흔들리거나, 학습 때 보지 못한 길이에서 성능 저하가 커질 수 있습니다.</p>
+<p>이 논문은 <strong>문서 단위로 위치를 다루는 방식</strong>을 제안해, 훈련 시보다 훨씬 긴 길이까지 외삽할 수 있도록 설계합니다.</p>
+<h3 id="핵심-기술-3-memory-interleaving">핵심 기술 3. Memory Interleaving<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#핵심-기술-3-memory-interleaving" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>하나의 질문이 단 한 번의 검색으로 해결되지 않는 경우가 많습니다. 어떤 문제는 여러 단계를 거쳐 기억을 다시 찾고, 다시 읽고, 다시 추론해야 하죠.</p>
+<p>MSA는 이런 과정을 위해 <strong>검색과 생성의 반복 흐름</strong>을 지원합니다. 즉, 한 번 보고 끝나는 것이 아니라, 필요하면 메모리를 다시 참조하는 구조를 지향합니다.</p>
+<p><img src="./images/msa-memory-sparse-attention-100m-tokens/figure-3.png" alt="MSA 논문 Figure 3"/>
+<em>그림 3: Top-k Sparse Attention과 Document-wise RoPE의 작동 원리를 보여주는 기술 다이어그램입니다.</em></p>
+<h2 id="논문이-주장하는-성과">논문이 주장하는 성과<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#논문이-주장하는-성과" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>가장 눈에 띄는 숫자는 이겁니다.</p>
+<h3 id="1-1억-토큰까지-확장">1. 1억 토큰까지 확장<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-1억-토큰까지-확장" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>논문은 <strong>16K에서 100M 토큰까지 메모리 규모를 확장</strong>하면서도 성능 저하를 9% 미만으로 억제했다고 주장합니다.</p>
+<p>이건 단순히 “엄청 길다” 수준이 아니라, 이제 AI가 <strong>대규모 장기 기억을 다루는 방향</strong>으로 아키텍처가 진화하고 있다는 신호로 볼 수 있습니다.</p>
+<h3 id="2-2a800-gpu에서-100m-토큰-추론">2. 2×A800 GPU에서 100M 토큰 추론<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-2a800-gpu에서-100m-토큰-추론" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>100M 토큰이면 보통 상상만 해도 하드웨어가 무서울 정도인데, 논문은 <strong>2장의 A800 GPU로 추론 가능</strong>하다고 설명합니다.</p>
+<p>물론 이 말이 “누구나 쉽게 쓸 수 있다”는 뜻은 아닙니다. 여전히 매우 높은 하드웨어 요구사항입니다. 하지만 연구 단계에서 <strong>물리적으로 가능한 설계</strong>를 보여줬다는 점은 의미가 있습니다.</p>
+<h3 id="3-qa-계열-벤치마크에서-강한-성능">3. QA 계열 벤치마크에서 강한 성능<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-qa-계열-벤치마크에서-강한-성능" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>연구 노트 기준으로 보면, MSA는 여러 QA 벤치마크에서 강한 결과를 보였고, 특히 <strong>multi-hop 추론</strong>에서 강점이 드러납니다.</p>
+<p>이건 중요합니다. 긴 메모리는 단순히 많이 저장하는 것보다, <strong>멀리 떨어진 정보를 연결해 답을 만드는 능력</strong>이 더 중요하기 때문입니다.</p>
+<p><img src="./images/msa-memory-sparse-attention-100m-tokens/figure-4.png" alt="MSA 논문 Figure 4"/>
+<em>그림 4: 16K에서 100M 토큰까지 확장했을 때의 성능 변화를 보여주는 실험 결과 그래프입니다.</em></p>
+<h2 id="이-논문을-어떻게-이해하면-좋을까">이 논문을 어떻게 이해하면 좋을까<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#이-논문을-어떻게-이해하면-좋을까" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>저는 이 논문을 이렇게 해석하는 게 좋다고 봅니다.</p>
+<h3 id="긴-컨텍스트에서-장기-메모리로-넘어가는-전환점">”긴 컨텍스트”에서 “장기 메모리”로 넘어가는 전환점<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#긴-컨텍스트에서-장기-메모리로-넘어가는-전환점" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>우리는 그동안 컨텍스트 길이를 주로 “한 번에 얼마나 많이 넣을 수 있나”로 봤습니다. 하지만 앞으로 더 중요한 질문은 아마 이쪽일 겁니다.</p>
+<ul>
+<li>얼마나 많이 기억할 수 있는가?</li>
+<li>그중에서 필요한 것을 얼마나 잘 찾는가?</li>
+<li>여러 기억을 엮어 얼마나 길게 추론할 수 있는가?</li>
+</ul>
+<p>MSA는 바로 이 세 질문을 동시에 건드리는 논문입니다.</p>
+<h3 id="rag의-경쟁자라기보다-다른-축의-해법">RAG의 경쟁자라기보다, 다른 축의 해법<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#rag의-경쟁자라기보다-다른-축의-해법" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>이 논문을 보고 “그럼 이제 RAG는 끝났네”라고 해석하면 과합니다. 실제로는 둘의 쓰임이 다를 가능성이 큽니다.</p>
+<ul>
+<li><strong>실시간으로 문서가 자주 바뀌는 환경</strong>: 여전히 RAG가 유리할 수 있음</li>
+<li><strong>정교한 장기 기억과 다단계 추론이 중요한 환경</strong>: MSA류 구조가 더 매력적일 수 있음</li>
+</ul>
+<p>즉, RAG와 MSA는 완전한 대체 관계라기보다, <strong>문제 유형에 따라 선택이 달라질 도구</strong>로 보는 쪽이 더 현실적입니다.</p>
+<h2 id="교육-현장에서-설명하기-좋은-비유">교육 현장에서 설명하기 좋은 비유<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#교육-현장에서-설명하기-좋은-비유" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>이 논문은 초등학생이나 일반인에게 설명할 때도 꽤 재미있는 비유가 가능합니다.</p>
+<h3 id="도서관-비유">도서관 비유<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#도서관-비유" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>기존 긴 컨텍스트 모델</strong>: 도서관 책을 가능한 많이 책상 위에 펼쳐놓고 읽기</li>
+<li><strong>RAG</strong>: 사서가 검색해서 관련 책 몇 권만 가져다주기</li>
+<li><strong>MSA</strong>: 사서가 책 전체 구조를 잘 알고 있고, 질문에 따라 정말 볼 가치가 큰 책과 부분만 빠르게 골라 펼쳐주기</li>
+</ul>
+<p>이 비유의 좋은 점은, “기억이 크다”는 말이 단순히 저장 공간이 크다는 뜻이 아니라, <strong>필요할 때 잘 접근하고 활용하는 구조</strong>라는 점까지 전달할 수 있다는 것입니다.</p>
+<h2 id="실무적으로-어디에-쓸-수-있을까">실무적으로 어디에 쓸 수 있을까<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#실무적으로-어디에-쓸-수-있을까" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>이 논문이 바로 내일부터 서비스에 들어가진 않더라도, 방향성은 분명합니다.</p>
+<h3 id="가능성이-큰-분야">가능성이 큰 분야<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#가능성이-큰-분야" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>기업 내부 지식 검색과 장기 업무 기록 관리</li>
+<li>개인 AI 비서의 장기 메모리</li>
+<li>장기간 학습 데이터를 반영하는 교육 AI</li>
+<li>복잡한 기술 문서/의료 기록/법률 문서 분석</li>
+<li>장기 프로젝트를 이어가는 에이전트 시스템</li>
+</ul>
+<p>특히 코난쌤처럼 <strong>AI 교육과 실용적 업무 자동화</strong>를 함께 보는 관점에서는, 이 논문이 “모델 크기 경쟁”보다 더 중요한 메시지를 줍니다.</p>
+<blockquote>
+<p>앞으로의 AI 경쟁력은 단순히 똑똑함뿐 아니라, <strong>얼마나 잘 기억하고, 그 기억을 얼마나 잘 꺼내 쓰는가</strong>로 옮겨갈 수 있다.</p>
+</blockquote>
+<h2 id="한계도-분명히-봐야-한다">한계도 분명히 봐야 한다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#한계도-분명히-봐야-한다" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>좋은 논문일수록 장점만이 아니라 한계도 같이 봐야 합니다.</p>
+<h3 id="1-아직-범용성은-더-검증이-필요함">1. 아직 범용성은 더 검증이 필요함<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-아직-범용성은-더-검증이-필요함" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>연구 노트 기준으로 보면, 실험 백본은 Qwen3-4B 계열 중심입니다. 다른 계열 모델에서도 비슷한 효과가 안정적으로 나올지는 더 봐야 합니다.</p>
+<h3 id="2-평가가-특정-태스크에-치우쳤을-수-있음">2. 평가가 특정 태스크에 치우쳤을 수 있음<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-평가가-특정-태스크에-치우쳤을-수-있음" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>QA나 Needle-in-a-Haystack 계열 성능은 인상적이지만, 창의적 글쓰기나 일반 대화 같은 영역까지 같은 강점이 이어질지는 아직 불확실합니다.</p>
+<h3 id="3-실제-배포는-여전히-어렵다">3. 실제 배포는 여전히 어렵다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-실제-배포는-여전히-어렵다" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>2×A800이면 연구·산업 기준으로도 가벼운 환경은 아닙니다. 또한 메모리 병렬화와 오프로드 등 구현 난이도도 높습니다.</p>
+<p>즉, 이 논문은 “당장 누구나 쓰는 기술”이라기보다, <strong>앞으로 장기 메모리 AI가 어디로 갈지 보여주는 강한 시그널</strong>에 가깝습니다.</p>
+<h2 id="코난쌤-관점에서-보면">코난쌤 관점에서 보면<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#코난쌤-관점에서-보면" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>이 논문은 단순히 연구 성과 하나를 소개하는 데서 끝내기 아깝습니다. 교육적으로도 아주 좋은 소재입니다.</p>
+<p>왜냐하면 요즘 사람들은 AI를 볼 때 주로 “정답을 잘 맞히는가”만 보는데, 실제로는 <strong>기억 구조</strong>가 점점 더 중요해지고 있기 때문입니다.</p>
+<p>앞으로 AI 수업이나 콘텐츠에서는 이런 질문을 던져볼 수 있습니다.</p>
+<ul>
+<li>AI는 어디까지 기억할 수 있을까?</li>
+<li>많이 기억하는 것과 잘 찾는 것 중 무엇이 더 중요할까?</li>
+<li>RAG와 장기 메모리 모델은 어떻게 다를까?</li>
+<li>미래의 AI 튜터나 AI 비서는 어떤 메모리 구조를 가져야 할까?</li>
+</ul>
+<p>이런 질문은 단순 기술 소개를 넘어서, <strong>AI 리터러시 교육</strong> 주제로도 확장성이 큽니다.</p>
+<h2 id="마무리">마무리<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#마무리" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>MSA는 “컨텍스트를 더 길게”라는 흐름을 넘어, <strong>“AI에게 장기 메모리를 어떻게 줄 것인가”</strong> 라는 더 본질적인 질문으로 넘어가는 논문입니다.</p>
+<p>아직은 연구 단계의 성격이 강하고, 실제 제품으로 널리 쓰이기까지는 시간이 필요합니다. 그래도 분명한 건 있습니다.</p>
+<p>앞으로의 AI는 단순히 많이 아는 모델이 아니라,
+<strong>오래 기억하고, 필요한 순간에 잘 꺼내 쓰는 모델</strong> 쪽으로 진화하고 있다는 점입니다.</p>
+<p>MSA는 그 방향을 꽤 선명하게 보여준 사례라고 할 수 있습니다.</p>
+<h2 id="한-줄-정리">한 줄 정리<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#한-줄-정리" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote>
+<p><strong>MSA는 AI가 모든 문서를 다 읽는 대신, 필요한 기억만 똑똑하게 골라 보게 만들어 1억 토큰 규모의 장기 메모리에 도전한 논문입니다.</strong></p>
+</blockquote>
+<h2 id="함께-보면-좋은-포인트">함께 보면 좋은 포인트<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#함께-보면-좋은-포인트" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>긴 컨텍스트 모델과 RAG의 차이</li>
+<li>장기 메모리 AI가 에이전트에 미칠 영향</li>
+<li>교육용 AI 튜터에서 “기억”이 왜 중요한가</li>
+</ul>
+<h2 id="참고-자료">참고 자료<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#참고-자료" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Hugging Face Papers: <a href="https://huggingface.co/papers/2603.23516" class="external">https://huggingface.co/papers/2603.23516<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>arXiv: <a href="https://arxiv.org/abs/2603.23516" class="external">https://arxiv.org/abs/2603.23516<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>arXiv HTML: <a href="https://arxiv.org/html/2603.23516" class="external">https://arxiv.org/html/2603.23516<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>그래프 뷰</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-126" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#한눈에-보는-핵심" data-for="한눈에-보는-핵심">한눈에 보는 핵심</a></li><li class="depth-0"><a href="#왜-이-논문이-중요한가" data-for="왜-이-논문이-중요한가">왜 이 논문이 중요한가</a></li><li class="depth-0"><a href="#기존-방식은-왜-한계가-있었을까" data-for="기존-방식은-왜-한계가-있었을까">기존 방식은 왜 한계가 있었을까</a></li><li class="depth-1"><a href="#1-rag검색-기반-접근" data-for="1-rag검색-기반-접근">1. RAG(검색 기반 접근)</a></li><li class="depth-1"><a href="#2-긴-컨텍스트를-그대로-늘리는-방식" data-for="2-긴-컨텍스트를-그대로-늘리는-방식">2. 긴 컨텍스트를 그대로 늘리는 방식</a></li><li class="depth-1"><a href="#3-선형-어텐션압축-메모리-계열" data-for="3-선형-어텐션압축-메모리-계열">3. 선형 어텐션·압축 메모리 계열</a></li><li class="depth-0"><a href="#msa는-무엇을-바꿨나" data-for="msa는-무엇을-바꿨나">MSA는 무엇을 바꿨나</a></li><li class="depth-1"><a href="#핵심-기술-1-top-k-sparse-attention" data-for="핵심-기술-1-top-k-sparse-attention">핵심 기술 1. Top-k Sparse Attention</a></li><li class="depth-1"><a href="#핵심-기술-2-document-wise-rope" data-for="핵심-기술-2-document-wise-rope">핵심 기술 2. Document-wise RoPE</a></li><li class="depth-1"><a href="#핵심-기술-3-memory-interleaving" data-for="핵심-기술-3-memory-interleaving">핵심 기술 3. Memory Interleaving</a></li><li class="depth-0"><a href="#논문이-주장하는-성과" data-for="논문이-주장하는-성과">논문이 주장하는 성과</a></li><li class="depth-1"><a href="#1-1억-토큰까지-확장" data-for="1-1억-토큰까지-확장">1. 1억 토큰까지 확장</a></li><li class="depth-1"><a href="#2-2a800-gpu에서-100m-토큰-추론" data-for="2-2a800-gpu에서-100m-토큰-추론">2. 2×A800 GPU에서 100M 토큰 추론</a></li><li class="depth-1"><a href="#3-qa-계열-벤치마크에서-강한-성능" data-for="3-qa-계열-벤치마크에서-강한-성능">3. QA 계열 벤치마크에서 강한 성능</a></li><li class="depth-0"><a href="#이-논문을-어떻게-이해하면-좋을까" data-for="이-논문을-어떻게-이해하면-좋을까">이 논문을 어떻게 이해하면 좋을까</a></li><li class="depth-1"><a href="#긴-컨텍스트에서-장기-메모리로-넘어가는-전환점" data-for="긴-컨텍스트에서-장기-메모리로-넘어가는-전환점">”긴 컨텍스트”에서 “장기 메모리”로 넘어가는 전환점</a></li><li class="depth-1"><a href="#rag의-경쟁자라기보다-다른-축의-해법" data-for="rag의-경쟁자라기보다-다른-축의-해법">RAG의 경쟁자라기보다, 다른 축의 해법</a></li><li class="depth-0"><a href="#교육-현장에서-설명하기-좋은-비유" data-for="교육-현장에서-설명하기-좋은-비유">교육 현장에서 설명하기 좋은 비유</a></li><li class="depth-1"><a href="#도서관-비유" data-for="도서관-비유">도서관 비유</a></li><li class="depth-0"><a href="#실무적으로-어디에-쓸-수-있을까" data-for="실무적으로-어디에-쓸-수-있을까">실무적으로 어디에 쓸 수 있을까</a></li><li class="depth-1"><a href="#가능성이-큰-분야" data-for="가능성이-큰-분야">가능성이 큰 분야</a></li><li class="depth-0"><a href="#한계도-분명히-봐야-한다" data-for="한계도-분명히-봐야-한다">한계도 분명히 봐야 한다</a></li><li class="depth-1"><a href="#1-아직-범용성은-더-검증이-필요함" data-for="1-아직-범용성은-더-검증이-필요함">1. 아직 범용성은 더 검증이 필요함</a></li><li class="depth-1"><a href="#2-평가가-특정-태스크에-치우쳤을-수-있음" data-for="2-평가가-특정-태스크에-치우쳤을-수-있음">2. 평가가 특정 태스크에 치우쳤을 수 있음</a></li><li class="depth-1"><a href="#3-실제-배포는-여전히-어렵다" data-for="3-실제-배포는-여전히-어렵다">3. 실제 배포는 여전히 어렵다</a></li><li class="depth-0"><a href="#코난쌤-관점에서-보면" data-for="코난쌤-관점에서-보면">코난쌤 관점에서 보면</a></li><li class="depth-0"><a href="#마무리" data-for="마무리">마무리</a></li><li class="depth-0"><a href="#한-줄-정리" data-for="한-줄-정리">한 줄 정리</a></li><li class="depth-0"><a href="#함께-보면-좋은-포인트" data-for="함께-보면-좋은-포인트">함께 보면 좋은 포인트</a></li><li class="depth-0"><a href="#참고-자료" data-for="참고-자료">참고 자료</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="/about">소개</a></li><li><a href="/contact">연락처</a></li><li><a href="/privacy-policy">개인정보처리방침</a></li><li><a href="/posts">전체 글</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}container;content;isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="./postscript.js" type="module" data-persist="true"></script></html>
