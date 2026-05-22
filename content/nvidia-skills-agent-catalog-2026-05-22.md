@@ -17,6 +17,8 @@ aliases:
 
 원문: [NVIDIA/skills](https://github.com/NVIDIA/skills) (GitHub)
 
+![NVIDIA Skills 4컷 만화 — 설치부터 활용까지](nvidia-skills-4panel-comic.jpg)
+
 ## 한 문장 요약
 
 NVIDIA가 **AI 코딩 에이전트**가 자사 GPU/AI 플랫폼을 정확하게 다룰 수 있도록 **155개 이상의 공식 스킬(instruction sets)**을 GitHub에 오픈소스로 공개했다.
