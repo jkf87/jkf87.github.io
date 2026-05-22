@@ -33,6 +33,8 @@ NVIDIA가 해결하려는 건 바로 이 지점이다. **에이전트에게 "매
 
 스킬은 AI 에이전트가 특정 기술을 올바르게 사용하도록 가르치는 **휴대용 지시서(portable instruction set)**다. 프롬프트 파일 형태로 에이전트의 컨텍스트에 로드되며, 에이전트가 관련 작업을 만나면 자동으로 참조한다.
 
+![스킬이 뭔가 — 스킬 없음 vs 스킬 로드됨](nvidia-skills-concept.jpg)
+
 예를 들어:
 
 - "cuOpt로 차량 경로 최적화 문제를 풀어줘" → cuOpt 스킬이 로드되어 올바른 Python API 사용법을 안내
@@ -40,6 +42,8 @@ NVIDIA가 해결하려는 건 바로 이 지점이다. **에이전트에게 "매
 - "NeMo-RL로 RLHF 파인튜닝을 설정해줘" → GRPO, DPO, SFT 설정 스킬이 정확한 구성을 가이드
 
 ## 카탈로그 구성
+
+![카탈로그 구성 — 홀로그래픽 스킬 그리드](nvidia-skills-catalog.jpg)
 
 17개 제품군, 총 155개 이상의 스킬이 있다:
 
@@ -62,6 +66,8 @@ NVIDIA가 해결하려는 건 바로 이 지점이다. **에이전트에게 "매
 | **CUDA-Q** | 양자 컴퓨팅 온보딩 | 1 |
 | **Nemotron Voice Agent** | 실시간 음성 AI 에이전트 | 1 |
 
+![설치 방법 — 검색 → 선택 → 설치 → 에이전트에 로드](nvidia-skills-install.jpg)
+
 ## 설치 방법
 
 [Vercel Labs의 skills CLI](https://github.com/vercel-labs/skills)로 한 줄이면 된다:
@@ -81,6 +87,8 @@ npx skills add nvidia/skills --skill tensorrt-llm --agent kiro-cli
 ```
 
 지원 에이전트: Claude Code, OpenAI Codex, Cursor, Amazon Kiro, 그 외 다수.
+
+![왜 흥미로운가 — 4가지 핵심 하이라이트](nvidia-skills-highlights.jpg)
 
 ## 왜 흥미로운가
 
