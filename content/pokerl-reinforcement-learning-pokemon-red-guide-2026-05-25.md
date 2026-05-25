@@ -298,6 +298,16 @@ JRPG는 RL 관점에서 극도로 어려운 문제다:
 
 ---
 
+## 라이브 예고
+
+**코난쌤 유튜브 채널에서 라이브 예정!**
+
+🎬 **포켓몬 레드버전 AI로 클리어하기 (openclaw, ohmyclaw, harness)**
+
+▶️ https://youtube.com/live/NS5yEZRcOQA
+
+---
+
 ## 참고 자료
 
 - **PokeRL 논문**: [arXiv:2604.10812](https://arxiv.org/abs/2604.10812)
