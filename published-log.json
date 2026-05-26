@@ -85,6 +85,30 @@
       "source": "40s-health",
       "source_url": "https://han99.up.railway.app/2026/05/24/40s-dizziness-not-just-anemia-2026-05-24-2/",
       "blog_url": "https://jkf87.github.io/40s-dizziness-not-just-anemia-2026-05-24/"
+    },
+    {
+      "slug": "rl-agent-training-2026-05-27",
+      "date": "2026-05-27",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2605.25624",
+      "threads_root_id": "18088207934611081",
+      "blog_url": "https://jkf87.github.io/rl-agent-training-2026-05-27"
+    },
+    {
+      "slug": "seal-co-evolution-agents-2026-05-27",
+      "date": "2026-05-27",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2605.24426",
+      "threads_root_id": "18175474903406122",
+      "blog_url": "https://jkf87.github.io/seal-co-evolution-agents-2026-05-27"
+    },
+    {
+      "slug": "anthropic-2028-two-scenarios-global-ai-leadership-2026-05-27",
+      "date": "2026-05-27",
+      "source": "anthropic-blog",
+      "source_url": "https://www.anthropic.com/research/2028-ai-leadership",
+      "threads_root_id": "18378006310207421",
+      "blog_url": "https://jkf87.github.io/anthropic-2028-two-scenarios-global-ai-leadership-2026-05-27"
     }
   ]
 }
