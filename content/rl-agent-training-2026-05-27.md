@@ -12,11 +12,7 @@ aliases:
   - rl-agent-training-2026-05-27/index
 ---
 
-2025년 초만 해도 "에이전트에 RL을 쓴다"는 말은 거의 실험실 얘기였다. SFT만으로도 충분히 잘 돌아가니까. 그런데 2026년, 상황이 완전히 바뀌었다. 수학·코딩·도구 사용에서 RLVR(Reinforcement Learning with Verifiable Rewards)이 성능을 폭발시킨 뒤, 그 열기가 **에이전트 영역**으로 번지고 있다.
-
-문제는 에이전트는 수학 문제처럼 정답이 깔끔하지 않다는 것. 웹을 탐색하고, 터미널을 조작하고, 리서치 보고서를 쓰는 행동은 연속적이고, 보상은 희소하고, 환경은 비싸다.
-
-같은 주(5월 말)에 나온 세 편의 논문이 이 문제를 각자 다른 각도에서 공략한다.
+2025년 초만 해도 "에이전트에 RL을 쓴다"는 말은 거의 실험실 얘기였다. SFT만으로도 충분히 잘 돌아가니까. 그런데 2026년, 상황이 완전히 바뀌었다. 수학·코딩·도구 사용에서 RLVR(Reinforcement Learning with Verifiable Rewards)이 성능을 폭발시킨 뒤, 그 열기가 에이전트 영역으로 번지고 있다. 문제는 에이전트는 수학 문제처럼 정답이 깔끔하지 않다는 것. 웹을 탐색하고, 터미널을 조작하고, 리서치 보고서를 쓰는 행동은 연속적이고, 보상은 희소하고, 환경은 비싸다. 26년 5월 말에 나온 세 편의 논문이 이 문제를 각자 다른 각도에서 고민한 결과인듯하여 함께 소개한다.
 
 ---
 
@@ -29,7 +25,7 @@ aliases:
 
 기존엔 두 가지 극단만 있었다. 손으로 만든 벤치마크는 품질은 높은데 몇 개 안 되고, LLM-as-judge 방식은 스케일은 되는데 검증이 불안정하다. CUA-Gym은 이 사이를 채운다.
 
-![CUA-Gym 데이터 합성 파이프라인](./images/rl-agent-training-2026-05-27/cua-gym-pipeline.png)
+![CUA-Gym 데이터 합성 파이프라인 — Orchestrator가 Generator와 Discriminator를 조율하며, 정보 격리 벽을 통해 보상 해킹을 방지한다.](./images/rl-agent-training-2026-05-27/cua-gym-pipeline.jpg)
 
 핵심은 **세 에이전트의 협업**이다. **Generator**가 과제 지시문에 맞춰 초기 환경 상태와 정답 상태를 구성한다. "받은 편지함에서 제목에 '프로젝트'가 들어간 메일을 모두 읽음 처리해라" 같은 과제라면, 메일이 있는 상태와 읽음 처리된 상태를 각각 만드는 식이다.
 
@@ -39,7 +35,9 @@ aliases:
 
 훈련 환경이 부족하면 데이터가 아무리 많아도 소용없다. CUA-Gym-Hub는 실제 소프트웨어 사용 패턴을 기반으로 mock 웹 애플리케이션을 합성한다. Gmail 비슷한 메일 클라이언트, Slack 비슷한 메신저, Notion 비슷한 문서 편집기 등 110개 환경을 만들어냈다.
 
-![CUA-Gym 훈련 결과](./images/rl-agent-training-2026-05-27/cua-gym-results.png)
+![CUA-Gym-Hub 환경 구축 — Plan/Dev/Web 에이전트가 소스(Notion, Slack 등)로부터 정보를 취합해 코드를 짜고 웹 UI를 구성하여 실제 실행 가능한 환경을 만든다.](./images/rl-agent-training-2026-05-27/cua-gym-environment.jpg)
+
+![CUA-Gym 벤치마크 결과 — 왼쪽은 도메인별 성공률 향상(Lift), 오른쪽은 OSWorld-Verified 및 WebArena에서 기존 모델 및 클로즈드 소스 모델 대비 CUA-Gym 모델의 성능 비교.](./images/rl-agent-training-2026-05-27/cua-gym-results.jpg)
 
 110개 환경, 32,112개의 검증된 훈련 튜플을 만들었다. GSPO로 훈련한 결과, Qwen3.5-35B-A3B 베이스 54.5% → **CUA-Gym-A3B 62.1%**, Qwen3.5-397B-A17B 베이스 62.2% → **CUA-Gym-A17B 72.6%** 로 OSWorld-Verified 성능이 올라갔다. WebArena는 훈련에 쓰지 않은 held-out 벤치마크인데도 향상되었다. 과적합이 아니라 일반화 능력이 실제로 올라간 것이다.
 
