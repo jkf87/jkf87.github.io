@@ -12,6 +12,12 @@
     <description><![CDATA[ 절강대 연구진이 4,300만 편 논문·1억 5,700만 개체·30억 개 트리플렛을 엮은 대규모 학술 지식그래프 SciAtlas를 발표함. 키워드 매칭·벡터 검색·그래프 전파를 결합한 neuro-symbolic 검색 알고리즘이 핵심. ]]></description>
     <pubDate>Mon, 25 May 2026 15:00:00 GMT</pubDate>
   </item><item>
+    <title>Understand Anything: 코드베이스를 지식그래프로 변환하는 멀티에이전트 파이프라인</title>
+    <link>https://jkf87.github.io/understand-anything-codebase-knowledge-graph-2026-05-26</link>
+    <guid>https://jkf87.github.io/understand-anything-codebase-knowledge-graph-2026-05-26</guid>
+    <description><![CDATA[ Understand Anything은 Tree-sitter 정적분석 + LLM 시맨틱 분석을 결합해 코드베이스 전체를 대화형 지식그래프로 변환하는 Claude Code 플러그인. 구조 그래프, 도메인 뷰, 가이드 투어, 임팩트 분석까지. ]]></description>
+    <pubDate>Mon, 25 May 2026 15:00:00 GMT</pubDate>
+  </item><item>
     <title>40대 다리 쥐, 전해질만 탓하면 안 되는 이유 4가지</title>
     <link>https://jkf87.github.io/40s-leg-cramps-not-just-electrolytes-2026-05-25</link>
     <guid>https://jkf87.github.io/40s-leg-cramps-not-just-electrolytes-2026-05-25</guid>
@@ -58,12 +64,6 @@
     <link>https://jkf87.github.io/acc-compiling-agent-trajectories-2026-05-24</link>
     <guid>https://jkf87.github.io/acc-compiling-agent-trajectories-2026-05-24</guid>
     <description><![CDATA[ ACC는 에이전트 궤적을 장문 컨텍스트 학습용 데이터로 자동 변환하는 방법이다. ]]></description>
-    <pubDate>Sat, 23 May 2026 15:00:00 GMT</pubDate>
-  </item><item>
-    <title>Agent Memory Systems Survey — 벤치마크, 아키텍처, 프로덕션 도구 비교</title>
-    <link>https://jkf87.github.io/agent-memory-systems-survey-2026-05-24</link>
-    <guid>https://jkf87.github.io/agent-memory-systems-survey-2026-05-24</guid>
-    <description><![CDATA[ 에이전트 메모리 시스템 종합 서베이: LoCoMo, LongMemEval 벤치마크, 10+ 메모리 시스템 비교, 프로덕션 도구(Codex/Copilot/Claude Code/OpenClaw) 메모리 아키텍처 심층 분석 ]]></description>
     <pubDate>Sat, 23 May 2026 15:00:00 GMT</pubDate>
   </item>
     </channel>
