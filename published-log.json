@@ -1,0 +1,90 @@
+{
+  "published": [
+    {
+      "slug": "codegraph-pre-indexed-code-knowledge-graph-2026-05-24",
+      "date": "2026-05-24",
+      "source": "github-trending",
+      "threads_id": "18089737703360424",
+      "blog_url": "https://jkf87.github.io/codegraph-pre-indexed-code-knowledge-graph-2026-05-24"
+    },
+    {
+      "slug": "pi-bench-proactive-assistant-agents-2026-05-24",
+      "date": "2026-05-24",
+      "source": "huggingface",
+      "source_url": "https://huggingface.co/papers/2605.14678",
+      "threads_root_id": "18083688383568888",
+      "blog_url": "https://jkf87.github.io/pi-bench-proactive-assistant-agents-2026-05-24"
+    },
+    {
+      "slug": "acc-compiling-agent-trajectories-2026-05-24",
+      "date": "2026-05-24",
+      "source": "huggingface",
+      "source_url": "https://huggingface.co/papers/2605.21850",
+      "threads_root_id": "17906946036244642",
+      "blog_url": "https://jkf87.github.io/acc-compiling-agent-trajectories-2026-05-24"
+    },
+    {
+      "slug": "efficient-agentic-reasoning-self-regulated-planning-2026-05-24",
+      "date": "2026-05-24",
+      "source": "huggingface",
+      "source_url": "https://huggingface.co/papers/2605.22138",
+      "threads_root_id": "18126823603717452",
+      "blog_url": "https://jkf87.github.io/efficient-agentic-reasoning-self-regulated-planning-2026-05-24"
+    },
+    {
+      "slug": "terminalworld-benchmarking-terminal-agents-2026-05-24",
+      "date": "2026-05-24",
+      "source": "huggingface",
+      "source_url": "https://huggingface.co/papers/2605.22535",
+      "threads_root_id": "18183560314381603",
+      "blog_url": "https://jkf87.github.io/terminalworld-benchmarking-terminal-agents-2026-05-24"
+    },
+    {
+      "slug": "flowlong-inference-time-long-video-2026-05-24",
+      "date": "2026-05-24",
+      "source": "huggingface",
+      "source_url": "https://huggingface.co/papers/2605.20910",
+      "threads_root_id": "18588600838040317",
+      "blog_url": "https://jkf87.github.io/flowlong-inference-time-long-video-2026-05-24"
+    },
+    {
+      "slug": "latentomni-audio-visual-latent-reasoning-2026-05-24",
+      "date": "2026-05-24",
+      "source": "huggingface",
+      "source_url": "https://huggingface.co/papers/2605.22012",
+      "threads_root_id": "18120724336660620",
+      "blog_url": "https://jkf87.github.io/latentomni-audio-visual-latent-reasoning-2026-05-24"
+    },
+    {
+      "slug": "anthropic-widening-conversation-frontier-ai-2026-05-24",
+      "date": "2026-05-24",
+      "source": "anthropic-blog",
+      "source_url": "https://www.anthropic.com/news/widening-conversation-ai",
+      "threads_root_id": "18131468335598529",
+      "blog_url": "https://jkf87.github.io/anthropic-widening-conversation-frontier-ai-2026-05-24"
+    },
+    {
+      "slug": "anthropic-project-glasswing-vulnerability-detection-2026-05-24",
+      "date": "2026-05-24",
+      "source": "anthropic-blog",
+      "source_url": "https://www.anthropic.com/research/glasswing-initial-update",
+      "threads_root_id": "17934284526072256",
+      "blog_url": "https://jkf87.github.io/anthropic-project-glasswing-vulnerability-detection-2026-05-24"
+    },
+    {
+      "slug": "anthropic-claude-computer-browser-best-practices-2026-05-24",
+      "date": "2026-05-24",
+      "source": "anthropic-blog",
+      "source_url": "https://claude.com/blog/best-practices-for-computer-and-browser-use-with-claude",
+      "threads_root_id": "17888193021519447",
+      "blog_url": "https://jkf87.github.io/anthropic-claude-computer-browser-best-practices-2026-05-24"
+    },
+    {
+      "slug": "40s-dizziness-not-just-anemia-2026-05-24",
+      "date": "2026-05-24",
+      "source": "40s-health",
+      "source_url": "https://han99.up.railway.app/2026/05/24/40s-dizziness-not-just-anemia-2026-05-24-2/",
+      "blog_url": "https://jkf87.github.io/40s-dizziness-not-just-anemia-2026-05-24/"
+    }
+  ]
+}

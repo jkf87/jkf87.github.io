@@ -1,0 +1,7 @@
+{
+  "tool_name": "mcp__openclaw__browser",
+  "tool_input_preview": "{\"action\":\"snapshot\"}",
+  "error": "Chrome MCP existing-session attach for profile \"user\" could not connect to Chrome. Enable remote debugging in the browser inspect page, keep the browser open, approve the attach prompt, and retry. If you do not need your signed-in browser session, use the managed \"openclaw\" profile instead. Last error: Could not connect to Chrome. Check if Chrome is running.\nCause: Failed to fetch browser webSocket URL from http://127.0.0.1:9222/json/version: HTTP Not Found",
+  "timestamp": "2026-05-25T10:00:51.221Z",
+  "retry_count": 1
+}

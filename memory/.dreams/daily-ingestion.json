@@ -1,30 +1,55 @@
 {
   "version": 1,
   "files": {
-    "memory/2026-05-18.md": {
-      "mtimeMs": 1779052142447,
-      "size": 523,
-      "lastDreamingDayIngested": "2026-05-20"
+    "memory/2026-05-26-2032.md": {
+      "mtimeMs": 1779795123908,
+      "size": 4907,
+      "lastDreamingDayIngested": "2026-05-27"
     },
-    "memory/2026-05-17.md": {
-      "mtimeMs": 1778965464696,
-      "size": 570,
-      "lastDreamingDayIngested": "2026-05-20"
+    "memory/2026-05-26-2242.md": {
+      "mtimeMs": 1779802940527,
+      "size": 2964,
+      "lastDreamingDayIngested": "2026-05-27"
     },
-    "memory/2026-05-13.md": {
-      "mtimeMs": 1778856875154,
-      "size": 474,
-      "lastDreamingDayIngested": "2026-05-20"
+    "memory/2026-05-25-1542.md": {
+      "mtimeMs": 1779691494856,
+      "size": 1901,
+      "lastDreamingDayIngested": "2026-05-27"
     },
-    "memory/2026-05-13-1022.md": {
-      "mtimeMs": 1778856875154,
-      "size": 425,
-      "lastDreamingDayIngested": "2026-05-20"
+    "memory/2026-05-25-1644.md": {
+      "mtimeMs": 1779695088514,
+      "size": 887,
+      "lastDreamingDayIngested": "2026-05-27"
     },
-    "memory/2026-05-13-1957.md": {
-      "mtimeMs": 1778856875154,
-      "size": 5588,
-      "lastDreamingDayIngested": "2026-05-20"
+    "memory/2026-05-25-2035.md": {
+      "mtimeMs": 1779708914598,
+      "size": 5759,
+      "lastDreamingDayIngested": "2026-05-27"
+    },
+    "memory/2026-05-24.md": {
+      "mtimeMs": 1779613438386,
+      "size": 4931,
+      "lastDreamingDayIngested": "2026-05-27"
+    },
+    "memory/2026-05-22-0705.md": {
+      "mtimeMs": 1779590958206,
+      "size": 4247,
+      "lastDreamingDayIngested": "2026-05-27"
+    },
+    "memory/2026-05-22-memory-summary.md": {
+      "mtimeMs": 1779590958206,
+      "size": 11858,
+      "lastDreamingDayIngested": "2026-05-27"
+    },
+    "memory/2026-05-21.md": {
+      "mtimeMs": 1779590958206,
+      "size": 445,
+      "lastDreamingDayIngested": "2026-05-27"
+    },
+    "memory/2026-05-20-1701.md": {
+      "mtimeMs": 1779590958205,
+      "size": 6455,
+      "lastDreamingDayIngested": "2026-05-27"
     }
   }
 }

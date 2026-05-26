@@ -1,0 +1,11 @@
+{
+  "active": true,
+  "started_at": "2026-05-25T11:09:05.980Z",
+  "original_prompt": "Conversation info (untrusted metadata):\n```json\n{\n  \"chat_id\": \"telegram:8083763751\",\n  \"message_id\": \"8744\",\n  \"reply_to_id\": \"8464\",\n  \"sender_id\": \"8083763751\",\n  \"sender\": \"블 크\",\n  \"timestamp\": \"Mon 2026-05-25 19:54 GMT+9\",\n  \"inbound_event_kind\": \"user_request\",\n  \"topic_id\": \"56167\"\n}\n```\n\nSender (untrusted metadata):\n```json\n{\n  \"label\": \"블 크 (8083763751)\",\n  \"id\": \"8083763751\",\n  \"name\": \"블 크\",\n  \"username\": \"conanssam\"\n}\n```\n\nConversation context (untrusted, chronological, selected f...",
+  "session_id": "d2fdb2cc-ee61-4c07-870d-941def5e82be",
+  "project_path": "/Users/conanssam-m4/.openclaw/workspace-blogbot",
+  "reinforcement_count": 0,
+  "awaiting_confirmation": true,
+  "awaiting_confirmation_set_at": "2026-05-25T11:09:05.980Z",
+  "last_checked_at": "2026-05-25T11:09:05.980Z"
+}

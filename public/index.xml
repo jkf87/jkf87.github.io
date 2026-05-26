@@ -6,6 +6,12 @@
       <description>최근 10 건 on 코난쌤 블로그</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>에이전트 RL 3총사: 환경을 만들고, 터미널을 읽고, 리서치를 합성하는 법</title>
+    <link>https://jkf87.github.io/rl-agent-training-2026-05-27</link>
+    <guid>https://jkf87.github.io/rl-agent-training-2026-05-27</guid>
+    <description><![CDATA[ CUA-Gym, ECHO, QUEST — 세 편의 최신 논문이 알려주는 에이전트 학습에 강화학습을 쓰는 세 가지 접근. 환경 생성, 밀도 있는 보상, 합성 데이터 파이프라인까지. ]]></description>
+    <pubDate>Tue, 26 May 2026 15:00:00 GMT</pubDate>
+  </item><item>
     <title>Fincept Terminal v4: C++20으로 만든 오픈소스 블룸버그 대안</title>
     <link>https://jkf87.github.io/fincept-terminal-cpp-finance-platform-2026-05-26</link>
     <guid>https://jkf87.github.io/fincept-terminal-cpp-finance-platform-2026-05-26</guid>
@@ -59,12 +65,6 @@
     <guid>https://jkf87.github.io/pokerl-reinforcement-learning-pokemon-red-guide-2026-05-25</guid>
     <description><![CDATA[ 포켓몬 레드 — 강화학습의 궁극 벤치마크 포켓몬스터 레드(1996)는 단순한 게임이 아니다. 25시간 이상의 플레이타임, 희소한 보상, 부분 관측성(partial observability), 비선형 월드맵, 전투/탐험/메뉴 내비게이션이 뒤섞인 멀티태스킹. ]]></description>
     <pubDate>Sun, 24 May 2026 15:00:00 GMT</pubDate>
-  </item><item>
-    <title>40대 어지럼증, 빈혈만 탓하면 안 되는 이유 4가지</title>
-    <link>https://jkf87.github.io/40s-dizziness-not-just-anemia-2026-05-24</link>
-    <guid>https://jkf87.github.io/40s-dizziness-not-just-anemia-2026-05-24</guid>
-    <description><![CDATA[ 40대 어지럼증은 빈혈만으로 설명되지 않았음. 저혈압, 탈수, 귀 질환, 약물, 응급 신호를 같이 봐야 했음. ]]></description>
-    <pubDate>Sat, 23 May 2026 15:00:00 GMT</pubDate>
   </item>
     </channel>
   </rss>
