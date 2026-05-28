@@ -35,7 +35,7 @@ aliases:
 
 아래 표는 코딩, 에이전트 스킬, 추론, 실무 지식 작업 테스트에서 Opus 4.8이 전작 및 타 모델과 비교한 결과다. 더 자세한 평가는 [Claude Opus 4.8 시스템 카드](https://www.anthropic.com/claude-opus-4-8-system-card)에서 확인할 수 있다.
 
-![Opus 4.8 벤치마크 비교 테이블](images/benchmark-table.png "코딩·에이전트·추론·실무 벤치마크에서 Opus 4.8 vs 전작 vs 경쟁 모델 비교")
+![Opus 4.8 벤치마크 비교 테이블](../images/2026-05-29-claude-opus-4-8/benchmark-table.png "코딩·에이전트·추론·실무 벤치마크에서 Opus 4.8 vs 전작 vs 경쟁 모델 비교")
 
 ---
 
@@ -56,7 +56,7 @@ Opus 4.8의 가장 두드러진 개선점 중 하나는 **정직성**이다. AI 
 
 평가 결과, Opus 4.8은 전작에 비해 작성한 코드의 결함을 **약 4배 더 잘 감지**한다.
 
-![Opus 4.8 정렬 평가](images/alignment-assessment.png "정렬 평가에서 Opus 4.8의 긍정적 특성과 오정렬 행동 감소")
+![Opus 4.8 정렬 평가](../images/2026-05-29-claude-opus-4-8/alignment-assessment.png "정렬 평가에서 Opus 4.8의 긍정적 특성과 오정렬 행동 감소")
 
 Anthropic의 정렬(Alignment) 팀은 Opus 4.8에 대해 다음과 같이 평가했다:
 
