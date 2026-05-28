@@ -6,6 +6,12 @@
       <description>최근 10 건 on 코난쌤 블로그</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Claude Opus 4.8 발표 — 코딩·에이전트·전문 작업 전반의 도약</title>
+    <link>https://jkf87.github.io/posts/2026-05-29-claude-opus-4-8/</link>
+    <guid>https://jkf87.github.io/posts/2026-05-29-claude-opus-4-8/</guid>
+    <description><![CDATA[ Anthropic이 Claude Opus 4.8을 공개했다. 코딩·에이전트·추론 벤치마크 전반에서 전작을 뛰어넘으며, 동적 워크플로·노력 제어·시스템 메시지 개선도 함께 선보인다. ]]></description>
+    <pubDate>Thu, 28 May 2026 15:00:00 GMT</pubDate>
+  </item><item>
     <title>에이전트 RL 최적화: 언제 도구를 쓰고, 언제 스킬로 남길까</title>
     <link>https://jkf87.github.io/agent-rl-optimization-akbe-muse-2026-05-28</link>
     <guid>https://jkf87.github.io/agent-rl-optimization-akbe-muse-2026-05-28</guid>
@@ -58,12 +64,6 @@
     <link>https://jkf87.github.io/openclaw-google-meet-plugin-setup-guide-2026-05-28</link>
     <guid>https://jkf87.github.io/openclaw-google-meet-plugin-setup-guide-2026-05-28</guid>
     <description><![CDATA[ OpenClaw Google Meet 플러그인 설치, transcribe 모드, agent talk-back 모드, chrome-node 구성, 검증 명령어와 에이전트 프롬프트를 정리합니다. ]]></description>
-    <pubDate>Wed, 27 May 2026 15:00:00 GMT</pubDate>
-  </item><item>
-    <title>OpenClaw 메모리 슬롯 전환: LanceDB 경고의 원인과 정리법</title>
-    <link>https://jkf87.github.io/openclaw-memory-lancedb-slot-warning-2026-05-28</link>
-    <guid>https://jkf87.github.io/openclaw-memory-lancedb-slot-warning-2026-05-28</guid>
-    <description><![CDATA[ OpenClaw에서 memory-core에서 memory-lancedb로 메모리 슬롯을 전환한 뒤 반복되는 config warning의 원인과 정리 절차를 운영 기록처럼 정리합니다. ]]></description>
     <pubDate>Wed, 27 May 2026 15:00:00 GMT</pubDate>
   </item>
     </channel>
