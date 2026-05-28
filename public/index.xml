@@ -6,65 +6,65 @@
       <description>최근 10 건 on 코난쌤 블로그</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Anthropic &quot;2028: 두 가지 시나리오&quot; — 미·중 AI 패권 경쟁의 기로</title>
-    <link>https://jkf87.github.io/anthropic-2028-two-scenarios-global-ai-leadership-2026-05-27</link>
-    <guid>https://jkf87.github.io/anthropic-2028-two-scenarios-global-ai-leadership-2026-05-27</guid>
-    <description><![CDATA[ Anthropic이 발표한 미·중 AI 경쟁 분석 리포트. 컴퓨트 우위를 지키면 민주주의가 AI를 리드하고, 놓치면 권위주의가 앞서는 두 가지 2028년 시나리오. 수출 통제, 증류 공격 차단, Mythos Preview의 시사점까지. ]]></description>
-    <pubDate>Tue, 26 May 2026 15:00:00 GMT</pubDate>
+    <title>에이전트 RL 최적화: 언제 도구를 쓰고, 언제 스킬로 남길까</title>
+    <link>https://jkf87.github.io/agent-rl-optimization-akbe-muse-2026-05-28</link>
+    <guid>https://jkf87.github.io/agent-rl-optimization-akbe-muse-2026-05-28</guid>
+    <description><![CDATA[ AKBE와 MUSE-Autoskill 두 논문을 함께 읽고, 에이전트 학습에서 RL이 도구 호출 경계와 재사용 가능한 스킬 생애주기를 어떻게 최적화하는지 정리합니다. ]]></description>
+    <pubDate>Wed, 27 May 2026 15:00:00 GMT</pubDate>
   </item><item>
-    <title>에이전트 RL 3총사: 환경을 만들고, 터미널을 읽고, 리서치를 합성하는 법</title>
-    <link>https://jkf87.github.io/rl-agent-training-2026-05-27</link>
-    <guid>https://jkf87.github.io/rl-agent-training-2026-05-27</guid>
-    <description><![CDATA[ CUA-Gym, ECHO, QUEST — 세 편의 최신 논문이 알려주는 에이전트 학습에 강화학습을 쓰는 세 가지 접근. 환경 생성, 밀도 있는 보상, 합성 데이터 파이프라인까지. ]]></description>
-    <pubDate>Tue, 26 May 2026 15:00:00 GMT</pubDate>
+    <title>D²-모니터: 디퓨전 LLM이 &#039;망설이는&#039; 순간을 포착해 안전을 지키는 기술</title>
+    <link>https://jkf87.github.io/d2-monitor-dynamic-safety-diffusion-llms-2026-05-28</link>
+    <guid>https://jkf87.github.io/d2-monitor-dynamic-safety-diffusion-llms-2026-05-28</guid>
+    <description><![CDATA[ 최근 AI 업계에서 ‘디퓨전 LLM’이라는 새로운 계열이 빠르게 자리잡고 있다. 기존 GPT 같은 모델들이 글자를 왼쪽에서 오른쪽으로 하나씩 순서대로 생성하는 방식이었다면, 디퓨전 LLM은 전체 문장을 한꺼번에 노이즈 상태에서 시작해 여러 단계에 걸쳐 동시에 정제한다. ]]></description>
+    <pubDate>Wed, 27 May 2026 15:00:00 GMT</pubDate>
   </item><item>
-    <title>LLM 에이전트를 위한 RL 환경 설계: 에이전트 용어사전과 환경 분류학</title>
-    <link>https://jkf87.github.io/rl-environments-llm-agents-2026</link>
-    <guid>https://jkf87.github.io/rl-environments-llm-agents-2026</guid>
-    <description><![CDATA[ 에이전트 RL 훈련 환경의 구성 요소(태스크, 하네스, 검증기, 상태, 설정)를 체계적으로 정리하고, 하네스·스캐폴딩·정책 등 에이전트 핵심 용어를 명확히 정의함. ]]></description>
-    <pubDate>Tue, 26 May 2026 15:00:00 GMT</pubDate>
+    <title>다크포레스트: 멀티에이전트 LLM에서 대화를 줄이고 정확도를 높이는 방법</title>
+    <link>https://jkf87.github.io/darkforest-less-talk-multi-agent-llms-2026-05-28</link>
+    <guid>https://jkf87.github.io/darkforest-less-talk-multi-agent-llms-2026-05-28</guid>
+    <description><![CDATA[ 멀티에이전트 LLM 시스템에서 가장 많이 쓰는 방식은 에이전트끼리 대화를 시키는 거다. 토론하게 하고, 서로의 추론 과정을 공유하고, 몇 라운드를 거치며 답을 다듬는다. 직관적으로는 말이 많을수록 좋아질 것 같다. ]]></description>
+    <pubDate>Wed, 27 May 2026 15:00:00 GMT</pubDate>
   </item><item>
-    <title>SEAL — 에이전트가 배우면 환경도 함께 진화해야 한다</title>
-    <link>https://jkf87.github.io/seal-co-evolution-agents-2026-05-27</link>
-    <guid>https://jkf87.github.io/seal-co-evolution-agents-2026-05-27</guid>
-    <description><![CDATA[ Ant Group·서호대학교 연구진이 제안한 SEAL은 에이전트 정책과 학습 환경을 폐루프로 공동 진화시키는 프레임워크. 400개 샘플만으로 +8.25~+26.25%p 성능 향상, OOD 전이까지 달성. ]]></description>
-    <pubDate>Tue, 26 May 2026 15:00:00 GMT</pubDate>
+    <title>MemForest: 에이전트 메모리를 시간축 트리로 다시 설계하기</title>
+    <link>https://jkf87.github.io/memforest-hierarchical-temporal-indexing-agent-memory-2026-05-28</link>
+    <guid>https://jkf87.github.io/memforest-hierarchical-temporal-indexing-agent-memory-2026-05-28</guid>
+    <description><![CDATA[ MemForest 논문 리뷰. 장기 상호작용 에이전트의 persistent memory를 시간축 계층 인덱스로 재설계해 쓰기 비용과 지연을 줄이는 접근을 정리합니다. ]]></description>
+    <pubDate>Wed, 27 May 2026 15:00:00 GMT</pubDate>
   </item><item>
-    <title>UCP (Universal Commerce Protocol): AI 시대의 오픈 커머스 표준</title>
-    <link>https://jkf87.github.io/ucp-universal-commerce-protocol</link>
-    <guid>https://jkf87.github.io/ucp-universal-commerce-protocol</guid>
-    <description><![CDATA[ Google, Shopify, Etsy 등이 공동 개발한 UCP(Universal Commerce Protocol)는 AI 에이전트가 상품을 검색하고, 장바구니에 담고, 결제까지 완료하는 에이전트 커머스의 공통 언어입니다. 작동 원리, 핵심 개념, 생태계를 정리합니다. ]]></description>
-    <pubDate>Tue, 26 May 2026 15:00:00 GMT</pubDate>
+    <title>모바일Gym: 모바일 GUI 에이전트를 위한 검증 가능한 초경량 시뮬레이션</title>
+    <link>https://jkf87.github.io/mobilegym-parallel-simulation-mobile-gui-agent-2026-05-28</link>
+    <guid>https://jkf87.github.io/mobilegym-parallel-simulation-mobile-gui-agent-2026-05-28</guid>
+    <description><![CDATA[ 모바일 GUI 에이전트 연구에서 가장 성가신 문제 하나는 “실험 환경”이다. Android 에뮬레이터를 띄우려면 자원을 많이 먹고, 한 대의 머신에서 동시에 여러 에이전트를 돌리기 어렵다. ]]></description>
+    <pubDate>Wed, 27 May 2026 15:00:00 GMT</pubDate>
   </item><item>
-    <title>Fincept Terminal v4: C++20으로 만든 오픈소스 블룸버그 대안</title>
-    <link>https://jkf87.github.io/fincept-terminal-cpp-finance-platform-2026-05-26</link>
-    <guid>https://jkf87.github.io/fincept-terminal-cpp-finance-platform-2026-05-26</guid>
-    <description><![CDATA[ Fincept Terminal v4는 C++20 + Qt6로 만든 네이티브 금융 인텔리전스 플랫폼. 37개 AI 에이전트, 100개 이상 데이터 커넥터, 16개 브로커 연동, QuantLib 기반 퀀트 분석을 단일 바이너리로 제공함. ]]></description>
-    <pubDate>Mon, 25 May 2026 15:00:00 GMT</pubDate>
+    <title>뮤즈 오토스킬: AI 에이전트가 스스로 스킬을 배우고 진화하는 방법</title>
+    <link>https://jkf87.github.io/muse-autoskill-self-evolving-agents-2026-05-28</link>
+    <guid>https://jkf87.github.io/muse-autoskill-self-evolving-agents-2026-05-28</guid>
+    <description><![CDATA[ 에이전트가 복잡한 문제를 풀려면 재사용 가능한 “스킬”이 필요하다는 건 이제 업계 공통 인식입니다. Voyager가 마인크래프트에서 코드 라이브러리를 쌓기 시작한 이후로, AutoSkill, EvoSkill, Skill1 등 다양한 접근이 이어졌죠. ]]></description>
+    <pubDate>Wed, 27 May 2026 15:00:00 GMT</pubDate>
   </item><item>
-    <title>SciAtlas: 4,300만 편 논문을 지식그래프로 엮은 &#039;과학의 지도&#039;</title>
-    <link>https://jkf87.github.io/sciatlas-knowledge-graph-automated-research-2026-05-26</link>
-    <guid>https://jkf87.github.io/sciatlas-knowledge-graph-automated-research-2026-05-26</guid>
-    <description><![CDATA[ 절강대 연구진이 4,300만 편 논문·1억 5,700만 개체·30억 개 트리플렛을 엮은 대규모 학술 지식그래프 SciAtlas를 발표함. 키워드 매칭·벡터 검색·그래프 전파를 결합한 neuro-symbolic 검색 알고리즘이 핵심. ]]></description>
-    <pubDate>Mon, 25 May 2026 15:00:00 GMT</pubDate>
+    <title>OpenClaw 2026.5.26 업데이트: 텔레그램과 Codex 사용자가 먼저 볼 변화</title>
+    <link>https://jkf87.github.io/openclaw-2026-5-26-release-telegram-codex</link>
+    <guid>https://jkf87.github.io/openclaw-2026-5-26-release-telegram-codex</guid>
+    <description><![CDATA[ OpenClaw 2026.5.26 릴리즈를 텔레그램과 Codex 사용자 관점에서 정리합니다. 빨라진 응답, 여러 Codex 계정, Codex CLI 0.134.0, usage-limit 안내 개선을 중심으로 봅니다. ]]></description>
+    <pubDate>Wed, 27 May 2026 15:00:00 GMT</pubDate>
   </item><item>
-    <title>Understand Anything: 코드베이스를 지식그래프로 변환하는 멀티에이전트 파이프라인</title>
-    <link>https://jkf87.github.io/understand-anything-codebase-knowledge-graph-2026-05-26</link>
-    <guid>https://jkf87.github.io/understand-anything-codebase-knowledge-graph-2026-05-26</guid>
-    <description><![CDATA[ Understand Anything은 Tree-sitter 정적분석 + LLM 시맨틱 분석을 결합해 코드베이스 전체를 대화형 지식그래프로 변환하는 Claude Code 플러그인. 구조 그래프, 도메인 뷰, 가이드 투어, 임팩트 분석까지. ]]></description>
-    <pubDate>Mon, 25 May 2026 15:00:00 GMT</pubDate>
+    <title>OpenClaw v2026.5.27 업데이트: 보안 강화 + Codex 안정성 + 신규 프로바이더 대폭 추가</title>
+    <link>https://jkf87.github.io/openclaw-2026-5-28-release-security-codex-provider</link>
+    <guid>https://jkf87.github.io/openclaw-2026-5-28-release-security-codex-provider</guid>
+    <description><![CDATA[ OpenClaw v2026.5.27 릴리즈 핵심 정리. 보안 경계 강화, Codex OAuth 런타임 안정화, Pixverse·DeepInfra·VLLM 프로바이더 확장, 텔레그램/Slack/Discord 채널 안정성 개선까지. ]]></description>
+    <pubDate>Wed, 27 May 2026 15:00:00 GMT</pubDate>
   </item><item>
-    <title>40대 다리 쥐, 전해질만 탓하면 안 되는 이유 4가지</title>
-    <link>https://jkf87.github.io/40s-leg-cramps-not-just-electrolytes-2026-05-25</link>
-    <guid>https://jkf87.github.io/40s-leg-cramps-not-just-electrolytes-2026-05-25</guid>
-    <description><![CDATA[ 40대 다리 쥐는 전해질 부족만의 문제가 아니었음. 탈수, 오래 같은 자세, 약물, 혈류 문제까지 같이 보면 원인을 빨리 좁힐 수 있었음. ]]></description>
-    <pubDate>Sun, 24 May 2026 15:00:00 GMT</pubDate>
+    <title>OpenClaw Google Meet 플러그인 설치 및 활용법</title>
+    <link>https://jkf87.github.io/openclaw-google-meet-plugin-setup-guide-2026-05-28</link>
+    <guid>https://jkf87.github.io/openclaw-google-meet-plugin-setup-guide-2026-05-28</guid>
+    <description><![CDATA[ OpenClaw Google Meet 플러그인 설치, transcribe 모드, agent talk-back 모드, chrome-node 구성, 검증 명령어와 에이전트 프롬프트를 정리합니다. ]]></description>
+    <pubDate>Wed, 27 May 2026 15:00:00 GMT</pubDate>
   </item><item>
-    <title>Claude의 생각을 텍스트로 읽어낸다 — Natural Language Autoencoders</title>
-    <link>https://jkf87.github.io/anthropic-natural-language-autoencoders-2026-05-25</link>
-    <guid>https://jkf87.github.io/anthropic-natural-language-autoencoders-2026-05-25</guid>
-    <description><![CDATA[ Anthropic이 Claude의 내부 활성화를 자연어로 변환하는 NLA 방법을 발표했다. 모델이 말하지 않는 생각까지 읽어내는 이 기술, 어떤 의미가 있을까. ]]></description>
-    <pubDate>Sun, 24 May 2026 15:00:00 GMT</pubDate>
+    <title>OpenClaw 메모리 슬롯 전환: LanceDB 경고의 원인과 정리법</title>
+    <link>https://jkf87.github.io/openclaw-memory-lancedb-slot-warning-2026-05-28</link>
+    <guid>https://jkf87.github.io/openclaw-memory-lancedb-slot-warning-2026-05-28</guid>
+    <description><![CDATA[ OpenClaw에서 memory-core에서 memory-lancedb로 메모리 슬롯을 전환한 뒤 반복되는 config warning의 원인과 정리 절차를 운영 기록처럼 정리합니다. ]]></description>
+    <pubDate>Wed, 27 May 2026 15:00:00 GMT</pubDate>
   </item>
     </channel>
   </rss>
