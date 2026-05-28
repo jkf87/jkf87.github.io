@@ -6,6 +6,12 @@
       <description>최근 10 건 on 코난쌤 블로그</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>MemTrace: LLM 메모리 시스템의 에러를 추적하고 원인을 규명하는 방법</title>
+    <link>https://jkf87.github.io/memtrace-llm-memory-error-tracing-2026-05-29</link>
+    <guid>https://jkf87.github.io/memtrace-llm-memory-error-tracing-2026-05-29</guid>
+    <description><![CDATA[ MemTrace 논문을 바탕으로 LLM 메모리 시스템에서 에러가 어떻게 발생하고 전파되는지, 이를 자동으로 추적해 원인을 찾아내는 프레임워크와 벤치마크 MemTraceBench를 정리했습니다. ]]></description>
+    <pubDate>Thu, 28 May 2026 15:00:00 GMT</pubDate>
+  </item><item>
     <title>Claude Opus 4.8 발표 — 코딩·에이전트·전문 작업 전반의 도약</title>
     <link>https://jkf87.github.io/posts/2026-05-29-claude-opus-4-8/</link>
     <guid>https://jkf87.github.io/posts/2026-05-29-claude-opus-4-8/</guid>
@@ -58,12 +64,6 @@
     <link>https://jkf87.github.io/openclaw-2026-5-28-release-security-codex-provider</link>
     <guid>https://jkf87.github.io/openclaw-2026-5-28-release-security-codex-provider</guid>
     <description><![CDATA[ OpenClaw v2026.5.27 릴리즈 핵심 정리. 보안 경계 강화, Codex OAuth 런타임 안정화, Pixverse·DeepInfra·VLLM 프로바이더 확장, 텔레그램/Slack/Discord 채널 안정성 개선까지. ]]></description>
-    <pubDate>Wed, 27 May 2026 15:00:00 GMT</pubDate>
-  </item><item>
-    <title>OpenClaw Google Meet 플러그인 설치 및 활용법</title>
-    <link>https://jkf87.github.io/openclaw-google-meet-plugin-setup-guide-2026-05-28</link>
-    <guid>https://jkf87.github.io/openclaw-google-meet-plugin-setup-guide-2026-05-28</guid>
-    <description><![CDATA[ OpenClaw Google Meet 플러그인 설치, transcribe 모드, agent talk-back 모드, chrome-node 구성, 검증 명령어와 에이전트 프롬프트를 정리합니다. ]]></description>
     <pubDate>Wed, 27 May 2026 15:00:00 GMT</pubDate>
   </item>
     </channel>
