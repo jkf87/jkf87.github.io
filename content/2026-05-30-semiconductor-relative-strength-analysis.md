@@ -35,7 +35,7 @@ tags:
 
 삼성전자 종가를 SK하이닉스 종가로 나눈 비율을 계산했습니다. 20일 이동평균과 ±1표준편차 밴드도 같이 그렸고요.
 
-![삼성전자/SK하이닉스 레이쇼](/assets/stock-analysis-2026-05-30/krx_ratio_005930_000660_ma20_band_20251130_20260530.png)
+![삼성전자/SK하이닉스 레이쇼](assets/stock-analysis-2026-05-30/krx_ratio_005930_000660_ma20_band_20251130_20260530.png)
 
 | 항목 | 값 |
 |---|---:|
@@ -50,7 +50,7 @@ tags:
 
 ## 마이크론까지 포함한 3종목 페어 비교도 해봤습니다
 
-![3종목 페어 레이쇼](/assets/stock-analysis-2026-05-30/stock_ratios_005930_000660_MU_ma20_band_20251130_20260530.png)
+![3종목 페어 레이쇼](assets/stock-analysis-2026-05-30/stock_ratios_005930_000660_MU_ma20_band_20251130_20260530.png)
 
 분석한 페어는 세 가지입니다.
 
@@ -68,7 +68,7 @@ tags:
 
 이게 아마 가장 인상적인 차트일 겁니다.
 
-![시장 지수 vs 반도체 2종 인덱스](/assets/stock-analysis-2026-05-30/kospi_kosdaq_samsung_hynix_index_20251130_20260530.png)
+![시장 지수 vs 반도체 2종 인덱스](assets/stock-analysis-2026-05-30/kospi_kosdaq_samsung_hynix_index_20251130_20260530.png)
 
 삼성전자+SK하이닉스를 50:50 동일가중으로 묶어서 첫 거래일을 100으로 정규화했습니다. KOSPI와 KOSDAQ도 같은 방식입니다.
 
