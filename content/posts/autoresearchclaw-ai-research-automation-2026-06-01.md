@@ -17,7 +17,7 @@ draft: false
 cover: images/autoresearchclaw-ai-research-automation-2026-06-01/architecture-diagram.jpg
 ---
 
-![AutoResearchClaw 5대 핵심 메커니즘 — 구조화된 토론, 자가 복구, 검증 보고, 인간 개입, 실행 간 진화](/images/autoresearchclaw-ai-research-automation-2026-06-01/architecture-diagram.jpg)
+![AutoResearchClaw 엔드투엔드 워크플로우 — Discovery·Experimentation·Writing 3단계 파이프라인과 Cross-Run Evolution (원문 Figure, 출처: arXiv:2605.20025)](/images/autoresearchclaw-ai-research-automation-2026-06-01/figure-workflow-pipeline.png)
 
 ## 논문을 "써주는 AI"와 연구를 "하는 AI"는 다르다
 
@@ -72,6 +72,8 @@ CoPilot 모드가 그 사례다. 평균 19회 개입으로 평균 품질 7.27, a
 ### 5. 실행 간 진화 (Cross-Run Evolution)
 
 한 번의 연구 실행이 끝나면 decision rationale, runtime warning, metric anomaly 같은 교훈을 추출해 다음 실행에 반영한다. 30일 반감기(half-life)의 시간 감쇠를 적용해, 최근 교훈에 더 큰 가중치를 둔다. 논문은 7일·15일·30일·60일·무제한을 비교해 T₁/₂=30일이 가장 좋은 품질 궤적을 보였다고 보고한다.
+
+![Full-Auto vs CoPilot 결과 비교 — 왼쪽 Full-Auto는 모든 값이 0.0으로 무의미한 결과, 오른쪽 CoPilot은 실제 차별화된 수치와 분석을 생성 (원문 Figure, 출처: arXiv:2605.20025)](/images/autoresearchclaw-ai-research-automation-2026-06-01/figure-full-auto-vs-copilot.png)
 
 ## 23단계 파이프라인: 아이디어가 실험과 논문으로 바뀌는 과정
 
