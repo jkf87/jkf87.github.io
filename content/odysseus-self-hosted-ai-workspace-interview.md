@@ -11,9 +11,7 @@ description: "pewdiepie-archdaemon/odysseus README와 로드맵을 바탕으로,
 draft: false
 ---
 
-ChatGPT나 Claude를 쓰다 보면 어느 순간 이런 생각이 든다. "좋은데, 이 모든 작업실이 내 컴퓨터 안에 있으면 안 되나?" Odysseus는 그 질문에 꽤 직접적으로 답한다.
-
-이 글은 [pewdiepie-archdaemon/odysseus](https://github.com/pewdiepie-archdaemon/odysseus)의 README와 로드맵을 바탕으로 쓴 **가상 인터뷰**다. 실제로 누군가를 붙잡고 물어본 인터뷰는 아니다. 다만 프로젝트가 README에서 드러낸 말투와 선택을 최대한 살려, Odysseus라는 도구가 자기소개를 한다면 어떤 답을 할지 구성했다.
+ChatGPT나 Claude를 쓰다 보면 어느 순간 이런 생각이 든다. "좋은데, 이 모든 작업실이 내 컴퓨터 안에 있으면 안 되나?" Odysseus는 그 질문에 꽤 직접적으로 답합니다.
 
 ![Odysseus의 공식 데모 이미지. 이 프로젝트는 "셀프호스팅 AI 작업실"을 표방한다.](/images/odysseus-self-hosted-ai-workspace-interview/odysseus.jpg)
 
