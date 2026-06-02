@@ -1,0 +1,20 @@
+[
+  {
+    "page": 6,
+    "file": "fig-p6.png",
+    "method": "vector_crop (921x576)",
+    "size_kb": 93
+  },
+  {
+    "page": 7,
+    "file": "fig-p7.png",
+    "method": "fallback_top45 (1786x1137)",
+    "size_kb": 225
+  },
+  {
+    "page": 8,
+    "file": "fig-p8.png",
+    "method": "vector_crop (716x541)",
+    "size_kb": 68
+  }
+]
