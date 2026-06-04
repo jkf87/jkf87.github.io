@@ -1,0 +1,32 @@
+[
+  {
+    "page": 6,
+    "file": "fig-p6.png",
+    "method": "fallback_top45 (1836x1070)",
+    "size_kb": 232
+  },
+  {
+    "page": 7,
+    "file": "fig-p7.png",
+    "method": "fallback_top45 (1836x1070)",
+    "size_kb": 201
+  },
+  {
+    "page": 8,
+    "file": "fig-p8.png",
+    "method": "fallback_top45 (1836x1070)",
+    "size_kb": 189
+  },
+  {
+    "page": 9,
+    "file": "fig-p9.png",
+    "method": "vector_crop (1248x612)",
+    "size_kb": 111
+  },
+  {
+    "page": 10,
+    "file": "fig-p10.png",
+    "method": "fallback_top45 (1836x1070)",
+    "size_kb": 112
+  }
+]
