@@ -6,6 +6,12 @@
       <description>최근 10 건 on 코난쌤 블로그</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>VLM이 수십 장의 공공문서를 읽지 못한다: KOLongDoc이 드러낸 한국어 AI의 사각지대</title>
+    <link>https://jkf87.github.io/kolongdoc-korean-long-document-vlm-benchmark-2026-06-05</link>
+    <guid>https://jkf87.github.io/kolongdoc-korean-long-document-vlm-benchmark-2026-06-05</guid>
+    <description><![CDATA[ 공공기관 보고서 60페이지. 표 7개, 그래프 4개, 본문 텍스트가 뒤엉킨 PDF가 있다. “3페이지의 예산액과 47페이지의 집행액의 차이를 구하라”는 질문에 Gemini 3.5 Flash는 **82.5%**의 정확도를 보였다. ]]></description>
+    <pubDate>Thu, 04 Jun 2026 15:00:00 GMT</pubDate>
+  </item><item>
     <title>ChatGPT가 꿈을 꾸기 시작했다</title>
     <link>https://jkf87.github.io/openai-chatgpt-memory-dreaming-2026-06-05</link>
     <guid>https://jkf87.github.io/openai-chatgpt-memory-dreaming-2026-06-05</guid>
@@ -58,12 +64,6 @@
     <link>https://jkf87.github.io/2026-06-03-spatialbench-spatial-foundation-model</link>
     <guid>https://jkf87.github.io/2026-06-03-spatialbench-spatial-foundation-model</guid>
     <description><![CDATA[ 로봇이나 자율주행차가 3차원 공간을 이해하려면 “공간 기반 모델(Spatial Foundation Model)“이 필수입니다. ]]></description>
-    <pubDate>Tue, 02 Jun 2026 15:00:00 GMT</pubDate>
-  </item><item>
-    <title>Claude Code 동적 워크플로우: 에이전트가 자기 작업대를 짜는 순간</title>
-    <link>https://jkf87.github.io/claude-code-dynamic-workflows-harness-2026-06-03</link>
-    <guid>https://jkf87.github.io/claude-code-dynamic-workflows-harness-2026-06-03</guid>
-    <description><![CDATA[ Claude Code의 동적 워크플로우는 복잡한 작업을 여러 하위 에이전트와 검증 루프로 나누는 방식이다. 언제 쓰고, 왜 강력한지 정리했다. ]]></description>
     <pubDate>Tue, 02 Jun 2026 15:00:00 GMT</pubDate>
   </item>
     </channel>
