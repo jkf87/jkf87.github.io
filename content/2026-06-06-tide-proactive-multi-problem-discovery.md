@@ -50,7 +50,9 @@ $$\Delta\hat{P}^{(t)} = \text{LLM}(D, \mathcal{T}, \hat{P}^{(t-1)}, k)$$
 
 **핵심**: 병렬로 여러 에이전트를 돌리는 것과는 fundamentally 다릅니다. 병렬 에이전트는 서로 다른 에이전트가 같은 "가장 뚜렷한 문제"에 다시 고정되지만, TIDE는 누적 상태를 공유하므로 매 라운드마다 진짜 새로운 문제를 발견합니다.
 
-![Figure 2+3: (좌) 인스턴스당 발견한 문제 수와 커버리지. (우) TIDE는 매 라운드 새로운 문제(newly discovered)를 꾸준히 발견하지만, Multi-Agent는 두 번째 단계부터 재발견(re-discovered)이 대부분이다.](/images/tide-proactive-discovery/fig2.jpeg)
+![Figure 2: 멀티프로블럼 발견 결과 (Workspace, GPT). TIDE가 Single-Agent, Multi-Agent 대비 일관되게 더 많은 문제를 찾아낸다.](/images/tide-proactive-discovery/fig2.jpeg)
+
+![Figure 3: Newly vs. re-discovered 비율. TIDE는 매 라운드 새로운 문제를 꾸준히 발견하지만, Multi-Agent는 재발견이 대부분이다.](/images/tide-proactive-discovery/fig3.jpeg)
 
 ### 2. 사고 템플릿 (Thought Templates)
 
@@ -91,7 +93,7 @@ Workspace 설정에선 40개, Code 설정에선 108개의 템플릿을 구축했
 
 ![Figure 4: LLM 호출 예산(k)에 따른 F1 변화. TIDE는 예산이 늘어날수록 가파르게 상승하지만, Multi-Agent는 일찍 정체된다.](/images/tide-proactive-discovery/fig4.jpeg)
 
-![Figure 5: 템플릿별 사용 빈도. Figure 6+7: (좌) 반복당 retrieval coverage와 precision. (우) 템플릿 풀 크기에 따른 F1 변화.](/images/tide-proactive-discovery/fig6.jpeg)
+![Figure 5: 반복 발견과 템플릿의 상보적 효과. 반복(좌)은 retrieval coverage를, 템플릿(우)은 precision을 끌어올린다.](/images/tide-proactive-discovery/fig5.jpeg)
 
 ### 흥미로운 발견들
 
