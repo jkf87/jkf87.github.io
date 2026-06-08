@@ -24,6 +24,12 @@
     <description><![CDATA[ 한국은행이 5,512명 근로자에게 물었다. “AI 쓰시나요?” 절반 이상이 그렇다고 답했다. 그다음 질문이 본론이었다. “그래서, 일이 줄었나요? 더 많이 하게 됐나요?” 답은 묘하게 엇갈렸다. 일하는 시간은 줄었다. 하지만 하는 일은 늘지 않았다. ]]></description>
     <pubDate>Sun, 07 Jun 2026 15:00:00 GMT</pubDate>
   </item><item>
+    <title>AI가 스스로를 만들기 시작했다 — Anthropic이 공개한 재귀적 자기개선의 현재와 미래</title>
+    <link>https://jkf87.github.io/when-ai-builds-itself-recursive-self-improvement-2026-06-08</link>
+    <guid>https://jkf87.github.io/when-ai-builds-itself-recursive-self-improvement-2026-06-08</guid>
+    <description><![CDATA[ “AI가 AI를 만든다” — 더 이상 SF가 아니다. Anthropic의 내부 데이터가 그것을 증명한다. 2026년 5월, Anthropic 코드베이스에 병합되는 코드의 80% 이상이 Claude가 작성했다. 1년 전만 해도 한 자릿수였다. ]]></description>
+    <pubDate>Sun, 07 Jun 2026 15:00:00 GMT</pubDate>
+  </item><item>
     <title>ForeSci: LLM 에이전트의 전망적 연구 판단 능력 평가 벤치마크</title>
     <link>https://jkf87.github.io/2026-06-07-foresci-llm-research-judgment</link>
     <guid>https://jkf87.github.io/2026-06-07-foresci-llm-research-judgment</guid>
@@ -59,12 +65,6 @@
     <guid>https://jkf87.github.io/openai-chatgpt-memory-dreaming-2026-06-05</guid>
     <description><![CDATA[ 당신이 어제 했던 말을 AI가 기억하지 못한다면, 그건 대화가 아니다. 문서 작성이다. OpenAI가 이 문제를 푸는 방식이 꽤 흥미롭다. AI가 당신을 이해하기 위해 밤새 꿈을 꾼다. ‘Dreaming’이라는 이름의 새로운 메모리 시스템이다. ]]></description>
     <pubDate>Thu, 04 Jun 2026 15:00:00 GMT</pubDate>
-  </item><item>
-    <title>AI가 바꾸는 사이버 공격의 지형 — Anthropic이 832개 악성 계정을 분석해 밝힌 것</title>
-    <link>https://jkf87.github.io/2026-06-04-anthropic-ai-cyber-threats-mitre-attack</link>
-    <guid>https://jkf87.github.io/2026-06-04-anthropic-ai-cyber-threats-mitre-attack</guid>
-    <description><![CDATA[ AI가 사이버 공격의 도구가 된 지 꽤 됐습니다. 그런데 구체적으로 어느 단계에서, 얼마나 위험하게 쓰이고 있을까요? Anthropic이 1년간 832개 악성 계정을 분석해 MITRE ATT&amp;CK 프레임워크에 매핑한 보고서가 어제(6월 3일) 발표됐습니다. ]]></description>
-    <pubDate>Wed, 03 Jun 2026 15:00:00 GMT</pubDate>
   </item>
     </channel>
   </rss>
