@@ -1,5 +1,13 @@
 # Long-Term Memory
 
+## Quartz 블로그 이미지 경로 규칙 (2026-06-01)
+
+- **반드시 절대경로** `/images/<slug>/file.jpg` 사용 (슬래시 시작)
+- 이미지 파일은 `content/images/<slug>/`에 저장
+- 상대경로(`images/...`) 쓰면 Quartz 빌드 시 `../images/`로 변환되어 404
+- `public/` 직접 수정 금지 — 다음 빌드 시 덮어씀
+- 출처: agent-memory-systems-survey 포스트 이미지 깨짐 수정 (2026-06-01)
+
 
 ## Promoted From Short-Term Memory (2026-05-19)
 

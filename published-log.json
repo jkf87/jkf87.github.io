@@ -116,6 +116,70 @@
       "source": "huggingface",
       "source_url": "https://huggingface.co/papers/2605.23986",
       "blog_url": "https://jkf87.github.io/memforest-hierarchical-temporal-indexing-agent-memory-2026-05-28"
+    },
+    {
+      "slug": "spatialbench-spatial-foundation-model",
+      "date": "2026-06-03",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2605.27367",
+      "threads_root_id": "18594299293046060",
+      "blog_url": "https://jkf87.github.io/2026-06-03-spatialbench-spatial-foundation-model"
+    },
+    {
+      "slug": "mobilegym-gui-agent-simulation",
+      "date": "2026-06-03",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2605.26114",
+      "threads_root_id": "18057128843723774",
+      "blog_url": "https://jkf87.github.io/2026-06-03-mobilegym-gui-agent-simulation"
+    },
+    {
+      "slug": "locateanything-parallel-box-decoding",
+      "date": "2026-06-03",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2605.27365",
+      "threads_root_id": "18592617604026660",
+      "blog_url": "https://jkf87.github.io/2026-06-03-locateanything-parallel-box-decoding"
+    },
+    {
+      "slug": "d2-monitor-diffusion-llm-safety",
+      "date": "2026-06-03",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2605.25893",
+      "threads_root_id": "17901580983287325",
+      "blog_url": "https://jkf87.github.io/2026-06-03-d2-monitor-diffusion-llm-safety"
+    },
+    {
+      "slug": "anthropic-expanding-project-glasswing",
+      "date": "2026-06-03",
+      "source": "anthropic-blog",
+      "source_url": "https://www.anthropic.com/research/expanding-project-glasswing",
+      "threads_root_id": "18081614570533116",
+      "blog_url": "https://jkf87.github.io/2026-06-03-anthropic-expanding-project-glasswing"
+    },
+    {
+      "slug": "anthropic-ai-cyber-threats-mitre-attack",
+      "date": "2026-06-04",
+      "source": "anthropic-blog",
+      "source_url": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
+      "threads_root_id": "18117024919811527",
+      "blog_url": "https://jkf87.github.io/2026-06-04-anthropic-ai-cyber-threats-mitre-attack.html"
+    },
+    {
+      "slug": "darkforest-multi-agent-llm-reasoning",
+      "date": "2026-06-04",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2605.25188",
+      "threads_root_id": "18112215532927143",
+      "blog_url": "https://jkf87.github.io/2026-06-04-darkforest-multi-agent-llm-reasoning.html"
+    },
+    {
+      "slug": "mobilemoe-on-device-moe",
+      "date": "2026-06-04",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2605.27358",
+      "threads_root_id": "18597320359039346",
+      "blog_url": "https://jkf87.github.io/2026-06-04-mobilemoe-on-device-moe.html"
     }
   ]
 }
