@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>에이전트가 네가 모르는 문제까지 찾아준다면: TIDE</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans KR:wght@400;700&amp;family=Noto Sans KR:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="코난쌤 블로그"/><meta property="og:title" content="에이전트가 네가 모르는 문제까지 찾아준다면: TIDE"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="에이전트가 네가 모르는 문제까지 찾아준다면: TIDE"/><meta name="twitter:description" content="KAIST 연구팀이 “사용자가 묻지 않아도 숨겨진 문제를 찾아내는” 에이전트 프레임워크를 발표했습니다. 이름하여 TIDE (Template-guided Iterative Discovery and rEsolution)."/><meta property="og:description" content="KAIST 연구팀이 “사용자가 묻지 않아도 숨겨진 문제를 찾아내는” 에이전트 프레임워크를 발표했습니다. 이름하여 TIDE (Template-guided Iterative Discovery and rEsolution)."/><meta property="og:image:alt" content="KAIST 연구팀이 “사용자가 묻지 않아도 숨겨진 문제를 찾아내는” 에이전트 프레임워크를 발표했습니다. 이름하여 TIDE (Template-guided Iterative Discovery and rEsolution)."/><meta property="twitter:domain" content="jkf87.github.io"/><meta property="og:url" content="https://jkf87.github.io/2026-06-06-tide-proactive-multi-problem-discovery"/><meta property="twitter:url" content="https://jkf87.github.io/2026-06-06-tide-proactive-multi-problem-discovery"/><link rel="icon" href="./static/icon.png"/><meta name="description" content="KAIST 연구팀이 “사용자가 묻지 않아도 숨겨진 문제를 찾아내는” 에이전트 프레임워크를 발표했습니다. 이름하여 TIDE (Template-guided Iterative Discovery and rEsolution)."/><meta name="generator" content="Quartz"/><meta name="google-site-verification" content="JqDMbJFwNjfQ-7_hxP4LIajSQf1iMnw46F1nXUPclng"/><meta name="google-adsense-account" content="ca-pub-4778921872258874"/><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4778921872258874" crossorigin="anonymous"></script><link href="./index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1lcm1haWQuaW5saW5lLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUdGO0VBQ0U7OztBQUtGO0VBQ0U7RUFDQTs7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAgIHRyYW5zZm9ybS1vcmlnaW46IDAgMDtcbiAgICAgIHRyYW5zaXRpb246IHRyYW5zZm9ybSAwLjFzIGVhc2U7XG4gICAgICBvdmVyZmxvdzogdmlzaWJsZTtcbiAgICAgIG1pbi1oZWlnaHQ6IDIwMHB4O1xuICAgICAgbWluLXdpZHRoOiAyMDBweDtcblxuICAgICAgcHJlIHtcbiAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICBib3JkZXI6IG5vbmU7XG4gICAgICB9XG5cbiAgICAgIHN2ZyB7XG4gICAgICAgIG1heC13aWR0aDogbm9uZTtcbiAgICAgICAgaGVpZ2h0OiBhdXRvO1xuICAgICAgfVxuICAgIH1cblxuICAgICYgPiAubWVybWFpZC1jb250cm9scyB7XG4gICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICBib3R0b206IDIwcHg7XG4gICAgICByaWdodDogMjBweDtcbiAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICBnYXA6IDhweDtcbiAgICAgIHBhZGRpbmc6IDhweDtcbiAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICBib3JkZXItcmFkaXVzOiA2cHg7XG4gICAgICBib3gtc2hhZG93OiAwIDJweCA0cHggcmdiYSgwLCAwLCAwLCAwLjEpO1xuICAgICAgei1pbmRleDogMjtcblxuICAgICAgLm1lcm1haWQtY29udHJvbC1idXR0b24ge1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICAgICAgd2lkdGg6IDMycHg7XG4gICAgICAgIGhlaWdodDogMzJweDtcbiAgICAgICAgcGFkZGluZzogMDtcbiAgICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgICBjb2xvcjogdmFyKC0tZGFyayk7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgICAgIGZvbnQtZmFtaWx5OiB2YXIoLS1ib2R5Rm9udCk7XG4gICAgICAgIHRyYW5zaXRpb246IGFsbCAwLjJzIGVhc2U7XG5cbiAgICAgICAgJjpob3ZlciB7XG4gICAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgfVxuXG4gICAgICAgICY6YWN0aXZlIHtcbiAgICAgICAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMXB4KTtcbiAgICAgICAgfVxuXG4gICAgICAgIC8vIFN0eWxlIHRoZSByZXNldCBidXR0b24gZGlmZmVyZW50bHlcbiAgICAgICAgJjpudGgtY2hpbGQoMikge1xuICAgICAgICAgIHdpZHRoOiBhdXRvO1xuICAgICAgICAgIHBhZGRpbmc6IDAgMTJweDtcbiAgICAgICAgICBmb250LXNpemU6IDE0cHg7XG4gICAgICAgIH1cbiAgICAgIH1cbiAgICB9XG4gIH1cbn1cbiJdfQ== */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="./prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("./static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://jkf87.github.io/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://jkf87.github.io/2026-06-06-tide-proactive-multi-problem-discovery-og-image.webp"/><meta property="og:image:url" content="https://jkf87.github.io/2026-06-06-tide-proactive-multi-problem-discovery-og-image.webp"/><meta name="twitter:image" content="https://jkf87.github.io/2026-06-06-tide-proactive-multi-problem-discovery-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="2026-06-06-tide-proactive-multi-problem-discovery"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href=".">코난쌤 블로그</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="리더 모드"><title>리더 모드</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>{if(a.isFolder&amp;&amp;b.isFolder)return a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;});if(a.isFolder)return-1;if(b.isFolder)return 1;let aDates=a.data?.dates,bDates=b.data?.dates,aDate=aDates?.created??aDates?.modified??aDates?.published,bDate=bDates?.created??bDates?.modified??bDates?.published;if(aDate&amp;&amp;bDate){let at=new Date(aDate).getTime(),bt=new Date(bDate).getTime();if(bt!==at)return bt-at}return a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;})}&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-35"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-35" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><header><nav class="top-nav " aria-label="주요 메뉴"><a href="/">홈</a><a href="/posts">전체 글</a><a href="/categories">카테고리</a><a href="/about">소개</a><a href="/contact">연락처</a><a href="/privacy-policy">개인정보처리방침</a></nav></header><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="./">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>에이전트가 네가 모르는 문제까지 찾아준다면: TIDE</a></div></nav><h1 class="article-title">에이전트가 네가 모르는 문제까지 찾아준다면: TIDE</h1><p show-comma="true" class="content-meta"><time datetime="2026-06-05T15:00:00.000Z">2026년 6월 06일</time><span>14 min read</span></p><ul class="tags"><li><a href="./tags/AI-agents" class="internal tag-link">AI-agents</a></li><li><a href="./tags/proactive-agents" class="internal tag-link">proactive-agents</a></li><li><a href="./tags/KAIST" class="internal tag-link">KAIST</a></li><li><a href="./tags/LLM" class="internal tag-link">LLM</a></li><li><a href="./tags/paper-review" class="internal tag-link">paper-review</a></li></ul></div></div><article class="popover-hint"><p>KAIST 연구팀이 “사용자가 묻지 않아도 숨겨진 문제를 찾아내는” 에이전트 프레임워크를 발표했습니다. 이름하여 <strong>TIDE</strong> (Template-guided Iterative Discovery and rEsolution).</p>
+<p>기존 AI 어시스턴트가 “이메일 요약해줘” 같은 명시적 요청에만 반응한다면, TIDE는 문서, 이메일, 캘린더, 코드 전체를 뒤져서 <strong>사용자가 미처 인지하지 못한 문제들을 연달아 발견</strong>합니다.</p>
+<hr/>
+<h2 id="문제-모르는-문제는-어떻게-찾나요">문제: “모르는 문제”는 어떻게 찾나요<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#문제-모르는-문제는-어떻게-찾나요" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>일상을 생각해보세요.</p>
+<ul>
+<li>프로젝트 브리핑엔 마감일이 적혀 있는데 PR엔 마일스톤이 없다</li>
+<li>같은 보고서가 두 버전으로 돌아다니는데 숫자가 다르다</li>
+<li>팀원들이 안 나오는 회의가 여전히 캘린더를 점유하고 있다</li>
+</ul>
+<p>이런 문제들은 <strong>각각 독립적으로 존재</strong>하고, <strong>사용자가 명시적으로 묻지 않아도</strong> 문맥 속에 흩어져 있습니다. 숨은 문제의 개수도 미리 알 수 없죠.</p>
+<p>기존 접근은 두 가지 한계가 있었습니다:</p>
+<ol>
+<li><strong>단일 패스 예측</strong> — 한 번에 전부 찾으려 하면 가장 뚜렷한 문제만 잡고 나머지는 놓칩니다</li>
+<li><strong>일반적 프롬프트</strong> — “문제를 찾아라”라고만 하면 에이전트가 뻔한 이야기나 추측성 주장을 내놓습니다</li>
+</ol>
+<p><img src="./images/tide-proactive-discovery/fig1.jpeg" alt="Figure 1: TIDE의 개념도. (A) 기존 reactive 에이전트는 명시적 요청만 처리한다. (B) 하지만 컨텍스트에는 여러 숨겨진 문제가 공존한다. (C) TIDE는 반복 발견과 템플릿으로 이 문제들을 체계적으로 찾아낸다."/></p>
+<hr/>
+<h2 id="tide의-두-가지-핵심-메커니즘">TIDE의 두 가지 핵심 메커니즘<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#tide의-두-가지-핵심-메커니즘" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="1-반복-발견-iterative-discovery">1. 반복 발견 (Iterative Discovery)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-반복-발견-iterative-discovery" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>한 번에 전부 예측하는 대신, <strong>작은 배치 단위로 여러 라운드</strong>를 돕니다. 각 라운드는 이전에 이미 발견한 것들을 조건부 입력으로 받아서, <strong>새로운 문제로 시선을 돌리는</strong> 방식입니다.</p>
+<p>공식적으로, 라운드 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6151em;"></span><span class="mord mathnormal">t</span></span></span></span>에서:</p>
+<p><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9468em;"></span><span class="mord">Δ</span><span class="mord"><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9468em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">^</span></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.888em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mord mathnormal mtight">t</span><span class="mclose mtight">)</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.1968em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">LLM</span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0278em;">D</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathcal" style="margin-right:0.2542em;">T</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9468em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">^</span></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.888em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mord mathnormal mtight">t</span><span class="mbin mtight">−</span><span class="mord mtight">1</span><span class="mclose mtight">)</span></span></span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="mclose">)</span></span></span></span></p>
+<p>이전 발견 상태 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9468em;"></span><span class="mord"><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9468em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">^</span></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.888em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mord mathnormal mtight">t</span><span class="mbin mtight">−</span><span class="mord mtight">1</span><span class="mclose mtight">)</span></span></span></span></span></span></span></span></span></span></span></span>를 조건으로 삼아 새로운 후보 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9468em;"></span><span class="mord">Δ</span><span class="mord"><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9468em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">^</span></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.888em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mord mathnormal mtight">t</span><span class="mclose mtight">)</span></span></span></span></span></span></span></span></span></span></span></span>를 생성합니다. 빈 배치가 반환되면 종료됩니다.</p>
+<p><strong>핵심</strong>: 병렬로 여러 에이전트를 돌리는 것과는 fundamentally 다릅니다. 병렬 에이전트는 서로 다른 에이전트가 같은 “가장 뚜렷한 문제”에 다시 고정되지만, TIDE는 누적 상태를 공유하므로 매 라운드마다 진짜 새로운 문제를 발견합니다.</p>
+<p><img src="./images/tide-proactive-discovery/fig2.jpeg" alt="Figure 2: 멀티프로블럼 발견 결과 (Workspace, GPT). TIDE가 Single-Agent, Multi-Agent 대비 일관되게 더 많은 문제를 찾아낸다."/></p>
+<p><img src="./images/tide-proactive-discovery/fig3.jpeg" alt="Figure 3: Newly vs. re-discovered 비율. TIDE는 매 라운드 새로운 문제를 꾸준히 발견하지만, Multi-Agent는 재발견이 대부분이다."/></p>
+<h3 id="2-사고-템플릿-thought-templates">2. 사고 템플릿 (Thought Templates)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-사고-템플릿-thought-templates" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>“어떤 맥락 신호를 주목해야 하는지”를 정의한 <strong>재사용 가능한 스키마</strong>입니다. 이전에 해결된 사례들에서 패턴을 추출해 만듭니다.</p>
+<p>각 템플릿은 세 요소로 구성됩니다:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>구성 요소</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td><strong>name</strong></td><td>문제 클래스 라벨</td><td>”Conflicting Source-of-Truth”</td></tr><tr><td><strong>pattern</strong></td><td>구조적 형태</td><td>”공유 산출물이 여러 채널에 충돌하는 버전으로 존재”</td></tr><tr><td><strong>evidence flow</strong></td><td>확인해야 할 신호 순서</td><td>”① 산출물과 출처를 찾는다 → ② 충돌 복사본을 확인한다 → ③ 마감일과 결재자를 연결한다”</td></tr></tbody></table></div>
+<p>Workspace 설정에선 40개, Code 설정에선 108개의 템플릿을 구축했습니다.</p>
+<p><strong>핵심</strong>: Few-shot 예시를 그대로 주는 것보다 <strong>추상화된 템플릿</strong>이 훨씬 낫습니다. 논문에서 직접 비교했는데, raw few-shot 데모를 쓴 버전은 TIDE 대비 retrieval, identification, resolution 모든 지표에서 크게 뒤집니다.</p>
+<hr/>
+<h2 id="실험-어디서-얼마나-잘-작동하나요">실험: 어디서, 얼마나 잘 작동하나요<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#실험-어디서-얼마나-잘-작동하나요" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="두-가지-현실적-설정">두 가지 현실적 설정<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#두-가지-현실적-설정" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Workspace 설정</strong>: 개인 작업 공간 (이메일 + 문서 + 캘린더)에서 숨겨진 병목을 찾는 환경. 30개 멀티프로블럼 인스턴스, 인스턴스당 4-6개 숨은 문제, 88-113개 후보 아티팩트.</p>
+<p><strong>Repository 설정</strong>: 오픈소스 Python 저장소에서 공존하는 버그를 찾고 패치까지 생성. 20개 멀티버그 인스턴스, 인스턴스당 2-41개 버그, 6-646개 후보 함수. SWE-BENCH와 TESTEXPLORA 기반.</p>
+<h3 id="주요-결과-table-1">주요 결과 (Table 1)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#주요-결과-table-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th></th><th>Single-Agent</th><th>Multi-Agent</th><th><strong>TIDE</strong></th></tr></thead><tbody><tr><td>Workspace Retrieval F1 (GPT)</td><td>54.32</td><td>45.41</td><td><strong>70.46</strong></td></tr><tr><td>Workspace Resolution F1 (GPT)</td><td>56.14</td><td>41.85</td><td><strong>77.32</strong></td></tr><tr><td>Repository Coverage (GPT)</td><td>10.34</td><td>12.66</td><td><strong>18.61</strong></td></tr><tr><td>Repository Coverage (Gemini)</td><td>17.20</td><td>18.51</td><td><strong>25.14</strong></td></tr></tbody></table></div>
+<p>네 가지 백본 (GPT-5 mini, Claude Sonnet 4.5, Gemini 3.5 Flash, Qwen 3.6 Flash) 모두에서 TIDE가 일관되게 최고 성능을 기록했습니다.</p>
+<p><img src="./images/tide-proactive-discovery/fig4.jpeg" alt="Figure 4: LLM 호출 예산(k)에 따른 F1 변화. TIDE는 예산이 늘어날수록 가파르게 상승하지만, Multi-Agent는 일찍 정체된다."/></p>
+<p><img src="./images/tide-proactive-discovery/fig5.jpeg" alt="Figure 5: 반복 발견과 템플릿의 상보적 효과. 반복(좌)은 retrieval coverage를, 템플릿(우)은 precision을 끌어올린다."/></p>
+<h3 id="흥미로운-발견들">흥미로운 발견들<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#흥미로운-발견들" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Multi-Agent는 Single-Agent보다 못할 수 있다</strong>: 병렬 에이전트들은 서로 독립이라 같은 “가장 뚜렷한” 문제에 고정되는 현상이 발생합니다</li>
+<li><strong>템플릿은 백본 간 전이된다</strong>: GPT로 만든 템플릿을 Gemini에 써도 성능이 비슷합니다</li>
+<li><strong>LLM 호출 예산 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">10</span></span></span></span>에서 Multi-Agent가 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span></span></span></span>의 TIDE보다 못합니다</strong>: 병렬 확장은 반복 조건부의 대체가 아닙니다</li>
+</ul>
+<hr/>
+<h2 id="프롬프트-어떻게-구현되나요">프롬프트: 어떻게 구현되나요<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#프롬프트-어떻게-구현되나요" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>TIDE는 4개의 프롬프트로 end-to-end 파이프라인을 구성합니다. 논문 부록에 전문이 공개되어 있습니다.</p>
+<h3 id="템플릿-구축-프롬프트-workspace">템플릿 구축 프롬프트 (Workspace)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#템플릿-구축-프롬프트-workspace" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>해결된 사례 하나를 입력받아 추상화된 템플릿을 생성합니다:</p>
+<pre><code>You are an expert at extracting reusable reasoning patterns from solved examples.
+Given a solved bottleneck detection example, extract an abstract reasoning template.
+
+Solved example shown to the model:
+Bottleneck: {bottleneck_description}
+Evidence Documents Used:
+- [{doc.type}] {doc.payload as JSON}
+...
+Checklist Steps:
+- Retrieval: {retrieval_description}
+- Identification: {identification_description}
+- Task Execution: {task_description}
+
+Rules:
+1. Domain-agnostic: use general workplace language only
+2. Be concise
+3. Aggressive abstraction: replace specific artifacts, people, events,
+   metrics with generic types and descriptors
+4. Preserve structural elements that define the pattern's identity
+5. The pattern must be testable against varied scenarios
+
+Output format:
+{
+  &quot;template_name&quot;: &quot;Short descriptive name for this pattern&quot;,
+  &quot;pattern&quot;: &quot;Brief description of the bottleneck situation&quot;,
+  &quot;evidence_flow&quot;: [&quot;What to check first&quot;, &quot;What to check next&quot;, ...]
+}
+</code></pre>
+<h3 id="추론-프롬프트-workspace">추론 프롬프트 (Workspace)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#추론-프롬프트-workspace" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>각 반복 라운드에서 한 개의 새로운 병목을 찾습니다:</p>
+<pre><code>Role definition. You are a proactive agent whose goal is to serve a user.
+Your task is to find and identify (without prior prompting) a singular bottleneck
+in their lives, and recommend a resolution by selecting one of the pre-specified actions.
+
+Thought templates definition. The following reasoning templates describe common
+bottleneck patterns. Use these as guides when analyzing documents: match observed
+situations to relevant templates to select the right action and fill parameters correctly.
+
+Previously found bottlenecks (included only after the first iteration).
+The following bottlenecks have already been identified in previous iterations.
+Do NOT repeat these; find only a NEW bottleneck that is different from those listed.
+If no more new bottlenecks remain, return an empty JSON object {}.
+
+Context shown to the model:
+Persona: {persona}
+World Model: {world_model}
+Bottleneck Pattern Templates:
+[{template_id}] {template_name}
+Pattern: {pattern}
+Evidence flow: - {step_1} - {step_2} ...
+Documents: {data_sources}
+Available Actions: {available_actions}
+
+Output format:
+{
+  &quot;bottlenecks&quot;: [{
+    &quot;used_template_id&quot;: &quot;TID_X&quot;,
+    &quot;used_template_name&quot;: &quot;...&quot;,
+    &quot;why_matched&quot;: &quot;Which observations satisfy the template's pattern&quot;,
+    &quot;retrieved_documents&quot;: [&quot;doc_id_1&quot;, &quot;doc_id_2&quot;],
+    &quot;bottleneck&quot;: &quot;Natural-language description of the issue.&quot;,
+    &quot;action&quot;: {
+      &quot;function_name&quot;: &quot;action_function_name&quot;,
+      &quot;parameters&quot;: {&quot;parameter_name1&quot;: &quot;value1&quot;, ...}
+    }
+  }]
+}
+</code></pre>
+<h3 id="코드-설정용-템플릿-구축-프롬프트">코드 설정용 템플릿 구축 프롬프트<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#코드-설정용-템플릿-구축-프롬프트" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>You extract reusable, repo-agnostic bug patterns from solved code-bug examples.
+The gold patch defines correct behavior: the pre-patch code is the bug shape,
+the post-patch code is the fix shape, and the diff encodes the intent.
+
+Solved example shown to the model:
+Repository: {repo}
+Issue / Bug Report: {bottleneck_description}
+Buggy Function(s):
+### {func.qualname} (file: {func.path})
+```python
+{func.content}
+</code></pre>
+<p>Gold Patch (the fix):</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="diff" data-theme="github-light github-dark"><code data-language="diff" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">{patch}</span></span></code></pre></figure>
+<p>Rules:</p>
+<ol>
+<li>Pattern and evidence_flow: abstract. Replace specific identifiers
+with role descriptors.</li>
+<li>Code-centric detection: each step in evidence_flow must reference
+observable code signals visible in the buggy code alone.</li>
+<li>One pattern per template.</li>
+<li>Broad applicability: aim for patterns where at least three different
+bug scenarios outside this example would still match.</li>
+</ol>
+<p>Output format:
+{
+“template_name”: “Short descriptive name (abstract)”,
+“pattern”: “Abstract: what shape of code carries the bug and what triggers it.”,
+“evidence_flow”: [“Abstract: what to check first”, “Abstract: what to check next”, …]
+}</p>
+<pre><code>
+### 코드 설정용 추론 프롬프트
+
+</code></pre>
+<p>Role definition. You are a proactive code-maintenance agent whose goal is to surface
+issues in a Python software repository. Your task is to find and identify (without
+prior prompting) distinct issues worth reporting in the codebase, and recommend a
+resolution for each by producing a unified diff patch.</p>
+<p>Report two kinds of issues:</p>
+<ol>
+<li>Issues that match one of the templates below</li>
+<li>Issues that do not fit any template but are still genuine bugs</li>
+</ol>
+<p>Previously found bottlenecks (included only after the first iteration).
+Report only NEW issues distinct from those already returned.
+If no new issues remain, return an empty JSON object {}.</p>
+<p>Output format:
+{
+“bottlenecks”: [{
+“used_template_id”: “TID_X” or &quot;&quot;,
+“used_template_name”: ”…” or &quot;&quot;,
+“why_matched”: “Which code observations satisfy the template’s evidence_flow”,
+“retrieved_documents”: [“func_id_1”, “func_id_2”],
+“bottleneck”: “Natural-language description, citing concrete code evidence.”,
+“action”: {
+“patch”: &quot;<unified diff text fixing the issue>&quot;
+}
+}]
+}</unified></p>
+<pre><code>
+---
+
+## 정성 분석: 실제 사례
+
+### Workspace 사례
+
+커뮤니티 매니저의 작업 공간. 자원봉사 플랫폼이 3월 8일 행사 체크인을 중복 집계하고, 벤더 패치는 IT Security 승인 대기 중, 그 잘못된 수치가 3월 20일 경영진 브리핑에 들어갈 예정.
+
+- **Single-Agent**: 전혀 관련 없는 시설물 조달 건을 발견. 골드 문서 5개 중 0개 검색. 식별도, 액션도 모두 오답.
+- **TIDE**: 3번째 반복에서 데이터 무결성 이슈를 발견. 골드 문서 5/5 검색. 올바른 매니저에게 정확한 요약으로 에스컬레이션.
+
+사용된 템플릿: **[TID_11] Unblocking high-stakes deliverable under SME communication lag** — &quot;시간 제한이 있는 임원 산출물이, 수정된 결과물에 의존하고, 그 수정은 내부 승인 뒤에 갇혀 있다.&quot;
+
+### Repository 사례
+
+mlxtend의 McNemar 검정 함수. 두 페어 함수 `mcnemar_table`과 `mcnemar_tables`가 대각선 할당을 반대로 해놓은 멀티함수 버그.
+
+- **Single-Agent**: 두 함수를 서로 다른 독립 버그로 식별. 공유 패턴을 놓침.
+- **TIDE**: &quot;Mirrored Index Assignment&quot; 템플릿으로 두 함수를 단일 결합 결함으로 식별. 일관된 패치 생성.
+
+---
+
+## 왜 중요한가요
+
+이 논문이 던지는 질문은 단순합니다: **&quot;에이전트가 사용자 대신 문제를 찾을 수 있다면, 그 능력을 어떻게 체계적으로 구현할 것인가?&quot;**
+
+답이 두 축으로 깔끔하게 떨어집니다:
+
+1. **반복 = 커버리지**: 여러 라운드로 누적 상태를 조건부 삼아, 가장 뚜렷한 문제 너머까지 탐색
+2. **템플릿 = 정밀도**: 해결된 사례에서 추출한 추상화된 패턴으로, 각 예측을 실제 문제 클래스에 정합
+
+그리고 이 두 축은 **상호보완적**입니다. 반복이 커버리지를, 템플릿이 정밀도를 각자 끌어올립니다.
+
+실용적 관점에서, 이건 &quot;더 똑똑한 프롬프트&quot;로 끝나는 게 아닙니다. **발견 자체를 명시적 다단계 프로세스로 모델링**하는 패러다임 전환입니다. 프로액티브 어시스턴스를 만들고 싶다면, TIDE의 반복 + 템플릿 구조를 설계 패턴으로 쓸 수 있습니다.
+
+---
+
+## 한 줄 요약
+
+> 에이전트가 사용자가 모르는 문제까지 찾게 만들려면, 한 번에 다 예측하지 말고 **반복적으로 발견**하면서 **재사용 가능한 패턴**으로 정밀도를 높여라.
+
+---
+
+**논문**: Soyeong Jeong, Jinheon Baek, Minki Kang, Sung Ju Hwang. &quot;TIDE: Proactive Multi-Problem Discovery via Template-Guided Iteration.&quot; KAIST, 2026.
+**링크**: [arXiv 2606.04743](https://arxiv.org/abs/2606.04743) | [HuggingFace Papers](https://huggingface.co/papers/2606.04743)
+</code></pre></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>그래프 뷰</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-14" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#문제-모르는-문제는-어떻게-찾나요" data-for="문제-모르는-문제는-어떻게-찾나요">문제: “모르는 문제”는 어떻게 찾나요</a></li><li class="depth-0"><a href="#tide의-두-가지-핵심-메커니즘" data-for="tide의-두-가지-핵심-메커니즘">TIDE의 두 가지 핵심 메커니즘</a></li><li class="depth-1"><a href="#1-반복-발견-iterative-discovery" data-for="1-반복-발견-iterative-discovery">1. 반복 발견 (Iterative Discovery)</a></li><li class="depth-1"><a href="#2-사고-템플릿-thought-templates" data-for="2-사고-템플릿-thought-templates">2. 사고 템플릿 (Thought Templates)</a></li><li class="depth-0"><a href="#실험-어디서-얼마나-잘-작동하나요" data-for="실험-어디서-얼마나-잘-작동하나요">실험: 어디서, 얼마나 잘 작동하나요</a></li><li class="depth-1"><a href="#두-가지-현실적-설정" data-for="두-가지-현실적-설정">두 가지 현실적 설정</a></li><li class="depth-1"><a href="#주요-결과-table-1" data-for="주요-결과-table-1">주요 결과 (Table 1)</a></li><li class="depth-1"><a href="#흥미로운-발견들" data-for="흥미로운-발견들">흥미로운 발견들</a></li><li class="depth-0"><a href="#프롬프트-어떻게-구현되나요" data-for="프롬프트-어떻게-구현되나요">프롬프트: 어떻게 구현되나요</a></li><li class="depth-1"><a href="#템플릿-구축-프롬프트-workspace" data-for="템플릿-구축-프롬프트-workspace">템플릿 구축 프롬프트 (Workspace)</a></li><li class="depth-1"><a href="#추론-프롬프트-workspace" data-for="추론-프롬프트-workspace">추론 프롬프트 (Workspace)</a></li><li class="depth-1"><a href="#코드-설정용-템플릿-구축-프롬프트" data-for="코드-설정용-템플릿-구축-프롬프트">코드 설정용 템플릿 구축 프롬프트</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="/about">소개</a></li><li><a href="/contact">연락처</a></li><li><a href="/privacy-policy">개인정보처리방침</a></li><li><a href="/posts">전체 글</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}container;content;isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="./postscript.js" type="module" data-persist="true"></script></html>

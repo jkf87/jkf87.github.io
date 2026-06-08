@@ -1,0 +1,31 @@
+STYLE = Hand-drawn technical sketch on off-white drawing paper, casual engineering notebook brainstorming aesthetic. Black ballpoint ink with warm yellow highlighter accents, neat legible handwritten English labels, minimal, clean, no photorealism, no clutter, no smooth gradients, landscape composition. SUBJECT:
+
+part1-tokens||a tokenizer + embedding pipeline. A box reading "the cat sat" with an arrow to token chips [the][cat][sat], arrows to a column of integer IDs 464, 2415, 3332, then arrows into a grid labeled "EMBEDDING TABLE" with tiny vector number rows. A small side doodle of BPE merges: 'l','o','w' -> 'low'. Title hand-lettered at top: "TEXT -> TOKENS -> IDS -> VECTORS".
+
+part2-position-attention||position encodings for attention. A row of token boxes with index numbers 0,1,2,3 underneath. Four small labeled mini-panels: "SINUSOIDAL" (wavy curves), "LEARNED" (a lookup row), "RoPE" (a rotating angle / clock-hand doodle), "ALiBi" (a downward slope bias). A handwritten note: "attention is permutation-invariant - position breaks the tie". Title: "POSITION ENCODING".
+
+part3-transformer-block||a transformer decoder block as a vertical stack of labeled boxes bottom to top: "Embedding + Pos", "RMSNorm", "Masked Multi-Head Attention", a curved "+" residual arrow looping around it, "RMSNorm", "FFN (SwiGLU)", another residual "+", arrow up to "x N layers". Pre-norm shown. Title: "TRANSFORMER DECODER BLOCK".
+
+part4-decoding||a decoding dashboard. A small bar chart of next-token probabilities. Three labeled sliders/knobs: "TEMPERATURE", "TOP-K", "TOP-P (nucleus)". A branch doodle for "SPECULATIVE DECODING": a small fast draft model proposing tokens, a big model verifying with check and cross marks. Title: "DECODING: logits -> text".
+
+part5-kvcache||a KV cache diagram. A table labeled "KV CACHE (per layer)" with columns token / K / V and rows filling over time-steps t1,t2,t3. An arrow note "reuse past keys/values -> faster". Three small head-sharing schematics side by side labeled "MHA" (many K/V heads), "MQA" (one shared K/V), "GQA" (grouped), plus a tiny "MLA" note. Title: "KV CACHE & ATTENTION VARIANTS".
+
+part6-flash-hardware||a hardware-aware attention sketch. A GPU chip doodle with "HBM" and "SRAM" boxes and arrows showing memory movement, a note "attention is memory-bound". A "FlashAttention" tiled block showing on-chip tiling that avoids the big N x N matrix. A small budget checklist: FLOPs, bandwidth, memory, precision (fp16 / bf16 / fp8). Title: "FLASH ATTENTION & HW BUDGET".
+
+part7-moe||a Mixture-of-Experts router. An input token arrow into a "ROUTER" box that lights up a SUBSET of expert boxes E1..E8 (two highlighted with yellow, the rest dim), then a combine "+" to the output. A note "activate a few experts per token - sparse scaling". Side labels: Switch, Mixtral, DeepSeekMoE. Title: "MIXTURE OF EXPERTS".
+
+part8-beyond||alternatives to transformers, three labeled panels. "STATE-SPACE (Mamba)" with a recurrent state chain s_t -> s_t+1 and a "linear time" note; "LINEAR ATTENTION" with a kernel feature-map doodle; "DIFFUSION LM" showing noisy tokens denoised step by step. Title: "BEYOND TRANSFORMERS".
+
+part9-data||a pretraining data pipeline funnel: "raw web (Common Crawl)" -> boxes "dedup" -> "quality filter" -> "clean" -> "tokenize" -> "training mix". A side doodle of "SYNTHETIC DATA" (a model generating new examples). Labels: FineWeb, Dolma, DataComp-LM. Note "data is the highest-leverage layer". Title: "DATA PIPELINE".
+
+part10-posttraining||post-training stages left to right: "BASE (predicts text)" -> "SFT / instruction tuning" -> "PREFERENCE LEARNING" with thumbs up/down -> "RLHF" with a reward-model box and policy arrows. Small acronym chips: PPO, GRPO, RLVR, DPO. Note "base predicts, assistant follows instructions". Title: "POST-TRAINING".
+
+part11-quantization||quantization. A number line FP16 -> INT8 -> INT4 with values snapping into discrete buckets/levels. Three method chips: GPTQ, AWQ, GGUF. A small gauge trading off "size / latency" against "quality". Note "low-bit changes numeric behavior, not just size". Title: "QUANTIZATION".
+
+part12-serving||an LLM serving stack. A box "requests" -> a scheduler doing "in-flight / continuous batching" -> a "PagedAttention" memory-pages doodle -> GPU. Engine chips: vLLM, TensorRT-LLM, SGLang. Metrics noted: latency, throughput, tokens/s. Note "serving is its own discipline". Title: "SERVING STACK".
+
+part13-rag-agents||RAG and an agent loop. Left half: a query -> "RETRIEVER" -> a "VECTOR DB" of documents -> stuffed into context -> LLM answer; label "parametric + non-parametric memory". Right half: an agent loop circle "think -> call tool -> observe -> repeat" with small tool icons (search, code, calculator). Title: "RAG & AGENTS".
+
+part14-interp-safety||interpretability and red-teaming. Left: a peek inside the model showing "circuits", "probes", and a "sparse autoencoder (SAE)" decomposing one neuron into features. Right: a "RED TEAM" shield with attack arrows labeled jailbreak and prompt-injection, and an "EVAL / SAFETY" checklist. Title: "INTERPRETABILITY & RED-TEAM".
+
+part15-capstone||a capstone system tying everything together: labeled boxes arranged in a ring with arrows "train -> tune -> quantize -> serve -> eval -> document", a small trophy/star in the middle. Note "connect the whole stack into one working system". Title: "CAPSTONE".
