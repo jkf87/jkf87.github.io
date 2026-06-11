@@ -1,0 +1,50 @@
+[
+  {
+    "figure_num": null,
+    "page": 1,
+    "file": "fig-p1-img.png",
+    "method": "embedded (512x512)",
+    "size_kb": 16,
+    "caption": null
+  },
+  {
+    "figure_num": null,
+    "page": 1,
+    "file": "fig-p1-img.png",
+    "method": "embedded (360x360)",
+    "size_kb": 7,
+    "caption": null
+  },
+  {
+    "figure_num": null,
+    "page": 1,
+    "file": "fig-p1-img.png",
+    "method": "embedded (970x187)",
+    "size_kb": 25,
+    "caption": null
+  },
+  {
+    "figure_num": null,
+    "page": 1,
+    "file": "fig-p1-img.png",
+    "method": "embedded (2369x1005)",
+    "size_kb": 45,
+    "caption": null
+  },
+  {
+    "figure_num": 1,
+    "page": 2,
+    "file": "figure-1.png",
+    "method": "vector_crop (1502x580)",
+    "size_kb": 103,
+    "caption": "Figure 1  Performance comparison of SearchSwarm against lightweight models of co"
+  },
+  {
+    "figure_num": 2,
+    "page": 4,
+    "file": "figure-2.png",
+    "method": "vector_crop (1502x595)",
+    "size_kb": 182,
+    "caption": "Figure 2  Overview of SearchSwarm.  Left:  System architecture. The main agent r"
+  }
+]
