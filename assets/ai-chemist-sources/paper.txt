@@ -1,0 +1,697 @@
+TEMPO Improves Generality and Decreases
+Oxidative Deboronation in Chan–Lam Couplings of
+Primary Sulfonamides
+Jan Rzymkowski1*, Shuyuan Zhang2*, Artur Chołuj1*, Aleksander Szkółka1*, Mateja Dud1*,
+Mateusz Bruno-Kamiński1*, Jan Busz1*, Grzegorz Wojciechowski1, Jan Kulczycki1, Mariusz
+Gruza1, Tadija Radusinović1, Maria Wyrzykowska1, Szymon Kapuściński1, Oleksandr Popika1,
+Łukasz Szczupak1, Ahmed El-Kishky2, Michał Sadowski1, Paulina Wach1, Paweł WłodarczykPruszyński1, Piotr Byrski1, Joe Palermo2, Stan Jastrzębski1
+1: Molecule.one, San Francisco, CA / Warsaw, Poland; 2: OpenAI, San Francisco, CA, *: Shared first authorship.
+
+ABSTRACT
+Primary sulfonamides are valuable motifs in medicinal chemistry but remain challenging
+substrates for Chan–Lam N-arylation because of low nucleophilicity and boronic acid
+degradation. Here, we report a high-throughput study of TEMPO-promoted Chan–Lam coupling
+between primary sulfonamides and arylboronic acids. Across two microscale screening
+campaigns comprising 10,080 reactions, we evaluated oxidant identity, oxidant loading, copper
+source and loading, base, solvent, temperature, and substrate structure. Stoichiometric TEMPO
+emerged as a surprising yet uniquely effective additive, improving desired C–N bond formation
+while suppressing oxidative deboronation relative to oxidant-free and most of the strongly
+oxidizing conditions. Under the optimized condition, using 2 equivalents of TEMPO and 20
+mol% Cu(OAc)₂, the mean estimated product yield increased to 25.2% (from 16.6%), and the
+fraction of reactions exceeding 30% yield increased over twofold to 37.5% (from 15.6%).
+Bench-scale validation confirmed the beneficial effect of TEMPO in eleven of fourteen
+representative substrate pairs, with LC-PDA-MS yields improving over twofold in the majority
+of cases. Notably, we observe consistent gains for electron-poor boronic acids across the
+high-throughput campaign and the bench-scale validation. Evaluation of structurally related
+additives showed that 4-hydroxy-TEMPO maintained comparable performance, offering a
+potentially lower-cost and more readily removable alternative to TEMPO. These results identify
+aminoxyl additives as a surprising tool for improving primary sulfonamide Chan–Lam couplings,
+with potential application on the industrial scale.
+
+1. Introduction
+
+An oxidative nucleophile–nucleophile coupling protocol,1a,b, 2, 3 now widely known as the
+Chan–Lam (Chan–Lam, CL) coupling, enables the formation of C–N, C–O, and C–S bonds
+through the copper-catalyzed cross-coupling of organoboron reagents (such as boronic acids,
+pinacol esters, stannanes, or siloxanes) with various N–H, O–H, and S–H containing
+nucleophiles. Unlike palladium-catalyzed alternatives,4 where the electrophilic substrate drives
+transition-metal turnover, CL reaction fundamentally requires an external terminal oxidant to
+regenerate the active Cu(II) catalyst from the Cu(I) species generated post-reductive elimination.5
+The primary synthetic value of CL amination lies in its mild operating parameters — it can
+operate at room temperature, utilizes inexpensive, low-toxicity copper catalysts, and is highly
+tolerant of ambient air and moisture. These features have made it an indispensable tool in
+medicinal chemistry and industrial process development.6,7
+A major limitation of CL coupling is the presence of rapid, competitive side reactions that
+degrade the organoboron coupling partner before productive cross-coupling can occur.8-10 Among
+these, oxidative deboronation is a key side reaction, in which oxidative cleavage of the
+carbon–boron bond generates phenolic byproducts.8,9 These phenols can then undergo
+competitive Chan–Lam etherification with the remaining organoboron reagent to form diaryl
+ethers, severely depleting the boron stoichiometry and complicating product purification.
+Consequently, traditional protocols often require a large excess of the organoboron partner
+(typically 1.5 to 3.0 equivalents) to achieve complete conversion. Addressing these persistent
+inefficiencies requires a detailed understanding of both the productive catalytic cycle and the
+off-cycle pathways that govern copper speciation and organoboron degradation.
+Recent mechanistic studies8,9 have shown that Chan–Lam efficiency is strongly influenced by
+off-cycle copper speciation and Cu(I) reoxidation. Vantourout, Watson, and co-workers
+demonstrated that, in reactions of boronic pinacol esters, liberated pinacol can sequester copper
+as inactive [CuII(pinacol)2] complexes, and that boric acid can improve turnover by trapping free
+diol, buffering acetate, and accelerating Cu(I) oxidation. However, aerobic Cu(I) reoxidation may
+also generate reduced oxygen byproducts such as peroxides or Cu–oxygen intermediates that
+promote protodeboronation/oxidative deboronation of the organoboron reagent.8,9
+We therefore asked whether mild redox additives could improve the balance between
+productive copper turnover and these competing degradation pathways. TEMPO
+(2,2,6,6-tetramethylpiperidinyloxyl) was selected among others as a promising candidate because
+it is a mild, shelf-stable radical oxidant known to modulate Cu redox chemistry, although its
+precise role in Chan–Lam C–N coupling remains unresolved. Although Cu/TEMPO systems are
+well established in aerobic alcohol oxidation (the Stahl oxidation),11a-c their application as pure
+redox mediators to turn over C–N cross-coupling cycles remains remarkably neglected since the
+early work of Lam and co-workers.1
+In this seminal study by Lam et al., TEMPO only occasionally outperformed molecular oxygen
+as the terminal oxidant, although it should be noted that the study evaluated only a limited
+number of examples within any given nucleophile class. As a result, atmospheric O₂ became the
+entrenched oxidation strategy in Chan–Lam coupling.
+
+Subsequent studies demonstrating the efficacy of alternative oxidation strategies have focused
+predominantly on di-tert-butyl peroxide and related bulky organic peroxides.12a-f Beyond these
+examples, reports employing alternative oxidants or redox mediators remain relatively limited
+and fragmented.13a-d Remarkably, despite its inclusion in the original Chan–Lam study, TEMPO
+has received little subsequent attention. We identified only two studies that deliberately
+incorporated TEMPO into methodology development: a heterogeneous copper-mediated
+protocol14 and a recently reported oxidative annulation of aminopyridines with arylboronic acids
+employing 4-OH TEMPO as an oxidant.15
+Motivated by these observations, we revisited the role of TEMPO in Chan–Lam coupling using
+high-throughput experimentation (HTE). To the best of our knowledge, this study provides the
+first broad evaluation of the impact of TEMPO on Chan–Lam coupling across a diverse substrate
+set, while also examining its relationship with boronic acid-derived side reactivity. Furthermore,
+it establishes the first TEMPO-assisted Chan–Lam protocol developed specifically for
+sulfonamide arylation.
+Primary sulfonamides (R–SO2NH2) were selected as the target nucleophile class due to their
+prevalence in medicinal chemistry and attractive physicochemical properties.16a-c At the same
+time, they remain challenging substrates for direct Chan–Lam N-arylation. The strongly
+electron-withdrawing sulfonyl group renders them weak and highly polar nitrogen nucleophiles,
+whose reactivity is sensitive to reaction parameters such as base, solvent, copper source, and the
+identity of the organoboron coupling partner.
+We undertook a large-scale high-throughput experimentation campaign to map
+oxidant-dependent trends in reactivity and side product formation. Gandhi, Brown, Doyle, and
+co-workers recently generated a 3,904-reaction high-throughput dataset to identify effective
+conditions for primary sulfonamide Chan–Lam N-arylation.17 We use their results to determine
+the starting baseline conditions (see Experimental section for details). As shown in Figure 1, the
+HTE screen encompassed 10,080 reactions across two experiments, representing, to our
+knowledge, the largest Chan–Lam high-throughput experimentation screen reported to date.
+Through this extensive optimization campaign, we identified highly efficient, TEMPO-promoted
+conditions for the direct cross-coupling of primary sulfonamides with arylboronic acids.
+
+Figure 1. Two-stage microscale HTE optimization of the Chan–Lam coupling of primary
+sulfonamides with arylboronic acids. A) General reaction scheme and parameters evaluated
+during optimization. B) Design of the two HTE campaigns: the first screen comprised 5,088
+reactions and focused on evaluating oxidant identity under varied solvent, base, and
+copper-loading conditions; the second screen comprised 4992 reactions and further optimized
+oxidant loading, temperature, base, copper source, solvent, and catalyst loading, while also
+evaluating structural variants of TEMPO. C) Optimised TEMPO-promoted conditions identified
+in the HTE study (for the representative procedure in optimized HTE conditions see SI, 2.2.2A,
+for the same in conditions applied to milligram-scale see SI, 3.2).​
+*One boronic acid and two sulfonamides from the first campaign were replaced in the second
+campaign after the original materials were consumed (See SI, Figure S1).
+
+Our contributions are as follows:
+1.​ Largest Chan–Lam HTE Campaign: This work reports the largest Chan–Lam
+high-throughput screening dataset to date, comprising 10,080 reactions performed at
+microliter scale.
+2.​ First Report of TEMPO-Assisted Sulfonamide Coupling: Stoichiometric TEMPO was
+identified as an effective additive for improving yields in the Chan–Lam coupling of
+primary sulfonamides, see Figure 1C. Across the dataset, the mean product yield
+generally increased with TEMPO loading up to 2 equivalents. To our knowledge, this is
+the first report demonstrating that TEMPO improves primary sulfonamide Chan–Lam
+coupling relative to ambient-air oxidation alone.
+3.​ Suggesting a Novel Role for TEMPO: The data suggest a previously unreported role for
+TEMPO in primary sulfonamide Chan–Lam coupling. TEMPO was observed to decrease
+the mean estimated yield of oxidative deboronation products. These findings indicate that
+the beneficial effect of TEMPO may arise from the suppression of boronic acid-derived
+decomposition, though further mechanistic studies are required to confirm this
+hypothesis.
+4.​ Potential Industrial Viability and Scalability via TEMPOL: The beneficial effect of
+TEMPO was also achieved using 4-hydroxy-TEMPO (TEMPOL), a commercially
+available analogue widely used at industrial scale in the plastics industry.
+4-hydroxy-TEMPO is substantially less expensive than TEMPO, depending on scale.
+Furthermore, the polar C-4 hydroxyl group on TEMPOL fundamentally alters its partition
+coefficient; unlike lipophilic TEMPO it can be easily and cleanly washed out of the
+reaction mixture via simple aqueous extraction. This finding may enable broader
+application of these results in process chemistry for molecules containing secondary
+sulfonamide motifs.14,15
+2. Experimental Description
+To systematically evaluate the effect of oxidants on primary sulfonamide Chan–Lam coupling,
+we designed a high-throughput experimentation campaign around a structurally diverse substrate
+matrix. Across two HTE campaigns, we performed 10,080 microscale Chan–Lam reactions
+covering 12 primary sulfonamides and 8 boronic acids, which gave 96 unique substrate-pair
+combinations in each HTE campaign (Figure 1). The substrate matrix was largely conserved
+across both HTE campaigns, with one boronic acid and two sulfonamides from the first
+campaign replaced in the second campaign due to material consumption; complete substrate lists
+and tested conditions for both campaigns are provided in the SI. The substrate set was selected to
+represent the structural diversity commonly encountered in medicinal chemistry, including
+aromatic, heteroaromatic, and aliphatic primary sulfonamides, together with aryl and heteroaryl
+boronic acids spanning different electronic and steric profiles. This design allowed us to evaluate
+whether oxidant effects were general across substrate classes or limited to specific coupling
+partners. Each substrate pair was tested across a range of reaction conditions combinations,
+
+including oxidant identity and loading, copper source and loading, base, solvent, and
+temperature. This matrix design was intended not only to identify productive conditions, but also
+to capture substrate-dependent trends in yield, mono-/di-arylation selectivity, and boronic acid
+side-product formation.
+All reactions were performed on a microliter scale in 96-well plates using automated
+liquid-handling workflows. The reactions were run at a 14 mM concentration and a total reaction
+volume of 28.6 µL, enabling broad exploration of chemical space while minimizing material
+consumption. Reaction outcomes were quantified by LC-PDA-MS analysis using an internal
+standard. Product yields were estimated by integrating product and internal-standard peaks and
+correcting for DFT-predicted absorption profiles for the corresponding products (see the full
+experimental procedure in SI).
+
+3. First High-throughput Campaign: Oxidant Screen
+The first high-throughput screening was designed to test whether oxidant additives could
+improve primary sulfonamide Chan–Lam coupling by improving yield while suppressing
+unproductive deactivation pathways. We evaluated 10 structurally and mechanistically diverse
+oxidants across 53 distinct condition sets, using reaction parameters inspired by high-performing
+conditions from literature17 but deliberately introducing oxidant variation.
+Milder, organic, non-peroxide oxidants - including TEMPO, N-methylmorpholine N-oxide
+(NMO), p-benzoquinone (p-BQ) - were tested at a stoichiometric amount (1.0 equivalent), given
+their clean single-electron transfer (SET) or proton-coupled electron transfer (PCET) pathways,
+which pose minimal risk of substrate degradation. Conversely, stronger, radical-generating, or
+peroxide-based oxidants - tert-butyl peroxide, Selectfluor, Oxone, hydrogen peroxide (H2O2),
+sodium percarbonate, and ammonium persulfate - were evaluated at reduced loading (0.5
+equivalents) to prevent undue oxidative stress.
+Furthermore, as several of these inorganic and peroxide-based salts (such as Oxone, sodium
+percarbonate, and persulfates) are highly polar and insoluble in tested organic solvents (DMA,
+diglyme, n-BuOH, dioxane), they were evaluated under conditions containing water as a
+co-solvent. The complete list of tested variants is provided in the SI.
+The overall results are summarized in Figure 2. Rather than selecting conditions solely on the
+basis of average estimated yield, we prioritized robustness across the substrate set, defined as the
+fraction of reactions giving >30% estimated yield. By this criterion, the best-performing
+condition used TEMPO (1 eq.), K₂CO₃ (2 eq.), and DMA/diglyme (3:7, v/v) at 60 °C for 18 h.
+Diglyme was investigated as the principal reaction solvent; however, DMA was unavoidably
+present because the substrates were dispensed from DMA stock solutions.
+At the same copper loading (10 mol%), the reaction performed without an added oxidant gave
+only 9.9% of reactions above the 30% yield threshold, with a mean estimated yield of 12.2%.
+Adding TEMPO improved both metrics, increasing the hit rate to 26.6% and the mean estimated
+yield to 19.6% (Figure 2A). Although modest in absolute terms, this improvement is meaningful
+given the breadth of the screen, which included 96 distinct substrate pairs. By contrast, most
+other oxidants either reduced the overall yield or gave no significant improvement. Importantly,
+
+TEMPO remained the top-performing oxidant even when each oxidant was compared under its
+own best observed condition from the broader screen, including conditions with higher copper
+loading (See SI, Figure S2). NMO and tert-butyl peroxide gave mean yields comparable to, or
+slightly higher than, the no-oxidant control, whereas oxidants such as p-benzoquinone, H₂O₂,
+Dess–Martin Periodinane, Selectfluor, sodium percarbonate, Oxone, and ammonium persulfate
+substantially decreased productive coupling.
+Analysis of the side-product profile supports the hypothesis that the beneficial effect of
+TEMPO is not simply due to the presence of an external oxidant for copper turnover. Strong
+oxidants often increased oxidative deboronation - likely due to the oxidation of boronic acids to
+phenols, byproducts which can act as nucleophiles in Chan–Lam O-arylation (Figure 2B). In
+contrast, TEMPO decreased the mean oxidative deboronation estimated yield relative to the
+no-oxidant control while also improving the desired product yield. These results indicate that
+productive Chan–Lam performance is highly sensitive to oxidant identity: strongly oxidizing or
+poorly matched oxidants accelerate boronic acid decomposition, whereas TEMPO appears to
+favor productive coupling while limiting oxidative deboronation.
+
+A. Mean estimated yield of the main product, and percentage of reactions achieving >30%
+yield across 96 substrate pairs for each condition at fixed copper loading (10 mol%)
+
+B. Mean estimated yield, and percentage of reactions achieving >30% yield of oxidative
+deboronation across 96 substrate pairs for each condition at fixed copper loading (10 mol%)
+​
+
+Figure 2. Effect of oxidant on primary sulfonamide Chan–Lam coupling and side-product
+formation in the first HTE campaign. The average estimated yield (red) and the percentage of
+reactions achieving >30% yield (blue) for all oxidants under conditions using 10 mol% copper,
+for the main product (A) and oxidative deboronation (B). A detailed description of the selected
+conditions, together with additional comparisons of oxidant performance under the best
+condition identified for each oxidant, is provided in the SI (Figure S2 and Tables S1–S2). This
+copper loading corresponds to the best-performing condition identified for TEMPO, the
+top-performing oxidant overall. TEMPO emerges as the only oxidant significantly improving the
+mean yield across the tested 96 substrate pairs.
+In conclusion, adding an oxidant is not sufficient to improve primary sulfonamide Chan–Lam
+coupling. In fact, some oxidants such as p-benzoquinone, H₂O₂, Dess–Martin Periodinane,
+Selectfluor, sodium percarbonate, Oxone, and ammonium persulfate mainly promote boronic
+acid degradation and lower product estimated yield. TEMPO behaved differently: it improved
+C–N bond formation while reducing oxidative deboronation. This suggests that the benefit of
+TEMPO does not come from stronger oxidation, but from providing a mild aminoxyl-mediated
+redox environment that supports N-arylation without accelerating organoboron decomposition.
+
+4. Bench-scale validation of TEMPO-promoted conditions compared to optimized copper
+loading without TEMPO
+Four substrate pairs were advanced to bench-scale validation to test the reproducibility of the
+TEMPO effect observed in the HTE campaign. The reactions were performed at 42 mM, a
+three-fold higher concentration than used in HTE, to better reflect practical synthetic conditions,
+as the lower concentration employed in the screening campaign was dictated by format-specific
+solubility constraints.
+
+Rather than using the same copper loading for all experiments, this parameter was selected
+based on the best-performing results from the initial HTE screen (10 mol% for TEMPO and 40
+mol% for no-oxidant conditions). We chose four substrate pairs that achieved relatively high
+HTE yields for TEMPO-containing conditions, aiming for each to have distinct sulfonamide and
+boronic acid.
+Aliquots of crude reaction mixtures were analyzed by LC-PDA-MS prior to purification; the
+relative ratios of reaction products to internal standard (IS) are presented in Table 1. Crude
+reaction mixtures were then subjected to purification to confirm product identity by ¹H NMR (for
+more details see SI). Product identity was confirmed for all entries.
+As shown in Table 1, in three out of four cases, addition of TEMPO significantly increased the
+product/IS ratio relative to the no-oxidant control, with up to a four-fold improvement. In the
+remaining case (entries 5 and 6), TEMPO and no-oxidant conditions gave comparable results
+(product/IS ratio: 2.12 vs. 2.60, respectively). These results support the HTE finding that
+TEMPO improves primary sulfonamide Chan–Lam coupling.
+
+Entry
+
+Sulfonamide
+
+Boronic Acid
+
+Oxidant
+
+Product to IS
+ratio*
+LC-PDA-MS
+
+qNMR yield
+
+1
+
+Nonea
+
+0.5
+
+10%
+
+2
+
+TEMPOb
+
+1.87
+
+33%
+
+3
+
+Nonea
+
+2.26
+
+27%
+
+4
+
+TEMPOb
+
+7.21
+
+59%
+
+5
+
+Nonea
+
+2.60
+
+49%
+
+6
+
+TEMPOb
+
+2.12
+
+42%
+
+7
+
+Nonea
+
+2.19
+
+36%
+
+8
+
+TEMPOb
+
+6.63
+
+99%
+
+Table 1. Four substrate pairs were advanced to bench-scale validation to test the reproducibility
+of the TEMPO effect observed in the HTE campaign. The table shows LC-PDA-MS based
+product/IS (Internal Standard) ratio for milligram scale crude reactions mixtures comparing
+no-oxidant control conditions with TEMPO-containing conditions. Product identity was
+confirmed for all entries by ¹H NMR. qNMR yields were calculated using 1H NMR measured
+with suitable standard (see SI 3.6). Conditions: a Cu(OAc)₂·H₂O (40 mol%), no oxidant; b
+Cu(OAc)₂·H₂O (10 mol%), TEMPO (1.0 eq.); General conditions: sulfonamide (0.225 mmol, 1.0
+eq.), boronic acid (0.290 mmol, 1.29 eq.), K₂CO₃ (2.0 eq.), DMA/diglyme (3:7, v/v; 42 mM), 60
+°C, 18 h. For the representative procedure see SI 3.1, 3.2.
+An additional test intended to more systematically examine the influence of boronic acid identity
+was performed with 20 mol% copper loading for both variants (Table 2). Nine out of ten selected
+boronic acids were not used in the high-throughput campaigns and were selected to provide a
+representative set of substrates encompassing a range of electronic properties, functional groups,
+and heterocyclic motifs. The benefit of the TEMPO addition was clearly demonstrated for all
+electron-poor boronic acids (Entries 1-3, 6-8, 10) and one of electron-rich boronic acids (Entry
+9), averaging a roughly twofold increase in the measured product amount, while it was not
+observed in the remaining two or addition of TEMPO even led to lower relative amount of
+product (Entries 4 and 5).
+Entry
+
+Sulfonamide
+
+Boronic Acid
+
+Product to IS ratio* LC-PDA-MS
+No oxidanta
+
+TEMPOb
+
+1
+
+0.79
+
+2.17
+
+2
+
+2.00
+
+3.23
+
+3
+
+2.00
+
+3.57
+
+4
+
+0.51
+
+0.46
+
+5
+
+0.56
+
+0.13
+
+6
+
+1.03
+
+2.17
+
+7
+
+1.30
+
+3.85
+
+8
+
+0.42
+
+7.69
+
+9
+
+7.14
+
+12.50
+
+10
+
+1.69
+
+3.57
+
+Table 2. Ten boronic acids were tested in milligram scale, each paired with one of the two
+selected sulfonamides. The table shows LC-PDA-MS based product/IS (Internal Standard) ratio
+for milligram scale crude reactions mixtures comparing no-oxidant control conditions with
+TEMPO-containing conditions. Conditions: a Cu(OAc)₂·H₂O (20 mol%), no oxidant; b
+Cu(OAc)₂·H₂O (20 mol%), TEMPO (2.0 eq.); General conditions: sulfonamide (0.225 mmol, 1.0
+eq.), boronic acid (0.290 mmol, 1.29 eq.), K₂CO₃ (2.0 eq.), DMA/diglyme (3:7, v/v; 42 mM), 60
+°C, 18 h. For the representative procedure see SI 3.3, 3.4.
+​
+5. Second High-throughput Campaign: TEMPO Optimization
+
+With the positive results from the initial oxidant screen in hand, the second high-throughput
+campaign was designed to optimize the TEMPO-promoted N-arylation. Conditions varied in
+TEMPO loading (from 0.25 to 2 equivalents), copper catalyst source and loading (from 2.5
+mol% to 40 mol%), as well as temperature, base and solvent. Detailed description of the 52
+tested conditions is provided in SI. We tested all the conditions across the 96 substrate pairs,
+producing a total of 4992 reactions. Two sulfonamides and one boronic acid were replaced in the
+second screen because the material was exhausted.
+The selected combination used 2 equivalents of TEMPO and 20 mol% Cu(OAc)₂, see Figure
+1C. We compared this condition with selected no-oxidant controls and with the initial
+TEMPO-containing condition from the first campaign (Figure 3). The optimized
+TEMPO-containing condition gave the strongest overall performance, increasing the percentage
+of reactions achieving >30% yield from 15.6% under the no-oxidant control to 37.5%. Increasing
+copper loading alone also improved performance, but to a much smaller extent, indicating that
+the benefit of the optimized condition cannot be explained by copper loading alone (see Figure
+5).
+
+Figure 3. Results of the optimization of TEMPO-containing conditions in the second HTE
+campaign. Mean estimated product yield (red) and the percentage of reactions achieving >30%
+yield (blue), for selected control conditions and optimized TEMPO-containing conditions.
+The second experimental campaign also included a few condition combinations (see
+Supporting Information for details) that optimized the base and solvent in the best
+
+TEMPO-containing conditions (1 equivalent and 10 mol% of Cu) from the first campaign. Two
+condition combinations showed early benefit: (1) changing K2CO3 to K3PO4 and (2) changing
+the DMA/diglyme co-solvent system to DMA/n-BuOH. We decided to keep solvent and base
+intact in the optimized conditions (Figure 1c) and move a more exhaustive optimization of
+solvent and base to future work.
+Additionally, we were particularly interested in how substrate structure influences reaction
+outcomes; therefore, we analyzed the mean yield for each substrate (averaged across all
+conditions), as shown in Figure 4. The substrate library consisted of 12 primary sulfonamides
+and 8 boronic acids, giving 96 unique substrate pairs. The results demonstrated that addition of
+TEMPO (blue) improved the mean yield for the majority of substrates (with the exception of B01
+and S04 that appear slightly worse) compared to no-oxidant control (red). The improvement is
+seen for a variety of sulfonamides and boronic acids, hence not limited to only one substrate
+class.
+
+Figure 4. Substrate scope for High-Throughput Experimentation (HTE). A) Representative aryl
+and heteroaryl boronic acids (B01–B08) and B) aromatic, heteroaromatic, and aliphatic primary
+sulfonamides (S01–S12) utilized in the study. The HTE campaign was executed as a full
+cross-matrix of all substrate pairs, resulting in 96 unique coupling combinations, evaluated across
+a range of conditions. C) Average yield per substrate, boronic acid (left) and sulfonamide (right),
+in the second high-throughput campaign for the optimized conditions (Figure 1C) compared to
+no-oxidant variant.
+​
+An investigation into the substrate scope revealed distinct trends dictated by electronic, steric,
+and coordination effects. Among the primary sulfonamides evaluated, derivatives bearing
+electron-withdrawing groups (S06, S10, and S12) were among the ones delivering the highest
+mean yields. Notably, ortho-substitution in S12 was well tolerated under the developed
+conditions, despite the potential for steric hindrance to inhibit transmetallation and C–N bond
+formation. Furthermore, the performance of the highly functionalized pyrazole derivative S05,
+giving approximately 28% mean yield, is particularly noteworthy and highlights the
+compatibility of our protocol with highly substituted five-membered heterocycles.​
+For the boronic acid substrate, sterically unhindered and electronically favorable variants, such as
+phenylboronic acid B08 and the weakly electron-rich 4-tolyl derivative B04, performed
+consistently well which might reflect undergoing smooth transmetallation. Notably, the
+amide-functionalized pyridine B03 emerged as the best performer in the tested library, with its
+structural analog B05 (R=CF3) in the third position. Conversely, substrates bearing basic tertiary
+amines, such as the meta-dimethylamino derivative B01 and the para-morpholine analog B07,
+severely suppressed reaction outcomes. These Lewis-basic motifs potentially act as competitive
+ligands that poison the copper catalyst. In contrast, the ortho-dimethylamino analog B02; despite
+its electronic similarities to B01, showed improved yields under the optimized
+TEMPO-containing conditions, with overall mean yield of 21%, which might be due to the
+ability of the ortho-nitrogen to position the catalyst in immediate proximity to the C-B bond. In
+general, benefits of TEMPO were most pronounced for electron-poor boronic acids, in line with
+our bench-scale findings (see Table 2).
+
+5.1. Increased TEMPO loading improves product yield and reduces oxidative
+deboronation
+Having identified the optimized TEMPO-containing conditions, we examined whether the
+improvement reflected a genuine loading-dependent effect of TEMPO. To verify this, we
+analyzed mean product yield and side-product formation as a function of TEMPO loading across
+the second HTE campaign (Figure 5).
+A strong loading-dependent trend was observed. Across most copper loadings, increasing
+TEMPO generally improved mean product yield, with the highest value observed at 2 equivalents
+TEMPO and 20 mol% Cu(OAc)₂. This trend is particularly evident at 20 mol% copper loading,
+where the mean yield increases from 16.7% without TEMPO to 25.3% when paired with 2
+equivalents of TEMPO.
+
+Figure 5. Mean estimated product yield as a function of TEMPO and Cu(OAc)₂ loading across
+the second HTE campaign.
+In the next step we examined whether this improvement was accompanied by changes in the
+side-product profile. At 20 mol% copper loading, increasing the TEMPO concentration reduced
+oxidative deboronation from 37.3% under oxidant-free conditions down to 30.2% at 2
+equivalents of TEMPO (Figure 6). The mean estimated yield of oxidative homocoupling remains
+small (between 2.2% and 5.9%).
+
+Figure 6. Mean estimated yield of oxidative deboronation and oxidative homocoupling at best
+TEMPO-conditions identified in each HTE campaign, compared to the no-oxidant control at the
+same copper loading.
+​
+Taken together, these data underscore that the optimized condition identified in Figure 3 is not an
+isolated high-throughput hit, but part of a systematic response to TEMPO loading: higher
+TEMPO loading generally favors C–N bond formation and, at 20 mol% Cu, reduces oxidative
+deboronation.
+5.2. Evaluation of TEMPO-Related Additives
+The beneficial effect of TEMPO prompted us to investigate whether related aminoxyls could
+reproduce the observed improvement in primary sulfonamide Chan–Lam coupling. We tested
+TEMPO, TEMPO-derived aminoxyl radicals: 4-hydroxy-TEMPO, 4-oxo-TEMPO, and
+1,2,2,6,6-pentamethylpiperidine (PMP) as a sterically related non-radical piperidine control
+(Figure 7).
+Among the tested additives, only 4-hydroxy-TEMPO maintained performance comparable to
+TEMPO. This result is synthetically important because 4-hydroxy-TEMPO is significantly less
+expensive than TEMPO, reflecting its broader availability from polymer and materials
+applications. In contrast, both 4-oxo-TEMPO and PMP gave significantly worse results (Figure
+7). These results suggest that the effect is sensitive to the additive structure and is not simply a
+consequence of introducing a sterically hindered piperidine scaffold. ​
+
+4-hydroxy-TEMPO also gave a slightly higher mean level of oxidative deboronation than
+TEMPO while maintaining comparable coupling performance. In contrast, both 4-oxo-TEMPO
+and PMP showed substantially higher oxidative deboronation and poorer product formation.
+
+Figure 7. Evaluation of TEMPO and structurally related additives. The mean yield of the main
+product (red) and mean yield of oxidative deboronation (purple) across 96 substrate pairs using
+TEMPO, 4-hydroxy-TEMPO, 4-oxo-TEMPO, or 1,2,2,6,6-pentamethylpiperidine (PMP). All
+additives were tested at 1 equivalent under otherwise identical conditions.
+
+Conclusions
+In conclusion, we report the largest high-throughput screening of Chan–Lam coupling of
+primary sulfonamides, comprising 10,080 microscale reactions across a diverse substrate matrix.
+The systematic screen identified – among 10 oxidants tested – stoichiometric TEMPO as a
+surprisingly effective additive for improving primary sulfonamide N-arylation. The optimized
+condition increases mean product yield from 16.6% to 25.2% and doubles the fraction of
+reactions exceeding 30% yield relative to the no-oxidant control. Bench-scale validation
+confirmed the beneficial effect of TEMPO in 11 of 14 representative substrate pairs, with
+LC-PDA-MS yields improving over twofold in the majority of cases. Notably, we observe
+consistent gains for electron-poor boronic acids across the high-throughput campaign and the
+bench-scale validation.
+
+Crucially, profiling across the selected library demonstrated that the optimized conditions
+are effective across multiple substrate classes, although strongly substrate-dependent. The
+reaction tolerates a wide array of functional groups, enabling the efficient coupling of
+polyhalogenated aromatics, sterically hindered ortho-substituted compounds, and complex
+heterocycles.
+These data suggest a previously underexplored role for aminoxyl radicals in primary
+sulfonamide Chan–Lam coupling. High-throughput side-product tracking demonstrated that the
+addition of TEMPO significantly suppresses the competitive oxidative deboronation pathway.
+Importantly, Chan–Lam coupling yields generally increased with TEMPO loading, with the best
+mean yield observed at 2 equivalents TEMPO and 20 mol% Cu(OAc)₂.​
+​
+From a process chemistry perspective, the developed protocol offers attractive avenues for
+potential industrial implementation. The beneficial effects of TEMPO on reaction yield persist
+even at reduced copper loadings (2.5 mol% to 10 mol%), underscoring its potential utility in
+process chemistry settings where minimizing residual transition-metal content is often desirable.
+Furthermore, we demonstrated that TEMPO can be replaced with comparable performance using
+4-hydroxy-TEMPO (TEMPOL) without sacrificing reaction efficiency. Owing to its widespread
+use in the polymer industry, TEMPOL stands as a substantially less expensive alternative for the
+synthesis of sulfonamide-containing APIs. Additionally, its highly polar C-4 hydroxyl group
+grants distinct practical advantages, altering its solubility profile and facilitating clean aqueous
+extraction during workup and presenting opportunities for immobilization.18,19
+
+ACKNOWLEDGMENTS
+We are grateful for helpful comments and feedback provided by Prof. Timothy Cernak, Dr.
+Mikołaj Chromiński, Prof. Abigail Doyle and Prof. Patrick Lam.
+
+REFERENCES
+[1] a) Lam, P. Y. S.; Clark, C. G.; Saubern, S.; Adams, J.; Winters, M. P.; Chan, D. M. T.;
+Combs, A. New Aryl/Heteroaryl C–N Bond Cross-Coupling Reactions via Arylboronic
+Acid/Cupric Acetate Arylation. Tetrahedron Lett. 1998, 39, 2941–2944. DOI:
+10.1016/S0040-4039(98)00504-8; b) Lam, P. Y. S.; Vincent, G.; Clark, C. G.; Deudon, S.;
+Jadhav, P. K. Copper-Catalyzed General C–N and C–O Bond Cross-Coupling with Arylboronic
+Acid. Tetrahedron Lett. 2001, 42, 3415–3418. DOI: 10.1016/S0040-4039(01)00510-X.
+[2] Chan, D. M. T.; Monaco, K. L.; Wang, R.-P.; Winters, M. P. New N- and O-Arylations with
+Phenylboronic Acids and Cupric Acetate. Tetrahedron Lett. 1998, 39, 2933–2936. DOI:
+10.1016/S0040-4039(98)00503-6
+[3] Evans, D. A.; Katz, J. L.; West, T. R. Synthesis of Diaryl Ethers through the
+Copper-Promoted Arylation of Phenols with Arylboronic Acids. An Expedient Synthesis of
+Thyroxine. Tetrahedron Lett. 1998, 39, 2937–2940. DOI: 10.1016/S0040-4039(98)00504-8
+
+[4] de Meijere, A.; Diederich, F., Eds. Metal-Catalyzed Cross-Coupling Reactions, 2nd ed.;
+Wiley-VCH: Weinheim, 2004. DOI: 10.1002/9783527619535
+[5] Qiao, J. X.; Lam, P. Y. S. Recent Advances in Chan–Lam Coupling Reaction:
+Copper-Promoted C–Heteroatom Bond Cross-Coupling Reactions with Boronic Acids and
+Derivatives. In Boronic Acids: Preparation and Applications in Organic Synthesis, Medicine and
+Materials, 2nd ed.; Hall, D. G., Ed.; Wiley-VCH: Weinheim, 2011; pp 315–361. DOI:
+10.1002/9783527639328.ch6
+[6] Rao, K. S.; Wu, T.-S. Chan–Lam Coupling Reactions: Synthesis of Heterocycles.
+Tetrahedron 2012, 68, 7735–7754. DOI: 10.1016/j.tet.2012.06.015
+[7] Vijayan, A.; Rao, D. N.; Radhakrishnan, K. V.; Lam, P. Y. S.; Das, P. Advances in
+Carbon–Element Bond Construction under Chan–Lam Cross-Coupling Conditions: A Second
+Decade. Synthesis 2021, 53 (5), 805–847. DOI: 10.1055/s-0040-1705971.
+[8] Vantourout, J. C.; Miras, H. N.; Isidro-Llobet, A.; Sproules, S.; Watson, A. J. B.
+Spectroscopic Studies of the Chan–Lam Amination: A Mechanism-Inspired Solution to Boronic
+Ester Reactivity. J. Am. Chem. Soc. 2017, 139, 4769–4779. DOI: 10.1021/jacs.6b12800
+[9] West, M. J.; Fyfe, J. W. B.; Vantourout, J. C.; Watson, A. J. B. Mechanistic Development
+and Recent Applications of the Chan–Lam Amination. Chem. Rev. 2019, 119, 12491–12523.
+DOI: 10.1021/acs.chemrev.9b00491.
+[10] Cox, P. A.; Leach, A. G.; Campbell, A. D.; Lloyd-Jones, G. C. Protodeboronation of
+Heteroaromatic, Vinyl, and Cyclopropyl Boronic Acids: pH–Rate Profiles, Autocatalysis, and
+Disproportionation. J. Am. Chem. Soc. 2016, 138, 9145–9157. DOI: 10.1021/jacs.6b03283
+[11] a) Hoover, J. M.; Ryland, B. L.; Stahl, S. S. Mechanism of Copper(I)/TEMPO-Catalyzed
+Aerobic Alcohol Oxidation. J. Am. Chem. Soc. 2013, 135, 6, 2357–2367. DOI:
+10.1021/ja3117203; b) Hoover, J. M.; Steves, J. E.; Stahl, S. S. Copper(I)/TEMPO-catalyzed
+aerobic oxidation of primary alcohols to aldehydes with ambient air. Nat. Protoc. 2012, 7,
+1161–1166. DOI: 10.1038/nprot.2012.053; c) Hoover, J. M.; Ryland, B. L.; Stahl, S. S.
+Copper/TEMPO-Catalyzed Aerobic Alcohol Oxidation: Mechanistic Assessment of Different
+Catalyst Systems. ACS Catal. 2013, 3, 2599–2605. DOI: 10.1021/cs400689a.
+[12] a) Rossi, S. A.; Shimkin, K. W.; Xu, Q.; Mori-Quiroz, L. M.; Watson, D. A. Selective
+Formation of Secondary Amides via the Copper-Catalyzed Cross-Coupling of Alkylboronic
+Acids with Primary Amides. Org. Lett. 2013, 15 (9), 2314–2317. DOI: 10.1021/ol401004r; b)
+Sueki, S.; Kuninobu, Y. Copper-Catalyzed N- and O-Alkylation of Amines and Phenols Using
+Alkylborane Reagents. Org. Lett. 2013, 15 (7), 1544–1547. DOI: 10.1021/ol400323z; c)
+Mori-Quiroz, L. M.; Shimkin, K. W.; Rezazadeh, S.; Kozlowski, R. A.; Watson, D. A.
+Copper-Catalyzed Amidation of Primary and Secondary Alkyl Boronic Esters. Chem. Eur. J.
+2016, 22, 15654–15658. DOI: 10.1002/chem.201603677; d) Kim, D. S.; Lee, H. G. Formation of
+the Tertiary Sulfonamide C(sp3)–N Bond Using Alkyl Boronic Ester via Intramolecular and
+Intermolecular Copper-Catalyzed Oxidative Cross-Coupling. J. Org. Chem. 2021, 86 (23),
+17380–17394. DOI: 10.1021/acs.joc.1c01759; e) Wu, S.; Liu, Q.; Zhang, Q.; Zhou, Y.; Liu, M.;
+Zeng, Y. Cu(BF4)2/AC-Catalyzed Synthesis of N-Substituted Anilines, N-Substituted
+1,6-Naphthyridin-5(6H)-ones, and Isoquinolin-1(2H)-ones. ACS Omega 2022, 7 (50),
+46174–46182. DOI: 10.1021/acsomega.2c04299; f) Zou, X.; Wang, H.; Gao, B. Synthesis of
+Sulfoximines by Copper-Catalyzed Oxidative Coupling of Sulfinamides and Aryl Boronic Acids.
+Org. Lett. 2023, 25 (42), 7656–7660. DOI: 10.1021/acs.orglett.3c02970.
+
+[13] a) Ma, D.; Zhang, Y.; Yao, J.; Wu, S.; Tao, F. Copper-Catalyzed Arylation of Pyridines and
+Quinolines with Arylboronic Acids Using Pyridine N-Oxide as an Oxidant. Tetrahedron 2006, 62
+(12), 2917–2924. DOI: 10.1016/j.tet.2005.12.077; b) Yao, D.; Zhang, J.; Xu, L. C–N Coupling
+Reactions between Benzophenone Hydrazone and Aryl Chlorides and Boronic Acids. Chin. J.
+Org. Chem. 2020, 40 (6), 1673–1679. DOI: 10.6023/cjoc201912038; c) Walker, B. R.; Manabe,
+S.; Brusoe, A. T.; Sevov, C. S. Mediator-Enabled Electrocatalysis with Ligandless Copper for
+Anaerobic Chan–Lam Coupling Reactions. J. Am. Chem. Soc. 2021, 143 (16), 6257–6265. DOI:
+10.1021/jacs.1c02103; d) Ishida, M.; Adachi, R.; Kobayashi, K.; Yamamoto, Y.; Kawahara, C.;
+Yamada, T.; Aoyama, H.; Kanomata, K.; Akai, S.; Lam, P. Y. S.; Sajiki, H.; Ikawa, T. First
+Atroposelective Chan–Lam Coupling for the Synthesis of C–N Linked Biaryls. Chem. Commun.
+2024, 60 (6), 678–681. DOI: 10.1039/D3CC05447K.
+[14] Bao, J.; Tranmer, G. K. The Solid Copper-Mediated C–N Cross-Coupling of
+Phenylboronic Acids under Continuous Flow Conditions. Tetrahedron Lett. 2016, 57 (6),
+654–657. DOI: 10.1016/j.tetlet.2015.12.107.
+[15] Li, X.-T.; Han, C.-J.; Zhang, Z.-H. A Copper-Catalyzed Synthesis of
+Benzo[4,5]imidazo[1,2-a]pyridine Derivatives via C–N Bond Formation of 2-Aminopyridines
+with Arylboronic Acids. Res. Chem. Intermed. 2025, 51, 1733–1747. DOI:
+10.1007/s11164-025-05532-5.
+[16] a) Scozzafava, A.; Owa, T.; Mastrolorenzo, A.; Supuran, C. T. Anticancer and Antiviral
+Sulfonamides. Curr. Med. Chem. 2003, 10, 925–953. DOI: 10.2174/0929867033457647; b)
+Supuran, C. T. Carbonic Anhydrases: Novel Therapeutic Applications for Inhibitors and
+Activators. Nat. Rev. Drug Discov. 2008, 7, 168–181. DOI: 10.1038/nrd2467, c) Xia, J., Zhang,
+K., & Mahmood, E. A. (2021). Methods for the synthesis of N-aryl sulfonamides from
+nitroarenes:
+an
+overview.
+Journal
+of
+Sulfur
+Chemistry,
+42(6),
+692–710.
+https://doi.org/10.1080/17415993.2021.1964500
+[17] Gandhi, S. S.; Brown, G. Z.; Aikonen, S.; Compton, J. S.; Neves, P.; Martinez Alvarado, J.
+I.; Strambeanu, I. I.; Leonard, K. A.; Doyle, A. G. Data Science-Driven Discovery of Optimal
+Conditions and a Condition-Selection Model for the Chan–Lam Coupling of Primary
+Sulfonamides. ACS Catal. 2025. DOI: 10.1021/acscatal.4c07972.
+[18] Ciriminna, R.; Pagliaro, M. Industrial Oxidations with Organocatalyst TEMPO and Its
+Derivatives. Org. Process Res. Dev. 2010, 14, 245–251. DOI: 10.1021/op900059x.
+[19] Fritz-Langhals, E. Technical Production of Aldehydes by Continuous Bleach Oxidation of
+Alcohols Catalyzed by 4-Hydroxy-TEMPO. Org. Process Res. Dev. 2005, 9, 577–582. DOI:
+10.1021/op050040t.
+
+ASSOCIATED CONTENT
+1.​ Supporting Information.
+
+
