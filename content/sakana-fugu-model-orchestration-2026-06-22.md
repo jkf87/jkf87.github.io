@@ -17,6 +17,7 @@ description: "Sakana AI가 공개한 Fugu와 Fugu Ultra를 정리함. 여러 모
 - [Sakana AI: Sakana Fugu — One Model to Command Them All](https://sakana.ai/fugu-release/)
 - [Sakana Fugu Technical Report](https://github.com/SakanaAI/fugu/blob/main/Fugu_technical_report.pdf)
 - [Sakana Fugu 제품 페이지](https://sakana.ai/fugu/)
+- [PyTorchKR 정리: Sakana AI, 여러 LLM을 하나의 모델처럼 오케스트레이션하는 Fugu와 Fugu Ultra 출시](https://discuss.pytorch.kr/t/sakana-ai-llm-fugu-fugu-ultra/10858)
 
 ![Sakana Fugu 벤치마크 요약](/images/sakana-fugu-model-orchestration-2026-06-22/benchmark-fugu-grid.png)
 
@@ -65,9 +66,27 @@ Sakana AI가 **Fugu**와 **Fugu Ultra**를 공개했습니다. 한 줄로 말하
 
 짧게 말하면, Fugu는 일상 업무용 orchestration default이고, Fugu Ultra는 오래 걸리고 지저분한 문제를 끝까지 밀어붙이는 premium mode에 가깝습니다.
 
+여기서 운영상 중요한 차이도 있습니다. PyTorchKR 정리에 따르면 Fugu는 입력마다 단 하나의 worker를 선택하는 구조라 지연시간을 낮게 유지하고, 특정 에이전트를 풀에서 제외하는 옵션도 제공합니다. 반면 Fugu Ultra는 전체 에이전트 풀을 활용해야 성능이 나오는 쪽이라 pool이 더 고정적이고, 추가 지연시간을 감수하는 품질 우선 모드에 가깝습니다.
+
 ---
 
-## Q4. 벤치마크에서는 무엇을 주장하나요?
+## Q4. 기술적으로는 어떻게 오케스트레이션하나요?
+
+**A.** PyTorchKR 정리와 기술 보고서를 보면 Fugu와 Fugu Ultra는 이름은 비슷하지만 내부 전략이 꽤 다릅니다.
+
+Fugu는 Trinity 계열 접근을 제품화한 쪽에 가깝습니다. 사전학습된 언어 모델 백본 위에 **경량 선택 헤드(lightweight selection head)**를 붙이고, 입력의 은닉 상태를 보고 어떤 worker model에 보낼지 로짓으로 결정합니다. 중요한 점은 Fugu가 여기서 긴 텍스트를 생성하며 고민하는 게 아니라, **decision-only** 방식으로 빠르게 라우팅 결정을 내린다는 점입니다. 그래서 프론티어 모델을 직접 호출하는 것과 비슷한 응답 속도를 노릴 수 있습니다.
+
+![Fugu의 경량 선택 헤드 구조](/images/sakana-fugu-model-orchestration-2026-06-22/fugu-selection-head.png)
+
+학습도 단순 분류가 아닙니다. 검증 가능한 문제에 대해 여러 worker를 실제로 돌려보고, 어느 worker가 잘했는지 보상 분포를 만든 뒤 그 분포를 따라가도록 오케스트레이터를 훈련합니다. 이후 실제 코딩 어시스턴트 환경처럼 멀티턴 도구 사용이 들어가는 상황에서는 진화 전략으로 end-to-end 보상을 높이는 식입니다.
+
+Fugu Ultra는 Conductor 계열 접근입니다. 여기서는 단일 worker 선택을 넘어, 자연어로 된 하위 작업, 담당 worker, 이전 결과 접근 목록을 조합해 최대 5단계까지의 agentic workflow를 설계합니다. 보고서에서 흥미로운 부분은 **워크플로우 내부 에이전트 격리**와 **지속적 공유 메모리**입니다. 한 에이전트가 먼저 환경과 상호작용했다고 해서 이후 모든 에이전트의 관점이 고정되는 “orchestration collapse”를 막기 위해 각 에이전트의 관찰을 제한하되, 대화 전체에서는 공유 메모리를 유지해 같은 도구 호출을 반복하지 않게 합니다.
+
+이 설명을 넣고 보면 Fugu의 포인트가 더 선명해집니다. 그냥 “여러 모델 중 하나를 고르는 라우터”가 아니라, 낮은 지연시간의 단일 선택 라우팅부터 긴 멀티에이전트 워크플로우 설계까지를 학습으로 다루려는 제품군입니다.
+
+---
+
+## Q5. 벤치마크에서는 무엇을 주장하나요?
 
 **A.** Sakana는 Fugu Ultra가 코딩, 과학, 추론, 에이전트형 벤치마크에서 최상위 모델들과 어깨를 나란히 한다고 주장합니다. 특히 Anthropic의 Fable 5와 Mythos Preview 같은 모델을 비교 대상으로 언급합니다.
 
@@ -81,7 +100,7 @@ Sakana AI가 **Fugu**와 **Fugu Ultra**를 공개했습니다. 한 줄로 말하
 
 ---
 
-## Q5. 실제 사용자 사례는 어떤가요?
+## Q6. 실제 사용자 사례는 어떤가요?
 
 **A.** Sakana는 약 500명에 가까운 early user beta에서 얻은 피드백을 소개합니다. 예시로는 AutoResearch, 루빅스 큐브, 기계 설계, 일본어 손글씨 분석, 원샷 체스, 금융 시계열 예측 등이 나옵니다.
 
@@ -97,7 +116,7 @@ Sakana AI가 **Fugu**와 **Fugu Ultra**를 공개했습니다. 한 줄로 말하
 
 ---
 
-## Q6. 이 접근이 Anthropic의 agent loop와 닮은 점은 무엇인가요?
+## Q7. 이 접근이 Anthropic의 agent loop와 닮은 점은 무엇인가요?
 
 **A.** 며칠 전 정리한 Anthropic의 장시간 에이전트 하네스와 꽤 닮아 있습니다.
 
@@ -109,7 +128,7 @@ Anthropic이 하네스 설계의 레시피를 보여줬다면, Sakana는 그 하
 
 ---
 
-## Q7. 개발자 입장에서는 무엇을 봐야 하나요?
+## Q8. 개발자 입장에서는 무엇을 봐야 하나요?
 
 **A.** 당장 체크할 포인트는 세 가지입니다.
 
@@ -121,7 +140,7 @@ Anthropic이 하네스 설계의 레시피를 보여줬다면, Sakana는 그 하
 
 ---
 
-## Q8. 내 생각: “모델”과 “하네스”의 경계가 흐려지고 있다
+## Q9. 내 생각: “모델”과 “하네스”의 경계가 흐려지고 있다
 
 **A.** Fugu 릴리스가 흥미로운 이유는 단순히 “새 모델이 나왔다”가 아닙니다. 오히려 질문을 바꿉니다.
 
