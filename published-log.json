@@ -180,6 +180,118 @@
       "source_url": "https://arxiv.org/abs/2605.27358",
       "threads_root_id": "18597320359039346",
       "blog_url": "https://jkf87.github.io/2026-06-04-mobilemoe-on-device-moe.html"
+    },
+    {
+      "slug": "drift-deep-research-agent-error-localization",
+      "date": "2026-06-06",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2606.02060",
+      "threads_root_id": "18122004199591664",
+      "blog_url": "https://jkf87.github.io/2026-06-06-drift-deep-research-agent-error-localization.html"
+    },
+    {
+      "slug": "foresci-llm-research-judgment",
+      "date": "2026-06-07",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2606.00644",
+      "threads_root_id": "18104622166997202",
+      "blog_url": "https://jkf87.github.io/2026-06-07-foresci-llm-research-judgment"
+    },
+    {
+      "slug": "cosmos3-omnimodal-world-models",
+      "date": "2026-06-09",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2606.02800",
+      "threads_root_id": "18067019411414007",
+      "blog_url": "https://jkf87.github.io/2026-06-09-cosmos3-omnimodal-world-models"
+    },
+    {
+      "slug": "leap-agentic-formal-mathematics",
+      "date": "2026-06-08",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2606.03303",
+      "threads_root_id": "18080876000550461",
+      "blog_url": "https://jkf87.github.io/2026-06-08-leap-agentic-formal-mathematics"
+    },
+    {
+      "slug": "silent-failure-llm-agent-entropy",
+      "date": "2026-06-10",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2606.08162",
+      "threads_root_id": "18106962235754636",
+      "blog_url": "https://jkf87.github.io/2026-06-10-silent-failure-llm-agent-entropy"
+    },
+    {
+      "slug": "aarri-bench-real-researcher",
+      "date": "2026-06-11",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2606.07462",
+      "threads_root_id": "18081086483204490",
+      "blog_url": "https://jkf87.github.io/2026-06-11-aarri-bench-real-researcher"
+    },
+    {
+      "slug": "searchswarm-delegation-intelligence-agentic-deep-research",
+      "date": "2026-06-12",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2606.09730",
+      "threads_root_id": "17974718382028556",
+      "blog_url": "https://jkf87.github.io/2026-06-12-searchswarm-delegation-intelligence-agentic-deep-research"
+    },
+    {
+      "slug": "denovoswe-scaling-repo-generation",
+      "date": "2026-06-13",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2606.10728",
+      "threads_root_id": "18592475434043570",
+      "blog_url": "https://jkf87.github.io/2026-06-13-denovoswe-scaling-repo-generation"
+    },
+    {
+      "slug": "webchallenger-generalist-web-agent",
+      "date": "2026-06-14",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2606.10423",
+      "threads_root_id": "17933111931279179",
+      "blog_url": "https://jkf87.github.io/2026-06-14-webchallenger-generalist-web-agent"
+    },
+    {
+      "slug": "2026-06-15-spatialclaw-agentic-spatial-reasoning",
+      "date": "2026-06-15",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2606.13673",
+      "threads_root_id": "18324661219284778",
+      "blog_url": "https://jkf87.github.io/2026-06-15-spatialclaw-agentic-spatial-reasoning"
+    },
+    {
+      "slug": "2026-06-16-agents-last-exam",
+      "date": "2026-06-16",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2606.05405",
+      "threads_root_id": "18174909892411603",
+      "blog_url": "https://jkf87.github.io/2026-06-16-agents-last-exam"
+    },
+    {
+      "slug": "2026-06-17-llm-as-code-agentic-programming",
+      "date": "2026-06-17",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2606.15874",
+      "threads_root_id": "18176865370410284",
+      "blog_url": "https://jkf87.github.io/2026-06-17-llm-as-code-agentic-programming"
+    },
+    {
+      "slug": "2026-06-18-openskill-open-world-self-evolution",
+      "date": "2026-06-18",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2606.06741",
+      "threads_root_id": "18102693443120054",
+      "blog_url": "https://jkf87.github.io/2026-06-18-openskill-open-world-self-evolution"
+    },
+    {
+      "slug": "sakana-fugu-model-orchestration-2026-06-22",
+      "date": "2026-06-22",
+      "source": "huggingface",
+      "source_url": "https://huggingface.co/papers/2606.18829",
+      "threads_root_id": "18061272083542437",
+      "blog_url": "https://jkf87.github.io/sakana-fugu-model-orchestration-2026-06-22"
     }
   ]
 }
