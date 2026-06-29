@@ -292,6 +292,14 @@
       "source_url": "https://huggingface.co/papers/2606.18829",
       "threads_root_id": "18061272083542437",
       "blog_url": "https://jkf87.github.io/sakana-fugu-model-orchestration-2026-06-22"
+    },
+    {
+      "slug": "2026-06-30-verification-horizon-coding-agent-rewards",
+      "date": "2026-06-30",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2606.26300",
+      "threads_root_id": "18042047330602669",
+      "blog_url": "https://jkf87.github.io/2026-06-30-verification-horizon-coding-agent-rewards"
     }
   ]
 }
