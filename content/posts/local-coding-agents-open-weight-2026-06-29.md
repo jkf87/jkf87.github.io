@@ -24,6 +24,16 @@ Sebastian Raschka가 쓴 [Using Local Coding Agents](https://magazine.sebastianr
 
 핵심은 이거다. 로컬 코딩 에이전트는 Claude Code나 Codex를 당장 대체하는 마법이 아니다. 하지만 **비용·프라이버시·재현성·오프라인 작업을 위한 강력한 보조 엔진**으로는 이미 충분히 진지해졌다.
 
+## 실험 결과 한눈에 보기
+
+| 모델 | 도구 | 성능 |
+|---|---|---|
+| Qwen3.6 35B-A3B | Qwen-Code | 긴 컨텍스트에서도 약 30~40 tok/sec. 작은 에이전트 작업 5개 중 4개 성공. |
+| North Mini Code | Qwen-Code | Qwen3.6과 비슷하게 5개 중 4개 성공. 속도도 로컬 작업에 충분한 편. |
+| Gemma 4 E2B | Qwen-Code | 빠르고 가볍지만 도구 사용 판단에서 자주 실패. 에이전트용으로는 아직 불안정. |
+| Qwen3.6 35B-A3B | Codex CLI | 같은 모델이라도 하네스가 바뀌면 결과가 달라짐. 실험상 토큰 효율과 성공률이 좋게 나옴. |
+| Qwen3.6 35B-A3B | Claude Code | 성능은 좋지만 입력 토큰을 많이 누적하는 경향. 로컬에서는 지연·메모리 비용으로 돌아올 수 있음. |
+
 ![로컬 코딩 에이전트 스택: 로컬 모델을 추론 서버로 띄우고, 그 위에 코딩 에이전트 하네스를 연결한다](/images/local-coding-agents-open-weight-2026-06-29/hero-local-stack.png)
 
 ## 먼저 구분해야 한다: 모델과 하네스는 다르다
