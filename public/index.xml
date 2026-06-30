@@ -6,65 +6,65 @@
       <description>최근 10 건 on 코난쌤 블로그</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Arbor: 가설 트리 정제로 AI가 스스로 연구하게 만드는 프레임워크</title>
-    <link>https://jkf87.github.io/2026-06-12-arbor-hypothesis-tree-autonomous-research</link>
-    <guid>https://jkf87.github.io/2026-06-12-arbor-hypothesis-tree-autonomous-research</guid>
-    <description><![CDATA[ 인민대학(RUC)과 Microsoft Research가 발표한 Arbor는 AI 에이전트가 **가설 트리(Hypothesis Tree)**를 유지하면서 장기간 자율 연구를 수행하는 프레임워크다. ]]></description>
-    <pubDate>Thu, 11 Jun 2026 15:00:00 GMT</pubDate>
+    <title>Claude Sonnet 5 공개: ‘에이전트 실행층’이 미드티어 모델로 내려왔다</title>
+    <link>https://jkf87.github.io/claude-sonnet-5-agentic-sonnet-2026-07-01</link>
+    <guid>https://jkf87.github.io/claude-sonnet-5-agentic-sonnet-2026-07-01</guid>
+    <description><![CDATA[ Anthropic의 Claude Sonnet 5 발표를 한국어로 정리했다. 핵심은 Opus급 에이전트 실행 능력에 가까워진 Sonnet, effort 기반 비용-성능 조절, Claude Code와 API 가격 변화다. ]]></description>
+    <pubDate>Tue, 30 Jun 2026 15:00:00 GMT</pubDate>
   </item><item>
-    <title>Critic-R: 에이전트 검색에서 Retriever를 스스로 진화시키는 폐루프 프레임워크</title>
-    <link>https://jkf87.github.io/2026-06-11-critic-r-agentic-search-retriever-tuning</link>
-    <guid>https://jkf87.github.io/2026-06-11-critic-r-agentic-search-retriever-tuning</guid>
-    <description><![CDATA[ Agentic search에서 검색 품질이 병목이다. Agent가 아무리 똑똑해도 Retriever가 구리면 답도 구리다. ]]></description>
-    <pubDate>Wed, 10 Jun 2026 15:00:00 GMT</pubDate>
+    <title>Claude Science: 과학자를 위한 AI 워크벤치가 의미하는 것</title>
+    <link>https://jkf87.github.io/posts/claude-science-ai-workbench-2026-07-01</link>
+    <guid>https://jkf87.github.io/posts/claude-science-ai-workbench-2026-07-01</guid>
+    <description><![CDATA[ Anthropic이 Claude Science를 공개했다. 그냥 “논문을 잘 읽는 챗봇”이 아니다. ]]></description>
+    <pubDate>Tue, 30 Jun 2026 15:00:00 GMT</pubDate>
   </item><item>
-    <title>7년 걸린 구글 애즈 마스터클래스를 Claude Code로 자동화한 남자 — 73만 달러의 비밀</title>
-    <link>https://jkf87.github.io/posts/2026-06-10-google-ads-claude-code-automation</link>
-    <guid>https://jkf87.github.io/posts/2026-06-10-google-ads-claude-code-automation</guid>
-    <description><![CDATA[ “통장에 10,000달러가 있었어요. 그게 9,000, 8,000, 7,000… 월세가 나가니까 6,000에서 4,000, 3,000. 솔직히 겁날 정도였죠. 추가 수입도 없고, 남은 기간이 2주.” Jono Catliff가 7년 전을 떠올리며 말했다. ]]></description>
-    <pubDate>Tue, 09 Jun 2026 15:00:00 GMT</pubDate>
+    <title>검증의 지평선: 코딩 에이전트 보상 설계의 근본적 한계와 공진화 전략</title>
+    <link>https://jkf87.github.io/2026-06-30-verification-horizon-coding-agent-rewards</link>
+    <guid>https://jkf87.github.io/2026-06-30-verification-horizon-coding-agent-rewards</guid>
+    <description><![CDATA[ Qwen 팀이 발표한 'The Verification Horizon' 논문을 깊이 있게 분석한다. 코딩 에이전트 시대에 검증(verification)이 생성(generation)보다 어려워지는 역전 현상, 보상 해킹의 불가피성, 그리고 검증자와 정책 모델이 함께 진화해야 한다는 핵심 통찰을 다룬다. ]]></description>
+    <pubDate>Mon, 29 Jun 2026 15:00:00 GMT</pubDate>
   </item><item>
-    <title>NVIDIA Cosmos 3: 물리 AI를 위한 옴니모달 월드 모델</title>
-    <link>https://jkf87.github.io/2026-06-09-cosmos3-omnimodal-world-models</link>
-    <guid>https://jkf87.github.io/2026-06-09-cosmos3-omnimodal-world-models</guid>
-    <description><![CDATA[  NVIDIA가 2026년 5월 31일, COMPUTEX 2026에서 Cosmos 3를 발표했다. ]]></description>
-    <pubDate>Mon, 08 Jun 2026 15:00:00 GMT</pubDate>
+    <title>로컬 코딩 에이전트, 이제 취미가 아니라 백업 전략이다</title>
+    <link>https://jkf87.github.io/posts/local-coding-agents-open-weight-2026-06-29</link>
+    <guid>https://jkf87.github.io/posts/local-coding-agents-open-weight-2026-06-29</guid>
+    <description><![CDATA[ Sebastian Raschka의 Using Local Coding Agents를 바탕으로, 로컬 LLM과 코딩 에이전트 하네스를 실전에서 어떻게 조합하고 평가해야 하는지 정리했다. ]]></description>
+    <pubDate>Sun, 28 Jun 2026 15:00:00 GMT</pubDate>
   </item><item>
-    <title>아무것도 없는 상태에서 스스로 배우는 에이전트: OpenSkill</title>
-    <link>https://jkf87.github.io/openskill-open-world-self-evolution-llm-agents-2026-06-09</link>
-    <guid>https://jkf87.github.io/openskill-open-world-self-evolution-llm-agents-2026-06-09</guid>
-    <description><![CDATA[ 배포된 AI 에이전트에게 새로운 환경이 주어졌다고 칩시다. 정답도 없고, 가이드도 없고, 피드백도 없습니다. 오직 태스크 프롬프트 하나만 덩그러니 놓여 있죠. ]]></description>
-    <pubDate>Mon, 08 Jun 2026 15:00:00 GMT</pubDate>
+    <title>카테고리</title>
+    <link>https://jkf87.github.io/categories</link>
+    <guid>https://jkf87.github.io/categories</guid>
+    <description><![CDATA[ 코난쌤 블로그의 주요 글 묶음과 추천 탐색 경로입니다. ]]></description>
+    <pubDate>Sun, 28 Jun 2026 02:17:28 GMT</pubDate>
   </item><item>
-    <title>서버 없이, 토큰 비용 없이 — WWDC26 Core AI가 여는 온디바이스 AI의 실전</title>
-    <link>https://jkf87.github.io/wwdc26-core-ai-on-device-models-2026-06-09</link>
-    <guid>https://jkf87.github.io/wwdc26-core-ai-on-device-models-2026-06-09</guid>
-    <description><![CDATA[ “사용자 데이터가 기기를 떠나지 않는다. 관리할 서버도, 토큰당 비용도, 클라우드 지연도 없다.” WWDC26에서 Apple이 발표한 Core AI는 단순한 프레임워크가 아니다. ]]></description>
-    <pubDate>Mon, 08 Jun 2026 15:00:00 GMT</pubDate>
+    <title>연락처</title>
+    <link>https://jkf87.github.io/contact</link>
+    <guid>https://jkf87.github.io/contact</guid>
+    <description><![CDATA[ 코난쌤 블로그 운영자에게 강의, 협업, 제보, 오류 정정 요청을 보내는 방법입니다. ]]></description>
+    <pubDate>Sun, 28 Jun 2026 02:17:28 GMT</pubDate>
   </item><item>
-    <title>LEAP: 범용 LLM으로 정형 수학 증명의 최고 수준 달성</title>
-    <link>https://jkf87.github.io/2026-06-08-leap-agentic-formal-mathematics</link>
-    <guid>https://jkf87.github.io/2026-06-08-leap-agentic-formal-mathematics</guid>
-    <description><![CDATA[  한눈에 보는 요약 Google 연구팀이 발표한 **LEAP(LLM-in-Lean Environment Agentic Prover)**은 범용 LLM을 에이전트 프레임워크로 구동해 **정형 수학 증명(formal theorem proving)**에서 최고 수준(State-of-the-Art) 성능을 달성한 연구입니다. ]]></description>
-    <pubDate>Sun, 07 Jun 2026 15:00:00 GMT</pubDate>
+    <title>콘텐츠 제작 원칙</title>
+    <link>https://jkf87.github.io/editorial-policy</link>
+    <guid>https://jkf87.github.io/editorial-policy</guid>
+    <description><![CDATA[ 코난쌤 블로그의 AI 활용, 출처 확인, 경험 기반 작성, 오류 정정 원칙을 설명합니다. ]]></description>
+    <pubDate>Sun, 28 Jun 2026 02:17:28 GMT</pubDate>
   </item><item>
-    <title>AI가 AI를 만드는 시대: Anthropic이 공개한 재귀적 자기개선의 증거들</title>
-    <link>https://jkf87.github.io/posts/2026-06-08-anthropic-recursive-self-improvement</link>
-    <guid>https://jkf87.github.io/posts/2026-06-08-anthropic-recursive-self-improvement</guid>
-    <description><![CDATA[ Anthropic 본사에서 지금 무슨 일이 벌어지고 있는지 상상해보자. 엔지니어들이 키보드 앞에 앉아 코드를 타이핑하는 풍경은 거의 사라졌다. 2026년 5월 기준, Anthropic 코드베이스에 병합되는 코드의 80% 이상이 Claude가 작성했다. ]]></description>
-    <pubDate>Sun, 07 Jun 2026 15:00:00 GMT</pubDate>
+    <title>코난쌤 블로그</title>
+    <link>https://jkf87.github.io/</link>
+    <guid>https://jkf87.github.io/</guid>
+    <description><![CDATA[ AI 교육, 업무 자동화, 초등학생을 위한 AI 교육 콘텐츠를 공유합니다. ]]></description>
+    <pubDate>Sun, 28 Jun 2026 02:17:28 GMT</pubDate>
   </item><item>
-    <title>AI 쓰면 일은 빨리 끝나는데, 왜 생산성은 안 오를까 — 한국은행이 5,000명에게 물어본 것</title>
-    <link>https://jkf87.github.io/posts/2026-06-08-bok-ai-productivity-disconnect</link>
-    <guid>https://jkf87.github.io/posts/2026-06-08-bok-ai-productivity-disconnect</guid>
-    <description><![CDATA[ 한국은행이 5,512명 근로자에게 물었다. “AI 쓰시나요?” 절반 이상이 그렇다고 답했다. 그다음 질문이 본론이었다. “그래서, 일이 줄었나요? 더 많이 하게 됐나요?” 답은 묘하게 엇갈렸다. 일하는 시간은 줄었다. 하지만 하는 일은 늘지 않았다. ]]></description>
-    <pubDate>Sun, 07 Jun 2026 15:00:00 GMT</pubDate>
+    <title>전체 글 모아보기</title>
+    <link>https://jkf87.github.io/posts</link>
+    <guid>https://jkf87.github.io/posts</guid>
+    <description><![CDATA[ 코난쌤 블로그의 모든 글을 월별로 정리한 아카이브 페이지입니다. ]]></description>
+    <pubDate>Sun, 28 Jun 2026 02:17:28 GMT</pubDate>
   </item><item>
-    <title>AI가 스스로를 만들기 시작했다 — Anthropic이 공개한 재귀적 자기개선의 현재와 미래</title>
-    <link>https://jkf87.github.io/when-ai-builds-itself-recursive-self-improvement-2026-06-08</link>
-    <guid>https://jkf87.github.io/when-ai-builds-itself-recursive-self-improvement-2026-06-08</guid>
-    <description><![CDATA[ “AI가 AI를 만든다” — 더 이상 SF가 아니다. Anthropic의 내부 데이터가 그것을 증명한다. 2026년 5월, Anthropic 코드베이스에 병합되는 코드의 80% 이상이 Claude가 작성했다. 1년 전만 해도 한 자릿수였다. ]]></description>
-    <pubDate>Sun, 07 Jun 2026 15:00:00 GMT</pubDate>
+    <title>Qwen3.6-27B 나왔음, LM Studio + OpenClaw로 로컬에서 굴리는 방법</title>
+    <link>https://jkf87.github.io/qwen3-6-27b-lmstudio-openclaw-2026-04-23</link>
+    <guid>https://jkf87.github.io/qwen3-6-27b-lmstudio-openclaw-2026-04-23</guid>
+    <description><![CDATA[ Qwen/Qwen3.6-27B 벤치마크 정리하고, LM Studio에 올려서 OpenClaw가 로컬 모델로 쓰게 연결하는 절차. 27B 덴스인데 Claude 4.5 Opus랑 정면 비빌 수 있는 모델임. ]]></description>
+    <pubDate>Sun, 28 Jun 2026 02:17:28 GMT</pubDate>
   </item>
     </channel>
   </rss>
