@@ -308,6 +308,14 @@
       "source_url": "https://arxiv.org/abs/2606.28277",
       "threads_root_id": "17967196947095039",
       "blog_url": "https://jkf87.github.io/2026-07-01-google-pat-automating-scientific-review"
+    },
+    {
+      "slug": "2026-07-02-openlife-open-world-artificial-life-llm-agents",
+      "date": "2026-07-02",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2606.31046",
+      "threads_root_id": "18596971381027345",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-02-openlife-open-world-artificial-life-llm-agents"
     }
   ]
 }
