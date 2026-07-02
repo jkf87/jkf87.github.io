@@ -323,6 +323,14 @@
       "source": "arxiv",
       "source_url": "https://arxiv.org/abs/2606.29082",
       "blog_url": "https://jkf87.github.io/posts/2026-07-02-evolution-fine-tuning-discovery-agents"
+    },
+    {
+      "slug": "2026-07-03-tua-bench-terminal-use-agents",
+      "date": "2026-07-03",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2606.28480",
+      "threads_root_id": "18089038058438538",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-03-tua-bench-terminal-use-agents"
     }
   ]
 }
