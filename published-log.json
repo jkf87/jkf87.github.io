@@ -331,6 +331,15 @@
       "source_url": "https://arxiv.org/abs/2606.28480",
       "threads_root_id": "18089038058438538",
       "blog_url": "https://jkf87.github.io/posts/2026-07-03-tua-bench-terminal-use-agents"
+    },
+    {
+      "slug": "2026-07-04-atomic-task-graph-agentic-planning-execution",
+      "date": "2026-07-04",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.01942",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-04-atomic-task-graph-agentic-planning-execution",
+      "commit": "4ccfb2c",
+      "threads_root_id": "18166635742451854"
     }
   ]
 }
