@@ -15,7 +15,7 @@
     <title>Claude Code를 길들이는 법: 지시는 &#039;무엇을&#039;보다 &#039;어디에&#039; 두느냐가 승부다</title>
     <link>https://jkf87.github.io/posts/steering-claude-code-instructions-2026-07-05</link>
     <guid>https://jkf87.github.io/posts/steering-claude-code-instructions-2026-07-05</guid>
-    <description><![CDATA[ Anthropic이 Claude Code에 지시 넣는 법을 정리한 글을 냈다. 방법이 무려 일곱 가지다. CLAUDE.md 파일, rules, skills, subagents, hooks, output styles, 시스템 프롬프트 덧붙이기. ]]></description>
+    <description><![CDATA[ Anthropic이 Claude Code에 지시 넣는 법을 정리했다. 방법이 일곱 가지다. CLAUDE.md, rules, skills, subagents, hooks, output styles, 시스템 프롬프트 덧붙이기. ]]></description>
     <pubDate>Sat, 04 Jul 2026 15:00:00 GMT</pubDate>
   </item><item>
     <title>GPT-5.5가 정책 코드를 진화시킨다 — EvoPolicyGym 리서치</title>
