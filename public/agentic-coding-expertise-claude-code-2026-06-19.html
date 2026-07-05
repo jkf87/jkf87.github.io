@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>코딩 에이전트 시대에도 전문성은 남는다 — Claude Code 40만 세션 분석</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans KR:wght@400;700&amp;family=Noto Sans KR:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="코난쌤 블로그"/><meta property="og:title" content="코딩 에이전트 시대에도 전문성은 남는다 — Claude Code 40만 세션 분석"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="코딩 에이전트 시대에도 전문성은 남는다 — Claude Code 40만 세션 분석"/><meta name="twitter:description" content="Anthropic의 Claude Code 약 40만 세션 분석 정리. 사람은 무엇을 만들지 결정하고 Claude는 어떻게 만들지 실행한다. 성공률을 가르는 핵심은 코딩 실력보다 도메인 전문성이었다."/><meta property="og:description" content="Anthropic의 Claude Code 약 40만 세션 분석 정리. 사람은 무엇을 만들지 결정하고 Claude는 어떻게 만들지 실행한다. 성공률을 가르는 핵심은 코딩 실력보다 도메인 전문성이었다."/><meta property="og:image:alt" content="Anthropic의 Claude Code 약 40만 세션 분석 정리. 사람은 무엇을 만들지 결정하고 Claude는 어떻게 만들지 실행한다. 성공률을 가르는 핵심은 코딩 실력보다 도메인 전문성이었다."/><meta property="twitter:domain" content="jkf87.github.io"/><meta property="og:url" content="https://jkf87.github.io/agentic-coding-expertise-claude-code-2026-06-19"/><meta property="twitter:url" content="https://jkf87.github.io/agentic-coding-expertise-claude-code-2026-06-19"/><link rel="icon" href="./static/icon.png"/><meta name="description" content="Anthropic의 Claude Code 약 40만 세션 분석 정리. 사람은 무엇을 만들지 결정하고 Claude는 어떻게 만들지 실행한다. 성공률을 가르는 핵심은 코딩 실력보다 도메인 전문성이었다."/><meta name="generator" content="Quartz"/><meta name="google-site-verification" content="JqDMbJFwNjfQ-7_hxP4LIajSQf1iMnw46F1nXUPclng"/><meta name="google-adsense-account" content="ca-pub-4778921872258874"/><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4778921872258874" crossorigin="anonymous"></script><link href="./index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1lcm1haWQuaW5saW5lLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUdGO0VBQ0U7OztBQUtGO0VBQ0U7RUFDQTs7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAgIHRyYW5zZm9ybS1vcmlnaW46IDAgMDtcbiAgICAgIHRyYW5zaXRpb246IHRyYW5zZm9ybSAwLjFzIGVhc2U7XG4gICAgICBvdmVyZmxvdzogdmlzaWJsZTtcbiAgICAgIG1pbi1oZWlnaHQ6IDIwMHB4O1xuICAgICAgbWluLXdpZHRoOiAyMDBweDtcblxuICAgICAgcHJlIHtcbiAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICBib3JkZXI6IG5vbmU7XG4gICAgICB9XG5cbiAgICAgIHN2ZyB7XG4gICAgICAgIG1heC13aWR0aDogbm9uZTtcbiAgICAgICAgaGVpZ2h0OiBhdXRvO1xuICAgICAgfVxuICAgIH1cblxuICAgICYgPiAubWVybWFpZC1jb250cm9scyB7XG4gICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICBib3R0b206IDIwcHg7XG4gICAgICByaWdodDogMjBweDtcbiAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICBnYXA6IDhweDtcbiAgICAgIHBhZGRpbmc6IDhweDtcbiAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICBib3JkZXItcmFkaXVzOiA2cHg7XG4gICAgICBib3gtc2hhZG93OiAwIDJweCA0cHggcmdiYSgwLCAwLCAwLCAwLjEpO1xuICAgICAgei1pbmRleDogMjtcblxuICAgICAgLm1lcm1haWQtY29udHJvbC1idXR0b24ge1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICAgICAgd2lkdGg6IDMycHg7XG4gICAgICAgIGhlaWdodDogMzJweDtcbiAgICAgICAgcGFkZGluZzogMDtcbiAgICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgICBjb2xvcjogdmFyKC0tZGFyayk7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgICAgIGZvbnQtZmFtaWx5OiB2YXIoLS1ib2R5Rm9udCk7XG4gICAgICAgIHRyYW5zaXRpb246IGFsbCAwLjJzIGVhc2U7XG5cbiAgICAgICAgJjpob3ZlciB7XG4gICAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgfVxuXG4gICAgICAgICY6YWN0aXZlIHtcbiAgICAgICAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMXB4KTtcbiAgICAgICAgfVxuXG4gICAgICAgIC8vIFN0eWxlIHRoZSByZXNldCBidXR0b24gZGlmZmVyZW50bHlcbiAgICAgICAgJjpudGgtY2hpbGQoMikge1xuICAgICAgICAgIHdpZHRoOiBhdXRvO1xuICAgICAgICAgIHBhZGRpbmc6IDAgMTJweDtcbiAgICAgICAgICBmb250LXNpemU6IDE0cHg7XG4gICAgICAgIH1cbiAgICAgIH1cbiAgICB9XG4gIH1cbn1cbiJdfQ== */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="./prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("./static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://jkf87.github.io/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://jkf87.github.io/agentic-coding-expertise-claude-code-2026-06-19-og-image.webp"/><meta property="og:image:url" content="https://jkf87.github.io/agentic-coding-expertise-claude-code-2026-06-19-og-image.webp"/><meta name="twitter:image" content="https://jkf87.github.io/agentic-coding-expertise-claude-code-2026-06-19-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="agentic-coding-expertise-claude-code-2026-06-19"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href=".">코난쌤 블로그</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="리더 모드"><title>리더 모드</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>{if(a.isFolder&amp;&amp;b.isFolder)return a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;});if(a.isFolder)return-1;if(b.isFolder)return 1;let aDates=a.data?.dates,bDates=b.data?.dates,aDate=aDates?.created??aDates?.modified??aDates?.published,bDate=bDates?.created??bDates?.modified??bDates?.published;if(aDate&amp;&amp;bDate){let at=new Date(aDate).getTime(),bt=new Date(bDate).getTime();if(bt!==at)return bt-at}return a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;})}&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-167"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-167" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><header><nav class="top-nav " aria-label="주요 메뉴"><a href="/">홈</a><a href="/posts">전체 글</a><a href="/categories">카테고리</a><a href="/about">소개</a><a href="/contact">연락처</a><a href="/privacy-policy">개인정보처리방침</a></nav></header><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="./">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>코딩 에이전트 시대에도 전문성은 남는다 — Claude Code 40만 세션 분석</a></div></nav><h1 class="article-title">코딩 에이전트 시대에도 전문성은 남는다 — Claude Code 40만 세션 분석</h1><p show-comma="true" class="content-meta"><time datetime="2026-06-18T15:00:00.000Z">2026년 6월 19일</time><span>19 min read</span></p><ul class="tags"><li><a href="./tags/Anthropic" class="internal tag-link">Anthropic</a></li><li><a href="./tags/Claude-Code" class="internal tag-link">Claude-Code</a></li><li><a href="./tags/agentic-coding" class="internal tag-link">agentic-coding</a></li><li><a href="./tags/coding-agent" class="internal tag-link">coding-agent</a></li><li><a href="./tags/expertise" class="internal tag-link">expertise</a></li><li><a href="./tags/AI-productivity" class="internal tag-link">AI-productivity</a></li><li><a href="./tags/labor-market" class="internal tag-link">labor-market</a></li><li><a href="./tags/AI-research" class="internal tag-link">AI-research</a></li></ul></div></div><article class="popover-hint"><p>코딩 에이전트가 좋아지면 개발자의 전문성은 덜 중요해질까. 아니면 오히려 더 중요해질까.</p>
+<p>Anthropic이 이 질문에 꽤 큰 데이터로 답을 냈다. 2025년 10월부터 2026년 4월까지의 <strong>Claude Code 약 40만 개 인터랙티브 세션</strong>, 사용자 약 23만 5천 명의 사용 패턴을 프라이버시 보존 방식으로 분석했다. 제목은 <em>Agentic coding and persistent returns to expertise</em>. 직역하면 “에이전트 코딩과 전문성의 지속적 수익” 정도다.</p>
+<p>결론은 예상보다 날카롭다.</p>
+<blockquote>
+<p>코딩 에이전트 시대에도 전문성은 사라지지 않는다. 다만 보상받는 전문성의 종류가 바뀐다. 코드를 직접 치는 능력보다, 문제를 정확히 이해하고 에이전트를 제대로 지휘하는 도메인 전문성이 중요해진다.</p>
+</blockquote>
+<p><img src="./images/agentic-coding-expertise-claude-code-2026-06-19/hero.jpg" alt="Anthropic Claude Code 분석 리포트 대표 이미지"/></p>
+<h2 id="핵심-요약">핵심 요약<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#핵심-요약" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Anthropic의 주요 발견은 네 가지다.</p>
+<ol>
+<li><strong>사람은 계획을, Claude는 실행을 맡는다.</strong> 평균적으로 사용자는 계획 결정의 약 70%를 내리지만, 실행 결정은 약 20%만 직접 내린다. 무엇을 만들지는 사람이 정하고, 어떤 파일을 고치고 어떤 명령을 실행할지는 Claude가 맡는 구조다.</li>
+<li><strong>전문가일수록 Claude가 한 번에 더 많은 일을 한다.</strong> 초보자 세션에서는 프롬프트 하나당 Claude 행동이 약 5개, 출력은 약 600단어 수준이다. 전문가 세션에서는 행동 체인이 12개 이상, 출력은 약 3,200단어까지 늘어난다.</li>
+<li><strong>성공률은 코딩 직업보다 도메인 전문성과 더 강하게 연결된다.</strong> 법률, 금융, 과학, 예술·미디어 등 비소프트웨어 직군도 코딩 과제에서 소프트웨어 직군과 거의 비슷한 성공률을 보였다.</li>
+<li><strong>Claude Code 사용은 디버깅에서 엔드투엔드 작업으로 이동 중이다.</strong> 7개월 동안 고장난 코드 수정 비중은 33%에서 19%로 줄었고, 소프트웨어 운영·데이터 분석·문서 작성 비중은 커졌다. 평균 과제 가치도 약 25~27% 상승했다.</li>
+</ol>
+<p>이건 “개발자가 필요 없다”는 이야기가 아니다. 오히려 반대다. Claude Code가 구현을 많이 가져갈수록, <strong>좋은 문제 정의와 판단력을 가진 사람</strong>이 더 큰 산출을 뽑아낸다.</p>
+<h2 id="claude-code에서-실제로-하는-일">Claude Code에서 실제로 하는 일<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#claude-code에서-실제로-하는-일" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Anthropic은 Claude Code 세션을 9가지 작업 모드로 분류했다. 크게 보면 코드 작성·수정·테스트, 소프트웨어 운영, 시스템 이해·계획, 데이터 분석과 문서 작성으로 나뉜다.</p>
+<p><img src="./images/agentic-coding-expertise-claude-code-2026-06-19/nine-work-modes.png" alt="Claude Code 세션의 9가지 작업 모드. 고장 수정 26%, 새 기능 구축 25%, 소프트웨어 운영 17% 등이 주요 비중을 차지한다"/></p>
+<p>분포는 이렇다.</p>
+<ul>
+<li>새 코드 작성: 25%</li>
+<li>고장난 코드 수정: 26%</li>
+<li>테스트·오케스트레이션: 5%</li>
+<li>소프트웨어 운영: 17%</li>
+<li>기존 시스템 이해·변경 계획: 14%</li>
+<li>데이터 분석·문서 작성 등 비코드 산출: 13%</li>
+</ul>
+<p>즉 Claude Code는 여전히 코딩 도구지만, 이미 단순 코드 생성기를 넘어섰다. 배포, 설정, 파이프라인 실행, 모니터링, 데이터 분석, 발표자료나 문서 작성까지 이어진다. “코드를 쓰는 도구”라기보다 <strong>컴퓨터 앞에서 해야 하는 기술 작업을 수행하는 에이전트</strong>에 가까워지고 있다.</p>
+<h2 id="분업-구조-사람은-무엇을-claude는-어떻게를-맡는다">분업 구조: 사람은 무엇을, Claude는 어떻게를 맡는다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#분업-구조-사람은-무엇을-claude는-어떻게를-맡는다" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>가장 인상적인 그림은 분업 구조다.</p>
+<p><img src="./images/agentic-coding-expertise-claude-code-2026-06-19/division-of-labor.png" alt="Claude Code 세션의 분업 구조. 계획 결정은 주로 사람이, 실행 결정은 주로 Claude가 담당한다"/></p>
+<p>Anthropic은 세션 안의 의미 있는 결정을 두 종류로 나눴다.</p>
+<ul>
+<li><strong>계획 결정</strong>: 무엇을 할지, 어떤 접근을 택할지, 완료 기준은 무엇인지</li>
+<li><strong>실행 결정</strong>: 어떤 파일을 바꿀지, 어떤 코드를 쓸지, 어떤 명령을 실행할지</li>
+</ul>
+<p>평균적으로 사람은 계획 결정의 약 70%를 내린다. 하지만 실행 결정에서는 사람의 비중이 약 20%까지 내려간다.</p>
+<p>이건 현장에서 느껴지는 Claude Code 사용감과도 맞다. 좋은 사용자는 “이 API의 인증 플로우를 기존 세션 구조에 맞춰 붙여줘. 단, 토큰 갱신 실패 시 기존 에러 핸들러를 타야 하고 테스트는 이 케이스까지 넣어”처럼 목표와 제약을 명확히 준다. 그러면 Claude가 파일을 읽고, 패턴을 찾고, 코드를 고치고, 테스트를 돌린다.</p>
+<p>반대로 “이거 좀 고쳐줘”만 던지면 Claude는 많은 결정을 스스로 해야 한다. 될 때도 있지만, 잘못된 방향으로 열심히 달릴 위험도 커진다.</p>
+<h2 id="전문성이-높을수록-claude가-더-많이-움직인다">전문성이 높을수록 Claude가 더 많이 움직인다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#전문성이-높을수록-claude가-더-많이-움직인다" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Anthropic은 각 세션에서 사용자의 과제 전문성을 5단계로 분류했다. 여기서 전문성은 직업 타이틀이 아니다. <strong>그 특정 과제에 대해 얼마나 정확히 알고 있는가</strong>다.</p>
+<p>예를 들어 시니어 개발자가 처음 Rust를 만지는 세션은 Rust 과제에선 초보일 수 있다. 반대로 회계사가 Python을 몰라도, 월말 정산 규칙과 예외 케이스를 정확히 설명하고 Claude의 실수를 잡아낸다면 그 과제에서는 전문가로 분류될 수 있다.</p>
+<p><img src="./images/agentic-coding-expertise-claude-code-2026-06-19/expert-users-more-per-prompt.png" alt="사용자의 전문성이 높을수록 Claude가 프롬프트 하나당 더 많은 행동과 더 긴 출력을 수행한다"/></p>
+<p>결과가 흥미롭다.</p>
+<ul>
+<li>초보 세션: 프롬프트당 Claude 행동 약 5개, 출력 약 600단어</li>
+<li>전문가 세션: 프롬프트당 Claude 행동 12개 이상, 출력 약 3,200단어</li>
+</ul>
+<p>전문가가 더 많은 일을 직접 하는 게 아니다. 오히려 전문가일수록 Claude가 한 번의 지시로 더 멀리 간다. 이유는 간단하다. 지시가 더 정확하고, 검증 기준이 분명하고, Claude가 틀렸을 때 교정도 빠르기 때문이다.</p>
+<p>이건 코딩 에이전트 사용의 핵심 감각이다.</p>
+<blockquote>
+<p>에이전트에게 일을 많이 시키는 능력은 “프롬프트를 길게 쓰는 능력”이 아니다. 문제 공간을 정확히 알고, 무엇이 틀린지 판단할 수 있는 능력이다.</p>
+</blockquote>
+<h2 id="성공률도-전문성과-연결된다">성공률도 전문성과 연결된다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#성공률도-전문성과-연결된다" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Anthropic은 성공을 여러 단계로 나눠 측정했다. 단순히 모델이 좋아 보이는 답을 냈는지가 아니라, 테스트 통과, 커밋, PR, 사용자 확인 같은 검증 가능한 신호를 함께 봤다.</p>
+<p><img src="./images/agentic-coding-expertise-claude-code-2026-06-19/expertise-success.png" alt="전문성 수준별 세션 성공·실패 결과. 전문성이 높을수록 검증 성공률이 높고, 문제가 생겼을 때 중단되는 비율은 낮다"/></p>
+<p>가장 엄격한 기준인 검증 성공률은:</p>
+<ul>
+<li>초보 세션: 15%</li>
+<li>중급 이상 세션: 28~33%</li>
+</ul>
+<p>부분 성공까지 포함하면:</p>
+<ul>
+<li>초보 세션: 77%</li>
+<li>중급 이상 세션: 91~92%</li>
+</ul>
+<p>차이는 분명하지만, 또 하나 중요한 점이 있다. 초보에서 중급으로 갈 때 차이가 가장 크고, 중급에서 전문가로 갈수록 증가폭은 완만해진다. 즉 완전한 마스터가 아니어도 된다. <strong>실무적으로 문제를 이해하는 수준</strong>만 되어도 에이전트를 꽤 잘 쓸 수 있다.</p>
+<p>문제가 생겼을 때도 전문성 차이가 드러난다. 세션이 오류, 실패한 테스트, 반복 시도, 사용자 불만 같은 trouble에 부딪혔을 때, 초보자는 더 자주 포기한다. 전문가는 실패를 보고 원인을 좁히고, Claude를 다시 지휘해서 회복한다.</p>
+<h2 id="비개발-직군도-코딩-과제를-성공시킨다">비개발 직군도 코딩 과제를 성공시킨다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#비개발-직군도-코딩-과제를-성공시킨다" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>이 리포트가 흥미로운 이유는 “소프트웨어 엔지니어가 Claude Code를 잘 쓴다”에서 끝나지 않기 때문이다. Anthropic은 세션 맥락을 보고 사용자의 직업군을 추정했다. 이때 단순히 코드를 썼다는 이유만으로 개발자로 분류하지 않았다. 예를 들어 변호사가 계약서 폴더에서 누락 조항을 찾는 스크립트를 만들면 법률 직군으로 분류한다.</p>
+<p><img src="./images/agentic-coding-expertise-claude-code-2026-06-19/occupation-success.png" alt="직업군별 코딩 과제 성공률. 여러 비소프트웨어 직군도 소프트웨어 직군과 유사한 수준의 성공률을 보인다"/></p>
+<p>결과적으로 코딩 과제에서도 여러 직업군이 소프트웨어·수학 직군과 거의 비슷한 성공률을 보였다.</p>
+<p>이 대목이 중요하다. 코딩 에이전트는 개발자의 전유물이 아니다. 도메인 전문가가 자기 분야의 문제를 정확히 설명할 수 있으면, 예전에는 개발자에게 의뢰해야 했던 자동화·분석·도구 제작을 직접 밀어붙일 수 있다.</p>
+<p>예를 들면:</p>
+<ul>
+<li>변호사가 계약서 검토 자동화 스크립트를 만든다.</li>
+<li>회계사가 정산 예외 케이스를 잡는 Python 도구를 만든다.</li>
+<li>연구자가 실험 로그를 정리하고 시각화한다.</li>
+<li>마케터가 데이터 추출·리포트 생성 파이프라인을 만든다.</li>
+<li>운영 담당자가 배포와 모니터링 작업을 자동화한다.</li>
+</ul>
+<p>여기서 필요한 핵심은 “for문을 외우는 능력”이 아니라, <strong>무엇이 맞는 결과인지 판정하는 능력</strong>이다.</p>
+<h2 id="사용-패턴이-바뀌고-있다-디버깅에서-운영분석문서로">사용 패턴이 바뀌고 있다: 디버깅에서 운영·분석·문서로<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#사용-패턴이-바뀌고-있다-디버깅에서-운영분석문서로" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>7개월 동안 Claude Code 사용 패턴도 변했다.</p>
+<p><img src="./images/agentic-coding-expertise-claude-code-2026-06-19/work-composition-value-change.png" alt="2025년 10월부터 2026년 4월까지 Claude Code 작업 구성과 추정 가치 변화. 고장 수정 비중은 줄고 운영·분석·문서 작업 비중은 늘었다"/></p>
+<p>가장 큰 변화는 디버깅 비중이다.</p>
+<ul>
+<li>고장난 코드 수정: 33% → 19%</li>
+<li>소프트웨어 운영: 14% → 21%</li>
+<li>글쓰기·데이터 분석: 약 10% → 약 20%</li>
+</ul>
+<p>초기에는 “깨진 코드 고쳐줘”가 많았다. 시간이 지나면서 “이걸 배포하고 실행해줘”, “데이터를 분석해서 리포트로 만들어줘”, “문서까지 정리해줘” 같은 엔드투엔드 작업이 늘어난다.</p>
+<p>과제의 추정 경제적 가치도 올라갔다. Anthropic은 공개 프리랜서 작업 게시물과 비교해 각 세션의 작업 가치를 추정했다. 절대 금액으로 읽기엔 거칠지만, 시간에 따른 비교는 가능하다. 평균 과제 가치는 7개월 동안 약 27% 상승했다. 구축, 운영, 수정 계열 작업은 각각 30% 이상 가치가 올랐다.</p>
+<p>이건 모델이 더 좋아지면서 사용자가 더 어려운 일을 맡기기 시작했다는 뜻이다. 도구의 성능이 오르면 사용자는 단순 반복작업이 아니라 더 큰 작업 단위를 넘긴다.</p>
+<h2 id="이-리포트가-노동시장에-던지는-메시지">이 리포트가 노동시장에 던지는 메시지<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#이-리포트가-노동시장에-던지는-메시지" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>AI 코딩 도구를 둘러싼 논쟁은 보통 두 극단으로 흐른다.</p>
+<ul>
+<li>개발자는 곧 대체된다.</li>
+<li>아니다, AI는 장난감이고 실무에는 못 쓴다.</li>
+</ul>
+<p>Anthropic의 데이터는 둘 다 너무 단순하다고 말한다.</p>
+<p>Claude Code는 이미 많은 실행 작업을 흡수하고 있다. 파일 탐색, 코드 수정, 명령 실행, 테스트, 배포 같은 구현 중심 작업은 점점 에이전트 쪽으로 넘어간다. 이건 개발자 업무의 일부를 실제로 바꾼다.</p>
+<p>하지만 성공을 가르는 것은 여전히 사람 쪽에 있다. 특히:</p>
+<ul>
+<li>무엇을 만들지 정하는 능력</li>
+<li>좋은 완료 기준을 세우는 능력</li>
+<li>도메인 제약과 예외 케이스를 아는 능력</li>
+<li>결과가 맞는지 검증하는 능력</li>
+<li>실패했을 때 원인을 좁히는 능력</li>
+</ul>
+<p>이 능력이 있는 사람은 Claude에게 더 큰 작업을 맡기고, 더 적은 지시로 더 많은 산출을 얻는다. 반대로 문제를 잘 모르는 사람은 같은 모델을 써도 덜 얻는다.</p>
+<h2 id="개발자에게는-나쁜-소식인가">개발자에게는 나쁜 소식인가?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#개발자에게는-나쁜-소식인가" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>반반이다.</p>
+<p>나쁜 소식은 명확하다. 단순 구현만으로 차별화하던 일은 줄어든다. “요구사항을 받으면 코드로 옮기는 사람”의 가치는 압박받는다. 특히 이미 잘 정의된 CRUD, 배치 스크립트, 작은 자동화, 테스트 보강 같은 일은 에이전트가 빠르게 가져간다.</p>
+<p>좋은 소식도 있다. 좋은 개발자의 가치가 사라지는 건 아니다. 오히려 시스템을 이해하고, 제품 요구를 구조화하고, 위험을 판단하고, 테스트 가능한 형태로 문제를 쪼개는 사람의 가치는 더 커진다. Claude가 실행을 맡을수록, 개발자는 더 상위의 설계자·검증자·운영자가 된다.</p>
+<p>비개발자에게는 더 큰 변화다. 이제 “코딩을 못해서 못 하던 일”이 줄어든다. 하지만 “문제를 몰라서 못 하던 일”은 그대로 남는다. 결국 승자는 자기 분야를 잘 아는 사람이다.</p>
+<h2 id="내-해석-코딩-실력의-프리미엄이-사라지는-게-아니라-재배치된다">내 해석: 코딩 실력의 프리미엄이 사라지는 게 아니라 재배치된다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#내-해석-코딩-실력의-프리미엄이-사라지는-게-아니라-재배치된다" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>이 리포트의 제목이 “persistent returns to expertise”인 이유가 여기에 있다. 전문성의 수익은 사라지지 않는다. 다만 전문성이 놓이는 위치가 바뀐다.</p>
+<p>예전에는 구현 지식 자체가 병목이었다. API 호출 방법, 언어 문법, 프레임워크 패턴, 배포 명령을 아는 사람이 일을 가져갔다. 이제 이 중 상당 부분은 에이전트가 담당한다.</p>
+<p>대신 새로운 병목은 이런 쪽으로 이동한다.</p>
+<ul>
+<li>어떤 문제를 풀어야 하는가</li>
+<li>어떤 제약을 절대 깨면 안 되는가</li>
+<li>무엇을 테스트해야 진짜 끝났다고 볼 수 있는가</li>
+<li>모델이 그럴듯하게 틀렸을 때 어떻게 알아차릴 것인가</li>
+<li>실패 로그를 보고 다음 지시를 어떻게 바꿀 것인가</li>
+</ul>
+<p>이건 단순 코딩보다 더 도메인에 붙어 있는 능력이다. 그래서 에이전트 코딩 시대의 이상적인 사용자는 “프로그래밍 문법을 외운 사람”이 아니라, <strong>자기 분야의 문제를 정확히 알고 결과를 판정할 수 있는 사람</strong>이다.</p>
+<p>Claude Code는 코딩을 덜 중요하게 만드는 게 아니다. 코딩을 더 많은 사람에게 열어주면서, 동시에 진짜 전문성이 어디 있는지 더 선명하게 드러낸다.</p>
+<blockquote>
+<p>원문: Anthropic Research, <a href="https://www.anthropic.com/research/claude-code-expertise" class="external">Agentic coding and persistent returns to expertise<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</blockquote></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>그래프 뷰</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-43" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#핵심-요약" data-for="핵심-요약">핵심 요약</a></li><li class="depth-0"><a href="#claude-code에서-실제로-하는-일" data-for="claude-code에서-실제로-하는-일">Claude Code에서 실제로 하는 일</a></li><li class="depth-0"><a href="#분업-구조-사람은-무엇을-claude는-어떻게를-맡는다" data-for="분업-구조-사람은-무엇을-claude는-어떻게를-맡는다">분업 구조: 사람은 무엇을, Claude는 어떻게를 맡는다</a></li><li class="depth-0"><a href="#전문성이-높을수록-claude가-더-많이-움직인다" data-for="전문성이-높을수록-claude가-더-많이-움직인다">전문성이 높을수록 Claude가 더 많이 움직인다</a></li><li class="depth-0"><a href="#성공률도-전문성과-연결된다" data-for="성공률도-전문성과-연결된다">성공률도 전문성과 연결된다</a></li><li class="depth-0"><a href="#비개발-직군도-코딩-과제를-성공시킨다" data-for="비개발-직군도-코딩-과제를-성공시킨다">비개발 직군도 코딩 과제를 성공시킨다</a></li><li class="depth-0"><a href="#사용-패턴이-바뀌고-있다-디버깅에서-운영분석문서로" data-for="사용-패턴이-바뀌고-있다-디버깅에서-운영분석문서로">사용 패턴이 바뀌고 있다: 디버깅에서 운영·분석·문서로</a></li><li class="depth-0"><a href="#이-리포트가-노동시장에-던지는-메시지" data-for="이-리포트가-노동시장에-던지는-메시지">이 리포트가 노동시장에 던지는 메시지</a></li><li class="depth-0"><a href="#개발자에게는-나쁜-소식인가" data-for="개발자에게는-나쁜-소식인가">개발자에게는 나쁜 소식인가?</a></li><li class="depth-0"><a href="#내-해석-코딩-실력의-프리미엄이-사라지는-게-아니라-재배치된다" data-for="내-해석-코딩-실력의-프리미엄이-사라지는-게-아니라-재배치된다">내 해석: 코딩 실력의 프리미엄이 사라지는 게 아니라 재배치된다</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="/about">소개</a></li><li><a href="/contact">연락처</a></li><li><a href="/privacy-policy">개인정보처리방침</a></li><li><a href="/posts">전체 글</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}container;content;isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="./postscript.js" type="module" data-persist="true"></script></html>

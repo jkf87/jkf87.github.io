@@ -1,0 +1,50 @@
+[
+  {
+    "figure_num": null,
+    "page": 1,
+    "file": "fig-p1-img.png",
+    "method": "embedded (1085x210)",
+    "size_kb": 18,
+    "caption": null
+  },
+  {
+    "figure_num": 1,
+    "page": 1,
+    "file": "figure-1.png",
+    "method": "vector_crop (1243x682)",
+    "size_kb": 166,
+    "caption": "Figure 1:  SpatialClaw improves spatial reasoning across the board.  Per-benchma"
+  },
+  {
+    "figure_num": null,
+    "page": 2,
+    "file": "fig-p2-img.png",
+    "method": "embedded (768x576)",
+    "size_kb": 49,
+    "caption": null
+  },
+  {
+    "figure_num": null,
+    "page": 2,
+    "file": "fig-p2-img.png",
+    "method": "embedded (224x225)",
+    "size_kb": 6,
+    "caption": null
+  },
+  {
+    "figure_num": null,
+    "page": 2,
+    "file": "fig-p2-img.png",
+    "method": "embedded (768x576)",
+    "size_kb": 65,
+    "caption": null
+  },
+  {
+    "figure_num": null,
+    "page": 2,
+    "file": "fig-p2-img.png",
+    "method": "embedded (768x576)",
+    "size_kb": 64,
+    "caption": null
+  }
+]

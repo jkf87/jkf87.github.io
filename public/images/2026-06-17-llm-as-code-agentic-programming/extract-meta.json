@@ -1,0 +1,26 @@
+[
+  {
+    "figure_num": null,
+    "page": 3,
+    "file": "fig-p3-img.png",
+    "method": "embedded (512x512)",
+    "size_kb": 14,
+    "caption": null
+  },
+  {
+    "figure_num": 1,
+    "page": 3,
+    "file": "figure-1.png",
+    "method": "vector_crop (1299x523)",
+    "size_kb": 110,
+    "caption": "Figure 1: A comparison of the two agent paradigms on a simple multi-step task. I"
+  },
+  {
+    "figure_num": 2,
+    "page": 4,
+    "file": "figure-2.png",
+    "method": "vector_crop (1457x488)",
+    "size_kb": 96,
+    "caption": "Figure 2: Context tracks the call graph rather than a flat conversation log. A r"
+  }
+]

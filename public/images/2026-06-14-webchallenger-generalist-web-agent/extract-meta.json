@@ -1,0 +1,50 @@
+[
+  {
+    "figure_num": 1,
+    "page": 2,
+    "file": "figure-1.png",
+    "method": "vector_crop (1111x598)",
+    "size_kb": 58,
+    "caption": "Figure 1: Benchmark results. WebChallenger sets new state-of-the-art performance"
+  },
+  {
+    "figure_num": 2,
+    "page": 4,
+    "file": "figure-2.png",
+    "method": "embedded (3228x1805)",
+    "size_kb": 648,
+    "caption": "Figure 2: Overview of WebChallenger. (left) Each webpage is decomposed along the"
+  },
+  {
+    "figure_num": null,
+    "page": 27,
+    "file": "fig-p27-vector.png",
+    "method": "vector_crop (1249x1314)",
+    "size_kb": 204,
+    "caption": null
+  },
+  {
+    "figure_num": null,
+    "page": 28,
+    "file": "fig-p28-vector.png",
+    "method": "vector_crop (1249x1070)",
+    "size_kb": 183,
+    "caption": null
+  },
+  {
+    "figure_num": null,
+    "page": 29,
+    "file": "fig-p29-vector.png",
+    "method": "vector_crop (1249x1911)",
+    "size_kb": 313,
+    "caption": null
+  },
+  {
+    "figure_num": null,
+    "page": 30,
+    "file": "fig-p30-vector.png",
+    "method": "vector_crop (1249x1612)",
+    "size_kb": 220,
+    "caption": null
+  }
+]

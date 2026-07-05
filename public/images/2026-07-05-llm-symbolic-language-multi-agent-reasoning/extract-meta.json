@@ -1,0 +1,50 @@
+[
+  {
+    "page": 1,
+    "file": "fig-p1.png",
+    "method": "fallback_top45 (1836x1070)",
+    "size_kb": 224
+  },
+  {
+    "page": 2,
+    "file": "fig-p2.png",
+    "method": "embedded (2432x2292)",
+    "size_kb": 449
+  },
+  {
+    "page": 3,
+    "file": "fig-p3.png",
+    "method": "fallback_top45 (1836x1070)",
+    "size_kb": 314
+  },
+  {
+    "page": 4,
+    "file": "fig-p4.png",
+    "method": "fallback_top45 (1836x1070)",
+    "size_kb": 327
+  },
+  {
+    "page": 5,
+    "file": "fig-p5.png",
+    "method": "fallback_top45 (1836x1070)",
+    "size_kb": 296
+  },
+  {
+    "page": 6,
+    "file": "fig-p6.png",
+    "method": "fallback_top45 (1836x1070)",
+    "size_kb": 319
+  },
+  {
+    "page": 7,
+    "file": "fig-p7.png",
+    "method": "fallback_top45 (1836x1070)",
+    "size_kb": 256
+  },
+  {
+    "page": 8,
+    "file": "fig-p8.png",
+    "method": "embedded (870x678)",
+    "size_kb": 70
+  }
+]
