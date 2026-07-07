@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>에이전트에게 기억이 필요한 이유: Memora가 메모리의 추상화와 구체성을 동시에 잡은 법</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans KR:wght@400;700&amp;family=Noto Sans KR:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="코난쌤 블로그"/><meta property="og:title" content="에이전트에게 기억이 필요한 이유: Memora가 메모리의 추상화와 구체성을 동시에 잡은 법"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="에이전트에게 기억이 필요한 이유: Memora가 메모리의 추상화와 구체성을 동시에 잡은 법"/><meta name="twitter:description" content="에이전트가 똑똑하다는 건 찰나의 추론을 잘한다는 뜻이다. 문제는 그 찰나가 쌓여도 경험이 되지 않는다는 거다. 지금 대부분의 LLM 에이전트는 stateless다."/><meta property="og:description" content="에이전트가 똑똑하다는 건 찰나의 추론을 잘한다는 뜻이다. 문제는 그 찰나가 쌓여도 경험이 되지 않는다는 거다. 지금 대부분의 LLM 에이전트는 stateless다."/><meta property="og:image:alt" content="에이전트가 똑똑하다는 건 찰나의 추론을 잘한다는 뜻이다. 문제는 그 찰나가 쌓여도 경험이 되지 않는다는 거다. 지금 대부분의 LLM 에이전트는 stateless다."/><meta property="twitter:domain" content="jkf87.github.io"/><meta property="og:url" content="https://jkf87.github.io/posts/memora-harmonic-memory-2026-07-06"/><meta property="twitter:url" content="https://jkf87.github.io/posts/memora-harmonic-memory-2026-07-06"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="에이전트가 똑똑하다는 건 찰나의 추론을 잘한다는 뜻이다. 문제는 그 찰나가 쌓여도 경험이 되지 않는다는 거다. 지금 대부분의 LLM 에이전트는 stateless다."/><meta name="generator" content="Quartz"/><meta name="google-site-verification" content="JqDMbJFwNjfQ-7_hxP4LIajSQf1iMnw46F1nXUPclng"/><meta name="google-adsense-account" content="ca-pub-4778921872258874"/><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4778921872258874" crossorigin="anonymous"></script><link href="../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1lcm1haWQuaW5saW5lLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUdGO0VBQ0U7OztBQUtGO0VBQ0U7RUFDQTs7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAgIHRyYW5zZm9ybS1vcmlnaW46IDAgMDtcbiAgICAgIHRyYW5zaXRpb246IHRyYW5zZm9ybSAwLjFzIGVhc2U7XG4gICAgICBvdmVyZmxvdzogdmlzaWJsZTtcbiAgICAgIG1pbi1oZWlnaHQ6IDIwMHB4O1xuICAgICAgbWluLXdpZHRoOiAyMDBweDtcblxuICAgICAgcHJlIHtcbiAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICBib3JkZXI6IG5vbmU7XG4gICAgICB9XG5cbiAgICAgIHN2ZyB7XG4gICAgICAgIG1heC13aWR0aDogbm9uZTtcbiAgICAgICAgaGVpZ2h0OiBhdXRvO1xuICAgICAgfVxuICAgIH1cblxuICAgICYgPiAubWVybWFpZC1jb250cm9scyB7XG4gICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICBib3R0b206IDIwcHg7XG4gICAgICByaWdodDogMjBweDtcbiAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICBnYXA6IDhweDtcbiAgICAgIHBhZGRpbmc6IDhweDtcbiAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICBib3JkZXItcmFkaXVzOiA2cHg7XG4gICAgICBib3gtc2hhZG93OiAwIDJweCA0cHggcmdiYSgwLCAwLCAwLCAwLjEpO1xuICAgICAgei1pbmRleDogMjtcblxuICAgICAgLm1lcm1haWQtY29udHJvbC1idXR0b24ge1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICAgICAgd2lkdGg6IDMycHg7XG4gICAgICAgIGhlaWdodDogMzJweDtcbiAgICAgICAgcGFkZGluZzogMDtcbiAgICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgICBjb2xvcjogdmFyKC0tZGFyayk7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgICAgIGZvbnQtZmFtaWx5OiB2YXIoLS1ib2R5Rm9udCk7XG4gICAgICAgIHRyYW5zaXRpb246IGFsbCAwLjJzIGVhc2U7XG5cbiAgICAgICAgJjpob3ZlciB7XG4gICAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgfVxuXG4gICAgICAgICY6YWN0aXZlIHtcbiAgICAgICAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMXB4KTtcbiAgICAgICAgfVxuXG4gICAgICAgIC8vIFN0eWxlIHRoZSByZXNldCBidXR0b24gZGlmZmVyZW50bHlcbiAgICAgICAgJjpudGgtY2hpbGQoMikge1xuICAgICAgICAgIHdpZHRoOiBhdXRvO1xuICAgICAgICAgIHBhZGRpbmc6IDAgMTJweDtcbiAgICAgICAgICBmb250LXNpemU6IDE0cHg7XG4gICAgICAgIH1cbiAgICAgIH1cbiAgICB9XG4gIH1cbn1cbiJdfQ== */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://jkf87.github.io/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://jkf87.github.io/posts/memora-harmonic-memory-2026-07-06-og-image.webp"/><meta property="og:image:url" content="https://jkf87.github.io/posts/memora-harmonic-memory-2026-07-06-og-image.webp"/><meta name="twitter:image" content="https://jkf87.github.io/posts/memora-harmonic-memory-2026-07-06-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="posts/memora-harmonic-memory-2026-07-06"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">코난쌤 블로그</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="리더 모드"><title>리더 모드</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>{if(a.isFolder&amp;&amp;b.isFolder)return a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;});if(a.isFolder)return-1;if(b.isFolder)return 1;let aDates=a.data?.dates,bDates=b.data?.dates,aDate=aDates?.created??aDates?.modified??aDates?.published,bDate=bDates?.created??bDates?.modified??bDates?.published;if(aDate&amp;&amp;bDate){let at=new Date(aDate).getTime(),bt=new Date(bDate).getTime();if(bt!==at)return bt-at}return a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;})}&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-691"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-691" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><header><nav class="top-nav " aria-label="주요 메뉴"><a href="/">홈</a><a href="/posts">전체 글</a><a href="/categories">카테고리</a><a href="/about">소개</a><a href="/contact">연락처</a><a href="/privacy-policy">개인정보처리방침</a></nav></header><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../posts/">전체 글 모아보기</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>에이전트에게 기억이 필요한 이유: Memora가 메모리의 추상화와 구체성을 동시에 잡은 법</a></div></nav><h1 class="article-title">에이전트에게 기억이 필요한 이유: Memora가 메모리의 추상화와 구체성을 동시에 잡은 법</h1><p show-comma="true" class="content-meta"><time datetime="2026-07-05T15:00:00.000Z">2026년 7월 06일</time><span>17 min read</span></p><ul class="tags"><li><a href="../tags/Memora" class="internal tag-link">Memora</a></li><li><a href="../tags/agent-memory" class="internal tag-link">agent-memory</a></li><li><a href="../tags/LLM" class="internal tag-link">LLM</a></li><li><a href="../tags/RAG" class="internal tag-link">RAG</a></li><li><a href="../tags/knowledge-graph" class="internal tag-link">knowledge-graph</a></li><li><a href="../tags/ICML-2026" class="internal tag-link">ICML-2026</a></li><li><a href="../tags/Microsoft-Research" class="internal tag-link">Microsoft-Research</a></li><li><a href="../tags/long-horizon-reasoning" class="internal tag-link">long-horizon-reasoning</a></li></ul></div></div><article class="popover-hint"><p>에이전트가 똑똑하다는 건 찰나의 추론을 잘한다는 뜻이다. 문제는 그 찰나가 쌓여도 경험이 되지 않는다는 거다.
+지금 대부분의 LLM 에이전트는 stateless다. 같은 사용자가 어제 무슨 이야기를 나눴는지, 프로젝트 타임라인이 어떻게 바뀌었는지 매번 처음부터 다시 유추한다.
+Microsoft Research가 ICML 2026에서 발표한 <strong>Memora</strong>는 이 문제에 정면으로 부딪힌다. 핵심 질문은 단 하나다. “메모리에서 추상화와 구체성을 동시에 가져갈 수 없을까?”
+이 글은 그 논문(arXiv:2602.03315)을 읽고 제가 정리한 인터뷰 형식의 리뷰입니다.</p>
+<p><img src="../images/memora-harmonic-memory-2026-07-06/hero.jpg" alt="Memora의 조화 메모리 구조: 추상화 노드 주위를 구체 데이터 조각이 orbit하며 큐 앵커로 연결되는 은유"/></p>
+<h2 id="q-에이전트-메모리에서-진짜-어려운-게-뭡니까">Q. 에이전트 메모리에서 진짜 어려운 게 뭡니까?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#q-에이전트-메모리에서-진짜-어려운-게-뭡니까" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>“추상화하면 디테일이 죽고, 디테일을 살리면 파편화된다”는 딜레마입니다.</p>
+<p>기존 접근은 양극단으로 갈렸어요. 한쪽은 원시 로그와 문서 조각, 원자적 팩트를 그대로 쌓는 길을 택했습니다. 디테일은 살아있지만 노이즈에 묻힙니다. Mem0 같은 시스템이 팩트 단위의 add/update/delete lifecycle을 관리하려 했고, Nemori는 episodic·semantic 메모리를 결합해보려 했죠.
+다른 쪽은 요약으로 압축합니다. 깔끔하죠. 그런데 특정 제약조건, 엣지 케이스, 숫자 같은 실행에 필요한 뉘앙스가 날아갑니다.</p>
+<p>논문 원문의 표현을 빌리면, 에이전트는 결국 “관련 없는 팩트의 홍수”와 “실행 불가능한 모호한 요약” 사이에서 선택해야 하는 상태였습니다.</p>
+<blockquote>
+<p>“Because memory lacks a structured link between high-level concepts and low-level details, agents cannot effectively navigate their own history.”</p>
+</blockquote>
+<p>제가 체감하는 바와 정확히 겹칩니다. OpenClaw에서 매일 메모리 파일을 쓰고 읽는데, 일기(Daily notes)가 너무 길면 검색이 안 되고, 너무 요약하면 “왜 이 결정을 했는지” 맥락이 사라지거든요.</p>
+<h2 id="q-memora는-이-딜레마를-어떻게-풀었습니까">Q. Memora는 이 딜레마를 어떻게 풀었습니까?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#q-memora는-이-딜레마를-어떻게-풀었습니까" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>**조화 기억(Harmonic Memory)**이라는 이층 구조로 풉니다. 메모리의 내용(content)과 메모리를 찾아가는 경로(navigation)를 분리한 게 핵심입니다.</p>
+<p>논문의 Figure 1이 전체 아키텍처를 한 장에 보여줍니다. 원시 데이터가 세그먼트 → 에피소드 기억 → 주요 추상화 + 큐 앵커를 거쳐 메모리 엔트리로 변환되고, 쿼리 시점에 추상화와 큐 앵커를 함께 매칭해서 검색하는 흐름입니다.</p>
+<p><img src="../images/memora-harmonic-memory-2026-07-06/fig1-architecture.png" alt="논문 Figure 1: Memora 조화 메모리 아키텍처 개요. 원시 데이터가 세그먼트를 거쳐 주요 추상화와 큐 앵커가 부착된 메모리 엔트리로 변환되고, 검색 시 두 층을 모두 활용한다"/></p>
+<p>구조는 세 단계로 됐습니다.</p>
+<p><strong>1. 세그먼트 → 에피소드 기억</strong></p>
+<p>원시 데이터가 들어오면 먼저 의미 단위로 쪼갭니다(Segmentation). 비정형 텍스트면 프롬프트 기반 추출, 구조화 문서면 헤더 계층을 활용합니다.
+각 세그먼트에서 에피소드 기억(episodic memory)을 만듭니다. 이건 “이 세그먼트가 어디서 왔는지”를 담는 서사적 앵커예요. 참여자, 의도, 시간 범위를 요약할 수도 있고, 원문을 그대로 보존할 수도 있습니다.</p>
+<p><strong>2. 주요 추상화(Primary Abstraction)</strong></p>
+<p>각 메모리 엔트리는 “이 메모리가 근본적으로 무엇에 대한 것인가”를 담는 주요 추상화와, 구체 내용을 담는 메모리 값으로 구성됩니다.</p>
+<p>예를 들어, “Project Memora Timeline”이라는 추상화 아래에 마일스톤, 디자인 반복, 실험 결과, 의사결정이 계속 추가됩니다. 새 정보가 들어와도 같은 개념이면 기존 엔트리에 병합됩니다. 이게 create-or-update 규칙이에요.
+추상화 임베딩의 코사인 유사도로 top-k 후보를 찾고, 임계값 γ로 필터링하고, LLM이 “같은 개념인가” 판별합니다. 같으면 Update, 새로운 개념이면 Create.</p>
+<p><strong>3. 큐 앵커(Cue Anchors)</strong></p>
+<p>주요 추상화는 의도적으로 거칩니다. 그래서 디테일한 검색 경로가 필요한데, 그게 큐 앵커입니다.
+메모리 값에서 부가적인 의미 신호를 뽑아내서 여러 개의 큐 앵커를 만듭니다. 이 앵커들은 메모리 엔트리 간에 다대다 연결을 만들어냅니다. 명시적인 엣지를 그리지 않아도, 공유된 큐 앵커를 통해 암시적 메모리 그래프가 형성됩니다.</p>
+<p>논문이 강조하는 점은, 이 설계가 고정된 스키마를 요구하지 않는다는 것입니다. 큐 앵커는 메모리마다 유연하게 생성되고 메타데이터 필터(출처, 타임스탬프, 엔티티) 역할까지 겸합니다.</p>
+<h2 id="q-rag와-kg가-memora의-특수-케이스라는-게-무슨-뜻입니까">Q. “RAG와 KG가 Memora의 특수 케이스”라는 게 무슨 뜻입니까?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#q-rag와-kg가-memora의-특수-케이스라는-게-무슨-뜻입니까" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Memora의 구조를 제한적으로 설정하면 표준 RAG와 Knowledge Graph가 된다는 증명을 Appendix D에 넣어뒀습니다.</p>
+<p>직관적으로 이해하면 이렇습니다.
+RAG는 메모리를 평탄하게 펴고 임베딩 유사도로 검색하는 시스템입니다. Memora에서 큐 앵커를 없애고 메모리 값 자체로만 검색하면 RAG가 됩니다.
+KG는 엔티티 노드와 엣지로 그래프를 구성합니다. Memora에서 주요 추상화를 엔티티로, 큐 앵커를 엣지로 고정하면 KG가 됩니다.</p>
+<p>즉, Memora는 RAG의 평탄한 검색과 KG의 구조적 연결을 일반화한 상위 프레임워크라는 주장입니다. 단순히 “더 좋은 방법”이 아니라, 기존 방법들을 특정 설정으로 품는 구조적 상위집합이라는 이야기입니다.</p>
+<blockquote>
+<p>“Memora supports richer mixed-key retrieval behaviors and principled efficiency improvements through abstraction-first scoping and structured traversal.”</p>
+</blockquote>
+<p>이론적 우아함만이 아니라 실용적 함의가 있습니다. Memora는 RAG의 단순함(유지보수 비용 낮음)과 KG의 연결성(다홉 추론 가능)을 양쪽 다 챙기면서, 각각의 약점(파편화, 스키마 경직성)은 회피하는 셈이죠.</p>
+<h2 id="q-검색은-어떻게-합니까-단순-임베딩-매칭보다-똑똑하다고">Q. 검색은 어떻게 합니까? 단순 임베딩 매칭보다 똑똑하다고?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#q-검색은-어떻게-합니까-단순-임베딩-매칭보다-똑똑하다고" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>네. Memora는 검색을 수동적 매칭이 아니라 <strong>능동적 추론 과정</strong>으로 모델링합니다.</p>
+<p>세 가지 액션으로 구성된 이산 행동 공간을 정의합니다:</p>
+<ul>
+<li><strong>Query refinement</strong> — 현재 쿼리를 다듬어서 더 정확한 메모리를 찾는다</li>
+<li><strong>Memory expansion</strong> — 현재 검색된 메모리와 연결된 다른 메모리를 따라간다 (multi-hop)</li>
+<li><strong>Termination</strong> — 충분한 맥락이 모였으면 멈춘다</li>
+</ul>
+<p>이 policy retriever를 GRPO(Group-Relative Policy Optimization)로 훈련합니다. 논문의 Figure 2가 GRPO 훈련 과정에서 검색 성능이 어떻게 올라가는지 보여줍니다.</p>
+<p><img src="../images/memora-harmonic-memory-2026-07-06/fig5-grpo-training.png" alt="논문 Figure 2: GRPO 훈련 결과. policy retriever가 훈련되면서 검색 성능이 지속적으로 향상되는 곡선"/></p>
+<p>핵심은, 정적 임베딩 유사도로는 잡을 수 없는 multi-hop 의존성을 잡아낸다는 것입니다. “A가 B를 알고, B가 C를 알 때, A의 쿼리에 C가 필요하다”는 상황에서, semantic retriever는 C를 못 찾지만 policy retriever는 expansion 액션으로 도달합니다.</p>
+<h2 id="q-실제-성능은-어느-정도입니까">Q. 실제 성능은 어느 정도입니까?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#q-실제-성능은-어느-정도입니까" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>두 벤치마크에서 state-of-the-art를 세웠습니다.</p>
+<p>논문 Table 1이 LoCoMo 결과를, Table 2가 LongMemEval 결과를 정리합니다. 아래는 Table 1에서 주요 경쟁자들만 뽑은 요약입니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>방법</th><th>LoCoMo 점수</th></tr></thead><tbody><tr><td>RAG</td><td>0.633</td></tr><tr><td>Mem0</td><td>0.653</td></tr><tr><td>Zep</td><td>0.614</td></tr><tr><td>Nemori</td><td>0.683</td></tr><tr><td>Memora (Semantic Retriever)</td><td>0.849</td></tr><tr><td>Memora (Policy Retriever)</td><td><strong>0.863</strong></td></tr></tbody></table></div>
+<p><img src="../images/memora-harmonic-memory-2026-07-06/fig2-locomo-results.png" alt="논문 Table 1-2: LoCoMo 및 LongMemEval 벤치마크 성능 비교. Memora Policy Retriever가 모든 태스크 유형에서 최고 점수"/></p>
+<p>LongMemEval_S(115k 컨텍스트, 500문제)에서는 **87.4%**를 기록했습니다.</p>
+<p>가장 인상적인 건 <strong>full-context inference를 이겼다</strong>는 점입니다. 전체 대화 기록을 컨텍스트 창에 때려넣고 추론하는 것보다, Memora의 추상화 기반 검색이 더 정확하다는 결과입니다.
+이건 단순히 “검색을 잘한다”가 아니라 “적절한 추상화 구조가 있으면 전체 컨텍스트보다 더 나은 추론이 가능하다”는 뜻입니다.</p>
+<p>그리고 <strong>토큰 소비를 최대 98% 줄였습니다</strong>. full-context 대비 1/50 토큰으로 같은 이상의 정답률을 내는 거죠.</p>
+<blockquote>
+<p>“Memory retrieval guided by appropriate abstraction is more reliable than brute-force reconstruction for reasoning over extensive histories.”</p>
+</blockquote>
+<h2 id="q-어떤-컴포넌트가-성능에-기여합니까">Q. 어떤 컴포넌트가 성능에 기여합니까?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#q-어떤-컴포넌트가-성능에-기여합니까" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>논문 Table 3이 컴포넌트를 하나씩 올리는 빌드업 에뷸레이션을 보여줍니다.</p>
+<p><img src="../images/memora-harmonic-memory-2026-07-06/fig3-ablation-buildup.png" alt="논문 Table 3: 컴포넌트 빌드업 에뷸레이션. 추상화 없는 베이스라인에서 시작해 주요 추상화, 큐 앵커, 에피소드 기억을 올릴 때마다 점수가 오른다"/></p>
+<p>흐름을 읽으면 이렇습니다. 추상화 없는 평탄한 메모리에서 시작해서 → 주요 추상화를 올리면 점수가 뜁니다 → 큐 앵커를 추가하면 multi-hop 검색 경로가 열리면서 또 오릅니다 → 에피소드 기억이 서사적 맥락을 복원해서 마지막 한 점을 채웁니다.</p>
+<p>Table 4는 retrieval policy와 메모리 granularity를 바꿔가는 leave-one-out 실험입니다.</p>
+<p><img src="../images/memora-harmonic-memory-2026-07-06/fig4-ablation-retrieval.png" alt="논문 Table 4-5: 검색 정책 및 메모리 세분성에 대한 에뷸레이션과 지연 시간 분석"/></p>
+<p>여기서 눈에 띄는 건 policy retriever vs semantic retriever의 갭입니다. 같은 메모리 구조에서 검색 정책만 바꿔도 점수가 유의미하게 오릅니다. “저장은 잘했는데 찾는 법이 안 좋으면 소용없다”는 당연한 얘기를 수치로 증명한 셈이죠.</p>
+<h2 id="q-구축-비용은-어떻습니까-llm을-많이-써야-할-것-같은데">Q. 구축 비용은 어떻습니까? LLM을 많이 써야 할 것 같은데.<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#q-구축-비용은-어떻습니까-llm을-많이-써야-할-것-같은데" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>이것도 논문이 잘 짚은 지점입니다. 메모리 구축에 gpt-4.1-mini를 쓰는데, 이걸 gpt-5.4-nano로 바꾸면 어떻게 되는지를 실험했습니다.</p>
+<p>결과가 흥미롭습니다.
+nano + semantic retriever: 0.763 — gpt-4.1-mini를 쓰는 Mem0(0.653)이나 RAG(0.633)보다 여전히 월등히 높습니다.
+nano + policy retriever: <strong>0.851</strong> — 기본 mini + policy(0.863) 대비 1.4% 하락에 그쳤습니다.</p>
+<p>즉, Memora의 이득은 구축 LLM의 파워가 아니라 <strong>구조 설계</strong>에서 옵니다. policy-guided 검색이 구축 품질의 갭을 상당 부분 회복하는 것도 확인했습니다.</p>
+<p>구축 시간도 보고했습니다. 최적화 전 1322초(LoCoMo 대화당 평균)인데, 인덱스 오프셋 예측 최적화로 739.9초까지 45% 단축했습니다. Mem0의 1350.9초와 비교하면 비슷하거나 더 빠르면서 성능은 훨씬 높습니다.</p>
+<h2 id="q-기존-메모리-시스템과-비교하면-어디가-다릅니까">Q. 기존 메모리 시스템과 비교하면 어디가 다릅니까?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#q-기존-메모리-시스템과-비교하면-어디가-다릅니까" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>특성</th><th>RAG</th><th>Mem0 / MemOS</th><th>GraphRAG / HippoRAG</th><th><strong>Memora</strong></th></tr></thead><tbody><tr><td>메모리 표현</td><td>평탄한 청크</td><td>원자적 팩트</td><td>엔티티 노드 + 엣지</td><td>추상화 + 값 + 큐 앵커</td></tr><tr><td>연결성</td><td>없음</td><td>약함 (팩트 간)</td><td>강함 (명시적 그래프)</td><td>암시적 (큐 앵커 공유)</td></tr><tr><td>스키마</td><td>없음</td><td>약한 스키마</td><td>고정 온톨로지</td><td>없음 (유연)</td></tr><tr><td>업데이트</td><td>덮어쓰기</td><td>add/update/delete</td><td>그래프 수정</td><td>create-or-update 병합</td></tr><tr><td>검색</td><td>임베딩 유사도</td><td>팩트 검색</td><td>그래프 순회</td><td>policy-guided 다중 액션</td></tr><tr><td>이론적 일반성</td><td>Memora의 특수 케이스</td><td>—</td><td>Memora의 특수 케이스</td><td>RAG, KG의 상위 집합</td></tr></tbody></table></div>
+<p>Memora의 차별점은 “저장하는 것”과 “접근하는 것”을 분리했다는 거다. 메모리 내용은 풍부하게 보존하되, 검색은 별도의 구조적 층(주요 추상화 + 큐 앵커)이 담당합니다.
+이게 파편화를 막으면서도 정밀 검색을 가능하게 만드는 구조적 기반이에요.</p>
+<h2 id="결국-어떻게-기억할-것인가의-문제">결국 “어떻게 기억할 것인가”의 문제<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#결국-어떻게-기억할-것인가의-문제" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>이 논문을 읽고 제가 받은 인상은, “메모리는 얼마나 많이 저장하느냐가 아니라 어떤 구조로 조직하느냐”라는 평범한 진실을 정밀하게 증명한 작업이라는 거예요.</p>
+<p>주요 추상화라는 “안정적인 개념의 컨테이너” 위에 큐 앵커라는 “유연한 검색 경로”를 얹고, 검색을 능동적 추론으로 모델링한 구조가, 전체 컨텍스트를 우겨넣는 brute-force보다 더 나은 추론을 해냅니다. 그것도 1/50 토큰으로요.</p>
+<p>에이전트를 실환경에 배포하는 사람 입장에서, “에이전트가 경험에서 학습한다”는 말은 이제 수사가 아니라 엔지니어링 과제가 됐습니다. Memora가 그 과제의 한 가능한 해답입니다.</p>
+<p>코드는 <a href="https://github.com/microsoft/Memora" class="external">https://github.com/microsoft/Memora<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>에 공개돼 있습니다. ICML 2026에서 발표됩니다.</p>
+<blockquote>
+<p>“Intelligence is not just the ability to reason in the moment; it is the ability to learn and adapt over time — a capability rooted in how experience is organized, abstracted, and reused.”</p>
+</blockquote>
+<p>이 문장이 논문의 첫 문단에 있는데, 이 연구가 던지는 질문의 본질을 잘 요약합니다. 찰나의 지능을 넘어 축적의 지능으로 — 그 다리가 “어떻게 기억을 구조화하느냐”에 달려 있다는 이야기입니다.</p></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>그래프 뷰</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-275" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#q-에이전트-메모리에서-진짜-어려운-게-뭡니까" data-for="q-에이전트-메모리에서-진짜-어려운-게-뭡니까">Q. 에이전트 메모리에서 진짜 어려운 게 뭡니까?</a></li><li class="depth-0"><a href="#q-memora는-이-딜레마를-어떻게-풀었습니까" data-for="q-memora는-이-딜레마를-어떻게-풀었습니까">Q. Memora는 이 딜레마를 어떻게 풀었습니까?</a></li><li class="depth-0"><a href="#q-rag와-kg가-memora의-특수-케이스라는-게-무슨-뜻입니까" data-for="q-rag와-kg가-memora의-특수-케이스라는-게-무슨-뜻입니까">Q. “RAG와 KG가 Memora의 특수 케이스”라는 게 무슨 뜻입니까?</a></li><li class="depth-0"><a href="#q-검색은-어떻게-합니까-단순-임베딩-매칭보다-똑똑하다고" data-for="q-검색은-어떻게-합니까-단순-임베딩-매칭보다-똑똑하다고">Q. 검색은 어떻게 합니까? 단순 임베딩 매칭보다 똑똑하다고?</a></li><li class="depth-0"><a href="#q-실제-성능은-어느-정도입니까" data-for="q-실제-성능은-어느-정도입니까">Q. 실제 성능은 어느 정도입니까?</a></li><li class="depth-0"><a href="#q-어떤-컴포넌트가-성능에-기여합니까" data-for="q-어떤-컴포넌트가-성능에-기여합니까">Q. 어떤 컴포넌트가 성능에 기여합니까?</a></li><li class="depth-0"><a href="#q-구축-비용은-어떻습니까-llm을-많이-써야-할-것-같은데" data-for="q-구축-비용은-어떻습니까-llm을-많이-써야-할-것-같은데">Q. 구축 비용은 어떻습니까? LLM을 많이 써야 할 것 같은데.</a></li><li class="depth-0"><a href="#q-기존-메모리-시스템과-비교하면-어디가-다릅니까" data-for="q-기존-메모리-시스템과-비교하면-어디가-다릅니까">Q. 기존 메모리 시스템과 비교하면 어디가 다릅니까?</a></li><li class="depth-0"><a href="#결국-어떻게-기억할-것인가의-문제" data-for="결국-어떻게-기억할-것인가의-문제">결국 “어떻게 기억할 것인가”의 문제</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="/about">소개</a></li><li><a href="/contact">연락처</a></li><li><a href="/privacy-policy">개인정보처리방침</a></li><li><a href="/posts">전체 글</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}container;content;isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../postscript.js" type="module" data-persist="true"></script></html>
