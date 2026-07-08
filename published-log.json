@@ -383,7 +383,8 @@
       "source": "huggingface",
       "source_url": "https://arxiv.org/abs/2607.05511",
       "blog_url": "https://jkf87.github.io/posts/2026-07-09-light-omni-reflexive-agentic-video-understanding",
-      "commit": "3caf7fe"
+      "commit": "f79fc52",
+      "threads_root_id": "18136985932569582"
     }
   ]
 }
