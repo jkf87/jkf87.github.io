@@ -394,6 +394,15 @@
       "blog_url": "https://jkf87.github.io/posts/2026-07-10-agentgym2-real-world-agent-benchmark",
       "commit": "412b2f2",
       "threads_root_id": "17901778155463029"
+    },
+    {
+      "slug": "2026-07-11-sao-single-rollout-asynchronous-agentic-rl",
+      "date": "2026-07-11",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2607.07508",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-11-sao-single-rollout-asynchronous-agentic-rl",
+      "commit": "3e10a1f",
+      "threads_root_id": "18110181419055887"
     }
   ]
 }
