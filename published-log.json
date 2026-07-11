@@ -403,6 +403,15 @@
       "blog_url": "https://jkf87.github.io/posts/2026-07-11-sao-single-rollout-asynchronous-agentic-rl",
       "commit": "3e10a1f",
       "threads_root_id": "18110181419055887"
+    },
+    {
+      "slug": "2026-07-12-proactive-memory-agent-long-horizon",
+      "date": "2026-07-12",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2607.08716",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-12-proactive-memory-agent-long-horizon",
+      "commit": "28543ee",
+      "threads_root_id": "17983689471011464"
     }
   ]
 }
