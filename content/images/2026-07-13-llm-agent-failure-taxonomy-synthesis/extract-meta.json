@@ -1,0 +1,98 @@
+[
+  {
+    "page": 1,
+    "file": "fig-p1.png",
+    "method": "fallback_top45 (1836x1070)",
+    "size_kb": 220
+  },
+  {
+    "page": 2,
+    "file": "fig-p2.png",
+    "method": "fallback_top45 (1836x1070)",
+    "size_kb": 231
+  },
+  {
+    "page": 3,
+    "file": "fig-p3.png",
+    "method": "fallback_top45 (1836x1070)",
+    "size_kb": 242
+  },
+  {
+    "page": 4,
+    "file": "fig-p4.png",
+    "method": "fallback_top45 (1836x1070)",
+    "size_kb": 165
+  },
+  {
+    "page": 5,
+    "file": "fig-p5.jpeg",
+    "method": "embedded (412x322)",
+    "size_kb": 11
+  },
+  {
+    "page": 6,
+    "file": "fig-p6.png",
+    "method": "fallback_top45 (1836x1070)",
+    "size_kb": 226
+  },
+  {
+    "page": 7,
+    "file": "fig-p7.png",
+    "method": "fallback_top45 (1836x1070)",
+    "size_kb": 242
+  },
+  {
+    "page": 8,
+    "file": "fig-p8.png",
+    "method": "fallback_top45 (1836x1070)",
+    "size_kb": 235
+  },
+  {
+    "page": 9,
+    "file": "fig-p9.png",
+    "method": "fallback_top45 (1836x1070)",
+    "size_kb": 256
+  },
+  {
+    "page": 10,
+    "file": "fig-p10.png",
+    "method": "fallback_top45 (1836x1070)",
+    "size_kb": 228
+  },
+  {
+    "page": 11,
+    "file": "fig-p11.png",
+    "method": "fallback_top45 (1836x1070)",
+    "size_kb": 232
+  },
+  {
+    "page": 12,
+    "file": "fig-p12.png",
+    "method": "fallback_top45 (1836x1070)",
+    "size_kb": 206
+  },
+  {
+    "page": 13,
+    "file": "fig-p13.png",
+    "method": "fallback_top45 (1836x1070)",
+    "size_kb": 199
+  },
+  {
+    "page": 14,
+    "file": "fig-p14.png",
+    "method": "fallback_top45 (1836x1070)",
+    "size_kb": 214
+  },
+  {
+    "page": 15,
+    "file": "fig-p15.png",
+    "method": "fallback_top45 (1836x1070)",
+    "size_kb": 212
+  },
+  {
+    "page": 16,
+    "file": "fig-p16.png",
+    "method": "fallback_top45 (1836x1070)",
+    "size_kb": 210
+  }
+]
