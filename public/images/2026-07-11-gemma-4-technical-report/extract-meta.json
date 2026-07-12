@@ -1,0 +1,104 @@
+[
+  {
+    "page": 1,
+    "file": "fig-p1.png",
+    "method": "embedded (3810x512)",
+    "size_kb": 43
+  },
+  {
+    "page": 2,
+    "file": "fig-p2.png",
+    "method": "fallback_top45 (1786x1137)",
+    "size_kb": 202
+  },
+  {
+    "page": 3,
+    "file": "fig-p3.jpeg",
+    "method": "embedded (1920x1080)",
+    "size_kb": 100
+  },
+  {
+    "page": 4,
+    "file": "fig-p4.png",
+    "method": "fallback_top45 (1786x1137)",
+    "size_kb": 180
+  },
+  {
+    "page": 5,
+    "file": "fig-p5.png",
+    "method": "fallback_top45 (1786x1137)",
+    "size_kb": 128
+  },
+  {
+    "page": 6,
+    "file": "fig-p6.png",
+    "method": "fallback_top45 (1786x1137)",
+    "size_kb": 160
+  },
+  {
+    "page": 7,
+    "file": "fig-p7.png",
+    "method": "fallback_top45 (1786x1137)",
+    "size_kb": 175
+  },
+  {
+    "page": 8,
+    "file": "fig-p8.png",
+    "method": "fallback_top45 (1786x1137)",
+    "size_kb": 176
+  },
+  {
+    "page": 9,
+    "file": "fig-p9.png",
+    "method": "fallback_top45 (1786x1137)",
+    "size_kb": 268
+  },
+  {
+    "page": 10,
+    "file": "fig-p10.png",
+    "method": "fallback_top45 (1786x1137)",
+    "size_kb": 279
+  },
+  {
+    "page": 11,
+    "file": "fig-p11.png",
+    "method": "fallback_top45 (1786x1137)",
+    "size_kb": 275
+  },
+  {
+    "page": 12,
+    "file": "fig-p12.png",
+    "method": "fallback_top45 (1786x1137)",
+    "size_kb": 50
+  },
+  {
+    "page": 13,
+    "file": "fig-p13.png",
+    "method": "fallback_top45 (1786x1137)",
+    "size_kb": 168
+  },
+  {
+    "page": 14,
+    "file": "fig-p14.png",
+    "method": "fallback_top45 (1786x1137)",
+    "size_kb": 175
+  },
+  {
+    "page": 15,
+    "file": "fig-p15.png",
+    "method": "fallback_top45 (1786x1137)",
+    "size_kb": 85
+  },
+  {
+    "page": 16,
+    "file": "fig-p16.jpeg",
+    "method": "embedded (572x1024)",
+    "size_kb": 143
+  },
+  {
+    "page": 17,
+    "file": "fig-p17.png",
+    "method": "fallback_top45 (1786x1137)",
+    "size_kb": 103
+  }
+]
