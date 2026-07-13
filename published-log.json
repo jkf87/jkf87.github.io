@@ -421,6 +421,14 @@
       "blog_url": "https://jkf87.github.io/posts/2026-07-13-llm-agent-failure-taxonomy-synthesis.html",
       "commit": "8c0c21d",
       "threads_root_id": "18368840371238076"
+    },
+    {
+      "slug": "2026-07-14-agora-auction-based-llm-agent-reasoning",
+      "date": "2026-07-14",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.09600",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-14-agora-auction-based-llm-agent-reasoning.html",
+      "commit": "46f950f"
     }
   ]
 }
