@@ -1,0 +1,20 @@
+[
+  {
+    "page": 1,
+    "file": "fig-p1.png",
+    "method": "embedded (11872x7136)",
+    "size_kb": 348
+  },
+  {
+    "page": 2,
+    "file": "fig-p2.png",
+    "method": "fallback_top45 (1786x1137)",
+    "size_kb": 306
+  },
+  {
+    "page": 3,
+    "file": "fig-p3.png",
+    "method": "vector_crop (1314x1131)",
+    "size_kb": 321
+  }
+]
