@@ -1,160 +1,252 @@
 #!/usr/bin/env python3
-"""
-pdf-extract-figures.py — 학술 논문 PDF에서 Figure 영역을 크롭하는 스크립트
+"""Extract real Figure/Table regions from academic PDFs.
 
-사용법:
-  python3 pdf-extract-figures.py <pdf_path> <page_numbers> [--outdir DIR] [--zoom 3]
-
-예시:
-  python3 pdf-extract-figures.py paper.pdf 3,8,28 --outdir content/images/paper-slug
+Unlike the old version, this script does NOT treat page-top screenshots as a
+successful figure extraction. It prefers caption-anchored crops and writes
+`extract-meta.json` with accepted/rejected status for downstream gates.
 """
-import fitz
-import re
-import os
-import sys
-import json
+from __future__ import annotations
+
 import argparse
+import json
+import os
+import re
+import sys
+from dataclasses import asdict, dataclass
+from pathlib import Path
+from typing import Iterable
+from urllib.request import urlopen
+
+import fitz
+
+CAPTION_RE = re.compile(r"^\s*(Figure|Fig\.|Table)\s*([0-9]+[A-Za-z]?)\b", re.I)
+BAD_TEXT_RE = re.compile(r"^(abstract|introduction|references|appendix|acknowledg|related work)\b", re.I)
 
 
-def find_figure_region(page):
-    """페이지에서 벡터 그래픽 Figure 영역과 캡션 위치를 찾는다."""
-    page_rect = page.rect
-    drawings = page.get_drawings()
-    
-    # 충분히 큰 drawing만 필터
-    big_draws = [d for d in drawings if d["rect"].width > 40 and d["rect"].height > 20]
-    
-    if not big_draws:
-        return None, None
-    
-    # y 기준 클러스터링 (간격 < 30pt)
-    big_draws.sort(key=lambda d: d["rect"].y0)
-    groups = [[big_draws[0]]]
-    for i in range(1, len(big_draws)):
-        if big_draws[i]["rect"].y0 - groups[-1][-1]["rect"].y1 < 30:
-            groups[-1].append(big_draws[i])
-        else:
-            groups.append([big_draws[i]])
-    
-    # 가장 큰 면적 그룹 = Figure
-    best = max(groups, key=lambda g: sum(d["rect"].width * d["rect"].height for d in g))
-    fig_y0 = min(d["rect"].y0 for d in best) - 10
-    fig_y1 = max(d["rect"].y1 for d in best) + 10
-    fig_x0 = max(0, min(d["rect"].x0 for d in best) - 10)
-    fig_x1 = min(page_rect.width, max(d["rect"].x1 for d in best) + 10)
-    
-    # Figure 캡션 찾기
-    caption_y_end = fig_y1
-    blocks = page.get_text("dict")["blocks"]
-    for block in blocks:
-        if block["type"] != 0:
+@dataclass
+class ExtractResult:
+    page: int
+    file: str = ""
+    method: str = ""
+    status: str = "rejected"
+    reason: str = ""
+    size_kb: int = 0
+    width: int = 0
+    height: int = 0
+    caption: str = ""
+    crop: list[float] | None = None
+
+
+def parse_pages(value: str | None, n_pages: int) -> list[int]:
+    if not value:
+        return list(range(1, n_pages + 1))
+    out: list[int] = []
+    for part in value.split(","):
+        part = part.strip()
+        if not part:
             continue
-        for line in block["lines"]:
-            text = " ".join([s["text"] for s in line["spans"]]).strip()
-            if re.match(r'^(Figure|Fig\.)\s*\d+', text, re.IGNORECASE):
-                ly = line["bbox"][3]
-                if abs(ly - fig_y1) < 80:
-                    caption_y_end = ly + 5
-    
-    crop_y1 = max(fig_y1, caption_y_end) + 10
-    
-    region = fitz.Rect(fig_x0, max(0, fig_y0), fig_x1, min(page_rect.height, crop_y1))
-    if region.height < 150:
-        region.y1 = region.y0 + 180
-    
-    return region, best
+        if "-" in part:
+            a, b = [int(x) for x in part.split("-", 1)]
+            out.extend(range(a, b + 1))
+        else:
+            out.append(int(part))
+    return sorted({p for p in out if 1 <= p <= n_pages})
 
 
-def extract_embedded_images(doc, page):
-    """페이지에서 임베드된 래스터 이미지를 추출한다."""
-    images = page.get_images(full=True)
-    if not images:
+def open_pdf(source: str) -> fitz.Document:
+    if source.startswith(("http://", "https://")):
+        with urlopen(source, timeout=120) as resp:
+            data = resp.read()
+        return fitz.open(stream=data, filetype="pdf")
+    return fitz.open(source)
+
+
+def line_text(line: dict) -> str:
+    return " ".join(span.get("text", "") for span in line.get("spans", [])).strip()
+
+
+def text_lines(page: fitz.Page) -> list[tuple[fitz.Rect, str]]:
+    lines: list[tuple[fitz.Rect, str]] = []
+    for block in page.get_text("dict").get("blocks", []):
+        if block.get("type") != 0:
+            continue
+        for line in block.get("lines", []):
+            txt = line_text(line)
+            if txt:
+                lines.append((fitz.Rect(line["bbox"]), txt))
+    return lines
+
+
+def find_captions(page: fitz.Page) -> list[tuple[fitz.Rect, str, str, str]]:
+    caps = []
+    for rect, txt in text_lines(page):
+        m = CAPTION_RE.match(txt)
+        if m:
+            caps.append((rect, txt, m.group(1).lower(), m.group(2)))
+    return caps
+
+
+def union_rect(rects: Iterable[fitz.Rect]) -> fitz.Rect | None:
+    rects = [r for r in rects if r and r.width > 2 and r.height > 2]
+    if not rects:
         return None
-    
-    best = None
-    best_area = 0
-    for img_info in images:
-        xref = img_info[0]
-        base_image = doc.extract_image(xref)
-        if base_image:
-            area = base_image["width"] * base_image["height"]
-            if area > best_area:
-                best_area = area
-                best = base_image
-    
-    # 너무 작은 이미지 (로고/아이콘) 제외
-    if best and best["width"] > 200 and best["height"] > 150:
-        return best
-    return None
+    out = fitz.Rect(rects[0])
+    for r in rects[1:]:
+        out |= r
+    return out
 
 
-def main():
-    parser = argparse.ArgumentParser(description="Extract figures from academic PDF")
-    parser.add_argument("pdf", help="Path to PDF file")
-    parser.add_argument("pages", help="Comma-separated page numbers (1-indexed)")
-    parser.add_argument("--outdir", default=".", help="Output directory")
-    parser.add_argument("--zoom", type=float, default=3, help="Zoom factor for rendering")
+def candidate_graphics_above(page: fitz.Page, caption_rect: fitz.Rect) -> list[fitz.Rect]:
+    page_rect = page.rect
+    y_min = max(0, caption_rect.y0 - page_rect.height * 0.62)
+    y_max = caption_rect.y0 - 3
+    rects: list[fitz.Rect] = []
+
+    for d in page.get_drawings():
+        r = fitz.Rect(d.get("rect"))
+        if r.width < 25 or r.height < 12:
+            continue
+        if r.y1 <= y_min or r.y0 >= y_max:
+            continue
+        # Avoid tiny text underline/table ruling fragments unless they form a group later.
+        rects.append(r)
+
+    for img in page.get_images(full=True):
+        xref = img[0]
+        try:
+            rects.extend(page.get_image_rects(xref))
+        except Exception:
+            continue
+
+    # Prefer objects horizontally near the caption, but allow full-width tables/figures.
+    cap_mid = (caption_rect.x0 + caption_rect.x1) / 2
+    filtered = []
+    for r in rects:
+        r_mid = (r.x0 + r.x1) / 2
+        if abs(r_mid - cap_mid) < page_rect.width * 0.45 or r.width > page_rect.width * 0.45:
+            filtered.append(r)
+    return filtered
+
+
+def crop_for_caption(page: fitz.Page, caption_rect: fitz.Rect, kind: str) -> tuple[fitz.Rect | None, str]:
+    page_rect = page.rect
+    graphics = candidate_graphics_above(page, caption_rect)
+
+    if graphics:
+        # Keep only graphics in the vertical band closest to the caption.
+        graphics.sort(key=lambda r: caption_rect.y0 - r.y1)
+        nearest_gap = caption_rect.y0 - graphics[0].y1
+        band = [r for r in graphics if (caption_rect.y0 - r.y1) <= nearest_gap + 120]
+        g = union_rect(band)
+        if g:
+            x0 = max(0, min(g.x0, caption_rect.x0) - 12)
+            x1 = min(page_rect.width, max(g.x1, caption_rect.x1) + 12)
+            y0 = max(0, g.y0 - 12)
+            y1 = min(page_rect.height, caption_rect.y1 + 18)
+            return fitz.Rect(x0, y0, x1, y1), "caption_crop"
+
+    # Table captions are sometimes above the table; look below too.
+    if kind.startswith("table"):
+        below = []
+        for d in page.get_drawings():
+            r = fitz.Rect(d.get("rect"))
+            if r.width > 35 and r.height > 10 and caption_rect.y1 < r.y0 < caption_rect.y1 + 260:
+                below.append(r)
+        g = union_rect(below)
+        if g:
+            return fitz.Rect(max(0, min(g.x0, caption_rect.x0) - 12), max(0, caption_rect.y0 - 8), min(page_rect.width, max(g.x1, caption_rect.x1) + 12), min(page_rect.height, g.y1 + 12)), "caption_crop_table_below"
+
+    return None, "no_graphics_near_caption"
+
+
+def validate_crop(page: fitz.Page, crop: fitz.Rect, caption: str, *, allow_large: bool = False) -> tuple[bool, str]:
+    pr = page.rect
+    area_ratio = (crop.width * crop.height) / (pr.width * pr.height)
+    if crop.width < 120 or crop.height < 90:
+        return False, f"crop too small ({crop.width:.0f}x{crop.height:.0f}pt)"
+    if area_ratio > (0.72 if allow_large else 0.55):
+        return False, f"crop too page-like (area_ratio={area_ratio:.2f})"
+    if not CAPTION_RE.match(caption):
+        return False, "missing figure/table caption"
+    if BAD_TEXT_RE.match(caption):
+        return False, "caption looked like body section"
+    return True, "accepted"
+
+
+def render_crop(page: fitz.Page, crop: fitz.Rect, out_path: Path, zoom: float) -> tuple[int, int, int]:
+    pix = page.get_pixmap(matrix=fitz.Matrix(zoom, zoom), clip=crop, alpha=False)
+    pix.save(out_path)
+    return pix.width, pix.height, out_path.stat().st_size // 1024
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description="Extract caption-anchored figures/tables from academic PDF")
+    parser.add_argument("pdf", help="Path or URL to PDF")
+    parser.add_argument("pages", nargs="?", help="Optional pages, e.g. 1,3,5-7. Omit to auto-scan all pages.")
+    parser.add_argument("--outdir", default=".")
+    parser.add_argument("--zoom", type=float, default=3.0)
+    parser.add_argument("--max", type=int, default=8, help="Max accepted crops")
+    parser.add_argument("--allow-large", action="store_true", help="Allow large table-like crops")
+    parser.add_argument("--allow-fallback", action="store_true", help="Legacy unsafe mode: write page-top fallback crops when no caption crop is found")
     args = parser.parse_args()
-    
-    os.makedirs(args.outdir, exist_ok=True)
-    doc = fitz.open(args.pdf)
-    pages = [int(p.strip()) for p in args.pages.split(",")]
-    mat = fitz.Matrix(args.zoom, args.zoom)
-    
-    results = []
-    
+
+    outdir = Path(args.outdir)
+    outdir.mkdir(parents=True, exist_ok=True)
+
+    doc = open_pdf(args.pdf)
+    pages = parse_pages(args.pages, doc.page_count)
+    results: list[ExtractResult] = []
+    accepted = 0
+
     for page_num in pages:
         page = doc[page_num - 1]
-        out_name = f"fig-p{page_num}.png"
-        out_path = os.path.join(args.outdir, out_name)
-        
-        # 전략 1: 임베드 이미지 추출 (벡터가 아닌 래스터 이미지)
-        embedded = extract_embedded_images(doc, page)
-        
-        # 전략 2: 벡터 그래픽 Figure 영역 크롭
-        region, draw_group = find_figure_region(page)
-        
-        if embedded and embedded["width"] > 300:
-            # 래스터 이미지가 충분히 크면 사용
-            ext = embedded["ext"]
-            img_bytes = embedded["image"]
-            out_name = f"fig-p{page_num}.{ext}"
-            out_path = os.path.join(args.outdir, out_name)
-            with open(out_path, "wb") as f:
-                f.write(img_bytes)
-            method = f"embedded ({embedded['width']}x{embedded['height']})"
-        elif region and region.width > 100:
-            # 벡터 Figure 영역 렌더링
-            pix = page.get_pixmap(matrix=mat, clip=region)
-            pix.save(out_path)
-            method = f"vector_crop ({pix.width}x{pix.height})"
-        else:
-            # 폴백: 페이지 상단 45% 렌더링
-            pr = page.rect
-            crop = fitz.Rect(0, 0, pr.width, pr.height * 0.45)
-            pix = page.get_pixmap(matrix=mat, clip=crop)
-            pix.save(out_path)
-            method = f"fallback_top45 ({pix.width}x{pix.height})"
-        
-        size_kb = os.path.getsize(out_path) // 1024
-        results.append({
-            "page": page_num,
-            "file": out_name,
-            "method": method,
-            "size_kb": size_kb
-        })
-        print(f"  p{page_num}: {method} → {out_name} ({size_kb}KB)")
-    
+        caps = find_captions(page)
+        if not caps:
+            if args.allow_fallback and accepted < args.max:
+                crop = fitz.Rect(0, 0, page.rect.width, page.rect.height * 0.45)
+                name = f"fig-p{page_num}-fallback.png"
+                w, h, kb = render_crop(page, crop, outdir / name, args.zoom)
+                results.append(ExtractResult(page_num, name, f"fallback_top45 ({w}x{h})", "rejected", "fallback is not accepted for publishing", kb, w, h, "", [crop.x0, crop.y0, crop.x1, crop.y1]))
+            continue
+
+        for cap_idx, (cap_rect, cap_text, kind, num) in enumerate(caps, start=1):
+            if accepted >= args.max:
+                break
+            crop, method = crop_for_caption(page, cap_rect, kind)
+            if not crop:
+                results.append(ExtractResult(page_num, method=method, status="rejected", reason="no crop", caption=cap_text))
+                continue
+            ok, reason = validate_crop(page, crop, cap_text, allow_large=args.allow_large or kind.startswith("table"))
+            if not ok:
+                results.append(ExtractResult(page_num, method=method, status="rejected", reason=reason, caption=cap_text, crop=[crop.x0, crop.y0, crop.x1, crop.y1]))
+                continue
+            label = "table" if kind.startswith("table") else "fig"
+            safe_num = re.sub(r"[^0-9A-Za-z_-]", "", num)
+            name = f"{label}-{safe_num}-p{page_num}.png"
+            # Avoid overwrite if multiple captions share number/page.
+            if (outdir / name).exists():
+                name = f"{label}-{safe_num}-p{page_num}-{cap_idx}.png"
+            w, h, kb = render_crop(page, crop, outdir / name, args.zoom)
+            results.append(ExtractResult(page_num, name, f"{method} ({w}x{h})", "accepted", reason, kb, w, h, cap_text, [round(crop.x0, 2), round(crop.y0, 2), round(crop.x1, 2), round(crop.y1, 2)]))
+            accepted += 1
+
     doc.close()
-    
-    # 메타데이터 저장
-    meta_path = os.path.join(args.outdir, "extract-meta.json")
-    with open(meta_path, "w") as f:
-        json.dump(results, f, indent=2)
-    
-    print(f"\nExtracted {len(results)} figures → {args.outdir}/")
-    return results
+
+    meta_path = outdir / "extract-meta.json"
+    meta_path.write_text(json.dumps([asdict(r) for r in results], ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+    for r in results:
+        if r.file:
+            print(f"  p{r.page}: {r.status} {r.method} -> {r.file} ({r.size_kb}KB) {r.caption[:80]}")
+        else:
+            print(f"  p{r.page}: {r.status} {r.method} ({r.reason}) {r.caption[:80]}")
+
+    if accepted == 0:
+        print(f"No accepted figure/table crops. See {meta_path}", file=sys.stderr)
+        return 2
+    print(f"\nAccepted {accepted} figure/table crop(s) -> {outdir}/")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

@@ -2,19 +2,43 @@
   {
     "page": 1,
     "file": "fig-p1.png",
-    "method": "embedded (11872x7136)",
-    "size_kb": 348
+    "method": "html_source (arxiv x31.png)",
+    "status": "accepted",
+    "reason": "arXiv HTML original figure asset, preferred over PDF embedded/page crop",
+    "size_kb": 115,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 1: A boundary-centric taxonomy of LLM-agent",
+    "crop": [
+      294.14,
+      207.91,
+      536.41,
+      475.48
+    ]
   },
   {
-    "page": 2,
+    "page": 3,
     "file": "fig-p2.png",
-    "method": "fallback_top45 (1786x1137)",
-    "size_kb": 306
+    "method": "caption_crop (1434x521)",
+    "status": "rejected",
+    "reason": "excluded from post: too dense/low readability for blog body",
+    "size_kb": 163,
+    "width": 1434,
+    "height": 521,
+    "caption": "Figure 2: A roadmap-style view of our boundary-centric taxonomy for LLM-agent system safety. Each boundary is",
+    "crop": [
+      58.87,
+      512.07,
+      536.41,
+      685.58
+    ]
   },
   {
     "page": 3,
     "file": "fig-p3.png",
     "method": "vector_crop (1314x1131)",
-    "size_kb": 321
+    "size_kb": 321,
+    "status": "rejected",
+    "reason": "excluded from post: too dense/low readability for blog body"
   }
 ]
