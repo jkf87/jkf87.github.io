@@ -439,6 +439,23 @@
       "blog_url": "https://jkf87.github.io/posts/2026-07-15-webswarm-recursive-multi-agent-web-search",
       "commit": "49d2de0",
       "threads_root_id": "17947605804217923"
+    },
+    {
+      "slug": "claude-for-teachers-ai-education-agent-2026-07-15",
+      "date": "2026-07-15",
+      "source": "anthropic-blog",
+      "source_url": "https://www.anthropic.com/news/claude-for-teachers",
+      "blog_url": "https://jkf87.github.io/posts/claude-for-teachers-ai-education-agent-2026-07-15",
+      "commit": "1a7680d",
+      "threads_root_id": "18070731080453316",
+      "threads_reply_ids": [
+        "18118409596852447",
+        "18102224348141319",
+        "18420840790183016",
+        "18122879767716417",
+        "17934392712096806"
+      ],
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-15-claude-for-teachers-ai-education-agent-2026-07-15.md"
     }
   ]
 }
