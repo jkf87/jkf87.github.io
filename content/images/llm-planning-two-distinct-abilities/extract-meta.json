@@ -1,0 +1,196 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1438x591)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 199,
+    "width": 1438,
+    "height": 591,
+    "caption": "Figure 1: Evaluation design. Left: ACPBench (Hard)’s eight planning tasks (action, state, and plan levels). Right:",
+    "crop": [
+      58.87,
+      58.87,
+      537.79,
+      255.5
+    ]
+  },
+  {
+    "page": 4,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  1  details parameter counts, cross-validation",
+    "crop": null
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (445x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Fused held-out and information-criterion sum-",
+    "crop": [
+      58.55699920654297,
+      256.15032958984375,
+      503.6650085449219,
+      99.6396484375
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-2-p5.png",
+    "method": "caption_crop (1302x542)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 157,
+    "width": 1302,
+    "height": 542,
+    "caption": "Figure  2  provides an auxiliary check using PCA",
+    "crop": [
+      69.78,
+      256.15,
+      503.67,
+      436.44
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (243x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 2: PCA scree plot of the response matrix. PC1",
+    "crop": [
+      294.1419982910156,
+      256.15032958984375,
+      537.1605834960938,
+      233.82403564453125
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-3-p5.png",
+    "method": "caption_crop (728x549)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 67,
+    "width": 728,
+    "height": 549,
+    "caption": "Figure 3: Biplot of task difficulty coordinates in the 2D",
+    "crop": [
+      294.14,
+      256.15,
+      536.41,
+      438.81
+    ]
+  },
+  {
+    "page": 5,
+    "file": "table-10-p5.png",
+    "method": "caption_crop (729x993)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 128,
+    "width": 729,
+    "height": 993,
+    "caption": "Table  10  in the appendix. Figure  3  visualizes the",
+    "crop": [
+      293.8,
+      256.15,
+      536.41,
+      586.91
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Selected direct correlations between task-",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "fig-4-p7.png",
+    "method": "caption_crop (1434x494)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 133,
+    "width": 1434,
+    "height": 494,
+    "caption": "Figure 4: Asymmetric scaling of planning competence under joint cali-",
+    "crop": [
+      58.87,
+      58.87,
+      536.41,
+      223.31
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-5-p7.png",
+    "method": "caption_crop (1413x423)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 108,
+    "width": 1413,
+    "height": 423,
+    "caption": "Figure 5: Matched-minus-mismatched",
+    "crop": [
+      65.67,
+      58.87,
+      536.41,
+      199.45
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-4-p7-3.png",
+    "method": "caption_crop (1413x1341)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 364,
+    "width": 1413,
+    "height": 1341,
+    "caption": "Figure  4  plots the resulting trajectories, with",
+    "crop": [
+      65.67,
+      58.87,
+      536.41,
+      505.5
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-5-p7-4.png",
+    "method": "caption_crop (1418x1438)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 398,
+    "width": 1418,
+    "height": 1438,
+    "caption": "Figure  5  provides partial support for dimension-",
+    "crop": [
+      65.67,
+      58.87,
+      538.22,
+      537.7
+    ]
+  }
+]
