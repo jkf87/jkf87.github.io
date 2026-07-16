@@ -1,0 +1,258 @@
+[
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1.",
+    "crop": null
+  },
+  {
+    "page": 9,
+    "file": "fig-1-p9.png",
+    "method": "caption_crop (1231x610)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 86,
+    "width": 1231,
+    "height": 610,
+    "caption": "Figure 1.",
+    "crop": [
+      82.4,
+      65.73,
+      492.57,
+      268.71
+    ]
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3 summarizes performance over all  121  tasks. MCF attains  100%  success but at a",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 3 reports ACRR by tier. The redundancy of MCF is  highest on the easiest tasks :",
+    "crop": null
+  },
+  {
+    "page": 13,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3.",
+    "crop": null
+  },
+  {
+    "page": 13,
+    "file": "fig-2-p13.png",
+    "method": "caption_crop (1292x624)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 125,
+    "width": 1292,
+    "height": 624,
+    "caption": "Figure 2.",
+    "crop": [
+      82.4,
+      414.78,
+      512.88,
+      622.59
+    ]
+  },
+  {
+    "page": 14,
+    "file": "fig-3-p14.png",
+    "method": "caption_crop (1182x782)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 99,
+    "width": 1182,
+    "height": 782,
+    "caption": "Figure 3.",
+    "crop": [
+      82.4,
+      65.73,
+      476.3,
+      326.27
+    ]
+  },
+  {
+    "page": 14,
+    "file": "table-4-p14.png",
+    "method": "caption_crop (1292x1808)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 344,
+    "width": 1292,
+    "height": 1808,
+    "caption": "Table 4 isolates the Gmail-icon task ( C min  = 6 . 0 ). By construction the over-cautious",
+    "crop": [
+      82.4,
+      65.73,
+      512.85,
+      668.27
+    ]
+  },
+  {
+    "page": 15,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4.",
+    "crop": null
+  },
+  {
+    "page": 15,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5.",
+    "crop": null
+  },
+  {
+    "page": 15,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5 removes one E3 stage at a time. Without  Expand , the agent cannot recover",
+    "crop": null
+  },
+  {
+    "page": 16,
+    "file": "fig-4-p16.png",
+    "method": "caption_crop (1292x674)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 113,
+    "width": 1292,
+    "height": 674,
+    "caption": "Figure 4.",
+    "crop": [
+      82.4,
+      65.73,
+      512.88,
+      290.33
+    ]
+  },
+  {
+    "page": 17,
+    "file": "fig-5-p17.png",
+    "method": "caption_crop (1292x675)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 120,
+    "width": 1292,
+    "height": 675,
+    "caption": "Figure 5.",
+    "crop": [
+      82.4,
+      65.73,
+      512.88,
+      290.57
+    ]
+  },
+  {
+    "page": 19,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6.",
+    "crop": null
+  },
+  {
+    "page": 19,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 7.",
+    "crop": null
+  },
+  {
+    "page": 20,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 8.",
+    "crop": null
+  },
+  {
+    "page": 20,
+    "file": "fig-6-p20.png",
+    "method": "caption_crop (1292x607)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 85,
+    "width": 1292,
+    "height": 607,
+    "caption": "Figure 6.",
+    "crop": [
+      82.4,
+      465.29,
+      512.87,
+      667.15
+    ]
+  },
+  {
+    "page": 21,
+    "file": "fig-7-p21.png",
+    "method": "caption_crop (1292x664)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 129,
+    "width": 1292,
+    "height": 664,
+    "caption": "Figure 7.",
+    "crop": [
+      82.4,
+      65.73,
+      512.88,
+      287.0
+    ]
+  }
+]
