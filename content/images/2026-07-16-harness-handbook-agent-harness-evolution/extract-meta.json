@@ -1,0 +1,138 @@
+[
+  {
+    "page": 4,
+    "file": "fig-1-p4.png",
+    "method": "caption_crop (1484x943)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 341,
+    "width": 1484,
+    "height": 943,
+    "caption": "Figure 1  Overview of the Harness Handbook representation. Its three-level hierarchy progresses from a system-level",
+    "crop": [
+      58.87,
+      51.78,
+      553.14,
+      365.82
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-2-p5.png",
+    "method": "caption_crop (1484x509)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 165,
+    "width": 1484,
+    "height": 509,
+    "caption": "Figure 2",
+    "crop": [
+      58.87,
+      51.78,
+      553.13,
+      221.12
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-3-p8.png",
+    "method": "caption_crop (1484x454)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 89,
+    "width": 1484,
+    "height": 454,
+    "caption": "Figure 3  Plan quality and planner token usage on Codex and Terminus-2. (a) Overall win rates aggregated across the",
+    "crop": [
+      58.87,
+      51.78,
+      553.17,
+      202.98
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-4-p8.png",
+    "method": "caption_crop (1484x544)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 84,
+    "width": 1484,
+    "height": 544,
+    "caption": "Figure 4  Per-judge win rates for three evaluation dimensions. Rows show results for Codex and Terminus-2, while",
+    "crop": [
+      58.87,
+      202.31,
+      553.14,
+      383.08
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-3-p8-3.png",
+    "method": "caption_crop (1484x1412)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 257,
+    "width": 1484,
+    "height": 1412,
+    "caption": "Figure  3  summarizes plan-quality win rates and average planner token use. The Handbook-Assisted arm",
+    "crop": [
+      58.87,
+      202.31,
+      553.14,
+      672.38
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-5-p9.png",
+    "method": "caption_crop (1488x477)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 69,
+    "width": 1488,
+    "height": 477,
+    "caption": "Figure 5  Win rates by (a) modification request type and (b) localization difficulty. Q, CF, and SH denote Query,",
+    "crop": [
+      58.87,
+      51.78,
+      554.46,
+      210.48
+    ]
+  },
+  {
+    "page": 9,
+    "file": "table-1-p9.png",
+    "method": "caption_crop (1486x561)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 98,
+    "width": 1486,
+    "height": 561,
+    "caption": "Table 1  Reference-plan localization metrics (%). Predicted implementation sites are compared against independent",
+    "crop": [
+      58.55,
+      51.78,
+      553.42,
+      238.36
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-4-p9.png",
+    "method": "caption_crop (1484x1430)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 249,
+    "width": 1484,
+    "height": 1430,
+    "caption": "Figure  4  decomposes these judgments by dimension. Averaged across the three judges, the Handbook-Assisted",
+    "crop": [
+      58.87,
+      51.78,
+      553.14,
+      528.31
+    ]
+  }
+]

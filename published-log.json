@@ -509,6 +509,13 @@
         "18018455750886263",
         "17917552848204603"
       ]
+    },
+    {
+      "slug": "2026-07-16-harness-handbook-agent-harness-evolution",
+      "date": "2026-07-16",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2607.13285",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-16-harness-handbook-agent-harness-evolution"
     }
   ]
 }
