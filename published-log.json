@@ -493,6 +493,22 @@
       "source": "arxiv",
       "source_url": "https://arxiv.org/abs/2607.13034",
       "blog_url": "https://jkf87.github.io/posts/2026-07-16-e3-complexity-aware-agent-execution"
+    },
+    {
+      "slug": "2026-07-16-oat-tracing-agentic-failure",
+      "date": "2026-07-16",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.12747",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-16-oat-tracing-agentic-failure",
+      "commit": "a05de22",
+      "threads_root_id": "18130115875628296",
+      "threads_reply_ids": [
+        "18120187418503070",
+        "18259657786305357",
+        "18115011506310396",
+        "18018455750886263",
+        "17917552848204603"
+      ]
     }
   ]
 }
