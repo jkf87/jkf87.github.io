@@ -470,6 +470,13 @@
         "17943944451082457"
       ],
       "threads_repost_note": "Reposted 2026-07-16 after image/Threads quality-gate fix; old root was 17919905262403172."
+    },
+    {
+      "slug": "2026-07-16-structagent-long-horizon-causal-agent",
+      "date": "2026-07-16",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.11388",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-16-structagent-long-horizon-causal-agent"
     }
   ]
 }
