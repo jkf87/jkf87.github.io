@@ -1,0 +1,319 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1261x600)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 100,
+    "width": 1261,
+    "height": 600,
+    "caption": "Figure 1:  Overview of O AT .  O AT  learns to model the hidden path and to reconstruct the hidden",
+    "crop": [
+      96.0,
+      60.0,
+      516.0,
+      259.49
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1:  O AT  outperforms baselines across metrics in an in-domain scenario.  We train and",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2:  O AT  achieves a comparable performance or even outperforms baselines across metrics",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  1  presents the in-domain evaluation results on MCP-Atlas. O AT",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  2  presents the OOD evaluation results on Who&When. O AT  again",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3:  O AT  costs much less than prompting-based base-",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (420x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 2:  Visualization of O AT ’s output.  O AT  correctly identifies the hallucination at step 7 and the",
+    "crop": [
+      96.0,
+      480.3599853515625,
+      516.0025634765625,
+      266.19175720214844
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-3-p8.png",
+    "method": "caption_crop (553x465)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 32,
+    "width": 553,
+    "height": 465,
+    "caption": "Figure 3:  Neural CDE consistently out-",
+    "crop": [
+      333.6,
+      480.12,
+      517.65,
+      634.81
+    ]
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (285x38pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  3  shows the performance",
+    "crop": [
+      198.01722717285156,
+      480.3599853515625,
+      482.8414001464844,
+      518.7828674316406
+    ]
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (420x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 4:  Gated control path improves generalizability with a small trade-off on in-domain",
+    "crop": [
+      96.0,
+      252.1678466796875,
+      515.997314453125,
+      241.93603515625
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-5-p9.png",
+    "method": "caption_crop (1265x489)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 75,
+    "width": 1265,
+    "height": 489,
+    "caption": "Figure 5:  Neural CDE consistently out-",
+    "crop": [
+      96.0,
+      251.91,
+      517.4,
+      414.66
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-6-p9.png",
+    "method": "caption_crop (1270x489)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 75,
+    "width": 1270,
+    "height": 489,
+    "caption": "Figure 6:  Later-layer representations consistently out-",
+    "crop": [
+      96.0,
+      251.91,
+      519.05,
+      414.62
+    ]
+  },
+  {
+    "page": 15,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4:  Statistics of MCP-Atlas dataset.",
+    "crop": null
+  },
+  {
+    "page": 15,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5:  Statistics of Who&When dataset.",
+    "crop": null
+  },
+  {
+    "page": 16,
+    "file": "fig-7-p16.png",
+    "method": "caption_crop (1261x720)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 209,
+    "width": 1261,
+    "height": 720,
+    "caption": "Figure 7:  Visualization tool for trajectory annotation.  We develop a tool to visualize trajectories",
+    "crop": [
+      96.0,
+      60.0,
+      516.0,
+      299.55
+    ]
+  },
+  {
+    "page": 17,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6:  Hyperparameters of O AT .",
+    "crop": null
+  },
+  {
+    "page": 18,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (416x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 8:  O AT  trades off precision with recall as  k",
+    "crop": [
+      96.0,
+      239.69403076171875,
+      511.752197265625,
+      228.4320068359375
+    ]
+  },
+  {
+    "page": 18,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (390x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 9:  Mean-pooling aggregation out-",
+    "crop": [
+      128.86244201660156,
+      239.69403076171875,
+      519.0491638183594,
+      228.38385009765625
+    ]
+  },
+  {
+    "page": 18,
+    "file": "fig-10-p18.png",
+    "method": "caption_crop (1260x439)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 43,
+    "width": 1260,
+    "height": 439,
+    "caption": "Figure 10:  Performance is stable under the proxy LLM setting.",
+    "crop": [
+      96.0,
+      225.81,
+      515.95,
+      371.96
+    ]
+  },
+  {
+    "page": 18,
+    "file": "fig-10-p18-4.png",
+    "method": "caption_crop (1260x1204)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 228,
+    "width": 1260,
+    "height": 1204,
+    "caption": "Figure  10  shows that O AT  works well under the proxy setting, with only a small performance",
+    "crop": [
+      96.0,
+      225.81,
+      516.0,
+      626.74
+    ]
+  },
+  {
+    "page": 19,
+    "file": "fig-11-p19.png",
+    "method": "caption_crop (1260x667)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 157,
+    "width": 1260,
+    "height": 667,
+    "caption": "Figure 11:  Second successful case.  O AT  identifies repeated useless actions at step 9, inconsistent",
+    "crop": [
+      96.0,
+      60.0,
+      516.0,
+      281.99
+    ]
+  }
+]
