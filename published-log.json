@@ -463,8 +463,13 @@
       "source": "arxiv",
       "source_url": "https://arxiv.org/abs/2607.12406",
       "blog_url": "https://jkf87.github.io/posts/2026-07-16-isolation-first-principle-llm-agent-safety",
-      "threads_root_id": "17919905262403172",
-      "commit": "39070c1"
+      "threads_root_id": "18189138310389450",
+      "commit": "4b6e210",
+      "threads_reply_ids": [
+        "18105720167020300",
+        "17943944451082457"
+      ],
+      "threads_repost_note": "Reposted 2026-07-16 after image/Threads quality-gate fix; old root was 17919905262403172."
     }
   ]
 }
