@@ -596,7 +596,15 @@
       "source_url": "https://arxiv.org/abs/2607.15257",
       "title": "SearchOS: 다중 에이전트 검색 협업을 견고하게 만드는 시스템 수준 아키텍처",
       "blog_url": "https://jkf87.github.io/posts/2026-07-17-searchos-multi-agent-information-seeking",
-      "commit": "c023750"
+      "commit": "c023750",
+      "threads_root_id": "17915217114422727",
+      "threads_reply_ids": [
+        "18117953734871952",
+        "17871576798555734",
+        "18108139289001326",
+        "18111168298982424"
+      ],
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-17-searchos-multi-agent-information-seeking.md"
     }
   ],
   "entries": []
