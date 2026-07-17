@@ -526,15 +526,15 @@
         "18062778476734023"
       ],
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-16-harness-handbook-agent-harness-evolution.md"
+    },
+    {
+      "slug": "2026-07-17-llm-planning-two-distinct-abilities",
+      "date": "2026-07-17",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.11197",
+      "title": "LLM 계획 능력은 하나가 아니다 — 조작적 추론과 구조적 열거의 비대칭적 스케일링",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-17-llm-planning-two-distinct-abilities"
     }
   ],
-  "entries": [
-    {
-      "date": "2026-07-17",
-      "slug": "2026-07-17-llm-planning-two-distinct-abilities",
-      "title": "LLM 계획 능력은 하나가 아니다 — 조작적 추론과 구조적 열거의 비대칭적 스케일링",
-      "source_url": "https://arxiv.org/abs/2607.11197",
-      "published": "2026-07-17"
-    }
-  ]
+  "entries": []
 }
