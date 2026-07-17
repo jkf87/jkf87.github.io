@@ -612,7 +612,16 @@
       "source": "arxiv",
       "source_url": "https://arxiv.org/abs/2607.12800",
       "title": "UniVR: 텍스트 없이 시각 공간에서 직접 추론하는 AI - Visual Reasoning GRPO의 등장",
-      "blog_url": "https://jkf87.github.io/posts/2026-07-18-univr-visual-space-reasoning"
+      "blog_url": "https://jkf87.github.io/posts/2026-07-18-univr-visual-space-reasoning",
+      "commit": "04d47f3",
+      "threads_root_id": "18095956310341799",
+      "threads_reply_ids": [
+        "18106508600115642",
+        "18095440001616156",
+        "18027052877669096",
+        "18027074309664957"
+      ],
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-18-univr-visual-space-reasoning.md"
     }
   ],
   "entries": []
