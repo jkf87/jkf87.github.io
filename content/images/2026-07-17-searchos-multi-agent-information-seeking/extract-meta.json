@@ -1,0 +1,162 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1484x874)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 302,
+    "width": 1484,
+    "height": 874,
+    "caption": "Figure 1 SearchOS  interface for a long-horizon information-seeking task. The workspace exposes the orchestration trace, pipeline",
+    "crop": [
+      58.87,
+      51.78,
+      553.13,
+      342.92
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (1484x1062)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 295,
+    "width": 1484,
+    "height": 1062,
+    "caption": "Figure 2 SearchOS  architecture.",
+    "crop": [
+      58.87,
+      51.78,
+      553.05,
+      405.48
+    ]
+  },
+  {
+    "page": 7,
+    "file": "table-1-p7.png",
+    "method": "caption_crop_table_below (1024x346)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 43,
+    "width": 1024,
+    "height": 346,
+    "caption": "Table 1  Role-scoped tools.  \u0013  denotes availability.",
+    "crop": [
+      135.5,
+      56.28,
+      476.5,
+      171.05
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-3-p8.png",
+    "method": "caption_crop (1462x771)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 106,
+    "width": 1462,
+    "height": 771,
+    "caption": "Figure 3  Illustration of middleware interventions in the Search Agent loop.",
+    "crop": [
+      62.44,
+      55.35,
+      549.58,
+      312.09
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-4-p9.png",
+    "method": "caption_crop (1392x484)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 216,
+    "width": 1392,
+    "height": 484,
+    "caption": "Figure 4  Pre-built skills: (a) weighted keyword frequency; (b) access-skill counts and mean functions by domain.",
+    "crop": [
+      58.87,
+      51.78,
+      522.59,
+      212.82
+    ]
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2  Main results on WideSearch and GISA. The best score in each row is in  bold , and the second-best score is underlined.  ∆",
+    "crop": null
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  2  reports the main results.  SearchOS  achieves the best overall performance on both bench-",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "table-3-p11.png",
+    "method": "caption_crop_table_below (1480x368)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 73,
+    "width": 1480,
+    "height": 368,
+    "caption": "Table 3  Relational Schema Completion analysis. Oracle means selecting the higher-Item-F1 fixed schema per case.",
+    "crop": [
+      58.87,
+      56.32,
+      551.8,
+      178.63
+    ]
+  },
+  {
+    "page": 11,
+    "file": "table-3-p11-2.png",
+    "method": "caption_crop (1485x1419)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 320,
+    "width": 1485,
+    "height": 1419,
+    "caption": "Table  3  reports the comparison on 40 cases. Fixed multi-table is stronger on average than fixed",
+    "crop": [
+      58.5,
+      84.63,
+      553.14,
+      557.3
+    ]
+  },
+  {
+    "page": 12,
+    "file": "table-4-p12.png",
+    "method": "caption_crop_table_below (1403x792)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 153,
+    "width": 1403,
+    "height": 792,
+    "caption": "Table 4  Round-wise scheduling results (median across 10 cases).",
+    "crop": [
+      83.89,
+      123.18,
+      551.09,
+      386.97
+    ]
+  }
+]
