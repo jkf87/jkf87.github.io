@@ -1,0 +1,44 @@
+[
+  {
+    "file": "fig1_univr_overview.png",
+    "status": "accepted",
+    "method": "html_source",
+    "source": "https://arxiv.org/html/2607.12800v1/Fig/Fig1_v1.png",
+    "caption": "Figure 1: UniVR focuses on advancing native visual-space reasoning and planning across diverse tasks. Compared to LMMs that reason within textual space, UniVR facilitates a more profound comprehension of real visual world, improving policy learning in various scenarios."
+  },
+  {
+    "file": "fig2_architecture.png",
+    "status": "accepted",
+    "method": "html_source",
+    "source": "https://arxiv.org/html/2607.12800v1/x1.png",
+    "caption": "Figure 2: Overview of UniVR architecture. Via a unified next-token prediction objective, UniVR processes instructions and image queries to directly generate visual reasoning traces for task execution."
+  },
+  {
+    "file": "fig3_vr_grpo_method.png",
+    "status": "accepted",
+    "method": "html_source",
+    "source": "https://arxiv.org/html/2607.12800v1/x2.png",
+    "caption": "Figure 3: The proposed Visual Reasoning GRPO. (up) VR-GRPO integrates global and step-focal rewards to ensure both task completion and the physical coherence of generated reasoning traces. (down) Failure case of global rewards that overlook local inconsistencies within long reasoning traces."
+  },
+  {
+    "file": "fig4_vrx_benchmark.png",
+    "status": "accepted",
+    "method": "html_source",
+    "source": "https://arxiv.org/html/2607.12800v1/Fig/VRX_v1.png",
+    "caption": "Figure 4: Overview of VR-X benchmark."
+  },
+  {
+    "file": "fig6_reward_analysis.png",
+    "status": "accepted",
+    "method": "html_source",
+    "source": "https://arxiv.org/html/2607.12800v1/x3.png",
+    "caption": "Figure 6: Analysis of the Visual Reasoning Reward. (Up) Relying solely on the global reward misses step-level errors in long-horizon planning tasks. (Down) RL reward curves with and without the step-level reward component."
+  },
+  {
+    "file": "fig7_gemini_comparison.png",
+    "status": "accepted",
+    "method": "html_source",
+    "source": "https://arxiv.org/html/2607.12800v1/x4.png",
+    "caption": "Figure 7: Comparison with Gemini and Emu3.5. In each group, the first, second, and third rows correspond to Gemini 3 Pro + Nano Banana 2, Emu3.5, and UniVR, respectively."
+  }
+]
