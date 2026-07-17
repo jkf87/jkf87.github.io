@@ -562,7 +562,15 @@
       "source": "huggingface",
       "source_url": "https://arxiv.org/abs/2607.14777",
       "title": "SEED: 에이전트 RL이 완료된 궤적에서 스스로 배우는 자가진화 증류",
-      "blog_url": "https://jkf87.github.io/posts/2026-07-17-seed-self-evolving-agentic-rl-distillation"
+      "blog_url": "https://jkf87.github.io/posts/2026-07-17-seed-self-evolving-agentic-rl-distillation",
+      "threads_root_id": "17948546919217922",
+      "threads_reply_ids": [
+        "17936752470331177",
+        "18126631807734485",
+        "18152176603502935",
+        "18388644400201234"
+      ],
+      "commit": "f086955"
     }
   ],
   "entries": []
