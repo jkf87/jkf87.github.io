@@ -543,6 +543,18 @@
       ],
       "commit": "b8331e7",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-17-llm-planning-two-distinct-abilities.md"
+    },
+    {
+      "slug": "dont-ship-skills-without-evals-2026-07-17",
+      "date": "2026-07-17",
+      "source": "youtube",
+      "source_url": "https://www.youtube.com/watch?v=0vphxNt4wyk",
+      "threads_root_id": "18125034379776953",
+      "threads_reply_ids": [
+        "18357055705245672",
+        "18013842878873253"
+      ],
+      "blog_url": "https://jkf87.github.io/posts/dont-ship-skills-without-evals-2026-07-17"
     }
   ],
   "entries": []
