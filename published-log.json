@@ -578,7 +578,16 @@
       "source": "arxiv",
       "source_url": "https://arxiv.org/abs/2607.13104",
       "title": "자기 개선하는 AI 에이전트: 현대 에이전트 시스템의 자가진화 아키텍처 전망",
-      "blog_url": "https://jkf87.github.io/posts/2026-07-17-self-improving-agentic-systems-survey"
+      "blog_url": "https://jkf87.github.io/posts/2026-07-17-self-improving-agentic-systems-survey",
+      "threads_root_id": "17927797128361869",
+      "threads_reply_ids": [
+        "18115355086718488",
+        "17905292442288037",
+        "18100728464247515",
+        "17970626880102555",
+        "18126856888659205"
+      ],
+      "commit": "1115d29"
     }
   ],
   "entries": []
