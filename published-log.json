@@ -555,6 +555,14 @@
         "18013842878873253"
       ],
       "blog_url": "https://jkf87.github.io/posts/dont-ship-skills-without-evals-2026-07-17"
+    },
+    {
+      "slug": "2026-07-17-seed-self-evolving-agentic-rl-distillation",
+      "date": "2026-07-17",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2607.14777",
+      "title": "SEED: 에이전트 RL이 완료된 궤적에서 스스로 배우는 자가진화 증류",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-17-seed-self-evolving-agentic-rl-distillation"
     }
   ],
   "entries": []

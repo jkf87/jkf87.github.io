@@ -1,0 +1,167 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1251x774)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 94,
+    "width": 1251,
+    "height": 774,
+    "caption": "Figure 1:",
+    "crop": [
+      96.0,
+      69.86,
+      512.76,
+      327.41
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (1260x1000)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 306,
+    "width": 1260,
+    "height": 1000,
+    "caption": "Figure 2:  Overview of S EED . Stage 1  (Hindsight Skill SFT) equips the policy to extract hindsight",
+    "crop": [
+      96.0,
+      69.86,
+      516.0,
+      402.78
+    ]
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "caption_crop_table_below",
+    "status": "rejected",
+    "reason": "crop too small (215x64pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1:",
+    "crop": [
+      96.0,
+      83.13349914550781,
+      310.7019958496094,
+      146.927978515625
+    ]
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  1  reports the results across different model scales and agentic domains. Three findings emerge:",
+    "crop": null
+  },
+  {
+    "page": 10,
+    "file": "fig-3-p10.png",
+    "method": "caption_crop (1261x649)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 134,
+    "width": 1261,
+    "height": 649,
+    "caption": "Figure 3:",
+    "crop": [
+      96.0,
+      69.86,
+      516.02,
+      285.86
+    ]
+  },
+  {
+    "page": 10,
+    "file": "fig-3-p10-2.png",
+    "method": "caption_crop (1261x885)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 174,
+    "width": 1261,
+    "height": 885,
+    "caption": "Figure  3  compares the optimization dynamics of S EED  and GRPO on ALFWorld. The success-",
+    "crop": [
+      96.0,
+      69.86,
+      516.02,
+      364.39
+    ]
+  },
+  {
+    "page": 10,
+    "file": "fig-4-p10.png",
+    "method": "caption_crop (1261x1265)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 257,
+    "width": 1261,
+    "height": 1265,
+    "caption": "Figure  4  shows that S EED  consistently outperforms GRPO across all data fractions and can match",
+    "crop": [
+      96.0,
+      69.86,
+      516.02,
+      491.02
+    ]
+  },
+  {
+    "page": 10,
+    "file": "table-2-p10.png",
+    "method": "caption_crop (1261x1959)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 412,
+    "width": 1261,
+    "height": 1959,
+    "caption": "Table  2  evaluates the contribution of the three core components of S EED .",
+    "crop": [
+      96.0,
+      69.86,
+      516.02,
+      722.37
+    ]
+  },
+  {
+    "page": 11,
+    "file": "fig-4-p11.png",
+    "method": "caption_crop (643x551)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 48,
+    "width": 643,
+    "height": 551,
+    "caption": "Figure 4:",
+    "crop": [
+      96.0,
+      71.09,
+      310.08,
+      254.61
+    ]
+  },
+  {
+    "page": 11,
+    "file": "fig-5-p11.png",
+    "method": "caption_crop (1260x555)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 93,
+    "width": 1260,
+    "height": 555,
+    "caption": "Figure 5:",
+    "crop": [
+      96.0,
+      69.86,
+      516.0,
+      254.61
+    ]
+  }
+]
