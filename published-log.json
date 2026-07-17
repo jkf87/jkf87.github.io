@@ -533,7 +533,16 @@
       "source": "arxiv",
       "source_url": "https://arxiv.org/abs/2607.11197",
       "title": "LLM 계획 능력은 하나가 아니다 — 조작적 추론과 구조적 열거의 비대칭적 스케일링",
-      "blog_url": "https://jkf87.github.io/posts/2026-07-17-llm-planning-two-distinct-abilities"
+      "blog_url": "https://jkf87.github.io/posts/2026-07-17-llm-planning-two-distinct-abilities",
+      "threads_root_id": "18063176645497126",
+      "threads_reply_ids": [
+        "18345852682173123",
+        "18127156237728361",
+        "18088749323572785",
+        "17900291601333125"
+      ],
+      "commit": "b8331e7",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-17-llm-planning-two-distinct-abilities.md"
     }
   ],
   "entries": []
