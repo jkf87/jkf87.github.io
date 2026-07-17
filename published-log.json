@@ -571,6 +571,14 @@
         "18388644400201234"
       ],
       "commit": "f086955"
+    },
+    {
+      "slug": "2026-07-17-self-improving-agentic-systems-survey",
+      "date": "2026-07-17",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.13104",
+      "title": "자기 개선하는 AI 에이전트: 현대 에이전트 시스템의 자가진화 아키텍처 전망",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-17-self-improving-agentic-systems-survey"
     }
   ],
   "entries": []

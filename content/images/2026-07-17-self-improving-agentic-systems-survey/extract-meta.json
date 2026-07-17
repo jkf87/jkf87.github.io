@@ -1,0 +1,138 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (1280x874)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 372,
+    "width": 1280,
+    "height": 874,
+    "caption": "Figure 1:  Overview of self-improvement paradigms for modern AI agents.  We categorize",
+    "crop": [
+      91.71,
+      275.35,
+      518.05,
+      566.59
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-1-p6.png",
+    "method": "caption_crop (727x559)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 70,
+    "width": 727,
+    "height": 559,
+    "caption": "Table 1:",
+    "crop": [
+      273.89,
+      269.15,
+      516.0,
+      455.23
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-2-p7.png",
+    "method": "caption_crop (1828x1196)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 578,
+    "width": 1828,
+    "height": 1196,
+    "caption": "Figure 2: Timeline and taxonomy of self-improvement in foundation-model-based agents",
+    "crop": [
+      2.85,
+      60.63,
+      612.0,
+      458.95
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-3-p8.png",
+    "method": "caption_crop (1264x541)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 207,
+    "width": 1264,
+    "height": 541,
+    "caption": "Figure 3: A unified taxonomy of self-improving agents spanning foundation-model updates,",
+    "crop": [
+      96.0,
+      488.22,
+      517.24,
+      668.33
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-4-p9.png",
+    "method": "caption_crop (1686x710)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 151,
+    "width": 1686,
+    "height": 710,
+    "caption": "Figure 4: A timeline of theoretical roots and idealized models for self-improving agents,",
+    "crop": [
+      38.69,
+      2.45,
+      600.34,
+      238.8
+    ]
+  },
+  {
+    "page": 13,
+    "file": "fig-5-p13.png",
+    "method": "caption_crop (1745x810)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 148,
+    "width": 1745,
+    "height": 810,
+    "caption": "Figure 5: Schematic of an FM-based agent under our formalism.",
+    "crop": [
+      26.28,
+      100.35,
+      607.61,
+      370.13
+    ]
+  },
+  {
+    "page": 19,
+    "file": "fig-6-p19.png",
+    "method": "caption_crop (1318x774)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 170,
+    "width": 1318,
+    "height": 774,
+    "caption": "Figure 6: Overview of foundation model improvement under agent-induced learning",
+    "crop": [
+      93.49,
+      41.68,
+      532.34,
+      299.35
+    ]
+  },
+  {
+    "page": 28,
+    "file": "fig-7-p28.png",
+    "method": "caption_crop (1494x759)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 141,
+    "width": 1494,
+    "height": 759,
+    "caption": "Figure 7: Prompt refinement as a self-improvement loop and its four paradigms, organized",
+    "crop": [
+      75.03,
+      66.64,
+      572.86,
+      319.32
+    ]
+  }
+]
