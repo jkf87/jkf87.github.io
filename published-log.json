@@ -663,7 +663,16 @@
       "source": "huggingface",
       "source_url": "https://arxiv.org/abs/2607.15207",
       "title": "BadWAM: 로봇이 올바른 미래를 상상하면서 잘못된 행동을 실행할 때 — World-Action Model의 새로운 공격 표면",
-      "blog_url": "https://jkf87.github.io/posts/2026-07-18-badwam-world-action-drift-attack"
+      "blog_url": "https://jkf87.github.io/posts/2026-07-18-badwam-world-action-drift-attack",
+      "commit": "44ca1ec",
+      "threads_root_id": "18112292468073905",
+      "threads_reply_ids": [
+        "17917394670201698",
+        "18114923077936875",
+        "18189961954384287",
+        "18116334787785229"
+      ],
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-18-badwam-world-action-drift-attack.md"
     }
   ],
   "entries": []
