@@ -1,0 +1,150 @@
+[
+  {
+    "page": 4,
+    "file": "fig-1-p4.png",
+    "method": "caption_crop (1405x1131)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 178,
+    "width": 1405,
+    "height": 1131,
+    "caption": "Figure 1",
+    "crop": [
+      58.87,
+      113.61,
+      526.94,
+      490.2
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-2-p5.png",
+    "method": "caption_crop (1483x721)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 120,
+    "width": 1483,
+    "height": 721,
+    "caption": "Figure 2",
+    "crop": [
+      58.87,
+      402.06,
+      552.96,
+      642.25
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 3 opens both decoder stacks at the level needed by the training runtime. The diagram shows counts",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "table-1-p7.png",
+    "method": "caption_crop_table_below (1485x1105)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 228,
+    "width": 1485,
+    "height": 1105,
+    "caption": "Table 1  The two model axes and the state that crosses the detached prompt boundary. Dense/MoE describes the",
+    "crop": [
+      58.62,
+      72.39,
+      553.18,
+      440.54
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-3-p7.png",
+    "method": "caption_crop (1484x741)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 152,
+    "width": 1484,
+    "height": 741,
+    "caption": "Figure 3  Two independent architecture axes.  Blue bands encode token mixing and retained prompt state; green bands",
+    "crop": [
+      58.87,
+      231.57,
+      553.16,
+      478.06
+    ]
+  },
+  {
+    "page": 10,
+    "file": "fig-4-p10.png",
+    "method": "caption_crop (1328x616)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 118,
+    "width": 1328,
+    "height": 616,
+    "caption": "Figure 4",
+    "crop": [
+      58.87,
+      97.84,
+      501.11,
+      302.71
+    ]
+  },
+  {
+    "page": 10,
+    "file": "table-2-p10.png",
+    "method": "caption_crop (1485x1209)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 261,
+    "width": 1485,
+    "height": 1209,
+    "caption": "Table 2 distinguishes durable prompt state from transient prompt work. The distinction is the basis for both",
+    "crop": [
+      58.51,
+      97.84,
+      553.1,
+      500.46
+    ]
+  },
+  {
+    "page": 11,
+    "file": "table-2-p11.png",
+    "method": "caption_crop_table_below (1502x657)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 177,
+    "width": 1502,
+    "height": 657,
+    "caption": "Table 2  Prompt-boundary state inventory. Durable rows survive no-grad prefix capture and are read by response",
+    "crop": [
+      55.88,
+      72.39,
+      556.12,
+      291.29
+    ]
+  },
+  {
+    "page": 12,
+    "file": "table-3-p12.png",
+    "method": "caption_crop_table_below (1502x638)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 183,
+    "width": 1502,
+    "height": 638,
+    "caption": "Table 3  Parallel layouts and their semantic boundaries. Context parallelism partitions prompt state, whereas expert",
+    "crop": [
+      55.88,
+      72.39,
+      556.12,
+      284.96
+    ]
+  }
+]
