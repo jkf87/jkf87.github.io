@@ -715,7 +715,14 @@
       "source": "huggingface",
       "source_url": "https://arxiv.org/abs/2607.13705",
       "title": "AgentCompass: A Unified Evaluation Infrastructure for Agent Capabilities",
-      "blog_url": "https://jkf87.github.io/posts/2026-07-19-agentcompass-unified-agent-evaluation-infrastructure"
+      "blog_url": "https://jkf87.github.io/posts/2026-07-19-agentcompass-unified-agent-evaluation-infrastructure",
+      "threads_root_id": "18097905025986235",
+      "threads_reply_ids": [
+        "18464358352118122",
+        "18104698940130940",
+        "18397208809092663",
+        "17954621508191246"
+      ]
     }
   ],
   "entries": []
