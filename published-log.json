@@ -646,7 +646,16 @@
       "source": "huggingface",
       "source_url": "https://arxiv.org/abs/2607.14952",
       "title": "LongStraw: 200만 토큰 컨텍스트 RL 포스트트레이닝을 고정 GPU 예산에서 가능하게 하는 시스템",
-      "blog_url": "https://jkf87.github.io/posts/2026-07-18-longstraw-million-token-rl-post-training"
+      "blog_url": "https://jkf87.github.io/posts/2026-07-18-longstraw-million-token-rl-post-training",
+      "commit": "19954c2",
+      "threads_root_id": "18111690532961846",
+      "threads_reply_ids": [
+        "18049080287566953",
+        "18118234000861667",
+        "18301236604303944",
+        "18119776003654250"
+      ],
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-18-longstraw-million-token-rl-post-training.md"
     }
   ],
   "entries": []
