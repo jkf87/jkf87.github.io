@@ -622,6 +622,14 @@
         "18027074309664957"
       ],
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-18-univr-visual-space-reasoning.md"
+    },
+    {
+      "slug": "2026-07-18-mcpevol-bench-agent-tool-evolution",
+      "date": "2026-07-18",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.14642",
+      "title": "MCPEvol-Bench: AI 에이전트가 도구 변화에 얼마나 무력한가",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-18-mcpevol-bench-agent-tool-evolution"
     }
   ],
   "entries": []

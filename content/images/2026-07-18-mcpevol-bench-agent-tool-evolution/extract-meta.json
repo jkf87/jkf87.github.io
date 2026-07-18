@@ -1,0 +1,203 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1265x569)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 189,
+    "width": 1265,
+    "height": 569,
+    "caption": "Figure 1: The framework of MCPEvol-Bench.  (A) Empirical Study of MCP Server Evolution :",
+    "crop": [
+      96.0,
+      55.02,
+      517.38,
+      244.49
+    ]
+  },
+  {
+    "page": 2,
+    "file": "table-1-p2.png",
+    "method": "caption_crop (1082x1787)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 509,
+    "width": 1082,
+    "height": 1787,
+    "caption": "Table 1: Comparison of representative tool-using benchmarks.",
+    "crop": [
+      125.7,
+      55.02,
+      486.29,
+      650.43
+    ]
+  },
+  {
+    "page": 3,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: An example from MCPEvol-BENCH, comparing original and evolved server configurations.",
+    "crop": null
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (1260x455)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 110,
+    "width": 1260,
+    "height": 455,
+    "caption": "Figure 2: Availability of remote MCP servers.",
+    "crop": [
+      96.0,
+      60.0,
+      515.99,
+      211.65
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-3-p4.png",
+    "method": "caption_crop (1260x462)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 110,
+    "width": 1260,
+    "height": 462,
+    "caption": "Figure 3: The distribution of evolution patterns.",
+    "crop": [
+      96.0,
+      60.0,
+      516.0,
+      213.68
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (422x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 4: The 11 evolution mutation operators are categorized into “TOOL”, “PARAM”, and “DESC”",
+    "crop": [
+      96.0,
+      499.430908203125,
+      517.7686767578125,
+      209.90789794921875
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-5-p6.png",
+    "method": "caption_crop (595x588)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 106,
+    "width": 595,
+    "height": 588,
+    "caption": "Figure 5: An example of LLM-Driven MCP",
+    "crop": [
+      317.76,
+      499.43,
+      516.0,
+      695.15
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Performance comparison of LLM agents across three evolution stages of MCP configuration,",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 5 illustrates this process, where the LLM applies Operator 5 (O5) to augment the  get-tickets",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3 reports the task performance of LLM agents across three MCP server evolution stages.",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "fig-6-p8.png",
+    "method": "caption_crop (1261x499)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 92,
+    "width": 1261,
+    "height": 499,
+    "caption": "Figure 6: Diagnostic Analysis of MCP Server Dynamic Evolution. (a) Universal increase in error",
+    "crop": [
+      96.0,
+      60.0,
+      516.17,
+      226.09
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-6-p8-2.png",
+    "method": "caption_crop (1261x1878)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 484,
+    "width": 1261,
+    "height": 1878,
+    "caption": "Figure 6 (b) presents the operator-specific contributions, revealing three key insights: 1) Evolution",
+    "crop": [
+      96.0,
+      60.0,
+      516.0,
+      685.88
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-7-p9.png",
+    "method": "caption_crop (1261x490)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 149,
+    "width": 1261,
+    "height": 490,
+    "caption": "Figure 7: Case Study: Impact of MCP Server Evolution. Table 2 lists the original and evolved toolset",
+    "crop": [
+      96.0,
+      86.54,
+      516.0,
+      249.39
+    ]
+  }
+]
