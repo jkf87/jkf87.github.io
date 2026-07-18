@@ -1,0 +1,138 @@
+[
+  {
+    "page": 4,
+    "file": "fig-1-p4.png",
+    "method": "caption_crop (1602x510)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 123,
+    "width": 1602,
+    "height": 510,
+    "caption": "Figure 1: Empirical motivation for world-action adversarial",
+    "crop": [
+      38.76,
+      38.69,
+      572.41,
+      208.51
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (1602x444)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 100,
+    "width": 1602,
+    "height": 444,
+    "caption": "Figure 2: Action-only adversarial attack produces structured",
+    "crop": [
+      38.76,
+      38.69,
+      572.41,
+      186.44
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-3-p5.png",
+    "method": "caption_crop (1585x715)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 220,
+    "width": 1585,
+    "height": 715,
+    "caption": "Figure 3: Overview of BadWAM. BadWAM injects a small visual perturbation into model observations and performs query-based",
+    "crop": [
+      42.0,
+      65.56,
+      570.0,
+      303.63
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-4-p6.png",
+    "method": "caption_crop (1836x697)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 1070,
+    "width": 1836,
+    "height": 697,
+    "caption": "Figure 4: Qualitative illustration of the imagination-preserving objective on IDM WAM. Each panel compares predicted futures",
+    "crop": [
+      0.0,
+      28.85,
+      612.0,
+      260.76
+    ]
+  },
+  {
+    "page": 7,
+    "file": "table-1-p7.png",
+    "method": "caption_crop_table_below (1613x877)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 185,
+    "width": 1613,
+    "height": 877,
+    "caption": "Table 1: Main closed-loop attack results on full sweeps with  ε  =  0 . 06  and a search budget of 8 optimization iterations per",
+    "crop": [
+      35.82,
+      64.58,
+      573.15,
+      356.61
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-5-p7.png",
+    "method": "caption_crop (1613x654)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 158,
+    "width": 1613,
+    "height": 654,
+    "caption": "Figure 5: Task-level failure profile under attack. Unlike",
+    "crop": [
+      35.82,
+      156.43,
+      573.15,
+      374.04
+    ]
+  },
+  {
+    "page": 7,
+    "file": "table-1-p7-3.png",
+    "method": "caption_crop (1613x689)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 172,
+    "width": 1613,
+    "height": 689,
+    "caption": "Table  1 , which reports aggregate success, this figure shows",
+    "crop": [
+      35.82,
+      156.43,
+      573.15,
+      386.0
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-6-p7.png",
+    "method": "caption_crop (1613x453)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 98,
+    "width": 1613,
+    "height": 453,
+    "caption": "Figure 6: Comparison with random perturbations on full",
+    "crop": [
+      35.82,
+      156.43,
+      573.15,
+      307.03
+    ]
+  }
+]
