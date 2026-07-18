@@ -697,7 +697,17 @@
       "source": "arxiv",
       "source_url": "https://arxiv.org/abs/2607.12227",
       "title": "하네스 진화가 진짜 효과가 있는지 다시 묻다 — AI2·UW의 냉정한 평가",
-      "blog_url": "https://jkf87.github.io/posts/2026-07-18-harness-evolution-evaluation-rethink"
+      "blog_url": "https://jkf87.github.io/posts/2026-07-18-harness-evolution-evaluation-rethink",
+      "commit": "d677bd2",
+      "threads_root_id": "17890967898671220",
+      "threads_reply_ids": [
+        "17907852714445010",
+        "18118626691882460",
+        "18079770353302052",
+        "18364090777212452",
+        "18362782612213541"
+      ],
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-18-harness-evolution-evaluation-rethink.md"
     }
   ],
   "entries": []
