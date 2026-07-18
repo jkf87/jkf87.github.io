@@ -1,0 +1,135 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (978x585)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 92,
+    "width": 978,
+    "height": 585,
+    "caption": "Figure 1: Human interaction with T O F U  harness.",
+    "crop": [
+      247.12,
+      180.32,
+      572.86,
+      374.71
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-2-p3.png",
+    "method": "caption_crop (1382x869)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 237,
+    "width": 1382,
+    "height": 869,
+    "caption": "Figure 2: The overview of T O F U  harness.",
+    "crop": [
+      67.37,
+      58.87,
+      527.94,
+      348.08
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Performance of T O F U , C LAUDE  C ODE , and O PEN C ODE  on the full  SWE-bench Verified  across three",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "fig-3-p6.png",
+    "method": "caption_crop (733x443)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 39,
+    "width": 733,
+    "height": 443,
+    "caption": "Figure 3: Performance of T O F U  with multilingual en-",
+    "crop": [
+      294.14,
+      59.26,
+      538.06,
+      206.54
+    ]
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Blind pairwise  human  preference for T O F U  by",
+    "crop": null
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Fig.  4  visualize the demonstration UI pages of",
+    "crop": null
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  3  contrasts the two designs across context,",
+    "crop": null
+  },
+  {
+    "page": 10,
+    "file": "fig-4-p10.png",
+    "method": "caption_crop (1434x477)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 227,
+    "width": 1434,
+    "height": 477,
+    "caption": "Figure 4: Demonstration UI page of T O F U  and paper reader.",
+    "crop": [
+      58.87,
+      80.2,
+      536.41,
+      238.82
+    ]
+  },
+  {
+    "page": 10,
+    "file": "table-3-p10.png",
+    "method": "caption_crop (1434x2065)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 531,
+    "width": 1434,
+    "height": 2065,
+    "caption": "Table 3: Source-verified design comparison of T O F U  and OpenCode.",
+    "crop": [
+      58.87,
+      80.2,
+      536.41,
+      768.32
+    ]
+  }
+]
