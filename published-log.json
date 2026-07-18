@@ -680,7 +680,16 @@
       "source": "arxiv",
       "source_url": "https://arxiv.org/abs/2607.11423",
       "title": "ToFu: 에이전트 하네스를 박스 밖으로 꺼내다 — 토큰 효율·다국어·화이트박스 연구 도구",
-      "blog_url": "https://jkf87.github.io/posts/2026-07-18-tofu-white-box-agent-harness"
+      "blog_url": "https://jkf87.github.io/posts/2026-07-18-tofu-white-box-agent-harness",
+      "commit": "d38e85c",
+      "threads_root_id": "17910698526439232",
+      "threads_reply_ids": [
+        "18124025704706764",
+        "17946379179038976",
+        "17910828033439175",
+        "18143087638474208"
+      ],
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-18-tofu-white-box-agent-harness.md"
     }
   ],
   "entries": []
