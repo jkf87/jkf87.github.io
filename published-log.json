@@ -708,6 +708,14 @@
         "18362782612213541"
       ],
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-18-harness-evolution-evaluation-rethink.md"
+    },
+    {
+      "slug": "2026-07-19-agentcompass-unified-agent-evaluation-infrastructure",
+      "date": "2026-07-19",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2607.13705",
+      "title": "AgentCompass: A Unified Evaluation Infrastructure for Agent Capabilities",
+      "blog_url": "https://jkf87.github.io/2026-07-19-agentcompass-unified-agent-evaluation-infrastructure"
     }
   ],
   "entries": []

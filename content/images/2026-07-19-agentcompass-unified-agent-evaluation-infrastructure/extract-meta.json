@@ -1,0 +1,18 @@
+[
+  {
+    "file": "x1.png",
+    "status": "accepted",
+    "method": "html_source",
+    "caption": "Figure 1: Capability profiles of representative models across the five core evaluation dimensions.",
+    "source_url": "https://arxiv.org/html/2607.13705v1/x1.png",
+    "dimensions": "996x589"
+  },
+  {
+    "file": "x3.png",
+    "status": "accepted",
+    "method": "html_source",
+    "caption": "Figure 3: Distribution of bad-case behaviors across model trajectories.",
+    "source_url": "https://arxiv.org/html/2607.13705v1/x3.png",
+    "dimensions": "997x601"
+  }
+]
