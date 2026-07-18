@@ -1,0 +1,125 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (666x441)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 39,
+    "width": 666,
+    "height": 441,
+    "caption": "Figure 1: Average pass@1 without access to unit",
+    "crop": [
+      294.0,
+      180.13,
+      516.0,
+      326.73
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-2-p3.png",
+    "method": "caption_crop (1261x610)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 125,
+    "width": 1261,
+    "height": 610,
+    "caption": "Figure 2:  Test-time scaling and automatic harness evolution algorithms.  We compare four",
+    "crop": [
+      96.0,
+      60.0,
+      516.17,
+      262.71
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Experimental results on Terminal-Bench 2.1 when unit test cases are unavailable. All results",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1 shows the results. Overall, automatic harness evolution does not deliver a stronger perfor-",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Experimental results on Terminal-Bench 2.1 when unit test cases are available. Best results",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Experimental results on Terminal-Bench 2.1 with disjoint search and evaluation tasks. We",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4: Experiment configurations.",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 3 presents representative examples of the modifications the meta agent applies to the harness.",
+    "crop": null
+  },
+  {
+    "page": 13,
+    "file": "fig-3-p13.png",
+    "method": "caption_crop (1260x1333)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 201,
+    "width": 1260,
+    "height": 1333,
+    "caption": "Figure 3: Examples of harness modifications made in Harness Scaling.",
+    "crop": [
+      96.0,
+      176.62,
+      515.98,
+      620.52
+    ]
+  }
+]
