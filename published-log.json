@@ -770,7 +770,7 @@
       "source": "arxiv",
       "source_url": "https://arxiv.org/abs/2607.10463",
       "title": "GRASP: 강화학습으로 에이전트 RAG의 검색 도구를 자유자재로 다루게 만드는 방법",
-      "blog_url": "https://jkf87.github.io/2026-07-20-grasp-granularity-aware-search-policy-agentic-rag"
+      "blog_url": "https://jkf87.github.io/posts/2026-07-20-grasp-granularity-aware-search-policy-agentic-rag"
     }
   ],
   "entries": [
