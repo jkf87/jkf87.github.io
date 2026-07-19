@@ -763,6 +763,14 @@
       "date": "2026-07-19",
       "source_url": "https://arxiv.org/abs/2607.07321",
       "title": "EvoSOP: 원자적 행동을 표준 작업 절차로 조립하는 자가진화 LLM 에이전트"
+    },
+    {
+      "slug": "2026-07-20-grasp-granularity-aware-search-policy-agentic-rag",
+      "date": "2026-07-20",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.10463",
+      "title": "GRASP: 강화학습으로 에이전트 RAG의 검색 도구를 자유자재로 다루게 만드는 방법",
+      "blog_url": "https://jkf87.github.io/2026-07-20-grasp-granularity-aware-search-policy-agentic-rag"
     }
   ],
   "entries": [
