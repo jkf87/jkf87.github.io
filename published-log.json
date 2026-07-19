@@ -746,7 +746,17 @@
       "source": "arxiv",
       "source_url": "https://arxiv.org/abs/2607.14989",
       "title": "OmniaBench: 범용 AI 에이전트의 진짜 한계를 측정하다",
-      "blog_url": "https://jkf87.github.io/posts/2026-07-19-omniabench-general-ai-agent-benchmark"
+      "blog_url": "https://jkf87.github.io/posts/2026-07-19-omniabench-general-ai-agent-benchmark",
+      "threads_root_id": "17913137265425070",
+      "threads_reply_ids": [
+        "17898157986519312",
+        "17957642993982267",
+        "18143805598531714",
+        "18058299956755813",
+        "17869555872630310"
+      ],
+      "commit": "9553625",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-19-omniabench-general-ai-agent-benchmark.md"
     }
   ],
   "entries": []
