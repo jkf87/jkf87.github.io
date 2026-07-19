@@ -1,0 +1,274 @@
+[
+  {
+    "page": 3,
+    "file": "fig-1-p3.png",
+    "method": "caption_crop (1757x962)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 361,
+    "width": 1757,
+    "height": 962,
+    "caption": "Figure 1.  Overview of MemoHarness.  Phase A (Search, training-time optimization)  runs a guided search",
+    "crop": [
+      22.6,
+      54.38,
+      607.99,
+      374.8
+    ]
+  },
+  {
+    "page": 5,
+    "file": "table-1-p5.png",
+    "method": "caption_crop_table_below (1421x862)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 162,
+    "width": 1421,
+    "height": 862,
+    "caption": "Table 1.  Six dimensions of the MemoHarness harness space.",
+    "crop": [
+      66.76,
+      69.11,
+      540.26,
+      356.01
+    ]
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (453x42pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  2  compares MemoHarness to four re-",
+    "crop": [
+      87.73600006103516,
+      372.92645263671875,
+      541.1962280273438,
+      415.2195129394531
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-3-p8.png",
+    "method": "caption_crop (1361x1050)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 281,
+    "width": 1361,
+    "height": 1050,
+    "caption": "Figure  3  shows that the final selected harness improves over  base  on all three benchmarks: 0 . 722 →",
+    "crop": [
+      87.74,
+      372.93,
+      541.2,
+      722.46
+    ]
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (471x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 3.  Harness quality at six checkpoints ( base , four intermediate iterations, and the final selected harness)",
+    "crop": [
+      70.80000305175781,
+      293.7776184082031,
+      541.7933959960938,
+      283.442138671875
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-4-p9.png",
+    "method": "caption_crop (1417x574)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 109,
+    "width": 1417,
+    "height": 574,
+    "caption": "Figure 4.  Per-iteration success rate on  FinanceAgent  (left) and  LiveCodeBench  (right) over 10 search rounds.",
+    "crop": [
+      70.8,
+      293.78,
+      542.73,
+      484.69
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-4-p9-3.png",
+    "method": "caption_crop (1413x881)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 181,
+    "width": 1413,
+    "height": 881,
+    "caption": "Figure  4  shows that  FinanceAgent  continues to improve across search rounds, reaching 65 . 0% near",
+    "crop": [
+      70.8,
+      293.78,
+      541.41,
+      587.32
+    ]
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (472x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2.  Cross-dataset generalization of search-derived harnesses under the shared base model  GPT-5.3-Codex .",
+    "crop": [
+      70.47100067138672,
+      578.0872802734375,
+      542.7350463867188,
+      105.1058578491211
+    ]
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (455x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  2  shows positive but selective transfer. The  Terminal-Bench  harness gives the broad-",
+    "crop": [
+      87.73600006103516,
+      578.0872802734375,
+      543.0466918945312,
+      330.9255065917969
+    ]
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (270x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3.  Cross-model transfer on  Terminal-Bench . Higher is",
+    "crop": [
+      271.3500061035156,
+      578.0872802734375,
+      541.2028198242188,
+      564.27685546875
+    ]
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (219x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  3  shows that every evaluated",
+    "crop": [
+      87.73600006103516,
+      578.0872802734375,
+      306.9456787109375,
+      565.0555419921875
+    ]
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (471x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4.  Cost analysis on  Terminal-Bench  (18-task held-out evaluation split) with  GPT-5.3-Codex  as the shared",
+    "crop": [
+      70.47100067138672,
+      112.13833618164062,
+      541.1976928710938,
+      105.09833526611328
+    ]
+  },
+  {
+    "page": 11,
+    "file": "table-4-p11.png",
+    "method": "caption_crop (1361x620)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 126,
+    "width": 1361,
+    "height": 620,
+    "caption": "Table  4  reports token usage and dollar cost on the  Terminal-Bench  18-task held-out evaluation",
+    "crop": [
+      87.74,
+      91.35,
+      541.2,
+      297.67
+    ]
+  },
+  {
+    "page": 17,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (471x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5.  Base models used in this paper. “Access” indicates whether the model’s weights are publicly released or",
+    "crop": [
+      70.47100067138672,
+      132.23532104492188,
+      541.3882446289062,
+      105.09833526611328
+    ]
+  },
+  {
+    "page": 17,
+    "file": "table-5-p17.png",
+    "method": "caption_crop (1414x1217)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 244,
+    "width": 1414,
+    "height": 1217,
+    "caption": "Table  5  lists the seven base models evaluated in this paper. The harness search itself uses  GPT-5.3-Codex",
+    "crop": [
+      70.47,
+      110.24,
+      541.46,
+      515.64
+    ]
+  },
+  {
+    "page": 20,
+    "file": "table-6-p20.png",
+    "method": "caption_crop_table_below (1413x854)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 148,
+    "width": 1413,
+    "height": 854,
+    "caption": "Table 6.  Operation-level lift analysis on adjacent-iteration transitions. The unit of observation is a single",
+    "crop": [
+      70.47,
+      230.15,
+      541.2,
+      514.39
+    ]
+  }
+]

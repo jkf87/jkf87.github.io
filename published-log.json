@@ -724,6 +724,20 @@
         "18136677004505072"
       ],
       "threads_note": "Reposted clean 2026-07-19 after internal-ID artifact incident; verified post text contains no long internal IDs/log markers."
+    },
+    {
+      "slug": "2026-07-19-memoharness-agent-harness-learns-from-experience",
+      "date": "2026-07-19",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.14159",
+      "title": "MemoHarness: Agent Harnesses That Learn from Experience",
+      "tags": [
+        "agent",
+        "harness",
+        "LLM",
+        "automation",
+        "optimization"
+      ]
     }
   ],
   "entries": []
