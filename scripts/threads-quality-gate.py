@@ -15,6 +15,19 @@ from urllib.parse import urlparse
 from urllib.request import Request, urlopen
 
 URL_RE = re.compile(r"https?://\S+")
+THREADS_INTERNAL_ID_RE = re.compile(r"(?<!\d)\d{15,22}(?!\d)")
+INTERNAL_LOG_MARKERS = (
+    "main.create",
+    "main.publish",
+    "reply.create",
+    "reply.publish",
+    "threads_root_id",
+    "threads_reply_ids",
+    "creation_id",
+    "reply_to_id",
+    "media_type",
+    "access_token",
+)
 
 
 def fail(msg: str) -> None:
@@ -75,6 +88,21 @@ def check_http_200(url: str) -> None:
         fail(f"image URL content-type is not image/* ({ctype!r}): {url}")
 
 
+def check_no_internal_artifacts(post: str, idx: int) -> None:
+    """Reject API/debug artifacts that must never become visible Threads copy."""
+    lowered = post.lower()
+    for marker in INTERNAL_LOG_MARKERS:
+        if marker in lowered:
+            fail(f"post {idx} contains internal publish/log marker: {marker}")
+
+    match = THREADS_INTERNAL_ID_RE.search(post)
+    if match:
+        fail(
+            f"post {idx} contains a long internal-looking numeric ID "
+            f"({match.group(0)}). Threads API IDs belong in logs only, never in post text."
+        )
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Validate a Threads payload before publishing.")
     parser.add_argument("payload", type=Path, help="JSON with posts and postImages fields")
@@ -101,6 +129,7 @@ def main() -> int:
             fail(f"post {i} is empty")
         if len(post) > 500:
             fail(f"post {i} exceeds 500 chars ({len(post)})")
+        check_no_internal_artifacts(post, i)
 
     images = normalize_images(payload.get("postImages") or payload.get("post_images"))
     if args.require_root_image and 1 not in images:
