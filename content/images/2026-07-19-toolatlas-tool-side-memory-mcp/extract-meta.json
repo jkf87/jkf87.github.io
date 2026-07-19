@@ -1,0 +1,253 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (728x562)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 155,
+    "width": 728,
+    "height": 562,
+    "caption": "Figure 1: Two structural limitations of agent-side tool",
+    "crop": [
+      294.14,
+      207.9,
+      536.41,
+      394.71
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (1434x834)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 404,
+    "width": 1434,
+    "height": 834,
+    "caption": "Figure 2: Overview of  ToolAtlas . Stage 1 bootstraps a tool-side memory graph from seed tasks and verified",
+    "crop": [
+      58.87,
+      58.86,
+      536.41,
+      336.61
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Performance comparison on MCPM ARK  under the same-environment split, using  SwitchAct  with GPT-5.4 and GPT-",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Performance comparison on MCPM ARK  under the cross-environment split, using  SwitchAct  with GPT-5.4 as the",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Performance comparison on MCPM ARK  under the cross-agent transfer setting, using GPT-5.4 as the backbone. All",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4: Ablation study on MCPM ARK  under the same-environment split, using  SwitchAct  with GPT-5.4 as the backbone. The",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "table-4-p8.png",
+    "method": "caption_crop (1413x1474)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 497,
+    "width": 1413,
+    "height": 1474,
+    "caption": "Table  4  presents an ablation of  ToolAtlas  by",
+    "crop": [
+      58.53,
+      58.86,
+      529.33,
+      549.85
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-3-p8.png",
+    "method": "caption_crop (728x485)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 89,
+    "width": 728,
+    "height": 485,
+    "caption": "Figure 3: Utility–cost trade-off on MCPM ARK  under the",
+    "crop": [
+      294.14,
+      58.86,
+      536.41,
+      220.2
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-3-p8-3.png",
+    "method": "caption_crop (728x1178)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 200,
+    "width": 728,
+    "height": 1178,
+    "caption": "Figure  3  plots pass@1/pass@4 against inference",
+    "crop": [
+      294.14,
+      58.86,
+      536.41,
+      451.1
+    ]
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5: Task distribution of MCPM ARK  under the",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6:",
+    "crop": null
+  },
+  {
+    "page": 13,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 7: MCPM ARK  under the cross-environment split: entire environment instances are assigned to either train or",
+    "crop": null
+  },
+  {
+    "page": 14,
+    "file": "fig-4-p14.png",
+    "method": "caption_crop (728x402)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 46,
+    "width": 728,
+    "height": 402,
+    "caption": "Figure 4: Effect of frontier exploration across brainstorm",
+    "crop": [
+      294.14,
+      58.87,
+      536.41,
+      192.55
+    ]
+  },
+  {
+    "page": 14,
+    "file": "table-8-p14.png",
+    "method": "caption_crop (729x1904)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 245,
+    "width": 729,
+    "height": 1904,
+    "caption": "Table  8  presents the results on MCPM ARK  using",
+    "crop": [
+      293.8,
+      58.87,
+      536.41,
+      693.05
+    ]
+  },
+  {
+    "page": 14,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  9  presents the results on MCP-U NIVERSE",
+    "crop": null
+  },
+  {
+    "page": 15,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 8: Performance comparison on MCPM ARK  under the same-environment split, using  SwitchAct  with Grok-4 as the",
+    "crop": null
+  },
+  {
+    "page": 15,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 9: Performance comparison on MCP-U NIVERSE  under the same-environment split, using  SwitchAct  with GPT-5.4 as the",
+    "crop": null
+  },
+  {
+    "page": 15,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  4  compares the Frontier Exploration of",
+    "crop": null
+  }
+]
