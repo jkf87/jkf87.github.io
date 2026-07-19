@@ -1,0 +1,123 @@
+[
+  {
+    "page": 3,
+    "file": "fig-1-p3.png",
+    "method": "caption_crop (1434x889)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 201,
+    "width": 1434,
+    "height": 889,
+    "caption": "Figure 1: The overall architecture of E VO SOP, illustrating the iterative tool optimization lifecycle. The framework",
+    "crop": [
+      58.87,
+      58.87,
+      536.66,
+      354.84
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Averaged successful rate  ±  standard error (%)",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  1 . In general, E VO SOP outperforms both the",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "fig-2-p7.png",
+    "method": "caption_crop (1410x511)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 102,
+    "width": 1410,
+    "height": 511,
+    "caption": "Figure 2: The averaged reasoning rounds across epochs",
+    "crop": [
+      58.87,
+      46.79,
+      528.5,
+      216.67
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-3-p7.png",
+    "method": "caption_crop (1417x451)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 90,
+    "width": 1417,
+    "height": 451,
+    "caption": "Figure 3: Performance of E VO SOP and its ablated vari-",
+    "crop": [
+      66.23,
+      46.79,
+      538.06,
+      196.86
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-4-p8.png",
+    "method": "caption_crop (733x590)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 81,
+    "width": 733,
+    "height": 590,
+    "caption": "Figure 4: The lifetime of synthesized SOPs. The num-",
+    "crop": [
+      58.87,
+      58.86,
+      302.78,
+      255.31
+    ]
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  1  are the average success rates  ±  standard",
+    "crop": null
+  },
+  {
+    "page": 13,
+    "file": "fig-5-p13.png",
+    "method": "caption_crop (733x460)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 56,
+    "width": 733,
+    "height": 460,
+    "caption": "Figure 5: Trends of constructed, involved, and main-",
+    "crop": [
+      58.87,
+      58.87,
+      302.79,
+      211.96
+    ]
+  }
+]
