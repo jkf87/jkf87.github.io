@@ -1,0 +1,196 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (1484x565)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 107,
+    "width": 1484,
+    "height": 565,
+    "caption": "Figure 1 OmniaBench leaderboard.  Overall performances of evaluated models on the challenging set.",
+    "crop": [
+      58.87,
+      529.14,
+      553.13,
+      717.14
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-2-p3.png",
+    "method": "caption_crop (1488x608)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 147,
+    "width": 1488,
+    "height": 608,
+    "caption": "Figure 2 Conceptual overview of OmniaBench.  The figure summarizes the key components of the benchmark,",
+    "crop": [
+      58.87,
+      65.95,
+      554.43,
+      268.11
+    ]
+  },
+  {
+    "page": 4,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1  Comparison with representative agent benchmarks.  ✓ indicates full support,  ▲ indicates partial support or a",
+    "crop": null
+  },
+  {
+    "page": 5,
+    "file": "fig-3-p5.png",
+    "method": "caption_crop (1484x667)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 310,
+    "width": 1484,
+    "height": 667,
+    "caption": "Figure 3",
+    "crop": [
+      58.87,
+      46.03,
+      553.13,
+      268.06
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2  Overview of the taxonomy structure.",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "fig-4-p7.png",
+    "method": "caption_crop (1488x936)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 550,
+    "width": 1488,
+    "height": 936,
+    "caption": "Figure 4 Overview of the data construction pipeline.  Starting from the taxonomy, domain knowledge collected by",
+    "crop": [
+      58.45,
+      57.81,
+      554.07,
+      369.63
+    ]
+  },
+  {
+    "page": 8,
+    "file": "table-3-p8.png",
+    "method": "caption_crop_table_below (1485x583)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 89,
+    "width": 1485,
+    "height": 583,
+    "caption": "Table 3 Statistics of the challenging set across task categories.  All values are averaged over tasks within each",
+    "crop": [
+      58.59,
+      305.72,
+      553.13,
+      499.87
+    ]
+  },
+  {
+    "page": 9,
+    "file": "table-4-p9.png",
+    "method": "caption_crop (1500x536)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 134,
+    "width": 1500,
+    "height": 536,
+    "caption": "Table 4 Benchmark results across different evaluation routes.  Pass@1 performance across four task construction",
+    "crop": [
+      58.59,
+      291.19,
+      558.24,
+      469.47
+    ]
+  },
+  {
+    "page": 10,
+    "file": "fig-5-p10.png",
+    "method": "caption_crop (1485x791)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 242,
+    "width": 1485,
+    "height": 791,
+    "caption": "Figure 5 Capability and score analyses.  (a) Capability profiles of representative models across the ten capability",
+    "crop": [
+      58.87,
+      46.03,
+      553.48,
+      309.44
+    ]
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (486x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 6 Performance across domain splits.  Pass@1 results on splits, with diamonds denoting overall scores.",
+    "crop": [
+      67.01100158691406,
+      428.52984619140625,
+      553.1314086914062,
+      246.3110809326172
+    ]
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (494x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  8 , models with similar overall success rates can differ substantially in the length and structure of their",
+    "crop": [
+      58.865997314453125,
+      428.52984619140625,
+      553.3134765625,
+      287.3465270996094
+    ]
+  },
+  {
+    "page": 11,
+    "file": "fig-7-p11.png",
+    "method": "caption_crop (708x558)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 137,
+    "width": 708,
+    "height": 558,
+    "caption": "Figure 7",
+    "crop": [
+      317.52,
+      428.53,
+      553.13,
+      614.14
+    ]
+  }
+]
