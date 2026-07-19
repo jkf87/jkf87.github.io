@@ -757,7 +757,30 @@
       ],
       "commit": "9553625",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-19-omniabench-general-ai-agent-benchmark.md"
+    },
+    {
+      "slug": "2026-07-19-evosop-self-evolving-agent-sop",
+      "date": "2026-07-19",
+      "source_url": "https://arxiv.org/abs/2607.07321",
+      "title": "EvoSOP: 원자적 행동을 표준 작업 절차로 조립하는 자가진화 LLM 에이전트"
     }
   ],
-  "entries": []
+  "entries": [
+    {
+      "slug": "2026-07-19-evosop-self-evolving-agent-sop",
+      "date": "2026-07-19",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.07321",
+      "title": "EvoSOP: 원자적 행동을 표준 작업 절차로 조립하는 자가진화 LLM 에이전트",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-19-evosop-self-evolving-agent-sop",
+      "threads_root_id": "18160275841470119",
+      "threads_reply_ids": [
+        "17897291286550520",
+        "18121892371727391",
+        "17898740133533108"
+      ],
+      "commit": "d5427f5",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-19-evosop-self-evolving-agent-sop.md"
+    }
+  ]
 }
