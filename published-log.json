@@ -778,7 +778,17 @@
       "source": "arxiv",
       "source_url": "https://arxiv.org/abs/2607.08964",
       "title": "Long-Horizon-Terminal-Bench: AI 에이전트가 수십억 토큰을 써도 못 끝내는 작업의 세계",
-      "blog_url": "https://jkf87.github.io/posts/2026-07-20-long-horizon-terminal-bench"
+      "blog_url": "https://jkf87.github.io/posts/2026-07-20-long-horizon-terminal-bench",
+      "threads_root_id": "18101350354917011",
+      "threads_reply_ids": [
+        "17924152998392008",
+        "18069257234705849",
+        "18097981082205432",
+        "18331453819281575",
+        "17953153761202270"
+      ],
+      "commit": "754e24c",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-20-long-horizon-terminal-bench.md"
     }
   ],
   "entries": [
