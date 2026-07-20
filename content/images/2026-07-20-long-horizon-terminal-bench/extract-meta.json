@@ -1,0 +1,150 @@
+[
+  {
+    "page": 3,
+    "file": "fig-1-p3.png",
+    "method": "caption_crop (1580x897)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 290,
+    "width": 1580,
+    "height": 897,
+    "caption": "Figure 1  The overall structure of long-horizon terminal task with dense reward grading. Partial rewards show how far",
+    "crop": [
+      41.96,
+      222.41,
+      568.29,
+      521.06
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (1484x610)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 77,
+    "width": 1484,
+    "height": 610,
+    "caption": "Figure 2 Task distribution across the LHTB categories.  The 46 tasks span nine long-horizon domains, ranging from",
+    "crop": [
+      58.87,
+      270.31,
+      553.21,
+      473.1
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  3  summarizes pass rate at  R  ≥ 0 . 9 ,  R  ≥ 0 . 95 , and  R  ≥ 1 . 0 , along with mean reward across all 46",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "fig-3-p6.png",
+    "method": "caption_crop (1488x948)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 157,
+    "width": 1488,
+    "height": 948,
+    "caption": "Figure 3 LHTB leaderboard.  Pass@1 at reward thresholds  0 . 9 ,  0 . 95 , and  1 . 0 , together with mean normalized reward,",
+    "crop": [
+      58.87,
+      88.45,
+      554.42,
+      404.09
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-4-p7.png",
+    "method": "caption_crop (1485x716)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 96,
+    "width": 1485,
+    "height": 716,
+    "caption": "Figure 4 Distribution of final rewards over all  17  ×  46  model–task runs.  Only  50  runs ( 6 . 4% , green) pass the  R  ≥ 0 . 95",
+    "crop": [
+      58.87,
+      139.39,
+      553.37,
+      377.84
+    ]
+  },
+  {
+    "page": 7,
+    "file": "table-1-p7.png",
+    "method": "caption_crop (1485x1079)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 169,
+    "width": 1485,
+    "height": 1079,
+    "caption": "Table  1  reports the cost estimate from per-task token usage and public list prices, which Figure  5  shows",
+    "crop": [
+      58.51,
+      139.39,
+      553.09,
+      498.69
+    ]
+  },
+  {
+    "page": 8,
+    "file": "table-1-p8.png",
+    "method": "caption_crop_table_below (1486x953)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 129,
+    "width": 1486,
+    "height": 953,
+    "caption": "Table 1 Estimated cost per model on LHTB.  On average, models spend 239 episodes and 88.9 minutes per task, at",
+    "crop": [
+      58.55,
+      290.58,
+      553.42,
+      607.91
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-5-p8.png",
+    "method": "caption_crop (1484x852)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 115,
+    "width": 1484,
+    "height": 852,
+    "caption": "Figure 5 Cost–reward frontier on LHTB.  Estimated total cost (log scale) against pass rate at  R  ≥ 0 . 95 ; the dashed",
+    "crop": [
+      58.87,
+      349.82,
+      553.15,
+      633.53
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-6-p9.png",
+    "method": "caption_crop (1484x808)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 124,
+    "width": 1484,
+    "height": 808,
+    "caption": "Figure 6 Composition of unresolved runs per model.  Each bar decomposes a model’s unresolved tasks ( R <  0 . 95 , out of",
+    "crop": [
+      58.87,
+      79.83,
+      553.14,
+      348.96
+    ]
+  }
+]

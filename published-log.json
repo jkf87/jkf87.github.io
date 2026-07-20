@@ -771,6 +771,14 @@
       "source_url": "https://arxiv.org/abs/2607.10463",
       "title": "GRASP: 강화학습으로 에이전트 RAG의 검색 도구를 자유자재로 다루게 만드는 방법",
       "blog_url": "https://jkf87.github.io/posts/2026-07-20-grasp-granularity-aware-search-policy-agentic-rag"
+    },
+    {
+      "slug": "2026-07-20-long-horizon-terminal-bench",
+      "date": "2026-07-20",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.08964",
+      "title": "Long-Horizon-Terminal-Bench: AI 에이전트가 수십억 토큰을 써도 못 끝내는 작업의 세계",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-20-long-horizon-terminal-bench"
     }
   ],
   "entries": [
