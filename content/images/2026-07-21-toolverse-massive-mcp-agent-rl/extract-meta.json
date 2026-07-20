@@ -1,0 +1,251 @@
+[
+  {
+    "page": 2,
+    "file": "table-1-p2.png",
+    "method": "caption_crop_table_below (1435x527)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 122,
+    "width": 1435,
+    "height": 527,
+    "caption": "Table 1: We posit the scalability of  Agentic RL  is primarily limited by three dimensions:  Scope  (environment",
+    "crop": [
+      58.56,
+      63.51,
+      536.41,
+      238.7
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-1-p3.png",
+    "method": "caption_crop (1434x947)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 390,
+    "width": 1434,
+    "height": 947,
+    "caption": "Figure 1: Overview of the  ToolVerse  framework.  Step1: Scaling Executable Agentic Environment : We automate",
+    "crop": [
+      58.87,
+      58.87,
+      536.41,
+      374.21
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-2-p5.png",
+    "method": "caption_crop (1439x597)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 185,
+    "width": 1439,
+    "height": 597,
+    "caption": "Figure 2: Overview of the  Turn-Aware Relative Advantage Estimation . For each turn in the multi-turn multi-",
+    "crop": [
+      58.87,
+      58.87,
+      538.07,
+      257.55
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-3-p6.png",
+    "method": "caption_crop (728x645)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 84,
+    "width": 728,
+    "height": 645,
+    "caption": "Figure 3: Semantic Breadth: The distribution of tools",
+    "crop": [
+      58.87,
+      406.5,
+      301.14,
+      621.22
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (478x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 4: Statistical distribution of the GUST dataset",
+    "crop": [
+      58.865997314453125,
+      406.49786376953125,
+      536.4083251953125,
+      288.85205078125
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-6-p6.png",
+    "method": "caption_crop (1435x650)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 209,
+    "width": 1435,
+    "height": 650,
+    "caption": "Table  6  summarizes the statistics of the final GUST",
+    "crop": [
+      58.87,
+      406.5,
+      536.74,
+      622.97
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Main results on agentic tool-using benchmarks, demonstrating that ToolVerse consistently achieves",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Comparison with publicly available and repro-",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  2  demonstrate that ToolVerse consistently",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4: Ablation of TARA on BFCL-v3 and  τ   2 -Bench.",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  4  shows that full",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  7  shows",
+    "crop": null
+  },
+  {
+    "page": 14,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5: Summary of Experimental Hyperparameters",
+    "crop": null
+  },
+  {
+    "page": 14,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6: Statistics of the constructed GUST dataset.",
+    "crop": null
+  },
+  {
+    "page": 15,
+    "file": "table-7-p15.png",
+    "method": "caption_crop (1435x373)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 99,
+    "width": 1435,
+    "height": 373,
+    "caption": "Table 7: Effect of environment scaling. Table 7 evalu-",
+    "crop": [
+      58.56,
+      58.86,
+      536.41,
+      182.69
+    ]
+  },
+  {
+    "page": 15,
+    "file": "fig-5-p15.png",
+    "method": "caption_crop (728x500)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 59,
+    "width": 728,
+    "height": 500,
+    "caption": "Figure 5: Sensitivity analysis of TARA with  λ  and  γ .",
+    "crop": [
+      58.87,
+      285.79,
+      301.14,
+      452.14
+    ]
+  },
+  {
+    "page": 15,
+    "file": "table-4-p15.png",
+    "method": "caption_crop (733x605)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 74,
+    "width": 733,
+    "height": 605,
+    "caption": "Table  4  studies the con-",
+    "crop": [
+      58.87,
+      285.79,
+      302.94,
+      487.3
+    ]
+  }
+]
