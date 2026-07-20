@@ -1,0 +1,135 @@
+[
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Accuracy across 25 trajectories per variant for GPT-5.3-Codex. Each set of 25 tasks were",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Accuracy across 25 trajectories per variant for Gemini 3.1 Pro. Each set of 25 tasks were run",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (391x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Marginal tool utility signs of each tool in the  default  harness for GPT-5.3-Codex.",
+    "crop": [
+      110.66899871826172,
+      509.7989501953125,
+      501.34259033203125,
+      134.94013214111328
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (389x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4: Marginal tool utility signs of each tool in the  default  harness for Gemini 3.1 Pro.",
+    "crop": [
+      111.51599884033203,
+      509.7989501953125,
+      500.4959716796875,
+      230.9730987548828
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (420x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 1: Marginal tool utility signs across all  default  trajectories by GPT-5.3-Codex. Different",
+    "crop": [
+      96.0,
+      509.7989501953125,
+      515.9984741210938,
+      496.5310974121094
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-2-p7.png",
+    "method": "caption_crop (1260x628)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 54,
+    "width": 1260,
+    "height": 628,
+    "caption": "Figure 2: Marginal tool utility signs across all  default  trajectories by Gemini 3.1 Pro. Different",
+    "crop": [
+      96.0,
+      509.8,
+      516.0,
+      718.74
+    ]
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5: Mean tool efficiency for GPT-5.3-Codex out of 25 agent trajectories per variant. Included",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6: Mean tool efficiency for Gemini 3.1 Pro out of 25 agent trajectories per variant. Included",
+    "crop": null
+  },
+  {
+    "page": 15,
+    "file": "fig-3-p15.png",
+    "method": "caption_crop (1260x958)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 125,
+    "width": 1260,
+    "height": 958,
+    "caption": "Figure 3: Full score breakdown per task. A score of  1  indicates a pass, while a score of  0  indicates a",
+    "crop": [
+      96.0,
+      161.43,
+      516.0,
+      480.63
+    ]
+  }
+]

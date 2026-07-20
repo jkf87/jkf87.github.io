@@ -807,6 +807,14 @@
       ],
       "commit": "c1f9189",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-20-trace-turn-level-credit-agentic-rl.md"
+    },
+    {
+      "slug": "2026-07-20-eta-given-delta-llm-tool-efficiency",
+      "date": "2026-07-20",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.14108",
+      "title": "Eta Given Delta: Defining LLM Tool Efficiency With Marginal Tool Utility",
+      "blog_url": "https://jkf87.github.io/2026-07-20-eta-given-delta-llm-tool-efficiency"
     }
   ],
   "entries": [
