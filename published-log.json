@@ -874,7 +874,17 @@
       "source": "arxiv",
       "source_url": "https://arxiv.org/abs/2607.14004",
       "title": "에이전트 최적화는 누적되는가 — Terminal-Bench 2.0에서 돌려본 세 가지 하네스 옵티마이저의 지옥",
-      "blog_url": "https://jkf87.github.io/posts/2026-07-20-agent-optimizer-compounding"
+      "blog_url": "https://jkf87.github.io/posts/2026-07-20-agent-optimizer-compounding",
+      "threads_root_id": "18418227910198413",
+      "threads_reply_ids": [
+        "18098484973966841",
+        "18371039047225720",
+        "18008874407946222",
+        "18329507587257080",
+        "18022721117684065"
+      ],
+      "commit": "c4678c7",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-20-agent-optimizer-compounding.md"
     }
   ]
 }
