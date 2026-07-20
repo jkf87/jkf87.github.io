@@ -857,7 +857,16 @@
         "harness",
         "evaluation",
         "reliability"
-      ]
+      ],
+      "threads_root_id": "18012294719731463",
+      "threads_reply_ids": [
+        "18098181347594939",
+        "17942608140056586",
+        "18085081748385197",
+        "18153051484496850"
+      ],
+      "commit": "b67e032",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-20-context-fails-first-agent-reliability.md"
     }
   ]
 }
