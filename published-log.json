@@ -789,6 +789,14 @@
       ],
       "commit": "754e24c",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-20-long-horizon-terminal-bench.md"
+    },
+    {
+      "slug": "2026-07-20-trace-turn-level-credit-agentic-rl",
+      "date": "2026-07-20",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.13988",
+      "title": "TRACE: 실패한 에이전트 궤적에서도 올바른 행동을 찾아내는 밀집 크레딧 할당",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-20-trace-turn-level-credit-agentic-rl"
     }
   ],
   "entries": [
