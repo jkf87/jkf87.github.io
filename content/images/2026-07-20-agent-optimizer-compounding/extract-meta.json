@@ -1,0 +1,230 @@
+[
+  {
+    "page": 2,
+    "file": "table-1-p2.png",
+    "method": "caption_crop (1448x393)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 77,
+    "width": 1448,
+    "height": 393,
+    "caption": "Table 1: RELAI-VCL leads at every stage of the phased",
+    "crop": [
+      64.68,
+      56.01,
+      547.32,
+      186.72
+    ]
+  },
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (690x498)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 41,
+    "width": 690,
+    "height": 498,
+    "caption": "Figure 1:",
+    "crop": [
+      317.4,
+      56.01,
+      547.32,
+      221.89
+    ]
+  },
+  {
+    "page": 2,
+    "file": "table-1-p2-3.png",
+    "method": "caption_crop (1462x1117)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 266,
+    "width": 1462,
+    "height": 1117,
+    "caption": "Table 1 and Figure 1 summarize these results; the full per-stage breakdown and analysis are given in Section 6.",
+    "crop": [
+      60.0,
+      56.01,
+      547.32,
+      428.23
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Comparison of the baseline agent and the three optimizers evaluated in this paper. All methods share the",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3 summarizes the two phases. Both phases are drawn from the same difficulty tier: Terminal-Bench 2.0 annotates",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (384x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Terminal-Bench 2.0 task split used for the phased protocol.",
+    "crop": [
+      69.35800170898438,
+      400.42401123046875,
+      453.41229248046875,
+      100.07809448242188
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-2-p7.png",
+    "method": "caption_crop (859x593)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 35,
+    "width": 859,
+    "height": 593,
+    "caption": "Figure 2: Pass rate on the 12 Phase 1 tasks after Phase 1 optimiza-",
+    "crop": [
+      69.36,
+      400.42,
+      355.44,
+      597.89
+    ]
+  },
+  {
+    "page": 7,
+    "file": "table-4-p7.png",
+    "method": "caption_crop (1420x475)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 57,
+    "width": 1420,
+    "height": 475,
+    "caption": "Table 4: Phase 1 pass rate (static optimiza-",
+    "crop": [
+      69.36,
+      400.42,
+      542.64,
+      558.62
+    ]
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (286x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 3: Pass rate on the 22-task union  T 1  ∪T 2  after Phase 1",
+    "crop": [
+      69.35800170898438,
+      528.7000122070312,
+      355.4380187988281,
+      339.9800720214844
+    ]
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (473x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5: Transfer pass rate on  T 1  ∪T 2  (22",
+    "crop": [
+      69.35800170898438,
+      528.7000122070312,
+      542.6412353515625,
+      300.7120361328125
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-4-p8.png",
+    "method": "caption_crop (859x597)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 40,
+    "width": 859,
+    "height": 597,
+    "caption": "Figure 4: Pass rate on the 22-task union  T 1  ∪T 2  after Phase 2 re-",
+    "crop": [
+      69.36,
+      528.7,
+      355.44,
+      727.66
+    ]
+  },
+  {
+    "page": 8,
+    "file": "table-6-p8.png",
+    "method": "caption_crop (1420x465)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 59,
+    "width": 1420,
+    "height": 465,
+    "caption": "Table 6: Final pass rate on  T 1  ∪T 2  (22 tasks)",
+    "crop": [
+      69.36,
+      528.7,
+      542.64,
+      683.41
+    ]
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (492x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 5 and Table 7 report the lifelong average pass rate defined in Section 3.3 (the unweighted mean of the Phase-1,",
+    "crop": [
+      60.0,
+      274.947021484375,
+      552.003173828125,
+      259.0989074707031
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-5-p9.png",
+    "method": "caption_crop (859x594)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 45,
+    "width": 859,
+    "height": 594,
+    "caption": "Figure 5: Lifelong average pass rate: the mean of the Phase-1,",
+    "crop": [
+      69.36,
+      274.95,
+      355.44,
+      472.41
+    ]
+  }
+]
