@@ -900,7 +900,16 @@
       "source": "arxiv",
       "source_url": "https://arxiv.org/abs/2607.15660",
       "title": "ToolVerse: 422개 실제 MCP 환경에서 에이전트 RL을 훈련하는 방법",
-      "blog_url": "https://jkf87.github.io/posts/2026-07-21-toolverse-massive-mcp-agent-rl"
+      "blog_url": "https://jkf87.github.io/posts/2026-07-21-toolverse-massive-mcp-agent-rl",
+      "threads_root_id": "18083827544208357",
+      "threads_reply_ids": [
+        "18118516537668048",
+        "18088205003451718",
+        "18419631019180094",
+        "18114820237897106"
+      ],
+      "commit": "a5477d3",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-21-toolverse-massive-mcp-agent-rl.md"
     }
   ]
 }
