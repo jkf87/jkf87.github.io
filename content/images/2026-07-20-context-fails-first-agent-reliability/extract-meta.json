@@ -1,0 +1,180 @@
+[
+  {
+    "page": 6,
+    "file": "fig-1-p6.png",
+    "method": "caption_crop (1477x852)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 728,
+    "width": 1477,
+    "height": 852,
+    "caption": "Figure 1: Taxonomy of context-engineering techniques for AI agents. The figure groups the",
+    "crop": [
+      60.0,
+      97.41,
+      552.05,
+      381.19
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-1-p6-2.png",
+    "method": "caption_crop (1477x1074)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 770,
+    "width": 1477,
+    "height": 1074,
+    "caption": "Figure  1  summarizes the main technique categories used to shape the information environ-",
+    "crop": [
+      60.0,
+      97.41,
+      552.05,
+      455.25
+    ]
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Seven proposed criteria for measuring context-engineering quality in AI agents.",
+    "crop": null
+  },
+  {
+    "page": 14,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Hypothesized mapping from context-quality criteria to downstream behavioral",
+    "crop": null
+  },
+  {
+    "page": 16,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Summary of the experimental validation setup. The study evaluates frontier LLM",
+    "crop": null
+  },
+  {
+    "page": 16,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  4  summarizes the behavioral outcomes across the three context conditions. Because the",
+    "crop": null
+  },
+  {
+    "page": 17,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4: Mean behavioral outcomes by context condition. Structured context produces the",
+    "crop": null
+  },
+  {
+    "page": 18,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5: Mean context-quality scores by condition. The context score separates poor, struc-",
+    "crop": null
+  },
+  {
+    "page": 18,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  5  supports the second part of the hypothesis: the proposed context score detects",
+    "crop": null
+  },
+  {
+    "page": 18,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6: Validation of the context-to-behavior prediction map across 300 multi-turn eval-",
+    "crop": null
+  },
+  {
+    "page": 18,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  6  validates the core hypothesis of the paper. The strongest relationship is ground-",
+    "crop": null
+  },
+  {
+    "page": 19,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 7: Artifact study results.",
+    "crop": null
+  },
+  {
+    "page": 20,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 8: Per-call context overhead and total token usage. Token efficiency is interpreted as",
+    "crop": null
+  },
+  {
+    "page": 20,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  8  shows that the weakest context is also the cheapest per call: C1 Poor has 392",
+    "crop": null
+  }
+]

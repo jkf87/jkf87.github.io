@@ -842,6 +842,22 @@
       ],
       "commit": "2388879",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-19-toolatlas-tool-side-memory-mcp.md"
+    },
+    {
+      "slug": "2026-07-20-context-fails-first-agent-reliability",
+      "date": "2026-07-20",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.14275",
+      "title": "AI 에이전트는 혼자 실패하지 않는다 — 컨텍스트가 먼저 실패한다",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-20-context-fails-first-agent-reliability",
+      "tags": [
+        "agent",
+        "context-engineering",
+        "LLM",
+        "harness",
+        "evaluation",
+        "reliability"
+      ]
     }
   ]
 }
