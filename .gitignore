@@ -2,3 +2,6 @@
 node_modules
 .quartz-cache
 tsconfig.tsbuildinfo
+
+# Quartz build output; GitHub Actions builds and uploads this as Pages artifact
+public/
