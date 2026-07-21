@@ -1,0 +1,167 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (1426x887)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 149,
+    "width": 1426,
+    "height": 887,
+    "caption": "Figure 1  |  Few-shot RHI raises the performance plateaus of test-time scaling.  Across 30",
+    "crop": [
+      60.0,
+      400.16,
+      535.28,
+      695.46
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (477x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  2  provides a high-level overview of RHI, and Algorithm  1  presents the complete proce-",
+    "crop": [
+      60.0,
+      341.0437316894531,
+      537.0139770507812,
+      334.27484130859375
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-2-p6.png",
+    "method": "caption_crop (1428x585)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 82,
+    "width": 1428,
+    "height": 585,
+    "caption": "Figure 2  |  Recursive Harness Self-Improvement.   1 O ,   2 O : At iteration  𝑖 , the coding agent receives",
+    "crop": [
+      60.0,
+      327.68,
+      535.72,
+      522.54
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1  |  Per-iteration computational cost of three harness-search objectives. Here  𝑀 denotes the",
+    "crop": null
+  },
+  {
+    "page": 9,
+    "file": "fig-3-p9.png",
+    "method": "caption_crop (1431x428)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 75,
+    "width": 1431,
+    "height": 428,
+    "caption": "Figure 3  |  Decomposition of the RHI harness. We classify the harness into two primary components:",
+    "crop": [
+      60.0,
+      296.79,
+      536.67,
+      439.04
+    ]
+  },
+  {
+    "page": 10,
+    "file": "fig-4-p10.png",
+    "method": "caption_crop (1431x799)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 79,
+    "width": 1431,
+    "height": 799,
+    "caption": "Figure 4  |  Structure of a prompt-represented harness  𝐻 ( 𝑖 ) . The harness specifies candidate agents,",
+    "crop": [
+      60.0,
+      134.3,
+      536.79,
+      400.17
+    ]
+  },
+  {
+    "page": 12,
+    "file": "fig-5-p12.png",
+    "method": "caption_crop (1426x489)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 99,
+    "width": 1426,
+    "height": 489,
+    "caption": "Figure 5  |  After two iterations, RHI raises the empirical ceiling of  sonnet-4.6  test-time",
+    "crop": [
+      60.0,
+      371.75,
+      535.28,
+      534.62
+    ]
+  },
+  {
+    "page": 12,
+    "file": "fig-5-p12-2.png",
+    "method": "caption_crop (1525x991)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 203,
+    "width": 1525,
+    "height": 991,
+    "caption": "Figure  5  compares RHI on  sonnet-4.6-high  against the test-time scaling baseline  sonnet-4.6-max ;",
+    "crop": [
+      60.0,
+      371.75,
+      568.02,
+      701.97
+    ]
+  },
+  {
+    "page": 12,
+    "file": "fig-6-p12.png",
+    "method": "caption_crop (1432x1032)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 214,
+    "width": 1432,
+    "height": 1032,
+    "caption": "Figure  6  compares RHI on  opus-4.7-high  against  opus-4.7-xhigh/max ; and Figure  7  com-",
+    "crop": [
+      60.0,
+      371.75,
+      537.02,
+      715.52
+    ]
+  },
+  {
+    "page": 13,
+    "file": "fig-6-p13.png",
+    "method": "caption_crop (1432x536)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 80,
+    "width": 1432,
+    "height": 536,
+    "caption": "Figure 6  |  After one iteration, RHI raises the empirical ceiling of  opus-4.7  test-time scaling.",
+    "crop": [
+      60.0,
+      310.11,
+      537.16,
+      488.46
+    ]
+  }
+]

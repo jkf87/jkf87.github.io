@@ -815,6 +815,14 @@
       "source_url": "https://arxiv.org/abs/2607.14108",
       "title": "Eta Given Delta: Defining LLM Tool Efficiency With Marginal Tool Utility",
       "blog_url": "https://jkf87.github.io/2026-07-20-eta-given-delta-llm-tool-efficiency"
+    },
+    {
+      "slug": "2026-07-21-recursive-harness-self-improvement",
+      "date": "2026-07-21",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2607.15524",
+      "title": "Recursive Harness Self-Improvement: 에이전트 하네스를 스스로 진화시키는 루프",
+      "blog_url": "https://jkf87.github.io/2026-07-21-recursive-harness-self-improvement"
     }
   ],
   "entries": [
