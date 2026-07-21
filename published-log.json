@@ -978,7 +978,18 @@
       "source": "arxiv",
       "source_url": "https://arxiv.org/abs/2607.18100",
       "title": "SOPHIA: LLM 추론 루프가 늪에 빠졌을 때 — 숨겨진 활성화 벡터로 탈출시키는 방법",
-      "blog_url": "https://jkf87.github.io/posts/2026-07-22-sophia-breaking-llm-self-loops"
+      "blog_url": "https://jkf87.github.io/posts/2026-07-22-sophia-breaking-llm-self-loops",
+      "threads_root_id": "18333953674255897",
+      "threads_reply_ids": [
+        "18021547049692136",
+        "18097485089619428",
+        "17881161786614007",
+        "17949323088227910",
+        "18105154763133654",
+        "18612801175038167"
+      ],
+      "commit": "aba39ad",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-22-sophia-breaking-llm-self-loops.md"
     }
   ]
 }
