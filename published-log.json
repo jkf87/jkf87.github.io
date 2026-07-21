@@ -823,6 +823,24 @@
       "source_url": "https://arxiv.org/abs/2607.15524",
       "title": "Recursive Harness Self-Improvement: 에이전트 하네스를 스스로 진화시키는 루프",
       "blog_url": "https://jkf87.github.io/2026-07-21-recursive-harness-self-improvement"
+    },
+    {
+      "slug": "2026-07-21-aha-agent-hacks-agent-red-teaming",
+      "date": "2026-07-21",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.11698",
+      "title": "AHA: 에이전트가 에이전트를 해킹한다 — 프로덕션 AI 에이전트 레드팀을 자동화하는 연구 루프",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-21-aha-agent-hacks-agent-red-teaming",
+      "threads_root_id": "17976282333002243",
+      "threads_reply_ids": [
+        "18126898489670390",
+        "17945489991251413",
+        "18117162385686839",
+        "18084477359662275",
+        "18115064665901399"
+      ],
+      "commit": "2dcfdf0",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-21-aha-agent-hacks-agent-red-teaming.md"
     }
   ],
   "entries": [
@@ -918,13 +936,6 @@
       ],
       "commit": "a5477d3",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-21-toolverse-massive-mcp-agent-rl.md"
-    },
-    {
-      "slug": "2026-07-21-aha-agent-hacks-agent-red-teaming",
-      "date": "2026-07-21",
-      "source": "arxiv",
-      "source_url": "https://arxiv.org/abs/2607.11698",
-      "title": "AHA: 에이전트가 에이전트를 해킹한다 — 프로덕션 AI 에이전트 레드팀을 자동화하는 연구 루프"
     }
   ]
 }
