@@ -1,0 +1,311 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1261x1029)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 458,
+    "width": 1261,
+    "height": 1029,
+    "caption": "Figure 1:  AHA overview.  An autoresearch loop turns executed red-team trajectories into a frozen,",
+    "crop": [
+      96.0,
+      69.86,
+      516.0,
+      412.48
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-2-p6.png",
+    "method": "caption_crop (1261x588)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 201,
+    "width": 1261,
+    "height": 588,
+    "caption": "Figure 2:  The AHA discovery loop.  An orchestrator routes each iteration under one of four search",
+    "crop": [
+      96.0,
+      69.86,
+      516.0,
+      265.61
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-2-p6-2.png",
+    "method": "caption_crop (1261x1327)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 360,
+    "width": 1261,
+    "height": 1327,
+    "caption": "Figure 2. The H YPOTHESIZER  reads the VCG, recent reflections, and the latest critic audit in the",
+    "crop": [
+      96.0,
+      69.86,
+      516.0,
+      511.8
+    ]
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (420x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Example vulnerability concept record: VC-0002 from a Claude Code  ×  AgentHazard run",
+    "crop": [
+      96.0,
+      410.58319091796875,
+      516.0032653808594,
+      119.02609252929688
+    ]
+  },
+  {
+    "page": 10,
+    "file": "fig-3-p10.png",
+    "method": "caption_crop (1261x617)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 104,
+    "width": 1261,
+    "height": 617,
+    "caption": "Figure 3:  Vulnerability-concept landscape (RQ1).  Each counted concept from the eighteen dis-",
+    "crop": [
+      96.0,
+      393.94,
+      516.0,
+      599.08
+    ]
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2:  Reusability without further optimization (RQ2) : evaluation ASR (%), one attack per",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3:",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2 reports held-out ASR for every method un-",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4: Ablation: which loop safeguards make concepts hold up on held-out (Minimax-M2.7 vic-",
+    "crop": null
+  },
+  {
+    "page": 13,
+    "file": "fig-4-p13.png",
+    "method": "caption_crop (1261x691)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 89,
+    "width": 1261,
+    "height": 691,
+    "caption": "Figure 4:  Concepts transfer as durable mechanisms (RQ4).  Transferred frozen-VCG held-out",
+    "crop": [
+      96.0,
+      69.86,
+      516.0,
+      299.67
+    ]
+  },
+  {
+    "page": 21,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5: AgentHazard split by objective.",
+    "crop": null
+  },
+  {
+    "page": 21,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6: AgentDyn split by suite.",
+    "crop": null
+  },
+  {
+    "page": 22,
+    "file": "table-7-p22.png",
+    "method": "caption_crop_table_below (1261x1275)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 257,
+    "width": 1261,
+    "height": 1275,
+    "caption": "Table 7: DTap split by objective and threat model over the twenty-six populated (threat model, objec-",
+    "crop": [
+      96.0,
+      83.06,
+      516.01,
+      507.71
+    ]
+  },
+  {
+    "page": 28,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 8 lists the discovery search knobs. The loop dispatches a",
+    "crop": null
+  },
+  {
+    "page": 28,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 8: Discovery search and concept-promotion configuration.",
+    "crop": null
+  },
+  {
+    "page": 29,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 9: Discovery cost (victim queries) per scenario, victim model, and method (Claude Code",
+    "crop": null
+  },
+  {
+    "page": 29,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 10: Discovery cost (victim queries) per scenario, victim model, and method (Codex victim",
+    "crop": null
+  },
+  {
+    "page": 29,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 11: T-MAP archive after discovery, per scenario and victim model (Claude Code victim agent).",
+    "crop": null
+  },
+  {
+    "page": 29,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 17 reports, per run, how many candidate concepts the loop entered, how",
+    "crop": null
+  },
+  {
+    "page": 30,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 12: T-MAP archive after discovery, per scenario and victim model (Codex victim agent). Total",
+    "crop": null
+  },
+  {
+    "page": 30,
+    "file": "table-13-p30.png",
+    "method": "caption_crop_table_below (1262x1162)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 220,
+    "width": 1262,
+    "height": 1162,
+    "caption": "Table 13: IterInject seed bank after discovery, per scenario and victim model (Claude Code victim",
+    "crop": [
+      96.0,
+      248.17,
+      516.39,
+      635.04
+    ]
+  },
+  {
+    "page": 30,
+    "file": "table-19-p30.png",
+    "method": "caption_crop_table_below (1029x661)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 113,
+    "width": 1029,
+    "height": 661,
+    "caption": "Table 19 reports the search itself: iterations run, their distribution over the four",
+    "crop": [
+      173.86,
+      415.17,
+      516.39,
+      635.04
+    ]
+  }
+]

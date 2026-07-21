@@ -918,6 +918,13 @@
       ],
       "commit": "a5477d3",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-21-toolverse-massive-mcp-agent-rl.md"
+    },
+    {
+      "slug": "2026-07-21-aha-agent-hacks-agent-red-teaming",
+      "date": "2026-07-21",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.11698",
+      "title": "AHA: 에이전트가 에이전트를 해킹한다 — 프로덕션 AI 에이전트 레드팀을 자동화하는 연구 루프"
     }
   ]
 }
