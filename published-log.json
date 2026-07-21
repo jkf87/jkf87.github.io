@@ -936,6 +936,14 @@
       ],
       "commit": "a5477d3",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-21-toolverse-massive-mcp-agent-rl.md"
+    },
+    {
+      "slug": "2026-07-21-flashrt-agent-harness-real-time-multimodal",
+      "date": "2026-07-21",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2607.18171",
+      "title": "FlashRT: 에이전트 하네스가 코딩 에이전트를 이끌어 실시간 멀티모달 앱을 배포하게 만드는 법",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-21-flashrt-agent-harness-real-time-multimodal"
     }
   ]
 }

@@ -1,0 +1,233 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (789x680)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 57,
+    "width": 789,
+    "height": 680,
+    "caption": "Figure 1  Previously, efficiently serving diverse multimodal",
+    "crop": [
+      290.46,
+      121.3,
+      553.17,
+      347.43
+    ]
+  },
+  {
+    "page": 4,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  2a  shows an example of what a user base implementation (the input to the system), would look",
+    "crop": null
+  },
+  {
+    "page": 5,
+    "file": "fig-2-p5.png",
+    "method": "caption_crop (1505x607)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 134,
+    "width": 1505,
+    "height": 607,
+    "caption": "Figure 2  Overall view of different agent workflows. (a) shows an example input to the ideal system. (b) shows the",
+    "crop": [
+      51.78,
+      248.16,
+      553.16,
+      450.06
+    ]
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1  Comparison between the sequential user baseline and several deployments proposed by the  FlashRT  agent for",
+    "crop": null
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2  Placement  ρ  for the LiveAvatar conversational-agent deployments (conventions as in Table  7 ). The sequential",
+    "crop": null
+  },
+  {
+    "page": 9,
+    "file": "table-3-p9.png",
+    "method": "caption_crop (1506x344)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 41,
+    "width": 1506,
+    "height": 344,
+    "caption": "Table 3  Comparison between  FlashRT  and the hand-engineered vLLM-Omni deployment for serving Qwen3-Omni",
+    "crop": [
+      51.41,
+      161.2,
+      553.14,
+      275.58
+    ]
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4  Comparison of video background editor deployments discovered by the agent against the sequential baseline.",
+    "crop": null
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5  Placement  ρ  for the video background editor deployments. The latency-optimized deployment co-locates DiT",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6  Deployment comparisons for WorldPlay at 1 and 2 GPUs. The agent leverages disaggregation, co-location,",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 7  Placement  ρ  :  V →R  for the latency- and frame-rate-optimized WorldPlay deployments on 2 GPUs. The latency-",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 8",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 9  Deployments discovered by the  FlashRT  agent on AMD MI355X for all five applications, re-optimized from",
+    "crop": null
+  },
+  {
+    "page": 27,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 10  Full set of WorldPlay video-world-model deployments found by the  FlashRT  agent across GPU budgets (cf.",
+    "crop": null
+  },
+  {
+    "page": 27,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  6 ). The 4- and 6-GPU deployments are analyzed in Appendix  B.1 .",
+    "crop": null
+  },
+  {
+    "page": 27,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 11  Placement  ρ  for the disaggregated (frame-rate-optimized) WorldPlay deployments as the GPU budget grows",
+    "crop": null
+  },
+  {
+    "page": 28,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 12",
+    "crop": null
+  },
+  {
+    "page": 28,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  8 ). The 4- and 8-GPU deployments are analyzed in Appendix  B.2 .",
+    "crop": null
+  },
+  {
+    "page": 29,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 13  Placement  ρ  for the two multi-GPU LongLive deployments analyzed in Appendix  B.2 . The latency-optimized",
+    "crop": null
+  }
+]
