@@ -1,0 +1,213 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1548x885)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 178,
+    "width": 1548,
+    "height": 885,
+    "caption": "Figure 1:  Self-loops in LRM reasoning traces.  The model computes the correct value early (purple,",
+    "crop": [
+      96.0,
+      39.49,
+      612.0,
+      334.07
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-2-p3.png",
+    "method": "caption_crop (790x561)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 53,
+    "width": 790,
+    "height": 561,
+    "caption": "Figure 2: Average reasoning-trace token length for  cor-",
+    "crop": [
+      254.4,
+      152.06,
+      517.65,
+      338.86
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-4-p6.png",
+    "method": "caption_crop (1836x707)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 280,
+    "width": 1836,
+    "height": 707,
+    "caption": "Figure 4: Pipeline for cluster-conditioned reasoning-state steering. Stage I embeds each segmented",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      235.46
+    ]
+  },
+  {
+    "page": 8,
+    "file": "table-1-p8.png",
+    "method": "caption_crop_table_below (1262x897)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 203,
+    "width": 1262,
+    "height": 897,
+    "caption": "Table 1: Per-cluster hit-rate (%) on  N =30  stayer prefixes from held-out incorrect traces, across four",
+    "crop": [
+      95.69,
+      70.82,
+      516.17,
+      369.58
+    ]
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1 reports per-cluster hit rates across three models and four reasoning datasets. Several patterns",
+    "crop": null
+  },
+  {
+    "page": 13,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2:  GSM 8 K : cluster  → phase mapping with mean step index and one-line semantics.",
+    "crop": null
+  },
+  {
+    "page": 14,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (386x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3:  AQUA : cluster  → phase mapping with mean step index and one-line semantics.",
+    "crop": [
+      118.66900634765625,
+      328.090576171875,
+      504.1713562011719,
+      171.32608032226562
+    ]
+  },
+  {
+    "page": 14,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (390x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4:  LOGIQA : cluster  → phase mapping with mean step index and one-line semantics.",
+    "crop": [
+      113.99700164794922,
+      328.090576171875,
+      504.1713562011719,
+      275.9740905761719
+    ]
+  },
+  {
+    "page": 14,
+    "file": "fig-5-p14.png",
+    "method": "caption_crop (1264x375)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 82,
+    "width": 1264,
+    "height": 375,
+    "caption": "Figure 5: Inter-step cluster transition counts in raw KMeans-ID order on (left to right)  GSM 8 K ,  AQUA ,",
+    "crop": [
+      96.0,
+      326.69,
+      517.25,
+      451.66
+    ]
+  },
+  {
+    "page": 14,
+    "file": "fig-7-p14.png",
+    "method": "caption_crop (1264x899)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 208,
+    "width": 1264,
+    "height": 899,
+    "caption": "Figure 7 shows 2D t-SNE projections of the step embeddings on each dataset,",
+    "crop": [
+      96.0,
+      326.69,
+      517.25,
+      626.08
+    ]
+  },
+  {
+    "page": 14,
+    "file": "table-6-p14.png",
+    "method": "caption_crop (1260x1111)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 259,
+    "width": 1260,
+    "height": 1111,
+    "caption": "Table 6 aggregates the four datasets along three axes derived from the",
+    "crop": [
+      96.0,
+      326.69,
+      516.0,
+      696.8
+    ]
+  },
+  {
+    "page": 15,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (420x10pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5:  MATH : cluster  → phase mapping with mean step index and one-line semantics.",
+    "crop": [
+      96.0,
+      161.12066650390625,
+      515.9976196289062,
+      171.32608032226562
+    ]
+  },
+  {
+    "page": 15,
+    "file": "fig-6-p15.png",
+    "method": "caption_crop (1260x399)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 79,
+    "width": 1260,
+    "height": 399,
+    "caption": "Figure 6: Phase-ordered transition matrix  P ( j  |  i )  on (left to right)  GSM 8 K ,  AQUA ,  LOGIQA ,  MATH",
+    "crop": [
+      96.0,
+      161.12,
+      516.0,
+      293.86
+    ]
+  }
+]
