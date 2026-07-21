@@ -1,0 +1,43 @@
+[
+  {
+    "page": 8,
+    "file": "fig-1-p8-1.png",
+    "method": "caption_crop (1478x1193)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 97,
+    "width": 1478,
+    "height": 1193,
+    "caption": "Figure 1:  Active composite versus Ambient composite for the six assessed systems. The diagonal marks parity",
+    "crop": [
+      60.0,
+      187.85,
+      552.35,
+      585.09
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig1-official.png",
+    "method": "official",
+    "status": "accepted",
+    "reason": "official arxiv html source image",
+    "size_kb": 89,
+    "width": 675,
+    "height": 588,
+    "caption": "Figure 1: Active composite versus Ambient composite for the six assessed systems.",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "fig1-composite.png",
+    "method": "official",
+    "status": "accepted",
+    "reason": "composite of official arxiv html source figure with data table overlay",
+    "size_kb": 0,
+    "width": 1255,
+    "height": 708,
+    "caption": "Figure 1: Active composite versus Ambient composite for the six assessed systems, with score table.",
+    "crop": null
+  }
+]
