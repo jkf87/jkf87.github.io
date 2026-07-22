@@ -990,6 +990,14 @@
       ],
       "commit": "aba39ad",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-22-sophia-breaking-llm-self-loops.md"
+    },
+    {
+      "slug": "2026-07-22-swe-pruner-pro-agent-self-pruning",
+      "date": "2026-07-22",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.18213",
+      "title": "SWE-Pruner Pro: 코딩 에이전트가 스스로 컨텍스트를 가지치기한다 — 외부 모델 없이 내부 표현만으로",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-22-swe-pruner-pro-agent-self-pruning"
     }
   ]
 }
