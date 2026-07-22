@@ -1,0 +1,144 @@
+[
+  {
+    "page": 4,
+    "file": "fig-1-p4.png",
+    "method": "caption_crop (1485x834)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 259,
+    "width": 1485,
+    "height": 834,
+    "caption": "Figure 1  The  DataFlow-Harness  architecture. A shared pipeline representation is synchronized across the agent",
+    "crop": [
+      58.87,
+      58.18,
+      553.43,
+      335.72
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-2-p5.png",
+    "method": "caption_crop (1514x955)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 569,
+    "width": 1514,
+    "height": 955,
+    "caption": "Figure 2  The dual-modality interface of  DataFlow-WebUI , illustrating the synchronization between the conversa-",
+    "crop": [
+      53.62,
+      29.41,
+      557.84,
+      347.61
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1  We report the end-to-end pass rate together with token usage, monetary cost, and generation latency. The",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  1  shows that  DataFlow-Harness  delivers substantial efficiency gains over free-form code generation.",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  2  evaluates a challenging textbook-to-VQA extraction task that requires composing document parsing,",
+    "crop": null
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3  Per-task end-to-end pass counts over 10 independent trials. Tasks are grouped according to the mechanisms",
+    "crop": null
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4 Math pipeline quality via downstream training.  Both pipelines are authored by Claude Code from the",
+    "crop": null
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  4  reports the results at matched training budgets. Both configurations lift the base model substantially,",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5 General SFT pipeline quality via downstream training.  Both pipelines are authored by Claude Code from",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  5  shows nearly identical knowledge performance (MMLU  74 . 2  vs.  74 . 4 ), while the two pipelines trade",
+    "crop": null
+  }
+]
