@@ -1031,7 +1031,15 @@
       "source": "arxiv",
       "source_url": "https://arxiv.org/abs/2607.13396",
       "title": "에이전트가 도구를 바꾸지 못할 때 — 하네스드 에이전트의 숨겨진 인지 경직성",
-      "blog_url": "https://jkf87.github.io/posts/2026-07-22-set-shifting-harnessed-agents"
+      "blog_url": "https://jkf87.github.io/posts/2026-07-22-set-shifting-harnessed-agents",
+      "threads_root_id": "17858549679677414",
+      "threads_reply_ids": [
+        "18117104644792961",
+        "18602760946046664",
+        "18112877468299509",
+        "18009137717933102"
+      ],
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-22-set-shifting-harnessed-agents.md"
     }
   ]
 }
