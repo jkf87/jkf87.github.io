@@ -1047,7 +1047,16 @@
       "source": "huggingface",
       "source_url": "https://arxiv.org/abs/2607.16617",
       "title": "DataFlow-Harness: 에이전트가 코드를 버리지 않고 파이프라인으로 남기는 법",
-      "blog_url": "https://jkf87.github.io/posts/2026-07-23-dataflow-harness-grounded-code-agent-pipelines"
+      "blog_url": "https://jkf87.github.io/posts/2026-07-23-dataflow-harness-grounded-code-agent-pipelines",
+      "threads_root_id": "18099102449219039",
+      "threads_reply_ids": [
+        "18438447121126172",
+        "17937930120290782",
+        "18018862445909630",
+        "17900142816499683"
+      ],
+      "commit": "783627d",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-23-dataflow-harness-grounded-code-agent-pipelines.md"
     }
   ]
 }
