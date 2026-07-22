@@ -1,0 +1,222 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (1261x548)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 345,
+    "width": 1261,
+    "height": 548,
+    "caption": "Figure 1:  Nex-N2 performance on Terminal-Bench 2.1 and GDPval via NexForge data scaling.",
+    "crop": [
+      96.0,
+      564.58,
+      516.0,
+      746.98
+    ]
+  },
+  {
+    "page": 2,
+    "file": "fig-2-p2.png",
+    "method": "caption_crop (1260x470)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 101,
+    "width": 1260,
+    "height": 470,
+    "caption": "Figure 2:  Substrate-bound Methods vs. NexForge  Existing methods ( left ) tie task generation to",
+    "crop": [
+      96.0,
+      69.86,
+      516.0,
+      226.28
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-3-p4.png",
+    "method": "caption_crop (1260x795)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 204,
+    "width": 1260,
+    "height": 795,
+    "caption": "Figure 3:  Overview of NexForge.  Given a high-level user requirement, NexForge first investigates",
+    "crop": [
+      96.0,
+      69.86,
+      516.0,
+      334.39
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1 summarizes corpus scale, trajectory complexity, task diversity, and grounding characteristics.",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2 compares NexForge with representative agent-task synthesis pipelines. Existing methods",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1:  Corpus statistics.  Task counts, trajectory scale, and ablation variants.  w/o profile  removes",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2:  Dataset comparison.  Columns: requirement-driven design (Req.), scenario reservoir (Res.),",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3 presents the results on Terminal-Bench 2.0. Three observations stand out. First, Terminal-3.6K",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "table-3-p8.png",
+    "method": "caption_crop_table_below (1262x1155)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 230,
+    "width": 1262,
+    "height": 1155,
+    "caption": "Table 3:  Terminal-Bench 2.0 pass@1 accuracy.  Left: baseline models; right: terminal-specialized",
+    "crop": [
+      95.69,
+      73.86,
+      516.01,
+      458.5
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-4-p8.png",
+    "method": "caption_crop (1261x618)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 111,
+    "width": 1261,
+    "height": 618,
+    "caption": "Figure 4:  Data scaling.  Terminal-Bench 2.0 accuracy (left) and GDPval Elo (right) as a function of",
+    "crop": [
+      96.0,
+      278.69,
+      516.01,
+      484.55
+    ]
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4: GDPval Elo results for office capability evaluation. Elo is calibrated to the GDPval-AA v1",
+    "crop": null
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 5(c,d) explains this improvement. We measure task-type diversity by the effective number of",
+    "crop": null
+  },
+  {
+    "page": 10,
+    "file": "table-5-p10.png",
+    "method": "caption_crop_table_below (1261x1050)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 197,
+    "width": 1261,
+    "height": 1050,
+    "caption": "Table 5:  Directive compatibility.  LLM-judge match rate between directives and scenarios.",
+    "crop": [
+      96.0,
+      73.89,
+      516.01,
+      423.4
+    ]
+  },
+  {
+    "page": 10,
+    "file": "table-6-p10.png",
+    "method": "caption_crop_table_below (1266x826)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 167,
+    "width": 1266,
+    "height": 826,
+    "caption": "Table 6:  Ablation studies.  Asst./Tool: mean assistant messages and tool calls per trajectory. TB 2.0:",
+    "crop": [
+      95.69,
+      148.45,
+      517.38,
+      423.4
+    ]
+  },
+  {
+    "page": 10,
+    "file": "fig-5-p10.png",
+    "method": "caption_crop (1263x630)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 140,
+    "width": 1263,
+    "height": 630,
+    "caption": "Figure 5:  Distribution analysis.  (a) Task-type frequencies, (b) grounding-source composition, (c)",
+    "crop": [
+      96.0,
+      239.89,
+      516.67,
+      449.46
+    ]
+  }
+]
