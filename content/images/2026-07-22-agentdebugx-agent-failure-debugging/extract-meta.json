@@ -1,0 +1,128 @@
+[
+  {
+    "page": 1,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Capability coverage versus prior work.  •  =",
+    "crop": null
+  },
+  {
+    "page": 3,
+    "file": "fig-1-p3.png",
+    "method": "caption_crop (1579x985)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 784,
+    "width": 1579,
+    "height": 985,
+    "caption": "Figure 1:  Overview of AgentDebugX.  AgentDebugX forms a closed debugging loop:  Detect  identifies step-level",
+    "crop": [
+      45.39,
+      43.36,
+      571.42,
+      371.62
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-1-p3-2.png",
+    "method": "caption_crop (1579x1545)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 950,
+    "width": 1579,
+    "height": 1545,
+    "caption": "Figure  1  illustrates AgentDebugX, a closed-loop",
+    "crop": [
+      45.39,
+      43.36,
+      571.42,
+      558.32
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-2-p5.png",
+    "method": "caption_crop (732x536)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 115,
+    "width": 732,
+    "height": 536,
+    "caption": "Figure 2: The AgentDebugX console on a failed run,",
+    "crop": [
+      58.87,
+      58.88,
+      302.38,
+      237.18
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  3",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "fig-3-p6.png",
+    "method": "caption_crop (976x547)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 69,
+    "width": 976,
+    "height": 547,
+    "caption": "Figure 3:",
+    "crop": [
+      39.68,
+      28.76,
+      364.71,
+      210.86
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-2-p6.png",
+    "method": "caption_crop (976x1014)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 162,
+    "width": 976,
+    "height": 1014,
+    "caption": "Table 2: Failure attribution on the full Who&When",
+    "crop": [
+      39.68,
+      28.76,
+      364.71,
+      366.61
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-3-p6.png",
+    "method": "caption_crop (1401x478)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 85,
+    "width": 1401,
+    "height": 478,
+    "caption": "Table 3: End-to-end recovery on GAIA validation ( 165",
+    "crop": [
+      69.78,
+      28.76,
+      536.66,
+      187.67
+    ]
+  }
+]

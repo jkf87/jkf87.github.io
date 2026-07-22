@@ -1,0 +1,111 @@
+[
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (1260x715)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 85,
+    "width": 1260,
+    "height": 715,
+    "caption": "Figure 2: Set-shifting paradigm. (a) Per turn behavior at a single boundary. (b) Branched",
+    "crop": [
+      96.0,
+      231.01,
+      516.0,
+      469.19
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-1-p6.png",
+    "method": "caption_crop_table_below (1273x948)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 154,
+    "width": 1273,
+    "height": 948,
+    "caption": "Table 1: route-class rates  R , task completion rate  F , target share  s k  at the final window,",
+    "crop": [
+      95.69,
+      244.17,
+      519.89,
+      559.93
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-3-p6.png",
+    "method": "caption_crop (1260x897)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 139,
+    "width": 1260,
+    "height": 897,
+    "caption": "Figure 3: Distribution of  s  across prefixes at each endpoint,  n  =  16 per cell.  mimo : solid bars",
+    "crop": [
+      96.0,
+      287.75,
+      516.0,
+      586.37
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-4-p7.png",
+    "method": "caption_crop (1266x579)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 186,
+    "width": 1266,
+    "height": 579,
+    "caption": "Figure 4: Cumulative target-call share  s  over each post-shift segment, one line per trajectory.",
+    "crop": [
+      96.0,
+      69.86,
+      517.75,
+      262.44
+    ]
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Target share  s k  at the final window on  deepseek-v4-pro  under three policy condi-",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Matched framing pairs on the linear domains under the regular assistant ( n  =  8",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "table-4-p12.png",
+    "method": "caption_crop_table_below (1261x504)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 75,
+    "width": 1261,
+    "height": 504,
+    "caption": "Table 4: Redundant tool-skill relations in the benchmark.",
+    "crop": [
+      96.0,
+      516.92,
+      516.01,
+      684.38
+    ]
+  }
+]

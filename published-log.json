@@ -1016,6 +1016,22 @@
       "source_url": "https://arxiv.org/abs/2607.14186",
       "title": "NexForge: 에이전트 훈련 데이터를 '요구사항'에서 자동 생성하는 파이프라인",
       "blog_url": "https://jkf87.github.io/posts/2026-07-22-nexforge-requirement-driven-agent-task-synthesis"
+    },
+    {
+      "slug": "2026-07-22-agentdebugx-agent-failure-debugging",
+      "date": "2026-07-22",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2607.18754",
+      "title": "AgentDebugX: LLM 에이전트가 실패할 때 디버깅하는 올바른 방법",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-22-agentdebugx-agent-failure-debugging"
+    },
+    {
+      "slug": "2026-07-22-set-shifting-harnessed-agents",
+      "date": "2026-07-22",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.13396",
+      "title": "에이전트가 도구를 바꾸지 못할 때 — 하네스드 에이전트의 숨겨진 인지 경직성",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-22-set-shifting-harnessed-agents"
     }
   ]
 }
