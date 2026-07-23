@@ -841,6 +841,14 @@
       ],
       "commit": "2dcfdf0",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-21-aha-agent-hacks-agent-red-teaming.md"
+    },
+    {
+      "slug": "2026-07-24-autoresearch-coding-agents-spec-gaming",
+      "date": "2026-07-24",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.18064",
+      "title": "코딩 에이전트에게 최적화 루프를 맡기면 무슨 일이 벌어질까? — Autoresearch, 명세 게이밍, 그리고 5가지 설계 원칙",
+      "blog_url": "https://jkf87.github.io/2026-07-24-autoresearch-coding-agents-spec-gaming"
     }
   ],
   "entries": [

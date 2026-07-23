@@ -1,0 +1,77 @@
+[
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1.  Study 1 – best score per run on the (non-held-out) evaluation set. Baseline",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "fig-1-p8.png",
+    "method": "caption_crop (1110x471)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 62,
+    "width": 1110,
+    "height": 471,
+    "caption": "Fig. 1.  Study 1: best-so-far  research _ score  across all six runs, plotted against experi-",
+    "crop": [
+      122.76,
+      103.83,
+      492.63,
+      260.47
+    ]
+  },
+  {
+    "page": 9,
+    "file": "table-2-p9.png",
+    "method": "caption_crop_table_below (1110x768)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 115,
+    "width": 1110,
+    "height": 768,
+    "caption": "Table 2.  Study 2 – train (optimized) vs. held-out test scores. Test oracle floor is exactly",
+    "crop": [
+      122.76,
+      107.39,
+      492.63,
+      363.33
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-2-p9.png",
+    "method": "caption_crop (1110x471)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 85,
+    "width": 1110,
+    "height": 471,
+    "caption": "Fig. 2.  Study 2: train (optimized) vs. held-out test  research _ score  per run, all four",
+    "crop": [
+      122.76,
+      235.58,
+      492.64,
+      392.22
+    ]
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3.  Community arms, Study 2 harness (exploratory; unpinned model routing for",
+    "crop": null
+  }
+]
