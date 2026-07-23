@@ -1,0 +1,138 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (1583x711)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 208,
+    "width": 1583,
+    "height": 711,
+    "caption": "Fig. 1.  A composite problem from the private, held-out test",
+    "crop": [
+      42.0,
+      373.07,
+      569.51,
+      609.91
+    ]
+  },
+  {
+    "page": 1,
+    "file": "fig-2-p1.png",
+    "method": "caption_crop (1583x447)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 113,
+    "width": 1583,
+    "height": 447,
+    "caption": "Fig. 2.  All models evaluated score lower on  Relay-Bench",
+    "crop": [
+      42.5,
+      373.07,
+      570.0,
+      521.88
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-3-p3.png",
+    "method": "caption_crop (803x638)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 58,
+    "width": 803,
+    "height": 638,
+    "caption": "Fig. 3.  Each dot represents a model’s best GAIA accuracy at",
+    "crop": [
+      42.0,
+      204.88,
+      309.53,
+      417.03
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-4-p4.png",
+    "method": "caption_crop (806x563)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 45,
+    "width": 806,
+    "height": 563,
+    "caption": "Fig. 4.  Counts of correct and incorrect parseable responses.",
+    "crop": [
+      42.0,
+      303.41,
+      310.56,
+      490.99
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-5-p4.png",
+    "method": "caption_crop (807x554)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 51,
+    "width": 807,
+    "height": 554,
+    "caption": "Fig. 5.  The fraction of parseable responses that were incor-",
+    "crop": [
+      42.0,
+      528.42,
+      310.71,
+      712.95
+    ]
+  },
+  {
+    "page": 5,
+    "file": "table-1-p5.png",
+    "method": "caption_crop_table_below (1567x824)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 214,
+    "width": 1567,
+    "height": 824,
+    "caption": "Table 1.  A breakdown of the costs associated with running",
+    "crop": [
+      41.67,
+      275.0,
+      563.72,
+      549.54
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-6-p5.png",
+    "method": "caption_crop (807x507)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 55,
+    "width": 807,
+    "height": 507,
+    "caption": "Fig. 6.  Models’ Pass@1 accuracy against  Relay-Bench  evalu-",
+    "crop": [
+      42.0,
+      356.02,
+      310.72,
+      524.83
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-7-p5.png",
+    "method": "caption_crop (1480x763)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 177,
+    "width": 1480,
+    "height": 763,
+    "caption": "Fig. 7.  Wilson 95% confidence intervals of  Relay-Bench",
+    "crop": [
+      76.78,
+      356.02,
+      570.0,
+      610.1
+    ]
+  }
+]

@@ -1057,6 +1057,14 @@
       ],
       "commit": "783627d",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-23-dataflow-harness-grounded-code-agent-pipelines.md"
+    },
+    {
+      "slug": "2026-07-23-relay-bench-multi-domain-reasoning",
+      "date": "2026-07-23",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.18438",
+      "title": "Relay-Bench: GPT-5.5가 43%에 머문다 — 도메인 간 추론 체인이 드러내는 LLM의 진짜 한계",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-23-relay-bench-multi-domain-reasoning"
     }
   ]
 }
