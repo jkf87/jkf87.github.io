@@ -1080,7 +1080,17 @@
       "source": "arxiv",
       "source_url": "https://arxiv.org/abs/2607.20064",
       "title": "PRO-LONG: 프로그래밍 가능한 메모리로 LLM 에이전트에게 긴 호라이즌 추론을 되찾아주다",
-      "blog_url": "https://jkf87.github.io/posts/2026-07-24-pro-long-programmatic-memory-long-horizon-reasoning"
+      "blog_url": "https://jkf87.github.io/posts/2026-07-24-pro-long-programmatic-memory-long-horizon-reasoning",
+      "threads_root_id": "18096202469628828",
+      "threads_reply_ids": [
+        "18060307901735609",
+        "18022722167888689",
+        "18474309796110485",
+        "18068033114472676",
+        "18191575153377861"
+      ],
+      "commit": "e8c3f88",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-24-pro-long-programmatic-memory-long-horizon-reasoning.md"
     }
   ]
 }
