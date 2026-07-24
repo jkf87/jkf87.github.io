@@ -1,0 +1,135 @@
+[
+  {
+    "page": 3,
+    "file": "fig-1-p3.png",
+    "method": "caption_crop (1534x634)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 360,
+    "width": 1534,
+    "height": 634,
+    "caption": "Figure  1: Overview of programmatic memory (PRO-LONG) integrated into a basic coding agent setup. The",
+    "crop": [
+      50.36,
+      73.04,
+      561.65,
+      284.01
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-2-p5.png",
+    "method": "caption_crop (1540x747)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 153,
+    "width": 1540,
+    "height": 747,
+    "caption": "Figure  2:  PRO-LONG matches or exceeds state-of-the-art ARC-AGI-3 results at  4 . 2 – 5 . 8 ×  lower token cost.",
+    "crop": [
+      50.36,
+      73.04,
+      563.36,
+      321.93
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too page-like (area_ratio=0.67)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  2  compares benchmark performance for PRO-LONG and the relevant baselines discussed in § 2.2 . Across all",
+    "crop": [
+      50.36199951171875,
+      73.03898620605469,
+      561.6347045898438,
+      707.2534790039062
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-3-p6.png",
+    "method": "caption_crop (658x462)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 48,
+    "width": 658,
+    "height": 462,
+    "caption": "Figure  3:  Best@ 𝑘 comparison (GPT-5.5)  for",
+    "crop": [
+      342.73,
+      295.47,
+      561.83,
+      449.02
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  1:  Tool ladder ablation along the hierarchy",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  2:  Workspace persistence ablation.  pass@1 (%)",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "fig-4-p7.png",
+    "method": "caption_crop (1534x573)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 84,
+    "width": 1534,
+    "height": 573,
+    "caption": "Figure  4:  Score breakdown across the 25 games, PRO-LONG vs. no-log  for GPT 5.5 runs, sorted by PRO-LONG",
+    "crop": [
+      50.36,
+      509.05,
+      561.64,
+      699.7
+    ]
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  3:  PRO-LONG vs. no-log tool call distribution  for GPT 5.5 runs. Across the 25 games, PRO-LONG spends",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  4: Game versions used for all runs in our experiments.",
+    "crop": null
+  }
+]
