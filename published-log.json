@@ -849,6 +849,14 @@
       "source_url": "https://arxiv.org/abs/2607.18064",
       "title": "코딩 에이전트에게 최적화 루프를 맡기면 무슨 일이 벌어질까? — Autoresearch, 명세 게이밍, 그리고 5가지 설계 원칙",
       "blog_url": "https://jkf87.github.io/2026-07-24-autoresearch-coding-agents-spec-gaming"
+    },
+    {
+      "slug": "2026-07-24-arex-recursively-self-improving-deep-research-agent",
+      "date": "2026-07-24",
+      "title": "AREX: 재귀적 자기개선 딥리서치 에이전트 — 발견-검증 비대칭을 활용한 루프 설계",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2607.21461",
+      "blog_url": "https://jkf87.github.io/2026-07-24-arex-recursively-self-improving-deep-research-agent"
     }
   ],
   "entries": [

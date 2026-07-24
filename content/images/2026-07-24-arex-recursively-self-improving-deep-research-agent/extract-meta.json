@@ -1,0 +1,174 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (1484x864)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 172,
+    "width": 1484,
+    "height": 864,
+    "caption": "Figure 1: Benchmark performance of AREX",
+    "crop": [
+      58.87,
+      431.87,
+      553.13,
+      719.41
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-2-p3.png",
+    "method": "caption_crop (1497x932)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 227,
+    "width": 1497,
+    "height": 932,
+    "caption": "Figure 2: AREX’s recursive self-improvement framework. The inner research loop maintains the research state and externalizes a",
+    "crop": [
+      56.88,
+      11.46,
+      555.64,
+      321.97
+    ]
+  },
+  {
+    "page": 11,
+    "file": "table-1-p11.png",
+    "method": "caption_crop (1497x272)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 41,
+    "width": 1497,
+    "height": 272,
+    "caption": "Table 1: Comparison results on deep search and agentic reasoning tasks. Models are grouped into frontier closed-source models,",
+    "crop": [
+      54.44,
+      298.39,
+      553.16,
+      388.88
+    ]
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Context-update behavior on BrowseComp. Context-token statistics are measured when  update_context  is invoked.",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2 shows that AREX invokes  update_context  in 80.3% of BrowseComp cases. Updates occur at a mean",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3 separates the two parts of recursive self-improvement: ACU in the inner",
+    "crop": null
+  },
+  {
+    "page": 13,
+    "file": "table-3-p13.png",
+    "method": "caption_crop (1477x400)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 77,
+    "width": 1477,
+    "height": 400,
+    "caption": "Table 3: Effect of ACU in the inner research",
+    "crop": [
+      58.59,
+      51.78,
+      550.65,
+      184.89
+    ]
+  },
+  {
+    "page": 13,
+    "file": "fig-3-p13.png",
+    "method": "caption_crop (975x441)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 44,
+    "width": 975,
+    "height": 441,
+    "caption": "Figure 3: Confidence distributions for correct and incorrect outputs. Each bar is",
+    "crop": [
+      225.67,
+      51.78,
+      550.65,
+      198.48
+    ]
+  },
+  {
+    "page": 13,
+    "file": "fig-3-p13-3.png",
+    "method": "caption_crop (1052x949)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 164,
+    "width": 1052,
+    "height": 949,
+    "caption": "Figure 3 evaluates the confidence score  𝑠 ( 𝑘 )   produced by  finish , which is part of the",
+    "crop": [
+      202.85,
+      51.78,
+      553.14,
+      367.75
+    ]
+  },
+  {
+    "page": 14,
+    "file": "fig-4-p14.png",
+    "method": "caption_crop (708x436)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 33,
+    "width": 708,
+    "height": 436,
+    "caption": "Figure 4: Average step loss after full-trajectory mid-training.",
+    "crop": [
+      58.87,
+      51.78,
+      294.49,
+      196.88
+    ]
+  },
+  {
+    "page": 14,
+    "file": "table-4-p14.png",
+    "method": "caption_crop (1307x420)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 61,
+    "width": 1307,
+    "height": 420,
+    "caption": "Table 4: Ablation of the AREX training recipe.",
+    "crop": [
+      75.61,
+      51.78,
+      510.77,
+      191.46
+    ]
+  }
+]
