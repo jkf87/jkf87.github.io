@@ -1129,7 +1129,17 @@
         "LLM",
         "automation",
         "loop"
-      ]
+      ],
+      "threads_root_id": "18176789998419380",
+      "threads_reply_ids": [
+        "18103200902189816",
+        "18067563761472324",
+        "18021628382692565",
+        "18110747899771365",
+        "17938843587277439"
+      ],
+      "commit": "3ad3fc0",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-25-pats-policy-aware-training-scaffold.md"
     }
   ]
 }
