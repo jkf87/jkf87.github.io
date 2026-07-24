@@ -1106,6 +1106,14 @@
       ],
       "commit": "e8c3f88",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-24-pro-long-programmatic-memory-long-horizon-reasoning.md"
+    },
+    {
+      "slug": "2026-07-24-agentic-context-management-agent-memory-lifecycle",
+      "date": "2026-07-24",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.21503",
+      "title": "에이전트가 자기 컨텍스트를 관리하지 못하면 망한다 — Agentic Context Management의 5원시 프레임워크",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-24-agentic-context-management-agent-memory-lifecycle"
     }
   ]
 }

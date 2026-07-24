@@ -1,0 +1,164 @@
+[
+  {
+    "page": 4,
+    "file": "fig-1-p4.png",
+    "method": "caption_crop (1476x665)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 89,
+    "width": 1476,
+    "height": 665,
+    "caption": "Figure 1:  The five-primitive context lifecycle (architecting  → ingesting  → scoping  → anticipating  →",
+    "crop": [
+      60.0,
+      320.98,
+      552.0,
+      542.15
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1:  Production failure modes and the primitive whose absence produces them",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "fig-2-p6.png",
+    "method": "caption_crop (1444x877)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 77,
+    "width": 1444,
+    "height": 877,
+    "caption": "Figure 2:  Cumulative input tokens vs. turns: full-append (quadratic) against bounded context (linear).",
+    "crop": [
+      65.58,
+      337.69,
+      546.64,
+      629.7
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-3-p7.png",
+    "method": "caption_crop (1322x940)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 69,
+    "width": 1322,
+    "height": 940,
+    "caption": "Figure 3:",
+    "crop": [
+      60.0,
+      252.79,
+      500.54,
+      565.69
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-4-p9.png",
+    "method": "caption_crop (1481x715)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 92,
+    "width": 1481,
+    "height": 715,
+    "caption": "Figure 4:  MRR by dataset for keyword vs. vector retrieval, with the embedding-generation (“vector tax”)",
+    "crop": [
+      60.0,
+      60.0,
+      553.36,
+      297.73
+    ]
+  },
+  {
+    "page": 10,
+    "file": "fig-5-p10.png",
+    "method": "caption_crop (1477x954)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 145,
+    "width": 1477,
+    "height": 954,
+    "caption": "Figure 5:  Reference architecture: SDK  → API (REST + streaming)  → managers/pipelines  → polyglot",
+    "crop": [
+      60.0,
+      247.68,
+      552.28,
+      565.65
+    ]
+  },
+  {
+    "page": 14,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2 specifies the exact configuration for each reported result. We consider an evaluation number",
+    "crop": null
+  },
+  {
+    "page": 14,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2:  Evaluation configuration (full methodology: Maximem, 2026d)",
+    "crop": null
+  },
+  {
+    "page": 15,
+    "file": "fig-6-p15.png",
+    "method": "caption_crop (1478x702)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 107,
+    "width": 1478,
+    "height": 702,
+    "caption": "Figure 6:  Per-category results: LongMemEval six categories (92.0% overall) and LoCoMo categories 1–4",
+    "crop": [
+      60.0,
+      263.68,
+      552.53,
+      497.35
+    ]
+  },
+  {
+    "page": 16,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3:  Published LongMemEval results (each vendor’s own methodology; self-reported; not a controlled",
+    "crop": null
+  },
+  {
+    "page": 17,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4:  Systems  ×  primitive coverage.    = stated primary focus per the system’s own public documentation",
+    "crop": null
+  }
+]
