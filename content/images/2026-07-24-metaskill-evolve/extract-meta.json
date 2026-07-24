@@ -1,0 +1,150 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1439x822)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 214,
+    "width": 1439,
+    "height": 822,
+    "caption": "Figure 1:  Four regimes of agent skill improvement.  No-Skill : no reusable skill memory.  Static Skill : a hand-",
+    "crop": [
+      58.87,
+      36.25,
+      538.07,
+      309.81
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-2-p5.png",
+    "method": "caption_crop (1435x688)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 172,
+    "width": 1435,
+    "height": 688,
+    "caption": "Figure 2: System overview. The branch state  b  = ( s, m, h )  (left) feeds the five-agent pipeline (centre), whose output",
+    "crop": [
+      58.87,
+      58.87,
+      536.69,
+      287.9
+    ]
+  },
+  {
+    "page": 7,
+    "file": "table-1-p7.png",
+    "method": "caption_crop (1382x928)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 241,
+    "width": 1382,
+    "height": 928,
+    "caption": "Table  1  and Fig.  3  report held-out test accuracy",
+    "crop": [
+      58.53,
+      132.29,
+      518.77,
+      441.1
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-3-p7.png",
+    "method": "caption_crop (728x476)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 50,
+    "width": 728,
+    "height": 476,
+    "caption": "Figure 3:  End-to-end held-out test accuracy on the",
+    "crop": [
+      294.14,
+      132.29,
+      536.41,
+      290.48
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-4-p7.png",
+    "method": "caption_crop (728x1577)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 216,
+    "width": 728,
+    "height": 1577,
+    "caption": "Fig.  4 ) removes only cross-branch candidates while",
+    "crop": [
+      294.14,
+      132.29,
+      536.41,
+      657.43
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Fig.  4  shows the component ablations on the",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "table-1-p8.png",
+    "method": "caption_crop_table_below (1354x991)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 239,
+    "width": 1354,
+    "height": 991,
+    "caption": "Table 1:  Main results.  Held-out test accuracy (%) on",
+    "crop": [
+      54.13,
+      63.51,
+      505.18,
+      393.4
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-4-p8.png",
+    "method": "caption_crop (733x489)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 64,
+    "width": 733,
+    "height": 489,
+    "caption": "Figure 4:  Component ablations on the two QA bench-",
+    "crop": [
+      58.87,
+      302.77,
+      302.79,
+      465.64
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-5-p8.png",
+    "method": "caption_crop (728x720)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 64,
+    "width": 728,
+    "height": 720,
+    "caption": "Figure 5:  Meta-update horizon sweep.  Held-out test",
+    "crop": [
+      294.14,
+      64.84,
+      536.41,
+      304.65
+    ]
+  }
+]

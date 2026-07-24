@@ -857,6 +857,13 @@
       "source": "huggingface",
       "source_url": "https://arxiv.org/abs/2607.21461",
       "blog_url": "https://jkf87.github.io/2026-07-24-arex-recursively-self-improving-deep-research-agent"
+    },
+    {
+      "date": "2026-07-24",
+      "slug": "2026-07-24-metaskill-evolve",
+      "title": "MetaSkill-Evolve: 에이전트 스킬을 넘어 스킬을 개선하는 방법까지 진화시키다",
+      "source_url": "https://arxiv.org/abs/2607.05297",
+      "topic": "agent self-improvement / skill evolution / recursive meta-skill"
     }
   ],
   "entries": [
