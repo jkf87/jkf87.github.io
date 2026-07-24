@@ -1,0 +1,225 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (788x399)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 65,
+    "width": 788,
+    "height": 399,
+    "caption": "Figure 1: Seed-0 training dynamics on 1.5B ALFWorld under",
+    "crop": [
+      42.0,
+      446.79,
+      304.49,
+      579.55
+    ]
+  },
+  {
+    "page": 2,
+    "file": "fig-2-p2.png",
+    "method": "caption_crop (1584x561)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 208,
+    "width": 1584,
+    "height": 561,
+    "caption": "Figure 2: Introduction overview. Left: accumulation retains growing external state, while monotonic withdrawal reduces a",
+    "crop": [
+      42.0,
+      42.0,
+      570.0,
+      228.58
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-3-p3.png",
+    "method": "caption_crop (1584x961)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 329,
+    "width": 1584,
+    "height": 961,
+    "caption": "Figure 3: Overview of Pats. A frozen scaffold snapshot conditions rollout groups. The resulting trajectories update the policy",
+    "crop": [
+      42.0,
+      42.0,
+      570.0,
+      361.83
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-1-p6.png",
+    "method": "caption_crop (1567x1740)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 589,
+    "width": 1567,
+    "height": 1740,
+    "caption": "Table 1 compares native pipelines matched in model scale,",
+    "crop": [
+      42.0,
+      42.0,
+      564.04,
+      621.37
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-5-p6.png",
+    "method": "caption_crop (1567x409)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 112,
+    "width": 1567,
+    "height": 409,
+    "caption": "Figure 5: Performance and token trade-off for 7B policies.",
+    "crop": [
+      47.96,
+      42.0,
+      569.99,
+      177.81
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Main results on ALFWorld, WebShop, and end-to-end interaction length. ALFWorld reports six task families, aggregate",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Search-augmented QA performance. Avg. Prompt",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Training ablations on 1.5B ALFWorld, all evalu-",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (503x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4: Shared Stage-1 reinforcement-learning configuration.",
+    "crop": [
+      54.60099792480469,
+      274.8087463378906,
+      557.424072265625,
+      245.16400146484375
+    ]
+  },
+  {
+    "page": 11,
+    "file": "fig-6-p11.png",
+    "method": "caption_crop (1584x1227)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 116,
+    "width": 1584,
+    "height": 1227,
+    "caption": "Figure 6: Controller modes across the 1.5B ALFWorld runs shift from early  EXPAND  toward  REVISE  and later  COMPRESS ;",
+    "crop": [
+      42.0,
+      274.81,
+      570.0,
+      683.46
+    ]
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (528x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 7: Interface initialization precedes Stage 1. Step-zero validation differs only modestly, but the initialized policy learns",
+    "crop": [
+      42.0,
+      497.9072265625,
+      569.9979248046875,
+      290.60198974609375
+    ]
+  },
+  {
+    "page": 12,
+    "file": "fig-8-p12.png",
+    "method": "caption_crop (1494x471)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 62,
+    "width": 1494,
+    "height": 471,
+    "caption": "Figure 8: Policy-facing experience block rendered before the current interaction history.",
+    "crop": [
+      57.12,
+      497.91,
+      554.88,
+      654.51
+    ]
+  },
+  {
+    "page": 13,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (498x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 9: Schema of the deterministic group-level evidence card.",
+    "crop": [
+      57.11900329589844,
+      286.7152099609375,
+      554.8790283203125,
+      230.23297119140625
+    ]
+  },
+  {
+    "page": 13,
+    "file": "fig-10-p13.png",
+    "method": "caption_crop (1494x346)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 46,
+    "width": 1494,
+    "height": 346,
+    "caption": "Figure 10: Minimal refiner instruction used before the full scaffold review template.",
+    "crop": [
+      57.12,
+      286.72,
+      554.88,
+      401.86
+    ]
+  }
+]
