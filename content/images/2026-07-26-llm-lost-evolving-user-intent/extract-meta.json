@@ -1,0 +1,172 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (733x835)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 225,
+    "width": 733,
+    "height": 835,
+    "caption": "Figure 1:  LLMs get lost in evolving user intent.  Uti-",
+    "crop": [
+      294.14,
+      211.38,
+      538.06,
+      489.49
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-2-p3.png",
+    "method": "caption_crop (1434x573)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 300,
+    "width": 1434,
+    "height": 573,
+    "caption": "Figure 2:  Illustration of three types of intent state transitions. :  argument reveal ,  argument revision , and  function",
+    "crop": [
+      58.87,
+      62.7,
+      536.41,
+      253.62
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-3-p4.png",
+    "method": "caption_crop (1434x804)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 443,
+    "width": 1434,
+    "height": 804,
+    "caption": "Figure 3:  Evolving-intent conversations from single-turn data.  Given a verifiable single turn data, we extract",
+    "crop": [
+      58.87,
+      60.9,
+      536.41,
+      328.64
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (478x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1:  LLMs get lost in evolving user intent.  Accuracy (%) across four datasets, comparing fully specified",
+    "crop": [
+      58.55699920654297,
+      156.58102416992188,
+      536.4058227539062,
+      99.66600799560547
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-4-p6.png",
+    "method": "caption_crop (1434x503)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 108,
+    "width": 1434,
+    "height": 503,
+    "caption": "Figure 4:  Scaling intent transitions monotonically degrades accuracy.  Accuracy of GPT 5.1, 5.2, 5.5, and Kimi",
+    "crop": [
+      58.87,
+      263.34,
+      536.41,
+      430.96
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (478x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2:  Models struggle more under increasingly complex evolving-intent compositions.  Ablation of intent",
+    "crop": [
+      58.55699920654297,
+      152.87301635742188,
+      536.4073486328125,
+      99.66123962402344
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-5-p7.png",
+    "method": "caption_crop (769x567)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 66,
+    "width": 769,
+    "height": 567,
+    "caption": "Figure 5:  LLMs gradually shift away from earlier",
+    "crop": [
+      280.58,
+      224.23,
+      536.63,
+      412.92
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-6-p8.png",
+    "method": "caption_crop (1434x525)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 85,
+    "width": 1434,
+    "height": 525,
+    "caption": "Figure 6:  Memory mechanisms help but do not close",
+    "crop": [
+      58.87,
+      58.86,
+      536.41,
+      233.43
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-7-p8.png",
+    "method": "caption_crop (1434x525)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 85,
+    "width": 1434,
+    "height": 525,
+    "caption": "Figure 7:  Multi-turn interaction compounds problem",
+    "crop": [
+      58.87,
+      58.86,
+      536.41,
+      233.51
+    ]
+  },
+  {
+    "page": 8,
+    "file": "table-3-p8.png",
+    "method": "caption_crop (1439x841)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 168,
+    "width": 1439,
+    "height": 841,
+    "caption": "Table 3:  Turn-wise intent-tracking performance  Ac-",
+    "crop": [
+      58.87,
+      58.86,
+      538.06,
+      338.84
+    ]
+  }
+]

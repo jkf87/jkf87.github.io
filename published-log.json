@@ -1256,6 +1256,24 @@
       ],
       "commit": "5e67192",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-25-knowledge-centric-self-improvement.md"
+    },
+    {
+      "slug": "2026-07-26-llm-lost-evolving-user-intent",
+      "date": "2026-07-26",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.20734",
+      "title": "LLMs Get Lost in Evolving User Intent: GPT-5.5가 99%에서 80%로 추락하는 이유",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-26-llm-lost-evolving-user-intent",
+      "tags": [
+        "LLM",
+        "agent",
+        "evaluation",
+        "multi-turn",
+        "user-intent",
+        "harness",
+        "Microsoft",
+        "benchmark"
+      ]
     }
   ]
 }
