@@ -864,6 +864,15 @@
       "title": "MetaSkill-Evolve: 에이전트 스킬을 넘어 스킬을 개선하는 방법까지 진화시키다",
       "source_url": "https://arxiv.org/abs/2607.05297",
       "topic": "agent self-improvement / skill evolution / recursive meta-skill"
+    },
+    {
+      "slug": "2026-07-25-nvidia-oo-agents",
+      "date": "2026-07-25",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.20709",
+      "title": "NVIDIA OO Agents: Native Python Object-Oriented Agents",
+      "blog_url": "https://jkf87.github.io/2026-07-25-nvidia-oo-agents",
+      "github_url": "https://github.com/NVIDIA-NeMo/labs-OO-Agents"
     }
   ],
   "entries": [
