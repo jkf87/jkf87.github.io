@@ -1246,7 +1246,16 @@
         "automation",
         "loop",
         "tool use"
-      ]
+      ],
+      "threads_root_id": "18112586173919139",
+      "threads_reply_ids": [
+        "18128483113634749",
+        "17872083171627155",
+        "18035339039826912",
+        "18065253899723000"
+      ],
+      "commit": "5e67192",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-25-knowledge-centric-self-improvement.md"
     }
   ]
 }
