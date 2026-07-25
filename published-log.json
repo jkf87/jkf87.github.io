@@ -1157,7 +1157,16 @@
         "automation",
         "infrastructure",
         "open-source"
-      ]
+      ],
+      "threads_root_id": "18087468251157783",
+      "threads_reply_ids": [
+        "18198738850372004",
+        "18128697031637800",
+        "18371834749239358",
+        "18096246380629198"
+      ],
+      "commit": "8f6e43c",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-25-openforge-rl-train-harness-native-agents.md"
     }
   ]
 }
