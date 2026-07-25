@@ -1219,7 +1219,16 @@
         "evaluation",
         "LLM",
         "contamination"
-      ]
+      ],
+      "threads_root_id": "18130618372715232",
+      "threads_reply_ids": [
+        "18144407659536577",
+        "18083888162203238",
+        "18110460862782811",
+        "17898090009520173"
+      ],
+      "commit": "d4c99d6",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-25-tencent-workbuddy-bench-coding-agent-benchmark.md"
     }
   ]
 }
