@@ -1,0 +1,217 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1265x523)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 120,
+    "width": 1265,
+    "height": 523,
+    "caption": "Figure 1:  From agent-centric to knowledge-centric self-improvement.  (Left)  Conventional self-",
+    "crop": [
+      96.0,
+      61.62,
+      517.65,
+      235.44
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (548x787)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 46,
+    "width": 548,
+    "height": 787,
+    "caption": "Figure 2: Knowledge curation protocol",
+    "crop": [
+      333.6,
+      252.91,
+      516.0,
+      514.77
+    ]
+  },
+  {
+    "page": 4,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (409x62pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  2 . The two forum stages take the familiar form of",
+    "crop": [
+      96.0,
+      252.906982421875,
+      504.8585205078125,
+      314.91387939453125
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-3-p6.png",
+    "method": "caption_crop (1261x993)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 192,
+    "width": 1261,
+    "height": 993,
+    "caption": "Figure 3: Examples of knowledge curation on two task families. Local task evidence is first organized",
+    "crop": [
+      96.0,
+      351.3,
+      516.0,
+      681.79
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1:  Baseline comparisons across task families us-",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Comparison against Prompt Optimization",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  2  shows that knowledge cu-",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Cross-LLM Generalization. This table demonstrates the generalization and cost efficiency",
+    "crop": null
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4: Knowledge Transfer Result. Zero-shot solve rate (%) on 20 held-out tasks when the curated",
+    "crop": null
+  },
+  {
+    "page": 14,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  4  shows a simplified view of how a single task attempt flows through the runtime. The Engine",
+    "crop": null
+  },
+  {
+    "page": 14,
+    "file": "fig-4-p14.png",
+    "method": "caption_crop (1260x806)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 93,
+    "width": 1260,
+    "height": 806,
+    "caption": "Figure 4: Simplified attempt runtime lifecycle. Solid arrows are forward calls, dashed arrows are",
+    "crop": [
+      96.0,
+      374.18,
+      516.0,
+      642.39
+    ]
+  },
+  {
+    "page": 15,
+    "file": "fig-5-p15.png",
+    "method": "caption_crop (1260x1175)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 227,
+    "width": 1260,
+    "height": 1175,
+    "caption": "Figure 5: In-depth overview and example of knowledge curation: full curation framework and actual",
+    "crop": [
+      96.0,
+      197.44,
+      516.0,
+      588.77
+    ]
+  },
+  {
+    "page": 16,
+    "file": "fig-6-p16.png",
+    "method": "caption_crop (1260x1197)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 239,
+    "width": 1260,
+    "height": 1197,
+    "caption": "Figure 6: In-depth overview and example of knowledge curation: full curation framework and actual",
+    "crop": [
+      96.0,
+      193.76,
+      516.0,
+      592.45
+    ]
+  },
+  {
+    "page": 17,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  5  counts explicit stances in cross-task forum discussion rounds ( ≥ 1), where the protocol",
+    "crop": null
+  },
+  {
+    "page": 17,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5: Explicit stances in cross-task forum discussion rounds for the Haiku 4.5 self-improvement",
+    "crop": null
+  }
+]
