@@ -1,0 +1,46 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 155,
+    "width": 1260,
+    "height": 548,
+    "caption": "Figure 1: OpenForge RL connects any harness × any environment to standard RL codebases such as veRL, with no train-deploy mismatch."
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 223,
+    "width": 1553,
+    "height": 902,
+    "caption": "Figure 2: Overview of OpenForge RL."
+  },
+  {
+    "page": 5,
+    "file": "fig3-html.png",
+    "method": "html_source",
+    "status": "accepted",
+    "reason": "arXiv HTML official source image",
+    "size_kb": 594,
+    "width": 996,
+    "height": 1481,
+    "caption": "Figure 3: Data/task synthesis pipeline."
+  },
+  {
+    "page": 10,
+    "file": "fig-5-p10.png",
+    "method": "caption_crop",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 109,
+    "width": 1261,
+    "height": 672,
+    "caption": "Figure 5: SFT vs. SFT+RL behavior on ClawEval."
+  }
+]

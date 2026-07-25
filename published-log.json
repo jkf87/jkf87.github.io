@@ -1140,6 +1140,24 @@
       ],
       "commit": "3ad3fc0",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-25-pats-policy-aware-training-scaffold.md"
+    },
+    {
+      "slug": "2026-07-25-openforge-rl-train-harness-native-agents",
+      "date": "2026-07-25",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.21557",
+      "title": "OpenForge RL: 어떤 하네스든 어떤 환경이든 끝까지 훈련한다 — 하네스 네이티브 에이전트 RL의 오픈 인프라",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-25-openforge-rl-train-harness-native-agents",
+      "tags": [
+        "agent",
+        "harness",
+        "reinforcement-learning",
+        "LLM",
+        "RL",
+        "automation",
+        "infrastructure",
+        "open-source"
+      ]
     }
   ]
 }
