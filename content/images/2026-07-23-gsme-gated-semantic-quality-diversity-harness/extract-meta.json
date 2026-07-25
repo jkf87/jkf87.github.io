@@ -1,0 +1,183 @@
+[
+  {
+    "page": 3,
+    "file": "fig-1-p3.png",
+    "method": "caption_crop (1584x736)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 210,
+    "width": 1584,
+    "height": 736,
+    "caption": "Figure 1: The self-evolution loop. A Task Agent runs the train tasks; Scoring returns per-task results and failure signals;",
+    "crop": [
+      42.0,
+      42.0,
+      570.0,
+      287.21
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (788x569)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 96,
+    "width": 788,
+    "height": 569,
+    "caption": "Figure 2:  Evolution tree (running example, BrowseC-",
+    "crop": [
+      307.5,
+      146.23,
+      569.99,
+      335.5
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Sealed-test lift, significance, retention.  z  is the per-",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "fig-3-p6.png",
+    "method": "caption_crop (788x784)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 55,
+    "width": 788,
+    "height": 784,
+    "caption": "Figure 3: Sealed-test success across seven domains: vanilla",
+    "crop": [
+      42.0,
+      42.0,
+      304.51,
+      302.76
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-2-p6.png",
+    "method": "caption_crop_table_below (1367x603)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 106,
+    "width": 1367,
+    "height": 603,
+    "caption": "Table 2: Recovery-defense ablation (LiveCode train,  K =3",
+    "crop": [
+      114.58,
+      43.71,
+      569.99,
+      244.65
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Cross-model specificity on AppWorld: each patch’s",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4 maps each domain to the dominant pathology the",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1. Every credited mechanism is a runtime edit, and two",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 4 aggregates the GSME archive across the six cred-",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4: What the loop diagnosed and fixed, per domain: the dominant diagnosed why and the credited mechanism (all on the",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "fig-4-p12.png",
+    "method": "caption_crop (1584x706)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 171,
+    "width": 1584,
+    "height": 706,
+    "caption": "Figure 4:  GSME archive, aggregated across the six credited domains.  Rows are the four where levers; columns are open,",
+    "crop": [
+      42.0,
+      380.7,
+      570.0,
+      615.91
+    ]
+  },
+  {
+    "page": 13,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5: The where taxonomy: four levers over thirteen operational edit surfaces, with the surface each touches and example",
+    "crop": null
+  },
+  {
+    "page": 13,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6: pass@1 vs. pass@3 on the sealed test (vanilla  → train-selected harness, same harnesses as Table 1). Best-of-3 rises",
+    "crop": null
+  }
+]

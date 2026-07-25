@@ -1,0 +1,210 @@
+[
+  {
+    "page": 4,
+    "file": "fig-1-p4.png",
+    "method": "caption_crop (1266x633)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 121,
+    "width": 1266,
+    "height": 633,
+    "caption": "Figure 1:  n -gram overlap rate on GSM-Infinite as a function of context length across seven models.",
+    "crop": [
+      96.0,
+      69.86,
+      517.74,
+      280.67
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-1-p4-2.png",
+    "method": "caption_crop (1261x1104)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 204,
+    "width": 1261,
+    "height": 1104,
+    "caption": "Figure 1 reports overlap rates on GSM-Infinite across four context scales (8k–64k). All models",
+    "crop": [
+      96.0,
+      69.86,
+      516.0,
+      437.61
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-2-p5.png",
+    "method": "caption_crop (1261x614)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 102,
+    "width": 1261,
+    "height": 614,
+    "caption": "Figure 2: Repetitive copying harms both accuracy and reasoning efficiency (DeepSeek-V3.2 on",
+    "crop": [
+      96.0,
+      61.95,
+      516.0,
+      266.24
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-3a-p5.png",
+    "method": "caption_crop (1266x1680)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 301,
+    "width": 1266,
+    "height": 1680,
+    "caption": "Figure 3a shows the distribution of grounding ratios for correctly vs. incorrectly answered samples.",
+    "crop": [
+      96.0,
+      61.95,
+      517.75,
+      621.34
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-3-p6.png",
+    "method": "caption_crop (1261x582)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 126,
+    "width": 1261,
+    "height": 582,
+    "caption": "Figure 3: Copying behavior of correctly vs. incorrectly answered samples (DeepSeek-V3.2 on",
+    "crop": [
+      96.0,
+      69.86,
+      516.0,
+      263.51
+    ]
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3 we demonstrate that training with only the distractor penalty ( α  = 0 ,  β  = 0 . 3 ) also yields an",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2 reports answer-input overlap (token-level 3-gram) and thinking length (in tokens) for the base",
+    "crop": null
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Performance on long-context benchmarks under 32k and 128k contexts. All benchmarks are",
+    "crop": null
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Effect of GEAR on repetitive copying and thinking length (Qwen3.5-35B-A3B, 32k context).",
+    "crop": null
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Ablation on reward coefficients ( α ,  β ) for Qwen3.5-9B. Default setting in  bold .",
+    "crop": null
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4: Ablation on  n -gram size for Qwen3.5-9B. Default setting in  bold .",
+    "crop": null
+  },
+  {
+    "page": 13,
+    "file": "fig-4-p13.png",
+    "method": "caption_crop (1303x738)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 137,
+    "width": 1303,
+    "height": 738,
+    "caption": "Figure 4: Accuracy and thinking length by 10-gram overlap rate bin across six models on GSM-",
+    "crop": [
+      96.0,
+      250.02,
+      530.06,
+      495.84
+    ]
+  },
+  {
+    "page": 14,
+    "file": "fig-5-p14.png",
+    "method": "caption_crop (1303x677)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 143,
+    "width": 1303,
+    "height": 677,
+    "caption": "Figure 5: Probability density of grounding ratio ( r  =  Overlap 10 ( y ∥ x key )  /  Overlap 10 ( y ∥ x dist ) ) for",
+    "crop": [
+      96.0,
+      69.86,
+      530.06,
+      295.31
+    ]
+  },
+  {
+    "page": 14,
+    "file": "fig-6-p14.png",
+    "method": "caption_crop (1303x1452)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 276,
+    "width": 1303,
+    "height": 1452,
+    "caption": "Figure 6: Base model: the thinking trace is dominated by repetitive copying of the input, consuming",
+    "crop": [
+      96.0,
+      69.86,
+      530.06,
+      553.41
+    ]
+  }
+]

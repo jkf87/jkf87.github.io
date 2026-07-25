@@ -1,0 +1,53 @@
+[
+  {
+    "page": 23,
+    "file": "fig-9-p23.png",
+    "method": "caption_crop (1369x628)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 129,
+    "width": 1369,
+    "height": 628,
+    "caption": "Figure 9.  Office results by difficulty and task type. (a) Mean Office score by calibrated difficulty within each",
+    "crop": [
+      78.0,
+      67.2,
+      534.02,
+      276.26
+    ]
+  },
+  {
+    "page": 23,
+    "file": "table-7-p23.png",
+    "method": "caption_crop (1370x968)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 193,
+    "width": 1370,
+    "height": 968,
+    "caption": "Table  7  reports per-run averages of assistant turns, output tokens, and input tokens on the Code",
+    "crop": [
+      77.71,
+      67.2,
+      534.02,
+      389.55
+    ]
+  },
+  {
+    "page": 23,
+    "file": "table-7-p23-3.png",
+    "method": "caption_crop (1370x1740)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 341,
+    "width": 1370,
+    "height": 1740,
+    "caption": "Table 7.  Per-run averages on the Code subset, by harness: turns (unique assistant messages, including",
+    "crop": [
+      77.72,
+      67.2,
+      534.02,
+      646.73
+    ]
+  }
+]

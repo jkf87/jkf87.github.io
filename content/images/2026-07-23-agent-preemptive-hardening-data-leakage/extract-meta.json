@@ -1,0 +1,87 @@
+[
+  {
+    "page": 4,
+    "file": "fig-1-p4.png",
+    "method": "caption_crop (1616x726)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 171,
+    "width": 1616,
+    "height": 726,
+    "caption": "Fig. 1. Overview of the preemptive hardening pipeline for data leakage prevention in AI-agent applications. The analyzer module (left) discovers agents, maps",
+    "crop": [
+      36.96,
+      38.54,
+      575.03,
+      280.3
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-2-p7.png",
+    "method": "caption_crop (1601x712)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 112,
+    "width": 1601,
+    "height": 712,
+    "caption": "Fig. 2. Validation module overview.",
+    "crop": [
+      39.53,
+      38.54,
+      572.67,
+      275.52
+    ]
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (246x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Fig. 3. Overview of the O-RAN monitoring assistant application.",
+    "crop": [
+      52.69169616699219,
+      539.6397705078125,
+      299.1519775390625,
+      229.2686767578125
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-4-p9.png",
+    "method": "caption_crop (820x460)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 45,
+    "width": 820,
+    "height": 460,
+    "caption": "Fig. 4. Overview of the HR assistant application.",
+    "crop": [
+      36.96,
+      536.1,
+      309.69,
+      689.21
+    ]
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (369x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Fig. 5. Overview of the automated trip planner application.",
+    "crop": [
+      178.74293518066406,
+      539.6397705078125,
+      547.8977661132812,
+      475.13665771484375
+    ]
+  }
+]

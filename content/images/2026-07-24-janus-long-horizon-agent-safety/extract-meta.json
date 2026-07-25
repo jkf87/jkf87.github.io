@@ -1,0 +1,176 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (794x627)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 110,
+    "width": 794,
+    "height": 627,
+    "caption": "Figure 1: Predictive vs. reactive guard. (a) A reactive guard",
+    "crop": [
+      307.5,
+      222.8,
+      571.77,
+      431.54
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-2-p3.png",
+    "method": "caption_crop (1584x728)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 398,
+    "width": 1584,
+    "height": 728,
+    "caption": "Figure 2: Simulation-based data construction for Janus. (a) Risk taxonomy: training samples are organized by user-, environment-",
+    "crop": [
+      42.0,
+      42.0,
+      570.0,
+      284.58
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-3-p4.png",
+    "method": "caption_crop (1584x696)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 271,
+    "width": 1584,
+    "height": 696,
+    "caption": "Figure 3: Coupled Anticipation and Adjudication Reinforcement Learning ( CoAA-RL ) for Janus. (a) Anticipation task:",
+    "crop": [
+      42.0,
+      42.0,
+      570.0,
+      273.7
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Main results on four agent-safety benchmarks. Utility measures benign-task performance, while ASR measures attack",
+    "crop": null
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1 reports the safety–utility trade-off of Vanguard, six",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "table-2-p6.png",
+    "method": "caption_crop (1584x573)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 186,
+    "width": 1584,
+    "height": 573,
+    "caption": "Table 2: Ablation study on three representative benchmarks",
+    "crop": [
+      42.0,
+      42.0,
+      570.0,
+      232.8
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 4, and Table 3.",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "fig-4-p6.png",
+    "method": "caption_crop (788x582)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 112,
+    "width": 788,
+    "height": 582,
+    "caption": "Figure 4: Sensitivity to the anticipation reward weight  λ A .",
+    "crop": [
+      307.5,
+      42.0,
+      570.0,
+      235.86
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Prefix-based evaluation of different guard models on",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3, Vanguard’s average ASR over AgentDojo, Agent-",
+    "crop": null
+  },
+  {
+    "page": 10,
+    "file": "table-4-p10.png",
+    "method": "caption_crop (1585x1487)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 447,
+    "width": 1585,
+    "height": 1487,
+    "caption": "Table 4 summarizes our risk-origin taxonomy. We catego-",
+    "crop": [
+      42.0,
+      180.74,
+      570.0,
+      676.16
+    ]
+  },
+  {
+    "page": 13,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4: Risk-origin taxonomy for agent safety evaluation.",
+    "crop": null
+  }
+]

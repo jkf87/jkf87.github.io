@@ -1,0 +1,335 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1261x437)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 91,
+    "width": 1261,
+    "height": 437,
+    "caption": "Figure 1: Results on OSWorld-Verified, Mind2Web, and Minecraft. StructAgent improves matched",
+    "crop": [
+      96.0,
+      60.0,
+      516.01,
+      205.18
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-2-p3.png",
+    "method": "caption_crop (1260x821)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 422,
+    "width": 1260,
+    "height": 821,
+    "caption": "Figure 2: StructAgent overview. A unified state provides the shared progress interface, while a",
+    "crop": [
+      96.0,
+      60.0,
+      516.0,
+      333.12
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: OSWorld-Verified main results. Success rate (%) is computed as mean Success/Total. The",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1 reports OSWorld-Verified success rates. The table first lists reported reference results, then",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Mind2Web generalization results. Success rate (%) is grouped by website category and",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1. These results suggest that the structured state-centered loop is not tied to a particular model",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Minecraft success rate (%) results. We uses GPT-4o as the backbone model; Optimus-1",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 3 illustrates this behavior in a multi-application task. The actor appears to export an image from",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 4(a) shows that structured verification raises recall from 0.67 to 0.81 and F1 from 0.70 to",
+    "crop": null
+  },
+  {
+    "page": 9,
+    "file": "fig-3-p9.png",
+    "method": "caption_crop (1261x660)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 735,
+    "width": 1261,
+    "height": 660,
+    "caption": "Figure 3: Recovery in a multi-app task. The verifier rejects unsupported GUI-export progress, keeps",
+    "crop": [
+      96.0,
+      60.0,
+      516.0,
+      279.96
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-4-p9.png",
+    "method": "caption_crop (1261x486)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 69,
+    "width": 1261,
+    "height": 486,
+    "caption": "Figure 4: Structured verification improves final completion checking and is more often correct when",
+    "crop": [
+      96.0,
+      277.66,
+      516.01,
+      439.33
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-5-p9.png",
+    "method": "caption_crop (1261x783)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 127,
+    "width": 1261,
+    "height": 783,
+    "caption": "Figure 5(a) shows that structured verification is most",
+    "crop": [
+      96.0,
+      277.66,
+      516.01,
+      538.18
+    ]
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (306x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 5: Structured evidence at runtime and test time.",
+    "crop": [
+      185.218994140625,
+      286.47369384765625,
+      491.6302795410156,
+      216.01907348632812
+    ]
+  },
+  {
+    "page": 10,
+    "file": "fig-6-p10.png",
+    "method": "caption_crop (1260x564)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 83,
+    "width": 1260,
+    "height": 564,
+    "caption": "Figure 6: Failure analysis on score-zero OSWorld-Verified trajectories. Left: primary failing role and",
+    "crop": [
+      96.0,
+      275.23,
+      516.0,
+      462.69
+    ]
+  },
+  {
+    "page": 10,
+    "file": "fig-6-p10-3.png",
+    "method": "caption_crop (1261x688)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 108,
+    "width": 1261,
+    "height": 688,
+    "caption": "Figure 6 shows that remaining errors are not only actor grounding failures. Actor failures account for",
+    "crop": [
+      96.0,
+      275.23,
+      516.17,
+      504.03
+    ]
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4: Positioning StructAgent among representative structured-agent systems.  Plan : long-horizon",
+    "crop": null
+  },
+  {
+    "page": 15,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5 reports the full 10-domain OSWorld breakdown for controlled self-run rows. Scores are",
+    "crop": null
+  },
+  {
+    "page": 15,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5: OSWorld-Verified per-domain self-run results (success rate %). Chr. = Chrome; Th. =",
+    "crop": null
+  },
+  {
+    "page": 15,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6: Reliability of the Mind2Web judge used in our evaluation. Agreement is measured against",
+    "crop": null
+  },
+  {
+    "page": 16,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 7: Implementation-level state components.",
+    "crop": null
+  },
+  {
+    "page": 16,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 8: Actual  VerifySpec  kinds used by the verification registry.",
+    "crop": null
+  },
+  {
+    "page": 17,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 9: Execution surfaces and their verification paths.",
+    "crop": null
+  },
+  {
+    "page": 18,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 10: Structured memory surfaces and where they enter the runtime loop.",
+    "crop": null
+  },
+  {
+    "page": 19,
+    "file": "fig-7-p19.png",
+    "method": "caption_crop (1260x1082)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 413,
+    "width": 1260,
+    "height": 1082,
+    "caption": "Figure 7: Representative verification disagreements. Structured probes recover latent file or app",
+    "crop": [
+      96.0,
+      134.83,
+      516.0,
+      495.25
+    ]
+  }
+]
