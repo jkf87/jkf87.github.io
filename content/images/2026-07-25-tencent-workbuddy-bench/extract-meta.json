@@ -1,0 +1,174 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1369x829)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 368,
+    "width": 1369,
+    "height": 829,
+    "caption": "Figure 1.  Tencent WorkBuddy Bench at a glance. Real commits, pull requests, office workflows, and security",
+    "crop": [
+      78.0,
+      67.2,
+      534.23,
+      343.27
+    ]
+  },
+  {
+    "page": 4,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1.  Suite at a glance: the four subsets, each scored under a dual harness (CodeBuddy Code and Claude",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2.  Open release: the dataset ships every component needed to run, grade, and audit a task.",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3.  Code subset provenance families. Counts sum to the 80-task release: A = 34, B + C = 46.",
+    "crop": null
+  },
+  {
+    "page": 9,
+    "file": "table-4-p9.png",
+    "method": "caption_crop_table_below (1369x1052)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 139,
+    "width": 1369,
+    "height": 1052,
+    "caption": "Table 4.  Code subset composition (80-task open release).",
+    "crop": [
+      78.0,
+      71.6,
+      534.03,
+      421.93
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-2-p9.png",
+    "method": "caption_crop (1369x804)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 116,
+    "width": 1369,
+    "height": 804,
+    "caption": "Figure 2.  Code and Web task composition.  (a)  Six Code usage domains merged from 18 fine-grained",
+    "crop": [
+      78.0,
+      180.96,
+      534.03,
+      448.45
+    ]
+  },
+  {
+    "page": 10,
+    "file": "fig-3-p10.png",
+    "method": "caption_crop (1370x738)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 316,
+    "width": 1370,
+    "height": 738,
+    "caption": "Figure 3.  Code task and evaluation workflow. The coding agent reads a natural-language request, explores",
+    "crop": [
+      77.9,
+      67.2,
+      534.18,
+      312.81
+    ]
+  },
+  {
+    "page": 11,
+    "file": "fig-4-p11.png",
+    "method": "caption_crop (1373x888)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 433,
+    "width": 1373,
+    "height": 888,
+    "caption": "Figure 4.  Web task and evaluation workflow, from query and agent rollout to the delivered artifact (left),",
+    "crop": [
+      77.84,
+      67.2,
+      535.25,
+      362.98
+    ]
+  },
+  {
+    "page": 11,
+    "file": "fig-4-p11-2.png",
+    "method": "caption_crop (1370x1659)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 578,
+    "width": 1370,
+    "height": 1659,
+    "caption": "Figure  4  summarizes this artifact-centered workflow, from query interpretation and agent",
+    "crop": [
+      77.84,
+      67.2,
+      534.16,
+      619.82
+    ]
+  },
+  {
+    "page": 12,
+    "file": "fig-5-p12.png",
+    "method": "caption_crop (1369x636)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 48,
+    "width": 1369,
+    "height": 636,
+    "caption": "Figure 5.  Composition of the 50-task Office release by construction route and calibrated difficulty.",
+    "crop": [
+      78.0,
+      67.2,
+      534.02,
+      278.7
+    ]
+  },
+  {
+    "page": 13,
+    "file": "fig-6-p13.png",
+    "method": "caption_crop (1372x484)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 97,
+    "width": 1372,
+    "height": 484,
+    "caption": "Figure 6.  Office coverage across task type, diagnostic scenario, output family, and evaluation mechanism,",
+    "crop": [
+      78.0,
+      67.2,
+      535.24,
+      228.23
+    ]
+  }
+]

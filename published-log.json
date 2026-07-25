@@ -1203,6 +1203,23 @@
       ],
       "commit": "f5764e8",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-25-nooa-native-python-object-oriented-agents.md"
+    },
+    {
+      "slug": "2026-07-25-tencent-workbuddy-bench-coding-agent-benchmark",
+      "date": "2026-07-25",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.20911",
+      "title": "코딩 에이전트 벤치마크는 오염되어 있다 — Tencent WorkBuddy Bench가 제안하는 4영역·이중 하네스 평가",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-25-tencent-workbuddy-bench-coding-agent-benchmark",
+      "tags": [
+        "agent",
+        "benchmark",
+        "coding-agent",
+        "harness",
+        "evaluation",
+        "LLM",
+        "contamination"
+      ]
     }
   ]
 }
