@@ -1,0 +1,162 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1434x1111)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 199,
+    "width": 1434,
+    "height": 1111,
+    "caption": "Figure 1  |  Implementation of a simple Agent in NOOA.",
+    "crop": [
+      58.87,
+      233.51,
+      536.42,
+      603.55
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-2-p5.png",
+    "method": "caption_crop (1438x524)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 71,
+    "width": 1438,
+    "height": 524,
+    "caption": "Figure 2  |  The CodeAct strategy loop within an agentic method.  A caller invokes the method,",
+    "crop": [
+      58.87,
+      111.82,
+      537.88,
+      286.31
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-2-p5-2.png",
+    "method": "caption_crop (1439x700)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 105,
+    "width": 1439,
+    "height": 700,
+    "caption": "Figure  2  shows the agent loop for the CodeAct strategy. The rest of this section follows the loop:",
+    "crop": [
+      58.87,
+      111.82,
+      538.15,
+      344.87
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-3-p6.png",
+    "method": "caption_crop (1434x506)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 104,
+    "width": 1434,
+    "height": 506,
+    "caption": "Figure 3  |  Context rendering in NOOA.  The  ContextManager  and  EventManager  populate static",
+    "crop": [
+      58.87,
+      235.22,
+      536.44,
+      403.49
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-4-p6.png",
+    "method": "caption_crop (1434x425)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 81,
+    "width": 1434,
+    "height": 425,
+    "caption": "Figure 4  |  Context engineering in NOOA.  Context blocks and the event history are Python APIs",
+    "crop": [
+      58.87,
+      406.78,
+      536.55,
+      548.25
+    ]
+  },
+  {
+    "page": 10,
+    "file": "fig-5-p10.png",
+    "method": "caption_crop (1434x887)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 131,
+    "width": 1434,
+    "height": 887,
+    "caption": "Figure 5  |  The NOOA memory system.  MemoryManager.install(agent)  attaches memory to an",
+    "crop": [
+      58.87,
+      73.04,
+      536.44,
+      368.48
+    ]
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1  |  Capability-test pass rates. Each model is evaluated on 440 records: 88 tests, five runs each.",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2  |  Stress-test pass rates. Each row has 50 records (10 models  ×  five runs), split into four",
+    "crop": null
+  },
+  {
+    "page": 14,
+    "file": "table-3-p14.png",
+    "method": "caption_crop_table_below (1390x1173)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 171,
+    "width": 1390,
+    "height": 1173,
+    "caption": "Table 3  |  SWE-bench Verified pass rates. Pub-",
+    "crop": [
+      58.46,
+      77.49,
+      521.47,
+      468.21
+    ]
+  },
+  {
+    "page": 14,
+    "file": "table-4-p14.png",
+    "method": "caption_crop_table_below (1260x1173)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 149,
+    "width": 1260,
+    "height": 1173,
+    "caption": "Table 4  |  Terminal Bench 2.0 (89 tasks), task",
+    "crop": [
+      117.1,
+      77.49,
+      536.72,
+      468.21
+    ]
+  }
+]

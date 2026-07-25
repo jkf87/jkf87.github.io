@@ -1167,6 +1167,24 @@
       ],
       "commit": "8f6e43c",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-25-openforge-rl-train-harness-native-agents.md"
+    },
+    {
+      "slug": "2026-07-25-nooa-native-python-object-oriented-agents",
+      "date": "2026-07-25",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.20709",
+      "title": "NOOA: 에이전트를 파이썬 객체로 만든다 — NVIDIA가 제안하는 하네스 설계의 정답지",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-25-nooa-native-python-object-oriented-agents",
+      "tags": [
+        "agent",
+        "harness",
+        "LLM",
+        "NVIDIA",
+        "Python",
+        "automation",
+        "loop",
+        "tool use"
+      ]
     }
   ]
 }
