@@ -1184,7 +1184,16 @@
         "automation",
         "loop",
         "tool use"
-      ]
+      ],
+      "threads_root_id": "17972104458094787",
+      "threads_reply_ids": [
+        "18079457030302531",
+        "18063654074559665",
+        "17893410054579219",
+        "17949703926237909"
+      ],
+      "commit": "f5764e8",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-25-nooa-native-python-object-oriented-agents.md"
     }
   ]
 }
