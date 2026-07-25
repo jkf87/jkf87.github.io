@@ -1273,7 +1273,17 @@
         "harness",
         "Microsoft",
         "benchmark"
-      ]
+      ],
+      "threads_root_id": "17924038209389907",
+      "threads_reply_ids": [
+        "18104874026110592",
+        "17900954838327916",
+        "17984165757032291",
+        "18123777727755307",
+        "17977889643073751"
+      ],
+      "commit": "eb5106e",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-26-llm-lost-evolving-user-intent.md"
     }
   ]
 }
