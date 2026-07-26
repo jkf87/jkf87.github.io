@@ -1,0 +1,210 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (1476x578)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 86,
+    "width": 1476,
+    "height": 578,
+    "caption": "Figure 1:  ReOPD keeps the benefits of on-policy distillation while removing environment in-",
+    "crop": [
+      60.0,
+      454.34,
+      551.97,
+      646.71
+    ]
+  },
+  {
+    "page": 2,
+    "file": "fig-2-p2.png",
+    "method": "caption_crop (1477x829)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 229,
+    "width": 1477,
+    "height": 829,
+    "caption": "Figure 2:  Comparison between OPD and ReOPD for agentic tasks .  Up:  OPD with online environ-",
+    "crop": [
+      60.0,
+      60.0,
+      552.05,
+      335.8
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-3-p3.png",
+    "method": "caption_crop (1477x771)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 213,
+    "width": 1477,
+    "height": 771,
+    "caption": "Figure 3:  Training a shared student agent on multiple heterogeneous environments with OPD",
+    "crop": [
+      60.0,
+      60.0,
+      552.0,
+      316.54
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-1-p3.png",
+    "method": "caption_crop (1477x1481)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 399,
+    "width": 1477,
+    "height": 1481,
+    "caption": "Figure  1  illustrates the payoff: ReOPD retains the accuracy benefits of OPD while sharply reducing per-",
+    "crop": [
+      60.0,
+      60.0,
+      552.05,
+      553.25
+    ]
+  },
+  {
+    "page": 10,
+    "file": "fig-4-p10.png",
+    "method": "caption_crop (1477x603)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 72,
+    "width": 1477,
+    "height": 603,
+    "caption": "Figure 4:  Step index is a strong proxy for the likelihood-ratio weight.  For each supervised position",
+    "crop": [
+      60.0,
+      60.0,
+      552.0,
+      260.63
+    ]
+  },
+  {
+    "page": 13,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1:  Training parameters for different methods.  GRPO is only used to train the teacher model.",
+    "crop": null
+  },
+  {
+    "page": 13,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2:  Evaluation hyper-parameters for two environments.",
+    "crop": null
+  },
+  {
+    "page": 14,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3:  The statistics of evaluation sets.",
+    "crop": null
+  },
+  {
+    "page": 14,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4:  Distillation on mathematical reasoning.  Each student is trained and evaluated in the math",
+    "crop": null
+  },
+  {
+    "page": 15,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5:  Distillation on search.  Each student is trained and evaluated in the search environment on",
+    "crop": null
+  },
+  {
+    "page": 16,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6:  Multi-environment distillation: one student for both domains.  A  single  Qwen3-4B student",
+    "crop": null
+  },
+  {
+    "page": 16,
+    "file": "fig-6-p16.png",
+    "method": "caption_crop (677x430)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 37,
+    "width": 677,
+    "height": 430,
+    "caption": "Figure 6:  The resources used by different",
+    "crop": [
+      326.76,
+      457.57,
+      552.03,
+      600.37
+    ]
+  },
+  {
+    "page": 16,
+    "file": "table-6-p16.png",
+    "method": "caption_crop (1071x531)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 102,
+    "width": 1071,
+    "height": 531,
+    "caption": "Table  6  evaluates a single",
+    "crop": [
+      191.09,
+      457.57,
+      547.98,
+      634.3
+    ]
+  },
+  {
+    "page": 17,
+    "file": "fig-5-p17.png",
+    "method": "caption_crop (1476x658)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 109,
+    "width": 1476,
+    "height": 658,
+    "caption": "Figure 5:  Favoring early, low-shift steps improves distillation.  Both panels use ReOPD’s sampling",
+    "crop": [
+      60.0,
+      60.0,
+      551.99,
+      278.93
+    ]
+  }
+]
