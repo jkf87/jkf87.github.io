@@ -1319,6 +1319,25 @@
       "title": "모델이 똑똑해지면 멀티에이전트는 필요 없어진다 — Nature MI 260개 실험이 밝힌 45% 임계점",
       "source_url": "https://www.nature.com/articles/s42256-026-01268-y",
       "published": "2026-07-26T13:00:00+09:00"
+    },
+    {
+      "date": "2026-07-26",
+      "slug": "2026-07-26-graph-engineering-four-prompts",
+      "title": "그래프 엔지니어링: 네 개의 모델을 네 개의 프롬프트로 줄인다는 말의 진짜 의미",
+      "source": "local-pdf",
+      "source_url": "file:///Users/conanssam-m4/.openclaw/workspace-blogbot/media/inbound/openclaw-staged-5b8978f4-b7ae-4e2d-ab1e-8ad5eecee7cd/Graph-Engineering-4-Models-to-4-Prompts---b462fb40-c382-4193-84c9-c4061637062f.pdf",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-26-graph-engineering-four-prompts",
+      "tags": [
+        "knowledge-graph",
+        "prompt-engineering",
+        "agent",
+        "structured-outputs",
+        "graph",
+        "automation",
+        "evaluation",
+        "harness"
+      ],
+      "published": "2026-07-26T15:17:00+09:00"
     }
   ]
 }

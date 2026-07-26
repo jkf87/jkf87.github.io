@@ -1,0 +1,36 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (1548x485)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 86,
+    "width": 1548,
+    "height": 485,
+    "caption": "Fig. 1.  The Apollo corpus knowledge graph, built entirely from Claude API calls. 22 nodes, 34 edges, 1 connected component. Node size scales with",
+    "crop": [
+      48.0,
+      230.4,
+      564.0,
+      391.73
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (756x390)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 27,
+    "width": 756,
+    "height": 390,
+    "caption": "Fig. 2.  Workers read from and write to the graph directly. The",
+    "crop": [
+      48.0,
+      495.0,
+      300.0,
+      624.73
+    ]
+  }
+]
