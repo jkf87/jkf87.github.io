@@ -1376,6 +1376,25 @@
         "18178460242410928"
       ],
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-26-reopd-multi-turn-on-policy-distillation.md"
+    },
+    {
+      "slug": "2026-07-26-cue-anchored-working-memory-harness",
+      "date": "2026-07-26",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.20972",
+      "title": "에이전트에게 메모리를 맡기면 안 된다 — Cue-Anchored Working Memory가 하네스의 책임이어야 하는 이유",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-26-cue-anchored-working-memory-harness",
+      "tags": [
+        "agent",
+        "harness",
+        "memory",
+        "LLM",
+        "coding-agent",
+        "automation",
+        "loop",
+        "tool use",
+        "context-engineering"
+      ]
     }
   ]
 }

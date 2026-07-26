@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 200" role="img" aria-label="vectr — semantic codebase search + persistent working memory for AI code editors">
+  <defs>
+    <clipPath id="panel"><rect x="0" y="0" width="560" height="200" rx="18"/></clipPath>
+    <radialGradient id="ambient" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#2a6f6a" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#2a6f6a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect x="0" y="0" width="560" height="200" rx="18" fill="#0d1117"/>
+  <g clip-path="url(#panel)">
+    <ellipse cx="115" cy="160" rx="230" ry="130" fill="url(#ambient)"/>
+  </g>
+  <g transform="translate(60,40)">
+  <defs>
+    <linearGradient id="ray" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3ee6c4"/>
+      <stop offset="1" stop-color="#19a8e6"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffd977" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#ffd977" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- mark: two vectors converging on a remembered point -->
+  <g>
+    <!-- faint symbol-graph edges -->
+    <g stroke="#3ee6c4" stroke-opacity="0.28" stroke-width="2">
+      <line x1="60" y1="96" x2="105" y2="62"/>
+    </g>
+    <!-- satellite nodes -->
+    <circle cx="105" cy="62" r="4.5" fill="#3ee6c4" fill-opacity="0.55"/>
+    <circle cx="88" cy="12" r="3" fill="#3ee6c4" fill-opacity="0.3"/>
+    <!-- the V: two vector rays -->
+    <g stroke="url(#ray)" stroke-width="13" stroke-linecap="round" fill="none">
+      <line x1="24" y1="24" x2="60" y2="96"/>
+      <line x1="96" y1="24" x2="60" y2="96"/>
+    </g>
+    <!-- vertex: the stored point -->
+    <circle cx="60" cy="96" r="18" fill="url(#glow)"/>
+    <circle cx="60" cy="96" r="9" fill="#f2c94c"/>
+  </g>
+
+  <!-- wordmark: monoline lowercase 'vectr' -->
+  <g transform="translate(138,-8)" stroke="#e8eef5" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- v -->
+    <path d="M8 36 L30 100 L52 36"/>
+    <!-- e -->
+    <path d="M66 68 H118"/>
+    <path d="M118 68 A26 26 0 1 0 110.4 86.4"/>
+    <!-- c -->
+    <path d="M180.4 49.6 A26 26 0 1 0 180.4 86.4"/>
+    <!-- t -->
+    <path d="M214 16 L214 82 Q214 100 230 100"/>
+    <path d="M198 40 H232"/>
+    <!-- r -->
+    <path d="M252 38 L252 100"/>
+    <path d="M252 66 C252 42 268 36 282 44"/>
+  </g>
+
+  </g>
+</svg>

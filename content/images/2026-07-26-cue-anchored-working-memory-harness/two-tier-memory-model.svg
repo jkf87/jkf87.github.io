@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="900" height="520" fill="#0d1117" rx="12"/>
+  
+  <!-- Title -->
+  <text x="450" y="34" font-size="18" font-weight="700" fill="#e6edf3" text-anchor="middle">Cue-Anchored Working Memory: Two-Tier Model</text>
+  <text x="450" y="54" font-size="12" fill="#8b949e" text-anchor="middle">Saha (2026) — arXiv:2607.20972</text>
+
+  <!-- Tier 1: Documents (Content Plane) -->
+  <rect x="40" y="80" width="380" height="140" fill="#161b22" stroke="#30363d" rx="8"/>
+  <text x="230" y="106" font-size="14" font-weight="600" fill="#f0883e">Tier 1: Document Memory (Content Plane)</text>
+  <text x="60" y="130" font-size="11" fill="#c9d1d9">• Instruction files (CLAUDE.md)</text>
+  <text x="60" y="148" font-size="11" fill="#c9d1d9">• Plan artifacts</text>
+  <text x="60" y="166" font-size="11" fill="#c9d1d9">• Memory directories</text>
+  <text x="60" y="190" font-size="11" fill="#8b949e" font-style="italic">Deliberately written, deliberately retrieved</text>
+  <text x="60" y="208" font-size="11" fill="#f85149">→ Agent must choose to write AND read</text>
+
+  <!-- Tier 2: Cue-Anchored (Control Plane) -->
+  <rect x="480" y="80" width="380" height="140" fill="#161b22" stroke="#30363d" rx="8"/>
+  <text x="670" y="106" font-size="14" font-weight="600" fill="#58a6ff">Tier 2: Cue-Anchored Memory (Control Plane)</text>
+  <text x="500" y="130" font-size="11" fill="#c9d1d9">• Triggers: {path, symbol, semantic, event, temporal}</text>
+  <text x="500" y="148" font-size="11" fill="#c9d1d9">• Deterministic harness-side evaluation</text>
+  <text x="500" y="166" font-size="11" fill="#c9d1d9">• Injected at cued moments</text>
+  <text x="500" y="190" font-size="11" fill="#8b949e" font-style="italic">No model judgment in delivery path</text>
+  <text x="500" y="208" font-size="11" fill="#3fb950">→ Harness delivers, agent never thinks about it</text>
+
+  <!-- Arrow between tiers -->
+  <line x1="420" y1="150" x2="480" y2="150" stroke="#8b949e" stroke-width="2" stroke-dasharray="4"/>
+  <text x="450" y="144" font-size="10" fill="#8b949e" text-anchor="middle">gap</text>
+
+  <!-- Key Results Section -->
+  <rect x="40" y="250" width="820" height="250" fill="#161b22" stroke="#30363d" rx="8"/>
+  <text x="60" y="276" font-size="14" font-weight="600" fill="#e6edf3">Key Experimental Results</text>
+  
+  <!-- Result rows -->
+  <text x="60" y="306" font-size="12" fill="#f0883e" font-weight="600">Voluntary memory use (Tier 1):</text>
+  <text x="320" y="306" font-size="12" fill="#f85149">0 operations in 114 turns (even when pre-seeded)</text>
+  
+  <text x="60" y="334" font-size="12" fill="#58a6ff" font-weight="600">Deterministic injection (Tier 2):</text>
+  <text x="320" y="334" font-size="12" fill="#3fb950">139/139 deliveries successful, 0 false alarms</text>
+  
+  <text x="60" y="362" font-size="12" fill="#e6edf3" font-weight="600">Decay probe (k=108 vs k=138):</text>
+  <text x="320" y="362" font-size="12" fill="#f85149">106/108 summaries lost all 10 facts (conversation-only)</text>
+  <text x="320" y="380" font-size="12" fill="#3fb950">138/138 compact-resumes preserved (injected)</text>
+  
+  <text x="60" y="408" font-size="12" fill="#e6edf3" font-weight="600">Cross-compaction re-reads:</text>
+  <text x="320" y="408" font-size="12" fill="#d29922">39% of re-reads re-purchase content paid before compaction</text>
+  
+  <text x="60" y="436" font-size="12" fill="#e6edf3" font-weight="600">Deprived agent behavior:</text>
+  <text x="320" y="436" font-size="12" fill="#f85149">Greps harness session files to rebuild lost memory</text>
+  
+  <text x="60" y="468" font-size="12" fill="#8b949e" font-style="italic">Task: Apache Camel Resequencer EIP · Model: Claude Sonnet 5</text>
+  <text x="60" y="486" font-size="11" fill="#8b949e">Source: Saha (2026). Vectr: github.com/swapnanil/vectr</text>
+</svg>

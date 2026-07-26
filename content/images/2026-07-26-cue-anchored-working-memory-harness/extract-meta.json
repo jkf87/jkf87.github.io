@@ -1,0 +1,26 @@
+[
+  {
+    "page": "official",
+    "file": "vectr-banner.svg",
+    "method": "official",
+    "status": "accepted",
+    "reason": "Official project banner from Vectr GitHub repo (github.com/swapnanil/vectr)",
+    "size_kb": 2.5,
+    "width": 0,
+    "height": 0,
+    "caption": "Vectr: Semantic codebase search + persistent working memory for AI code editors",
+    "crop": null
+  },
+  {
+    "page": "diagram",
+    "file": "two-tier-memory-model.png",
+    "method": "vector_crop",
+    "status": "accepted",
+    "reason": "Clean SVG diagram authored from paper's Table 1 and Section 5 results, converted to PNG",
+    "size_kb": 282,
+    "width": 1800,
+    "height": 1040,
+    "caption": "Figure 1 — Two-tier memory model and key experimental results from Saha (2026)",
+    "crop": null
+  }
+]
