@@ -1,0 +1,282 @@
+[
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Experience Distillation on 749 curated SWE tasks and six TaleSuite tasks. Training uses",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "fig-1-p6.png",
+    "method": "caption_crop (1263x540)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 97,
+    "width": 1263,
+    "height": 540,
+    "caption": "Figure 1: Environment-sample efficiency of ICL followed by Experience Distillation (ICL + EPD)",
+    "crop": [
+      96.0,
+      159.69,
+      516.67,
+      339.4
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Model-free and model-based Experience Distillation variants using separate branch exam-",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Branch-packing ablation for Experience Distillation on six TaleSuite tasks. Total time",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "table-4-p8.png",
+    "method": "caption_crop_table_below (1266x1084)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 190,
+    "width": 1266,
+    "height": 1084,
+    "caption": "Table 4: Generalization of multi-task Experience Distillation (EPD) to cross-repository and within-",
+    "crop": [
+      95.69,
+      175.6,
+      517.66,
+      536.56
+    ]
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  2  reports results on six TaleSuite tasks. Cycle 0 denotes the initial checkpoint before any",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "fig-2-p8.png",
+    "method": "caption_crop (1263x541)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 64,
+    "width": 1263,
+    "height": 541,
+    "caption": "Figure 2: Continual Experience Distillation on six TaleSuite tasks. Cycle 0 is the initial checkpoint;",
+    "crop": [
+      96.0,
+      382.66,
+      516.83,
+      562.6
+    ]
+  },
+  {
+    "page": 9,
+    "file": "table-5-p9.png",
+    "method": "caption_crop (1262x290)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 54,
+    "width": 1262,
+    "height": 290,
+    "caption": "Table 5: The default teacher-sampled forward-KL implementation of Experience Distillation versus",
+    "crop": [
+      95.69,
+      73.57,
+      516.0,
+      169.78
+    ]
+  },
+  {
+    "page": 9,
+    "file": "table-6-p9.png",
+    "method": "caption_crop (1262x1367)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 282,
+    "width": 1262,
+    "height": 1367,
+    "caption": "Table 6: Sampled-token NTP versus full-distribution KL for Experience Distillation, using separate",
+    "crop": [
+      95.69,
+      73.57,
+      516.0,
+      529.0
+    ]
+  },
+  {
+    "page": 10,
+    "file": "fig-3-p10.png",
+    "method": "caption_crop (1266x521)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 69,
+    "width": 1266,
+    "height": 521,
+    "caption": "Figure 3: Teacher-generated data scaling for Experience Distillation on 749 curated SWE tasks.",
+    "crop": [
+      96.0,
+      69.86,
+      517.75,
+      243.21
+    ]
+  },
+  {
+    "page": 16,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 7: Effect of Enhanced Teacher Reasoning during Experience Distillation (EPD) target gen-",
+    "crop": null
+  },
+  {
+    "page": 17,
+    "file": "fig-4-p17.png",
+    "method": "caption_crop (1261x788)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 148,
+    "width": 1261,
+    "height": 788,
+    "caption": "Figure 4: Effect of learning rate and training duration on Experience Distillation (EPD). Crosses",
+    "crop": [
+      96.0,
+      147.34,
+      516.0,
+      409.93
+    ]
+  },
+  {
+    "page": 18,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  8  places the improvement from ICL followed by Experience Distillation alongside inference-",
+    "crop": null
+  },
+  {
+    "page": 18,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 8: Frontier-model reference results on six TaleSuite tasks. Frontier-model rows are inference-",
+    "crop": null
+  },
+  {
+    "page": 18,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  9  complements the pass@1 comparison in Table  1  with pass@10 over ten independently sam-",
+    "crop": null
+  },
+  {
+    "page": 18,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 9: Pass@1 and pass@10 on 749 curated SWE tasks. Pass@10 measures whether at least one",
+    "crop": null
+  },
+  {
+    "page": 21,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 10: Length of the collected TaleSuite experience by task. “Trials in experience” counts the",
+    "crop": null
+  },
+  {
+    "page": 21,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 11: Distribution of collected-experience length across 749 curated SWE tasks. Interaction",
+    "crop": null
+  },
+  {
+    "page": 23,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  5  expands the GRPO endpoint in Figure  1  into its complete training trajectory. The six-task",
+    "crop": null
+  },
+  {
+    "page": 23,
+    "file": "fig-5-p23.png",
+    "method": "caption_crop (1261x552)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 98,
+    "width": 1261,
+    "height": 552,
+    "caption": "Figure 5: GRPO learning curve on six TaleSuite tasks. Left: mean normalized score by GRPO",
+    "crop": [
+      96.0,
+      297.62,
+      516.0,
+      481.11
+    ]
+  }
+]
