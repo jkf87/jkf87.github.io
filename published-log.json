@@ -1394,7 +1394,17 @@
         "loop",
         "tool use",
         "context-engineering"
-      ]
+      ],
+      "threads_root_id": "18073662377341927",
+      "threads_reply_ids": [
+        "18347481316219356",
+        "17897519514546174",
+        "18108955888815892",
+        "17893792821578068",
+        "18015970454859880"
+      ],
+      "commit": "3e6a896",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-26-cue-anchored-working-memory-harness.md"
     }
   ]
 }
