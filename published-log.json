@@ -1346,6 +1346,27 @@
       ],
       "commit": "b29953e",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-26-graph-engineering-four-prompts.md"
+    },
+    {
+      "slug": "2026-07-26-reopd-multi-turn-on-policy-distillation",
+      "date": "2026-07-26",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2607.04763",
+      "title": "ReOPD: 에이전트 훈련을 오프라인으로 바꾸는 prefix replay — 멀티턴 증류의 prefix trap",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-26-reopd-multi-turn-on-policy-distillation",
+      "tags": [
+        "agent",
+        "distillation",
+        "on-policy",
+        "LLM",
+        "tool-use",
+        "harness",
+        "RL",
+        "automation",
+        "loop",
+        "Microsoft"
+      ],
+      "commit": "6a8966d"
     }
   ]
 }
