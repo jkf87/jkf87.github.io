@@ -1,0 +1,16 @@
+[
+  {
+    "file": "trackio-logo.png",
+    "status": "accepted",
+    "method": "official",
+    "source_url": "https://raw.githubusercontent.com/gradio-app/trackio/main/trackio/assets/trackio_logo_type_light_transparent.png",
+    "note": "official Trackio logo from repository asset"
+  },
+  {
+    "file": "trackio-dashboard-embed.png",
+    "status": "accepted",
+    "method": "official",
+    "source_url": "https://github.com/user-attachments/assets/77f1424b-737b-4f04-b828-a12b2c1af4ef",
+    "note": "official README dashboard/embed screenshot"
+  }
+]

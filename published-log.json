@@ -873,6 +873,16 @@
       "title": "NVIDIA OO Agents: Native Python Object-Oriented Agents",
       "blog_url": "https://jkf87.github.io/2026-07-25-nvidia-oo-agents",
       "github_url": "https://github.com/NVIDIA-NeMo/labs-OO-Agents"
+    },
+    {
+      "slug": "trackio-local-first-experiment-tracking-agents-2026-07-26",
+      "date": "2026-07-26",
+      "source": "github",
+      "source_url": "https://github.com/gradio-app/trackio",
+      "title": "Trackio: 에이전트가 실험을 돌릴 때 필요한 건 거대한 SaaS가 아닐 수도 있다",
+      "blog_url": "https://jkf87.github.io/posts/trackio-local-first-experiment-tracking-agents-2026-07-26",
+      "github_stars_checked": 1597,
+      "pypi_version_checked": "0.33.0"
     }
   ],
   "entries": [
