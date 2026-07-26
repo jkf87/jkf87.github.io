@@ -1301,7 +1301,17 @@
         "sample-efficiency",
         "harness",
         "automation"
-      ]
+      ],
+      "threads_root_id": "18129890425650676",
+      "threads_reply_ids": [
+        "18087405785155229",
+        "17901036795532721",
+        "18104529560140585",
+        "18102497506902575",
+        "18072922946422833"
+      ],
+      "commit": "75d6518",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-26-experience-distillation-agent-learning.md"
     }
   ]
 }
