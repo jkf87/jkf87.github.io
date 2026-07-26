@@ -897,6 +897,16 @@
       ],
       "commit": "1b3a711",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-26-trackio-local-first-experiment-tracking-agents.md"
+    },
+    {
+      "slug": "2026-07-27-openforge-rl-harness-native-agent-training",
+      "date": "2026-07-27",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.21557",
+      "title": "OpenForge RL: 하네스를 입은 에이전트를 그대로 훈련시키는 오픈 프레임워크",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-27-openforge-rl-harness-native-agent-training",
+      "github_stars_checked": null,
+      "pypi_version_checked": null
     }
   ],
   "entries": [

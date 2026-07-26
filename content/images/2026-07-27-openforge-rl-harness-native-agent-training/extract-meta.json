@@ -1,0 +1,159 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (1260x548)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 155,
+    "width": 1260,
+    "height": 548,
+    "caption": "Figure 1:  Left : O PEN F ORGE  RL builds on Orchard Env (Peng et al., 2026) and connects  any harness",
+    "crop": [
+      96.0,
+      525.31,
+      516.0,
+      707.37
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (1553x902)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 223,
+    "width": 1553,
+    "height": 902,
+    "caption": "Figure 2: Overview of O PEN F ORGE  RL. An orchestrator spawns remote sandboxes in which an",
+    "crop": [
+      65.69,
+      48.88,
+      583.11,
+      349.18
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (420x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 4: Distribution (%) of tasks used in the Claw, Computer-Use, and Browser-Use domains (top",
+    "crop": [
+      96.0,
+      404.53912353515625,
+      516.0033264160156,
+      250.55209350585938
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-3-p5.png",
+    "method": "caption_crop (746x921)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 126,
+    "width": 746,
+    "height": 921,
+    "caption": "Figure 3:",
+    "crop": [
+      311.45,
+      361.49,
+      559.75,
+      668.24
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Statistics of SFT and RL data used for Claw and GUI agent training. For GUI, we used a",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Claw-agent performance on Claw-Eval, QwenClawBench, and MCPAtlas. We use the",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: GUI-agent performance on OSWorld-verified, OnlineMind2Web, and WebVoyager. All",
+    "crop": null
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4: Comparing OpenForge-Claw on ClawEval with different harnesses.",
+    "crop": null
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4 reports the results, from which two trends stand out. First, the harnesses that support adding",
+    "crop": null
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5:",
+    "crop": null
+  },
+  {
+    "page": 10,
+    "file": "fig-5-p10.png",
+    "method": "caption_crop (1261x672)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 109,
+    "width": 1261,
+    "height": 672,
+    "caption": "Figure 5: SFT vs. SFT+RL behavior on ClawEval. RL shifts calls from the generic  shell  tool to",
+    "crop": [
+      96.0,
+      69.86,
+      516.01,
+      293.59
+    ]
+  }
+]
