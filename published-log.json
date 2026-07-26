@@ -1366,7 +1366,16 @@
         "loop",
         "Microsoft"
       ],
-      "commit": "6a8966d"
+      "commit": "6a8966d",
+      "threads_root_id": "17987809310844313",
+      "threads_reply_ids": [
+        "18423184582179561",
+        "18019063799903324",
+        "18079089269322631",
+        "17863876923646679",
+        "18178460242410928"
+      ],
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-26-reopd-multi-turn-on-policy-distillation.md"
     }
   ]
 }
