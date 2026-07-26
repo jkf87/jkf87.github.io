@@ -1337,7 +1337,15 @@
         "evaluation",
         "harness"
       ],
-      "published": "2026-07-26T15:17:00+09:00"
+      "published": "2026-07-26T15:17:00+09:00",
+      "threads_root_id": "18005318354986585",
+      "threads_reply_ids": [
+        "17919691473409680",
+        "18008359163952084",
+        "17900670360331594"
+      ],
+      "commit": "b29953e",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-26-graph-engineering-four-prompts.md"
     }
   ]
 }
