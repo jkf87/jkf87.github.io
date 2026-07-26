@@ -1,0 +1,50 @@
+[
+  {
+    "page": 4,
+    "file": "fig-1-p4.png",
+    "method": "caption_crop",
+    "status": "accepted",
+    "reason": "accepted",
+    "caption": "Fig. 1 | Agent scaling across model intelligence and system topologies."
+  },
+  {
+    "page": 5,
+    "file": "fig-2-official.png",
+    "method": "official",
+    "status": "accepted",
+    "reason": "official source image",
+    "caption": "Fig. 2 | Comparative performance of agent systems across six agentic benchmarks."
+  },
+  {
+    "page": 9,
+    "file": "fig-3-p9.png",
+    "method": "caption_crop",
+    "status": "accepted",
+    "reason": "accepted",
+    "caption": "Fig. 3 | Number of agents scaling reveals model-dependent coordination patterns."
+  },
+  {
+    "page": 6,
+    "file": "table-1-p6.png",
+    "method": "caption_crop_table_below",
+    "status": "accepted",
+    "reason": "accepted",
+    "caption": "Table 1 | Architectural comparison of agent methods with objective complexity metrics."
+  },
+  {
+    "page": 7,
+    "file": "table-2-p7.png",
+    "method": "caption_crop_table_below",
+    "status": "accepted",
+    "reason": "accepted",
+    "caption": "Table 2 | Complete predictive-model coefficients relating performance to intelligence, task properties and empirical."
+  },
+  {
+    "page": 10,
+    "file": "table-3-p10.png",
+    "method": "caption_crop_table_below",
+    "status": "accepted",
+    "reason": "accepted",
+    "caption": "Table 3 | Six agentic benchmarks used for evaluation."
+  }
+]

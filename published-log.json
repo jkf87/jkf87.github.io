@@ -1312,6 +1312,13 @@
       ],
       "commit": "75d6518",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-26-experience-distillation-agent-learning.md"
+    },
+    {
+      "date": "2026-07-26",
+      "slug": "2026-07-26-capable-llms-outgrow-multi-agent-collaboration",
+      "title": "모델이 똑똑해지면 멀티에이전트는 필요 없어진다 — Nature MI 260개 실험이 밝힌 45% 임계점",
+      "source_url": "https://www.nature.com/articles/s42256-026-01268-y",
+      "published": "2026-07-26T13:00:00+09:00"
     }
   ]
 }
