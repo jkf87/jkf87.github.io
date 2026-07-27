@@ -1575,7 +1575,22 @@
         "dark-room",
         "shaping",
         "auxiliary-loss"
-      ]
+      ],
+      "threads_root_id": "18108761740995890",
+      "threads_reply_ids": [
+        "18125351626665173",
+        "17894160492577328",
+        "18118857679865773",
+        "17958301721983583",
+        "18109302622821740"
+      ],
+      "threads_image_posts": [
+        1,
+        5,
+        6
+      ],
+      "commit": "ee9c3f5",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-27-dark-room-reward-collapse-grpo.md"
     }
   ]
 }
