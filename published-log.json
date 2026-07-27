@@ -1491,7 +1491,16 @@
       "source_url": "https://arxiv.org/abs/2601.17223",
       "title": "VPRM: 결괏값만 맞추는 RL을 넘어 — 추론 과정까지 검증 가능한 보상 모델",
       "blog_url": "https://jkf87.github.io/posts/2026-07-27-vprm-verifiable-process-reward-models",
-      "tags": ["RLVR", "process-supervision", "reward-model", "medical-ai", "reasoning", "LLM", "systematic-review", "risk-of-bias"]
+      "tags": [
+        "RLVR",
+        "process-supervision",
+        "reward-model",
+        "medical-ai",
+        "reasoning",
+        "LLM",
+        "systematic-review",
+        "risk-of-bias"
+      ]
     },
     {
       "slug": "2026-07-27-regression-tax-skills-help-hurt-llm-agents",
@@ -1509,6 +1518,29 @@
         "reliability",
         "tool-use",
         "automation"
+      ]
+    },
+    {
+      "slug": "2026-07-27-molt-pytorch-native-agentic-rl-framework",
+      "date": "2026-07-27",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.21653",
+      "title": "Molt: NVIDIA가 만든 읽고 고칠 수 있는 에이전트 RL 훈련 프레임워크",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-27-molt-pytorch-native-agentic-rl-framework",
+      "tags": [
+        "agent",
+        "reinforcement-learning",
+        "RL",
+        "LLM",
+        "harness",
+        "infrastructure",
+        "NVIDIA",
+        "PyTorch",
+        "open-source",
+        "automation",
+        "loop",
+        "tool-use",
+        "training"
       ]
     }
   ]

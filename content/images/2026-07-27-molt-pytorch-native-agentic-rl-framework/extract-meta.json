@@ -1,0 +1,67 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (1488x933)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 881,
+    "width": 1488,
+    "height": 933,
+    "caption": "Figure 1:  The whole system: three components and one loop.  Molt composes user agents in plain Python,",
+    "crop": [
+      50.36,
+      401.89,
+      546.3,
+      712.58
+    ]
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1:  Framework comparison: the lean point in the design space.  Molt trains with FSDP2/EP/CP",
+    "crop": null
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2:  Head-to-head benchmark protocol.  Shared settings are pinned identically; the differing rows are the",
+    "crop": null
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3:  Throughput parity under the matched protocol  ( Tab. 2 ). Step: mean  ±  standard deviation of",
+    "crop": null
+  },
+  {
+    "page": 15,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4:  Molt scaling knobs.  Actor-side parallelism composes with FSDP2 sharding; the vLLM side mirrors it",
+    "crop": null
+  }
+]
