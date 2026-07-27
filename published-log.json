@@ -1591,6 +1591,25 @@
       ],
       "commit": "ee9c3f5",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-27-dark-room-reward-collapse-grpo.md"
+    },
+    {
+      "slug": "2026-07-28-janus-predictive-agent-safety",
+      "date": "2026-07-28",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.19913",
+      "title": "JANUS: 에이전트가 위험한 행동을 실행하기 전에 미리 차단하는 예측 가드레일",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-28-janus-predictive-agent-safety",
+      "tags": [
+        "agent-safety",
+        "guardrail",
+        "predictive-monitoring",
+        "LLM",
+        "long-horizon",
+        "RL",
+        "tool-use",
+        "automation",
+        "harness"
+      ]
     }
   ]
 }
