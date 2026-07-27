@@ -1454,6 +1454,28 @@
       ],
       "commit": "3e6a896",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-26-cue-anchored-working-memory-harness.md"
+    },
+    {
+      "slug": "2026-07-27-trackio-agent-experiment-tracking",
+      "date": "2026-07-27",
+      "source": "github",
+      "source_url": "https://github.com/gradio-app/trackio",
+      "title": "Trackio — 에이전트 시대의 실험 추적기: W&B를 대체하는 로컬 우선, 무료, LLM 친화적 도구",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-27-trackio-agent-experiment-tracking",
+      "tags": [
+        "trackio",
+        "experiment-tracking",
+        "agent",
+        "automation",
+        "MLOps",
+        "Gradio",
+        "HuggingFace",
+        "LLM",
+        "loop",
+        "tool-use"
+      ],
+      "commit": "pending",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-27-trackio-agent-experiment-tracking.md"
     }
   ]
 }
