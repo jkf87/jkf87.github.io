@@ -1474,8 +1474,15 @@
         "loop",
         "tool-use"
       ],
-      "commit": "pending",
-      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-27-trackio-agent-experiment-tracking.md"
+      "commit": "2e651c6",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-27-trackio-agent-experiment-tracking.md",
+      "threads_root_id": "18125270056668398",
+      "threads_reply_ids": [
+        "17919574188411371",
+        "18124042882685305",
+        "18126827920672157",
+        "18089502524111485"
+      ]
     }
   ]
 }
