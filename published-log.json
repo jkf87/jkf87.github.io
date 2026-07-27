@@ -1556,6 +1556,26 @@
       ],
       "commit": "348a7e6",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-27-molt-pytorch-native-agentic-rl-framework.md"
+    },
+    {
+      "slug": "2026-07-27-dark-room-reward-collapse-grpo",
+      "date": "2026-07-27",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.21273",
+      "title": "GRPO의 어두운 방: 밀집 예측 보상이 에이전트를 붕괴시키는 정확한 기전",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-27-dark-room-reward-collapse-grpo",
+      "tags": [
+        "GRPO",
+        "RLVR",
+        "reward-design",
+        "agent",
+        "reinforcement-learning",
+        "LLM",
+        "reward-collapse",
+        "dark-room",
+        "shaping",
+        "auxiliary-loss"
+      ]
     }
   ]
 }

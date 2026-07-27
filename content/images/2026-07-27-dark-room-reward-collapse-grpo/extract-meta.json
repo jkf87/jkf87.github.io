@@ -1,0 +1,150 @@
+[
+  {
+    "page": 4,
+    "file": "fig-1-p4.png",
+    "method": "caption_crop (1261x875)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 120,
+    "width": 1261,
+    "height": 875,
+    "caption": "Figure 1: The std-normalized prediction reward collapses every run at all three scales; timing is",
+    "crop": [
+      96.0,
+      69.86,
+      516.02,
+      361.04
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Collapse phenomenology.  Turn  =  behavioral inflection (validation begins its monotone",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "fig-2-p7.png",
+    "method": "caption_crop (1261x873)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 132,
+    "width": 1261,
+    "height": 873,
+    "caption": "Figure 2:",
+    "crop": [
+      96.0,
+      69.86,
+      516.02,
+      360.34
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-3-p8.png",
+    "method": "caption_crop (1050x715)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 56,
+    "width": 1050,
+    "height": 715,
+    "caption": "Figure 3: Advantage-level dose–response across the all-fail-group pressure range.",
+    "crop": [
+      131.26,
+      69.86,
+      480.75,
+      307.83
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-4-p9.png",
+    "method": "caption_crop (1261x692)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 68,
+    "width": 1261,
+    "height": 692,
+    "caption": "Figure 4: Coverage sweep at measured  C  (greedy mask ladder). Doubling coverage ( 0 . 233  →",
+    "crop": [
+      96.0,
+      69.86,
+      516.0,
+      300.18
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-5-p9.png",
+    "method": "caption_crop (1261x791)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 92,
+    "width": 1261,
+    "height": 791,
+    "caption": "Figure 5: Nine arms: same prediction signal, varying consumption mechanism and normalization,",
+    "crop": [
+      96.0,
+      330.58,
+      516.03,
+      593.93
+    ]
+  },
+  {
+    "page": 10,
+    "file": "table-2-p10.png",
+    "method": "caption_crop_table_below (1261x953)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 145,
+    "width": 1261,
+    "height": 953,
+    "caption": "Table 2: The signal-delivery matrix. Both loss-channel arms beat every reward-channel variant by",
+    "crop": [
+      96.0,
+      195.7,
+      516.0,
+      513.01
+    ]
+  },
+  {
+    "page": 10,
+    "file": "fig-6-p10.png",
+    "method": "caption_crop (1261x822)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 142,
+    "width": 1261,
+    "height": 822,
+    "caption": "Figure 6: The auxiliary-loss arm’s three acts: low-entropy build-up (entropy 0.04, a false “erosion”",
+    "crop": [
+      96.0,
+      268.7,
+      516.0,
+      542.34
+    ]
+  },
+  {
+    "page": 14,
+    "file": "table-3-p14.png",
+    "method": "caption_crop_table_below (1261x762)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 76,
+    "width": 1261,
+    "height": 762,
+    "caption": "Table 3: Registered predictions and outcomes.",
+    "crop": [
+      96.0,
+      448.13,
+      516.02,
+      701.7
+    ]
+  }
+]
