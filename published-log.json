@@ -1483,6 +1483,24 @@
         "18126827920672157",
         "18089502524111485"
       ]
+    },
+    {
+      "slug": "2026-07-27-regression-tax-skills-help-hurt-llm-agents",
+      "date": "2026-07-27",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.22520",
+      "title": "The Regression Tax: Decomposing Why Skills Help and Hurt LLM Agents",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-27-regression-tax-skills-help-hurt-llm-agents",
+      "tags": [
+        "agent",
+        "skills",
+        "LLM",
+        "harness",
+        "evaluation",
+        "reliability",
+        "tool-use",
+        "automation"
+      ]
     }
   ]
 }
