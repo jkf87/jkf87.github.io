@@ -1485,6 +1485,15 @@
       ]
     },
     {
+      "slug": "2026-07-27-vprm-verifiable-process-reward-models",
+      "date": "2026-07-27",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2601.17223",
+      "title": "VPRM: 결괏값만 맞추는 RL을 넘어 — 추론 과정까지 검증 가능한 보상 모델",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-27-vprm-verifiable-process-reward-models",
+      "tags": ["RLVR", "process-supervision", "reward-model", "medical-ai", "reasoning", "LLM", "systematic-review", "risk-of-bias"]
+    },
+    {
       "slug": "2026-07-27-regression-tax-skills-help-hurt-llm-agents",
       "date": "2026-07-27",
       "source": "arxiv",

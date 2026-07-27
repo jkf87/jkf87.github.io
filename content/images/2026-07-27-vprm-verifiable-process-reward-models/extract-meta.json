@@ -1,0 +1,150 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1786x961)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 119,
+    "width": 1786,
+    "height": 961,
+    "caption": "Figure 1: Illustration of the verifiable reasoning setup for risk-of-bias assessment (type A: bias arising from the",
+    "crop": [
+      0.0,
+      0.0,
+      595.28,
+      320.22
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (1786x877)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 113,
+    "width": 1786,
+    "height": 877,
+    "caption": "Figure 2: Comparison between verifiable outcome rewards (left), which evaluates only the final risk label, and",
+    "crop": [
+      0.0,
+      0.0,
+      595.28,
+      292.14
+    ]
+  },
+  {
+    "page": 5,
+    "file": "table-1-p5.png",
+    "method": "caption_crop (1439x329)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 82,
+    "width": 1439,
+    "height": 329,
+    "caption": "Table 1: Datasets statistics. Train/test split only ap-",
+    "crop": [
+      58.87,
+      58.86,
+      538.06,
+      168.28
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  3  com-",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "table-2-p7.png",
+    "method": "caption_crop (1435x384)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 70,
+    "width": 1435,
+    "height": 384,
+    "caption": "Table 2: Evaluation results across models on three datasets, reporting Accuracy and macro-F1. “–” denotes",
+    "crop": [
+      58.56,
+      318.13,
+      536.41,
+      445.85
+    ]
+  },
+  {
+    "page": 7,
+    "file": "table-3-p7.png",
+    "method": "caption_crop (852x839)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 108,
+    "width": 852,
+    "height": 839,
+    "caption": "Table 3:",
+    "crop": [
+      58.56,
+      318.13,
+      342.3,
+      597.65
+    ]
+  },
+  {
+    "page": 7,
+    "file": "table-4-p7.png",
+    "method": "caption_crop (1050x1264)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 233,
+    "width": 1050,
+    "height": 1264,
+    "caption": "Table  4  shows that removing the outcome reward",
+    "crop": [
+      69.78,
+      318.13,
+      419.65,
+      739.25
+    ]
+  },
+  {
+    "page": 7,
+    "file": "table-4-p7-4.png",
+    "method": "caption_crop (1372x844)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 165,
+    "width": 1372,
+    "height": 844,
+    "caption": "Table 4: Ablation study on outcome and process reward",
+    "crop": [
+      79.34,
+      318.13,
+      536.41,
+      599.04
+    ]
+  },
+  {
+    "page": 8,
+    "file": "table-5-p8.png",
+    "method": "caption_crop_table_below (993x750)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 178,
+    "width": 993,
+    "height": 750,
+    "caption": "Table  5  reports Co-",
+    "crop": [
+      196.0,
+      83.84,
+      526.76,
+      333.5
+    ]
+  }
+]
