@@ -1,0 +1,138 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (804x788)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 89,
+    "width": 804,
+    "height": 788,
+    "caption": "Fig. 1.",
+    "crop": [
+      299.98,
+      205.91,
+      567.58,
+      468.18
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (1616x979)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 195,
+    "width": 1616,
+    "height": 979,
+    "caption": "Fig. 2.  ICAE-Bench framework.  A task begins with a fuzzy PRD and an ultimate image rather than a complete implementation contract. The coding agent",
+    "crop": [
+      36.96,
+      38.54,
+      575.04,
+      364.51
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-3-p5.png",
+    "method": "caption_crop (827x362)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 41,
+    "width": 827,
+    "height": 362,
+    "caption": "Fig. 3. Initial-requirement hierarchy. Information available before interaction",
+    "crop": [
+      299.98,
+      38.74,
+      575.04,
+      159.16
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-4-p6.png",
+    "method": "caption_crop (827x954)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 70,
+    "width": 827,
+    "height": 954,
+    "caption": "Fig. 4. Task category distribution in ICAE-Bench (total=480).",
+    "crop": [
+      299.98,
+      38.54,
+      575.04,
+      356.11
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-5-p6.png",
+    "method": "caption_crop (781x497)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 24,
+    "width": 781,
+    "height": 497,
+    "caption": "Fig. 5. Task golden-code LOC distribution in ICAE-Bench (total=480).",
+    "crop": [
+      307.39,
+      557.3,
+      567.62,
+      722.44
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-6-p8.png",
+    "method": "caption_crop (827x579)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 85,
+    "width": 827,
+    "height": 579,
+    "caption": "Fig. 6. Overall pass rate across PRD ambiguity settings on ICAE-Bench-Lite.",
+    "crop": [
+      299.98,
+      38.54,
+      575.04,
+      231.13
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-6-p8-2.png",
+    "method": "caption_crop (827x753)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 107,
+    "width": 827,
+    "height": 753,
+    "caption": "Figure 6 compares three fuzzy levels, RecoveredPRD, and",
+    "crop": [
+      299.98,
+      38.54,
+      575.04,
+      289.26
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-7-p8.png",
+    "method": "caption_crop (827x586)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 31,
+    "width": 827,
+    "height": 586,
+    "caption": "Fig. 7. Requirement-token comparison on ICAE-Bench-Lite. User Agent Data",
+    "crop": [
+      299.98,
+      403.89,
+      575.04,
+      598.85
+    ]
+  }
+]
