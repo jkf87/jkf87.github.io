@@ -1730,6 +1730,25 @@
       ],
       "commit": "5f5691ec",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-28-memtx-transactional-belief-commit-agent-memory.md"
+    },
+    {
+      "slug": "2026-07-28-issue-trojan-bench-coding-agent-security",
+      "date": "2026-07-28",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.20759",
+      "title": "코딩 에이전트에게 악성 이슈를 던지면 어떻게 되는가 — IssueTrojanBench가 폭로한 66.5% 뚫림의 현실",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-28-issue-trojan-bench-coding-agent-security",
+      "tags": [
+        "coding-agent",
+        "security",
+        "prompt-injection",
+        "LLM",
+        "agent",
+        "benchmark",
+        "tool-use",
+        "harness",
+        "automation"
+      ]
     }
   ],
   "posts": [

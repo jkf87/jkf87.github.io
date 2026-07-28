@@ -1,0 +1,94 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (827x562)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 344,
+    "width": 827,
+    "height": 562,
+    "caption": "Fig. 1: The end-to-end process of a malicious issue penetrates",
+    "crop": [
+      36.96,
+      38.54,
+      312.02,
+      225.4
+    ]
+  },
+  {
+    "page": 3,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 1 illustrates the complete interaction chain: the",
+    "crop": null
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (827x389)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 327,
+    "width": 827,
+    "height": 389,
+    "caption": "Fig. 2: IssueTrojanBench construction pipeline: seed issues",
+    "crop": [
+      36.96,
+      281.06,
+      312.03,
+      410.54
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 2 illustrates this transformation pipeline: it shows how",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "fig-3-p6.png",
+    "method": "caption_crop (1616x658)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 635,
+    "width": 1616,
+    "height": 658,
+    "caption": "Fig. 3: Distinction between human-perceived content and agent-parsed adversarial payload, illustrating how visual and cross-",
+    "crop": [
+      36.96,
+      38.54,
+      575.03,
+      257.44
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-4-p9.png",
+    "method": "caption_crop (1616x702)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 192,
+    "width": 1616,
+    "height": 702,
+    "caption": "Fig. 4: Rejection attribution by model. Explicit model-level",
+    "crop": [
+      36.96,
+      142.65,
+      575.04,
+      376.19
+    ]
+  }
+]
