@@ -1712,7 +1712,24 @@
         "automation",
         "belief-revision",
         "cascade-repair"
-      ]
+      ],
+      "threads_root_id": "18110260880075795",
+      "threads_reply_ids": [
+        "18192112834337593",
+        "18098688866610917",
+        "17947662324039301",
+        "18110648615064819",
+        "18089696675114228"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        4,
+        5,
+        6
+      ],
+      "commit": "5f5691ec",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-28-memtx-transactional-belief-commit-agent-memory.md"
     }
   ],
   "posts": [
