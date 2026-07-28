@@ -1,0 +1,62 @@
+[
+  {
+    "page": "HTML",
+    "file": "01-decay-probe-results.png",
+    "method": "source",
+    "status": "accepted",
+    "reason": "Data visualization rendered from paper Table 5 (decay probe results) via arXiv HTML source data",
+    "size_kb": 131,
+    "width": 1680,
+    "height": 840,
+    "caption": "Repeated Compaction Decay Probe Results - rendered from source table data",
+    "crop": null
+  },
+  {
+    "page": "HTML",
+    "file": "02-two-tier-memory-model.png",
+    "method": "source",
+    "status": "accepted",
+    "reason": "Data visualization rendered from paper Table 1 (two-tier memory model) via arXiv HTML source data",
+    "size_kb": 101,
+    "width": 1680,
+    "height": 600,
+    "caption": "Two-Tier Memory Model for Coding Agents - rendered from source table data",
+    "crop": null
+  },
+  {
+    "page": "HTML",
+    "file": "03-injection-vs-voluntary.png",
+    "method": "source",
+    "status": "accepted",
+    "reason": "Data visualization rendered from paper Table 4 (H vs V comparison) via arXiv HTML source data",
+    "size_kb": 61,
+    "width": 1296,
+    "height": 504,
+    "caption": "Injection vs Voluntary comparison - rendered from source table data",
+    "crop": null
+  },
+  {
+    "page": "HTML",
+    "file": "04-survival-curve.png",
+    "method": "source",
+    "status": "accepted",
+    "reason": "Data visualization rendered from paper Figure 1 (survival regimes) via arXiv HTML source data",
+    "size_kb": 181,
+    "width": 1728,
+    "height": 720,
+    "caption": "Figure 1: Fact Survival Under Repeated Compaction - rendered from source data",
+    "crop": null
+  },
+  {
+    "page": "HTML",
+    "file": "05-trigger-vocabulary.png",
+    "method": "source",
+    "status": "accepted",
+    "reason": "Diagram rendered from paper Section 3 (cue-anchored memory model trigger vocabulary) via arXiv HTML source data",
+    "size_kb": 102,
+    "width": 1440,
+    "height": 576,
+    "caption": "Cue-Anchored Memory Trigger Vocabulary - rendered from source description",
+    "crop": null
+  }
+]

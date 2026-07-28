@@ -922,6 +922,14 @@
       ],
       "commit": "8d439c2",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-27-openforge-rl-harness-native-agent-training.md"
+    },
+    {
+      "slug": "cue-anchored-working-memory-harness-2026-07-28",
+      "date": "2026-07-28",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.20972",
+      "title": "Delivery, Not Storage: Cue-Anchored Working Memory as a Harness Property for Coding Agents",
+      "blog_url": "https://jkf87.github.io/cue-anchored-working-memory-harness-2026-07-28"
     }
   ],
   "entries": [
