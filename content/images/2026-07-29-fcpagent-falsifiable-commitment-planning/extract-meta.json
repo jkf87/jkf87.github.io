@@ -1,0 +1,240 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (818x658)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 124,
+    "width": 818,
+    "height": 658,
+    "caption": "Figure 1: An off-track execution example. An ordinary plan",
+    "crop": [
+      300.44,
+      17.34,
+      572.91,
+      236.36
+    ]
+  },
+  {
+    "page": 2,
+    "file": "fig-1-p2-2.png",
+    "method": "caption_crop (818x1315)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 242,
+    "width": 818,
+    "height": 1315,
+    "caption": "Figure 1 illustrates a GitLab task that requires creating a",
+    "crop": [
+      300.44,
+      17.34,
+      572.91,
+      455.4
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-2-p3.png",
+    "method": "caption_crop (1797x771)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 199,
+    "width": 1797,
+    "height": 771,
+    "caption": "Figure 2: FCPAgent casts web-agent execution as online testing of falsifiable commitments. Hybrid commitment testing checks",
+    "crop": [
+      13.0,
+      10.62,
+      612.0,
+      267.14
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (528x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Comparison along four long-horizon reliability di-",
+    "crop": [
+      41.691001892089844,
+      549.52490234375,
+      570.0028686523438,
+      188.4019775390625
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (528x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1 organizes representative methods according to four",
+    "crop": [
+      41.691001892089844,
+      549.52490234375,
+      570.0028686523438,
+      402.0469970703125
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (263x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2 shows that FCPAgent consistently improves over",
+    "crop": [
+      307.1910095214844,
+      549.52490234375,
+      570.1671752929688,
+      257.31597900390625
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-3-p5.png",
+    "method": "caption_crop (789x430)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 45,
+    "width": 789,
+    "height": 430,
+    "caption": "Figure 3: Success rate (%) by task length. The strongest gains",
+    "crop": [
+      307.5,
+      549.52,
+      570.0,
+      692.56
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (406x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Performance comparison on WebArena. The metric is success rate (%).",
+    "crop": [
+      134.16900634765625,
+      303.4649658203125,
+      540.1898193359375,
+      204.36199951171875
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (498x8pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Zero-shot generalization performance on WebChore-",
+    "crop": [
+      41.691001892089844,
+      303.4649658203125,
+      540.1898193359375,
+      311.10101318359375
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-4-p6.png",
+    "method": "caption_crop (1401x978)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 271,
+    "width": 1401,
+    "height": 978,
+    "caption": "Table 4: Ablation study on success rate (%).",
+    "crop": [
+      73.38,
+      303.46,
+      540.19,
+      629.28
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-4-p6-4.png",
+    "method": "caption_crop (1211x1119)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 265,
+    "width": 1211,
+    "height": 1119,
+    "caption": "Table 4 isolates the main components",
+    "crop": [
+      136.71,
+      303.46,
+      540.19,
+      676.16
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (263x1pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5: Hybrid commitment testing reduces average per-task",
+    "crop": [
+      307.1910095214844,
+      303.4649658203125,
+      570.24658203125,
+      304.9429931640625
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-4-p6.png",
+    "method": "caption_crop (788x524)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 52,
+    "width": 788,
+    "height": 524,
+    "caption": "Figure 4: GitLab success rate as the amount of training",
+    "crop": [
+      307.5,
+      303.46,
+      570.0,
+      477.78
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-5-p6.png",
+    "method": "caption_crop (700x1119)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 145,
+    "width": 700,
+    "height": 1119,
+    "caption": "Table 5 evaluates the efficiency contribution of",
+    "crop": [
+      337.31,
+      303.46,
+      570.0,
+      676.16
+    ]
+  }
+]

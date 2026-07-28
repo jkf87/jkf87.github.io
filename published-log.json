@@ -1765,6 +1765,25 @@
       ],
       "commit": "ae13eb8d",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-28-issue-trojan-bench-coding-agent-security.md"
+    },
+    {
+      "slug": "2026-07-29-fcpagent-falsifiable-commitment-planning",
+      "date": "2026-07-29",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.24167",
+      "title": "FCPAgent: 반증 가능한 계획으로 자기 교정하는 웹 에이전트",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-29-fcpagent-falsifiable-commitment-planning",
+      "tags": [
+        "agent",
+        "planning",
+        "web-agent",
+        "LLM",
+        "harness",
+        "loop",
+        "tool-use",
+        "self-correction",
+        "benchmark"
+      ]
     }
   ],
   "posts": [
