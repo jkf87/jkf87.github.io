@@ -1693,6 +1693,26 @@
         "automation",
         "loop"
       ]
+    },
+    {
+      "slug": "2026-07-28-memtx-transactional-belief-commit-agent-memory",
+      "date": "2026-07-28",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.23929",
+      "title": "에이전트 메모리에 커밋이 없으면 어떻게 되는가 — MemTX가 데이터베이스의 오래된 교훈을 LLM에게 가져오다",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-28-memtx-transactional-belief-commit-agent-memory",
+      "tags": [
+        "agent-memory",
+        "transactional-commit",
+        "LLM",
+        "multi-agent",
+        "safety",
+        "harness",
+        "tool-use",
+        "automation",
+        "belief-revision",
+        "cascade-repair"
+      ]
     }
   ],
   "posts": [
