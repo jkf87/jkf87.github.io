@@ -1783,7 +1783,22 @@
         "tool-use",
         "self-correction",
         "benchmark"
-      ]
+      ],
+      "threads_root_id": "17937880779329093",
+      "threads_reply_ids": [
+        "18059752856748246",
+        "18108984520998528",
+        "18149721139510953",
+        "17894150385573548"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "commit": "28bec2b3",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-29-fcpagent-falsifiable-commitment-planning.md"
     }
   ],
   "posts": [
