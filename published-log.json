@@ -1645,7 +1645,20 @@
         "harness",
         "automation"
       ],
-      "commit": "cc2d1076"
+      "commit": "cc2d1076",
+      "threads_root_id": "18461961805117628",
+      "threads_reply_ids": [
+        "17898289389552273",
+        "18608102371027326",
+        "17926781904394513",
+        "18218077174333340"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        5
+      ],
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-28-icae-bench-interactive-coding-agent-evaluation.md"
     }
   ]
 }
