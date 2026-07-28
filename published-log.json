@@ -1660,5 +1660,34 @@
       ],
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-28-icae-bench-interactive-coding-agent-evaluation.md"
     }
+  ],
+  "posts": [
+    {
+      "slug": "rlvr-environments-llm-agents-2026-07-28",
+      "date": "2026-07-28",
+      "source": "youtube",
+      "source_url": "https://www.youtube.com/watch?v=52UlnK-SW7I",
+      "title": "RLVR 환경: 에이전트는 이제 문제집이 아니라 훈련장을 필요로 한다",
+      "blog_url": "https://jkf87.github.io/posts/rlvr-environments-llm-agents-2026-07-28",
+      "tags": [
+        "RLVR",
+        "reinforcement-learning",
+        "LLM-agent",
+        "verifiers",
+        "Prime-Intellect",
+        "agent-evaluation"
+      ],
+      "commit": "d7aff40f",
+      "threads_root_id": "18090449459454333",
+      "threads_reply_ids": [
+        "18135373240611940",
+        "18011318009925860",
+        "17877895647511025",
+        "18123095461751401"
+      ],
+      "threads_image_posts": [
+        1
+      ]
+    }
   ]
 }
