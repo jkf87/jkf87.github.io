@@ -1,0 +1,174 @@
+[
+  {
+    "page": 3,
+    "file": "fig-1-p3.png",
+    "method": "caption_crop (1260x1088)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 271,
+    "width": 1260,
+    "height": 1088,
+    "caption": "Figure 1: Overview of the data generation pipeline of  M ETA E VOLVE .  Step 1  samples",
+    "crop": [
+      96.0,
+      69.86,
+      516.0,
+      432.13
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Ablation study on evolution hyperparameters conducted on 10 TACO problems.",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (422x72pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Comparison of multiple baselines and  M ETA E VOLVE  across seven coding bench-",
+    "crop": [
+      95.69100189208984,
+      180.47279357910156,
+      517.6493225097656,
+      252.64915466308594
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-1-p6.png",
+    "method": "caption_crop (1262x811)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 198,
+    "width": 1262,
+    "height": 811,
+    "caption": "Table  1 , all our following experiments use 10 evolution rounds, 20 parent programs per",
+    "crop": [
+      95.69,
+      180.47,
+      516.2,
+      450.36
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-2-p6.png",
+    "method": "caption_crop (1233x1124)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 246,
+    "width": 1233,
+    "height": 1124,
+    "caption": "Table  2  presents the main results across seven coding benchmarks over 10",
+    "crop": [
+      105.63,
+      180.47,
+      516.0,
+      554.9
+    ]
+  },
+  {
+    "page": 7,
+    "file": "table-3-p7.png",
+    "method": "caption_crop (1262x375)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 83,
+    "width": 1262,
+    "height": 375,
+    "caption": "Table 3: Program novelty comparison between AlphaEvolve and  M ETA E VOLVE  across",
+    "crop": [
+      95.69,
+      116.13,
+      516.01,
+      240.91
+    ]
+  },
+  {
+    "page": 7,
+    "file": "table-4-p7.png",
+    "method": "caption_crop (1266x566)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 123,
+    "width": 1266,
+    "height": 566,
+    "caption": "Table 4: Results on AlgoTune benchmark (8 tasks), comparing AlphaEvolve and  M ETA E-",
+    "crop": [
+      95.69,
+      171.11,
+      517.64,
+      359.55
+    ]
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (420x72pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5: Ablation study on the ratio of correct to incorrect responses in training data across",
+    "crop": [
+      95.69100189208984,
+      119.928466796875,
+      516.0218505859375,
+      192.0157012939453
+    ]
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6: Error recovery rate: the percentage of problems",
+    "crop": null
+  },
+  {
+    "page": 14,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  1 , fourth group).",
+    "crop": null
+  },
+  {
+    "page": 15,
+    "file": "fig-2-p15.png",
+    "method": "caption_crop (1265x1236)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 264,
+    "width": 1265,
+    "height": 1236,
+    "caption": "Figure 2: Qualitative comparison of reasoning traces produced by AlphaEvolve and  M ETA E-",
+    "crop": [
+      96.0,
+      69.86,
+      517.67,
+      481.59
+    ]
+  }
+]

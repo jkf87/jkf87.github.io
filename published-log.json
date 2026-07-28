@@ -1674,6 +1674,25 @@
         5
       ],
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-28-icae-bench-interactive-coding-agent-evaluation.md"
+    },
+    {
+      "slug": "2026-07-28-metaevolve-llm-self-evolution-meta-skills-rl",
+      "date": "2026-07-28",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.21971",
+      "title": "MetaEvolve: LLM에게 스스로 진화하는 능력을 가르치는 강화학습",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-28-metaevolve-llm-self-evolution-meta-skills-rl",
+      "tags": [
+        "LLM",
+        "self-evolution",
+        "reinforcement-learning",
+        "agent",
+        "meta-skills",
+        "AlphaEvolve",
+        "coding",
+        "automation",
+        "loop"
+      ]
     }
   ],
   "posts": [
