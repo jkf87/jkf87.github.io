@@ -1748,7 +1748,23 @@
         "tool-use",
         "harness",
         "automation"
-      ]
+      ],
+      "threads_root_id": "18175907806424959",
+      "threads_reply_ids": [
+        "18124083664824338",
+        "18088222073543662",
+        "18092504960453801",
+        "18604448335032277",
+        "18109508999020385"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        4,
+        6
+      ],
+      "commit": "ae13eb8d",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-28-issue-trojan-bench-coding-agent-security.md"
     }
   ],
   "posts": [
