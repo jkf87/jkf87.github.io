@@ -1,0 +1,191 @@
+[
+  {
+    "page": 3,
+    "file": "fig-1-p3.png",
+    "method": "caption_crop (1711x703)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 881,
+    "width": 1711,
+    "height": 703,
+    "caption": "Figure 1: Kernel Forge graphical interface. The numbered screenshots show the main workflow: (1) the project launcher",
+    "crop": [
+      0.0,
+      59.22,
+      570.19,
+      293.07
+    ]
+  },
+  {
+    "page": 3,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too page-like (area_ratio=0.73)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 2 shows the two main stages of the system.",
+    "crop": [
+      42.0,
+      59.21611022949219,
+      571.5408325195312,
+      724.3013305664062
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (1585x1023)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 224,
+    "width": 1585,
+    "height": 1023,
+    "caption": "Figure 2: Kernel Forge system overview. The model ingestion pipeline captures workload-specific PyTorch operator",
+    "crop": [
+      42.0,
+      59.22,
+      570.19,
+      399.85
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4-2.png",
+    "method": "caption_crop (1584x1169)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 257,
+    "width": 1584,
+    "height": 1169,
+    "caption": "Figure 2. A variant is a concrete operator case, not just a",
+    "crop": [
+      42.0,
+      59.22,
+      570.0,
+      448.48
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "TABLE 1: Workloads, capture sources, and timing policy used in the evaluation. Captured calls are",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 1 shows the graphical interface exposed around",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1 summarizes the model checkpoints, workload",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "fig-3-p7.png",
+    "method": "caption_crop (801x450)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 51,
+    "width": 801,
+    "height": 450,
+    "caption": "Figure 3: ResNet-50 opt50 operator-level results. Bars report",
+    "crop": [
+      303.0,
+      59.22,
+      570.0,
+      208.91
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-4-p8.png",
+    "method": "caption_crop (1584x446)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 73,
+    "width": 1584,
+    "height": 446,
+    "caption": "Figure 4: Stable Diffusion 3.5 Medium opt50 operator-level",
+    "crop": [
+      42.0,
+      59.22,
+      570.0,
+      207.6
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-5-p8.png",
+    "method": "caption_crop (1584x948)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 215,
+    "width": 1584,
+    "height": 948,
+    "caption": "Figure 5: Gemma 4 E2B opt50 operator-level results. Bars",
+    "crop": [
+      42.0,
+      59.22,
+      570.0,
+      374.94
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-6-p8.png",
+    "method": "caption_crop (806x434)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 50,
+    "width": 806,
+    "height": 434,
+    "caption": "Figure 6: Qwen 3.5 35B-A3B opt50 operator-level results.",
+    "crop": [
+      42.0,
+      381.21,
+      310.54,
+      525.62
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-7-p8.png",
+    "method": "caption_crop (1589x603)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 116,
+    "width": 1589,
+    "height": 603,
+    "caption": "Figure 7: Incremental LLM API cost by optimization arm.",
+    "crop": [
+      42.0,
+      59.22,
+      571.53,
+      259.85
+    ]
+  }
+]

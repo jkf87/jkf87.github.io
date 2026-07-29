@@ -1856,6 +1856,28 @@
         "routing",
         "automation"
       ]
+    },
+    {
+      "date": "2026-07-29",
+      "slug": "2026-07-29-kernel-forge-agent-harness-cuda-optimization",
+      "title": "Kernel Forge: LLM 에이전트 하네스가 실제 PyTorch 모델의 CUDA 커널을 최적화하는 법",
+      "source_url": "https://arxiv.org/abs/2607.24762",
+      "source_type": "paper",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-29-kernel-forge-agent-harness-cuda-optimization",
+      "tags": [
+        "agent",
+        "harness",
+        "LLM",
+        "CUDA",
+        "optimization",
+        "MCTS",
+        "PyTorch",
+        "automation",
+        "loop",
+        "tool-use"
+      ],
+      "threads_posted": false,
+      "published_at": "2026-07-29T07:08:01.381767Z"
     }
   ],
   "posts": [
