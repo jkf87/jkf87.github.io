@@ -1,0 +1,155 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1260x674)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 81,
+    "width": 1260,
+    "height": 674,
+    "caption": "Figure 1:  26.9%  binary success on Claude Opus 4.8: the only entry above the  <  21%  public frontier,",
+    "crop": [
+      96.0,
+      92.42,
+      515.99,
+      316.85
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-2-p3.png",
+    "method": "caption_crop (1261x639)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 107,
+    "width": 1261,
+    "height": 639,
+    "caption": "Figure 2: StateAct architecture. The main agent works directly with program state and uses fresh-",
+    "crop": [
+      96.0,
+      87.79,
+      516.0,
+      300.5
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-3-p4.png",
+    "method": "caption_crop (1261x541)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 111,
+    "width": 1261,
+    "height": 541,
+    "caption": "Figure 3: The same subgoal via each channel. The pixel channel yields a rendered, ambiguous value",
+    "crop": [
+      96.0,
+      72.99,
+      516.0,
+      252.72
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (420x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Per-capability performance on OSWorld 2.0’s ten capability labels, sorted by StateAct; each",
+    "crop": [
+      96.0,
+      147.53466796875,
+      516.0033569335938,
+      119.02609252929688
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-4-p6.png",
+    "method": "caption_crop (1261x573)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 95,
+    "width": 1261,
+    "height": 573,
+    "caption": "Figure 4: An independent finish gate transcript (condensed from the calendar-import failure class in",
+    "crop": [
+      96.0,
+      72.55,
+      516.0,
+      263.25
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-5-p7.png",
+    "method": "caption_crop (1261x643)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 108,
+    "width": 1261,
+    "height": 643,
+    "caption": "Figure 5: Three successful trajectories selected to illustrate state-first action, GUI delegation, and",
+    "crop": [
+      96.0,
+      174.99,
+      516.0,
+      388.95
+    ]
+  },
+  {
+    "page": 7,
+    "file": "table-2-p7.png",
+    "method": "caption_crop (1261x981)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 192,
+    "width": 1261,
+    "height": 981,
+    "caption": "Table 2: Mean model turns per task, by capability. For StateAct: main agent plus subagent inte-",
+    "crop": [
+      96.0,
+      174.99,
+      516.0,
+      501.48
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-6-p8.png",
+    "method": "caption_crop (1261x719)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 116,
+    "width": 1261,
+    "height": 719,
+    "caption": "Figure 6: Cost–accuracy frontier on OSWorld 2.0 (binary success  vs.  USD per task). Public points",
+    "crop": [
+      96.0,
+      59.02,
+      516.0,
+      298.65
+    ]
+  },
+  {
+    "page": 8,
+    "file": "table-3-p8.png",
+    "method": "caption_crop (1261x911)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 153,
+    "width": 1261,
+    "height": 911,
+    "caption": "Table 3: Ablation on components and delegation depth. (a) Component sensitivity (binary / mean-",
+    "crop": [
+      96.0,
+      59.02,
+      516.0,
+      362.51
+    ]
+  }
+]

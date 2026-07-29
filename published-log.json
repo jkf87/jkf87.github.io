@@ -1933,6 +1933,26 @@
         "verification",
         "out-of-band"
       ]
+    },
+    {
+      "date": "2026-07-30",
+      "slug": "2026-07-30-stateact-program-state-before-pixels",
+      "title": "StateAct: 픽셀보다 먼저 프로그램 상태를 읽는 컴퓨터 사용 에이전트",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.22798",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-30-stateact-program-state-before-pixels",
+      "tags": [
+        "agent",
+        "harness",
+        "computer-use",
+        "LLM",
+        "OSWorld",
+        "Salesforce",
+        "GUI",
+        "automation",
+        "tool-use",
+        "long-horizon"
+      ]
     }
   ],
   "posts": [
