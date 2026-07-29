@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Reasoning effort controls for LLMs</title>
+  <desc id="desc">A dashboard-like illustration showing reasoning effort levels from Light to Ultra, with cost and quality curves.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101828"/>
+      <stop offset="0.55" stop-color="#172554"/>
+      <stop offset="1" stop-color="#312e81"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="0.55" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#f472b6"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="26" flood-color="#000" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1320" cy="110" r="260" fill="#60a5fa" opacity="0.10"/>
+  <circle cx="190" cy="760" r="310" fill="#f472b6" opacity="0.10"/>
+  <g filter="url(#shadow)">
+    <rect x="155" y="120" width="1290" height="660" rx="42" fill="#0f172a" opacity="0.86" stroke="#334155"/>
+    <text x="220" y="205" fill="#e5e7eb" font-size="54" font-family="Inter, Apple SD Gothic Neo, sans-serif" font-weight="800">Reasoning Effort</text>
+    <text x="222" y="252" fill="#93c5fd" font-size="27" font-family="Inter, Apple SD Gothic Neo, sans-serif">같은 모델, 다른 생각 예산</text>
+    <g transform="translate(220 330)">
+      <rect x="0" y="0" width="1160" height="110" rx="28" fill="#111827" stroke="#475569"/>
+      <g font-family="Inter, Apple SD Gothic Neo, sans-serif" font-weight="700" font-size="28" text-anchor="middle">
+        <text x="95" y="66" fill="#bae6fd">Light</text>
+        <text x="286" y="66" fill="#c4b5fd">Low</text>
+        <text x="477" y="66" fill="#ddd6fe">Medium</text>
+        <text x="668" y="66" fill="#fbcfe8">High</text>
+        <text x="859" y="66" fill="#fecdd3">Max</text>
+        <text x="1050" y="66" fill="#fed7aa">Ultra</text>
+      </g>
+      <rect x="44" y="86" width="1072" height="10" rx="5" fill="#1f2937"/>
+      <rect x="44" y="86" width="910" height="10" rx="5" fill="url(#accent)"/>
+      <g fill="#e5e7eb">
+        <circle cx="95" cy="91" r="16" fill="#38bdf8"/><circle cx="286" cy="91" r="16" fill="#818cf8"/><circle cx="477" cy="91" r="16" fill="#a78bfa"/><circle cx="668" cy="91" r="16" fill="#f472b6"/><circle cx="859" cy="91" r="16" fill="#fb7185"/><circle cx="1050" cy="91" r="16" fill="#fb923c"/>
+      </g>
+    </g>
+    <g transform="translate(220 510)" font-family="Inter, Apple SD Gothic Neo, sans-serif">
+      <rect x="0" y="0" width="350" height="150" rx="24" fill="#020617" stroke="#334155"/>
+      <text x="28" y="48" fill="#93c5fd" font-size="25" font-weight="700">Training</text>
+      <text x="28" y="91" fill="#e5e7eb" font-size="28" font-weight="800">RLVR + SFT</text>
+      <text x="28" y="126" fill="#94a3b8" font-size="22">effort label을 학습</text>
+      <rect x="405" y="0" width="350" height="150" rx="24" fill="#020617" stroke="#334155"/>
+      <text x="433" y="48" fill="#c4b5fd" font-size="25" font-weight="700">Inference</text>
+      <text x="433" y="91" fill="#e5e7eb" font-size="28" font-weight="800">Token Budget</text>
+      <text x="433" y="126" fill="#94a3b8" font-size="22">비용·지연시간 조절</text>
+      <rect x="810" y="0" width="350" height="150" rx="24" fill="#020617" stroke="#334155"/>
+      <text x="838" y="48" fill="#f0abfc" font-size="25" font-weight="700">Agent</text>
+      <text x="838" y="91" fill="#e5e7eb" font-size="28" font-weight="800">Router / Harness</text>
+      <text x="838" y="126" fill="#94a3b8" font-size="22">언제 깊게 생각할지 선택</text>
+    </g>
+    <path d="M230 720 C450 655, 590 685, 760 610 S1110 500, 1360 465" fill="none" stroke="#38bdf8" stroke-width="8" opacity="0.85"/>
+    <path d="M230 738 C500 735, 680 710, 850 650 S1120 565, 1360 560" fill="none" stroke="#f472b6" stroke-width="8" opacity="0.70"/>
+    <text x="220" y="746" fill="#bae6fd" font-size="22" font-family="Inter, Apple SD Gothic Neo, sans-serif">quality ↑</text>
+    <text x="1262" y="592" fill="#fbcfe8" font-size="22" font-family="Inter, Apple SD Gothic Neo, sans-serif">cost ↑</text>
+  </g>
+</svg>
