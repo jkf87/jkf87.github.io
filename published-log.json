@@ -1836,6 +1836,26 @@
       ],
       "commit": "2822a421",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-29-physics-of-long-horizon-planning.md"
+    },
+    {
+      "slug": "2026-07-29-inmind-implicit-association-agent-memory",
+      "date": "2026-07-29",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.24368",
+      "title": "에이전트는 기억하고도 잊는다 — InMind가 폭로한 메모리 시스템의 84%→14% 붕괴",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-29-inmind-implicit-association-agent-memory",
+      "tags": [
+        "agent",
+        "memory",
+        "retrieval",
+        "LLM",
+        "harness",
+        "benchmark",
+        "safety",
+        "context-engineering",
+        "routing",
+        "automation"
+      ]
     }
   ],
   "posts": [

@@ -1,0 +1,206 @@
+[
+  {
+    "page": 1,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too page-like (area_ratio=0.88)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 1  Direct recall does not guarantee memory use: the system recalls the allergy when asked, then fails to apply it",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      697.7531127929688
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (1836x716)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 130,
+    "width": 1836,
+    "height": 716,
+    "caption": "Figure 2  Representative query-time memory architectures. Blue, lavender, and orange denote the user query, retrieval",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      238.65
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-3-p5.png",
+    "method": "caption_crop (1836x851)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 234,
+    "width": 1836,
+    "height": 851,
+    "caption": "Figure 3  Topic distribution used for sampling (left), and representative databases and final task counts by domain",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      283.48
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too page-like (area_ratio=0.61)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 4  Query–memory similarity under BGE-small-en-v1.5, an encoder not used for task filtering. Orange denotes",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      483.62310791015625
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too page-like (area_ratio=0.75)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  1  states the result in one line: naive recall reaches up to 100.0%, indirect application never exceeds 16.0%.",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      592.3975219726562
+    ]
+  },
+  {
+    "page": 7,
+    "file": "table-1-p7.png",
+    "method": "caption_crop (1836x275)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 35,
+    "width": 1836,
+    "height": 275,
+    "caption": "Table 1  Results (%) on the 125-task InMind benchmark: direct  Naive  recall, answer-blind  Target Recall  in the",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      91.44
+    ]
+  },
+  {
+    "page": 9,
+    "file": "table-2-p9.png",
+    "method": "caption_crop (1836x725)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 138,
+    "width": 1836,
+    "height": 725,
+    "caption": "Table 2  Always-in-state diagnostic on the same 125 tasks as Table  1 .",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      241.65
+    ]
+  },
+  {
+    "page": 10,
+    "file": "table-3-p10.png",
+    "method": "caption_crop (1836x274)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 29,
+    "width": 1836,
+    "height": 274,
+    "caption": "Table 3  Comparison of memory benchmarks.  ✓ : supported as a paired, per-task property;  × : absent;  – : not applicable",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      91.29
+    ]
+  },
+  {
+    "page": 16,
+    "file": "fig-4-p16.png",
+    "method": "caption_crop (1836x823)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 143,
+    "width": 1836,
+    "height": 823,
+    "caption": "Figure  4  is a held-out check rather than a report from the filtering model: it recomputes all four distributions",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      274.31
+    ]
+  },
+  {
+    "page": 16,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too page-like (area_ratio=0.91)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 5  Memory-evaluation settings: explicit recall, state aggregation, entity-based multi-hop reasoning, and InMind’s",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      719.3961181640625
+    ]
+  },
+  {
+    "page": 24,
+    "file": "table-4-p24.png",
+    "method": "caption_crop (1836x274)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 12,
+    "width": 1836,
+    "height": 274,
+    "caption": "Table 4  GPT-5-mini answer-only judgments on the 125-task evaluation set.",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      91.27
+    ]
+  },
+  {
+    "page": 24,
+    "file": "table-5-p24.png",
+    "method": "caption_crop (1836x1437)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 245,
+    "width": 1836,
+    "height": 1437,
+    "caption": "Table  5  reports agreement with the expert labels. False negatives are GPT-5-mini scores of 0 where the expert",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      478.79
+    ]
+  }
+]
