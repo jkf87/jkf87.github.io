@@ -1799,6 +1799,27 @@
       ],
       "commit": "28bec2b3",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-29-fcpagent-falsifiable-commitment-planning.md"
+    },
+    {
+      "date": "2026-07-29",
+      "slug": "2026-07-29-physics-of-long-horizon-planning",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.24720",
+      "title": "멀티턴 롱호라이즌 계획의 물리학: 사전학습부터 GRPO·OPD·MOPD까지",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-29-physics-of-long-horizon-planning",
+      "tags": [
+        "agent",
+        "planning",
+        "long-horizon",
+        "RL",
+        "GRPO",
+        "OPD",
+        "distillation",
+        "LLM",
+        "harness",
+        "loop",
+        "automation"
+      ]
     }
   ],
   "posts": [

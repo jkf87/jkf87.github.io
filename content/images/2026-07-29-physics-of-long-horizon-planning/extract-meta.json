@@ -1,0 +1,138 @@
+[
+  {
+    "page": 3,
+    "file": "fig-1-p3.png",
+    "method": "caption_crop (1586x989)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 474,
+    "width": 1586,
+    "height": 989,
+    "caption": "Figure 1:  An overview of the studying into physics of multi-turn long-horizon planning. It studies the long-horizon",
+    "crop": [
+      41.86,
+      73.04,
+      570.15,
+      402.49
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-2-p6.png",
+    "method": "caption_crop (1586x738)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 372,
+    "width": 1586,
+    "height": 738,
+    "caption": "Figure 2:  Overview of the proposed long-horizon agentic planning framework.",
+    "crop": [
+      41.86,
+      73.04,
+      570.16,
+      318.8
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-3-p7.png",
+    "method": "caption_crop (1587x491)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 120,
+    "width": 1587,
+    "height": 491,
+    "caption": "Figure 3:  Final performance comparison between students with and without world modeling across three difficulty",
+    "crop": [
+      41.86,
+      439.86,
+      570.39,
+      603.08
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-4-p8.png",
+    "method": "caption_crop (1586x730)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 265,
+    "width": 1586,
+    "height": 730,
+    "caption": "Figure 4:  Performance scaling with pre-training corpus size for agent planning, comparing students with and without",
+    "crop": [
+      41.86,
+      180.83,
+      570.31,
+      423.81
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-5-p9.png",
+    "method": "caption_crop (1586x957)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 311,
+    "width": 1586,
+    "height": 957,
+    "caption": "Figure 5:  Performance scaling across different pretraining distributions.",
+    "crop": [
+      41.86,
+      98.16,
+      570.15,
+      416.91
+    ]
+  },
+  {
+    "page": 10,
+    "file": "table-1-p10.png",
+    "method": "caption_crop_table_below (1587x723)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 221,
+    "width": 1587,
+    "height": 723,
+    "caption": "Table 1:  Pretrain distribution table with two global blocks (top: avg@8, bottom: pass@8). Ratio is split into",
+    "crop": [
+      41.56,
+      77.44,
+      570.15,
+      318.06
+    ]
+  },
+  {
+    "page": 11,
+    "file": "table-2-p11.png",
+    "method": "caption_crop_table_below (1666x650)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 194,
+    "width": 1666,
+    "height": 650,
+    "caption": "Table  2 , the planning knowledge encompasses the explicit synthesis rules defining exactly which materials combine to",
+    "crop": [
+      32.7,
+      114.9,
+      587.74,
+      331.19
+    ]
+  },
+  {
+    "page": 11,
+    "file": "fig-6-p11.png",
+    "method": "caption_crop (1639x499)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 145,
+    "width": 1639,
+    "height": 499,
+    "caption": "Figure 6:  Effect of pretraining data composition on downstream performance. The figure compares avg@8 and pass@8",
+    "crop": [
+      41.86,
+      191.91,
+      587.74,
+      357.76
+    ]
+  }
+]
