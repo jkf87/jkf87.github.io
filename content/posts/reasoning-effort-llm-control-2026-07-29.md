@@ -24,6 +24,8 @@ Sebastian Raschka의 글 [Controlling Reasoning Effort in LLMs](https://magazine
 
 저는 이 글을 읽으면서 AI 제품과 에이전트 하네스를 만드는 분들이 바로 가져가야 할 질문이 하나 있다고 봤다. “모델을 똑똑하게 만들 것인가?”가 아니라, **“언제 비싸게 생각하게 하고, 언제 빨리 답하게 할 것인가?”** 이다.
 
+![원문 Figure 1. GPT-5.6 Sol 모델에서 reasoning effort를 바꿨을 때 benchmark 점수가 달라지는 모습. 이 글의 출발점은 “같은 모델이라도 생각 예산을 메뉴로 고른다”는 장면이다. 출처: Sebastian Raschka, Controlling Reasoning Effort in LLMs.](/images/reasoning-effort-llm-control-2026-07-29/fig01-gpt56-effort.png)
+
 ## 이번 글이 답하는 질문
 
 이 뉴스레터는 Raschka 글을 따라가되, 실무 관점에서 네 가지 질문으로 다시 묶었습니다.
@@ -40,6 +42,8 @@ Sebastian Raschka의 글 [Controlling Reasoning Effort in LLMs](https://magazine
 AI 연구 맥락에서 reasoning model은 보통 **최종 답만 내는 대신, 중간 reasoning trace를 만들어가며 문제를 푸는 모델**을 뜻한다. 수학 문제를 풀 때 풀이 과정을 쓰고, 코딩 문제를 풀 때 조건을 점검하고, 중간에 틀렸다고 판단하면 되돌아가는 식이다. DeepSeek-R1 이후 이 패턴이 대중화됐다.
 
 여기서 중요한 훈련 방식이 RLVR(Reinforcement Learning with Verifiable Rewards)이다. 답이 맞는지 자동으로 확인할 수 있는 영역, 예를 들어 수학과 코딩에서 reward를 준다. 정답이면 1, 오답이면 0에 가깝게. 모델은 여러 번 시도하며 최종 답이 맞는 방향으로 업데이트된다.
+
+![원문 Figure 4. 모델 성능을 올리는 두 축으로 training scaling과 inference scaling을 나눠 보여준다. reasoning effort는 후자, 즉 이미 훈련된 모델이 답변 시점에 더 많은 compute를 쓰게 하는 축이다. 출처: Sebastian Raschka.](/images/reasoning-effort-llm-control-2026-07-29/fig04-training-vs-inference-scaling.png)
 
 흥미로운 점은 DeepSeek-R1 계열 설명에서 자주 나오는 부분이다. **중간 reasoning trace 자체를 직접 채점하지 않아도, 최종 답 보상만으로 모델이 풀이·되돌아가기·자기수정 행동을 배울 수 있었다.** 이른바 “Aha moment”다. 모델이 중간에 “잠깐, 이건 틀렸다”는 식으로 경로를 바꾸는 장면이다.
 
@@ -65,6 +69,8 @@ DeepSeek-R1 같은 모델에서는 format reward가 붙을 수 있다. 예를 �
 
 그래서 Qwen3 같은 모델은 hybrid 방식을 실험했다. 같은 모델이 필요할 때는 reasoning model처럼, 필요 없을 때는 일반 instruction model처럼 행동한다. 사용자는 `enable_thinking=True/False` 같은 옵션을 고른다.
 
+![원문 Figure 14. Qwen3 0.6B에서 thinking=False와 thinking=True의 응답 차이. 겉으로는 스위치 하나지만, 안쪽에서는 chat template과 prefill이 모드를 가른다. 출처: Sebastian Raschka.](/images/reasoning-effort-llm-control-2026-07-29/fig14-qwen3-thinking-toggle.png)
+
 겉으로 보면 단순한 스위치다. 안쪽은 조금 흥미롭다. Qwen3에서 `enable_thinking=False`는 대체로 assistant 응답 앞에 빈 `<think></think>` 블록을 미리 넣는 방식으로 작동한다. 즉 “생각은 이미 끝났으니 바로 답하라”는 상태에서 모델 생성을 시작하게 한다.
 
 학습 쪽에서는 Thinking Mode Fusion 같은 SFT 단계가 들어간다. 모델은 두 종류의 예시를 본다.
@@ -82,6 +88,8 @@ DeepSeek-R1 같은 모델에서는 format reward가 붙을 수 있다. 예를 �
 
 Raschka는 이를 training scaling과 inference scaling으로 나눠 설명한다. 더 큰 모델을 고르는 것은 이미 훈련된 다른 scale의 모델을 선택하는 일이다. 반면 reasoning effort를 올리는 것은 **같은 모델이 inference 시점에 더 많은 token과 compute를 쓰도록 허용하는 일**이다.
 
+![원문 Figure 23. 왼쪽의 모델 선택은 서로 다른 모델 scale을 고르는 일이고, 오른쪽의 reasoning effort 선택은 같은 모델의 inference-time compute를 조절하는 일이다. 출처: Sebastian Raschka.](/images/reasoning-effort-llm-control-2026-07-29/fig23-two-scaling-axes.png)
+
 직관적으로는 이렇다.
 
 - 낮은 effort: 짧게 생각한다. 싸고 빠르다. 쉬운 질문에 적합하다.
@@ -89,6 +97,8 @@ Raschka는 이를 training scaling과 inference scaling으로 나눠 설명한�
 - 너무 높은 effort: 성능은 조금 오르지만 비용 상승 대비 이득이 줄어든다.
 
 Raschka가 인용한 gpt-oss, GPT-5.6, Inkling 관련 그림들은 대체로 같은 방향을 보여준다. effort를 올리면 생성 token이 늘고, benchmark 성능도 오르는 경향이 있다. 다만 높은 구간에서는 diminishing returns가 온다. 돈을 두 배 썼는데 점수는 아주 조금만 오르는 구간이 생긴다.
+
+![원문 Figure 19. reasoning effort를 올리면 coding-agent benchmark 성능도 오르지만 API cost도 함께 증가한다. 고 effort 구간에서 수익 체감이 보이는 것이 핵심이다. 출처: Sebastian Raschka, Artificial Analysis Coding Agent Index v1.1 기반.](/images/reasoning-effort-llm-control-2026-07-29/fig19-cost-performance-effort.png)
 
 이 지점이 제품적으로 중요하다. “최고 성능”만 보면 항상 high나 max를 고르고 싶다. 하지만 서비스에서는 latency, API cost, 사용자 체감, 실패 시 재시도 비용까지 같이 본다. **reasoning effort는 정확도 옵션이 아니라 unit economics 옵션**이다.
 
@@ -101,6 +111,8 @@ Raschka가 인용한 gpt-oss, GPT-5.6, Inkling 관련 그림들은 대체로 같
 두 번째는 그 label을 post-training에서 실제 행동과 연결하는 것이다. 예를 들어 SFT 단계에서 low effort prompt에는 짧은 reasoning target을, high effort prompt에는 긴 reasoning target을 붙인다. 모델은 effort label과 reasoning 길이의 관계를 예시로 배운다.
 
 세 번째는 RLVR 단계에서 token cost를 달리 주는 방식이다. Raschka는 Inkling 사례를 통해 이를 설명한다. 원하는 effort level `e`를 system message에 넣고, reward를 대략 다음처럼 생각할 수 있다.
+
+![원문 Figure 21. effort-conditioned RLVR와 SFT의 가능한 구현. effort label을 프롬프트에 넣고, 그에 맞는 reasoning 길이와 token cost를 학습시키는 구도다. 출처: Sebastian Raschka.](/images/reasoning-effort-llm-control-2026-07-29/fig21-effort-conditioned-training.png)
 
 ```text
 R(e) = R_task - λ(e) * N_tokens
@@ -121,6 +133,8 @@ Raschka 글 후반은 꽤 긴 technical report 순례다. DeepSeek V4, Nemotron 
 셋째, **hard budget에 견디는 훈련을 넣는다.** Nemotron은 reasoning trace를 무작위 token budget에서 자른 뒤 답으로 넘어가는 예시를 만든다. Qwen3는 강제로 reasoning span이 멈춘 뒤에도 최종 답을 이어갈 수 있다. Kimi 계열은 budgeted phase와 unconstrained phase를 오가며 token-efficient reasoning을 학습한다.
 
 이 비교가 중요한 이유는 하나다. **비슷한 UI 라벨 뒤에 완전히 다른 훈련 레시피가 숨어 있을 수 있다.** 어떤 모델의 “medium”과 다른 모델의 “medium”은 같은 의미가 아니다. 하나는 SFT로 배운 짧은 답변 모드일 수 있고, 다른 하나는 RL에서 token penalty가 다르게 걸린 모드일 수 있다.
+
+![원문 Figure 32. 공개 technical report 기준으로 reasoning effort 구현 방식을 비교한 표. 같은 “effort”라는 단어 아래에 SFT, chat template, mode-conditioned RL, hard budget 같은 서로 다른 장치가 섞여 있다. 출처: Sebastian Raschka.](/images/reasoning-effort-llm-control-2026-07-29/fig32-open-weight-comparison.png)
 
 그러니 benchmark를 볼 때도 “무슨 모델인가”만 보면 부족하다. 어떤 effort였는지, budget은 얼마였는지, reasoning trace를 강제로 잘랐는지, tool-use 작업에서 같은 설정이었는지까지 봐야 한다.
 
