@@ -1878,6 +1878,26 @@
       ],
       "threads_posted": false,
       "published_at": "2026-07-29T07:08:01.381767Z"
+    },
+    {
+      "date": "2026-07-29",
+      "slug": "2026-07-29-frozen-agent-harness-control-system",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.25415",
+      "title": "동결된 모델을 그대로 쓰면서 하네스만 학습한다 — 729가지 구성을 돌려본 결과, 정적 기준선이 이겼다",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-29-frozen-agent-harness-control-system",
+      "tags": [
+        "agent",
+        "harness",
+        "LLM",
+        "reinforcement-learning",
+        "contextual-bandit",
+        "DSPy",
+        "optimization",
+        "automation",
+        "loop",
+        "tool-use"
+      ]
     }
   ],
   "posts": [

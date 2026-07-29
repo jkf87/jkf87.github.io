@@ -1,0 +1,26 @@
+[
+  {
+    "page": "html",
+    "file": "fig2-pareto.png",
+    "method": "html_source",
+    "status": "accepted",
+    "reason": "Official arXiv HTML figure (fig2_pareto.png)",
+    "size_kb": 0,
+    "width": 900,
+    "height": 750,
+    "caption": "Figure 1: Reliability vs. cost (avg. tokens per episode) by optimizer, main matrix.",
+    "source": "https://arxiv.org/html/2607.25415v1/figures/fig2_pareto.png"
+  },
+  {
+    "page": "synthesized",
+    "file": "results-comparison.png",
+    "method": "source",
+    "status": "accepted",
+    "reason": "Chart synthesized from paper Table 2 data (success rate + token cost by domain × optimizer)",
+    "size_kb": 0,
+    "width": 2085,
+    "height": 771,
+    "caption": "Success rate and token cost comparison across optimizers (data from paper Tables 1-2)",
+    "source": "arxiv:2607.25415 Tables 1-2"
+  }
+]
