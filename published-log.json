@@ -1913,6 +1913,26 @@
       ],
       "commit": "20e3e137",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-29-frozen-agent-harness-control-system.md"
+    },
+    {
+      "date": "2026-07-29",
+      "slug": "2026-07-29-progress-mirage-agent-loop-self-evaluation",
+      "title": "에이전트가 '발전하고 있다'고 착각할 때 — 진행의 신기루(Progress Mirage)와 out-of-band 평가의 구조적 필요성",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.25152",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-29-progress-mirage-agent-loop-self-evaluation",
+      "tags": [
+        "agent",
+        "loop",
+        "harness",
+        "self-evaluation",
+        "LLM",
+        "reward-hacking",
+        "automation",
+        "context-engineering",
+        "verification",
+        "out-of-band"
+      ]
     }
   ],
   "posts": [

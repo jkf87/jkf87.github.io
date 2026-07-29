@@ -1,0 +1,142 @@
+[
+  {
+    "page": 2,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 1 summarizes this structure.",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "01-out-of-band-architecture.png",
+    "method": "caption_crop (749x468)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 59,
+    "width": 749,
+    "height": 468,
+    "caption": "Figure 1. The out-of-band verification architecture. The generator",
+    "crop": [
+      294.94,
+      120.15,
+      544.11,
+      275.89
+    ]
+  },
+  {
+    "page": 11,
+    "file": "02-loop-cycle-protocol.png",
+    "method": "caption_crop (749x602)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 64,
+    "width": 749,
+    "height": 602,
+    "caption": "Figure 2. The loop cycle. One iteration runs from BOOT (confronting",
+    "crop": [
+      294.94,
+      335.16,
+      544.1,
+      535.38
+    ]
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1 summarizes the results for the three evaluator",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1. Measurement results by evaluator arrangement",
+    "crop": null
+  },
+  {
+    "page": 13,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2 contrasts the mirage rates on T1 and B1. The",
+    "crop": null
+  },
+  {
+    "page": 14,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2. Mirage rates by task type (mean over 3 repe­",
+    "crop": null
+  },
+  {
+    "page": 15,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3. Comparison of out-of-band feedback variants",
+    "crop": null
+  },
+  {
+    "page": 16,
+    "file": "03-mirage-rate-results.png",
+    "method": "caption_crop (749x368)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 50,
+    "width": 749,
+    "height": 368,
+    "caption": "Figure 4. Pilot measurement results (a real frontier agent, isolated",
+    "crop": [
+      53.2,
+      70.2,
+      302.37,
+      192.58
+    ]
+  },
+  {
+    "page": 19,
+    "file": "04-loop-plumbing-vs-reward-brain.png",
+    "method": "caption_crop (754x496)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 59,
+    "width": 754,
+    "height": 496,
+    "caption": "Figure 3. The distinction between loop plumbing and the reward brain.",
+    "crop": [
+      294.94,
+      70.2,
+      545.71,
+      235.22
+    ]
+  }
+]
