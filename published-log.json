@@ -1952,7 +1952,25 @@
         "automation",
         "tool-use",
         "long-horizon"
-      ]
+      ],
+      "threads_root_id": "18100397690248104",
+      "threads_reply_ids": [
+        "18098970626210077",
+        "18071903093394608",
+        "18080760167302065",
+        "18103962902581329",
+        "17961221916153306",
+        "18125589553664030",
+        "17884033719610653"
+      ],
+      "threads_image_posts": [
+        1,
+        4,
+        7,
+        8
+      ],
+      "commit": "605e3084",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-30-stateact-program-state-before-pixels.md"
     }
   ],
   "posts": [
