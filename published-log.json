@@ -2024,7 +2024,22 @@
         "tool-use",
         "reasoning",
         "NeurIPS"
-      ]
+      ],
+      "threads_root_id": "18001630292783602",
+      "threads_reply_ids": [
+        "18371405089238888",
+        "18085301723649919",
+        "18136512457582640",
+        "17928969921371668",
+        "17864248932647025"
+      ],
+      "threads_image_posts": [
+        1,
+        4,
+        6
+      ],
+      "commit": "6379cde5",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-30-ai-agents-open-ended-research-shadow-eval.md"
     }
   ],
   "posts": [
