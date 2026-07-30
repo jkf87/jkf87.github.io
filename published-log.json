@@ -1990,7 +1990,21 @@
         "tool-use",
         "RL",
         "frozen-model"
-      ]
+      ],
+      "threads_root_id": "18020730092851447",
+      "threads_reply_ids": [
+        "18628081471039390",
+        "17914853430424528",
+        "18137891521589505",
+        "18208991392356771"
+      ],
+      "threads_image_posts": [
+        1,
+        4,
+        5
+      ],
+      "commit": "9ca8ca40",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-30-context-assembly-controlled-variable.md"
     }
   ],
   "posts": [
