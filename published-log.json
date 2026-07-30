@@ -2040,6 +2040,24 @@
       ],
       "commit": "6379cde5",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-30-ai-agents-open-ended-research-shadow-eval.md"
+    },
+    {
+      "date": "2026-07-30",
+      "slug": "2026-07-30-skillrise-cross-task-skill-evolution",
+      "title": "SkillRise: 에이전트가 서로 다른 작업에서 스킬을 배우기 시작하면 — 크로스태스크 스킬 진화 RL의 등장",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2607.26784",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-30-skillrise-cross-task-skill-evolution",
+      "tags": [
+        "agent",
+        "RL",
+        "skill-learning",
+        "LLM",
+        "cross-task",
+        "automation",
+        "loop",
+        "tool-use"
+      ]
     }
   ],
   "posts": [
