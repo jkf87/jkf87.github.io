@@ -2132,6 +2132,14 @@
         "tool-use",
         "evaluation"
       ]
+    },
+    {
+      "slug": "covenant-workflow-alignment-llm-agents",
+      "date": "2026-07-31",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.25400",
+      "title": "LLM 에이전트가 업무 지시를 어기는 이유: COVENANT가 제시하는 워크플로우 정합성 해법",
+      "blog_url": "https://jkf87.github.io/posts/covenant-workflow-alignment-llm-agents"
     }
   ],
   "posts": [

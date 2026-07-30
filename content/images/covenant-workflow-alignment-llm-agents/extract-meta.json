@@ -1,0 +1,150 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1584x996)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 222,
+    "width": 1584,
+    "height": 996,
+    "caption": "Figure 1: Problem-to-solution overview of COVENANT. An LLM agent can select an unsupported branch (trace misalignment) or",
+    "crop": [
+      42.0,
+      42.0,
+      570.0,
+      373.46
+    ]
+  },
+  {
+    "page": 3,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 2: Abstract syntax of WAST and WCFG.",
+    "crop": null
+  },
+  {
+    "page": 4,
+    "file": "fig-3-p4.png",
+    "method": "caption_crop (1584x589)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 106,
+    "width": 1584,
+    "height": 589,
+    "caption": "Figure 3: Compiler-style construction and lowering of the Grand Canyon weather workflow from Figure 1. Stage I segments the",
+    "crop": [
+      42.0,
+      163.49,
+      570.0,
+      359.63
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-1-p6.png",
+    "method": "caption_crop_table_below (1584x777)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 95,
+    "width": 1584,
+    "height": 777,
+    "caption": "Table 1: Official benchmark task success (%) on 120 cases from three existing benchmarks. Paired rows report mean paired  ∆ .",
+    "crop": [
+      42.0,
+      204.09,
+      570.0,
+      462.7
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-4-p6.png",
+    "method": "caption_crop (1584x719)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 89,
+    "width": 1584,
+    "height": 719,
+    "caption": "Figure   4:   Workflow-misalignment   failure   rates   aggregated   across   five   base   models.   GLM-5.1   is   used   only   to   annotate   failed",
+    "crop": [
+      42.0,
+      247.21,
+      570.0,
+      486.34
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-2-p6.png",
+    "method": "caption_crop (1539x1113)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 199,
+    "width": 1539,
+    "height": 1113,
+    "caption": "Table   2:   Runtime   representation   and   control   analysis   with",
+    "crop": [
+      42.0,
+      247.21,
+      554.91,
+      617.96
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-6-p6.png",
+    "method": "caption_crop (1539x1353)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 268,
+    "width": 1539,
+    "height": 1353,
+    "caption": "Figure   6   reports   normalized   overhead   over   the   same   3,000",
+    "crop": [
+      42.0,
+      247.21,
+      554.91,
+      697.96
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-5-p7.png",
+    "method": "caption_crop (1584x778)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 88,
+    "width": 1584,
+    "height": 778,
+    "caption": "Figure   5:   Scenario-level   GLM-5.1-attributed   workflow-misalignment   failure   rates,   decomposed   into   trace   and   execution   mis-",
+    "crop": [
+      42.0,
+      42.0,
+      570.0,
+      300.74
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-6-p7.png",
+    "method": "caption_crop (788x741)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 50,
+    "width": 788,
+    "height": 741,
+    "caption": "Figure   6:   Normalized   model-call   and   wall-clock   costs   over",
+    "crop": [
+      42.0,
+      304.92,
+      304.51,
+      551.35
+    ]
+  }
+]
