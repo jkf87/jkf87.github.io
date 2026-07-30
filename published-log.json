@@ -2094,7 +2094,24 @@
         "protocol-validity",
         "HackDetect",
         "score-inflation"
-      ]
+      ],
+      "threads_root_id": "18369430678232012",
+      "threads_reply_ids": [
+        "18127028275674854",
+        "18101694919929311",
+        "18119948347859717",
+        "17982516717023445",
+        "18002741474973185"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        4,
+        5,
+        6
+      ],
+      "commit": "3f66a586",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-30-agent-benchmark-protocol-validity.md"
     }
   ],
   "posts": [
