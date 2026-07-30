@@ -1,0 +1,138 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1713x573)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 204,
+    "width": 1713,
+    "height": 573,
+    "caption": "Figure 1:  Existing evaluations entangle multiple post-training choices; RSIBench-Data isolates the LLM agent’s ability to",
+    "crop": [
+      41.12,
+      67.37,
+      612.0,
+      258.01
+    ]
+  },
+  {
+    "page": 3,
+    "file": "table-1-p3.png",
+    "method": "caption_crop (1676x273)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 36,
+    "width": 1676,
+    "height": 273,
+    "caption": "Table 1:  Protocol-level comparison of benchmarks across data-synthesis research, closed-loop evolution, and controlled",
+    "crop": [
+      11.67,
+      17.12,
+      570.15,
+      107.73
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-2-p5.png",
+    "method": "caption_crop (1749x874)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 277,
+    "width": 1749,
+    "height": 874,
+    "caption": "Figure 2:  Overview of RSIBench-Data, which evaluates how an LLM researcher agent evolves a training-data research",
+    "crop": [
+      29.16,
+      0.0,
+      612.0,
+      291.06
+    ]
+  },
+  {
+    "page": 8,
+    "file": "table-2-p8.png",
+    "method": "caption_crop (1676x559)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 135,
+    "width": 1676,
+    "height": 559,
+    "caption": "Table 2:  Official performance and resource use for the main Agent–Benchmark matrix. The base-model row reports the",
+    "crop": [
+      11.67,
+      17.12,
+      570.15,
+      203.22
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-3-p9.png",
+    "method": "caption_crop (1586x996)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 172,
+    "width": 1586,
+    "height": 996,
+    "caption": "Figure 3:  Selection-score trajectories across valid attempts in their original order. Stars mark the first candidate that reaches",
+    "crop": [
+      41.86,
+      67.37,
+      570.15,
+      399.11
+    ]
+  },
+  {
+    "page": 10,
+    "file": "fig-4-p10.png",
+    "method": "caption_crop (1586x998)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 196,
+    "width": 1586,
+    "height": 998,
+    "caption": "Figure 4:  Selection score versus cumulative Tinker cost across benchmarks. Filled markers indicate candidates that establish",
+    "crop": [
+      41.86,
+      67.37,
+      570.16,
+      399.69
+    ]
+  },
+  {
+    "page": 11,
+    "file": "fig-5-p11.png",
+    "method": "caption_crop (683x626)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 57,
+    "width": 683,
+    "height": 626,
+    "caption": "Figure 5:  Reasoning-effort diagnostic on SWE-",
+    "crop": [
+      344.43,
+      464.41,
+      571.82,
+      672.94
+    ]
+  },
+  {
+    "page": 12,
+    "file": "fig-6-p12.png",
+    "method": "caption_crop (1586x883)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 271,
+    "width": 1586,
+    "height": 883,
+    "caption": "Figure 6:  Early RSI trajectory on SWE-bench Pro. The Kimi K2.6 researcher evolves its synthetic-data strategy across seven",
+    "crop": [
+      41.86,
+      328.85,
+      570.14,
+      622.71
+    ]
+  }
+]
