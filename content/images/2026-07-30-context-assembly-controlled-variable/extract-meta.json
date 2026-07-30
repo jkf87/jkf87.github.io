@@ -1,0 +1,60 @@
+[
+  {
+    "page": 3,
+    "file": "fig-1-p3.png",
+    "method": "caption_crop (1477x801)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 140,
+    "width": 1477,
+    "height": 801,
+    "caption": "Figure 1: Windowed mean reward vs. episode for the bandit and REINFORCE controllers (2 seeds",
+    "crop": [
+      60.0,
+      126.29,
+      552.05,
+      392.79
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (1477x941)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 85,
+    "width": 1477,
+    "height": 941,
+    "caption": "Figure 2: Reliability diagram: controller confidence (softmax score of the chosen action) vs. realized",
+    "crop": [
+      60.0,
+      140.87,
+      552.03,
+      454.17
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1 summarizes the controlled variable, learning mechanism, and auditability tradeoff across",
+    "crop": null
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Control-theoretic framings of LLM agents, 2026.",
+    "crop": null
+  }
+]
