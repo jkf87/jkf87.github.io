@@ -2005,6 +2005,26 @@
       ],
       "commit": "9ca8ca40",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-30-context-assembly-controlled-variable.md"
+    },
+    {
+      "date": "2026-07-30",
+      "slug": "2026-07-30-ai-agents-open-ended-research-shadow-eval",
+      "title": "AI 에이전트에게 연구를 맡기면 어떻게 될까 — 6일과 3천 달러를 줬더니 엔지니어링은 했지만 연구는 못 했다",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.27191",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-30-ai-agents-open-ended-research-shadow-eval",
+      "tags": [
+        "agent",
+        "LLM",
+        "AI-research",
+        "evaluation",
+        "harness",
+        "automation",
+        "loop",
+        "tool-use",
+        "reasoning",
+        "NeurIPS"
+      ]
     }
   ],
   "posts": [

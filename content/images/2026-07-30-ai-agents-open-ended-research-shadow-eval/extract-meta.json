@@ -1,0 +1,183 @@
+[
+  {
+    "page": 3,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1  Summary of the original paper authors’ reviews of the agents’ submitted work. Section  3  contains additional details on",
+    "crop": null
+  },
+  {
+    "page": 4,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2  Selected evaluations and demonstrations of experiments studying AI research and development. Most previous",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3  Strengths and limitations of our shadow evaluations for measuring progress towards AI R&D automation. Shadow",
+    "crop": null
+  },
+  {
+    "page": 10,
+    "file": "fig-1-p10.png",
+    "method": "caption_crop (1445x848)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 182,
+    "width": 1445,
+    "height": 848,
+    "caption": "Figure 1  Annotated summaries of the agents’ time, API, and GPU compute expenditures.",
+    "crop": [
+      58.87,
+      458.58,
+      540.04,
+      740.79
+    ]
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 2  Comparison between the agents’ planned and realized wall-clock budgets for milestones in the research process.",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "fig-3-p12.png",
+    "method": "caption_crop (1484x528)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 68,
+    "width": 1484,
+    "height": 528,
+    "caption": "Figure 3  Summary of the paper reviews from subagents (self-review), external AI reviews (Stanford Agentic Reviewer, CMU",
+    "crop": [
+      58.87,
+      235.04,
+      553.13,
+      410.99
+    ]
+  },
+  {
+    "page": 13,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4  Detailed comparison of the human experts’ and agents’ final reviews of the agents’ work.",
+    "crop": null
+  },
+  {
+    "page": 14,
+    "file": "fig-4-p14.png",
+    "method": "caption_crop (1549x681)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 344,
+    "width": 1549,
+    "height": 681,
+    "caption": "Figure 4  Comparison of the submitted papers before and after a human intervention which instructed a final pass from the",
+    "crop": [
+      46.82,
+      67.55,
+      562.99,
+      294.02
+    ]
+  },
+  {
+    "page": 30,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5  Aggregate responses to the pre-experiment expectations survey ( n  = 12 ). Counts for the trajectory-events question",
+    "crop": null
+  },
+  {
+    "page": 31,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6  expands the selected examples in  Table 2  into a broader comparison of research tasks and their evaluators.",
+    "crop": null
+  },
+  {
+    "page": 31,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6  Comprehensive survey of AI R&D experiments.",
+    "crop": null
+  },
+  {
+    "page": 34,
+    "file": "fig-5-p34.png",
+    "method": "caption_crop (845x1681)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 108,
+    "width": 845,
+    "height": 1681,
+    "caption": "Figure 5  illustrates how OpenClaw coordinates the core agent, subagents, tool calls, and long-running GPU experiments during a research run.",
+    "crop": [
+      86.28,
+      51.81,
+      367.62,
+      612.0
+    ]
+  },
+  {
+    "page": 34,
+    "file": "fig-5-p34-2.png",
+    "method": "caption_crop (833x1681)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 114,
+    "width": 833,
+    "height": 1681,
+    "caption": "Figure 5  The CRUX 2 AI R&D scaffold.",
+    "crop": [
+      111.09,
+      51.81,
+      388.41,
+      612.0
+    ]
+  }
+]
