@@ -1,0 +1,206 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1484x828)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 343,
+    "width": 1484,
+    "height": 828,
+    "caption": "Figure 1  |  Agent benchmark pipeline and five protocol exposure entry points. The upper panel follows",
+    "crop": [
+      50.36,
+      73.04,
+      544.92,
+      348.87
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-2-p5.png",
+    "method": "caption_crop (1489x881)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 217,
+    "width": 1489,
+    "height": 881,
+    "caption": "Figure 2  |  Five stages in the evolution of benchmark protocols. As agent capability increases,",
+    "crop": [
+      50.36,
+      73.04,
+      546.43,
+      366.56
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too page-like (area_ratio=0.68)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  1  locates five exposure entry points along the task-to-score pipeline. HackDetect applies a",
+    "crop": [
+      50.36199951171875,
+      73.04176330566406,
+      544.9126586914062,
+      763.4828491210938
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-3-p7.png",
+    "method": "caption_crop (1485x727)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 220,
+    "width": 1485,
+    "height": 727,
+    "caption": "Figure 3  |  Operational exposure taxonomy used to organize candidate evidence for the HackDetect",
+    "crop": [
+      50.36,
+      73.04,
+      545.1,
+      315.01
+    ]
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "caption_crop_table_below",
+    "status": "rejected",
+    "reason": "crop too small (507x74pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1  |  Detector validity on 53 hand-labeled Frontier Science traces (manual mechanism label vs.",
+    "crop": [
+      44.3849983215332,
+      77.54524993896484,
+      550.8909912109375,
+      151.4100341796875
+    ]
+  },
+  {
+    "page": 10,
+    "file": "table-2-p10.png",
+    "method": "caption_crop_table_below (1511x457)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 98,
+    "width": 1511,
+    "height": 457,
+    "caption": "Table 2  |  Trace-audit results across 15 agent benchmarks, ordered by positive rate. Positive denotes a",
+    "crop": [
+      45.98,
+      77.55,
+      549.3,
+      229.34
+    ]
+  },
+  {
+    "page": 10,
+    "file": "table-3-p10.png",
+    "method": "caption_crop (1511x886)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 157,
+    "width": 1511,
+    "height": 886,
+    "caption": "Table 3  |  Cross-model validation on Frontier Science, by exposure composition (% of passing runs).",
+    "crop": [
+      45.98,
+      141.12,
+      549.3,
+      436.08
+    ]
+  },
+  {
+    "page": 11,
+    "file": "fig-4-p11.png",
+    "method": "caption_crop (1485x638)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 98,
+    "width": 1485,
+    "height": 638,
+    "caption": "Figure 4  |  Mislead gap for cases with a defensible comparison score.  𝑆 exploit  is the observed shortcut",
+    "crop": [
+      50.36,
+      73.04,
+      545.1,
+      285.47
+    ]
+  },
+  {
+    "page": 20,
+    "file": "",
+    "method": "caption_crop_table_below",
+    "status": "rejected",
+    "reason": "crop too small (507x87pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4  |  Judge output schema. Field meanings for the JSON object above. A run is counted as a",
+    "crop": [
+      44.3849983215332,
+      77.54524993896484,
+      550.8909912109375,
+      164.96002197265625
+    ]
+  },
+  {
+    "page": 21,
+    "file": "",
+    "method": "caption_crop_table_below",
+    "status": "rejected",
+    "reason": "crop too small (507x60pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5  |  Operational definition of each  exposure  value.",
+    "crop": [
+      44.3849983215332,
+      77.54524993896484,
+      550.8909912109375,
+      137.86102294921875
+    ]
+  },
+  {
+    "page": 22,
+    "file": "table-6-p22.png",
+    "method": "caption_crop_table_below (1520x914)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 151,
+    "width": 1520,
+    "height": 914,
+    "caption": "Table 6  |  Decision boundaries for engagement and Mislead.",
+    "crop": [
+      44.38,
+      77.55,
+      550.89,
+      381.7
+    ]
+  },
+  {
+    "page": 22,
+    "file": "table-7-p22.png",
+    "method": "caption_crop (1520x776)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 130,
+    "width": 1520,
+    "height": 776,
+    "caption": "Table 7  |  Confidence anchors used for both confidence fields.",
+    "crop": [
+      44.38,
+      100.47,
+      550.89,
+      358.83
+    ]
+  }
+]

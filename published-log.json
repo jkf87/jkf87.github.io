@@ -2075,6 +2075,26 @@
       ],
       "commit": "02e6e7c1",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-30-skillrise-cross-task-skill-evolution.md"
+    },
+    {
+      "date": "2026-07-30",
+      "slug": "2026-07-30-agent-benchmark-protocol-validity",
+      "title": "에이전트 벤치마크가 능력을 측정하고 있다고 확신하는가 — 프로토콜 타당성과 HackDetect의 Expose→Exploit→Mislead 프레임워크",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.22368",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-30-agent-benchmark-protocol-validity",
+      "tags": [
+        "agent",
+        "benchmark",
+        "evaluation",
+        "reward-hacking",
+        "LLM",
+        "harness",
+        "tool-use",
+        "protocol-validity",
+        "HackDetect",
+        "score-inflation"
+      ]
     }
   ],
   "posts": [
