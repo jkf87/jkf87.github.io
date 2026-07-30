@@ -47,6 +47,8 @@ Eve는 자신이 타이핑보다 생각이 빠르기 때문에, Aqua를 써서 �
 
 그래서 Eve의 작업대에는 음성 입력, mood board, project-specific markdown, agent, shader library가 같이 놓인다. 이 조합은 “디자인 툴체인”이라기보다 “의도를 소프트웨어로 번역하는 파이프라인”에 가깝다.
 
+![Eve Bouffard가 Aqua로 음성 입력을 쓰고, Conductor와 Paper Design을 함께 쓰는 워크플로우를 설명하는 장면. 이 글의 출발점은 “디자이너가 손으로 조작하는 시간보다 맥락을 말하고 남기는 시간이 늘어난다”는 변화다. 출처: Y Combinator 영상 캡처.](/images/ai-first-design-yc-eve-bouffard-2026-07-30/01-voice-workflow.jpg)
+
 ## Paxel: coding agent 시대의 자기 이해 제품
 
 첫 번째 사례는 Paxel이다. Paxel은 coding agent로 작업한 transcript를 분석해, 사용자의 코딩 패턴을 보여주는 실험이다. Eve는 이 제품을 “사람들이 coding agent와 어떻게 코딩하는지 이해하기 위한 실험”이라고 설명한다.
@@ -56,6 +58,8 @@ Eve는 자신이 타이핑보다 생각이 빠르기 때문에, Aqua를 써서 �
 이건 가벼운 농담처럼 보이지만, 꽤 실무적인 방향이다. coding agent 사용은 아직 표준화되지 않았다. 사람마다 자기만의 요령, prompt 습관, skill, 포기 지점이 있다. Paxel은 그 흔적을 데이터로 바꾼다.
 
 Paxel의 landing page도 이 목적을 숨기지 않는다. “우리는 세상이 지금 어떻게 코딩하는지 알고 싶다”는 실험 의도를 앞에 둔다. 제품이 아직 single-player mode에 가깝더라도, transcript가 쌓이면 다른 builder와 비교할 수 있다. 즉, **agent 시대의 개발자 경험은 코드 결과물만이 아니라 agent와 주고받은 대화 로그까지 제품의 재료가 된다.**
+
+![Paxel을 coding session용 Spotify Wrapped처럼 설명하는 장면. transcript를 올리면 나의 agent 사용 패턴, crash out 순간, 작업 습관을 카드처럼 보여주는 제품 감각이 핵심이다. 출처: Y Combinator 영상 캡처.](/images/ai-first-design-yc-eve-bouffard-2026-07-30/02-paxel-wrapped.jpg)
 
 ## 마음에 안 드는 shader는, 새 툴을 만들어서 고친다
 
@@ -80,6 +84,8 @@ agent용 페이지는 markdown에 가깝다. 같은 콘텐츠를 더 가볍고 �
 
 지금까지 SEO가 검색엔진을 위한 보조 설계였다면, agent-readable design은 작업을 위임받는 AI를 위한 1차 설계가 될 수 있다. 특히 개발자 도구, API 문서, 오픈소스 프로젝트, SaaS onboarding에서는 이 변화가 빠르게 올 가능성이 높다.
 
+![Paxel 페이지의 human / machine 전환 장면. 사람에게는 시각적 설득이, agent에게는 복사 가능한 markdown과 실행 금지 조건이 필요하다는 점을 보여준다. 출처: Y Combinator 영상 캡처.](/images/ai-first-design-yc-eve-bouffard-2026-07-30/03-human-machine-page.jpg)
+
 ## “Send to an agent”는 기능 요청 폼의 다음 버전이다
 
 Paxel에는 또 하나 재미있는 폼이 있다. 사용자가 개선 아이디어를 남기는 영역인데, 버튼 문구가 “Send to an agent”다. Eve는 이것을 일반적인 feature request form처럼 설명하지 않는다. prompt box처럼 쓰라고 말한다. 사용자는 screenshot이나 screen recording을 첨부할 수 있고, agent는 그것을 context로 사용한다.
@@ -98,6 +104,8 @@ Paxel에는 또 하나 재미있는 폼이 있다. 사용자가 개선 아이디
 
 이 방식은 AI 결과물이 generic해지는 문제와도 연결된다. 많은 사람이 Claude나 Codex에게 “예쁜 웹사이트 만들어줘”라고 말한 뒤, 너무 뻔한 결과를 받는다. Eve의 처방은 분명하다. 더 많은 맥락을 줘야 한다. screenshots, mood board, real content, project manifesto, 회의 transcript를 넣어야 한다. 그러면 agent가 단순한 template이 아니라 그 프로젝트의 결을 따라갈 가능성이 올라간다.
 
+![SOTA Zine 프로젝트의 회의 transcript와 방향성을 soul.md에 모아 source of truth로 삼았다고 설명하는 장면. AI 디자인에서 문서는 부속물이 아니라 agent가 프로젝트의 결을 잃지 않게 하는 기억 장치가 된다. 출처: Y Combinator 영상 캡처.](/images/ai-first-design-yc-eve-bouffard-2026-07-30/04-soul-md-source.jpg)
+
 ## one-shot 16개는 최종안이 아니라 탐색 도구다
 
 SOTA Zine 웹사이트에서 Eve는 Pinterest mood board 이미지를 Claude에게 주고, 같은 조건으로 웹사이트 시안을 16번 one-shot 생성했다. 그리고 내부용 gallery를 만들어 여러 방향을 비교했다. 여기서 중요한 것은 이 16개가 곧바로 production-ready design이 아니라는 점이다.
@@ -107,6 +115,8 @@ Eve는 이것을 exploration tool로 쓴다. 어떤 layout이 재밌는지, 기�
 AI 디자인을 잘못 쓰면 “한 번에 정답을 뽑는 기계”처럼 기대하게 된다. 영상에서 보이는 더 현실적인 사용법은 다르다. **AI는 탐색 공간을 넓히고, 디자이너는 선택과 편집으로 방향을 좁힌다.** 좋은 디자이너의 역할이 사라지는 게 아니라, 더 많은 후보 중에서 무엇이 살아 있는지 판단하는 쪽으로 이동한다.
 
 이때 real content가 중요하다. lorem ipsum으로 만든 시안은 그럴듯해 보여도, 실제 제목·이미지·문장·행사 정보가 들어가면 균형이 무너질 수 있다. Eve가 mood board와 실제 콘텐츠를 같이 넣은 이유가 여기에 있다.
+
+![SOTA Zine 웹사이트 방향을 여러 개 one-shot으로 뽑아 gallery처럼 비교하는 장면. 여기서 AI는 최종안을 대신 정하는 도구가 아니라, 탐색 공간을 넓히는 도구로 쓰인다. 출처: Y Combinator 영상 캡처.](/images/ai-first-design-yc-eve-bouffard-2026-07-30/05-sota-variations.jpg)
 
 ## agent가 놀라게 하려면, 놀랄 수 있는 재료를 줘야 한다
 
@@ -131,6 +141,8 @@ agent가 놀라게 하려면, 먼저 놀랄 수 있는 재료를 줘야 한다. 
 그래서 Claude에게 template tool을 만들게 한다. inbox에서 이미지를 가져오고, speaker card를 생성하고, 시각적 느낌을 실험할 수 있게 한다. 여기서도 shader가 등장한다. Paper Design shader를 기반으로 graininess, edge, rotation, scale을 조절한다. 4초짜리 완벽한 loop를 만드는 도구도 만들었다. SNS에 올렸을 때 시작과 끝이 같은 pixel에서 이어지는 영상이 필요했기 때문이다.
 
 이 장면은 “브랜딩”의 단위가 바뀌고 있음을 보여준다. 과거에는 brand guideline PDF, Figma component, After Effects template이 중심이었다. 이제는 **브랜드의 움직임과 질감을 재현하는 작은 생성 도구**가 같이 생긴다. 같은 shader parameter를 행사장 대형 스크린에도 적용할 수 있다면, 브랜드 일관성은 파일 복사가 아니라 코드와 parameter 재사용으로 유지된다.
+
+![Startup School 2026 브랜딩에서 shader parameter와 loop 영상을 조절하는 장면. 브랜드 시스템이 정적인 파일이 아니라, 반복 생성 가능한 코드와 parameter 세트로 바뀌는 지점이다. 출처: Y Combinator 영상 캡처.](/images/ai-first-design-yc-eve-bouffard-2026-07-30/06-startup-school-shader.jpg)
 
 ## 병목은 소프트웨어가 아니라 상상력이라는 말의 조건
 
