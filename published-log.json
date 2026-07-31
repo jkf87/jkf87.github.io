@@ -2270,6 +2270,27 @@
       ],
       "commit": "431bc0a5",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-31-memharness-memory-reconstruction-agent.md"
+    },
+    {
+      "date": "2026-07-31",
+      "slug": "2026-07-31-metis-memory-foundation-model",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2607.26760",
+      "title": "Metis: 에이전트 메모리를 외부 모듈에서 모델 안으로 밀어넣다 — 최초의 메모리 파운데이션 모델",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-31-metis-memory-foundation-model",
+      "tags": [
+        "agent",
+        "memory",
+        "foundation-model",
+        "LLM",
+        "harness",
+        "native-memory",
+        "architecture",
+        "mid-training",
+        "automation",
+        "loop",
+        "tool-use"
+      ]
     }
   ],
   "posts": [

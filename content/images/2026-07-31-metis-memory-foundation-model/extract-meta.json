@@ -1,0 +1,294 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1484x742)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 197,
+    "width": 1484,
+    "height": 742,
+    "caption": "Figure 1  From external memory to native memory.",
+    "crop": [
+      58.87,
+      65.95,
+      553.12,
+      312.84
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-2-p7.png",
+    "method": "caption_crop (1484x1093)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 251,
+    "width": 1484,
+    "height": 1093,
+    "caption": "Figure 2  Overview of the Metis architecture.",
+    "crop": [
+      58.87,
+      65.95,
+      553.11,
+      429.87
+    ]
+  },
+  {
+    "page": 14,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1  Summary of the primary data. Samples for each memory operation are synthesized from public benchmarks and follow a",
+    "crop": null
+  },
+  {
+    "page": 15,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2  Statistics of the synthesized primary data. The explicit, implicit, and distract columns report the number of samples of each",
+    "crop": null
+  },
+  {
+    "page": 15,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3  Summary of the auxiliary data. Each subtype composes facts or dialogues into a complex interaction pattern, where the",
+    "crop": null
+  },
+  {
+    "page": 16,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4  Statistics of the synthesized auxiliary data. We report the number of samples for each subtype, and we exclude every",
+    "crop": null
+  },
+  {
+    "page": 19,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5  The overall performance on memory operation tasks. Full-context and partial-context results are shown in gray to visually",
+    "crop": null
+  },
+  {
+    "page": 20,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6  The overall performance on memory-based QA tasks. Full-context and partial-context results are shown in gray to visually",
+    "crop": null
+  },
+  {
+    "page": 22,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 7  Results of the ablation studies on Metis-4B. We use Avg. to report the macro-average performance in different groups, and",
+    "crop": null
+  },
+  {
+    "page": 22,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 8  Results on OOD memory benchmarks. The best and unique second-best scores are  bolded  and  underlined , respectively.",
+    "crop": null
+  },
+  {
+    "page": 23,
+    "file": "fig-3-p23.png",
+    "method": "caption_crop (1342x690)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 154,
+    "width": 1342,
+    "height": 690,
+    "caption": "Figure 3  Results of memory capacity at the step-level (left) and trajectory-level (right).",
+    "crop": [
+      82.38,
+      65.95,
+      529.61,
+      295.42
+    ]
+  },
+  {
+    "page": 24,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 9  Results of general capability tasks. The gap is calculated as the performance of Metis-4B minus that of Qwen3.5-4B.",
+    "crop": null
+  },
+  {
+    "page": 24,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  10  further shows the sensitivity to low-rank decomposition in different datasets. The results show that different",
+    "crop": null
+  },
+  {
+    "page": 25,
+    "file": "fig-4-p25.png",
+    "method": "caption_crop (1012x503)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 42,
+    "width": 1012,
+    "height": 503,
+    "caption": "Figure 4  Results of low-rank decomposition under different ranks of memory states.",
+    "crop": [
+      137.6,
+      65.96,
+      474.42,
+      233.32
+    ]
+  },
+  {
+    "page": 25,
+    "file": "table-10-p25.png",
+    "method": "caption_crop (1485x555)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 57,
+    "width": 1485,
+    "height": 555,
+    "caption": "Table 10  Results of low-rank decomposition across different datasets. Values in parentheses show recovery relative to Full, and the",
+    "crop": [
+      58.5,
+      65.96,
+      553.15,
+      250.54
+    ]
+  },
+  {
+    "page": 26,
+    "file": "fig-5-p26.png",
+    "method": "caption_crop (1484x872)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 254,
+    "width": 1484,
+    "height": 872,
+    "caption": "Figure 5  Case studies of Metis on different conversational scenarios.",
+    "crop": [
+      58.87,
+      65.95,
+      553.12,
+      356.1
+    ]
+  },
+  {
+    "page": 32,
+    "file": "fig-6-p32.png",
+    "method": "caption_crop (1484x747)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 217,
+    "width": 1484,
+    "height": 747,
+    "caption": "Figure 6 Roadmap for memory foundation models.  Native memory aims to progressively transform foundation models",
+    "crop": [
+      58.87,
+      219.33,
+      553.19,
+      467.87
+    ]
+  },
+  {
+    "page": 34,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 11  The performance on memory operation tasks under MemOps (Full). Full-context and partial-context results are shown in",
+    "crop": null
+  },
+  {
+    "page": 35,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 12",
+    "crop": null
+  },
+  {
+    "page": 35,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 13  Backbone-transfer evaluation. Overall is their equal-weight macro-average.",
+    "crop": null
+  },
+  {
+    "page": 39,
+    "file": "table-14-p39.png",
+    "method": "caption_crop_table_below (1487x837)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 160,
+    "width": 1487,
+    "height": 837,
+    "caption": "Table 14  End-to-end latency, query latency, input length, generation length, and effective throughput on the LoCoMo (Gold)",
+    "crop": [
+      58.5,
+      70.56,
+      553.75,
+      349.28
+    ]
+  }
+]
