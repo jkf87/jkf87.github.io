@@ -2215,7 +2215,23 @@
         "mobile-agent",
         "cross-platform",
         "loop"
-      ]
+      ],
+      "threads_root_id": "18068830865707483",
+      "threads_reply_ids": [
+        "18111127274473407",
+        "18106051250135549",
+        "18138776020568410",
+        "18133412989719678",
+        "18132280306550088",
+        "18137433733509153"
+      ],
+      "threads_image_posts": [
+        1,
+        6,
+        7
+      ],
+      "commit": "153495d2",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-31-qwen-ui-agent-foundation-gui-agent.md"
     }
   ],
   "posts": [
