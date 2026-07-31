@@ -1,0 +1,138 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (1431x687)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 129,
+    "width": 1431,
+    "height": 687,
+    "caption": "Figure 1  |  Results on MLE-Bench Lite. Bars show all completed harness results; the Pareto panel",
+    "crop": [
+      58.44,
+      538.59,
+      535.3,
+      767.15
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (1426x1027)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 153,
+    "width": 1426,
+    "height": 1027,
+    "caption": "Figure 2  |  Positioning of this work.  Left:  within AI4AI, machine learning engineering (MLE) is",
+    "crop": [
+      60.0,
+      375.82,
+      535.28,
+      717.88
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-3-p8.png",
+    "method": "caption_crop (1431x919)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 203,
+    "width": 1431,
+    "height": 919,
+    "caption": "Figure 3  |  OpenMLE-Gym task curation and executable format.  Left:  source hierarchy.  Middle:",
+    "crop": [
+      60.0,
+      60.0,
+      536.76,
+      365.79
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-4-p9.png",
+    "method": "caption_crop (1432x919)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 126,
+    "width": 1432,
+    "height": 919,
+    "caption": "Figure 4  |  Scale and composition of OpenMLE-Gym.  Left:  comparison with executable task-",
+    "crop": [
+      60.0,
+      60.0,
+      537.01,
+      365.81
+    ]
+  },
+  {
+    "page": 11,
+    "file": "fig-5-p11.png",
+    "method": "caption_crop (1426x529)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 84,
+    "width": 1426,
+    "height": 529,
+    "caption": "Figure 5  |  Overview of the OpenMLE training and inference workflow. Trainable atomic operators",
+    "crop": [
+      60.0,
+      555.76,
+      535.28,
+      731.78
+    ]
+  },
+  {
+    "page": 12,
+    "file": "fig-6-p12.png",
+    "method": "caption_crop (1426x535)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 108,
+    "width": 1426,
+    "height": 535,
+    "caption": "Figure 6  |  RL training curves for Frontis-MA1-35B.",
+    "crop": [
+      60.0,
+      486.02,
+      535.28,
+      664.33
+    ]
+  },
+  {
+    "page": 13,
+    "file": "fig-7-p13.png",
+    "method": "caption_crop (1427x282)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 38,
+    "width": 1427,
+    "height": 282,
+    "caption": "Figure 7  |  Learning from executed rollouts. The Parallel Path retains threshold-passing Draft",
+    "crop": [
+      60.0,
+      290.65,
+      535.58,
+      384.15
+    ]
+  },
+  {
+    "page": 14,
+    "file": "fig-8-p14.png",
+    "method": "caption_crop (1426x644)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 194,
+    "width": 1426,
+    "height": 644,
+    "caption": "Figure 8  |  Effect of upper-tail reward shaping. (a) Entropic weighting increases the processed",
+    "crop": [
+      60.0,
+      59.36,
+      535.28,
+      273.67
+    ]
+  }
+]

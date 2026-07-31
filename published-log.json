@@ -2157,6 +2157,26 @@
       "source_url": "https://arxiv.org/abs/2607.25400",
       "title": "LLM 에이전트가 업무 지시를 어기는 이유: COVENANT가 제시하는 워크플로우 정합성 해법",
       "blog_url": "https://jkf87.github.io/posts/covenant-workflow-alignment-llm-agents"
+    },
+    {
+      "date": "2026-07-31",
+      "slug": "2026-07-31-frontis-ma1-recursive-self-improvement-mle",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2607.28568",
+      "title": "Frontis-MA1: 35B 모델이 GPT-5.5+Codex를 넘는 방법 — 재귀적 자기개선을 향한 첫 걸음",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-31-frontis-ma1-recursive-self-improvement-mle",
+      "tags": [
+        "agent",
+        "recursive-self-improvement",
+        "LLM",
+        "RL",
+        "harness",
+        "automation",
+        "loop",
+        "tool-use",
+        "AI4AI",
+        "meta-evolution"
+      ]
     }
   ],
   "posts": [
