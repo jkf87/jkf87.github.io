@@ -2193,6 +2193,29 @@
       ],
       "commit": "03bea867",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-31-frontis-ma1-recursive-self-improvement-mle.md"
+    },
+    {
+      "date": "2026-07-31",
+      "slug": "2026-07-31-qwen-ui-agent-foundation-gui-agent",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.28227",
+      "title": "Qwen-UI-Agent: 27B 모델이 GPT-5.6·Opus 4.8을 이기는 방법 — 실기기·크로스플랫폼·하이브리드 GUI+CLI 에이전트의 등장",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-31-qwen-ui-agent-foundation-gui-agent",
+      "tags": [
+        "agent",
+        "GUI",
+        "LLM",
+        "harness",
+        "automation",
+        "tool-use",
+        "RL",
+        "Qwen",
+        "Alibaba",
+        "computer-use",
+        "mobile-agent",
+        "cross-platform",
+        "loop"
+      ]
     }
   ],
   "posts": [

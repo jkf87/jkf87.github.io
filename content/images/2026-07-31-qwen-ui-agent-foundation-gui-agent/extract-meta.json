@@ -1,0 +1,174 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (1434x841)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 253,
+    "width": 1434,
+    "height": 841,
+    "caption": "Figure 1: Qwen-UI-Agent demonstrates leading or competitive performance across diverse GUI settings.",
+    "crop": [
+      58.87,
+      482.82,
+      536.41,
+      762.82
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-2-p5.png",
+    "method": "caption_crop (1454x819)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 343,
+    "width": 1454,
+    "height": 819,
+    "caption": "Figure 2: An illustrative trajectory of Qwen-UI-Agent for proactive cross-platform task execution. The left",
+    "crop": [
+      52.59,
+      46.52,
+      536.7,
+      319.02
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Action Space in Qwen-UI-Agent.",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "fig-3-p8.png",
+    "method": "caption_crop (1551x629)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 348,
+    "width": 1551,
+    "height": 629,
+    "caption": "Figure 3: The environment infrastructure of Qwen-UI-Agent. (a) Scalable sandbox environments span-",
+    "crop": [
+      45.01,
+      56.56,
+      561.81,
+      265.68
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-4-p9.png",
+    "method": "caption_crop (1434x924)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 340,
+    "width": 1434,
+    "height": 924,
+    "caption": "Figure 4: Real-device mobile runtime with closed-loop environment governance. The health-aware",
+    "crop": [
+      58.87,
+      58.87,
+      536.41,
+      366.56
+    ]
+  },
+  {
+    "page": 12,
+    "file": "fig-5-p12.png",
+    "method": "caption_crop (1437x817)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 361,
+    "width": 1437,
+    "height": 817,
+    "caption": "Figure 5: The data flywheel of Qwen-UI-Agent. Domain capability bootstrapping initializes training,",
+    "crop": [
+      58.87,
+      45.04,
+      537.65,
+      317.22
+    ]
+  },
+  {
+    "page": 17,
+    "file": "fig-6-p17.png",
+    "method": "caption_crop (1441x1336)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 580,
+    "width": 1441,
+    "height": 1336,
+    "caption": "Figure 6: Overview of our harness for proactive service initiation and cross-platform execution. (I)",
+    "crop": [
+      57.58,
+      56.76,
+      537.41,
+      501.84
+    ]
+  },
+  {
+    "page": 18,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  28  of Appendix  A.3  show two representative examples of this behavior: a scheduled morning",
+    "crop": null
+  },
+  {
+    "page": 19,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  29  of Appendix  A.3  show two such workflows executed by our harness: the receipt-organization",
+    "crop": null
+  },
+  {
+    "page": 21,
+    "file": "fig-7-p21.png",
+    "method": "caption_crop (1488x1229)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 470,
+    "width": 1488,
+    "height": 1229,
+    "caption": "Figure 7:  Overview of MobileWorld-Real, a real-device benchmark with human-written tasks that",
+    "crop": [
+      52.32,
+      52.06,
+      547.84,
+      461.39
+    ]
+  },
+  {
+    "page": 22,
+    "file": "table-2-p22.png",
+    "method": "caption_crop_table_below (1435x815)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 179,
+    "width": 1435,
+    "height": 815,
+    "caption": "Table 2: Performance comparison on the GUI-only subset of MobileWorld ( Kong et al. ,  2026 ), consisting",
+    "crop": [
+      58.56,
+      65.49,
+      536.41,
+      336.97
+    ]
+  }
+]
