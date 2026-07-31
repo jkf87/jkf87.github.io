@@ -2329,7 +2329,23 @@
         "GRPO",
         "adaptive",
         "evaluation"
-      ]
+      ],
+      "threads_root_id": "18117873203055704",
+      "threads_reply_ids": [
+        "18119489449665372",
+        "18098787314249375",
+        "17916337698224251",
+        "18370608088238846",
+        "18008756669929183"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        5,
+        6
+      ],
+      "commit": "e214bcea",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-01-beacon-agentic-visual-reasoning-tool-adaptiveness.md"
     }
   ],
   "posts": [
