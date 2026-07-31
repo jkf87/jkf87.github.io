@@ -2232,6 +2232,25 @@
       ],
       "commit": "153495d2",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-31-qwen-ui-agent-foundation-gui-agent.md"
+    },
+    {
+      "date": "2026-07-31",
+      "slug": "2026-07-31-memharness-memory-reconstruction-agent",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2607.28272",
+      "title": "MemHarness: 에이전트가 기억을 재생하지 않고 재구성한다 — 경험 메모리의 부정 전이를 해결하는 새로운 패러다임",
+      "blog_url": "https://jkf87.github.io/posts/2026-07-31-memharness-memory-reconstruction-agent",
+      "tags": [
+        "agent",
+        "memory",
+        "harness",
+        "LLM",
+        "GRPO",
+        "reconstruction",
+        "negative-transfer",
+        "ALFWorld",
+        "WebShop"
+      ]
     }
   ],
   "posts": [

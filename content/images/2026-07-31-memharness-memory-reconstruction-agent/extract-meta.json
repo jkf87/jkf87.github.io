@@ -1,0 +1,203 @@
+[
+  {
+    "page": 1,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too page-like (area_ratio=0.67)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  1 , prior agents largely connect retrieval directly to action generation, whereas human memory introduces",
+    "crop": [
+      67.122314453125,
+      61.411590576171875,
+      544.882568359375,
+      736.61181640625
+    ]
+  },
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (822x1158)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 242,
+    "width": 822,
+    "height": 1158,
+    "caption": "Figure 1:  Memory utilization paradigms. Top:  Prior methods",
+    "crop": [
+      271.32,
+      120.22,
+      544.8,
+      505.83
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-2-p3.png",
+    "method": "caption_crop (1439x712)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 259,
+    "width": 1439,
+    "height": 712,
+    "caption": "Figure 2: Overview of the MemHarness framework. The execution pipeline consists of three stages: (1)  Mem-",
+    "crop": [
+      67.2,
+      60.0,
+      546.45,
+      296.88
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Main results on AlfWorld and WebShop. For AlfWorld, we report the success rate (%) on each of the",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  1  summarizes the performance on AlfWorld and WebShop. Overall, MemHarness achieves the best results,",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Ablation studies on the components of MemHarness. Memory and Reconstruction indicate whether",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "table-3-p8.png",
+    "method": "caption_crop_table_below (1435x1170)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 367,
+    "width": 1435,
+    "height": 1170,
+    "caption": "Table 3: Performance on the ALFWorld Out-of-Distribution (OOD) evaluation. The environment layouts and object",
+    "crop": [
+      66.89,
+      161.47,
+      544.8,
+      551.17
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-3-p8.png",
+    "method": "caption_crop (1434x600)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 156,
+    "width": 1434,
+    "height": 600,
+    "caption": "Figure 3:  Evolution of memory usage behaviors during RL training.  The curves show the average number of",
+    "crop": [
+      67.2,
+      198.63,
+      544.8,
+      398.2
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-4-p8.png",
+    "method": "caption_crop (1439x600)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 218,
+    "width": 1439,
+    "height": 600,
+    "caption": "Figure 4:  Training dynamics of success rates conditioned on memory decisions.  “SR when Accepted/Rejected”",
+    "crop": [
+      67.2,
+      392.48,
+      546.57,
+      592.06
+    ]
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4:  Analysis of memory reconstruction. (a)  Ablation on the memory source state  o src , where RR and SR",
+    "crop": null
+  },
+  {
+    "page": 16,
+    "file": "fig-5-p16.png",
+    "method": "caption_crop (1261x810)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 143,
+    "width": 1261,
+    "height": 810,
+    "caption": "Figure 5: Agent system prompts used in ALFWorld.",
+    "crop": [
+      96.0,
+      60.0,
+      516.01,
+      329.41
+    ]
+  },
+  {
+    "page": 17,
+    "file": "fig-6-p17.png",
+    "method": "caption_crop (1261x821)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 155,
+    "width": 1261,
+    "height": 821,
+    "caption": "Figure 6: Agent system prompts used in WebShop, with and without recent interaction history.",
+    "crop": [
+      96.0,
+      60.0,
+      516.01,
+      333.25
+    ]
+  },
+  {
+    "page": 17,
+    "file": "fig-7-p17.png",
+    "method": "caption_crop (1261x1067)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 179,
+    "width": 1261,
+    "height": 1067,
+    "caption": "Figure 7: Prompt used to self-reasoning fallback",
+    "crop": [
+      96.0,
+      60.0,
+      516.01,
+      415.04
+    ]
+  }
+]
