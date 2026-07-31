@@ -937,6 +937,15 @@
         "18109830962065079",
         "17900845590491414"
       ]
+    },
+    {
+      "slug": "skillrise-agentic-rl-cross-task-skill-evolution-2026-07-31",
+      "date": "2026-07-31",
+      "source": "huggingface",
+      "source_url": "https://huggingface.co/papers/2607.26784",
+      "paper_url": "https://arxiv.org/abs/2607.26784",
+      "title": "SkillRise: Agentic Reinforcement Learning for Cross-Task Skill Evolution",
+      "blog_url": "https://jkf87.github.io/skillrise-agentic-rl-cross-task-skill-evolution-2026-07-31"
     }
   ],
   "entries": [

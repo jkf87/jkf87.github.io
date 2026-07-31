@@ -1,0 +1,191 @@
+[
+  {
+    "page": 3,
+    "file": "fig-1-p3.png",
+    "method": "caption_crop (1831x919)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 284,
+    "width": 1831,
+    "height": 919,
+    "caption": "Figure 1: Overview of SkillRise. (a) Related task instances are organized from simple to chal-",
+    "crop": [
+      1.83,
+      43.74,
+      612.0,
+      349.84
+    ]
+  },
+  {
+    "page": 3,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too page-like (area_ratio=0.63)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 1 presents an overview of SkillRise. The framework first organizes related task instances into",
+    "crop": [
+      1.8269500732421875,
+      43.73785400390625,
+      612.0,
+      545.47900390625
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Pass@1 success rate (%) of Qwen3-4B on ALFWorld, WebShop, and ScienceWorld. Best",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Pass@1/2/3 success rates (%) of Qwen3-4B on ALFWorld, WebShop, and ScienceWorld.",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "table-2-p6.png",
+    "method": "caption_crop_table_below (1261x959)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 223,
+    "width": 1261,
+    "height": 959,
+    "caption": "Table 2, SkillRise achieves the best Pass@2 and Pass@3 on all three benchmarks. At Pass@3,",
+    "crop": [
+      96.0,
+      298.48,
+      516.0,
+      617.91
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-2-p6.png",
+    "method": "caption_crop (666x645)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 51,
+    "width": 666,
+    "height": 645,
+    "caption": "Figure 2: Cross-task test-time scaling on ALF-",
+    "crop": [
+      294.0,
+      432.38,
+      516.0,
+      647.24
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Pass@1 success rate (%) on ALFWorld across Qwen3 model sizes.  ∆ denotes the improve-",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "fig-3-p8.png",
+    "method": "caption_crop (1261x598)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 160,
+    "width": 1261,
+    "height": 598,
+    "caption": "Figure 3: Training dynamics on ALFWorld in terms of training reward (%). Thin lines show the raw",
+    "crop": [
+      96.0,
+      69.86,
+      516.0,
+      268.69
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-4-p8.png",
+    "method": "caption_crop (1261x570)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 52,
+    "width": 1261,
+    "height": 570,
+    "caption": "Figure 4: Comparison of skill-learning pipelines on ALFWorld. Left: average success rate. Right:",
+    "crop": [
+      96.0,
+      272.37,
+      516.0,
+      462.26
+    ]
+  },
+  {
+    "page": 13,
+    "file": "fig-5-p13.png",
+    "method": "caption_crop (1261x616)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 81,
+    "width": 1261,
+    "height": 616,
+    "caption": "Figure 5: SkillRise task-solving prompt for ALFWorld.",
+    "crop": [
+      96.0,
+      149.88,
+      516.01,
+      354.72
+    ]
+  },
+  {
+    "page": 13,
+    "file": "fig-6-p13.png",
+    "method": "caption_crop (1261x687)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 92,
+    "width": 1261,
+    "height": 687,
+    "caption": "Figure 6: SkillRise task-solving prompt for WebShop.",
+    "crop": [
+      96.0,
+      342.4,
+      516.01,
+      571.14
+    ]
+  },
+  {
+    "page": 14,
+    "file": "fig-7-p14.png",
+    "method": "caption_crop (1261x765)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 102,
+    "width": 1261,
+    "height": 765,
+    "caption": "Figure 7: SkillRise task-solving prompt for ScienceWorld.",
+    "crop": [
+      96.0,
+      88.28,
+      516.01,
+      342.93
+    ]
+  }
+]
