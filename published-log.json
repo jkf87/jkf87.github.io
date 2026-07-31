@@ -2308,6 +2308,28 @@
       ],
       "commit": "07de8071",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-31-metis-memory-foundation-model.md"
+    },
+    {
+      "date": "2026-08-01",
+      "slug": "2026-08-01-beacon-agentic-visual-reasoning-tool-adaptiveness",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2607.28595",
+      "title": "Beacon: 에이전트가 도구를 쓸 때와 쓰지 말아야 할 때를 아는 것이 왜 중요한가",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-01-beacon-agentic-visual-reasoning-tool-adaptiveness",
+      "tags": [
+        "agent",
+        "tool-use",
+        "visual-reasoning",
+        "LLM",
+        "reinforcement-learning",
+        "RL",
+        "harness",
+        "MLLM",
+        "automation",
+        "GRPO",
+        "adaptive",
+        "evaluation"
+      ]
     }
   ],
   "posts": [

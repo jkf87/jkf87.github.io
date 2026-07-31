@@ -1,0 +1,186 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (1260x717)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 295,
+    "width": 1260,
+    "height": 717,
+    "caption": "Figure 1:  Agentic visual reasoning models should use tools  adaptively  and  effectively .",
+    "crop": [
+      96.0,
+      227.52,
+      515.93,
+      466.26
+    ]
+  },
+  {
+    "page": 2,
+    "file": "fig-2-p2.png",
+    "method": "caption_crop (1261x770)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 111,
+    "width": 1261,
+    "height": 770,
+    "caption": "Figure 2:  (a)  The tool-call ratio at different levels of text-only accuracy.  (b)  Average performance",
+    "crop": [
+      96.0,
+      115.91,
+      516.0,
+      372.1
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-3-p5.png",
+    "method": "caption_crop (1260x742)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 111,
+    "width": 1260,
+    "height": 742,
+    "caption": "Figure 3:  (a)  The accuracy of tool-available and tool-free reasoning.  (b)  The  MA text ,  MA tool , and",
+    "crop": [
+      96.0,
+      325.24,
+      516.0,
+      572.12
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-4-p7.png",
+    "method": "caption_crop (1577x823)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 163,
+    "width": 1577,
+    "height": 823,
+    "caption": "Figure 4:  Illustration of the RL process of Beacon.",
+    "crop": [
+      86.38,
+      0.0,
+      612.0,
+      274.23
+    ]
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1:  Comparison on high-resolution visual search, spatial, and perceptual reasoning",
+    "crop": null
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2:  Comparison on quantitative, diagrammatic, compositional, and agentic visual reason-",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3:  The metrics that reflect the  Mode Adaptiveness  and  Tool Effect  of agentic visual rea-",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4. We observe that our full method has the best overall performance, while using the necessity-",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "table-4-p12.png",
+    "method": "caption_crop_table_below (1261x694)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 145,
+    "width": 1261,
+    "height": 694,
+    "caption": "Table 4:  Component-wise ablation study of Beacon.  “Overall Acc.” indicates the average accu-",
+    "crop": [
+      96.0,
+      73.89,
+      516.0,
+      304.91
+    ]
+  },
+  {
+    "page": 12,
+    "file": "fig-5-p12.png",
+    "method": "caption_crop (1261x525)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 110,
+    "width": 1261,
+    "height": 525,
+    "caption": "Figure 5:  Training accuracy and rewards of the RL stage. (a)  Mean training accuracy.  (b)",
+    "crop": [
+      96.0,
+      172.29,
+      516.0,
+      346.89
+    ]
+  },
+  {
+    "page": 12,
+    "file": "fig-7-p12.png",
+    "method": "caption_crop (1182x895)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 191,
+    "width": 1182,
+    "height": 895,
+    "caption": "Figure 7 (a)  presents the",
+    "crop": [
+      122.61,
+      172.29,
+      516.0,
+      470.07
+    ]
+  },
+  {
+    "page": 13,
+    "file": "fig-6-p13.png",
+    "method": "caption_crop (1261x525)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 87,
+    "width": 1261,
+    "height": 525,
+    "caption": "Figure 6:  (a)  Proportions of pure-text and code-assisted responses during training.  (b)  Proportions",
+    "crop": [
+      96.0,
+      69.86,
+      516.0,
+      244.46
+    ]
+  }
+]
