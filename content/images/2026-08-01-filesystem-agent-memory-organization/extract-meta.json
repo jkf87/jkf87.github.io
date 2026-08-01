@@ -1,0 +1,460 @@
+[
+  {
+    "page": 4,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (420x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 1: Overview of filesystem-based agent memory. An execution agent does the work; what it",
+    "crop": [
+      96.0,
+      389.9667053222656,
+      516.0032043457031,
+      328.20806884765625
+    ]
+  },
+  {
+    "page": 4,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (359x75pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 2:",
+    "crop": [
+      96.0,
+      389.9667053222656,
+      455.43377685546875,
+      464.760986328125
+    ]
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Main comparison of memory variants (Section 3): answer quality per benchmark.  Corr :",
+    "crop": null
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1 grows its store from empty over its benchmark’s stream, and Table 3 profiles the resulting",
+    "crop": null
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Search cost and effort per query, by token category so any pricing can be applied.",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Build cost and effort per conversation, by token category ( Un / Ca / Out , millions of tokens)",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 3: Where the hierarchy lives, in the stores themselves: excerpts from the three stores that",
+    "crop": null
+  },
+  {
+    "page": 13,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4: Hierarchy shape panel over the stores of record (the builds behind the reported numbers).",
+    "crop": null
+  },
+  {
+    "page": 14,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5: Skill setting (Section 4.2), three-chain protocol: task success and deployment cost under",
+    "crop": null
+  },
+  {
+    "page": 15,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6: The builder ladder on one PersonaMem 128k conversation: varying only the management",
+    "crop": null
+  },
+  {
+    "page": 16,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 7:",
+    "crop": null
+  },
+  {
+    "page": 16,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 8: Skill setting, full-chain protocol. Success (%) by goal family (family sizes as in Table 15);",
+    "crop": null
+  },
+  {
+    "page": 17,
+    "file": "fig-4-p17.png",
+    "method": "caption_crop (1261x654)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 106,
+    "width": 1261,
+    "height": 654,
+    "caption": "Figure 4: Store size along the full chain (files). Left: the Episode log grows linearly by construction",
+    "crop": [
+      96.0,
+      69.86,
+      516.01,
+      287.44
+    ]
+  },
+  {
+    "page": 18,
+    "file": "fig-5-p18.png",
+    "method": "caption_crop (1261x1048)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 145,
+    "width": 1261,
+    "height": 1048,
+    "caption": "Figure 5: Conversational build curves from the per-chunk trajectories of the builds of record. Top",
+    "crop": [
+      96.0,
+      69.86,
+      516.02,
+      418.79
+    ]
+  },
+  {
+    "page": 19,
+    "file": "fig-6-p19.png",
+    "method": "caption_crop (1261x654)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 98,
+    "width": 1261,
+    "height": 654,
+    "caption": "Figure 6: Memory’s edge as the store grows: running success minus the no-store chain’s running",
+    "crop": [
+      96.0,
+      69.86,
+      516.01,
+      287.44
+    ]
+  },
+  {
+    "page": 19,
+    "file": "fig-7-p19.png",
+    "method": "caption_crop (1261x653)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 132,
+    "width": 1261,
+    "height": 653,
+    "caption": "Figure 7: Retrieval cost per task along the full chain (cents at the retrieval rate card; faint lines",
+    "crop": [
+      96.0,
+      326.02,
+      516.01,
+      543.6
+    ]
+  },
+  {
+    "page": 20,
+    "file": "fig-8-p20.png",
+    "method": "caption_crop (1261x654)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 94,
+    "width": 1261,
+    "height": 654,
+    "caption": "Figure 8: Store lifecycle at the path level, from the per-task snapshots; every series is a Curated",
+    "crop": [
+      96.0,
+      69.86,
+      516.01,
+      287.44
+    ]
+  },
+  {
+    "page": 20,
+    "file": "table-9-p20.png",
+    "method": "caption_crop (1261x914)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 156,
+    "width": 1261,
+    "height": 914,
+    "caption": "Table 9: Harness axis (Section 4.5): answer quality under three tool sets, holding the store variant",
+    "crop": [
+      96.0,
+      69.86,
+      516.01,
+      374.15
+    ]
+  },
+  {
+    "page": 21,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 10: Harness axis (Section 4.5): cost, effort, and the shape of the store each tool set builds,",
+    "crop": null
+  },
+  {
+    "page": 47,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 11 pins the configuration behind every reported cell of the main comparison (Tables 1 to 3); the",
+    "crop": null
+  },
+  {
+    "page": 48,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 11: Resolved experimental configuration, common to every reported cell of the main compar-",
+    "crop": null
+  },
+  {
+    "page": 49,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 12: Every tool used by a reported cell, with its parameters and its description exactly as de-",
+    "crop": null
+  },
+  {
+    "page": 50,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 12 continued",
+    "crop": null
+  },
+  {
+    "page": 52,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 13 restates correctness with these four questions removed, using the same per-question judge",
+    "crop": null
+  },
+  {
+    "page": 53,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 13: LoCoMo correctness with the four defective golds removed (Section D.2): the headline",
+    "crop": null
+  },
+  {
+    "page": 54,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 14: Full hierarchy panel: Panel A shape metrics as in Table 4 plus the taxonomy-contract",
+    "crop": null
+  },
+  {
+    "page": 54,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 15: Skill setting, three-chain protocol: success (%) by ALFWorld goal family.  Place : put",
+    "crop": null
+  },
+  {
+    "page": 54,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 15 breaks the three-chain matrix of Table 5 down by ALFWorld goal family, recomputed from",
+    "crop": null
+  },
+  {
+    "page": 55,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 17 then mirrors, on the execution agent role, the per-query conventions of the conversational",
+    "crop": null
+  },
+  {
+    "page": 55,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 18 reports execution agent-side computation in provider- and price-independent terms, from",
+    "crop": null
+  },
+  {
+    "page": 56,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 16: Skill setting, three-chain protocol: build and deployment cost by role over the 140 tasks.",
+    "crop": null
+  },
+  {
+    "page": 56,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 17: Skill setting, three-chain protocol: execution agent-side efficiency per task.  Rounds :",
+    "crop": null
+  },
+  {
+    "page": 57,
+    "file": "table-18-p57.png",
+    "method": "caption_crop_table_below (1261x1214)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 214,
+    "width": 1261,
+    "height": 1214,
+    "caption": "Table 18: Skill setting, three-chain protocol: absolute execution agent-side computation in millions",
+    "crop": [
+      96.0,
+      83.06,
+      516.01,
+      487.4
+    ]
+  },
+  {
+    "page": 57,
+    "file": "fig-9-p57.png",
+    "method": "caption_crop (1261x654)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 99,
+    "width": 1261,
+    "height": 654,
+    "caption": "Figure 9: Content-level hierarchy along the chain, from stores reconstructed after every task and",
+    "crop": [
+      96.0,
+      310.11,
+      516.01,
+      527.69
+    ]
+  }
+]

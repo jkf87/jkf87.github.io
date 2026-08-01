@@ -2386,6 +2386,26 @@
       ],
       "commit": "e214bcea",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-01-beacon-agentic-visual-reasoning-tool-adaptiveness.md"
+    },
+    {
+      "date": "2026-08-01",
+      "slug": "2026-08-01-filesystem-agent-memory-organization",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2607.26637",
+      "title": "에이전트가 파일시스템에 기억을 맡겼을 때 벌어지는 일 — 최초의 체계적 실증 연구",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-01-filesystem-agent-memory-organization",
+      "tags": [
+        "agent",
+        "memory",
+        "filesystem",
+        "LLM",
+        "harness",
+        "tool-use",
+        "automation",
+        "context-engineering",
+        "organization",
+        "sustainability"
+      ]
     }
   ],
   "posts": [
