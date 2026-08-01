@@ -1,0 +1,56 @@
+[
+  {
+    "file": "fig1-retrieval-collapse.png",
+    "status": "accepted",
+    "method": "html_source",
+    "description": "Figure 1: Retrieval-equivalence collapse - query-form diversity remains high while retrieval-outcome diversity collapses during Search-R1 training"
+  },
+  {
+    "file": "fig2-interface-redesign.png",
+    "status": "accepted",
+    "method": "html_source",
+    "description": "Figure 2: Retrieval interface redesign - free-query vs Harness-G menu interface comparison"
+  },
+  {
+    "file": "fig3-pipeline.png",
+    "status": "accepted",
+    "method": "html_source",
+    "description": "Figure 3: Harness-G pipeline from graph construction to policy optimization with SNC"
+  },
+  {
+    "file": "fig4-results.png",
+    "status": "accepted",
+    "method": "html_source",
+    "description": "Figure 4: Main results across six QA benchmarks at 1.5B and 3B scales"
+  },
+  {
+    "file": "fig5-ablation.png",
+    "status": "accepted",
+    "method": "html_source",
+    "description": "Figure 5: Ablation studies isolating contributions of action menu and SNC components"
+  },
+  {
+    "file": "fig6-training-stability.png",
+    "status": "accepted",
+    "method": "html_source",
+    "description": "Figure 6: Training stability and robustness across datasets and RL algorithms"
+  },
+  {
+    "file": "fig7.png",
+    "status": "accepted",
+    "method": "html_source",
+    "description": "Figure 7: Additional analysis plot"
+  },
+  {
+    "file": "fig8-interaction-efficiency.png",
+    "status": "accepted",
+    "method": "html_source",
+    "description": "Figure 8: Interaction turns and response length during training"
+  },
+  {
+    "file": "fig9-cross-dataset.png",
+    "status": "accepted",
+    "method": "html_source",
+    "description": "Figure 9: Cross-dataset generalization comparison between Graph-R1 and Harness-G"
+  }
+]
