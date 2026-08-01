@@ -1,0 +1,138 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (788x427)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 76,
+    "width": 788,
+    "height": 427,
+    "caption": "Figure 1:  Retrieval-equivalence collapse.  (a) Query-form",
+    "crop": [
+      307.5,
+      204.0,
+      570.0,
+      346.21
+    ]
+  },
+  {
+    "page": 2,
+    "file": "fig-2-p2.png",
+    "method": "caption_crop (788x418)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 93,
+    "width": 788,
+    "height": 418,
+    "caption": "Figure 2:  Retrieval interface redesign.  Left: free-query",
+    "crop": [
+      42.0,
+      42.0,
+      304.5,
+      180.96
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-3-p4.png",
+    "method": "caption_crop (1797x993)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 517,
+    "width": 1797,
+    "height": 993,
+    "caption": "Figure 3: Harness-G from graph construction to policy optimization. A paragraph–sentence–entity graph supports the online",
+    "crop": [
+      13.19,
+      42.0,
+      612.0,
+      372.39
+    ]
+  },
+  {
+    "page": 5,
+    "file": "table-1-p5.png",
+    "method": "caption_crop (1584x435)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 136,
+    "width": 1584,
+    "height": 435,
+    "caption": "Table 1: Main results with best in  bold  and second underlined. Markers denote three method properties: optimization regime (",
+    "crop": [
+      42.0,
+      303.03,
+      569.99,
+      447.92
+    ]
+  },
+  {
+    "page": 5,
+    "file": "table-2-p5.png",
+    "method": "caption_crop (822x553)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 73,
+    "width": 822,
+    "height": 553,
+    "caption": "Table 2: Multi-hop QA by interface and credit (F1/EM).",
+    "crop": [
+      296.04,
+      409.32,
+      569.99,
+      593.13
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-4-p6.png",
+    "method": "caption_crop (1191x425)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 136,
+    "width": 1191,
+    "height": 425,
+    "caption": "Figure 4: Training dynamics of Harness-G (Qwen2.5-3B):",
+    "crop": [
+      42.0,
+      43.21,
+      438.96,
+      184.36
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-5-p6.png",
+    "method": "caption_crop (1585x428)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 175,
+    "width": 1585,
+    "height": 428,
+    "caption": "Figure 5: F1 on 2Wiki during",
+    "crop": [
+      42.0,
+      42.0,
+      570.0,
+      184.36
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-6-p6.png",
+    "method": "caption_crop (1165x428)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 125,
+    "width": 1165,
+    "height": 428,
+    "caption": "Figure 6: Training-batch F1 un-",
+    "crop": [
+      182.16,
+      42.0,
+      570.0,
+      184.36
+    ]
+  }
+]
