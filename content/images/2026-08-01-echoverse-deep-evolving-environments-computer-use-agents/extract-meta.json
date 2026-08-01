@@ -1,0 +1,36 @@
+[
+  {
+    "page": 16,
+    "file": "fig-9-p16.png",
+    "method": "caption_crop (1261x597)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 60,
+    "width": 1261,
+    "height": 597,
+    "caption": "Figure 9:  Co-evolution lifts the model on E CHO S TAY . As the world went from v1 to v2, the model trained on",
+    "crop": [
+      96.0,
+      60.0,
+      516.0,
+      258.9
+    ]
+  },
+  {
+    "page": 20,
+    "file": "fig-11-p20.png",
+    "method": "caption_crop (1260x524)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 105,
+    "width": 1260,
+    "height": 524,
+    "caption": "Figure 11:  Reinforcement learning on five worlds, a little over two epochs. Left: the held-out judged score, 25",
+    "crop": [
+      96.0,
+      147.68,
+      516.0,
+      322.13
+    ]
+  }
+]
