@@ -1,0 +1,274 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1836x909)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 205,
+    "width": 1836,
+    "height": 909,
+    "caption": "Figure 1  Schematic of the observed scaling crossover. The",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      302.97
+    ]
+  },
+  {
+    "page": 3,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too page-like (area_ratio=0.79)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  2  summarizes the full pipeline.",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      622.5274047851562
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (1836x988)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 305,
+    "width": 1836,
+    "height": 988,
+    "caption": "Figure 2  Evaluation methodology. Four paradigms access the same nested corpus ladder ( T 0  ⊂· · · ⊂ T 27 ), which grows",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      329.06
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too page-like (area_ratio=0.78)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  1  and Figure  3  show a scale-dependent crossover. At the bedrock, File-System Agent and BM25 lead",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      618.3403930664062
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-1-p6.png",
+    "method": "caption_crop (1836x705)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 123,
+    "width": 1836,
+    "height": 705,
+    "caption": "Table 1  Official main results. Build/query tokens, completeness, and document recall are bedrock values. Combined",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      234.67
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too page-like (area_ratio=0.55)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  4  (left) and Table  2  identify construction",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      435.6033630371094
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too page-like (area_ratio=0.64)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 3  Official combined score over the nested ladder with",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      505.7249755859375
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too page-like (area_ratio=0.80)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2  Build-cost fits  C ( x ) =  ax b   against corpus tokens  x , extrapolated to the 600.8M-token full corpus. “Measured",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      632.699951171875
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-4-p7.png",
+    "method": "caption_crop (1836x821)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 140,
+    "width": 1836,
+    "height": 821,
+    "caption": "Figure 4",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      273.57
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too page-like (area_ratio=0.56)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  4  (right) reports end-to-end latency. Query cost is nearly scale-invariant for the one-shot pipelines:",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      440.7834777832031
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too page-like (area_ratio=0.82)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  5  (left) uses six tiers and a fixed 150-question sample. Unsupported graph tiers count as zero only for",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      649.9983520507812
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-5-p8.png",
+    "method": "caption_crop (1836x765)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 135,
+    "width": 1836,
+    "height": 765,
+    "caption": "Figure 5  Complementary scaling analyses. Left: cross-scale accuracy–cost summary over six tiers on the fixed 150-",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      254.79
+    ]
+  },
+  {
+    "page": 8,
+    "file": "table-3-p8.png",
+    "method": "caption_crop (1836x1249)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 215,
+    "width": 1836,
+    "height": 1249,
+    "caption": "Table 3  Official score of the same agent harness over each retrieval substrate, with native-pipeline scores on identical",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      416.33
+    ]
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too page-like (area_ratio=0.64)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  5  (right) shows that at  N  = 42 , 587 , File-System Agent leads BM25 on intra-document, project-related,",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      502.96844482421875
+    ]
+  },
+  {
+    "page": 9,
+    "file": "table-4-p9.png",
+    "method": "caption_crop (1836x906)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 150,
+    "width": 1836,
+    "height": 906,
+    "caption": "Table 4  Retrieval-primitive control on the same 150 questions at each scale. Combined score and full-scale document",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      301.77
+    ]
+  },
+  {
+    "page": 9,
+    "file": "table-4-p9-2.png",
+    "method": "caption_crop (1836x1065)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 186,
+    "width": 1836,
+    "height": 1065,
+    "caption": "Table  4  shows that at the bedrock, Native BM25 and the File-System Agent are statistically tied: BM25",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      354.96
+    ]
+  }
+]
