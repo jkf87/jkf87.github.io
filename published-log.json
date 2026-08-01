@@ -984,7 +984,16 @@
       "date": "2026-08-01",
       "source": "arxiv",
       "source_url": "https://arxiv.org/abs/2607.25398",
-      "blog_url": "https://jkf87.github.io/posts/2026-08-01-handbook-md-long-context-agent-policy-benchmark"
+      "blog_url": "https://jkf87.github.io/posts/2026-08-01-handbook-md-long-context-agent-policy-benchmark",
+      "threads_root_id": "18113232125071353",
+      "threads_reply_ids": [
+        "18275566153290590",
+        "18102304093909644",
+        "18122212981698075",
+        "18111599170976902",
+        "17907191538281772"
+      ],
+      "commit": "c2f7275b"
     }
   ],
   "entries": [
