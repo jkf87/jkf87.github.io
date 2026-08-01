@@ -2422,7 +2422,23 @@
       "source": "huggingface",
       "source_url": "https://arxiv.org/abs/2607.27652",
       "title": "Harness-G: RL 검색 에이전트의 '검색 등가 붕괴'를 발견하고 액션 인터페이스를 다시 설계하다",
-      "blog_url": "https://jkf87.github.io/posts/2026-08-01-harness-g-graph-structured-search-agent-retrieval"
+      "blog_url": "https://jkf87.github.io/posts/2026-08-01-harness-g-graph-structured-search-agent-retrieval",
+      "commit": "197dcfa0",
+      "threads_root_id": "18157898197465634",
+      "threads_reply_ids": [
+        "18383388088167383",
+        "17890739139598090",
+        "18140474254563424",
+        "18123249697813074",
+        "18098844692211602"
+      ],
+      "threads_image_posts": [
+        1,
+        4,
+        5,
+        6
+      ],
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-01-harness-g-graph-structured-search-agent-retrieval.md"
     }
   ]
 }
