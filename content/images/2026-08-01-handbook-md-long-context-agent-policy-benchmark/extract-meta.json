@@ -1,0 +1,154 @@
+[
+  {
+    "page": 4,
+    "file": "table-1-p4.png",
+    "method": "caption_crop_table_below (1478x937)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 152,
+    "width": 1478,
+    "height": 937,
+    "caption": "Table 1:  Dataset composition. Handbook format counts the primary policy document per task; page counts are measured on the",
+    "crop": [
+      59.7,
+      64.72,
+      552.01,
+      376.93
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-1-p4.png",
+    "method": "caption_crop (1477x539)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 80,
+    "width": 1477,
+    "height": 539,
+    "caption": "Figure 1:  Dataset statistics across the 65 tasks: (a) handbook length in pages; (b) rubric criteria per task; (c) rubric criteria by",
+    "crop": [
+      60.0,
+      223.36,
+      552.32,
+      402.75
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  2  reports strict pass@1 for all thirty configurations. Three observations structure the picture.",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2:  Strict pass@1 on HANDBOOK.md (65 tasks, 4 trials per task, July 2026 leaderboard). A trial passes only if every rubric",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  2  plots score against measured cost and output tokens per trial for the twenty configurations evaluated at release.",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "fig-2-p8.png",
+    "method": "caption_crop (1477x756)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 121,
+    "width": 1477,
+    "height": 756,
+    "caption": "Figure 2:  Strict pass@1 against (a) mean cost per trial and (b) mean output tokens per trial, for the twenty configurations in the",
+    "crop": [
+      60.0,
+      60.0,
+      552.01,
+      311.34
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-3-p9.png",
+    "method": "caption_crop (1477x1168)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 125,
+    "width": 1477,
+    "height": 1168,
+    "caption": "Figure 3:  Strict pass@1 (circles) versus pass@1 ( N − 1 ) (diamonds), which tolerates one failed criterion per trial; June 2026 release",
+    "crop": [
+      60.0,
+      60.0,
+      552.0,
+      449.02
+    ]
+  },
+  {
+    "page": 13,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3:  Rubric for the example task. The I NCORRECT -B EHAVIOR  criteria jointly pin the environment: the only admissible state",
+    "crop": null
+  },
+  {
+    "page": 15,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4:  The uniform per-task tool surface. Services are seeded from JSON fixtures and persist all state changes for grading.",
+    "crop": null
+  },
+  {
+    "page": 15,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  5  lists all 65 tasks with their handbook format and length, rubric composition, and seeded services.",
+    "crop": null
+  },
+  {
+    "page": 15,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5:  Per-task summary. Pages are measured on the source PDF or a rendered PDF; tokens (thousands,  o200k_base ) cover the",
+    "crop": null
+  }
+]
