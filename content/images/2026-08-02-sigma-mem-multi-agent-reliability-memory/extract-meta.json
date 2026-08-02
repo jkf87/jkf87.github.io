@@ -1,0 +1,167 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1626x1112)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 313,
+    "width": 1626,
+    "height": 1112,
+    "caption": "Figure 1:  Motivation of  Σ -Mem . We hide the supporting context from the RAG task so that the central model cannot directly verify",
+    "crop": [
+      47.62,
+      0.0,
+      589.05,
+      370.46
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-2-p5.png",
+    "method": "caption_crop (1750x1148)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 333,
+    "width": 1750,
+    "height": 1148,
+    "caption": "Figure 2:  Overview of  Σ -Mem . Given a task and multiple peer answers: For each peer  𝑝 ,  Σ -Mem  reads the task-conditioned",
+    "crop": [
+      28.85,
+      0.0,
+      612.0,
+      382.66
+    ]
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1:  Counter Factual (CF) Attack results under different CF@ratios.  Acc  denotes the task accuracy obtained by using the selected",
+    "crop": null
+  },
+  {
+    "page": 9,
+    "file": "table-2-p9.png",
+    "method": "caption_crop_table_below (1478x598)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 111,
+    "width": 1478,
+    "height": 598,
+    "caption": "Table 2:  Peer-count generalization accuracy results on the counter facual benchmark.  Σ -Mem  is trained with three peers and",
+    "crop": [
+      59.74,
+      64.53,
+      552.0,
+      263.58
+    ]
+  },
+  {
+    "page": 9,
+    "file": "table-3-p9.png",
+    "method": "caption_crop (1477x1059)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 253,
+    "width": 1477,
+    "height": 1059,
+    "caption": "Table 3:  Generalization results on out-of-distribution (OOD) domains.  Σ -Mem  is evaluated on unseen benchmarks covering",
+    "crop": [
+      59.74,
+      142.53,
+      552.0,
+      495.07
+    ]
+  },
+  {
+    "page": 10,
+    "file": "table-4-p10.png",
+    "method": "caption_crop_table_below (1478x1157)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 235,
+    "width": 1478,
+    "height": 1157,
+    "caption": "Table 4:  Overall accuracy of different selection mechanisms across five central models and six OOD benchmarks.  M-Route  directly",
+    "crop": [
+      59.74,
+      220.05,
+      552.32,
+      605.64
+    ]
+  },
+  {
+    "page": 10,
+    "file": "fig-3-p10.png",
+    "method": "caption_crop (1476x586)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 124,
+    "width": 1476,
+    "height": 586,
+    "caption": "Figure 3:  OOD accuracy under different feedback availability ratios, with Qwen3.5-4B and Qwen3.5-9B as the central models. We",
+    "crop": [
+      60.0,
+      436.66,
+      552.0,
+      631.43
+    ]
+  },
+  {
+    "page": 20,
+    "file": "",
+    "method": "caption_crop_table_below",
+    "status": "rejected",
+    "reason": "crop too small (492x66pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5:  Peer correctness on the training dataset. Each entry reports accuracy. The best performing peer on each dataset is highlighted",
+    "crop": [
+      59.74400329589844,
+      124.8841552734375,
+      551.9998168945312,
+      190.7650146484375
+    ]
+  },
+  {
+    "page": 20,
+    "file": "table-6-p20.png",
+    "method": "caption_crop (1478x978)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 248,
+    "width": 1478,
+    "height": 978,
+    "caption": "Table 6:  Peer accuracy under different counterfactual attack ratios. All splits contain the same 2,685 task events. The best performing",
+    "crop": [
+      59.74,
+      153.02,
+      552.0,
+      478.81
+    ]
+  },
+  {
+    "page": 21,
+    "file": "table-7-p21.png",
+    "method": "caption_crop_table_below (1478x547)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 111,
+    "width": 1478,
+    "height": 547,
+    "caption": "Table 7:  Peer accuracy under different counterfactual attack ratios in the four-peer setting. All splits contain the same 2,685 task",
+    "crop": [
+      59.74,
+      64.83,
+      552.22,
+      246.79
+    ]
+  }
+]
