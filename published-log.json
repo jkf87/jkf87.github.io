@@ -1047,6 +1047,12 @@
       ],
       "commit": "d6f98bb3",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-02-sigma-mem-multi-agent-reliability-memory.md"
+    },
+    {
+      "slug": "2026-08-02-manta-multi-agent-topology-adaptation",
+      "date": "2026-08-02",
+      "source": "arxiv",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-02-manta-multi-agent-topology-adaptation"
     }
   ],
   "entries": [
@@ -2511,6 +2517,22 @@
       ],
       "commit": "abf4b3ce",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-02-spatialcli-spatial-tool-internalization.md"
+    },
+    {
+      "slug": "2026-08-02-manta-multi-agent-topology-adaptation",
+      "date": "2026-08-02",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.28527",
+      "title": "MANTA: 에이전트 간 통신 구조가 스스로 진화한다",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-02-manta-multi-agent-topology-adaptation",
+      "tags": [
+        "multi-agent",
+        "self-evolving",
+        "topology",
+        "LLM-agent",
+        "agentic-systems"
+      ],
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-02-manta-multi-agent-topology-adaptation.md"
     }
   ],
   "posts": [

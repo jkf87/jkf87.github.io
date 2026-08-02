@@ -1,0 +1,150 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (788x589)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 72,
+    "width": 788,
+    "height": 589,
+    "caption": "Figure 1:  Levels of self-improvement in agent systems.",
+    "crop": [
+      42.0,
+      123.05,
+      304.49,
+      319.01
+    ]
+  },
+  {
+    "page": 2,
+    "file": "fig-1-p2-2.png",
+    "method": "caption_crop (788x1298)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 187,
+    "width": 788,
+    "height": 1298,
+    "caption": "Figure 1 organizes prior work by the object being adapted,",
+    "crop": [
+      42.0,
+      123.05,
+      304.49,
+      555.62
+    ]
+  },
+  {
+    "page": 2,
+    "file": "fig-2-p2.png",
+    "method": "caption_crop (1492x1597)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 556,
+    "width": 1492,
+    "height": 1597,
+    "caption": "Figure 2 shows two nested layers. The  target multi-agent",
+    "crop": [
+      72.88,
+      168.47,
+      569.99,
+      700.36
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-2-p3.png",
+    "method": "caption_crop (1584x885)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 206,
+    "width": 1584,
+    "height": 885,
+    "caption": "Figure 2:  MANTA overview.  MANTA first plans a task-conditioned multi-agent topology and executes the task under that",
+    "crop": [
+      42.0,
+      58.4,
+      570.0,
+      353.07
+    ]
+  },
+  {
+    "page": 4,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1 shows MANTA performs",
+    "crop": null
+  },
+  {
+    "page": 5,
+    "file": "table-1-p5.png",
+    "method": "caption_crop_table_below (1584x457)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 105,
+    "width": 1584,
+    "height": 457,
+    "caption": "Table 1: Main results across five benchmarks using Gemma 4 31B with medium reasoning effort. Methods are grouped into",
+    "crop": [
+      42.0,
+      246.4,
+      570.0,
+      398.6
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-3-p5.png",
+    "method": "caption_crop (788x330)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 48,
+    "width": 788,
+    "height": 330,
+    "caption": "Figure 3:  Branch expansion.  When one worker in the initial",
+    "crop": [
+      42.0,
+      327.08,
+      304.49,
+      436.76
+    ]
+  },
+  {
+    "page": 5,
+    "file": "table-2-p5.png",
+    "method": "caption_crop (1239x369)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 88,
+    "width": 1239,
+    "height": 369,
+    "caption": "Table 2: MANTA ablation results averaged across four",
+    "crop": [
+      157.21,
+      329.9,
+      569.99,
+      452.47
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-4-p6.png",
+    "method": "caption_crop (788x668)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 55,
+    "width": 788,
+    "height": 668,
+    "caption": "Figure 4: Success rate under different mutation budgets.",
+    "crop": [
+      42.0,
+      42.0,
+      304.51,
+      264.41
+    ]
+  }
+]
