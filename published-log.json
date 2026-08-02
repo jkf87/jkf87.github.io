@@ -2422,6 +2422,14 @@
       "source_url": "https://arxiv.org/abs/2607.26497",
       "title": "BM25가 에이전트 검색을 이기는 순간 — RAG 패러다임 28단계 스케일링 실험이 보여주는 교차점",
       "blog_url": "https://jkf87.github.io/posts/2026-08-01-bm25-wins-rag-scaling-agent-vs-lexical"
+    },
+    {
+      "slug": "2026-08-02-living-harness-self-evolving-agent",
+      "date": "2026-08-02",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.26598",
+      "title": "Living-Harness: 에이전트가 실패에서 배우면 하네스 자체가 진화한다",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-02-living-harness-self-evolving-agent"
     }
   ],
   "posts": [

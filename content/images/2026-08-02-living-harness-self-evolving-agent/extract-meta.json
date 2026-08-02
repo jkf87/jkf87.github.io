@@ -1,0 +1,186 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (870x526)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 97,
+    "width": 870,
+    "height": 526,
+    "caption": "Figure 1: Static vs. living harnesses. A static harness remains",
+    "crop": [
+      295.26,
+      215.31,
+      584.67,
+      390.12
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-2-p3.png",
+    "method": "caption_crop (1763x964)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 251,
+    "width": 1763,
+    "height": 964,
+    "caption": "Figure 2: Overview of Living-Harness. In episode  n , the agent interacts with the environment under harness state  S ( n ) , producing",
+    "crop": [
+      24.54,
+      0.0,
+      611.76,
+      321.32
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-2-p3-2.png",
+    "method": "caption_crop (1763x1304)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 350,
+    "width": 1763,
+    "height": 1304,
+    "caption": "Figure 2, the agent retrieves relevant entries from the cur-",
+    "crop": [
+      24.54,
+      0.0,
+      611.76,
+      434.57
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Main results on  τ   2 -Bench and MultiWOZ-2.4. All values are Pass@1 (%). Averages are weighted by the number of",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "table-2-p6.png",
+    "method": "caption_crop_table_below (1587x437)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 119,
+    "width": 1587,
+    "height": 437,
+    "caption": "Table 2: Per-cycle performance of Living-Harness. Parenthesized values report absolute changes from the preceding cycle. Rest.",
+    "crop": [
+      42.0,
+      175.75,
+      570.97,
+      321.01
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-3-p6.png",
+    "method": "caption_crop (835x493)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 70,
+    "width": 835,
+    "height": 493,
+    "caption": "Figure 3: Component ablation on  τ   2 -Bench: removing the",
+    "crop": [
+      292.81,
+      180.01,
+      570.97,
+      344.2
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-3-p6.png",
+    "method": "caption_crop (835x1069)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 145,
+    "width": 835,
+    "height": 1069,
+    "caption": "Table 3: Retrieval-only cross-model transfer of the frozen",
+    "crop": [
+      292.81,
+      180.01,
+      570.97,
+      536.24
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-4-p7.png",
+    "method": "caption_crop (1675x854)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 210,
+    "width": 1675,
+    "height": 854,
+    "caption": "Figure 4: Case study of persistent procedural repair. In Cycle 0, Reflexion recognizes that the user should be transferred",
+    "crop": [
+      36.63,
+      0.0,
+      594.56,
+      284.5
+    ]
+  },
+  {
+    "page": 13,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6 contrasts Living-Harness with representative base-",
+    "crop": null
+  },
+  {
+    "page": 14,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4: Harness-state scaling on  τ   2 -Bench. Cycle 0 is the empty pre-evolution state; Cycles 1–3 report accumulated episodic",
+    "crop": null
+  },
+  {
+    "page": 14,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5: Harness-state scaling on MultiWOZ-2.4. Cycle 0 is the empty pre-evolution state; Cycles 1–3 report accumulated state",
+    "crop": null
+  },
+  {
+    "page": 15,
+    "file": "table-6-p15.png",
+    "method": "caption_crop (1836x611)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 83,
+    "width": 1836,
+    "height": 611,
+    "caption": "Table 6: Comparison with interactive and self-evolving baselines. “Partial” denotes a method that revises reusable workflow",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      203.45
+    ]
+  }
+]
