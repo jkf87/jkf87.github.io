@@ -1002,6 +1002,20 @@
       "source_url": "https://arxiv.org/abs/2607.27652",
       "title": "Harness-G: RL 검색 에이전트의 검색 인터페이스를 통째로 바꾸다",
       "blog_url": "https://jkf87.github.io/posts/2026-08-02-harness-g-graph-structured-search-agent"
+    },
+    {
+      "slug": "2026-08-02-tycho-active-abstraction-programmatic-world-models",
+      "title": "Tycho: 프로그래밍 가능한 세계 모델로 미지의 게임을 정복하는 에이전트",
+      "source_url": "https://arxiv.org/abs/2607.28287",
+      "date": "2026-08-02",
+      "tags": [
+        "agent",
+        "world-model",
+        "ARC-AGI",
+        "coding-agent",
+        "LLM",
+        "harness"
+      ]
     }
   ],
   "entries": [
