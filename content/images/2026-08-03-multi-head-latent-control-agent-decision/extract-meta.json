@@ -1,0 +1,301 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1266x590)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 566,
+    "width": 1266,
+    "height": 590,
+    "caption": "Figure 1:  Multi-head latent control as an intrinsic control interface for frozen foundation models.",
+    "crop": [
+      96.0,
+      60.0,
+      517.74,
+      256.19
+    ]
+  },
+  {
+    "page": 4,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 1, we introduce the problem setup, define the latent representations used for control, and",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: AndroidWorld success rate and backend usage for single-model and routed runs. The",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Score–cost tradeoff across model families and benchmarks.  m 1  is the local model,  m 2",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4 reports model’s score together with the number of web calls, tool-call precision, and missed-",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Resolution decision prediction on W HEN 2C ALL . We compare each frozen backbone’s",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3 evaluates the Resolution Head on W HEN 2C ALL  across several frozen backbones. For each",
+    "crop": null
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4: TriviaQA web-search decision quality. We compare each backbone’s native web-search",
+    "crop": null
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5: Prefix-time evaluation of the Capability Head on top of each backbone. Metrics are averaged",
+    "crop": null
+  },
+  {
+    "page": 14,
+    "file": "fig-2-p14.png",
+    "method": "caption_crop (1265x602)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 109,
+    "width": 1265,
+    "height": 602,
+    "caption": "Figure 2: Overall cost–performance tradeoff for two routed systems:  Qwen3.5-9B  → Qwen3.5-27B-",
+    "crop": [
+      96.0,
+      60.0,
+      517.65,
+      260.66
+    ]
+  },
+  {
+    "page": 15,
+    "file": "fig-3-p15.png",
+    "method": "caption_crop (1265x1025)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 164,
+    "width": 1265,
+    "height": 1025,
+    "caption": "Figure 3: Composition of the 120K training mixture for the Capability Head. The mixture intention-",
+    "crop": [
+      96.0,
+      60.0,
+      517.66,
+      401.32
+    ]
+  },
+  {
+    "page": 15,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too page-like (area_ratio=0.57)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 3 summarizes the composition of the training mixture by source.",
+    "crop": [
+      96.0,
+      59.998504638671875,
+      500.1607360839844,
+      740.4070434570312
+    ]
+  },
+  {
+    "page": 16,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6:  End-to-end routed performance under the three prefix-time regimes from Table 5.  Ta-",
+    "crop": null
+  },
+  {
+    "page": 16,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6 extends Table 5 from signal-quality evaluation to end-to-end routed behavior. While Table 5",
+    "crop": null
+  },
+  {
+    "page": 16,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 7 reports results for the  Qwen3.5-9B  → Qwen3.5-27B-Thk  setting on two representative",
+    "crop": null
+  },
+  {
+    "page": 17,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (422x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 7:  Prompt-level self-switching versus latent-control routing for Qwen3.5-9B  → Qwen3.5-",
+    "crop": [
+      95.69100189208984,
+      215.94290161132812,
+      517.6539306640625,
+      177.5220184326172
+    ]
+  },
+  {
+    "page": 17,
+    "file": "fig-4-p17.png",
+    "method": "caption_crop (1265x592)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 84,
+    "width": 1265,
+    "height": 592,
+    "caption": "Figure 4:  Capability Head scores versus model token confidence on Qwen3.5-9B over ScreenSpot-",
+    "crop": [
+      96.0,
+      215.94,
+      517.65,
+      412.83
+    ]
+  },
+  {
+    "page": 18,
+    "file": "table-8-p18.png",
+    "method": "caption_crop_table_below (1262x343)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 47,
+    "width": 1262,
+    "height": 343,
+    "caption": "Table 8: Layer-choice ablation for the Capability Head on Qwen3-VL-4B-Thk. We report average",
+    "crop": [
+      95.69,
+      118.68,
+      516.0,
+      232.78
+    ]
+  },
+  {
+    "page": 18,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 9: Layer-choice ablation for the Resolution Head on Qwen3-VL-4B evaluated on W HEN 2C ALL .",
+    "crop": null
+  },
+  {
+    "page": 19,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 10:  Training-data breadth ablation on ScreenSpot Pro.  Ablation for the Capability Head on",
+    "crop": null
+  },
+  {
+    "page": 19,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 11: Prefix-length ablation for the Capability Head on Qwen3-VL-4B-Thk. Each row trains and",
+    "crop": null
+  },
+  {
+    "page": 19,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 10 reports results on  ScreenSpot Pro . The gap is clear. The head trained only on visual-math",
+    "crop": null
+  }
+]

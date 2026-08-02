@@ -2545,6 +2545,26 @@
         4
       ],
       "commit": "f77a0d08"
+    },
+    {
+      "date": "2026-08-03",
+      "slug": "2026-08-03-multi-head-latent-control-frozen-llm-agent-decision",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2607.14277",
+      "title": "동결된 모델을 건드리지 않고 에이전트 제어 신호를 만들어낸다 — Multi-Head Latent Control의 구조",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-03-multi-head-latent-control-frozen-llm-agent-decision",
+      "tags": [
+        "agent",
+        "LLM",
+        "latent-control",
+        "model-routing",
+        "tool-use",
+        "harness",
+        "frozen-model",
+        "Huawei",
+        "automation",
+        "inference-time"
+      ]
     }
   ],
   "posts": [
