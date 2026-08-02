@@ -2444,6 +2444,26 @@
       "source_url": "https://arxiv.org/abs/2607.26598",
       "title": "Living-Harness: 에이전트가 실패에서 배우면 하네스 자체가 진화한다",
       "blog_url": "https://jkf87.github.io/posts/2026-08-02-living-harness-self-evolving-agent"
+    },
+    {
+      "date": "2026-08-02",
+      "slug": "2026-08-02-spatialcli-spatial-tool-internalization",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2607.27703",
+      "title": "SpatialCLI: VLM이 공간 도구를 배우고, 그 다음 도구 없이도 추론하게 만드는 법",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-02-spatialcli-spatial-tool-internalization",
+      "tags": [
+        "agent",
+        "VLM",
+        "tool-use",
+        "RL",
+        "internalization",
+        "spatial-reasoning",
+        "harness",
+        "automation",
+        "GRPO",
+        "embodied-AI"
+      ]
     }
   ],
   "posts": [
