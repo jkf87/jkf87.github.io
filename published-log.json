@@ -1032,7 +1032,21 @@
         "reliability",
         "coordination",
         "harness"
-      ]
+      ],
+      "threads_root_id": "18150515392502403",
+      "threads_reply_ids": [
+        "18123462742773605",
+        "17900718399537893",
+        "18109273346058206",
+        "17901052182513960"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        5
+      ],
+      "commit": "d6f98bb3",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-02-sigma-mem-multi-agent-reliability-memory.md"
     }
   ],
   "entries": [
