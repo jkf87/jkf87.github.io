@@ -2532,7 +2532,19 @@
         "LLM-agent",
         "agentic-systems"
       ],
-      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-02-manta-multi-agent-topology-adaptation.md"
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-02-manta-multi-agent-topology-adaptation.md",
+      "threads_root_id": "18069595157459752",
+      "threads_reply_ids": [
+        "17898053598552646",
+        "18090171656549256",
+        "18242262583308759"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        4
+      ],
+      "commit": "f77a0d08"
     }
   ],
   "posts": [
