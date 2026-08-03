@@ -53,24 +53,51 @@ Avoid:
 ## Voice SpyRL gate
 Before build, run the self-verifiable style gate. This implements the user's approved RLSVR/SpyRL idea as a style eval, not model training.
 
-For one final candidate:
+Default mode is now multi-candidate.
+
+Create 3 draft variants before finalizing:
+- A: `kakao/plain` best effort. This should be the intended publish candidate.
+- B: more newsletter/bloggy version. It may have more hook/scene framing.
+- C: stricter translation/summary version. It may be flatter and more formal.
+
+Write them outside the post directory first, for example:
 
 ```bash
-python3 scripts/blog-voice-spyrl-gate.py content/posts/<slug>.md --allow-single --out ../memory/voice-feedback/<YYYY-MM-DD>-<slug>-spyrl.json
+mkdir -p /tmp/blog-spyrl/<slug>
+# /tmp/blog-spyrl/<slug>/a-kakao.md
+# /tmp/blog-spyrl/<slug>/b-newsletter.md
+# /tmp/blog-spyrl/<slug>/c-formal.md
 ```
 
-For multiple draft variants, pass all candidate markdown paths:
+Then run:
 
 ```bash
-python3 scripts/blog-voice-spyrl-gate.py /tmp/<slug>-a.md /tmp/<slug>-b.md /tmp/<slug>-c.md --out ../memory/voice-feedback/<YYYY-MM-DD>-<slug>-spyrl.json
+python3 scripts/blog-voice-spyrl-gate.py \
+  /tmp/blog-spyrl/<slug>/a-kakao.md \
+  /tmp/blog-spyrl/<slug>/b-newsletter.md \
+  /tmp/blog-spyrl/<slug>/c-formal.md \
+  --out ../memory/voice-feedback/<YYYY-MM-DD>-<slug>-spyrl.json
 ```
 
 Rules:
-- Publish only if the gate passes.
-- If the gate fails, revise and rerun.
+- Publish the `winner` from the JSON report, not automatically A.
+- If the winner is not A, copy the winning draft to `content/posts/<slug>.md` and then do content/fact/image/CTA checks again.
+- If no candidate passes, revise A using the top `spyTags`, create a fresh candidate, and rerun.
+- If time/tool budget is genuinely tight, one-candidate fallback is allowed with `--allow-single`, but the final report must say `Voice SpyRL mode: fallback-single`.
 - Treat `spyTags` as concrete edit instructions, e.g. `too_long_paragraph`, `banned_phrase`, `aphorism`, `bold_overuse`, `question_heading`, `metaphor_heading`.
 - Keep every report in `memory/voice-feedback/`; this becomes the preference feedback dataset.
 - If user feedback arrives later, append it to a matching voice-feedback note/report and use it in future manual judgment.
+
+Weekly feedback summary:
+
+```bash
+python3 scripts/blog-voice-feedback-summary.py \
+  --dir ../memory/voice-feedback \
+  --out ../memory/voice-feedback/latest-summary.md \
+  --json-out ../memory/voice-feedback/latest-summary.json
+```
+
+Read `../memory/voice-feedback/latest-summary.md` when available before drafting. Use repeated AVOID tags as first-pass edit targets.
 
 ## Images
 For papers, use caption/source-anchored figures only. Prefer official HTML/project/arXiv assets when cleaner.
@@ -110,20 +137,22 @@ python3 scripts/blog-promo-quality-gate.py content/posts/<slug>.md --require-rel
 3. Read `published-log.json`; avoid duplicates. Daily count is only for reporting, never a skip reason.
 4. Select one strong candidate.
 5. Prepare verified local images before writing the final post.
-6. Write Korean Quartz markdown under `content/posts/<slug>.md`.
-7. Add CTA if relevant.
-8. Verify image refs resolve and are absolute `/images/...` refs.
-9. Run Voice SpyRL gate and fix failures.
-10. Run image gate.
-11. Run promo gate.
-12. Run `npx quartz build`.
-13. Git add only intended files: post, `content/images/<slug>/`, `published-log.json`, wiki note if inside repo, intentional script changes. Never add `public/`.
-14. Commit and push to `main`.
-15. Confirm public blog URL and image URLs return HTTP 200.
-16. Fetch public blog URL and verify both CTA links are live before Threads.
-17. Prepare Threads JSON payload and run `python3 scripts/threads-quality-gate.py /tmp/<slug>-threads-payload.json`.
-18. Publish Threads only after gate passes.
-19. Create wiki note: `/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/<YYYY-MM-DD>-<slug>.md`.
+6. Create 3 temporary Korean draft variants under `/tmp/blog-spyrl/<slug>/`.
+7. Run the multi-candidate Voice SpyRL gate and select the JSON `winner`.
+8. Copy the winner to `content/posts/<slug>.md`.
+9. Add CTA if relevant.
+10. Verify image refs resolve and are absolute `/images/...` refs.
+11. Run Voice SpyRL gate again on the final post path; fix failures.
+12. Run image gate.
+13. Run promo gate.
+14. Run `npx quartz build`.
+15. Git add only intended files: post, `content/images/<slug>/`, `published-log.json`, wiki note if inside repo, intentional script changes. Never add `public/`.
+16. Commit and push to `main`.
+17. Confirm public blog URL and image URLs return HTTP 200.
+18. Fetch public blog URL and verify both CTA links are live before Threads.
+19. Prepare Threads JSON payload and run `python3 scripts/threads-quality-gate.py /tmp/<slug>-threads-payload.json`.
+20. Publish Threads only after gate passes.
+21. Create wiki note: `/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/<YYYY-MM-DD>-<slug>.md`.
 
 ## Threads contract
 - Root-only is forbidden.
@@ -138,7 +167,7 @@ Include:
 - Blog URL and HTTP status
 - Today's count after publish
 - Image URLs and HTTP status
-- Voice SpyRL gate result and report path
+- Voice SpyRL mode (`multi-candidate` or `fallback-single`), winner, spy, score, tags, and report path
 - Blog image gate result
 - Blog promo gate result
 - Live CTA verification
