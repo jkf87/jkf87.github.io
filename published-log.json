@@ -2579,6 +2579,26 @@
       ],
       "commit": "0d2a7ba7",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-03-multi-head-latent-control-frozen-llm-agent-decision.md"
+    },
+    {
+      "date": "2026-08-03",
+      "slug": "2026-08-03-agent-harness-distillation-inference-time-harness-extraction",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.28147",
+      "title": "에이전트 하네스를 훔친다: AMAS의 추론 시간 하네스가 새로운 공격 표면이다",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-03-agent-harness-distillation-inference-time-harness-extraction",
+      "tags": [
+        "agent",
+        "harness",
+        "security",
+        "LLM",
+        "multi-agent",
+        "IP-leakage",
+        "AMAS",
+        "distillation",
+        "Baidu",
+        "Tsinghua"
+      ]
     }
   ],
   "posts": [
