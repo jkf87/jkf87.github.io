@@ -1,0 +1,189 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (819x509)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 129,
+    "width": 819,
+    "height": 509,
+    "caption": "Figure 1: Proactive and overlapped execution v.s. the native vanilla approaches",
+    "crop": [
+      301.12,
+      160.91,
+      573.7,
+      330.05
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-2-p3.png",
+    "method": "caption_crop (822x480)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 71,
+    "width": 822,
+    "height": 480,
+    "caption": "Figure 2: Execution bottlenecks in agent runtimes. (a) Execution-step latency",
+    "crop": [
+      299.11,
+      51.15,
+      572.78,
+      210.93
+    ]
+  },
+  {
+    "page": 4,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (528x21pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 3: Intent-aware sandbox prewarming: the plan agent expands user requests into ReAct steps, and keyword plus semantic predictions jointly decide to",
+    "crop": [
+      41.79800033569336,
+      281.68499755859375,
+      570.2005615234375,
+      302.41290283203125
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-4-p4.png",
+    "method": "caption_crop (794x584)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 157,
+    "width": 794,
+    "height": 584,
+    "caption": "Figure 4: Tradeoffs among routing policies. Keyword routing trades early",
+    "crop": [
+      41.8,
+      281.68,
+      306.24,
+      476.01
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (486x13pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 5: Stochastic sandbox prefetching in SpecBox. Execution history predicts likely sandboxes for subsequent ReAct steps.",
+    "crop": [
+      96.43499755859375,
+      280.93804931640625,
+      582.1932373046875,
+      293.6771240234375
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (540x62pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Fig. 4, there exists a dilemma: earlier intent predictions overlap",
+    "crop": [
+      41.79800033569336,
+      280.93804931640625,
+      582.1932373046875,
+      342.856689453125
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-6-p5.png",
+    "method": "caption_crop (830x530)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 104,
+    "width": 830,
+    "height": 530,
+    "caption": "Figure 6: Stochastic sandbox prefetching using a first-order Markov model.",
+    "crop": [
+      305.95,
+      280.94,
+      582.19,
+      457.15
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-4-p5.png",
+    "method": "caption_crop (830x811)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 147,
+    "width": 830,
+    "height": 811,
+    "caption": "Fig. 4 shows why prewarming only their intersection is unsuitable:",
+    "crop": [
+      305.95,
+      280.94,
+      582.19,
+      550.86
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-7-p6.png",
+    "method": "caption_crop (798x686)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 108,
+    "width": 798,
+    "height": 686,
+    "caption": "Figure 7: Reuse-aware data transmission in SpecBox. A semantic-cache hit re-",
+    "crop": [
+      305.95,
+      63.47,
+      571.45,
+      291.75
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-8-p7.png",
+    "method": "caption_crop (801x536)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 95,
+    "width": 801,
+    "height": 536,
+    "caption": "Figure 8: Overview of SpecBox.",
+    "crop": [
+      39.13,
+      64.65,
+      305.7,
+      242.99
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-9-p8.png",
+    "method": "caption_crop (794x453)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 39,
+    "width": 794,
+    "height": 453,
+    "caption": "Figure 9: Cumulative sandbox provisioning latency across multi-turn agent",
+    "crop": [
+      41.8,
+      71.68,
+      306.05,
+      222.62
+    ]
+  }
+]

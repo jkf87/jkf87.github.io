@@ -1053,6 +1053,25 @@
       "date": "2026-08-02",
       "source": "arxiv",
       "blog_url": "https://jkf87.github.io/posts/2026-08-02-manta-multi-agent-topology-adaptation"
+    },
+    {
+      "slug": "2026-08-03-specbox-speculative-sandbox-scheduling-llm-agent",
+      "date": "2026-08-03",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.23933",
+      "title": "SpecBox: LLM 에이전트가 도구를 부르기도 전에 샌드박스를 켜는 시스템",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-03-specbox-speculative-sandbox-scheduling-llm-agent",
+      "tags": [
+        "agent",
+        "MCP",
+        "sandbox",
+        "runtime",
+        "serving-system",
+        "LLM",
+        "harness",
+        "infrastructure",
+        "cold-start"
+      ]
     }
   ],
   "entries": [
