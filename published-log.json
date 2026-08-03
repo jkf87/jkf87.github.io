@@ -1071,7 +1071,23 @@
         "harness",
         "infrastructure",
         "cold-start"
-      ]
+      ],
+      "threads_root_id": "17895077706574784",
+      "threads_reply_ids": [
+        "18083011553255049",
+        "18124235602808857",
+        "18100100951523029",
+        "18087950642166491",
+        "18110401291971547"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        4,
+        6
+      ],
+      "commit": "6738cb36",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-03-specbox-speculative-sandbox-scheduling-llm-agent.md"
     }
   ],
   "entries": [
