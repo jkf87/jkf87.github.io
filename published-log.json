@@ -1088,6 +1088,25 @@
       ],
       "commit": "6738cb36",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-03-specbox-speculative-sandbox-scheduling-llm-agent.md"
+    },
+    {
+      "slug": "2026-08-03-co-harness-co-evolving-agent-harness-weights",
+      "date": "2026-08-03",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.22688",
+      "title": "Co-Harness: 하네스와 모델 가중치를 동시에 진화시키는 에이전트 포스트트레이닝",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-03-co-harness-co-evolving-agent-harness-weights",
+      "tags": [
+        "agent",
+        "harness",
+        "LLM",
+        "post-training",
+        "tool-integrated-reasoning",
+        "co-evolution",
+        "fine-tuning",
+        "automation",
+        "loop"
+      ]
     }
   ],
   "entries": [

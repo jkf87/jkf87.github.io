@@ -1,0 +1,181 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (915x505)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 85,
+    "width": 915,
+    "height": 505,
+    "caption": "Figure 1:  Co-Harness dual-loop overview.",
+    "crop": [
+      247.2,
+      402.0,
+      552.0,
+      570.02
+    ]
+  },
+  {
+    "page": 2,
+    "file": "fig-2-p2.png",
+    "method": "caption_crop (1476x712)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 121,
+    "width": 1476,
+    "height": 712,
+    "caption": "Figure 2:  The overall framework of Co-Harness.",
+    "crop": [
+      60.0,
+      60.0,
+      552.0,
+      296.69
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4: Failure attribution taxonomy used by HarnessCritic. The first five categories are actionable Harness",
+    "crop": null
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  4  defines the attribution schema used throughout the paper. The",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "fig-5-p7.png",
+    "method": "caption_crop (1477x729)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 93,
+    "width": 1477,
+    "height": 729,
+    "caption": "Figure 5:  Co-Harness dual-loop co-evolution results across benchmarks and model scales.  Grouped",
+    "crop": [
+      60.0,
+      60.0,
+      552.04,
+      302.6
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too page-like (area_ratio=0.63)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  5  and Table  6  present the core experiment. We observe three key findings:",
+    "crop": [
+      60.0,
+      59.99961853027344,
+      552.0074462890625,
+      681.2086791992188
+    ]
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6:  Co-Harness dual-loop co-evolution results.  Accuracy (%) on mathematical reasoning bench-",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  7  shows a complete, autonomous 22-version Harness evolution trajectory on AIME24 with Qwen3-8B.",
+    "crop": null
+  },
+  {
+    "page": 9,
+    "file": "fig-7-p9.png",
+    "method": "caption_crop (1477x674)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 141,
+    "width": 1477,
+    "height": 674,
+    "caption": "Figure 7:  Autonomous 22-version Harness evolution on AIME24 with Qwen3-8B.  The agent ran",
+    "crop": [
+      60.0,
+      60.0,
+      552.02,
+      284.14
+    ]
+  },
+  {
+    "page": 14,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 8: Initial Harness  ϕ 0  configuration (TIR setting).",
+    "crop": null
+  },
+  {
+    "page": 15,
+    "file": "fig-9-p15.png",
+    "method": "caption_crop (1477x719)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 101,
+    "width": 1477,
+    "height": 719,
+    "caption": "Figure 9:  Accuracy vs. co-evolution round.  Line plots showing accuracy progression across rounds for",
+    "crop": [
+      60.0,
+      364.1,
+      552.22,
+      603.41
+    ]
+  },
+  {
+    "page": 15,
+    "file": "fig-9-p15-2.png",
+    "method": "caption_crop (1481x857)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 121,
+    "width": 1481,
+    "height": 857,
+    "caption": "Figure  9  visualizes the per-benchmark accuracy trajectory across co-evolution rounds. Two patterns emerge:",
+    "crop": [
+      60.0,
+      364.1,
+      553.34,
+      649.42
+    ]
+  }
+]
