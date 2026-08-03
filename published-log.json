@@ -1122,6 +1122,36 @@
       ],
       "commit": "abe307ba",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-03-co-harness-co-evolving-agent-harness-weights.md"
+    },
+    {
+      "slug": "rl-environments-taxonomy-llm-agents-2026-08-03",
+      "date": "2026-08-03",
+      "source": "blog",
+      "source_url": "https://leehanchung.github.io/blogs/2026/03/21/rl-environments-for-llm-agents/",
+      "title": "LLM 에이전트를 위한 RL 환경 분류법: 모델보다 훈련장이 먼저다",
+      "blog_url": "https://jkf87.github.io/posts/rl-environments-taxonomy-llm-agents-2026-08-03",
+      "tags": [
+        "reinforcement-learning",
+        "LLM-agent",
+        "RL-environments",
+        "agent-harness",
+        "verifiers",
+        "benchmarks"
+      ],
+      "threads_root_id": "17878738140511569",
+      "threads_reply_ids": [
+        "18329323198261235",
+        "18161185666417371",
+        "18103141325519840",
+        "18475000828106841",
+        "17948048742038347"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        6
+      ],
+      "commit": "668e77d3"
     }
   ],
   "entries": [
@@ -2770,6 +2800,36 @@
         6
       ],
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-01-harness-g-graph-structured-search-agent-retrieval.md"
+    },
+    {
+      "slug": "rl-environments-taxonomy-llm-agents-2026-08-03",
+      "date": "2026-08-03",
+      "source": "blog",
+      "source_url": "https://leehanchung.github.io/blogs/2026/03/21/rl-environments-for-llm-agents/",
+      "title": "LLM 에이전트를 위한 RL 환경 분류법: 모델보다 훈련장이 먼저다",
+      "blog_url": "https://jkf87.github.io/posts/rl-environments-taxonomy-llm-agents-2026-08-03",
+      "tags": [
+        "reinforcement-learning",
+        "LLM-agent",
+        "RL-environments",
+        "agent-harness",
+        "verifiers",
+        "benchmarks"
+      ],
+      "threads_root_id": "17878738140511569",
+      "threads_reply_ids": [
+        "18329323198261235",
+        "18161185666417371",
+        "18103141325519840",
+        "18475000828106841",
+        "17948048742038347"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        6
+      ],
+      "commit": "668e77d3"
     }
   ]
 }
