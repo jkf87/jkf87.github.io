@@ -1,0 +1,111 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1198x454)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 65,
+    "width": 1198,
+    "height": 454,
+    "caption": "Figure 1: Comparison between standard agentic RL and TAPO. Standard RL mainly learns from",
+    "crop": [
+      6.58,
+      23.3,
+      605.43,
+      249.82
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-2-p6.png",
+    "method": "caption_crop (841x411)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 67,
+    "width": 841,
+    "height": 411,
+    "caption": "Figure 2: Overview of TAPO. The LLM agent first interacts with the environment based on the task",
+    "crop": [
+      96.0,
+      62.08,
+      516.25,
+      267.05
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-1-p6.png",
+    "method": "caption_crop (842x1314)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 277,
+    "width": 842,
+    "height": 1314,
+    "caption": "Table 1 presents the main results on WebShop and ALFWorld. Overall, TAPO yields consistent gains",
+    "crop": [
+      95.69,
+      62.08,
+      516.01,
+      718.56
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Performance on WebShop and ALFWorld. For WebShop, we report the average score and",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Comparison with closely related transition-",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "fig-3-p8.png",
+    "method": "caption_crop (488x274)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 39,
+    "width": 488,
+    "height": 274,
+    "caption": "Figure 3: Ablation study of training dynamics on Web-",
+    "crop": [
+      274.2,
+      86.51,
+      517.65,
+      223.28
+    ]
+  },
+  {
+    "page": 8,
+    "file": "table-3-p8.png",
+    "method": "caption_crop (488x509)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 59,
+    "width": 488,
+    "height": 509,
+    "caption": "Table 3: Sensitivity analysis of the interleav-",
+    "crop": [
+      274.2,
+      86.51,
+      517.66,
+      340.75
+    ]
+  }
+]

@@ -1157,6 +1157,24 @@
         "original-rl-agent.png",
         "original-rl-environment.png"
       ]
+    },
+    {
+      "slug": "2026-08-04-tapo-transition-aware-policy-optimization",
+      "date": "2026-08-04",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.27973",
+      "title": "TAPO: 에이전트 RL에 전이 감독을 끼워넣는 가장 싼 방법",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-04-tapo-transition-aware-policy-optimization",
+      "tags": [
+        "agent",
+        "reinforcement-learning",
+        "LLM",
+        "post-training",
+        "transition-supervision",
+        "policy-optimization",
+        "agentic-RL",
+        "loop"
+      ]
     }
   ],
   "entries": [
@@ -2752,6 +2770,24 @@
         7
       ],
       "commit": "7fb0f2a1"
+    },
+    {
+      "slug": "2026-08-04-tapo-transition-aware-policy-optimization",
+      "date": "2026-08-04",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.27973",
+      "title": "TAPO: 에이전트 RL에 전이 감독을 끼워넣는 가장 싼 방법",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-04-tapo-transition-aware-policy-optimization",
+      "tags": [
+        "agent",
+        "reinforcement-learning",
+        "LLM",
+        "post-training",
+        "transition-supervision",
+        "policy-optimization",
+        "agentic-RL",
+        "loop"
+      ]
     }
   ],
   "posts": [
