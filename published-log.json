@@ -1106,7 +1106,22 @@
         "fine-tuning",
         "automation",
         "loop"
-      ]
+      ],
+      "threads_root_id": "18237598429313778",
+      "threads_reply_ids": [
+        "18112019443985783",
+        "18111823210983119",
+        "18111364132796516",
+        "17998756415793247",
+        "18092288699423289"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        6
+      ],
+      "commit": "abe307ba",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-03-co-harness-co-evolving-agent-harness-weights.md"
     }
   ],
   "entries": [
