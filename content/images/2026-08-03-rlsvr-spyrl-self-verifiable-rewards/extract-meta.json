@@ -1,0 +1,210 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1261x553)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 784,
+    "width": 1261,
+    "height": 553,
+    "caption": "Figure 1:  RLSVR combines the exact verification of RLVR with the label-by-construction",
+    "crop": [
+      96.0,
+      69.87,
+      516.0,
+      253.8
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (1356x649)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 218,
+    "width": 1356,
+    "height": 649,
+    "caption": "Figure 2:  Overview of the SpyRL framework.  An unverifiable target task (e.g., summa-",
+    "crop": [
+      80.16,
+      69.86,
+      531.76,
+      285.89
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-3-p7.png",
+    "method": "caption_crop (1766x752)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 264,
+    "width": 1766,
+    "height": 752,
+    "caption": "Figure 3:  Task-specific instantiations of SpyRL across three domains. Top row : civilian",
+    "crop": [
+      23.47,
+      26.71,
+      612.0,
+      277.02
+    ]
+  },
+  {
+    "page": 9,
+    "file": "table-1-p9.png",
+    "method": "caption_crop_table_below (1261x776)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 175,
+    "width": 1261,
+    "height": 776,
+    "caption": "Table 1:  Results on summarization benchmarks . We report the ROUGE-L of every method",
+    "crop": [
+      95.69,
+      74.35,
+      516.0,
+      332.91
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-4-p9.png",
+    "method": "caption_crop (1260x422)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 90,
+    "width": 1260,
+    "height": 422,
+    "caption": "Figure 4:  Correlation between suspicion votes received in the detection stage and output",
+    "crop": [
+      96.0,
+      209.2,
+      516.0,
+      349.38
+    ]
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2:  Results on creative writing benchmarks . We report GPT-4o pairwise win rates (%)",
+    "crop": null
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3:  Results on mathematical and general reasoning benchmarks . We report accuracy",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4:  Human evaluation results on creative writing.  We report the pairwise win rates of",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5:  A/B Test Comparison with rubric-as-reward baselines.  We report the pairwise",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6:  Results on scientific and domain-specific summarization benchmarks . SpyRL is",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 7:  Cross-task transfer results . Each row takes the SpyRL model trained on one task",
+    "crop": null
+  },
+  {
+    "page": 13,
+    "file": "table-8-p13.png",
+    "method": "caption_crop_table_below (1271x706)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 125,
+    "width": 1271,
+    "height": 706,
+    "caption": "Table 8:  Ablation study on Math500 accuracy (%) across training epochs.  “Only Performing”",
+    "crop": [
+      95.69,
+      74.36,
+      519.15,
+      309.48
+    ]
+  },
+  {
+    "page": 13,
+    "file": "fig-5-p13.png",
+    "method": "caption_crop (1260x503)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 79,
+    "width": 1260,
+    "height": 503,
+    "caption": "Figure 5:  Effect of group size ( n ) on SpyRL performance gain  over the base model across",
+    "crop": [
+      96.0,
+      163.41,
+      516.0,
+      330.96
+    ]
+  },
+  {
+    "page": 13,
+    "file": "table-9-p13.png",
+    "method": "caption_crop (1261x1416)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 350,
+    "width": 1261,
+    "height": 1416,
+    "caption": "Table  9 , removing RAE lowers the seven-benchmark average from 50.4 to 37.5, and degrades",
+    "crop": [
+      95.69,
+      163.41,
+      516.0,
+      635.08
+    ]
+  }
+]
