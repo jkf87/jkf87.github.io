@@ -1174,7 +1174,21 @@
         "policy-optimization",
         "agentic-RL",
         "loop"
-      ]
+      ],
+      "threads_root_id": "18138711349503376",
+      "threads_reply_ids": [
+        "17880205074683461",
+        "18133872250606496",
+        "18275583730291668",
+        "17913285786430532"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        5
+      ],
+      "commit": "056992a4",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-04-tapo-transition-aware-policy-optimization.md"
     }
   ],
   "entries": [
@@ -2787,7 +2801,21 @@
         "policy-optimization",
         "agentic-RL",
         "loop"
-      ]
+      ],
+      "threads_root_id": "18138711349503376",
+      "threads_reply_ids": [
+        "17880205074683461",
+        "18133872250606496",
+        "18275583730291668",
+        "17913285786430532"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        5
+      ],
+      "commit": "056992a4",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-04-tapo-transition-aware-policy-optimization.md"
     }
   ],
   "posts": [
