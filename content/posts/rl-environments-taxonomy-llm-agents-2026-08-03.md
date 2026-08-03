@@ -38,7 +38,11 @@ Hanchung Lee의 글 [A Taxonomy of RL Environments for LLM Agents](https://leeha
 
 강화학습은 동적인 환경 안에서 지능형 agent가 reward signal을 최대화하도록 행동을 선택하는 문제다. 전통적인 표현으로는 agent와 environment의 state 집합 $S$, agent가 선택할 수 있는 action space $A$, 그리고 action $A_t$에 의해 $S_t$에서 $S_{t+1}$로 전이한 뒤 받는 즉시 reward $R_t$가 있다.
 
+![원문에 포함된 reinforcement learning 기본 루프 도식. Agent가 action을 취하고 environment가 state와 reward를 돌려주는 고전적 RL 구조를 보여준다.](/images/rl-environments-taxonomy-llm-agents-2026-08-03/original-rl-agent.png)
+
 이 틀을 LLM agent 훈련으로 가져오면, RL 환경은 단순한 데이터셋이 아니라 다음 객체들을 묶은 단위가 된다. task input dataset, model harness, output을 채점하는 reward function, environment state, 그리고 environment configuration이다.
+
+![원문에 포함된 LLM agent용 canonical RL training loop. Task Dataset이 prompt를 Agent Harness로 보내고, harness는 Tools Env와 action/observation을 주고받은 뒤 completion을 Verifier/Rubric에 넘긴다. Verifier는 reward signal을 Trainer로 보내고, Trainer는 다시 policy를 업데이트한다.](/images/rl-environments-taxonomy-llm-agents-2026-08-03/original-rl-environment.png)
 
 원문은 완전한 RL environment를 다음처럼 정의한다.
 
