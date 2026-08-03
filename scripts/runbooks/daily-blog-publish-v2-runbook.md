@@ -1,0 +1,150 @@
+# Daily Blog Publish v2 Runbook
+
+Use this runbook for `daily-blog-publish-v2-quality-gated`.
+
+## Goal
+Publish at most one high-confidence Korean Quartz blog post per run, then optionally publish a Threads thread only after all gates pass.
+
+## Hard stops
+- Missing required local path/tool → report `blocked: missing local tool`.
+- No strong AI/LLM/agent candidate after scanning up to 12 candidates → report `skipped: no candidate`.
+- Duplicate source/title/slug in `published-log.json` → skip that candidate.
+- Do not commit `public/`.
+- Do not call Threads API until blog image gate, promo gate, live CTA check, and Threads quality gate all pass.
+- Do not use Gemini.
+- Do not use direct OpenAI API keys for images.
+
+## Required paths
+- Quartz repo: `/Users/conanssam-m4/.openclaw/workspace-blogbot/site`
+- Published log: `/Users/conanssam-m4/.openclaw/workspace-blogbot/site/published-log.json`
+- Voice repo: `/Users/conanssam-m4/.openclaw/workspace-blogbot/conanssam-voice`
+- Kakao pack: `/Users/conanssam-m4/.openclaw/workspace-blogbot/conanssam-voice/references/packs/kakao.md`
+- Voice SpyRL gate: `/Users/conanssam-m4/.openclaw/workspace-blogbot/site/scripts/blog-voice-spyrl-gate.py`
+- Figure extraction: `/Users/conanssam-m4/.openclaw/workspace-blogbot/site/scripts/pdf-extract-figures.py`
+- Blog image gate: `/Users/conanssam-m4/.openclaw/workspace-blogbot/site/scripts/blog-image-quality-gate.py`
+- Blog promo gate: `/Users/conanssam-m4/.openclaw/workspace-blogbot/site/scripts/blog-promo-quality-gate.py`
+- Threads quality gate: `/Users/conanssam-m4/.openclaw/workspace-blogbot/site/scripts/threads-quality-gate.py`
+- Threads script: `/Users/conanssam-m4/.openclaw/workspace-agasabot/skills/threads-uploader/scripts/post_threads.py`
+- Threads env: `/Users/conanssam-m4/.openclaw/creds/threads/.env`
+- Wiki vault: `/Users/conanssam-m4/.openclaw/wiki/main`
+- Voice feedback dir: `/Users/conanssam-m4/.openclaw/workspace-blogbot/memory/voice-feedback`
+
+## Default blog voice
+Use `conanssam-voice` `kakao` / `plain` as the default blog surface style.
+
+Target:
+- 결론 먼저.
+- 짧은 문단.
+- 실물/수치/명령어/표가 설명을 대신함.
+- 원문 근거와 내 해석을 구분.
+- 섹션 제목은 은유보다 설명형.
+- 자연스러운 표현: `정리했습니다`, `핵심은 이겁니다`, `근데`, `~구요`, `~하면 됩니다`.
+
+Avoid:
+- `알아보겠습니다`
+- `하지만`
+- `첫째/둘째/셋째/넷째`
+- `A가 아니라 B다` 경구 프레임
+- 과한 bold
+- 자문자답 훅
+- 웅장한 마무리
+- 조쉬/뉴스레터식 과장된 장면 도입, unless the source is specifically a video/interview and it still stays kakao/plain.
+
+## Voice SpyRL gate
+Before build, run the self-verifiable style gate. This implements the user's approved RLSVR/SpyRL idea as a style eval, not model training.
+
+For one final candidate:
+
+```bash
+python3 scripts/blog-voice-spyrl-gate.py content/posts/<slug>.md --allow-single --out ../memory/voice-feedback/<YYYY-MM-DD>-<slug>-spyrl.json
+```
+
+For multiple draft variants, pass all candidate markdown paths:
+
+```bash
+python3 scripts/blog-voice-spyrl-gate.py /tmp/<slug>-a.md /tmp/<slug>-b.md /tmp/<slug>-c.md --out ../memory/voice-feedback/<YYYY-MM-DD>-<slug>-spyrl.json
+```
+
+Rules:
+- Publish only if the gate passes.
+- If the gate fails, revise and rerun.
+- Treat `spyTags` as concrete edit instructions, e.g. `too_long_paragraph`, `banned_phrase`, `aphorism`, `bold_overuse`, `question_heading`, `metaphor_heading`.
+- Keep every report in `memory/voice-feedback/`; this becomes the preference feedback dataset.
+- If user feedback arrives later, append it to a matching voice-feedback note/report and use it in future manual judgment.
+
+## Images
+For papers, use caption/source-anchored figures only. Prefer official HTML/project/arXiv assets when cleaner.
+
+Accepted image methods include source/official/html_source/caption_crop/vector_crop/embedded_crop. Do not publish page-top crops, full-page screenshots, unreadable crops, or fallback_top45.
+
+Quartz rule:
+- Files: `content/images/<slug>/...`
+- Markdown refs: `/images/<slug>/...`
+
+Run before build:
+
+```bash
+python3 scripts/blog-image-quality-gate.py content/posts/<slug>.md --site-root . --paper --min-images 1
+```
+
+Use non-paper mode only for official blog/repo posts where a paper figure is not applicable.
+
+## Standing CTA
+For 에이전트/agent/agentic/automation/하네스/harness/루프/loop/MCP/tool use/긴 컨텍스트 에이전트/RL agent topics, add:
+
+`## 더 실습해보고 싶은 분들께`
+
+Include both links:
+- 『[이게 되네? 오픈클로 미친 활용법 50제](https://product.kyobobook.co.kr/detail/S000219615902)』
+- 「[모두를 위한 루프 엔지니어링](https://aifrenz.liveklass.com/classes/309184)」
+
+Run:
+
+```bash
+python3 scripts/blog-promo-quality-gate.py content/posts/<slug>.md --require-relevant
+```
+
+## Build/publish workflow
+1. Verify required paths.
+2. Work in `/Users/conanssam-m4/.openclaw/workspace-blogbot/site`.
+3. Read `published-log.json`; avoid duplicates. Daily count is only for reporting, never a skip reason.
+4. Select one strong candidate.
+5. Prepare verified local images before writing the final post.
+6. Write Korean Quartz markdown under `content/posts/<slug>.md`.
+7. Add CTA if relevant.
+8. Verify image refs resolve and are absolute `/images/...` refs.
+9. Run Voice SpyRL gate and fix failures.
+10. Run image gate.
+11. Run promo gate.
+12. Run `npx quartz build`.
+13. Git add only intended files: post, `content/images/<slug>/`, `published-log.json`, wiki note if inside repo, intentional script changes. Never add `public/`.
+14. Commit and push to `main`.
+15. Confirm public blog URL and image URLs return HTTP 200.
+16. Fetch public blog URL and verify both CTA links are live before Threads.
+17. Prepare Threads JSON payload and run `python3 scripts/threads-quality-gate.py /tmp/<slug>-threads-payload.json`.
+18. Publish Threads only after gate passes.
+19. Create wiki note: `/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/<YYYY-MM-DD>-<slug>.md`.
+
+## Threads contract
+- Root-only is forbidden.
+- Minimum 3 posts, recommended 4–6.
+- Root has explicit image and no bare URL.
+- Blog link goes in final or penultimate reply.
+- If 4+ posts, attach at least 2 explicit images.
+- Use Python list/subprocess or safe quoting. Dry-run must not contain literal `\\n`.
+
+## Final report
+Include:
+- Blog URL and HTTP status
+- Today's count after publish
+- Image URLs and HTTP status
+- Voice SpyRL gate result and report path
+- Blog image gate result
+- Blog promo gate result
+- Live CTA verification
+- Original paper Figure/Table included? yes/no
+- Commit hash
+- Threads quality gate result
+- Threads IDs and image post numbers
+- Wiki note path
+- Exact skip/block reason if stopped
