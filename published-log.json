@@ -2598,7 +2598,22 @@
         "distillation",
         "Baidu",
         "Tsinghua"
-      ]
+      ],
+      "threads_root_id": "18105358934336234",
+      "threads_reply_ids": [
+        "17937631434338006",
+        "18180598555416545",
+        "17963358077962129",
+        "18022627601901890",
+        "17931434868122538"
+      ],
+      "threads_image_posts": [
+        1,
+        4,
+        6
+      ],
+      "commit": "031b52f9",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-03-agent-harness-distillation-inference-time-harness-extraction.md"
     }
   ],
   "posts": [
