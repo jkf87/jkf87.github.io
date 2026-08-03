@@ -1151,7 +1151,12 @@
         3,
         6
       ],
-      "commit": "668e77d3"
+      "commit": "8b8f2931",
+      "figure_fix_commit": "8b8f2931",
+      "figures": [
+        "original-rl-agent.png",
+        "original-rl-environment.png"
+      ]
     }
   ],
   "entries": [
@@ -2829,7 +2834,12 @@
         3,
         6
       ],
-      "commit": "668e77d3"
+      "commit": "8b8f2931",
+      "figure_fix_commit": "8b8f2931",
+      "figures": [
+        "original-rl-agent.png",
+        "original-rl-environment.png"
+      ]
     }
   ]
 }
