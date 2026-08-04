@@ -2970,7 +2970,23 @@
         "progressive-editing",
         "automation",
         "loop"
-      ]
+      ],
+      "threads_root_id": "18137646625513795",
+      "threads_reply_ids": [
+        "17995693712798104",
+        "18347111266222064",
+        "18123404371744808",
+        "18066320657742104",
+        "18117279898901452"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        4,
+        6
+      ],
+      "commit": "76f8472f",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-04-skill-alpha-progressive-agent-skill-rl.md"
     }
   ],
   "posts": [
