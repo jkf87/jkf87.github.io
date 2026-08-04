@@ -1205,7 +1205,24 @@
         "optimization",
         "loop",
         "automation"
-      ]
+      ],
+      "threads_root_id": "18098655797213090",
+      "threads_reply_ids": [
+        "18106173743588662",
+        "18466830859114783",
+        "18113117536967788",
+        "18129828406635192",
+        "18101504312219000"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        4,
+        5,
+        6
+      ],
+      "commit": "1c479791",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-04-drevo-harness-self-evolution.md"
     }
   ],
   "entries": [
