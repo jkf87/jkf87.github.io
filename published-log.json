@@ -1325,6 +1325,26 @@
       ],
       "commit": "9100cd73",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-04-real-time-agent-failure-detection-repair.md"
+    },
+    {
+      "date": "2026-08-05",
+      "slug": "2026-08-05-longhorizon-harness-mea-loop-long-horizon-agents",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2608.01964",
+      "title": "LongHorizon-Harness: 긴 호라이즌 에이전트의 함정 — 실행과 검증을 분리하는 MEA 루프",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-05-longhorizon-harness-mea-loop-long-horizon-agents",
+      "tags": [
+        "agent",
+        "harness",
+        "LLM",
+        "long-horizon",
+        "task-state",
+        "MEA-loop",
+        "automation",
+        "tool-use",
+        "computer-use",
+        "OpenClaw"
+      ]
     }
   ],
   "entries": [
