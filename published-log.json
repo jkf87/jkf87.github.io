@@ -1257,6 +1257,24 @@
       ],
       "commit": "e474ddb5",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-04-living-harness-self-evolving-agent-evolver.md"
+    },
+    {
+      "slug": "2026-08-04-memharness-memory-reconstruction",
+      "date": "2026-08-04",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.28272",
+      "title": "MemHarness: 에이전트가 과거 경험을 그대로 복사하지 않고 다시 쓰는 방법",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-04-memharness-memory-reconstruction",
+      "tags": [
+        "agent",
+        "memory",
+        "harness",
+        "LLM",
+        "reinforcement-learning",
+        "GRPO",
+        "skill",
+        "loop"
+      ]
     }
   ],
   "entries": [
