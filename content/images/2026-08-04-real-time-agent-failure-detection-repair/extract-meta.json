@@ -1,0 +1,295 @@
+[
+  {
+    "page": 1,
+    "file": "fig-p1-fallback.png",
+    "method": "fallback_top45 (1530x891)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 152,
+    "width": 1530,
+    "height": 891,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 2,
+    "file": "fig-p2-fallback.png",
+    "method": "fallback_top45 (1530x891)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 173,
+    "width": 1530,
+    "height": 891,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-p3-fallback.png",
+    "method": "fallback_top45 (1530x891)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 218,
+    "width": 1530,
+    "height": 891,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 4,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Telemetry vector evolution across versions.",
+    "crop": null
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 1 shows the primary monitor on real streams: healthy runs stay two orders of magnitude",
+    "crop": null
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 3 shows why the layer is still worth having: judge and monitor fail on  different  classes — the",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "fig-1-p6.png",
+    "method": "caption_crop (1050x638)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 100,
+    "width": 1050,
+    "height": 638,
+    "caption": "Figure 1:  Real agent traces  ( ollama7b : qwen2.5:7b against real tools). One-class CUSUM score",
+    "crop": [
+      96.0,
+      45.6,
+      516.0,
+      300.56
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (420x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 2:  Real deployments: where the monitor works, by failure class.  Primary-monitor detection",
+    "crop": [
+      96.0,
+      408.02734375,
+      516.0014953613281,
+      294.53485107421875
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-3-p7.png",
+    "method": "caption_crop (1050x561)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 60,
+    "width": 1050,
+    "height": 561,
+    "caption": "Figure 3:  Monitor and judge fail on different classes.  Both series are measured on the same real",
+    "crop": [
+      96.0,
+      408.03,
+      516.0,
+      632.08
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-4-p8.png",
+    "method": "caption_crop (1050x564)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 71,
+    "width": 1050,
+    "height": 564,
+    "caption": "Figure 4:  Monitor comparison on the real corpora only.  Episode AUROC, one dot per real",
+    "crop": [
+      96.0,
+      254.09,
+      516.0,
+      479.52
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-p9-fallback.png",
+    "method": "fallback_top45 (1530x891)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 213,
+    "width": 1530,
+    "height": 891,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 10,
+    "file": "fig-5-p10.png",
+    "method": "caption_crop (1052x592)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 111,
+    "width": 1052,
+    "height": 592,
+    "caption": "Figure 5: Hybrid logistic fusion: episode positions at the deciding step in the (Mahalanobis, ESN)",
+    "crop": [
+      96.0,
+      45.6,
+      516.67,
+      281.75
+    ]
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3:",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4: Repair rungs against a resampling control ( repair_policies.csv ). Asking for a",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "fig-p12-fallback.png",
+    "method": "fallback_top45 (1530x891)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 201,
+    "width": 1530,
+    "height": 891,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 13,
+    "file": "fig-p13-fallback.png",
+    "method": "fallback_top45 (1530x891)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 145,
+    "width": 1530,
+    "height": 891,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 14,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5: Provenance map: each claim to the artifact it is computed from. Every file listed is committed,",
+    "crop": null
+  },
+  {
+    "page": 15,
+    "file": "fig-p15-fallback.png",
+    "method": "fallback_top45 (1530x891)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 180,
+    "width": 1530,
+    "height": 891,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 16,
+    "file": "fig-p16-fallback.png",
+    "method": "fallback_top45 (1530x891)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 147,
+    "width": 1530,
+    "height": 891,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  }
+]
