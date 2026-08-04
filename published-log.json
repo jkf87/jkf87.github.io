@@ -1274,7 +1274,23 @@
         "GRPO",
         "skill",
         "loop"
-      ]
+      ],
+      "threads_root_id": "18064783385753155",
+      "threads_reply_ids": [
+        "18112518016988902",
+        "18112783774949042",
+        "18063288065577563",
+        "17887251252437384",
+        "18105105887137518"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        5,
+        6
+      ],
+      "commit": "751b53e0",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-04-memharness-memory-reconstruction.md"
     }
   ],
   "entries": [
