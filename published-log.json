@@ -1189,6 +1189,23 @@
       ],
       "commit": "056992a4",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-04-tapo-transition-aware-policy-optimization.md"
+    },
+    {
+      "slug": "2026-08-04-drevo-harness-self-evolution",
+      "date": "2026-08-04",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.26722",
+      "title": "DREvo: 하네스 자가진화가 축적하는 경험을 다시 평가하고 쓰는 방법",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-04-drevo-harness-self-evolution",
+      "tags": [
+        "agent",
+        "harness",
+        "LLM",
+        "self-evolution",
+        "optimization",
+        "loop",
+        "automation"
+      ]
     }
   ],
   "entries": [

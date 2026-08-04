@@ -1,0 +1,111 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (788x632)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 257,
+    "width": 788,
+    "height": 632,
+    "caption": "Figure 1: (a) Full-history and compressed-history reuse",
+    "crop": [
+      307.5,
+      204.06,
+      569.99,
+      414.48
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-2-p3.png",
+    "method": "caption_crop (1584x857)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 546,
+    "width": 1584,
+    "height": 857,
+    "caption": "Figure 2: Detailed overview of the DREvo framework, which anchors historical evidence at the function level, recalibrates its",
+    "crop": [
+      42.0,
+      42.09,
+      570.0,
+      327.46
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Overall performance (%).  ∆ denotes the absolute improvement of DREvo over each baseline. Bold and underlined",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Fine-grained success rates (%) by task difficulty and repository. Others include Pytest, Pylint, Requests, Seaborn, and",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "fig-3-p7.png",
+    "method": "caption_crop (788x382)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 65,
+    "width": 788,
+    "height": 382,
+    "caption": "Figure 3: Validation set accuracy (Acc.) and context (Ctx.)",
+    "crop": [
+      42.0,
+      42.0,
+      304.5,
+      169.2
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-4-p7.png",
+    "method": "caption_crop (840x546)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 67,
+    "width": 840,
+    "height": 546,
+    "caption": "Figure 4: Performance changes under controlled component",
+    "crop": [
+      24.93,
+      128.18,
+      304.51,
+      309.7
+    ]
+  },
+  {
+    "page": 7,
+    "file": "table-3-p7.png",
+    "method": "caption_crop (1584x377)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 118,
+    "width": 1584,
+    "height": 377,
+    "caption": "Table 3: Ablation results (%). A, R, and D denote Function-",
+    "crop": [
+      42.0,
+      42.0,
+      569.99,
+      167.49
+    ]
+  }
+]
