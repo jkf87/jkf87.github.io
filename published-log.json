@@ -1240,7 +1240,23 @@
         "interactive-agent",
         "loop",
         "automation"
-      ]
+      ],
+      "threads_root_id": "17962256517170842",
+      "threads_reply_ids": [
+        "18119914948893709",
+        "18061536092587963",
+        "18090000215364453",
+        "18120485521853748",
+        "17901660183329532"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        5,
+        6
+      ],
+      "commit": "e474ddb5",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-04-living-harness-self-evolving-agent-evolver.md"
     }
   ],
   "entries": [
