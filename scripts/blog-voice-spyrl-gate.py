@@ -40,8 +40,40 @@ BANNED = {
     "결론적으로": "요약형 봉합",
 }
 
+# Korean no-ai-slop overlay. These are suspicious patterns, not hard bans:
+# the goal is to flag "AI-smooth" blog prose while preserving ConanSam's plain voice.
+KOREAN_SLOP_PHRASES = {
+    "결국 중요한 것은": "generic_takeaway",
+    "중요한 것은": "generic_takeaway",
+    "핵심은 바로": "faux_insight_setup",
+    "시사점은 명확합니다": "fake_clarity",
+    "단순한 기술 변화가 아닙니다": "binary_contrast",
+    "단순한 변화가 아닙니다": "binary_contrast",
+    "의미가 큽니다": "importance_puffery",
+    "중요한 전환점": "importance_puffery",
+    "새로운 패러다임": "importance_puffery",
+    "패러다임이 바뀌": "importance_puffery",
+    "게임 체인저": "importance_puffery",
+    "혁신적인": "importance_puffery",
+    "앞으로의 AI 시대": "era_diagnosis",
+    "AI 시대에는": "era_diagnosis",
+    "이 글에서는": "throat_clearing",
+    "살펴보겠습니다": "throat_clearing",
+    "한마디로": "faux_simplifier",
+    "쉽게 말해": "faux_simplifier",
+    "놀라운 점은": "faux_insight_setup",
+    "여기서 끝이 아닙니다": "dramatic_fragment",
+    "미래는 이미": "fake_profound_ending",
+    "미래가 이미": "fake_profound_ending",
+    "많은 연구자": "weasel_attribution",
+    "업계에서는": "weasel_attribution",
+    "전문가들은": "weasel_attribution",
+}
+
 # A가 아니라 B다 aphorism frame. 구어 "그게 아니라"는 문맥상 예외로 둔다.
 APHORISM_RE = re.compile(r"(?<!그게 )(?<!그건 )(?<!이게 )(?<!아 그게 )가 아니라")
+NOT_X_BUT_Y_RE = re.compile(r"(?:이|그|단순한|단지|그저)?[^.!?\n]{0,35}(?:이|가|은|는)\s+아니(?:라|고)[^.!?\n]{0,60}(?:이다|입니다|한다|합니다|된다|됩니다)")
+RHETORICAL_QA_RE = re.compile(r"[^\n?.!]{2,45}\?\s*(?:아닙니다|맞습니다|그렇습니다|이겁니다|바로|결국)")
 BOLD_RE = re.compile(r"\*\*[^*]+\*\*")
 HEADING_RE = re.compile(r"^#{2,4}\s+(.+)$", re.M)
 IMAGE_RE = re.compile(r"!\[[^\]]*\]\(([^)]+)\)")
@@ -62,7 +94,13 @@ GOOD_PATTERNS = {
 AVOID_TAGS = {
     "too_long_paragraph": "문단 김",
     "banned_phrase": "금지 표현",
+    "korean_ai_slop": "한국어 AI slop 표현",
+    "binary_contrast": "대구/이분법 프레임",
     "aphorism": "A가 아니라 B다 프레임",
+    "rhetorical_qa": "자문자답 문장",
+    "importance_puffery": "의미부여/과장어",
+    "era_diagnosis": "시대 진단 문장",
+    "weasel_attribution": "출처 없는 일반화",
     "bold_overuse": "볼드 과함",
     "no_images": "이미지 없음",
     "few_numbers": "실물/수치 부족",
@@ -136,7 +174,13 @@ def evaluate(path: Path) -> CandidateReport:
     long_paras = sum(1 for n in para_lens if n > 260)
     very_long_paras = sum(1 for n in para_lens if n > 420)
     banned_counts = {k: body.count(k) for k in BANNED}
+    slop_counts = {k: body.count(k) for k in KOREAN_SLOP_PHRASES}
+    slop_by_category: dict[str, int] = {}
+    for phrase, category in KOREAN_SLOP_PHRASES.items():
+        slop_by_category[category] = slop_by_category.get(category, 0) + slop_counts[phrase]
     aphorism = len(APHORISM_RE.findall(body))
+    binary_contrast = len(NOT_X_BUT_Y_RE.findall(body))
+    rhetorical_qa = len(RHETORICAL_QA_RE.findall(body))
     bold = len(BOLD_RE.findall(body))
     images = IMAGE_RE.findall(body)
     abs_image_bad = sum(1 for img in images if not img.startswith("/images/"))
@@ -159,14 +203,31 @@ def evaluate(path: Path) -> CandidateReport:
 
     penalty = 0.0
     banned_total = sum(banned_counts.values())
+    slop_total = sum(slop_counts.values())
     if banned_total:
         penalty += 9 * banned_total
         tags.append("banned_phrase")
         notes.append(f"금지 표현 {banned_total}회")
+    if slop_total:
+        penalty += min(28, 3.5 * slop_total)
+        tags.append("korean_ai_slop")
+        notes.append(f"한국어 AI slop 표현 {slop_total}회")
+        for category, count in sorted(slop_by_category.items()):
+            if not count:
+                continue
+            tags.append(category if category in AVOID_TAGS else "korean_ai_slop")
     if aphorism:
         penalty += 10 * aphorism
         tags.append("aphorism")
         notes.append(f"A가 아니라 B다 프레임 {aphorism}회")
+    if binary_contrast:
+        penalty += 5 * binary_contrast
+        tags.append("binary_contrast")
+        notes.append(f"대구/이분법 문장 {binary_contrast}회")
+    if rhetorical_qa:
+        penalty += 4 * rhetorical_qa
+        tags.append("rhetorical_qa")
+        notes.append(f"자문자답 문장 {rhetorical_qa}회")
     if bold > 4:
         penalty += min(18, (bold - 4) * 2.5)
         tags.append("bold_overuse")
@@ -223,7 +284,10 @@ def evaluate(path: Path) -> CandidateReport:
         "long_paragraphs": long_paras,
         "very_long_paragraphs": very_long_paras,
         "banned_total": banned_total,
+        "korean_slop_total": slop_total,
         "aphorism_frame": aphorism,
+        "binary_contrast": binary_contrast,
+        "rhetorical_qa": rhetorical_qa,
         "bold_spans": bold,
         "images": len(images),
         "bad_image_paths": abs_image_bad,
@@ -233,6 +297,8 @@ def evaluate(path: Path) -> CandidateReport:
         "metaphor_headings": metaphor_headings,
     }
     counts.update({f"phrase:{k}": v for k, v in banned_counts.items() if v})
+    counts.update({f"slop:{k}": v for k, v in slop_counts.items() if v})
+    counts.update({f"slop_category:{k}": v for k, v in slop_by_category.items() if v})
     return CandidateReport(
         path=str(path),
         score=round(score, 2),
