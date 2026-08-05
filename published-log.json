@@ -1496,7 +1496,21 @@
         "evaluation",
         "persistence",
         "recursive-self-improvement"
-      ]
+      ],
+      "threads_root_id": "18089806070394687",
+      "threads_reply_ids": [
+        "17983370241104998",
+        "18006970436765317",
+        "18097534628577824",
+        "18122966965699207"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        5
+      ],
+      "commit": "abfaf113",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-06-past-bench-recursive-self-improvement-personal-agents.md"
     }
   ],
   "entries": [
