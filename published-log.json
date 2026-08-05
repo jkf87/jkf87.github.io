@@ -1459,6 +1459,24 @@
       ],
       "commit": "b97573ac",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-05-turnsight-turn-level-hindsight-self-distillation-tir.md"
+    },
+    {
+      "slug": "2026-08-05-pcsd-persistent-consistency-agentic-rl",
+      "date": "2026-08-05",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2608.01837",
+      "title": "PCSD: Persistent Consistency for Self-Distillation in Agentic Reinforcement Learning",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-05-pcsd-persistent-consistency-agentic-rl",
+      "tags": [
+        "agent",
+        "reinforcement-learning",
+        "LLM",
+        "self-distillation",
+        "agentic-RL",
+        "credit-assignment",
+        "GRPO",
+        "loop"
+      ]
     }
   ],
   "entries": [

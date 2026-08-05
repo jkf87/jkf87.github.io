@@ -1,0 +1,104 @@
+[
+  {
+    "page": 7,
+    "file": "fig-3-p7-1.png",
+    "method": "caption_crop (2065x503)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 138,
+    "width": 2065,
+    "height": 503,
+    "caption": "Figure 3: Training dynamics. Average teacher–student gap",
+    "crop": [
+      42.0,
+      42.0,
+      558.07,
+      167.59
+    ]
+  },
+  {
+    "page": 7,
+    "file": "table-2-p7-2.png",
+    "method": "caption_crop (2065x1720)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 527,
+    "width": 2065,
+    "height": 1720,
+    "caption": "Table 2:  Component ablation on ALFWorld.  Success rates",
+    "crop": [
+      42.0,
+      42.0,
+      558.07,
+      471.99
+    ]
+  },
+  {
+    "page": 7,
+    "file": "table-2-p7-3.png",
+    "method": "caption_crop (2065x1989)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 631,
+    "width": 2065,
+    "height": 1989,
+    "caption": "Table 2 evaluates the key compo-",
+    "crop": [
+      42.0,
+      42.0,
+      558.07,
+      539.07
+    ]
+  },
+  {
+    "page": 7,
+    "file": "table-3-p7-4.png",
+    "method": "caption_crop (2065x2406)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 781,
+    "width": 2065,
+    "height": 2406,
+    "caption": "Table 3 evalu-",
+    "crop": [
+      42.0,
+      42.0,
+      558.07,
+      643.29
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-4-p7.png",
+    "method": "caption_crop (2112x667)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 197,
+    "width": 2112,
+    "height": 667,
+    "caption": "Figure 4: Generalization to unseen ALFWorld environments.",
+    "crop": [
+      42.0,
+      42.0,
+      569.99,
+      208.72
+    ]
+  },
+  {
+    "page": 7,
+    "file": "table-3-p7-6.png",
+    "method": "caption_crop (2112x1448)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 446,
+    "width": 2112,
+    "height": 1448,
+    "caption": "Table 3:  Sensitivity to the distillation coefficient.  We report",
+    "crop": [
+      42.0,
+      42.0,
+      569.99,
+      403.87
+    ]
+  }
+]
