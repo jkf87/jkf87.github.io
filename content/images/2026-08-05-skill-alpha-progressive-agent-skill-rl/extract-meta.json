@@ -1,0 +1,424 @@
+[
+  {
+    "page": 1,
+    "file": "fig-p1-fallback.png",
+    "method": "fallback_top45 (1836x1070)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 169,
+    "width": 1836,
+    "height": 1070,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 2,
+    "file": "fig-p2-fallback.png",
+    "method": "fallback_top45 (1836x1070)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 249,
+    "width": 1836,
+    "height": 1070,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-p3-fallback.png",
+    "method": "fallback_top45 (1836x1070)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 224,
+    "width": 1836,
+    "height": 1070,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-1-p4.png",
+    "method": "caption_crop (1261x446)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 99,
+    "width": 1261,
+    "height": 446,
+    "caption": "Figure 1: An overview of Skill- α . Left: during inference, Skill- α  reads evidence sequentially and",
+    "crop": [
+      96.0,
+      70.11,
+      516.0,
+      218.54
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Training template for Skill- α . The policy writes a reasoning trace and one structured edit",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "fig-p6-fallback.png",
+    "method": "fallback_top45 (1836x1070)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 240,
+    "width": 1836,
+    "height": 1070,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Document-to-skill results on CL-Bench. Avg. is the unweighted average over the four",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Experience-to-skill results on SpreadsheetBench and tau2-bench. tau2-bench Avg. is the",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "fig-2-p8.png",
+    "method": "caption_crop (1261x416)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 109,
+    "width": 1261,
+    "height": 416,
+    "caption": "Figure 2: Training dynamics and rollout action distribution under the main ablations. Left: training",
+    "crop": [
+      96.0,
+      90.25,
+      516.0,
+      228.53
+    ]
+  },
+  {
+    "page": 8,
+    "file": "table-4-p8.png",
+    "method": "caption_crop (1128x1504)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 368,
+    "width": 1128,
+    "height": 1504,
+    "caption": "Table 4: Ablation study. CL-Bench Avg. averages the",
+    "crop": [
+      140.52,
+      90.25,
+      516.0,
+      591.29
+    ]
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5: Analysis of evidence order and batch",
+    "crop": null
+  },
+  {
+    "page": 10,
+    "file": "fig-p10-fallback.png",
+    "method": "fallback_top45 (1836x1070)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 207,
+    "width": 1836,
+    "height": 1070,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 11,
+    "file": "fig-p11-fallback.png",
+    "method": "fallback_top45 (1836x1070)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 243,
+    "width": 1836,
+    "height": 1070,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 12,
+    "file": "fig-p12-fallback.png",
+    "method": "fallback_top45 (1836x1070)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 222,
+    "width": 1836,
+    "height": 1070,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 13,
+    "file": "fig-p13-fallback.png",
+    "method": "fallback_top45 (1836x1070)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 227,
+    "width": 1836,
+    "height": 1070,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 14,
+    "file": "fig-p14-fallback.png",
+    "method": "fallback_top45 (1836x1070)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 182,
+    "width": 1836,
+    "height": 1070,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 15,
+    "file": "fig-p15-fallback.png",
+    "method": "fallback_top45 (1836x1070)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 195,
+    "width": 1836,
+    "height": 1070,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 16,
+    "file": "fig-p16-fallback.png",
+    "method": "fallback_top45 (1836x1070)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 157,
+    "width": 1836,
+    "height": 1070,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 17,
+    "file": "fig-p17-fallback.png",
+    "method": "fallback_top45 (1836x1070)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 187,
+    "width": 1836,
+    "height": 1070,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 18,
+    "file": "fig-p18-fallback.png",
+    "method": "fallback_top45 (1836x1070)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 217,
+    "width": 1836,
+    "height": 1070,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 19,
+    "file": "fig-p19-fallback.png",
+    "method": "fallback_top45 (1836x1070)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 251,
+    "width": 1836,
+    "height": 1070,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 20,
+    "file": "fig-p20-fallback.png",
+    "method": "fallback_top45 (1836x1070)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 140,
+    "width": 1836,
+    "height": 1070,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 21,
+    "file": "fig-p21-fallback.png",
+    "method": "fallback_top45 (1836x1070)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 155,
+    "width": 1836,
+    "height": 1070,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 22,
+    "file": "fig-p22-fallback.png",
+    "method": "fallback_top45 (1836x1070)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 120,
+    "width": 1836,
+    "height": 1070,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 23,
+    "file": "fig-p23-fallback.png",
+    "method": "fallback_top45 (1836x1070)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 96,
+    "width": 1836,
+    "height": 1070,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 24,
+    "file": "fig-p24-fallback.png",
+    "method": "fallback_top45 (1836x1070)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 173,
+    "width": 1836,
+    "height": 1070,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  }
+]
