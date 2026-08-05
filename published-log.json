@@ -1409,7 +1409,23 @@
         "loop",
         "co-evolution"
       ],
-      "github_url": "https://github.com/DeepExperience/Harness-R1"
+      "github_url": "https://github.com/DeepExperience/Harness-R1",
+      "threads_root_id": "17890841913668805",
+      "threads_reply_ids": [
+        "18127727743735742",
+        "18107693602843513",
+        "18116298340906669",
+        "18091947605548080",
+        "17985668196030884"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        5,
+        6
+      ],
+      "commit": "743c6c9f",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-05-harness-r1-executable-runtime-harness-rl.md"
     }
   ],
   "entries": [
