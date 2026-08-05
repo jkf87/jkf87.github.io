@@ -1391,6 +1391,25 @@
         6
       ],
       "commit": "d1db3a3a"
+    },
+    {
+      "slug": "2026-08-05-harness-r1-executable-runtime-harness-rl",
+      "date": "2026-08-05",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2608.02276",
+      "title": "Harness-R1: 에이전트 하네스 코드를 RL로 고치는 9B 모델",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-05-harness-r1-executable-runtime-harness-rl",
+      "tags": [
+        "agent",
+        "harness",
+        "LLM",
+        "reinforcement-learning",
+        "GRPO",
+        "self-evolution",
+        "loop",
+        "co-evolution"
+      ],
+      "github_url": "https://github.com/DeepExperience/Harness-R1"
     }
   ],
   "entries": [
