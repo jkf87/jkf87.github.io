@@ -1,0 +1,255 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1-1.png",
+    "method": "caption_crop (1485x881)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 263,
+    "width": 1485,
+    "height": 881,
+    "caption": "Figure 1  |  Overview of PAST-Bench. The benchmark tests whether agents improve across sessions by",
+    "crop": [
+      50.36,
+      446.04,
+      545.18,
+      739.4
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1  |  Comparison with representative benchmarks. PAST-Bench is designed for retained-experience",
+    "crop": null
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  1  situates PAST-Bench against representative agent benchmarks along four methodology",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "fig-2-p6.png",
+    "method": "caption_crop (623x690)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 336,
+    "width": 623,
+    "height": 690,
+    "caption": "Figure 2  |  Task family distribution of",
+    "crop": [
+      337.4,
+      308.98,
+      544.92,
+      538.43
+    ]
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2  |  Overall performance of PAST-Bench with Hermes agent.  w/o evolve and w/ evolve",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  2  fixes the agent framework to Hermes and varies the base model. The leftmost column records",
+    "crop": null
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3  |  Fixed-model agent comparison on the four PAST-Bench capabilities. MiniMax-M2.7 is",
+    "crop": null
+  },
+  {
+    "page": 10,
+    "file": "fig-3-p10-1.png",
+    "method": "caption_crop (1484x1136)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 285,
+    "width": 1484,
+    "height": 1136,
+    "caption": "Figure 3  |  Runtime insertion points in Hermes+. Gray boxes are the original Hermes loop; colored",
+    "crop": [
+      50.36,
+      73.04,
+      544.91,
+      451.44
+    ]
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  4  isolates the contribution of each mechanism. Each non-final row adds a single mechanism on",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4  |  Single-mechanism ablations on PAST-Bench (MiniMax-M2.7, fixed task set and grader).  Each",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5  |  Focused Procedural interaction diagnosis.",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  5  show that removing E2 raises  Δ  from",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  4  tests isolated interventions,",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  5  tests mechanism interactions, and Table  6  tests cross-model transfer. Together they show why",
+    "crop": null
+  },
+  {
+    "page": 13,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6  |  Hermes+ across five base models. For each capability, w/ is the persistence-on score",
+    "crop": null
+  },
+  {
+    "page": 19,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  7  reports the full task distribution of PAST-Bench.",
+    "crop": null
+  },
+  {
+    "page": 19,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 7  |  The number of task instances in each main capability of task family in PAST-Bench. Each",
+    "crop": null
+  },
+  {
+    "page": 20,
+    "file": "fig-4-p20-1.png",
+    "method": "caption_crop (1484x485)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 93,
+    "width": 1484,
+    "height": 485,
+    "caption": "Figure 4  |  B1: Plan (Constraint Retention).  The planning step turns a retained constraint into an",
+    "crop": [
+      50.36,
+      525.06,
+      544.92,
+      686.56
+    ]
+  },
+  {
+    "page": 21,
+    "file": "fig-5-p21-1.png",
+    "method": "caption_crop (1485x513)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 113,
+    "width": 1485,
+    "height": 513,
+    "caption": "Figure 5  |  B2: Render (Fact Correction).  Typed binding metadata plus a render filter let the agent",
+    "crop": [
+      50.36,
+      279.34,
+      545.1,
+      450.15
+    ]
+  }
+]

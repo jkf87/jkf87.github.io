@@ -1477,6 +1477,26 @@
         "GRPO",
         "loop"
       ]
+    },
+    {
+      "date": "2026-08-06",
+      "slug": "2026-08-06-past-bench-recursive-self-improvement-personal-agents",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2608.04003",
+      "title": "PAST-Bench: 에이전트가 경험에서 나아지는지, 처음으로 제대로 측정한 벤치마크",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-06-past-bench-recursive-self-improvement-personal-agents",
+      "tags": [
+        "agent",
+        "self-improvement",
+        "benchmark",
+        "personal-agent",
+        "memory",
+        "harness",
+        "LLM",
+        "evaluation",
+        "persistence",
+        "recursive-self-improvement"
+      ]
     }
   ],
   "entries": [
