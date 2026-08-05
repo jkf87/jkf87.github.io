@@ -1426,6 +1426,25 @@
       ],
       "commit": "743c6c9f",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-05-harness-r1-executable-runtime-harness-rl.md"
+    },
+    {
+      "date": "2026-08-05",
+      "slug": "2026-08-05-turnsight-turn-level-hindsight-self-distillation-tir",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2608.04007",
+      "title": "TurnSight: 도구 호출 에이전트의 크레딧 할당 문제를 hindsight로 푼다",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-05-turnsight-turn-level-hindsight-self-distillation-tir",
+      "tags": [
+        "agent",
+        "reinforcement-learning",
+        "LLM",
+        "tool-integrated-reasoning",
+        "self-distillation",
+        "hindsight",
+        "credit-assignment",
+        "GRPO",
+        "loop"
+      ]
     }
   ],
   "entries": [

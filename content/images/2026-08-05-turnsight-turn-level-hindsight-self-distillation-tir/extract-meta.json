@@ -1,0 +1,128 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1-1.png",
+    "method": "caption_crop (1101x673)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 136,
+    "width": 1101,
+    "height": 673,
+    "caption": "Figure 1: Comparison of credit assignment strategies for TIR.",
+    "crop": [
+      297.55,
+      202.4,
+      612.0,
+      394.32
+    ]
+  },
+  {
+    "page": 1,
+    "file": "fig-1-p1-2.png",
+    "method": "caption_crop (1101x1629)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 336,
+    "width": 1101,
+    "height": 1629,
+    "caption": "Figure 1(b), existing methods often enrich the teacher with",
+    "crop": [
+      297.55,
+      202.4,
+      612.0,
+      667.62
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-2-p3-1.png",
+    "method": "caption_crop (1951x725)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 246,
+    "width": 1951,
+    "height": 725,
+    "caption": "Figure 2: The illustration of our proposed turn-level hindsight self-distillation framework TurnSight for TIR.",
+    "crop": [
+      28.0,
+      34.0,
+      585.34,
+      240.71
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Main results of TurnSight and baseline methods across three benchmarks using two LLM backbones. For BFCL, MF,",
+    "crop": null
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1 reports the results on three benchmarks, from which",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "table-2-p6-1.png",
+    "method": "caption_crop (1766x389)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 87,
+    "width": 1766,
+    "height": 389,
+    "caption": "Table 2: Ablation study of the core components.",
+    "crop": [
+      65.5,
+      42.0,
+      570.0,
+      152.96
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-3-p6-2.png",
+    "method": "caption_crop (919x546)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 58,
+    "width": 919,
+    "height": 546,
+    "caption": "Figure 3: Effect of hindsight context composition. Darker",
+    "crop": [
+      307.5,
+      42.0,
+      570.0,
+      197.8
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-4-p7-1.png",
+    "method": "caption_crop (1849x566)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 71,
+    "width": 1849,
+    "height": 566,
+    "caption": "Figure 4: Comparison of fixed-lookahead teachers, teacher fusion, and our direction-consistent teacher selection.",
+    "crop": [
+      42.0,
+      42.0,
+      570.02,
+      203.23
+    ]
+  }
+]
