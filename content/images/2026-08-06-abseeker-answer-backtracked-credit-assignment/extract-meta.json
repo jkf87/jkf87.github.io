@@ -1,0 +1,193 @@
+[
+  {
+    "page": 1,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too page-like (area_ratio=0.60)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 1: ABSeeker achieves the best performance among 4B models and remains competitive with several",
+    "crop": [
+      67.37000274658203,
+      61.411041259765625,
+      544.6254272460938,
+      669.7805786132812
+    ]
+  },
+  {
+    "page": 3,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  2  provides an overview of the training pipeline, which consists of two core stages. Section  3.1  first",
+    "crop": null
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (1438x768)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 186,
+    "width": 1438,
+    "height": 768,
+    "caption": "Figure 2: Overview of the training pipeline, which consists of two core stages.  Stage 1: Answer-",
+    "crop": [
+      67.37,
+      60.0,
+      546.41,
+      315.43
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-3-p5.png",
+    "method": "caption_crop (1432x890)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 232,
+    "width": 1432,
+    "height": 890,
+    "caption": "Figure 3: An illustrative example of  Answer-Backtracked Clue Recovery  and  Clue-Anchored Step",
+    "crop": [
+      67.37,
+      60.0,
+      544.63,
+      356.63
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too page-like (area_ratio=0.56)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  3  (left) illustrates this process using a concrete question from the training set. Given a four-constraint",
+    "crop": [
+      67.37000274658203,
+      59.99977111816406,
+      544.6254272460938,
+      624.6275634765625
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1:  Clue-Anchored Step Scoring  rubric.",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  3  (right) illustrates the scoring process. After recovering the six clues ( c 1 – c 6 ) in Section  3.2 , selected",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Performance comparison across five benchmarks. For BrowseComp and BrowseComp-ZH, *",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  3  evaluates ABC-SFT and ABC-GRPO across all five benchmarks, with all methods tested without",
+    "crop": null
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (477x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 4: Distribution of step rewards across the 8.5K SFT trajectories. The left half shows successful",
+    "crop": [
+      67.37000274658203,
+      265.9300537109375,
+      544.63330078125,
+      230.90855407714844
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-5-p9.png",
+    "method": "caption_crop (1432x386)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 85,
+    "width": 1432,
+    "height": 386,
+    "caption": "Figure 5: RL training dynamics.  Left : Performance during training.",
+    "crop": [
+      67.37,
+      265.93,
+      544.62,
+      394.03
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-6-p9.png",
+    "method": "caption_crop (982x386)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 60,
+    "width": 982,
+    "height": 386,
+    "caption": "Figure 6: Performance under",
+    "crop": [
+      217.62,
+      265.93,
+      544.62,
+      394.03
+    ]
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Ablation study of ABC-SFT and ABC-GRPO. Results are evaluated without context management.",
+    "crop": null
+  }
+]

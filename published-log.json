@@ -1625,6 +1625,26 @@
       ],
       "commit": "58b5d352",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-06-self-evolving-coding-agents-survey.md"
+    },
+    {
+      "date": "2026-08-06",
+      "slug": "2026-08-06-abseeker-answer-backtracked-credit-assignment",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2608.05102",
+      "title": "ABSeeker: 4B 검색 에이전트가 30B를 이기는 방법 - 답에서 거꾸로 추적하는 크레딧 할당",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-06-abseeker-answer-backtracked-credit-assignment",
+      "tags": [
+        "agent",
+        "search-agent",
+        "reinforcement-learning",
+        "credit-assignment",
+        "LLM",
+        "GRPO",
+        "SFT",
+        "BrowseComp",
+        "long-horizon",
+        "loop"
+      ]
     }
   ],
   "entries": [
