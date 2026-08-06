@@ -1552,6 +1552,26 @@
       "source_url": "https://arxiv.org/abs/2608.05013",
       "threads_root_id": "18070293527474078",
       "blog_url": "https://jkf87.github.io/posts/2026-08-06-onedayagent-long-horizon-harness"
+    },
+    {
+      "date": "2026-08-06",
+      "slug": "2026-08-06-skill-entropy-cross-skill-long-horizon-rl",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2608.05139",
+      "title": "Skill Entropy: LLM이 스킬을 바꾸는 순간 성능이 무너지는 이유",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-06-skill-entropy-cross-skill-long-horizon-rl",
+      "tags": [
+        "agent",
+        "long-horizon",
+        "reasoning",
+        "reinforcement-learning",
+        "LLM",
+        "skill-switching",
+        "benchmark",
+        "RL",
+        "loop",
+        "automation"
+      ]
     }
   ],
   "entries": [

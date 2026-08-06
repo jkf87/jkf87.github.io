@@ -1,0 +1,133 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1484x1402)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 392,
+    "width": 1484,
+    "height": 1402,
+    "caption": "Figure 1  |  Skill Entropy for Benchmarking and Training Skill-Native LLMs.  We define a  cross-skill",
+    "crop": [
+      50.36,
+      73.04,
+      544.92,
+      540.03
+    ]
+  },
+  {
+    "page": 4,
+    "file": "table-1-p4.png",
+    "method": "caption_crop (1627x675)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 157,
+    "width": 1627,
+    "height": 675,
+    "caption": "Table 1  |  Skill 2 -Bench  includes 9 Domains with 558 labeled skills in total.  Verifiable domains use",
+    "crop": [
+      2.7,
+      96.87,
+      544.91,
+      321.44
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-2-p5.png",
+    "method": "caption_crop (1485x633)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 191,
+    "width": 1485,
+    "height": 633,
+    "caption": "Figure 2  |  Visualization of skill entropy across 9  Skill 2 -Bench  domains. Left:  pairwise skill entropy",
+    "crop": [
+      50.36,
+      73.04,
+      545.18,
+      283.67
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  2  reports per-domain accuracy on the five most populated verifiable domains (coding, logic,",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "table-2-p7.png",
+    "method": "caption_crop (1490x529)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 105,
+    "width": 1490,
+    "height": 529,
+    "caption": "Table 2  |  Evaluation results on  Skill 2 -Bench .  We present two statistics:  (1) Domain Accuracy,",
+    "crop": [
+      50.03,
+      345.48,
+      546.49,
+      521.49
+    ]
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (495x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3  |  Performance comparison of  Skill-Entropy RL  against baseline post-training methods",
+    "crop": [
+      50.03499984741211,
+      449.2232971191406,
+      544.9116821289062,
+      386.2474060058594
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-3-p9.png",
+    "method": "caption_crop (1484x507)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 151,
+    "width": 1484,
+    "height": 507,
+    "caption": "Figure 3  |  Case study:  Skill-Entropy RL  enables cleaner skill and answer-modality switching",
+    "crop": [
+      50.36,
+      405.46,
+      544.92,
+      574.01
+    ]
+  },
+  {
+    "page": 10,
+    "file": "fig-4-p10.png",
+    "method": "caption_crop (578x553)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 62,
+    "width": 578,
+    "height": 553,
+    "caption": "Figure 4  |  Comparison of training curve",
+    "crop": [
+      353.32,
+      542.85,
+      545.52,
+      726.74
+    ]
+  }
+]
