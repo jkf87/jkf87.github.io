@@ -1,0 +1,181 @@
+[
+  {
+    "page": 2,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 1 summarizes the TCPO pipeline. For each prompt, we first sample a group of multi-turn trajectories and",
+    "crop": null
+  },
+  {
+    "page": 3,
+    "file": "fig-1-p3.png",
+    "method": "caption_crop (1521x921)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 215,
+    "width": 1521,
+    "height": 921,
+    "caption": "Figure 1: Overview of TCPO. Given a prompt, the policy samples multiple verifier-guided multi-turn trajectories.",
+    "crop": [
+      45.84,
+      59.67,
+      552.67,
+      366.6
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-1-p6.png",
+    "method": "caption_crop_table_below (1477x770)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 145,
+    "width": 1477,
+    "height": 770,
+    "caption": "Table 1: Main results on math and code tasks. Baselines include GRPO (Shao et al., 2024), MT-GRPO (Zeng et al.,",
+    "crop": [
+      60.0,
+      64.12,
+      552.0,
+      320.64
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2:",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Credit-signal ablation with DeepSeek-R1-",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "table-4-p7.png",
+    "method": "caption_crop_table_below (1477x419)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 87,
+    "width": 1477,
+    "height": 419,
+    "caption": "Table 4: Counterfactual budgeting with DeepSeek-R1-Distill-Llama-8B. TCPO is the default budgeted setting used in",
+    "crop": [
+      60.0,
+      64.12,
+      552.0,
+      203.48
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1 summarizes the main results on math and code tasks.",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "fig-2-p8.png",
+    "method": "caption_crop (1477x511)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 87,
+    "width": 1477,
+    "height": 511,
+    "caption": "Figure 2: Analysis diagnostics. (a) Average normalized credit assigned to different turn types, where Imp. denotes",
+    "crop": [
+      60.0,
+      60.0,
+      552.0,
+      230.29
+    ]
+  },
+  {
+    "page": 8,
+    "file": "table-2-p8.png",
+    "method": "caption_crop (1477x806)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 152,
+    "width": 1477,
+    "height": 806,
+    "caption": "Table 2 evaluates TCPO on AppWorld under the same setting as the original GVPO study. TCPO improves both",
+    "crop": [
+      60.0,
+      60.0,
+      552.0,
+      328.37
+    ]
+  },
+  {
+    "page": 8,
+    "file": "table-3-p8.png",
+    "method": "caption_crop (1477x1052)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 213,
+    "width": 1477,
+    "height": 1052,
+    "caption": "Table 3 isolates the effect of each credit reference. Trajectory-level reward",
+    "crop": [
+      60.0,
+      60.0,
+      552.0,
+      410.35
+    ]
+  },
+  {
+    "page": 8,
+    "file": "table-4-p8.png",
+    "method": "caption_crop (1477x1546)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 359,
+    "width": 1477,
+    "height": 1546,
+    "caption": "Table 4 studies the trade-off between counterfactual gain and training",
+    "crop": [
+      60.0,
+      60.0,
+      552.0,
+      575.03
+    ]
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 2 shows that TCPO assigns positive credit to improvement, preservation, and delayed repair, while penalizing",
+    "crop": null
+  }
+]

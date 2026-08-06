@@ -1511,6 +1511,25 @@
       ],
       "commit": "abfaf113",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-06-past-bench-recursive-self-improvement-personal-agents.md"
+    },
+    {
+      "date": "2026-08-06",
+      "slug": "2026-08-06-tcpo-turn-level-credit-policy-optimization",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2608.01667",
+      "title": "TCPO: 검증자 점수를 크레딧으로 바꾸는 방법 — 멀티턴 에이전트 RL의 핵심 문제",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-06-tcpo-turn-level-credit-policy-optimization",
+      "tags": [
+        "agent",
+        "reinforcement-learning",
+        "LLM",
+        "credit-assignment",
+        "verifier-guided-RL",
+        "GRPO",
+        "multi-turn",
+        "loop",
+        "automation"
+      ]
     }
   ],
   "entries": [
