@@ -1,0 +1,77 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1260x792)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 201,
+    "width": 1260,
+    "height": 792,
+    "caption": "Figure 1: The overview of self-evolving coding agents.",
+    "crop": [
+      96.0,
+      432.15,
+      515.9,
+      695.89
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Conceptual boundary of self-evolving coding agents.",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "fig-2-p6.png",
+    "method": "caption_crop (1260x570)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 113,
+    "width": 1260,
+    "height": 570,
+    "caption": "Figure 2: Taxonomy of self-evolving coding agents by the primary object of evolution. Each leaf",
+    "crop": [
+      96.0,
+      191.81,
+      516.0,
+      381.66
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-2-p6.png",
+    "method": "caption_crop (1261x699)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 140,
+    "width": 1261,
+    "height": 699,
+    "caption": "Table 2 complements Figure 2 by mapping the surveyed systems to the main analytical dimensions",
+    "crop": [
+      95.69,
+      191.81,
+      516.0,
+      424.59
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Classification of representative self-evolving coding-agent papers.",
+    "crop": null
+  }
+]

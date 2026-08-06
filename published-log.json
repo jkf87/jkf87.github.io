@@ -1589,6 +1589,27 @@
       ],
       "commit": "0364ab9c",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-06-skill-entropy-cross-skill-long-horizon-rl.md"
+    },
+    {
+      "date": "2026-08-06",
+      "slug": "2026-08-06-self-evolving-coding-agents-survey",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2608.03392",
+      "title": "코딩 에이전트가 스스로 진화한다 — 5가지 진화 통로와 실행 가능한 피드백",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-06-self-evolving-coding-agents-survey",
+      "tags": [
+        "agent",
+        "coding-agent",
+        "self-evolution",
+        "LLM",
+        "harness",
+        "survey",
+        "software-engineering",
+        "memory",
+        "skill",
+        "tool-use"
+      ],
+      "github_url": "https://github.com/zhouhao1024/Awesome-Self-Evolving-Coding-Agents"
     }
   ],
   "entries": [
