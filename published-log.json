@@ -1544,6 +1544,14 @@
       ],
       "commit": "7417f87a",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-06-tcpo-turn-level-credit-policy-optimization.md"
+    },
+    {
+      "slug": "2026-08-06-onedayagent-long-horizon-harness",
+      "date": "2026-08-06",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2608.05013",
+      "threads_root_id": "18070293527474078",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-06-onedayagent-long-horizon-harness"
     }
   ],
   "entries": [
