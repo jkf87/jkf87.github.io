@@ -1,0 +1,145 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1308x637)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 213,
+    "width": 1308,
+    "height": 637,
+    "caption": "Figure 1  Long-Horizon Everyday Tasks. (a)  Everyday requests have long-horizon, cross-environment, and multimodal",
+    "crop": [
+      44.69,
+      30.52,
+      567.31,
+      285.14
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-2-p3.png",
+    "method": "caption_crop (1308x852)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 330,
+    "width": 1308,
+    "height": 852,
+    "caption": "Figure 2  Overview of OneDayAgent.  OneDayAgent uses a long-horizon harness that decomposes an everyday task, executes",
+    "crop": [
+      44.69,
+      30.52,
+      567.31,
+      371.04
+    ]
+  },
+  {
+    "page": 3,
+    "file": "table-1-p3.png",
+    "method": "caption_crop (1309x1566)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 494,
+    "width": 1309,
+    "height": 1566,
+    "caption": "Table  1 . Intermediate findings and produced artifacts are written into execution memory and the workspace, so",
+    "crop": [
+      44.38,
+      30.52,
+      567.31,
+      656.49
+    ]
+  },
+  {
+    "page": 4,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1  Tool and environment interface in OneDayAgent.  The harness exposes heterogeneous environments through a small",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "table-2-p6.png",
+    "method": "caption_crop (1312x454)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 129,
+    "width": 1312,
+    "height": 454,
+    "caption": "Table 2  Main Results on AgentIF-OneDay.  We compare OneDayAgent with general-purpose agents across task types,",
+    "crop": [
+      44.4,
+      172.27,
+      568.43,
+      353.31
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3  Ablation results for decomposition and verification modules.  All variants use GLM-5.2 and are evaluated on the same",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "fig-3-p8.png",
+    "method": "caption_crop (1308x774)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 259,
+    "width": 1308,
+    "height": 774,
+    "caption": "Figure 3  Execution behavior of OneDayAgent.  OneDayAgent turns long-horizon tasks into a managed execution process",
+    "crop": [
+      44.69,
+      30.52,
+      567.31,
+      339.86
+    ]
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (523x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4  Backend coverage and performance under the same OneDayAgent harness.  All backends are evaluated on the full",
+    "crop": [
+      44.39699935913086,
+      178.8067169189453,
+      567.3079223632812,
+      173.97352600097656
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-4-p9.png",
+    "method": "caption_crop (1328x435)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 160,
+    "width": 1328,
+    "height": 435,
+    "caption": "Figure 4  Backend scaling and execution-style interaction.  Under the same OneDayAgent harness, backend performance shows",
+    "crop": [
+      44.69,
+      178.61,
+      575.54,
+      352.15
+    ]
+  }
+]
