@@ -1645,6 +1645,27 @@
         "long-horizon",
         "loop"
       ]
+    },
+    {
+      "date": "2026-08-07",
+      "slug": "2026-08-07-gdpevo-agent-self-evolution-real-business-tasks",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2608.03764",
+      "title": "GDPevo: 에이전트 자기진화를 실제 비즈니스에서 측정한 최초의 벤치마크",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-07-gdpevo-agent-self-evolution-real-business-tasks",
+      "github_url": "https://github.com/Prism-Shadow/GDPevo",
+      "tags": [
+        "agent",
+        "self-evolution",
+        "benchmark",
+        "LLM",
+        "harness",
+        "evaluation",
+        "enterprise",
+        "automation",
+        "skill",
+        "loop"
+      ]
     }
   ],
   "entries": [
