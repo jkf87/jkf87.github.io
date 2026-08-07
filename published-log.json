@@ -1780,7 +1780,24 @@
         "self-evolution",
         "loop",
         "automation"
-      ]
+      ],
+      "threads_root_id": "18013745093923892",
+      "threads_reply_ids": [
+        "17959386516188940",
+        "17969632595938539",
+        "18107271413034426",
+        "18093110924638203",
+        "18115753295311181"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        4,
+        5,
+        6
+      ],
+      "commit": "221285e9",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-07-envace-world-rehearsal-agentic-rl.md"
     }
   ],
   "entries": [
