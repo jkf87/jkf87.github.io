@@ -1679,7 +1679,14 @@
         "autonomous-research",
         "evidence-graph",
         "llm"
-      ]
+      ],
+      "threads_root_id": "18079676129694859",
+      "threads_reply_ids": [
+        "17857626138692045",
+        "18116036923852729",
+        "18184008301405378"
+      ],
+      "wiki_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-07-evigraph-evidence-graph-autonomous-research-agents.md"
     }
   ],
   "entries": [
