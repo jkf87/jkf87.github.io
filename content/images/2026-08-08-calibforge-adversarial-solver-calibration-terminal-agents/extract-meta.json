@@ -1,0 +1,138 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (1242x585)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 145,
+    "width": 1242,
+    "height": 585,
+    "caption": "Figure 1. Overview of CalibForge.  Top:  Multi-solver and contrastive calibration target a solver-",
+    "crop": [
+      50.36,
+      470.94,
+      546.73,
+      704.41
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-2-p3.png",
+    "method": "caption_crop (1241x696)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 187,
+    "width": 1241,
+    "height": 696,
+    "caption": "Figure 2. Overview of CalibForge. Starting from a  clue , CalibForge authors a candidate task,",
+    "crop": [
+      50.36,
+      93.68,
+      546.28,
+      371.65
+    ]
+  },
+  {
+    "page": 7,
+    "file": "table-1-p7.png",
+    "method": "caption_crop (1242x642)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 126,
+    "width": 1242,
+    "height": 642,
+    "caption": "Table 1. Main results on Terminal-Bench 2.0 and out-of-distribution software-engineering bench-",
+    "crop": [
+      50.02,
+      76.96,
+      546.73,
+      333.48
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-3-p7.png",
+    "method": "caption_crop (1238x498)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 109,
+    "width": 1238,
+    "height": 498,
+    "caption": "Figure  3  further shows that the gains extend across Terminal-Bench 2.0 categories rather than being",
+    "crop": [
+      50.36,
+      304.44,
+      544.92,
+      503.22
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-3-p8.png",
+    "method": "caption_crop (1241x669)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 146,
+    "width": 1241,
+    "height": 669,
+    "caption": "Figure 3. Per-category Terminal-Bench 2.0 tasks solved (pass@3) for (a) CalibForge-30B-A3B and (b)",
+    "crop": [
+      50.36,
+      73.04,
+      546.01,
+      340.11
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-4-p8.png",
+    "method": "caption_crop (1241x567)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 96,
+    "width": 1241,
+    "height": 567,
+    "caption": "Figure 4. Domain composition of CalibForge-generated tasks and prior terminal-task datasets under",
+    "crop": [
+      49.58,
+      371.48,
+      545.47,
+      597.76
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-5-p9.png",
+    "method": "caption_crop (1134x590)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 35,
+    "width": 1134,
+    "height": 590,
+    "caption": "Figure 5. Rank–frequency distribution of capability tags in the CalibForge task collection.",
+    "crop": [
+      71.1,
+      69.23,
+      524.17,
+      305.1
+    ]
+  },
+  {
+    "page": 9,
+    "file": "table-2-p9.png",
+    "method": "caption_crop (1238x919)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 85,
+    "width": 1238,
+    "height": 919,
+    "caption": "Table 2. Collection-level and per-task statistics of environment and verification components. IQR",
+    "crop": [
+      50.02,
+      69.23,
+      544.91,
+      436.41
+    ]
+  }
+]

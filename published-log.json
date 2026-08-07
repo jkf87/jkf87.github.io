@@ -1827,6 +1827,27 @@
         "18546399577076891",
         "18102556676230277"
       ]
+    },
+    {
+      "date": "2026-08-08",
+      "slug": "2026-08-08-calibforge-adversarial-solver-calibration-terminal-agents",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2608.06352",
+      "title": "CalibForge: 터미널 에이전트 훈련 데이터를 자동으로 만들고 검증하는 루프",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-08-calibforge-adversarial-solver-calibration-terminal-agents",
+      "github_url": "https://github.com/AweAI-Team/CalibForge",
+      "tags": [
+        "agent",
+        "terminal-agent",
+        "coding-agent",
+        "LLM",
+        "harness",
+        "RL",
+        "automation",
+        "loop",
+        "tool-use",
+        "benchmark"
+      ]
     }
   ],
   "entries": [
