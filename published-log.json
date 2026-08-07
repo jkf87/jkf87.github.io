@@ -1745,7 +1745,21 @@
         "federation",
         "automation",
         "loop"
-      ]
+      ],
+      "threads_root_id": "18620006656057896",
+      "threads_reply_ids": [
+        "18125476426742487",
+        "18372806233236886",
+        "18606408685029074",
+        "18434681002122881"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        5
+      ],
+      "commit": "7be3b0fa",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-07-evolvenet-collaborative-harness-evolution.md"
     }
   ],
   "entries": [
