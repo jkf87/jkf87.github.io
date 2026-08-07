@@ -1,0 +1,155 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1554x598)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 111,
+    "width": 1554,
+    "height": 598,
+    "caption": "Figure 1. Trusted execution for held-out harness optimization.  The optimizer can write only the target agent’s harness. It",
+    "crop": [
+      47.04,
+      60.0,
+      564.96,
+      259.3
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (1554x943)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 103,
+    "width": 1554,
+    "height": 943,
+    "caption": "Figure 2. Optimizer models separate more than their coding harnesses.  Left:  normalized gain for every run in the",
+    "crop": [
+      47.04,
+      60.0,
+      564.97,
+      373.79
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-3-p6.png",
+    "method": "caption_crop (1557x1257)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 206,
+    "width": 1557,
+    "height": 1257,
+    "caption": "Table  3  in the appendix compares the pinned seeds  H 0  to a number of open-source harnesses, showing that they",
+    "crop": [
+      46.7,
+      18.5,
+      565.34,
+      437.21
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too page-like (area_ratio=0.61)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  1  details our execution infrastructure. Each optimizer is run in an isolated sandbox with evaluation results,",
+    "crop": [
+      47.04100036621094,
+      18.496177673339844,
+      566.31787109375,
+      585.01806640625
+    ]
+  },
+  {
+    "page": 7,
+    "file": "table-1-p7.png",
+    "method": "caption_crop (1555x748)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 129,
+    "width": 1555,
+    "height": 748,
+    "caption": "Table 1.  Normalized gain for every optimizer on every task, one row per model-by-harness contestant so that a contestant reads",
+    "crop": [
+      46.71,
+      18.5,
+      564.96,
+      267.35
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-3-p8.png",
+    "method": "caption_crop (1554x806)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 81,
+    "width": 1554,
+    "height": 806,
+    "caption": "Figure 3. Gain across model releases.  Successive Claude Opus (blue) and GPT (orange) releases on OfficeQA, with all",
+    "crop": [
+      47.04,
+      60.0,
+      564.96,
+      328.32
+    ]
+  },
+  {
+    "page": 8,
+    "file": "table-1-p8.png",
+    "method": "caption_crop (1555x1807)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 211,
+    "width": 1555,
+    "height": 1807,
+    "caption": "Table  1  compares the core experimental configurations across tasks on normalized gain. Appendix  A  reports the",
+    "crop": [
+      46.7,
+      60.0,
+      564.96,
+      661.72
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-4-p9.png",
+    "method": "caption_crop (1554x949)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 127,
+    "width": 1554,
+    "height": 949,
+    "caption": "Figure 4. Explored breadth is associated with gain.  Normalized gain against the fraction of eight pre-specified harness",
+    "crop": [
+      47.04,
+      60.0,
+      564.98,
+      376.28
+    ]
+  },
+  {
+    "page": 10,
+    "file": "fig-5-p10.png",
+    "method": "caption_crop (1555x855)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 130,
+    "width": 1555,
+    "height": 855,
+    "caption": "Figure 5. On the one task where the harness really varies, the best harness depends on the model.  GAIA is the only task",
+    "crop": [
+      47.04,
+      60.0,
+      565.21,
+      344.43
+    ]
+  }
+]
