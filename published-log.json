@@ -1726,6 +1726,26 @@
       ],
       "commit": "6c3ee579",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-07-agentopsd-recursive-turn-level-credit-agentic-rl.md"
+    },
+    {
+      "date": "2026-08-07",
+      "slug": "2026-08-07-evolvenet-collaborative-harness-evolution",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2608.04968",
+      "title": "EvolveNet: Collaborative Harness Evolution for Agent Self-Improvement",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-07-evolvenet-collaborative-harness-evolution",
+      "tags": [
+        "agent",
+        "harness",
+        "LLM",
+        "self-evolution",
+        "collaborative",
+        "distributed",
+        "program-aggregation",
+        "federation",
+        "automation",
+        "loop"
+      ]
     }
   ],
   "entries": [

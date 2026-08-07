@@ -1,0 +1,106 @@
+[
+  {
+    "page": 5,
+    "file": "fig-1-p5.png",
+    "method": "caption_crop (1261x829)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 160,
+    "width": 1261,
+    "height": 829,
+    "caption": "Figure 1:  Left:  conventional harness evolution is sequential. One optimizer consumes incoming",
+    "crop": [
+      96.0,
+      69.86,
+      516.0,
+      345.94
+    ]
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Held-out accuracy (%) of the shared harness before evolution and after  T  EvolveNet rounds",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1 reports the held-out accuracy of the shared harness after  T  EvolveNet rounds, against the",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "table-2-p12.png",
+    "method": "caption_crop_table_below (1261x855)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 156,
+    "width": 1261,
+    "height": 855,
+    "caption": "Table 2: DS-1000 held-out accuracy by library (%).  Delegation ,  GLOBAL-only  and  EvolveNet  are",
+    "crop": [
+      96.0,
+      82.91,
+      516.0,
+      367.34
+    ]
+  },
+  {
+    "page": 12,
+    "file": "fig-2-p12.png",
+    "method": "caption_crop (1234x423)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 66,
+    "width": 1234,
+    "height": 423,
+    "caption": "Figure 2: The committed shared harness over",
+    "crop": [
+      96.0,
+      279.05,
+      507.29,
+      419.7
+    ]
+  },
+  {
+    "page": 12,
+    "file": "fig-3-p12.png",
+    "method": "caption_crop (1153x423)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 62,
+    "width": 1153,
+    "height": 423,
+    "caption": "Figure 3: BIRD accuracy against how much",
+    "crop": [
+      132.26,
+      279.05,
+      516.0,
+      419.7
+    ]
+  },
+  {
+    "page": 13,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Do the two halves of the operator each earn their place?  Delegation ,  GLOBAL-only  and",
+    "crop": null
+  }
+]
