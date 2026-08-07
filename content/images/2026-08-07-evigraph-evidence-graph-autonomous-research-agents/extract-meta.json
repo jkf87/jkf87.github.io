@@ -1,0 +1,221 @@
+[
+  {
+    "page": 3,
+    "file": "fig-1-p3.png",
+    "method": "caption_crop (1582x907)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 205,
+    "width": 1582,
+    "height": 907,
+    "caption": "Figure 1: Overall workflow of the EviGraph framework, organized into three collaborative phases.",
+    "crop": [
+      42.43,
+      42.0,
+      569.58,
+      343.94
+    ]
+  },
+  {
+    "page": 3,
+    "file": "table-1-p3.png",
+    "method": "caption_crop (1582x1392)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 364,
+    "width": 1582,
+    "height": 1392,
+    "caption": "Table 1: Typed relations in the EviGraph research graph.",
+    "crop": [
+      42.43,
+      42.0,
+      569.58,
+      505.47
+    ]
+  },
+  {
+    "page": 4,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Weak-node patterns and repair actions used by graph",
+    "crop": null
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3 summarizes both",
+    "crop": null
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4 reports reliability across both",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Overall research performance on ARC-Bench-ML and NanoResearch-20. ARC-Bench-ML reports Code Development",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4: Research-reliability results across ARC-Bench-",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5 summarizes the operational role of each component",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5: Qualitative alignment between EviGraph compo-",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "fig-2-p7.png",
+    "method": "caption_crop (1584x1154)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 326,
+    "width": 1584,
+    "height": 1154,
+    "caption": "Figure 2: Representative EviGraph execution trace. Three candidate hypotheses are grouped and screened by the Hypothesis",
+    "crop": [
+      42.0,
+      42.0,
+      570.0,
+      426.63
+    ]
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6: Boundary between LLM interfaces and orchestration in EviGraph.",
+    "crop": null
+  },
+  {
+    "page": 14,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 7 makes the semantic constraints in the main-paper",
+    "crop": null
+  },
+  {
+    "page": 14,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 7: Operational semantic checks for the five permitted",
+    "crop": null
+  },
+  {
+    "page": 21,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 8: Reproduction contract for each evaluated run. Unstated values must come from the recorded run manifest rather than",
+    "crop": null
+  },
+  {
+    "page": 22,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 9: Frozen numerical matching protocol for EDC mem-",
+    "crop": null
+  },
+  {
+    "page": 23,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 10 expands the control-state transitions behind Fig-",
+    "crop": null
+  },
+  {
+    "page": 23,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 10: Control-state expansion of the representative run in the main paper.",
+    "crop": null
+  }
+]

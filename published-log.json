@@ -1666,6 +1666,20 @@
         "skill",
         "loop"
       ]
+    },
+    {
+      "slug": "2026-08-07-evigraph-evidence-graph-autonomous-research-agents",
+      "date": "2026-08-07",
+      "title": "EviGraph: 자율 연구 에이전트를 증거 그래프로 만들기",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2608.04738",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-07-evigraph-evidence-graph-autonomous-research-agents",
+      "tags": [
+        "ai-agent",
+        "autonomous-research",
+        "evidence-graph",
+        "llm"
+      ]
     }
   ],
   "entries": [
