@@ -1760,6 +1760,27 @@
       ],
       "commit": "7be3b0fa",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-07-evolvenet-collaborative-harness-evolution.md"
+    },
+    {
+      "date": "2026-08-07",
+      "slug": "2026-08-07-envace-world-rehearsal-agentic-rl",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2608.06197",
+      "title": "EnvACE: 에이전트가 환경 없이 훈련한다 - 상상만으로 RL을 완성하는 World Rehearsal",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-07-envace-world-rehearsal-agentic-rl",
+      "github_url": "https://github.com/Within-yao/EnvACE",
+      "tags": [
+        "agent",
+        "reinforcement-learning",
+        "LLM",
+        "world-model",
+        "tool-use",
+        "GRPO",
+        "harness",
+        "self-evolution",
+        "loop",
+        "automation"
+      ]
     }
   ],
   "entries": [
