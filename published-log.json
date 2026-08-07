@@ -1707,7 +1707,25 @@
         "agentic-RL",
         "loop"
       ],
-      "github_url": "https://github.com/ZethWang/AgentOPSD"
+      "github_url": "https://github.com/ZethWang/AgentOPSD",
+      "threads_root_id": "18615692032008674",
+      "threads_reply_ids": [
+        "18083024204310172",
+        "18481251538108701",
+        "18613577638051233",
+        "18067572776754879",
+        "18125623384740829"
+      ],
+      "threads_image_posts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "commit": "6c3ee579",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-07-agentopsd-recursive-turn-level-credit-agentic-rl.md"
     }
   ],
   "entries": [
