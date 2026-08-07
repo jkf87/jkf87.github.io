@@ -1687,6 +1687,27 @@
         "18184008301405378"
       ],
       "wiki_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-07-evigraph-evidence-graph-autonomous-research-agents.md"
+    },
+    {
+      "date": "2026-08-07",
+      "slug": "2026-08-07-agentopsd-recursive-turn-level-credit-agentic-rl",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2608.05987",
+      "title": "AgentOPSD: Agentic RL을 위한 재귀적 자기증류 턴별 크레딧 할당",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-07-agentopsd-recursive-turn-level-credit-agentic-rl",
+      "tags": [
+        "agent",
+        "reinforcement-learning",
+        "LLM",
+        "credit-assignment",
+        "self-distillation",
+        "GRPO",
+        "Bayesian",
+        "turn-level",
+        "agentic-RL",
+        "loop"
+      ],
+      "github_url": "https://github.com/ZethWang/AgentOPSD"
     }
   ],
   "entries": [
