@@ -1,0 +1,150 @@
+[
+  {
+    "page": 1,
+    "file": "fig-p1-fallback.png",
+    "method": "fallback_top45 (1836x1070)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 223,
+    "width": 1836,
+    "height": 1070,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1586x633)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 455,
+    "width": 1586,
+    "height": 633,
+    "caption": "Figure 1: Harness-based evolution keeps editable memories or skills, while parameter-based evolution updates model weights.",
+    "crop": [
+      41.8,
+      71.68,
+      570.21,
+      282.54
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-2-p3.png",
+    "method": "caption_crop (1629x458)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 138,
+    "width": 1629,
+    "height": 458,
+    "caption": "Figure 2: Lean harness evolution: more stored or retrieved",
+    "crop": [
+      39.65,
+      69.65,
+      582.15,
+      221.88
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-3-p3.png",
+    "method": "caption_crop (1244x610)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 126,
+    "width": 1244,
+    "height": 610,
+    "caption": "Figure 3: Lean error types under harness evolution, showing",
+    "crop": [
+      167.96,
+      69.65,
+      582.15,
+      272.61
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-4-p3.png",
+    "method": "caption_crop (799x410)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 46,
+    "width": 799,
+    "height": 410,
+    "caption": "Figure 4: Stage-aligned comparison: plateau-triggered up-",
+    "crop": [
+      305.95,
+      266.75,
+      571.8,
+      403.32
+    ]
+  },
+  {
+    "page": 4,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Parameter-based self-evolution under API changes.",
+    "crop": null
+  },
+  {
+    "page": 5,
+    "file": "fig-5-p5.png",
+    "method": "caption_crop (1587x922)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 296,
+    "width": 1587,
+    "height": 922,
+    "caption": "Figure 5: Overview of COVE. Given task feedback, the task-aware router selects an evolution channel, the stage-aware scheduler",
+    "crop": [
+      41.8,
+      72.24,
+      570.39,
+      379.07
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-p6-fallback.png",
+    "method": "fallback_top45 (1836x1070)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 336,
+    "width": 1836,
+    "height": 1070,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 7,
+    "file": "table-2-p7.png",
+    "method": "caption_crop_table_below (1587x506)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 100,
+    "width": 1587,
+    "height": 506,
+    "caption": "Table 2: Main results: success rate (Succ.) and training token cost (Tok.), with the macro-average cost over the costed tasks",
+    "crop": [
+      41.5,
+      76.51,
+      570.2,
+      244.79
+    ]
+  }
+]
