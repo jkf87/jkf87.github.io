@@ -1,0 +1,242 @@
+[
+  {
+    "page": 1,
+    "file": "fig-p1-fallback.png",
+    "method": "fallback_top45 (1836x1070)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 164,
+    "width": 1836,
+    "height": 1070,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1587x817)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 259,
+    "width": 1587,
+    "height": 817,
+    "caption": "Figure 1: Three challenges for using privileged teacher signals in agentic reinforcement learning. (1) Score calibration: raw",
+    "crop": [
+      41.8,
+      67.84,
+      570.55,
+      339.84
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-p3-fallback.png",
+    "method": "fallback_top45 (1836x1070)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 346,
+    "width": 1836,
+    "height": 1070,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 4,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (528x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Positioning relative to the closest privileged self-teaching methods. “Backward” refers to the policy update.",
+    "crop": [
+      41.79800033569336,
+      129.6429901123047,
+      570.2026977539062,
+      111.56273651123047
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (1586x713)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 689,
+    "width": 1586,
+    "height": 713,
+    "caption": "Figure 2: ADRS training flow. A behavior policy samples without privileged text. The same frozen snapshot re-scores those",
+    "crop": [
+      41.8,
+      129.64,
+      570.2,
+      366.96
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-p5-fallback.png",
+    "method": "fallback_top45 (1836x1070)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 290,
+    "width": 1836,
+    "height": 1070,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-2-p6.png",
+    "method": "caption_crop (1587x1146)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 412,
+    "width": 1587,
+    "height": 1146,
+    "caption": "Table 2 reports the common 150-step comparison. Three findings",
+    "crop": [
+      41.53,
+      71.68,
+      570.2,
+      453.58
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-3-p6.png",
+    "method": "caption_crop (799x637)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 130,
+    "width": 799,
+    "height": 637,
+    "caption": "Figure 3: ALFWorld training dynamics through 300 steps.",
+    "crop": [
+      305.96,
+      71.68,
+      571.73,
+      283.71
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-3-p6-3.png",
+    "method": "caption_crop (799x1625)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 311,
+    "width": 799,
+    "height": 1625,
+    "caption": "Figure 3 visualizes the 300-step ALFWorld trajectories. Appen-",
+    "crop": [
+      305.96,
+      71.68,
+      571.72,
+      613.11
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-4-p6.png",
+    "method": "caption_crop (794x1771)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 341,
+    "width": 794,
+    "height": 1771,
+    "caption": "Figure 4 shows the WebShop training dynamics under the 150-step",
+    "crop": [
+      305.96,
+      71.68,
+      570.2,
+      661.8
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Performance Comparison on the representative long-horizon benchmarks (ALFWorld, Search-based QA, and Web-",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Representative 300-step convergence results. “Best”",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 5 compares GiGPO, ADRS without TVA, and ADRS+TVA",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "fig-4-p8.png",
+    "method": "caption_crop (1211x637)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 181,
+    "width": 1211,
+    "height": 637,
+    "caption": "Figure 4: WebShop ablation dynamics through 150 steps.",
+    "crop": [
+      41.8,
+      71.68,
+      445.27,
+      283.71
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-5-p8.png",
+    "method": "caption_crop (798x432)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 47,
+    "width": 798,
+    "height": 432,
+    "caption": "Figure 5: GiGPO-based ALFWorld ablation on Qwen2.5-3B.",
+    "crop": [
+      41.8,
+      278.61,
+      307.59,
+      422.16
+    ]
+  }
+]

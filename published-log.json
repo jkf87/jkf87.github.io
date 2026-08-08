@@ -3661,6 +3661,25 @@
       ],
       "commit": "76f8472f",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-04-skill-alpha-progressive-agent-skill-rl.md"
+    },
+    {
+      "date": "2026-08-09",
+      "slug": "2026-08-09-adrs-self-distilled-reward-shaping",
+      "title": "에이전트 RL에서 어떤 액션이 성공에 기여했나 — ADRS의 답",
+      "source_url": "https://arxiv.org/abs/2608.03223",
+      "source_title": "Agentic Reinforcement Learning with Self-Distilled Reward Shaping",
+      "tags": [
+        "agent",
+        "rl",
+        "credit-assignment",
+        "self-distillation",
+        "grpo"
+      ],
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_winner": "b-newsletter",
+      "voice_spyrl_score": 94.2,
+      "voice_spyrl_grade": "A",
+      "voice_spyrl_report": "../memory/voice-feedback/2026-08-09-adrs-self-distilled-reward-shaping-spyrl.json"
     }
   ],
   "posts": [
