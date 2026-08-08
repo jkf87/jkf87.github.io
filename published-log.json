@@ -1897,6 +1897,26 @@
       ],
       "commit": "2c492988",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-08-prime-agent-self-improving-rlm-harness.md"
+    },
+    {
+      "slug": "2026-08-08-codegrep-rl-retrieval-agent-coding-agents",
+      "date": "2026-08-08",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2608.05886",
+      "title": "CodeGrep: 코딩 에이전트를 위한 RL 기반 코드 검색 에이전트",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-08-codegrep-rl-retrieval-agent-coding-agents",
+      "tags": [
+        "agent",
+        "coding-agent",
+        "reinforcement-learning",
+        "retrieval",
+        "SWE-Bench",
+        "harness",
+        "LLM",
+        "tool-use",
+        "GRPO",
+        "RL"
+      ]
     }
   ],
   "entries": [

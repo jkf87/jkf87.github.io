@@ -1,0 +1,326 @@
+[
+  {
+    "page": 1,
+    "file": "fig-p1-fallback.png",
+    "method": "fallback_top45 (1191x758)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 157,
+    "width": 1191,
+    "height": 758,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      595.2760009765625,
+      378.8505065917969
+    ]
+  },
+  {
+    "page": 2,
+    "file": "fig-p2-fallback.png",
+    "method": "fallback_top45 (1191x758)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 201,
+    "width": 1191,
+    "height": 758,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      595.2760009765625,
+      378.8505065917969
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-1-p3.png",
+    "method": "caption_crop (956x428)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 60,
+    "width": 956,
+    "height": 428,
+    "caption": "Figure 1: System overview. Training (blue) produces CodeGrep weights from open-source agent trajectories via",
+    "crop": [
+      58.87,
+      71.82,
+      536.41,
+      285.16
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-p4-fallback.png",
+    "method": "fallback_top45 (1191x758)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 178,
+    "width": 1191,
+    "height": 758,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      595.2760009765625,
+      378.8505065917969
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Summary of the three reward-design iterations.",
+    "crop": null
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Fig.  2  tracks reward, KL-",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "fig-2-p6.png",
+    "method": "caption_crop (956x423)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 140,
+    "width": 956,
+    "height": 423,
+    "caption": "Figure 2: Training dynamics of the three reward-design iterations.  (a)  Reward:  v 3  climbs faster and levels off",
+    "crop": [
+      58.87,
+      58.87,
+      536.42,
+      269.51
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-2-p6.png",
+    "method": "caption_crop (956x515)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 155,
+    "width": 956,
+    "height": 515,
+    "caption": "Table 2: Retrieval quality on the internal evaluation set. The “Turns” column is specific to the agentic retriever and",
+    "crop": [
+      58.56,
+      58.87,
+      536.42,
+      315.8
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-3-p6.png",
+    "method": "caption_crop (956x1034)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 259,
+    "width": 956,
+    "height": 1034,
+    "caption": "Table  3  consolidates the six configurations.",
+    "crop": [
+      58.53,
+      58.87,
+      536.42,
+      575.24
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Downstream comparison of the baseline, BM25 top- 2 , Jina-1.5B top- 2 , and CodeGrep  v 1 / v 2 / v 3  on SWE-",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "fig-p8-fallback.png",
+    "method": "fallback_top45 (1191x758)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 191,
+    "width": 1191,
+    "height": 758,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      595.2760009765625,
+      378.8505065917969
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-p9-fallback.png",
+    "method": "fallback_top45 (1191x758)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 216,
+    "width": 1191,
+    "height": 758,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      595.2760009765625,
+      378.8505065917969
+    ]
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  5  lists the salient scale parameters and",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "fig-3-p11.png",
+    "method": "caption_crop (956x593)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 98,
+    "width": 956,
+    "height": 593,
+    "caption": "Figure 3: Three-layer RL environment. Layer 1 extracts unique ( repo ,  commit ) pairs; Layer 2 uses  git clone",
+    "crop": [
+      58.87,
+      58.86,
+      536.41,
+      354.51
+    ]
+  },
+  {
+    "page": 11,
+    "file": "table-4-p11.png",
+    "method": "caption_crop (911x688)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 110,
+    "width": 911,
+    "height": 688,
+    "caption": "Table 4: Comparison of CATM (ours) with LRAT ( Zhou et al. ,  2026 ).",
+    "crop": [
+      70.21,
+      58.86,
+      525.08,
+      402.31
+    ]
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5: Key engineering scale and throughput.",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  4  reports three additional diagnostics",
+    "crop": null
+  },
+  {
+    "page": 13,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6: Reward-design comparison with concurrent commercial work ( Pan et al. ,  2025 ). Their blog describes a",
+    "crop": null
+  },
+  {
+    "page": 13,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 7: Comparison of traditional RLHF with the Agent RL setting used in this work.",
+    "crop": null
+  },
+  {
+    "page": 14,
+    "file": "fig-4-p14.png",
+    "method": "caption_crop (960x418)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 144,
+    "width": 960,
+    "height": 418,
+    "caption": "Figure 4: Training-stability diagnostics over the same  ∼ 900  GRPO steps as Figure  2 , for all three reward iterations.",
+    "crop": [
+      58.87,
+      58.87,
+      538.15,
+      267.36
+    ]
+  },
+  {
+    "page": 15,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  8  shows the first  18  tool calls of the",
+    "crop": null
+  },
+  {
+    "page": 16,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 8: Action-level trajectory on  django-15278 . Baseline spends its first  18  actions searching for  oauth2  (a",
+    "crop": null
+  }
+]
