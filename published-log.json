@@ -1934,6 +1934,24 @@
       ],
       "commit": "d00f616c",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-08-codegrep-rl-retrieval-agent-coding-agents.md"
+    },
+    {
+      "slug": "2026-08-08-osreward-cua-reward-benchmark",
+      "date": "2026-08-08",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2607.28609",
+      "title": "OSReward: 컴퓨터 사용 에이전트의 보상 신호를 누가 판정하는가",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-08-osreward-cua-reward-benchmark",
+      "tags": [
+        "agent",
+        "computer-use",
+        "reward-model",
+        "VLM-judge",
+        "benchmark",
+        "RL",
+        "LLM",
+        "harness"
+      ]
     }
   ],
   "entries": [

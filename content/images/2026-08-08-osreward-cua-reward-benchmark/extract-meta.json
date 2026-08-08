@@ -1,0 +1,223 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (1529x904)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 253,
+    "width": 1529,
+    "height": 904,
+    "caption": "Figure 1:  How well VLM judges score CUA trajectories (a), and the strict-lenient bias they share (b).",
+    "crop": [
+      50.36,
+      454.38,
+      559.71,
+      755.38
+    ]
+  },
+  {
+    "page": 2,
+    "file": "fig-p2-fallback.png",
+    "method": "fallback_top45 (1836x1070)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 253,
+    "width": 1836,
+    "height": 1070,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-2-p3.png",
+    "method": "caption_crop (1534x771)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 173,
+    "width": 1534,
+    "height": 771,
+    "caption": "Figure 2:  Cost against binary accuracy on OSReward-Hard: reliable judges are expensive, and the",
+    "crop": [
+      50.36,
+      73.04,
+      561.64,
+      329.79
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-p4-fallback.png",
+    "method": "fallback_top45 (1836x1070)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 258,
+    "width": 1836,
+    "height": 1070,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-3-p5.png",
+    "method": "caption_crop (1534x524)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 224,
+    "width": 1534,
+    "height": 524,
+    "caption": "Figure 3:  From realistic environments to raw trajectories: annotators prepare the environments and",
+    "crop": [
+      50.36,
+      430.98,
+      561.64,
+      605.29
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-p6-fallback.png",
+    "method": "fallback_top45 (1836x1070)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 223,
+    "width": 1836,
+    "height": 1070,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-4-p7.png",
+    "method": "caption_crop (1538x633)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 198,
+    "width": 1538,
+    "height": 633,
+    "caption": "Figure 4:  The annotation pipeline. Each pre-filtered trajectory is labeled by three independent annotators;",
+    "crop": [
+      50.36,
+      73.04,
+      562.68,
+      283.79
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-5-p8.png",
+    "method": "caption_crop (1534x596)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 106,
+    "width": 1534,
+    "height": 596,
+    "caption": "Figure 5:  OSReward at a glance: outcome composition of the full and Hard sets, platform mix, and",
+    "crop": [
+      50.36,
+      73.04,
+      561.64,
+      271.65
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-p9-fallback.png",
+    "method": "fallback_top45 (1836x1070)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 238,
+    "width": 1836,
+    "height": 1070,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (513x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1:  Main-setting results for the reference judges and OS-Shepherd on OSReward and OSReward-",
+    "crop": [
+      50.03499984741211,
+      377.3040771484375,
+      563.3740234375,
+      115.01795196533203
+    ]
+  },
+  {
+    "page": 11,
+    "file": "fig-6-p11.png",
+    "method": "caption_crop (1536x1037)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 201,
+    "width": 1536,
+    "height": 1037,
+    "caption": "Figure 6:  Judge bias on OSReward (left) and OSReward-Hard (right). Judges below the diagonal skew",
+    "crop": [
+      50.36,
+      73.04,
+      562.07,
+      418.56
+    ]
+  },
+  {
+    "page": 11,
+    "file": "table-1-p11.png",
+    "method": "caption_crop (1541x1865)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 424,
+    "width": 1541,
+    "height": 1865,
+    "caption": "Table 1 ). Fail recall now spreads from near zero to 77%: the lenient cluster ( e.g. , Qwen3-VL-30B, Intern-",
+    "crop": [
+      50.03,
+      73.04,
+      563.38,
+      694.64
+    ]
+  },
+  {
+    "page": 12,
+    "file": "fig-7-p12.png",
+    "method": "caption_crop (1535x799)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 119,
+    "width": 1535,
+    "height": 799,
+    "caption": "Figure 7:  Per-judge error composition, seven representative judges: over-accepting an incomplete task",
+    "crop": [
+      50.36,
+      73.04,
+      561.92,
+      339.01
+    ]
+  }
+]
