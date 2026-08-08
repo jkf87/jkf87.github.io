@@ -3679,7 +3679,17 @@
       "voice_spyrl_winner": "b-newsletter",
       "voice_spyrl_score": 94.2,
       "voice_spyrl_grade": "A",
-      "voice_spyrl_report": "../memory/voice-feedback/2026-08-09-adrs-self-distilled-reward-shaping-spyrl.json"
+      "voice_spyrl_report": "../memory/voice-feedback/2026-08-09-adrs-self-distilled-reward-shaping-spyrl.json",
+      "threads_root_id": "18074803616342339",
+      "threads_reply_ids": [
+        "18339408748254053",
+        "17895879900575853",
+        "17900664075557350"
+      ],
+      "threads_image_posts": [
+        1,
+        4
+      ]
     }
   ],
   "posts": [
