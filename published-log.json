@@ -1916,7 +1916,24 @@
         "tool-use",
         "GRPO",
         "RL"
-      ]
+      ],
+      "threads_root_id": "18112197944474345",
+      "threads_reply_ids": [
+        "17952637869232458",
+        "18038111783817125",
+        "18017571614862780",
+        "17907530502458131",
+        "18359495302300633"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        4,
+        5,
+        6
+      ],
+      "commit": "d00f616c",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-08-codegrep-rl-retrieval-agent-coding-agents.md"
     }
   ],
   "entries": [
