@@ -1864,6 +1864,25 @@
       ],
       "commit": "6728b510",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-08-calibforge-adversarial-solver-calibration-terminal-agents.md"
+    },
+    {
+      "slug": "2026-08-08-prime-agent-self-improving-rlm-harness",
+      "date": "2026-08-08",
+      "source": "blog",
+      "source_url": "https://www.primeintellect.ai/blog/prime-agent",
+      "title": "Prime Agent: 자가개선 코딩 에이전트 하네스 (Prime Intellect, 2026-08)",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-08-prime-agent-self-improving-rlm-harness",
+      "tags": [
+        "agent",
+        "harness",
+        "self-evolution",
+        "coding-agent",
+        "LLM",
+        "RLM",
+        "loop",
+        "automation",
+        "open-source"
+      ]
     }
   ],
   "entries": [
