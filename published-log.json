@@ -1882,7 +1882,21 @@
         "loop",
         "automation",
         "open-source"
-      ]
+      ],
+      "threads_root_id": "17932234644124824",
+      "threads_reply_ids": [
+        "17973838164088658",
+        "18150880090512756",
+        "18085964600443697",
+        "17957650713195996"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        5
+      ],
+      "commit": "2c492988",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-08-prime-agent-self-improving-rlm-harness.md"
     }
   ],
   "entries": [
