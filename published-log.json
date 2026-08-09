@@ -2101,6 +2101,24 @@
       ],
       "commit": "6c33b0f5",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-09-harnesscompass-guiding-automatic-harness-evolution.md"
+    },
+    {
+      "date": "2026-08-09",
+      "slug": "2026-08-09-continual-learning-in-transition",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2608.06216",
+      "title": "Continual Learning in Transition: 매개변수 중심에서 시스템 수준 적응으로",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-09-continual-learning-in-transition",
+      "tags": [
+        "continual-learning",
+        "LLM",
+        "agent",
+        "harness",
+        "memory",
+        "skill",
+        "survey",
+        "self-evolution"
+      ]
     }
   ],
   "entries": [

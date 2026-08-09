@@ -1,0 +1,104 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1640x894)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 146,
+    "width": 1640,
+    "height": 894,
+    "caption": "Figure 1  Overview of the three-dimensional view of continual learning developed in this survey. The main line (solid)",
+    "crop": [
+      32.51,
+      22.96,
+      578.9,
+      320.48
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-2-p3.png",
+    "method": "caption_crop (1497x949)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 239,
+    "width": 1497,
+    "height": 949,
+    "caption": "Figure 2",
+    "crop": [
+      58.37,
+      65.14,
+      557.08,
+      381.12
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-3-p6.png",
+    "method": "caption_crop (1489x513)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 119,
+    "width": 1489,
+    "height": 513,
+    "caption": "Figure 3  Representative LLM-era and agentic-AI-era continual-learning methods organized along the three dimensions.",
+    "crop": [
+      58.87,
+      346.4,
+      554.98,
+      517.12
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-4-p7.png",
+    "method": "caption_crop (1660x719)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 159,
+    "width": 1660,
+    "height": 719,
+    "caption": "Figure 4  The  When  dimension. Classical continual learning confines capability evolution to a single training stage",
+    "crop": [
+      58.87,
+      14.38,
+      612.0,
+      253.96
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-5-p8.png",
+    "method": "caption_crop (1660x719)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 149,
+    "width": 1660,
+    "height": 719,
+    "caption": "Figure 5  The  Where  dimension. Classical continual learning carries capability almost exclusively in model parameters",
+    "crop": [
+      58.87,
+      14.38,
+      612.0,
+      253.96
+    ]
+  },
+  {
+    "page": 10,
+    "file": "fig-6-p10.png",
+    "method": "caption_crop (1660x719)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 162,
+    "width": 1660,
+    "height": 719,
+    "caption": "Figure 6  The  How  dimension. Classical continual learning relies on back-propagation over off-policy data (left); the",
+    "crop": [
+      58.87,
+      14.38,
+      612.0,
+      253.96
+    ]
+  }
+]
