@@ -1999,6 +1999,23 @@
         6
       ],
       "commit": "b5100253"
+    },
+    {
+      "slug": "2026-08-09-romerl-memory-reward-trap-agent-memory-rl",
+      "date": "2026-08-09",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2608.02508",
+      "title": "RoMeRL: 에이전트 메모리가 보상 함정에 빠질 때 — 차원을 고정하는 RL",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-09-romerl-memory-reward-trap-agent-memory-rl",
+      "tags": [
+        "agent",
+        "memory",
+        "reinforcement-learning",
+        "LLM",
+        "self-evolving",
+        "reward-hacking",
+        "utility-learning"
+      ]
     }
   ],
   "entries": [

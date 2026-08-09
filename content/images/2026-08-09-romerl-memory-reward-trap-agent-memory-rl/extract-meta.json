@@ -1,0 +1,257 @@
+[
+  {
+    "page": 1,
+    "file": "fig-p1-fallback.png",
+    "method": "fallback_top45 (1836x1070)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 175,
+    "width": 1836,
+    "height": 1070,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (643x431)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 61,
+    "width": 643,
+    "height": 431,
+    "caption": "Figure 1:  Memory-reward trap : Stronger explo-",
+    "crop": [
+      301.92,
+      179.15,
+      516.0,
+      322.53
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-p3-fallback.png",
+    "method": "fallback_top45 (1836x1070)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 231,
+    "width": 1836,
+    "height": 1070,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (1261x685)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 141,
+    "width": 1261,
+    "height": 685,
+    "caption": "Figure 2: Overview of RoMeRL.  Top:  the agent retrieves memories to construct the LLM context and",
+    "crop": [
+      96.0,
+      69.86,
+      516.0,
+      297.82
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-p5-fallback.png",
+    "method": "fallback_top45 (1836x1070)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 205,
+    "width": 1836,
+    "height": 1070,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-p6-fallback.png",
+    "method": "fallback_top45 (1836x1070)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 176,
+    "width": 1836,
+    "height": 1070,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-p7-fallback.png",
+    "method": "fallback_top45 (1836x1070)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 181,
+    "width": 1836,
+    "height": 1070,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 8,
+    "file": "table-1-p8.png",
+    "method": "caption_crop_table_below (1261x1060)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 236,
+    "width": 1261,
+    "height": 1060,
+    "caption": "Table 1:  Main results over 10 epochs.  We compare RoMeRL with non-learning and learning-based",
+    "crop": [
+      96.0,
+      71.57,
+      516.0,
+      424.56
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-3-p8.png",
+    "method": "caption_crop (608x456)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 42,
+    "width": 608,
+    "height": 456,
+    "caption": "Figure 3: Feedback density and Cold-Q ratio",
+    "crop": [
+      313.8,
+      296.34,
+      516.0,
+      448.2
+    ]
+  },
+  {
+    "page": 8,
+    "file": "table-1-p8-3.png",
+    "method": "caption_crop (1260x674)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 174,
+    "width": 1260,
+    "height": 674,
+    "caption": "Table 1 shows that RoMeRL achieves the highest",
+    "crop": [
+      96.0,
+      296.34,
+      516.0,
+      520.74
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-3-p8-4.png",
+    "method": "caption_crop (608x850)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 93,
+    "width": 608,
+    "height": 850,
+    "caption": "Figure 3 reveals contrasting feedback",
+    "crop": [
+      313.8,
+      296.34,
+      516.0,
+      579.51
+    ]
+  },
+  {
+    "page": 8,
+    "file": "table-3-p8.png",
+    "method": "caption_crop (824x1191)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 209,
+    "width": 824,
+    "height": 1191,
+    "caption": "Table 3 shows the same pattern in all four model–task combi-",
+    "crop": [
+      241.72,
+      296.34,
+      516.0,
+      693.07
+    ]
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (420x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Controlled MRT stress test on the OS task. The first-round memory pool contains  10%  noisy",
+    "crop": [
+      96.0,
+      424.27978515625,
+      515.9932556152344,
+      109.70953369140625
+    ]
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (420x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Cross-model memory transfer on LifelongAgentBench OS and DB tasks. Results with and",
+    "crop": [
+      96.0,
+      424.27978515625,
+      516.0032653808594,
+      235.97100830078125
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-4-p9.png",
+    "method": "caption_crop (608x487)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 66,
+    "width": 608,
+    "height": 487,
+    "caption": "Figure 4: Coordinate ablation on the OS task.",
+    "crop": [
+      313.8,
+      424.28,
+      516.0,
+      586.22
+    ]
+  }
+]
