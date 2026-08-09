@@ -1,0 +1,128 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1341x581)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 118,
+    "width": 1341,
+    "height": 581,
+    "caption": "Figure 1: Overview of HarnessCompass.",
+    "crop": [
+      40.45,
+      30.52,
+      576.42,
+      262.49
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Main results on SWE-Bench Verified with GPT-",
+    "crop": null
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1 presents the main comparison. Starting",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "fig-2-p6.png",
+    "method": "caption_crop (1320x643)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 115,
+    "width": 1320,
+    "height": 643,
+    "caption": "Figure 2: Pass@1 across evolution iterations on the SWE-Bench Verified Sample. HarnessCompass reaches its peak perfor-",
+    "crop": [
+      42.0,
+      42.0,
+      570.0,
+      298.68
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-2-p6.png",
+    "method": "caption_crop (1289x901)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 191,
+    "width": 1289,
+    "height": 901,
+    "caption": "Table 2: Ablation on HarnessCompass, adding one principle",
+    "crop": [
+      42.0,
+      42.0,
+      557.4,
+      401.69
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-3-p6.png",
+    "method": "caption_crop (1289x919)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 199,
+    "width": 1289,
+    "height": 919,
+    "caption": "Table 3: Cross-model transfer results. Here,  Ours  refers to",
+    "crop": [
+      54.6,
+      42.0,
+      569.99,
+      409.17
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-2-p6-4.png",
+    "method": "caption_crop (1289x1313)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 336,
+    "width": 1289,
+    "height": 1313,
+    "caption": "Table 2 shows that the generalization gate alone",
+    "crop": [
+      54.6,
+      42.0,
+      569.99,
+      566.57
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-3-p7.png",
+    "method": "caption_crop (1320x444)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 60,
+    "width": 1320,
+    "height": 444,
+    "caption": "Figure 3: Per-repository Pass@1 on the full  500 -task SWE-Bench Verified benchmark for GPT-5.4 and Claude-Sonnet-4.6. Each",
+    "crop": [
+      42.0,
+      42.0,
+      570.0,
+      219.11
+    ]
+  }
+]

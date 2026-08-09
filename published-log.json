@@ -2065,6 +2065,26 @@
       ],
       "commit": "b687a556",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-09-screen-activity-frames-agent-memory-replay.md"
+    },
+    {
+      "date": "2026-08-09",
+      "slug": "2026-08-09-harnesscompass-guiding-automatic-harness-evolution",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2608.01918",
+      "title": "HarnessCompass: 제약 진화·주관적 피드백·컴포넌트별 최적화를 통한 하네스 자동 진화 일반화",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-09-harnesscompass-guiding-automatic-harness-evolution",
+      "tags": [
+        "agent",
+        "harness",
+        "LLM",
+        "self-evolution",
+        "SWE-bench",
+        "benchmark",
+        "tool-use",
+        "automation",
+        "loop",
+        "generalization"
+      ]
     }
   ],
   "entries": [
