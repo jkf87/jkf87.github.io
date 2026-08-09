@@ -2132,6 +2132,24 @@
         5
       ],
       "commit": "92c4208a"
+    },
+    {
+      "slug": "2026-08-09-tcpo-turn-level-credit-policy-optimization",
+      "date": "2026-08-09",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2608.01667",
+      "title": "TCPO: 검증자 점수가 있는데도 크레딧을 모르는 문제 — 에이전트 RL의 점수→크레딧 변환",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-09-tcpo-turn-level-credit-policy-optimization",
+      "tags": [
+        "agent",
+        "reinforcement-learning",
+        "LLM",
+        "credit-assignment",
+        "multi-turn-RL",
+        "GRPO",
+        "verifier-guided",
+        "loop"
+      ]
     }
   ],
   "entries": [
