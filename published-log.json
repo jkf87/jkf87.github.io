@@ -2029,6 +2029,26 @@
         4
       ],
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-09-romerl-memory-reward-trap-agent-memory-rl.md"
+    },
+    {
+      "date": "2026-08-09",
+      "slug": "2026-08-09-screen-activity-frames-agent-memory-replay",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2608.05784",
+      "title": "활동 프레임: 화면 활동을 에이전트 메모리로 결정론적 컴파일하기",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-09-screen-activity-frames-agent-memory-replay",
+      "tags": [
+        "agent",
+        "memory",
+        "episodic-memory",
+        "computer-use",
+        "harness",
+        "MCP",
+        "LLM",
+        "deterministic",
+        "replay",
+        "screen-capture"
+      ]
     }
   ],
   "entries": [

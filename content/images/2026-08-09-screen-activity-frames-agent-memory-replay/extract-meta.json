@@ -1,0 +1,130 @@
+[
+  {
+    "page": 3,
+    "file": "fig-1-p3.png",
+    "method": "caption_crop (800x421)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 46,
+    "width": 800,
+    "height": 421,
+    "caption": "Figure 1: The two-tier architecture. The measured tier",
+    "crop": [
+      304.08,
+      42.2,
+      570.46,
+      182.26
+    ]
+  },
+  {
+    "page": 4,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 2:",
+    "crop": null
+  },
+  {
+    "page": 4,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 3: Segmentation on one timeline. Ticks are snap-",
+    "crop": null
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: MCP tool surface of the reference implementa-",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "table-2-p6.png",
+    "method": "caption_crop_table_below (806x715)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 68,
+    "width": 806,
+    "height": 715,
+    "caption": "Table 2: Live capture corpus used throughout Section 6.",
+    "crop": [
+      41.64,
+      54.85,
+      309.7,
+      292.88
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-4-p6.png",
+    "method": "caption_crop (803x467)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 35,
+    "width": 803,
+    "height": 467,
+    "caption": "Figure 4: Token cost of one full day under three rep-",
+    "crop": [
+      42.0,
+      179.07,
+      309.57,
+      334.44
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Downstream QA across two model tiers (8 days,",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "fig-5-p8.png",
+    "method": "caption_crop (774x511)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 35,
+    "width": 774,
+    "height": 511,
+    "caption": "Figure 5:",
+    "crop": [
+      42.0,
+      50.98,
+      299.8,
+      220.7
+    ]
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4: The denominator ladder for  R  =  C agent /C replay",
+    "crop": null
+  }
+]
