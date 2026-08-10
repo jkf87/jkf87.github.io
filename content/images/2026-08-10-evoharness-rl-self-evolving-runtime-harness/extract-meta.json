@@ -1,0 +1,189 @@
+[
+  {
+    "page": 1,
+    "file": "fig-p1-fallback.png",
+    "method": "fallback_top45 (1836x1070)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 223,
+    "width": 1836,
+    "height": 1070,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1486x688)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 357,
+    "width": 1486,
+    "height": 688,
+    "caption": "Figure 1  Overview of  EvoHarness-RL . Long-horizon agents rely on complex external execution support, but existing",
+    "crop": [
+      58.19,
+      51.78,
+      553.16,
+      280.7
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-p3-fallback.png",
+    "method": "fallback_top45 (1836x1070)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 188,
+    "width": 1836,
+    "height": 1070,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (1489x588)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 158,
+    "width": 1489,
+    "height": 588,
+    "caption": "Figure 2  Overview of the training pipeline of  EvoHarness-RL . Starting from an SFT checkpoint, the policy gener-",
+    "crop": [
+      58.87,
+      51.78,
+      554.71,
+      247.6
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-p5-fallback.png",
+    "method": "fallback_top45 (1836x1070)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 235,
+    "width": 1836,
+    "height": 1070,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-1-p6.png",
+    "method": "caption_crop_table_below (1485x607)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 112,
+    "width": 1485,
+    "height": 607,
+    "caption": "Table 1  Main results on ALFWorld. We report success rates on the 140-task seen split.  ∗ denotes frozen inference-time",
+    "crop": [
+      58.62,
+      55.39,
+      553.17,
+      257.38
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-1-p6-2.png",
+    "method": "caption_crop (1485x985)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 275,
+    "width": 1485,
+    "height": 985,
+    "caption": "Table  1  demonstrates that  EvoHarness-RL  on Qwen3-8B achieves state of the art performance with a",
+    "crop": [
+      58.51,
+      358.55,
+      553.12,
+      686.66
+    ]
+  },
+  {
+    "page": 7,
+    "file": "table-2-p7.png",
+    "method": "caption_crop_table_below (1485x453)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 92,
+    "width": 1485,
+    "height": 453,
+    "caption": "Table 2  BPE component ablation on ALFWorld. The top block provides learned-policy references, while the bottom",
+    "crop": [
+      58.62,
+      55.39,
+      553.16,
+      206.27
+    ]
+  },
+  {
+    "page": 7,
+    "file": "table-3-p7.png",
+    "method": "caption_crop_table_below (1490x438)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 80,
+    "width": 1490,
+    "height": 438,
+    "caption": "Table 3  Generalization results on ALFWorld unseen tasks. We compare ReAct with prompt-time, SFT, and GRPO-",
+    "crop": [
+      58.62,
+      234.86,
+      554.7,
+      380.46
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-3-p8.png",
+    "method": "caption_crop (779x476)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 65,
+    "width": 779,
+    "height": 476,
+    "caption": "Figure 3  Harness usage anneals during GRPO. The policy",
+    "crop": [
+      294.0,
+      141.66,
+      553.46,
+      299.67
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-3-p8-2.png",
+    "method": "caption_crop (1276x280)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 45,
+    "width": 1276,
+    "height": 280,
+    "caption": "Figure  3  shows a clear annealing pattern during",
+    "crop": [
+      58.87,
+      84.61,
+      483.95,
+      177.66
+    ]
+  }
+]
