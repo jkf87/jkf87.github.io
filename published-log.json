@@ -2274,6 +2274,32 @@
       ],
       "commit": "ab123cab",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-10-evoharness-rl-self-evolving-runtime-harness.md"
+    },
+    {
+      "slug": "2026-08-10-horizon-gap-long-horizon-llm-agents-survey",
+      "date": "2026-08-10",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2608.06663",
+      "title": "호라이즌 갭: LLM 에이전트가 한 번에 못 끝내는 작업의 정체",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-10-horizon-gap-long-horizon-llm-agents-survey",
+      "tags": [
+        "agent",
+        "long-horizon",
+        "survey",
+        "LLM",
+        "harness",
+        "memory",
+        "planning",
+        "evaluation",
+        "reinforcement-learning",
+        "safety"
+      ],
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_winner": "a-kakao-v3",
+      "voice_spyrl_score": 84.6,
+      "voice_spyrl_grade": "A",
+      "voice_spyrl_report": "../memory/voice-feedback/2026-08-10-horizon-gap-long-horizon-llm-agents-survey-spyrl.json",
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-10-horizon-gap-long-horizon-llm-agents-survey-final-spyrl.json"
     }
   ],
   "entries": [
