@@ -1,0 +1,213 @@
+[
+  {
+    "page": 1,
+    "file": "fig-p1-fallback.png",
+    "method": "fallback_top45 (1224x713)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 161,
+    "width": 1224,
+    "height": 713,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (886x415)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 33,
+    "width": 886,
+    "height": 415,
+    "caption": "Figure 1  Matched-baseline reward changes across three benchmarks; diamonds denote the equal-weight average.",
+    "crop": [
+      84.62,
+      51.78,
+      527.38,
+      258.72
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-2-p3.png",
+    "method": "caption_crop (1224x666)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 122,
+    "width": 1224,
+    "height": 666,
+    "caption": "Figure 2  Overview of Harness-R1. Mined target failures become an evidence bundle (left); the harness engineer writes an",
+    "crop": [
+      0.0,
+      1.14,
+      612.0,
+      333.73
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-p4-fallback.png",
+    "method": "fallback_top45 (1224x713)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 170,
+    "width": 1224,
+    "height": 713,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-p5-fallback.png",
+    "method": "fallback_top45 (1224x713)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 117,
+    "width": 1224,
+    "height": 713,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-p6-fallback.png",
+    "method": "fallback_top45 (1224x713)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 107,
+    "width": 1224,
+    "height": 713,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1  Main results across WebShop, ALFWorld, and DBBench (%). Score is the mean shaped reward and Succ. is the task success",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  1  summarizes target-specific performance against prompt-based strategies, frontier engineers, and supervised",
+    "crop": null
+  },
+  {
+    "page": 9,
+    "file": "fig-p9-fallback.png",
+    "method": "fallback_top45 (1224x713)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 167,
+    "width": 1224,
+    "height": 713,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 10,
+    "file": "fig-p10-fallback.png",
+    "method": "fallback_top45 (1224x713)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 156,
+    "width": 1224,
+    "height": 713,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-4-p8.png",
+    "method": "caption_crop (1982x858)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 138,
+    "width": 1982,
+    "height": 858,
+    "caption": "Figure 4  Analysis of Harness-R1 on the vanilla Qwen3.5-9B target. (a) Held-out-task generalization from sparse failure evidence:",
+    "crop": [
+      58.87,
+      51.78,
+      554.19,
+      266.09
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-3-p8.png",
+    "method": "caption_crop (906x1118)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 163,
+    "width": 906,
+    "height": 1118,
+    "caption": "Figure 3  Target-agent generalization in success-rate",
+    "crop": [
+      322.21,
+      306.12,
+      548.44,
+      585.29
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-4a-p8.png",
+    "method": "caption_crop (1978x1396)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 491,
+    "width": 1978,
+    "height": 1396,
+    "caption": "Figure  4a  shows that Harness-R1 improves pooled held-out success by  8 . 9  ±  1 . 5  percentage points and is positive",
+    "crop": [
+      58.87,
+      306.12,
+      553.13,
+      654.76
+    ]
+  }
+]
