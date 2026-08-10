@@ -2258,7 +2258,22 @@
         "self-evolution",
         "long-horizon",
         "loop"
-      ]
+      ],
+      "threads_root_id": "17979493686061971",
+      "threads_reply_ids": [
+        "18178483576424150",
+        "18136209793715206",
+        "18096983924369507",
+        "18434803162121707"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "commit": "ab123cab",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-10-evoharness-rl-self-evolving-runtime-harness.md"
     }
   ],
   "entries": [
