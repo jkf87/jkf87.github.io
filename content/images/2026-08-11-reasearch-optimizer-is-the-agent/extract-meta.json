@@ -1,0 +1,138 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1443x1085)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 891,
+    "width": 1443,
+    "height": 1085,
+    "caption": "Figure 1: Positioning ReASearch relative to existing methods.",
+    "crop": [
+      124.45,
+      69.86,
+      484.99,
+      340.84
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-2-p3.png",
+    "method": "caption_crop (1680x961)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 939,
+    "width": 1680,
+    "height": 961,
+    "caption": "Figure 2: Prior methods use LLMs primarily as mutators, with candidate selection and",
+    "crop": [
+      96.0,
+      25.94,
+      516.0,
+      265.93
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-3-p4.png",
+    "method": "caption_crop (1681x1096)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 1397,
+    "width": 1681,
+    "height": 1096,
+    "caption": "Figure 3: We visualize an example agent trajectory for prompt optimization, highlighting",
+    "crop": [
+      96.0,
+      55.69,
+      516.0,
+      329.46
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-4-p5.png",
+    "method": "caption_crop (1680x867)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 748,
+    "width": 1680,
+    "height": 867,
+    "caption": "Figure 4: Program evolution and ML workflow optimization exhibit similar patterns: the",
+    "crop": [
+      96.0,
+      58.53,
+      516.0,
+      275.11
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-5-p6.png",
+    "method": "caption_crop (1346x566)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 137,
+    "width": 1346,
+    "height": 566,
+    "caption": "Figure 5: Tool call frequency statistics for each category.",
+    "crop": [
+      179.71,
+      453.16,
+      516.0,
+      594.36
+    ]
+  },
+  {
+    "page": 7,
+    "file": "table-1-p7.png",
+    "method": "caption_crop_table_below (1582x490)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 139,
+    "width": 1582,
+    "height": 490,
+    "caption": "Table 1: Performance on test sets before and after system prompt optimization.",
+    "crop": [
+      120.99,
+      195.09,
+      516.0,
+      317.44
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-6-p7.png",
+    "method": "caption_crop (573x452)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 37,
+    "width": 573,
+    "height": 452,
+    "caption": "Figure 6: Comparison with",
+    "crop": [
+      373.2,
+      217.07,
+      516.0,
+      329.79
+    ]
+  },
+  {
+    "page": 7,
+    "file": "table-2-p7.png",
+    "method": "caption_crop (1158x1264)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 270,
+    "width": 1158,
+    "height": 1264,
+    "caption": "Table 2: Circle Packing Results",
+    "crop": [
+      226.79,
+      217.07,
+      516.0,
+      532.89
+    ]
+  }
+]
