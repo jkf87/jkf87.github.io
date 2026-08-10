@@ -1,0 +1,198 @@
+[
+  {
+    "page": 4,
+    "file": "fig-1-p4.png",
+    "method": "caption_crop (1260x713)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 187,
+    "width": 1260,
+    "height": 713,
+    "caption": "Figure 1: Overview of GSE",
+    "crop": [
+      96.0,
+      60.0,
+      515.97,
+      297.2
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-1-p4-2.png",
+    "method": "caption_crop (1261x845)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 216,
+    "width": 1261,
+    "height": 845,
+    "caption": "Figure 1 presents the workflow of GSE, which optimizes the skill bank through relationship-aware",
+    "crop": [
+      96.0,
+      60.0,
+      516.0,
+      341.09
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-2-p6.png",
+    "method": "caption_crop (1082x467)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 63,
+    "width": 1082,
+    "height": 467,
+    "caption": "Figure 2: An Example of the Evolution Proposal DSL",
+    "crop": [
+      124.45,
+      60.0,
+      484.98,
+      215.51
+    ]
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Effectiveness Comparison on Bug-Revealing Test Generation",
+    "crop": null
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1 presents the results. From the table, GSE consistently outperforms all baselines on both",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "fig-3-p11.png",
+    "method": "caption_crop (1202x746)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 129,
+    "width": 1202,
+    "height": 746,
+    "caption": "Figure 3: A Case Study for Bug-Triggering Test Generation",
+    "crop": [
+      105.9,
+      60.0,
+      506.1,
+      308.18
+    ]
+  },
+  {
+    "page": 11,
+    "file": "table-2-p11.png",
+    "method": "caption_crop (1261x587)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 104,
+    "width": 1261,
+    "height": 587,
+    "caption": "Table 2 presents the results for false-positive filtering. On OpenHands, GSE achieves a precision of",
+    "crop": [
+      96.0,
+      479.66,
+      516.01,
+      674.95
+    ]
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Effectiveness Comparison on False-Positive Filtering",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "table-3-p12.png",
+    "method": "caption_crop (1261x938)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 160,
+    "width": 1261,
+    "height": 938,
+    "caption": "Table 3 shows that removing either component substantially degrades performance, demonstrat-",
+    "crop": [
+      96.0,
+      395.53,
+      516.01,
+      707.68
+    ]
+  },
+  {
+    "page": 13,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Ablation Study",
+    "crop": null
+  },
+  {
+    "page": 13,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4: Token consumption macro-averaged across tasks and agents.",
+    "crop": null
+  },
+  {
+    "page": 13,
+    "file": "table-4-p13.png",
+    "method": "caption_crop (1261x585)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 85,
+    "width": 1261,
+    "height": 585,
+    "caption": "Table 4 presents the token cost of skill evolution and downstream task execution. The results show",
+    "crop": [
+      96.0,
+      469.52,
+      516.01,
+      664.04
+    ]
+  },
+  {
+    "page": 14,
+    "file": "table-5-p14.png",
+    "method": "caption_crop_table_below (1261x666)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 97,
+    "width": 1261,
+    "height": 666,
+    "caption": "Table 5: Generalizability to the industrial internal agent.",
+    "crop": [
+      96.0,
+      63.24,
+      516.01,
+      284.78
+    ]
+  }
+]
