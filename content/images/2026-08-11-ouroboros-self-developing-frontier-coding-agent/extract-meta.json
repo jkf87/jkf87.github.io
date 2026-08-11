@@ -1,0 +1,133 @@
+[
+  {
+    "page": 1,
+    "file": "fig-p1-fallback.png",
+    "method": "fallback_top45 (1786x1137)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 236,
+    "width": 1786,
+    "height": 1137,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      595.2760009765625,
+      378.8505065917969
+    ]
+  },
+  {
+    "page": 2,
+    "file": "fig-p2-fallback.png",
+    "method": "fallback_top45 (1786x1137)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 305,
+    "width": 1786,
+    "height": 1137,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      595.2760009765625,
+      378.8505065917969
+    ]
+  },
+  {
+    "page": 3,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Boundary of evolution in related systems. “Core code” means the agent can change the harness implemen-",
+    "crop": null
+  },
+  {
+    "page": 4,
+    "file": "fig-1-p4.png",
+    "method": "caption_crop (1437x820)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 136,
+    "width": 1437,
+    "height": 820,
+    "caption": "Figure 1: Ouroboros architecture. One supervised runtime dispatches work to admitted workspaces, task trees,",
+    "crop": [
+      58.87,
+      58.86,
+      537.65,
+      331.86
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (728x706)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 60,
+    "width": 728,
+    "height": 706,
+    "caption": "Figure 2: Subagent patch-integration protocol. Acting",
+    "crop": [
+      294.14,
+      346.85,
+      536.41,
+      581.68
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-3-p5.png",
+    "method": "caption_crop (732x782)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 256,
+    "width": 732,
+    "height": 782,
+    "caption": "Figure 3: Task-tree view of a live Ouroboros session:",
+    "crop": [
+      58.87,
+      58.87,
+      302.51,
+      319.31
+    ]
+  },
+  {
+    "page": 5,
+    "file": "table-2-p5.png",
+    "method": "caption_crop (1419x1938)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 743,
+    "width": 1419,
+    "height": 1938,
+    "caption": "Table  2  summarizes results across the five bench-",
+    "crop": [
+      65.41,
+      58.87,
+      538.22,
+      704.63
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-2-p6.png",
+    "method": "caption_crop_table_below (1435x738)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 117,
+    "width": 1435,
+    "height": 738,
+    "caption": "Table 2: Model–harness results across five benchmark families. Links to traces, manifests, and submissions appear",
+    "crop": [
+      58.56,
+      162.94,
+      536.58,
+      408.46
+    ]
+  }
+]

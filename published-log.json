@@ -2424,6 +2424,33 @@
       "voice_spyrl_grade": "A",
       "voice_spyrl_report": "../memory/voice-feedback/2026-08-11-agent-memory-distillation-spyrl.json",
       "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-11-agent-memory-distillation-final-spyrl.json"
+    },
+    {
+      "slug": "2026-08-11-ouroboros-self-developing-frontier-coding-agent",
+      "date": "2026-08-11",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2608.08311",
+      "title": "Ouroboros: 하네스가 스스로를 개선하는 코딩 에이전트 — 161일 진화 실험",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-11-ouroboros-self-developing-frontier-coding-agent",
+      "github_url": "https://github.com/razzant/ouroboros",
+      "tags": [
+        "agent",
+        "harness",
+        "LLM",
+        "coding-agent",
+        "self-evolution",
+        "terminal-bench",
+        "OSWorld",
+        "safety",
+        "loop",
+        "automation"
+      ],
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_winner": "c-formal",
+      "voice_spyrl_score": 90.8,
+      "voice_spyrl_grade": "A",
+      "voice_spyrl_report": "../memory/voice-feedback/2026-08-11-ouroboros-self-developing-frontier-coding-agent-spyrl.json",
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-11-ouroboros-self-developing-frontier-coding-agent-final-spyrl.json"
     }
   ],
   "entries": [
