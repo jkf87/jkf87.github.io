@@ -1,0 +1,287 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1585x675)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 237,
+    "width": 1585,
+    "height": 675,
+    "caption": "Figure 1:  Pipeline of SkillProx.  The forward stage iteratively executes, diagnoses, and patches the current skill, using same-",
+    "crop": [
+      42.0,
+      42.0,
+      570.01,
+      266.8
+    ]
+  },
+  {
+    "page": 4,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 1 summarizes the SkillProx pipeline. Following the",
+    "crop": null
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Structural alignment between standard PGD and the proposed method.",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Main results across three benchmarks. R is the average score (0–100,  ↑ ); values are mean ± std over seeds. Spreadsheet",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Component ablation on SpreadsheetBench with",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "table-3-p7.png",
+    "method": "caption_crop (1556x651)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 194,
+    "width": 1556,
+    "height": 651,
+    "caption": "Table 3 shows that removing either stage degrades held-out",
+    "crop": [
+      51.96,
+      42.0,
+      570.0,
+      258.52
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-2-p7.png",
+    "method": "caption_crop (789x666)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 62,
+    "width": 789,
+    "height": 666,
+    "caption": "Figure 2: Accuracy–compression Pareto frontier of Qwen3.6-",
+    "crop": [
+      307.5,
+      42.0,
+      570.0,
+      263.6
+    ]
+  },
+  {
+    "page": 7,
+    "file": "table-4-p7.png",
+    "method": "caption_crop (789x981)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 103,
+    "width": 789,
+    "height": 981,
+    "caption": "Table 4: Final skill length across model sizes. Results are",
+    "crop": [
+      307.5,
+      42.0,
+      570.0,
+      368.35
+    ]
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5: Component design of the evolved-skill conditions.",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6: Backbone models and training-seed coverage in the recorded experiment artifacts.",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 7: Core training, refinement, and evaluation parameters.",
+    "crop": null
+  },
+  {
+    "page": 13,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 8: Canonical same-batch OJ results across ten Qwen3.6-27B training seeds. G1 and G3f use identical training IDs and",
+    "crop": null
+  },
+  {
+    "page": 14,
+    "file": "",
+    "method": "caption_crop_table_below",
+    "status": "rejected",
+    "reason": "crop too small (528x67pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 9: Closed-loop attempt trace for seed 8. Each batch contains four tasks. An attempt whose post-update hard-correct count",
+    "crop": [
+      42.0,
+      43.70841979980469,
+      569.9979858398438,
+      110.73199462890625
+    ]
+  },
+  {
+    "page": 14,
+    "file": "table-10-p14.png",
+    "method": "caption_crop (1582x902)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 154,
+    "width": 1582,
+    "height": 902,
+    "caption": "Table 10: The same failure pattern produces qualitatively different knowledge in the matched open- and closed-loop runs.",
+    "crop": [
+      42.4,
+      74.28,
+      569.6,
+      374.54
+    ]
+  },
+  {
+    "page": 15,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 11: Utility composition and main-file length for the matched seed 8 skills. Lengths use the verified final  SKILL.md",
+    "crop": null
+  },
+  {
+    "page": 15,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 12: Four occurrences of the same meta-instruction in the evolved open-loop skill. Utilities are estimated by leave-one-out",
+    "crop": null
+  },
+  {
+    "page": 15,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 13: Candidate-level audit scores and realized validation decisions. A negative audit score determines eligibility but does",
+    "crop": null
+  },
+  {
+    "page": 16,
+    "file": "fig-3-p16.png",
+    "method": "caption_crop (1584x584)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 48,
+    "width": 1584,
+    "height": 584,
+    "caption": "Figure 3: OJ accuracy before and after validation-gated Prox consolidation. Evaluation uses 100 fixed tasks with three test cases",
+    "crop": [
+      42.0,
+      47.57,
+      570.0,
+      241.95
+    ]
+  },
+  {
+    "page": 16,
+    "file": "table-14-p16.png",
+    "method": "caption_crop (1584x928)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 149,
+    "width": 1584,
+    "height": 928,
+    "caption": "Table 14: Structural and OJ changes produced by the accepted Prox edit. OJ hard accuracy uses the fixed 100-task denominator.",
+    "crop": [
+      42.0,
+      47.57,
+      570.0,
+      356.6
+    ]
+  },
+  {
+    "page": 16,
+    "file": "table-14-p16-3.png",
+    "method": "caption_crop (1236x1309)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 190,
+    "width": 1236,
+    "height": 1309,
+    "caption": "Table 14 summarizes the outcome. The complete skill shrinks from 29,129 to 28,219 characters,",
+    "crop": [
+      51.96,
+      47.57,
+      463.49,
+      483.59
+    ]
+  }
+]

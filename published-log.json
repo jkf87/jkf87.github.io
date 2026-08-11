@@ -2477,7 +2477,49 @@
       "voice_spyrl_score": 85.0,
       "voice_spyrl_grade": "A",
       "voice_spyrl_report": "../memory/voice-feedback/2026-08-11-smrc-sd-state-matched-routing-self-distillation-spyrl.json",
-      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-11-smrc-sd-state-matched-routing-self-distillation-final-spyrl.json"
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-11-smrc-sd-state-matched-routing-self-distillation-final-spyrl.json",
+      "commit": "b4fdf46c",
+      "threads_root_id": "17874485547553462",
+      "threads_reply_ids": [
+        "18116779664302372",
+        "18102368791942191",
+        "17899285110350595",
+        "18115594615946131",
+        "18640021981032565"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        4,
+        5,
+        6
+      ],
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-11-smrc-sd-state-matched-routing-self-distillation.md"
+    },
+    {
+      "slug": "2026-08-11-skillprox-proximal-textual-gradient-agent-skills",
+      "date": "2026-08-11",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2608.07449",
+      "title": "SkillProx: 에이전트 스킬이 늘어만 가면 망한다 — 근접 기울기로 줄이면서 키우는 법",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-11-skillprox-proximal-textual-gradient-agent-skills",
+      "github_url": "https://github.com/Steven011018/SkillProx",
+      "tags": [
+        "agent",
+        "skill-evolution",
+        "LLM",
+        "harness",
+        "textual-optimization",
+        "self-evolution",
+        "loop",
+        "automation"
+      ],
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_winner": "a-kakao",
+      "voice_spyrl_score": 86.1,
+      "voice_spyrl_grade": "A",
+      "voice_spyrl_report": "../memory/voice-feedback/2026-08-11-skillprox-proximal-textual-gradient-agent-skills-spyrl.json",
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-11-skillprox-proximal-textual-gradient-agent-skills-final-spyrl.json"
     }
   ],
   "entries": [
