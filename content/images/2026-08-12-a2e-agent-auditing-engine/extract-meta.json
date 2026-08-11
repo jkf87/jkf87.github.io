@@ -1,0 +1,174 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (1477x664)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 384,
+    "width": 1477,
+    "height": 664,
+    "caption": "Figure 1: A 2 E provides end-to-end evaluation over an  m  ×  n  benchmark–harness grid.  (a)  An Agent Task Protocol lets",
+    "crop": [
+      60.0,
+      471.24,
+      552.01,
+      692.14
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (1477x967)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 399,
+    "width": 1477,
+    "height": 967,
+    "caption": "Figure 2: System overview.  Task  integrates benchmark management and execution support,  Monitor  provides",
+    "crop": [
+      60.0,
+      60.01,
+      552.2,
+      382.27
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Fig.  3  presents the runtime pipeline, which is organized into four loosely coupled components: Task,",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "fig-3-p6.png",
+    "method": "caption_crop (1477x664)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 146,
+    "width": 1477,
+    "height": 664,
+    "caption": "Figure 3: Runtime workflow and data flow. The monitored task runner writes experiment runs and traces to",
+    "crop": [
+      60.0,
+      60.0,
+      552.19,
+      280.97
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-4-p7.png",
+    "method": "caption_crop (1477x828)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 211,
+    "width": 1477,
+    "height": 828,
+    "caption": "Figure 4: Overview of the Task Layer and the Agent Task Protocol (ATP). Benchmark adapters and harness",
+    "crop": [
+      60.0,
+      59.99,
+      552.19,
+      335.42
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-5-p9.png",
+    "method": "caption_crop (1477x607)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 133,
+    "width": 1477,
+    "height": 607,
+    "caption": "Figure 5: Overview of the execution-aligned agent evaluation framework. Process-level evaluation examines",
+    "crop": [
+      60.0,
+      88.93,
+      552.22,
+      290.91
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-5-p9-2.png",
+    "method": "caption_crop (1390x1339)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 303,
+    "width": 1390,
+    "height": 1339,
+    "caption": "Figure  5 . The resulting taxonomy contains four evaluation stages.",
+    "crop": [
+      60.0,
+      88.93,
+      523.29,
+      534.96
+    ]
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Correctness of all supported agent harnesses with different benchmarks. Each cell is the mean",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  1  reports the resulting grid, each cell the mean  correctness  over the five sampled tasks. In single-turn",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "fig-6-p12.png",
+    "method": "caption_crop (1483x807)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 148,
+    "width": 1483,
+    "height": 807,
+    "caption": "Figure 6: The 855 runs of the 19 non-sandbox benchmarks of Table  1 : read through the trajectory.",
+    "crop": [
+      60.0,
+      60.0,
+      554.12,
+      328.35
+    ]
+  },
+  {
+    "page": 12,
+    "file": "fig-7-p12.png",
+    "method": "caption_crop (1481x1580)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 329,
+    "width": 1481,
+    "height": 1580,
+    "caption": "Figure  7  presents the performance of the execution of nine agent harnesses on three representative benchmarks:",
+    "crop": [
+      60.0,
+      60.0,
+      553.67,
+      586.3
+    ]
+  }
+]
