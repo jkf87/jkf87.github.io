@@ -1,0 +1,43 @@
+{
+  "kind": "blog-voice-spyrl-gate",
+  "createdAt": "2026-08-11T13:06:12.007380+00:00",
+  "policy": "conanssam-voice kakao/plain blog overlay",
+  "passed": true,
+  "winner": "content/posts/2026-08-11-harness-control-offline-rl.md",
+  "winnerScore": 90.8,
+  "winnerGrade": "A",
+  "spy": "content/posts/2026-08-11-harness-control-offline-rl.md",
+  "spySuspicion": 9.35,
+  "spyTags": [],
+  "candidates": [
+    {
+      "path": "content/posts/2026-08-11-harness-control-offline-rl.md",
+      "score": 90.8,
+      "suspicion": 9.35,
+      "grade": "A",
+      "tags": [],
+      "counts": {
+        "paragraphs": 39,
+        "avg_paragraph_chars": 75.9,
+        "long_paragraphs": 0,
+        "very_long_paragraphs": 0,
+        "banned_total": 0,
+        "korean_slop_total": 0,
+        "aphorism_frame": 0,
+        "binary_contrast": 0,
+        "rhetorical_qa": 0,
+        "bold_spans": 2,
+        "images": 4,
+        "bad_image_paths": 0,
+        "numbers": 18,
+        "table_lines": 0,
+        "question_headings": 0,
+        "metaphor_headings": 0
+      },
+      "notes": [
+        "큰 문체 위반 없음"
+      ]
+    }
+  ],
+  "recommendation": "publish winner"
+}

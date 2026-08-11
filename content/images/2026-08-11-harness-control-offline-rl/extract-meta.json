@@ -1,0 +1,282 @@
+[
+  {
+    "page": 3,
+    "file": "fig-1-p3.png",
+    "method": "caption_crop (1434x658)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 414,
+    "width": 1434,
+    "height": 658,
+    "caption": "Figure 1: The proposed framework separates final task quality from harness process quality. Offline AW learns a",
+    "crop": [
+      58.87,
+      58.87,
+      536.41,
+      277.67
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (733x482)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 173,
+    "width": 733,
+    "height": 482,
+    "caption": "Figure 2:  Offline harness-control training pipeline.",
+    "crop": [
+      58.87,
+      58.87,
+      302.88,
+      219.15
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-3-p6.png",
+    "method": "caption_crop (728x694)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 59,
+    "width": 728,
+    "height": 694,
+    "caption": "Figure 3:  Outcome and process gains across eight",
+    "crop": [
+      294.14,
+      58.86,
+      536.41,
+      289.83
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1:  Main empirical findings.  Offline AW consistently improves harness verification behavior, while final-",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2:  Verification before submission.  CheckBe-",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  5  reports the",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3:  Settings with the clearest final-quality gains.",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  7  decom-",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4:  Ablation results for advantage weighting (AW), behavior cloning (BC), and Forced CHECK (FC).",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5:  Controlled-domain results.  Each policy is evaluated on 20 held-out tasks with three seeds and three",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  5",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  8  reports sensitivity to the EarlySubmit",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  6  shows",
+    "crop": null
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6:  Interpretation of controlled-domain behavior.  Under the calibrated structural verifier, coding is",
+    "crop": null
+  },
+  {
+    "page": 9,
+    "file": "table-7-p9.png",
+    "method": "caption_crop_table_below (1440x926)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 187,
+    "width": 1440,
+    "height": 926,
+    "caption": "Table 7:  Event-level process decomposition.  Rates are reported as base  → AW under the calibrated detector.",
+    "crop": [
+      58.56,
+      231.06,
+      538.15,
+      539.42
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-4-p9.png",
+    "method": "caption_crop (733x542)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 50,
+    "width": 733,
+    "height": 542,
+    "caption": "Figure 4:  Policy comparison against simpler base-",
+    "crop": [
+      58.87,
+      385.98,
+      302.79,
+      566.18
+    ]
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 8:  EarlySubmit threshold sensitivity.  Entries are",
+    "crop": null
+  },
+  {
+    "page": 10,
+    "file": "fig-5-p10.png",
+    "method": "caption_crop (1417x649)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 171,
+    "width": 1417,
+    "height": 649,
+    "caption": "Figure 5:  Buffer slack and final-quality change un-",
+    "crop": [
+      58.87,
+      58.87,
+      530.95,
+      274.7
+    ]
+  },
+  {
+    "page": 10,
+    "file": "fig-6-p10.png",
+    "method": "caption_crop (1423x516)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 128,
+    "width": 1423,
+    "height": 516,
+    "caption": "Figure 6:  Within-policy process–outcome correla-",
+    "crop": [
+      64.32,
+      58.87,
+      538.07,
+      230.46
+    ]
+  },
+  {
+    "page": 10,
+    "file": "fig-7-p10.png",
+    "method": "caption_crop (728x690)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 64,
+    "width": 728,
+    "height": 690,
+    "caption": "Figure 7:  Per-setting relationship between outcome",
+    "crop": [
+      294.14,
+      289.18,
+      536.41,
+      518.8
+    ]
+  }
+]
