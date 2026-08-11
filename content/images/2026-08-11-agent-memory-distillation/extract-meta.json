@@ -1,0 +1,167 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (733x820)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 170,
+    "width": 733,
+    "height": 820,
+    "caption": "Figure 1:  Motivation, Concept, and Results of AMD.",
+    "crop": [
+      294.14,
+      238.02,
+      538.15,
+      511.07
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (1434x465)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 176,
+    "width": 1434,
+    "height": 465,
+    "caption": "Figure 2:  Hierarchical Memory Generation and Injection in AMD.  ( Left ) The teacher agent generates three",
+    "crop": [
+      58.87,
+      51.67,
+      536.41,
+      206.12
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-1-p6.png",
+    "method": "caption_crop_table_below (1402x378)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 93,
+    "width": 1402,
+    "height": 378,
+    "caption": "Table 1:  Main results across three benchmarks.  ∆",
+    "crop": [
+      58.56,
+      56.31,
+      525.53,
+      181.68
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-3-p6.png",
+    "method": "caption_crop (728x457)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 48,
+    "width": 728,
+    "height": 457,
+    "caption": "Figure 3:  Interaction steps on two benchmarks.  AMD",
+    "crop": [
+      294.14,
+      51.67,
+      536.41,
+      203.95
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-3-p6-3.png",
+    "method": "caption_crop (728x1264)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 183,
+    "width": 728,
+    "height": 1264,
+    "caption": "Figure 3 , on AppWorld, zero-shot students issue",
+    "crop": [
+      294.14,
+      51.67,
+      536.41,
+      472.99
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2 .  Workflow  memory alone yields consis-",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "table-2-p7.png",
+    "method": "caption_crop_table_below (1435x778)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 160,
+    "width": 1435,
+    "height": 778,
+    "caption": "Table 2:  Ablation study across models and benchmarks.  WF, ST, and FN denote workflow, subtask, and function",
+    "crop": [
+      58.56,
+      56.46,
+      536.41,
+      315.55
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "caption_crop_table_below",
+    "status": "rejected",
+    "reason": "crop too small (432x66pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3:  Effect of teacher agents on AppWorld.  GPT-",
+    "crop": [
+      58.55699920654297,
+      194.84185791015625,
+      490.18023681640625,
+      260.4541473388672
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-4-p7.png",
+    "method": "caption_crop (733x444)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 52,
+    "width": 733,
+    "height": 444,
+    "caption": "Figure 4:  Effect of student model size on AMD per-",
+    "crop": [
+      294.14,
+      190.08,
+      538.07,
+      337.87
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-4-p7-4.png",
+    "method": "caption_crop (728x957)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 130,
+    "width": 728,
+    "height": 957,
+    "caption": "Figure 4  shows AppWorld accuracy as a function of",
+    "crop": [
+      294.14,
+      190.08,
+      536.41,
+      508.91
+    ]
+  }
+]
