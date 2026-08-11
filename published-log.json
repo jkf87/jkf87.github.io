@@ -2561,7 +2561,13 @@
       "voice_spyrl_score": 90.8,
       "voice_spyrl_grade": "A",
       "voice_spyrl_report": "../memory/voice-feedback/2026-08-11-harness-control-offline-rl-spyrl.json",
-      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-11-harness-control-offline-rl-final-spyrl.json"
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-11-harness-control-offline-rl-final-spyrl.json",
+      "threads_root_id": "18098599778090355",
+      "threads_reply_ids": [
+        "18102133484167356",
+        "18130305172633042",
+        "18190974214380052"
+      ]
     }
   ],
   "entries": [
