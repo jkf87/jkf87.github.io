@@ -2368,6 +2368,23 @@
       "voice_spyrl_grade": "A",
       "voice_spyrl_report": "../memory/voice-feedback/2026-08-11-reasearch-optimizer-is-the-agent-spyrl.json",
       "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-11-reasearch-optimizer-is-the-agent-final-spyrl.json"
+    },
+    {
+      "slug": "2026-08-11-evo-bench-llm-harness-evolution",
+      "date": "2026-08-11",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2608.09096",
+      "title": "Evo-Bench: LLM이 에이전트 하네스를 스스로 개선할 수 있는가",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-11-evo-bench-llm-harness-evolution",
+      "tags": [
+        "agent",
+        "harness",
+        "LLM",
+        "benchmark",
+        "self-evolution",
+        "automation",
+        "loop"
+      ]
     }
   ],
   "entries": [

@@ -1,0 +1,208 @@
+[
+  {
+    "page": 3,
+    "file": "fig-1-p3.png",
+    "method": "caption_crop (1261x640)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 71,
+    "width": 1261,
+    "height": 640,
+    "caption": "Figure 1: Composition of Evo-Bench. The left panel summarizes the three-domain hierarchy and",
+    "crop": [
+      96.0,
+      83.81,
+      516.0,
+      296.94
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (1372x838)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 161,
+    "width": 1372,
+    "height": 838,
+    "caption": "Figure 2: Overview of the Evo-Bench evaluation pipeline.",
+    "crop": [
+      71.5,
+      64.56,
+      528.58,
+      343.62
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (420x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Statistics of the harness-guided task selection process. Tasks with non-positive sensitivity",
+    "crop": [
+      95.99996948242188,
+      555.7536010742188,
+      516.0032958984375,
+      300.6510925292969
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (420x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 3, we first leverage auxiliary tasks to conduct controlled evolution experiments and generate",
+    "crop": [
+      96.0,
+      555.7536010742188,
+      516.0032043457031,
+      529.5459899902344
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-3-p5.png",
+    "method": "caption_crop (1424x716)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 160,
+    "width": 1424,
+    "height": 716,
+    "caption": "Figure 3: Overview of Two-Stage Harness-Guided Benchmark Construction Framework.",
+    "crop": [
+      77.06,
+      514.98,
+      551.59,
+      753.12
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Evo-Bench harness-evolving capability leaderboard. Methods are ranked by Overall score;",
+    "crop": null
+  },
+  {
+    "page": 9,
+    "file": "fig-4-p9.png",
+    "method": "caption_crop (1261x781)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 87,
+    "width": 1261,
+    "height": 781,
+    "caption": "Figure 4: Budget usage of each evolver. Iters, steps and time report the number used relative to the",
+    "crop": [
+      96.0,
+      83.81,
+      516.0,
+      343.92
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-5-p9.png",
+    "method": "caption_crop (1260x604)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 176,
+    "width": 1260,
+    "height": 604,
+    "caption": "Figure 5: Cost($) vs. performance. The dashed line",
+    "crop": [
+      96.0,
+      424.56,
+      516.0,
+      625.39
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-6-p9.png",
+    "method": "caption_crop (1261x635)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 177,
+    "width": 1261,
+    "height": 635,
+    "caption": "Figure 6: GPT-5.6-Sol harness-evolution",
+    "crop": [
+      96.0,
+      424.56,
+      516.0,
+      635.94
+    ]
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 7, both models demonstrate a clear positive scaling trend. Expanding the budget from 24",
+    "crop": null
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3 demonstrates that harness evolution is highly robust to policy model changes. Regardless",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "fig-7-p11.png",
+    "method": "caption_crop (631x527)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 35,
+    "width": 631,
+    "height": 527,
+    "caption": "Figure 7: Effect of evolution budget.",
+    "crop": [
+      96.0,
+      83.81,
+      306.12,
+      259.24
+    ]
+  },
+  {
+    "page": 11,
+    "file": "table-3-p11.png",
+    "method": "caption_crop (1261x537)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 104,
+    "width": 1261,
+    "height": 537,
+    "caption": "Table 3: Effect of the policy model on harness evo-",
+    "crop": [
+      96.0,
+      83.81,
+      516.0,
+      262.49
+    ]
+  }
+]
