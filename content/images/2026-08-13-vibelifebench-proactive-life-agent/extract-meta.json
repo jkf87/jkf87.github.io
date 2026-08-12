@@ -1,0 +1,300 @@
+[
+  {
+    "page": 1,
+    "file": "fig-p1-fallback.png",
+    "method": "fallback_top45 (1786x1137)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 237,
+    "width": 1786,
+    "height": 1137,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      595.2760009765625,
+      378.8505065917969
+    ]
+  },
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1623x1183)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 326,
+    "width": 1623,
+    "height": 1183,
+    "caption": "Figure 1: Overview of VibeLifeBench. The top shows a complete living-world task end to end: a",
+    "crop": [
+      49.03,
+      49.03,
+      589.92,
+      443.27
+    ]
+  },
+  {
+    "page": 3,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Comparison of VibeLifeBench with representative agent benchmarks. Proactive asks whether a",
+    "crop": null
+  },
+  {
+    "page": 4,
+    "file": "fig-p4-fallback.png",
+    "method": "fallback_top45 (1786x1137)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 195,
+    "width": 1786,
+    "height": 1137,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      595.2760009765625,
+      378.8505065917969
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: The four event kinds. The first three open an agent turn; a mutation is applied directly to the",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: The evidence dimensions the scoring criteria cover.",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "fig-2-p7.png",
+    "method": "caption_crop (1434x1036)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 107,
+    "width": 1434,
+    "height": 1036,
+    "caption": "Figure 2: Number of tasks that use each service across the suite (all 22 services are exercised). Usage is",
+    "crop": [
+      58.87,
+      58.87,
+      536.41,
+      403.9
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-3-p8.png",
+    "method": "caption_crop (1434x1048)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 96,
+    "width": 1434,
+    "height": 1048,
+    "caption": "Figure 3: Per-domain distribution of horizon, number of events, number of services, and number of",
+    "crop": [
+      58.87,
+      58.87,
+      536.42,
+      407.86
+    ]
+  },
+  {
+    "page": 8,
+    "file": "table-4-p8.png",
+    "method": "caption_crop (1435x1165)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 125,
+    "width": 1435,
+    "height": 1165,
+    "caption": "Table 4: Per-domain composition of VibeLifeBench, reported as within-domain medians. Days is the",
+    "crop": [
+      58.56,
+      58.87,
+      536.42,
+      446.77
+    ]
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5: Main experimental performance and per-run token and interaction cost for the seven models. The",
+    "crop": null
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6: Per-domain avg@3 for each model.",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "fig-4-p11.png",
+    "method": "caption_crop (1324x1070)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 109,
+    "width": 1324,
+    "height": 1070,
+    "caption": "Figure 4: Per-run input tokens, output tokens, tool calls, and turns.",
+    "crop": [
+      77.01,
+      58.87,
+      518.27,
+      415.17
+    ]
+  },
+  {
+    "page": 11,
+    "file": "table-7-p11.png",
+    "method": "caption_crop (1435x1154)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 135,
+    "width": 1435,
+    "height": 1154,
+    "caption": "Table 7: Check pass rate for each model. The top block is by tier (per-stage, cross-stage, final); the bottom",
+    "crop": [
+      58.56,
+      58.87,
+      536.41,
+      443.1
+    ]
+  },
+  {
+    "page": 12,
+    "file": "fig-5-p12.png",
+    "method": "caption_crop (1435x733)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 106,
+    "width": 1435,
+    "height": 733,
+    "caption": "Figure 5: Per-stage check pass rate as a function of the normalized position of the check along the task",
+    "crop": [
+      58.87,
+      58.87,
+      536.69,
+      302.9
+    ]
+  },
+  {
+    "page": 13,
+    "file": "fig-p13-fallback.png",
+    "method": "fallback_top45 (1786x1137)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 264,
+    "width": 1786,
+    "height": 1137,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      595.2760009765625,
+      378.8505065917969
+    ]
+  },
+  {
+    "page": 14,
+    "file": "fig-p14-fallback.png",
+    "method": "fallback_top45 (1786x1137)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 52,
+    "width": 1786,
+    "height": 1137,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      595.2760009765625,
+      378.8505065917969
+    ]
+  },
+  {
+    "page": 15,
+    "file": "fig-p15-fallback.png",
+    "method": "fallback_top45 (1786x1137)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 305,
+    "width": 1786,
+    "height": 1137,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      595.2760009765625,
+      378.8505065917969
+    ]
+  },
+  {
+    "page": 16,
+    "file": "fig-p16-fallback.png",
+    "method": "fallback_top45 (1786x1137)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 302,
+    "width": 1786,
+    "height": 1137,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      595.2760009765625,
+      378.8505065917969
+    ]
+  },
+  {
+    "page": 17,
+    "file": "table-8-p17.png",
+    "method": "caption_crop (1435x697)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 126,
+    "width": 1435,
+    "height": 697,
+    "caption": "Table  8  gives representative events across the three phases, annotated with the event kind (the four kinds",
+    "crop": [
+      58.56,
+      548.75,
+      536.42,
+      780.86
+    ]
+  }
+]
