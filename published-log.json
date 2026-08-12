@@ -2626,6 +2626,31 @@
         5
       ],
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-12-cipo-evidence-oriented-rl-search-agents.md"
+    },
+    {
+      "date": "2026-08-12",
+      "slug": "2026-08-12-co-evolution-agentic-systems",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2608.10299",
+      "title": "Co-Evolution in Agentic Systems: 에이전트 공진화 설문 — 단일 자가진화에서 자기 지향 진화까지",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-12-co-evolution-agentic-systems",
+      "tags": [
+        "agent",
+        "co-evolution",
+        "self-evolution",
+        "harness",
+        "LLM",
+        "multi-agent",
+        "environment",
+        "open-endedness",
+        "survey"
+      ],
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_winner": "c-formal",
+      "voice_spyrl_score": 91.4,
+      "voice_spyrl_grade": "A",
+      "voice_spyrl_report": "../memory/voice-feedback/2026-08-12-co-evolution-agentic-systems-spyrl.json",
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-12-co-evolution-agentic-systems-final-spyrl.json"
     }
   ],
   "entries": [

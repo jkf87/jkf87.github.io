@@ -1,0 +1,106 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1-1.png",
+    "method": "caption_crop (970x805)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 222,
+    "width": 970,
+    "height": 805,
+    "caption": "Figure 1:",
+    "crop": [
+      294.14,
+      207.91,
+      536.41,
+      408.8
+    ]
+  },
+  {
+    "page": 2,
+    "file": "fig-2-p2-1.png",
+    "method": "caption_crop (1911x697)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 294,
+    "width": 1911,
+    "height": 697,
+    "caption": "Figure 2: The progressive taxonomy of co-evolution, which reflects an expanding boundary of evolutionary freedom.",
+    "crop": [
+      58.87,
+      66.03,
+      536.41,
+      240.01
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-3-p4-1.png",
+    "method": "caption_crop (1911x1037)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 559,
+    "width": 1911,
+    "height": 1037,
+    "caption": "Figure 3: Paper landscape of co-evolution in agentic systems.",
+    "crop": [
+      58.82,
+      58.87,
+      536.39,
+      317.75
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-4-p7-1.png",
+    "method": "caption_crop (1912x675)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 216,
+    "width": 1912,
+    "height": 675,
+    "caption": "Figure 4: Cross-paper evidence for the effect, consistency, and convergence of co-evolution. See Appendix  C  for",
+    "crop": [
+      58.87,
+      58.87,
+      536.58,
+      227.31
+    ]
+  },
+  {
+    "page": 21,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Comparison with surveys in adjacent areas. We retain each survey’s original taxonomy and report where",
+    "crop": null
+  },
+  {
+    "page": 22,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  1  compares our survey with adjacent sur-",
+    "crop": null
+  },
+  {
+    "page": 22,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  4  summarizes results reported by prior work",
+    "crop": null
+  }
+]
