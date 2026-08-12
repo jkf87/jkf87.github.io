@@ -1,0 +1,128 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (788x576)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 48,
+    "width": 788,
+    "height": 576,
+    "caption": "Figure 1:  Evolution trajectory comparison on SkillsBench",
+    "crop": [
+      307.5,
+      204.0,
+      569.99,
+      395.87
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (1584x810)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 233,
+    "width": 1584,
+    "height": 810,
+    "caption": "Figure 2:  Overview of SkillHEX.  (a) A selected skill version is executed on the task, where a failure outcome ( R v  = 0 ) triggers",
+    "crop": [
+      42.0,
+      54.98,
+      570.0,
+      324.42
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1:  Main results on all 87 SkillsBench tasks.  All results are averaged over three seeds, with standard deviations shown as",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2:  Ablation results on SkillsBench using GPT-5.3-",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "table-3-p7.png",
+    "method": "caption_crop (1567x397)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 87,
+    "width": 1567,
+    "height": 397,
+    "caption": "Table 3:  Average per-task token consumption using GPT-",
+    "crop": [
+      42.0,
+      42.0,
+      564.04,
+      173.76
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-3-p7.png",
+    "method": "caption_crop (788x484)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 41,
+    "width": 788,
+    "height": 484,
+    "caption": "Figure 3:  Effect of Initial Skills.  Performance comparison",
+    "crop": [
+      307.5,
+      42.0,
+      569.99,
+      202.92
+    ]
+  },
+  {
+    "page": 11,
+    "file": "table-4-p11.png",
+    "method": "caption_crop (788x1202)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 166,
+    "width": 788,
+    "height": 1202,
+    "caption": "Table 4 reports the fixed configuration used for all SkillHEX",
+    "crop": [
+      42.0,
+      42.0,
+      304.5,
+      442.08
+    ]
+  },
+  {
+    "page": 11,
+    "file": "table-4-p11-2.png",
+    "method": "caption_crop_table_below (1560x802)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 202,
+    "width": 1560,
+    "height": 802,
+    "caption": "Table 4: Default SkillHEX configuration. The new-case cap",
+    "crop": [
+      50.12,
+      43.71,
+      569.99,
+      310.78
+    ]
+  }
+]
