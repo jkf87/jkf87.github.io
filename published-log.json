@@ -2692,7 +2692,21 @@
       "voice_spyrl_score": 75.0,
       "voice_spyrl_grade": "B",
       "voice_spyrl_report": "../memory/voice-feedback/2026-08-12-mgm-mendel-godel-machine-spyrl.json",
-      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-12-mgm-mendel-godel-machine-final-spyrl.json"
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-12-mgm-mendel-godel-machine-final-spyrl.json",
+      "threads_root_id": "18086593619180981",
+      "threads_reply_ids": [
+        "18141930463489617",
+        "17902890009535811",
+        "18339968260250458",
+        "18127334989707939"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        5
+      ],
+      "commit": "fde8f41c",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-12-mgm-mendel-godel-machine.md"
     }
   ],
   "entries": [
