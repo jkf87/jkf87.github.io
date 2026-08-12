@@ -2666,6 +2666,33 @@
         5
       ],
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-12-co-evolution-agentic-systems.md"
+    },
+    {
+      "date": "2026-08-12",
+      "slug": "2026-08-12-mgm-mendel-godel-machine",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2608.07645",
+      "title": "MGM: 멘델 유전법칙으로 코딩 에이전트를 진화시키는 방법",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-12-mgm-mendel-godel-machine",
+      "github_url": "https://github.com/RealLcz/MGM",
+      "tags": [
+        "agent",
+        "self-evolution",
+        "coding-agent",
+        "harness",
+        "LLM",
+        "co-evolution",
+        "scaffold-evolution",
+        "DGM",
+        "HGM",
+        "loop"
+      ],
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_winner": "a-kakao",
+      "voice_spyrl_score": 75.0,
+      "voice_spyrl_grade": "B",
+      "voice_spyrl_report": "../memory/voice-feedback/2026-08-12-mgm-mendel-godel-machine-spyrl.json",
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-12-mgm-mendel-godel-machine-final-spyrl.json"
     }
   ],
   "entries": [
