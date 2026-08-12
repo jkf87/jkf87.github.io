@@ -66,6 +66,24 @@ Motif 3 설정은 query head 80개, KV head 16개입니다. 그중 signal query 
 
 리포트의 controlled experiment에서는 GDLA가 GDA와 MLA보다 낮은 loss를 유지했고, MLA가 loss 3.2에 도달하는 데 필요한 token보다 9.2% 적은 token으로 같은 loss에 도달했다고 합니다. 다만 이 비교는 약 10B 규모 모델에서 한 diagnostic comparison입니다. 314B 전체 모델의 완전한 ablation으로 읽으면 안 됩니다.
 
+### 그럼 왜 signal:noise를 4:1로 둔 걸까요?
+
+이 부분은 리포트가 독립 ablation을 길게 보여주지는 않습니다. 제가 보기엔 **이론적으로 도출된 최적비라기보다, inductive bias와 경험적 튜닝이 섞인 설계값**에 가깝습니다.
+
+Differential Attention의 기본 가정은 signal과 noise가 같은 성격이 아니라는 겁니다. signal은 다양해야 합니다. 어떤 head는 정의를 보고, 어떤 head는 수식을 보고, 어떤 head는 표를 보고, 어떤 head는 코드 블록이나 한국어 문맥을 봐야 합니다. 반대로 noise는 더 공통적일 가능성이 큽니다. 가까운 token, 문장 구분자, 반복되는 boilerplate, 표의 공통 구조처럼 attention mass를 먹지만 head마다 완전히 새로 추정할 필요는 적은 패턴입니다.
+
+그래서 signal과 noise를 1:1로 두면 head budget 절반을 "무엇을 볼지"가 아니라 "무엇을 뺄지"에 쓰게 됩니다. Motif는 이 비용이 아깝다고 본 겁니다. noise head는 적게 만들고 여러 signal head가 공유하는 보정항처럼 쓰는 쪽을 택합니다.
+
+대략 이렇게 읽으면 됩니다.
+
+| 비율 | 해석 |
+|---|---|
+| 1:1 | noise 제거는 풍부하지만 signal capacity를 많이 먹음 |
+| 4:1 | noise 제거 기능은 유지하면서 signal head 대부분을 살림 |
+| 8:1 이상 | signal capacity는 크지만 noise 추정이 너무 거칠 수 있음 |
+
+Motif 3는 grouped ratio `g = 4`를 씁니다. 그래서 signal query head 64개와 noise query head 16개가 됩니다. 다만 `1:1 vs 2:1 vs 4:1 vs 8:1` 같은 ratio별 비교표가 리포트에 제시된 것은 아닙니다. 따라서 글에서는 "4:1이 정답"이라고 쓰기보다, **Motif는 noise 추정보다 signal 표현에 head budget을 더 배정했고, 그 구현값이 4:1이다** 정도로 보는 게 안전합니다.
+
 ## MoE 안정화에 꽤 많은 장치를 넣었습니다
 
 MoE는 expert를 많이 만든다고 자동으로 좋아지지 않습니다. router가 초반에 특정 expert만 고르면 그 expert만 더 학습되고, 더 잘 고르게 되고, 안 고른 expert는 계속 굶습니다. token count만 맞아도 expert들이 비슷한 기능으로 수렴하면 specialization이 무너집니다.
@@ -81,6 +99,10 @@ Motif 3는 이 문제를 여러 겹으로 막습니다.
 - Expert-Specific PolyNorm activation
 
 여기서 재미있는 건 Expert-Specific PolyNorm입니다. 보통 FFN activation을 하나로 고정하면 모든 expert가 같은 nonlinear response를 공유합니다. Motif 3는 expert마다 activation을 다르게 학습하게 해서, expert gate weight의 effective rank를 더 넓게 유지한다고 설명합니다. 쉽게 말하면 expert들이 서로 다른 방향으로 살아남게 만드는 장치입니다.
+
+MoE의 실패는 두 가지로 옵니다. 하나는 router가 몇 expert만 계속 고르는 **expert starvation**입니다. 다른 하나는 token count는 균형 있게 나뉘는데 expert들이 결국 비슷한 함수로 수렴하는 **specialization collapse**입니다. Expert-Specific PolyNorm은 특히 두 번째 문제를 겨냥합니다. expert마다 activation 성격을 다르게 둘 수 있게 해서, 이름만 expert인 384개 복사본이 아니라 서로 다른 반응 곡선을 가진 expert로 남게 하려는 장치입니다.
+
+약어로 줄이면 헷갈리기 쉽습니다. ESPN이라고 쓰면 스포츠 채널처럼 보이니, 글에서는 그냥 **Expert-Specific PolyNorm**으로 풀어 쓰는 편이 낫겠습니다.
 
 mHC 쪽도 실무적으로 중요합니다. 원래 manifold-constrained hyper-connections의 post-mapping multiplier는 2인데, Motif 3는 이를 시간에 따라 1로 anneal합니다. 리포트는 큰 깊이와 scale에서 multiplier 2가 residual stream activation outlier를 누적시켰다고 설명합니다. 큰 모델 학습에서 "이론상 좋은 구조"를 그대로 쓰면 수치적으로 튀는 부분이 있고, 실제 scale에서는 damping이 필요했다는 얘기입니다.
 
@@ -146,6 +168,14 @@ General SFT 전에 preliminary SFT model을 한 번 써서 capability-specific f
 
 그 다음 MOPD가 이 teacher들의 장점을 general student 하나에 통합합니다. 이 방향은 최근 post-training에서 자주 보이는 흐름입니다. specialist model을 여러 개 따로 배포하기보다, teacher들을 이용해 하나의 unified model에 capability를 흡수시키는 방식입니다.
 
+여기서 중요한 단어는 **On-Policy**입니다. 단순히 teacher 답변을 모아 offline dataset처럼 베끼는 게 아니라, student가 현재 policy로 생성한 trajectory 위에서 teacher 신호를 받으며 학습하는 쪽입니다. 비유하면 수학, 코딩, 은행 업무, 터미널 작업, 긴 문서 읽기 선생님을 따로 훈련한 뒤, 배포할 때는 선생님 7명을 모두 데리고 나가는 게 아니라 학생 한 명에게 각 영역의 교정 신호를 흡수시키는 방식입니다.
+
+정리하면 이렇습니다.
+
+- 대부분의 specialist teacher: RL/GRPO 기반
+- software-engineering teacher: repository-level 수정과 test execution 검증을 다루지만, 리포트에서는 SFT teacher로 구성
+- 최종 배포 모델: 여러 teacher의 능력을 MOPD로 합친 unified student
+
 ## 결과는 agentic benchmark 쪽이 제일 눈에 띕니다
 
 ![Motif 3 evaluation table. Motif 3는 τ³-Banking 35.3, ITBench-AA 51.5, Terminal-Bench 2.1 74.9, SWE-bench Verified 76.2를 보고한다.](/images/motif-3-technical-report-2026-08-12/table-6-eval.png)
@@ -200,7 +230,7 @@ AA-Omniscience도 해석이 필요합니다. Accuracy는 30.1로 최고는 아�
 
 이 글은 1차 정리입니다. 같이 보면서 아래 부분을 더 채우면 좋겠습니다.
 
-1. GDLA를 기존 MLA, GQA, differential attention 흐름 안에서 더 정확히 배치하기
+1. GDLA의 signal:noise ratio가 다른 값일 때 어떤 차이가 나는지 추가 ablation 찾기
 2. Expert-Specific PolyNorm이 실제로 expert specialization을 얼마나 돕는지 ablation 확인하기
 3. MOPD가 DeepSeek/Upstage/다른 MoE post-training recipe와 어떻게 다른지 비교하기
 4. 한국어 tokenizer compression 5.31이 실제 한국어 업무 문서에서 얼마나 이득인지 예시 만들기
