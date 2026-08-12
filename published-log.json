@@ -2650,7 +2650,22 @@
       "voice_spyrl_score": 91.4,
       "voice_spyrl_grade": "A",
       "voice_spyrl_report": "../memory/voice-feedback/2026-08-12-co-evolution-agentic-systems-spyrl.json",
-      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-12-co-evolution-agentic-systems-final-spyrl.json"
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-12-co-evolution-agentic-systems-final-spyrl.json",
+      "commit": "2547f8e3",
+      "threads_root_id": "18088473005636030",
+      "threads_reply_ids": [
+        "18455269027137909",
+        "18160684375490452",
+        "17898318168564357",
+        "18122852305873116"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-12-co-evolution-agentic-systems.md"
     }
   ],
   "entries": [
