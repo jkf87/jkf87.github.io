@@ -2611,7 +2611,21 @@
         "loop"
       ],
       "voice_spyrl_report": "../memory/voice-feedback/2026-08-12-cipo-evidence-oriented-rl-search-agents-spyrl.json",
-      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-12-cipo-evidence-oriented-rl-search-agents-final-spyrl.json"
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-12-cipo-evidence-oriented-rl-search-agents-final-spyrl.json",
+      "commit": "e46fff7d",
+      "threads_root_id": "18088492892157516",
+      "threads_reply_ids": [
+        "18090814718549815",
+        "18328897903273001",
+        "17907729015285985",
+        "18614710294007386"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        5
+      ],
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-12-cipo-evidence-oriented-rl-search-agents.md"
     }
   ],
   "entries": [
