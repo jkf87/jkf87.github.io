@@ -1,0 +1,196 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (788x765)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 153,
+    "width": 788,
+    "height": 765,
+    "caption": "Figure 1: Illustrative case for the same question. Prior-driven",
+    "crop": [
+      307.5,
+      204.0,
+      569.99,
+      458.47
+    ]
+  },
+  {
+    "page": 2,
+    "file": "fig-p2-fallback.png",
+    "method": "fallback_top45 (1836x1070)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 389,
+    "width": 1836,
+    "height": 1070,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-2-p3.png",
+    "method": "caption_crop (1584x785)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 145,
+    "width": 1584,
+    "height": 785,
+    "caption": "Figure 2: The overall architecture of CIPO. It evaluates each post-retrieval reasoning step under evidence-visible and evidence-",
+    "crop": [
+      42.0,
+      42.0,
+      570.0,
+      303.27
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-p4-fallback.png",
+    "method": "fallback_top45 (1836x1070)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 335,
+    "width": 1836,
+    "height": 1070,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      356.40000000000003
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Main results on in-domain and out-of-domain question answering benchmarks. We report F1 scores. Bold numbers",
+    "crop": null
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1 reports word-level F1 on four in-domain and",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "fig-3-p6.png",
+    "method": "caption_crop (1585x451)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 124,
+    "width": 1585,
+    "height": 451,
+    "caption": "Figure 3: Representative step-wise validation-set F1 trajectories on two in-domain and two out-of-domain benchmarks. Each",
+    "crop": [
+      42.0,
+      42.0,
+      570.0,
+      191.9
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-2-p6.png",
+    "method": "caption_crop (1220x732)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 199,
+    "width": 1220,
+    "height": 732,
+    "caption": "Table 2 evaluates the individual and combined effects of",
+    "crop": [
+      42.0,
+      193.66,
+      448.37,
+      437.22
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-4-p6.png",
+    "method": "caption_crop (788x350)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 54,
+    "width": 788,
+    "height": 350,
+    "caption": "Figure 4: Prior-driven rates during training. CIPO maintains",
+    "crop": [
+      307.5,
+      193.66,
+      570.0,
+      309.78
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-2-p6-4.png",
+    "method": "caption_crop (788x957)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 133,
+    "width": 788,
+    "height": 957,
+    "caption": "Table 2: Reward ablation summarized by domain-level F1.",
+    "crop": [
+      307.5,
+      193.66,
+      570.0,
+      512.15
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-5-p6.png",
+    "method": "caption_crop (788x1555)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 240,
+    "width": 788,
+    "height": 1555,
+    "caption": "Figure 5 provides the complementary test-set analy-",
+    "crop": [
+      307.5,
+      193.66,
+      570.0,
+      711.45
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-5-p7.png",
+    "method": "caption_crop (788x424)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 74,
+    "width": 788,
+    "height": 424,
+    "caption": "Figure 5: Evidence-driven rates on the test sets across seven",
+    "crop": [
+      42.0,
+      42.0,
+      304.5,
+      183.03
+    ]
+  }
+]
