@@ -4283,6 +4283,46 @@
         1,
         4
       ]
+    },
+    {
+      "date": "2026-08-12",
+      "slug": "2026-08-12-skillhex-hypothesis-driven-agent-skill-evolution",
+      "title": "SkillHEX: 가설 기반 자기검증과 증거 기반 트리 탐색을 통한 에이전트 스킬 진화",
+      "source_url": "https://arxiv.org/abs/2608.05628",
+      "source_type": "arxiv",
+      "tags": [
+        "agent",
+        "skill-evolution",
+        "LLM",
+        "hypothesis-driven",
+        "tree-search",
+        "sparse-reward",
+        "self-evolution",
+        "harness",
+        "loop",
+        "automation"
+      ],
+      "url": "https://jkf87.github.io/posts/2026-08-12-skillhex-hypothesis-driven-agent-skill-evolution",
+      "voice": "conanssam-voice/kakao/plain",
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_winner": "c-formal",
+      "voice_spyrl_score": 95.0,
+      "voice_spyrl_grade": "A",
+      "voice_spyrl_spy": "b-newsletter",
+      "voice_spyrl_spy_suspicion": 33.7,
+      "commit": "0d8613d4",
+      "threads_root_id": "17967036690136476",
+      "threads_reply_ids": [
+        "18118417130306437",
+        "18061071977781083",
+        "18083455142661417",
+        "18100564064363837"
+      ],
+      "threads_image_posts": [
+        1,
+        2,
+        5
+      ]
     }
   ],
   "posts": [
