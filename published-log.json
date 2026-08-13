@@ -2915,7 +2915,16 @@
         "metaphor_heading"
       ],
       "voice_spyrl_report": "../memory/voice-feedback/2026-08-13-macaron-v1-mixture-of-lora-continual-learning-spyrl.json",
-      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-13-macaron-v1-mixture-of-lora-continual-learning-final-spyrl.json"
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-13-macaron-v1-mixture-of-lora-continual-learning-final-spyrl.json",
+      "threads_root_id": "18091575542634644",
+      "threads_reply_ids": [
+        "17883727761613978",
+        "18145194415556553",
+        "18002549126969654",
+        "17867694732638981",
+        "18123968344764909"
+      ],
+      "commit": "cc8d3d65"
     }
   ],
   "entries": [
