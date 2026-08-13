@@ -2778,7 +2778,23 @@
       "voice_spyrl_spy": "b-newsletter",
       "voice_spyrl_spy_suspicion": 55.3,
       "voice_spyrl_report": "../memory/voice-feedback/2026-08-13-skillzip-evaluation-free-skill-compression-spyrl.json",
-      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-13-skillzip-evaluation-free-skill-compression-final-spyrl.json"
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-13-skillzip-evaluation-free-skill-compression-final-spyrl.json",
+      "threads_root_id": "18094971317064997",
+      "threads_reply_ids": [
+        "17992699310822912",
+        "18017134319914939",
+        "18053368724584866",
+        "17959137699315247",
+        "17901631488540500"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        5,
+        6
+      ],
+      "commit": "4f37a24e",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-13-skillzip-evaluation-free-skill-compression.md"
     }
   ],
   "entries": [
