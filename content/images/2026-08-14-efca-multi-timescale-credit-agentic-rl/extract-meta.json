@@ -1,0 +1,186 @@
+[
+  {
+    "page": 3,
+    "file": "fig-1-p3.png",
+    "method": "caption_crop (1261x821)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 475,
+    "width": 1261,
+    "height": 821,
+    "caption": "Figure 1: Overview of EFCA. EFCA complements the long-term outcome signal with a short-",
+    "crop": [
+      96.0,
+      69.86,
+      516.01,
+      343.23
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Main results on ALFWorld and WebShop. Results marked with  †  are taken from the original",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "fig-2-p7.png",
+    "method": "caption_crop (1261x387)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 80,
+    "width": 1261,
+    "height": 387,
+    "caption": "Figure 2: Ablation results of EFCA on ALFWorld under different hyperparameter settings. The",
+    "crop": [
+      96.0,
+      88.44,
+      516.0,
+      217.16
+    ]
+  },
+  {
+    "page": 7,
+    "file": "table-1-p7.png",
+    "method": "caption_crop (1261x1377)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 304,
+    "width": 1261,
+    "height": 1377,
+    "caption": "Table 1 reports the main results on ALFWorld and WebShop. Overall, EFCA consistently im-",
+    "crop": [
+      96.0,
+      88.44,
+      516.0,
+      547.03
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-3-p8.png",
+    "method": "caption_crop (904x584)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 61,
+    "width": 904,
+    "height": 584,
+    "caption": "Figure 3: Mean reweighting ratio over training steps. The shaded area",
+    "crop": [
+      214.8,
+      143.23,
+      516.0,
+      337.38
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-4-p8.png",
+    "method": "caption_crop (904x607)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 76,
+    "width": 904,
+    "height": 607,
+    "caption": "Figure 4: Standard deviation of base and reweighted step returns over",
+    "crop": [
+      214.8,
+      477.69,
+      516.0,
+      679.77
+    ]
+  },
+  {
+    "page": 15,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2 summarizes the main EFCA hyperparameters. The tested ranges correspond to the ablation",
+    "crop": null
+  },
+  {
+    "page": 16,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Main EFCA hyperparameters and tested ranges.",
+    "crop": null
+  },
+  {
+    "page": 16,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 5 illustrates this construction process using ALFWorld as an example. The positive pat-",
+    "crop": null
+  },
+  {
+    "page": 17,
+    "file": "fig-5-p17.png",
+    "method": "caption_crop (1261x523)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 136,
+    "width": 1261,
+    "height": 523,
+    "caption": "Figure 5: Word clouds of ALFWorld feedback patterns used to construct the positive set  P  and",
+    "crop": [
+      96.0,
+      69.86,
+      516.0,
+      243.79
+    ]
+  },
+  {
+    "page": 17,
+    "file": "fig-6-p17.png",
+    "method": "caption_crop (1261x785)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 192,
+    "width": 1261,
+    "height": 785,
+    "caption": "Figure 6: Wall-clock time per training step for EFCA and HGPO. Thin lines show raw step-level",
+    "crop": [
+      96.0,
+      272.66,
+      516.0,
+      533.77
+    ]
+  },
+  {
+    "page": 17,
+    "file": "fig-6-p17-3.png",
+    "method": "caption_crop (1261x1171)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 272,
+    "width": 1261,
+    "height": 1171,
+    "caption": "Figure 6 compares the wall-clock time per training step of EFCA and HGPO over 250 training",
+    "crop": [
+      96.0,
+      272.66,
+      516.0,
+      662.6
+    ]
+  }
+]

@@ -2925,6 +2925,22 @@
         "18123968344764909"
       ],
       "commit": "cc8d3d65"
+    },
+    {
+      "slug": "2026-08-14-efca-multi-timescale-credit-agentic-rl",
+      "date": "2026-08-14",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2608.08255",
+      "title": "EFCA: 환경 피드백만으로 턴별 크레딧을 만드는 에이전트 RL",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-14-efca-multi-timescale-credit-agentic-rl",
+      "tags": [
+        "agent",
+        "reinforcement-learning",
+        "credit-assignment",
+        "LLM",
+        "agentic-RL",
+        "loop"
+      ]
     }
   ],
   "entries": [
