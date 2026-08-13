@@ -1,0 +1,259 @@
+[
+  {
+    "page": 1,
+    "file": "fig-p1-fallback.png",
+    "method": "fallback_top45 (1786x1137)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 150,
+    "width": 1786,
+    "height": 1137,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      595.2760009765625,
+      378.8505065917969
+    ]
+  },
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1426x539)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 168,
+    "width": 1426,
+    "height": 539,
+    "caption": "Figure 1:  With the base model frozen, evolving the harness alone matches or beats",
+    "crop": [
+      60.0,
+      61.99,
+      535.29,
+      241.2
+    ]
+  },
+  {
+    "page": 3,
+    "file": "table-1-p3.png",
+    "method": "caption_crop_table_below (1428x769)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 120,
+    "width": 1428,
+    "height": 769,
+    "caption": "Table 1: Positioning among self-improving-agent methods ( ✓ present,  ∼ restricted,  ✗ absent). All",
+    "crop": [
+      59.61,
+      64.57,
+      535.3,
+      320.58
+    ]
+  },
+  {
+    "page": 3,
+    "file": "table-7-p3.png",
+    "method": "caption_crop_table_below (1426x640)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 91,
+    "width": 1426,
+    "height": 640,
+    "caption": "Table  7  gives the mechanism behind each mark.",
+    "crop": [
+      59.61,
+      107.61,
+      534.53,
+      320.58
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-p4-fallback.png",
+    "method": "fallback_top45 (1786x1137)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 188,
+    "width": 1786,
+    "height": 1137,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      595.2760009765625,
+      378.8505065917969
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-2-p5.png",
+    "method": "caption_crop (1427x724)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 262,
+    "width": 1427,
+    "height": 724,
+    "caption": "Figure 2:  DarwinX ’s selection loop with the model frozen.  Left:  the preserve-and-extend",
+    "crop": [
+      60.0,
+      61.99,
+      535.43,
+      302.96
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-p6-fallback.png",
+    "method": "fallback_top45 (1786x1137)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 212,
+    "width": 1786,
+    "height": 1137,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      595.2760009765625,
+      378.8505065917969
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-3-p7.png",
+    "method": "caption_crop (1427x686)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 256,
+    "width": 1427,
+    "height": 686,
+    "caption": "Figure 3:  DarwinX ’s per-generation operators.  Left:  the mutation loop and the three learning",
+    "crop": [
+      60.0,
+      61.99,
+      535.44,
+      290.31
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-p8-fallback.png",
+    "method": "fallback_top45 (1786x1137)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 205,
+    "width": 1786,
+    "height": 1137,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      595.2760009765625,
+      378.8505065917969
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-p9-fallback.png",
+    "method": "fallback_top45 (1786x1137)",
+    "status": "rejected",
+    "reason": "fallback is not accepted for publishing",
+    "size_kb": 197,
+    "width": 1786,
+    "height": 1137,
+    "caption": "",
+    "crop": [
+      0.0,
+      0.0,
+      595.2760009765625,
+      378.8505065917969
+    ]
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Terminal-Bench 2.1 avg@5, compa-",
+    "crop": null
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  4  breaks the",
+    "crop": null
+  },
+  {
+    "page": 10,
+    "file": "fig-4-p10.png",
+    "method": "caption_crop (696x584)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 50,
+    "width": 696,
+    "height": 584,
+    "caption": "Figure 4: Per-cluster TB2.1 avg@5 (frozen",
+    "crop": [
+      303.69,
+      410.27,
+      535.35,
+      604.63
+    ]
+  },
+  {
+    "page": 11,
+    "file": "fig-5-p11.png",
+    "method": "caption_crop (749x540)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 46,
+    "width": 749,
+    "height": 540,
+    "caption": "Figure 5:",
+    "crop": [
+      60.0,
+      137.67,
+      309.64,
+      317.44
+    ]
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: TerminalWorld held-out pass@1",
+    "crop": null
+  },
+  {
+    "page": 13,
+    "file": "fig-6-p13.png",
+    "method": "caption_crop (696x542)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 44,
+    "width": 696,
+    "height": 542,
+    "caption": "Figure 6: Held-out generalization reflects",
+    "crop": [
+      60.0,
+      90.09,
+      291.69,
+      270.45
+    ]
+  }
+]
