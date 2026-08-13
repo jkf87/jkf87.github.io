@@ -1,0 +1,167 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (1616x598)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 199,
+    "width": 1616,
+    "height": 598,
+    "caption": "Fig. 1.  The skill growth tendency with respect to self-evolving progress on",
+    "crop": [
+      36.96,
+      267.63,
+      575.04,
+      466.57
+    ]
+  },
+  {
+    "page": 1,
+    "file": "fig-1-p1-2.png",
+    "method": "caption_crop (1617x1019)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 362,
+    "width": 1617,
+    "height": 1019,
+    "caption": "Figure 1 illustrates the phenomenon that our longitudinal study",
+    "crop": [
+      36.96,
+      267.63,
+      575.39,
+      606.89
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-2-p3-1.png",
+    "method": "caption_crop (818x679)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 466,
+    "width": 818,
+    "height": 679,
+    "caption": "Fig. 2.  A skill is a typed contract.  Different text spans constrain different",
+    "crop": [
+      302.82,
+      44.07,
+      575.04,
+      270.04
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-2-p3-2.png",
+    "method": "caption_crop (788x1296)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 561,
+    "width": 788,
+    "height": 1296,
+    "caption": "Figure 2 shows the representation used by SkillZip. We",
+    "crop": [
+      312.78,
+      44.07,
+      575.04,
+      475.73
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 3 summarizes the method. One-shot compression",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "fig-3-p6-1.png",
+    "method": "caption_crop (1616x980)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 1205,
+    "width": 1616,
+    "height": 980,
+    "caption": "Fig. 3.  Overview of SkillZip.  One-shot compression first recovers the skill contract, then applies the “explain once, reference many” principle to repeated",
+    "crop": [
+      36.96,
+      44.07,
+      575.04,
+      370.55
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too page-like (area_ratio=0.63)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 4 shows that skill length increases monotonically",
+    "crop": [
+      46.926998138427734,
+      89.6585922241211,
+      575.0394897460938,
+      668.2420043945312
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-4-p7.png",
+    "method": "caption_crop (818x366)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 102,
+    "width": 818,
+    "height": 366,
+    "caption": "Fig. 4.  The skill growth tendency with respect to agent self-evolving",
+    "crop": [
+      302.82,
+      89.66,
+      575.04,
+      211.24
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-6-p8.png",
+    "method": "caption_crop (818x356)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 47,
+    "width": 818,
+    "height": 356,
+    "caption": "Fig. 6 evaluates whether a skill compressed from one",
+    "crop": [
+      36.96,
+      621.63,
+      309.18,
+      739.97
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-5-p8.png",
+    "method": "caption_crop (1616x378)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 112,
+    "width": 1616,
+    "height": 378,
+    "caption": "Fig. 5 evaluates Zip-on-Write, the continual mode of",
+    "crop": [
+      36.96,
+      107.4,
+      575.04,
+      233.15
+    ]
+  }
+]
