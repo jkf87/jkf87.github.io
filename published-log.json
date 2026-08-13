@@ -2885,6 +2885,37 @@
       ],
       "commit": "62012ac8",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-13-she-safety-harness-evolution.md"
+    },
+    {
+      "date": "2026-08-13",
+      "slug": "2026-08-13-macaron-v1-mixture-of-lora-continual-learning",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2608.09819",
+      "title": "Macaron-V1: 동결된 744B 기반 모델 위에 LoRA를 얹어 계속 배우는 에이전트",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-13-macaron-v1-mixture-of-lora-continual-learning",
+      "tags": [
+        "agent",
+        "LLM",
+        "continual-learning",
+        "self-improvement",
+        "harness",
+        "LoRA",
+        "model-harness-co-design",
+        "recursive-self-improvement",
+        "RL",
+        "open-source"
+      ],
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_winner": "c-formal",
+      "voice_spyrl_score": 88.0,
+      "voice_spyrl_grade": "A",
+      "voice_spyrl_spy": "b-newsletter",
+      "voice_spyrl_spy_suspicion": 44.4,
+      "voice_spyrl_tags": [
+        "metaphor_heading"
+      ],
+      "voice_spyrl_report": "../memory/voice-feedback/2026-08-13-macaron-v1-mixture-of-lora-continual-learning-spyrl.json",
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-13-macaron-v1-mixture-of-lora-continual-learning-final-spyrl.json"
     }
   ],
   "entries": [

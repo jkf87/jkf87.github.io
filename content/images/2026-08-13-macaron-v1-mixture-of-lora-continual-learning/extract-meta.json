@@ -1,0 +1,140 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (1174x794)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 116,
+    "width": 1174,
+    "height": 794,
+    "caption": "Figure 1  Macaron-V1-Venti main results.",
+    "crop": [
+      108.94,
+      487.08,
+      499.75,
+      751.35
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (1484x994)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 483,
+    "width": 1484,
+    "height": 994,
+    "caption": "Figure 2  Three ways to scale model capability. Mixture-of-Experts (MoE) scales the base itself; skills scale scaffolding",
+    "crop": [
+      58.87,
+      67.72,
+      553.11,
+      398.88
+    ]
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1  Per-hop latency of the route–answer–summary loop on Macaron-V1-Venti (GLM-5.2) and Macaron-V1-Tall",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2  Routing confusion matrices for Macaron-V1-Venti (left) and Macaron-V1-Tall (right), each evaluated on the",
+    "crop": null
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3  Three-arm benchmark quality on Vita delivery (temperature 0, 100 tasks per seed). Every row reports five",
+    "crop": null
+  },
+  {
+    "page": 13,
+    "file": "fig-3-p13.png",
+    "method": "caption_crop (1489x757)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 175,
+    "width": 1489,
+    "height": 757,
+    "caption": "Figure 3  Three approaches to generative UI. HTML-native maximizes expressiveness but inherits raw web develop-",
+    "crop": [
+      58.87,
+      67.73,
+      554.68,
+      320.0
+    ]
+  },
+  {
+    "page": 14,
+    "file": "fig-4-p14.png",
+    "method": "caption_crop (1484x1214)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 481,
+    "width": 1484,
+    "height": 1214,
+    "caption": "Figure 4  A slice of the UI4A-Bench gallery. Each card is generated as ordinary frontend code under runtime-enforced",
+    "crop": [
+      58.87,
+      67.71,
+      553.2,
+      472.32
+    ]
+  },
+  {
+    "page": 15,
+    "file": "fig-5-p15.png",
+    "method": "caption_crop (1484x904)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 72,
+    "width": 1484,
+    "height": 904,
+    "caption": "Figure 5  Executable composition.  Under function calling (left), each intermediate observation returns through the",
+    "crop": [
+      58.87,
+      67.73,
+      553.18,
+      368.86
+    ]
+  },
+  {
+    "page": 17,
+    "file": "fig-6-p17.png",
+    "method": "caption_crop (1485x883)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 124,
+    "width": 1485,
+    "height": 883,
+    "caption": "Figure 6  The three loops that share one harness.  MindForge  runs RL rollouts against the same agent harness used for",
+    "crop": [
+      58.87,
+      67.72,
+      553.34,
+      361.81
+    ]
+  }
+]
