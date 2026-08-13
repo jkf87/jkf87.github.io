@@ -2925,15 +2925,6 @@
         "18123968344764909"
       ],
       "commit": "cc8d3d65"
-    },
-    {
-      "slug": "2026-08-14-envace-world-rehearsal-agentic-rl",
-      "date": "2026-08-14",
-      "source": "arxiv",
-      "source_url": "https://arxiv.org/abs/2608.06197",
-      "title": "EnvACE: 에이전트가 환경까지 직접 상상하면서 학습하는 RL",
-      "blog_url": "https://jkf87.github.io/posts/2026-08-14-envace-world-rehearsal-agentic-rl",
-      "github": "https://github.com/Within-yao/EnvACE"
     }
   ],
   "entries": [
