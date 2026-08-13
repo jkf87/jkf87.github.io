@@ -2839,6 +2839,35 @@
       ],
       "commit": "b3754a5a",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-13-winx-darwinx-harness-natural-selection.md"
+    },
+    {
+      "date": "2026-08-13",
+      "slug": "2026-08-13-she-safety-harness-evolution",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2608.09885",
+      "title": "SHE: Trajectory-driven Safety Harness Evolution for LLM Agents — 에이전트 안전 하네스의 자동 진화",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-13-she-safety-harness-evolution",
+      "github_url": "https://github.com/RainbowQTT/SHE",
+      "tags": [
+        "agent",
+        "harness",
+        "LLM",
+        "safety",
+        "self-evolution",
+        "tool-use",
+        "security",
+        "attribution",
+        "loop",
+        "automation"
+      ],
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_winner": "c-formal",
+      "voice_spyrl_score": 84.0,
+      "voice_spyrl_grade": "A",
+      "voice_spyrl_spy": "a-kakao",
+      "voice_spyrl_spy_suspicion": 32.73,
+      "voice_spyrl_report": "../memory/voice-feedback/2026-08-13-she-safety-harness-evolution-spyrl.json",
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-13-she-safety-harness-evolution-final-spyrl.json"
     }
   ],
   "entries": [
