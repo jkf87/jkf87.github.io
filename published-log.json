@@ -2867,7 +2867,24 @@
       "voice_spyrl_spy": "a-kakao",
       "voice_spyrl_spy_suspicion": 32.73,
       "voice_spyrl_report": "../memory/voice-feedback/2026-08-13-she-safety-harness-evolution-spyrl.json",
-      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-13-she-safety-harness-evolution-final-spyrl.json"
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-13-she-safety-harness-evolution-final-spyrl.json",
+      "threads_root_id": "18139645180559854",
+      "threads_reply_ids": [
+        "18120601327865792",
+        "18113260487068678",
+        "18016604933870931",
+        "17954246958011506",
+        "18120847352480193"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        4,
+        5,
+        6
+      ],
+      "commit": "62012ac8",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-13-she-safety-harness-evolution.md"
     }
   ],
   "entries": [
