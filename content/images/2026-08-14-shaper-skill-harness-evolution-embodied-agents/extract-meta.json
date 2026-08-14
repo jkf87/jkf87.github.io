@@ -1,0 +1,152 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1051x541)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 171,
+    "width": 1051,
+    "height": 541,
+    "caption": "Figure 1: SHAPER adapts frozen embodied agents by evolving skills and harnesses from a few",
+    "crop": [
+      96.0,
+      60.0,
+      516.35,
+      276.22
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (1051x497)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 213,
+    "width": 1051,
+    "height": 497,
+    "caption": "Figure 2: Overview of SHAPER. (A) A textual skill and context-code harness condition a frozen",
+    "crop": [
+      96.0,
+      60.0,
+      516.0,
+      258.17
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: VLABench split design.",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: VLABench success rates (%) on four 200-episode splits; best results are bolded.",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2 shows that the Seed Agent reaches 28.25%, improving direct VLA execution",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: ESI-Bench accuracy (%) on the official-proportion 231-question subset.  n  denotes the",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "fig-3-p8.png",
+    "method": "caption_crop (1051x621)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 310,
+    "width": 1051,
+    "height": 621,
+    "caption": "Figure 3: Controlled VLABench case isolating skill evolution for the instruction “Fetch the Landmark",
+    "crop": [
+      96.0,
+      60.0,
+      516.25,
+      307.87
+    ]
+  },
+  {
+    "page": 8,
+    "file": "table-3-p8.png",
+    "method": "caption_crop (931x862)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 345,
+    "width": 931,
+    "height": 862,
+    "caption": "Table 3 shows that full SHAPER reaches 49.8% micro and 42.9% macro accuracy,",
+    "crop": [
+      145.5,
+      60.0,
+      517.25,
+      404.15
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-4-p8.png",
+    "method": "caption_crop (928x1362)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 469,
+    "width": 928,
+    "height": 1362,
+    "caption": "Figure 4 compares Skill Evolution with full SHAPER under",
+    "crop": [
+      145.5,
+      60.0,
+      516.17,
+      604.04
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-4-p9.png",
+    "method": "caption_crop (1050x659)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 370,
+    "width": 1050,
+    "height": 659,
+    "caption": "Figure 4: ESI-Bench case isolating harness evolution for the instruction “You are given an image",
+    "crop": [
+      96.0,
+      60.01,
+      516.0,
+      323.21
+    ]
+  }
+]
