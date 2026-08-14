@@ -1,0 +1,104 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1584x824)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 187,
+    "width": 1584,
+    "height": 824,
+    "caption": "Figure 1: Overview of PoisonedEvolution. A skill-visible black-box attacker contributes a small number of transformed",
+    "crop": [
+      42.0,
+      42.0,
+      570.0,
+      316.26
+    ]
+  },
+  {
+    "page": 5,
+    "file": "table-1-p5.png",
+    "method": "caption_crop (1584x1771)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 582,
+    "width": 1584,
+    "height": 1771,
+    "caption": "Table 1 is the main SkillClaw result: at 10% attacker sup-",
+    "crop": [
+      42.0,
+      42.0,
+      570.0,
+      632.33
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-2-p5.png",
+    "method": "caption_crop (788x495)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 46,
+    "width": 788,
+    "height": 495,
+    "caption": "Figure 2: Attacker support and clean-pool dilution. Left: fixed",
+    "crop": [
+      307.5,
+      42.0,
+      570.0,
+      206.97
+    ]
+  },
+  {
+    "page": 5,
+    "file": "table-1-p5-3.png",
+    "method": "caption_crop (788x1126)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 164,
+    "width": 788,
+    "height": 1126,
+    "caption": "Table 1 reports refinement of an existing skill. A separate no-",
+    "crop": [
+      307.5,
+      42.0,
+      570.0,
+      417.09
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-1-p6.png",
+    "method": "caption_crop_table_below (1587x729)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 172,
+    "width": 1587,
+    "height": 729,
+    "caption": "Table 1: SkillClaw main full-family evaluation at  ρ  = 10%  ( n  = 30 , k  = 3 ). Entries are embedded/completed trials; each",
+    "crop": [
+      41.4,
+      149.47,
+      570.01,
+      392.31
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-3-p6.png",
+    "method": "caption_crop (1039x548)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 81,
+    "width": 1039,
+    "height": 548,
+    "caption": "Figure 3: C2–C3 condition ablations. C2 varies how the",
+    "crop": [
+      41.4,
+      153.92,
+      387.58,
+      336.15
+    ]
+  }
+]

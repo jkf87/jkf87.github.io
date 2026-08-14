@@ -2975,6 +2975,35 @@
       ],
       "commit": "58cda804",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-14-mechanist-agentic-interpretability-discovery.md"
+    },
+    {
+      "slug": "2026-08-14-poisoned-evolution-self-evolving-agent-skill-security",
+      "date": "2026-08-14",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2608.05563",
+      "title": "PoisonedEvolution: 에이전트 스킬이 자가진화하는 과정을 공격하는 방법",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-14-poisoned-evolution-self-evolving-agent-skill-security",
+      "tags": [
+        "agent",
+        "security",
+        "self-evolving",
+        "skill-evolution",
+        "LLM",
+        "harness",
+        "safety",
+        "supply-chain",
+        "poison",
+        "SES"
+      ],
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_winner": "a-kakao-v2",
+      "voice_spyrl_score": 99.0,
+      "voice_spyrl_grade": "A",
+      "voice_spyrl_spy": "c-formal-v2",
+      "voice_spyrl_spy_suspicion": 8.6,
+      "voice_spyrl_tags": [],
+      "voice_spyrl_report": "../memory/voice-feedback/2026-08-14-poisoned-evolution-self-evolving-agent-skill-security-spyrl.json",
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-14-poisoned-evolution-self-evolving-agent-skill-security-final-spyrl.json"
     }
   ],
   "entries": [
