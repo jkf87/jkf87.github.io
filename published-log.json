@@ -3103,6 +3103,14 @@
     6
    ],
    "commit": "a1ae51cd"
+  },
+  {
+   "slug": "2026-08-14-self-harness-self-improving-agent",
+   "date": "2026-08-14",
+   "source": "arxiv",
+   "source_url": "https://arxiv.org/abs/2606.09498",
+   "title": "Self-Harness: 에이전트가 자기 하네스를 직접 고치는 루프",
+   "blog_url": "https://jkf87.github.io/posts/2026-08-14-self-harness-self-improving-agent"
   }
  ],
  "entries": [

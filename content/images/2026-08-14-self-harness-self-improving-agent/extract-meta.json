@@ -1,0 +1,116 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1484x612)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 637,
+    "width": 1484,
+    "height": 612,
+    "caption": "Figure 1  |  Three paradigms of harness improvement. In human harness engineering, human engineers",
+    "crop": [
+      50.36,
+      73.04,
+      544.91,
+      276.84
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-2-p5.png",
+    "method": "caption_crop (1484x1141)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 198,
+    "width": 1484,
+    "height": 1141,
+    "caption": "Figure 2  |  Overview of one Self-Harness optimization loop. The current harness  ℎ 𝑡 with fixed model",
+    "crop": [
+      50.36,
+      73.04,
+      544.92,
+      453.26
+    ]
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 3  |  Initial harness and editable interface used as the starting point for Self-Harness. The harness",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "table-1-p11.png",
+    "method": "caption_crop (1486x524)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 128,
+    "width": 1486,
+    "height": 524,
+    "caption": "Table 1  |  Held-in, held-out, and overall pass rates (%) for the initial and final harnesses. Bold black",
+    "crop": [
+      50.03,
+      152.25,
+      545.2,
+      326.55
+    ]
+  },
+  {
+    "page": 11,
+    "file": "table-1-p11-2.png",
+    "method": "caption_crop (1485x1065)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 218,
+    "width": 1485,
+    "height": 1065,
+    "caption": "Table  1  shows that every final harness improves Pass on both held-in and held-out splits across all",
+    "crop": [
+      50.03,
+      152.25,
+      544.92,
+      506.7
+    ]
+  },
+  {
+    "page": 11,
+    "file": "fig-4-p11.png",
+    "method": "caption_crop (1452x1685)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 342,
+    "width": 1452,
+    "height": 1685,
+    "caption": "Figure  4  presents four representative evolution trajectories",
+    "crop": [
+      61.1,
+      170.63,
+      544.92,
+      731.82
+    ]
+  },
+  {
+    "page": 12,
+    "file": "fig-4-p12.png",
+    "method": "caption_crop (1490x507)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 116,
+    "width": 1490,
+    "height": 507,
+    "caption": "Figure 4  |  Representative Self-Harness evolution trajectories across model backends and benchmarks.",
+    "crop": [
+      50.36,
+      222.84,
+      546.74,
+      391.59
+    ]
+  }
+]
