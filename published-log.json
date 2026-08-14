@@ -3110,7 +3110,22 @@
    "source": "arxiv",
    "source_url": "https://arxiv.org/abs/2606.09498",
    "title": "Self-Harness: 에이전트가 자기 하네스를 직접 고치는 루프",
-   "blog_url": "https://jkf87.github.io/posts/2026-08-14-self-harness-self-improving-agent"
+   "blog_url": "https://jkf87.github.io/posts/2026-08-14-self-harness-self-improving-agent",
+   "threads_root_id": "18032703974839143",
+   "threads_reply_ids": [
+    "18047695166647948",
+    "18094897037455829",
+    "18106637936145923",
+    "18099061187366529"
+   ],
+   "threads_image_posts": [
+    1,
+    2,
+    3,
+    5
+   ],
+   "commit": "6971c69f",
+   "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-14-self-harness-self-improving-agent.md"
   }
  ],
  "entries": [
