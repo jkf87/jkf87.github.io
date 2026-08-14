@@ -1,0 +1,150 @@
+[
+  {
+    "page": 4,
+    "file": "fig-1-p4.png",
+    "method": "caption_crop (1477x727)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 822,
+    "width": 1477,
+    "height": 727,
+    "caption": "Figure 1:  Overview of the  Strong-to-Weak Scaffolding  evaluation framework. During  recursive scaffold building , the builder",
+    "crop": [
+      60.0,
+      42.12,
+      552.0,
+      284.14
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-2-p5.png",
+    "method": "caption_crop (1469x561)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 149,
+    "width": 1469,
+    "height": 561,
+    "caption": "Figure 2:  Overview of the GPT-5.4-mini as target main results.",
+    "crop": [
+      60.0,
+      46.88,
+      549.5,
+      233.64
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1:  Headline numbers of the main results, with target",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "fig-3-p7.png",
+    "method": "caption_crop (1477x568)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 148,
+    "width": 1477,
+    "height": 568,
+    "caption": "Figure 3:  Main results by builder model and benchmark with GPT-5.4-mini as target. (a) The performance by builder model,",
+    "crop": [
+      60.0,
+      46.88,
+      552.0,
+      235.78
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-3-p7-2.png",
+    "method": "caption_crop (1477x1147)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 297,
+    "width": 1477,
+    "height": 1147,
+    "caption": "Figure  3 (b) reports the per-benchmark results against three reference points: the raw no-scaffold GPT-5.4 and GPT-OSS-",
+    "crop": [
+      60.0,
+      46.88,
+      552.0,
+      428.93
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-4-p8.png",
+    "method": "caption_crop (804x637)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 97,
+    "width": 804,
+    "height": 637,
+    "caption": "Figure 4:  Each marker shows one repeat’s full-set macro-average for",
+    "crop": [
+      284.64,
+      44.9,
+      552.0,
+      256.95
+    ]
+  },
+  {
+    "page": 8,
+    "file": "table-2-p8.png",
+    "method": "caption_crop (803x798)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 122,
+    "width": 803,
+    "height": 798,
+    "caption": "Table 2:",
+    "crop": [
+      284.64,
+      44.9,
+      551.99,
+      310.64
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-5-p9.png",
+    "method": "caption_crop (1477x552)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 154,
+    "width": 1477,
+    "height": 552,
+    "caption": "Figure 5:  Illustration of builder’s refinement dynamics. (a) Validation accuracy increases over iterations for each builder, using",
+    "crop": [
+      60.0,
+      46.88,
+      552.0,
+      230.55
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-6-p9.png",
+    "method": "caption_crop (747x489)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 39,
+    "width": 747,
+    "height": 489,
+    "caption": "Figure 6:  Technique prevalence and solution approach statistics",
+    "crop": [
+      303.36,
+      553.24,
+      552.0,
+      715.76
+    ]
+  }
+]
