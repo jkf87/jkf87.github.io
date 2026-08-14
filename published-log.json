@@ -3132,7 +3132,14 @@
    "date": "2026-08-15",
    "source": "huggingface",
    "source_url": "https://arxiv.org/abs/2608.10450",
-   "blog_url": "https://jkf87.github.io/posts/2026-08-15-genesis-persistent-recursive-worlds"
+   "blog_url": "https://jkf87.github.io/posts/2026-08-15-genesis-persistent-recursive-worlds",
+   "threads_root_id": "18086942840414296",
+   "threads_reply_ids": [
+    "18002823380968769",
+    "18172681573432718",
+    "18256437433307666",
+    "18176271181426954"
+   ]
   }
  ],
  "entries": [
