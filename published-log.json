@@ -2958,7 +2958,23 @@
         "automation",
         "harness",
         "loop"
-      ]
+      ],
+      "threads_root_id": "18139696477571730",
+      "threads_reply_ids": [
+        "18090244568651557",
+        "17941886898292622",
+        "17960646156189696",
+        "17865510750648120",
+        "18098774156459483"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        5,
+        6
+      ],
+      "commit": "58cda804",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-14-mechanist-agentic-interpretability-discovery.md"
     }
   ],
   "entries": [
