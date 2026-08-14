@@ -1,0 +1,218 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1628x895)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 303,
+    "width": 1628,
+    "height": 895,
+    "caption": "Fig. 1: The comparison between our Mechanist and existing AI Scientists .  a , the aims of existing AI Scientists.  b , the",
+    "crop": [
+      34.8,
+      24.97,
+      577.23,
+      322.79
+    ]
+  },
+  {
+    "page": 3,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too page-like (area_ratio=0.63)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Fig. 2: Overview and evaluation of Mechanist. a , The Mechanist framework consists of four stages: hypothesis generation,",
+    "crop": [
+      34.79999923706055,
+      54.6092529296875,
+      578.50634765625,
+      614.47412109375
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too page-like (area_ratio=0.58)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Fig. 3: Mechanist extends subliminal learning to the transfer of opposing preferences in the multimodal setting.",
+    "crop": [
+      34.79999923706055,
+      68.68380737304688,
+      579.2669067382812,
+      582.9857788085938
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-4-p7.png",
+    "method": "caption_crop (1632x1214)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 408,
+    "width": 1632,
+    "height": 1214,
+    "caption": "Fig. 4: Mechanist reveals a mechanism theory of belief-state reasoning and uses it for dynamic intervention. a ,",
+    "crop": [
+      34.8,
+      147.91,
+      578.5,
+      552.01
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-5-p9.png",
+    "method": "caption_crop (1628x1098)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 276,
+    "width": 1628,
+    "height": 1098,
+    "caption": "Fig. 5: Mechanist generates DNA sequences encoding proteins with enhanced  α -helical content through mechanism",
+    "crop": [
+      34.8,
+      140.4,
+      577.18,
+      506.27
+    ]
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Fig. 5b). To determine whether this enrichment reflects confidently predicted structures rather than low-confidence",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "fig-6-p12.png",
+    "method": "caption_crop (1472x1235)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 349,
+    "width": 1472,
+    "height": 1235,
+    "caption": "Fig. 6: The overview of our interpretability database.",
+    "crop": [
+      60.72,
+      47.6,
+      551.29,
+      458.8
+    ]
+  },
+  {
+    "page": 12,
+    "file": "fig-7-p12.png",
+    "method": "caption_crop (1472x855)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 95,
+    "width": 1472,
+    "height": 855,
+    "caption": "Fig. 7: Overview of our interpretability database from the perspective of interpretable objects.",
+    "crop": [
+      60.72,
+      464.04,
+      551.27,
+      748.73
+    ]
+  },
+  {
+    "page": 13,
+    "file": "fig-8-p13.png",
+    "method": "caption_crop (1398x806)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 85,
+    "width": 1398,
+    "height": 806,
+    "caption": "Fig. 8: Overview of our interpretability database from the perspective of application scenarios.",
+    "crop": [
+      73.09,
+      34.8,
+      538.94,
+      303.06
+    ]
+  },
+  {
+    "page": 15,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too page-like (area_ratio=0.73)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Fig. 9: Mechanism methods for large language models and multi-modal models.",
+    "crop": [
+      60.72100067138672,
+      36.0185546875,
+      551.2971801757812,
+      760.3087158203125
+    ]
+  },
+  {
+    "page": 17,
+    "file": "fig-10-p17.png",
+    "method": "caption_crop (1628x1144)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 344,
+    "width": 1628,
+    "height": 1144,
+    "caption": "Fig. 10: Reliability of reproduced claims across research areas.  Mean reliability score (%) achieved by each system in",
+    "crop": [
+      34.8,
+      34.8,
+      577.25,
+      415.68
+    ]
+  },
+  {
+    "page": 18,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (543x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Fig. 11: Reliability of reproductions along the four evaluation dimensions.  Mean reliability score (%) aggregated over",
+    "crop": [
+      34.79999923706055,
+      453.1401062011719,
+      577.4343872070312,
+      345.1300048828125
+    ]
+  },
+  {
+    "page": 18,
+    "file": "fig-12-p18.png",
+    "method": "caption_crop (1628x535)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 156,
+    "width": 1628,
+    "height": 535,
+    "caption": "Fig. 12: Mechanist is the most reliable system under every judge, and the judges agree with one another.  Three",
+    "crop": [
+      34.8,
+      453.14,
+      577.2,
+      631.06
+    ]
+  }
+]

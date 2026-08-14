@@ -2941,6 +2941,24 @@
         "agentic-RL",
         "loop"
       ]
+    },
+    {
+      "slug": "2026-08-14-mechanist-agentic-interpretability-discovery",
+      "date": "2026-08-14",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2608.12036",
+      "title": "Mechanist: AI가 AI의 메커니즘을 스스로 발견하는 에이전트 시스템",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-14-mechanist-agentic-interpretability-discovery",
+      "tags": [
+        "agent",
+        "interpretability",
+        "LLM",
+        "mechanistic",
+        "safety",
+        "automation",
+        "harness",
+        "loop"
+      ]
     }
   ],
   "entries": [
