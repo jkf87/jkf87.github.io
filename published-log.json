@@ -465,10 +465,7 @@
       "blog_url": "https://jkf87.github.io/posts/2026-07-16-isolation-first-principle-llm-agent-safety",
       "threads_root_id": "18189138310389450",
       "commit": "4b6e210",
-      "threads_reply_ids": [
-        "18105720167020300",
-        "17943944451082457"
-      ],
+      "threads_reply_ids": ["18105720167020300", "17943944451082457"],
       "threads_repost_note": "Reposted 2026-07-16 after image/Threads quality-gate fix; old root was 17919905262403172."
     },
     {
@@ -550,10 +547,7 @@
       "source": "youtube",
       "source_url": "https://www.youtube.com/watch?v=0vphxNt4wyk",
       "threads_root_id": "18125034379776953",
-      "threads_reply_ids": [
-        "18357055705245672",
-        "18013842878873253"
-      ],
+      "threads_reply_ids": ["18357055705245672", "18013842878873253"],
       "blog_url": "https://jkf87.github.io/posts/dont-ship-skills-without-evals-2026-07-17"
     },
     {
@@ -731,13 +725,7 @@
       "source": "arxiv",
       "source_url": "https://arxiv.org/abs/2607.14159",
       "title": "MemoHarness: Agent Harnesses That Learn from Experience",
-      "tags": [
-        "agent",
-        "harness",
-        "LLM",
-        "automation",
-        "optimization"
-      ],
+      "tags": ["agent", "harness", "LLM", "automation", "optimization"],
       "blog_url": "https://jkf87.github.io/posts/2026-07-19-memoharness-agent-harness-learns-from-experience"
     },
     {
@@ -890,11 +878,7 @@
         "17979280871887104",
         "18453484981190385"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        5
-      ],
+      "threads_image_posts": [1, 3, 5],
       "commit": "1b3a711",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-26-trackio-local-first-experiment-tracking-agents.md"
     },
@@ -914,12 +898,7 @@
         "18037153736817266",
         "18136897162549164"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        4,
-        5
-      ],
+      "threads_image_posts": [1, 3, 4, 5],
       "commit": "8d439c2",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-27-openforge-rl-harness-native-agent-training.md"
     },
@@ -971,12 +950,7 @@
         "17941155726292236",
         "18472963009104055"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        5,
-        6
-      ],
+      "threads_image_posts": [1, 3, 5, 6],
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-01-echoverse-deep-evolving-environments-computer-use-agents.md"
     },
     {
@@ -1008,14 +982,7 @@
       "title": "Tycho: 프로그래밍 가능한 세계 모델로 미지의 게임을 정복하는 에이전트",
       "source_url": "https://arxiv.org/abs/2607.28287",
       "date": "2026-08-02",
-      "tags": [
-        "agent",
-        "world-model",
-        "ARC-AGI",
-        "coding-agent",
-        "LLM",
-        "harness"
-      ]
+      "tags": ["agent", "world-model", "ARC-AGI", "coding-agent", "LLM", "harness"]
     },
     {
       "slug": "2026-08-02-sigma-mem-multi-agent-reliability-memory",
@@ -1024,15 +991,7 @@
       "source_url": "https://arxiv.org/abs/2607.27958",
       "title": "Σ-Mem: 다중 에이전트 시스템에서 누구를 믿을 것인가를 기억하는 방법",
       "blog_url": "https://jkf87.github.io/posts/2026-08-02-sigma-mem-multi-agent-reliability-memory",
-      "tags": [
-        "agent",
-        "multi-agent",
-        "memory",
-        "LLM",
-        "reliability",
-        "coordination",
-        "harness"
-      ],
+      "tags": ["agent", "multi-agent", "memory", "LLM", "reliability", "coordination", "harness"],
       "threads_root_id": "18150515392502403",
       "threads_reply_ids": [
         "18123462742773605",
@@ -1040,11 +999,7 @@
         "18109273346058206",
         "17901052182513960"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        5
-      ],
+      "threads_image_posts": [1, 3, 5],
       "commit": "d6f98bb3",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-02-sigma-mem-multi-agent-reliability-memory.md"
     },
@@ -1080,12 +1035,7 @@
         "18087950642166491",
         "18110401291971547"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        4,
-        6
-      ],
+      "threads_image_posts": [1, 3, 4, 6],
       "commit": "6738cb36",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-03-specbox-speculative-sandbox-scheduling-llm-agent.md"
     },
@@ -1115,11 +1065,7 @@
         "17998756415793247",
         "18092288699423289"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        6
-      ],
+      "threads_image_posts": [1, 3, 6],
       "commit": "abe307ba",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-03-co-harness-co-evolving-agent-harness-weights.md"
     },
@@ -1146,17 +1092,10 @@
         "18475000828106841",
         "17948048742038347"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        6
-      ],
+      "threads_image_posts": [1, 3, 6],
       "commit": "8b8f2931",
       "figure_fix_commit": "8b8f2931",
-      "figures": [
-        "original-rl-agent.png",
-        "original-rl-environment.png"
-      ]
+      "figures": ["original-rl-agent.png", "original-rl-environment.png"]
     },
     {
       "slug": "2026-08-04-tapo-transition-aware-policy-optimization",
@@ -1182,11 +1121,7 @@
         "18275583730291668",
         "17913285786430532"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        5
-      ],
+      "threads_image_posts": [1, 3, 5],
       "commit": "056992a4",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-04-tapo-transition-aware-policy-optimization.md"
     },
@@ -1197,15 +1132,7 @@
       "source_url": "https://arxiv.org/abs/2607.26722",
       "title": "DREvo: 하네스 자가진화가 축적하는 경험을 다시 평가하고 쓰는 방법",
       "blog_url": "https://jkf87.github.io/posts/2026-08-04-drevo-harness-self-evolution",
-      "tags": [
-        "agent",
-        "harness",
-        "LLM",
-        "self-evolution",
-        "optimization",
-        "loop",
-        "automation"
-      ],
+      "tags": ["agent", "harness", "LLM", "self-evolution", "optimization", "loop", "automation"],
       "threads_root_id": "18098655797213090",
       "threads_reply_ids": [
         "18106173743588662",
@@ -1214,13 +1141,7 @@
         "18129828406635192",
         "18101504312219000"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        4,
-        5,
-        6
-      ],
+      "threads_image_posts": [1, 3, 4, 5, 6],
       "commit": "1c479791",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-04-drevo-harness-self-evolution.md"
     },
@@ -1249,12 +1170,7 @@
         "18120485521853748",
         "17901660183329532"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        5,
-        6
-      ],
+      "threads_image_posts": [1, 3, 5, 6],
       "commit": "e474ddb5",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-04-living-harness-self-evolving-agent-evolver.md"
     },
@@ -1283,12 +1199,7 @@
         "17887251252437384",
         "18105105887137518"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        5,
-        6
-      ],
+      "threads_image_posts": [1, 3, 5, 6],
       "commit": "751b53e0",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-04-memharness-memory-reconstruction.md"
     },
@@ -1318,11 +1229,7 @@
         "18030990674831396",
         "17972285595087971"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        5
-      ],
+      "threads_image_posts": [1, 3, 5],
       "commit": "9100cd73",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-04-real-time-agent-failure-detection-repair.md"
     },
@@ -1352,11 +1259,7 @@
         "18070456028451923",
         "18167147077454895"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        5
-      ],
+      "threads_image_posts": [1, 3, 5],
       "commit": "36352e00",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-05-longhorizon-harness-mea-loop-long-horizon-agents.md"
     },
@@ -1384,12 +1287,7 @@
         "18050166665794492",
         "17981662341105229"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        5,
-        6
-      ],
+      "threads_image_posts": [1, 3, 5, 6],
       "commit": "d1db3a3a"
     },
     {
@@ -1418,12 +1316,7 @@
         "18091947605548080",
         "17985668196030884"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        5,
-        6
-      ],
+      "threads_image_posts": [1, 3, 5, 6],
       "commit": "743c6c9f",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-05-harness-r1-executable-runtime-harness-rl.md"
     },
@@ -1452,11 +1345,7 @@
         "18104411840163669",
         "18026717222848244"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        5
-      ],
+      "threads_image_posts": [1, 3, 5],
       "commit": "b97573ac",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-05-turnsight-turn-level-hindsight-self-distillation-tir.md"
     },
@@ -1504,11 +1393,7 @@
         "18097534628577824",
         "18122966965699207"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        5
-      ],
+      "threads_image_posts": [1, 3, 5],
       "commit": "abfaf113",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-06-past-bench-recursive-self-improvement-personal-agents.md"
     },
@@ -1537,11 +1422,7 @@
         "18092205923096804",
         "18061086242743894"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        5
-      ],
+      "threads_image_posts": [1, 3, 5],
       "commit": "7417f87a",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-06-tcpo-turn-level-credit-policy-optimization.md"
     },
@@ -1580,13 +1461,7 @@
         "18089858834403243",
         "18010888514936726"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        4,
-        5,
-        6
-      ],
+      "threads_image_posts": [1, 3, 4, 5, 6],
       "commit": "0364ab9c",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-06-skill-entropy-cross-skill-long-horizon-rl.md"
     },
@@ -1617,12 +1492,7 @@
         "18047955473799097",
         "18221198797330261"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        4,
-        5
-      ],
+      "threads_image_posts": [1, 3, 4, 5],
       "commit": "58b5d352",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-06-self-evolving-coding-agents-survey.md"
     },
@@ -1674,18 +1544,9 @@
       "source": "huggingface",
       "source_url": "https://arxiv.org/abs/2608.04738",
       "blog_url": "https://jkf87.github.io/posts/2026-08-07-evigraph-evidence-graph-autonomous-research-agents",
-      "tags": [
-        "ai-agent",
-        "autonomous-research",
-        "evidence-graph",
-        "llm"
-      ],
+      "tags": ["ai-agent", "autonomous-research", "evidence-graph", "llm"],
       "threads_root_id": "18079676129694859",
-      "threads_reply_ids": [
-        "17857626138692045",
-        "18116036923852729",
-        "18184008301405378"
-      ],
+      "threads_reply_ids": ["17857626138692045", "18116036923852729", "18184008301405378"],
       "wiki_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-07-evigraph-evidence-graph-autonomous-research-agents.md"
     },
     {
@@ -1716,14 +1577,7 @@
         "18067572776754879",
         "18125623384740829"
       ],
-      "threads_image_posts": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
+      "threads_image_posts": [1, 2, 3, 4, 5, 6],
       "commit": "6c3ee579",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-07-agentopsd-recursive-turn-level-credit-agentic-rl.md"
     },
@@ -1753,11 +1607,7 @@
         "18606408685029074",
         "18434681002122881"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        5
-      ],
+      "threads_image_posts": [1, 3, 5],
       "commit": "7be3b0fa",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-07-evolvenet-collaborative-harness-evolution.md"
     },
@@ -1789,13 +1639,7 @@
         "18093110924638203",
         "18115753295311181"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        4,
-        5,
-        6
-      ],
+      "threads_image_posts": [1, 3, 4, 5, 6],
       "commit": "221285e9",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-07-envace-world-rehearsal-agentic-rl.md"
     },
@@ -1856,12 +1700,7 @@
         "17987473590040033",
         "18465431044115395"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        5,
-        6
-      ],
+      "threads_image_posts": [1, 3, 5, 6],
       "commit": "6728b510",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-08-calibforge-adversarial-solver-calibration-terminal-agents.md"
     },
@@ -1890,11 +1729,7 @@
         "18085964600443697",
         "17957650713195996"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        5
-      ],
+      "threads_image_posts": [1, 3, 5],
       "commit": "2c492988",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-08-prime-agent-self-improving-rlm-harness.md"
     },
@@ -1925,13 +1760,7 @@
         "17907530502458131",
         "18359495302300633"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        4,
-        5,
-        6
-      ],
+      "threads_image_posts": [1, 3, 4, 5, 6],
       "commit": "d00f616c",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-08-codegrep-rl-retrieval-agent-coding-agents.md"
     },
@@ -1959,11 +1788,7 @@
         "18178484251422110",
         "17869553493583641"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        5
-      ],
+      "threads_image_posts": [1, 3, 5],
       "commit": "75b23ac8"
     },
     {
@@ -1992,12 +1817,7 @@
         "18100248206074850",
         "18610404280012697"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        5,
-        6
-      ],
+      "threads_image_posts": [1, 3, 5, 6],
       "commit": "b5100253"
     },
     {
@@ -2023,11 +1843,7 @@
         "18028915274668848",
         "17900723928510440"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        4
-      ],
+      "threads_image_posts": [1, 3, 4],
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-09-romerl-memory-reward-trap-agent-memory-rl.md"
     },
     {
@@ -2057,12 +1873,7 @@
         "18133962652722376",
         "18109420823060380"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        5,
-        6
-      ],
+      "threads_image_posts": [1, 3, 5, 6],
       "commit": "b687a556",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-09-screen-activity-frames-agent-memory-replay.md"
     },
@@ -2093,12 +1904,7 @@
         "18137585482609488",
         "17974501163913157"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        5,
-        6
-      ],
+      "threads_image_posts": [1, 3, 5, 6],
       "commit": "6c33b0f5",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-09-harnesscompass-guiding-automatic-harness-evolution.md"
     },
@@ -2126,11 +1932,7 @@
         "18102204026193617",
         "18092951462456474"
       ],
-      "threads_image_posts": [
-        1,
-        2,
-        5
-      ],
+      "threads_image_posts": [1, 2, 5],
       "commit": "92c4208a"
     },
     {
@@ -2158,13 +1960,7 @@
         "18120422452658263",
         "18108660644019875"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        4,
-        5,
-        6
-      ],
+      "threads_image_posts": [1, 3, 4, 5, 6],
       "commit": "5e5ad756",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-09-tcpo-turn-level-credit-policy-optimization.md"
     },
@@ -2199,12 +1995,7 @@
         "18127330765667023",
         "18018765485880373"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        5,
-        6
-      ],
+      "threads_image_posts": [1, 3, 5, 6],
       "commit": "9efbf05f"
     },
     {
@@ -2233,12 +2024,7 @@
         "18101419997598272",
         "18106513727462894"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        5,
-        6
-      ],
+      "threads_image_posts": [1, 3, 5, 6],
       "commit": "aee848e6",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-10-harness-r1-learning-to-edit-runtime-harnesses.md"
     },
@@ -2266,12 +2052,7 @@
         "18096983924369507",
         "18434803162121707"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        4,
-        5
-      ],
+      "threads_image_posts": [1, 3, 4, 5],
       "commit": "ab123cab",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-10-evoharness-rl-self-evolving-runtime-harness.md"
     },
@@ -2334,12 +2115,7 @@
         "18088568708170330",
         "17881456932487055"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        4,
-        5
-      ],
+      "threads_image_posts": [1, 3, 4, 5],
       "commit": "f6fce14e",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-10-gse-globalized-skill-evolution-coding-agents.md"
     },
@@ -2376,15 +2152,7 @@
       "source_url": "https://arxiv.org/abs/2608.09096",
       "title": "Evo-Bench: LLM이 에이전트 하네스를 스스로 개선할 수 있는가",
       "blog_url": "https://jkf87.github.io/posts/2026-08-11-evo-bench-llm-harness-evolution",
-      "tags": [
-        "agent",
-        "harness",
-        "LLM",
-        "benchmark",
-        "self-evolution",
-        "automation",
-        "loop"
-      ],
+      "tags": ["agent", "harness", "LLM", "benchmark", "self-evolution", "automation", "loop"],
       "threads_root_id": "17904315306489293",
       "threads_reply_ids": [
         "18187229920355602",
@@ -2393,12 +2161,7 @@
         "18621282871009065",
         "18086762012669100"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        5,
-        6
-      ],
+      "threads_image_posts": [1, 3, 5, 6],
       "commit": "2b917e4e"
     },
     {
@@ -2487,13 +2250,7 @@
         "18115594615946131",
         "18640021981032565"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        4,
-        5,
-        6
-      ],
+      "threads_image_posts": [1, 3, 4, 5, 6],
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-11-smrc-sd-state-matched-routing-self-distillation.md"
     },
     {
@@ -2528,12 +2285,7 @@
         "18001166897972701",
         "18112676026960676"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        5,
-        6
-      ],
+      "threads_image_posts": [1, 3, 5, 6],
       "commit": "f7f931f0",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-11-skillprox-proximal-textual-gradient-agent-skills.md"
     },
@@ -2563,11 +2315,7 @@
       "voice_spyrl_report": "../memory/voice-feedback/2026-08-11-harness-control-offline-rl-spyrl.json",
       "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-11-harness-control-offline-rl-final-spyrl.json",
       "threads_root_id": "18098599778090355",
-      "threads_reply_ids": [
-        "18102133484167356",
-        "18130305172633042",
-        "18190974214380052"
-      ]
+      "threads_reply_ids": ["18102133484167356", "18130305172633042", "18190974214380052"]
     },
     {
       "date": "2026-08-12",
@@ -2620,11 +2368,7 @@
         "17907729015285985",
         "18614710294007386"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        5
-      ],
+      "threads_image_posts": [1, 3, 5],
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-12-cipo-evidence-oriented-rl-search-agents.md"
     },
     {
@@ -2659,12 +2403,7 @@
         "17898318168564357",
         "18122852305873116"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        4,
-        5
-      ],
+      "threads_image_posts": [1, 3, 4, 5],
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-12-co-evolution-agentic-systems.md"
     },
     {
@@ -2700,11 +2439,7 @@
         "18339968260250458",
         "18127334989707939"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        5
-      ],
+      "threads_image_posts": [1, 3, 5],
       "commit": "fde8f41c",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-12-mgm-mendel-godel-machine.md"
     },
@@ -2743,13 +2478,7 @@
         "18612456664005587",
         "18065015549744143"
       ],
-      "threads_image_posts": [
-        1,
-        2,
-        3,
-        5,
-        6
-      ],
+      "threads_image_posts": [1, 2, 3, 5, 6],
       "commit": "2a20edf0",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-13-vibelifebench-proactive-life-agent.md"
     },
@@ -2787,12 +2516,7 @@
         "17959137699315247",
         "17901631488540500"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        5,
-        6
-      ],
+      "threads_image_posts": [1, 3, 5, 6],
       "commit": "4f37a24e",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-13-skillzip-evaluation-free-skill-compression.md"
     },
@@ -2831,12 +2555,7 @@
         "17891476830603041",
         "18113119609987089"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        5,
-        6
-      ],
+      "threads_image_posts": [1, 3, 5, 6],
       "commit": "b3754a5a",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-13-winx-darwinx-harness-natural-selection.md"
     },
@@ -2876,13 +2595,7 @@
         "17954246958011506",
         "18120847352480193"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        4,
-        5,
-        6
-      ],
+      "threads_image_posts": [1, 3, 4, 5, 6],
       "commit": "62012ac8",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-13-she-safety-harness-evolution.md"
     },
@@ -2911,9 +2624,7 @@
       "voice_spyrl_grade": "A",
       "voice_spyrl_spy": "b-newsletter",
       "voice_spyrl_spy_suspicion": 44.4,
-      "voice_spyrl_tags": [
-        "metaphor_heading"
-      ],
+      "voice_spyrl_tags": ["metaphor_heading"],
       "voice_spyrl_report": "../memory/voice-feedback/2026-08-13-macaron-v1-mixture-of-lora-continual-learning-spyrl.json",
       "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-13-macaron-v1-mixture-of-lora-continual-learning-final-spyrl.json",
       "threads_root_id": "18091575542634644",
@@ -2933,14 +2644,7 @@
       "source_url": "https://arxiv.org/abs/2608.08255",
       "title": "EFCA: 환경 피드백만으로 턴별 크레딧을 만드는 에이전트 RL",
       "blog_url": "https://jkf87.github.io/posts/2026-08-14-efca-multi-timescale-credit-agentic-rl",
-      "tags": [
-        "agent",
-        "reinforcement-learning",
-        "credit-assignment",
-        "LLM",
-        "agentic-RL",
-        "loop"
-      ]
+      "tags": ["agent", "reinforcement-learning", "credit-assignment", "LLM", "agentic-RL", "loop"]
     },
     {
       "slug": "2026-08-14-mechanist-agentic-interpretability-discovery",
@@ -2967,12 +2671,7 @@
         "17865510750648120",
         "18098774156459483"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        5,
-        6
-      ],
+      "threads_image_posts": [1, 3, 5, 6],
       "commit": "58cda804",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-14-mechanist-agentic-interpretability-discovery.md"
     },
@@ -3013,14 +2712,41 @@
         "17892944286396129",
         "17888282766435191"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        4,
-        5,
-        7
-      ],
+      "threads_image_posts": [1, 3, 4, 5, 7],
       "commit": "163ead84"
+    },
+    {
+      "slug": "glm-5-3-post-training-coding-cyber-2026-08-14",
+      "date": "2026-08-14",
+      "source": "z.ai-blog",
+      "source_url": "https://z.ai/blog/glm-5.3",
+      "title": "GLM-5.3: 같은 베이스 모델에서 포스트트레이닝만 키웠더니 생긴 일",
+      "blog_url": "https://jkf87.github.io/posts/glm-5-3-post-training-coding-cyber-2026-08-14",
+      "tags": [
+        "GLM",
+        "coding-agent",
+        "post-training",
+        "RL",
+        "cyber",
+        "agent",
+        "Z.ai",
+        "open-weights"
+      ],
+      "voice_spyrl_mode": "single-candidate",
+      "voice_spyrl_score": 83.5,
+      "voice_spyrl_grade": "A",
+      "voice_spyrl_report": "glm-5-3-post-training-coding-cyber-2026-08-14-spyrl.json",
+      "threads_root_id": "18211694524346163",
+      "threads_reply_ids": [
+        "18330366769273594",
+        "17976048144092662",
+        "17870086581634448",
+        "17958749175178879",
+        "17880031509506370",
+        "18090130688370565"
+      ],
+      "threads_image_posts": [1, 3, 4, 7],
+      "commit": "a74b71ff"
     }
   ],
   "entries": [
@@ -3032,11 +2758,7 @@
       "title": "EvoSOP: 원자적 행동을 표준 작업 절차로 조립하는 자가진화 LLM 에이전트",
       "blog_url": "https://jkf87.github.io/posts/2026-07-19-evosop-self-evolving-agent-sop",
       "threads_root_id": "18160275841470119",
-      "threads_reply_ids": [
-        "17897291286550520",
-        "18121892371727391",
-        "17898740133533108"
-      ],
+      "threads_reply_ids": ["17897291286550520", "18121892371727391", "17898740133533108"],
       "commit": "d5427f5",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-19-evosop-self-evolving-agent-sop.md"
     },
@@ -3064,14 +2786,7 @@
       "source_url": "https://arxiv.org/abs/2607.14275",
       "title": "AI 에이전트는 혼자 실패하지 않는다 — 컨텍스트가 먼저 실패한다",
       "blog_url": "https://jkf87.github.io/posts/2026-07-20-context-fails-first-agent-reliability",
-      "tags": [
-        "agent",
-        "context-engineering",
-        "LLM",
-        "harness",
-        "evaluation",
-        "reliability"
-      ],
+      "tags": ["agent", "context-engineering", "LLM", "harness", "evaluation", "reliability"],
       "threads_root_id": "18012294719731463",
       "threads_reply_ids": [
         "18098181347594939",
@@ -3279,14 +2994,7 @@
       "source_url": "https://arxiv.org/abs/2607.21419",
       "title": "PATS: 에이전트 RL에서 스킬을 자산이 아니라 비계로 취급하다",
       "blog_url": "https://jkf87.github.io/posts/2026-07-25-pats-policy-aware-training-scaffold",
-      "tags": [
-        "agent",
-        "reinforcement-learning",
-        "scaffold",
-        "LLM",
-        "automation",
-        "loop"
-      ],
+      "tags": ["agent", "reinforcement-learning", "scaffold", "LLM", "automation", "loop"],
       "threads_root_id": "18176789998419380",
       "threads_reply_ids": [
         "18103200902189816",
@@ -3332,16 +3040,7 @@
       "source_url": "https://arxiv.org/abs/2607.20709",
       "title": "NOOA: 에이전트를 파이썬 객체로 만든다 — NVIDIA가 제안하는 하네스 설계의 정답지",
       "blog_url": "https://jkf87.github.io/posts/2026-07-25-nooa-native-python-object-oriented-agents",
-      "tags": [
-        "agent",
-        "harness",
-        "LLM",
-        "NVIDIA",
-        "Python",
-        "automation",
-        "loop",
-        "tool use"
-      ],
+      "tags": ["agent", "harness", "LLM", "NVIDIA", "Python", "automation", "loop", "tool use"],
       "threads_root_id": "17972104458094787",
       "threads_reply_ids": [
         "18079457030302531",
@@ -3487,11 +3186,7 @@
       ],
       "published": "2026-07-26T15:17:00+09:00",
       "threads_root_id": "18005318354986585",
-      "threads_reply_ids": [
-        "17919691473409680",
-        "18008359163952084",
-        "17900670360331594"
-      ],
+      "threads_reply_ids": ["17919691473409680", "18008359163952084", "17900670360331594"],
       "commit": "b29953e",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-26-graph-engineering-four-prompts.md"
     },
@@ -3648,11 +3343,7 @@
         "17944144098255004",
         "18071821079700343"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        5
-      ],
+      "threads_image_posts": [1, 3, 5],
       "commit": "348a7e6",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-27-molt-pytorch-native-agentic-rl-framework.md"
     },
@@ -3683,11 +3374,7 @@
         "17958301721983583",
         "18109302622821740"
       ],
-      "threads_image_posts": [
-        1,
-        5,
-        6
-      ],
+      "threads_image_posts": [1, 5, 6],
       "commit": "ee9c3f5",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-27-dark-room-reward-collapse-grpo.md"
     },
@@ -3717,12 +3404,7 @@
         "18006278774955879",
         "18111052708755779"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        5,
-        6
-      ],
+      "threads_image_posts": [1, 3, 5, 6],
       "commit": "3fb2cde",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-28-janus-predictive-agent-safety.md"
     },
@@ -3752,11 +3434,7 @@
         "17926781904394513",
         "18218077174333340"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        5
-      ],
+      "threads_image_posts": [1, 3, 5],
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-28-icae-bench-interactive-coding-agent-evaluation.md"
     },
     {
@@ -3805,13 +3483,7 @@
         "18110648615064819",
         "18089696675114228"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        4,
-        5,
-        6
-      ],
+      "threads_image_posts": [1, 3, 4, 5, 6],
       "commit": "5f5691ec",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-28-memtx-transactional-belief-commit-agent-memory.md"
     },
@@ -3841,12 +3513,7 @@
         "18604448335032277",
         "18109508999020385"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        4,
-        6
-      ],
+      "threads_image_posts": [1, 3, 4, 6],
       "commit": "ae13eb8d",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-28-issue-trojan-bench-coding-agent-security.md"
     },
@@ -3875,12 +3542,7 @@
         "18149721139510953",
         "17894150385573548"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        4,
-        5
-      ],
+      "threads_image_posts": [1, 3, 4, 5],
       "commit": "28bec2b3",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-29-fcpagent-falsifiable-commitment-planning.md"
     },
@@ -3912,12 +3574,7 @@
         "17947231695253623",
         "18135796378587596"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        5,
-        6
-      ],
+      "threads_image_posts": [1, 3, 5, 6],
       "commit": "2822a421",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-29-physics-of-long-horizon-planning.md"
     },
@@ -3990,11 +3647,7 @@
         "18126647647663936",
         "17967358473124201"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        5
-      ],
+      "threads_image_posts": [1, 3, 5],
       "commit": "20e3e137",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-29-frozen-agent-harness-control-system.md"
     },
@@ -4047,12 +3700,7 @@
         "18125589553664030",
         "17884033719610653"
       ],
-      "threads_image_posts": [
-        1,
-        4,
-        7,
-        8
-      ],
+      "threads_image_posts": [1, 4, 7, 8],
       "commit": "605e3084",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-30-stateact-program-state-before-pixels.md"
     },
@@ -4082,11 +3730,7 @@
         "18137891521589505",
         "18208991392356771"
       ],
-      "threads_image_posts": [
-        1,
-        4,
-        5
-      ],
+      "threads_image_posts": [1, 4, 5],
       "commit": "9ca8ca40",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-30-context-assembly-controlled-variable.md"
     },
@@ -4117,11 +3761,7 @@
         "17928969921371668",
         "17864248932647025"
       ],
-      "threads_image_posts": [
-        1,
-        4,
-        6
-      ],
+      "threads_image_posts": [1, 4, 6],
       "commit": "6379cde5",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-30-ai-agents-open-ended-research-shadow-eval.md"
     },
@@ -4150,13 +3790,7 @@
         "18100338704187478",
         "18016819433865597"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        4,
-        5,
-        6
-      ],
+      "threads_image_posts": [1, 3, 4, 5, 6],
       "commit": "02e6e7c1",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-30-skillrise-cross-task-skill-evolution.md"
     },
@@ -4187,13 +3821,7 @@
         "17982516717023445",
         "18002741474973185"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        4,
-        5,
-        6
-      ],
+      "threads_image_posts": [1, 3, 4, 5, 6],
       "commit": "3f66a586",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-30-agent-benchmark-protocol-validity.md"
     },
@@ -4252,12 +3880,7 @@
         "17906965131283282",
         "18001447670967254"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        5,
-        6
-      ],
+      "threads_image_posts": [1, 3, 5, 6],
       "commit": "03bea867",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-31-frontis-ma1-recursive-self-improvement-mle.md"
     },
@@ -4292,11 +3915,7 @@
         "18132280306550088",
         "18137433733509153"
       ],
-      "threads_image_posts": [
-        1,
-        6,
-        7
-      ],
+      "threads_image_posts": [1, 6, 7],
       "commit": "153495d2",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-31-qwen-ui-agent-foundation-gui-agent.md"
     },
@@ -4328,13 +3947,7 @@
         "18462927124112578",
         "18133394824619144"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        5,
-        6,
-        8
-      ],
+      "threads_image_posts": [1, 3, 5, 6, 8],
       "commit": "431bc0a5",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-31-memharness-memory-reconstruction-agent.md"
     },
@@ -4367,12 +3980,7 @@
         "18085208033211012",
         "17873805579546310"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        5,
-        7
-      ],
+      "threads_image_posts": [1, 3, 5, 7],
       "commit": "07de8071",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-07-31-metis-memory-foundation-model.md"
     },
@@ -4405,12 +4013,7 @@
         "18370608088238846",
         "18008756669929183"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        5,
-        6
-      ],
+      "threads_image_posts": [1, 3, 5, 6],
       "commit": "e214bcea",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-01-beacon-agentic-visual-reasoning-tool-adaptiveness.md"
     },
@@ -4477,12 +4080,7 @@
         "18120263429494069",
         "18021002942887219"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        5,
-        6
-      ],
+      "threads_image_posts": [1, 3, 5, 6],
       "commit": "abf4b3ce",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-02-spatialcli-spatial-tool-internalization.md"
     },
@@ -4493,25 +4091,11 @@
       "source_url": "https://arxiv.org/abs/2607.28527",
       "title": "MANTA: 에이전트 간 통신 구조가 스스로 진화한다",
       "blog_url": "https://jkf87.github.io/posts/2026-08-02-manta-multi-agent-topology-adaptation",
-      "tags": [
-        "multi-agent",
-        "self-evolving",
-        "topology",
-        "LLM-agent",
-        "agentic-systems"
-      ],
+      "tags": ["multi-agent", "self-evolving", "topology", "LLM-agent", "agentic-systems"],
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-02-manta-multi-agent-topology-adaptation.md",
       "threads_root_id": "18069595157459752",
-      "threads_reply_ids": [
-        "17898053598552646",
-        "18090171656549256",
-        "18242262583308759"
-      ],
-      "threads_image_posts": [
-        1,
-        3,
-        4
-      ],
+      "threads_reply_ids": ["17898053598552646", "18090171656549256", "18242262583308759"],
+      "threads_image_posts": [1, 3, 4],
       "commit": "f77a0d08"
     },
     {
@@ -4540,11 +4124,7 @@
         "18024461411683956",
         "18087966845542070"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        5
-      ],
+      "threads_image_posts": [1, 3, 5],
       "commit": "0d2a7ba7",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-03-multi-head-latent-control-frozen-llm-agent-decision.md"
     },
@@ -4575,11 +4155,7 @@
         "18022627601901890",
         "17931434868122538"
       ],
-      "threads_image_posts": [
-        1,
-        4,
-        6
-      ],
+      "threads_image_posts": [1, 4, 6],
       "commit": "031b52f9",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-03-agent-harness-distillation-inference-time-harness-extraction.md"
     },
@@ -4608,13 +4184,7 @@
         "17924000778404529",
         "18117648023488536"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        5,
-        6,
-        7
-      ],
+      "threads_image_posts": [1, 3, 5, 6, 7],
       "commit": "7fb0f2a1"
     },
     {
@@ -4641,11 +4211,7 @@
         "18275583730291668",
         "17913285786430532"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        5
-      ],
+      "threads_image_posts": [1, 3, 5],
       "commit": "056992a4",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-04-tapo-transition-aware-policy-optimization.md"
     },
@@ -4675,12 +4241,7 @@
         "18066320657742104",
         "18117279898901452"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        4,
-        6
-      ],
+      "threads_image_posts": [1, 3, 4, 6],
       "commit": "76f8472f",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-04-skill-alpha-progressive-agent-skill-rl.md"
     },
@@ -4690,28 +4251,15 @@
       "title": "에이전트 RL에서 어떤 액션이 성공에 기여했나 — ADRS의 답",
       "source_url": "https://arxiv.org/abs/2608.03223",
       "source_title": "Agentic Reinforcement Learning with Self-Distilled Reward Shaping",
-      "tags": [
-        "agent",
-        "rl",
-        "credit-assignment",
-        "self-distillation",
-        "grpo"
-      ],
+      "tags": ["agent", "rl", "credit-assignment", "self-distillation", "grpo"],
       "voice_spyrl_mode": "multi-candidate",
       "voice_spyrl_winner": "b-newsletter",
       "voice_spyrl_score": 94.2,
       "voice_spyrl_grade": "A",
       "voice_spyrl_report": "../memory/voice-feedback/2026-08-09-adrs-self-distilled-reward-shaping-spyrl.json",
       "threads_root_id": "18074803616342339",
-      "threads_reply_ids": [
-        "18339408748254053",
-        "17895879900575853",
-        "17900664075557350"
-      ],
-      "threads_image_posts": [
-        1,
-        4
-      ]
+      "threads_reply_ids": ["18339408748254053", "17895879900575853", "17900664075557350"],
+      "threads_image_posts": [1, 4]
     },
     {
       "date": "2026-08-12",
@@ -4747,11 +4295,7 @@
         "18083455142661417",
         "18100564064363837"
       ],
-      "threads_image_posts": [
-        1,
-        2,
-        5
-      ]
+      "threads_image_posts": [1, 2, 5]
     }
   ],
   "posts": [
@@ -4778,9 +4322,7 @@
         "17877895647511025",
         "18123095461751401"
       ],
-      "threads_image_posts": [
-        1
-      ]
+      "threads_image_posts": [1]
     },
     {
       "slug": "2026-08-01-harness-g-graph-structured-search-agent-retrieval",
@@ -4798,12 +4340,7 @@
         "18123249697813074",
         "18098844692211602"
       ],
-      "threads_image_posts": [
-        1,
-        4,
-        5,
-        6
-      ],
+      "threads_image_posts": [1, 4, 5, 6],
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-01-harness-g-graph-structured-search-agent-retrieval.md"
     },
     {
@@ -4829,17 +4366,10 @@
         "18475000828106841",
         "17948048742038347"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        6
-      ],
+      "threads_image_posts": [1, 3, 6],
       "commit": "8b8f2931",
       "figure_fix_commit": "8b8f2931",
-      "figures": [
-        "original-rl-agent.png",
-        "original-rl-environment.png"
-      ]
+      "figures": ["original-rl-agent.png", "original-rl-environment.png"]
     },
     {
       "slug": "2026-08-13-hsi-hierarchical-self-improvement-harness",
@@ -4868,12 +4398,7 @@
         "18455443183138548",
         "18107303069030594"
       ],
-      "threads_image_posts": [
-        1,
-        3,
-        5,
-        6
-      ]
+      "threads_image_posts": [1, 3, 5, 6]
     }
   ]
 }
