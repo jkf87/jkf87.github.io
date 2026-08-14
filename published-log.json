@@ -3126,6 +3126,13 @@
    ],
    "commit": "6971c69f",
    "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-14-self-harness-self-improving-agent.md"
+  },
+  {
+   "slug": "2026-08-15-genesis-persistent-recursive-worlds",
+   "date": "2026-08-15",
+   "source": "huggingface",
+   "source_url": "https://arxiv.org/abs/2608.10450",
+   "blog_url": "https://jkf87.github.io/posts/2026-08-15-genesis-persistent-recursive-worlds"
   }
  ],
  "entries": [

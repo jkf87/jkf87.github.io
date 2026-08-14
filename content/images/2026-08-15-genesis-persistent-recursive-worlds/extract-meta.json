@@ -1,0 +1,70 @@
+[
+  {
+    "page": 4,
+    "file": "fig-1-p4.png",
+    "method": "caption_crop (1258x558)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 93,
+    "width": 1258,
+    "height": 558,
+    "caption": "Figure 1. Persistent recursive worlds. a , An accepted software version can be viewed from different",
+    "crop": [
+      96.0,
+      297.53,
+      515.11,
+      483.08
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-2-p6.png",
+    "method": "caption_crop (1260x572)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 116,
+    "width": 1260,
+    "height": 572,
+    "caption": "Figure 2. Formation of a C compiler with DeepSeek V4 Flash through recursive development. a , Growth",
+    "crop": [
+      96.0,
+      145.98,
+      515.95,
+      336.19
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-3-p7.png",
+    "method": "caption_crop (1255x511)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 104,
+    "width": 1255,
+    "height": 511,
+    "caption": "Figure 3. Continuation of the same compiler world with GLM 5.2 and DeepSeek V4 Flash. a , Codebase",
+    "crop": [
+      96.0,
+      174.12,
+      514.04,
+      344.15
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-4-p8.png",
+    "method": "caption_crop (1245x685)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 130,
+    "width": 1245,
+    "height": 685,
+    "caption": "Figure 4. Redevelopment of selected MESA modules in Rust. a , Repository growth and cumulative",
+    "crop": [
+      96.0,
+      187.47,
+      510.83,
+      415.46
+    ]
+  }
+]
