@@ -1,0 +1,174 @@
+[
+  {
+    "page": 3,
+    "file": "table-1-p3.png",
+    "method": "caption_crop_table_below (1262x1004)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 194,
+    "width": 1262,
+    "height": 1004,
+    "caption": "Table 1: Qualitative capability comparison against directly related systems, based on each system’s",
+    "crop": [
+      95.69,
+      63.18,
+      516.01,
+      397.43
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-1-p3.png",
+    "method": "caption_crop (727x684)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 64,
+    "width": 727,
+    "height": 684,
+    "caption": "Figure 1: Qualitative positioning against directly related",
+    "crop": [
+      274.2,
+      189.82,
+      516.01,
+      417.6
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-2-p6.png",
+    "method": "caption_crop (1457x1124)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 257,
+    "width": 1457,
+    "height": 1124,
+    "caption": "Figure 2: Overview of Spark-to-Paper execution. Stage 0 selects the result-integrity mode, Stages 1–7",
+    "crop": [
+      71.53,
+      43.81,
+      556.75,
+      418.25
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-3-p7.png",
+    "method": "caption_crop (1606x632)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 140,
+    "width": 1606,
+    "height": 632,
+    "caption": "Figure 3: Integrity and correction in Spark-to-Paper. Deterministic gates enforce verifiable properties,",
+    "crop": [
+      76.68,
+      37.49,
+      612.0,
+      247.87
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-4-p9.png",
+    "method": "caption_crop (1281x672)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 128,
+    "width": 1281,
+    "height": 672,
+    "caption": "Figure 4: Role-aware editable figure generation. Measured results follow deterministic plotting to",
+    "crop": [
+      93.26,
+      46.47,
+      519.84,
+      270.09
+    ]
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Evaluation dimensions and corresponding measurements used to assess the quality and",
+    "crop": null
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Main comparison of Spark-to-Paper with human-written preprints, prior autonomous research",
+    "crop": null
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  3  compares Spark-to-Paper with human-written preprints, previously released autonomous",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "table-4-p11.png",
+    "method": "caption_crop_table_below (1261x727)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 107,
+    "width": 1261,
+    "height": 727,
+    "caption": "Table 4: Ablation study of the Spark-to-Paper quality stack, showing the contribution and incremental",
+    "crop": [
+      95.69,
+      63.28,
+      516.0,
+      305.13
+    ]
+  },
+  {
+    "page": 11,
+    "file": "fig-5-p11.png",
+    "method": "caption_crop (1260x537)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 71,
+    "width": 1260,
+    "height": 537,
+    "caption": "Figure 5: Page, reference, and figure counts for the end-to-end papers documented in the project’s",
+    "crop": [
+      96.0,
+      144.16,
+      516.0,
+      322.94
+    ]
+  },
+  {
+    "page": 11,
+    "file": "table-4-p11-3.png",
+    "method": "caption_crop (1267x1381)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 276,
+    "width": 1267,
+    "height": 1381,
+    "caption": "Table  4  isolates the contribution of the major components in Spark-to-Paper’s quality-control stack.",
+    "crop": [
+      95.69,
+      144.16,
+      517.74,
+      604.03
+    ]
+  }
+]
