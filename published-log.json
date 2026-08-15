@@ -3341,14 +3341,36 @@
       "date": "2026-08-15",
       "source": "arxiv",
       "source_url": "https://arxiv.org/abs/2604.07427",
-      "blog_url": "https://jkf87.github.io/posts/2026-08-15-personalized-text-to-image-individual-taste"
+      "blog_url": "https://jkf87.github.io/posts/2026-08-15-personalized-text-to-image-individual-taste",
+      "threads_root_id": "18614137147020254",
+      "threads_reply_ids": [
+        "18027011417851942",
+        "18087964820179047",
+        "18106717211172836",
+        "18122287519848364"
+      ],
+      "threads_image_posts": [
+        1,
+        5
+      ]
     },
     {
       "slug": "2026-08-15-pipbench-personalized-image-generation",
       "date": "2026-08-15",
       "source": "arxiv",
       "source_url": "https://arxiv.org/abs/2607.06440",
-      "blog_url": "https://jkf87.github.io/posts/2026-08-15-pipbench-personalized-image-generation"
+      "blog_url": "https://jkf87.github.io/posts/2026-08-15-pipbench-personalized-image-generation",
+      "threads_root_id": "17903396385491061",
+      "threads_reply_ids": [
+        "18145685584547960",
+        "18126393616705533",
+        "18107561918080060",
+        "18550797358072579"
+      ],
+      "threads_image_posts": [
+        1,
+        5
+      ]
     }
   ],
   "entries": [
