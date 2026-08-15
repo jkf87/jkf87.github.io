@@ -1,0 +1,70 @@
+[
+  {
+    "page": 5,
+    "file": "fig-2-p5.png",
+    "method": "caption_crop (895x993)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 184,
+    "width": 895,
+    "height": 993,
+    "caption": "Figure 2:  Task composition of xRouteBench.",
+    "crop": [
+      294.0,
+      343.57,
+      517.74,
+      591.63
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-5-p9.png",
+    "method": "caption_crop (1681x662)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 145,
+    "width": 1681,
+    "height": 662,
+    "caption": "Figure 5:  Router rankings across the Generic LLM Tasks, memory, vision, and time-series tracks",
+    "crop": [
+      96.0,
+      72.45,
+      516.0,
+      237.54
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-6-p9.png",
+    "method": "caption_crop (889x778)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 97,
+    "width": 889,
+    "height": 778,
+    "caption": "Figure 6:  Performance–cost trade-offs of routers",
+    "crop": [
+      294.0,
+      359.31,
+      516.0,
+      553.64
+    ]
+  },
+  {
+    "page": 9,
+    "file": "table-4-p9.png",
+    "method": "caption_crop (922x1042)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 153,
+    "width": 922,
+    "height": 1042,
+    "caption": "Table 4:  Router performance on held-out real-user",
+    "crop": [
+      285.77,
+      359.31,
+      516.22,
+      619.73
+    ]
+  }
+]

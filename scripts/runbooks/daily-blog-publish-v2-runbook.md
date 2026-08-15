@@ -99,6 +99,22 @@ python3 scripts/blog-voice-feedback-summary.py \
 
 Read `../memory/voice-feedback/latest-summary.md` when available before drafting. Use repeated AVOID tags as first-pass edit targets.
 
+
+## Highlight markup
+After the final post passes voice/content revision and before build, reread the body and mark important expressions with a yellow highlighter feel. This is mandatory for cron blog work from 2026-08-14.
+
+Rules:
+- Select roughly 10–20 high-signal expressions: core thesis, key numbers, source claims, warnings, API migration notes, and final takeaway.
+- Use Quartz-compatible inline HTML exactly like:
+
+```html
+<span style="background-color: #fff59d"><strong>important expression</strong></span>
+```
+
+- Do not highlight whole long paragraphs or every sentence. Keep the user's anti-slop preference: emphasis should guide reading, not shout.
+- Avoid nested markdown bold around the span; use `<strong>` inside the span.
+- After `npx quartz build`, verify the final markdown contains highlights and, after deploy, public HTML includes `#fff59d` / `<strong>`. Include highlight count in the final report.
+
 ## Images
 For papers, use caption/source-anchored figures only. Prefer official HTML/project/arXiv assets when cleaner.
 
@@ -141,11 +157,12 @@ python3 scripts/blog-promo-quality-gate.py content/posts/<slug>.md --require-rel
 7. Run the multi-candidate Voice SpyRL gate and select the JSON `winner`.
 8. Copy the winner to `content/posts/<slug>.md`.
 9. Add CTA if relevant.
-10. Verify image refs resolve and are absolute `/images/...` refs.
-11. Run Voice SpyRL gate again on the final post path; fix failures.
-12. Run image gate.
-13. Run promo gate.
-14. Run `npx quartz build`.
+10. Add mandatory highlight markup to 10–20 important expressions using `<span style="background-color: #fff59d"><strong>...</strong></span>`.
+11. Verify image refs resolve and are absolute `/images/...` refs.
+12. Run Voice SpyRL gate again on the final post path; fix failures.
+13. Run image gate.
+14. Run promo gate.
+15. Run `npx quartz build`.
 15. Git add only intended files: post, `content/images/<slug>/`, `published-log.json`, wiki note if inside repo, intentional script changes. Never add `public/`.
 16. Commit and push to `main`.
 17. Confirm public blog URL and image URLs return HTTP 200.
@@ -170,6 +187,7 @@ Include:
 - Voice SpyRL mode (`multi-candidate` or `fallback-single`), winner, spy, score, tags, and report path
 - Blog image gate result
 - Blog promo gate result
+- Highlight markup count and public HTML verification
 - Live CTA verification
 - Original paper Figure/Table included? yes/no
 - Commit hash
