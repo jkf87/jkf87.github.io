@@ -3273,6 +3273,23 @@
         6
       ],
       "commit": "9ead42a0d"
+    },
+    {
+      "slug": "2026-08-15-sma-spatial-memory-agent",
+      "date": "2026-08-15",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2608.12743",
+      "title": "SMA: 동결 VLM 그대로 두고, 검증된 공간 경험 카드만 쌓아서 점수 올리기",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-15-sma-spatial-memory-agent",
+      "tags": [
+        "LLM",
+        "agent",
+        "memory",
+        "VLM",
+        "spatial-reasoning",
+        "self-evolving",
+        "benchmark"
+      ]
     }
   ],
   "entries": [
