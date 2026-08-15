@@ -5175,7 +5175,21 @@
    "voice_spyrl_grade": "A",
    "voice_spyrl_spy": "b-newsletter",
    "voice_spyrl_spy_suspicion": 11.8,
-   "highlights": 16
+   "highlights": 16,
+   "commit": "54ddfae0",
+   "threads_root_id": "17940166023311938",
+   "threads_reply_ids": [
+    "17905244928307076",
+    "18022427393855645",
+    "17902578486331926",
+    "18117791381615705"
+   ],
+   "threads_image_posts": [
+    1,
+    3,
+    4,
+    5
+   ]
   }
  ],
  "posts": [
