@@ -3335,6 +3335,20 @@
         "fig-3-p7.png"
       ],
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-15-qcr-query-conditioned-reuse-agent-trajectories.md"
+    },
+    {
+      "slug": "2026-08-15-personalized-text-to-image-individual-taste",
+      "date": "2026-08-15",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2604.07427",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-15-personalized-text-to-image-individual-taste"
+    },
+    {
+      "slug": "2026-08-15-pipbench-personalized-image-generation",
+      "date": "2026-08-15",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.06440",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-15-pipbench-personalized-image-generation"
     }
   ],
   "entries": [
