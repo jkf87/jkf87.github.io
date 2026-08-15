@@ -3298,6 +3298,24 @@
         "17982684669059202",
         "18135760285609076"
       ]
+    },
+    {
+      "slug": "2026-08-15-qcr-query-conditioned-reuse-agent-trajectories",
+      "date": "2026-08-15",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2608.12847",
+      "title": "QCR: 에이전트 트레이토리 메모리에서 재사용 단계가 별도 병목이다",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-15-qcr-query-conditioned-reuse-agent-trajectories",
+      "tags": [
+        "LLM",
+        "agent",
+        "memory",
+        "trajectory-reuse",
+        "retrieval",
+        "WebArena",
+        "AppWorld",
+        "harness"
+      ]
     }
   ],
   "entries": [

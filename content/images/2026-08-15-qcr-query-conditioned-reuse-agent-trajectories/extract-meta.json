@@ -1,0 +1,149 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (814x732)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 63,
+    "width": 814,
+    "height": 732,
+    "caption": "Figure 1:  A design hypothesis: the bottleneck shifts with",
+    "crop": [
+      306.37,
+      181.04,
+      577.66,
+      424.93
+    ]
+  },
+  {
+    "page": 2,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 1 expresses the resulting bottleneck shift. Mov-",
+    "crop": null
+  },
+  {
+    "page": 3,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 2 defines the evaluation unit used in this paper. The",
+    "crop": null
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (1836x604)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 276,
+    "width": 1836,
+    "height": 604,
+    "caption": "Figure 2:  Evaluation pipeline for query-conditioned trajectory reuse.  Offline, verified historical rollouts populate one unified",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      201.15
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1 shows that historical experience helps, but the pro-",
+    "crop": null
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 3 separates candidate coverage from the decision",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1:  End-to-end performance across 2,391 target instances.  Success and Milestone are percentages; API Calls and",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2:  Memory utility by selected-memory trajectory",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3:  Memory utility under binding shift.  Entries are",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3 identifies the failure mode suggested by the main",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "fig-3-p7.png",
+    "method": "caption_crop (1584x701)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 106,
+    "width": 1584,
+    "height": 701,
+    "caption": "Figure 3: Why summary reranking matters. Left: the top- 5  candidate set has high paired and reusable coverage, while direct",
+    "crop": [
+      42.0,
+      42.0,
+      570.0,
+      275.09
+    ]
+  }
+]
