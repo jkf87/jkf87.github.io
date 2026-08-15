@@ -3315,7 +3315,26 @@
         "WebArena",
         "AppWorld",
         "harness"
-      ]
+      ],
+      "commit": "881edbaa",
+      "threads_root_id": "18137953558609044",
+      "threads_reply_ids": [
+        "18036375983894470",
+        "18069772853720160",
+        "18100030208626195",
+        "17888867172435278"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        4
+      ],
+      "figures": [
+        "fig-1-p1.png",
+        "fig-2-p4.png",
+        "fig-3-p7.png"
+      ],
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-15-qcr-query-conditioned-reuse-agent-trajectories.md"
     }
   ],
   "entries": [
