@@ -3188,6 +3188,39 @@
    ],
    "commit": "6ccd215b",
    "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-15-spark-to-paper-composable-research-skills.md"
+  },
+  {
+   "slug": "toolhazard-scaling-adversarial-environments-2026-08-15",
+   "date": "2026-08-15",
+   "source": "arxiv",
+   "source_url": "https://arxiv.org/abs/2608.11878",
+   "title": "ToolHazard: 에이전트 보안 테스트 환경을 자동 합성으로 키우는 프레임워크",
+   "blog_url": "https://jkf87.github.io/posts/toolhazard-scaling-adversarial-environments-2026-08-15",
+   "tags": [
+    "agent",
+    "security",
+    "prompt-injection",
+    "RL",
+    "alignment",
+    "benchmark",
+    "tool-use",
+    "LLM",
+    "evaluation"
+   ],
+   "github_url": null,
+   "voice_spyrl_mode": "multi-candidate",
+   "voice_spyrl_winner": "a-kakao",
+   "voice_spyrl_score": 100.0,
+   "voice_spyrl_grade": "A",
+   "voice_spyrl_tags": [],
+   "voice_spyrl_report": "../memory/voice-feedback/2026-08-15-toolhazard-scaling-adversarial-environments-2026-08-15-spyrl-v3.json",
+   "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-15-toolhazard-scaling-adversarial-environments-2026-08-15-final-spyrl.json",
+   "highlights": 20,
+   "threads_root_id": null,
+   "threads_reply_ids": [],
+   "threads_image_posts": [],
+   "commit": null,
+   "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-15-toolhazard-scaling-adversarial-environments.md"
   }
  ],
  "entries": [
