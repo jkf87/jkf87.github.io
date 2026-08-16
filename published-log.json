@@ -3492,6 +3492,25 @@
         "18098934611362736",
         "18140559829573517"
       ]
+    },
+    {
+      "date": "2026-08-16",
+      "slug": "2026-08-16-skillsentry-skill-runtime-assurance",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2608.09253",
+      "title": "SkillSentry: Claude Code와 Codex의 스킬 실행을 런타임 훅으로 감시하니 성공률이 24.1% 올랐다",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-16-skillsentry-skill-runtime-assurance",
+      "tags": [
+        "agent",
+        "LLM-agent",
+        "tool-use",
+        "harness",
+        "loop",
+        "runtime-assurance",
+        "skills",
+        "Claude-Code",
+        "Codex"
+      ]
     }
   ],
   "entries": [
