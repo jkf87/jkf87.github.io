@@ -3404,7 +3404,22 @@
    ],
    "voice_spyrl_final_score": 83.2,
    "voice_spyrl_final_grade": "A",
-   "voice_spyrl_report": "../memory/voice-feedback/2026-08-16-alaya-evoke-long-horizon-world-model-spyrl.json"
+   "voice_spyrl_report": "../memory/voice-feedback/2026-08-16-alaya-evoke-long-horizon-world-model-spyrl.json",
+   "threads_root_id": "18111592933807583",
+   "threads_reply_ids": [
+    "18190931065381068",
+    "18211173994344795",
+    "18139576312575026",
+    "18101377820263281"
+   ],
+   "threads_image_posts": [
+    1,
+    3,
+    4,
+    5
+   ],
+   "commit": "5cc9298e",
+   "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-16-alaya-evoke-long-horizon-world-model.md"
   }
  ],
  "entries": [
