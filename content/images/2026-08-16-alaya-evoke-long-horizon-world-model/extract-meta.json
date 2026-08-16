@@ -1,0 +1,138 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1487x1130)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 3324,
+    "width": 1487,
+    "height": 1130,
+    "caption": "Figure 1 Two hours of uninterrupted generation.  Representative two-hour rollouts under continuous camera control,",
+    "crop": [
+      58.87,
+      51.78,
+      554.25,
+      428.25
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (1487x682)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 1487,
+    "width": 1487,
+    "height": 682,
+    "caption": "Figure 2 Timed prompt switching modifies the sky while preserving anchored scene structure.  Using the same input image,",
+    "crop": [
+      58.87,
+      51.78,
+      554.26,
+      278.92
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-3-p5.png",
+    "method": "caption_crop (1485x764)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 459,
+    "width": 1485,
+    "height": 764,
+    "caption": "Figure 3 With bounded retention, per-step cost does not grow with session length.  The camera pose reads the world state",
+    "crop": [
+      58.87,
+      51.78,
+      553.58,
+      306.09
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-4-p6.png",
+    "method": "caption_crop (1484x513)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 184,
+    "width": 1484,
+    "height": 513,
+    "caption": "Figure 4 An hour-long session stays bounded rather than degrading.  One continuous 65.5 min Evoke rollout, three steps",
+    "crop": [
+      58.87,
+      51.78,
+      553.15,
+      222.47
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-5-p8.png",
+    "method": "caption_crop (1485x1026)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 259,
+    "width": 1485,
+    "height": 1026,
+    "caption": "Figure 5 Chunk-wise sparse attention makes long, time-varying supervision affordable.  Each query chunk of a 60 s clip",
+    "crop": [
+      58.87,
+      51.78,
+      553.4,
+      393.66
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-5-p8-2.png",
+    "method": "caption_crop (1484x1568)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 420,
+    "width": 1484,
+    "height": 1568,
+    "caption": "Fig.  5 . Because the amount of information accessed by each chunk remains bounded, the resulting attention",
+    "crop": [
+      58.87,
+      51.78,
+      553.14,
+      574.13
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-6-p9.png",
+    "method": "caption_crop (1660x537)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 111,
+    "width": 1660,
+    "height": 537,
+    "caption": "Figure 6 A student inherits photometric stability from a long-horizon teacher.  Two three-step students with identical",
+    "crop": [
+      58.87,
+      9.03,
+      612.0,
+      187.7
+    ]
+  },
+  {
+    "page": 10,
+    "file": "fig-7-p10.png",
+    "method": "caption_crop (1484x729)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 806,
+    "width": 1484,
+    "height": 729,
+    "caption": "Figure 7 The world state bank puts a place back when the camera returns.  Three held-out street scenes follow one authored",
+    "crop": [
+      58.87,
+      51.78,
+      553.15,
+      294.5
+    ]
+  }
+]
