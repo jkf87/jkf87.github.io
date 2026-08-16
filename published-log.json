@@ -3510,7 +3510,24 @@
         "skills",
         "Claude-Code",
         "Codex"
-      ]
+      ],
+      "threads_root_id": "18025350890890055",
+      "threads_reply_ids": [
+        "18106387820181156",
+        "18113818228988750",
+        "18123003442787490",
+        "18242578804309539",
+        "18118894304478643"
+      ],
+      "threads_image_posts": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "commit": "eb7240ee",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-16-skillsentry-skill-runtime-assurance.md"
     }
   ],
   "entries": [
