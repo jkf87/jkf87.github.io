@@ -3449,7 +3449,22 @@
    ],
    "voice_spyrl_final_score": 96.1,
    "voice_spyrl_final_grade": "A",
-   "voice_spyrl_report": "../memory/voice-feedback/2026-08-16-faraday-replica-ai-scientist-replication-spyrl.json"
+   "voice_spyrl_report": "../memory/voice-feedback/2026-08-16-faraday-replica-ai-scientist-replication-spyrl.json",
+   "commit": "ac813d35",
+   "threads_root_id": "18032127509835412",
+   "threads_reply_ids": [
+    "18022756034910729",
+    "18240261355312069",
+    "17903494644515323",
+    "18104772671126844"
+   ],
+   "threads_image_posts": [
+    1,
+    3,
+    4,
+    5
+   ],
+   "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-16-faraday-replica-ai-scientist-replication.md"
   }
  ],
  "entries": [
