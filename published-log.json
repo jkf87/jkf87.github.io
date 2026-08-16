@@ -3535,8 +3535,14 @@
       "source": "arxiv",
       "source_url": "https://arxiv.org/abs/2608.06301",
       "threads_id": null,
-      "threads_root_id": null,
-      "blog_url": "https://jkf87.github.io/posts/2026-08-17-harnessopt-bench"
+      "threads_root_id": "18326600428277010",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-17-harnessopt-bench",
+      "threads_reply_ids": [
+        "18338465725264947",
+        "18109339985020716",
+        "18063427007508652",
+        "17870842785634032"
+      ]
     }
   ],
   "entries": [
