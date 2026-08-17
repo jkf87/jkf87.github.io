@@ -5478,6 +5478,29 @@
         5,
         6
       ]
+    },
+    {
+      "date": "2026-08-18",
+      "slug": "2026-08-18-cdh-convergent-detour-hijacking",
+      "title": "CDH: 정상 스킬 하나로 에이전트 비용을 2배로 부풀리는 '우회 납치' 공격",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2608.12273",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-18-cdh-convergent-detour-hijacking",
+      "voice_spyrl_report": "../memory/voice-feedback/2026-08-18-cdh-convergent-detour-hijacking-spyrl.json",
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-18-cdh-convergent-detour-hijacking-final-spyrl.json",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-18-cdh-convergent-detour-hijacking.md",
+      "threads_ids": [
+        "18121266721892767",
+        "18118778680927350",
+        "18139483135588117",
+        "18084152579672064",
+        "18119165047700315"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        5
+      ]
     }
   ]
 }
