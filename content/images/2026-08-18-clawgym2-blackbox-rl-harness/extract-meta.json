@@ -1,0 +1,138 @@
+[
+  {
+    "page": 6,
+    "file": "fig-1-p6.png",
+    "method": "caption_crop (1698x901)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 171,
+    "width": 1698,
+    "height": 901,
+    "caption": "Figure 1. Overview of our black-box RL framework for optimizing general agents through harnesses.",
+    "crop": [
+      29.37,
+      54.41,
+      595.28,
+      354.39
+    ]
+  },
+  {
+    "page": 11,
+    "file": "table-1-p11.png",
+    "method": "caption_crop_table_below (1435x844)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 162,
+    "width": 1435,
+    "height": 844,
+    "caption": "Table 1. Performance comparison of different models on ClawGym-Bench and PinchBench. The best and",
+    "crop": [
+      58.53,
+      178.09,
+      536.41,
+      459.05
+    ]
+  },
+  {
+    "page": 11,
+    "file": "table-1-p11-2.png",
+    "method": "caption_crop (1412x464)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 90,
+    "width": 1412,
+    "height": 464,
+    "caption": "Table  1  shows the performance of our black-box RL framework. We make the following observations:",
+    "crop": [
+      58.53,
+      421.48,
+      528.82,
+      575.82
+    ]
+  },
+  {
+    "page": 12,
+    "file": "fig-2-p12.png",
+    "method": "caption_crop (1366x510)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 139,
+    "width": 1366,
+    "height": 510,
+    "caption": "Figure 2. Training dynamics of PPO and GRPO with OpenClaw as the rollout harness.",
+    "crop": [
+      70.21,
+      336.14,
+      525.06,
+      505.97
+    ]
+  },
+  {
+    "page": 12,
+    "file": "fig-3-p12.png",
+    "method": "caption_crop (1366x512)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 140,
+    "width": 1366,
+    "height": 512,
+    "caption": "Figure 3. Training dynamics of PPO and GRPO with Claude Code as the rollout harness.",
+    "crop": [
+      70.21,
+      494.13,
+      525.06,
+      664.35
+    ]
+  },
+  {
+    "page": 13,
+    "file": "fig-4-p13.png",
+    "method": "caption_crop (1366x479)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 172,
+    "width": 1366,
+    "height": 479,
+    "caption": "Figure 4. Comparison between single-harness and mix-harness RL training.",
+    "crop": [
+      70.21,
+      429.13,
+      525.07,
+      588.46
+    ]
+  },
+  {
+    "page": 14,
+    "file": "fig-5-p14.png",
+    "method": "caption_crop (1162x501)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 73,
+    "width": 1162,
+    "height": 501,
+    "caption": "Figure 5. Training dynamics with Claude Code on JobBench-style tasks.",
+    "crop": [
+      104.22,
+      193.16,
+      491.04,
+      359.94
+    ]
+  },
+  {
+    "page": 14,
+    "file": "fig-6-p14.png",
+    "method": "caption_crop (1162x501)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 71,
+    "width": 1162,
+    "height": 501,
+    "caption": "Figure 6. Training dynamics with Claude Code on OfficeQA-style tasks.",
+    "crop": [
+      104.22,
+      348.51,
+      491.04,
+      515.29
+    ]
+  }
+]

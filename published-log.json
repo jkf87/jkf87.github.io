@@ -3543,6 +3543,13 @@
         "18063427007508652",
         "17870842785634032"
       ]
+    },
+    {
+      "slug": "2026-08-18-clawgym2-blackbox-rl-harness",
+      "date": "2026-08-18",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2608.16798",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-18-clawgym2-blackbox-rl-harness"
     }
   ],
   "entries": [
