@@ -5396,6 +5396,30 @@
         4,
         5
       ]
+    },
+    {
+      "date": "2026-08-18",
+      "slug": "2026-08-18-grip-query-dominance-rag",
+      "title": "GRIP: RAG가 검색 문서를 무시하는 원인과 4차원 병목 해결책",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2608.16776",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-18-grip-query-dominance-rag",
+      "voice_spyrl_report": "../memory/voice-feedback/2026-08-18-grip-query-dominance-rag-spyrl.json",
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-18-grip-query-dominance-rag-final-spyrl.json",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-18-grip-query-dominance-rag.md",
+      "threads_root_id": "17920140327205530",
+      "threads_reply_ids": [
+        "18092415821428199",
+        "18113435413770365",
+        "17977905042110216",
+        "17875697310628331"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        5
+      ],
+      "commit": "c2260106"
     }
   ],
   "posts": [
