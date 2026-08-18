@@ -1,0 +1,130 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1110x458)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 212,
+    "width": 1110,
+    "height": 458,
+    "caption": "Fig. 1.  (A) Standard RAG mixes  Q  and  E  into a full-dimensional latent dominated by",
+    "crop": [
+      122.76,
+      103.84,
+      492.64,
+      256.3
+    ]
+  },
+  {
+    "page": 2,
+    "file": "fig-1-p2-2.png",
+    "method": "caption_crop (1110x651)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 239,
+    "width": 1110,
+    "height": 651,
+    "caption": "Fig. 1) routes  Q  through a full-dimensional bypass while forcing retrieved evi-",
+    "crop": [
+      122.76,
+      103.84,
+      492.6,
+      320.65
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (370x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Fig. 2.  GRIP implementation pipeline: at each step, candidate passages are retrieved",
+    "crop": [
+      122.76499938964844,
+      292.41156005859375,
+      492.6169738769531,
+      279.0697326660156
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-3-p6.png",
+    "method": "caption_crop (1110x422)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 102,
+    "width": 1110,
+    "height": 422,
+    "caption": "Fig. 3. Empirical CDFs of evidence–query alignment on HotpotQA  (align-",
+    "crop": [
+      122.76,
+      292.41,
+      492.66,
+      432.91
+    ]
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1 reports task performance across all five datasets. GRIP improves",
+    "crop": null
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1.  Task performance across five reasoning benchmarks. EM/F1 follow standard",
+    "crop": null
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2 reports component and capacity ablations on HotpotQA. The bottleneck",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2.  Component and capacity ablations on HotpotQA.  ∆ reports accuracy change",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3.  Mechanism diagnostics across datasets, as defined in Section 5.4: lower",
+    "crop": null
+  }
+]
