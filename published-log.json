@@ -5583,7 +5583,23 @@
         "GRPO",
         "long-horizon",
         "agent-training"
-      ]
+      ],
+      "threads_ids": [
+        "18372759382241211",
+        "18277177378292213",
+        "18114903650292439",
+        "17898285774574597",
+        "18379499740229352",
+        "18067351307724492"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        4,
+        6
+      ],
+      "commit": "4885f43e",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-19-trca-transition-rubric-credit-assignment.md"
     }
   ]
 }
