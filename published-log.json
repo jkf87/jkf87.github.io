@@ -5565,6 +5565,25 @@
         3,
         5
       ]
+    },
+    {
+      "date": "2026-08-19",
+      "slug": "2026-08-19-trca-transition-rubric-credit-assignment",
+      "title": "TRCA: 실패 트랙토리의 72%는 버릴 게 아니다",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2608.16156",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-19-trca-transition-rubric-credit-assignment",
+      "voice_spyrl_report": "../memory/voice-feedback/2026-08-19-trca-transition-rubric-credit-assignment-spyrl.json",
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-19-trca-transition-rubric-credit-assignment-final-spyrl.json",
+      "tags": [
+        "reinforcement-learning",
+        "LLM-agent",
+        "credit-assignment",
+        "rubric-reward",
+        "GRPO",
+        "long-horizon",
+        "agent-training"
+      ]
     }
   ]
 }
