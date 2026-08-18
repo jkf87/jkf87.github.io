@@ -3551,6 +3551,38 @@
       "source_url": "https://arxiv.org/abs/2608.16798",
       "blog_url": "https://jkf87.github.io/posts/2026-08-18-clawgym2-blackbox-rl-harness",
       "threads_root_id": "17963976483168746"
+    },
+    {
+      "date": "2026-08-18",
+      "slug": "2026-08-18-multi-agent-coding-coordination",
+      "title": "AI 코딩 에이전트 팀도 결국 커뮤니케이션 비용이 문제다",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2608.16801",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-18-multi-agent-coding-coordination",
+      "voice_spyrl_report": "../memory/voice-feedback/2026-08-18-multi-agent-coding-coordination-spyrl.json",
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-18-multi-agent-coding-coordination-final-spyrl.json",
+      "commit": "da476f13",
+      "figures": [
+        "figure-1-measured-run.png",
+        "figure-3-dataset.png",
+        "figure-4-messages-vs-team-size.png",
+        "figure-6-task-shape-network.png"
+      ],
+      "threads_ids": [
+        "18187078240402235",
+        "18121236643850474",
+        "18009067667951501",
+        "17904425667343962",
+        "18098430611347645",
+        "18120041281861654"
+      ],
+      "threads_image_posts": [
+        1,
+        2,
+        3,
+        6
+      ],
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-18-multi-agent-coding-coordination.md"
     }
   ],
   "entries": [
