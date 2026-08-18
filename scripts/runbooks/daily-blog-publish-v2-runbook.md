@@ -6,6 +6,7 @@ Use this runbook for `daily-blog-publish-v2-quality-gated`.
 Publish at most one high-confidence Korean Quartz blog post per run, then optionally publish a Threads thread only after all gates pass.
 
 ## Hard stops
+- `already published today` / `하루 최대 1포스트` 같은 당일 게시 수 이유로 실행을 스킵하지 않는다. 이 잡은 하루 6회(07/10/13/16/19/22 KST) 돌고 실행당 최대 1포스트, 즉 하루 최대 6포스트가 의도된 운영이다(2026-08-18 사용자 재확인). 당일 게시 수는 리포트용일 뿐이다.
 - Missing required local path/tool → report `blocked: missing local tool`.
 - No strong AI/LLM/agent candidate after scanning up to 12 candidates → report `skipped: no candidate`.
 - Duplicate source/title/slug in `published-log.json` → skip that candidate.
@@ -84,7 +85,7 @@ Rules:
 - If the winner is not A, copy the winning draft to `content/posts/<slug>.md` and then do content/fact/image/CTA checks again.
 - If no candidate passes, revise A using the top `spyTags`, create a fresh candidate, and rerun.
 - If time/tool budget is genuinely tight, one-candidate fallback is allowed with `--allow-single`, but the final report must say `Voice SpyRL mode: fallback-single`.
-- Treat `spyTags` as concrete edit instructions, e.g. `too_long_paragraph`, `banned_phrase`, `aphorism`, `bold_overuse`, `question_heading`, `metaphor_heading`.
+- Treat `spyTags` as concrete edit instructions, e.g. `too_long_paragraph`, `banned_phrase`, `aphorism`, `bold_overuse`, `question_heading`, `metaphor_heading`, `gpt5x_ai_diction`.
 - Keep every report in `memory/voice-feedback/`; this becomes the preference feedback dataset.
 - If user feedback arrives later, append it to a matching voice-feedback note/report and use it in future manual judgment.
 
