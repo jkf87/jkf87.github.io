@@ -1,0 +1,220 @@
+[
+  {
+    "page": 3,
+    "file": "fig-1-p3.png",
+    "method": "caption_crop (1260x439)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 92,
+    "width": 1260,
+    "height": 439,
+    "caption": "Figure 1:  (a) Overview of Memory-based Self-improving Methods.  In this setting, agents will",
+    "crop": [
+      96.0,
+      60.0,
+      516.0,
+      206.04
+    ]
+  },
+  {
+    "page": 5,
+    "file": "table-1-p5.png",
+    "method": "caption_crop_table_below (1262x576)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 167,
+    "width": 1262,
+    "height": 576,
+    "caption": "Table 1:  Variance-related metrics across 3 runs.  Memory-based self-improving agent methods",
+    "crop": [
+      95.69,
+      63.91,
+      516.0,
+      255.42
+    ]
+  },
+  {
+    "page": 5,
+    "file": "table-2-p5.png",
+    "method": "caption_crop (1135x449)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 129,
+    "width": 1135,
+    "height": 449,
+    "caption": "Table 2:  Contextualizing our WebArena",
+    "crop": [
+      95.69,
+      154.92,
+      473.84,
+      304.25
+    ]
+  },
+  {
+    "page": 5,
+    "file": "table-3-p5.png",
+    "method": "caption_crop (1191x449)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 134,
+    "width": 1191,
+    "height": 449,
+    "caption": "Table 3:  Overall results on three benchmarks.  We",
+    "crop": [
+      130.41,
+      154.92,
+      527.3,
+      304.23
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-2-p6.png",
+    "method": "caption_crop (1265x481)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 112,
+    "width": 1265,
+    "height": 481,
+    "caption": "Figure 2:  Implicit curriculum in the default task order.  We visualize the moving average (win-",
+    "crop": [
+      96.0,
+      60.0,
+      517.65,
+      220.04
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-3-p6.png",
+    "method": "caption_crop (1260x477)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 83,
+    "width": 1260,
+    "height": 477,
+    "caption": "Figure 3:  Performance using different task orders.  We use the default task order and two shuffled",
+    "crop": [
+      96.0,
+      236.36,
+      516.0,
+      395.1
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-4-p7.png",
+    "method": "caption_crop (1260x476)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 89,
+    "width": 1260,
+    "height": 476,
+    "caption": "Figure 4:  Mentions of Selected Keywords in Retrieved Memory.  In (a)(b), we show that while the",
+    "crop": [
+      96.0,
+      60.0,
+      516.0,
+      218.44
+    ]
+  },
+  {
+    "page": 7,
+    "file": "table-4-p7.png",
+    "method": "caption_crop (1262x711)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 134,
+    "width": 1262,
+    "height": 711,
+    "caption": "Table 4:  Three types of additional information used in §4.2.  We hypothesize such information can",
+    "crop": [
+      95.69,
+      60.0,
+      516.0,
+      296.97
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-5-p8.png",
+    "method": "caption_crop (1260x464)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 73,
+    "width": 1260,
+    "height": 464,
+    "caption": "Figure 5:  Addressing Underspecification with Additional Information.  (a) We apply the three",
+    "crop": [
+      96.0,
+      60.0,
+      516.0,
+      214.12
+    ]
+  },
+  {
+    "page": 16,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5: Evaluation of the no-memory baseline agent on WebArena.",
+    "crop": null
+  },
+  {
+    "page": 16,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6: Evaluation of the no-memory baseline agent on VisualWebArena and SCUBA.",
+    "crop": null
+  },
+  {
+    "page": 20,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 7:  Example of Ambiguous Task Query: WebArena Task 118.  The task is intended to be a",
+    "crop": null
+  },
+  {
+    "page": 20,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 8:  Example of Evaluator Bug: WebArena Task 329.  A correct answer may fail strict",
+    "crop": null
+  },
+  {
+    "page": 21,
+    "file": "table-9-p21.png",
+    "method": "caption_crop_table_below (1261x871)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 186,
+    "width": 1261,
+    "height": 871,
+    "caption": "Table 9:  Example of Using Haversine Formula: WebArena Task 38.  The agent receives an reward",
+    "crop": [
+      95.69,
+      181.89,
+      516.0,
+      471.77
+    ]
+  }
+]
