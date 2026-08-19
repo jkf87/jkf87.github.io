@@ -1,0 +1,133 @@
+[
+  {
+    "page": 3,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1. The taxonomy’s four technical categories plus the foundations family, with",
+    "crop": null
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (492x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 1 lays out the resulting 4×3 grid with representative systems in each cell. Two features of the",
+    "crop": [
+      60.0,
+      227.43136596679688,
+      552.0003662109375,
+      136.9483642578125
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-1-p5.png",
+    "method": "caption_crop (1476x1034)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 1017,
+    "width": 1476,
+    "height": 1034,
+    "caption": "Figure 1: the two-axis taxonomy, with representative systems per cell.",
+    "crop": [
+      60.01,
+      227.43,
+      551.99,
+      571.7
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (494x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 2: semantic map of the 1,250-paper corpus (TF-IDF abstracts, SVD + t-SNE projection;",
+    "crop": [
+      60.0,
+      402.4444274902344,
+      553.5167846679688,
+      373.2093505859375
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-3-p7.png",
+    "method": "caption_crop (1477x928)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 768,
+    "width": 1477,
+    "height": 928,
+    "caption": "Figure 3: deployment-time self-evolution ordered by persistence — refined outputs evaporate with",
+    "crop": [
+      60.0,
+      402.44,
+      552.0,
+      711.39
+    ]
+  },
+  {
+    "page": 13,
+    "file": "fig-4-p13.png",
+    "method": "caption_crop (1392x979)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 660,
+    "width": 1392,
+    "height": 979,
+    "caption": "Figure 4: the training-time self-iteration loop.",
+    "crop": [
+      60.0,
+      204.37,
+      523.92,
+      530.49
+    ]
+  },
+  {
+    "page": 18,
+    "file": "fig-5-p18.png",
+    "method": "caption_crop (1392x979)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 780,
+    "width": 1392,
+    "height": 979,
+    "caption": "Figure 5: the verification hierarchy.",
+    "crop": [
+      60.0,
+      85.03,
+      523.92,
+      411.16
+    ]
+  },
+  {
+    "page": 26,
+    "file": "fig-6-p26.png",
+    "method": "caption_crop (1477x1155)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 269,
+    "width": 1477,
+    "height": 1155,
+    "caption": "Figure 6: Seed-corpus quarterly growth through 2026Q2, showing log-scaled paper counts and",
+    "crop": [
+      60.0,
+      198.94,
+      552.0,
+      583.56
+    ]
+  }
+]

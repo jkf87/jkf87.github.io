@@ -5778,6 +5778,24 @@
         5
       ],
       "commit": "5592cad1"
+    },
+    {
+      "date": "2026-08-20",
+      "slug": "2026-08-20-rsi-taxonomy-survey",
+      "title": "재귀적 자기개선(RSI) 서베이 정리 — 1,250편을 관통하는 검증 계층이 핵심",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.07663",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-20-rsi-taxonomy-survey",
+      "voice_spyrl_report": "../memory/voice-feedback/2026-08-20-rsi-taxonomy-survey-spyrl-r2.json",
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-20-rsi-taxonomy-survey-final.json",
+      "tags": [
+        "agent",
+        "self-improvement",
+        "evaluation",
+        "paper-review"
+      ],
+      "highlights": 18,
+      "run": "07:00 KST cron"
     }
   ]
 }
