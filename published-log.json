@@ -3583,6 +3583,25 @@
         6
       ],
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-18-multi-agent-coding-coordination.md"
+    },
+    {
+      "date": "2026-08-19",
+      "slug": "2026-08-19-demystifying-agent-skills",
+      "title": "에이전트 스킬은 왜 작동하나 — 효과의 65.7%는 절차 앵커, 지식 주입은 4.5%",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2608.14036",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-19-demystifying-agent-skills",
+      "voice_spyrl_report": "../memory/voice-feedback/2026-08-19-demystifying-agent-skills-spyrl-r2.json",
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-19-demystifying-agent-skills-final.json",
+      "tags": [
+        "agent",
+        "skill",
+        "memory",
+        "paper-review"
+      ],
+      "highlights": 14,
+      "run": "10:00 KST cron",
+      "kind": "posts"
     }
   ],
   "entries": [
@@ -5420,6 +5439,25 @@
         5
       ],
       "commit": "c2260106"
+    },
+    {
+      "date": "2026-08-19",
+      "slug": "2026-08-19-demystifying-agent-skills",
+      "title": "에이전트 스킬은 왜 작동하나 — 효과의 65.7%는 절차 앵커, 지식 주입은 4.5%",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2608.14036",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-19-demystifying-agent-skills",
+      "voice_spyrl_report": "../memory/voice-feedback/2026-08-19-demystifying-agent-skills-spyrl-r2.json",
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-19-demystifying-agent-skills-final.json",
+      "tags": [
+        "agent",
+        "skill",
+        "memory",
+        "paper-review"
+      ],
+      "highlights": 14,
+      "run": "10:00 KST cron",
+      "kind": "posts"
     }
   ],
   "posts": [
@@ -5600,6 +5638,24 @@
       ],
       "commit": "4885f43e",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-19-trca-transition-rubric-credit-assignment.md"
+    },
+    {
+      "date": "2026-08-19",
+      "slug": "2026-08-19-demystifying-agent-skills",
+      "title": "에이전트 스킬은 왜 작동하나 — 효과의 65.7%는 절차 앵커, 지식 주입은 4.5%",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2608.14036",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-19-demystifying-agent-skills",
+      "voice_spyrl_report": "../memory/voice-feedback/2026-08-19-demystifying-agent-skills-spyrl-r2.json",
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-19-demystifying-agent-skills-final.json",
+      "tags": [
+        "agent",
+        "skill",
+        "memory",
+        "paper-review"
+      ],
+      "highlights": 14,
+      "run": "10:00 KST cron"
     }
   ]
 }
