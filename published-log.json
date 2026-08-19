@@ -5495,6 +5495,13 @@
         3,
         4
       ]
+    },
+    {
+      "date": "2026-08-19",
+      "slug": "2026-08-19-bcsd-bidirectional-context-self-distillation",
+      "title": "BCSD: 스킬을 잘 쓰는 에이전트를 만드는 양방향 컨텍스트 자기증류",
+      "source": "https://arxiv.org/abs/2608.09555",
+      "publishedAt": "2026-08-19T22:10:00+09:00"
     }
   ],
   "posts": [
