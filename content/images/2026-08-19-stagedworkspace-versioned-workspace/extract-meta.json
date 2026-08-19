@@ -1,0 +1,36 @@
+[
+  {
+    "page": 10,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (420x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 3: Diagnostic cost–score ablations. Lower and further right is better: a run scores more while",
+    "crop": [
+      96.0,
+      535.9599609375,
+      516.0032348632812,
+      325.82708740234375
+    ]
+  },
+  {
+    "page": 10,
+    "file": "fig-4-p10-2.png",
+    "method": "caption_crop (1471x591)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 117,
+    "width": 1471,
+    "height": 591,
+    "caption": "Figure 4: APEX-A GENTS  HarFeast trace. The parsed cache identifies the relevant survey-column",
+    "crop": [
+      96.0,
+      535.96,
+      516.0,
+      704.41
+    ]
+  }
+]

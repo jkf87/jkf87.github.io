@@ -5740,6 +5740,24 @@
         6
       ],
       "commit": "37453d75"
+    },
+    {
+      "date": "2026-08-19",
+      "slug": "2026-08-19-stagedworkspace-versioned-workspace",
+      "title": "지식노동 에이전트의 파일 꼬임 문제와 버전 계약 — StagedWorkspace 정리",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2608.18050",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-19-stagedworkspace-versioned-workspace",
+      "voice_spyrl_report": "../memory/voice-feedback/2026-08-19-stagedworkspace-versioned-workspace-spyrl-r3.json",
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-19-stagedworkspace-versioned-workspace-final.json",
+      "tags": [
+        "agent",
+        "harness",
+        "workspace",
+        "paper-review"
+      ],
+      "highlights": 16,
+      "run": "19:00 KST cron"
     }
   ]
 }
