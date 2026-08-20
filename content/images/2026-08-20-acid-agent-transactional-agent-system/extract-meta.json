@@ -1,0 +1,118 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (758x943)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 141,
+    "width": 758,
+    "height": 943,
+    "caption": "Figure 1: An Example of ACID-Compliant Data Agent.",
+    "crop": [
+      310.84,
+      144.12,
+      563.08,
+      458.31
+    ]
+  },
+  {
+    "page": 2,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: ACID properties for agentic transactions. Unlike conventional database transactions, agent transactions combine",
+    "crop": null
+  },
+  {
+    "page": 3,
+    "file": "fig-2-p3.png",
+    "method": "caption_crop (1586x952)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 236,
+    "width": 1586,
+    "height": 952,
+    "caption": "Figure 2: Overview of ACID-Compliant Data Agent System.",
+    "crop": [
+      41.8,
+      71.69,
+      570.19,
+      388.85
+    ]
+  },
+  {
+    "page": 3,
+    "file": "table-1-p3.png",
+    "method": "caption_crop (1586x1935)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 605,
+    "width": 1586,
+    "height": 1935,
+    "caption": "Table 1 summarizes representative challenges and techniques",
+    "crop": [
+      41.8,
+      71.69,
+      570.19,
+      716.65
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-3-p4.png",
+    "method": "caption_crop (1591x325)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 62,
+    "width": 1591,
+    "height": 325,
+    "caption": "Figure 3: Consistency of Agent Performance Across Three Runs on 10  AgenticDataBench  [ 19 ] Tasks. Bars show mean perfor-",
+    "crop": [
+      41.8,
+      71.69,
+      571.81,
+      179.68
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Scores (%) and Trajectory-level Metrics on KramaBench.  ➀ =Qwen3.5-397B-A17B,  ➁ =GLM-5.2.",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Consistency of Agent Performance Across Three",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4: Ablation Study on the Environment Domain of Kram-",
+    "crop": null
+  }
+]
