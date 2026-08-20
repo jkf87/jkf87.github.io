@@ -5523,6 +5523,39 @@
       "title": "BCSD: 스킬을 잘 쓰는 에이전트를 만드는 양방향 컨텍스트 자기증류",
       "source": "https://arxiv.org/abs/2608.09555",
       "publishedAt": "2026-08-19T22:10:00+09:00"
+    },
+    {
+      "date": "2026-08-20",
+      "time": "23:55",
+      "slug": "2026-08-20-commitment-vs-binding-drift",
+      "title": "골 드리프트는 두 개였다 — 커밋먼트 드리프트와 바인딩 드리프트를 분리 측정한 구조",
+      "source": "https://arxiv.org/abs/2608.04066",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-20-commitment-vs-binding-drift",
+      "voice_spyrl_report": "../memory/voice-feedback/2026-08-20-commitment-vs-binding-drift-spyrl.json",
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-20-commitment-vs-binding-drift-final.json",
+      "tags": [
+        "agent",
+        "harness",
+        "evaluation",
+        "paper-review"
+      ],
+      "highlights": 20,
+      "run": "22:00 KST cron",
+      "commit": "11da1401",
+      "threads_ids": [
+        "18068523479651960",
+        "18066799367753957",
+        "17953611546015255",
+        "18100968719246907",
+        "18102266282223096",
+        "18089574152655257"
+      ],
+      "threads_image_posts": [
+        1,
+        2,
+        3,
+        6
+      ]
     }
   ],
   "posts": [
