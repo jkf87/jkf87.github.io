@@ -1,0 +1,280 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1290x856)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 177,
+    "width": 1290,
+    "height": 856,
+    "caption": "Figure 1: Agents can execute an extended post-training pipeline, while their training strategies re-",
+    "crop": [
+      90.94,
+      66.06,
+      520.49,
+      351.1
+    ]
+  },
+  {
+    "page": 3,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1 summarizes execution-level activity across agent trajectories. Agents routinely launch train-",
+    "crop": null
+  },
+  {
+    "page": 4,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Execution-level activity on different benchmarks. The observed performance gain reports",
+    "crop": null
+  },
+  {
+    "page": 4,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Default strategies and strategy changes across all",
+    "crop": null
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3 reports the benchmark scores averaged over three independent runs.  The experience-driven",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (518x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Benchmark scores under the controlled setting with Qwen3-1.7B-Base as the base model.",
+    "crop": [
+      93.98048400878906,
+      263.69354248046875,
+      612.0,
+      119.02609252929688
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-2-p6.png",
+    "method": "caption_crop (1610x698)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 131,
+    "width": 1610,
+    "height": 698,
+    "caption": "Figure 2: Distribution of agent behavior across different activities throughout the post-training pro-",
+    "crop": [
+      75.57,
+      255.66,
+      612.0,
+      487.87
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-4-p6.png",
+    "method": "caption_crop (1610x1207)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 284,
+    "width": 1610,
+    "height": 1207,
+    "caption": "Figure 4: Agent adopts all execution-level sugges-",
+    "crop": [
+      75.57,
+      255.66,
+      612.0,
+      657.43
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too page-like (area_ratio=0.61)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 4 summarizes the asymmetry between suggestions from the evaluator agent and actions taken",
+    "crop": [
+      0.0,
+      255.66189575195312,
+      612.0,
+      739.31005859375
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-3-p7.png",
+    "method": "caption_crop (1285x908)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 171,
+    "width": 1285,
+    "height": 908,
+    "caption": "Figure 3: Training dynamics under the experience-driven framework (best-performing run). Later",
+    "crop": [
+      92.12,
+      66.75,
+      520.11,
+      369.25
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-5-p8.png",
+    "method": "caption_crop (695x463)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 50,
+    "width": 695,
+    "height": 463,
+    "caption": "Figure 5: AIME 2025 pass@8 accuracy of fi-",
+    "crop": [
+      289.09,
+      69.57,
+      520.36,
+      223.65
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-6-p8.png",
+    "method": "caption_crop (803x530)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 74,
+    "width": 803,
+    "height": 530,
+    "caption": "Figure 6: (a) Token usage for the autonomous baselines",
+    "crop": [
+      251.3,
+      529.59,
+      518.62,
+      705.71
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-7-p9.png",
+    "method": "caption_crop (1001x534)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 257,
+    "width": 1001,
+    "height": 534,
+    "caption": "Figure 7: (a) An effective post-training assumes a",
+    "crop": [
+      275.53,
+      401.78,
+      608.71,
+      579.59
+    ]
+  },
+  {
+    "page": 15,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4: Benchmarks included in the agent post-training trajectory corpus.",
+    "crop": null
+  },
+  {
+    "page": 16,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5: Training-strategy labels and identification criteria.",
+    "crop": null
+  },
+  {
+    "page": 16,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6: Cross-scaffold strategy comparison across benchmarks and base models. Final metrics are",
+    "crop": null
+  },
+  {
+    "page": 16,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 7: Decomposition of strategy changes among the  3 , 557  recognized adjacent experiment pairs.",
+    "crop": null
+  },
+  {
+    "page": 17,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 8 shows both positive and negative cases. The scores retain each trajectory’s original com-",
+    "crop": null
+  },
+  {
+    "page": 18,
+    "file": "table-8-p18.png",
+    "method": "caption_crop_table_below (1281x1244)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 252,
+    "width": 1281,
+    "height": 1244,
+    "caption": "Table 8: Trace-level case studies among the 16 strategy-changing trajectories. The reported values",
+    "crop": [
+      93.16,
+      83.06,
+      519.69,
+      497.66
+    ]
+  }
+]

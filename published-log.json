@@ -5870,6 +5870,29 @@
       "slug": "2026-08-20-composkill-skill-chain-attacks",
       "title": "스캐너를 다 통과한 스킬들이 연결되면 공격이 됩니다 — CompoSkill",
       "source": "https://arxiv.org/abs/2608.16246"
+    },
+    {
+      "date": "2026-08-21",
+      "slug": "2026-08-21-strategy-lockin-post-training-agents",
+      "title": "AI가 AI를 학습시키는 시대, 정작 부족한 건 '전략을 다시 보는 힘'",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2608.19072",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-21-strategy-lockin-post-training-agents",
+      "tags": [
+        "agent",
+        "LLM",
+        "post-training",
+        "self-improvement",
+        "AI-for-AI",
+        "strategy"
+      ],
+      "figures": [
+        "fig-1-p2.png",
+        "fig-2-p6.png",
+        "fig-3-p7.png",
+        "fig-4-p6.png"
+      ],
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-21-strategy-lockin-post-training-agents.md"
     }
   ]
 }
