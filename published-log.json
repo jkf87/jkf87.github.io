@@ -3665,7 +3665,7 @@
         "human-feedback",
         "agent-evaluation"
       ],
-      "commit": null,
+      "commit": "25fa1492",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-21-personajudge-individual-preference-eval.md",
       "voice_spyrl_report": "/Users/conanssam-m4/.openclaw/workspace-blogbot/memory/voice-feedback/2026-08-21-personajudge-individual-preference-eval-final.json"
     }
