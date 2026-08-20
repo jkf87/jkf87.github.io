@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset="1" stop-color="#e0f2fe"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0f172a" flood-opacity="0.16"/>
+    </filter>
+    <style>
+      .title{font:700 54px -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:#0f172a}
+      .sub{font:500 25px -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:#334155}
+      .label{font:700 25px -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:#0f172a}
+      .small{font:500 20px -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:#475569}
+      .num{font:800 42px -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:#0369a1}
+    </style>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <text x="70" y="92" class="title">PersonaJudge</text>
+  <text x="70" y="135" class="sub">평균 취향 대신, 특정 평가자의 판단을 다시 맞추는 실험</text>
+
+  <g filter="url(#shadow)">
+    <rect x="70" y="205" width="260" height="245" rx="28" fill="#ffffff"/>
+    <text x="105" y="260" class="label">Judgment</text>
+    <text x="105" y="300" class="small">Prefer A · Neutral · Prefer B</text>
+    <text x="105" y="370" class="num">4,200</text>
+    <text x="105" y="405" class="small">preference judgments</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="390" y="205" width="260" height="245" rx="28" fill="#ffffff"/>
+    <text x="425" y="260" class="label">Telemetry</text>
+    <text x="425" y="300" class="small">click · reveal · dwell time</text>
+    <text x="425" y="370" class="num">often hurts</text>
+    <text x="425" y="405" class="small">cheap, but noisy</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="710" y="205" width="420" height="245" rx="28" fill="#ffffff"/>
+    <text x="745" y="260" class="label">Retrospective Reasoning</text>
+    <text x="745" y="300" class="small">why this evaluator chose that label</text>
+    <text x="745" y="370" class="num">+9.9 pp</text>
+    <text x="745" y="405" class="small">best gain over Base Judge</text>
+  </g>
+
+  <path d="M330 327 C355 327 365 327 390 327" stroke="#0284c7" stroke-width="6" fill="none" marker-end="url(#arrow)"/>
+  <path d="M650 327 C680 327 685 327 710 327" stroke="#0284c7" stroke-width="6" fill="none" marker-end="url(#arrow)"/>
+  <defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#0284c7"/></marker></defs>
+
+  <rect x="70" y="520" width="1060" height="70" rx="22" fill="#0f172a" opacity="0.92"/>
+  <text x="105" y="566" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="25" font-weight="700" fill="#fff59d">핵심: disagreement와 neutral은 노이즈가 아니라 평가자의 취향 신호다.</text>
+</svg>
