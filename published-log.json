@@ -3649,6 +3649,25 @@
         "18113081389989913",
         "17916596136425113"
       ]
+    },
+    {
+      "slug": "2026-08-21-personajudge-individual-preference-eval",
+      "date": "2026-08-21",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.05742",
+      "title": "PersonaJudge: 평균 취향으로는 평가자를 못 맞춘다",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-21-personajudge-individual-preference-eval",
+      "tags": [
+        "LLM-as-Judge",
+        "preference-learning",
+        "AI-evaluation",
+        "personalization",
+        "human-feedback",
+        "agent-evaluation"
+      ],
+      "commit": null,
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-21-personajudge-individual-preference-eval.md",
+      "voice_spyrl_report": "/Users/conanssam-m4/.openclaw/workspace-blogbot/memory/voice-feedback/2026-08-21-personajudge-individual-preference-eval-final.json"
     }
   ],
   "entries": [

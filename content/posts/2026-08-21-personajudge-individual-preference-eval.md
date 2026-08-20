@@ -16,7 +16,9 @@ LLM-as-Judge를 쓰면 평가 비용은 내려갑니다. 근데 한 가지가 �
 
 요지는 간단합니다. 평가자를 “평균 인간”으로 보지 말고, 각 평가자가 과거에 어떤 판단을 했고, 왜 그렇게 판단했는지까지 데모로 넣어 보자는 겁니다.
 
-![](/images/2026-08-21-personajudge-individual-preference-eval/hero.svg)
+![Figure 1. PersonaJudge workflow](/images/2026-08-21-personajudge-individual-preference-eval/personajudge-figure-1-workflow.png)
+
+*Figure 1. 인간 평가자의 judgment, interface telemetry, retrospective reasoning을 모아 새 task의 판단을 시뮬레이션하는 흐름. (arXiv:2607.05742 Figure 1)*
 
 ## 왜 이 논문이 지금 중요하냐
 
@@ -181,9 +183,9 @@ annotator도 32명입니다. process-rich collection을 감안하면 충분히 �
 
 에이전트를 실제 업무에 붙이면 결국 사용자는 이렇게 말합니다. “정답은 맞는데 내 스타일은 아니야.” PersonaJudge가 건드리는 지점이 바로 그 문장입니다.
 
----
+## 더 실습해보고 싶은 분들께
 
-더 실습해보고 싶은 분들을 위한 참고 자료도 남겨둡니다. 코난쌤의 책 **[이게 되네? 오픈클로 미친 활용법 50제](https://product.kyobobook.co.kr/detail/S000219615902)**와 **[AIFrenz 빌드캠프 · AI 에이전트 실전 강의 모두를 위한 루프 엔지니어링](https://aifrenz.liveklass.com/classes/309184)**에서는 이런 평가 루프를 실제 에이전트 작업 흐름에 붙이는 쪽을 다룹니다.
+더 실습해보고 싶은 분들을 위한 참고 자료도 남겨둡니다. 코난쌤의 책 **[이게 되네? 오픈클로 미친 활용법 50제](https://product.kyobobook.co.kr/detail/S000219615902)**와 **[모두를 위한 루프 엔지니어링](https://aifrenz.liveklass.com/classes/309184)**에서는 이런 평가 루프를 실제 에이전트 작업 흐름에 붙이는 쪽을 다룹니다.
 
 ## 참고
 
