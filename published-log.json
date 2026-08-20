@@ -3635,6 +3635,13 @@
       "source": "arxiv",
       "source_url": "https://arxiv.org/abs/2608.13900",
       "blog_url": "https://jkf87.github.io/posts/2026-08-20-acid-agent-transactional-agent-system"
+    },
+    {
+      "slug": "2026-08-20-fm-bench-long-horizon-management-benchmark",
+      "date": "2026-08-20",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2608.18423",
+      "blog_url": "https://jkf87.github.io/2026-08-20-fm-bench-long-horizon-management-benchmark"
     }
   ],
   "entries": [
