@@ -3641,7 +3641,14 @@
       "date": "2026-08-20",
       "source": "huggingface",
       "source_url": "https://arxiv.org/abs/2608.18423",
-      "blog_url": "https://jkf87.github.io/2026-08-20-fm-bench-long-horizon-management-benchmark"
+      "blog_url": "https://jkf87.github.io/2026-08-20-fm-bench-long-horizon-management-benchmark",
+      "threads_root_id": "17883230163617179",
+      "threads_reply_ids": [
+        "18109601921020465",
+        "18126995206704651",
+        "18113081389989913",
+        "17916596136425113"
+      ]
     }
   ],
   "entries": [
