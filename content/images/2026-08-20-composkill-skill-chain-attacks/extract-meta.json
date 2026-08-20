@@ -1,0 +1,133 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (788x550)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 147,
+    "width": 788,
+    "height": 550,
+    "caption": "Figure 1: Per-skill scanner blind spot. Although each installed",
+    "crop": [
+      42.0,
+      42.0,
+      304.5,
+      225.16
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-2-p3.png",
+    "method": "caption_crop (1660x877)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 407,
+    "width": 1660,
+    "height": 877,
+    "caption": "Figure 2: Dual attacker construction for skill composition attacks.",
+    "crop": [
+      42.0,
+      42.0,
+      595.22,
+      333.89
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Threat-specific instantiation of the source–bridge–terminal risk-chain template.",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (525x9pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Black-box attacker results on 3-skill composition chains. For each threat type, the highest ASR and CFR are  bolded .",
+    "crop": [
+      42.0,
+      200.00399780273438,
+      566.9349975585938,
+      209.06788635253906
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-3-p6.png",
+    "method": "caption_crop (788x486)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 96,
+    "width": 788,
+    "height": 486,
+    "caption": "Figure 3: White-box attacker ( A w ) results for 3-skill risk",
+    "crop": [
+      42.0,
+      200.0,
+      304.5,
+      361.86
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-3-p6.png",
+    "method": "caption_crop (1496x344)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 114,
+    "width": 1496,
+    "height": 344,
+    "caption": "Table 3: Per-skill scanner gating on Nanobot.",
+    "crop": [
+      42.0,
+      200.0,
+      540.42,
+      314.53
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-4-p7.png",
+    "method": "caption_crop (1585x612)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 127,
+    "width": 1585,
+    "height": 612,
+    "caption": "Figure 4: Chain formation rate of 2-skill versus 3-skill com-",
+    "crop": [
+      42.0,
+      42.0,
+      570.01,
+      245.6
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-5-p7.png",
+    "method": "caption_crop (1585x674)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 140,
+    "width": 1585,
+    "height": 674,
+    "caption": "Figure 5: Attack success rate versus chain length  L  on",
+    "crop": [
+      42.0,
+      42.0,
+      570.01,
+      266.32
+    ]
+  }
+]
