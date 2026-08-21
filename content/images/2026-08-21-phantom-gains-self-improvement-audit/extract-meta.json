@@ -1,0 +1,270 @@
+[
+  {
+    "page": 3,
+    "file": "fig-1-p3.png",
+    "method": "caption_crop (1261x578)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 118,
+    "width": 1261,
+    "height": 578,
+    "caption": "Figure 1:  The audit pipeline, and the seven stages at which a measurement failure enters it.",
+    "crop": [
+      96.0,
+      82.24,
+      516.0,
+      274.46
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1:  Seven measurement failures, the conclusion each would have supported, and the con-",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "fig-2-p7.png",
+    "method": "caption_crop (1261x617)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 106,
+    "width": 1261,
+    "height": 617,
+    "caption": "Figure 2:  The expansion statistic needs a null, and one measurement of a null is not one.  Left:",
+    "crop": [
+      96.0,
+      69.86,
+      516.02,
+      275.28
+    ]
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2:  The matched AIME ladder: one stream, one retained volume, one evaluation, and",
+    "crop": null
+  },
+  {
+    "page": 20,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  3  gives the configuration of every arm and the per-round statistics of its training signal. Three",
+    "crop": null
+  },
+  {
+    "page": 21,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Arm configuration and training-signal statistics. Evaluation is identical across arms within",
+    "crop": null
+  },
+  {
+    "page": 21,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4: Truncation rate by checkpoint on the difficulty band, the diagnostic that excludes an arm’s",
+    "crop": null
+  },
+  {
+    "page": 22,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5:  Three seeds of the policy-gradient arm, on identical data.  The evolution stream is",
+    "crop": null
+  },
+  {
+    "page": 23,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6: Compute by experiment class. Cost is the metered price of sampling and training on the",
+    "crop": null
+  },
+  {
+    "page": 24,
+    "file": "fig-3-p24.png",
+    "method": "caption_crop (1263x638)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 129,
+    "width": 1263,
+    "height": 638,
+    "caption": "Figure 3:  Construction of the difficulty band.  Left:  the held-out pool and the retained band;",
+    "crop": [
+      96.0,
+      413.67,
+      516.94,
+      626.01
+    ]
+  },
+  {
+    "page": 25,
+    "file": "fig-4-p25.png",
+    "method": "caption_crop (1261x531)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 71,
+    "width": 1261,
+    "height": 531,
+    "caption": "Figure 4:  An evaluation set fixes which question it can answer, before any method is applied.",
+    "crop": [
+      96.0,
+      226.41,
+      516.02,
+      403.02
+    ]
+  },
+  {
+    "page": 26,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 7:  What each method adds and removes, against a floor measured on the same problems",
+    "crop": null
+  },
+  {
+    "page": 26,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  9  gives the complete seven-category partition for every arm. The categories are mutually",
+    "crop": null
+  },
+  {
+    "page": 26,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  8  and Figure  5  give the same ledger evaluated at every checkpoint",
+    "crop": null
+  },
+  {
+    "page": 26,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  6  bins the solve rate into five bands and tabulates the joint distri-",
+    "crop": null
+  },
+  {
+    "page": 27,
+    "file": "table-8-p27.png",
+    "method": "caption_crop_table_below (1261x1261)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 249,
+    "width": 1261,
+    "height": 1261,
+    "caption": "Table 8:  Per-checkpoint accuracy and transition counts.  Every headline number in the paper",
+    "crop": [
+      96.0,
+      116.43,
+      516.0,
+      536.37
+    ]
+  },
+  {
+    "page": 27,
+    "file": "fig-5-p27.png",
+    "method": "caption_crop (1261x584)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 101,
+    "width": 1261,
+    "height": 584,
+    "caption": "Figure 5:  The path the endpoint comparison hides.  Mean accuracy and the learned and corrupted",
+    "crop": [
+      96.0,
+      371.6,
+      516.0,
+      565.7
+    ]
+  },
+  {
+    "page": 27,
+    "file": "table-11-p27.png",
+    "method": "caption_crop (1261x856)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 151,
+    "width": 1261,
+    "height": 856,
+    "caption": "Table  11  names every MATH-500 problem whose greedy verdict changed between two evaluations",
+    "crop": [
+      96.0,
+      371.6,
+      516.0,
+      656.62
+    ]
+  },
+  {
+    "page": 27,
+    "file": "table-12-p27.png",
+    "method": "caption_crop (1261x1104)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 215,
+    "width": 1261,
+    "height": 1104,
+    "caption": "Table  12  sweeps the hysteresis width  z  and the sampling budget  k  on the difficulty band. The arms’",
+    "crop": [
+      96.0,
+      371.6,
+      516.0,
+      739.31
+    ]
+  }
+]
