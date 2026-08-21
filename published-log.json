@@ -3684,9 +3684,19 @@
         "AI-evaluation",
         "agent-evaluation"
       ],
-      "commit": "48679dd4",
+      "commit": "c4b0f6d5",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-21-parl-personalized-rubric-learning.md",
-      "voice_spyrl_report": "/Users/conanssam-m4/.openclaw/workspace-blogbot/memory/voice-feedback/2026-08-21-parl-personalized-rubric-learning-final.json"
+      "voice_spyrl_report": "/Users/conanssam-m4/.openclaw/workspace-blogbot/memory/voice-feedback/2026-08-21-parl-personalized-rubric-learning-final.json",
+      "threads_root_id": "18161790214484871",
+      "threads_reply_ids": [
+        "17965121355168747",
+        "18263726869306480",
+        "18171556957432579"
+      ],
+      "threads_image_posts": [
+        1,
+        4
+      ]
     }
   ],
   "entries": [
