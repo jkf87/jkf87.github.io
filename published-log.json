@@ -5975,6 +5975,16 @@
       "voice_spyrl_report": "../memory/voice-feedback/2026-08-21-phantom-gains-self-improvement-audit-spyrl.json",
       "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-21-phantom-gains-self-improvement-audit-final-spyrl.json",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-21-phantom-gains-self-improvement-audit.md"
+    },
+    {
+      "date": "2026-08-22",
+      "time": "00:2x",
+      "slug": "2026-08-22-agent-friendly-documentation",
+      "title": "코딩 에이전트는 어떤 문서를 실제로 읽나 — 60.5%는 에이전트용 파일이었다",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2608.20195",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-22-agent-friendly-documentation",
+      "voice_spyrl_report": "../memory/voice-feedback/2026-08-22-agent-friendly-documentation-spyrl-r2.json"
     }
   ]
 }
