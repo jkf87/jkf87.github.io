@@ -3684,7 +3684,7 @@
         "AI-evaluation",
         "agent-evaluation"
       ],
-      "commit": null,
+      "commit": "f1deb2ec",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-21-parl-personalized-rubric-learning.md",
       "voice_spyrl_report": "/Users/conanssam-m4/.openclaw/workspace-blogbot/memory/voice-feedback/2026-08-21-parl-personalized-rubric-learning-final.json"
     }
