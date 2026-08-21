@@ -5604,6 +5604,16 @@
         3,
         6
       ]
+    },
+    {
+      "date": "2026-08-21",
+      "slug": "2026-08-21-hexa-experiment-driven-skill-evolution",
+      "title": "HExA — 물리 법칙을 알아도 못 푸는 에이전트, 실험에서 스킬을 배우게 만들기",
+      "url": "https://jkf87.github.io/posts/2026-08-21-hexa-experiment-driven-skill-evolution",
+      "source_url": "https://arxiv.org/abs/2606.29315",
+      "published_at": "2026-08-21T10:00+09:00",
+      "voice": "conanssam-voice kakao/plain",
+      "spyrl": "multi-candidate winner A score 94.3 spy 6.38"
     }
   ],
   "posts": [
