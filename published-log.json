@@ -6101,7 +6101,23 @@
       "highlights": 5,
       "voice_spyrl_report": "../memory/voice-feedback/2026-08-22-centaurbench-augment-vs-automate-spyrl.json",
       "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-22-centaurbench-augment-vs-automate-final-spyrl.json",
-      "run": "19:00 KST cron"
+      "run": "19:00 KST cron",
+      "commit": "6df61067",
+      "threads_root_id": "18111552011001576",
+      "threads_reply_ids": [
+        "18128206795668599",
+        "17912943288450380",
+        "18365250886208803",
+        "18161277625464496"
+      ],
+      "threads_image_posts": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-22-centaurbench-augment-vs-automate.md"
     }
   ]
 }
