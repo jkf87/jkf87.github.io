@@ -6059,7 +6059,24 @@
       ],
       "highlights": 10,
       "voice_spyrl_report": "../memory/voice-feedback/2026-08-22-agentic-esopt-long-horizon-evolution-spyrl.json",
-      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-22-agentic-esopt-long-horizon-evolution-final-spyrl.json"
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-22-agentic-esopt-long-horizon-evolution-final-spyrl.json",
+      "run": "16:00 KST cron",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-22-agentic-esopt-long-horizon-evolution.md",
+      "commit": "33f438a8",
+      "threads_root_id": "18076104506344976",
+      "threads_reply_ids": [
+        "18091769468396457",
+        "18145391881556464",
+        "17903035950333395",
+        "18091887140535966"
+      ],
+      "threads_image_posts": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
     }
   ]
 }
