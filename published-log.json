@@ -5639,7 +5639,21 @@
       "voice_spyrl_score": 85.0,
       "voice_spyrl_report": "../memory/voice-feedback/2026-08-22-tool-result-authority-spyrl.json",
       "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-22-tool-result-authority-final-spyrl-r2.json",
-      "highlights": 11
+      "highlights": 11,
+      "commit": "256b8eda",
+      "threads_root_id": "18117598129918512",
+      "threads_reply_ids": [
+        "17925558474402406",
+        "18124586926616421",
+        "17931962562370465",
+        "18091425431142923"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        5
+      ],
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-22-tool-result-authority.md"
     }
   ],
   "posts": [
