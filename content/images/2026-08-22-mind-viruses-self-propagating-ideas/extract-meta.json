@@ -1,0 +1,53 @@
+[
+  {
+    "page": 15,
+    "file": "fig-7-p15.png",
+    "method": "caption_crop (1261x608)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 164,
+    "width": 1261,
+    "height": 608,
+    "caption": "Figure 7:  Left :Average infection rate over payloads. After a small drop in hop 2 (mostly due",
+    "crop": [
+      96.0,
+      60.0,
+      516.0,
+      262.11
+    ]
+  },
+  {
+    "page": 15,
+    "file": "table-3-p15.png",
+    "method": "caption_crop (1262x1268)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 304,
+    "width": 1262,
+    "height": 1268,
+    "caption": "Table 3: Breakdown of propagation attempts for different types of infected agents. Spr. Fail denotes",
+    "crop": [
+      95.69,
+      60.0,
+      516.0,
+      482.2
+    ]
+  },
+  {
+    "page": 17,
+    "file": "table-4-p17.png",
+    "method": "caption_crop (1380x1000)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 191,
+    "width": 1380,
+    "height": 1000,
+    "caption": "Table 4: Soul conﬁgurations and prompting scenarios used in experiments.",
+    "crop": [
+      76.07,
+      60.0,
+      535.93,
+      392.79
+    ]
+  }
+]
