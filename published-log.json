@@ -3722,7 +3722,23 @@
       "highlights": 17,
       "voice_spyrl_report": "../memory/voice-feedback/2026-08-22-skill-transfer-reliability-spyrl.json",
       "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-22-skill-transfer-reliability-final-spyrl.json",
-      "run": "22:00 KST cron"
+      "run": "22:00 KST cron",
+      "commit": "2db57e21",
+      "threads_root_id": "18093507158553220",
+      "threads_reply_ids": [
+        "17965646073169228",
+        "17861395203675894",
+        "17900206368563364",
+        "18125615809704071"
+      ],
+      "threads_image_posts": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-22-skill-transfer-reliability.md"
     }
   ],
   "entries": [
