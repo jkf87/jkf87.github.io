@@ -3697,6 +3697,32 @@
         1,
         4
       ]
+    },
+    {
+      "date": "2026-08-22",
+      "time": "22:0x",
+      "slug": "2026-08-22-skill-transfer-reliability",
+      "title": "태스크 단위로 뽑은 스킬은 독이다 — 서브태스크 단위 스킬 이전 연구 정리",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2608.20274",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-22-skill-transfer-reliability",
+      "tags": [
+        "LLM",
+        "agent",
+        "skill",
+        "memory",
+        "evaluation"
+      ],
+      "figures": [
+        "fig-1-p1.png",
+        "fig-4-p7.png",
+        "fig-5-p8.png",
+        "fig-3-p5.png"
+      ],
+      "highlights": 17,
+      "voice_spyrl_report": "../memory/voice-feedback/2026-08-22-skill-transfer-reliability-spyrl.json",
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-22-skill-transfer-reliability-final-spyrl.json",
+      "run": "22:00 KST cron"
     }
   ],
   "entries": [
