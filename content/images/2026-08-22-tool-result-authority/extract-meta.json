@@ -1,0 +1,43 @@
+[
+  {
+    "page": 5,
+    "file": "fig-2-p5.png",
+    "method": "caption_crop (1554x1815)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 253,
+    "width": 1554,
+    "height": 1815,
+    "caption": "Figure 2:  Message packages in the three studies.  Panel A shows the ﬁve-message setup used in",
+    "crop": [
+      47.04,
+      75.61,
+      564.94,
+      680.06
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1 summarizes false-code adoption. Percentages use scorable trials. The Study 1 assistant-assertion",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1. False-code adoption by message package.",
+    "crop": null
+  }
+]
