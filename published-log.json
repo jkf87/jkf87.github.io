@@ -6033,6 +6033,33 @@
       "source_url": "https://arxiv.org/abs/2608.20195",
       "blog_url": "https://jkf87.github.io/posts/2026-08-22-agent-friendly-documentation",
       "voice_spyrl_report": "../memory/voice-feedback/2026-08-22-agent-friendly-documentation-spyrl-r2.json"
+    },
+    {
+      "date": "2026-08-22",
+      "time": "16:1x",
+      "slug": "2026-08-22-agentic-esopt-long-horizon-evolution",
+      "title": "롱호라이즌 에이전트 파인튜닝, RL 대신 진화 전략 — Agentic ESOpt",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2608.17310",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-22-agentic-esopt-long-horizon-evolution",
+      "tags": [
+        "agent",
+        "LLM",
+        "RL",
+        "evolution-strategies",
+        "fine-tuning",
+        "long-horizon"
+      ],
+      "figures": [
+        "fig-1-p1.png",
+        "fig-2-p4.png",
+        "fig-3-p6.png",
+        "table-1-p6.png",
+        "table-2-p7.png"
+      ],
+      "highlights": 10,
+      "voice_spyrl_report": "../memory/voice-feedback/2026-08-22-agentic-esopt-long-horizon-evolution-spyrl.json",
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-22-agentic-esopt-long-horizon-evolution-final-spyrl.json"
     }
   ]
 }
