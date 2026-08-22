@@ -1,0 +1,206 @@
+[
+  {
+    "page": 8,
+    "file": "fig-1-p8.png",
+    "method": "caption_crop (1482x945)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 988,
+    "width": 1482,
+    "height": 945,
+    "caption": "Figure 1:  Methodology pipeline.  The framework evaluates models in two usage modes: automa-",
+    "crop": [
+      60.0,
+      143.0,
+      553.81,
+      457.77
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-2-p9.png",
+    "method": "caption_crop (1477x545)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 94,
+    "width": 1477,
+    "height": 545,
+    "caption": "Figure 2:  Tasks included in the benchmark.  The figure reports each task’s source, broad task",
+    "crop": [
+      60.0,
+      388.93,
+      552.3,
+      570.01
+    ]
+  },
+  {
+    "page": 10,
+    "file": "fig-3-p10.png",
+    "method": "caption_crop (1477x1150)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 1299,
+    "width": 1477,
+    "height": 1150,
+    "caption": "Figure 3:  Prompt and rubric design.",
+    "crop": [
+      60.0,
+      160.93,
+      552.01,
+      543.94
+    ]
+  },
+  {
+    "page": 10,
+    "file": "fig-4-p10.png",
+    "method": "caption_crop (1482x1443)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 1350,
+    "width": 1482,
+    "height": 1443,
+    "caption": "Figure  4  illustrates the prompt and rubrics for travel planning. Full prompts, assistance texts,",
+    "crop": [
+      60.0,
+      160.93,
+      553.69,
+      641.48
+    ]
+  },
+  {
+    "page": 11,
+    "file": "fig-4-p11.png",
+    "method": "caption_crop (1484x759)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 127,
+    "width": 1484,
+    "height": 759,
+    "caption": "Figure 4:  Illustrative task prompt, evaluation rubric, and assistance-text instruction.",
+    "crop": [
+      60.0,
+      406.09,
+      554.42,
+      658.96
+    ]
+  },
+  {
+    "page": 12,
+    "file": "fig-5-p12.png",
+    "method": "caption_crop (1481x946)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 1122,
+    "width": 1481,
+    "height": 946,
+    "caption": "Figure 5:  Rubric-guided pairwise evaluation pipeline.  Candidate outputs are anonymized,",
+    "crop": [
+      60.0,
+      377.37,
+      553.53,
+      692.61
+    ]
+  },
+  {
+    "page": 14,
+    "file": "fig-6-p14.png",
+    "method": "caption_crop (1477x875)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 848,
+    "width": 1477,
+    "height": 875,
+    "caption": "Figure 6:  Rubric-guided scoring.  Judge rationales explain the pairwise choice made. The models",
+    "crop": [
+      60.0,
+      60.0,
+      552.02,
+      351.37
+    ]
+  },
+  {
+    "page": 14,
+    "file": "fig-6-p14-2.png",
+    "method": "caption_crop (1477x1430)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 945,
+    "width": 1477,
+    "height": 1430,
+    "caption": "Figure  6  illustrates the resulting audit trail using two counseling outputs from augmentation",
+    "crop": [
+      60.0,
+      60.0,
+      552.07,
+      536.64
+    ]
+  },
+  {
+    "page": 16,
+    "file": "fig-7-p16.png",
+    "method": "caption_crop (1477x802)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 107,
+    "width": 1477,
+    "height": 802,
+    "caption": "Figure 7:  Automation rankings by task, averaged across ten independent runs.  For",
+    "crop": [
+      60.0,
+      90.19,
+      552.25,
+      357.12
+    ]
+  },
+  {
+    "page": 16,
+    "file": "fig-7-p16-2.png",
+    "method": "caption_crop (1478x1135)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 179,
+    "width": 1478,
+    "height": 1135,
+    "caption": "Figure  7  reports model rankings in the automation mode by task across ten independent",
+    "crop": [
+      60.0,
+      90.19,
+      552.38,
+      468.26
+    ]
+  },
+  {
+    "page": 17,
+    "file": "fig-8-p17.png",
+    "method": "caption_crop (1477x802)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 107,
+    "width": 1477,
+    "height": 802,
+    "caption": "Figure 8:  Augmentation rankings by task, averaged across ten independent runs.  For",
+    "crop": [
+      60.0,
+      86.89,
+      552.25,
+      353.82
+    ]
+  },
+  {
+    "page": 17,
+    "file": "fig-8-p17-2.png",
+    "method": "caption_crop (1477x1166)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 186,
+    "width": 1477,
+    "height": 1166,
+    "caption": "Figure  8  reports model rankings in the augmentation mode across ten independent runs. Each",
+    "crop": [
+      60.0,
+      86.89,
+      552.06,
+      475.16
+    ]
+  }
+]

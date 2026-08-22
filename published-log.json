@@ -6077,6 +6077,31 @@
         4,
         5
       ]
+    },
+    {
+      "date": "2026-08-22",
+      "time": "19:0x",
+      "slug": "2026-08-22-centaurbench-augment-vs-automate",
+      "title": "최고 성능 모델이 최고 조수는 아니다 — CentaurBench가 보여준 자동화 vs 보조의 간극",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2608.18554",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-22-centaurbench-augment-vs-automate",
+      "tags": [
+        "LLM",
+        "benchmark",
+        "agent",
+        "evaluation",
+        "human-AI"
+      ],
+      "figures": [
+        "fig-1-p8.png",
+        "fig-7-p16.png",
+        "fig-8-p17.png"
+      ],
+      "highlights": 5,
+      "voice_spyrl_report": "../memory/voice-feedback/2026-08-22-centaurbench-augment-vs-automate-spyrl.json",
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-22-centaurbench-augment-vs-automate-final-spyrl.json",
+      "run": "19:00 KST cron"
     }
   ]
 }
