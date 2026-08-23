@@ -1,0 +1,205 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1689x898)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 261,
+    "width": 1689,
+    "height": 898,
+    "caption": "Figure 1  Selector credit starvation. One broadcast advantage updates both the few tokens choosing a skill and the thousands",
+    "crop": [
+      49.06,
+      50.46,
+      612.0,
+      349.45
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (1663x769)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 193,
+    "width": 1663,
+    "height": 769,
+    "caption": "Figure 2  SkillGate overview. The task channel group-normalises terminal outcomes into  A task   and broadcasts it over execution",
+    "crop": [
+      57.74,
+      49.94,
+      612.0,
+      305.82
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 2 ; when  M  = 0 , the selector channel is silent. Deleting read calls therefore does not quietly lower the task",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1  Trial success (%) on the standard mixed slate, and read behaviour.  Oracle / misleading : fraction of trials reading at least one",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2  Credit-design ablation, 280-trial protocol: five placements of the selector signal from the same initialisation and steps.",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "fig-3-p8.png",
+    "method": "caption_crop (1457x598)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 76,
+    "width": 1457,
+    "height": 598,
+    "caption": "Figure 3  The five credit designs of  Table 2 : task outcome (a), what gets read (b), and how much gets read (c). Only credit that",
+    "crop": [
+      58.87,
+      51.78,
+      544.21,
+      250.71
+    ]
+  },
+  {
+    "page": 8,
+    "file": "table-3-p8.png",
+    "method": "caption_crop (1485x699)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 105,
+    "width": 1485,
+    "height": 699,
+    "caption": "Table 3  External selection, 280-trial protocol. Routers advertise one chosen skill to the frozen SFT executor; oracle-only injection",
+    "crop": [
+      58.6,
+      51.78,
+      553.13,
+      284.57
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-4-p9.png",
+    "method": "caption_crop (1473x569)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 71,
+    "width": 1473,
+    "height": 569,
+    "caption": "Figure 4  Inference cost, 280-trial protocol. (a) SkillGate vs. SkillRL (outcome only): reads, turns and token usage. (b) Skill-body",
+    "crop": [
+      58.87,
+      51.78,
+      549.47,
+      241.16
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-5-p9.png",
+    "method": "caption_crop (1484x688)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 130,
+    "width": 1484,
+    "height": 688,
+    "caption": "Figure 5  Offline audit of SkillRL (outcome only)’s 12,800 training trajectories, by trajectory-length bin. (a) Median loss-weight",
+    "crop": [
+      58.87,
+      235.1,
+      553.17,
+      464.03
+    ]
+  },
+  {
+    "page": 14,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4  Raw successes for the non-frontier rows of  Table 1 . Column headers give the fixed number of trials for each benchmark.",
+    "crop": null
+  },
+  {
+    "page": 15,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5  Results on the 147 held-out Claw tasks, with one trial per task and the standard mixed slate. Grader mean is the",
+    "crop": null
+  },
+  {
+    "page": 16,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1  reports oracle and misleading exposure on the 385-trial protocol, so behaviour and outcome share a denominator",
+    "crop": null
+  },
+  {
+    "page": 16,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6  Read behaviour on the 280-trial protocol. Oracle and misleading exposure are multi-label events and can sum past 100%;",
+    "crop": null
+  },
+  {
+    "page": 16,
+    "file": "fig-6-p16.png",
+    "method": "caption_crop (1484x733)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 72,
+    "width": 1484,
+    "height": 733,
+    "caption": "Figure 6  SkillGate minus SkillRL (outcome only) per benchmark on the repeated-trial protocol. Markers are observed differences",
+    "crop": [
+      58.87,
+      429.92,
+      553.14,
+      673.87
+    ]
+  }
+]

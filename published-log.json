@@ -6169,6 +6169,13 @@
       "doi": "10.1158/0008-5472.CAN-26-1818",
       "pmid": "42446922",
       "type": "paper-review"
+    },
+    {
+      "date": "2026-08-23",
+      "slug": "2026-08-23-skillgate-selector-credit",
+      "title": "어떤 스킬을 읽을지 결정하는 토큰은 학습 신호를 못 받는다 — SkillGate 정리",
+      "source": "https://arxiv.org/abs/2608.18852",
+      "publishedAt": "2026-08-23T19:54+09:00"
     }
   ]
 }
