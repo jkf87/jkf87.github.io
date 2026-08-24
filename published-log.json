@@ -5712,6 +5712,36 @@
       "source": "https://arxiv.org/abs/2608.10218",
       "url": "https://jkf87.github.io/posts/2026-08-22-mind-viruses-self-propagating-ideas",
       "publishedAt": "2026-08-22T13:10:00+09:00"
+    },
+    {
+      "date": "2026-08-24",
+      "time": "10:0x",
+      "slug": "2026-08-24-fission-grpo-error-recovery-tool-use",
+      "title": "API 에러 하나에 8B 에이전트는 왜 무너지는가 — Fission-GRPO 읽기",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2601.15625",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-24-fission-grpo-error-recovery-tool-use",
+      "tags": [
+        "agent",
+        "LLM",
+        "tool-use",
+        "reinforcement-learning",
+        "GRPO",
+        "error-recovery"
+      ],
+      "figures": [
+        "fig-1-p1.png",
+        "fig-2-p3.png",
+        "fig-3-p8.png",
+        "table-2-p8.png"
+      ],
+      "highlights": 10,
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_winner": "b-newsletter",
+      "voice_spyrl_report": "../memory/voice-feedback/2026-08-24-fission-grpo-error-recovery-tool-use-spyrl.json",
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-24-fission-grpo-error-recovery-tool-use-spyrl-final.json",
+      "run": "10:00 KST cron",
+      "publishedAt": "2026-08-24T10:1x+09:00"
     }
   ],
   "posts": [

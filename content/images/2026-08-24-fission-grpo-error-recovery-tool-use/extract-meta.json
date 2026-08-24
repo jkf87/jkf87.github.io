@@ -1,0 +1,186 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (732x567)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 58,
+    "width": 732,
+    "height": 567,
+    "caption": "Figure 1:  Error recovery is a key bottleneck for smaller tool-",
+    "crop": [
+      294.14,
+      483.38,
+      537.89,
+      672.14
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-2-p3.png",
+    "method": "caption_crop (1437x818)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 234,
+    "width": 1437,
+    "height": 818,
+    "caption": "Figure 2: Overview of the F ISSION -GRPO Framework.  The framework operates in three stages: (1)  Standard Exploration ,",
+    "crop": [
+      58.87,
+      58.86,
+      537.53,
+      331.22
+    ]
+  },
+  {
+    "page": 4,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  2 , our approach operates in a three-stage",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  1  presents results on BFCL v4 Multi-Turn,",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1:  Main results on BFCL v4 Multi-Turn, TAU-Bench, and TAU2-Bench. BFCL reports overall and category-level accuracy",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  3  illustrates this breakdown for the",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "fig-3-p8.png",
+    "method": "caption_crop (732x927)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 72,
+    "width": 732,
+    "height": 927,
+    "caption": "Figure 3:  Performance decomposition on BFCL v4 Multi-",
+    "crop": [
+      58.87,
+      58.87,
+      302.62,
+      367.62
+    ]
+  },
+  {
+    "page": 8,
+    "file": "table-2-p8.png",
+    "method": "caption_crop (1438x714)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 137,
+    "width": 1438,
+    "height": 714,
+    "caption": "Table 2: Ablation on feedback quality.  Static  denotes Fis-",
+    "crop": [
+      58.87,
+      58.87,
+      537.9,
+      296.47
+    ]
+  },
+  {
+    "page": 8,
+    "file": "table-3-p8.png",
+    "method": "caption_crop (1434x1099)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 231,
+    "width": 1434,
+    "height": 1099,
+    "caption": "Table 3: Error Simulator cross-domain evaluation  (1–5",
+    "crop": [
+      58.87,
+      58.87,
+      536.41,
+      424.99
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-4-p9.png",
+    "method": "caption_crop (728x558)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 61,
+    "width": 728,
+    "height": 558,
+    "caption": "Figure 4:  Multi-turn performance across different correction",
+    "crop": [
+      58.87,
+      58.87,
+      301.14,
+      244.51
+    ]
+  },
+  {
+    "page": 9,
+    "file": "table-4-p9.png",
+    "method": "caption_crop (733x906)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 110,
+    "width": 733,
+    "height": 906,
+    "caption": "Table 4: Compute-matched comparison  on BFCL v4 Multi-",
+    "crop": [
+      58.57,
+      58.87,
+      302.62,
+      360.47
+    ]
+  },
+  {
+    "page": 12,
+    "file": "fig-5-p12.png",
+    "method": "caption_crop (728x566)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 96,
+    "width": 728,
+    "height": 566,
+    "caption": "Figure 5:",
+    "crop": [
+      58.87,
+      561.99,
+      301.13,
+      750.1
+    ]
+  }
+]
