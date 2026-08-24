@@ -3777,7 +3777,24 @@
       "voice_spyrl_score": 71.0,
       "voice_spyrl_grade": "B",
       "voice_spyrl_report": "../memory/voice-feedback/2026-08-24-self-harness-self-improving-harness-2026-08-24-spyrl.json",
-      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-24-self-harness-self-improving-harness-2026-08-24-final-spyrl-v2.json"
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-24-self-harness-self-improving-harness-2026-08-24-final-spyrl-v2.json",
+      "threads_root_id": "17876411820691341",
+      "threads_reply_ids": [
+        "18334390423285447",
+        "18092090354428875",
+        "18339153076248744",
+        "18102928742594974",
+        "18085096808293169"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        4,
+        5,
+        6
+      ],
+      "commit": "3d80b71a",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-24-self-harness-self-improving-harness-2026-08-24.md"
     }
   ],
   "entries": [
