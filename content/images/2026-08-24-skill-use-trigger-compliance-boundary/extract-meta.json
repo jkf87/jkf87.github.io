@@ -1,0 +1,138 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (1261x524)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 162,
+    "width": 1261,
+    "height": 524,
+    "caption": "Figure 1: Composition and coverage of  S KILL -U SE . (a) Domain distribution of the  79  skills across",
+    "crop": [
+      96.0,
+      502.82,
+      516.0,
+      677.02
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-2-p5.png",
+    "method": "caption_crop (1261x525)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 223,
+    "width": 1261,
+    "height": 525,
+    "caption": "Figure 2: Data construction pipeline of  S KILL -U SE . The stages run left to right. Skill and Task",
+    "crop": [
+      96.0,
+      60.0,
+      516.25,
+      234.91
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-1-p6.png",
+    "method": "caption_crop (1261x311)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 85,
+    "width": 1261,
+    "height": 311,
+    "caption": "Table 1:  Main results on  S KILL -U SE  across Claude Code and Codex.  All metrics are scaled to",
+    "crop": [
+      95.69,
+      323.4,
+      516.0,
+      426.75
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-1-p6-2.png",
+    "method": "caption_crop (1262x513)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 109,
+    "width": 1262,
+    "height": 513,
+    "caption": "Table  1  reports SU together with its Trigger, Compliance, and Boundary components under both",
+    "crop": [
+      95.69,
+      323.4,
+      516.0,
+      494.29
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-3-p7.png",
+    "method": "caption_crop (1261x681)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 138,
+    "width": 1261,
+    "height": 681,
+    "caption": "Figure 3: Compliance and Boundary scores by skill category (CC). Boundary exceeds Compliance in",
+    "crop": [
+      96.0,
+      84.7,
+      516.0,
+      311.46
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-4-p8.png",
+    "method": "caption_crop (1262x624)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 66,
+    "width": 1262,
+    "height": 624,
+    "caption": "Figure 4: Per-model Trigger rate under both injection modes on paired traces. Preloading consistently",
+    "crop": [
+      96.0,
+      63.0,
+      516.35,
+      270.94
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-5-p8.png",
+    "method": "caption_crop (1261x656)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 79,
+    "width": 1261,
+    "height": 656,
+    "caption": "Figure 5: Native SU ( x ) against preloaded SU ( y ). Per-model SU restricted to traces that trigger",
+    "crop": [
+      96.0,
+      258.37,
+      516.17,
+      476.89
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-6-p9.png",
+    "method": "caption_crop (1262x933)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 861,
+    "width": 1262,
+    "height": 933,
+    "caption": "Figure 6: Skill selection, applicability, and task-completion effects under CC. (a–b) Increasing library",
+    "crop": [
+      96.0,
+      60.0,
+      516.35,
+      370.99
+    ]
+  }
+]

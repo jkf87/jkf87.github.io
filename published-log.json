@@ -6244,6 +6244,38 @@
       "voice_spyrl_report": "../memory/voice-feedback/2026-08-24-envharness-envrigger-spyrl.json",
       "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-24-envharness-envrigger-spyrl-final.json",
       "publishedAt": "2026-08-24T07:05+09:00"
+    },
+    {
+      "date": "2026-08-24",
+      "time": "19:0x",
+      "slug": "2026-08-24-skill-use-trigger-compliance-boundary",
+      "title": "논문 정리: Skill-Use — 에이전트 하네스에서 LLM의 스킬 사용 능력 측정 (arXiv 2608.04828)",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2608.04828",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-24-skill-use-trigger-compliance-boundary",
+      "tags": [
+        "agent",
+        "LLM",
+        "benchmark",
+        "skill",
+        "harness",
+        "evaluation"
+      ],
+      "figures": [
+        "fig-1-p1.png",
+        "table-1-p6.png",
+        "fig-3-p7.png",
+        "fig-4-p8.png",
+        "fig-6-p9.png",
+        "fig-2-p5.png"
+      ],
+      "highlights": 12,
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_winner": "c-formal",
+      "voice_spyrl_winner_score": 77.5,
+      "voice_spyrl_report": "../memory/voice-feedback/2026-08-24-skill-use-trigger-compliance-boundary-spyrl.json",
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-24-skill-use-trigger-compliance-boundary-final-spyrl.json",
+      "publishedAt": "2026-08-24T19:05+09:00"
     }
   ]
 }
