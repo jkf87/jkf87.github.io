@@ -1,5 +1,5 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
-import { resolveRelative } from "../util/path"
+import { simplifySlug } from "../util/path"
 import { QuartzPluginData } from "../plugins/vfile"
 import { byDateAndAlphabetical } from "./PageList"
 import style from "./styles/recentNotes.scss"
@@ -24,12 +24,7 @@ const defaultOptions: Options = {
 }
 
 export default ((userOpts?: Partial<Options>) => {
-  const PostsByMonth: QuartzComponent = ({
-    allFiles,
-    fileData,
-    displayClass,
-    cfg,
-  }: QuartzComponentProps) => {
+  const PostsByMonth: QuartzComponent = ({ allFiles, displayClass, cfg }: QuartzComponentProps) => {
     const opts = { ...defaultOptions, ...userOpts }
     const pages = allFiles.filter(opts.filter).sort(byDateAndAlphabetical(cfg))
 
@@ -47,7 +42,9 @@ export default ((userOpts?: Partial<Options>) => {
         {opts.title && <h2>{opts.title}</h2>}
         {Array.from(groups.entries()).map(([month, items]) => (
           <section style="margin-bottom: 1.5rem;">
-            <h3 style="margin-bottom: 0.5rem;">{month} ({items.length})</h3>
+            <h3 style="margin-bottom: 0.5rem;">
+              {month} ({items.length})
+            </h3>
             <ul class="recent-ul">
               {items.map((page) => {
                 const title = page.frontmatter?.title ?? "Untitled"
@@ -56,7 +53,7 @@ export default ((userOpts?: Partial<Options>) => {
                     <div class="section">
                       <div class="desc">
                         <h3>
-                          <a href={resolveRelative(fileData.slug!, page.slug!)} class="internal">
+                          <a href={`/${simplifySlug(page.slug!)}`} class="internal">
                             {title}
                           </a>
                         </h3>
