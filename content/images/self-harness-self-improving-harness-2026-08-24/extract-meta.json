@@ -1,0 +1,121 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1238x511)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 462,
+    "width": 1238,
+    "height": 511,
+    "caption": "Figure 1  |  Three paradigms of harness improvement. In human harness engineering, human engineers",
+    "crop": [
+      50.36,
+      73.04,
+      544.91,
+      276.84
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-2-p5.png",
+    "method": "caption_crop (1238x952)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 158,
+    "width": 1238,
+    "height": 952,
+    "caption": "Figure 2  |  Overview of one Self-Harness optimization loop. The current harness  ℎ 𝑡 with fixed model",
+    "crop": [
+      50.36,
+      73.04,
+      544.92,
+      453.26
+    ]
+  },
+  {
+    "page": 11,
+    "file": "table-1-p11.png",
+    "method": "caption_crop (1238x437)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 110,
+    "width": 1238,
+    "height": 437,
+    "caption": "Table 1  |  Held-in, held-out, and overall pass rates (%) for the initial and final harnesses. Bold black",
+    "crop": [
+      50.03,
+      152.25,
+      545.2,
+      326.55
+    ]
+  },
+  {
+    "page": 11,
+    "file": "table-1-p11-2.png",
+    "method": "caption_crop (1238x887)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 182,
+    "width": 1238,
+    "height": 887,
+    "caption": "Table  1  shows that every final harness improves Pass on both held-in and held-out splits across all",
+    "crop": [
+      50.03,
+      152.25,
+      544.92,
+      506.7
+    ]
+  },
+  {
+    "page": 11,
+    "file": "fig-4-p11.png",
+    "method": "caption_crop (1211x1404)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 280,
+    "width": 1211,
+    "height": 1404,
+    "caption": "Figure  4  presents four representative evolution trajectories",
+    "crop": [
+      61.1,
+      170.63,
+      544.92,
+      731.82
+    ]
+  },
+  {
+    "page": 12,
+    "file": "fig-4-p12.png",
+    "method": "caption_crop (1242x422)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 92,
+    "width": 1242,
+    "height": 422,
+    "caption": "Figure 4  |  Representative Self-Harness evolution trajectories across model backends and benchmarks.",
+    "crop": [
+      50.36,
+      222.84,
+      546.74,
+      391.59
+    ]
+  },
+  {
+    "page": 12,
+    "file": "fig-5-p12.png",
+    "method": "caption_crop (1242x831)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 186,
+    "width": 1242,
+    "height": 831,
+    "caption": "Figure  5  address missing required artifacts, schema-invalid tool content, and stalled tool-use loops,",
+    "crop": [
+      50.36,
+      222.84,
+      546.43,
+      554.92
+    ]
+  }
+]
