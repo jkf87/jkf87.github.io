@@ -3795,6 +3795,14 @@
       ],
       "commit": "3d80b71a",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-24-self-harness-self-improving-harness-2026-08-24.md"
+    },
+    {
+      "slug": "skiller-language-level-rl-small-model-skills-2026-08-25",
+      "date": "2026-08-25",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2608.10538",
+      "title": "SKILLER: Language-Level Reinforcement Learning for Reusable Skill Extraction in Small Language Models",
+      "blog_url": "https://jkf87.github.io/skiller-language-level-rl-small-model-skills-2026-08-25"
     }
   ],
   "entries": [
