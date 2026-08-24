@@ -1,0 +1,167 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (794x713)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 56,
+    "width": 794,
+    "height": 713,
+    "caption": "Figure 1: Empirical evidence of ambiguous medium/easy",
+    "crop": [
+      41.8,
+      71.69,
+      306.29,
+      309.28
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-2-p5.png",
+    "method": "caption_crop (1586x950)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 515,
+    "width": 1586,
+    "height": 950,
+    "caption": "Figure 2: Overview of Our AUSO (Action-Level Unified Skill Optimization from Internalization to Utilization): (1) General Skills",
+    "crop": [
+      41.8,
+      71.68,
+      570.21,
+      388.06
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Performance comparison on WebShop and ALFWorld under in-distribution (ID) and out-of-distribution (OOD) settings.",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "fig-3-p7.png",
+    "method": "caption_crop (1591x626)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 184,
+    "width": 1591,
+    "height": 626,
+    "caption": "Figure 3: Single-hop and multi-hop validation success rates and training success rates of our method and Skill0.5 with task-",
+    "crop": [
+      41.8,
+      71.69,
+      571.81,
+      280.02
+    ]
+  },
+  {
+    "page": 7,
+    "file": "table-2-p7.png",
+    "method": "caption_crop (1586x736)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 207,
+    "width": 1586,
+    "height": 736,
+    "caption": "Table 2: Performance comparison on Search-QA benchmark.",
+    "crop": [
+      41.8,
+      71.69,
+      570.19,
+      316.84
+    ]
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (529x40pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Ablation studies of the average success rate on ALF-",
+    "crop": [
+      41.50199890136719,
+      71.68397521972656,
+      570.2109985351562,
+      111.53999328613281
+    ]
+  },
+  {
+    "page": 8,
+    "file": "table-4-p8.png",
+    "method": "caption_crop (1587x651)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 266,
+    "width": 1587,
+    "height": 651,
+    "caption": "Table 4: Ablation Study for Period time for Internalize/Ex-",
+    "crop": [
+      41.5,
+      71.68,
+      570.21,
+      288.44
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-4-p8.png",
+    "method": "caption_crop (799x719)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 175,
+    "width": 799,
+    "height": 719,
+    "caption": "Figure 4: The ID and OOD success rate for different hyperpa-",
+    "crop": [
+      305.95,
+      71.68,
+      571.81,
+      311.18
+    ]
+  },
+  {
+    "page": 13,
+    "file": "fig-5-p13.png",
+    "method": "caption_crop (794x1057)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 190,
+    "width": 794,
+    "height": 1057,
+    "caption": "Figure 5: ID and OOD validation success rates and training",
+    "crop": [
+      305.95,
+      71.69,
+      570.2,
+      423.96
+    ]
+  },
+  {
+    "page": 14,
+    "file": "fig-6-p14.png",
+    "method": "caption_crop (797x657)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 133,
+    "width": 797,
+    "height": 657,
+    "caption": "Figure 6: Training curves of AUSO vs. GRPO on ALFWorld:",
+    "crop": [
+      41.8,
+      71.69,
+      307.19,
+      290.66
+    ]
+  }
+]
