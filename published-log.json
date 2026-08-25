@@ -6339,6 +6339,36 @@
       "voice_spyrl_report": "../memory/voice-feedback/2026-08-24-skill-use-trigger-compliance-boundary-spyrl.json",
       "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-24-skill-use-trigger-compliance-boundary-final-spyrl.json",
       "publishedAt": "2026-08-24T19:05+09:00"
+    },
+    {
+      "slug": "hasp-skill-programs-executable-intervention-2026-08-25",
+      "date": "2026-08-25",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2605.17734",
+      "title": "HASP — 스킬을 실행 가능한 Program Function으로 바꿔 프롬프트 조언 대비 30점 올리기",
+      "blog_url": "https://jkf87.github.io/posts/hasp-skill-programs-executable-intervention-2026-08-25",
+      "tags": [
+        "agent",
+        "LLM",
+        "harness",
+        "skill",
+        "RL",
+        "evaluation"
+      ],
+      "figures": [
+        "fig-1-p2.png",
+        "fig-2-p4.png",
+        "table-4-p7.png",
+        "table-6-p9.png",
+        "fig-4-p9.png"
+      ],
+      "highlights": 8,
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_winner": "a-kakao",
+      "voice_spyrl_winner_score": 93.0,
+      "voice_spyrl_report": "../memory/voice-feedback/2026-08-25-hasp-skill-programs-spyrl.json",
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-25-hasp-skill-programs-final-spyrl.json",
+      "publishedAt": "2026-08-25T19:41+0900"
     }
   ]
 }
