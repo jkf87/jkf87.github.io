@@ -1,0 +1,155 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (651x415)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 30,
+    "width": 651,
+    "height": 415,
+    "caption": "Figure 1.  Workflow of an LLM agent.",
+    "crop": [
+      347.36,
+      201.94,
+      564.01,
+      339.93
+    ]
+  },
+  {
+    "page": 1,
+    "file": "fig-2-p1.png",
+    "method": "caption_crop (793x614)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 60,
+    "width": 793,
+    "height": 614,
+    "caption": "Figure 2.  Example recurring tool-call patterns and latent",
+    "crop": [
+      305.95,
+      262.17,
+      570.0,
+      466.56
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-3-p3.png",
+    "method": "caption_crop (1574x414)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 60,
+    "width": 1574,
+    "height": 414,
+    "caption": "Figure 3.  Breakdown of tool execution and LLM generation.",
+    "crop": [
+      42.0,
+      60.0,
+      566.35,
+      197.63
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-4-p3.png",
+    "method": "caption_crop (1434x574)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 104,
+    "width": 1434,
+    "height": 574,
+    "caption": "Figure 4.  Tool execution time histogram. Blue: args from",
+    "crop": [
+      92.31,
+      60.0,
+      570.0,
+      250.77
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-5-p4.png",
+    "method": "caption_crop (1585x662)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 146,
+    "width": 1585,
+    "height": 662,
+    "caption": "Figure 5.  LLM generation and tool execution have different",
+    "crop": [
+      42.0,
+      60.0,
+      570.0,
+      280.13
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-6-p4.png",
+    "method": "caption_crop (1425x554)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 113,
+    "width": 1425,
+    "height": 554,
+    "caption": "Figure 6.  Bursty GPU pressure from alternating LLM gener-",
+    "crop": [
+      97.25,
+      60.0,
+      571.69,
+      244.02
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too page-like (area_ratio=0.60)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 7 shows the architecture of PASTE. Rather than treat-",
+    "crop": [
+      42.0,
+      109.65574645996094,
+      557.7394409179688,
+      676.2713623046875
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-7-p5.png",
+    "method": "caption_crop (793x585)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 78,
+    "width": 793,
+    "height": 585,
+    "caption": "Figure 7.  System architecture of PASTE. PASTE places a",
+    "crop": [
+      305.95,
+      109.66,
+      570.0,
+      304.23
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-8-p7.png",
+    "method": "caption_crop (707x388)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 37,
+    "width": 707,
+    "height": 388,
+    "caption": "Figure 8.  Lossless speculative tool execution.",
+    "crop": [
+      55.16,
+      60.0,
+      290.4,
+      188.85
+    ]
+  }
+]
