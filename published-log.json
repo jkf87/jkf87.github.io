@@ -3804,6 +3804,13 @@
       "title": "SKILLER: Language-Level Reinforcement Learning for Reusable Skill Extraction in Small Language Models",
       "blog_url": "https://jkf87.github.io/skiller-language-level-rl-small-model-skills-2026-08-25",
       "threads_root_id": "17889082461437910"
+    },
+    {
+      "slug": "harness-bench-config-level-agent-eval-2026-08-25",
+      "date": "2026-08-25",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2605.27922",
+      "blog_url": "https://jkf87.github.io/harness-bench-config-level-agent-eval-2026-08-25"
     }
   ],
   "entries": [

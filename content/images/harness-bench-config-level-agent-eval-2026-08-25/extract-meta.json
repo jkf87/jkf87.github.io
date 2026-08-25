@@ -1,0 +1,234 @@
+[
+  {
+    "page": 3,
+    "file": "fig-1-p3.png",
+    "method": "caption_crop (1261x811)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 127,
+    "width": 1261,
+    "height": 811,
+    "caption": "Figure 1: Overview of the Harness-Bench evaluation pipeline. Each task is instantiated in a sandbox",
+    "crop": [
+      96.0,
+      60.0,
+      516.25,
+      329.75
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (1501x693)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 188,
+    "width": 1501,
+    "height": 693,
+    "caption": "Figure 2: Task suite overview. Harness-Bench contains 106 sandboxed offline tasks across eight",
+    "crop": [
+      15.84,
+      53.13,
+      516.0,
+      283.92
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Controlled and varying factors in the main evaluation. Harness-Bench fixes external task",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Main results aggregated by harness. Configurable harnesses are averaged over 106 tasks",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "fig-3-p7.png",
+    "method": "caption_crop (1261x637)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 119,
+    "width": 1261,
+    "height": 637,
+    "caption": "Figure 3: Harness dependence and Codex reference. Left: mean score and cross-harness variance for",
+    "crop": [
+      96.0,
+      60.0,
+      516.17,
+      272.0
+    ]
+  },
+  {
+    "page": 7,
+    "file": "table-2-p7.png",
+    "method": "caption_crop (1261x891)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 164,
+    "width": 1261,
+    "height": 891,
+    "caption": "Table 2 reports aggregate results by harness. Among",
+    "crop": [
+      96.0,
+      60.0,
+      516.01,
+      356.92
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-3-p7-3.png",
+    "method": "caption_crop (1261x1731)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 364,
+    "width": 1261,
+    "height": 1731,
+    "caption": "Figure 3 shows that stronger model backends tend to achieve higher mean scores while exhibiting",
+    "crop": [
+      96.0,
+      60.0,
+      516.01,
+      636.77
+    ]
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3:  Typical recurring failure symptoms in failed execution trajectories.  Rates report how",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3 summarizes representative recurring failure symptoms. We organize them by where the",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4 lists the configurable harnesses evaluated in the main factorial setting: OpenClaw [OpenClaw,",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4: Qualitative positioning of evaluated harnesses.",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5 lists the API model backends used in the main factorial evaluation. The selected backends",
+    "crop": null
+  },
+  {
+    "page": 13,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5: API model backends included in the main factorial evaluation.",
+    "crop": null
+  },
+  {
+    "page": 13,
+    "file": "table-6-p13.png",
+    "method": "caption_crop_table_below (1094x767)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 108,
+    "width": 1094,
+    "height": 767,
+    "caption": "Table 6: Model-bound coding agent evaluated as a practical reference point.",
+    "crop": [
+      123.72,
+      364.28,
+      488.26,
+      619.67
+    ]
+  },
+  {
+    "page": 13,
+    "file": "fig-4-p13.png",
+    "method": "caption_crop (1260x483)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 80,
+    "width": 1260,
+    "height": 483,
+    "caption": "Figure 4: Category-level harness dependence. Variance is computed across configurable-harness",
+    "crop": [
+      96.0,
+      482.15,
+      516.0,
+      642.71
+    ]
+  },
+  {
+    "page": 13,
+    "file": "fig-4-p13-4.png",
+    "method": "caption_crop (1265x645)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 111,
+    "width": 1265,
+    "height": 645,
+    "caption": "Figure 4 shows that harness dependence is not uniform across workflow types. The largest cross-",
+    "crop": [
+      96.0,
+      482.15,
+      517.65,
+      696.8
+    ]
+  }
+]
