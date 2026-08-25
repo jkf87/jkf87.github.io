@@ -6405,7 +6405,14 @@
       "voice_spyrl_winner_score": 89.8,
       "voice_spyrl_report": "../memory/voice-feedback/2026-08-25-paste-speculative-tool-execution-spyrl.json",
       "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-25-paste-speculative-tool-execution-final-spyrl.json",
-      "publishedAt": "2026-08-25T22:06+0900"
+      "publishedAt": "2026-08-25T22:06+0900",
+      "threads_root_id": "17978689967900913",
+      "threads_reply_ids": [
+        "18005707721978311",
+        "18108478040139957",
+        "18086775431227531",
+        "17891787621413515"
+      ]
     }
   ]
 }
