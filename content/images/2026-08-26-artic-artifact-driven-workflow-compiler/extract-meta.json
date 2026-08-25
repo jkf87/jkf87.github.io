@@ -1,0 +1,213 @@
+[
+  {
+    "page": 2,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 2 contrasts two executable workflows for the same",
+    "crop": null
+  },
+  {
+    "page": 3,
+    "file": "fig-1-p3.png",
+    "method": "caption_crop (826x1222)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 247,
+    "width": 826,
+    "height": 1222,
+    "caption": "Fig. 1.",
+    "crop": [
+      36.96,
+      38.54,
+      311.89,
+      445.44
+    ]
+  },
+  {
+    "page": 3,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (538x74pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 3 gives the overall pipeline. The compiler has two",
+    "crop": [
+      36.9640007019043,
+      38.53955078125,
+      575.0348510742188,
+      112.30416870117188
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-4-p3.png",
+    "method": "caption_crop (821x304)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 28,
+    "width": 821,
+    "height": 304,
+    "caption": "Fig. 4. Core artifact-driven workflow language.",
+    "crop": [
+      300.77,
+      635.44,
+      574.24,
+      736.37
+    ]
+  },
+  {
+    "page": 4,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (538x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Fig. 2. Workflow structure affects enforcement reliability. (a) shows a naive step-by-step workflow. The subagent in Step 4 still needs to select the correct",
+    "crop": [
+      36.9640007019043,
+      365.36322021484375,
+      575.0353393554688,
+      329.37567138671875
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-3-p4.png",
+    "method": "caption_crop (827x634)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 78,
+    "width": 827,
+    "height": 634,
+    "caption": "Fig. 3. Compiler workflow. The compiler drafts an artifact-driven workflow",
+    "crop": [
+      36.96,
+      357.16,
+      312.02,
+      568.18
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-5-p5.png",
+    "method": "caption_crop (1556x408)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 80,
+    "width": 1556,
+    "height": 408,
+    "caption": "Fig. 5. Core big-step semantics for artifact-driven workflows.",
+    "crop": [
+      37.76,
+      38.54,
+      556.17,
+      174.04
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-6-p5.png",
+    "method": "caption_crop (1613x383)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 80,
+    "width": 1613,
+    "height": 383,
+    "caption": "Fig. 6. Context-compaction pressure. A step is harder to compact when many",
+    "crop": [
+      37.76,
+      38.54,
+      575.04,
+      165.79
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-6-p5-3.png",
+    "method": "caption_crop (1613x1192)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 314,
+    "width": 1613,
+    "height": 1192,
+    "caption": "Figure 6 illustrates this case: when many live artifacts cross",
+    "crop": [
+      37.76,
+      38.54,
+      575.04,
+      435.57
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 8 illustrates the process.",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (221x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Fig. 7.",
+    "crop": [
+      36.9640007019043,
+      360.59368896484375,
+      258.4538269042969,
+      217.3516845703125
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-8-p7.png",
+    "method": "caption_crop (732x706)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 84,
+    "width": 732,
+    "height": 706,
+    "caption": "Fig. 8.",
+    "crop": [
+      36.96,
+      245.13,
+      280.59,
+      480.05
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-9-p8.png",
+    "method": "caption_crop (755x532)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 27,
+    "width": 755,
+    "height": 532,
+    "caption": "Fig. 9. Performance across executor models on the Medical domain.",
+    "crop": [
+      311.96,
+      411.94,
+      563.05,
+      588.89
+    ]
+  }
+]
