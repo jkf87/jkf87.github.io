@@ -6439,7 +6439,13 @@
       "voice_spyrl_winner_score": 84.0,
       "voice_spyrl_report": "../memory/voice-feedback/2026-08-26-artic-artifact-driven-workflow-compiler-spyrl.json",
       "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-26-artic-artifact-driven-workflow-compiler-final-spyrl.json",
-      "publishedAt": "2026-08-26T07:04+0900"
+      "publishedAt": "2026-08-26T07:04+0900",
+      "threads_root_id": "18121215016861636",
+      "threads_reply_ids": [
+        "18092507378395208",
+        "18062292581780196",
+        "18164174371484721"
+      ]
     }
   ]
 }
