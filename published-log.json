@@ -6368,7 +6368,14 @@
       "voice_spyrl_winner_score": 93.0,
       "voice_spyrl_report": "../memory/voice-feedback/2026-08-25-hasp-skill-programs-spyrl.json",
       "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-25-hasp-skill-programs-final-spyrl.json",
-      "publishedAt": "2026-08-25T19:41+0900"
+      "publishedAt": "2026-08-25T19:41+0900",
+      "threads_root_id": "18110868800053791",
+      "threads_reply_ids": [
+        "18129773353734411",
+        "18017325995864346",
+        "18339417757253814",
+        "18065538341752022"
+      ]
     }
   ]
 }
