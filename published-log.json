@@ -3818,6 +3818,29 @@
         "17900919003560210",
         "17955565338206295"
       ]
+    },
+    {
+      "slug": "glm-53-flash-frontier-intelligence-flash-cost-2026-08-27",
+      "date": "2026-08-27",
+      "source": "zai-blog",
+      "source_url": "https://z.ai/blog/glm-5.3-flash",
+      "title": "GLM-5.3-Flash: 320B 모델을 18B 활성 파라미터로 쓰는 법",
+      "blog_url": "https://jkf87.github.io/posts/glm-53-flash-frontier-intelligence-flash-cost-2026-08-27",
+      "tags": [
+        "LLM",
+        "GLM",
+        "agent",
+        "multimodal",
+        "coding-agent",
+        "inference",
+        "long-context",
+        "open-weight"
+      ],
+      "voice_spyrl_score": 84.0,
+      "voice_spyrl_grade": "A",
+      "voice_spyrl_report": "../memory/voice-feedback/2026-08-27-glm-53-flash-spyrl.json",
+      "images_included": 8,
+      "original_images_included": "all content images from source blog, excluding navigation/logo icons"
     }
   ],
   "entries": [
@@ -5848,6 +5871,29 @@
         5
       ],
       "commit": "e6ab6bb3"
+    },
+    {
+      "slug": "glm-53-flash-frontier-intelligence-flash-cost-2026-08-27",
+      "date": "2026-08-27",
+      "source": "zai-blog",
+      "source_url": "https://z.ai/blog/glm-5.3-flash",
+      "title": "GLM-5.3-Flash: 320B 모델을 18B 활성 파라미터로 쓰는 법",
+      "blog_url": "https://jkf87.github.io/posts/glm-53-flash-frontier-intelligence-flash-cost-2026-08-27",
+      "tags": [
+        "LLM",
+        "GLM",
+        "agent",
+        "multimodal",
+        "coding-agent",
+        "inference",
+        "long-context",
+        "open-weight"
+      ],
+      "voice_spyrl_score": 84.0,
+      "voice_spyrl_grade": "A",
+      "voice_spyrl_report": "../memory/voice-feedback/2026-08-27-glm-53-flash-spyrl.json",
+      "images_included": 8,
+      "original_images_included": "all content images from source blog, excluding navigation/logo icons"
     }
   ],
   "posts": [
@@ -6495,6 +6541,29 @@
         "18094971122631614",
         "17906424123303723"
       ]
+    },
+    {
+      "slug": "glm-53-flash-frontier-intelligence-flash-cost-2026-08-27",
+      "date": "2026-08-27",
+      "source": "zai-blog",
+      "source_url": "https://z.ai/blog/glm-5.3-flash",
+      "title": "GLM-5.3-Flash: 320B 모델을 18B 활성 파라미터로 쓰는 법",
+      "blog_url": "https://jkf87.github.io/posts/glm-53-flash-frontier-intelligence-flash-cost-2026-08-27",
+      "tags": [
+        "LLM",
+        "GLM",
+        "agent",
+        "multimodal",
+        "coding-agent",
+        "inference",
+        "long-context",
+        "open-weight"
+      ],
+      "voice_spyrl_score": 84.0,
+      "voice_spyrl_grade": "A",
+      "voice_spyrl_report": "../memory/voice-feedback/2026-08-27-glm-53-flash-spyrl.json",
+      "images_included": 8,
+      "original_images_included": "all content images from source blog, excluding navigation/logo icons"
     }
   ]
 }
