@@ -5813,6 +5813,26 @@
       "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-24-fission-grpo-error-recovery-tool-use-spyrl-final.json",
       "run": "10:00 KST cron",
       "publishedAt": "2026-08-24T10:1x+09:00"
+    },
+    {
+      "date": "2026-08-26",
+      "slug": "2026-08-26-graph-engineering-system-intelligence",
+      "title": "에이전트 하나 더 늘리는 대신 그래프를 설계하기 — Graph Engineering 서베이 읽기",
+      "source": "https://arxiv.org/abs/2608.21156",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-26-graph-engineering-system-intelligence",
+      "figures": [
+        "fig-1-p4.png",
+        "fig-2-p7.png",
+        "fig-6-p16.png",
+        "fig-8-p20.png"
+      ],
+      "highlights": 12,
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_winner": "a-kakao",
+      "voice_spyrl_winner_score": 90.5,
+      "voice_spyrl_report": "../memory/voice-feedback/2026-08-26-graph-engineering-system-intelligence-spyrl-r2.json",
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-26-graph-engineering-system-intelligence-final-spyrl.json",
+      "publishedAt": "2026-08-26T23:20+0900"
     }
   ],
   "posts": [

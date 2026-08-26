@@ -1,0 +1,138 @@
+[
+  {
+    "page": 4,
+    "file": "fig-1-p4.png",
+    "method": "caption_crop (1563x747)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 933,
+    "width": 1563,
+    "height": 747,
+    "caption": "Figure 1 : Overview From Model Intelligence to System Intelligence.  Prompt and Context Engineering elicit and condition the",
+    "crop": [
+      39.05,
+      51.19,
+      559.94,
+      299.89
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-2-p7.png",
+    "method": "caption_crop (1251x574)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 196,
+    "width": 1251,
+    "height": 574,
+    "caption": "Figure 2 : A Taxonomy of Evolving Techniques in the Era of LLM Agents.",
+    "crop": [
+      134.98,
+      342.9,
+      551.54,
+      533.87
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-3-p8.png",
+    "method": "caption_crop (1517x776)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 854,
+    "width": 1517,
+    "height": 776,
+    "caption": "Figure 3 :",
+    "crop": [
+      53.09,
+      63.91,
+      558.66,
+      322.24
+    ]
+  },
+  {
+    "page": 13,
+    "file": "fig-4-p13.png",
+    "method": "caption_crop (1484x1083)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 1717,
+    "width": 1484,
+    "height": 1083,
+    "caption": "Figure 4 :",
+    "crop": [
+      58.87,
+      51.78,
+      553.11,
+      412.62
+    ]
+  },
+  {
+    "page": 14,
+    "file": "fig-5-p14.png",
+    "method": "caption_crop (1715x734)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 330,
+    "width": 1715,
+    "height": 734,
+    "caption": "Figure 5 :",
+    "crop": [
+      14.08,
+      16.9,
+      585.66,
+      261.24
+    ]
+  },
+  {
+    "page": 16,
+    "file": "fig-6-p16.png",
+    "method": "caption_crop (1701x889)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 396,
+    "width": 1701,
+    "height": 889,
+    "caption": "Figure 6 : Overview of Task Organization.  Goal Decomposition translates a high-level objective into explicit subtasks, exposes",
+    "crop": [
+      36.82,
+      27.97,
+      603.38,
+      323.83
+    ]
+  },
+  {
+    "page": 17,
+    "file": "fig-7-p17.png",
+    "method": "caption_crop (1649x920)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 413,
+    "width": 1649,
+    "height": 920,
+    "caption": "Figure 7 :",
+    "crop": [
+      31.15,
+      10.94,
+      580.64,
+      317.06
+    ]
+  },
+  {
+    "page": 20,
+    "file": "fig-8-p20.png",
+    "method": "caption_crop (1648x920)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 440,
+    "width": 1648,
+    "height": 920,
+    "caption": "Figure 8 : Overview of Runtime State Management.  Runtime State Management structures how to manage state by recording",
+    "crop": [
+      31.37,
+      10.96,
+      580.64,
+      317.19
+    ]
+  }
+]
