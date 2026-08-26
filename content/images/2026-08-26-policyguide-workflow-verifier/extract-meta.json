@@ -1,0 +1,206 @@
+[
+  {
+    "page": 1,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (354x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 1: Workflow systems execute prescribed proce-",
+    "crop": [
+      183.73599243164062,
+      685.0403442382812,
+      538.0592651367188,
+      418.7156982421875
+    ]
+  },
+  {
+    "page": 2,
+    "file": "fig-2-p2.png",
+    "method": "caption_crop (1434x670)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 153,
+    "width": 1434,
+    "height": 670,
+    "caption": "Figure 2: One task under three enforcement regimes.  (a)  An action guard checks only the final mutating call, so",
+    "crop": [
+      58.87,
+      81.85,
+      536.41,
+      304.8
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-3-p4.png",
+    "method": "caption_crop (1434x698)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 183,
+    "width": 1434,
+    "height": 698,
+    "caption": "Figure 3: P OLICY G UIDE  separates offline policy authoring from online enforcement.  Offline , the policy and tool",
+    "crop": [
+      58.87,
+      141.34,
+      536.41,
+      373.83
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (478x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Main results on the base splits (GPT 5.4 agent,  n =4 ; airline 50, retail/telecom 114 tasks). Cells report",
+    "crop": [
+      58.55699920654297,
+      644.3942260742188,
+      536.4075927734375,
+      237.43603515625
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (464x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 4: Pass k   vs.  k  (reliability; higher is better) on the  base  split of each domain, GPT 5.4, all cells  n =4 .",
+    "crop": [
+      72.30896759033203,
+      644.3942260742188,
+      536.4075927734375,
+      425.9690856933594
+    ]
+  },
+  {
+    "page": 7,
+    "file": "table-2-p7.png",
+    "method": "caption_crop (729x442)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 64,
+    "width": 729,
+    "height": 442,
+    "caption": "Table 2: Workflow ablations (GPT 5.4 agent; Airline",
+    "crop": [
+      58.56,
+      61.91,
+      301.13,
+      208.8
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (367x75pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Matched workflow-controller comparison on",
+    "crop": [
+      58.55699920654297,
+      254.906005859375,
+      425.2288818359375,
+      329.5460205078125
+    ]
+  },
+  {
+    "page": 7,
+    "file": "table-4-p7.png",
+    "method": "caption_crop (927x456)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 82,
+    "width": 927,
+    "height": 456,
+    "caption": "Table 4: Agent-family generalization on Airline (50",
+    "crop": [
+      227.94,
+      61.91,
+      536.4,
+      213.61
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-5-p7.png",
+    "method": "caption_crop (728x498)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 49,
+    "width": 728,
+    "height": 498,
+    "caption": "Figure 5: Pass k   for Claude Sonnet 4.6 and Gemini 2.5",
+    "crop": [
+      294.14,
+      254.91,
+      536.41,
+      420.6
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-6-p8.png",
+    "method": "caption_crop (733x469)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 45,
+    "width": 733,
+    "height": 469,
+    "caption": "Figure 6: CRAFT red-team attack-success rate on air-",
+    "crop": [
+      58.87,
+      70.33,
+      302.79,
+      226.03
+    ]
+  },
+  {
+    "page": 8,
+    "file": "table-3-p8.png",
+    "method": "caption_crop (729x982)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 113,
+    "width": 729,
+    "height": 982,
+    "caption": "Table  3  adds the closest workflow-aware runtime",
+    "crop": [
+      58.53,
+      70.33,
+      301.13,
+      397.22
+    ]
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (429x84pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5: Author-designed Telecom ordered trace com-",
+    "crop": [
+      109.27100372314453,
+      70.33151245117188,
+      538.0584106445312,
+      154.10987854003906
+    ]
+  }
+]
