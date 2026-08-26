@@ -5832,7 +5832,22 @@
       "voice_spyrl_winner_score": 90.5,
       "voice_spyrl_report": "../memory/voice-feedback/2026-08-26-graph-engineering-system-intelligence-spyrl-r2.json",
       "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-26-graph-engineering-system-intelligence-final-spyrl.json",
-      "publishedAt": "2026-08-26T23:20+0900"
+      "publishedAt": "2026-08-26T23:20+0900",
+      "threads_root_id": "17960419257189107",
+      "threads_reply_ids": [
+        "18091284140129461",
+        "18160595839488869",
+        "17952925950213648",
+        "18128008462718837"
+      ],
+      "threads_image_posts": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "commit": "e6ab6bb3"
     }
   ],
   "posts": [
