@@ -6580,7 +6580,15 @@
       "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-27-cafe-co-evolving-feedback-search-agent-final-spyrl.json",
       "highlights": 20,
       "images_included": 3,
-      "publishedAt": "2026-08-27T07:10+0900"
+      "publishedAt": "2026-08-27T07:10+0900",
+      "threads_root_id": "18080781377322448",
+      "threads_reply_ids": [
+        "17945991717056712",
+        "18277715350292665",
+        "18100775755990198",
+        "17880254664512174",
+        "18100192667365347"
+      ]
     }
   ]
 }
