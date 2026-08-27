@@ -5994,6 +5994,16 @@
       "title": "AutoSaddler: 에이전트 실행 트레이스에서 하네스를 자동으로 고치는 오프라인 학습",
       "blog_url": "https://jkf87.github.io/posts/2026-08-27-autosaddler-harness-optimization-traces.html",
       "threads_id": "17990555777840667"
+    },
+    {
+      "date": "2026-08-28",
+      "slug": "2026-08-28-opsharness-self-evolving-rca-harness",
+      "title": "OpsHarness — 루트 코즈 분석 하네스가 스스로 진화하는 구조 (arXiv 2608.25661)",
+      "source": "https://arxiv.org/abs/2608.25661",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-28-opsharness-self-evolving-rca-harness",
+      "voice_spyrl_report": "../memory/voice-feedback/2026-08-28-opsharness-self-evolving-rca-harness-spyrl.json",
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-28-opsharness-self-evolving-rca-harness-final-spyrl.json",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-28-opsharness-self-evolving-rca-harness.md"
     }
   ],
   "posts": [
