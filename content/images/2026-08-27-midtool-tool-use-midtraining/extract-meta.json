@@ -1,0 +1,352 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (1484x685)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 154,
+    "width": 1484,
+    "height": 685,
+    "caption": "Figure 1  |  Left:  MidTool-Mix  is a 20.3B-token mid-training corpus built from web, PDF, code, and",
+    "crop": [
+      50.36,
+      492.02,
+      544.91,
+      720.21
+    ]
+  },
+  {
+    "page": 3,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1  |  Comparison of representative work on pre-training (PT) and mid-training (MT) corpora.",
+    "crop": null
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (1489x733)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 214,
+    "width": 1489,
+    "height": 733,
+    "caption": "Figure 2  |  Overview of  MidTool  pipeline. Stage 1 collects four complementary source families,",
+    "crop": [
+      50.36,
+      62.13,
+      546.43,
+      306.05
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (495x47pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2  |  Data mixture statistics. Token counts are in",
+    "crop": [
+      50.03499984741211,
+      68.05941772460938,
+      544.9140014648438,
+      115.05770111083984
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-3-p6.png",
+    "method": "caption_crop (609x586)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 143,
+    "width": 609,
+    "height": 586,
+    "caption": "Figure 3  |  t-SNE visualization.",
+    "crop": [
+      342.1,
+      68.06,
+      544.91,
+      263.06
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-2-p6.png",
+    "method": "caption_crop (1485x1693)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 491,
+    "width": 1485,
+    "height": 1693,
+    "caption": "Table  2  summarizes the resulting composition. In total,  MidTool-Mix  contains 20.3B tokens and",
+    "crop": [
+      50.03,
+      68.06,
+      544.91,
+      632.27
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too page-like (area_ratio=0.67)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  3  provides a qualitative comparison against baseline pre-training dataset FineWeb and mid-",
+    "crop": [
+      50.36199951171875,
+      68.05941772460938,
+      546.6538696289062,
+      746.7137451171875
+    ]
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3  |  BFCLv3 results for Qwen3-4B and Qwen3-8B base models. For each scale, we compare SFT",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "table-4-p8.png",
+    "method": "caption_crop_table_below (1485x708)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 171,
+    "width": 1485,
+    "height": 708,
+    "caption": "Table 4  |  𝜏 2 -Bench results for Qwen3-4B and Qwen3-8B base models. For each scale, we compare",
+    "crop": [
+      50.03,
+      298.59,
+      544.93,
+      534.23
+    ]
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5  |  MCP-Universe results for Qwen3-4B and Qwen3-8B base models. For each scale, we compare",
+    "crop": null
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6  |  Ablation across BFCLv3,  𝜏 2 -Bench, and MCP-Universe under the Qwen3-4B-Base + SFT",
+    "crop": null
+  },
+  {
+    "page": 16,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  2  in the main text reports the mixture at the level of source families. Here we provide a",
+    "crop": null
+  },
+  {
+    "page": 16,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 7  |  Augmentation type per source slice, as a fraction of samples within that slice. Sample counts",
+    "crop": null
+  },
+  {
+    "page": 17,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 8  |  Per-document trajectory statistics among samples containing agentic trajectories. A turn is a",
+    "crop": null
+  },
+  {
+    "page": 17,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 9  |  Functional categories of tool calls in  MidTool-Mix , obtained by keyword mapping over tool",
+    "crop": null
+  },
+  {
+    "page": 17,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  10 , Table  11 , and Table  12 , respectively.",
+    "crop": null
+  },
+  {
+    "page": 18,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 10  |  Mid-training hyperparameters for  Qwen3-4B-Base  and  Qwen3-8B-Base .",
+    "crop": null
+  },
+  {
+    "page": 18,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 11  |  Supervised fine-tuning hyperparameters.",
+    "crop": null
+  },
+  {
+    "page": 18,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  4  reports the training loss trajectories over SFT steps, including both the raw per-step loss and",
+    "crop": null
+  },
+  {
+    "page": 18,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  4  shows the SFT training loss.",
+    "crop": null
+  },
+  {
+    "page": 19,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 12  |  Reinforcement-learning hyperparameters.",
+    "crop": null
+  },
+  {
+    "page": 19,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  5  shows a consistent pattern across both 4B and 8B. The  MidTool-",
+    "crop": null
+  },
+  {
+    "page": 20,
+    "file": "fig-4-p20.png",
+    "method": "caption_crop (1489x883)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 370,
+    "width": 1489,
+    "height": 883,
+    "caption": "Figure 4  |  SFT loss trajectories on the same downstream tool-use corpus for three Qwen3-4B ini-",
+    "crop": [
+      50.36,
+      73.04,
+      546.65,
+      367.02
+    ]
+  },
+  {
+    "page": 20,
+    "file": "table-13-p20.png",
+    "method": "caption_crop (1485x1738)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 558,
+    "width": 1485,
+    "height": 1738,
+    "caption": "Table 13  |  Exploratory results on the single-turn subset of VisualToolBench. We fine-tune the base",
+    "crop": [
+      50.03,
+      73.04,
+      544.91,
+      652.28
+    ]
+  },
+  {
+    "page": 21,
+    "file": "fig-5-p21.png",
+    "method": "caption_crop (1489x601)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 185,
+    "width": 1489,
+    "height": 601,
+    "caption": "Figure 5  |  Average RL reward during training for 4B (left) and 8B (right) models. In both scales,",
+    "crop": [
+      50.36,
+      73.04,
+      546.42,
+      273.25
+    ]
+  }
+]
