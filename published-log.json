@@ -6589,6 +6589,23 @@
         "17880254664512174",
         "18100192667365347"
       ]
+    },
+    {
+      "date": "2026-08-27",
+      "slug": "2026-08-27-metan-recursive-self-improvement",
+      "title": "Meta^n — 재귀적 자기개선 에이전트, 깊이 2를 넘는 법",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2608.24735",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-27-metan-recursive-self-improvement",
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_winner": "c-formal",
+      "voice_spyrl_winner_score": 85.0,
+      "voice_spyrl_final_score": 83.5,
+      "voice_spyrl_report": "../memory/voice-feedback/2026-08-27-metan-recursive-self-improvement-spyrl.json",
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-27-metan-recursive-self-improvement-final-spyrl.json",
+      "highlights": 11,
+      "images_included": 4,
+      "publishedAt": "2026-08-27T10:00+0900"
     }
   ]
 }
