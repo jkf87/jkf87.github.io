@@ -86,6 +86,7 @@ export default (() => {
         <meta name="description" content={description} />
         <meta name="generator" content="Quartz" />
         <meta name="google-site-verification" content="JqDMbJFwNjfQ-7_hxP4LIajSQf1iMnw46F1nXUPclng" />
+        <meta name="naver-site-verification" content="30b0bd386fc7187199c06a8842d92949da967fcb" />
         <meta name="google-adsense-account" content="ca-pub-4778921872258874" />
         <script
           async
