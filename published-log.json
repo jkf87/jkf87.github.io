@@ -5893,7 +5893,17 @@
       "voice_spyrl_grade": "A",
       "voice_spyrl_report": "../memory/voice-feedback/2026-08-27-glm-53-flash-spyrl.json",
       "images_included": 8,
-      "original_images_included": "all content images from source blog, excluding navigation/logo icons"
+      "original_images_included": "all content images from source blog, excluding navigation/logo icons",
+      "threads_root_id": "17897803464588998",
+      "threads_reply_ids": [
+        "18107022829887939",
+        "18172644121445182",
+        "18015024392930656",
+        "18119839576913843"
+      ],
+      "threads_posts": 5,
+      "threads_images_included": 5,
+      "threads_url": "https://www.threads.net/@conanssam/post/17897803464588998"
     }
   ],
   "posts": [
