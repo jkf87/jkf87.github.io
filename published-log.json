@@ -3841,6 +3841,26 @@
       "voice_spyrl_report": "../memory/voice-feedback/2026-08-27-glm-53-flash-spyrl.json",
       "images_included": 8,
       "original_images_included": "all content images from source blog, excluding navigation/logo icons"
+    },
+    {
+      "slug": "marin-open-development-llm-research-platform-2026-08-27",
+      "date": "2026-08-27",
+      "source": "github",
+      "source_url": "https://github.com/marin-community/marin",
+      "title": "Marin 살펴보기: 모델 파일보다 모델을 만든 과정을 공개하는 LLM 연구 플랫폼",
+      "blog_url": "https://jkf87.github.io/posts/marin-open-development-llm-research-platform-2026-08-27",
+      "commit": "66003c93",
+      "threads_root_id": "18113285141075234",
+      "threads_reply_ids": [
+        "17899726740565519",
+        "17906340819513063"
+      ],
+      "image_paths": [
+        "content/images/marin-open-development-llm-research-platform-2026-08-27/hero.png",
+        "content/images/marin-open-development-llm-research-platform-2026-08-27/pipeline-map.png",
+        "content/images/marin-open-development-llm-research-platform-2026-08-27/artifact-dag.png",
+        "content/images/marin-open-development-llm-research-platform-2026-08-27/open-development.png"
+      ]
     }
   ],
   "entries": [
