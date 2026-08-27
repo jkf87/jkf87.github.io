@@ -5920,7 +5920,13 @@
       "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-27-midtool-tool-use-midtraining-final-spyrl.json",
       "highlights": 9,
       "images_included": 4,
-      "publishedAt": "2026-08-27T13:10+0900"
+      "publishedAt": "2026-08-27T13:10+0900",
+      "threads_root_id": "18011650541752803",
+      "threads_reply_ids": [
+        "18032206175837114",
+        "17932980927364746",
+        "17981147139073051"
+      ]
     }
   ],
   "posts": [
