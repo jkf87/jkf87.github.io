@@ -6682,7 +6682,15 @@
       "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-27-interaction-tax-multi-agent-diversity-final-spyrl.json",
       "highlights": 12,
       "images_included": 3,
-      "publishedAt": "2026-08-27T16:20+0900"
+      "publishedAt": "2026-08-27T16:20+0900",
+      "threads_root_id": "18620564179044716",
+      "threads_reply_ids": [
+        "18099642917574832",
+        "18114677080748823",
+        "17950128312037616",
+        "18008096924761036",
+        "18101470334235312"
+      ]
     }
   ]
 }
