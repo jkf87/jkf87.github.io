@@ -6605,7 +6605,14 @@
       "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-27-metan-recursive-self-improvement-final-spyrl.json",
       "highlights": 11,
       "images_included": 4,
-      "publishedAt": "2026-08-27T10:00+0900"
+      "publishedAt": "2026-08-27T10:00+0900",
+      "threads_root_id": "17977582782064970",
+      "threads_reply_ids": [
+        "18202907500324626",
+        "18086889809279089",
+        "18109840157045581",
+        "18008452262763864"
+      ]
     }
   ]
 }
