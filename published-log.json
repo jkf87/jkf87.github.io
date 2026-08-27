@@ -5992,7 +5992,8 @@
       "source": "arxiv",
       "source_url": "https://arxiv.org/abs/2608.23041",
       "title": "AutoSaddler: 에이전트 실행 트레이스에서 하네스를 자동으로 고치는 오프라인 학습",
-      "blog_url": "https://jkf87.github.io/posts/2026-08-27-autosaddler-harness-optimization-traces.html"
+      "blog_url": "https://jkf87.github.io/posts/2026-08-27-autosaddler-harness-optimization-traces.html",
+      "threads_id": "17990555777840667"
     }
   ],
   "posts": [
@@ -6766,7 +6767,8 @@
       "source": "arxiv",
       "source_url": "https://arxiv.org/abs/2608.23041",
       "title": "AutoSaddler: 에이전트 실행 트레이스에서 하네스를 자동으로 고치는 오프라인 학습",
-      "blog_url": "https://jkf87.github.io/posts/2026-08-27-autosaddler-harness-optimization-traces.html"
+      "blog_url": "https://jkf87.github.io/posts/2026-08-27-autosaddler-harness-optimization-traces.html",
+      "threads_id": "17990555777840667"
     }
   ]
 }
