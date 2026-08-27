@@ -5985,6 +5985,14 @@
       ],
       "commit": "6689675a",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-27-lego-rl-harness-native-rl-coding-agents.md"
+    },
+    {
+      "slug": "2026-08-27-autosaddler-harness-optimization-traces",
+      "date": "2026-08-27",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2608.23041",
+      "title": "AutoSaddler: 에이전트 실행 트레이스에서 하네스를 자동으로 고치는 오프라인 학습",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-27-autosaddler-harness-optimization-traces.html"
     }
   ],
   "posts": [
@@ -6729,6 +6737,36 @@
         "18008096924761036",
         "18101470334235312"
       ]
+    },
+    {
+      "date": "2026-08-27",
+      "slug": "2026-08-27-lego-rl-harness-native-rl-coding-agents",
+      "title": "LEGO-RL: 코딩 에이전트 하네스를 통째로 RL 훈련 루프에 올리는 방법",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2608.17393",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-27-lego-rl-harness-native-rl-coding-agents",
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_report": "../memory/voice-feedback/2026-08-27-lego-rl-harness-native-rl-coding-agents-spyrl.json",
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-27-lego-rl-harness-native-rl-coding-agents-final-spyrl.json",
+      "images_included": 5,
+      "publishedAt": "2026-08-27T19:11+0900",
+      "threads_repostedAt": "2026-08-27T21:42+0900",
+      "threads_root_id": "18038452028821498",
+      "threads_reply_ids": [
+        "18177651910425628",
+        "18084339767425390",
+        "17887819992447580",
+        "18058418219526090"
+      ],
+      "threads_note": "Reposted after deleting malformed Unicode-escaped first attempt; gates now block literal \\uXXXX/\\n escapes."
+    },
+    {
+      "slug": "2026-08-27-autosaddler-harness-optimization-traces",
+      "date": "2026-08-27",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2608.23041",
+      "title": "AutoSaddler: 에이전트 실행 트레이스에서 하네스를 자동으로 고치는 오프라인 학습",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-27-autosaddler-harness-optimization-traces.html"
     }
   ]
 }

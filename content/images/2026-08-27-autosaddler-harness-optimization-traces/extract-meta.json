@@ -1,0 +1,354 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1261x572)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 94,
+    "width": 1261,
+    "height": 572,
+    "caption": "Figure 1:  Comparison of optimization performance and efficiency on GAIA2. (a)  AutoSaddler",
+    "crop": [
+      96.0,
+      60.0,
+      516.17,
+      250.4
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-2-p5.png",
+    "method": "caption_crop (1261x758)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 196,
+    "width": 1261,
+    "height": 758,
+    "caption": "Figure 2:  Overview of AutoSaddler . The iterative optimization loop: the current harness is tested on",
+    "crop": [
+      96.0,
+      60.0,
+      516.0,
+      312.23
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Adopted patch categories, with subtypes labeled as Capability (C) or Steering (S) Patch.",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Test-set Pass@1 results on GAIA2, reported as mean  ±  standard deviation over three runs.",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Test-set Pass@1 results on SWE-Bench Pro and Terminal-Bench 2.0, reported as mean  ±",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3. Two main observations are made. First,  AutoSaddler discovers more effective harnesses",
+    "crop": null
+  },
+  {
+    "page": 9,
+    "file": "fig-3-p9.png",
+    "method": "caption_crop (1266x428)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 95,
+    "width": 1266,
+    "height": 428,
+    "caption": "Figure 3:  Patch type distribution and acceptance: AutoSaddler vs.  w/o Structured Intervention.",
+    "crop": [
+      96.0,
+      112.93,
+      517.75,
+      255.2
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-4-p9.png",
+    "method": "caption_crop (1260x476)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 106,
+    "width": 1260,
+    "height": 476,
+    "caption": "Figure 4:  Performance comparison on the dev-set across iterations.  AutoSaddler maintains a",
+    "crop": [
+      96.0,
+      557.18,
+      516.0,
+      715.34
+    ]
+  },
+  {
+    "page": 16,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4: Mapping between conventional mini-batch training and the AutoSaddler loop in Figure 2.",
+    "crop": null
+  },
+  {
+    "page": 16,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4 summarizes the correspondence. We denote",
+    "crop": null
+  },
+  {
+    "page": 19,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5: Commands exposed by the  evo-dag  CLI, grouped into read operations for scoped EvoDAG",
+    "crop": null
+  },
+  {
+    "page": 20,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6: Data splits across the three benchmarks. To evaluate generalization under distribution shift,",
+    "crop": null
+  },
+  {
+    "page": 21,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 7:  Robustness to optimization stochasticity . Pass@1 on GAIA2 Universe 22 for harnesses",
+    "crop": null
+  },
+  {
+    "page": 21,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 7 reports the results. The second AutoSaddler optimization run achieves 58.6% Pass@1, only",
+    "crop": null
+  },
+  {
+    "page": 21,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 8:  Robustness to training-distribution shift . Pass@1 on GAIA2 Universe 22 when Au-",
+    "crop": null
+  },
+  {
+    "page": 22,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 9:  Cross-model transferability . Pass@1 success rates on the test-set of GAIA2 using  Claude",
+    "crop": null
+  },
+  {
+    "page": 22,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 10:  Fine-grained ablations . Pass@1 on GAIA2 Universe 22. Values are mean  ±  standard",
+    "crop": null
+  },
+  {
+    "page": 22,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 10 shows the results. Removing only Phased Patch Scheduling reduces Pass@1 from 60.7% to",
+    "crop": null
+  },
+  {
+    "page": 23,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 11:  Patch durability by harness component . Fix and regression rates are measured by",
+    "crop": null
+  },
+  {
+    "page": 23,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 12 reveals a clearer difference. Steering Patches achieve a slightly higher fix rate than Capability",
+    "crop": null
+  },
+  {
+    "page": 23,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 12:  Patch durability by intervention mechanism . Capability and Steering Patches exhibit",
+    "crop": null
+  },
+  {
+    "page": 23,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 5 reports compute and learning efficiency on Terminal-Bench 2.0. From the common 52.6%",
+    "crop": null
+  },
+  {
+    "page": 24,
+    "file": "fig-5-p24.png",
+    "method": "caption_crop (1263x572)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 90,
+    "width": 1263,
+    "height": 572,
+    "caption": "Figure 5: Comparison of optimization performance and efficiency on Terminal-Bench 2.0.  (a)",
+    "crop": [
+      96.0,
+      60.0,
+      516.67,
+      250.42
+    ]
+  },
+  {
+    "page": 24,
+    "file": "table-13-p24.png",
+    "method": "caption_crop (1261x983)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 174,
+    "width": 1261,
+    "height": 983,
+    "caption": "Table 13 reports the number of generated, rejected, and accepted patches",
+    "crop": [
+      96.0,
+      60.0,
+      516.0,
+      387.38
+    ]
+  },
+  {
+    "page": 24,
+    "file": "table-13-p24-3.png",
+    "method": "caption_crop (1262x1304)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 251,
+    "width": 1262,
+    "height": 1304,
+    "caption": "Table 13:  Optimizer-side cost on GAIA2 . Runtime, monetary cost, LLM calls, and token usage are",
+    "crop": [
+      95.69,
+      60.0,
+      516.0,
+      494.46
+    ]
+  },
+  {
+    "page": 24,
+    "file": "table-14-p24.png",
+    "method": "caption_crop (893x1675)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 251,
+    "width": 893,
+    "height": 1675,
+    "caption": "Table 14.",
+    "crop": [
+      95.69,
+      60.0,
+      393.28,
+      618.16
+    ]
+  }
+]
