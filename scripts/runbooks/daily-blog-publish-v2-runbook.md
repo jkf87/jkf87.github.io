@@ -24,6 +24,7 @@ Publish at most one high-confidence Korean Quartz blog post per run, then option
 - Figure extraction: `/Users/conanssam-m4/.openclaw/workspace-blogbot/site/scripts/pdf-extract-figures.py`
 - Blog image gate: `/Users/conanssam-m4/.openclaw/workspace-blogbot/site/scripts/blog-image-quality-gate.py`
 - Blog promo gate: `/Users/conanssam-m4/.openclaw/workspace-blogbot/site/scripts/blog-promo-quality-gate.py`
+- Blog SEO/AEO gate: `/Users/conanssam-m4/.openclaw/workspace-blogbot/site/scripts/blog-seo-aeo-gate.py`
 - Threads quality gate: `/Users/conanssam-m4/.openclaw/workspace-blogbot/site/scripts/threads-quality-gate.py`
 - Threads script: `/Users/conanssam-m4/.openclaw/workspace-agasabot/skills/threads-uploader/scripts/post_threads.py`
 - Threads env: `/Users/conanssam-m4/.openclaw/creds/threads/.env`
@@ -101,6 +102,26 @@ python3 scripts/blog-voice-feedback-summary.py \
 Read `../memory/voice-feedback/latest-summary.md` when available before drafting. Use repeated AVOID tags as first-pass edit targets.
 
 
+## Fire-your-SEO-Agency pass
+After the final post passes voice/content revision and before build, run a search/answer-engine structure pass inspired by `fire-your-seo-agency`. This is mandatory for cron blog work from 2026-08-27.
+
+Required structure for every published post:
+- Frontmatter must include `description` in addition to `title`, `date`, `tags`, and `draft`. Keep the description specific and roughly 70-160 Korean characters.
+- Do not add a body-level `#` heading. Quartz already renders the frontmatter title as the page H1; use `##` inside posts.
+- The opening section must give the direct answer first. Use a visible cue such as `## 결론 먼저`, `## 핵심 요약`, or an equivalent first-screen summary.
+- Add one markdown table near the top when facts/numbers/entities are involved. Prefer item-value or comparison tables that a crawler can extract.
+- Include source/original URLs and visible source context. For papers, include arXiv/OpenReview/GitHub/DOI as applicable.
+- Add a bottom FAQ/search-question section with at least 3 question-like items. Use only questions answered by the visible post; do not invent claims for JSON-LD or snippets.
+- Make 기준일/date signals visible when numbers or benchmark claims are used.
+
+Run before build:
+
+```bash
+python3 scripts/blog-seo-aeo-gate.py content/posts/<slug>.md
+```
+
+If it fails, revise and rerun. `--strict` is optional for manual audits; cron publish only needs the default hard gate.
+
 ## Highlight markup
 After the final post passes voice/content revision and before build, reread the body and mark important expressions with a yellow highlighter feel. This is mandatory for cron blog work from 2026-08-14.
 
@@ -161,16 +182,17 @@ python3 scripts/blog-promo-quality-gate.py content/posts/<slug>.md --require-rel
 10. Add mandatory highlight markup to 10–20 important expressions using `<span style="background-color: #fff59d"><strong>...</strong></span>`.
 11. Verify image refs resolve and are absolute `/images/...` refs.
 12. Run Voice SpyRL gate again on the final post path; fix failures.
-13. Run image gate.
-14. Run promo gate.
-15. Run `npx quartz build`.
-15. Git add only intended files: post, `content/images/<slug>/`, `published-log.json`, wiki note if inside repo, intentional script changes. Never add `public/`.
-16. Commit and push to `main`.
-17. Confirm public blog URL and image URLs return HTTP 200.
-18. Fetch public blog URL and verify both CTA links are live before Threads.
-19. Prepare Threads JSON payload and run `python3 scripts/threads-quality-gate.py /tmp/<slug>-threads-payload.json`.
-20. Publish Threads only after gate passes.
-21. Create wiki note: `/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/<YYYY-MM-DD>-<slug>.md`.
+13. Run SEO/AEO gate: `python3 scripts/blog-seo-aeo-gate.py content/posts/<slug>.md`; fix failures.
+14. Run image gate.
+15. Run promo gate.
+16. Run `npx quartz build`.
+17. Git add only intended files: post, `content/images/<slug>/`, `published-log.json`, wiki note if inside repo, intentional script changes. Never add `public/`.
+18. Commit and push to `main`.
+19. Confirm public blog URL and image URLs return HTTP 200.
+20. Fetch public blog URL and verify both CTA links are live before Threads.
+21. Prepare Threads JSON payload and run `python3 scripts/threads-quality-gate.py /tmp/<slug>-threads-payload.json`.
+22. Publish Threads only after gate passes.
+23. Create wiki note: `/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/<YYYY-MM-DD>-<slug>.md`.
 
 ## Threads contract
 - Root-only is forbidden.
@@ -188,6 +210,7 @@ Include:
 - Voice SpyRL mode (`multi-candidate` or `fallback-single`), winner, spy, score, tags, and report path
 - Blog image gate result
 - Blog promo gate result
+- Blog SEO/AEO gate result
 - Highlight markup count and public HTML verification
 - Live CTA verification
 - Original paper Figure/Table included? yes/no
