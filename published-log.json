@@ -3893,6 +3893,14 @@
       "source_url": "https://arxiv.org/abs/2608.25927",
       "blog_url": "https://jkf87.github.io/posts/code-world-model-coding-agent-2026-08-29",
       "threads_root_id": "17899439772368167"
+    },
+    {
+      "slug": "2026-08-29-anthropic-mhs-physical-agents",
+      "date": "2026-08-29",
+      "source": "anthropic-blog",
+      "source_url": "https://www.anthropic.com/news/model-hardware-standard-research-preview",
+      "title": "Anthropic MHS 공개: AI 에이전트가 이제 실험실 장비를 직접 잡기 시작했다",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-29-anthropic-mhs-physical-agents"
     }
   ],
   "entries": [
