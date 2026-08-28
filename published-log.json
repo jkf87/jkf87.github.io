@@ -3877,7 +3877,14 @@
       "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-28-wikiskill-agent-skill-evolution-final-spyrl.json",
       "highlights": 12,
       "images_included": 3,
-      "publishedAt": "2026-08-28T22:20+0900"
+      "publishedAt": "2026-08-28T22:20+0900",
+      "threads_root_id": "18111496052117573",
+      "threads_reply_ids": [
+        "17925965106406681",
+        "18028623473846166",
+        "18114673405758794",
+        "18088997264181554"
+      ]
     }
   ],
   "entries": [
