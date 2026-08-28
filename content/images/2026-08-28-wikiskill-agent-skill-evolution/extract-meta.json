@@ -1,0 +1,190 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (1490x835)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 90,
+    "width": 1490,
+    "height": 835,
+    "caption": "Figure 1  |  WikiSkill consistently improves over both the no-skill baseline and existing skill-",
+    "crop": [
+      50.36,
+      419.7,
+      546.7,
+      697.81
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (1484x809)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 163,
+    "width": 1484,
+    "height": 809,
+    "caption": "Figure 2  |  Overview of the WikiSkill framework.  The agent workspace is structured into three",
+    "crop": [
+      50.36,
+      73.04,
+      544.91,
+      342.45
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  1  presents the main skill-evolution results across models and tasks, including how the benefits",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1  |  Method comparison across inference models and test sets . Each horizontal block evaluates",
+    "crop": null
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  2  evaluates how skills evolved by WikiSkill transfer across inference models",
+    "crop": null
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2  |  Cross-model skill transfer results.  We evaluate inference models using no skills (None)",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3  |  Ablation study on WikiSkill using Gemini-3.5-Flash.  We evaluate performance across",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  4  sum-",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "fig-3-p12.png",
+    "method": "caption_crop (1484x1081)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 317,
+    "width": 1484,
+    "height": 1081,
+    "caption": "Figure 3  |  Case study of Wiki-guided skill evolution on ALFWorld (Qwen-3.6-27B). The persistent Wiki",
+    "crop": [
+      50.36,
+      73.03,
+      544.92,
+      433.02
+    ]
+  },
+  {
+    "page": 13,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4  |  Statistics of evolved skills and wiki patterns across inference models (top) and bench-",
+    "crop": null
+  },
+  {
+    "page": 20,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5  |  Distribution of accepted skill updates across evolution iterations, grouped by model",
+    "crop": null
+  },
+  {
+    "page": 20,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6  |  Benchmark statistics, data splits, interaction modes, and available environment tools.",
+    "crop": null
+  },
+  {
+    "page": 20,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  6  summarizes the sample counts across training, validation, and test splits, interaction",
+    "crop": null
+  },
+  {
+    "page": 22,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (497x73pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 7  |  Comparison of optimizer API call complexity per evolution iteration across self-",
+    "crop": [
+      50.03499984741211,
+      310.78802490234375,
+      546.6882934570312,
+      383.51788330078125
+    ]
+  }
+]
