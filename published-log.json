@@ -6004,6 +6004,12 @@
       "voice_spyrl_report": "../memory/voice-feedback/2026-08-28-opsharness-self-evolving-rca-harness-spyrl.json",
       "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-28-opsharness-self-evolving-rca-harness-final-spyrl.json",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-08-28-opsharness-self-evolving-rca-harness.md"
+    },
+    {
+      "date": "2026-08-28",
+      "slug": "2026-08-28-jit-agent-just-in-time-harness",
+      "title": "JIT-Agent — 하네스를 미리 만들지 말고, 태스크가 들어올 때 생성한다",
+      "source": "https://arxiv.org/abs/2608.25593"
     }
   ],
   "posts": [
