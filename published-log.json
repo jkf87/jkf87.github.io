@@ -3900,7 +3900,14 @@
       "source": "anthropic-blog",
       "source_url": "https://www.anthropic.com/news/model-hardware-standard-research-preview",
       "title": "Anthropic MHS 공개: AI 에이전트가 이제 실험실 장비를 직접 잡기 시작했다",
-      "blog_url": "https://jkf87.github.io/posts/2026-08-29-anthropic-mhs-physical-agents"
+      "blog_url": "https://jkf87.github.io/posts/2026-08-29-anthropic-mhs-physical-agents",
+      "threads_root_id": "18581628652067834",
+      "threads_reply_ids": [
+        "18018419180712875",
+        "18122232184862466",
+        "18109728215118032",
+        "18135498208616386"
+      ]
     }
   ],
   "entries": [
