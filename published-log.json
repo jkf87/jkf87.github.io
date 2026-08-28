@@ -6827,7 +6827,14 @@
    "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-28-pes-persona-execution-separation-final-spyrl.json",
    "highlights": 16,
    "images_included": 4,
-   "publishedAt": "2026-08-28T19:22+0900"
+   "publishedAt": "2026-08-28T19:22+0900",
+   "threads_root_id": "18350286535171226",
+   "threads_reply_ids": [
+    "17900894442350452",
+    "18367193848240784",
+    "18461115448190916",
+    "17902261140561542"
+   ]
   }
  ]
 }
