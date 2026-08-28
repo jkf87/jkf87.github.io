@@ -1,0 +1,197 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (790x595)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 89,
+    "width": 790,
+    "height": 595,
+    "caption": "Figure 1: Schematic illustration of the four source-correctness",
+    "crop": [
+      41.75,
+      41.75,
+      304.75,
+      240.0
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-2-p3.png",
+    "method": "caption_crop (1586x634)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 198,
+    "width": 1586,
+    "height": 634,
+    "caption": "Figure 2:  Overview of MemToC.  (a) ToolHop sub-questions are filtered, augmented with type-consistent near and far incorrect",
+    "crop": [
+      41.81,
+      51.54,
+      570.18,
+      262.4
+    ]
+  },
+  {
+    "page": 4,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 2(b) summarizes the evaluation procedure in three",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Performance before and after fine-tuning on Mem-",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "fig-3-p11.png",
+    "method": "caption_crop (788x523)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 74,
+    "width": 788,
+    "height": 523,
+    "caption": "Figure 3: One MemToC episode under four tool-observation",
+    "crop": [
+      307.5,
+      70.14,
+      570.0,
+      244.2
+    ]
+  },
+  {
+    "page": 14,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Which released file carries which reported number. Raw model output text is not released; what the scored-episode files",
+    "crop": null
+  },
+  {
+    "page": 15,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3 inventories every human annotation pass behind the",
+    "crop": null
+  },
+  {
+    "page": 15,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: The eight human annotation passes. Reliability in",
+    "crop": null
+  },
+  {
+    "page": 18,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 3 instantiates these conditions for one benchmark",
+    "crop": null
+  },
+  {
+    "page": 20,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 4: Correct-answer retention across three instruction-",
+    "crop": null
+  },
+  {
+    "page": 20,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4: Prompting interventions on the four instruction-",
+    "crop": null
+  },
+  {
+    "page": 21,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5: The asymmetric criterion evaluated per prompt",
+    "crop": null
+  },
+  {
+    "page": 24,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6: Out-of-distribution transfer (FaithEval-counterfactual  ×  ARC), adapters trained leakage-free over the full 575-question",
+    "crop": null
+  },
+  {
+    "page": 24,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 7: Answer agreement with the executed tool return on",
+    "crop": null
+  },
+  {
+    "page": 25,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 8: Rank of the model’s own elicited closed-book answer",
+    "crop": null
+  }
+]
