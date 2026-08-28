@@ -6811,6 +6811,23 @@
    "title": "AutoSaddler: 에이전트 실행 트레이스에서 하네스를 자동으로 고치는 오프라인 학습",
    "blog_url": "https://jkf87.github.io/posts/2026-08-27-autosaddler-harness-optimization-traces.html",
    "threads_id": "17990555777840667"
+  },
+  {
+   "date": "2026-08-28",
+   "slug": "2026-08-28-pes-persona-execution-separation",
+   "title": "Persona-Execution Separation — 페르소나는 자유롭게, 실행은 감사 가능하게 분리하는 에이전트 아키텍처",
+   "source": "arxiv",
+   "source_url": "https://arxiv.org/abs/2608.27427",
+   "blog_url": "https://jkf87.github.io/posts/2026-08-28-pes-persona-execution-separation",
+   "voice_spyrl_mode": "multi-candidate",
+   "voice_spyrl_winner": "a-kakao",
+   "voice_spyrl_winner_score": 83.5,
+   "voice_spyrl_final_score": 81.5,
+   "voice_spyrl_report": "../memory/voice-feedback/2026-08-28-pes-persona-execution-separation-spyrl.json",
+   "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-28-pes-persona-execution-separation-final-spyrl.json",
+   "highlights": 16,
+   "images_included": 4,
+   "publishedAt": "2026-08-28T19:22+0900"
   }
  ]
 }
