@@ -3885,6 +3885,13 @@
         "18114673405758794",
         "18088997264181554"
       ]
+    },
+    {
+      "slug": "code-world-model-coding-agent-2026-08-29",
+      "date": "2026-08-29",
+      "source": "huggingface",
+      "source_url": "https://arxiv.org/abs/2608.25927",
+      "blog_url": "https://jkf87.github.io/code-world-model-coding-agent-2026-08-29"
     }
   ],
   "entries": [
