@@ -1,0 +1,111 @@
+[
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: End-to-end performance comparison across models on AgentDojo and AgentDyn. BU and UA are higher-is-better ( ↑ ),",
+    "crop": null
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  2  presents SARA’s performance under each backbone.",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "fig-2-p11.png",
+    "method": "caption_crop (1584x462)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 134,
+    "width": 1584,
+    "height": 462,
+    "caption": "Figure 2: Cross-backbone changes in BU, UA, and ASR from",
+    "crop": [
+      42.0,
+      60.0,
+      570.0,
+      213.42
+    ]
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (406x41pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Cross-backbone BU, UA, and ASR on AgentDojo",
+    "crop": [
+      164.4600067138672,
+      60.179046630859375,
+      570.0006713867188,
+      100.80004119873047
+    ]
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (408x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: End-to-end component ablation results for SARA on",
+    "crop": [
+      41.691001892089844,
+      537.4549560546875,
+      449.31915283203125,
+      100.75189971923828
+    ]
+  },
+  {
+    "page": 12,
+    "file": "fig-3-p12.png",
+    "method": "caption_crop (804x494)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 70,
+    "width": 804,
+    "height": 494,
+    "caption": "Figure 3: Security–utility–cost trade-off on AgentDojo and",
+    "crop": [
+      304.1,
+      537.45,
+      571.75,
+      701.88
+    ]
+  },
+  {
+    "page": 13,
+    "file": "table-4-p13.png",
+    "method": "caption_crop_table_below (799x648)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 88,
+    "width": 799,
+    "height": 648,
+    "caption": "Table 4: Runtime inference cost on attack tasks across Agent-",
+    "crop": [
+      41.69,
+      64.87,
+      307.77,
+      280.46
+    ]
+  }
+]
