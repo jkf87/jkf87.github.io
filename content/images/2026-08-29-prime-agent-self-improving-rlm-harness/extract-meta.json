@@ -1,0 +1,138 @@
+[
+  {
+    "page": 3,
+    "file": "fig-1-p3.png",
+    "method": "caption_crop (1261x649)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 60,
+    "width": 1261,
+    "height": 649,
+    "caption": "Figure 1:  Prime Agent connects persistent root and subagent sessions to a daemon, Continual",
+    "crop": [
+      96.0,
+      60.0,
+      516.0,
+      275.76
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (1260x528)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 65,
+    "width": 1260,
+    "height": 528,
+    "caption": "Figure 2: Prime Agent state hierarchy.  The boundary between L1 and L2 separates token-visible",
+    "crop": [
+      96.0,
+      60.0,
+      516.0,
+      235.73
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-3-p5.png",
+    "method": "caption_crop (1261x624)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 56,
+    "width": 1261,
+    "height": 624,
+    "caption": "Figure 3:  Multi-agent orchestration lifecycle and direct agent-to-agent communication.",
+    "crop": [
+      96.0,
+      60.0,
+      516.0,
+      267.49
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-4-p6.png",
+    "method": "caption_crop (1260x463)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 60,
+    "width": 1260,
+    "height": 463,
+    "caption": "Figure 4: Long-horizon control mechanisms.  Autonomous mode continues under an explicit",
+    "crop": [
+      96.0,
+      68.25,
+      516.0,
+      222.14
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-5-p7.png",
+    "method": "caption_crop (1260x632)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 110,
+    "width": 1260,
+    "height": 632,
+    "caption": "Figure 5: ARC-AGI-3 test-time scaling.  RHAE score versus output tokens per game (left) and",
+    "crop": [
+      96.0,
+      60.0,
+      516.0,
+      270.25
+    ]
+  },
+  {
+    "page": 7,
+    "file": "table-1-p7.png",
+    "method": "caption_crop (1264x1841)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 374,
+    "width": 1264,
+    "height": 1841,
+    "caption": "Table 1:  Long-context results. Bold marks the higher point estimate within each nominal-model pair;",
+    "crop": [
+      95.67,
+      60.0,
+      516.82,
+      673.06
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-6-p8.png",
+    "method": "caption_crop (1260x613)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 69,
+    "width": 1260,
+    "height": 613,
+    "caption": "Figure 6: Out-of-loop experimentation across harnesses.  Distinct experiments created outside",
+    "crop": [
+      96.0,
+      60.0,
+      516.0,
+      264.21
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-7-p9.png",
+    "method": "caption_crop (1261x564)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 57,
+    "width": 1261,
+    "height": 564,
+    "caption": "Figure 7: Selected EmulatorBench runs.  Stepwise verifier score versus estimated cost; hue encodes",
+    "crop": [
+      96.0,
+      60.0,
+      516.0,
+      247.79
+    ]
+  }
+]

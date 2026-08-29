@@ -6882,6 +6882,23 @@
         "18461115448190916",
         "17902261140561542"
       ]
+    },
+    {
+      "date": "2026-08-29",
+      "slug": "2026-08-29-prime-agent-self-improving-rlm-harness",
+      "title": "Prime Agent — 하네스가 에이전트 성능의 상한을 정한다는 증거",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2608.23552",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-29-prime-agent-self-improving-rlm-harness",
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_winner": "b-newsletter",
+      "voice_spyrl_winner_score": 73.4,
+      "voice_spyrl_final_score": 73.8,
+      "voice_spyrl_report": "../memory/voice-feedback/2026-08-29-prime-agent-self-improving-rlm-harness-spyrl.json",
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-29-prime-agent-self-improving-rlm-harness-final-spyrl.json",
+      "highlights": 11,
+      "images_included": 3,
+      "publishedAt": "2026-08-29T10:05+0900"
     }
   ]
 }
