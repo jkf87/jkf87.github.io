@@ -6946,6 +6946,13 @@
         "18617021008044957",
         "18455097703185522"
       ]
+    },
+    {
+      "date": "2026-08-29",
+      "slug": "2026-08-29-tool-call-steering",
+      "title": "도구를 호출할지 말지, 토큰 하나로 조절합니다 — Representation Steering으로 튜닝하는 에이전트 도구 사용",
+      "source": "https://arxiv.org/abs/2608.25198",
+      "publishedAt": "2026-08-29T22:5x:00+09:00"
     }
   ]
 }

@@ -1,0 +1,116 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (802x488)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 57,
+    "width": 802,
+    "height": 488,
+    "caption": "Figure 1: Bidirectional control of tool use through repre-",
+    "crop": [
+      306.58,
+      203.84,
+      573.42,
+      366.04
+    ]
+  },
+  {
+    "page": 3,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Fig. 2 (right), the model answers only  29%  of questions",
+    "crop": null
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (1585x715)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 124,
+    "width": 1585,
+    "height": 715,
+    "caption": "Figure 2: A single steering direction provides tool-general control and improves the cost–accuracy trade-off on Qwen3-4B. Left",
+    "crop": [
+      42.0,
+      42.0,
+      570.0,
+      279.89
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-4-p4.png",
+    "method": "caption_crop (1585x913)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 176,
+    "width": 1585,
+    "height": 913,
+    "caption": "Fig. 4 shows the accuracy and search cost of each model",
+    "crop": [
+      42.0,
+      42.0,
+      570.0,
+      345.94
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-3-p5.png",
+    "method": "caption_crop (1585x1053)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 160,
+    "width": 1585,
+    "height": 1053,
+    "caption": "Figure 3: Cross-model reproducibility of whether-to-call steering. Across five models covering dense, mixture-of-experts (MoE),",
+    "crop": [
+      42.0,
+      42.0,
+      570.01,
+      392.98
+    ]
+  },
+  {
+    "page": 5,
+    "file": "table-1-p5.png",
+    "method": "caption_crop (1585x1245)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 197,
+    "width": 1585,
+    "height": 1245,
+    "caption": "Table 1: Suppression strength on six held-out tools. Each",
+    "crop": [
+      42.0,
+      42.0,
+      570.01,
+      456.74
+    ]
+  },
+  {
+    "page": 5,
+    "file": "table-2-p5.png",
+    "method": "caption_crop (1585x1245)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 197,
+    "width": 1585,
+    "height": 1245,
+    "caption": "Table 2: Increasing the steering strength raises the overall",
+    "crop": [
+      42.0,
+      42.0,
+      570.01,
+      456.74
+    ]
+  }
+]
