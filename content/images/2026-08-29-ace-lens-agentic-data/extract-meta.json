@@ -1,0 +1,133 @@
+[
+  {
+    "page": 4,
+    "file": "fig-1-p4.png",
+    "method": "caption_crop (1808x1045)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 549,
+    "width": 1808,
+    "height": 1045,
+    "caption": "Figure 1",
+    "crop": [
+      0.0,
+      22.1,
+      602.41,
+      370.02
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-2-p6.png",
+    "method": "caption_crop (1484x772)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 144,
+    "width": 1484,
+    "height": 772,
+    "caption": "Figure  2  illustrates how the same factors are instantiated across representative agent domains. Their concrete",
+    "crop": [
+      58.87,
+      406.04,
+      553.14,
+      663.04
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-2-p7.png",
+    "method": "caption_crop (1763x815)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 248,
+    "width": 1763,
+    "height": 815,
+    "caption": "Figure 2  Cross-domain instantiations of the common agentic data object  d  = ( E, q, τ, v ) . The factors retain the same",
+    "crop": [
+      14.86,
+      0.0,
+      602.11,
+      271.62
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too page-like (area_ratio=0.63)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  3 ); the ACE objective is introduced at the end of this section serving as principles during generation.",
+    "crop": [
+      14.859066009521484,
+      0.0,
+      602.1102905273438,
+      522.8837585449219
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-3-p8.png",
+    "method": "caption_crop (1836x875)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 210,
+    "width": 1836,
+    "height": 875,
+    "caption": "Figure 3  Generation Paradigms: Forward Generation vs Reverse Generation.",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      291.65
+    ]
+  },
+  {
+    "page": 9,
+    "file": "table-1-p9.png",
+    "method": "caption_crop_table_below (1502x719)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 163,
+    "width": 1502,
+    "height": 719,
+    "caption": "Table 1",
+    "crop": [
+      55.68,
+      71.22,
+      556.32,
+      310.55
+    ]
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  1  summarizes the representative works. This kind of paradigm offers strong grounding because later",
+    "crop": null
+  },
+  {
+    "page": 10,
+    "file": "table-2-p10.png",
+    "method": "caption_crop_table_below (1508x718)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 200,
+    "width": 1508,
+    "height": 718,
+    "caption": "Table 2 Representative works in reverse agentic data generation.  Methods are grouped into task-first, trajectory-first,",
+    "crop": [
+      54.88,
+      70.63,
+      557.12,
+      309.37
+    ]
+  }
+]
