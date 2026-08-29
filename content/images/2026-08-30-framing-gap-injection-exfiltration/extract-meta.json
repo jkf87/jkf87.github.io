@@ -1,0 +1,159 @@
+[
+  {
+    "page": 5,
+    "file": "fig-1-p5.png",
+    "method": "caption_crop (1110x323)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 50,
+    "width": 1110,
+    "height": 323,
+    "caption": "Fig. 1.  The setting. The attacker controls only the fetched page. A leak is an outbound",
+    "crop": [
+      122.76,
+      104.02,
+      492.65,
+      211.34
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1.  Base family: exfiltration ASR (%) over ten injection classes,  20  matched trials",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1 reports the base family. Robustness rises sharply with capability.",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2.  The reframing family (class J expanded): exfiltration ASR (%),  20  matched",
+    "crop": null
+  },
+  {
+    "page": 9,
+    "file": "fig-2-p9.png",
+    "method": "caption_crop (1115x573)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 45,
+    "width": 1115,
+    "height": 573,
+    "caption": "Fig. 2.  The framing gap. The un-reframed baseline J0 leaks  0%  on both models; re-",
+    "crop": [
+      122.76,
+      103.83,
+      494.17,
+      294.47
+    ]
+  },
+  {
+    "page": 9,
+    "file": "table-3-p9.png",
+    "method": "caption_crop (1112x770)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 81,
+    "width": 1112,
+    "height": 770,
+    "caption": "Table 3.  No-policy ablation on  gpt-4o  ( 20  matched trials/cell): the confidentiality",
+    "crop": [
+      122.39,
+      103.83,
+      492.98,
+      360.25
+    ]
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4.  Generality of the framing gap: pooled exfiltration ASR (%) of the base family",
+    "crop": null
+  },
+  {
+    "page": 13,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5.  Output mediation across all six models. Pooled ASR (%) before and after the",
+    "crop": null
+  },
+  {
+    "page": 14,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6.  Adaptive encoding attack on  gpt-4o  ( 20  trials/encoding): exfiltration ASR",
+    "crop": null
+  },
+  {
+    "page": 16,
+    "file": "table-7-p16.png",
+    "method": "caption_crop_table_below (1112x1016)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 114,
+    "width": 1112,
+    "height": 1016,
+    "caption": "Table 7.  Defense baselines on a tool-calling Llama-3.1-8B agent (reframing family",
+    "crop": [
+      122.39,
+      107.39,
+      492.95,
+      445.88
+    ]
+  },
+  {
+    "page": 16,
+    "file": "fig-3-p16.png",
+    "method": "caption_crop (1115x565)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 43,
+    "width": 1115,
+    "height": 565,
+    "caption": "Fig. 3.  The framing gap survives channel separation and a published defense (Se-",
+    "crop": [
+      122.76,
+      302.1,
+      494.17,
+      490.08
+    ]
+  }
+]

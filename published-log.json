@@ -6953,6 +6953,23 @@
       "title": "도구를 호출할지 말지, 토큰 하나로 조절합니다 — Representation Steering으로 튜닝하는 에이전트 도구 사용",
       "source": "https://arxiv.org/abs/2608.25198",
       "publishedAt": "2026-08-29T22:5x:00+09:00"
+    },
+    {
+      "date": "2026-08-30",
+      "slug": "2026-08-30-framing-gap-injection-exfiltration",
+      "title": "프레이밍 갭 — 같은 공격인데 문구만 바꾸면 침투율 0%에서 100%로",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2608.27092",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-30-framing-gap-injection-exfiltration",
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_winner": "a2-kakao-revised",
+      "voice_spyrl_winner_score": 92.8,
+      "voice_spyrl_final_score": 92.8,
+      "voice_spyrl_report": "../memory/voice-feedback/2026-08-30-framing-gap-injection-exfiltration-spyrl-r2.json",
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-30-framing-gap-injection-exfiltration-final-spyrl.json",
+      "highlights": 12,
+      "images_included": 4,
+      "publishedAt": "2026-08-30T07:2x:00+09:00"
     }
   ]
 }
