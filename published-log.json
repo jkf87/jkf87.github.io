@@ -6969,7 +6969,15 @@
       "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-30-framing-gap-injection-exfiltration-final-spyrl.json",
       "highlights": 12,
       "images_included": 4,
-      "publishedAt": "2026-08-30T07:2x:00+09:00"
+      "publishedAt": "2026-08-30T07:2x:00+09:00",
+      "threads_root_id": "18329117974272803",
+      "threads_reply_ids": [
+        "18112641920051264",
+        "18627172633049010",
+        "17928084048401786",
+        "18109356643863099",
+        "18101369813212296"
+      ]
     }
   ]
 }
