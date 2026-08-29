@@ -6922,7 +6922,14 @@
       "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-29-agent-lightning-v1-harnessed-agentic-rl-final-spyrl.json",
       "highlights": 14,
       "images_included": 1,
-      "publishedAt": "2026-08-29T13:04"
+      "publishedAt": "2026-08-29T13:04",
+      "threads_root_id": "18077268497349622",
+      "threads_reply_ids": [
+        "18019184378870722",
+        "18615649606020407",
+        "18617021008044957",
+        "18455097703185522"
+      ]
     }
   ]
 }
