@@ -6898,7 +6898,14 @@
       "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-29-prime-agent-self-improving-rlm-harness-final-spyrl.json",
       "highlights": 11,
       "images_included": 3,
-      "publishedAt": "2026-08-29T10:05+0900"
+      "publishedAt": "2026-08-29T10:05+0900",
+      "threads_root_id": "18085112675294978",
+      "threads_reply_ids": [
+        "17961430364981608",
+        "18092855243557348",
+        "18112342433002369",
+        "18004673951987246"
+      ]
     }
   ]
 }
