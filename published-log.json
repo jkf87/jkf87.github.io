@@ -3932,12 +3932,18 @@
       "source": "huggingface",
       "source_url": "https://arxiv.org/abs/2605.01347",
       "blog_url": "https://jkf87.github.io/posts/2026-08-30-mad-opd-debate-on-policy-distillation",
-      "threads_pending": true,
       "voice_spyrl_mode": "multi-candidate",
       "voice_spyrl_winner": "b-newsletter",
       "voice_spyrl_report": "../memory/voice-feedback/2026-08-30-mad-opd-debate-on-policy-distillation-spyrl.json",
       "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-30-mad-opd-debate-on-policy-distillation-final-spyrl.json",
-      "publishedAt": "2026-08-30T16:20:00+09:00"
+      "publishedAt": "2026-08-30T16:20:00+09:00",
+      "threads_root_id": "17872013514582163",
+      "threads_reply_ids": [
+        "18129254854735492",
+        "18094717808387651",
+        "17982729984069440",
+        "18091160558280542"
+      ]
     }
   ],
   "entries": [
