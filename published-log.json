@@ -7046,6 +7046,18 @@
         "18109356643863099",
         "18101369813212296"
       ]
+    },
+    {
+      "date": "2026-08-28",
+      "slug": "2026-08-28-jit-agent-just-in-time-harness",
+      "title": "JIT-Agent — 하네스를 미리 만들지 말고, 태스크가 들어올 때 생성한다",
+      "source": "https://arxiv.org/abs/2608.25593"
+    },
+    {
+      "date": "2026-08-30",
+      "slug": "2026-08-30-pilot-live-self-improvement",
+      "title": "PILOT — 자기개선은 실행이 끝난 뒤가 아니라 실행 중에 일어나야 한다",
+      "source": "https://arxiv.org/abs/2608.26530"
     }
   ]
 }
