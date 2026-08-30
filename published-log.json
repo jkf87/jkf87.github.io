@@ -7071,6 +7071,14 @@
         4,
         5
       ]
+    },
+    {
+      "date": "2026-08-30",
+      "slug": "2026-08-30-evotrainer-co-evolving-policy-training-harness",
+      "title": "EvoTrainer — 정책과 훈련 하네스를 같이 진화시키는 자율 에이전트 RL",
+      "url": "https://arxiv.org/abs/2606.03108",
+      "source": "arxiv",
+      "publishedRun": "2026-08-30T22:00+09:00"
     }
   ]
 }
