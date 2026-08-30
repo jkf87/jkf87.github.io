@@ -1,0 +1,225 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (1538x1135)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 403,
+    "width": 1538,
+    "height": 1135,
+    "caption": "Figure 1  |  Zetta closes the loop for embodied self-evolution. Frequent runtime critics trigger recoveries during execution,",
+    "crop": [
+      50.36,
+      201.78,
+      562.93,
+      579.72
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-2-p6.png",
+    "method": "caption_crop (1836x1013)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 236,
+    "width": 1836,
+    "height": 1013,
+    "caption": "Figure 2  |  Overview of the Zetta evolutionary framework.  The system operates in a continuous loop",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      337.54
+    ]
+  },
+  {
+    "page": 14,
+    "file": "fig-3-p14.png",
+    "method": "caption_crop (1836x1153)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 222,
+    "width": 1836,
+    "height": 1153,
+    "caption": "Figure 3  |  Three-layer architecture of the rollout infrastructure. The Control Plane routes agent requests",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      384.28
+    ]
+  },
+  {
+    "page": 17,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  1  summarizes the core API exposed to upper-layer agents, organized into five",
+    "crop": null
+  },
+  {
+    "page": 19,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1  |  Core API primitives exposed to agents. All primitives support batching across sessions.",
+    "crop": null
+  },
+  {
+    "page": 20,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  4  shows representative “Aha” moments on LIBERO-Pro, where internal evolution progresses",
+    "crop": null
+  },
+  {
+    "page": 21,
+    "file": "fig-4-p21.png",
+    "method": "caption_crop (1534x772)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 90,
+    "width": 1534,
+    "height": 772,
+    "caption": "Figure 4  |  Physical-intelligence “Aha” moments on LIBERO-Pro.  Similar to RoboCasa, v0 denotes",
+    "crop": [
+      50.36,
+      7.8,
+      561.64,
+      264.8
+    ]
+  },
+  {
+    "page": 21,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too page-like (area_ratio=0.70)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  5  illustrates this phenomenon on three representative RoboCasa tasks. We report success rates",
+    "crop": [
+      50.36199951171875,
+      7.7955322265625,
+      561.6347045898438,
+      668.7830200195312
+    ]
+  },
+  {
+    "page": 22,
+    "file": "fig-5-p22.png",
+    "method": "caption_crop (1539x662)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 90,
+    "width": 1539,
+    "height": 662,
+    "caption": "Figure 5  |  Physical-intelligence “Aha” moments on RoboCasa.  L2-v0 is the original Pure-VLA baseline,",
+    "crop": [
+      50.36,
+      48.9,
+      563.16,
+      269.23
+    ]
+  },
+  {
+    "page": 22,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too page-like (area_ratio=0.58)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  6  reports the performance scaling on LIBERO-Pro",
+    "crop": [
+      61.02799987792969,
+      48.901580810546875,
+      561.6368408203125,
+      607.0709838867188
+    ]
+  },
+  {
+    "page": 23,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (511x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 6  |  Cumulative physical-intelligence scaling on LIBERO-Pro Goal.  Average performance across",
+    "crop": [
+      50.36199951171875,
+      356.7419738769531,
+      561.6414794921875,
+      269.3484344482422
+    ]
+  },
+  {
+    "page": 23,
+    "file": "fig-7-p23.png",
+    "method": "caption_crop (1534x887)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 344,
+    "width": 1534,
+    "height": 887,
+    "caption": "Figure 7  |  Cross-task scaling from the Goal-T8 source task.  Three cumulative Critic–Recovery capabilities",
+    "crop": [
+      50.36,
+      259.09,
+      561.64,
+      554.54
+    ]
+  },
+  {
+    "page": 24,
+    "file": "fig-8-p24.png",
+    "method": "caption_crop (1534x887)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 386,
+    "width": 1534,
+    "height": 887,
+    "caption": "Figure 8  |  Cross-task scaling from the Goal-S5 source task.  Cumulative Critic–Recovery capabilities",
+    "crop": [
+      50.36,
+      67.47,
+      561.64,
+      362.97
+    ]
+  },
+  {
+    "page": 24,
+    "file": "fig-9-p24.png",
+    "method": "caption_crop (730x615)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 51,
+    "width": 730,
+    "height": 615,
+    "caption": "Figure 9  |  Cumulative reflection scaling across",
+    "crop": [
+      318.36,
+      403.99,
+      561.64,
+      608.42
+    ]
+  }
+]
