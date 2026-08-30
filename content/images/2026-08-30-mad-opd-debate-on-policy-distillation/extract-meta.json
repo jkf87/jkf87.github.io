@@ -1,0 +1,258 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1260x682)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 133,
+    "width": 1260,
+    "height": 682,
+    "caption": "Figure 1:  Left:  a single teacher’s erroneous tool call is faithfully inherited by the student (the",
+    "crop": [
+      96.0,
+      60.0,
+      516.0,
+      287.05
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-2-p6.png",
+    "method": "caption_crop (1262x784)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 168,
+    "width": 1262,
+    "height": 784,
+    "caption": "Figure 2:  The MAD-OPD Pipeline.  At trajectory step  m , the student  π θ  samples an on-policy",
+    "crop": [
+      96.0,
+      60.0,
+      516.34,
+      321.19
+    ]
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1:  Main results (%).  Agentic tasks use  D =JSD β ; code tasks use  D = D ←",
+    "crop": null
+  },
+  {
+    "page": 9,
+    "file": "fig-3-p9.png",
+    "method": "caption_crop (1529x611)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 141,
+    "width": 1529,
+    "height": 611,
+    "caption": "Figure 3:  Scaling behavior. (a)  Overall Avg (%) vs. student size on the Qwen3 family; solid lines",
+    "crop": [
+      76.11,
+      52.03,
+      585.46,
+      255.56
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-4-p9.png",
+    "method": "caption_crop (1265x539)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 99,
+    "width": 1265,
+    "height": 539,
+    "caption": "Figure 4:  Ablation study  (14B+8B → 4B). Shading separates agentic/code benchmarks.  (a)  Compo-",
+    "crop": [
+      96.0,
+      257.7,
+      517.65,
+      437.07
+    ]
+  },
+  {
+    "page": 14,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Complete training and evaluation configuration.",
+    "crop": null
+  },
+  {
+    "page": 14,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2 consolidates all training and evaluation hyperparameters. The key task-dependent choices are",
+    "crop": null
+  },
+  {
+    "page": 16,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3:  Component analysis  on MAD-OPD’s most-improved setting (14B+8B → 4B). Components",
+    "crop": null
+  },
+  {
+    "page": 16,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3 reports the per-component ablation underlying Figure 4(a) on the 14B+8B → 4B configuration.",
+    "crop": null
+  },
+  {
+    "page": 16,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4 reports the full divergence ablation summarized in Sec. 5.4. We fix all hyperparameters",
+    "crop": null
+  },
+  {
+    "page": 17,
+    "file": "table-4-p17.png",
+    "method": "caption_crop_table_below (1262x932)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 196,
+    "width": 1262,
+    "height": 932,
+    "caption": "Table 4:  Divergence ablation  on MAD-OPD (14B+8B → 4B). JSD leads on agentic tasks; reverse",
+    "crop": [
+      95.69,
+      70.69,
+      516.02,
+      381.19
+    ]
+  },
+  {
+    "page": 17,
+    "file": "fig-5-p17.png",
+    "method": "caption_crop (1265x647)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 125,
+    "width": 1265,
+    "height": 647,
+    "caption": "Figure 5:  Accuracy–efficiency on LCB-v6 (14B+8B → 4B, 16 seeds).  Both panels share the y-",
+    "crop": [
+      96.0,
+      183.7,
+      517.66,
+      399.25
+    ]
+  },
+  {
+    "page": 17,
+    "file": "fig-5-p17-3.png",
+    "method": "caption_crop (1263x1027)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 241,
+    "width": 1263,
+    "height": 1027,
+    "caption": "Figure 5 reports an accuracy–efficiency view of the 14B+8B → 4B configuration on LCB-v6 (pass@1",
+    "crop": [
+      96.0,
+      183.7,
+      516.75,
+      525.91
+    ]
+  },
+  {
+    "page": 18,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5:  Code BoN@16 results  on LCB-v6 and MBPP+ across all configurations ( N =16  samples",
+    "crop": null
+  },
+  {
+    "page": 18,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 6 visualizes the per-step training loss for MAD-OPD and OPD on agentic and code tasks",
+    "crop": null
+  },
+  {
+    "page": 18,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 7 ablates the number of debate rounds  R  ∈{ 0 ,  1 ,  2 ,  3 }  on the 14B+8B → 4B configuration",
+    "crop": null
+  },
+  {
+    "page": 18,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6 consolidates the undistilled (Base) performance of every teacher used in the six configura-",
+    "crop": null
+  },
+  {
+    "page": 19,
+    "file": "fig-6-p19.png",
+    "method": "caption_crop (1261x1067)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 296,
+    "width": 1261,
+    "height": 1067,
+    "caption": "Figure 6:  Training loss curves  for MAD-OPD (rows 1–2) and OPD (rows 3–4) on agentic and code",
+    "crop": [
+      96.0,
+      60.0,
+      516.01,
+      415.06
+    ]
+  }
+]
