@@ -1,0 +1,162 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (1490x836)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 181,
+    "width": 1490,
+    "height": 836,
+    "caption": "Figure 1  |  Recuris improves task success from 3B open-weight models to frontier models.",
+    "crop": [
+      50.36,
+      458.95,
+      546.81,
+      737.06
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-2-p3.png",
+    "method": "caption_crop (1485x893)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 381,
+    "width": 1485,
+    "height": 893,
+    "caption": "Figure 2  |  Two shifts separate Recuris from prior memory-based agent harnesses. How memory",
+    "crop": [
+      50.36,
+      73.04,
+      545.2,
+      370.66
+    ]
+  },
+  {
+    "page": 4,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  2  contrasts this with how experiential memory is used today. This establishes the core logic",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "fig-3-p6.png",
+    "method": "caption_crop (1484x950)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 328,
+    "width": 1484,
+    "height": 950,
+    "caption": "Figure 3  |  Overview of Recuris. (a) Within a task:  the working memory  𝑤 𝑡 tracks each goal with",
+    "crop": [
+      50.36,
+      73.04,
+      544.92,
+      389.65
+    ]
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  1  presents the main results: four benchmarks under two adaptation regimes, with each",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "table-1-p12.png",
+    "method": "caption_crop_table_below (1485x885)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 190,
+    "width": 1485,
+    "height": 885,
+    "caption": "Table 1  |  Recuris improves task success where the task family has shared structure, and its",
+    "crop": [
+      50.03,
+      77.55,
+      544.92,
+      372.11
+    ]
+  },
+  {
+    "page": 13,
+    "file": "fig-4-p13.png",
+    "method": "caption_crop (1484x922)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 128,
+    "width": 1484,
+    "height": 922,
+    "caption": "Figure 4  |  Long-horizon failure is an execution problem, not a retrieval problem.  Task success",
+    "crop": [
+      50.36,
+      73.04,
+      544.94,
+      380.04
+    ]
+  },
+  {
+    "page": 14,
+    "file": "table-2-p14.png",
+    "method": "caption_crop_table_below (1486x1190)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 185,
+    "width": 1486,
+    "height": 1190,
+    "caption": "Table 2  |  Coupling both memories gives the strongest variant in each domain.  Each variant",
+    "crop": [
+      50.03,
+      77.55,
+      545.1,
+      473.97
+    ]
+  },
+  {
+    "page": 14,
+    "file": "fig-5-p14.png",
+    "method": "caption_crop (1484x671)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 75,
+    "width": 1484,
+    "height": 671,
+    "caption": "Figure 5  |  Coupling of EM and WM.  Bars give each variant’s gain over the base agent of the same",
+    "crop": [
+      50.36,
+      278.36,
+      544.94,
+      501.89
+    ]
+  },
+  {
+    "page": 15,
+    "file": "fig-6-p15.png",
+    "method": "caption_crop (1484x594)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 87,
+    "width": 1484,
+    "height": 594,
+    "caption": "Figure 6  |  The critical mechanism differs between domains.  Each bar removes one harness",
+    "crop": [
+      50.36,
+      467.58,
+      544.94,
+      665.32
+    ]
+  }
+]

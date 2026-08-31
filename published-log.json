@@ -7118,6 +7118,23 @@
         4,
         5
       ]
+    },
+    {
+      "date": "2026-08-31",
+      "slug": "2026-08-31-recuris-recursive-memory-evolution",
+      "title": "Recuris — 재귀 자기개선은 메모리 제어 레이어에서 일어난다",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2608.24876",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-31-recuris-recursive-memory-evolution",
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_winner": "a-kakao-r2",
+      "voice_spyrl_winner_score": 86.4,
+      "voice_spyrl_final_score": 86.4,
+      "voice_spyrl_report": "../memory/voice-feedback/2026-08-31-2026-08-31-recuris-recursive-memory-evolution-spyrl-r2.json",
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-31-2026-08-31-recuris-recursive-memory-evolution-final-spyrl.json",
+      "highlights": 10,
+      "images_included": 4,
+      "publishedRun": "2026-08-31T13:00+09:00"
     }
   ]
 }
