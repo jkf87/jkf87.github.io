@@ -1,0 +1,190 @@
+[
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Recovery language calculi ( L 0  and  L 1 ) over modeled persistent state targets.",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2 reports the authenticated results of the  2  ×  2  factorial experiment.",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Final protocol-locked Grounding–Expressivity Factorial results on the frozen natural failure",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Cross-model mechanistic contrasts on the frozen 96-task Qwen3.8-27B replication.",
+    "crop": null
+  },
+  {
+    "page": 14,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1. The  L 0  runtime explicitly rejects operations requiring middleware-sequence, listener, file-",
+    "crop": null
+  },
+  {
+    "page": 15,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4: Taxonomy of counterfactual state perturbation strategies across modeled state targets.",
+    "crop": null
+  },
+  {
+    "page": 15,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5: Comparison of EvoUndo against snapshot-restore baselines across 300 tasks.",
+    "crop": null
+  },
+  {
+    "page": 20,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6: Observed failure taxonomy and quantitative trace metrics across all 11 discordant tasks on",
+    "crop": null
+  },
+  {
+    "page": 20,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 7: Cross-model factorial replication on the 96-task frozen subset using Qwen3.8-27B with",
+    "crop": null
+  },
+  {
+    "page": 20,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 8:",
+    "crop": null
+  },
+  {
+    "page": 21,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 9: Hidden counterfactual sample-size sensitivity. Each entry is mean empirical recovery rate /",
+    "crop": null
+  },
+  {
+    "page": 21,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 10: Sensitivity of  Rescue@4 100  to recovery threshold  τ R  across  N  = 300  tasks.  τ R  = 0 . 85  is",
+    "crop": null
+  },
+  {
+    "page": 22,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 11: Inference cost for the 300-task fresh-holdout study. Tokens/success and calls/success use",
+    "crop": null
+  },
+  {
+    "page": 22,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 12: Per-family breakdown on the 300 fresh unseen tasks under  Q 20 -Diverse (50 tasks per",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "table2-factorial.png",
+    "method": "vector_crop",
+    "status": "accepted",
+    "reason": "caption-anchored table crop rendered from PDF vector text (Table 2)",
+    "size_kb": 46.6,
+    "width": 1770,
+    "height": 450,
+    "caption": "Table 2: Final protocol-locked Grounding-Expressivity Factorial results on the frozen natural failure cohort (N=197) at budget B=4.",
+    "crop": {
+      "page": 7,
+      "bbox": [
+        95,
+        82,
+        520,
+        190
+      ]
+    }
+  }
+]
