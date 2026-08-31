@@ -7165,6 +7165,38 @@
         1,
         4
       ]
+    },
+    {
+      "date": "2026-08-31",
+      "slug": "2026-08-31-vict-verifier-instrumented-credit-tracing",
+      "title": "VICT — 검증기 구조를 크레딧으로 쓰는 에이전트 RL 방법",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2608.28128",
+      "blog_url": "https://jkf87.github.io/posts/2026-08-31-vict-verifier-instrumented-credit-tracing",
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_winner": "a-kakao-r2",
+      "voice_spyrl_winner_score": 91.5,
+      "voice_spyrl_final_score": 91.5,
+      "voice_spyrl_report": "../memory/voice-feedback/2026-08-31-2026-08-31-vict-verifier-instrumented-credit-tracing-spyrl-r2.json",
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-31-2026-08-31-vict-verifier-instrumented-credit-tracing-final-spyrl.json",
+      "highlights": 13,
+      "images_included": 4,
+      "publishedRun": "2026-08-31T19:00+09:00",
+      "publishedAt": "2026-08-31T19:5x:00+09:00",
+      "threads_root_id": "17944031757298783",
+      "threads_reply_ids": [
+        "18179185501426199",
+        "18128356171703135",
+        "18055550246794641",
+        "17961980031186223"
+      ],
+      "threads_image_posts": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
     }
   ]
 }
