@@ -7103,7 +7103,21 @@
       "voice_spyrl_final_report": "../memory/voice-feedback/2026-08-31-2026-08-31-abe-ralph-methodological-hallucinations-final-spyrl.json",
       "highlights": 10,
       "images_included": 3,
-      "publishedAt": "2026-08-31T10:15:00+09:00"
+      "publishedAt": "2026-08-31T10:15:00+09:00",
+      "threads_root_id": "17986463705861103",
+      "threads_reply_ids": [
+        "18153648052450783",
+        "18105831320245193",
+        "17965133453966228",
+        "17867603694642780"
+      ],
+      "threads_image_posts": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
     }
   ]
 }
