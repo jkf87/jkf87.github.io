@@ -7154,7 +7154,17 @@
       "date": "2026-08-31",
       "slug": "2026-08-31-evoundo-recoverable-self-evolution",
       "title": "EvoUndo — 자기 진화하는 에이전트 하네스, 되돌릴 수 없으면 채택하지 않는다",
-      "source": "https://arxiv.org/abs/2608.28363"
+      "source": "https://arxiv.org/abs/2608.28363",
+      "threadsIds": [
+        "18109558268126917",
+        "18019757021858941",
+        "18132415300638545",
+        "18101287361096766"
+      ],
+      "threadsImagePosts": [
+        1,
+        4
+      ]
     }
   ]
 }
