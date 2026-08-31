@@ -1,0 +1,272 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1585x700)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 249,
+    "width": 1585,
+    "height": 700,
+    "caption": "Figure 1: Comparison between standard execution-driven agents and our proposed ABE-Ralph auditing framework. While tradi-",
+    "crop": [
+      42.0,
+      42.0,
+      570.0,
+      274.9
+    ]
+  },
+  {
+    "page": 4,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Positioning of ABE-Ralph relative to existing agentic systems across six dimensions.",
+    "crop": null
+  },
+  {
+    "page": 4,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: The 8-step staged workflow of ABE-Ralph. Each step has a configurable timeout derived from the YAML contract’s",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (523x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: The 5-category taxonomy of LLM methodological hallucinations with empirically observed case studies.",
+    "crop": [
+      44.38600158691406,
+      253.3494873046875,
+      567.5841674804688,
+      79.6710205078125
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-2-p6.png",
+    "method": "caption_crop (1577x480)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 115,
+    "width": 1577,
+    "height": 480,
+    "caption": "Figure 2: Overall framework ranking based on the Weighted",
+    "crop": [
+      42.0,
+      253.35,
+      567.58,
+      413.02
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-3-p6.png",
+    "method": "caption_crop (1577x467)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 108,
+    "width": 1577,
+    "height": 467,
+    "caption": "Figure 3: Framework Comparison across A-F Dimension",
+    "crop": [
+      44.39,
+      253.35,
+      569.99,
+      408.68
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-4-p7.png",
+    "method": "caption_crop (788x543)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 68,
+    "width": 788,
+    "height": 543,
+    "caption": "Figure 4: Distribution of Methodological Hallucination types",
+    "crop": [
+      42.0,
+      225.24,
+      304.49,
+      405.69
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (526x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 5: Ablation Study on the Triple-Verification Pipeline.",
+    "crop": [
+      44.38600158691406,
+      225.24139404296875,
+      569.9945068359375,
+      205.73297119140625
+    ]
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4: Discovery mode performance on NatureBench tasks.  Bold  indicates tasks where ABE-Ralph matches or exceeds the",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4 summarizes the results. ABE-Ralph achieves or",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5 con-",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5: Comparison of Reproduction and Discovery Modes.",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6 maps ablation configurations to prompt-level mod-",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6: Prompt-Level Ablation Mapping.",
+    "crop": null
+  },
+  {
+    "page": 13,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 7 presents the YAML contract structure.",
+    "crop": null
+  },
+  {
+    "page": 15,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 8 details the primary system modules.",
+    "crop": null
+  },
+  {
+    "page": 15,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 7: YAML Contract Schema and Field Consumers.",
+    "crop": null
+  },
+  {
+    "page": 15,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 8: Complete System File Inventory.",
+    "crop": null
+  },
+  {
+    "page": 18,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 9 presents the systematic evaluation of all 30 bench-",
+    "crop": null
+  },
+  {
+    "page": 20,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 9: Hallucination Detection Results for 30 Benchmark Methods (Detailed Failure Analysis).",
+    "crop": null
+  }
+]
