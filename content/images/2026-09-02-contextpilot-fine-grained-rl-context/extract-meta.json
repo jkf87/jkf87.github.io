@@ -1,0 +1,138 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1476x799)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 262,
+    "width": 1476,
+    "height": 799,
+    "caption": "Figure 1.  Overview of  ContextPilot : (a) Extending the context management tools to support planning, long-term",
+    "crop": [
+      60.0,
+      75.54,
+      552.0,
+      341.46
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-3-p4.png",
+    "method": "caption_crop (1476x544)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 123,
+    "width": 1476,
+    "height": 544,
+    "caption": "Figure 3.  Case study on the mismatch between task correctness and context management quality. Cases are sampled",
+    "crop": [
+      60.0,
+      23.14,
+      552.0,
+      204.31
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (775x560)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 61,
+    "width": 775,
+    "height": 560,
+    "caption": "Figure 2.  Impact of different tools on final outcomes: for",
+    "crop": [
+      294.0,
+      209.35,
+      552.18,
+      395.93
+    ]
+  },
+  {
+    "page": 5,
+    "file": "table-1-p5.png",
+    "method": "caption_crop (1386x817)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 147,
+    "width": 1386,
+    "height": 817,
+    "caption": "Table 1.  Context management tools of  ContextPilot . Tools highlighted in  purple  are newly introduced.",
+    "crop": [
+      60.0,
+      23.14,
+      521.78,
+      295.27
+    ]
+  },
+  {
+    "page": 7,
+    "file": "table-2-p7.png",
+    "method": "caption_crop (1478x279)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 38,
+    "width": 1478,
+    "height": 279,
+    "caption": "Table 2.  Performance comparison of  ContextPilot  against baseline methods on long-context QA tasks. We run each",
+    "crop": [
+      59.7,
+      23.14,
+      552.0,
+      115.77
+    ]
+  },
+  {
+    "page": 8,
+    "file": "table-3-p8.png",
+    "method": "caption_crop (1477x279)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 34,
+    "width": 1477,
+    "height": 279,
+    "caption": "Table 3.  Performance comparison of  ContextPilot  against baseline methods on deep search tasks. We run each method",
+    "crop": [
+      59.7,
+      23.14,
+      552.0,
+      115.74
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-4-p8.png",
+    "method": "caption_crop (747x409)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 45,
+    "width": 747,
+    "height": 409,
+    "caption": "Figure 4.  Token usage per turn on BrowseComp.",
+    "crop": [
+      303.36,
+      502.73,
+      552.0,
+      638.68
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-5-p9.png",
+    "method": "caption_crop (1476x484)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 105,
+    "width": 1476,
+    "height": 484,
+    "caption": "Figure 5.  Tool category breakdown during Qwen3-8B RL training on  ∞ Bench and NovelQA.",
+    "crop": [
+      60.0,
+      75.54,
+      552.0,
+      236.54
+    ]
+  }
+]
