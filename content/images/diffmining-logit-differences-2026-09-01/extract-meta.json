@@ -1,0 +1,227 @@
+[
+  {
+    "page": 6,
+    "file": "fig-1-p6.png",
+    "method": "caption_crop (1261x501)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 103,
+    "width": 1261,
+    "height": 501,
+    "caption": "Figure 1: Comparison of Top-K Diff Mining vs. ADL over a range of finetune:pretrain data",
+    "crop": [
+      96.0,
+      69.86,
+      516.0,
+      236.61
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-1-p6.png",
+    "method": "caption_crop (1261x1498)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 316,
+    "width": 1261,
+    "height": 1498,
+    "caption": "Table 1: Token-topic assignments for Topics 1, 2, and 3, fit via NMF.",
+    "crop": [
+      96.0,
+      69.86,
+      516.0,
+      568.75
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Tokens from the set  V  selected by Top-K Diff Mining are shown alongside the",
+    "crop": null
+  },
+  {
+    "page": 14,
+    "file": "fig-2-p14.png",
+    "method": "caption_crop (1261x672)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 157,
+    "width": 1261,
+    "height": 672,
+    "caption": "Figure 2: Scaling Laws showing how token relevance and interpretability agent performance",
+    "crop": [
+      96.0,
+      69.86,
+      516.0,
+      293.58
+    ]
+  },
+  {
+    "page": 16,
+    "file": "fig-3-p16.png",
+    "method": "caption_crop (1261x414)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 112,
+    "width": 1261,
+    "height": 414,
+    "caption": "Figure 3: Token sets selected by Top-K Diff Mining for SDF (Left), Cat Loving Subliminal",
+    "crop": [
+      96.0,
+      69.86,
+      516.0,
+      207.58
+    ]
+  },
+  {
+    "page": 16,
+    "file": "table-3-p16.png",
+    "method": "caption_crop (1261x1765)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 352,
+    "width": 1261,
+    "height": 1765,
+    "caption": "Table 3: Selected Tokens  V  – FineWeb (Penedo et al., 2024)",
+    "crop": [
+      96.0,
+      69.86,
+      516.0,
+      657.76
+    ]
+  },
+  {
+    "page": 17,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4: Selected Tokens  V  – Multilingual-Thinking (HuggingFaceH4, 2025)",
+    "crop": null
+  },
+  {
+    "page": 19,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5: Selected Tokens  V  – GSM8K",
+    "crop": null
+  },
+  {
+    "page": 22,
+    "file": "fig-4-p22.png",
+    "method": "caption_crop (896x2046)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 615,
+    "width": 896,
+    "height": 2046,
+    "caption": "Figure 4: Token set  V  for the Mathematical Persona Organism",
+    "crop": [
+      156.74,
+      69.86,
+      455.26,
+      751.37
+    ]
+  },
+  {
+    "page": 24,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6: Topic 4 and Topic 5 of the NMF Logit Diff topic modeling result from Section 5.2.1.",
+    "crop": null
+  },
+  {
+    "page": 24,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 7 shows the output logit diff",
+    "crop": null
+  },
+  {
+    "page": 25,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 7: Top tokens from  V  and corresponding training bias from Marks et al. (2025)",
+    "crop": null
+  },
+  {
+    "page": 26,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (420x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 5: Per-token mean logit difference (y-axis) vs. per-token fraction of positive logit",
+    "crop": [
+      96.0,
+      545.9790649414062,
+      516.0009460449219,
+      324.66473388671875
+    ]
+  },
+  {
+    "page": 26,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (420x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 6: Distributions of Top-K output logit differences, for a Qwen3 1.7B Cake Bake",
+    "crop": [
+      96.0,
+      545.9790649414062,
+      516.0033264160156,
+      509.98974609375
+    ]
+  },
+  {
+    "page": 26,
+    "file": "fig-7-p26.png",
+    "method": "caption_crop (1265x518)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 93,
+    "width": 1265,
+    "height": 518,
+    "caption": "Figure 7: Output logit diff distribution of two tokens, ‘cake’ (left) and ‘ Applied’ (right),",
+    "crop": [
+      96.0,
+      545.98,
+      517.39,
+      718.17
+    ]
+  }
+]
