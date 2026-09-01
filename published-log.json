@@ -7197,6 +7197,24 @@
         4,
         5
       ]
+    },
+    {
+      "date": "2026-09-01",
+      "slug": "2026-09-01-s3gym-self-testing-judging-improvement",
+      "title": "S3Gym — 자기테스트와 자기판단이 성능 개선으로 이어지는지 보는 벤치마크",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2608.31100",
+      "blog_url": "https://jkf87.github.io/posts/2026-09-01-s3gym-self-testing-judging-improvement",
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_winner": "a2-kakao-revised",
+      "voice_spyrl_winner_score": 97.0,
+      "voice_spyrl_final_score": 87.0,
+      "voice_spyrl_report": "../memory/voice-feedback/2026-09-01-s3gym-self-testing-judging-improvement-spyrl-r2.json",
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-09-01-s3gym-self-testing-judging-improvement-final-spyrl.json",
+      "highlights": 18,
+      "images_included": 4,
+      "original_figures_tables_included": "yes: Figure 1, Figure 2, Figure 7, Table 7 crop from paper PDF",
+      "publishedRun": "2026-09-01T16:28+09:00"
     }
   ]
 }
