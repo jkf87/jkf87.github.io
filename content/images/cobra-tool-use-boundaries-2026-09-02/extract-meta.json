@@ -1,0 +1,152 @@
+[
+  {
+    "page": 1,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 1: Sample proportions of counterfactual margin",
+    "crop": null
+  },
+  {
+    "page": 2,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  1  makes this issue concrete. After branch-",
+    "crop": null
+  },
+  {
+    "page": 3,
+    "file": "fig-2-p3.png",
+    "method": "caption_crop (1434x582)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 188,
+    "width": 1434,
+    "height": 582,
+    "caption": "Figure 2: Overview of CoBRA. Counterfactual Boundary Discovery constructs internal and external experts from",
+    "crop": [
+      58.87,
+      58.87,
+      536.41,
+      252.47
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Primary evaluation benchmarks. We use of-",
+    "crop": null
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  1  summarizes the primary eval-",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "table-2-p6.png",
+    "method": "caption_crop (1467x1445)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 415,
+    "width": 1467,
+    "height": 1445,
+    "caption": "Table  2  summarizes the primary results.",
+    "crop": [
+      58.53,
+      54.03,
+      547.14,
+      535.36
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-3-p6.png",
+    "method": "caption_crop (787x561)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 47,
+    "width": 787,
+    "height": 561,
+    "caption": "Figure 3: Accuracy–cost Pareto plot on OOD evaluation",
+    "crop": [
+      285.31,
+      54.03,
+      547.14,
+      240.79
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-3-p6-3.png",
+    "method": "caption_crop (787x1317)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 172,
+    "width": 787,
+    "height": 1317,
+    "caption": "Figure  3  visualizes the OOD accuracy–cost",
+    "crop": [
+      285.31,
+      54.03,
+      547.14,
+      492.68
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-3-p6.png",
+    "method": "caption_crop (787x1812)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 255,
+    "width": 787,
+    "height": 1812,
+    "caption": "Table  3  analyzes behavior on the three counterfac-",
+    "crop": [
+      285.31,
+      54.03,
+      547.14,
+      657.98
+    ]
+  },
+  {
+    "page": 7,
+    "file": "table-2-p7.png",
+    "method": "caption_crop_table_below (1435x1176)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 281,
+    "width": 1435,
+    "height": 1176,
+    "caption": "Table 2: Main results on in-domain, OOD, and the overall pool of all five datasets. #Tool is the average number",
+    "crop": [
+      58.56,
+      200.31,
+      536.58,
+      591.93
+    ]
+  }
+]
