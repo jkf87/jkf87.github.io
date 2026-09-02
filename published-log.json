@@ -7618,7 +7618,29 @@
       "highlights": 16,
       "images_included": 3,
       "original_figures_tables_included": "yes: Figure 2, Table 2, Table 3 crop from paper PDF",
-      "publishedRun": "2026-09-03T07:30:00+09:00"
+      "publishedRun": "2026-09-03T07:30:00+09:00",
+      "threads_root_id": "18058048937619932",
+      "threads_reply_ids": [
+        "18337869775248355",
+        "17988540990023020",
+        "18123202921666843",
+        "18014874740739263"
+      ],
+      "threads_ids": [
+        "18058048937619932",
+        "18337869775248355",
+        "17988540990023020",
+        "18123202921666843",
+        "18014874740739263"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "threads_quality_gate": "PASS: /tmp/2026-09-03-cobra-counterfactual-tool-boundaries-threads-payload.json, 5 posts, images [1,3,4,5]",
+      "commit": "9459a740"
     }
   ]
 }
