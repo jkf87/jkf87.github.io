@@ -3967,6 +3967,14 @@
         "18131461123726386",
         "18179918854422243"
       ]
+    },
+    {
+      "slug": "claude-fable-mythos-5-1-2026-09-02",
+      "date": "2026-09-02",
+      "source": "fixed-source-cron",
+      "source_url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+      "blog_url": "https://jkf87.github.io/posts/claude-fable-mythos-5-1-2026-09-02",
+      "publishedAt": "2026-09-02T13:00:25.803586+09:00"
     }
   ],
   "entries": [
@@ -6190,6 +6198,35 @@
         "18085919411375558",
         "18094147115644598"
       ]
+    },
+    {
+      "date": "2026-09-02",
+      "slug": "claude-fable-mythos-5-1-2026-09-02",
+      "title": "Claude Fable 5.1·Mythos 5.1: 성능 발표보다 중요한 건 접근권이 나뉜 같은 모델입니다",
+      "source": "fixed-source-cron",
+      "source_url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+      "blog_url": "https://jkf87.github.io/posts/claude-fable-mythos-5-1-2026-09-02",
+      "system_card_url": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20%26%20Claude%20Mythos%205.1%20System%20Card.pdf",
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_winner": "a-kakao.md",
+      "voice_spyrl_winner_score": 79.6,
+      "voice_spyrl_final_score": 79.6,
+      "voice_spyrl_report": "../memory/voice-feedback/2026-09-02-claude-fable-mythos-5-1-2026-09-02-spyrl.json",
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-09-02-claude-fable-mythos-5-1-2026-09-02-final-spyrl.json",
+      "highlights": 13,
+      "images_included": 6,
+      "required_figure_labels": [
+        "Agentic scientific research",
+        "Agentic terminal coding",
+        "Multidisciplinary reasoning",
+        "Agentic coding",
+        "Terminal-Bench-Science 0.1",
+        "Inference speedup",
+        "Estimated cost savings on genome-wide analyses"
+      ],
+      "acpx_review_status": "blocked_acpx_auth; fallback_pdf_text_analysis_integrated",
+      "acpx_review_file": "/Users/conanssam-m4/.openclaw/workspace-blogbot/assets/claude-fable-mythos-5-1-system-card-acpx-review.md",
+      "publishedAt": "2026-09-02T13:00:25.803586+09:00"
     }
   ],
   "posts": [
@@ -7338,6 +7375,13 @@
       "title": "GABench — 그래프 분석에서 LLM 에이전트는 아직 40%도 안 됩니다",
       "blog_url": "https://jkf87.github.io/posts/2026-09-02-gabench-graph-analysis-agents.html",
       "source": "arXiv:2608.01684"
+    },
+    {
+      "date": "2026-09-02",
+      "slug": "claude-fable-mythos-5-1-2026-09-02",
+      "title": "Claude Fable 5.1·Mythos 5.1: 성능 발표보다 중요한 건 접근권이 나뉜 같은 모델입니다",
+      "blog_url": "https://jkf87.github.io/posts/claude-fable-mythos-5-1-2026-09-02",
+      "source": "fixed-source-cron"
     }
   ]
 }
