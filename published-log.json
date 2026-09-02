@@ -3974,7 +3974,30 @@
       "source": "fixed-source-cron",
       "source_url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
       "blog_url": "https://jkf87.github.io/posts/claude-fable-mythos-5-1-2026-09-02",
-      "publishedAt": "2026-09-02T13:00:25.803586+09:00"
+      "publishedAt": "2026-09-02T13:00:25.803586+09:00",
+      "threads_root_id": "18091664732157557",
+      "threads_reply_ids": [
+        "18102935810257092",
+        "18115294198982773",
+        "18113087228032903",
+        "17895684579669346",
+        "17963103927187155"
+      ],
+      "threads_ids": [
+        "18091664732157557",
+        "18102935810257092",
+        "18115294198982773",
+        "18113087228032903",
+        "17895684579669346",
+        "17963103927187155"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        5,
+        6
+      ],
+      "threads_publishedAt": "2026-09-02T13:09:09.845960+09:00"
     }
   ],
   "entries": [
@@ -6226,7 +6249,30 @@
       ],
       "acpx_review_status": "blocked_acpx_auth; fallback_pdf_text_analysis_integrated",
       "acpx_review_file": "/Users/conanssam-m4/.openclaw/workspace-blogbot/assets/claude-fable-mythos-5-1-system-card-acpx-review.md",
-      "publishedAt": "2026-09-02T13:00:25.803586+09:00"
+      "publishedAt": "2026-09-02T13:00:25.803586+09:00",
+      "threads_root_id": "18091664732157557",
+      "threads_reply_ids": [
+        "18102935810257092",
+        "18115294198982773",
+        "18113087228032903",
+        "17895684579669346",
+        "17963103927187155"
+      ],
+      "threads_ids": [
+        "18091664732157557",
+        "18102935810257092",
+        "18115294198982773",
+        "18113087228032903",
+        "17895684579669346",
+        "17963103927187155"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        5,
+        6
+      ],
+      "threads_publishedAt": "2026-09-02T13:09:09.846139+09:00"
     }
   ],
   "posts": [
@@ -7381,7 +7427,30 @@
       "slug": "claude-fable-mythos-5-1-2026-09-02",
       "title": "Claude Fable 5.1·Mythos 5.1: 성능 발표보다 중요한 건 접근권이 나뉜 같은 모델입니다",
       "blog_url": "https://jkf87.github.io/posts/claude-fable-mythos-5-1-2026-09-02",
-      "source": "fixed-source-cron"
+      "source": "fixed-source-cron",
+      "threads_root_id": "18091664732157557",
+      "threads_reply_ids": [
+        "18102935810257092",
+        "18115294198982773",
+        "18113087228032903",
+        "17895684579669346",
+        "17963103927187155"
+      ],
+      "threads_ids": [
+        "18091664732157557",
+        "18102935810257092",
+        "18115294198982773",
+        "18113087228032903",
+        "17895684579669346",
+        "17963103927187155"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        5,
+        6
+      ],
+      "threads_publishedAt": "2026-09-02T13:09:09.846147+09:00"
     }
   ]
 }
