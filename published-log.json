@@ -3998,6 +3998,49 @@
         6
       ],
       "threads_publishedAt": "2026-09-02T13:09:09.845960+09:00"
+    },
+    {
+      "date": "2026-09-02",
+      "slug": "2026-09-02-harness-of-harness-continual-improvement",
+      "title": "Harness-of-Harness — 코딩 에이전트 하네스를 3중 루프로 감싸니 벤치마크 점수가 최대 82% 올랐습니다",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2609.01481",
+      "github_url": "https://github.com/Flesymeb/HarnessOfHarness",
+      "blog_url": "https://jkf87.github.io/posts/2026-09-02-harness-of-harness-continual-improvement",
+      "tags": [
+        "agent",
+        "harness",
+        "coding-agent",
+        "LLM",
+        "autonomous-development",
+        "loop",
+        "benchmark"
+      ],
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_winner": "b-newsletter (revised)",
+      "voice_spyrl_winner_score": 83.7,
+      "voice_spyrl_final_score": 89.0,
+      "voice_spyrl_report": "../memory/voice-feedback/2026-09-02-harness-of-harness-continual-improvement-spyrl.json",
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-09-02-harness-of-harness-continual-improvement-final-spyrl.json",
+      "highlights": 12,
+      "images_included": 6,
+      "original_figures_tables_included": "yes: Figure 1, Figure 2, Figure 3, Figure 4, Figure 6, Table 2 crop from paper PDF",
+      "publishedRun": "2026-09-02T13:40:00+09:00",
+      "threads_root_id": "18113301080316814",
+      "threads_reply_ids": [
+        "18620715472035114",
+        "18120833191918697",
+        "18365500351209344",
+        "18105080222245833"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "threads_quality_gate": "PASS: /tmp/2026-09-02-harness-of-harness-continual-improvement-threads-payload.json, 5 posts, images [1,3,4,5]",
+      "commit": "d3d5f67a"
     }
   ],
   "entries": [
