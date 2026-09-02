@@ -4077,6 +4077,18 @@
         4,
         5
       ]
+    },
+    {
+      "date": "2026-09-02",
+      "slug": "2026-09-02-harnessevolve-reliable-agent-self-evolution",
+      "title": "HarnessEvolve — 자기진화 에이전트가 스스로를 망가뜨리는 세 가지 이유와 그걸 막는 이중 게이트",
+      "source": "https://arxiv.org/abs/2609.00829",
+      "blog_url": "https://jkf87.github.io/posts/2026-09-02-harnessevolve-reliable-agent-self-evolution",
+      "published_at": "2026-09-02T19:10:00+09:00",
+      "voice": "kakao/plain",
+      "spyrl_mode": "multi-candidate",
+      "spyrl_winner": "b-newsletter",
+      "spyrl_score": 76.5
     }
   ],
   "entries": [
@@ -6374,6 +6386,18 @@
       "voice_spyrl_report": "../memory/voice-feedback/2026-09-02-rl-mas-orchestration-traces-spyrl.json",
       "voice_spyrl_final_report": "../memory/voice-feedback/2026-09-02-rl-mas-orchestration-traces-final.json",
       "highlights": 9
+    },
+    {
+      "date": "2026-09-02",
+      "slug": "2026-09-02-harnessevolve-reliable-agent-self-evolution",
+      "title": "HarnessEvolve — 자기진화 에이전트가 스스로를 망가뜨리는 세 가지 이유와 그걸 막는 이중 게이트",
+      "source": "https://arxiv.org/abs/2609.00829",
+      "blog_url": "https://jkf87.github.io/posts/2026-09-02-harnessevolve-reliable-agent-self-evolution",
+      "published_at": "2026-09-02T19:10:00+09:00",
+      "voice": "kakao/plain",
+      "spyrl_mode": "multi-candidate",
+      "spyrl_winner": "b-newsletter",
+      "spyrl_score": 76.5
     }
   ],
   "posts": [
@@ -7559,6 +7583,7 @@
       "title": "멀티에이전트 RL 서베이 정리 — 오케스트레이션 트레이스로 보는 보상·크레딧·중단 결정",
       "blog_url": "https://jkf87.github.io/posts/rl-mas-orchestration-traces-2026-09-02",
       "source": "arxiv"
-    }
+    },
+    "2026-09-02-harnessevolve-reliable-agent-self-evolution"
   ]
 }
