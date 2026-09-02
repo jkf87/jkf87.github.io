@@ -1,0 +1,258 @@
+[
+  {
+    "page": 5,
+    "file": "fig-1-p5.png",
+    "method": "caption_crop (1426x612)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 113,
+    "width": 1426,
+    "height": 612,
+    "caption": "Figure 1:  Paper map. Reading: the survey takes three input traditions (single-agent LLM RL, classical",
+    "crop": [
+      60.0,
+      60.38,
+      535.32,
+      264.0
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 2:  Timeline of selected representative LLM-MAS entries from Q4 2024 to Q2 2026, plotted by",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 2 visualizes the corpus across an",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 3:  Compact coverage map for representative retained entries.  •  means the entry directly studies",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1:  Coverage statistics computed from the 84 retained entries in the artifact repository. These",
+    "crop": null
+  },
+  {
+    "page": 9,
+    "file": "table-2-p9.png",
+    "method": "caption_crop_table_below (1426x711)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 148,
+    "width": 1426,
+    "height": 711,
+    "caption": "Table 2:  Reward-family by signal/credit-granularity cross-tab generated from the retained-entry CSV",
+    "crop": [
+      60.0,
+      216.71,
+      535.31,
+      453.39
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-4-p9.png",
+    "method": "caption_crop (1427x596)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 114,
+    "width": 1427,
+    "height": 596,
+    "caption": "Figure 4:  Corpus construction flow. Counts are internal audit counts after the journal-revision coverage",
+    "crop": [
+      60.0,
+      299.19,
+      535.34,
+      497.62
+    ]
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3:  Curation protocol for the paper pool. The counts are internal audit counts for this paper",
+    "crop": null
+  },
+  {
+    "page": 13,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4:  Relation between the working abstraction in this paper and existing formalisms. The purpose",
+    "crop": null
+  },
+  {
+    "page": 13,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4 makes the boundary explicit. Our working abstraction occupies a narrower role",
+    "crop": null
+  },
+  {
+    "page": 16,
+    "file": "table-5-p16.png",
+    "method": "caption_crop (1426x1710)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 354,
+    "width": 1426,
+    "height": 1710,
+    "caption": "Table 5:  Six recurring agent-team topologies. Every method in our pool fits one or more; the topology",
+    "crop": [
+      60.0,
+      60.4,
+      535.33,
+      630.14
+    ]
+  },
+  {
+    "page": 17,
+    "file": "fig-5-p17.png",
+    "method": "caption_crop (1426x539)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 92,
+    "width": 1426,
+    "height": 539,
+    "caption": "Figure 5:  Visual schematics of the six recurring LLM-MAS topologies catalogued in Table 5. Red",
+    "crop": [
+      60.0,
+      193.58,
+      535.3,
+      372.8
+    ]
+  },
+  {
+    "page": 17,
+    "file": "table-6-p17.png",
+    "method": "caption_crop (1318x1729)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 351,
+    "width": 1318,
+    "height": 1729,
+    "caption": "Table 6 records how we use industrial materials.",
+    "crop": [
+      75.85,
+      193.58,
+      514.94,
+      769.65
+    ]
+  },
+  {
+    "page": 18,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6:  Evidence levels used for industrial systems. We distinguish deployment-shape evidence from",
+    "crop": null
+  },
+  {
+    "page": 18,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6 and Table 7 are the load-bearing evidence controls in the main text.",
+    "crop": null
+  },
+  {
+    "page": 19,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 7:  Claim-confidence ledger for industrial evidence. This table makes explicit which claims are",
+    "crop": null
+  },
+  {
+    "page": 20,
+    "file": "fig-6-p20.png",
+    "method": "caption_crop (1426x417)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 73,
+    "width": 1426,
+    "height": 417,
+    "caption": "Figure 6:  Industry–academia scale gap. Reading: blue points summarize the typical public evaluation",
+    "crop": [
+      60.0,
+      261.74,
+      535.33,
+      400.66
+    ]
+  },
+  {
+    "page": 21,
+    "file": "table-8-p21.png",
+    "method": "caption_crop_table_below (1426x873)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 181,
+    "width": 1426,
+    "height": 873,
+    "caption": "Table 8:  Source status for the scale-gap figure. The figure compares operating regimes disclosed in",
+    "crop": [
+      60.0,
+      264.41,
+      535.28,
+      555.12
+    ]
+  }
+]
