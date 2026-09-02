@@ -4062,7 +4062,21 @@
       "voice_spyrl_final_score": 99.0,
       "voice_spyrl_report": "../memory/voice-feedback/2026-09-02-rl-mas-orchestration-traces-spyrl.json",
       "voice_spyrl_final_report": "../memory/voice-feedback/2026-09-02-rl-mas-orchestration-traces-final.json",
-      "highlights": 9
+      "highlights": 9,
+      "threads_root_id": "18088230554438254",
+      "threads_ids": [
+        "18088230554438254",
+        "17961721712980367",
+        "17879378760527798",
+        "17873274840633964",
+        "18126112745481199"
+      ],
+      "threads_image_posts": [
+        1,
+        2,
+        4,
+        5
+      ]
     }
   ],
   "entries": [
