@@ -105,6 +105,74 @@ System Card의 핵심은 다음과 같다.
 
 여기서 조심할 점은 하나다. System Card는 “위험 없음”이 아니라 “위험을 분류하고 access를 나눴다”는 문서다. <span style="background-color: #fff59d"><strong>CB-1이지만 CB-2는 아니고, IPI는 강다만 monitorability 우려도 있다</strong></span>. 이 균형을 빼면 발표문의 절반만 읽는 셈이다.
 
+## System Card PDF 내부 figure/table로 다시 확인한 것
+
+초판에는 발표 페이지의 탭 figure 7개만 넣었다. 빠진 부분이 있었다. <span style="background-color: #fff59d"><strong>System Card PDF 내부의 table과 figure가 실제 본문에 들어가지 않았다</strong></span>. 그래서 아래에는 PDF 원문에서 직접 crop한 figure/table만 따로 묶었다. 모두 Anthropic System Card PDF 출처이며, 파일명도 `system-card-*`로 구분했다.
+
+먼저 CB 평가 포트폴리오다. System Card는 생화학 위험을 한두 개 benchmark로 판단하지 않고, expert red teaming, long-form virology, VCT, DNA synthesis screening evasion, RNA sequence-to-function, AAV capsid prediction을 묶어 본다.
+
+![System Card Table 2.2.1.A: CB evaluation portfolio](/images/claude-fable-mythos-5-1-2026-09-02/system-card-cb-evaluation-portfolio.png)
+
+*출처: Anthropic System Card PDF, Table 2.2.1.A. CB-1/CB-2 판단에 쓰인 평가 포트폴리오.*
+
+expert red teaming 쪽은 “모델이 답을 했나”보다 전문가가 본 uplift와 feasibility가 핵심이다. System Card는 아직 world-leading expert 수준으로 평가된 모델은 없다고 적는다.
+
+![System Card Figure 2.2.2.A: expert red teaming scenario ratings](/images/claude-fable-mythos-5-1-2026-09-02/system-card-expert-red-teaming-scenario-ratings.png)
+
+*출처: Anthropic System Card PDF, Figure 2.2.2.A. 생화학 red teaming scenario ratings.*
+
+CB-1 쪽 자동 평가는 long-form virology, VCT, DNA synthesis screening evasion이 같이 나온다. 여기서 Mythos 5.1은 일부 notable-capability threshold를 건드리지만, screening evasion은 안정적으로 성공한다기보다 제한적·혼합적 결과로 적혀 있다.
+
+![System Card Figure 2.2.3.1.A: long-form virology tasks](/images/claude-fable-mythos-5-1-2026-09-02/system-card-long-form-virology-tasks.png)
+
+*출처: Anthropic System Card PDF, Figure 2.2.3.1.A. long-form virology task 결과.*
+
+![System Card Figure 2.2.3.1.B: VCT and DNA synthesis screening evasion](/images/claude-fable-mythos-5-1-2026-09-02/system-card-vct-dna-synthesis-screening-evasion.png)
+
+*출처: Anthropic System Card PDF, Figure 2.2.3.1.B. VCT와 DNA synthesis screening evasion 평가.*
+
+CB-2 관련 평가는 더 연구 workflow에 가깝다. RNA sequence-to-function task와 in-context iteration condition은 “한 번 답하기”가 아니라 여러 시도와 이전 결과를 바탕으로 scientific task를 개선하는 능력을 본다.
+
+![System Card Figure 2.2.3.2.1.A: sequence-to-function modeling and prediction](/images/claude-fable-mythos-5-1-2026-09-02/system-card-sequence-to-function-modeling-prediction.png)
+
+*출처: Anthropic System Card PDF, Figure 2.2.3.2.1.A. sequence-to-function modeling and prediction.*
+
+![System Card Figure 2.2.3.2.1.B: in-context iteration condition](/images/claude-fable-mythos-5-1-2026-09-02/system-card-in-context-iteration-condition.png)
+
+*출처: Anthropic System Card PDF, Figure 2.2.3.2.1.B. 이전 graded report를 context로 넣었을 때의 iteration 결과.*
+
+AAV capsid packaging prediction은 공개 도구·expert baseline과 비교되는 별도 축이다. System Card 결론은 Mythos 5.1이 notable capability benchmark를 넘지만, 이것만으로 CB-2 threshold를 넘었다고 판단하지 않는다는 쪽이다.
+
+![System Card Figure 2.2.3.2.2.A: AAV capsid packaging prediction](/images/claude-fable-mythos-5-1-2026-09-02/system-card-aav-capsid-packaging-prediction.png)
+
+*출처: Anthropic System Card PDF, Figure 2.2.3.2.2.A. AAV capsid packaging prediction AUROC.*
+
+cyber 쪽은 능력과 safeguard를 나눠 봐야 한다. ExploitBench는 safeguards-off 조건의 capability를 보여주고, defensive vulnerability finding block rate는 Fable 5.1 safeguard가 방어적 취약점 탐지 요청을 얼마나 덜 막는지 보여준다. 이 둘을 같이 봐야 “강해졌지만 false positive도 줄였다”는 주장이 이해된다.
+
+![System Card Figure 3.3.1.A: Mythos 5.1 ExploitBench results](/images/claude-fable-mythos-5-1-2026-09-02/system-card-cyber-exploitbench-mythos.png)
+
+*출처: Anthropic System Card PDF, Figure 3.3.1.A. safeguards-off ExploitBench 결과.*
+
+![System Card Figure 3.4.2.A: defensive vulnerability finding block rate](/images/claude-fable-mythos-5-1-2026-09-02/system-card-cyber-defensive-vulnerability-block-rate.png)
+
+*출처: Anthropic System Card PDF, Figure 3.4.2.A. defensive vulnerability discovery traffic block rate 감소.*
+
+Claude Code와 agentic safety도 System Card 내부 표·그림으로 확인해야 한다. Claude Code 평가는 malicious refusal과 dual-use/benign success를 같이 보고, IPI 평가는 Gray Swan benchmark에서 attacker success probability가 얼마나 낮은지 본다.
+
+![System Card Table 5.1.1.A: Claude Code evaluation results](/images/claude-fable-mythos-5-1-2026-09-02/system-card-claude-code-evaluation-results.png)
+
+*출처: Anthropic System Card PDF, Table 5.1.1.A. Claude Code evaluation results.*
+
+![System Card Figure 5.2.1.A: indirect prompt injection Gray Swan benchmark](/images/claude-fable-mythos-5-1-2026-09-02/system-card-indirect-prompt-injection-gray-swan.png)
+
+*출처: Anthropic System Card PDF, Figure 5.2.1.A. Gray Swan IPI benchmark, 낮을수록 좋음.*
+
+마지막으로 capability summary table은 발표 페이지 figure와 일부 겹치지만, System Card 기준의 전체 평가판 역할을 한다. 발표 페이지의 멋진 탭보다 이 표가 “한 장 요약”에 가깝다.
+
+![System Card Table 8.1.A: capability evaluation summary](/images/claude-fable-mythos-5-1-2026-09-02/system-card-capability-evaluation-summary.png)
+
+*출처: Anthropic System Card PDF, Table 8.1.A. capability evaluation summary.*
+
 ## Fable 5.1과 Mythos 5.1의 실무적 차이
 
 Fable 5.1은 일반 사용 모델이다. Claude API, Claude Code, Claude.ai, Claude Cowork, AWS, Google Cloud, Microsoft Azure에서 사용할 수 있다고 발표됐다. Claude Code에서는 기본 High effort, Claude Cowork와 Claude.ai에서는 기본 Medium effort라고 적혀 있다.
