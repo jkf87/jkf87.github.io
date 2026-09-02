@@ -1,0 +1,186 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (1484x921)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 481,
+    "width": 1484,
+    "height": 921,
+    "caption": "Figure 1  |  Across successive iterations by Harness-of-Harness, the resulting First-Person-Shooter game features",
+    "crop": [
+      58.87,
+      383.78,
+      553.15,
+      690.52
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-2-p3.png",
+    "method": "caption_crop (1484x742)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 176,
+    "width": 1484,
+    "height": 742,
+    "caption": "Figure 2  |  Two different modes of software development.  In human-in-the-loop development, coding",
+    "crop": [
+      58.87,
+      51.78,
+      553.13,
+      298.7
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-3-p5.png",
+    "method": "caption_crop (1483x825)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 314,
+    "width": 1483,
+    "height": 825,
+    "caption": "Figure 3  |  Harness-of-Harness overview.",
+    "crop": [
+      58.77,
+      55.19,
+      552.95,
+      329.68
+    ]
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  1  reports Vanilla and",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1  |  Main results on GameCraft-Bench, FrontierSWE, and ProgramBench.  Each harness is evaluated",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  1  traces",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  4  reports the four benchmark-defined GameCraft-Bench quality components",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "fig-4-p12.png",
+    "method": "caption_crop (1486x517)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 86,
+    "width": 1486,
+    "height": 517,
+    "caption": "Figure 4  |  Vanilla and HoH@3 scores across the four GameCraft-Bench rubric categories.  Panels (a)–(c)",
+    "crop": [
+      58.87,
+      248.84,
+      553.96,
+      420.91
+    ]
+  },
+  {
+    "page": 12,
+    "file": "fig-5-p12.png",
+    "method": "caption_crop (609x487)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 38,
+    "width": 609,
+    "height": 487,
+    "caption": "Figure 5  |  FrontierSWE Dominance over 10",
+    "crop": [
+      341.03,
+      443.95,
+      543.73,
+      605.76
+    ]
+  },
+  {
+    "page": 12,
+    "file": "table-2-p12.png",
+    "method": "caption_crop (1457x862)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 206,
+    "width": 1457,
+    "height": 862,
+    "caption": "Table  2  reports the resulting pass-controlled comparison.",
+    "crop": [
+      58.54,
+      443.95,
+      543.73,
+      730.99
+    ]
+  },
+  {
+    "page": 13,
+    "file": "fig-6-p13.png",
+    "method": "caption_crop (1485x782)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 681,
+    "width": 1485,
+    "height": 782,
+    "caption": "Figure 6  |  Qualitative comparison of final game artifacts produced by Vanilla and HoH@3 using Codex",
+    "crop": [
+      58.87,
+      72.02,
+      553.4,
+      332.63
+    ]
+  },
+  {
+    "page": 13,
+    "file": "table-2-p13.png",
+    "method": "caption_crop (1456x1357)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 832,
+    "width": 1456,
+    "height": 1357,
+    "caption": "Table 2  |  Comparison of HoH and repeated Vanilla",
+    "crop": [
+      68.27,
+      72.02,
+      553.14,
+      524.08
+    ]
+  }
+]
