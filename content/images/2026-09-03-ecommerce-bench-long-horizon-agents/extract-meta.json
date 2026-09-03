@@ -1,0 +1,138 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1434x1017)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 167,
+    "width": 1434,
+    "height": 1017,
+    "caption": "Figure 1: Mean end-of-year total assets, eighteen models, five 365-day episodes each. Bars start at the",
+    "crop": [
+      58.87,
+      61.36,
+      536.62,
+      400.26
+    ]
+  },
+  {
+    "page": 2,
+    "file": "fig-2-p2.png",
+    "method": "caption_crop (1434x974)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 229,
+    "width": 1434,
+    "height": 974,
+    "caption": "Figure 2: Seven evaluation axes for the strongest model of each vendor family by mean total assets, the",
+    "crop": [
+      58.87,
+      417.17,
+      536.62,
+      741.6
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-1-p6.png",
+    "method": "caption_crop_table_below (1435x559)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 135,
+    "width": 1435,
+    "height": 559,
+    "caption": "Table 1:  Comparison with continuing business-operation benchmarks.  ✔ present,  ✗ absent.  Steps/run  is the",
+    "crop": [
+      58.51,
+      61.57,
+      536.42,
+      247.4
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-3-p7.png",
+    "method": "caption_crop (1434x1331)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 434,
+    "width": 1434,
+    "height": 1331,
+    "caption": "Figure 3: Overview of E-Commerce Bench. The agent works through four layers. An  agent loop layer",
+    "crop": [
+      58.87,
+      58.86,
+      536.39,
+      502.11
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-4-p8.png",
+    "method": "caption_crop (1439x887)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 143,
+    "width": 1439,
+    "height": 887,
+    "caption": "Figure 4: The agent loop layer. One model call produces a batch of tool calls; the batch runs in order,",
+    "crop": [
+      58.87,
+      58.86,
+      538.01,
+      354.06
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-5-p9.png",
+    "method": "caption_crop (1435x481)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 89,
+    "width": 1435,
+    "height": 481,
+    "caption": "Figure 5: How eviction works. A group is what the editor removes as a unit: one model reply together",
+    "crop": [
+      58.87,
+      58.87,
+      536.79,
+      218.87
+    ]
+  },
+  {
+    "page": 10,
+    "file": "fig-6-p10.png",
+    "method": "caption_crop (1434x927)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 209,
+    "width": 1434,
+    "height": 927,
+    "caption": "Figure 6: Three-account deferred settlement. (a) Costs leave the bank the day they are incurred, while",
+    "crop": [
+      58.87,
+      58.87,
+      536.64,
+      367.62
+    ]
+  },
+  {
+    "page": 11,
+    "file": "fig-7-p11.png",
+    "method": "caption_crop (1434x679)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 154,
+    "width": 1434,
+    "height": 679,
+    "caption": "Figure 7: The demand model. (a) The four price-elasticity families at their median parameter, solid",
+    "crop": [
+      58.87,
+      57.87,
+      536.6,
+      283.87
+    ]
+  }
+]
