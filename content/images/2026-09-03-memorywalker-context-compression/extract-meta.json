@@ -1,0 +1,258 @@
+[
+  {
+    "page": 3,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  1  illustrates a running example with  E 1 , 2 , 3  =  { y 5 } ,  { y 8 } ,  { y 11 }  at  J 1 , 2 , 3  =  { 7 ,  10 ,  12 } ; the corresponding",
+    "crop": null
+  },
+  {
+    "page": 4,
+    "file": "fig-1-p4.png",
+    "method": "caption_crop (1435x574)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 210,
+    "width": 1435,
+    "height": 574,
+    "caption": "Figure 1:  The two pitfalls. (a)  The trajectory tree  T  of the  K =3  running example, drawn as the staircase of  live contexts : row",
+    "crop": [
+      58.87,
+      79.18,
+      536.73,
+      270.02
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-2-p5.png",
+    "method": "caption_crop (1437x566)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 159,
+    "width": 1437,
+    "height": 566,
+    "caption": "Figure 2:  From the trajectory tree to three consistent materializations. (a)  A memory editor turns one rollout into a  tree ,",
+    "crop": [
+      58.87,
+      218.96,
+      537.53,
+      407.02
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-1-p5.png",
+    "method": "caption_crop (1434x684)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 202,
+    "width": 1434,
+    "height": 684,
+    "caption": "Figure  1  are what happens when training instead scores it on some other path.  (b)  LogitTree  (ours, § 4 ) restores the invariant",
+    "crop": [
+      58.87,
+      218.96,
+      536.4,
+      446.65
+    ]
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1:  Grand result matrix (Qwen3-4B, live compression, real web tools).  Five training methods across three",
+    "crop": null
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  1 .",
+    "crop": null
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2:  WideSearch results with Claude Code (200 questions, four trials each).  Pass@1 uses trial  _1 ; Pass@4",
+    "crop": null
+  },
+  {
+    "page": 16,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3:  Tree sizes induced by the three white-box harnesses  on the running example (probe of Table  7 );  K  =",
+    "crop": null
+  },
+  {
+    "page": 17,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4: Per-leaf live-view prefix vs. final-walk prefix for the running example ( E 1  =  { y 5 }  at  J 1  = 7 ;  E 2  =  { y 8 }",
+    "crop": null
+  },
+  {
+    "page": 17,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  5  summarizes the mirror symmetry of the two pitfalls; concrete per-leaf examples (a  ∆ comp  =  − 22 . 8 -nat leaf",
+    "crop": null
+  },
+  {
+    "page": 17,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5: Two symmetric failure modes of the same conditioning invariant.",
+    "crop": null
+  },
+  {
+    "page": 27,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6: The three consistency-restoring methods vs. the two pitfalls, across dimensions that matter for production",
+    "crop": null
+  },
+  {
+    "page": 28,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  8  summarizes the input, teacher-forward count, and extra bookkeeping. All five methods roll out under  live",
+    "crop": null
+  },
+  {
+    "page": 29,
+    "file": "fig-3-p29.png",
+    "method": "caption_crop (1434x506)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 116,
+    "width": 1434,
+    "height": 506,
+    "caption": "Figure 3:  Six cases on the shared token-node vocabulary of Fig.  1 , whose running example and subscripts these",
+    "crop": [
+      58.87,
+      338.24,
+      536.41,
+      506.63
+    ]
+  },
+  {
+    "page": 29,
+    "file": "table-7-p29.png",
+    "method": "caption_crop (1435x707)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 170,
+    "width": 1435,
+    "height": 707,
+    "caption": "Table 7:  Q1: the two pitfalls are real and directionally distinct.  Untrained Qwen3-4B, 32 synthetic rollouts per",
+    "crop": [
+      58.56,
+      338.24,
+      536.57,
+      573.38
+    ]
+  },
+  {
+    "page": 30,
+    "file": "fig-4-p30.png",
+    "method": "caption_crop (1434x422)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 116,
+    "width": 1434,
+    "height": 422,
+    "caption": "Figure 4:  Recovering the trajectory tree from a black-box harness. (a)  At the model boundary the only observable is one",
+    "crop": [
+      58.87,
+      82.1,
+      536.4,
+      222.53
+    ]
+  },
+  {
+    "page": 30,
+    "file": "table-8-p30.png",
+    "method": "caption_crop (1432x729)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 192,
+    "width": 1432,
+    "height": 729,
+    "caption": "Table 8: Method inputs from the single adapter record. CC_TOKENS = compressed walk, UN_TOKENS = union.",
+    "crop": [
+      59.08,
+      82.1,
+      536.18,
+      324.85
+    ]
+  },
+  {
+    "page": 30,
+    "file": "table-1-p30.png",
+    "method": "caption_crop (1232x1720)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 392,
+    "width": 1232,
+    "height": 1720,
+    "caption": "Table  1  remains the sole source of final numbers.",
+    "crop": [
+      58.56,
+      82.1,
+      468.84,
+      655.16
+    ]
+  }
+]

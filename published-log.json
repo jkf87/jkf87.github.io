@@ -4097,6 +4097,32 @@
       "source_url": "https://arxiv.org/abs/2609.00967",
       "blog_url": "https://jkf87.github.io/posts/cobra-tool-use-boundaries-2026-09-02.html",
       "threads_root_id": "17964949860149742"
+    },
+    {
+      "date": "2026-09-03",
+      "slug": "2026-09-03-memorywalker-context-compression",
+      "title": "MemoryWalker 정리 — 컨텍스트 압축 하네스에서 RL 학습이 깨지는 이유와 복구법",
+      "blog_url": "https://jkf87.github.io/posts/2026-09-03-memorywalker-context-compression",
+      "source": "arXiv:2609.00865",
+      "tags": [
+        "agent",
+        "harness",
+        "loop",
+        "RL",
+        "LLM",
+        "context-engineering",
+        "training"
+      ],
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_winner": "a-kakao (r2 revised)",
+      "voice_spyrl_winner_score": 91.6,
+      "voice_spyrl_final_score": 87.6,
+      "voice_spyrl_report": "../memory/voice-feedback/2026-09-03-memorywalker-context-compression-spyrl-r2.json",
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-09-03-memorywalker-context-compression-final-spyrl.json",
+      "highlights": 15,
+      "images_included": 3,
+      "original_figures_tables_included": "yes: Figure 1, Figure 2, Table 1 crop from paper PDF",
+      "publishedRun": "2026-09-03T10:00:00+09:00"
     }
   ],
   "entries": [
