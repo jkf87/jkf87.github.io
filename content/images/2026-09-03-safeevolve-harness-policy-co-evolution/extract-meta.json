@@ -1,0 +1,196 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1836x797)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 509,
+    "width": 1836,
+    "height": 797,
+    "caption": "Figure 1:  Conceptual motivation of SafeEvolve.  Harness-only evolution can exceed policy capacity and",
+    "crop": [
+      0.0,
+      17.11,
+      612.0,
+      282.33
+    ]
+  },
+  {
+    "page": 2,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too page-like (area_ratio=0.61)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Fig. 1, this co-evolution scheme enables persistent safety self-improvement in complex multi-step tasks.",
+    "crop": [
+      0.0,
+      17.108184814453125,
+      612.0,
+      502.47589111328125
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (1788x901)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 328,
+    "width": 1788,
+    "height": 901,
+    "caption": "Figure 2:  An overview of SafeEvolve framework.  SafeEvolve exploits trajectories from agent-environment",
+    "crop": [
+      15.48,
+      26.43,
+      611.17,
+      326.41
+    ]
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Main benchmark results. AgentDojo and AgentDyn evaluate indirect prompt injection; AgentHarm",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Frozen-policy harness evaluation. The policy is frozen while the runtime harness is updated.",
+    "crop": null
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (494x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 3:  Harness-augmented policy optimization on Qwen3.5-4B.  Model-only means model-only opti-",
+    "crop": [
+      60.0,
+      347.18756103515625,
+      553.650390625,
+      305.5349426269531
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-4-p9.png",
+    "method": "caption_crop (1477x558)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 130,
+    "width": 1477,
+    "height": 558,
+    "caption": "Figure 4:  Step-level skill-bank evolution.  The left panel decomposes the active skill bank and marks",
+    "crop": [
+      60.0,
+      347.19,
+      552.01,
+      532.79
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-4-p9-3.png",
+    "method": "caption_crop (1477x702)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 175,
+    "width": 1477,
+    "height": 702,
+    "caption": "Fig. 4 shows how skillbank evolution accumulates validated updates. The active skillbank grows from 26 to",
+    "crop": [
+      60.0,
+      347.19,
+      552.01,
+      580.87
+    ]
+  },
+  {
+    "page": 9,
+    "file": "table-3-p9.png",
+    "method": "caption_crop (1477x979)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 247,
+    "width": 1477,
+    "height": 979,
+    "caption": "Table 3: The ablation of skill retrieval strategies.",
+    "crop": [
+      60.0,
+      347.19,
+      552.01,
+      673.21
+    ]
+  },
+  {
+    "page": 10,
+    "file": "fig-5-p10.png",
+    "method": "caption_crop (1476x590)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 161,
+    "width": 1476,
+    "height": 590,
+    "caption": "Figure 5:  Strong-model proposer ablation as safety-utility progress from the base harness.  AgentDojo and",
+    "crop": [
+      60.0,
+      243.17,
+      552.0,
+      439.55
+    ]
+  },
+  {
+    "page": 10,
+    "file": "fig-5-p10-2.png",
+    "method": "caption_crop (1477x747)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 199,
+    "width": 1477,
+    "height": 747,
+    "caption": "Fig. 5 shows that harness evolution is not tied to a single strong-model proposer. All proposer-evolved",
+    "crop": [
+      60.0,
+      243.17,
+      552.0,
+      491.79
+    ]
+  },
+  {
+    "page": 10,
+    "file": "fig-6-p10.png",
+    "method": "caption_crop (1477x1198)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 337,
+    "width": 1477,
+    "height": 1198,
+    "caption": "Fig. 6 evaluates whether harnesses evolved on Qwen3.5-4B transfer to other policies without additional",
+    "crop": [
+      60.0,
+      243.17,
+      552.0,
+      642.22
+    ]
+  }
+]

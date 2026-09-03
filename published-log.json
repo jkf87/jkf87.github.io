@@ -6455,6 +6455,40 @@
       "spyrl_mode": "multi-candidate",
       "spyrl_winner": "b-newsletter",
       "spyrl_score": 76.5
+    },
+    {
+      "date": "2026-09-03",
+      "slug": "2026-09-03-safeevolve-harness-policy-co-evolution",
+      "title": "SafeEvolve 정리 — 하네스와 정책을 같이 진화시키는 에이전트 안전 정렬",
+      "blog_url": "https://jkf87.github.io/posts/2026-09-03-safeevolve-harness-policy-co-evolution",
+      "source": "arXiv:2609.02786",
+      "tags": [
+        "agent",
+        "safety",
+        "harness",
+        "RL",
+        "LLM",
+        "prompt-injection"
+      ],
+      "voice": "kakao/plain",
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_winner": "b-newsletter(revised to kakao/plain, published)",
+      "voice_spyrl_winner_score": 75.5,
+      "voice_spyrl_final_score": 80.5,
+      "voice_spyrl_spy_tags": [
+        "aphorism",
+        "banned_phrase",
+        "binary_contrast",
+        "gpt5x_ai_diction",
+        "korean_ai_slop",
+        "question_heading"
+      ],
+      "voice_spyrl_report": "../memory/voice-feedback/2026-09-03-safeevolve-harness-policy-co-evolution-spyrl.json",
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-09-03-safeevolve-harness-policy-co-evolution-final-spyrl.json",
+      "highlights": 16,
+      "images_included": 6,
+      "original_figures_tables_included": "yes: Fig 1,2,4,5,6 + Table 3 crop from paper PDF",
+      "publishedRun": "2026-09-03T13:10:00+09:00"
     }
   ],
   "posts": [
