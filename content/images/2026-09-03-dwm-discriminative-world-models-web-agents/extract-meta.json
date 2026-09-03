@@ -1,0 +1,19 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1434x677)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 174,
+    "width": 1434,
+    "height": 677,
+    "caption": "Figure 1: Qualitative example of predicted next-state representations at a single decision point in the WebArena",
+    "crop": [
+      58.87,
+      58.86,
+      536.41,
+      284.08
+    ]
+  }
+]
