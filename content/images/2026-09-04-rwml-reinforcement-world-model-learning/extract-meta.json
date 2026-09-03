@@ -1,0 +1,87 @@
+[
+  {
+    "page": 3,
+    "file": "fig-2-p3.png",
+    "method": "caption_crop (1533x573)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 166,
+    "width": 1533,
+    "height": 573,
+    "caption": "Figure 2.  Overview of RWML. Given a target model  π θ , we first collect training data for RWML by using  π θ  to gather rollouts",
+    "crop": [
+      42.89,
+      55.63,
+      553.44,
+      246.04
+    ]
+  },
+  {
+    "page": 5,
+    "file": "table-1-p5.png",
+    "method": "caption_crop_table_below (1533x790)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 167,
+    "width": 1533,
+    "height": 790,
+    "caption": "Table 1.  Performance on ALFWorld and  τ   2   Bench. All results are averaged over 3 runs, with a maximum step of 30. Our methods are",
+    "crop": [
+      42.94,
+      56.07,
+      553.44,
+      319.01
+    ]
+  },
+  {
+    "page": 5,
+    "file": "table-2-p5.png",
+    "method": "caption_crop_table_below (1533x546)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 123,
+    "width": 1533,
+    "height": 546,
+    "caption": "Table 2.  Comparing ours against training methods that uses expert data/strong LLMs. Imitation Learning, IWM, and SR are reproduced",
+    "crop": [
+      42.94,
+      313.48,
+      553.44,
+      495.07
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-3-p6.png",
+    "method": "caption_crop_table_below (1533x529)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 139,
+    "width": 1533,
+    "height": 529,
+    "caption": "Table 3.  Measuring forgetting after training on ALFWorld and  τ   2   Bench. For LiveCodeBench, we use questions between 2025-01-01 and",
+    "crop": [
+      42.94,
+      56.17,
+      553.44,
+      232.05
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-4-p6.png",
+    "method": "caption_crop (1533x561)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 157,
+    "width": 1533,
+    "height": 561,
+    "caption": "Table 4.  Ablation studies on RWML. We use Qwen2.5-7B-Instruct on ALFWorld and Qwen3-8B on  τ   2   Bench. We find that stronger",
+    "crop": [
+      42.94,
+      75.62,
+      553.59,
+      262.24
+    ]
+  }
+]
