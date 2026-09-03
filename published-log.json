@@ -4153,7 +4153,14 @@
       "title": "PGPO 정리 — 실패한 롤아웃 안에서도 크레딧을 나눠주는 잠재력 기반 어드밴티지",
       "source": "arxiv",
       "source_url": "https://arxiv.org/abs/2609.02236",
-      "blog_url": "https://jkf87.github.io/posts/2026-09-03-pgpo-potential-guided-policy-optimization.html"
+      "blog_url": "https://jkf87.github.io/posts/2026-09-03-pgpo-potential-guided-policy-optimization.html",
+      "threads_root_id": "18126941569688487",
+      "threads_reply_ids": [
+        "18623898496046204",
+        "18327069490262876",
+        "18020588537866027",
+        "18092689199533494"
+      ]
     }
   ],
   "entries": [
