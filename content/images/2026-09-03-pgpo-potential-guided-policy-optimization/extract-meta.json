@@ -1,0 +1,215 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (728x1099)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 373,
+    "width": 728,
+    "height": 1099,
+    "caption": "Figure 1: A concrete ALFWorld case. Within the same",
+    "crop": [
+      294.14,
+      207.9,
+      536.41,
+      573.97
+    ]
+  },
+  {
+    "page": 2,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  1  gives a concrete ALFWorld example of",
+    "crop": null
+  },
+  {
+    "page": 4,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  2 , PGPO has three steps: it estimates empir-",
+    "crop": null
+  },
+  {
+    "page": 5,
+    "file": "fig-2-p5.png",
+    "method": "caption_crop (1437x738)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 252,
+    "width": 1437,
+    "height": 738,
+    "caption": "Figure 2: Overall pipeline of PGPO. Given a rollout group, PGPO constructs anchor-state groups across trajectories,",
+    "crop": [
+      58.87,
+      58.86,
+      537.65,
+      304.43
+    ]
+  },
+  {
+    "page": 7,
+    "file": "table-1-p7.png",
+    "method": "caption_crop_table_below (1437x710)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 127,
+    "width": 1437,
+    "height": 710,
+    "caption": "Table 1: Performance comparison on ALFWorld and WebShop. For ALFWorld, we report the success rate (%,  ↑ )",
+    "crop": [
+      58.56,
+      63.32,
+      537.08,
+      299.63
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (405x76pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Ablation results on ALFWorld. We report",
+    "crop": [
+      58.55699920654297,
+      387.6083984375,
+      463.3965148925781,
+      463.67803955078125
+    ]
+  },
+  {
+    "page": 7,
+    "file": "table-1-p7-3.png",
+    "method": "caption_crop (746x534)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 67,
+    "width": 746,
+    "height": 534,
+    "caption": "Table  1  reports the main results on ALFWorld",
+    "crop": [
+      55.99,
+      561.35,
+      304.02,
+      739.3
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-3-p8.png",
+    "method": "caption_crop (1384x1755)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 524,
+    "width": 1384,
+    "height": 1755,
+    "caption": "Figure  3  shows that  A E   provides little failure-",
+    "crop": [
+      69.78,
+      58.87,
+      530.96,
+      643.54
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-3-p8-2.png",
+    "method": "caption_crop (728x525)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 42,
+    "width": 728,
+    "height": 525,
+    "caption": "Figure 3: Failure-side discrimination on ALFWorld",
+    "crop": [
+      294.14,
+      58.87,
+      536.41,
+      233.42
+    ]
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 4: Pseudocode of PGPO. For each task, the algorithm samples a multi-trajectory rollout group, constructs",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  4  summarizes the main PGPO training",
+    "crop": null
+  },
+  {
+    "page": 14,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Per-iteration time cost on ALFWorld at selected",
+    "crop": null
+  },
+  {
+    "page": 15,
+    "file": "fig-5-p15.png",
+    "method": "caption_crop (1434x529)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 127,
+    "width": 1434,
+    "height": 529,
+    "caption": "Figure 5: Prompt templates used in ALFWorld and WebShop. Both environments share the same high-level",
+    "crop": [
+      58.87,
+      196.31,
+      536.41,
+      372.2
+    ]
+  },
+  {
+    "page": 15,
+    "file": "table-5-p15.png",
+    "method": "caption_crop (1407x1183)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 316,
+    "width": 1407,
+    "height": 1183,
+    "caption": "Table  5  shows that under this strict same-state",
+    "crop": [
+      67.93,
+      196.31,
+      536.41,
+      590.26
+    ]
+  }
+]
