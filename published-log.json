@@ -2464,9 +2464,14 @@
       "source_url": "https://arxiv.org/abs/2609.02849",
       "title": "IOI 2026에서 AI가 인간 최고점을 넘긴 방법 — SFT·RL·GenCorrect 전체 정리",
       "blog_url": "https://jkf87.github.io/posts/2026-09-04-nemotron-ioi-gold-posttraining-rl",
-      "threads_root_id": null,
-      "threads_reply_ids": [],
-      "commit": null,
+      "threads_root_id": "18110139866517773",
+      "threads_reply_ids": [
+        "18093069686285665",
+        "18118009078733253",
+        "18019288814716017",
+        "18102754784616913"
+      ],
+      "commit": "d0c33fce",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-04-nemotron-ioi-gold-posttraining-rl.md"
     }
   ]
