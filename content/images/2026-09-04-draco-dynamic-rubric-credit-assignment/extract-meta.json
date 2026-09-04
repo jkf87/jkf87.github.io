@@ -1,0 +1,179 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1434x813)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 276,
+    "width": 1434,
+    "height": 813,
+    "caption": "Figure 1: Overview of DRACO. Top: for each task, the judge proposes criteria from the instruction and each",
+    "crop": [
+      58.87,
+      58.86,
+      536.43,
+      329.64
+    ]
+  },
+  {
+    "page": 4,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Comparison with the closest prior work.  ✓ yes,  ✗ no,  G#  partial, – N/A.  Outcome-Blind : the training reward",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "caption_crop_table_below",
+    "status": "rejected",
+    "reason": "crop too small (477x56pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2:  Task success and consistency  (%) on AppWorld TN  (168 tasks), AppWorld TC  (417 tasks),  τ B  (97 tasks).  p k",
+    "crop": [
+      58.55699920654297,
+      242.5807647705078,
+      535.7410888671875,
+      298.64501953125
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-2-p6.png",
+    "method": "caption_crop (947x370)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 71,
+    "width": 947,
+    "height": 370,
+    "caption": "Table  2  reports  p 1 –",
+    "crop": [
+      222.83,
+      261.81,
+      538.05,
+      384.81
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-2-p6.png",
+    "method": "caption_crop (728x433)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 52,
+    "width": 728,
+    "height": 433,
+    "caption": "Figure 2:  Performance vs. evaluation cost , one panel",
+    "crop": [
+      294.14,
+      561.94,
+      536.41,
+      705.98
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3:  Average agent turns , lower is better. – = not",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "fig-3-p8.png",
+    "method": "caption_crop (1434x520)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 88,
+    "width": 1434,
+    "height": 520,
+    "caption": "Figure 3:  Rollout termination modes across training steps for DRACO with and without step credit.  Bars",
+    "crop": [
+      58.87,
+      58.86,
+      536.41,
+      231.91
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-4-p8.png",
+    "method": "caption_crop (728x521)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 108,
+    "width": 728,
+    "height": 521,
+    "caption": "Figure 4:  Overall rubric pass rate across training",
+    "crop": [
+      58.87,
+      246.9,
+      301.13,
+      420.03
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-3-p8-3.png",
+    "method": "caption_crop (733x1438)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 258,
+    "width": 733,
+    "height": 1438,
+    "caption": "Figure  3  shows how each roll-",
+    "crop": [
+      58.87,
+      246.9,
+      302.95,
+      725.7
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-4-p8-4.png",
+    "method": "caption_crop (1439x443)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 164,
+    "width": 1439,
+    "height": 443,
+    "caption": "Figure  4  shows the reward the policy model actu-",
+    "crop": [
+      58.87,
+      246.9,
+      538.22,
+      394.14
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-4-p8-5.png",
+    "method": "caption_crop (1434x1175)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 409,
+    "width": 1434,
+    "height": 1175,
+    "caption": "Figure  4  shows on the weaker base policy model",
+    "crop": [
+      58.87,
+      246.9,
+      536.41,
+      638.02
+    ]
+  }
+]
