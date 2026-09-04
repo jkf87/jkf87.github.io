@@ -1,0 +1,150 @@
+[
+  {
+    "page": 3,
+    "file": "fig-1-p3.png",
+    "method": "caption_crop (733x541)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 70,
+    "width": 733,
+    "height": 541,
+    "caption": "Figure 1: Illustration of GRPO’s advantage estimator.",
+    "crop": [
+      294.14,
+      58.87,
+      538.16,
+      238.78
+    ]
+  },
+  {
+    "page": 4,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Answer-shape distribution of MATH-7.5K.  # /",
+    "crop": null
+  },
+  {
+    "page": 5,
+    "file": "fig-2-p5.png",
+    "method": "caption_crop (728x485)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 66,
+    "width": 728,
+    "height": 485,
+    "caption": "Figure 2: SignBalance’s Avg-8 advantage over GRPO",
+    "crop": [
+      294.14,
+      58.86,
+      536.41,
+      220.05
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-2-p6.png",
+    "method": "caption_crop_table_below (1435x573)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 156,
+    "width": 1435,
+    "height": 573,
+    "caption": "Table 2: Main results on  8  math benchmarks (Qwen2.5-0.5B-Instruct, MATH-7.5K training). Benchmarks are",
+    "crop": [
+      58.56,
+      194.86,
+      536.41,
+      385.65
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-2-p6-2.png",
+    "method": "caption_crop (1424x499)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 141,
+    "width": 1424,
+    "height": 499,
+    "caption": "Table  2  reports the per-benchmark accuracy of",
+    "crop": [
+      58.53,
+      261.47,
+      532.85,
+      427.45
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-3-p6.png",
+    "method": "caption_crop (1424x1353)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 447,
+    "width": 1424,
+    "height": 1353,
+    "caption": "Table  3 , S IGN B ALANCE  again attains the high-",
+    "crop": [
+      58.53,
+      261.47,
+      532.85,
+      712.2
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-3-p6.png",
+    "method": "caption_crop (728x445)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 59,
+    "width": 728,
+    "height": 445,
+    "caption": "Figure 3: A policy that does no reasoning at all can still",
+    "crop": [
+      294.14,
+      261.47,
+      536.41,
+      409.54
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-3-p6-5.png",
+    "method": "caption_crop (731x1126)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 171,
+    "width": 731,
+    "height": 1126,
+    "caption": "Figure  3  shows that a policy that emits no rea-",
+    "crop": [
+      294.96,
+      261.47,
+      538.22,
+      636.43
+    ]
+  },
+  {
+    "page": 7,
+    "file": "table-3-p7.png",
+    "method": "caption_crop_table_below (1435x975)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 285,
+    "width": 1435,
+    "height": 975,
+    "caption": "Table 3: Scale generalization on Qwen2.5-3B-Base across an 8-benchmark math suite tailored to the 3B scale",
+    "crop": [
+      58.56,
+      186.2,
+      536.41,
+      510.68
+    ]
+  }
+]

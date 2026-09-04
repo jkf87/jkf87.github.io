@@ -2584,6 +2584,31 @@
         "evaluation",
         "LLM"
       ]
+    },
+    {
+      "slug": "2026-09-04-grpo-spurious-advantage-signbalance",
+      "date": "2026-09-04",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2609.04063",
+      "title": "GRPO에 숨어 있는 가짜 어드밴티지: 추측으로 맞힌 정답까지 강화하는 문제",
+      "blog_url": "https://jkf87.github.io/posts/2026-09-04-grpo-spurious-advantage-signbalance",
+      "tags": [
+        "GRPO",
+        "RLVR",
+        "advantage-estimation",
+        "agent-RL",
+        "benchmark"
+      ],
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_winner": "a-kakao",
+      "voice_spyrl_winner_score": 81.5,
+      "voice_spyrl_final_score": 81.5,
+      "voice_spyrl_report": "../memory/voice-feedback/2026-09-04-grpo-spurious-advantage-signbalance-spyrl.json",
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-09-04-grpo-spurious-advantage-signbalance-final-spyrl.json",
+      "highlights": 11,
+      "images_included": 5,
+      "original_figures_tables_included": "yes: Fig 1,2,3 + Table 2,3 crops from paper PDF",
+      "publishedRun": "2026-09-04T19:50:00+09:00"
     }
   ]
 }
