@@ -2543,7 +2543,31 @@
       "highlights": 10,
       "images_included": 5,
       "original_figures_tables_included": "yes: Fig 1,2,3,5 + Table 2 crop from paper PDF",
-      "publishedRun": "2026-09-04T16:10:00+09:00"
+      "publishedRun": "2026-09-04T16:10:00+09:00",
+      "threads_root_id": "18555479857073117",
+      "threads_reply_ids": [
+        "17860055397693140",
+        "18120670510902882",
+        "18114095834278821",
+        "17983095389886655"
+      ],
+      "threads_ids": [
+        "18555479857073117",
+        "17860055397693140",
+        "18120670510902882",
+        "18114095834278821",
+        "17983095389886655"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "threads_publishedAt": "2026-09-04T16:25:00+09:00",
+      "threads_quality_gate": "PASS: /tmp/2026-09-04-llm-judge-shared-endpoint-reliability-threads-payload.json, 5 posts, images [1,3,4,5]",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-04-llm-judge-shared-endpoint-reliability.md",
+      "commit": "d171e062"
     }
   ]
 }
