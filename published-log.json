@@ -2658,7 +2658,32 @@
       "highlights": 12,
       "images_included": 3,
       "original_figures_tables_included": "yes: Fig 1 + Table 1 crops from paper PDF",
-      "publishedRun": "2026-09-04T22:00:00+09:00"
+      "publishedRun": "2026-09-04T22:00:00+09:00",
+      "threads_root_id": "18122498402301930",
+      "threads_reply_ids": [
+        "18066826790580939",
+        "18016344608930366",
+        "18086838278241562",
+        "18222721780334508",
+        "18115443599058296"
+      ],
+      "threads_ids": [
+        "18122498402301930",
+        "18066826790580939",
+        "18016344608930366",
+        "18086838278241562",
+        "18222721780334508",
+        "18115443599058296"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        6
+      ],
+      "threads_publishedAt": "2026-09-04T22:35:00+09:00",
+      "threads_quality_gate": "PASS: /tmp/2026-09-04-agent-swarm-cheating-whistleblowing-threads-payload.json, 6 posts, images [1,3,6]",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-04-agent-swarm-cheating-whistleblowing.md",
+      "commit": "a0008662"
     }
   ]
 }
