@@ -1,0 +1,309 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1508x675)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 114,
+    "width": 1508,
+    "height": 675,
+    "caption": "Figure 1  |  Performance of our pipeline and models on IOI 2025 and IOI 2026.",
+    "crop": [
+      45.73,
+      77.67,
+      548.13,
+      302.38
+    ]
+  },
+  {
+    "page": 2,
+    "file": "fig-1a-p2.png",
+    "method": "caption_crop (1508x803)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 154,
+    "width": 1508,
+    "height": 803,
+    "caption": "Figure  1a  summarizes the progression of Nemotron-3-Nano-CC on IOI 2025. Its Score@1 increases",
+    "crop": [
+      45.73,
+      77.67,
+      548.13,
+      345.21
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-2-p3.png",
+    "method": "caption_crop (1485x400)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 73,
+    "width": 1485,
+    "height": 400,
+    "caption": "Figure 2  |  Our competitive-programming pipeline. Nemotron-3-Nano-CC undergoes supervised",
+    "crop": [
+      50.36,
+      74.05,
+      545.06,
+      207.16
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-3-p4.png",
+    "method": "caption_crop (1485x555)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 88,
+    "width": 1485,
+    "height": 555,
+    "caption": "Figure 3  |  Composition of the curated competitive-programming corpus (left) and SFT traces (right).",
+    "crop": [
+      50.36,
+      58.65,
+      545.07,
+      243.01
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-4-p5.png",
+    "method": "caption_crop (1489x529)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 79,
+    "width": 1489,
+    "height": 529,
+    "caption": "Figure 4  |  GenCorrect iteratively generates candidate solutions, selects a diverse subset for evaluation,",
+    "crop": [
+      50.36,
+      73.21,
+      546.62,
+      249.09
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1  |  Main single-sample results on IOI 2025, ICPC 2025, and LiveCodeBench Pro. IOI Score@1",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  5  and Table  1  summarize the main results while Figure  1  shows our Nano-CC progression",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "fig-5-p7.png",
+    "method": "caption_crop (1486x775)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 117,
+    "width": 1486,
+    "height": 775,
+    "caption": "Figure 5  |  IOI 2025 Score@1 (grey) and Score@200 (green) across evaluated models with the grey",
+    "crop": [
+      50.36,
+      73.04,
+      545.47,
+      331.03
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-6-p7.png",
+    "method": "caption_crop (779x561)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 58,
+    "width": 779,
+    "height": 561,
+    "caption": "Figure 6  |  Normalized IOI 2025 Score@1, ICPC",
+    "crop": [
+      285.64,
+      377.02,
+      544.96,
+      563.94
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-6-p7-3.png",
+    "method": "caption_crop (1484x1028)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 157,
+    "width": 1484,
+    "height": 1028,
+    "caption": "Figure  6  shows that SFT produces most of",
+    "crop": [
+      50.36,
+      73.04,
+      544.91,
+      415.4
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-7-p8.png",
+    "method": "caption_crop (1485x647)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 141,
+    "width": 1485,
+    "height": 647,
+    "caption": "Figure 7  |  Normalized performance during reinforcement learning of Nano-CC on multiple benchmarks",
+    "crop": [
+      50.36,
+      73.04,
+      545.11,
+      288.44
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-7b-p8.png",
+    "method": "caption_crop (1485x1097)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 246,
+    "width": 1485,
+    "height": 1097,
+    "caption": "Figure  7b  compares RL initialized from the base Nano checkpoint and from checkpoints after each",
+    "crop": [
+      50.36,
+      73.04,
+      545.13,
+      438.59
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-8-p9.png",
+    "method": "caption_crop (1466x806)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 90,
+    "width": 1466,
+    "height": 806,
+    "caption": "Figure 8  |  Performance across successive GenCorrect rounds on (a) IOI 2025 and (b) ICPC 2025.",
+    "crop": [
+      53.57,
+      299.18,
+      541.86,
+      567.67
+    ]
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  2 . This advantage transfers after SFT, with the GLM-5.2-trained Ultra-CC variant achieving",
+    "crop": null
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2  |  IOI 2025 score and average number of generation tokens for the teacher models and",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3  |  Effect of NVFP4 quantization and runtime configuration on IOI 2025 Score@1 performance",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  4  summarizes our IOI 2026 results, and Figure  1b  visualizes the live result. Ultra-CC scores",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4  |  Performance on IOI 2026. The live competition result was obtained under the same time",
+    "crop": null
+  },
+  {
+    "page": 16,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5  |  Supervised fine-tuning configurations for Nano-CC and Ultra-CC.",
+    "crop": null
+  },
+  {
+    "page": 16,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  5  reports the complete SFT configurations.",
+    "crop": null
+  },
+  {
+    "page": 17,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6  |  Reinforcement-learning configuration for Nano-CC.",
+    "crop": null
+  }
+]
