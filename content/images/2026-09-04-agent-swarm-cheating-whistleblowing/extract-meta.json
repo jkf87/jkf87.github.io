@@ -1,0 +1,53 @@
+[
+  {
+    "page": 5,
+    "file": "fig-1-p5.png",
+    "method": "caption_crop (1489x621)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 156,
+    "width": 1489,
+    "height": 621,
+    "caption": "Figure 1  |  Transmission pathway and behavioral distribution after exploit discovery across the 100-",
+    "crop": [
+      50.36,
+      90.88,
+      546.64,
+      297.46
+    ]
+  },
+  {
+    "page": 20,
+    "file": "table-1-p20.png",
+    "method": "caption_crop_table_below (1485x812)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 171,
+    "width": 1485,
+    "height": 812,
+    "caption": "Table  1  provides examples of whistleblower agents’ reactions and traces.",
+    "crop": [
+      50.03,
+      104.89,
+      544.91,
+      375.08
+    ]
+  },
+  {
+    "page": 20,
+    "file": "table-1-p20-2.png",
+    "method": "caption_crop_table_below (1485x1028)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 226,
+    "width": 1485,
+    "height": 1028,
+    "caption": "Table 1  |  Reactions of whistleblower agents.",
+    "crop": [
+      50.03,
+      128.16,
+      544.91,
+      470.42
+    ]
+  }
+]

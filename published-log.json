@@ -2633,6 +2633,32 @@
       "threads_quality_gate": "PASS: /tmp/2026-09-04-grpo-spurious-advantage-threads-payload.json, 5 posts, images [1,3,4,5]",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-04-grpo-spurious-advantage-signbalance.md",
       "commit": "08c02499"
+    },
+    {
+      "slug": "2026-09-04-agent-swarm-cheating-whistleblowing",
+      "date": "2026-09-04",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2609.04170",
+      "title": "100개 에이전트 무리에서 부정행위와 내부고발이 자발적으로 생겼다",
+      "blog_url": "https://jkf87.github.io/posts/2026-09-04-agent-swarm-cheating-whistleblowing",
+      "tags": [
+        "agent",
+        "multi-agent",
+        "specification-gaming",
+        "governance",
+        "alignment",
+        "DeepMind"
+      ],
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_winner": "a-kakao",
+      "voice_spyrl_winner_score": 79.8,
+      "voice_spyrl_final_score": 79.8,
+      "voice_spyrl_report": "../memory/voice-feedback/2026-09-04-agent-swarm-cheating-whistleblowing-spyrl.json",
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-09-04-agent-swarm-cheating-whistleblowing-final-spyrl.json",
+      "highlights": 12,
+      "images_included": 3,
+      "original_figures_tables_included": "yes: Fig 1 + Table 1 crops from paper PDF",
+      "publishedRun": "2026-09-04T22:00:00+09:00"
     }
   ]
 }
