@@ -1,0 +1,132 @@
+[
+  {
+    "page": 3,
+    "file": "fig-1-p3.png",
+    "method": "caption_crop (1584x832)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 278,
+    "width": 1584,
+    "height": 832,
+    "caption": "Figure 1: Overview of the SWE-Gate construction pipeline. SWE-Gate reconstructs issue–pull request artifacts, uses LLM-",
+    "crop": [
+      42.0,
+      42.0,
+      570.0,
+      318.84
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-2-p3.png",
+    "method": "caption_crop (788x760)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 114,
+    "width": 788,
+    "height": 760,
+    "caption": "Figure 2: SWE-Gate benchmark instance schema.",
+    "crop": [
+      42.0,
+      331.55,
+      304.5,
+      584.42
+    ]
+  },
+  {
+    "page": 4,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Validation matrix for a SWE-Gate instance. Follow-",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Overall performance in the Constraint-Provided set-",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2 reports functional and joint performance under the",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Functionally successful repairs that fail review con-",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4 compares the controlled input conditions.",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4: Constraint input ablation.  + C  provides the natural-language review constraint;  − C  omits it while retaining the same",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5: Performance by review constraint category in the Constraint-Provided condition. FSR and JSR are calculated over all",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5 analyzes overlapping categories under  + C ; rows",
+    "crop": null
+  }
+]
