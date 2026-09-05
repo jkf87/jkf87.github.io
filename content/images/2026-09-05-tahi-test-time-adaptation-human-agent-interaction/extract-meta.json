@@ -1,0 +1,251 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1435x553)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 142,
+    "width": 1435,
+    "height": 553,
+    "caption": "Figure 1: Illustration of a human-agent interaction process using our interface with an evolving",
+    "crop": [
+      58.4,
+      219.09,
+      536.42,
+      403.26
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-2-p7.png",
+    "method": "caption_crop (1480x494)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 87,
+    "width": 1480,
+    "height": 494,
+    "caption": "Figure 2: Left: test-time agent adaptation paradigm, illustrated with an example agent capability",
+    "crop": [
+      58.87,
+      43.13,
+      551.79,
+      207.47
+    ]
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Comparing agent solo success rates (SR) on paper abstract writing tasks and data",
+    "crop": null
+  },
+  {
+    "page": 10,
+    "file": "fig-3-p10.png",
+    "method": "caption_crop (970x421)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 61,
+    "width": 970,
+    "height": 421,
+    "caption": "Figure 3: Distribution of human actions through-",
+    "crop": [
+      249.67,
+      214.68,
+      572.94,
+      354.9
+    ]
+  },
+  {
+    "page": 10,
+    "file": "table-2-p10.png",
+    "method": "caption_crop (970x884)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 141,
+    "width": 970,
+    "height": 884,
+    "caption": "Table 2: Comparing agent adapta-",
+    "crop": [
+      249.67,
+      214.68,
+      572.94,
+      509.16
+    ]
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 4: Relative change in mean token count by action type, for context- and weight-adaptive",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "fig-5-p12.png",
+    "method": "caption_crop (1438x549)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 127,
+    "width": 1438,
+    "height": 549,
+    "caption": "Figure 5: Expertise absorbed by agents’ contexts and weights during adaptation ( Agent Gains )",
+    "crop": [
+      58.43,
+      214.15,
+      537.5,
+      396.86
+    ]
+  },
+  {
+    "page": 13,
+    "file": "fig-6-p13.png",
+    "method": "caption_crop (1438x737)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 117,
+    "width": 1438,
+    "height": 737,
+    "caption": "Figure 6: LLM-only rubrics fail to distinguish low-quality agent solutions (left: writing, right:",
+    "crop": [
+      58.87,
+      73.04,
+      537.78,
+      318.36
+    ]
+  },
+  {
+    "page": 14,
+    "file": "fig-7-p14.png",
+    "method": "caption_crop (1786x719)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 138,
+    "width": 1786,
+    "height": 719,
+    "caption": "Figure 7: Shared and personalized rubrics on abstract writing (left) and data visualization (right)",
+    "crop": [
+      0.0,
+      6.56,
+      595.28,
+      245.96
+    ]
+  },
+  {
+    "page": 14,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too page-like (area_ratio=0.74)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Agents adapted to individual experts im-",
+    "crop": [
+      0.0,
+      6.5588226318359375,
+      595.2760009765625,
+      631.5943603515625
+    ]
+  },
+  {
+    "page": 15,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4: Exploring different approaches to consolidate individual-",
+    "crop": null
+  },
+  {
+    "page": 23,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5. In Table 6, we also list out the source of 30 held-out tasks, demonstrating their varied",
+    "crop": null
+  },
+  {
+    "page": 23,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5: Titles and venues of the 20 tasks we collected human-agent interaction data on.",
+    "crop": null
+  },
+  {
+    "page": 24,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6: Titles and venues of the held-out tasks we tested agent generalization abilities on.",
+    "crop": null
+  },
+  {
+    "page": 26,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 7: Description of observed human expertise categories in writing tasks.",
+    "crop": null
+  },
+  {
+    "page": 27,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 8: Description of observed human expertise categories in data visualization tasks.",
+    "crop": null
+  },
+  {
+    "page": 28,
+    "file": "fig-8-p28.png",
+    "method": "caption_crop (1439x737)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 99,
+    "width": 1439,
+    "height": 737,
+    "caption": "Figure 8: Our evolved rubrics are as effective in measuring task success as LLM and human-",
+    "crop": [
+      58.87,
+      73.04,
+      538.22,
+      318.37
+    ]
+  }
+]
