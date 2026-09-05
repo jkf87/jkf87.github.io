@@ -2819,7 +2819,7 @@
       "images_included": 5,
       "original_figures_tables_included": "yes: Fig 1, Fig 2, Fig 3, Fig 5, Table 2 crops from paper PDF",
       "publishedRun": "2026-09-05T13:06:41+09:00",
-      "commit": null
+      "commit": "64edb73a"
     }
   ]
 }
