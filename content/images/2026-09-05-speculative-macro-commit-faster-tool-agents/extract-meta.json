@@ -1,0 +1,54 @@
+[
+ {
+  "file": "table1-main-results.png",
+  "page": 4,
+  "method": "vector_crop",
+  "status": "accepted",
+  "caption": "Table 1. Full benchmark results (tau2 Telecom / AppWorld)."
+ },
+ {
+  "file": "table2-macro-coverage.png",
+  "page": 4,
+  "method": "vector_crop",
+  "status": "accepted",
+  "caption": "Table 2. Macro-step coverage in the main benchmark runs.",
+  "zoom": 6
+ },
+ {
+  "file": "table3-appworld-slices.png",
+  "page": 5,
+  "method": "vector_crop",
+  "status": "accepted",
+  "caption": "Table 3. AppWorld controlled wall-time slices.",
+  "zoom": 6
+ },
+ {
+  "file": "table4-interface-ablation.png",
+  "page": 5,
+  "method": "vector_crop",
+  "status": "accepted",
+  "caption": "Table 4. Interface ablation on tau2-Bench (single GPU).",
+  "zoom": 6
+ },
+ {
+  "file": "table5-commit-precision.png",
+  "page": 5,
+  "method": "vector_crop",
+  "status": "accepted",
+  "caption": "Table 5. Conditional precision of commit stages (100 held-out tasks)."
+ },
+ {
+  "file": "table6-critical-path.png",
+  "page": 6,
+  "method": "vector_crop",
+  "status": "accepted",
+  "caption": "Table 6. Raw macro count vs critical-path commits."
+ },
+ {
+  "file": "algorithm1-executor.png",
+  "page": 4,
+  "method": "vector_crop",
+  "status": "accepted",
+  "caption": "Algorithm 1. Speculative Macro Commit executor pseudocode."
+ }
+]
