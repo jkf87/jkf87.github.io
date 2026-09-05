@@ -2859,7 +2859,16 @@
         "inference",
         "parallel-reasoning",
         "latency"
-      ]
+      ],
+      "commit": "e2751aa3",
+      "threads_root_id": "17955116709232054",
+      "threads_reply_ids": [
+        "18158457559495486",
+        "18411028405152673",
+        "18135990148625253",
+        "18149364073477992"
+      ],
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-05-second-thought-idle-window-parallel-reasoning.md"
     }
   ]
 }
