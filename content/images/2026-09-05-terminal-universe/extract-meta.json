@@ -1,0 +1,162 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1434x561)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 123,
+    "width": 1434,
+    "height": 561,
+    "caption": "Figure 1:  Overview of Terminal-Universe.  A trajectory and an environment are two views of the same",
+    "crop": [
+      58.87,
+      77.81,
+      536.4,
+      264.53
+    ]
+  },
+  {
+    "page": 3,
+    "file": "table-1-p3.png",
+    "method": "caption_crop_table_below (1450x648)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 170,
+    "width": 1450,
+    "height": 648,
+    "caption": "Table 1: Comparison of representative environment and training-data construction methods. Strategy",
+    "crop": [
+      56.08,
+      63.33,
+      539.2,
+      278.77
+    ]
+  },
+  {
+    "page": 4,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  1  positions Terminal-Universe against representative methods. In contrast to prior work, it builds its",
+    "crop": null
+  },
+  {
+    "page": 4,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  2  details the mechanisms across environment reconstruction, the four re-querying variants, and",
+    "crop": null
+  },
+  {
+    "page": 5,
+    "file": "fig-2-p5.png",
+    "method": "caption_crop (1592x1147)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 270,
+    "width": 1592,
+    "height": 1147,
+    "caption": "Figure 2:  Framework of Terminal-Universe.  A recorded trajectory is replayed and completed into",
+    "crop": [
+      21.94,
+      52.32,
+      552.21,
+      434.16
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-3-p6.png",
+    "method": "caption_crop (769x817)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 67,
+    "width": 769,
+    "height": 817,
+    "caption": "Figure 3: Pass/fail patterns in Multi-Round sessions.",
+    "crop": [
+      276.18,
+      288.34,
+      532.26,
+      560.47
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-3-p6-2.png",
+    "method": "caption_crop (1335x653)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 171,
+    "width": 1335,
+    "height": 653,
+    "caption": "Figure  3  reports pass/fail patterns for the con-",
+    "crop": [
+      58.87,
+      288.34,
+      503.53,
+      505.84
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-4-p7.png",
+    "method": "caption_crop (1434x517)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 60,
+    "width": 1434,
+    "height": 517,
+    "caption": "Figure 4: Mean workspace size before and after agentic completion.",
+    "crop": [
+      58.87,
+      363.9,
+      536.43,
+      535.82
+    ]
+  },
+  {
+    "page": 7,
+    "file": "table-2-p7.png",
+    "method": "caption_crop (1434x714)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 92,
+    "width": 1434,
+    "height": 714,
+    "caption": "Table 2: Workspace sufficiency under recovered intents.",
+    "crop": [
+      58.87,
+      363.9,
+      536.43,
+      601.41
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-5-p7.png",
+    "method": "caption_crop (1434x1211)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 208,
+    "width": 1434,
+    "height": 1211,
+    "caption": "Figure  5  illustrates the diversity of the reconstructed terminal pool: Python represents the dominant",
+    "crop": [
+      58.87,
+      363.9,
+      536.43,
+      767.26
+    ]
+  }
+]

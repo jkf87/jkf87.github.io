@@ -2794,6 +2794,32 @@
       "threads_quality_gate": "PASS: /tmp/2026-09-05-agentic-skill-policy-steering-threads-payload.json, 7 posts, images [1,2,3,5,7]",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-05-agentic-skill-policy-steering.md",
       "commit": "99929aa6"
+    },
+    {
+      "slug": "2026-09-05-terminal-universe",
+      "date": "2026-09-05",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2609.04148",
+      "title": "Terminal-Universe: 에이전트 트라젝토리로부터 실행 환경을 재구성하는 프레임워크 논문 요약",
+      "blog_url": "https://jkf87.github.io/posts/2026-09-05-terminal-universe",
+      "tags": [
+        "agent",
+        "training-data",
+        "terminal",
+        "evaluation",
+        "fine-tuning"
+      ],
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_winner": "c-formal (revised with images/highlights, republished as final)",
+      "voice_spyrl_winner_score": 71.5,
+      "voice_spyrl_final_score": 86.7,
+      "voice_spyrl_report": "../memory/voice-feedback/2026-09-05-2026-09-05-terminal-universe-spyrl.json",
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-09-05-terminal-universe-final-spyrl.json",
+      "highlights": 14,
+      "images_included": 5,
+      "original_figures_tables_included": "yes: Fig 1, Fig 2, Fig 3, Fig 5, Table 2 crops from paper PDF",
+      "publishedRun": "2026-09-05T13:06:41+09:00",
+      "commit": null
     }
   ]
 }
