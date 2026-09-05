@@ -16,6 +16,7 @@ from urllib.request import Request, urlopen
 
 URL_RE = re.compile(r"https?://\S+")
 THREADS_INTERNAL_ID_RE = re.compile(r"(?<!\d)\d{15,22}(?!\d)")
+LITERAL_ESCAPE_RE = re.compile(r"\\+u[0-9a-fA-F]{4}|\\+n")
 INTERNAL_LOG_MARKERS = (
     "main.create",
     "main.publish",
@@ -90,6 +91,13 @@ def check_http_200(url: str) -> None:
 
 def check_no_internal_artifacts(post: str, idx: int) -> None:
     """Reject API/debug artifacts that must never become visible Threads copy."""
+    match = LITERAL_ESCAPE_RE.search(post)
+    if match:
+        fail(
+            f"post {idx} contains a literal escape sequence ({match.group(0)!r}). "
+            "Decode Unicode/newlines before publishing; never pass shell-escaped JSON text directly."
+        )
+
     lowered = post.lower()
     for marker in INTERNAL_LOG_MARKERS:
         if marker in lowered:

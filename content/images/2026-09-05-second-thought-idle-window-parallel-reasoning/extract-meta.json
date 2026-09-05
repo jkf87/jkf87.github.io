@@ -1,0 +1,142 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1765x1163)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 362,
+    "width": 1765,
+    "height": 1163,
+    "caption": "Figure 1: An illustrative comparison on a bug-fixing task.  Left:  a vanilla ReAct-style agent wastes turns on a failed search",
+    "crop": [
+      23.75,
+      24.0,
+      612.0,
+      411.41
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-2-p3.png",
+    "method": "caption_crop (982x470)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 41,
+    "width": 982,
+    "height": 470,
+    "caption": "Figure 2: Workflow of Second Thought.",
+    "crop": [
+      284.82,
+      3.95,
+      612.0,
+      160.23
+    ]
+  },
+  {
+    "page": 4,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 2 illustrates the overall workflow of Second Thought.",
+    "crop": null
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Overall performance of Second Thought across",
+    "crop": null
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1 presents the overall performance of Second Thought",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "fig-3-p6.png",
+    "method": "caption_crop (788x704)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 69,
+    "width": 788,
+    "height": 704,
+    "caption": "Figure 3: Single-dimension (only-X) and leave-one-out (w/o-",
+    "crop": [
+      42.0,
+      42.0,
+      304.5,
+      276.07
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (528x63pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 3 evaluates the trade-offs of single-dimension ( only-",
+    "crop": [
+      42.0,
+      41.999053955078125,
+      569.99462890625,
+      104.50410461425781
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Controlled comparison on SWE-Bench Pro with",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Per-task API cost of Second Thought on SWE-",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3 summarizes per-task API costs on",
+    "crop": null
+  }
+]
