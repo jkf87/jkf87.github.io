@@ -1,0 +1,104 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1584x807)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 279,
+    "width": 1584,
+    "height": 807,
+    "caption": "Figure 1: Attack scenario of Skill-layer policy steering. A manipulated third-party Skill shifts the comparison policy over an",
+    "crop": [
+      42.0,
+      42.0,
+      570.0,
+      310.94
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-2-p5.png",
+    "method": "caption_crop (789x701)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 106,
+    "width": 789,
+    "height": 701,
+    "caption": "Figure 2: Overall attack effectiveness on Python dependency",
+    "crop": [
+      307.5,
+      42.0,
+      570.0,
+      275.36
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-2-p5-2.png",
+    "method": "caption_crop (788x1713)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 304,
+    "width": 788,
+    "height": 1713,
+    "caption": "Figure 2 presents the independent  all50  evaluation, where",
+    "crop": [
+      307.5,
+      42.0,
+      570.0,
+      612.73
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-1-p6.png",
+    "method": "caption_crop_table_below (1582x316)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 82,
+    "width": 1582,
+    "height": 316,
+    "caption": "Table 1: Performance of the frozen SkillShift strategy on",
+    "crop": [
+      42.0,
+      43.71,
+      569.3,
+      148.79
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-2-p6.png",
+    "method": "caption_crop (1585x1435)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 480,
+    "width": 1585,
+    "height": 1435,
+    "caption": "Table 2 reports both cross-model and complete-agent results.",
+    "crop": [
+      42.0,
+      42.0,
+      570.0,
+      520.3
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-3-p6.png",
+    "method": "caption_crop (789x431)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 43,
+    "width": 789,
+    "height": 431,
+    "caption": "Figure 3: Ablation for major components of SkillShift.",
+    "crop": [
+      307.5,
+      42.0,
+      570.0,
+      185.42
+    ]
+  }
+]
