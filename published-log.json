@@ -2740,6 +2740,60 @@
       "threads_quality_gate": "PASS: /tmp/2026-09-05-interface-trajectory-censoring-threads-payload.json, 8 posts, images [1,3,5,8]",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-05-interface-trajectory-censoring.md",
       "commit": "777882e1"
+    },
+    {
+      "slug": "2026-09-05-agentic-skill-policy-steering",
+      "date": "2026-09-05",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2609.02564",
+      "title": "서드파티 에이전트 스킬이 모델 결정을 몰래 조준한다",
+      "blog_url": "https://jkf87.github.io/posts/2026-09-05-agentic-skill-policy-steering",
+      "tags": [
+        "agent",
+        "security",
+        "skill",
+        "supply-chain",
+        "evaluation"
+      ],
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_winner": "c-formal (initial), final revised post published",
+      "voice_spyrl_winner_score": 47.5,
+      "voice_spyrl_final_score": 92.0,
+      "voice_spyrl_report": "../memory/voice-feedback/2026-09-05-agentic-skill-policy-steering-spyrl.json",
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-09-05-agentic-skill-policy-steering-final-spyrl.json",
+      "highlights": 13,
+      "images_included": 4,
+      "original_figures_tables_included": "yes: Fig 1, Fig 2(a,b), Table 2 crops from paper PDF",
+      "publishedRun": "2026-09-05T10:00:00+09:00",
+      "threads_root_id": "18137240773614714",
+      "threads_reply_ids": [
+        "18391049080162509",
+        "18079544996696122",
+        "18093592796430923",
+        "18116305351938523",
+        "17901996987580567",
+        "18620148823008858"
+      ],
+      "threads_ids": [
+        "18137240773614714",
+        "18391049080162509",
+        "18079544996696122",
+        "18093592796430923",
+        "18116305351938523",
+        "17901996987580567",
+        "18620148823008858"
+      ],
+      "threads_image_posts": [
+        1,
+        2,
+        3,
+        5,
+        7
+      ],
+      "threads_publishedAt": "2026-09-05T10:40:00+09:00",
+      "threads_quality_gate": "PASS: /tmp/2026-09-05-agentic-skill-policy-steering-threads-payload.json, 7 posts, images [1,2,3,5,7]",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-05-agentic-skill-policy-steering.md",
+      "commit": "99929aa6"
     }
   ]
 }
