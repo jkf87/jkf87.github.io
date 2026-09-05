@@ -2955,6 +2955,31 @@
       "threads_publishedAt": "2026-09-05T22:15:00+09:00",
       "threads_quality_gate": "PASS: 6 posts, images [1,3,4,6], link post 6",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-05-tahi-test-time-adaptation-human-agent-interaction.md"
+    },
+    {
+      "slug": "2026-09-06-harnessevo-slot-credit-assignment",
+      "date": "2026-09-06",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2609.02889",
+      "title": "HarnessEvo 하니스 최적화 이득의 위치와 예산 분할 함정 (arXiv 2609.02889)",
+      "blog_url": "https://jkf87.github.io/posts/2026-09-06-harnessevo-slot-credit-assignment",
+      "tags": [
+        "agent",
+        "harness",
+        "prompt-engineering",
+        "credit-assignment",
+        "LLM"
+      ],
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_winner": "content/posts/2026-09-06-harnessevo-slot-credit-assignment.md (revised c-formal base, A-style merged)",
+      "voice_spyrl_winner_score": 93.0,
+      "voice_spyrl_final_score": 93.0,
+      "voice_spyrl_report": "../memory/voice-feedback/2026-09-06-harnessevo-slot-credit-assignment-spyrl.json",
+      "voice_spyrl_final_report": "../memory/voice-feedback/2026-09-06-harnessevo-slot-credit-assignment-final-spyrl.json",
+      "highlights": 8,
+      "images_included": 5,
+      "original_figures_tables_included": "yes: Figure 1-5 caption crops from paper PDF",
+      "publishedRun": "2026-09-06T07:10:00+09:00"
     }
   ]
 }

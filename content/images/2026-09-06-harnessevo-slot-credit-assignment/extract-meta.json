@@ -1,0 +1,236 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1434x923)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 105,
+    "width": 1434,
+    "height": 923,
+    "caption": "Figure 1:  Harness-optimization value is concentrated in one component.  Per-slot leave-one-in ( LOI )",
+    "crop": [
+      67.2,
+      60.0,
+      544.8,
+      367.66
+    ]
+  },
+  {
+    "page": 4,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  1  previews the central finding. Section  2  situates the work; Section  3  formalizes the harness-",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Notation.",
+    "crop": null
+  },
+  {
+    "page": 9,
+    "file": "fig-2-p9.png",
+    "method": "caption_crop (1434x677)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 120,
+    "width": 1434,
+    "height": 677,
+    "caption": "Figure 2:  H ARNESS E VO  architecture.  The harness is four named slots ( c 1  role,  c 2  strategy,  c 3  format,",
+    "crop": [
+      67.2,
+      99.62,
+      544.8,
+      324.89
+    ]
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  2  reports the primary iso-budget ( B 64 ) comparison on ALFWorld and the cross-benchmark Web-",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  3  reports the  LOI  and  LOO  map on ALFWorld at  B 64 ; it is the analytical heart of the paper and is vi-",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2:  Main iso-budget comparison (the full method ties).  ALFWorld held-out success ( n =134 ,",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3:  Per-component credit-assignment map on ALFWorld  ( B 64 ,  n =134 ,  10 k-bootstrap  95%  CI).",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  4  compare, at fixed total budget, the uniform four-way split against concentrating the budget on",
+    "crop": null
+  },
+  {
+    "page": 13,
+    "file": "fig-3-p13.png",
+    "method": "caption_crop (1432x863)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 82,
+    "width": 1432,
+    "height": 863,
+    "caption": "Figure 3:  Per-component attribution.  Left: leave-one-in held-out gain over stock per slot—only  c 4",
+    "crop": [
+      67.2,
+      60.0,
+      544.3,
+      347.03
+    ]
+  },
+  {
+    "page": 14,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4:  Budget allocation at fixed budget on ALFWorld  ( n =134 ,  10 k-bootstrap  95%  CI, McNemar",
+    "crop": null
+  },
+  {
+    "page": 14,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5:  The accept-and-rescore floor.  Number of slots (out of  4 ) that  accepted  a mutation and that",
+    "crop": null
+  },
+  {
+    "page": 15,
+    "file": "fig-4-p15.png",
+    "method": "caption_crop (1434x763)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 113,
+    "width": 1434,
+    "height": 763,
+    "caption": "Figure 4:  Budget allocation.  Left (ALFWorld,  n =134 ): at the same budget  B =64 , concentrating on",
+    "crop": [
+      67.2,
+      60.0,
+      544.81,
+      313.84
+    ]
+  },
+  {
+    "page": 15,
+    "file": "fig-5-p15.png",
+    "method": "caption_crop (1434x1102)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 183,
+    "width": 1434,
+    "height": 1102,
+    "caption": "Figure  5  breaks the control-slot gain down by ALFWorld task type (at the significant  B =32  setting).",
+    "crop": [
+      67.2,
+      60.0,
+      544.81,
+      426.74
+    ]
+  },
+  {
+    "page": 16,
+    "file": "fig-5-p16.png",
+    "method": "caption_crop (1434x845)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 89,
+    "width": 1434,
+    "height": 845,
+    "caption": "Figure 5:  Control-slot gain by ALFWorld task type  (control-only  LOI  at  B =32 ). Diamonds ( ♦ ) mark",
+    "crop": [
+      67.2,
+      60.0,
+      544.81,
+      341.41
+    ]
+  },
+  {
+    "page": 24,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6: B120 corroboration arm on ALFWorld ( n =134 ,  10 k-bootstrap CI). Main methods (top) and",
+    "crop": null
+  },
+  {
+    "page": 24,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  6  gives the higher-budget arm in full. Stock measures higher at this configuration ( 0 . 672 ), flat",
+    "crop": null
+  }
+]
