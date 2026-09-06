@@ -1,0 +1,164 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (788x610)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 80,
+    "width": 788,
+    "height": 610,
+    "caption": "Figure 1:  AppWorld Test-Normal TGC by method family",
+    "crop": [
+      307.5,
+      204.0,
+      570.0,
+      406.99
+    ]
+  },
+  {
+    "page": 2,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1); the same design principles lift a Qwen3.5-9B policy",
+    "crop": null
+  },
+  {
+    "page": 3,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 1 groups policy",
+    "crop": null
+  },
+  {
+    "page": 3,
+    "file": "fig-2-p3.png",
+    "method": "caption_crop (788x438)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 71,
+    "width": 788,
+    "height": 438,
+    "caption": "Figure 2:  Signal coverage under a sparse reward.  (a) Cov-",
+    "crop": [
+      307.5,
+      428.35,
+      570.0,
+      574.17
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1:  AppWorld results  (official leaderboard (Stony Brook",
+    "crop": null
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Training and inference configuration.",
+    "crop": null
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3. All evaluation uses the official AppWorld SDK and",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "table-3-p6.png",
+    "method": "caption_crop (1534x379)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 94,
+    "width": 1534,
+    "height": 379,
+    "caption": "Table 3:  Metric map  (TGC, step-90 checkpoint vs. base;",
+    "crop": [
+      42.0,
+      42.0,
+      553.31,
+      167.94
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-4-p6.png",
+    "method": "caption_crop (967x916)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 188,
+    "width": 967,
+    "height": 916,
+    "caption": "Figure 4",
+    "crop": [
+      245.64,
+      312.71,
+      567.61,
+      617.78
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-3-p6.png",
+    "method": "caption_crop (789x767)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 123,
+    "width": 789,
+    "height": 767,
+    "caption": "Figure 3:  Training dynamics from rollout logs  ( n =32 ,",
+    "crop": [
+      307.5,
+      42.0,
+      570.0,
+      297.27
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-2b-p6.png",
+    "method": "caption_crop (754x866)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 133,
+    "width": 754,
+    "height": 866,
+    "caption": "Figure 2b.  B : L3 stays informative far longer than L1/L2.",
+    "crop": [
+      307.5,
+      42.0,
+      558.45,
+      330.12
+    ]
+  }
+]
