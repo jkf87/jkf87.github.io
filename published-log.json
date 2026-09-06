@@ -3049,7 +3049,16 @@
       "source": "arxiv",
       "source_url": "https://arxiv.org/abs/2609.03915",
       "title": "RuleMem: 장기 대화 에이전트 메모리는 규칙을 저장한다",
-      "blog_url": "https://jkf87.github.io/posts/2026-09-06-rulemem-rule-memory-long-term-conversation"
+      "blog_url": "https://jkf87.github.io/posts/2026-09-06-rulemem-rule-memory-long-term-conversation",
+      "threads_root_id": "18025390292904761",
+      "threads_reply_ids": [
+        "18082261916326071",
+        "18129876505783449",
+        "17898317718597956",
+        "18350490781247171"
+      ],
+      "commit": "e9eb1a4",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-06-rulemem-rule-memory-long-term-conversation.md"
     }
   ]
 }
