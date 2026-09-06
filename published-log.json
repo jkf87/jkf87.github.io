@@ -3042,6 +3042,14 @@
         "18112939337087203"
       ],
       "commit": "75e7446f"
+    },
+    {
+      "slug": "2026-09-06-rulemem-rule-memory-long-term-conversation",
+      "date": "2026-09-06",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2609.03915",
+      "title": "RuleMem: 장기 대화 에이전트 메모리는 규칙을 저장한다",
+      "blog_url": "https://jkf87.github.io/posts/2026-09-06-rulemem-rule-memory-long-term-conversation"
     }
   ]
 }
