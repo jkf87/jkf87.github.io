@@ -3006,7 +3006,16 @@
       "source": "arxiv",
       "source_url": "https://arxiv.org/abs/2609.01245",
       "title": "CANOPY: 결과 보상만으로 장기 에이전트를 훈련한 알리바바의 실험",
-      "blog_url": "https://jkf87.github.io/posts/2026-09-06-canopy-outcome-only-rl"
+      "blog_url": "https://jkf87.github.io/posts/2026-09-06-canopy-outcome-only-rl",
+      "threads_root_id": "17955319824016657",
+      "threads_reply_ids": [
+        "18069740501722235",
+        "18015318497939716",
+        "18115020833067015",
+        "18112456213951052",
+        "17939576535094098"
+      ],
+      "commit": "553c1429"
     }
   ]
 }
