@@ -1,0 +1,19 @@
+[
+  {
+    "page": 19,
+    "file": "fig-2-p19.png",
+    "method": "caption_crop (1477x720)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 88,
+    "width": 1477,
+    "height": 720,
+    "caption": "Figure 2: Path of an event through C APTURE . Only the gate can promote a hypothesis into the ledger, and the selector",
+    "crop": [
+      60.0,
+      336.88,
+      552.0,
+      576.59
+    ]
+  }
+]
