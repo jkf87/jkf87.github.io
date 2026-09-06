@@ -3033,7 +3033,15 @@
           "banned_phrase"
         ],
         "report": "memory/voice-feedback/2026-09-06-capture-preference-drift-memory-poisoning-spyrl.json"
-      }
+      },
+      "threads_root_id": "17876835237546003",
+      "threads_reply_ids": [
+        "18349223017269015",
+        "18234284188317686",
+        "18071026190736628",
+        "18112939337087203"
+      ],
+      "commit": "75e7446f"
     }
   ]
 }
