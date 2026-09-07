@@ -3148,7 +3148,23 @@
       "voice_spyrl_report": "memory/voice-feedback/2026-09-07-substrate-aware-agents-execution-contract-spyrl-final.json",
       "highlights": 16,
       "images_included": 3,
-      "original_figures_tables_included": "yes: Table 1, Table 2, Figure 2 caption crops"
+      "original_figures_tables_included": "yes: Table 1, Table 2, Figure 2 caption crops",
+      "threads_root_id": "18106449311594023",
+      "threads_reply_ids": [
+        "17907504561515740",
+        "18105382073191004",
+        "17998341599990484",
+        "18151130821519529",
+        "18020059907713053",
+        "18119424385932402"
+      ],
+      "threads_image_posts": [
+        1,
+        2,
+        3,
+        6
+      ],
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-07-substrate-aware-agents-execution-contract.md"
     }
   ]
 }
