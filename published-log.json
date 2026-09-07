@@ -3201,6 +3201,26 @@
         5,
         8
       ]
+    },
+    {
+      "slug": "2026-09-08-tree-grpo-agent-rl",
+      "date": "2026-09-08",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2509.21240",
+      "title": "같은 예산으로 롤아웃 1.5배, 스텝 단위 신호까지 공짜로 — Tree-GRPO 정리",
+      "blog_url": "https://jkf87.github.io/posts/2026-09-08-tree-grpo-agent-rl",
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_winner": "a-kakao-r2 (revised A)",
+      "voice_spyrl_winner_score": 82.7,
+      "voice_spyrl_final_score": 82.7,
+      "voice_spyrl_tags": [
+        "bold_overuse",
+        "metaphor_heading"
+      ],
+      "voice_spyrl_report": "memory/voice-feedback/2026-09-08-tree-grpo-agent-rl-spyrl-final.json",
+      "highlights": 11,
+      "images_included": 3,
+      "original_figures_tables_included": "yes: Figure 1, Figure 3, Figure 5 caption crops"
     }
   ]
 }

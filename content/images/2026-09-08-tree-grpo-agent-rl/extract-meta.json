@@ -1,0 +1,198 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (1289x404)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 94,
+    "width": 1289,
+    "height": 404,
+    "caption": "Figure 1: Comparison of chain-based and tree-based sampling strategies in LLM multi-turn agent",
+    "crop": [
+      90.12,
+      416.0,
+      519.5,
+      550.65
+    ]
+  },
+  {
+    "page": 2,
+    "file": "fig-2-p2.png",
+    "method": "caption_crop (1261x318)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 75,
+    "width": 1261,
+    "height": 318,
+    "caption": "Figure 2: Comparison between chain-based and tree-based rollout at different levels.  Left : Chain-",
+    "crop": [
+      96.0,
+      69.86,
+      516.0,
+      175.52
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-3-p4.png",
+    "method": "caption_crop (1261x535)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 155,
+    "width": 1261,
+    "height": 535,
+    "caption": "Figure 3: The overview of the Tree-GRPO training pipeline. The rollout is conducted in a tree-search",
+    "crop": [
+      96.0,
+      69.86,
+      516.0,
+      247.72
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-4-p5.png",
+    "method": "caption_crop (583x400)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 38,
+    "width": 583,
+    "height": 400,
+    "caption": "Figure 4:",
+    "crop": [
+      321.92,
+      227.03,
+      515.99,
+      360.07
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Overall performance on single-hop QA and multi-hop QA, with EM scores for each dataset.",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Overall performance on web-agent QA, with F1 scores for each dataset. The best results",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Performance with different training budget (defined as the cost of several complete agent",
+    "crop": null
+  },
+  {
+    "page": 9,
+    "file": "fig-5-p9.png",
+    "method": "caption_crop (1245x424)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 122,
+    "width": 1245,
+    "height": 424,
+    "caption": "Figure 5: Comparison between tree-based and chain-based RL on reward and action number.",
+    "crop": [
+      97.47,
+      69.86,
+      512.02,
+      210.75
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-6-p9.png",
+    "method": "caption_crop (1206x462)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 159,
+    "width": 1206,
+    "height": 462,
+    "caption": "Figure 6: Ablation study on learning rate warmup ratio and KL term coefficient.",
+    "crop": [
+      103.85,
+      184.98,
+      505.62,
+      338.57
+    ]
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4: Ablation study on tree-based advantages.",
+    "crop": null
+  },
+  {
+    "page": 17,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5: Hyperparameters for Tree-GRPO and baseline methods for all experiments.",
+    "crop": null
+  },
+  {
+    "page": 18,
+    "file": "table-6-p18.png",
+    "method": "caption_crop (1273x1755)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 400,
+    "width": 1273,
+    "height": 1755,
+    "caption": "Table  6  and Figure  7  show that tree search at the token/sentence level performs worse than the",
+    "crop": [
+      96.0,
+      121.68,
+      520.2,
+      706.43
+    ]
+  },
+  {
+    "page": 19,
+    "file": "table-6-p19.png",
+    "method": "caption_crop_table_below (1261x747)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 137,
+    "width": 1261,
+    "height": 747,
+    "caption": "Table 6: Test score comparison between tree search at token/sentence-level and agent step-level.",
+    "crop": [
+      96.0,
+      73.98,
+      516.0,
+      322.62
+    ]
+  }
+]
