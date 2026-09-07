@@ -3059,6 +3059,14 @@
       ],
       "commit": "e9eb1a4",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-06-rulemem-rule-memory-long-term-conversation.md"
+    },
+    {
+      "slug": "2026-09-07-edge-kopa-bench-korean-public-api",
+      "date": "2026-09-07",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2609.05395",
+      "title": "EDGE와 KOPA-Bench — 한국 공공 API 위에서 오픈소스 에이전트를 27B급으로 끌어올린 레시피",
+      "blog_url": "https://jkf87.github.io/posts/2026-09-07-edge-kopa-bench-korean-public-api"
     }
   ]
 }
