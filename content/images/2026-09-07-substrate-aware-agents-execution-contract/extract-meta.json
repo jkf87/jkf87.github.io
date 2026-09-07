@@ -1,0 +1,70 @@
+[
+  {
+    "page": 3,
+    "file": "table-1.png",
+    "method": "caption_crop (1836x1429)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 294,
+    "width": 1836,
+    "height": 1429,
+    "caption": "Table 1.  Condition-level execution and resource outcomes under task-only and 128 MB + 10 s contract-disclosed prompts. Index-aligned",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      476.12
+    ]
+  },
+  {
+    "page": 4,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (612x74pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 1.  Each independent task-only and contract-disclosed MaxRSS observation is indexed to its model configuration's task-only mean",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      73.51636505126953
+    ]
+  },
+  {
+    "page": 4,
+    "file": "table-2.png",
+    "method": "caption_crop (1836x1608)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 320,
+    "width": 1836,
+    "height": 1608,
+    "caption": "Table 2.  Condition-level observed resource outcomes under task-only, 128 MB contract-disclosed, and 96 MB contract-disclosed prompts.",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      535.92
+    ]
+  },
+  {
+    "page": 5,
+    "file": "figure-2.png",
+    "method": "caption_crop (1836x1328)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 151,
+    "width": 1836,
+    "height": 1328,
+    "caption": "Figure 2.  Every retained executable observation is indexed to its configured model's executable task-only-reference mean (100%). The",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      442.62
+    ]
+  }
+]
