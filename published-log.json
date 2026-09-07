@@ -3066,7 +3066,38 @@
       "source": "arxiv",
       "source_url": "https://arxiv.org/abs/2609.05395",
       "title": "EDGE와 KOPA-Bench — 한국 공공 API 위에서 오픈소스 에이전트를 27B급으로 끌어올린 레시피",
-      "blog_url": "https://jkf87.github.io/posts/2026-09-07-edge-kopa-bench-korean-public-api"
+      "blog_url": "https://jkf87.github.io/posts/2026-09-07-edge-kopa-bench-korean-public-api",
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_winner": "a-kakao-r2 (revised A)",
+      "voice_spyrl_winner_score": 85.2,
+      "voice_spyrl_final_score": 79.2,
+      "voice_spyrl_tags": [
+        "bold_overuse",
+        "gpt5x_ai_diction",
+        "korean_ai_slop",
+        "too_long_paragraph"
+      ],
+      "voice_spyrl_report": "memory/voice-feedback/2026-09-07-2026-09-07-edge-kopa-bench-korean-public-api-spyrl.json",
+      "highlights": 11,
+      "images_included": 5,
+      "original_figures_tables_included": "yes: Fig 1,2,4,6,7 caption crops",
+      "commit": "05d13c86",
+      "threads_root_id": "18458098474185185",
+      "threads_reply_ids": [
+        "18049770491597059",
+        "18414108865157829",
+        "18420439306150967",
+        "18103112789185087",
+        "18009303038960478"
+      ],
+      "threads_image_posts": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "threads_note": "orphan partial duplicate thread root 18338216575284395 (posts 1-5, no link post) from failed first publish attempt; owner may want to delete"
     }
   ]
 }
