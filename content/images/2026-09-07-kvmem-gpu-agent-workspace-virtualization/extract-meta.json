@@ -1,0 +1,221 @@
+[
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 1 illustrates the architecture and step-level execution",
+    "crop": null
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 2 shows a representative rollout, where attention re-",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "fig-1-p6.png",
+    "method": "caption_crop (1584x849)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 181,
+    "width": 1584,
+    "height": 849,
+    "caption": "Figure 1:  Overview of KVM EM ’s three core designs. First, step-level memory scheduling reselects a bounded working set once per agent",
+    "crop": [
+      42.0,
+      60.0,
+      570.0,
+      342.79
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-2-p7.png",
+    "method": "caption_crop (793x848)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 89,
+    "width": 793,
+    "height": 848,
+    "caption": "Figure 2:  Attention behavior across eight OpenHands SWE-bench",
+    "crop": [
+      42.0,
+      60.0,
+      306.12,
+      342.45
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-3-p9.png",
+    "method": "caption_crop (794x510)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 50,
+    "width": 794,
+    "height": 510,
+    "caption": "Figure 3:  Packed and pipelined KV rematerialization. Fragmented",
+    "crop": [
+      305.88,
+      60.0,
+      570.01,
+      229.81
+    ]
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1:  Utility and efficiency results across controlled long-history benchmarks. The active context column reports the context budget used by",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2:  Utility and efficiency results on LongMemEval-S. Higher answer accuracy is better; lower values are better for all efficiency metrics.",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2 provides a detailed breakdown on LongMemEval-",
+    "crop": null
+  },
+  {
+    "page": 13,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3 compares the maximum context and workspace",
+    "crop": null
+  },
+  {
+    "page": 13,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4 summarizes resource consumption and execu-",
+    "crop": null
+  },
+  {
+    "page": 14,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3:  Maximum context and workspace capacity on the same consumer laptop with a 24 GB RTX 5090 Laptop GPU.",
+    "crop": null
+  },
+  {
+    "page": 14,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4:  Workspace scalability on the server platform with 32-token blocks. The execution view is fixed at 64K tokens while the addressable",
+    "crop": null
+  },
+  {
+    "page": 14,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5 reports the task-success results. Across the 64",
+    "crop": null
+  },
+  {
+    "page": 15,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5:  Success on the first sixteen tasks in the canonical DeepSWE v1.1 task ordering. We select the first sixteen tasks directly, without",
+    "crop": null
+  },
+  {
+    "page": 15,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5 also reports results reaggregated from publicly re-",
+    "crop": null
+  },
+  {
+    "page": 15,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6 shows the efficiency results over all sixteen tasks.",
+    "crop": null
+  },
+  {
+    "page": 16,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6:  Efficiency on the first 16 DeepSWE tasks. Compared with the compaction-only Qwen3.8-27B baseline, KVM EM  achieves a 1.15 ×",
+    "crop": null
+  }
+]
