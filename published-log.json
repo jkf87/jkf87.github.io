@@ -3116,7 +3116,22 @@
       "voice_spyrl_report": "memory/voice-feedback/2026-09-07-tautau-bench-agent-construction-spyrl.json",
       "highlights": 16,
       "images_included": 4,
-      "original_figures_tables_included": "yes: Fig 1,2,5,6 caption crops"
+      "original_figures_tables_included": "yes: Fig 1,2,5,6 caption crops",
+      "commit": "6f55e366",
+      "threads_root_id": "18444986863132279",
+      "threads_reply_ids": [
+        "17943670392300651",
+        "18146792311527716",
+        "18113739665099309",
+        "18110774380864850"
+      ],
+      "threads_image_posts": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-07-tautau-bench-agent-construction.md"
     }
   ]
 }
