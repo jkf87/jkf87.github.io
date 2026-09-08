@@ -1,0 +1,140 @@
+[
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Fault classes in the conformance suite. Each class is instantiated in four domains.",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "fig-1-p8.png",
+    "method": "caption_crop (1613x475)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 86,
+    "width": 1613,
+    "height": 475,
+    "caption": "Figure 1:  Continuity  architecture. The planner is outside the trusted path and may propose arbitrary actions.",
+    "crop": [
+      38.4,
+      38.7,
+      575.75,
+      196.87
+    ]
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 2: Simplified verification procedure. Every check is",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Main conformance results. “Classes” is the num-",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "fig-3-p12.png",
+    "method": "caption_crop (1607x814)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 80,
+    "width": 1607,
+    "height": 814,
+    "caption": "Figure 3: Harmful-effect success and benign auto-completion. The full system preserves benign completion while",
+    "crop": [
+      38.4,
+      38.4,
+      573.85,
+      309.56
+    ]
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (536x49pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Targeted ablations over 128 fault–domain classes.",
+    "crop": [
+      38.04100036621094,
+      311.380126953125,
+      573.6000366210938,
+      360.19952392578125
+    ]
+  },
+  {
+    "page": 12,
+    "file": "fig-4-p12.png",
+    "method": "caption_crop (820x750)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 64,
+    "width": 820,
+    "height": 750,
+    "caption": "Figure 4: Effect ASR under nonzero targeted ablations.",
+    "crop": [
+      302.64,
+      311.38,
+      575.65,
+      561.3
+    ]
+  },
+  {
+    "page": 13,
+    "file": "table-4-p13.png",
+    "method": "caption_crop_table_below (814x696)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 53,
+    "width": 814,
+    "height": 696,
+    "caption": "Table 4: Reference-prototype latency.",
+    "crop": [
+      38.4,
+      51.25,
+      309.36,
+      282.9
+    ]
+  },
+  {
+    "page": 13,
+    "file": "fig-5-p13.png",
+    "method": "caption_crop (819x597)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 42,
+    "width": 819,
+    "height": 597,
+    "caption": "Figure 5: Proof-verification latency versus signed transi-",
+    "crop": [
+      38.4,
+      114.22,
+      311.16,
+      312.81
+    ]
+  }
+]
