@@ -17,7 +17,7 @@ const config: QuartzConfig = {
       tagId: "G-N4SCDP8CV9",
     },
     locale: "ko-KR",
-    baseUrl: "jkf87.github.io",
+    baseUrl: "conanssam.com",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
@@ -87,7 +87,8 @@ const config: QuartzConfig = {
         enableRSS: true,
       }),
       Plugin.Assets(),
-      Plugin.Static(),
+      Plugin.Static({ rootFiles: ["ads.txt"] }),
+      Plugin.CNAME(),
       Plugin.Favicon(),
       Plugin.NotFoundPage(),
       // Comment out CustomOgImages to speed up build time

@@ -27,9 +27,11 @@ export default (() => {
     const baseDir = fileData.slug === "404" ? path : pathToRoot(fileData.slug!)
     const iconPath = joinSegments(baseDir, "static/icon.png")
 
-    // Url of current page
-    const socialUrl =
-      fileData.slug === "404" ? url.toString() : joinSegments(url.toString(), fileData.slug!)
+    // Absolute URL of the current page. Keeping this derived from baseUrl means
+    // canonical and social URLs move together when a custom domain is enabled.
+    const pagePath =
+      fileData.slug === "index" ? url.pathname : joinSegments(url.pathname, fileData.slug!)
+    const canonicalUrl = new URL(pagePath, url.origin).toString()
 
     const usesCustomOgImage = ctx.cfg.plugins.emitters.some(
       (e) => e.name === CustomOgImagesEmitterName,
@@ -77,15 +79,19 @@ export default (() => {
         {cfg.baseUrl && (
           <>
             <meta property="twitter:domain" content={cfg.baseUrl}></meta>
-            <meta property="og:url" content={socialUrl}></meta>
-            <meta property="twitter:url" content={socialUrl}></meta>
+            <link rel="canonical" href={canonicalUrl} />
+            <meta property="og:url" content={canonicalUrl}></meta>
+            <meta property="twitter:url" content={canonicalUrl}></meta>
           </>
         )}
 
         <link rel="icon" href={iconPath} />
         <meta name="description" content={description} />
         <meta name="generator" content="Quartz" />
-        <meta name="google-site-verification" content="JqDMbJFwNjfQ-7_hxP4LIajSQf1iMnw46F1nXUPclng" />
+        <meta
+          name="google-site-verification"
+          content="JqDMbJFwNjfQ-7_hxP4LIajSQf1iMnw46F1nXUPclng"
+        />
         <meta name="naver-site-verification" content="30b0bd386fc7187199c06a8842d92949da967fcb" />
         <meta name="google-adsense-account" content="ca-pub-4778921872258874" />
         <script
