@@ -1,0 +1,53 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1434x644)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 259,
+    "width": 1434,
+    "height": 644,
+    "caption": "Figure 1:  RISE overview.  (a) RLVR updates  θ n  → θ ′",
+    "crop": [
+      67.2,
+      60.0,
+      544.78,
+      274.25
+    ]
+  },
+  {
+    "page": 9,
+    "file": "table-1-p9.png",
+    "method": "caption_crop_table_below (1435x861)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 203,
+    "width": 1435,
+    "height": 861,
+    "caption": "Table 1:  Mathematical reasoning results.  Accuracy (%) across model configurations. We evaluate on in-domain",
+    "crop": [
+      66.89,
+      64.97,
+      544.8,
+      351.65
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-2-p9.png",
+    "method": "caption_crop (1434x463)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 139,
+    "width": 1434,
+    "height": 463,
+    "caption": "Figure 2: RISE reaches higher accuracy in fewer steps across three model scales, demonstrating improved sample",
+    "crop": [
+      67.2,
+      421.13,
+      544.8,
+      575.28
+    ]
+  }
+]
