@@ -3274,6 +3274,49 @@
         5
       ],
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-08-agent-memory-portability-model-upgrade.md"
+    },
+    {
+      "slug": "2026-09-08-cua-universe-hybrid-gui-cli",
+      "date": "2026-09-08",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2609.05374",
+      "title": "컴퓨터 사용 에이전트에 CLI를 다리면 9B 모델도 성공률 23→40% — CUA-Universe 정리 (arXiv 2609.05374)",
+      "blog_url": "https://jkf87.github.io/posts/2026-09-08-cua-universe-hybrid-gui-cli",
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_winner": "c-formal",
+      "voice_spyrl_winner_score": 77.8,
+      "voice_spyrl_final_score": 71.8,
+      "voice_spyrl_tags": [
+        "gpt5x_ai_diction",
+        "korean_ai_slop",
+        "metaphor_heading",
+        "question_heading"
+      ],
+      "voice_spyrl_report": "memory/voice-feedback/2026-09-08-cua-universe-hybrid-gui-cli-spyrl.json",
+      "voice_spyrl_final_report": "memory/voice-feedback/2026-09-08-cua-universe-hybrid-gui-cli-spyrl-final.json",
+      "highlights": 15,
+      "images_included": 2,
+      "original_figures_tables_included": "yes: Figure 1, Figure 4, Table 1/2 (paper figs used: Fig1, Fig4)",
+      "commit": "470fb11e",
+      "seo_aeo_gate": "pass",
+      "image_gate": "pass (2 refs)",
+      "promo_gate": "pass",
+      "public_html_highlights": "verified #fff59d + <strong> (13 style occurrences, 18 span+strong matches)",
+      "threads_root_id": "18112599164101695",
+      "threads_reply_ids": [
+        "18114787357772182",
+        "18123992365860717",
+        "18037200308820016",
+        "18429484462199040",
+        "18127070368696372",
+        "18125272090836257"
+      ],
+      "threads_image_posts": [
+        1,
+        2,
+        7
+      ],
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-08-cua-universe-hybrid-gui-cli.md"
     }
   ]
 }
