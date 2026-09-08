@@ -1,0 +1,87 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1598x806)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 481,
+    "width": 1598,
+    "height": 806,
+    "caption": "Figure 1:  Overview of CUA-Universe. (1) Scale:  16 real desktop applications spanning creative & interactive, office & knowl-",
+    "crop": [
+      39.36,
+      20.51,
+      571.99,
+      288.84
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (528x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1:  Combined performance on CUA-Verse and OSWorld.  CUA-Verse : 8 apps  ×  20 tasks; Score is the average VLM",
+    "crop": [
+      42.0,
+      306.3510437011719,
+      569.998046875,
+      257.3200988769531
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-4-p6.png",
+    "method": "caption_crop (1070x489)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 113,
+    "width": 1070,
+    "height": 489,
+    "caption": "Figure 4:  Per-application OSWorld scores across models and interfaces (GUI vs.",
+    "crop": [
+      42.0,
+      283.99,
+      398.65,
+      446.48
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-2-p6.png",
+    "method": "caption_crop (1585x427)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 143,
+    "width": 1585,
+    "height": 427,
+    "caption": "Table 2:  Generalization on OSWorld-",
+    "crop": [
+      42.0,
+      283.99,
+      570.0,
+      425.85
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-1-p6.png",
+    "method": "caption_crop (1070x1284)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 326,
+    "width": 1070,
+    "height": 1284,
+    "caption": "Table 1 and Figure 4 summarize the",
+    "crop": [
+      42.0,
+      283.99,
+      398.65,
+      711.45
+    ]
+  }
+]
