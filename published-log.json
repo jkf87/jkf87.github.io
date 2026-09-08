@@ -3405,6 +3405,28 @@
         5
       ],
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-08-rise-self-extrapolating-policy-distillation.md"
+    },
+    {
+      "slug": "2026-09-08-continuity-security-context-contracts",
+      "date": "2026-09-08",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2609.05269",
+      "title": "CONTINUITY — 에이전트 보안 컨트롤의 조합 실패를 막는 보안 문맥 컨트랙트 (arXiv 2609.05269)",
+      "blog_url": "https://jkf87.github.io/posts/2026-09-08-continuity-security-context-contracts",
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_winner": "a2-kakao-revised",
+      "voice_spyrl_winner_score": 92.0,
+      "voice_spyrl_winner_tags": [
+        "binary_contrast"
+      ],
+      "voice_spyrl_final_score": 91.0,
+      "voice_spyrl_report": "memory/voice-feedback/2026-09-08-continuity-security-context-contracts-spyrl.json (+ r2, final)",
+      "seo_aeo_gate": "pass",
+      "image_gate": "pass (4 refs)",
+      "promo_gate": "pass",
+      "highlights": 16,
+      "images_included": 4,
+      "original_figures_tables_included": "yes: Figure 1,3,4 + Table 4 caption crops"
     }
   ]
 }
