@@ -3389,7 +3389,22 @@
       "promo_gate": "pass",
       "highlights": 20,
       "images_included": 3,
-      "original_figures_tables_included": "yes: Figure 1, Table 1, Figure 2"
+      "original_figures_tables_included": "yes: Figure 1, Table 1, Figure 2",
+      "commit": "c2e2a899",
+      "public_html_highlights": "verified #fff59d + <strong> (17 occurrences each in live HTML)",
+      "threads_root_id": "17890237311436170",
+      "threads_reply_ids": [
+        "18099053189631495",
+        "18101493791201384",
+        "18132483100686527",
+        "18143118142560893"
+      ],
+      "threads_image_posts": [
+        1,
+        2,
+        5
+      ],
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-08-rise-self-extrapolating-policy-distillation.md"
     }
   ]
 }
