@@ -1,0 +1,106 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1584x797)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 146,
+    "width": 1584,
+    "height": 797,
+    "caption": "Figure 1: Traditional LLMs mainly face text-level conflicts between parametric knowledge and user inputs, whereas LLM",
+    "crop": [
+      42.0,
+      42.0,
+      570.0,
+      307.51
+    ]
+  },
+  {
+    "page": 3,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Key statistics for the KC-bench domains.",
+    "crop": null
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (1584x914)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 154,
+    "width": 1584,
+    "height": 914,
+    "caption": "Figure 2: The dynamic execution pipeline of KC-Bench . It illustrates the interaction loop between a task-driven user simulator",
+    "crop": [
+      42.0,
+      42.0,
+      570.0,
+      346.41
+    ]
+  },
+  {
+    "page": 4,
+    "file": "table-2-p4.png",
+    "method": "caption_crop (1547x1976)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 477,
+    "width": 1547,
+    "height": 1976,
+    "caption": "Table 2 reports automatic evaluation and human-verified",
+    "crop": [
+      54.6,
+      42.0,
+      569.99,
+      700.49
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Success scores. Each cell reports automatic LLM evaluation/manual verification.",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "fig-3-p6.png",
+    "method": "caption_crop (1584x988)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 474,
+    "width": 1584,
+    "height": 988,
+    "caption": "Figure 3: An example agent-user interaction for each scenario. It clearly reveals the distinct sources of knowledge conflicts, as",
+    "crop": [
+      42.0,
+      42.0,
+      570.0,
+      370.87
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Operational profiles of all evaluated models. Claude, Gemini, DeepSeek, MiniMax, and GLM-Air denote Claude Haiku",
+    "crop": null
+  }
+]
