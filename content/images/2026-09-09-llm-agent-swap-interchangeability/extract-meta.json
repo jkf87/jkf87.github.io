@@ -1,0 +1,125 @@
+[
+  {
+    "page": 3,
+    "file": "fig-1-p3.png",
+    "method": "caption_crop (1533x399)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 79,
+    "width": 1533,
+    "height": 399,
+    "caption": "Figure 1.  The swap test. Colour marks provenance: after the trade, team 1 holds an agent formed in team 2. Superscripts mark the seats,  I",
+    "crop": [
+      42.89,
+      86.98,
+      553.44,
+      219.59
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1.  Condition means in each benchmark’s own units. Progress",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2.  Decomposition, in normalised units.  V  is the value of",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3.  What the messages a swap adds are doing, as a share",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4.  Share of partner-note sentences by category, in percent.",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5.  Seat-targeted swaps in Collab-Overcooked.  Π  is the drop",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  2  splits the ten-episode averages of Table  1  into the",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "fig-2-p8.png",
+    "method": "caption_crop (780x521)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 68,
+    "width": 780,
+    "height": 521,
+    "caption": "Figure 2.  Recovery after the roster change. Task score (solid,",
+    "crop": [
+      42.89,
+      55.06,
+      302.56,
+      228.34
+    ]
+  },
+  {
+    "page": 8,
+    "file": "table-6-p8.png",
+    "method": "caption_crop_table_below (1484x331)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 89,
+    "width": 1484,
+    "height": 331,
+    "caption": "Table 6.  Ablations, all in the high-coupling Collab-Overcooked",
+    "crop": [
+      59.25,
+      59.01,
+      553.44,
+      169.13
+    ]
+  }
+]
