@@ -3541,6 +3541,46 @@
         6
       ],
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-09-spine-llm-sycophancy-sustained-pressure.md"
+    },
+    {
+      "slug": "2026-09-09-kcbench-agent-knowledge-conflict",
+      "date": "2026-09-09",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2609.03588",
+      "title": "에이전트는 사용자가 틀렸을 때 못 막는다 — KC-Bench 지식 충돌 벤치마크 결과 (arXiv 2609.03588)",
+      "blog_url": "https://conanssam.com/posts/2026-09-09-kcbench-agent-knowledge-conflict",
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_winner": "a2-kakao-revised",
+      "voice_spyrl_winner_score": 79.0,
+      "voice_spyrl_winner_tags": [
+        "binary_contrast",
+        "metaphor_heading",
+        "question_heading"
+      ],
+      "voice_spyrl_final_score": 79.0,
+      "voice_spyrl_report": "memory/voice-feedback/2026-09-09-kcbench-agent-knowledge-conflict-spyrl.json (+r2, final, final-r2)",
+      "seo_aeo_gate": "pass",
+      "image_gate": "pass (3 refs)",
+      "promo_gate": "pass",
+      "highlights": 12,
+      "images_included": 3,
+      "original_figures_tables_included": "yes: Figure 1,2,3 caption crops + Table 2 crop + Tables 1,2,3 as markdown tables",
+      "commit": "4f3210c6",
+      "public_html_highlights": "verified #fff59d + <strong> (12 occurrences in live HTML)",
+      "threads_root_id": "18095152226540704",
+      "threads_reply_ids": [
+        "18085894553664619",
+        "17972666201938407",
+        "18121805902803134",
+        "18121162943482673"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-09-kcbench-agent-knowledge-conflict.md"
     }
   ]
 }
