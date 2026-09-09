@@ -1,0 +1,340 @@
+[
+  {
+    "page": 3,
+    "file": "fig-1-p3.png",
+    "method": "caption_crop (1435x727)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 229,
+    "width": 1435,
+    "height": 727,
+    "caption": "Figure 1: The SPINE protocol loop. The proxy draws each move from a fixed 24-entry tactic menu (left); every",
+    "crop": [
+      58.87,
+      58.87,
+      536.76,
+      300.97
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-1-p3-2.png",
+    "method": "caption_crop (1298x1859)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 522,
+    "width": 1298,
+    "height": 1859,
+    "caption": "Figure  1  shows the framework.",
+    "crop": [
+      80.18,
+      58.87,
+      512.36,
+      678.09
+    ]
+  },
+  {
+    "page": 4,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: SPINE evaluation design. In both scenarios the",
+    "crop": null
+  },
+  {
+    "page": 5,
+    "file": "fig-2-p5.png",
+    "method": "caption_crop (1434x1076)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 343,
+    "width": 1434,
+    "height": 1076,
+    "caption": "Figure 2: A SPINE run in the false-presupposition scenario (target: DeepSeek V4 Pro). The user proxy holds the",
+    "crop": [
+      58.87,
+      58.86,
+      536.41,
+      417.02
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2:  False presuppositions ,  n  = 100  items per target. Open-weight variants above the rule, production systems",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3:  Unethical queries ,  n  = 100  items per target. Rows and columns as in Table  2 . Collapse means asserting",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4:  What makes the proxy’s pressure effective?",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5:  Is the correct fact still there when the model",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6:  Tactic usage against damage , by MAFALDA",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  3  shows a representative run from this sce-",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  9  gives the exact configuration of every",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  11  collects, per target and bank, the three per-",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  10  gives the level-2 breakdown deferred from",
+    "crop": null
+  },
+  {
+    "page": 13,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 7: The 24-entry tactic menu offered to the user proxy at every turn: the 23 level-2 MAFALDA fallacies",
+    "crop": null
+  },
+  {
+    "page": 14,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (478x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 8: The four-strategy menu of the SYCON-derived ablation arms, in  Hong et al.  ( 2025 )’s escalation-ladder",
+    "crop": [
+      58.55699920654297,
+      410.7394104003906,
+      536.57861328125,
+      96.80706024169922
+    ]
+  },
+  {
+    "page": 14,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (478x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 9: Decoding parameters and interfaces. “—” under Temperature means the parameter is omitted from the",
+    "crop": [
+      58.55699920654297,
+      410.7394104003906,
+      536.408447265625,
+      367.8570556640625
+    ]
+  },
+  {
+    "page": 14,
+    "file": "fig-3-p14.png",
+    "method": "caption_crop (1434x1060)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 398,
+    "width": 1434,
+    "height": 1060,
+    "caption": "Figure 3: An unethical-queries run in which the target collapses at turn 23 of 25 after sustained emotional pressure.",
+    "crop": [
+      58.87,
+      410.74,
+      536.41,
+      763.82
+    ]
+  },
+  {
+    "page": 15,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 10:  Per-tactic usage and damage  in both banks, over 1,200 naturalistic runs at  T  = 25 .",
+    "crop": null
+  },
+  {
+    "page": 16,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 11:  Per-target counts of the three sub-collapse signals , naturalistic protocol, 100 items per target and bank,",
+    "crop": null
+  },
+  {
+    "page": 16,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 12:  Decoding temperature has little effect on sycophantic collapse.  Results are reported for DeepSeek V4",
+    "crop": null
+  },
+  {
+    "page": 17,
+    "file": "fig-4-p17.png",
+    "method": "caption_crop (1434x1307)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 269,
+    "width": 1434,
+    "height": 1307,
+    "caption": "Figure 4: Proxy system prompt.",
+    "crop": [
+      58.87,
+      81.93,
+      536.42,
+      517.04
+    ]
+  },
+  {
+    "page": 17,
+    "file": "fig-5-p17.png",
+    "method": "caption_crop (1434x445)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 42,
+    "width": 1434,
+    "height": 445,
+    "caption": "Figure 5: Proxy per-turn user message.",
+    "crop": [
+      58.87,
+      496.74,
+      536.42,
+      644.95
+    ]
+  },
+  {
+    "page": 18,
+    "file": "fig-6-p18.png",
+    "method": "caption_crop (1434x324)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 37,
+    "width": 1434,
+    "height": 324,
+    "caption": "Figure 6: Rendered menu, two of four channels.",
+    "crop": [
+      58.87,
+      58.87,
+      536.42,
+      166.46
+    ]
+  },
+  {
+    "page": 18,
+    "file": "fig-7-p18.png",
+    "method": "caption_crop (1434x611)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 141,
+    "width": 1434,
+    "height": 611,
+    "caption": "Figure 7: Judge system prompt.",
+    "crop": [
+      58.87,
+      145.42,
+      536.42,
+      348.83
+    ]
+  }
+]
