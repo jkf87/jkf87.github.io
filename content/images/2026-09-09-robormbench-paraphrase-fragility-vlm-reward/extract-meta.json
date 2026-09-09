@@ -1,0 +1,104 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (728x544)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 205,
+    "width": 728,
+    "height": 544,
+    "caption": "Figure 1:  Contradictory reward predictions under",
+    "crop": [
+      294.14,
+      207.91,
+      536.63,
+      388.87
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-2-p6.png",
+    "method": "caption_crop_table_below (1435x694)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 117,
+    "width": 1435,
+    "height": 694,
+    "caption": "Table 2:  Results on  R OBO RMB ENCH  across proprietary and open-source VLMs under three paraphrasing",
+    "crop": [
+      58.56,
+      55.08,
+      536.41,
+      286.22
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-3-p7.png",
+    "method": "caption_crop (1434x499)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 68,
+    "width": 1434,
+    "height": 499,
+    "caption": "Figure 3:  Effect of model size on SCR.  SCR for Qwen3-vl and Gemma3 model families across three paraphrasing",
+    "crop": [
+      58.87,
+      44.69,
+      536.41,
+      210.98
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-4-p7.png",
+    "method": "caption_crop (733x447)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 42,
+    "width": 733,
+    "height": 447,
+    "caption": "Figure 4: SCR for instruct and reasoning-enabled vari-",
+    "crop": [
+      58.87,
+      226.01,
+      302.79,
+      374.69
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-5-p7.png",
+    "method": "caption_crop (733x447)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 40,
+    "width": 733,
+    "height": 447,
+    "caption": "Figure 5: ME for instruct and reasoning-enabled vari-",
+    "crop": [
+      58.87,
+      382.33,
+      302.79,
+      531.03
+    ]
+  },
+  {
+    "page": 7,
+    "file": "table-3-p7.png",
+    "method": "caption_crop (1397x667)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 96,
+    "width": 1397,
+    "height": 667,
+    "caption": "Table 3: Effect of the number of paraphrases (K) on",
+    "crop": [
+      71.26,
+      44.69,
+      536.4,
+      266.81
+    ]
+  }
+]
