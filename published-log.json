@@ -3448,7 +3448,22 @@
       "images_included": 4,
       "original_figures_tables_included": "yes: Figure 1, Figure 3, Figure 4, Table 2",
       "commit": "daefdb09",
-      "public_html_highlights": "verified #fff59d + <strong> (14 occurrences each in live HTML)"
+      "public_html_highlights": "verified #fff59d + <strong> (14 occurrences each in live HTML)",
+      "threads_root_id": "18021845783872895",
+      "threads_reply_ids": [
+        "18244488067311221",
+        "18336861379284963",
+        "18103703720266706",
+        "18174568951429923",
+        "17972747078933621"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        4,
+        6
+      ],
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-09-robormbench-paraphrase-fragility-vlm-reward.md"
     }
   ]
 }
