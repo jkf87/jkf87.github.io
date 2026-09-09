@@ -3485,7 +3485,24 @@
       "promo_gate": "pass",
       "highlights": 13,
       "images_included": 2,
-      "original_figures_tables_included": "yes: Figure 1, Figure 2 crops + Table 1,2,6 as markdown tables"
+      "original_figures_tables_included": "yes: Figure 1, Figure 2 crops + Table 1,2,6 as markdown tables",
+      "commit": "8611bb14",
+      "public_html_highlights": "verified #fff59d + <strong> (13 / 18 occurrences in live HTML)",
+      "threads_root_id": "17907547605520949",
+      "threads_reply_ids": [
+        "18131543536639202",
+        "18098947409305691",
+        "18056569649551906",
+        "18098082833572174",
+        "18486597157108203"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        5,
+        6
+      ],
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-09-llm-agent-swap-interchangeability.md"
     }
   ]
 }
