@@ -3618,6 +3618,18 @@
         6
       ],
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-09-coevolving-harness-model-onpolicy-correction.md"
+    },
+    {
+      "slug": "2026-09-10-procedural-graphs-self-evolving-llm-agents",
+      "date": "2026-09-10",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2609.09153",
+      "title": "Procedural Graph: LLM 에이전트를 위한 자가진화 절차 그래프",
+      "blog_url": "https://jkf87.github.io/posts/2026-09-10-procedural-graphs-self-evolving-llm-agents",
+      "commit": null,
+      "threads_root_id": null,
+      "threads_reply_ids": [],
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-10-procedural-graphs-self-evolving-llm-agents.md"
     }
   ]
 }

@@ -1,0 +1,106 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1493x787)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 201,
+    "width": 1493,
+    "height": 787,
+    "caption": "Figure 1  |  From knowledge to procedure.  A Knowledge Graph organizes facts into triplets that answer  what-is  questions.",
+    "crop": [
+      49.16,
+      54.39,
+      546.42,
+      316.65
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (1659x784)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 262,
+    "width": 1659,
+    "height": 784,
+    "caption": "Figure 2  |  Overview of the Procedural Graph framework.  Left:  procedural triplets define  G .  Middle:  the framework",
+    "crop": [
+      42.47,
+      69.53,
+      595.28,
+      330.46
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  1  compares the Procedural Graph against seven baselines across six benchmarks and four LLM",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1  |  Main results across LLMs and benchmarks.  Brackets give 95% confidence intervals; the best value is highlighted.",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "fig-3-p8.png",
+    "method": "caption_crop (1488x978)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 394,
+    "width": 1488,
+    "height": 978,
+    "caption": "Figure 3  |  Ensemble cash trajectories and Kaplan–Meier survival curves across four LLMs.  Bold lines and shaded",
+    "crop": [
+      49.85,
+      72.53,
+      545.42,
+      398.3
+    ]
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2  |  PG construction modes on HotpotQA and MultiChallenge.  All metrics are higher-is-better.",
+    "crop": null
+  },
+  {
+    "page": 9,
+    "file": "fig-4-p9.png",
+    "method": "caption_crop (1486x470)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 136,
+    "width": 1486,
+    "height": 470,
+    "caption": "Figure 4  |  Mean lifespan and capital raised across ten rounds of PG self-evolution.  Gray dashed lines show training",
+    "crop": [
+      50.03,
+      586.46,
+      545.23,
+      742.69
+    ]
+  }
+]
