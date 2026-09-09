@@ -16,4 +16,4 @@ Allow: /
 User-agent: Yeti
 Allow: /
 
-Sitemap: https://jkf87.github.io/sitemap.xml
+Sitemap: https://conanssam.com/sitemap.xml
