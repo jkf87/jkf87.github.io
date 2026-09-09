@@ -1,0 +1,19 @@
+[
+  {
+    "page": 3,
+    "file": "fig-1-p3.png",
+    "method": "caption_crop (1261x680)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 175,
+    "width": 1261,
+    "height": 680,
+    "caption": "Figure 1:",
+    "crop": [
+      96.0,
+      60.0,
+      516.0,
+      286.34
+    ]
+  }
+]
