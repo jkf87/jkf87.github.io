@@ -3698,7 +3698,26 @@
       "highlights": 12,
       "images_included": 5,
       "original_figures_tables_included": "yes: Figures 1-3,5,6 caption crops",
-      "public_html_highlights": "verified 12x #fff59d, 17x <strong> in built HTML"
+      "public_html_highlights": "verified live: 12x #fff59d, 17x <strong>, CTA links present",
+      "commit": "d4bd6550",
+      "threads_root_id": "17959045893217103",
+      "threads_reply_ids": [
+        "18127436461802652",
+        "18404425480089430",
+        "17981449857109966",
+        "17917918308431444",
+        "18141147691595591",
+        "18099350972577814"
+      ],
+      "threads_image_posts": [
+        1,
+        4,
+        5,
+        7
+      ],
+      "threads_quality_gate": "pass (7 posts, 4 images)",
+      "threads_note": "publisher stalled between replies; state-file resume used; possible duplicate reply branch from concurrent retries — needs manual check",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-10-avatar-llm-scientific-workflow-orchestration.md"
     }
   ]
 }
