@@ -3828,7 +3828,23 @@
       "original_figures_tables_included": "yes: Figures 1,2,3 caption crops",
       "public_html_highlights": "verified live: 15x #fff59d, 15x <strong>, CTA links present",
       "commit": "5ad6bd24",
-      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-10-karl-knowledge-agents-rl.md"
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-10-karl-knowledge-agents-rl.md",
+      "threads_root_id": "18060700094527579",
+      "threads_reply_ids": [
+        "18623540146060090",
+        "18105494030612830",
+        "18129087004764806",
+        "18203279713375478",
+        "17912257242463656"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        5,
+        6
+      ],
+      "threads_quality_gate": "pass (6 posts, 4 images, rehosted)",
+      "threads_note": "first root attempt failed media-container 400 (container invalid); state-seeded resume also failed (invalid media ID) confirming root never published; clean full republish succeeded 1-5, state-resume completed post 6. No duplicate roots."
     }
   ]
 }
