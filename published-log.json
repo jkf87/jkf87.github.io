@@ -3741,7 +3741,23 @@
       "original_figures_tables_included": "yes: Figures 1,2,4 + Table 1 caption crops",
       "commit": "120d3379",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-10-jarvisgui-cross-device-gui-agents.md",
-      "public_html_highlights": "verified live: 14x #fff59d, 18x <strong>, CTA links present"
+      "public_html_highlights": "verified live: 14x #fff59d, 18x <strong>, CTA links present",
+      "threads_root_id": "18123130510862935",
+      "threads_reply_ids": [
+        "18029594504899676",
+        "17935106334121997",
+        "18617562301048792",
+        "18126040751497348",
+        "18088196339240640"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        5,
+        6
+      ],
+      "threads_quality_gate": "pass (6 posts, 4 images, rehosted)",
+      "threads_note": "first attempt failed media container 400 on root; retried with --rehost-image, clean 6-post publish, no duplicates"
     }
   ]
 }
