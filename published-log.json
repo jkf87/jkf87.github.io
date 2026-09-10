@@ -3677,6 +3677,28 @@
         6
       ],
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-10-execcritic-learn-to-test-coding-agents.md"
+    },
+    {
+      "slug": "2026-09-10-avatar-llm-scientific-workflow-orchestration",
+      "date": "2026-09-10",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2609.10509",
+      "title": "Avatar: LLM으로 과학 워크플로 오케스트레이션 자동화 (arXiv 2609.10509)",
+      "blog_url": "https://jkf87.github.io/posts/2026-09-10-avatar-llm-scientific-workflow-orchestration",
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_winner": "b-newsletter",
+      "voice_spyrl_winner_score": 89.5,
+      "voice_spyrl_winner_tags": [],
+      "voice_spyrl_spy": "a-kakao.md (spySuspicion 36.48)",
+      "voice_spyrl_final_score": 83.3,
+      "voice_spyrl_report": "memory/voice-feedback/2026-09-10-avatar-llm-scientific-workflow-orchestration-spyrl.json (+final)",
+      "seo_aeo_gate": "pass",
+      "image_gate": "pass (5 refs, all caption_crop)",
+      "promo_gate": "pass",
+      "highlights": 12,
+      "images_included": 5,
+      "original_figures_tables_included": "yes: Figures 1-3,5,6 caption crops",
+      "public_html_highlights": "verified 12x #fff59d, 17x <strong> in built HTML"
     }
   ]
 }
