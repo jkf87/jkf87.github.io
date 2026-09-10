@@ -3739,8 +3739,9 @@
       "highlights": 14,
       "images_included": 4,
       "original_figures_tables_included": "yes: Figures 1,2,4 + Table 1 caption crops",
-      "commit": "pending",
-      "obsidian_note": "pending"
+      "commit": "120d3379",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-10-jarvisgui-cross-device-gui-agents.md",
+      "public_html_highlights": "verified live: 14x #fff59d, 18x <strong>, CTA links present"
     }
   ]
 }
