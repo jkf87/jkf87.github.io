@@ -3758,6 +3758,51 @@
       ],
       "threads_quality_gate": "pass (6 posts, 4 images, rehosted)",
       "threads_note": "first attempt failed media container 400 on root; retried with --rehost-image, clean 6-post publish, no duplicates"
+    },
+    {
+      "slug": "2026-09-10-belief-state-engine-pomdp-llm-agents",
+      "date": "2026-09-10",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2609.10036",
+      "title": "Belief-State Engine: LLM 에이전트에 POMDP 신념 상태를 외장으로 붙이기 (arXiv 2609.10036)",
+      "blog_url": "https://jkf87.github.io/posts/2026-09-10-belief-state-engine-pomdp-llm-agents",
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_winner": "c-formal",
+      "voice_spyrl_winner_score": 75.2,
+      "voice_spyrl_winner_tags": [
+        "korean_slop x1",
+        "question_heading x5"
+      ],
+      "voice_spyrl_spy": "a-kakao.md (46.5, grade D; revised to 68.5)",
+      "voice_spyrl_final_score": 71.2,
+      "voice_spyrl_report": "memory/voice-feedback/2026-09-10-belief-state-engine-pomdp-llm-agents-spyrl.json (+final)",
+      "seo_aeo_gate": "pass",
+      "image_gate": "pass (5 refs, all caption_crop)",
+      "promo_gate": "pass",
+      "highlights": 16,
+      "images_included": 5,
+      "original_figures_tables_included": "yes: Figures 1-5 caption crops",
+      "public_html_highlights": "verified live: 15x #fff59d, 15x <strong>, CTA links present",
+      "commit": "3250d817",
+      "threads_root_id": "18094859387553969",
+      "threads_reply_ids": [
+        "18141399556533120",
+        "17909572545296149",
+        "18164789056475350",
+        "18123560956852304",
+        "18114681634783757",
+        "18124297075843652"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        5,
+        6,
+        7
+      ],
+      "threads_quality_gate": "pass (7 posts, 5 images, rehosted)",
+      "threads_note": "first run published posts 1-6 with root image but stalled; state-file resume completed post 6 (image) and 7 cleanly; chain intact, no duplicate roots",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-10-belief-state-engine-pomdp-llm-agents.md"
     }
   ]
 }
