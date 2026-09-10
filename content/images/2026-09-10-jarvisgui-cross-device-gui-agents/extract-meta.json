@@ -1,0 +1,169 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1723x779)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 237,
+    "width": 1723,
+    "height": 779,
+    "caption": "Figure 1: Overview of JarvisGUI.  Green  denotes tasks on mobile platforms,  orange  denotes tasks on desktop",
+    "crop": [
+      20.19,
+      29.93,
+      594.3,
+      289.27
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (815x898)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 146,
+    "width": 815,
+    "height": 898,
+    "caption": "Figure 2: The system architecture of JarvisGUI environ-",
+    "crop": [
+      45.47,
+      8.39,
+      316.75,
+      307.43
+    ]
+  },
+  {
+    "page": 4,
+    "file": "table-1-p4.png",
+    "method": "caption_crop (1474x1780)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 516,
+    "width": 1474,
+    "height": 1780,
+    "caption": "Table  1  shows the detailed comparison between",
+    "crop": [
+      45.47,
+      8.39,
+      536.41,
+      601.52
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-3-p5.png",
+    "method": "caption_crop (1633x658)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 224,
+    "width": 1633,
+    "height": 658,
+    "caption": "Figure 3: Data Collection Pipeline of JarvisGUI.",
+    "crop": [
+      51.21,
+      53.27,
+      595.28,
+      272.22
+    ]
+  },
+  {
+    "page": 5,
+    "file": "table-1-p5.png",
+    "method": "caption_crop (1633x1154)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 373,
+    "width": 1633,
+    "height": 1154,
+    "caption": "Table 1: Comparison of JarvisGUI with existing GUI",
+    "crop": [
+      51.21,
+      53.27,
+      595.28,
+      437.37
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  2  summarizes the statistics of our benchmark,",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Data statistics of JarvisGUI",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  3  presents the comparative results of different",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3:  Main Experimental Results.  Performance comparison on Atomic and Multi-task benchmarks.  TSR :",
+    "crop": null
+  },
+  {
+    "page": 9,
+    "file": "fig-4-p9.png",
+    "method": "caption_crop (728x556)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 52,
+    "width": 728,
+    "height": 556,
+    "caption": "Figure 4: Task success rate vs. number of subtasks for",
+    "crop": [
+      58.87,
+      84.56,
+      301.31,
+      269.41
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-4-p9-2.png",
+    "method": "caption_crop (728x755)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 81,
+    "width": 728,
+    "height": 755,
+    "caption": "Figure  4  and Appendix  D.1 , the task success rate",
+    "crop": [
+      58.87,
+      84.56,
+      301.14,
+      335.85
+    ]
+  }
+]

@@ -3718,6 +3718,29 @@
       "threads_quality_gate": "pass (7 posts, 4 images)",
       "threads_note": "publisher stalled between replies; state-file resume used; possible duplicate reply branch from concurrent retries — needs manual check",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-10-avatar-llm-scientific-workflow-orchestration.md"
+    },
+    {
+      "slug": "2026-09-10-jarvisgui-cross-device-gui-agents",
+      "date": "2026-09-10",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2609.10451",
+      "title": "JarvisGUI: 크로스 디바이스 GUI 에이전트 벤치마크 (arXiv 2609.10451)",
+      "blog_url": "https://jkf87.github.io/posts/2026-09-10-jarvisgui-cross-device-gui-agents",
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_winner": "c-formal",
+      "voice_spyrl_winner_score": 85.0,
+      "voice_spyrl_winner_tags": [],
+      "voice_spyrl_spy": "a-kakao.md (spySuspicion 76.75, grade D)",
+      "voice_spyrl_final_score": 83.0,
+      "voice_spyrl_report": "memory/voice-feedback/2026-09-10-jarvisgui-cross-device-gui-agents-spyrl.json (+final)",
+      "seo_aeo_gate": "pass",
+      "image_gate": "pass (4 refs, all caption_crop)",
+      "promo_gate": "pass",
+      "highlights": 14,
+      "images_included": 4,
+      "original_figures_tables_included": "yes: Figures 1,2,4 + Table 1 caption crops",
+      "commit": "pending",
+      "obsidian_note": "pending"
     }
   ]
 }
