@@ -3635,6 +3635,14 @@
         "18123428419905363"
       ],
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-10-procedural-graphs-self-evolving-llm-agents.md"
+    },
+    {
+      "slug": "2026-09-10-execcritic-learn-to-test-coding-agents",
+      "date": "2026-09-10",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2609.09133",
+      "title": "ExecCritic: 테스트를 학습하는 코딩 에이전트 (arXiv 2609.09133)",
+      "blog_url": "https://jkf87.github.io/posts/2026-09-10-execcritic-learn-to-test-coding-agents"
     }
   ]
 }
