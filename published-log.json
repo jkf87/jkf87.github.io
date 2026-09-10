@@ -3845,6 +3845,13 @@
       ],
       "threads_quality_gate": "pass (6 posts, 4 images, rehosted)",
       "threads_note": "first root attempt failed media-container 400 (container invalid); state-seeded resume also failed (invalid media ID) confirming root never published; clean full republish succeeded 1-5, state-resume completed post 6. No duplicate roots."
+    },
+    {
+      "date": "2026-09-11",
+      "slug": "2026-09-11-trace-synthesized-rewards-diagnostic-rl",
+      "title": "TRACE: 합성 보상으로 진단 에이전트를 강화학습하는 방법 (arXiv 2609.10315)",
+      "source": "https://arxiv.org/abs/2609.10315",
+      "url": "https://blog.conanssam.org/2026-09-11-trace-synthesized-rewards-diagnostic-rl/"
     }
   ]
 }
