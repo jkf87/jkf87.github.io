@@ -3871,7 +3871,36 @@
    "slug": "2026-09-11-ppp-proactive-personalized-llm-agents",
    "title": "PPP: 사용자와 대화하며 적응하는 에이전트를 강화학습으로 훈련하는 방법 (arXiv 2511.02208)",
    "source": "https://arxiv.org/abs/2511.02208",
-   "url": "https://blog.conanssam.org/2026-09-11-ppp-proactive-personalized-llm-agents/"
+   "url": "https://conanssam.com/posts/2026-09-11-ppp-proactive-personalized-llm-agents",
+   "voice_spyrl_mode": "multi-candidate",
+   "voice_spyrl_winner": "c-formal.md",
+   "voice_spyrl_winner_score": 79.5,
+   "voice_spyrl_spy": "a-kakao.md (53.0, grade D)",
+   "voice_spyrl_final_score": 70.5,
+   "voice_spyrl_report": "memory/voice-feedback/2026-09-11-ppp-proactive-personalized-llm-agents-spyrl.json (+final)",
+   "seo_aeo_gate": "pass",
+   "image_gate": "pass (4 refs, all caption_crop)",
+   "promo_gate": "pass",
+   "highlights": 17,
+   "images_included": 4,
+   "original_figures_tables_included": "yes: Figures 1,2,3,7 caption crops",
+   "public_html_highlights": "verified live: 10x #fff59d, 17x <strong>, CTA links present",
+   "commit": "b69524aa",
+   "threads_root_id": "18135927118545458",
+   "threads_reply_ids": [
+    "17900598294596131",
+    "18127233598765025",
+    "18006267041778632",
+    "17995731282033513"
+   ],
+   "threads_image_posts": [
+    1,
+    3,
+    4,
+    5
+   ],
+   "threads_quality_gate": "pass (5 posts, 4 images, rehosted)",
+   "threads_note": "first two publish runs stalled after root and post 3; state-file resumes completed the chain cleanly, no duplicate roots"
   }
  ]
 }
