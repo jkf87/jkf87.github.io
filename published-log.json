@@ -3907,7 +3907,44 @@
       "slug": "2026-09-11-bluestar-tiered-autonomous-cyber-defense",
       "title": "BlueSTAR: LLM 방어 에이전트를 실전 사이버 방어에 실제로 배치 가능하게 만드는 계층 구조 (arXiv 2609.11852)",
       "source": "https://arxiv.org/abs/2609.11852",
-      "url": "https://jkf87.github.io/posts/2026-09-11-bluestar-tiered-autonomous-cyber-defense"
+      "url": "https://jkf87.github.io/posts/2026-09-11-bluestar-tiered-autonomous-cyber-defense",
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_winner": "b-newsletter-revised.md (winner revised per gate spyTags)",
+      "voice_spyrl_winner_score": 82.0,
+      "voice_spyrl_spy": "a-kakao.md (24.5, grade D)",
+      "voice_spyrl_final_score": 70.0,
+      "voice_spyrl_winner_tags": [
+        "binary_contrast",
+        "metaphor_heading",
+        "too_long_paragraph"
+      ],
+      "voice_spyrl_report": "memory/voice-feedback/2026-09-11-bluestar-tiered-autonomous-cyber-defense-spyrl-revised2.json (+final)",
+      "seo_aeo_gate": "pass",
+      "image_gate": "pass (3 refs, all caption_crop)",
+      "promo_gate": "pass",
+      "highlights": 11,
+      "images_included": 3,
+      "original_figures_tables_included": "yes: Figures 1,2,3 caption crops",
+      "public_html_highlights": "verified live: 11x #fff59d, 11x <strong>, CTA links present",
+      "commit": "a2debacb",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-11-bluestar-tiered-autonomous-cyber-defense.md",
+      "threads_root_id": "18110990918115263",
+      "threads_reply_ids": [
+        "18198022072379627",
+        "18025564277692053",
+        "18615506893014572",
+        "17947410207289816",
+        "18119272166312661",
+        "18074971580719881"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "threads_quality_gate": "pass (7 posts, 4 images, rehosted)",
+      "threads_note": "first run stalled after post 2; state-file resume completed 3-7 cleanly, no duplicate roots"
     }
   ]
 }
