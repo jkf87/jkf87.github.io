@@ -3981,7 +3981,26 @@
       "seo_aeo_gate": "pass",
       "image_gate": "pass (3 refs, all caption_crop)",
       "promo_gate": "pass",
-      "published_at": "2026-09-11T22:20:00+09:00"
+      "published_at": "2026-09-11T22:20:00+09:00",
+      "threads_root_id": "17896228890656407",
+      "threads_reply_ids": [
+        "18103936724217199",
+        "18395854672203905",
+        "18015797444949623",
+        "18618458788008201",
+        "18113678416803735",
+        "17966264643165020"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "threads_quality_gate": "pass (7 posts, 4 images, rehosted)",
+      "public_html_highlights": "verified live: 16x #fff59d, 18x <strong>, CTA links present",
+      "commit": "a9a9297d",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-11-artificial-id-persistent-alignment-agentic-ai.md"
     }
   ]
 }
