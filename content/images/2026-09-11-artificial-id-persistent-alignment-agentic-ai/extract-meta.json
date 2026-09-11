@@ -1,0 +1,89 @@
+[
+  {
+    "page": 3,
+    "file": "fig-1-p3.png",
+    "method": "caption_crop (1476x853)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 1144,
+    "width": 1476,
+    "height": 853,
+    "caption": "Figure 1: Functional architecture of the artificial id. Current language models provide the general reasoning associated",
+    "crop": [
+      60.0,
+      303.04,
+      552.0,
+      587.32
+    ]
+  },
+  {
+    "page": 4,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 2 sets out the environment, the turnover and the three worlds. Controller turnover leaves the physical body intact.",
+    "crop": null
+  },
+  {
+    "page": 5,
+    "file": "fig-2-p5.png",
+    "method": "caption_crop (1477x1088)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 1665,
+    "width": 1477,
+    "height": 1088,
+    "caption": "Figure 2:  The virtual Petri dish and its three worlds.  Bottom: a controller is drawn from the living population and",
+    "crop": [
+      60.0,
+      41.72,
+      552.0,
+      404.02
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 3 shows the result. Populations with continued heritable variation recover above the best blind constant-force",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "fig-3-p7.png",
+    "method": "caption_crop (1477x1546)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 195,
+    "width": 1477,
+    "height": 1546,
+    "caption": "Figure 3:  Re-adaptation after sensor reversal.  At lifetime 50 the left–right food-bearing mapping is reversed while",
+    "crop": [
+      60.0,
+      108.95,
+      552.0,
+      623.85
+    ]
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Risk map for persistent agency, ordered by evidence rather than by section. World 1 directly demonstrates",
+    "crop": null
+  }
+]
