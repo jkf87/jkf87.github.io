@@ -3865,6 +3865,13 @@
     "18005014421995819",
     "18624966940065050"
    ]
+  },
+  {
+   "date": "2026-09-11",
+   "slug": "2026-09-11-ppp-proactive-personalized-llm-agents",
+   "title": "PPP: 사용자와 대화하며 적응하는 에이전트를 강화학습으로 훈련하는 방법 (arXiv 2511.02208)",
+   "source": "https://arxiv.org/abs/2511.02208",
+   "url": "https://blog.conanssam.org/2026-09-11-ppp-proactive-personalized-llm-agents/"
   }
  ]
 }

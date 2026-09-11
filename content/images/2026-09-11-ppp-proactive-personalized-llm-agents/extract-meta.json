@@ -1,0 +1,162 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (1260x1420)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 343,
+    "width": 1260,
+    "height": 1420,
+    "caption": "Figure  1 ). This deficiency leads to missed opportunities to clarify underspecified requests",
+    "crop": [
+      96.0,
+      142.54,
+      516.0,
+      615.38
+    ]
+  },
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (667x611)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 64,
+    "width": 667,
+    "height": 611,
+    "caption": "Figure 1:",
+    "crop": [
+      294.0,
+      73.28,
+      516.0,
+      276.43
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-2-p3.png",
+    "method": "caption_crop (1260x498)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 133,
+    "width": 1260,
+    "height": 498,
+    "caption": "Figure 2: UserVille simulates users with different preferences and provides feedback on",
+    "crop": [
+      96.0,
+      69.86,
+      516.0,
+      235.43
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-3-p6.png",
+    "method": "caption_crop (1253x492)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 105,
+    "width": 1253,
+    "height": 492,
+    "caption": "Figure 3: F1 score on  SWE-Bench-Verified",
+    "crop": [
+      96.0,
+      55.65,
+      513.51,
+      219.02
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-4-p6.png",
+    "method": "caption_crop (1253x492)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 105,
+    "width": 1253,
+    "height": 492,
+    "caption": "Figure 4: RL curve. We can see that our method",
+    "crop": [
+      96.0,
+      55.65,
+      513.51,
+      219.05
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Performance on  SWE-Bench-Verified (Func-Loc)  ( N  =  488) and  BrowseComp-Plus",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  1  presents",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "fig-7-p8.png",
+    "method": "caption_crop (1253x423)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 114,
+    "width": 1253,
+    "height": 423,
+    "caption": "Figure 7: Average interactions per session",
+    "crop": [
+      96.0,
+      69.86,
+      513.51,
+      210.5
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-8-p8.png",
+    "method": "caption_crop (1253x423)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 114,
+    "width": 1253,
+    "height": 423,
+    "caption": "Figure 8: Evaluation on SWE-Bench Verified",
+    "crop": [
+      96.0,
+      69.86,
+      513.51,
+      210.44
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-5-p8.png",
+    "method": "caption_crop (667x626)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 62,
+    "width": 667,
+    "height": 626,
+    "caption": "Figure 5: Task Score (F1 on  SWE-Func-Loc  and",
+    "crop": [
+      294.0,
+      248.14,
+      516.0,
+      456.37
+    ]
+  }
+]
