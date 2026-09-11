@@ -3858,7 +3858,13 @@
    "slug": "2026-09-11-s3gym-self-testing-self-judging-self-improvement",
    "title": "S3Gym: LLM이 자기 테스트·자기 판정으로 스스로 좋아지는지 측정하는 벤치마크 (arXiv 2608.31100)",
    "source": "https://arxiv.org/abs/2608.31100",
-   "url": "https://blog.conanssam.org/2026-09-11-s3gym-self-testing-self-judging-self-improvement/"
+   "url": "https://blog.conanssam.org/2026-09-11-s3gym-self-testing-self-judging-self-improvement/",
+   "threadsRootId": "18142396381589842",
+   "threadsReplyIds": [
+    "18561335329074817",
+    "18005014421995819",
+    "18624966940065050"
+   ]
   }
  ]
 }
