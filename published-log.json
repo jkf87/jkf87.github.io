@@ -3945,6 +3945,17 @@
       ],
       "threads_quality_gate": "pass (7 posts, 4 images, rehosted)",
       "threads_note": "first run stalled after post 2; state-file resume completed 3-7 cleanly, no duplicate roots"
+    },
+    {
+      "slug": "2026-09-11-dr-mas-stable-multi-agent-llm-rl",
+      "date": "2026-09-11",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2602.08847",
+      "title": "Dr. MAS: 멀티에이전트 LLM 강화학습이 터지는 이유와 에이전트별 정규화 해법",
+      "blog_url": "https://jkf87.github.io/posts/2026-09-11-dr-mas-stable-multi-agent-llm-rl",
+      "threads_root_id": "",
+      "threads_reply_ids": [],
+      "published_at": "2026-09-11T19:06:00+09:00"
     }
   ]
 }
