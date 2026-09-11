@@ -1,0 +1,65 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (1462x756)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 457,
+    "width": 1462,
+    "height": 756,
+    "caption": "Figure 1 Overview of the five RSI autonomy levels and representative systems.  Autonomy progressively expands",
+    "crop": [
+      62.4,
+      425.18,
+      549.62,
+      676.74
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-2-p5.png",
+    "method": "caption_crop (1484x643)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 163,
+    "width": 1484,
+    "height": 643,
+    "caption": "Figure 2  Loop Patterns of Five Levels. Gray dashed frames indicate human-controlled components. Green dashed",
+    "crop": [
+      58.87,
+      60.96,
+      553.14,
+      274.78
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 3 summarizes 393 eligible model–benchmark observations across ten capability domains for models",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "fig-3-p8.png",
+    "method": "caption_crop (1484x907)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 205,
+    "width": 1484,
+    "height": 907,
+    "caption": "Figure 3  Cross-domain capability trajectories and an illustrative RSI extension. Each line reports an annual domain",
+    "crop": [
+      58.87,
+      171.02,
+      553.17,
+      473.29
+    ]
+  }
+]

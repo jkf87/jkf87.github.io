@@ -4001,6 +4001,13 @@
       "public_html_highlights": "verified live: 16x #fff59d, 18x <strong>, CTA links present",
       "commit": "a9a9297d",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-11-artificial-id-persistent-alignment-agentic-ai.md"
+    },
+    {
+      "date": "2026-09-12",
+      "slug": "2026-09-12-rsi-recursive-self-improvement-autonomy-levels",
+      "title": "인류가 만드는 마지막 AI — 재귀적 자기개선(RSI) 자율성 5단계 논문 정리",
+      "url": "https://arxiv.org/abs/2609.11873",
+      "publishedUrl": "https://blog.conanssam.org/2026-09-12-rsi-recursive-self-improvement-autonomy-levels/"
     }
   ]
 }
