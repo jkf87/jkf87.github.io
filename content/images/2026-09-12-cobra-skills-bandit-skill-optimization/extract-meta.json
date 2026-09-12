@@ -1,0 +1,150 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1261x833)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 246,
+    "width": 1261,
+    "height": 833,
+    "caption": "Figure 1:  Overview of COBRA-Skills.  At each round, skills in  P t  are prioritized using a neural re-",
+    "crop": [
+      96.0,
+      69.86,
+      516.0,
+      347.05
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-2-p3.png",
+    "method": "caption_crop (1261x746)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 111,
+    "width": 1261,
+    "height": 746,
+    "caption": "Figure 2:  Overall performance and cost-effectiveness across target models.  Top: average test",
+    "crop": [
+      96.0,
+      69.86,
+      516.01,
+      318.06
+    ]
+  },
+  {
+    "page": 3,
+    "file": "table-1-p3.png",
+    "method": "caption_crop (1261x1217)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 233,
+    "width": 1261,
+    "height": 1217,
+    "caption": "Table 1). Compared with SkillOpt (Yang et al., 2026a), COBRA-Skills reduces total optimization",
+    "crop": [
+      96.0,
+      69.86,
+      516.01,
+      475.25
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-1-p6.png",
+    "method": "caption_crop_table_below (1261x851)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 173,
+    "width": 1261,
+    "height": 851,
+    "caption": "Table 1: Main performance comparison across six benchmarks on three target models. Results are",
+    "crop": [
+      96.0,
+      83.06,
+      516.0,
+      366.55
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-2-p6.png",
+    "method": "caption_crop_table_below (1260x584)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 104,
+    "width": 1260,
+    "height": 584,
+    "caption": "Table 2: Optimization efficiency across the six benchmarks.  ∆ Score denotes the gain in average",
+    "crop": [
+      96.0,
+      371.52,
+      515.99,
+      565.7
+    ]
+  },
+  {
+    "page": 7,
+    "file": "table-3-p7.png",
+    "method": "caption_crop_table_below (1261x657)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 131,
+    "width": 1261,
+    "height": 657,
+    "caption": "Table 3: Performance comparison under external agent harnesses with Qwen3.6-35B-A3B as the",
+    "crop": [
+      96.0,
+      83.06,
+      516.0,
+      301.75
+    ]
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Fig. 4 provides the complementary per-round view, which tracks the optimization score  r t  of the",
+    "crop": null
+  },
+  {
+    "page": 9,
+    "file": "fig-3-p9.png",
+    "method": "caption_crop (1261x914)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 141,
+    "width": 1261,
+    "height": 914,
+    "caption": "Figure 3:  Checkpoint performance over cumulative optimization cost.  Held-out test perfor-",
+    "crop": [
+      96.0,
+      69.86,
+      516.0,
+      374.06
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-4-p9.png",
+    "method": "caption_crop (1261x686)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 107,
+    "width": 1261,
+    "height": 686,
+    "caption": "Figure 4:  Per-round optimization dynamics",
+    "crop": [
+      96.0,
+      381.58,
+      516.01,
+      609.72
+    ]
+  }
+]

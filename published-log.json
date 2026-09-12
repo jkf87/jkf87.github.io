@@ -4015,6 +4015,16 @@
    "title": "T1: 터미널 에이전트를 순수 RL로 64%까지 끌어올린 레시피 (arXiv 2609.11042)",
    "url": "https://arxiv.org/abs/2609.11042",
    "publishedUrl": "https://blog.conanssam.org/2026-09-12-t1-terminal-agent-rl/"
+  },
+  {
+   "slug": "2026-09-12-cobra-skills-bandit-skill-optimization",
+   "date": "2026-09-12",
+   "source": "arxiv",
+   "source_url": "https://arxiv.org/abs/2609.11682",
+   "title": "COBRA-Skills: 컨텍스트 밴딧으로 에이전트 스킬 최적화 비용 55% 줄이기",
+   "blog_url": "https://jkf87.github.io/posts/2026-09-12-cobra-skills-bandit-skill-optimization",
+   "commit": null,
+   "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-12-cobra-skills-bandit-skill-optimization.md"
   }
  ]
 }
