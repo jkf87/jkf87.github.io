@@ -1,0 +1,65 @@
+[
+  {
+    "page": 16,
+    "file": "fig-3-p16.png",
+    "method": "caption_crop (1481x1073)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 597,
+    "width": 1481,
+    "height": 1073,
+    "caption": "Figure 3 :  Normalized Aggregated Performance on 25 CREW-Wildfire Tasks by Language",
+    "crop": [
+      58.51,
+      162.95,
+      552.0,
+      520.2
+    ]
+  },
+  {
+    "page": 19,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 4 :  Visualization of ORCH on Scale Level Complex (Most Difficult Task).  The vertical",
+    "crop": null
+  },
+  {
+    "page": 20,
+    "file": "fig-5-p20.png",
+    "method": "caption_crop (1574x1445)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 478,
+    "width": 1574,
+    "height": 1445,
+    "caption": "Figure 5 :  Ablation study on Organization Design, Team Hierarchy Analysis, and Failure",
+    "crop": [
+      41.89,
+      60.0,
+      566.3,
+      541.18
+    ]
+  },
+  {
+    "page": 21,
+    "file": "fig-6-p21.png",
+    "method": "caption_crop (1477x760)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 180,
+    "width": 1477,
+    "height": 760,
+    "caption": "Figure 6 :  Team Hierarchy Generation for Scale Level Complex Task with Human Expert",
+    "crop": [
+      60.0,
+      60.0,
+      552.0,
+      312.73
+    ]
+  }
+]
