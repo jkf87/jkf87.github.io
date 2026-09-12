@@ -1,0 +1,53 @@
+[
+  {
+    "page": 7,
+    "file": "table1.png",
+    "method": "caption_crop",
+    "status": "accepted",
+    "reason": "vector table crop anchored to caption",
+    "size_kb": 81,
+    "width": 1243,
+    "height": 391,
+    "caption": "Table 1: Overall task performance and inference efficiency across five LLMs and two datasets.",
+    "crop": [
+      99.69100189208984,
+      72.97927856445312,
+      513.7410583496094,
+      202.97927856445312
+    ]
+  },
+  {
+    "page": 11,
+    "file": "table4.png",
+    "method": "caption_crop",
+    "status": "accepted",
+    "reason": "vector table crop anchored to caption",
+    "size_kb": 126,
+    "width": 1237,
+    "height": 642,
+    "caption": "Table 4: Comparison of API costs between E CDYSIS  and baseline methods during harness training.",
+    "crop": [
+      99.69100189208984,
+      73.05445861816406,
+      511.99920654296875,
+      286.9576416015625
+    ]
+  },
+  {
+    "page": 12,
+    "file": "table6.png",
+    "method": "caption_crop",
+    "status": "accepted",
+    "reason": "vector table crop anchored to caption",
+    "size_kb": 58,
+    "width": 1082,
+    "height": 391,
+    "caption": "Table 6: Training time (s) for the three harness self-evolution methods.",
+    "crop": [
+      125.96200561523438,
+      73.05445861816406,
+      486.04010009765625,
+      203.05445861816406
+    ]
+  }
+]

@@ -4066,6 +4066,26 @@
       "public_html_highlights": "verified live: 11x #fff59d, 11x <strong>, CTA links present",
       "commit": null,
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-12-orch-collective-intelligence-embodied-ai.md"
+    },
+    {
+      "slug": "2026-09-12-ecdysis-harness-training",
+      "date": "2026-09-12",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2609.11677",
+      "title": "Ecdysis: 하네스 자기진화를 1.84배 빠르게 만든 실패 진단 프레임 (arXiv 2609.11677)",
+      "blog_url": "https://blog.conanssam.org/2026-09-12-ecdysis-harness-training/",
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_winner": "c-formal.md (71.6, grade B)",
+      "voice_spyrl_spy": "a-kakao.md (55.5, grade D)",
+      "voice_spyrl_final_score": 71.6,
+      "voice_spyrl_report": "memory/voice-feedback/2026-09-12-ecdysis-harness-training-spyrl.json (+final)",
+      "highlights": 12,
+      "images_included": 3,
+      "original_figures_tables_included": "yes: Tables 1, 4, 6 caption crops",
+      "seo_aeo_gate": "pass",
+      "image_gate": "pass (3 refs, caption_crop)",
+      "promo_gate": "pass",
+      "published_at": "2026-09-12T13:00+09:00"
     }
   ]
 }
