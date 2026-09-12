@@ -4085,7 +4085,26 @@
       "seo_aeo_gate": "pass",
       "image_gate": "pass (3 refs, caption_crop)",
       "promo_gate": "pass",
-      "published_at": "2026-09-12T13:00+09:00"
+      "published_at": "2026-09-12T13:00+09:00",
+      "threads_root_id": "18492030331096060",
+      "threads_reply_ids": [
+        "18091030151248190",
+        "18029294684677379",
+        "18622477381034994",
+        "18116297965756791",
+        "18108766631129353"
+      ],
+      "threads_image_posts": [
+        1,
+        4,
+        5,
+        6
+      ],
+      "threads_quality_gate": "pass (6 posts, 4 images)",
+      "threads_note": "initial uploader publish step failed (code 24 create-publish delay); published manually with 8s delay between create and publish. Two orphan unpublished containers discarded (17984625210118395, 17984625324118395) and one container published as root (17984625462118395 -> 18492030331096060)",
+      "public_html_highlights": "verified live: 11x #fff59d, 11x <strong>, CTA links present",
+      "commit": "fc729d67 (+5df038e2 log fix)",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-12-ecdysis-harness-training.md"
     }
   ]
 }
