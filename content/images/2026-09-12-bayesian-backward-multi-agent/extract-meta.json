@@ -1,0 +1,258 @@
+[
+  {
+    "page": 2,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  1  summarizes our reverse-anchored",
+    "crop": null
+  },
+  {
+    "page": 4,
+    "file": "fig-1-p4.png",
+    "method": "caption_crop (1434x610)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 153,
+    "width": 1434,
+    "height": 610,
+    "caption": "Figure 1: Reverse-anchored aggregation, left to right. Input  x  is decomposed into contextual evidence  a  and",
+    "crop": [
+      58.87,
+      58.86,
+      536.41,
+      261.7
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  3  reports standalone GTPA@1 and frozen-",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "table-1-p8.png",
+    "method": "caption_crop_table_below (1435x1073)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 258,
+    "width": 1435,
+    "height": 1073,
+    "caption": "Table 1: GTPA@1 (%) on  All . ‘Rand.’ and ‘Dicta.’ denote ‘random’ and ‘dictatorial’. The double rule separates",
+    "crop": [
+      58.56,
+      155.24,
+      536.41,
+      512.62
+    ]
+  },
+  {
+    "page": 8,
+    "file": "table-2-p8.png",
+    "method": "caption_crop_table_below (1253x654)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 140,
+    "width": 1253,
+    "height": 654,
+    "caption": "Table 2: GTPA@1 (%) on  Disagree . Column groups and formatting match Table  1 .",
+    "crop": [
+      119.08,
+      294.94,
+      536.41,
+      512.62
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-2-p8.png",
+    "method": "caption_crop (728x653)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 66,
+    "width": 728,
+    "height": 653,
+    "caption": "Figure 2:",
+    "crop": [
+      294.14,
+      322.18,
+      536.41,
+      539.38
+    ]
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Anchor utility on the headline pool (GTPA@1 %). Each row uses one anchor distribution for standalone",
+    "crop": null
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4: Label-collision rates on  All  (headline pool).",
+    "crop": null
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5: Test GTPA@1 gain (pp) of calibrated  R  over uncalibrated  R . MinJS, FwdJS, and LogLin heads are frozen.",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  6  reports GTPA@1 after ranking the five",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6: GTPA@1 (%) by reverse JS rank on  Dis-",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  7  reports the same frozen-head evaluation as",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 7: Test GTPA@1 gain (pp) from class-specific",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  3  in the main text compares the full reverse",
+    "crop": null
+  },
+  {
+    "page": 13,
+    "file": "fig-3-p13.png",
+    "method": "caption_crop (1439x690)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 108,
+    "width": 1439,
+    "height": 690,
+    "caption": "Figure 3: GTPA@1 (%) by JS rank on the evaluation pool. Reverse  R ,  MeanF , and  GenF  are used as anchors.",
+    "crop": [
+      58.87,
+      256.73,
+      538.15,
+      486.53
+    ]
+  },
+  {
+    "page": 13,
+    "file": "table-8-p13.png",
+    "method": "caption_crop (1277x1241)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 240,
+    "width": 1277,
+    "height": 1241,
+    "caption": "Table 8: One-factor reverse anchors (GTPA@1 (%)) on",
+    "crop": [
+      58.56,
+      256.73,
+      483.7,
+      670.33
+    ]
+  },
+  {
+    "page": 13,
+    "file": "table-9-p13.png",
+    "method": "caption_crop (1277x1491)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 310,
+    "width": 1277,
+    "height": 1491,
+    "caption": "Table  9  reports LogLin GTPA@1 for  w R",
+    "crop": [
+      58.53,
+      256.73,
+      483.7,
+      753.62
+    ]
+  },
+  {
+    "page": 13,
+    "file": "table-9-p13-4.png",
+    "method": "caption_crop (1281x1439)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 295,
+    "width": 1281,
+    "height": 1439,
+    "caption": "Table 9: Log-linear GTPA@1 (%) as a function of re-",
+    "crop": [
+      111.57,
+      256.73,
+      538.06,
+      736.0
+    ]
+  }
+]
