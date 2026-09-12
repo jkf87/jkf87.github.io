@@ -4207,6 +4207,26 @@
         4,
         5
       ]
+    },
+    {
+      "slug": "2026-09-13-maple-memory-augmented-optimization-agent",
+      "date": "2026-09-13",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2609.11636",
+      "title": "MAPLE: 최적화 에이전트에 상태 메모리를 넣어 연속 변경 요청을 처리하는 방법 (arXiv 2609.11636)",
+      "blog_url": "https://conanssam.com/posts/2026-09-13-maple-memory-augmented-optimization-agent",
+      "voice_spyrl_mode": "multi-candidate (A/B/C + revised A2)",
+      "voice_spyrl_winner": "a2-kakao.md (88.4, grade A)",
+      "voice_spyrl_spy": "b-newsletter.md (35.1, D); initial a-kakao 65.4 C, c-formal 66.6 C",
+      "voice_spyrl_final_score": 88.4,
+      "voice_spyrl_report": "memory/voice-feedback/2026-09-13-maple-memory-augmented-optimization-agent-spyrl*.json",
+      "highlights": 12,
+      "images_included": 3,
+      "original_figures_tables_included": "yes: Figure 1, Figure 3, Figure 5 caption crops",
+      "seo_aeo_gate": "pass",
+      "image_gate": "pass (3 refs, caption_crop)",
+      "promo_gate": "pass",
+      "published_at": "2026-09-13T07:15+0900"
     }
   ]
 }
