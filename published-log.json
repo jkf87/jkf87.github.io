@@ -4181,6 +4181,20 @@
       ],
       "threads_quality_gate": "pass (6 posts, 4 images, rehosted)",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-12-bayesian-backward-multi-agent.md"
+    },
+    {
+      "slug": "2026-09-12-magenta-lean-verification-math-agents",
+      "date": "2026-09-12",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2609.11319",
+      "title": "Magenta: Lean 검증을 수학 추론 루프 안에 넣어 7B 모델로 IMO 6문제를 전부 푼 방법 (arXiv 2609.11319)",
+      "blog_url": "https://conanssam.com/posts/2026-09-12-magenta-lean-verification-math-agents",
+      "voice_spyrl": {
+        "mode": "multi-candidate",
+        "winner": "a2-kakao",
+        "score": 97.0,
+        "grade": "A"
+      }
     }
   ]
 }
