@@ -4105,6 +4105,26 @@
       "public_html_highlights": "verified live: 11x #fff59d, 11x <strong>, CTA links present",
       "commit": "fc729d67 (+5df038e2 log fix)",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-12-ecdysis-harness-training.md"
+    },
+    {
+      "slug": "2026-09-12-mr-lhdr-long-horizon-deep-research",
+      "date": "2026-09-12",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2609.11318",
+      "title": "Mr.LHDR: 최고 성능 딥리서치 에이전트도 43%에 그치는 장기 증거 사슬 벤치마크 (arXiv 2609.11318)",
+      "blog_url": "https://jkf87.github.io/posts/2026-09-12-mr-lhdr-long-horizon-deep-research",
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_winner": "c-formal.md (73.0, grade B) -> revised final 77.6 (B)",
+      "voice_spyrl_spy": "a-kakao.md (45.1, grade D), b-newsletter.md (41.8, grade D)",
+      "voice_spyrl_final_score": 77.6,
+      "voice_spyrl_report": "memory/voice-feedback/2026-09-12-mr-lhdr-long-horizon-deep-research-spyrl.json (+final)",
+      "highlights": 10,
+      "images_included": 9,
+      "original_figures_tables_included": "yes: Figures 1,2,3,4,5,6,7 + Tables 3,4 caption/anchored crops",
+      "seo_aeo_gate": "pass",
+      "image_gate": "pass (9 refs)",
+      "promo_gate": "pass",
+      "published_at": "2026-09-12T16:14+0900"
     }
   ]
 }
