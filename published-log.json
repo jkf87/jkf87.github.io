@@ -4348,7 +4348,33 @@
       "images_included": 3,
       "seo_aeo_gate": "pass",
       "image_gate": "pass (3 caption_crop refs)",
-      "promo_gate": "pass"
+      "promo_gate": "pass",
+      "blog_url": "https://conanssam.com/posts/2026-09-13-hexa-in-context-rl-skill-bank",
+      "tags": [
+        "llm",
+        "agent",
+        "reinforcement-learning",
+        "in-context-learning",
+        "skill-library",
+        "arxiv"
+      ],
+      "published_at": "2026-09-13T16:20+0900",
+      "commit": "4e5baf66",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-13-hexa-in-context-rl-skill-bank.md",
+      "threads_root_id": "17958312209999099",
+      "threads_reply_ids": [
+        "18054018458792438",
+        "18063114812785386",
+        "17989532622028538",
+        "18189934246393019"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        5
+      ],
+      "threads_quality_gate": "pass (5 posts, 3 images, rehosted)",
+      "public_html_highlights": "verified live: 6x #fff59d, 6x <strong>, CTA links present"
     }
   ]
 }
