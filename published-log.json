@@ -4334,6 +4334,21 @@
         "17883060237504365",
         "17953825080255612"
       ]
+    },
+    {
+      "slug": "2026-09-13-hexa-in-context-rl-skill-bank",
+      "date": "2026-09-13",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2606.29315",
+      "title": "LLM 에이전트를 학습 없이 강화학습처럼 만드는 방법: HExA 논문 정리",
+      "voice_spyrl_mode": "multi-candidate (A/B/C)",
+      "voice_spyrl_winner": "b-newsletter (81.1 B); final-path rerun 73.8 B (FAQ headings are runbook-mandated)",
+      "voice_spyrl_report": "memory/voice-feedback/2026-09-13-hexa-in-context-rl-skill-bank-spyrl.json",
+      "highlights": 6,
+      "images_included": 3,
+      "seo_aeo_gate": "pass",
+      "image_gate": "pass (3 caption_crop refs)",
+      "promo_gate": "pass"
     }
   ]
 }
