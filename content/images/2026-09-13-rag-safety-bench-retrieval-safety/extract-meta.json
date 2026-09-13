@@ -1,0 +1,19 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (728x502)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 82,
+    "width": 728,
+    "height": 502,
+    "caption": "Figure 1: The four conditions in RAG-Safety-Bench",
+    "crop": [
+      294.14,
+      207.91,
+      536.41,
+      374.9
+    ]
+  }
+]
