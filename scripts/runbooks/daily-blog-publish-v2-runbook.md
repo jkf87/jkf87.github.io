@@ -52,6 +52,23 @@ Avoid:
 - 웅장한 마무리
 - 조쉬/뉴스레터식 과장된 장면 도입, unless the source is specifically a video/interview and it still stays kakao/plain.
 
+
+## Search-first title policy
+From 2026-09-13, every new cron post must use a search-intent title, not a paper-title-first headline. Keep the paper/project name, but put the reader's searchable problem or concept first when possible.
+
+Rules:
+- Prefer `검색어/문제/개념: 논문명 또는 프로젝트명 정리` over `논문명: ...` when the original name is obscure.
+- Include one of the reader-facing anchors when true: `LLM 에이전트`, `AI 코딩 에이전트`, `RAG`, `메모리`, `강화학습`, `하네스`, `벤치마크`, `오픈소스 모델`, `딥리서치`, `수학 추론`, `GUI 에이전트`.
+- Preserve exact paper/project name somewhere in the title or first-screen table for entity search.
+- Keep titles natural Korean, roughly 35-75 characters before the arXiv suffix. Do not keyword-stuff.
+- Before finalizing, write 2-3 title candidates and pick the one most likely to match a human search query.
+
+Examples:
+- Weak: `MAPLE: 최적화 에이전트에 상태 메모리를 넣어 연속 변경 요청을 처리하는 방법`
+- Better: `LLM 에이전트가 이전 작업을 기억해야 하는 이유: MAPLE 논문 정리`
+- Weak: `ExecCritic: 테스트를 학습하는 코딩 에이전트`
+- Better: `AI 코딩 에이전트가 테스트를 배워야 하는 이유: ExecCritic 논문 정리`
+
 ## Voice SpyRL gate
 Before build, run the self-verifiable style gate. This implements the user's approved RLSVR/SpyRL idea as a style eval, not model training.
 
@@ -174,6 +191,7 @@ python3 scripts/blog-promo-quality-gate.py content/posts/<slug>.md --require-rel
 2. Work in `/Users/conanssam-m4/.openclaw/workspace-blogbot/site`.
 3. Read `published-log.json`; avoid duplicates. Daily count is only for reporting, never a skip reason.
 4. Select one strong candidate.
+4.5. Draft 2-3 search-intent title candidates using the Search-first title policy, then choose the final frontmatter `title`.
 5. Prepare verified local images before writing the final post.
 6. Create 3 temporary Korean draft variants under `/tmp/blog-spyrl/<slug>/`.
 7. Run the multi-candidate Voice SpyRL gate and select the JSON `winner`.

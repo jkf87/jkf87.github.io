@@ -10,6 +10,18 @@ tags:
 
 처음 방문한 분들이 관심사별로 글을 찾을 수 있도록 주요 주제를 묶었습니다. 모든 글은 [[posts|전체 글 모아보기]]에서 최신순으로 확인할 수 있습니다.
 
+
+## AI 논문·에이전트 주제 클러스터
+
+검색 유입과 내부 링크 강화를 위해 AI 글을 세부 주제별 허브로 다시 묶었습니다.
+
+- [[topic-clusters|AI 블로그 주제 클러스터 전체]]
+- [[llm-agent-papers|LLM 에이전트 논문 모음]]
+- [[ai-coding-agent-papers|AI 코딩 에이전트 논문·도구 모음]]
+- [[agent-memory-rag|LLM 메모리·RAG 논문 모음]]
+- [[agent-rl-harness|에이전트 강화학습·하네스 논문 모음]]
+- [[ai-model-updates-open-source|오픈소스 LLM·모델 업데이트 모음]]
+
 ## AI 교육·수업 활용
 
 초등학생, 교사, 학부모가 AI를 실제 교육 현장에서 어떻게 활용할 수 있는지 다룹니다.

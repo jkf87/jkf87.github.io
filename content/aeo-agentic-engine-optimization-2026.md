@@ -1,5 +1,5 @@
 ---
-title: "AEO(에이전틱 엔진 최적화) — AI가 네 문서를 못 읽으면 네 API는 유령임"
+title: "AEO란 무엇인가: AI 에이전트가 읽기 좋은 문서 최적화 방법"
 date: 2026-04-20
 tags:
   - AI
@@ -8,8 +8,20 @@ tags:
   - 개발자경험
   - LLM
   - llms.txt
-description: "AI 코딩 에이전트가 문서를 읽는 방식은 사람과 완전히 다름. SEO 다음은 AEO — Agentic Engine Optimization. llms.txt, skill.md, 토큰 최적화까지 실무 체크리스트 정리."
+description: "AEO(Agentic Engine Optimization)의 의미와 llms.txt, skill.md, 토큰 최적화, AI 에이전트 친화 문서 구조를 실무 관점에서 정리했습니다."
+draft: false
 ---
+
+## 결론 먼저
+
+AEO는 검색엔진이 아니라 AI 에이전트가 문서를 잘 읽고 실행할 수 있게 만드는 최적화입니다. 사람에게 보기 좋은 문서라도 너무 길거나 구조가 흐리면 Claude Code, Cursor, Codex 같은 에이전트는 핵심을 놓칠 수 있습니다.
+
+| 항목 | SEO | AEO |
+|---|---|---|
+| 주 독자 | 검색엔진과 사람 | AI 에이전트와 LLM 도구 |
+| 핵심 기준 | 키워드, 링크, 클릭률 | 구조, 토큰 수, 실행 가능한 지시 |
+| 대표 파일 | sitemap.xml, robots.txt | llms.txt, skill.md, AGENTS.md |
+| 실패 모습 | 검색 노출 저하 | 에이전트가 문서를 건너뛰거나 잘못 실행 |
 
 ![AI 에이전트](./images/aeo-blog/ai-agent-still.png)
 
@@ -106,13 +118,13 @@ robots.txt가 AI 크롤러를 잘못 차단하면 에이전트는 아무 오류�
 에이전트가 전체 사이트 크롤 없이 관련 문서를 찾을 수 있게 해주는 인덱스임. 페이지 이름만 있으면 안 됨 — 에이전트가 뭘 찾을 수 있는지 설명이 있어야 함.
 
 ```markdown
-# YourProduct 문서
+YourProduct 문서
 
-## 시작하기
+시작하기
 - [퀵스타트](/docs/quickstart): 5분 안에 첫 API 호출
 - [인증](/docs/auth): OAuth 2.0 및 API 키 패턴
 
-## API 레퍼런스
+API 레퍼런스
 - [REST API](/docs/api): 기본 URL, 버전, 페이지네이션 (8K tokens)
 - [유저 API](/docs/api/users): CRUD 작업 (12K tokens)
 ```
@@ -133,12 +145,12 @@ name: auth-service
 description: 사용자 인증, OAuth 2.0, 세션 관리
 ---
 
-## 할 수 있는 것
+할 수 있는 것
 - OAuth 2.0으로 사용자 인증
 - JWT 토큰 발급 및 검증
 - SSO 연동 (SAML, OIDC)
 
-## 제약
+제약
 - 분당 1000 토큰 요청 한도
 - Access token 1시간, Refresh token 30일
 ```
@@ -294,3 +306,17 @@ SEO는 검색 크롤러와 사람 클릭 패턴을 위한 최적화. AEO는 AI �
 
 **Q. skill.md 형식 표준이 있나?**
 아직 완전한 표준은 없음. Addy Osmani가 제시한 포맷(name, description, capabilities, required inputs, constraints, key docs)이 실용적 기준으로 쓰임.
+
+## FAQ: AEO 검색 질문
+
+### AEO는 SEO와 무엇이 다른가요?
+
+SEO는 검색 결과 노출과 클릭을 목표로 하고, AEO는 AI 에이전트가 문서를 읽고 올바르게 행동하도록 돕는 것을 목표로 합니다.
+
+### 왜 llms.txt가 필요한가요?
+
+AI 에이전트가 사이트 전체를 헤매지 않고 핵심 문서, API, 예시, 제약 조건으로 바로 이동하게 만드는 안내판 역할을 하기 때문입니다.
+
+### 문서를 AI 에이전트 친화적으로 만들려면 무엇부터 바꾸면 되나요?
+
+짧은 요약, 명확한 제목, 코드 예시, 제약 조건, 최신 기준일, 관련 링크를 앞쪽에 배치하는 것부터 시작하면 됩니다.
