@@ -1,0 +1,157 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (1786x756)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 311,
+    "width": 1786,
+    "height": 756,
+    "caption": "Figure 1  |  Overview of M IND T OPO .  Five topological properties ( continuity ,  separation ,  order ,  enclo-",
+    "crop": [
+      0.0,
+      419.66,
+      595.28,
+      671.11
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-2-p3.png",
+    "method": "caption_crop (1692x975)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 363,
+    "width": 1692,
+    "height": 975,
+    "caption": "Figure 2  |  M IND T OPO  task overview.  The 13 tasks by topological property and cognitive level.  Gym",
+    "crop": [
+      31.5,
+      69.97,
+      595.28,
+      394.59
+    ]
+  },
+  {
+    "page": 4,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  2  shows representative scenes, questions, and gym environments for every task in",
+    "crop": null
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  3  shows the four stage pipeline that builds every task in M IND T OPO . All four stages are",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "fig-3-p6.png",
+    "method": "caption_crop (1479x614)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 213,
+    "width": 1479,
+    "height": 614,
+    "caption": "Figure 3  |  Fully automated data collection pipeline for M IND T OPO .  Topological Annotation refers to",
+    "crop": [
+      43.8,
+      73.04,
+      536.4,
+      277.6
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-4-p6.png",
+    "method": "caption_crop (740x489)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 56,
+    "width": 740,
+    "height": 489,
+    "caption": "Figure 4  |  Data statistics for M IND T OPO .",
+    "crop": [
+      290.17,
+      473.77,
+      536.41,
+      636.4
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-4-p6-3.png",
+    "method": "caption_crop (1479x1320)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 385,
+    "width": 1479,
+    "height": 1320,
+    "caption": "Figure  4  summarizes the resulting dataset.",
+    "crop": [
+      43.8,
+      73.04,
+      536.38,
+      512.76
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1  |  Performance on M IND T OPO  (%).",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "caption_crop_table_below",
+    "status": "rejected",
+    "reason": "crop too small (478x70pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2  |  Qwen3-VL-2B-Instruct performance (%) across selected reasoning and planning tasks under the",
+    "crop": [
+      58.55699920654297,
+      159.40428161621094,
+      536.4099731445312,
+      229.322998046875
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-5-p9.png",
+    "method": "caption_crop (1434x627)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 227,
+    "width": 1434,
+    "height": 627,
+    "caption": "Figure 5  |  One labeled failure per error category. Each panel pairs the frame the model saw with a",
+    "crop": [
+      58.87,
+      73.04,
+      536.41,
+      281.7
+    ]
+  }
+]
