@@ -4242,6 +4242,26 @@
       ],
       "threads_quality_gate": "pass (5 posts, 3 images, rehosted)",
       "public_html_highlights": "verified live: 12x #fff59d, 12x <strong>, CTA links present"
+    },
+    {
+      "slug": "2026-09-13-negative-self-distillation-avoiding-flaws",
+      "date": "2026-09-13",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2609.11699",
+      "title": "NSD: 잘못된 추론을 피하도록 학습시키는 네거티브 자기증류 (arXiv 2609.11699)",
+      "blog_url": "https://conanssam.com/posts/2026-09-13-negative-self-distillation-avoiding-flaws",
+      "voice_spyrl_mode": "multi-candidate (A/B/C + revised A2)",
+      "voice_spyrl_winner": "a2-kakao.md (87.6, grade A)",
+      "voice_spyrl_spy": "a-kakao.md (62.0, C); b-newsletter 80.5 B, c-formal 78.5 B",
+      "voice_spyrl_final_score": 87.6,
+      "voice_spyrl_report": "memory/voice-feedback/2026-09-13-negative-self-distillation-avoiding-flaws-spyrl-r2.json",
+      "highlights": 12,
+      "images_included": 4,
+      "original_figures_tables_included": "yes: Figure 1/2/3 official HTML figures + Table 1/2 as markdown tables",
+      "seo_aeo_gate": "pass",
+      "image_gate": "pass (4 refs)",
+      "promo_gate": "pass",
+      "published_at": "2026-09-13T10:15+0900"
     }
   ]
 }
