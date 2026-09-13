@@ -4261,7 +4261,23 @@
       "seo_aeo_gate": "pass",
       "image_gate": "pass (4 refs)",
       "promo_gate": "pass",
-      "published_at": "2026-09-13T10:15+0900"
+      "published_at": "2026-09-13T10:15+0900",
+      "threads_root_id": "18095837546097271",
+      "threads_reply_ids": [
+        "18125873062874144",
+        "18149309074547989",
+        "17883205512619827",
+        "18037420466830727"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "threads_quality_gate": "pass (5 posts, 4 images, rehosted)",
+      "commit": "d6fff87f",
+      "public_html_highlights": "verified live: 13x #fff59d, 17x <strong>, CTA links present"
     }
   ]
 }
