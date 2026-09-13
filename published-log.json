@@ -4310,6 +4310,23 @@
       "promo_gate": "pass",
       "published_at": "2026-09-13T13:35+0900",
       "commit": "f2e2e9ae"
+    },
+    {
+      "slug": "2026-09-13-rag-safety-bench-retrieval-safety",
+      "date": "2026-09-13",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2609.11758",
+      "title": "RAG을 붙이면 LLM 안전장치가 무너지는 이유: RAG-Safety-Bench 논문 정리 (arXiv 2609.11758)",
+      "blog_url": "https://jkf87.github.io/posts/2026-09-13-rag-safety-bench-retrieval-safety",
+      "tags": [
+        "RAG",
+        "safety",
+        "llm",
+        "benchmark",
+        "arxiv"
+      ],
+      "commit": "769bec4",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-13-rag-safety-bench-retrieval-safety.md"
     }
   ]
 }
