@@ -4309,7 +4309,7 @@
       "image_gate": "pass (3 refs, caption_crop)",
       "promo_gate": "pass",
       "published_at": "2026-09-13T13:35+0900",
-      "commit": "pending"
+      "commit": "f2e2e9ae"
     }
   ]
 }
