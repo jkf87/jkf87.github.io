@@ -4278,6 +4278,17 @@
       "threads_quality_gate": "pass (5 posts, 4 images, rehosted)",
       "commit": "d6fff87f",
       "public_html_highlights": "verified live: 13x #fff59d, 17x <strong>, CTA links present"
+    },
+    {
+      "slug": "2026-09-13-mira-llm-guided-rl-memory-graph",
+      "date": "2026-09-13",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2602.17930",
+      "title": "강화학습 에이전트에 LLM 가이드를 쓸러닝으로 넣는 방법: MIRA 논문 정리 (arXiv 2602.17930)",
+      "blog_url": "https://conanssam.com/posts/2026-09-13-mira-llm-guided-rl-memory-graph",
+      "voice_spyrl_mode": "multi-candidate (A/B/C)",
+      "voice_spyrl_winner": "b-newsletter",
+      "highlights": 11
     }
   ]
 }
