@@ -4525,7 +4525,23 @@
       "image_gate": "pass (4 caption_crop refs)",
       "promo_gate": "pass",
       "published_at": "2026-09-14T13:10+0900",
-      "status": "building"
+      "commit": "6bf1df0b",
+      "threads_root_id": "18142377208583803",
+      "threads_reply_ids": [
+        "18079990208511934",
+        "17998129013812871",
+        "18368322004209128",
+        "18099471068154596"
+      ],
+      "threads_image_posts": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "threads_quality_gate": "pass (5 posts, 4 images, rehosted)",
+      "public_html_highlights": "verified live: 13x #fff59d, 13x <strong>, CTA links present, images 200",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-14-kbench-agent-unlearning.md"
     }
   ]
 }
