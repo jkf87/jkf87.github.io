@@ -4642,7 +4642,16 @@
       "source": "arxiv:2609.12742",
       "published_at": "2026-09-14T22:12:55",
       "voice": "conanssam-voice kakao/plain",
-      "spyrl": "multi-candidate winner=A score=76.5 grade=B"
+      "spyrl": "multi-candidate winner=A score=76.5 grade=B",
+      "threads_ids": [
+        "17933714430391090",
+        "18111051800014599",
+        "17981836464074968"
+      ],
+      "threads_image_posts": [
+        1,
+        3
+      ]
     }
   ]
 }
