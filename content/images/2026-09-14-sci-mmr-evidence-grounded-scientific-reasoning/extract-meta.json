@@ -1,0 +1,82 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (757x911)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 207,
+    "width": 757,
+    "height": 911,
+    "caption": "Figure 1  |  Illustration of a Sci-MMR task.  A",
+    "crop": [
+      293.11,
+      73.04,
+      545.26,
+      376.36
+    ]
+  },
+  {
+    "page": 3,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1  |  Comparison with existing benchmarks.",
+    "crop": null
+  },
+  {
+    "page": 4,
+    "file": "fig-1-p4.png",
+    "method": "caption_crop (1663x551)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 861,
+    "width": 1663,
+    "height": 551,
+    "caption": "Fig. 1",
+    "crop": [
+      41.17,
+      38.7,
+      595.28,
+      222.01
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (1663x901)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 1345,
+    "width": 1663,
+    "height": 901,
+    "caption": "Figure 2  |  Overview of Sci-MMR.  Scientific papers are grounded in visual evidence and represented",
+    "crop": [
+      41.17,
+      38.7,
+      595.28,
+      338.72
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-3-p5.png",
+    "method": "caption_crop (761x537)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 99,
+    "width": 761,
+    "height": 537,
+    "caption": "Figure 3  |  Sci-MMR composition and task com-",
+    "crop": [
+      293.11,
+      73.04,
+      546.65,
+      251.94
+    ]
+  }
+]
