@@ -1,0 +1,107 @@
+[
+ {
+  "page": 1,
+  "file": "fig-1-p1.png",
+  "method": "caption_crop (1256x556)",
+  "status": "accepted",
+  "reason": "accepted",
+  "size_kb": 128,
+  "width": 1256,
+  "height": 556,
+  "crop": [
+   33.83,
+   185.17,
+   452.18,
+   370.05
+  ]
+ },
+ {
+  "page": 2,
+  "file": "fig-2-p2.png",
+  "method": "caption_crop (1256x673)",
+  "status": "accepted",
+  "reason": "accepted",
+  "size_kb": 162,
+  "width": 1256,
+  "height": 673,
+  "crop": [
+   33.83,
+   106.33,
+   452.17,
+   330.33
+  ]
+ },
+ {
+  "page": 6,
+  "file": "",
+  "method": "no_graphics_near_caption",
+  "status": "rejected",
+  "reason": "no crop",
+  "size_kb": 0,
+  "width": 0,
+  "height": 0,
+  "caption": "Table  1  compares K-Bench with four unlearning benchmarks (TOFU, MUSE, WMDP, LUME), two",
+  "crop": null
+ },
+ {
+  "page": 7,
+  "file": "",
+  "method": "caption_crop_table_below",
+  "status": "rejected",
+  "reason": "crop too small (246x57pt)",
+  "size_kb": 0,
+  "width": 0,
+  "height": 0,
+  "caption": "Table 2. Summary of notation.",
+  "crop": [
+   119.83599853515625,
+   253.06546020507812,
+   366.16302490234375,
+   310.2669982910156
+  ]
+ },
+ {
+  "page": 11,
+  "file": "",
+  "method": "no_graphics_near_caption",
+  "status": "rejected",
+  "reason": "no crop",
+  "size_kb": 0,
+  "width": 0,
+  "height": 0,
+  "caption": "Table 3. Complete experimental parameters for K-Bench.",
+  "crop": null
+ },
+ {
+  "page": 17,
+  "file": "fig-6-p17.png",
+  "method": "caption_crop (713x658)",
+  "status": "accepted",
+  "reason": "accepted",
+  "size_kb": 85,
+  "width": 713,
+  "height": 658,
+  "crop": [
+   55.0,
+   128.72,
+   292.21,
+   347.71
+  ]
+ },
+ {
+  "page": 17,
+  "file": "fig-7-p17.png",
+  "method": "caption_crop (713x777)",
+  "status": "accepted",
+  "reason": "accepted",
+  "size_kb": 100,
+  "width": 713,
+  "height": 777,
+  "crop": [
+   55.0,
+   128.72,
+   292.21,
+   387.56
+  ]
+ }
+]
