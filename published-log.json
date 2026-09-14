@@ -4652,6 +4652,40 @@
         1,
         3
       ]
+    },
+    {
+      "date": "2026-09-15",
+      "slug": "2026-09-15-residual-vector-long-context-recall",
+      "title": "긴 컨텍스트 LLM이 200만 토큰을 기억하는 방법: 잔차 벡터 재구성 논문 정리 (arXiv 2609.12686)",
+      "source": "arxiv:2609.12686",
+      "source_url": "https://arxiv.org/abs/2609.12686",
+      "blog_url": "https://conanssam.com/posts/2026-09-15-residual-vector-long-context-recall",
+      "published_at": "2026-09-15T07:16:17",
+      "voice": "conanssam-voice kakao/plain",
+      "spyrl": "multi-candidate (A/B/C); A revised after spyTags -> final-path rerun 84.5 A",
+      "spyrl_report": "memory/voice-feedback/2026-09-15-residual-vector-long-context-recall-spyrl.json",
+      "highlights": 13,
+      "images_included": 4,
+      "seo_aeo_gate": "pass",
+      "image_gate": "pass (4 caption_crop refs)",
+      "promo_gate": "pass",
+      "threads_quality_gate": "pass (6 posts, 4 images, rehosted)",
+      "threads_root_id": "18417833077155965",
+      "threads_reply_ids": [
+        "18112164563277916",
+        "18074729684435210",
+        "18386792578227386",
+        "18119476195906523",
+        "18480506491109187"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        4,
+        6
+      ],
+      "commit": "8d222474",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-15-residual-vector-long-context-recall.md"
     }
   ]
 }
