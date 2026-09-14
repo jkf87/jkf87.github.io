@@ -1,0 +1,222 @@
+[
+  {
+    "page": 4,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1. Cells",
+    "crop": null
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2. From protocol to execution",
+    "crop": null
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  1  sketches the path.",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "fig-1-p6.png",
+    "method": "caption_crop (1259x621)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 100,
+    "width": 1259,
+    "height": 621,
+    "caption": "Fig. 1. One run is one microVM. The orchestrator drives sessions over the platform’s WebSocket protocol,",
+    "crop": [
+      33.83,
+      86.02,
+      453.16,
+      292.83
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3. Cell solve rates (frozen pool of 80 tasks)",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "table-4-p8.png",
+    "method": "caption_crop_table_below (1256x717)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 79,
+    "width": 1256,
+    "height": 717,
+    "caption": "Table 4. Paired native  − neutral contrasts (n = 80 tasks each)",
+    "crop": [
+      33.83,
+      76.97,
+      452.18,
+      315.35
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-2-p8.png",
+    "method": "caption_crop (1257x578)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 71,
+    "width": 1257,
+    "height": 578,
+    "caption": "Fig. 2. Per-task paired outcomes for the two same-model contrasts (native  − neutral solve difference per",
+    "crop": [
+      33.83,
+      150.94,
+      452.34,
+      343.3
+    ]
+  },
+  {
+    "page": 9,
+    "file": "table-5-p9.png",
+    "method": "caption_crop_table_below (1162x813)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 101,
+    "width": 1162,
+    "height": 813,
+    "caption": "Table 5. Paired contrasts by workload (exploratory)",
+    "crop": [
+      49.6,
+      77.69,
+      436.41,
+      348.35
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-3-p9.png",
+    "method": "caption_crop (1260x548)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 66,
+    "width": 1260,
+    "height": 548,
+    "caption": "Fig. 3. Exploratory post-hoc split of the paired contrasts by workload (repository vs contest tasks), task-",
+    "crop": [
+      33.83,
+      193.96,
+      453.66,
+      376.3
+    ]
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6. Outcome flow, planned key  → verdict (final attempts)",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 7. Source-to-ledger reconciliation, main run",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  4  plots the per-cell cost per solved task.",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "table-8-p12.png",
+    "method": "caption_crop_table_below (1256x861)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 127,
+    "width": 1256,
+    "height": 861,
+    "caption": "Table 8. Corrected cost per cell, main run (USD, list prices)",
+    "crop": [
+      33.83,
+      77.69,
+      452.19,
+      364.43
+    ]
+  },
+  {
+    "page": 12,
+    "file": "fig-4-p12.png",
+    "method": "caption_crop (1257x610)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 98,
+    "width": 1257,
+    "height": 610,
+    "caption": "Fig. 4. Cost per solved task by cell (USD at frozen list prices, log scale). Rows carry the cell’s solve rate. Hollow",
+    "crop": [
+      33.83,
+      189.47,
+      452.49,
+      392.34
+    ]
+  },
+  {
+    "page": 12,
+    "file": "table-9-p12.png",
+    "method": "caption_crop (1256x1170)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 235,
+    "width": 1256,
+    "height": 1170,
+    "caption": "Table  9  decomposes each cell’s corrected cost into its four components. The native Opus cell",
+    "crop": [
+      33.83,
+      189.47,
+      452.19,
+      579.28
+    ]
+  }
+]
