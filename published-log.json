@@ -4613,9 +4613,27 @@
       "seo_aeo_gate": "pass",
       "image_gate": "pass (6 caption_crop refs)",
       "promo_gate": "pass",
-      "published_at": "2026-09-14T19:2x+0900",
-      "threads_root_id": "",
-      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-14-harness-or-model.md"
+      "published_at": "2026-09-14T19:32+0900",
+      "threads_root_id": "17901873171578579",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-14-harness-or-model.md",
+      "commit": "38e041bf",
+      "threads_reply_ids": [
+        "17860864545692240",
+        "18199569829336313",
+        "18116415505764005",
+        "17972579067172956",
+        "17987781588116483"
+      ],
+      "threads_image_posts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "threads_quality_gate": "pass (6 posts, 6 images, rehosted)",
+      "public_html_highlights": "verified live: 13x #fff59d, 12x <strong>, CTA links present, post+6 images HTTP 200"
     }
   ]
 }
