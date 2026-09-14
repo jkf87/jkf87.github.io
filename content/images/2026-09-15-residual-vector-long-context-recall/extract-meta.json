@@ -1,0 +1,130 @@
+[
+ {
+  "page": 4,
+  "file": "fig-2-memorization.png",
+  "method": "caption_crop (1586x731)",
+  "status": "accepted",
+  "reason": "accepted",
+  "size_kb": 262,
+  "width": 1586,
+  "height": 731,
+  "caption": "Figure 2: The memorization phase in three stages. Stage 1 extracts query-agnostic fact records from the source and forms",
+  "crop": [
+   41.8,
+   71.69,
+   570.2,
+   315.31
+  ]
+ },
+ {
+  "page": 5,
+  "file": "fig-3-response.png",
+  "method": "caption_crop (1587x801)",
+  "status": "accepted",
+  "reason": "accepted",
+  "size_kb": 220,
+  "width": 1587,
+  "height": 801,
+  "caption": "Figure 3: The response phase in three stages. Stage 1 scores stored anchors against the question and selects the Sandra anchor",
+  "crop": [
+   41.8,
+   71.69,
+   570.39,
+   338.48
+  ]
+ },
+ {
+  "page": 5,
+  "file": "table-1-sample-counts.png",
+  "method": "caption_crop (1587x977)",
+  "status": "accepted",
+  "reason": "accepted",
+  "size_kb": 270,
+  "width": 1587,
+  "height": 977,
+  "caption": "Table 1: Proposed-method sample counts in the length",
+  "crop": [
+   41.5,
+   71.69,
+   570.21,
+   397.29
+  ]
+ },
+ {
+  "page": 6,
+  "file": "fig-4-babilong-accuracy.png",
+  "method": "caption_crop (1591x654)",
+  "status": "accepted",
+  "reason": "accepted",
+  "size_kb": 164,
+  "width": 1591,
+  "height": 654,
+  "caption": "Figure 4: BABILong accuracy on one shared length axis. The shaded region lies beyond each model’s pretrained context window.",
+  "crop": [
+   41.8,
+   238.47,
+   571.74,
+   456.04
+  ]
+ },
+ {
+  "page": 7,
+  "file": "",
+  "method": "no_graphics_near_caption",
+  "status": "rejected",
+  "reason": "no crop",
+  "size_kb": 0,
+  "width": 0,
+  "height": 0,
+  "caption": "Figure 4a shows that the main advantage emerges at long in-",
+  "crop": null
+ },
+ {
+  "page": 7,
+  "file": "",
+  "method": "no_graphics_near_caption",
+  "status": "rejected",
+  "reason": "no crop",
+  "size_kb": 0,
+  "width": 0,
+  "height": 0,
+  "caption": "Figure 4b shows a narrower advantage when an answer requires",
+  "crop": null
+ },
+ {
+  "page": 7,
+  "file": "",
+  "method": "no_graphics_near_caption",
+  "status": "rejected",
+  "reason": "no crop",
+  "size_kb": 0,
+  "width": 0,
+  "height": 0,
+  "caption": "Table 2 shows that the long-input advantage depends on the",
+  "crop": null
+ },
+ {
+  "page": 7,
+  "file": "",
+  "method": "no_graphics_near_caption",
+  "status": "rejected",
+  "reason": "no crop",
+  "size_kb": 0,
+  "width": 0,
+  "height": 0,
+  "caption": "Table 2: RULER QA percentages on the three models, rounded",
+  "crop": null
+ },
+ {
+  "page": 7,
+  "file": "",
+  "method": "no_graphics_near_caption",
+  "status": "rejected",
+  "reason": "no crop",
+  "size_kb": 0,
+  "width": 0,
+  "height": 0,
+  "caption": "Figure 5 shows little change in response-time GPU memory from 4K",
+  "crop": null
+ }
+]
