@@ -1,0 +1,133 @@
+[
+  {
+    "page": 4,
+    "file": "table-3-p4.png",
+    "method": "caption_crop (1556x327)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 71,
+    "width": 1556,
+    "height": 327,
+    "caption": "Table 3: Recall by error category. Oracle-exact checks (bi-",
+    "crop": [
+      42.0,
+      42.0,
+      560.45,
+      150.54
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-1-p4.png",
+    "method": "caption_crop (788x531)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 58,
+    "width": 788,
+    "height": 531,
+    "caption": "Figure 1: Recall vs. false-positive trade-off for the shell-",
+    "crop": [
+      42.0,
+      169.4,
+      304.49,
+      346.14
+    ]
+  },
+  {
+    "page": 4,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (518x47pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 2: Applicability vs. safety for edit formats. Content-",
+    "crop": [
+      51.540000915527344,
+      169.39918518066406,
+      569.9945678710938,
+      216.08001708984375
+    ]
+  },
+  {
+    "page": 4,
+    "file": "table-4-p4.png",
+    "method": "caption_crop (1557x687)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 194,
+    "width": 1557,
+    "height": 687,
+    "caption": "Table 4: Edit-application outcomes by format. “Clean” = no",
+    "crop": [
+      51.54,
+      169.4,
+      570.0,
+      398.15
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (1556x1040)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 304,
+    "width": 1556,
+    "height": 1040,
+    "caption": "Figure 2). Content-anchored formats locate the edit by",
+    "crop": [
+      51.54,
+      169.4,
+      569.99,
+      515.73
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (502x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5: Multi-hunk edits: fuzzy matching’s silent rate com-",
+    "crop": [
+      42.0,
+      272.2040710449219,
+      544.1945190429688,
+      160.50701904296875
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-3-p5.png",
+    "method": "caption_crop (788x481)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 55,
+    "width": 788,
+    "height": 481,
+    "caption": "Figure 3: Silent-misapplication rate by format (rows) and",
+    "crop": [
+      307.5,
+      261.45,
+      569.99,
+      421.6
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6: One structure, two modalities. A cheap check with",
+    "crop": null
+  }
+]

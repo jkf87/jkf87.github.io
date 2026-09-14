@@ -4542,6 +4542,32 @@
       "threads_quality_gate": "pass (5 posts, 4 images, rehosted)",
       "public_html_highlights": "verified live: 13x #fff59d, 13x <strong>, CTA links present, images 200",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-14-kbench-agent-unlearning.md"
+    },
+    {
+      "slug": "2026-09-14-look-before-you-leap-pre-action-verification",
+      "date": "2026-09-14",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2609.11957",
+      "title": "AI 코딩 에이전트가 조용히 파일을 망치는 이유: Look Before You Leap 논문 정리",
+      "blog_url": "https://conanssam.com/posts/2026-09-14-look-before-you-leap-pre-action-verification",
+      "tags": [
+        "llm",
+        "agent",
+        "coding-agent",
+        "verification",
+        "safety",
+        "benchmark",
+        "arxiv"
+      ],
+      "voice_spyrl_mode": "multi-candidate (A/B/C)",
+      "voice_spyrl_winner": "c-formal (99.0 A); final-path rerun 96.0 A (too_long_paragraph x2 minor)",
+      "voice_spyrl_spy": "a-kakao revised (95.0 A); pre-revision 36.0 D",
+      "voice_spyrl_report": "memory/voice-feedback/2026-09-14-look-before-you-leap-pre-action-verification-spyrl.json",
+      "highlights": 16,
+      "images_included": 3,
+      "seo_aeo_gate": "pass",
+      "image_gate": "pass (3 caption_crop refs)",
+      "promo_gate": "pass"
     }
   ]
 }
