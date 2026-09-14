@@ -4634,6 +4634,15 @@
       ],
       "threads_quality_gate": "pass (6 posts, 6 images, rehosted)",
       "public_html_highlights": "verified live: 13x #fff59d, 12x <strong>, CTA links present, post+6 images HTTP 200"
+    },
+    {
+      "date": "2026-09-14",
+      "slug": "2026-09-14-skill-issue-repo-skill-optimization",
+      "title": "AI 코딩 에이전트 SKILL.md 자동 최적화가 생각보다 어려운 이유: Skill Issue 논문 정리 (arXiv 2609.12742)",
+      "source": "arxiv:2609.12742",
+      "published_at": "2026-09-14T22:12:55",
+      "voice": "conanssam-voice kakao/plain",
+      "spyrl": "multi-candidate winner=A score=76.5 grade=B"
     }
   ]
 }

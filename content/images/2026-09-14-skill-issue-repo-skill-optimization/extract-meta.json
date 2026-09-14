@@ -1,0 +1,9 @@
+[
+  {
+    "file": "table1-test-scores.png",
+    "method": "caption_crop",
+    "status": "accepted",
+    "source": "arXiv 2609.12742 Table 1, page 6",
+    "caption": "Table 1: Final test-set score and optimization cost per repository."
+  }
+]
