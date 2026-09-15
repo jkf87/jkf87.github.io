@@ -4734,7 +4734,16 @@
         "harness",
         "benchmark",
         "LLM"
-      ]
+      ],
+      "threads_root_id": "18162978985486373",
+      "threads_reply_ids": [
+        "17909306490521266",
+        "17900574300596139",
+        "18149929162531455",
+        "18114729551065644"
+      ],
+      "commit": "1e2d82ba",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-15-stellar-colosseum-many-agent-harness.md"
     }
   ]
 }
