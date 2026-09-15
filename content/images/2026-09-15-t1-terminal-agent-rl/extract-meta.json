@@ -1,0 +1,184 @@
+[
+  {
+    "page": 1,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too page-like (area_ratio=0.60)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 1  Performance vs. model size under the same agent harness (Terminal-Bench 2.1 resolved rate). At",
+    "crop": [
+      58.78929138183594,
+      53.18817138671875,
+      553.21728515625,
+      641.82275390625
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (494x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  2  maps the system from left to right across three main components. A training backend and inference",
+    "crop": [
+      58.865997314453125,
+      316.5125427246094,
+      553.10302734375,
+      119.37155151367188
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-2-p5.png",
+    "method": "caption_crop (1488x923)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 240,
+    "width": 1488,
+    "height": 923,
+    "caption": "Figure 2  The  T1  training pipeline.  Left:  each task is self-contained, comprising metadata, a long-horizon instruction,",
+    "crop": [
+      58.87,
+      162.1,
+      554.46,
+      469.65
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-3-p7.png",
+    "method": "caption_crop (1692x814)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 163,
+    "width": 1692,
+    "height": 814,
+    "caption": "Figure 3  Category composition of T1-15k. All 15,000 tasks are counted once across 17 merged categories (from 47",
+    "crop": [
+      48.0,
+      0.0,
+      612.0,
+      271.09
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-4-p7.png",
+    "method": "caption_crop (1091x722)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 111,
+    "width": 1091,
+    "height": 722,
+    "caption": "Figure 4  Figure 4: The eight audit dimensions and their",
+    "crop": [
+      248.42,
+      319.66,
+      612.0,
+      559.81
+    ]
+  },
+  {
+    "page": 10,
+    "file": "fig-5-p10.png",
+    "method": "caption_crop (1484x527)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 76,
+    "width": 1484,
+    "height": 527,
+    "caption": "Figure 5  TITO stitching, drawn for the  retokenized  case (Equation  8 ), the hardest of the four. The re-tokenized",
+    "crop": [
+      58.87,
+      51.78,
+      553.21,
+      227.19
+    ]
+  },
+  {
+    "page": 11,
+    "file": "fig-6-p11.png",
+    "method": "caption_crop (941x557)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 66,
+    "width": 941,
+    "height": 557,
+    "caption": "Figure 6",
+    "crop": [
+      58.87,
+      51.78,
+      372.08,
+      237.26
+    ]
+  },
+  {
+    "page": 13,
+    "file": "fig-7-p13.png",
+    "method": "caption_crop (1272x617)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 103,
+    "width": 1272,
+    "height": 617,
+    "caption": "Figure 7",
+    "crop": [
+      58.87,
+      51.78,
+      482.6,
+      257.16
+    ]
+  },
+  {
+    "page": 14,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  8  shows the reward this definition actually produces in training, and it is worth reading against the",
+    "crop": null
+  },
+  {
+    "page": 15,
+    "file": "fig-8-p15.png",
+    "method": "caption_crop (1485x589)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 119,
+    "width": 1485,
+    "height": 589,
+    "caption": "Figure 8  Mean rollout reward under the test-count reward over the production dense-reward run, reported before any",
+    "crop": [
+      58.87,
+      51.78,
+      553.56,
+      247.82
+    ]
+  },
+  {
+    "page": 17,
+    "file": "fig-9-p17.png",
+    "method": "caption_crop (1484x574)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 133,
+    "width": 1484,
+    "height": 574,
+    "caption": "Figure 9  Terminal-Bench 2.1 standing of  T1  against contemporary frontier and open-weight models. Blue bars trace",
+    "crop": [
+      58.87,
+      51.78,
+      553.2,
+      242.76
+    ]
+  }
+]

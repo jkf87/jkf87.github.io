@@ -4686,6 +4686,23 @@
       ],
       "commit": "8d222474",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-15-residual-vector-long-context-recall.md"
+    },
+    {
+      "date": "2026-09-15",
+      "slug": "2026-09-15-t1-terminal-agent-rl",
+      "title": "터미널 에이전트를 강화학습으로 훈련하는 방법: T1 논문 정리 (arXiv 2609.11042)",
+      "source": "arxiv:2609.11042",
+      "source_url": "https://arxiv.org/abs/2609.11042",
+      "blog_url": "https://conanssam.com/posts/2026-09-15-t1-terminal-agent-rl",
+      "published_at": "2026-09-15T10:09:03",
+      "voice": "conanssam-voice kakao/plain",
+      "spyrl": "multi-candidate (A/B/C); winner=C revised into kakao/plain final -> final-path rerun 98.0 A",
+      "spyrl_report": "memory/voice-feedback/2026-09-15-t1-terminal-agent-rl-spyrl.json",
+      "highlights": 11,
+      "images_included": 5,
+      "seo_aeo_gate": "pass",
+      "image_gate": "pass (5 caption_crop refs)",
+      "promo_gate": "pass"
     }
   ]
 }
