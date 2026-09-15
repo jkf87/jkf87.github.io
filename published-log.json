@@ -4845,6 +4845,23 @@
         "18407131024085784",
         "17922611367202534"
       ]
+    },
+    {
+      "slug": "2026-09-16-score-visual-rag-evidence-ledger",
+      "date": "2026-09-16",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2609.15800",
+      "title": "Visual RAG 에이전트가 증거를 다시 정리해야 하는 이유: SCoRE 논문 정리",
+      "blog_url": "https://jkf87.github.io/posts/2026-09-16-score-visual-rag-evidence-ledger",
+      "tags": [
+        "visual-rag",
+        "agent",
+        "evidence",
+        "reinforcement-learning",
+        "benchmark"
+      ],
+      "commit": "a5daf7af",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-16-score-visual-rag-evidence-ledger.md"
     }
   ]
 }
