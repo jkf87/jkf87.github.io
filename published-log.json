@@ -4721,6 +4721,20 @@
       "commit": "66223aba",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-15-t1-terminal-agent-rl.md",
       "public_html_highlights": "verified live: 11x #fff59d / 11x <strong>, CTA links present, post+5 images HTTP 200"
+    },
+    {
+      "slug": "2026-09-15-stellar-colosseum-many-agent-harness",
+      "date": "2026-09-15",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2609.15983",
+      "title": "LLM 에이전트로 수학 연구를 끝내려면: Stellar Colosseum 하네스 논문 정리",
+      "blog_url": "https://jkf87.github.io/posts/2026-09-15-stellar-colosseum-many-agent-harness",
+      "tags": [
+        "agent",
+        "harness",
+        "benchmark",
+        "LLM"
+      ]
     }
   ]
 }
