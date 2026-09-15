@@ -4757,7 +4757,35 @@
         "safety",
         "monitoring",
         "LLM"
-      ]
+      ],
+      "published_at": "2026-09-15T16:00:00",
+      "voice": "conanssam-voice kakao/plain",
+      "spyrl": "multi-candidate (A/B/C); initial winner=B(54.5,D) -> A revised per spyTags -> winner=A 92.4; final-path rerun 92.4 A",
+      "spyrl_report": "memory/voice-feedback/2026-09-15-plan-injection-cot-monitoring-spyrl.json",
+      "highlights": 9,
+      "images_included": 5,
+      "seo_aeo_gate": "pass",
+      "image_gate": "pass (5 caption_crop refs)",
+      "promo_gate": "pass",
+      "threads_quality_gate": "pass (6 posts, 5 images)",
+      "threads_root_id": "18115179721996503",
+      "threads_reply_ids": [
+        "17908335477307948",
+        "18624223564060357",
+        "18128937091685789",
+        "17908626303470372",
+        "18141796897554912"
+      ],
+      "threads_image_posts": [
+        1,
+        2,
+        3,
+        5,
+        6
+      ],
+      "commit": "92467d0c",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-15-plan-injection-cot-monitoring.md",
+      "public_html_highlights": "verified live: 9x #fff59d / 10x <strong>, CTA links present, post+5 images HTTP 200"
     }
   ]
 }
