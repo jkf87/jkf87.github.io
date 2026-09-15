@@ -1,0 +1,150 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1476x636)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 147,
+    "width": 1476,
+    "height": 636,
+    "caption": "Figure 1  |  Three designs for skill routing.  (a)  Progressive disclosure preloads every skill’s metadata into the",
+    "crop": [
+      60.0,
+      60.0,
+      552.0,
+      271.34
+    ]
+  },
+  {
+    "page": 2,
+    "file": "fig-1-p2-2.png",
+    "method": "caption_crop (1477x1399)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 345,
+    "width": 1477,
+    "height": 1399,
+    "caption": "Figure  1 , which draws every routing signal from the frozen agent LLM’s own forward passes through",
+    "crop": [
+      60.0,
+      60.0,
+      552.0,
+      525.97
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-2-p5.png",
+    "method": "caption_crop (1477x681)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 146,
+    "width": 1477,
+    "height": 681,
+    "caption": "Figure 2  |  The Gavel pipeline.  Install :  𝑊 𝑠 maps a new skill’s layer- ℓ ∗ states in the frozen agent LLM to a bank",
+    "crop": [
+      60.0,
+      60.0,
+      552.25,
+      286.64
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-3-p8.png",
+    "method": "caption_crop (1619x684)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 146,
+    "width": 1619,
+    "height": 684,
+    "caption": "Figure 3  |  Routing from written tasks. Light fill is the retrieval stage committing its top-1 alone, dark fill the",
+    "crop": [
+      60.0,
+      255.23,
+      599.55,
+      482.72
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-4-p8.png",
+    "method": "caption_crop (1490x1273)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 271,
+    "width": 1490,
+    "height": 1273,
+    "caption": "Figure  4  reports how far each variant falls below the unmodified router.",
+    "crop": [
+      60.0,
+      255.23,
+      556.59,
+      679.21
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-4-p9.png",
+    "method": "caption_crop (1476x530)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 77,
+    "width": 1476,
+    "height": 530,
+    "caption": "Figure 4  |  Ablations. Each row replaces one design choice of Gavel and shows how far the full pipeline drops",
+    "crop": [
+      60.0,
+      60.0,
+      551.99,
+      236.36
+    ]
+  },
+  {
+    "page": 10,
+    "file": "fig-5-p10.png",
+    "method": "caption_crop (1481x536)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 77,
+    "width": 1481,
+    "height": 536,
+    "caption": "Figure 5  |  Routing mid-rollout on SkillTraj, a panel per scenario. A retrieve-and-rerank pipeline has two points,",
+    "crop": [
+      60.0,
+      60.0,
+      553.38,
+      238.52
+    ]
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1  |  Trigger rate on Skill-Use, the fraction of tasks on which the correct skill is loaded, with frontier",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "fig-6-p11.png",
+    "method": "caption_crop (733x733)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 70,
+    "width": 733,
+    "height": 733,
+    "caption": "Figure 6  |  Routing accuracy on SRA-Bench as the",
+    "crop": [
+      308.04,
+      386.93,
+      552.01,
+      630.81
+    ]
+  }
+]
