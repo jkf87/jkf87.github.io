@@ -4836,8 +4836,15 @@
       "source_url": "https://arxiv.org/abs/2609.15982",
       "title": "LLM 에이전트가 스킬을 잘 고르는 법: Gavel 논문 정리",
       "blog_url": "https://jkf87.github.io/posts/2026-09-15-gavel-skill-routing-frozen-llm",
-      "commit": "pending",
-      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-15-gavel-skill-routing-frozen-llm.md"
+      "commit": "6a7ae33a",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-15-gavel-skill-routing-frozen-llm.md",
+      "threads_root_id": "18142698187582148",
+      "threads_reply_ids": [
+        "17959395183212093",
+        "18139186690721079",
+        "18407131024085784",
+        "17922611367202534"
+      ]
     }
   ]
 }
