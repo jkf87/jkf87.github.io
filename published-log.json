@@ -4810,7 +4810,24 @@
       "image_gate": "pass (5 caption_crop refs; fig5 667x476 rejected -> swapped to fig1 1261x807)",
       "promo_gate": "pass",
       "commit": "dd825c77",
-      "public_html_highlights": "verified live: 20x #fff59d / 23x <strong>, CTA links present, post+5 images HTTP 200"
+      "public_html_highlights": "verified live: 20x #fff59d / 23x <strong>, CTA links present, post+5 images HTTP 200",
+      "threads_quality_gate": "pass (7 posts, 4 images, root+link image)",
+      "threads_root_id": "18120024169968064",
+      "threads_reply_ids": [
+        "18121795154304849",
+        "18016808987946760",
+        "18090473225689572",
+        "18103998023246666",
+        "18427234495179329",
+        "18128471959770163"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        4,
+        6
+      ],
+      "note": "threads resume interrupted twice; possible duplicate intermediate replies (17917986570433181, 18064026779602131, 17961899994186778 chains) may need manual deletion"
     }
   ]
 }
