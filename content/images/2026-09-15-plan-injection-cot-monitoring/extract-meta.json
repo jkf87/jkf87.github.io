@@ -1,0 +1,309 @@
+[
+  {
+    "page": 5,
+    "file": "fig-1-p5.png",
+    "method": "caption_crop (1261x938)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 196,
+    "width": 1261,
+    "height": 938,
+    "caption": "Figure 1: Steering vs. stealth frontier of the hint-setting strategies discovered by the investigator",
+    "crop": [
+      96.0,
+      208.45,
+      516.17,
+      520.91
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-1-p6.png",
+    "method": "caption_crop_table_below (1262x1076)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 182,
+    "width": 1262,
+    "height": 1076,
+    "caption": "Table 1: Novel steering strategies surfaced by the investigator. Four variants share a common",
+    "crop": [
+      95.69,
+      63.12,
+      516.01,
+      421.63
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-2-p6.png",
+    "method": "caption_crop (1261x771)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 113,
+    "width": 1261,
+    "height": 771,
+    "caption": "Figure 2: Example of paraphrasing under  cot_pure . The actor receives the injected plan with no",
+    "crop": [
+      96.0,
+      269.0,
+      516.01,
+      525.82
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  3  breaks down attack effectiveness by strategy.",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "fig-3-p8.png",
+    "method": "caption_crop (1260x587)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 148,
+    "width": 1260,
+    "height": 587,
+    "caption": "Figure 3: Insertion success of the plan-injection attack.  Left (APPS).  Success rate for the three",
+    "crop": [
+      96.0,
+      205.47,
+      516.0,
+      400.89
+    ]
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (422x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  4  gives the aggregate detection rate on APPS across all (problem, strategy) pairs that success-",
+    "crop": [
+      96.0,
+      532.0614013671875,
+      517.6522521972656,
+      122.3342056274414
+    ]
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (420x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 4: Aggregate monitor detection rates on APPS, pooled over the 3 hand-tuned strategies, one",
+    "crop": [
+      96.0,
+      532.0614013671875,
+      515.9969482421875,
+      489.37091064453125
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-5-p9.png",
+    "method": "caption_crop (1261x459)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 145,
+    "width": 1261,
+    "height": 459,
+    "caption": "Figure 5: Monitor detection rates on Bio-Math, one panel per actor, same five monitors, two settings",
+    "crop": [
+      96.0,
+      532.06,
+      516.0,
+      684.82
+    ]
+  },
+  {
+    "page": 10,
+    "file": "fig-6-p10.png",
+    "method": "caption_crop (1260x654)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 137,
+    "width": 1260,
+    "height": 654,
+    "caption": "Figure 6: Effect of monitor reasoning budget on suspicion score  s  (Qwen3-235B monitor; APPS",
+    "crop": [
+      96.0,
+      249.55,
+      516.0,
+      467.19
+    ]
+  },
+  {
+    "page": 14,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Hyperparameters for the investigator agent training and evaluation pipeline.",
+    "crop": null
+  },
+  {
+    "page": 15,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Seed hint-strategy pool used for investigator SFT. The pool contains 100 templates spanning",
+    "crop": null
+  },
+  {
+    "page": 16,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4: The seven bug strategies used by the corruptor in Stage 2. Each strategy instructs the",
+    "crop": null
+  },
+  {
+    "page": 17,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5: Single-shot (pass@1) follow rates per actor, i.e. the fraction of verified injections whose first",
+    "crop": null
+  },
+  {
+    "page": 17,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6: Follow rate of closed-weight frontier actors on 100 sampled questions per task, under the",
+    "crop": null
+  },
+  {
+    "page": 18,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (420x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 7: Verbatim reproduction of the injected plan in the actor’s CoT, measured by 8-gram overlap",
+    "crop": [
+      95.69100189208984,
+      348.585693359375,
+      516.0050659179688,
+      253.3678436279297
+    ]
+  },
+  {
+    "page": 18,
+    "file": "fig-7-p18.png",
+    "method": "caption_crop (1261x1039)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 322,
+    "width": 1261,
+    "height": 1039,
+    "caption": "Figure 7: Per-strategy breakdown of the aggregate APPS rates reported in Fig.  4 . The grid is",
+    "crop": [
+      96.0,
+      348.59,
+      516.01,
+      694.59
+    ]
+  },
+  {
+    "page": 19,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 8: End-to-end attack success: percentage of all sampled questions that end in a successful",
+    "crop": null
+  },
+  {
+    "page": 19,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 9: Detection rate (%) on corrupted transcripts at suspicion cutoffs  0 . 05  /  0 . 15  /  0 . 50 . Detection",
+    "crop": null
+  },
+  {
+    "page": 19,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 10: Threshold-free ROC/AUC, corrupted vs. benign transcripts. Claude 3.7 is omitted as it was",
+    "crop": null
+  },
+  {
+    "page": 20,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 11: Monitor detection rate (%) of self-authored attacks, where the actor plans and inserts the",
+    "crop": null
+  },
+  {
+    "page": 21,
+    "file": "fig-8-p21.png",
+    "method": "caption_crop (1261x704)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 89,
+    "width": 1261,
+    "height": 704,
+    "caption": "Figure 8: Paraphrasing on APPS (problem 611, Qwen3-8B,  greedy_fast_path  strategy). The",
+    "crop": [
+      96.0,
+      235.56,
+      516.01,
+      469.92
+    ]
+  }
+]

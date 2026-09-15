@@ -4744,6 +4744,20 @@
       ],
       "commit": "1e2d82ba",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-15-stellar-colosseum-many-agent-harness.md"
+    },
+    {
+      "slug": "2026-09-15-plan-injection-cot-monitoring",
+      "date": "2026-09-15",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2609.15989",
+      "title": "LLM 에이전트 CoT 모니터링을 우회하는 Plan Injection 공격: 탐지율 75% 한계 정리",
+      "blog_url": "https://jkf87.github.io/posts/2026-09-15-plan-injection-cot-monitoring",
+      "tags": [
+        "agent",
+        "safety",
+        "monitoring",
+        "LLM"
+      ]
     }
   ]
 }
