@@ -1,0 +1,215 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (789x574)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 86,
+    "width": 789,
+    "height": 574,
+    "caption": "Figure 1: Illustration of two challenges in visual evidence",
+    "crop": [
+      307.5,
+      204.0,
+      570.17,
+      394.88
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-2-p3.png",
+    "method": "caption_crop (1584x618)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 175,
+    "width": 1584,
+    "height": 618,
+    "caption": "Figure 2: Overview of SCORE. The agent iteratively searches page images or zooms into local regions, updating a maintained",
+    "crop": [
+      42.0,
+      42.0,
+      570.0,
+      247.93
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Main results on SlideVQA, ViDoSeek, and MMLongBench. We report accuracy (%).  †  denotes multi-agent architectures.",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "table-2-p6.png",
+    "method": "caption_crop (1477x840)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 262,
+    "width": 1477,
+    "height": 840,
+    "caption": "Table 2: Ablation of the two organization modules. Accuracy",
+    "crop": [
+      42.0,
+      42.0,
+      534.23,
+      321.39
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-3-p6.png",
+    "method": "caption_crop (788x469)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 52,
+    "width": 788,
+    "height": 469,
+    "caption": "Figure 3: Accuracy versus average latency per query on Slide-",
+    "crop": [
+      307.5,
+      42.0,
+      569.99,
+      197.71
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-3-p6.png",
+    "method": "caption_crop (788x1325)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 214,
+    "width": 788,
+    "height": 1325,
+    "caption": "Table 3: Retrieval and Consolidation Behavior Analysis on",
+    "crop": [
+      307.5,
+      42.0,
+      569.99,
+      483.33
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4 details the average agent turns, token consumption,",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4: Efficiency on SlideVQA (backbone: Qwen2.5-VL-",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6: Effect of backbone strength on SlideVQA under",
+    "crop": null
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too page-like (area_ratio=0.77)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 4 shows a concrete instance. The query",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      610.4105834960938
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-4-p9.png",
+    "method": "caption_crop (1836x1207)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 516,
+    "width": 1836,
+    "height": 1207,
+    "caption": "Figure 4: A crop-and-zoom case study. At full-page resolu-",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      402.29
+    ]
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 7: Comparison of SCORE scores on SlideVQA under",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "fig-5-p11.png",
+    "method": "caption_crop (1585x533)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 90,
+    "width": 1585,
+    "height": 533,
+    "caption": "Figure 5: Agent loop context construction. The persistent textual evidence ledger (top) retains the distilled, query-relevant",
+    "crop": [
+      42.0,
+      67.54,
+      570.2,
+      244.94
+    ]
+  },
+  {
+    "page": 11,
+    "file": "fig-6-p11.png",
+    "method": "caption_crop (1585x1078)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 137,
+    "width": 1585,
+    "height": 1078,
+    "caption": "Figure 6: The prompt template used for LLM-as-Judge evaluation.",
+    "crop": [
+      42.0,
+      332.06,
+      570.16,
+      691.17
+    ]
+  }
+]
