@@ -1,0 +1,140 @@
+[
+  {
+    "page": 4,
+    "file": "fig-1-p4.png",
+    "method": "caption_crop (1427x536)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 83,
+    "width": 1427,
+    "height": 536,
+    "caption": "Figure 1: Chain-of-Self-Questioning. The model identifies required information, evaluates its",
+    "crop": [
+      60.0,
+      60.0,
+      535.51,
+      238.4
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-1-p4-2.png",
+    "method": "caption_crop (1427x1142)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 189,
+    "width": 1427,
+    "height": 1142,
+    "caption": "Figure  1  summarizes the framework. Given a question  q , the model first constructs information",
+    "crop": [
+      60.0,
+      60.0,
+      535.37,
+      440.43
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Relative inference stages per question.",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Final balanced-option TruthfulQA-MC results across eleven models and 817 questions.",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  3  reports the model-macro mean and standard deviation across all eleven models. As",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "table-4-p8.png",
+    "method": "caption_crop_table_below (1429x883)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 96,
+    "width": 1429,
+    "height": 883,
+    "caption": "Table 4: Abstention composition at  τ  = 0 . 90. Values are means across eleven models; shares are",
+    "crop": [
+      59.61,
+      64.96,
+      535.42,
+      358.82
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-2-p8.png",
+    "method": "caption_crop (1428x655)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 70,
+    "width": 1428,
+    "height": 655,
+    "caption": "Figure 2: Principal TruthfulQA-MC outcomes across the eleven-model panel. Points show",
+    "crop": [
+      60.0,
+      168.98,
+      535.89,
+      386.69
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-3-p9.png",
+    "method": "caption_crop (1427x663)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 77,
+    "width": 1427,
+    "height": 663,
+    "caption": "Figure 3: Confidence-threshold ablation for the three CoSQ variants on TruthfulQA-MC. Panels",
+    "crop": [
+      60.0,
+      60.0,
+      535.5,
+      280.74
+    ]
+  },
+  {
+    "page": 9,
+    "file": "table-5-p9.png",
+    "method": "caption_crop (1435x821)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 109,
+    "width": 1435,
+    "height": 821,
+    "caption": "Table 5: Aggregate threshold sweep for Critical-CoSQ and Adaptive-CoSQ on TruthfulQA-MC.",
+    "crop": [
+      59.61,
+      60.0,
+      537.56,
+      333.35
+    ]
+  }
+]
