@@ -4994,7 +4994,23 @@
       "voice_spyrl_grade": "A",
       "voice_spyrl_report": "../memory/voice-feedback/2026-09-16-sciencebuddy-recursive-self-improvement-spyrl.json",
       "voice_spyrl_final_score": 81.8,
-      "highlights": 15
+      "highlights": 15,
+      "threads_root_id": "17921603778438555",
+      "threads_reply_ids": [
+        "18092223842561565",
+        "18003605468972831",
+        "17903920140560674",
+        "18121016356713532",
+        "18128289784613718"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        4,
+        6
+      ],
+      "commit": "53956779",
+      "note": "first publish attempt hit transient Threads API 400 (media not ready); container published manually; concurrent resume runs created a duplicate replies branch which was deleted via API"
     }
   ]
 }
