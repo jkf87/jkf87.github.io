@@ -161,3 +161,5 @@ quality 튜닝 순서도 정해져 있습니다. 모델을 먼저 정하고 → 
 이 가이드에서 실무적으로 제일 값진 부분은 화려한 예제가 아니라 **제약의 문법**입니다. "바꿀 것"과 "지킬 것"을 문장으로 나열하고, 참조에 번호와 역할을 붙이고, 한 번에 하나만 고친다 — 프롬프트 엔지니어링이라기보다 변경 관리에 가깝습니다. 이미지 API는 문장을 잘 쓰는 쪽이 이기는 게 아니라, 유지보수 가능한 요구사항 명세를 쓰는 쪽이 이긴다는 결론입니다.
 
 전체 예제 프롬프트와 실행 가능한 노트북은 [openai-cookbook repo](https://github.com/openai/openai-cookbook/blob/d310dfa05d20fb653caa9c1c4b89ac1a4aeeeae4/examples/multimodal/image-gen-models-prompting-guide.ipynb)에 있습니다.
+
+<!-- threads: root=18116095727102095, replies=18068256635774692,17926109916181544 -->
