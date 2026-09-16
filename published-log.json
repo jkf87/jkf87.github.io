@@ -5036,7 +5036,23 @@
       "voice_spyrl_report": "../memory/voice-feedback/2026-09-16-agent-error-avalanche-world-model-soc-spyrl.json",
       "highlights": 13,
       "commit": "4bf265ba",
-      "published": "2026-09-16T22:10:00+09:00"
+      "published": "2026-09-16T22:10:00+09:00",
+      "threads_root_id": "18174807223384789",
+      "threads_reply_ids": [
+        "18050410667811278",
+        "18214363465360462",
+        "17909446791499413",
+        "18017321810927200",
+        "18137259208719810"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        4,
+        6
+      ],
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-16-agent-error-avalanche-world-model-soc.md",
+      "note": "resume created duplicate posts 4-6 branch (17999331272990813/18099391103620203/18106849970601637); deleted via API; final tree verified single chain"
     }
   ]
 }
