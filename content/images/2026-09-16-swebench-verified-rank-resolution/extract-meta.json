@@ -1,0 +1,166 @@
+[
+  {
+    "page": 3,
+    "file": "fig-1-p3.png",
+    "method": "caption_crop (1110x852)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 921,
+    "width": 1110,
+    "height": 852,
+    "caption": "Fig. 1.  The audit:  254  public submissions and incomplete metadata feed analyses of",
+    "crop": [
+      122.76,
+      103.84,
+      492.62,
+      387.41
+    ]
+  },
+  {
+    "page": 4,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1.  The analysis pool: the four public splits that publish per-instance verdicts,",
+    "crop": null
+  },
+  {
+    "page": 4,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2 reports it. Over all  134  Verified submissions  n eff  /n  = 0 . 94  and the",
+    "crop": null
+  },
+  {
+    "page": 4,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 2 shows the same decomposition instance by instance. Lite shows the",
+    "crop": null
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2.  Degenerate and discriminating instances as the comparison set narrows. KR-",
+    "crop": null
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3.  Nesting of solution sets within ability bands (SWE-bench Verified), against",
+    "crop": null
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3 shows median nesting of  0 . 935  at the frontier: when two leading",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "fig-2-p6.png",
+    "method": "caption_crop (1110x693)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 83,
+    "width": 1110,
+    "height": 693,
+    "caption": "Fig. 2.  The  164  instances that still separate the top ten, one row per system, with",
+    "crop": [
+      122.76,
+      103.83,
+      492.63,
+      334.45
+    ]
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4.  The same adjacent-pair test on every public split with per-instance results.",
+    "crop": null
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5.  Descriptive tiers of the SWE-bench Verified top thirty using uncorrected",
+    "crop": null
+  },
+  {
+    "page": 10,
+    "file": "fig-3-p10.png",
+    "method": "caption_crop (1110x710)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 82,
+    "width": 1110,
+    "height": 710,
+    "caption": "Fig. 3.  The top thirty of SWE-bench Verified. Each dot is a submission’s score; the",
+    "crop": [
+      122.76,
+      103.83,
+      492.63,
+      340.24
+    ]
+  },
+  {
+    "page": 11,
+    "file": "fig-4-p11.png",
+    "method": "caption_crop (1111x664)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 69,
+    "width": 1111,
+    "height": 664,
+    "caption": "Fig. 4.  Rescoring the top thirty on only the  209  instances non-degenerate for the top",
+    "crop": [
+      122.76,
+      103.84,
+      492.67,
+      324.84
+    ]
+  }
+]
