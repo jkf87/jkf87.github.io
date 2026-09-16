@@ -1,0 +1,128 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (794x1246)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 182,
+    "width": 794,
+    "height": 1246,
+    "caption": "Figure 1: Top: How Ratul (a professor) and Tapan (his student) use",
+    "crop": [
+      305.95,
+      200.22,
+      570.2,
+      615.29
+    ]
+  },
+  {
+    "page": 4,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: RQ1: honest scheduling success rate over  𝑛 =  10  runs and message complexity ( # distinct",
+    "crop": null
+  },
+  {
+    "page": 4,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: RQ2: success (E4: meeting booked;",
+    "crop": null
+  },
+  {
+    "page": 5,
+    "file": "fig-4-p5.png",
+    "method": "caption_crop (1589x892)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 204,
+    "width": 1589,
+    "height": 892,
+    "caption": "Figure 4: Scheduling trace excerpts between the professor’s agent (Alvarez) and two TAs’ agents (Sarah, John); each bubble is a message, sent from the",
+    "crop": [
+      41.8,
+      71.69,
+      571.13,
+      368.95
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-5-p5.png",
+    "method": "caption_crop (1629x398)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 90,
+    "width": 1629,
+    "height": 398,
+    "caption": "Figure 5: Channel contention (E3) among three agents coordinating over an ordered multicast primitive. Time runs left to right; shaded bands are",
+    "crop": [
+      36.94,
+      372.1,
+      579.38,
+      504.59
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-6-p6.png",
+    "method": "caption_crop (798x889)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 145,
+    "width": 798,
+    "height": 889,
+    "caption": "Figure 6: Stalling in E4: (a) Alvarez retains Wednesday’s booking pend-",
+    "crop": [
+      305.95,
+      71.68,
+      571.53,
+      367.91
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-7-p7.png",
+    "method": "caption_crop (1478x939)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 221,
+    "width": 1478,
+    "height": 939,
+    "caption": "Figure 7: Deception in E5: (a) Alvarez demands verification and offers",
+    "crop": [
+      41.8,
+      71.68,
+      534.21,
+      384.53
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-8-p7.png",
+    "method": "caption_crop (1211x767)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 117,
+    "width": 1211,
+    "height": 767,
+    "caption": "Figure 8: The social harness stack. Top: agents, each with a personal",
+    "crop": [
+      166.73,
+      71.68,
+      570.2,
+      327.23
+    ]
+  }
+]

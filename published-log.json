@@ -4900,6 +4900,22 @@
         5
       ],
       "note": "orphan root-only post 17903714754574815 from a mis-invoked first publish attempt; needs manual deletion"
+    },
+    {
+      "slug": "2026-09-16-social-harness-agentic-societies",
+      "date": "2026-09-16",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2609.17527",
+      "title": "AI 에이전트끼리 믿고 협업하려면 소셜 하네스가 필요한 이유: Agentic Societies 논문 정리",
+      "blog_url": "https://jkf87.github.io/posts/2026-09-16-social-harness-agentic-societies",
+      "tags": [
+        "llm-agent",
+        "multi-agent",
+        "agent-communication",
+        "harness",
+        "security"
+      ],
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-16-social-harness-agentic-societies.md"
     }
   ]
 }
