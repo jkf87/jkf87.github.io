@@ -4870,6 +4870,23 @@
         "17908095969309056",
         "17943710073349033"
       ]
+    },
+    {
+      "slug": "2026-09-16-memriskbench-trace-aware-agent-risk-eval",
+      "date": "2026-09-16",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2609.14976",
+      "title": "LLM 에이전트 벤치마크가 위험한 이유: MemRiskBench 논문 정리",
+      "blog_url": "https://jkf87.github.io/posts/2026-09-16-memriskbench-trace-aware-agent-risk-eval",
+      "tags": [
+        "llm-agent",
+        "benchmark",
+        "memory-safety",
+        "evaluation",
+        "open-source-model"
+      ],
+      "commit": "pending",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-16-memriskbench-trace-aware-agent-risk-eval.md"
     }
   ]
 }
