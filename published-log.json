@@ -4915,7 +4915,25 @@
         "harness",
         "security"
       ],
-      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-16-social-harness-agentic-societies.md"
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-16-social-harness-agentic-societies.md",
+      "commit": "1fb0f3b6",
+      "threads_root_id": "17875820799562563",
+      "threads_reply_ids": [
+        "18262962169307594",
+        "18073895804485600",
+        "18174239077443146",
+        "18213900061347994",
+        "17866073562658080"
+      ],
+      "threads_image_posts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "note": "API-500 interrupted first Threads run; orphan root 17886280149618139 deleted via API; duplicate reply candidate 17985213000118395 reported PUBLISHED but DELETE returned 400 - may need manual deletion"
     }
   ]
 }
