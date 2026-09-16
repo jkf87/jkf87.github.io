@@ -1,0 +1,87 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (1302x636)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 182,
+    "width": 1302,
+    "height": 636,
+    "caption": "Figure 1  |  ScienceBuddy: a scientific workspace that learns through collaboration. Left: Scientific workspace.",
+    "crop": [
+      81.54,
+      482.37,
+      515.16,
+      694.18
+    ]
+  },
+  {
+    "page": 2,
+    "file": "fig-2-p2.png",
+    "method": "caption_crop (1434x1668)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 673,
+    "width": 1434,
+    "height": 1668,
+    "caption": "Figure 2  |  ScienceBuddy: an interactive scientific workspace with recursive-in-recursive self-improvement. Top: Scientific",
+    "crop": [
+      58.87,
+      93.58,
+      536.38,
+      649.26
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-3-p8.png",
+    "method": "caption_crop (1298x611)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 83,
+    "width": 1298,
+    "height": 611,
+    "caption": "Figure 3  |  Collaboration-derived Harbor tasks for post-training.  The collaboration supplies both the",
+    "crop": [
+      81.54,
+      73.04,
+      513.76,
+      276.36
+    ]
+  },
+  {
+    "page": 11,
+    "file": "fig-4-p11.png",
+    "method": "caption_crop (1298x960)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 220,
+    "width": 1298,
+    "height": 960,
+    "caption": "Figure 4  |  A workspace for multimodal scientific analysis.  A researcher supplies a scientific diagram and",
+    "crop": [
+      81.54,
+      114.24,
+      513.73,
+      433.88
+    ]
+  },
+  {
+    "page": 12,
+    "file": "fig-5-p12.png",
+    "method": "caption_crop (1242x1825)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 449,
+    "width": 1242,
+    "height": 1825,
+    "caption": "Figure 5  |  Multimodal input, long-context agentic reasoning, and researcher interaction.  Three",
+    "crop": [
+      81.54,
+      91.99,
+      495.33,
+      699.74
+    ]
+  }
+]
