@@ -5011,6 +5011,32 @@
       ],
       "commit": "53956779",
       "note": "first publish attempt hit transient Threads API 400 (media not ready); container published manually; concurrent resume runs created a duplicate replies branch which was deleted via API"
+    },
+    {
+      "date": "2026-09-16",
+      "slug": "2026-09-16-agent-error-avalanche-world-model-soc",
+      "title": "LLM 에이전트가 한 번에 무너지는 이유: 오류 폭발과 세계 모델 붕괴의 과학",
+      "source_url": "https://arxiv.org/abs/2609.17419",
+      "blog_url": "https://jkf87.github.io/posts/2026-09-16-agent-error-avalanche-world-model-soc",
+      "tags": [
+        "llm-agent",
+        "reliability",
+        "evaluation",
+        "harness",
+        "world-model",
+        "long-horizon",
+        "benchmark"
+      ],
+      "voice": "conanssam-voice/kakao/plain",
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_winner": "d-revised (revised from a-kakao spyTags)",
+      "voice_spyrl_score": 88.4,
+      "voice_spyrl_grade": "A",
+      "voice_spyrl_spy_suspicion": 13.1,
+      "voice_spyrl_report": "../memory/voice-feedback/2026-09-16-agent-error-avalanche-world-model-soc-spyrl.json",
+      "highlights": 13,
+      "commit": "4bf265ba",
+      "published": "2026-09-16T22:10:00+09:00"
     }
   ]
 }
