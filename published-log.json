@@ -5077,7 +5077,24 @@
       "voice_spyrl_report": "../memory/voice-feedback/2026-09-17-llm-abstention-cosq-selective-risk-spyrl.json",
       "voice_spyrl_final_score": 80.4,
       "highlights": 12,
-      "published": "2026-09-17T07:00:00+09:00"
+      "published": "2026-09-17T07:00:00+09:00",
+      "threads_root_id": "18496671373101451",
+      "threads_reply_ids": [
+        "17952867534030871",
+        "17964814539179239",
+        "18116809075943714",
+        "18080193362380790",
+        "17976059624918551"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        4,
+        6
+      ],
+      "commit": "d87ea83a",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-17-llm-abstention-cosq-selective-risk.md",
+      "note": "concurrent resume runs created a duplicate 3-post thread and one orphan container; duplicates deleted via API; final single chain verified (6 posts, images on 1/3/4/6)"
     }
   ]
 }
