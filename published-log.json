@@ -5288,7 +5288,22 @@
       "voice_spyrl_final_score": 86.6,
       "highlights": 12,
       "published": "2026-09-17T22:08:27+09:00",
-      "note": "22:00 KST run; ScienceIDE(arXiv:2609.19134), first round D-grade on all 3 candidates, revised A via spyTags then passed"
+      "note": "22:00 KST run; ScienceIDE(arXiv:2609.19134), first round D-grade on all 3 candidates, revised A via spyTags then passed; threads uploader exited after 3 posts (window timeout); resumed from state file, posts 4-6 appended to same chain",
+      "threads_root_id": "18112871159046045",
+      "threads_reply_ids": [
+        "18489417094096070",
+        "18106049150228363",
+        "18116607925973764",
+        "17908024803309165",
+        "17950729446257241"
+      ],
+      "threads_image_posts": [
+        1,
+        2,
+        4,
+        5,
+        6
+      ]
     }
   ]
 }
