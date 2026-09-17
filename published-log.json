@@ -5204,7 +5204,24 @@
       "voice_spyrl_report": "../memory/voice-feedback/2026-09-17-agent-memory-benchmark-memoryarena-spyrl.json",
       "voice_spyrl_final_score": 96.0,
       "highlights": 14,
-      "published": "2026-09-17T16:20:00+09:00"
+      "published": "2026-09-17T16:20:00+09:00",
+      "threads_root_id": "17959293902996609",
+      "threads_reply_ids": [
+        "18028557707897235",
+        "18621103639055461",
+        "17972757047938526",
+        "17917632996241673",
+        "17979083286148880"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        4,
+        6
+      ],
+      "commit": "2e19ff6c",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-17-agent-memory-benchmark-memoryarena.md",
+      "note": "threads uploader exited after 3 posts (window timeout); resumed from state file, posts 4-6 appended to same chain"
     }
   ]
 }
