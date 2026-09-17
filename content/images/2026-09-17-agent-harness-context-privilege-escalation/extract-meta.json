@@ -1,0 +1,53 @@
+[
+  {
+    "page": 4,
+    "file": "fig-1-p4.png",
+    "method": "caption_crop (1836x894)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 285,
+    "width": 1836,
+    "height": 894,
+    "caption": "Fig. 1: An example agent context of Codex CLI",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      297.83
+    ]
+  },
+  {
+    "page": 4,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too page-like (area_ratio=0.85)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  1  illustrates the context assembled in Codex CLI [ 12 ]",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      677.013916015625
+    ]
+  },
+  {
+    "page": 12,
+    "file": "fig-2-p12.png",
+    "method": "caption_crop (1836x815)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 150,
+    "width": 1836,
+    "height": 815,
+    "caption": "Fig. 2: Overview structure of C O RA",
+    "crop": [
+      0.0,
+      0.0,
+      612.0,
+      271.58
+    ]
+  }
+]
