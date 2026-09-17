@@ -5247,7 +5247,21 @@
       "voice_spyrl_final_score": 86.2,
       "highlights": 16,
       "published": "2026-09-17T19:15:20+09:00",
-      "note": "19:00 KST run; first candidate Gavel(arXiv:2609.15982) aborted as duplicate of 2026-09-15 post, replaced with CPE(arXiv:2609.01222)"
+      "note": "19:00 KST run; first candidate Gavel(arXiv:2609.15982) aborted as duplicate of 2026-09-15 post, replaced with CPE(arXiv:2609.01222)",
+      "threads_root_id": "18005041850998390",
+      "threads_reply_ids": [
+        "18075235532413151",
+        "17904311178481479",
+        "18096725084078788",
+        "18133048846649087",
+        "18091939586658476"
+      ],
+      "threads_image_posts": [
+        1,
+        5
+      ],
+      "commit": "b346b2d1",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-17-agent-harness-context-privilege-escalation.md"
     }
   ]
 }
