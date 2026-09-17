@@ -5160,7 +5160,26 @@
       "voice_spyrl_spy_suspicion": 28.2,
       "voice_spyrl_report": "../memory/voice-feedback/2026-09-17-agent-benchmark-compression-dualvieweval-spyrl.json",
       "voice_spyrl_final_score": 95.0,
-      "highlights": 10
+      "highlights": 10,
+      "published": "2026-09-17T13:25:00+09:00",
+      "threads_root_id": "18123452606305062",
+      "threads_reply_ids": [
+        "17893575708672799",
+        "18154635643501946",
+        "17910942000287087",
+        "18115570345999178",
+        "18148737511469451"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        4,
+        5,
+        6
+      ],
+      "commit": "0357742b",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-17-agent-benchmark-compression-dualvieweval.md",
+      "note": "threads uploader exited after post 4 (window timeout); resumed from state file, posts 5-6 appended to same chain"
     }
   ]
 }
