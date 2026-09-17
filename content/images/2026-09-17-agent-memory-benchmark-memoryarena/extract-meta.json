@@ -1,0 +1,261 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (1678x892)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 250,
+    "width": 1678,
+    "height": 892,
+    "caption": "Figure 1.  M EMORY A RENA  Evaluates agents with Memory with",
+    "crop": [
+      52.7,
+      113.78,
+      612.0,
+      410.71
+    ]
+  },
+  {
+    "page": 2,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1.  We compare benchmarks along key dimensions: if the benchmark evaluates different memory mechanism, if it evaluates agent",
+    "crop": null
+  },
+  {
+    "page": 3,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2.  Benchmark Statistics in M EMORY A RENA .",
+    "crop": null
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (1611x849)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 351,
+    "width": 1611,
+    "height": 849,
+    "caption": "Figure 2.  M EMORY A RENA  supports four distinct evaluation environments, where a memory-augmented task agent completes a sequence",
+    "crop": [
+      23.51,
+      34.89,
+      560.02,
+      317.6
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-3-p6.png",
+    "method": "caption_crop (781x591)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 99,
+    "width": 781,
+    "height": 591,
+    "caption": "Figure 3.  Success Rate at subtask epth  k . The decay trend indi-",
+    "crop": [
+      294.89,
+      156.63,
+      554.92,
+      353.17
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3.  Main results on task agent (gpt-5.1-mini) with long-context memory, memory agent, and RAG agent over four agentic",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3  reports the",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4.  Latency of agents with different memory paradigms (sec.).",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too page-like (area_ratio=0.56)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 4.  Data example for bundled web shopping task.",
+    "crop": [
+      43.439998626708984,
+      164.34487915039062,
+      553.4462280273438,
+      697.9993896484375
+    ]
+  },
+  {
+    "page": 13,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too page-like (area_ratio=0.71)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 5.  Data example for the Group Travel Planning task.",
+    "crop": [
+      43.439998626708984,
+      56.98846435546875,
+      553.4462280273438,
+      730.3023681640625
+    ]
+  },
+  {
+    "page": 14,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too page-like (area_ratio=0.59)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 6.  Data example for the Progressive Web Search task.",
+    "crop": [
+      43.439998626708984,
+      112.540283203125,
+      553.4462280273438,
+      674.7523803710938
+    ]
+  },
+  {
+    "page": 15,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too page-like (area_ratio=0.65)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 7.  An example from the math formal reasoning task with iterative problem solving in M EMORY A RENA .",
+    "crop": [
+      43.439998626708984,
+      84.012939453125,
+      553.4462280273438,
+      703.2783813476562
+    ]
+  },
+  {
+    "page": 17,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 9 , progressive web search in  Figure 10 , and formal reasoning (math) in  Figure 11 ,",
+    "crop": null
+  },
+  {
+    "page": 17,
+    "file": "fig-8-p17.png",
+    "method": "caption_crop (1531x1176)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 159,
+    "width": 1531,
+    "height": 1176,
+    "caption": "Figure 8.  Bundled Web Shopping Prompt Framework",
+    "crop": [
+      43.44,
+      340.4,
+      553.45,
+      732.24
+    ]
+  },
+  {
+    "page": 18,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too page-like (area_ratio=0.73)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 9.  Group Travel Planning Prompts",
+    "crop": [
+      43.439998626708984,
+      55.05230712890625,
+      553.4462280273438,
+      744.5733642578125
+    ]
+  },
+  {
+    "page": 19,
+    "file": "fig-10-p19.png",
+    "method": "caption_crop (1531x1217)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 217,
+    "width": 1531,
+    "height": 1217,
+    "caption": "Figure 10.  Prompts used in Progressive Web Search tasks",
+    "crop": [
+      43.44,
+      55.06,
+      553.45,
+      460.57
+    ]
+  },
+  {
+    "page": 20,
+    "file": "fig-11-p20.png",
+    "method": "caption_crop (1531x1122)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 160,
+    "width": 1531,
+    "height": 1122,
+    "caption": "Figure 11.  Prompts and workflow used in Sequential Formal Reasoning (Math as an example) tasks",
+    "crop": [
+      43.44,
+      55.06,
+      553.45,
+      428.71
+    ]
+  }
+]
