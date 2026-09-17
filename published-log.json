@@ -5095,6 +5095,31 @@
       "commit": "d87ea83a",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-17-llm-abstention-cosq-selective-risk.md",
       "note": "concurrent resume runs created a duplicate 3-post thread and one orphan container; duplicates deleted via API; final single chain verified (6 posts, images on 1/3/4/6)"
+    },
+    {
+      "date": "2026-09-17",
+      "slug": "2026-09-17-rag-vs-cartridges-knowledge-injection",
+      "title": "RAG 대신 문서를 KV 캐시에 넣는 방법: Cartridges 지식 주입 논문 정리",
+      "source_url": "https://arxiv.org/abs/2609.17346",
+      "blog_url": "https://jkf87.github.io/posts/2026-09-17-rag-vs-cartridges-knowledge-injection",
+      "tags": [
+        "llm-agent",
+        "rag",
+        "long-context",
+        "kv-cache",
+        "fine-tuning",
+        "benchmark"
+      ],
+      "voice": "conanssam-voice/kakao/plain",
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_winner": "a-kakao (revised from spyTags)",
+      "voice_spyrl_score": 81.0,
+      "voice_spyrl_grade": "B",
+      "voice_spyrl_spy_suspicion": 21.55,
+      "voice_spyrl_report": "../memory/voice-feedback/2026-09-17-rag-vs-cartridges-knowledge-injection-spyrl.json",
+      "voice_spyrl_final_score": 81.0,
+      "highlights": 21,
+      "published": "2026-09-17T10:05:00+09:00"
     }
   ]
 }

@@ -1,0 +1,197 @@
+[
+  {
+    "page": 4,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Dataset statistics where  Docs  is the number of unique documents (one cartridge per document),  Qs/Doc  is",
+    "crop": null
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2:  Single-document scores at a fixed adapter size (Qwen3-8B).  Cartridge and Compaction use  2 ×",
+    "crop": null
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  2  shows the model per-",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "fig-1-p6.png",
+    "method": "caption_crop (1434x455)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 132,
+    "width": 1434,
+    "height": 455,
+    "caption": "Figure 1:  Single-document score versus adapter size  (MiB, log scale). Cartridges and Compaction are swept",
+    "crop": [
+      58.87,
+      58.87,
+      536.41,
+      210.01
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-2-p6.png",
+    "method": "caption_crop (1434x869)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 249,
+    "width": 1434,
+    "height": 869,
+    "caption": "Figure 2:  Multi-document results (Qwen3-8B).  Score versus the number of retrieved documents  k , composing",
+    "crop": [
+      58.87,
+      217.03,
+      536.41,
+      506.56
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-3-p7.png",
+    "method": "caption_crop (1437x705)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 140,
+    "width": 1437,
+    "height": 705,
+    "caption": "Figure 3:  Forgetting on control benchmarks (Qwen3-8B).  The score is averaged across the five source datasets,",
+    "crop": [
+      58.87,
+      58.87,
+      537.65,
+      293.5
+    ]
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3:  LoRA merging approaches  (Qwen3-8B, rank",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4:  Single-document results on Gemma-3-12B.",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5:  Forgetting on control benchmarks (Gemma-",
+    "crop": null
+  },
+  {
+    "page": 13,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6:  Distillation vs. next-token prediction  for",
+    "crop": null
+  },
+  {
+    "page": 14,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 7: Evaluation prompts used for each benchmark. Variables in braces are replaced with benchmark data at",
+    "crop": null
+  },
+  {
+    "page": 15,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 8: LLM-as-a-Judge prompt used for scoring free-form answers on TechQA. The judge model (DeepSeek-",
+    "crop": null
+  },
+  {
+    "page": 15,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  10  reports the aver-",
+    "crop": null
+  },
+  {
+    "page": 15,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 9:",
+    "crop": null
+  },
+  {
+    "page": 16,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 10: Average context tokens per query for Text",
+    "crop": null
+  }
+]
