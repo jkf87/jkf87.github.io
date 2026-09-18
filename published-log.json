@@ -5415,7 +5415,21 @@
       "voice_spyrl_spy": "b-newsletter",
       "voice_spyrl_spy_suspicion": 55.08,
       "highlights": 10,
-      "published": "2026-09-18T16:20:00+09:00"
+      "published": "2026-09-18T16:20:00+09:00",
+      "commit": "9fa1a18e",
+      "threads_root_id": "17982882918082071",
+      "threads_reply_ids": [
+        "18059020358790226",
+        "18034102865850111",
+        "18142632622584302",
+        "18013482521955054"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        5
+      ],
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-18-raft-stateful-rag-troubleshooting-agents.md"
     }
   ]
 }
