@@ -5518,6 +5518,34 @@
         7
       ],
       "commit": "5166a7c3"
+    },
+    {
+      "slug": "2026-09-19-llm-agent-safety-refusal-calibration-blindspot",
+      "source_url": "https://arxiv.org/abs/2609.16305",
+      "source_type": "arxiv",
+      "title": "LLM 에이전트가 몇 턴 뒤에 안전장치를 놓치는 이유: BLINDSPOT 벤치마크 정리 (arXiv 2609.16305)",
+      "blog_url": "https://conanssam.com/posts/2026-09-19-llm-agent-safety-refusal-calibration-blindspot",
+      "tags": [
+        "llm-agent",
+        "agent-safety",
+        "benchmark",
+        "refusal-calibration",
+        "paper-summary"
+      ],
+      "voice": "conanssam-voice/kakao/plain",
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_winner": "a-kakao",
+      "voice_spyrl_score": 80.5,
+      "voice_spyrl_grade": "B",
+      "voice_spyrl_spy": "a-kakao",
+      "voice_spyrl_suspicion": 22.12,
+      "voice_spyrl_report": "../memory/voice-feedback/2026-09-19-2026-09-19-llm-agent-safety-refusal-calibration-blindspot-spyrl-r2.json",
+      "voice_spyrl_final_score": 80.5,
+      "highlights": 16,
+      "published": "2026-09-19T07:00:00+09:00",
+      "note": "07:00 KST run; BLINDSPOT (IBM Research/RPI) trajectory-level safety calibration; live URL uses no-trailing-slash form (slash variant served 404 by CDN during propagation)",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-19-llm-agent-safety-refusal-calibration-blindspot.md",
+      "commit": "381b42b0"
     }
   ]
 }
