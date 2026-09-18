@@ -1,71 +1,29 @@
 ---
-title: "Meta^n — 재귀적 자기개선 에이전트, 깊이 2를 넘는 법"
+title: "재귀적 자기개선은 깊이 2에서 막히다가 — 고정 연산자 Ω로 여는 Meta^n"
 date: 2026-08-27
 tags: [LLM, agent, self-improvement, recursion, ARC-AGI-2, evolution, harness]
 draft: false
+description: 자기개선 에이전트의 메타 깊이가 약 2에 제한되는 문제를 고정 메타 연산자 하나로 푼 프레임워크. 불변 영역 최소화와 코드+트레이스 개선 원칙을 실무 관점으로 정리함.
 ---
 
-# 논문 요약: Recursive Self-Improvement through Emergent Depth (arXiv 2608.24735)
+자기개선 LLM 에이전트는 메타 깊이가 약 2에 제한된다는 문제가 있었음. Minnesota NLP가 이를 분석하고 뚫는 프레임워크 Meta^n을 냈음. 원문은 [arXiv 2608.24735](https://arxiv.org/abs/2608.24735).
 
-Minnesota NLP, 2026-08-25 공개. 본 논문은 자기개선 LLM 에이전트의 메타 깊이(meta-depth)가 <span style="background-color: #fff59d"><strong>약 2에 제한되는 문제</strong></span>를 분석하고, 이를 극복하는 프레임워크 Meta^n을 제안한다.
+1. 기존 한계의 구조. 자기수정 시스템은 안정성을 위해 자기 수정 기계의 일부를 불변으로 유지해야 하는데, 이 불변 부분이 성능 상한을 형성함. 메타 레벨을 추가하는 접근도 새 메타 레벨을 고정시키므로 같은 한계에 부딪힘. 그래서 기존 자기개선 에이전트는 답을 개선할 뿐 답을 만드는 과정 자체는 개선 못 함.
 
-## 기존 연구의 한계
+2. Meta^n의 발상은 단일 고정 메타 연산자 Ω를 정의하고 자기 출력에 재귀적으로 적용하는 것임. Ω는 하위 솔버 스택의 실행 트레이스와 그 트레이스를 만든 코드까지 함께 읽음. 출력은 다음 층으로, 각 태스크 앞에 전략적 컨텍스트를 주입하는 짧은 Python 프리프로세스와 호출 가능한 헬퍼 함수 라이브러리임.
 
-자기수정 시스템은 안정성을 위해 자기 수정 기계의 일부를 불변으로 유지해야 하며, <span style="background-color: #fff59d"><strong>이 불변 부분이 성능 상한을 형성한다</strong></span>. 메타 레벨을 추가하는 접근법도 새 메타 레벨을 고정시키므로 동일한 한계에 직면한다. 기존 자기개선 에이전트는 답(answer)을 개선할 뿐, 답을 만드는 과정 자체를 개선하지는 못한다.
+3. 왜 발산하지 않는가. Ω는 변경되지 않으므로 시스템이 발산하지 않고, 입력은 단조 증가하므로 각 층은 이전 층보다 많은 정보 위에서 추론함. 깊이는 미리 정하지 않고 수렴 기준으로 결정되며, 진화적 아카이브가 층 체인을 탐색함. 불변 영역을 연산자 하나로 최소화한 게 핵심 설계임.
 
-## 제안 방법: 고정된 메타 연산자 Ω
+4. 결과. Gemma 4 31B-IT와 GPT-5.2 두 백본, 시드 3개 평균으로 8개 벤치마크 패밀리 전부에서 선행 자기개선 에이전트(OpenEvolve, Gödel Agent)를 능가했음. CO-Bench 0.851 vs 0.814 vs 0.451, LawBench 0.815 vs 0.745, AlgoTune 15.10배 vs 10.45배임. GPT-5.2에서도 순위가 동일함.
 
-Meta^n은 <span style="background-color: #fff59d"><strong>단일 고정 메타 연산자 Ω</strong></span>를 정의하고 이를 자기 출력에 재귀적으로 적용한다.
+5. 가장 주목할 숫자는 ARC-AGI-2임. 스킬 암기에 저항하도록 설계된 벤치마크에서 0.331을 기록해 비교군 중 유일하게 0을 넘었음(OpenEvolve 0.003, Gödel Agent 0.054). 진짜 일반화가 필요한 영역에서 재귀가 차이를 만든다는 증거로 읽힘.
 
-1. Ω는 하위 솔버 스택의 실행 트레이스와 <span style="background-color: #fff59d"><strong>해당 트레이스를 만든 코드까지 함께</strong></span> 읽는다.
-2. 출력은 다음 층(layer)으로, 각 태스크 앞에 전략적 컨텍스트를 주입하는 짧은 Python 프리프로세스 + 호출 가능한 헬퍼 함수 라이브러리다.
-3. <span style="background-color: #fff59d"><strong>Ω는 변경되지 않으므로 시스템이 발산하지 않는다</strong>. 입력은 단조 증가하므로 각 층은 이전 층보다 많은 정보 위에서 추론한다.
-4. 깊이는 미리 정하지 않고 <span style="background-color: #fff59d"><strong>수렴 기준으로 결정</strong></span>되며, 진화적 아카이브(evolutionary archive)가 층 체인을 탐색한다.
+6. 어블레이션의 교훈. 재귀의 성능 향상은 주로 층 간 조건화(conditioning)에서 발생함. 그리고 깊이에 따라 프롬프트에 명시되지 않은 층별 역할이 자발적으로 출현함. 설계하지 않은 분업이 생겨난다는 것임.
 
-![Figure 1](/images/2026-08-27-metan-recursive-self-improvement/fig1-overview.png)
-*그림 1. Meta^n 전체 구조. 고정된 Ω가 자기 출력 위에 층을 쌓는다.*
+7. 내 자동화 설계에 가져갈 원칙 두 가지. 첫째, 자기개선 루프의 첫 결정은 "무엇을 불변으로 둘 것인가"임. 불변 영역이 크면 그만큼 상한이 낮아짐. Meta^n은 이걸 연산자 하나로 최소화했음. 내 루프에서도 개선 대상이 아닌 최소한의 코어(검증기와 루프 엔진)만 얼려두고 나머지는 개선 가능 영역으로 여는 구조가 맞음. 둘째, 개선 대상을 답이 아니라 코드 + 실행 트레이스로 두는 것임. 답을 고치면 거기서 끝이지만 과정을 고치면 층이 쌓일 때 정보가 누적됨. 내 자동화 로그도 결과만 남기지 말고 그 결과를 만든 코드와 트레이스를 세트로 보관해야 다음 개선의 입력이 됨.
 
-![Figure 3](/images/2026-08-27-metan-recursive-self-improvement/fig3-meta-layer.png)
-*그림 3. 메타 층 하나의 두 단계. LawBench 사례로 트레이싱.*
+8. 문제제기. 고정 Ω 자체의 품질이 여전히 상한을 만든다는 근본 문제는 사라지지 않고, 층이 쌓이는 만큼 실행 비용이 커지는 구조임. 그리고 진화적 아카이브 탐색 비용이 벤치마크 밖 실무 환경에서 얼마인지 불투명함. "층별 역할 출현"도 관찰이지 설계 가능한 것은 아님.
 
-## 실험 결과
+9. 결론. 자기개선의 깊이 제한은 불변 영역의 크기 문제였고, 그걸 연산자 하나로 최소화하니 깊이 2를 넘었음. 무엇을 얼려둘지와 무엇을 개선할지의 두 결정이 자기개선 루프 설계의 전부임. 코드는 [github.com/minnesotanlp/meta-n](https://github.com/minnesotanlp/meta-n)에 공개돼 있음.
 
-두 백본(<span style="background-color: #fff59d"><strong>Gemma 4 31B-IT, GPT-5.2</strong></span>), 시드 3개 평균, <span style="background-color: #fff59d"><strong>8개 벤치마크 패밀리 전부</strong></span>에서 선행 자기개선 에이전트(OpenEvolve, Gödel Agent 등)를 능가했다.
-
-Gemma 백본 결과 (일부):
-
-| 벤치마크 | Meta^n | OpenEvolve | Gödel Agent |
-|---|---|---|---|
-| CO-Bench | 0.851 | 0.814 | 0.451 |
-| Symptom2Disease | 0.733 | 0.718 | 0.710 |
-| LawBench | 0.815 | 0.745 | 0.775 |
-| AlgoTune | ×15.10 | ×10.45 | ×13.22 |
-
-GPT-5.2 백본에서도 순위가 동일하다 (CO-Bench 0.870 vs 0.702, AE Math 0.917 vs 0.726).
-
-가장 주목할 숫자는 ARC-AGI-2다. 스킬 암기에 저항하도록 설계된 벤치마크에서 <span style="background-color: #fff59d"><strong>0.331을 기록, 비교군 중 유일하게 0을 넘었다</strong></span> (OpenEvolve 0.003, Gödel Agent 0.054).
-
-![Figure 5](/images/2026-08-27-metan-recursive-self-improvement/fig5-search-progress.png)
-*그림 5. Meta^n agentic가 더 적은 진화 스텝으로 더 높은 점수에 도달한다.*
-
-## 어블레이션 분석
-
-재귀의 성능 향상은 주로 <span style="background-color: #fff59d"><strong>층 간 조건화(conditioning)에서 발생</strong></span>한다. 또한 깊이에 따라 프롬프트에 명시되지 않은 층별 역할이 자발적으로 출현한다(<span style="background-color: #fff59d"><strong>emergent layer roles</strong></span>).
-
-![Figure 6](/images/2026-08-27-metan-recursive-self-improvement/fig6-layer-roles.png)
-*그림 6. 깊이별 층 역할 분포.*
-
-## 실무 관점 시사점
-
-- 자기개선 루프 설계에서 첫 결정은 <span style="background-color: #fff59d"><strong>무엇을 불변(invariant)으로 둘 것인가</strong></span>다. Meta^n은 이 불변 영역을 하나의 연산자로 최소화했다.
-- 개선 대상을 답이 아니라 <span style="background-color: #fff59d"><strong>코드 + 실행 트레이스</strong></span>로 두면 층이 쌓일 때 정보가 누적된다.
-
-## 더 실습해보고 싶은 분들께
-
-- 『[이게 되네? 오픈클로 미친 활용법 50제](https://product.kyobobook.co.kr/detail/S000219615902)』
-- 「[모두를 위한 루프 엔지니어링](https://aifrenz.liveklass.com/classes/309184)」
-
-## 참고 자료
-
-- 논문: [arXiv:2608.24735](https://arxiv.org/abs/2608.24735)
-- 코드: [github.com/minnesotanlp/meta-n](https://github.com/minnesotanlp/meta-n)
+자기개선 루프 설계 실습은 『[이게 되네? 오픈클로 미친 활용법 50제](https://product.kyobobook.co.kr/detail/S000219615902)』에서 시작해볼 수 있음.

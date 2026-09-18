@@ -1,5 +1,5 @@
 ---
-title: "EviGraph: 자율 연구 에이전트를 증거 그래프로 만들기"
+title: "자율 연구 에이전트의 주장이 어디서 왔는지 추적하는 법 — EviGraph 구조 정리"
 date: 2026-08-07
 tags:
   - ai-agent
@@ -7,88 +7,39 @@ tags:
   - evidence-graph
   - llm
 draft: false
-description: "연구 에이전트가 주장을 실험으로 추적 가능하게 만드는 typed evidence graph 구조와 검증 루프를 정리했습니다."
+description: "연구 에이전트의 주장을 실험 기록까지 추적 가능하게 만드는 typed evidence graph와 검증 루프를 자동화 관점에서 정리함."
 ---
 
-자율 연구 에이전트가 논문을 쓸 때 가장 큰 문제는 "이 주장이 어디서 나왔는지 추적이 안 된다"는 겁니다. EviGraph는 연구 과정 전체를 typed evidence graph로 표현해서 이 문제를 풉니다.
+자율 연구 에이전트가 논문을 쓸 때 최대 문제는 주장의 출처가 추적 안 된다는 것임. EviGraph는 연구 과정 전체를 typed evidence graph로 표현해서 이걸 풂. 순차 파이프라인 대신 노드-엣지 그래프 상태로 연구를 다루고 매 단계 증거 체인을 검사하는 게 핵심임.
 
-연구를 순차 파이프라인 대신 노드-엣지 그래프 상태로 다루고, 매 단계마다 증거 체인을 검사하는 게 핵심입니다.
+1. 구조부터. 연구 객체를 6개 노드 타입으로 모델링함. Problem은 연구 과제 경계, Gap은 선행 연구의 한계, Hypothesis는 검증 가능한 가설, Experiment는 실험 프로토콜과 구현, Finding은 실험 결과, Claim은 논문 수준의 주장임. 엣지는 identifies, motivates, tested-by, produces, supports로 의존 관계를 정의함.
 
-논문: [EviGraph: Evidence-Guided Autonomous Research Agents](https://arxiv.org/abs/2608.04738)
+![EviGraph 워크플로우](/images/2026-08-07-evigraph-evidence-graph-autonomous-research-agents/fig-1-p3.png)
 
-## 구조: 6개 노드 타입과 5개 엣지 타입
+2. 그래프로 만들면 얻는 첫 이점은 연쇄 효과 추적임. 하나의 Claim이 무너지면 그 Claim을 지탱하던 Finding과 Experiment까지 함께 재검토 대상이 됨. 순차 파이프라인에서는 이 연쇄를 잡기 어려웠음.
 
-EviGraph는 연구 객체를 6가지 타입의 노드로 모델링합니다.
+3. Graph Inspector가 그래프를 순회하며 약한 노드를 찾음. Hypothesis가 Gap과 의미적으로 안 맞는 GAP_MISALIGNMENT, Experiment가 현재 Hypothesis를 실제로 안 테스트하는 경우, Finding이 실험 기록과 불일치하는 경우, Claim이 Finding 범위를 초과하는 경우임.
 
-| 노드 타입 | 역할 |
-|---|---|
-| Problem | 연구 과제 경계 |
-| Gap | 선행 연구의 한계 |
-| Hypothesis | 검증 가능한 가설 |
-| Experiment | 실험 프로토콜과 구현 |
-| Finding | 실험에서 얻은 결과 |
-| Claim | 논문 수준의 주장 |
+4. 약한 노드를 발견하면 그에 의존하는 하위 노드 전부를 위상 정렬로 재생성함. 그리고 중간 체크포인트를 저장해서 수정이 오히려 그래프를 악화시키면 롤백함. 자동 수정에 안전장치를 다는 구조가 벤치마킹할 만함.
 
-엣지는 노드 간의 의존 관계를 정의합니다: identifies, motivates, tested-by, produces, supports.
+5. 대표 사례가 직관적임. H1 가설이 GAP_MISALIGNMENT 판정을 받음. H1은 attention entropy에 집중하는데 Gap G1은 과도하게 복잡한 classification head 문제였음. 파이프라인에선 둘이 문법적으로 연결돼 있어서 통과됐지만 EviGraph는 의미 검사로 잡아냄. 문법적 연결과 의미적 정렬은 다르다는 것임.
 
-![EviGraph 프레임워크 워크플로우](/images/2026-08-07-evigraph-evidence-graph-autonomous-research-agents/fig-1-p3.png)
+![실행 트레이스](/images/2026-08-07-evigraph-evidence-graph-autonomous-research-agents/fig-2-p7.png)
 
-하나의 Claim이 지워지면, 그 Claim을 지탱하던 Finding과 Experiment까지 함께 재검토 대상이 됩니다. 파이프라인에서는 이 연쇄 효과를 잡기 어렵구요.
+6. 증거 준비 게이트도 좋은 설계임. 논문 작성은 그래프가 Ready 상태일 때만 시작됨. 준비 조건은 스키마 유효, retained Claim 최소 1개, 모든 Claim에 완전한 증거 체인, 약한 노드 0개임. 조건이 안 채워지면 Incomplete로 종료하고 Paper Writer를 안 부름.
 
-## 검증 루프: 약한 노드 식별과 하위 노드 재생성
+7. 결과. ARC-Bench-ML(25개 ML 주제)에서 Overall 86.45%. AutoResearchClaw의 60.37%와 큰 격차임. Code Dev 55%→99%, Code Exec 57%→88%, Result Analysis 62.2%→79.4%임.
 
-Graph Inspector가 그래프를 순회하면서 약한 노드(weak node)를 찾습니다. 예를 들어:
+8. 제일 중요한 지표는 Claim Support Rate임. 논문 주장 중 연구 기록으로 추적 가능한 비율임. 27%→37.85%로 40.19% 상대 개선됨. Experimental Data Consistency도 AutoResearchClaw의 53%보다 훨씬 높은 87.73%임. NanoResearch의 96.15%엔 못 미치지만 견고함.
 
-- Hypothesis가 Gap과 의미적으로 정렬되지 않음 (GAP_MISALIGNMENT)
-- Experiment가 현재 Hypothesis를 실제로 테스트하지 않음
-- Finding이 실험 기록과 불일치
-- Claim이 Finding의 범위를 초과
+9. Result Analysis가 크게 오른 건 가설-실험-결과-주장 관계를 명시적으로 유지한 효과로 보임. 관계를 암묵적 컨텍스트가 아니라 구조로 들고 있으면 분류·집계 품질이 같이 올라감.
 
-약한 노드를 발견하면, 해당 노드에 의존하는 모든 하위 노드를 찾아 topological order로 재생성합니다. 중간에 체크포인트를 저장해서, 수정이 오히려 그래프를 악화시키면 롤백합니다.
+10. 실무 채점. 이 구조는 연구 에이전트 말고도 쓸 데가 많음. 우리 자동화 파이프라인의 산출물(보고서, 분석, 요약)도 "주장→근거→원본 기록"의 체인을 그래프로 들고 있으면 검증 게이트를 만들 수 있음. 특히 근거 없는 주장 차단을 문법이 아니라 의미 정렬 검사로 해야 한다는 교훈이 핵심임.
 
-![EviGraph 실행 트레이스 예시](/images/2026-08-07-evigraph-evidence-graph-autonomous-research-agents/fig-2-p7.png)
+11. 베낄 것 두 개. 첫째, 수정 시 체크포인트-롤백. 자동 개선 루프가 그래프를 악화시키는 걸 원천 차단함. 둘째, 준비 게이트. 산출 단계가 입력 상태가 충분할 때만 돌게 하는 것임. "어쨌든 결과물은 냄" 구조를 끊는 원칙임.
 
-논문의 대표 사례에서 H1 가설이 GAP_MISALIGNMENT 판정을 받습니다. H1은 attention entropy에 집중하는데, 연구 Gap G1은 과도하게 복잡한 classification head 문제를 다루고 있었어요. 파이프라인에서는 둘이 문법적으로 연결되어 있어서 이 불일치가 통과됩니다. EviGraph는 의미 검사로 잡아냅니다.
+12. 한계. Alignment 점수가 NanoResearch의 8.8 대비 6.6으로 낮음. 원래 과제 프레이밍에서 벗어나는 경향이 있다는 뜻으로 후속 보완이 필요함. 그래프 구축·유지 비용도 만만치 않을 것임.
 
-## 증거 준비 게이트: 모든 주장이 추적 가능해야 논문 작성
+13. 그래도 방향은 유효함. 자율 에이전트의 신뢰성 문제를 모델 능력이 아니라 아키텍처로 푼 사례임. 주장의 추적 가능성을 구조로 강제하는 것이 에이전트 산출물의 품질을 결정한다는 것임.
 
-논문 작성은 그래프가 "준비 완료(Ready)" 상태일 때만 시작됩니다. 준비 조건은:
-
-1. 그래프가 스키마 유효
-2. 최소 1개 이상의 retained Claim 존재
-3. 모든 retained Claim에 대해 완전한 증거 체인 존재
-4. 약한 노드가 0개
-
-이 조건이 충족되지 않으면 Incomplete 상태로 종료하고, Paper Writer를 부르지 않습니다.
-
-## 성능: ARC-Bench-ML Overall 86.45%, Claim Support Rate 40.19% 개선
-
-ARC-Bench-ML(25개 ML 연구 주제)과 NanoResearch-20(20개 연구 과제, 7개 도메인)에서 평가했습니다.
-
-| 지표 | AutoResearchClaw | NanoResearch | EviGraph |
-|---|---|---|---|
-| ARC-Bench-ML Overall | 60.37% | — | 86.45% |
-| ARC-Bench Code Dev | 55% | — | 99% |
-| ARC-Bench Code Exec | 57% | — | 88% |
-| ARC-Bench Result Analysis | 62.2% | — | 79.4% |
-| Claim Support Rate | 27% | 14.4% | 37.85% |
-| Exp. Data Consistency | 53% | 96.15% | 87.73% |
-
-Claim Support Rate은 논문 주장 중 연구 기록으로 추적 가능한 비율입니다. 27% → 37.85%로 40.19% 상대 개선했습니다.
-
-Experimental Data Consistency는 보고된 실험 수치가 실제 실행 기록과 일치하는 비율입니다. EviGraph는 87.73%로 NanoResearch의 96.15%에는 못 미치지만, AutoResearchClaw의 53%보다는 훨씬 높습니다.
-
-Result Analysis에서 62.2% → 79.4%로 크게 올라간 건, 가설-실험-결과-주장 간 관계를 명시적으로 유지한 효과로 보입니다.
-
-## 정리
-
-자율 연구 에이전트의 신뢰성 문제를 아키텍처로 풀었다는 점이 흥미롭습니다. 순차 파이프라인에서는 발견하기 어려운 의미적 불일치를 그래프 검사로 잡아내고, 체크포인트 기반 롤백으로 수정 실패를 안전하게 처리합니다.
-
-근데 Alignment 점수가 NanoResearch의 8.8에 비해 6.6으로 낮습니다. 원래 과제 프레이밍에서 벗어나는 경향이 있다는 뜻이라, 후속 연구에서 보완이 필요해 보입니다.
-
-코드는 공개되어 있고, qwen-3.6-plus를 백본으로 사용했습니다.
-
-## 더 실습해보고 싶은 분들께
-
-- 『[이게 되네? 오픈클로 미친 활용법 50제](https://product.kyobobook.co.kr/detail/S000219615902)』
-- 「[모두를 위한 루프 엔지니어링](https://aifrenz.liveklass.com/classes/309184)」
+원문: [arXiv:2608.04738](https://arxiv.org/abs/2608.04738)

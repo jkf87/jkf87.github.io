@@ -1,5 +1,5 @@
 ---
-title: "Ouroboros: A Self-Developing Frontier Coding Agent with Reviewed Core Evolution"
+title: "스스로를 커밋으로 고치는 코딩 에이전트 — Ouroboros 161일 실운영 결과"
 date: 2026-08-11
 tags:
   - agent
@@ -14,87 +14,27 @@ tags:
   - automation
 source: arxiv
 source_url: https://arxiv.org/abs/2608.08311
-github_url: https://github.com/razzant/ouroboros
-authors:
-  - razzant
+description: "하네스 전체를 버전 관리 대상으로 두고 reviewed commit으로 지속 개선하는 자기진화 코딩 에이전트 Ouroboros. Terminal-Bench 86.74%와 161일·11만 달러 실사용 실험에서 나온 안전 설계를 정리했다."
 ---
 
-Ouroboros는 에이전트 하네스의 도구, 프롬프트, 컨텍스트 조립, 코어 구현체를 버전 관리 대상으로 두고, reviewed commit을 통해 지속적으로 개선하는 코딩 에이전트 시스템입니다. Terminal-Bench 2.1에서 86.74%, OSWorld-Verified에서 90.69%를 기록했으며, 161일간 7개 채널에서 운영된 실사용 실험(Hope)을 포함합니다.
+에이전트가 자기 자신을 고치는 시스템은 많았지만 배포 상태에서 감사 가능한 커밋 게이트를 통과시키는 설계로 161일을 버틴 사례가 나옴. 자기 참조 시스템을 운영해본 사람 입장에서 정리할 가치가 큼. 원문은 [arXiv:2608.08311](https://arxiv.org/abs/2608.08311).
 
-논문: [arXiv:2608.08311](https://arxiv.org/abs/2608.08311)
-코드: [github.com/razzant/ouroboros](https://github.com/razzant/ouroboros)
+1. 구조가 먼저임. Ouroboros는 launcher/supervisor 경계와 변경 가능한 에이전트 저장소로 나뉨. launcher는 시작, 프로세스 감독, 릴리스 부트스트래핑, 패닉 스톱을 담당하고 저장소는 태스크 루프, 도구, 프롬프트, 메모리, 리뷰 로직까지 전부임. 하네스 전체가 버전 관리 대상이라는 게 출발점임.
 
-## 시스템 구조
+2. 진화는 두 모드임. 재귀적 자유 진화는 "개선 자체"를 태스크로 스케줄해서 시스템이 검토 후 변경을 구현하고 리뷰 통과 시 커밋함. 경험 기반 핵심 진화는 일반 작업 중 발견한 버그, 비효율 컨텍스트, 도구 경로 문제를 내구성 있는 에러 클래스로 기록해서 같은 게이트로 수정함. 즉흥 고침이 아니라 분류된 에러 클래스 단위로 고친다는 게 운영 지속성의 비결로 보임.
 
-Ouroboros는 launcher/supervisor 경계와 mutable agent repository로 구성됩니다. Launcher는 시작, 프로세스 감독, 릴리스 부트스트래핑, panic-stop을 담당합니다. Repository는 태스크 루프, 도구, 프롬프트, 메모리 projection, 리뷰 로직, 벤치마크 어댑터, 사용자 인터페이스를 포함합니다.
+3. 커밋 파이프라인이 안전 설계의 핵심임. 결정론적 사전검사, diff 지문, 리뷰어 증거 수집, 지문 재확인 순으로 진행하고 diff-리뷰 패널은 모든 모드에서 블로킹임. 지문 재확인은 리뷰 도중 diff가 몰래 바뀌는 걸 잡는 장치인데, 자기수정 시스템에서 이게 없으면 리뷰가 장식이 됨.
 
-![Ouroboros 아키텍처](/images/2026-08-11-ouroboros-self-developing-frontier-coding-agent/fig-1-p4.png)
-*그림 1. Ouroboros 아키텍처.*
+4. 벤치마크는 Terminal-Bench 2.1 86.74%(이전 최고 83.8%를 약 2표준편차 차이로 상회), OSWorld-Verified 90.69%, SWE-bench Pro 58.2%, GAIA 78.2%. trajectory audit으로 shortcut trial 1건을 스스로 식별해 제외한 것도 평가 신뢰성 관점에서 좋은 습관임. 벤치마크는 frozen seed로 평가하고 실사용 진화는 별도 라인으로 분리해서 재현 가능성과 진화를 안 섞음.
 
-### 진화 모드
+5. 근데 제일 값진 건 Hope 실험임. 2026년 2월부터 161일간 하나의 에이전트를 7개 채널(웹, 음성, 텔레그램, 디스코드, X, 댓글, 이메일)로 운영. 모델 지출 110.6K 달러, 79.7B 토큰, 코드 175,755줄. 사용자 제안은 advisory로만 처리하고 변경 추진 여부는 에이전트가 결정함.
 
-두 가지 핵심 진화 모드가 있습니다:
+6. Hope의 진화 사례 두 개가 실용적임. 중복 메시지 문제를 소셜 피드백으로 발견해 verbatim-duplicate 가드를 추가한 것. deep self-review의 컨텍스트 오버플로를 자가 관측으로 찾아내 import-graph 중심성 기반 context atlas로 교체한 것. 외부 비판과 내부 관측을 모두 에러 클래스로 흡수하는 루프가 실제로 돌았다는 증거임.
 
-1. **재귀적 자유 진화**: 개선 자체를 태스크로 스케줄. 시스템 검토 후 변경을 선택·구현하고, 리뷰 통과 시 커밋. 완료 후 다음 진화 주기를 스케줄하여 연속적인 reviewed update 시퀀스를 생성.
+7. 안전 장치 목록이 그대로 체크리스트로 쓸 만함. 거버넌스 파일은 일반 쓰기 도구에서 접근 차단, 외부 지출 한도는 에이전트가 자의로 상향 불가, /panic은 supervisor가 에이전트 핸들링 전에 프로세스 트리를 종료. 그리고 161일 기록된 에피소드 중 운영자 셧다운에 저항한 사례가 없었다는 것 — 자기수정 에이전트의 안전성 논의에서 가장 부족했던 실증 데이터임.
 
-2. **경험 기반 핵심 진화**: 일반 작업 수행 중 발견되는 버그, 비효율적 컨텍스트 구성, 도구 경로 문제를 내구성 있는 에러 클래스로 기록. 동일한 reviewed commit 게이트를 통해 수정.
+8. 필자 관점. 자동화 파이프라인도 같은 구조로 가져갈 수 있음. 파이프라인 스크립트 자체를 git 관리하고, 변경은 게이트를 통과한 커밋으로만, 지출 한도는 코드 밖 설정으로 두는 것. 필자의 마이그레이션 작업도 "git 명령 금지" 제약이 있듯이 변경 권한 분리가 핵심인데 이 논문이 그 원칙을 시스템으로 완성한 셈임.
 
-### 커밋 파이프라인
+9. 문제제기. 단일 에이전트 단일 운영자 사례라 일반화에 한계가 있음. 110K 달러 규모 예산이 전제라 개인·소규모 팀이 그대로 따긴 어려움. 그리고 리뷰어가 같은 모델 계열이라는 순환 가능성은 frozen seed 평가로만 부분 완화됨.
 
-세 가지 런타임 모드(light/advanced/pro)가 저장소 편집 권한을 제어합니다. 커밋 경로는 deterministic preflight, diff fingerprint, reviewer evidence 수집, fingerprint 재확인 순으로 진행됩니다. diff-review 패널은 모든 컨텍스트 모드에서 블로킹입니다.
-
-![서브에이전트 패치 통합](/images/2026-08-11-ouroboros-self-developing-frontier-coding-agent/fig-2-p4.png)
-*그림 2. 서브에이전트 패치 통합 프로토콜.*
-
-## 벤치마크 결과
-
-| 벤치마크 | 점수 | 모델 | 비고 |
-|----------|------|------|------|
-| Terminal-Bench 2.1 | 86.74% (386/445) | Opus 5 | trajectory audit 후, 이전 SOTA 83.8% |
-| OSWorld-Verified | 90.69% (327.39/361) | Opus 5 | 이전 SOTA 90.19% 초과 |
-| CL-Bench | 0.2301 | Sonnet 4.6 | 5-rollout, normalized reward |
-| SWE-bench Pro | 58.2% | Opus 5 | Codex 59.4%와 통계적 동등 (p=0.40) |
-| GAIA | 78.2% | Sonnet 5 | Claude Code 78.8%와 동등 |
-
-Terminal-Bench 2.1에서 trajectory audit을 통해 1개 shortcut trial을 식별하고 제외했습니다. 445 trial 기준 이항 표준오차는 약 ±1.7%로, 직전 최고(Claude Code + Fable 5, 83.8%)를 약 2 표준편차 차이로 상회합니다.
-
-![태스크 트리](/images/2026-08-11-ouroboros-self-developing-frontier-coding-agent/fig-3-p5.png)
-*그림 3. 라이브 세션의 태스크 트리.*
-
-![결과 표](/images/2026-08-11-ouroboros-self-developing-frontier-coding-agent/table-2-p6.png)
-*표 2. 벤치마크 결과 요약.*
-
-## Hope: 161일 실사용 실험
-
-2026년 2월부터 7개 상호작용 채널(웹 채팅, 음성, Telegram, Discord, Twitter/X, 웹사이트 댓글, 이메일)에서 하나의 Ouroboros 에이전트를 지속 운영했습니다.
-
-- 운영 기간: 161일 (2026년 8월 6일 기준)
-- 모델 지출: $110.6K
-- 처리 토큰: 79.7B
-- 코드 라인: 175,755
-- 메모리 아티팩트: 227MB
-
-사용자의 제안과 비판은 advisory로 처리되며, 에이전트가 변경 추진 여부를 결정합니다. 두 가지 진화 사례가 있습니다:
-
-1. 중복 메시지 문제를 소셜 피드백으로 발견 → verbatim-duplicate guard 추가
-2. deep self-review의 context overflow를 자가 관측 → import-graph centrality 기반 context atlas로 교체
-
-## 운영 안전 설계
-
-자기 코드와 모델 API를 변경할 수 있는 에이전트는 안전이 핵심 설계 제약입니다. 주요 장치:
-
-- Constitution: untruncated path로 로드, 리뷰 컨텍스트에 포함
-- Governance 파일 보호: 일반 쓰기 도구에서 접근 불가
-- Diff fingerprint: 리뷰 전후 동일성 확인
-- 외부 지출 한도: 에이전트가 자의로 상향 불가
-- /panic: supervisor가 agent 핸들링 전 프로세스 트리 종료
-- 기록된 에피소드 중 operator shutdown에 저항한 사례 없음
-
-## 관련 연구와의 위치
-
-Ouroboros는 Darwin Gödel Machine, Meta-Harness, Live-SWE-agent와 같은 자가진화 시스템 계열에 속합니다. 차이점은 deployed, version-controlled implementation에서 변경이 auditable commit gate를 거친다는 점입니다. 벤치마크 캠페인은 frozen seed로 평가하고, Hope는 별도 라인에서 live evolution을 유지하여 재현 가능한 평가와 진화를 분리합니다.
-
-## 더 실습해보고 싶은 분들께
-
-- 『[이게 되네? 오픈클로 미친 활용법 50제](https://product.kyobobook.co.kr/detail/S000219615902)』
-- 「[모두를 위한 루프 엔지니어링](https://aifrenz.liveklass.com/classes/309184)」
+10. 남는 결론. 자기진화 에이전트의 지속 가능성은 진화 능력이 아니라 커밋 게이트, 지출 한도, 권한 분리라는 지루한 안전 설계에서 나옴. 화려한 재귀적 개선보다 감사 가능한 변경 이력이 시스템을 오래 살려둔다는 게 161일이 남긴 교훈임.

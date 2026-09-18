@@ -2,6 +2,7 @@
 title: "비아그라보다 NPC1이 더 중요한 논문"
 date: 2026-08-22
 tags: [paper-review, oncology, metabolism]
+noindex: true
 draft: false
 ---
 

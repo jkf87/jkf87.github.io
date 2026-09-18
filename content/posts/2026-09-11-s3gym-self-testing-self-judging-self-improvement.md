@@ -1,83 +1,41 @@
 ---
-title: "S3Gym: LLM이 자기 테스트·자기 판정으로 스스로 좋아지는지 측정하는 벤치마크 (arXiv 2608.31100)"
+title: "스스로 잘했다고 믿는 것과 실제로 잘된 것은 다름 — S3Gym 자기 개선 측정 정리"
 date: 2026-09-11
 tags: [ai, llm, agent, rl, self-improvement, benchmark, arxiv]
 draft: false
-description: "arXiv 2608.31100 S3Gym 논문 정리. Self-Testing·Self-Judging·Self-Improvement 세 능력을 7개 텍스트 게임에서 평가하고 History ICL, Summary Memory, 파라미터 트레이닝 세 경로를 통일된 프로토콜로 비교한 결과와 실패 지점을 정리했습니다."
+description: "arXiv 2608.31100 S3Gym 정리. Self-Testing·Self-Judging·Self-Improvement 세 능력을 7개 텍스트 게임에서 평가하고 History ICL, Summary Memory, 파라미터 트레이닝 세 경로를 통일된 프로토콜로 비교한 결과와 실패 지점을 풀어둔 글."
 ---
 
-## 스스로 좋아지는 에이전트는 진짜 존재할까
+테스트 게임 7종에서 LLM 에이전트 30 에피소드씩 놀아보게 하고 그 경험으로 점수가 오르는지 지켜본 벤치마크가 나왔음. S3Gym(ByteDance Seed 외, arXiv 2608.31100)임. 결론부터 말하면 스스로 좋아지는 일은 일어나기는 하는데 절대 자동이 아님.
 
-테스트 게임 7종에서 LLM 에이전트 30 에피소드씩 놀아보게 하고, 그 경험으로 점수가 오르는지 지켜본 벤치마크가 나왔다. S3Gym(ByteDance Seed 외, arXiv 2608.31100)이다. 결론부터 말하면, <span style="background-color: #fff59d"><strong>스스로 좋아지는 일은 일어나기는 하는데 절대 자동이 아니다</strong></span>.
+1. 이 벤치마크가 특별한 이유는 하나임. 에이전트가 스기 매긴 점수와 환경 검증기가 매긴 점수를 따로 기록함. 그래서 "내가 잘했다고 믿은 것"과 "실제로 잘된 것"의 간극이 그대로 숫자로 나옴. 자기 개선 연구에서 이 간극이 보통 가려지는데 그걸 분리 측정한 것임.
 
-이 벤치마크가 특별한 이유는 하나다. <span style="background-color: #fff59d"><strong>에이전트가 스스로 매긴 점수와 환경 검증기가 매긴 점수를 따로 기록한다.</strong></span> 그래서 "내가 잘했다고 믿은 것"과 "실제로 잘된 것"의 간극이 그대로 숫자로 나온다.
+2. 측정 구조. 자기 개선을 Self-Testing(전략 시도), Self-Judging(자기 평가), Self-Improvement(반영) 세 단계로 분해함. 탐험 중에는 환경 점수를 숨겨서 자기 판정의 정확도를 따로 측정함. 게임은 Chess, Minesweeper, Nullify, Tetris, Snake, PvZ, Trust Evolution 7종임.
 
-주요 결과 (기준일 2026-09-11, 논문 Table 4·5·7):
+![S3Gym 구조](/images/2026-09-11-s3gym-self-testing-self-judging-self-improvement/fig2-overview.png)
 
-| 항목 | 값 |
-| --- | --- |
-| 게임 | Chess, Minesweeper, Nullify, Tetris, Snake, PvZ, Trust Evolution |
-| 자기 판정-환경 보상 동의율 | <span style="background-color: #fff59d"><strong>0.496(Chess) ~ 0.881(PvZ)</strong></span> |
-| 판정 정확도와 다음 점수 상승 상관 | <span style="background-color: #fff59d"><strong>ρ ≈ -0.01</strong></span> |
-| Qwen3-8B 트레이닝 | Trust 0→30, PvZ <span style="background-color: #fff59d"><strong>23→6(악화)</strong></span> |
+3. 첫 결과가 개념을 흔듦. 자기 판정-환경 보상 동의율이 0.496(Chess)~0.881(PvZ)임. Chess는 동전 던지기 수준이고 과잉신뢰율은 0.365로 최고임. 자기 채점의 신뢰성이 게임마다 이만큼 흔들린다는 것 자체가 자기 개선 루프의 기반을 의심하게 만듦.
 
-논문: [arXiv 2608.31100](https://arxiv.org/abs/2608.31100)
-
-## 자기 개선을 세 단계로 측정한다
-
-S3Gym은 자기 개선을 Self-Testing(전략 시도), Self-Judging(자기 평가), Self-Improvement(반영) 세 단계로 분해한다. <span style="background-color: #fff59d"><strong>탐험 중에는 환경 점수를 숨겨서 자기 판정의 정확도를 따로 측정한다.</strong></span>
-
-![S3Gym 개요](/images/2026-09-11-s3gym-self-testing-self-judging-self-improvement/fig2-overview.png)
-*Figure 2: S3Gym 구조. 출처: arXiv 2608.31100*
-
-## 요약 메모리가 원본 히스토리를 이기지 못하는 게임들
-
-경험을 요약해서 넣느냐, 원본 히스토리를 통째로 넣느냐. 결과는 게임 구조에 따라 완전히 갈린다.
-
-| 게임 | 평균 ΔNABA | 유리한 경로 |
-| --- | --- | --- |
-| Tetris | +6.20 | 요약 |
-| Trust Evolution | +8.43 | 요약 |
-| Nullify | +2.79 | 요약 |
-| Chess | +3.37 | 요약 |
-| Minesweeper | -1.12 | 원본 히스토리 |
-| Snake | -0.81 | 원본 히스토리 |
-| PvZ | -2.11 | 원본 히스토리 |
-
-- 요약이 이긴 게임: <span style="background-color: #fff59d"><strong>Tetris(+6.20), Trust(+8.43), Nullify(+2.79)</strong></span>
-- 원본이 이긴 게임: <span style="background-color: #fff59d"><strong>Minesweeper(-1.12), Snake(-0.81), PvZ(-2.11)</strong></span>
-
-GPT-5.5는 PvZ에서 요약으로 바꾸는 순간 <span style="background-color: #fff59d"><strong>AUC+가 548에서 33으로 무너졌다</strong></span>. 규칙으로 압축되는 경험과, 현재 상태를 정확히 복원해야 하는 경험은 다른 종류라는 뜻이다.
-
-![학습 곡선](/images/2026-09-11-s3gym-self-testing-self-judging-self-improvement/fig3-trajectories.png)
-*Figure 3: 경로별 학습 곡선. 출처: arXiv 2608.31100*
-
-## 파라미터 트레이닝은 게임마다 방향이 갈린다
-
-Qwen3-8B를 경험으로 파인튜닝하니 Trust Evolution은 <span style="background-color: #fff59d"><strong>0에서 30까지 올랐지만</strong></span>, PvZ은 23에서 6으로 떨어졌다. <span style="background-color: #fff59d"><strong>잘못 판정된 경험이 파라미터에 굳어버리면 원래 잘하던 행동까지 덮어쓴다</strong></span>는 경고다.
-
-## 채점 정확도와 성적 향상은 상관이 없다
-
-116,117개 트랜지션을 분석했더니, <span style="background-color: #fff59d"><strong>스텝 채점 정확도와 다음 평가 점수 상승의 상관이 ρ ≈ -0.01</strong></span>이다. Chess는 자기 판정 동의율이 <span style="background-color: #fff59d"><strong>동전 던지기 수준(0.496)</strong></span>이고 과잉신뢰율은 0.365로 최고다. <span style="background-color: #fff59d"><strong>성공을 알아채는 것과 그걸 실행 가능한 정책으로 바꾸는 것은 전혀 다른 능력</strong></span>이라는 게 이 벤치마크의 핵심 메시지다.
+4. 더 무서운 숫자. 116,117개 트랜지션을 분석했더니 스텝 채점 정확도와 다음 평가 점수 상승의 상관이 ρ ≈ -0.01임. 사실상 0임. 성공을 알아채는 것과 그걸 실행 가능한 정책으로 바꾸는 것은 전혀 다른 능력이라는 게 이 벤치마크의 핵심 메시지임.
 
 ![개념도](/images/2026-09-11-s3gym-self-testing-self-judging-self-improvement/fig1-concept.png)
-*Figure 1: 경험 기반 개선 개념도. 출처: arXiv 2608.31100*
 
-## 더 실습해보고 싶은 분들께
+5. 경험 전달 경로 비교가 실무적으로 유용함. 경험을 요약해서 넣느냐(Summary Memory), 원본 히스토리를 통째로 넣느냐(History ICL)의 결과가 게임 구조에 따라 완전히 갈림. Tetris(+6.20), Trust(+8.43), Nullify(+2.79), Chess(+3.37)는 요약이 이김. Minesweeper(-1.12), Snake(-0.81), PvZ(-2.11)는 원본 히스토리가 이김.
 
-- 『[이게 되네? 오픈클로 미친 활용법 50제](https://product.kyobobook.co.kr/detail/S000219615902)』
-- 「[모두를 위한 루프 엔지니어링](https://aifrenz.liveklass.com/classes/309184)」
+6. GPT-5.5의 PvZ 사례가 극단적임. 요약으로 바꾸는 순간 AUC+가 548에서 33으로 무너짐. 규칙으로 압축되는 경험과 현재 상태를 정확히 복원해야 하는 경험은 다른 종류라는 뜻임. 요약 메모리가 만능이 아니라 선택적 압축 기제여야 한다는 게 논문의 결론임.
 
-## 자주 묻는 질문
+![학습 곡선](/images/2026-09-11-s3gym-self-testing-self-judging-self-improvement/fig3-trajectories.png)
 
-### S3Gym이 기존 벤치마크와 다른 점은?
+7. 파라미터 트레이닝도 게임마다 방향이 갈림. Qwen3-8B를 경험으로 파인튜닝하니 Trust Evolution은 0에서 30까지 올랐지만 PvZ은 23에서 6으로 떨어짐. 잘못 판정된 경험이 파라미터에 굳어버리면 원래 잘하던 행동까지 덮어쓴다는 경고임.
 
-모델을 고정된 정책으로 보지 않고, <span style="background-color: #fff59d"><strong>경험이 행동을 개선하는지를 측정하며, 자기 판정과 환경 점수를 분리 기록</strong></span>합니다.
+8. 실무 채점. 우리 자동화 에이전트의 자기 개선 루프에 바로 묻는 질문 세 개임. 첫째, 에이전트의 자기 평가를 환경 검증 점수와 비교해 본 적이 있는가. 둘째, 경험 요약이 우리 태스크의 상태 복원 요구를 해치고 있지 않은가. 셋째, 파인튜닝 데이터의 판정 오류가 원래 잘하던 행동을 덮어쓰고 있지 않은가.
 
-### Summary Memory가 항상 낫나요?
+9. 특히 채점 정확도와 개선의 무상관(ρ ≈ -0.01)은 설계 원칙을 바꿈. 자기 판정이 정확해지도록 훈련하는 것과 성과가 오르도록 훈련하는 것은 별개 목표라는 것. 자기 개선 루프를 설계한다면 판정 품질 개선과 정책 개선을 분리해서 다뤄야 한다는 뜻임.
 
-아니요. 게임 구조에 따라 요약이 크게 뒤처리는 경우가 있고, 논문은 <span style="background-color: #fff59d"><strong>요약을 선택적 압축 기제로 봐야 한다</strong></span>고 결론짓습니다.
+10. 그리고 압축 선택 기준도 얻을 수 있음. 경험이 규칙성으로 요약되는 도메인이면 요약 메모리, 순간의 정확한 상태가 중요한 도메인이면 원본 로그 보존. 우리 파이프라인의 태스크를 이 둘로 분류하는 것만으로 메모리 설계의 방향이 잡힘.
 
-### 자기 채점은 믿을 만한가요?
+11. 한계. 텍스트 게임 중심이라 실무 도메인 일반화는 미확인임. 그리고 30 에피소드라는 짧은 호라이즌이라 장기 축적 효과는 별도 측정이 필요함.
 
-게임별 동의율 <span style="background-color: #fff59d"><strong>0.496~0.881으로 편차가 크고, 채점 정확도와 실제 개선의 상관은 사실상 0</strong></span>입니다.
+12. 그래도 결론은 분명함. 자기 개선은 가능하지만 판정 신뢰성, 압축 선택, 오류 고착 세 가지 위험을 통제해야만 성립함. "경험을 쌓으면 저절로 좋아진다"는 통념을 정면으로 반박하는 숫자들임.
+
+원문: [arXiv:2608.31100](https://arxiv.org/abs/2608.31100)

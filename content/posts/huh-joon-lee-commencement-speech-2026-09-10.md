@@ -2,6 +2,7 @@
 title: "허준이 교수 서울대 졸업식 축사 정리: 길을 잃은 사람에게 필요한 친절"
 date: 2026-09-10
 draft: false
+noindex: true
 tags:
   - june-huh
   - commencement-speech

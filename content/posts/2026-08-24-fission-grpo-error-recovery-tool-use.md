@@ -1,67 +1,31 @@
 ---
-title: "API 에러 하나에 8B 에이전트는 왜 무너지는가 — Fission-GRPO 읽기"
+title: "API 에러 직후의 행동이 에이전트 품질을 가름 — Fission-GRPO의 오류 복구 학습"
 date: 2026-08-24
 tags: [agent, LLM, tool-use, reinforcement-learning, GRPO, error-recovery]
 draft: false
+description: "Qwen3-8B는 오류 후 복구율이 약 20%로 Claude의 절반도 안 됨. Fission-GRPO는 실패 궤적에 진단 에러를 합성해 복구 롤아웃을 다시 뽑아 훈련 신호로 늘림. 8B 정확도 46.75%, TAU1 Retail +17.4%p. 오류 경험을 학습 루프로 순환시키는 설계를 정리함."
 ---
 
-작은 툴 에이전트는 대개 성공하는 순간을 잘 다룹니다. 문제는 실패한 순간이죠. API가 에러를 반환하는 순간, Qwen3-8B 같은 모델은 <span style="background-color: #fff59d"><strong>같은 잘못된 호출을 되풀이하는 환각 재시도 루프</strong></span>에 빠지고, 대화는 그대로 끝납니다.
+작은 툴 에이전트는 성공하는 순간을 잘 다룸. 문제는 실패하는 순간. API가 에러를 반환하면 Qwen3-8B 같은 모델은 같은 잘못된 호출을 되풀이하는 환각 재시도 루프에 빠지고 대화가 그대로 끝남. 측정으로 보면 BFCL v4 Multi-Turn 기준 오류 복구율(최소 1회 오류 후 최종 성공 확률)이 Claude Sonnet 4는 50% 초과, Qwen3-8B는 약 20%. 이 격차가 Fission-GRPO(ACL 2026)의 출발점임.
 
 ![](/images/2026-08-24-fission-grpo-error-recovery-tool-use/fig-1-p1.png)
 
-측정으로 보면 BFCL v4 Multi-Turn 기준 오류 복구율(최소 1회 오류 후 최종 성공 확률)은 Claude Sonnet 4가 50% 초과, Qwen3-8B는 <span style="background-color: #fff59d"><strong>약 20%</strong></span> 수준입니다. 이 격차가 Fission-GRPO(arXiv 2601.15625, ACL 2026)의 출발점입니다.
+1. 기존 접근의 두 빈구멍이 먼저 정리됨. 첫째, GRPO 계열 RL은 오류를 그룹 내 음의 보상으로 처리함. "틀렸다"는 신호는 가는데 "어떻게 고치는지"가 없음. 게다가 샘플 그룹 전체가 실패하면 보상 분산이 0이 되어 그래디언트가 사라지고 학습이 멈춤. DAPO, NGRPO가 지적한 한계임. 둘째, 미리 모아둔 오류-교정 데이터셋(ToolACE, LoopTool류)도 답이 아님. 정책이 좋아지면 오류 분포가 달라지는데 오프라인 데이터는 그대로라 시간이 지날수록 실제 오류와 어긋남. 결국 오류 데이터는 온라인으로, 정책의 현재 분포에서 뽑아야 한다는 결론임.
 
-## 실패를 그냥 벌점으로 쓰면 안 되는 이유
-
-기존 RL(GRPO 계열)은 오류를 그룹 내 음의 보상으로 처리합니다. "틀렸다"는 신호는 가는데 <span style="background-color: #fff59d"><strong>"어떻게 고치는지"는 없습니다</strong></span>. 설상가상으로 샘플 그룹 전체가 실패하면 보상 분산이 0이 되어 <span style="background-color: #fff59d"><strong>그래디언트가 사라지고 학습이 멈춥니다</strong></span>(DAPO, NGRPO가 지적한 한계).
-
-미리 모아둔 오류-교정 데이터셋(ToolACE, LoopTool류)도 답이 아닙니다. 정책이 좋아지면 오류 분포가 달라지는데, 오프라인 데이터는 그대로라 <span style="background-color: #fff59d"><strong>시간이 지날수록 실제 오류와 어긋납니다</strong></span>.
-
-## 핵분열이라는 이름의 데이터 증폭
-
-Fission-GRPO의 루프는 세 단계입니다.
+2. Fission의 루프가 세 단계임. 첫째, 표준 GRPO 탐색. 보상은 형식 준수(감쇠 가중), 기능 정확도(증가 가중), 길이 규제의 3항 합성으로 문법에서 의미로 초점을 옮겨감. 둘째, 오류 식별과 진단 합성. 실패 궤적을 걸러내고 Qwen3-32B를 SFT한 Error Simulator가 "parameter status expects value OPEN" 스타일의 비누출 런타임 에러 메시지를 생성함. 사람 평가로 비누출 96%, 일치도 Cohen's κ=0.71. 정답을 새는 게 아니라 상태 불일치만 알려주는 메시지라는 것. 셋째, Fission 업데이트. [대화; 실패한 호출; 진단] 문맥에서 G'개 복구 롤아웃을 다시 샘플링함. 하나의 실패가 연쇄적으로 훈련 신호 여러 개로 늘어난다고 해서 핵분열에서 이름을 땄음. LIFO 버퍼로 최근 오류를 우선 학습함.
 
 ![](/images/2026-08-24-fission-grpo-error-recovery-tool-use/fig-2-p3.png)
 
-1. 표준 GRPO 탐색 — 여러 롤아웃을 뽑고 그룹 상대 advantage로 업데이트. 보상은 형식 준수(감쇠 가중), 기능 정확도(증가 가중), 길이 규제의 3항 합성으로 문법에서 의미로 초점을 옮겨갑니다.
-2. 오류 식별 & 진단 합성 — 실패 궤적을 걸러내고, Qwen3-32B를 SFT한 Error Simulator가 <span style="background-color: #fff59d"><strong>"parameter status expects value OPEN" 스타일의 비누출 런타임 에러 메시지</strong></span>를 생성합니다. 사람 평가로 비누출 96%, 일치도 Cohen's κ=0.71.
-3. Fission 업데이트 — [대화; 실패한 호출; 진단] 문맥에서 G'개 복구 롤아웃을 다시 샘플링. <span style="background-color: #fff59d"><strong>하나의 실패가 연쇄적으로 훈련 신호 여러 개로 늘어난다</strong></span>고 해서 핵분열(fission)에서 이름을 땄습니다. LIFO 버퍼로 최근 오류를 우선 학습합니다.
-
-## 숫자로 보는 성과
-
-BFCL v4 Multi-Turn:
-
-| 모델 | Fission-GRPO 정확도 |
-|---|---|
-| Qwen3-1.7B | 20.38% (GRPO 대비 +12.58%p) |
-| Qwen3-4B | 40.87% |
-| Qwen3-8B | 46.75% (오류 복구율 +5.7%p) |
-
-- 8B 기준 전체 정확도 <span style="background-color: #fff59d"><strong>42.75% → 46.75%</strong></span>
-- ToolACE-2-8B 대비 +9.75p, BitAgent-8B 대비 +9.00p
-- TAU-Bench/TAU2-Bench에서도 대부분 설정 최고, <span style="background-color: #fff59d"><strong>TAU1 Retail +17.4%p</strong></span>까지
-- 어블레이션: 제너릭 오류 프롬프트 대비 시뮬레이터 진단이 명확히 우위
-- 동일 업데이트 스텝의 <span style="background-color: #fff59d"><strong>컴퓨트 매치 비교에서도 GRPO 상회</strong></span> — 오류 쪼개기는 낭비가 아니라 효율이라는 뜻입니다
-
-카테고리 분해와 어블레이션 표는 아래 두 그림으로 확인할 수 있습니다.
+3. 숫자. BFCL v4 Multi-Turn에서 Qwen3-1.7B 20.38%(GRPO 대비 +12.58%p), 4B 40.87%, 8B 46.75%. 8B 기준 전체 정확도 42.75% → 46.75%, 오류 복구율 +5.7%p. ToolACE-2-8B 대비 +9.75p, BitAgent-8B 대비 +9.00p. TAU-Bench/TAU2-Bench에서도 대부분 최고, TAU1 Retail +17.4%p. 그리고 동일 업데이트 스텝의 컴퓨트 매치 비교에서도 GRPO를 상회함. 오류 쪼개기가 낭비가 아니라 효율이라는 것.
 
 ![](/images/2026-08-24-fission-grpo-error-recovery-tool-use/fig-3-p8.png)
 
+4. ablation도 방향을 확인함. 제너릭 오류 프롬프트 대비 시뮬레이터 진단이 명확히 우위. "오류가 났다"가 아니라 "무엇 때문에 안 됐는지"가 담긴 피드백이 복구 학습을 만든다는 것. 진단의 구체성이 효과의 원료라는 뜻임.
+
 ![](/images/2026-08-24-fission-grpo-error-recovery-tool-use/table-2-p8.png)
 
-## 읽고 나서
+5. 내가 보기에 이 논문의 핵심은 데이터 관점임. 실패 궤적 + 진단 피드백 = 새 훈련 인스턴스라는 변환을 루프 안에 넣으면서 오류 분포가 바뀌어도 데이터가 따라감. 프롬프트에 오류 처리 로직을 박는 대신 오류 경험 자체를 학습 신호로 순환시키는 구조. 이 원칙은 RL 파이프라인이 없는 팀에게도 적용됨.
 
-가장 흥미로운 지점은 데이터 관점입니다. <span style="background-color: #fff59d"><strong>실패 궤적 + 진단 피드백 = 새 훈련 인스턴스</strong></span>라는 변환을 루프 안에 넣으면서, 오류 분포가 바뀌어도 데이터가 따라갑니다. 프롬프트에 오류 처리 로직을 박는 대신 오류 경험 자체를 학습 신호로 순환시키는 구조라는 게 이 논문의 메시지죠.
+6. 실무 이식은 이렇게임. 첫째, 에이전트의 실패 궤적을 버리지 말고 [실패한 호출 + 원인 진단] 세트로 보존할 것. SFT 데이터나 프롬프트 개선의 원료가 됨. 둘째, 진단은 비누출 형태로 만들 것. "정답은 X다"가 아니라 "상태가 Y를 기대한다"식. 정답을 알려주면 학습이 아니라 암기가 됨. 셋째, 같은 재시도를 반복하는 루프를 로그에서 탐지하면 그 지점에서 롤아웃을 분기해 여러 복구 경로를 수집할 것. 넷째, 오류 로그는 LIFO로 관리해서 최근 패턴을 우선 반영할 것. 오류 분포는 정책과 함께 움직이니까. 한계도 있음. 평가가 툴 호출 에이전트에 한정되고 복구 증폭만큼 롤아웃 비용이 늘며 Error Simulator 학습에 정답 툴콜이 필요함. 코드 디버깅·수학 추론 확장은 후속 과제임.
 
-한계도 있습니다. 평가가 툴 호출 에이전트에 한정되고, 복구 증폭(G')만큼 롤아웃 비용이 늘며, Error Simulator 학습에 정답 툴콜이 필요합니다. 저자들은 코드 디버깅·수학 추론으로의 확장을 후속 과제로 제시합니다.
-
-## 더 실습해보고 싶은 분들께
-
-- 『[이게 되네? 오픈클로 미친 활용법 50제](https://product.kyobobook.co.kr/detail/S000219615902)』
-- 「[모두를 위한 루프 엔지니어링](https://aifrenz.liveklass.com/classes/309184)」
-
-## 참고
-
-- Robust Tool Use via Fission-GRPO: Learning to Recover from Execution Errors (Zhang et al., ACL 2026) — https://arxiv.org/abs/2601.15625
-- 코드: https://github.com/zxzadm/Fission-GRPO
-- 벤치마크: BFCL v4 Multi-Turn, TAU-Bench, TAU2-Bench
+원문: [arXiv:2601.15625](https://arxiv.org/abs/2601.15625), 코드: [github.com/zxzadm/Fission-GRPO](https://github.com/zxzadm/Fission-GRPO).

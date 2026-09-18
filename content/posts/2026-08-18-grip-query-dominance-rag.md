@@ -1,5 +1,5 @@
 ---
-title: "GRIP: RAG가 검색 문서를 무시하는 원인과 4차원 병목 해결책"
+title: "RAG가 검색 문서를 무시하는 건 프롬프트 탓이 아니라 용량 문제 — GRIP의 진단과 해법"
 date: 2026-08-18
 tags:
   - RAG
@@ -9,106 +9,23 @@ tags:
   - query-dominance
   - grounding
 source: https://arxiv.org/abs/2608.16776
+description: "증거를 바꿔도 답이 안 바뀌는 query dominance를 표현 구조 문제로 진단하고, 증거 채널에 4차원 병목을 건 GRIP. 환각 73% 감소와 5개 벤치마크 전면 개선을 정리했다."
 ---
 
-## 결론 먼저
+RAG 시스템의 고질병을 정면으로 짚은 논문이 나옴. 검색해 온 문서를 사실상 무시하고 모델이 원래 알던 지식으로 답하는 문제를 query dominance로 명명하고, 원인을 프롬프트가 아니라 표현 구조에서 찾았다는 것. 원문은 [arXiv:2608.16776](https://arxiv.org/abs/2608.16776).
 
-RAG 시스템이 검색해 온 문서를 사실상 무시하고 모델이 원래 알던 지식으로만 답하는 문제를, 논문은 <span style="background-color: #fff59d"><strong>query dominance(질의 지배)</strong></span>라고 이름 붙였습니다. 원인은 프롬프트에 있지 않고 표현(representation) 구조에 있습니다. 질의가 잠재 공간을 차지해 버려서 증거가 기능적으로 무의미해집니다.
+1. 진단부터가 이 논문의 가치임. RAG는 이론상 질의와 증거를 함께 조건으로 답을 만드는데 실제 관측은 질의만 조건으로 한 것과 가까움. 증거를 정반대로 바꿔도 출력이 거의 안 바뀜. 측정 지표로 증거 표현과 질의의 상호정보량(QL dependence)을 쓰는데, 기존 RAG 잠재 상태가 14.8 bits — 증거 채널이 질의 정보의 복사본으로 가득 차 있다는 뜻임.
 
-GRIP은 여기에 <span style="background-color: #fff59d"><strong>용량 비대칭</strong></span>을 적용합니다. 질의는 디코더에 전 차원으로 그대로 들어가고, 검색 증거는 <span style="background-color: #fff59d"><strong>4차원 확률적 병목</strong></span>만 통과합니다. 그 결과 다섯 개 추론 벤치마크에서 최고 baseline을 모두 앞질렀고, <span style="background-color: #fff59d"><strong>환각(hallucination)은 73% 감소</strong></span>했습니다.
+2. GRIP의 해법은 용량 비대칭임. 질의는 디코더에 전 차원으로 그대로 들어가고, 검색 증거는 4차원 확률적 병목만 통과함. 스텝당 전달 용량이 약 2~4 bits로 질의 경로와 세 자릿수 차이임. 왜 이렇게 극단적으로 조이나 — 용량이 부족하면 질의에서 이미 얻을 수 있는 정보를 복사하는 게 비효율적이 되고, 병목이 질의가 못 주는 잔여 정보만 전달하도록 압력을 걸기 때문임.
 
-논문: [GRIP: Grounded Reasoning via Information-Restricted Premises](https://arxiv.org/abs/2608.16776) (2026-08-17)
+3. 파이프라인이 네 단계인데 각각이 독립적으로 쓸 만함. 엔트로피 재정렬로 다음 스텝 예측 불확실성을 가장 낮추는 문서를 고르는 검색, span 추출기로 필요한 최소 단위로 줄이는 압축, NLI 함축 점수 0.75 미만은 폐기하는 검증, 그리고 병목 통과 후 디코딩. 증거를 미리 정제해두니 4차원으로도 담을 수 있는 구조임.
 
-## 무엇이 고장 나 있는가
+4. 결과는 Llama-3-8B 기준 5개 추론 벤치마크 전부에서 최고 기준선 갱신. HotpotQA +7.2 EM, 그리고 환각률이 31.7→8.6%로 73% 감소. QL dependence도 14.8→0.47 bits로 30배 감소. 병목을 빼면 QL dependence가 14.20으로 복귀하고 정확도가 -5.3점이니 병목이 실제 작동 부품이라는 인과 확인도 깔끔함.
 
-RAG는 이론상 P(Y|Q,E), 즉 질의와 증거를 함께 조건으로 답을 만듭니다. 실제 관측은 P(Y|Q)에 가깝습니다. 증거를 바꿔도 출력이 거의 안 바뀌는 거죠.
+5. 필자가 제일 쓸모 있게 본 건 진단 지표임. GRIP 전체를 도입 안 해도 I(Q; z_k) 개념은 내 RAG의 증거 활용도 점검에 바로 쓸 수 있음. 정반대 증거를 넣어도 답이 안 바뀌면 query dominance가 의심되고, 그럼 컨텍스트를 더 넣는 게 아니라 증거 압축·검증부터 손봐야 한다는 신호가 됨. 검색 결과를 아무리 많이 넣어도 무시당하는 파이프라인이라면 원인이 여기 있을 확률이 높음.
 
-논문은 이걸 진단 지표로 잡습니다.
+6. span 원문이 컨텍스트에 남는 것 아닌가 하는 의문도 논문이 스스로 처리함. 원문 경로를 제거하면 오히려 -8.2점이라 문장 수준 의미 전달은 의도된 설계이고, 스텝별 증거 신호는 병목이 통제한다는 것. 환각 검증기 의존도도 MiniCheck로 재채점해 89% 일치를 확인하는 정직함이 있음.
 
-| 지표 | 정의 | 의미 |
-|---|---|---|
-| QL Dependence | I(Q, z_k) 상호정보량 | 증거 표현 z_k가 질의의 복사본이면 높음 |
-| Contrastive evidence sensitivity | 정반대 증거를 넣었을 때 출력 변화 | query dominance면 작음 |
+7. 문제제기. 단일 백본(Llama-3-8B) 검증이고, 4 bits 설정은 span 추출과 NLI 검증으로 이미 정제된 짧은 증거 전제라는 점임. 수천 토큰 문서를 그대로 넣는 일반 RAG에 적용하려면 전처리 단계를 먼저 세워야 해서 도입 문턱이 낮지 않음.
 
-기존 RAG 잠재 상태의 QL dependence는 <span style="background-color: #fff59d"><strong>14.8 bits</strong></span>. 증거 채널이 질의 정보로 가득 차 있다는 뜻입니다.
-
-![](/images/2026-08-18-grip-query-dominance-rag/fig-1-p2.png)
-
-위 그림이 핵심 구조입니다. 표준 RAG(A)는 질의와 증거가 같은 잠재 공간에서 섞이고, GRIP(B)은 질의는 bypass로, 증거는 좁은 병목으로 분리합니다.
-
-## GRIP 파이프라인
-
-각 추론 단계는 네 단계로 구성됩니다.
-
-| 단계 | 모듈 | 역할 |
-|---|---|---|
-| 1. 검색 | dense retriever + 엔트로피 재정렬 | 다음 스텝 예측 엔트로피를 가장 낮추는 문서 선택 |
-| 2. 압축 | RoBERTa span 추출기 | 문서를 예측에 필요한 최소 span으로 축소 |
-| 3. 검증 | DeBERTa NLI, entailment > 0.75 | 함축되지 않은 span은 폐기 |
-| 4. 병목+디코딩 | d_z=4, σ²=1.0 projection + Llama-3 디코더 | 증거는 4차원 노이즈 벡터로만 전달 |
-
-<span style="background-color: #fff59d"><strong>스텝당 전달 용량은 약 2–4 bits</strong></span>입니다. 가우시안 채널 용량 계산 C = (d_z/2)·log(1+P/σ²)에서 나온 값입니다. 질의 경로와 증거 경로의 용량 차이는 약 세 자릿수(1000배)입니다.
-
-왜 이렇게 극단적으로 제한하는가. 용량이 부족하면 질의에서 이미 얻을 수 있는 정보를 복사하는 게 비효율적이 됩니다. 병목은 <span style="background-color: #fff59d"><strong>질의가 못 주는 잔여 정보만 전달</strong></span>하도록 압력을 걸어요.
-
-## 수치
-
-Llama-3-8B 백본, 4×A100 80GB, 20 에포크 학습입니다.
-
-- HotpotQA: 아키텍처 매칭 baseline 대비 <span style="background-color: #fff59d"><strong>+7.2 EM</strong></span> (p<0.01)
-- StrategyQA: +4.1 accuracy
-- SQuAD 2.0: +3.7 EM (p<0.01)
-- 2Wiki, ProofWriter 포함 5개 벤치마크 전부에서 최고 baseline 갱신
-
-환각률 변화가 가장 극적입니다.
-
-| 데이터셋 | baseline → GRIP |
-|---|---|
-| HotpotQA | 31.7% → <span style="background-color: #fff59d"><strong>8.6%</strong></span> |
-| 2Wiki | 31.2% → 9.8% |
-| HotpotQA (매칭 컨트롤) | 28.7% → 8.6% |
-
-QL dependence는 <span style="background-color: #fff59d"><strong>14.8 → 0.47 bits, 약 30배 감소</strong></span>했습니다.
-
-## 메커니즘이 맞는지 검증
-
-성능만 오른 걸로는 부족하니, 논문은 세 가지 개입 실험으로 인과를 확인합니다.
-
-1. 병목 제거: QL dependence가 0.47 → 14.20 bits로 복귀, 정확도 -5.3점. 병목이 핵심 부품입니다.
-2. z_k 랜덤화: <span style="background-color: #fff59d"><strong>정확도 35.3점 하락</strong></span>. baseline에 같은 개입을 하면 7.5점 하락에 그칩니다. 디코더가 실제로 병목 증거를 쓰고 있다는 증거입니다.
-3. 정렬 분석: 병목 출력이 질의 부분공간과의 정렬도 ρ에서 baseline보다 체계적으로 낮음.
-
-![](/images/2026-08-18-grip-query-dominance-rag/fig-3-p6.png)
-
-CDF 그래프에서 GRIP 분포가 모든 구간에서 baseline 아래에 위치합니다. 몇몇 이상치가 아닌 전체 분포의 이동입니다.
-
-## 근데 궁금한 점
-
-스텝별로 추론하면 검증된 span 원문도 컨텍스트에 텍스트로 남습니다. 이러면 병목이 새는 거 아닌가 싶은데, 논문은 두 가지로 답합니다.
-
-- span 원문 경로를 제거하면 오히려 -8.2점. 문장 수준 의미 전달 경로는 의도된 설계입니다.
-- 각 스텝에서 디코더는 다음 추론을 먼저 확정하고 그 다음에 span이 컨텍스트에 들어갑니다. 스텝별 증거 신호는 병목이 통제합니다.
-
-환각 측정의 검증기 의존도도 점검했는데, MiniCheck로 재채점하면 원 검증기와 89% 일치(κ=0.77)하고 환각률은 8.6% → 10.1%로 약간 오르나 baseline보다는 여전히 낮습니다.
-
-## 한계
-
-원문이 밝힌 한계입니다. 단일 백본(Llama-3-8B) 검증, QL dependence는 필요조건일 뿐 충분조건은 아님, 정보이론 해석은 메커니즘 수준의 설명이지 형식적 동치가 아님.
-
-내 해석을 하나 덧붙이면, 4 bits라는 극단적 설정이 범용 RAG에 바로 적용될지는 의문입니다. 논문의 작업은 span 추출과 NLI 검증으로 이미 정제된 짧은 증거를 다루기 때문에 가능한 설계고, 수천 토큰 문서를 그대로 넣는 일반 RAG에서는 전처리 단계가 먼저 필요합니다.
-
-## 정리
-
-- RAG의 증거 무시는 본질적으로 <span style="background-color: #fff59d"><strong>용량 배분 문제</strong></span>입니다.
-- 증거 채널을 의도적으로 제한하면 모델이 증거를 쓸 수밖에 없게 만들 수 있습니다.
-- 결과는 환각 73% 감소, QL dependence 30배 감소, 5개 벤치마크 전면 개선.
-- 진단 지표 I(Q; z_k)는 GRIP을 안 써도 <span style="background-color: #fff59d"><strong>내 RAG의 증거 활용도를 점검하는 도구</strong></span>로 쓸 수 있습니다.
-
-## 더 실습해보고 싶은 분들께
-
-검색 증거를 실제로 활용하는 에이전트 루프를 직접 만들어보고 싶다면 두 자료를 추천합니다.
-
-- 『[이게 되네? 오픈클로 미친 활용법 50제](https://product.kyobobook.co.kr/detail/S000219615902)』
-- 「[모두를 위한 루프 엔지니어링](https://aifrenz.liveklass.com/classes/309184)」
-
-원문: [arXiv:2608.16776](https://arxiv.org/abs/2608.16776)
+8. 남는 결론. RAG의 증거 무시는 본질적으로 용량 배분 문제임. 증거 채널을 의도적으로 제한하면 모델이 증거를 쓸 수밖어 없게 만들 수 있다는 방향성은 프롬프트 튜닝으로 한계를 느낀 팀에게 유의미한 대안임.

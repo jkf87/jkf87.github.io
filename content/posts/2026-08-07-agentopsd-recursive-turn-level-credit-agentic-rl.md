@@ -1,5 +1,5 @@
 ---
-title: "AgentOPSD: Agentic RL을 위한 재귀적 자기증류 턴별 크레딧 할당"
+title: "GRPO의 균등 보상을 턴별로 재분배하기 — AgentOPSD의 재귀적 자기증류"
 date: 2026-08-07
 tags:
   - agent
@@ -16,117 +16,27 @@ authors:
   - conanssam
 source: https://arxiv.org/abs/2608.05987
 github: https://github.com/ZethWang/AgentOPSD
+description: "AgentOPSD는 teacher-student log-prob 격차를 턴별 증거로 집계하고 Bayesian belief를 재귀 갱신해 궤적 어드밴티지를 턴별로 재분배함. 크리틱·추가 롤아웃 없이 세 환경에서 GRPO를 꾸준히 앞짬. 크레딧 설계의 실무 교훈을 정리함."
 ---
 
-## 개요
+agentic RL에서 GRPO가 널리 쓰이는 이유는 크리틱이 필요 없다는 점임. 근데 대가가 있음. 궤적 단위 어드밴티지를 모든 토큰에 균등하게 나누는 것. 그래서 성공 궤적의 무의미한 행동도 보상을 받고, 긴 호라이즌에서 비효율이 커짐. AgentOPSD는 이 균등 할당을 크리틱 없이 턴별로 재분배함. 방법이 재밌음. 자기 자신을 증류 교사로 쓰는 것.
 
-AgentOPSD는 agentic reinforcement learning에서 턴별 크레딧 할당 문제를 해결하는 critic-free 방법이다. Tsinghua University, Zhejiang University, Meituan의 연구진이 2026년 8월에 발표했다.
+1. 증거 계산이 출발점임. privileged self-distillation이라 부르는데, 같은 모델 파라미터를 쓰되 teacher branch에 추가 컨텍스트(스킬 c+)를 줌. 그리고 각 턴에서 "컨텍스트가 있을 때의 log-prob"와 "없을 때의 log-prob"의 격차를 토큰 전체에 걸쳐 합산함. 이 격차가 큰 턴이 스킬을 활용해 성공에 기여한 턴이라는 논리. 추가 롤아웃도 외부 크리틱도 필요 없이 기존 궤적에서 계산되는 신호임.
 
-핵심 기여는 token-level teacher-student log-probability gap을 turn-level evidence로 집계하고, 이를 Bayesian belief state에 재귀적으로 갱신하여 trajectory-level advantage를 턴별로 재분배하는 것이다.
-
-## 배경
-
-GRPO(Group Relative Policy Optimization)는 검증 가능한 보상(verifiable rewards)을 사용하는 RL 방법으로, trajectory-level advantage를 계산하여 궤적 내 모든 토큰에 균등하게 전달한다.
-
-이 접근의 한계는 다음과 같다:
-
-1. 궤적 내 개별 턴의 기여도를 구분할 수 없다
-2. 호라이즌이 길어질수록 균등 할당의 비효율이 커진다
-3. 성공한 궤적의 무의미한 행동도 보상을 받는다
-
-## 방법론
-
-### 턴별 증거 집계
-
-privileged self-distillation을 사용하여 턴별 evidence를 계산한다. 동일한 모델 파라미터를 사용하되, teacher branch는 추가 컨텍스트(스킬 `c+`)를 받는다.
-
-턴 k의 evidence:
-
-```
-e_k = Σ_t [log π(y_{k,t} | s_k, c+, y_{k,<t}) - log π(y_{k,t} | s_k, y_{k,<t})]
-```
-
-### 재귀적 벨리프 갱신
-
-log-odds 공간에서 Bayesian belief를 재귀적으로 갱신한다:
-
-```
-B_0 = clip(R̄, ε, 1-ε)
-c_k = γ·c_{k-1} + e_k
-B_k = σ(logit(B_0) + c_k)
-ΔB_k = B_k - B_{k-1}
-```
-
-여기서 R̄은 그룹 성공률, γ는 감쇠 계수, σ는 시그모이드 함수이다.
-
-ΔB_k는 턴 k가 성공 확률에 대한 믿음을 얼마나 수정했는지를 나타낸다.
-
-### Bounded Advantage Reshaping
-
-trajectory-level advantage를 터별로 재분배한다:
-
-```
-q_k = sign(A_seq) · ΔB_k
-z_k = (q_k - μ_q) / (σ_q + ε)
-w_k = clip(1 + b·z_k, 1-b, 1+b)
-Ã_k = A_seq · [(1-λ) + λ·w_k]
-```
-
-w_k는 [1-b, 1+b] 범위로 클리핑되어 GRPO의 안정성을 유지한다.
+2. 그다음이 재귀적 벨리프 갱신임. 그룹 성공률로 초기 믿음 B_0를 잡고, 턴마다 증거 e_k를 감쇠 누적해서 log-odds 공간에서 Bayesian 갱신을 함. 각 턴의 ΔB_k, 즉 그 턴이 성공 확률에 대한 믿음을 얼마나 수정했는지가 그 턴의 기여도가 됨. 이렇게 하면 "어느 턴에서 국면이 바뀌었는가"가 자동으로 부각됨. 마지막으로 bounded advantage reshaping. 궤적 어드밴티지에 ΔB 기반 가중치를 곱하는데 [1-b, 1+b]로 클리핑해서 GRPO의 안정성을 해치지 않음. 보상을 갈아엎는 게 아니라 재조정하는 설계임.
 
 ![Figure 1: 훈련 역학 및 호라이즌 robustness](/images/2026-08-07-agentopsd-recursive-turn-level-credit-agentic-rl/x1.png)
 
-x1.png는 Figure 1 — 훈련 역학(검증 성공률, 호라이즌 민감도, 정책 엔트로피)입니다.
-
-## 실험 결과
-
-![Table 4: 환경별 훈련 설정](/images/2026-08-07-agentopsd-recursive-turn-level-credit-agentic-rl/x4.png)
-
-세 환경에서 Qwen2.5 3B/7B 모델로 평가했다.
-
-ALFWorld (Qwen2.5-7B):
-- GRPO: 85.7%
-- AgentOPSD: 89.1% (+3.4pp)
-
-Search-QA (Qwen2.5-7B):
-- GRPO: 42.8%
-- AgentOPSD: 46.9% (+4.1pp)
-
-WebShop (Qwen2.5-7B):
-- GRPO: 61.6/56.8 (Score/Acc)
-- AgentOPSD: 63.9/58.5
+3. 결과가 일관됨. Qwen2.5-7B 기준 ALFWorld 85.7% → 89.1%(+3.4pp), Search-QA 42.8% → 46.9%(+4.1pp), WebShop도 점수와 정확도 모두 상승. 3B에서도 개선이 확인됨. 화려한 폭발은 아니지만 크리틱도 롤아웃도 없이 공짜로 얻는 이득이라는 점이 실무적 가치임.
 
 ![Figure 2: 방법론 개요](/images/2026-08-07-agentopsd-recursive-turn-level-credit-agentic-rl/x2.png)
 
-## 분석
+4. 호라이즌 효과가 방법의 정체를 보여줌. 평균 5~6턴인 ALFWorld에서 개선이 크고 4턴짜리 Search-QA에서는 작음. 재귀 벨리프 갱신이 긴 궤적에서 더 큰 효과를 발휘한다는 것. ablation에서도 턴 경계 집계와 재귀 벨리프가 각각 기여하는데 특히 재귀 벨리프가 호라이즌 robustness의 핵심이었음. 긴 과제를 다루는 팀일수록 쓸모가 커지는 방법임.
 
-### 호라이즌 효과
-
-호라이즌이 긴 ALFWorld(평균 5-6턴)에서 개선이 크고, 짧은 Search-QA(4턴)에서는 개선이 작다. 이는 재귀 벨리프 갱신이 긴 궤적에서 더 큰 효과를 발휘함을 시사한다.
-
-### Ablation
-
-턴 경계 집계(aggregation)와 재귀 벨리프 갱신(recursive belief) 각각을 제거한 실험에서 두 구성 요소 모두 기여한다. 특히 재귀 벨리프가 호라이즌 robustness에 핵심 역할을 한다.
+5. 기존 방법 지도가 깔끔함. PPO/GAE는 크리틱 필요, VinePPO는 크리틱에 추가 롤아웃까지 필요, GRPO는 둘 다 없지만 크레딧이 궤적 전체 단위, StepOPSD는 스텝 단위지만 로컬 신호, AgentOPSD는 둘 다 없이 턴 단위 재귀 신호. 그리고 GiGPO가 환경 보상으로 스텝 어드밴티지를 추정하는 방식이라 상호보완적이라는 정리도 유익함. 자기 상황에서 무엇이 제약인지(크리틱 GPU 비용? 롤아웃 비용?)에 따라 선택지가 좁혀지는 표임.
 
 ![Figure 3: 하이퍼파라미터 민감도 분석](/images/2026-08-07-agentopsd-recursive-turn-level-credit-agentic-rl/x3.png)
 
-## 기존 방법과의 관계
+6. 내 실무 결론은 이렇게임. 첫째, GRPO로 긴 호라이즌 에이전트를 훈련 중이라면 턴별 크레딧 실험을 해볼 것. 코드가 공개되어 있어서 도입 장벽이 낮음. 둘째, 크레딧 재조정은 "가중치를 흔들되 경계로 클리핑"하는 방식이 안전함. 학습 안정성을 해치는 크레딧 개조는 실험 전체를 망침. 셋째, 기여도 신호를 외부 크리틱 말고 모델 자체의 정보격차(컨텍스트 유무 log-prob 차이)에서 뽑는 아이디어는 다른 용도에도 이식 가능함. 중요한 스킬·지식이 어느 턴에서 실제로 활용됐는지 측정하는 프로브로 쓸 수 있음.
 
-| 방법 | 크리틱 | 추가 롤아웃 | 크레딧 단위 |
-|---|---|---|---|
-| PPO/GAE | 필요 | 아니오 | 스텝별 |
-| VinePPO | 필요 | 필요 | 스텝별 |
-| GRPO | 불필요 | 불필요 | 궤적 전체 |
-| StepOPSD | 불필요 | 불필요 | 스텝별 (local) |
-| AgentOPSD | 불필요 | 불필요 | 터별 (recursive) |
-
-GiGPO는 환경 보상으로 스텝 어드밴티지를 추정하고, AgentOPSD는 self-distillation 증거를 사용하므로 상호 보완적이다.
-
-## 코드
-
-https://github.com/ZethWang/AgentOPSD
-
-## 더 실습해보고 싶은 분들께
-
-- 『[이게 되네? 오픈클로 미친 활용법 50제](https://product.kyobobook.co.kr/detail/S000219615902)』
-- 「[모두를 위한 루프 엔지니어링](https://aifrenz.liveklass.com/classes/309184)」
+원문: [arXiv:2608.05987](https://arxiv.org/abs/2608.05987).

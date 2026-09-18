@@ -1,5 +1,5 @@
 ---
-title: "Skill Entropy: LLM이 스킬을 바꾸는 순간 성능이 무너지는 이유"
+title: "스킬은 각각 잘하는데 스킬이 바뀌는 순간 무너짐 — Skill Entropy 측정과 훈련법"
 date: 2026-08-06
 tags:
   - agent
@@ -14,74 +14,27 @@ tags:
   - automation
 authors:
   - conanssam
+description: 수학→계획→추출처럼 스킬이 바뀌는 순간 정확도가 4-13% 떨어짐. 전환 난이도를 skill entropy로 정량화하고 RL 보상으로 쓴 연구를 에이전트 루프 설계 관점으로 정리함.
 ---
 
-수학 풀고 → 그 결과로 일정 짜고 → 그 일정으로 정보 추출하기. 이렇게 스킬이 바뀌는 순간 LLM 정확도가 떨어집니다. Princeton 팀이 이 문제를 "Skill Entropy"로 정량화하고, RL 훈련 신호로 썼습니다.
+수학 풀고 → 그 결과로 일정 짜고 → 그 일정에서 정보 추출하기. 이렇게 스킬이 바뀌는 순간 LLM 정확도가 떨어짐. Princeton 팀이 이 현상을 "Skill Entropy"로 정량화하고 훈련 신호로 썼음. 원문은 [arXiv:2608.05139](https://arxiv.org/abs/2608.05139).
 
-핵심은 이겁니다: 개별 스킬 점수는 높은데, 스킬을 전환하는 순간 정확도가 −4~−13% 떨어집니다. 그리고 스킬이 멀수록(예: 수학→창작) 전환 비용이 큽니다.
+1. 핵심 발견. 개별 스킬 점수는 높은데 스킬을 전환하는 순간 정확도가 -4~-13% 떨어짐. 그리고 스킬이 멀수록(수학→창작 같은 경우) 전환 비용이 커짐. 스킬별 성적과 롱호라이즌 성적이 다른 이유를 숫자로 보여준 첫 프레임워크임.
 
-## 스킬 전환 난이도 정의
+2. 측정 방법. 기준 모델(Claude-opus-4.7)로 단일 스킬 정확도와 2-스킬 체인 정확도를 비교해서 스킬 전환 난이도를 하나의 숫자로 만듦. 흥미로운 점은 Planning → Information Extraction 전환이 가장 어렵고 Science는 단일 도메인에선 쉬운데 전환 난이도는 최상위라는 것임. 도메인 난이도와 스킬 전환 난이도가 다른 축이라는 뜻임.
 
-스킬 전환 난이도를 하나의 숫자로 표현합니다. 기준 모델(Claude-opus-4.7)으로 단일 스킬 정확도와 2-스킬 체인 정확도를 비교합니다.
+3. Skill2-Bench 구성. 558개 스킬, 9개 도메인(Math 186, Science 137, Information Extraction 92, Coding 46 등)으로 벤치마크를 만듦. 태스크 하나는 2-10단계 시퀀스인데 각 단계가 다른 도메인 스킬을 요구하고 앞 단계 정답에 의존함. 태스크 난이도는 skill entropy 스칼라로 Low/Medium/High 3단계임.
 
-![](/images/2026-08-06-skill-entropy-cross-skill-long-horizon-rl/fig-2-p5.png)
+4. 12개 모델(프론티어 8 + 오픈소스 4) 평가 결과. skill entropy가 높아질수록 정확도가 거의 단조 감소함. 주요 실패 모드가 적나라함. 뒷단계에서 앞 단계의 스킬과 답변 양식을 그대로 재사용함. 전환 자체를 안 하는 것임. 내 에이전트 로그에서 "요약하다가 코딩 양식으로 대답하는" 패턴과 정확히 같음.
 
-Figure 2에서 보면, Planning → Information Extraction 전환이 가장 어렵습니다. Science는 단일 도메인에서는 쉬운데 스킬 전환 난이도는 최상위입니다. 도메인 난이도와 스킬 전환 난이도가 다릅니다.
+5. 이걸 훈련 신호로 바꾼 게 두 번째 기여임. 모델이 각 단계 정답 전에 스킬 라벨을 먼저 예측하게 하고, 보상을 단계별 정확도와 예측 스킬 시퀀스-정답 시퀀스 정렬도의 합으로 줌. 스킬 전환을 명시적 예측 문제로 만든 것임.
 
-## Skill2-Bench 구성
+6. 결과. Qwen3-4B-Instruct 기준 Skill2-Bench가 34.4%에서 68.4%로 오름. Qwen3-1.7B는 14.6%에서 40.1%로 오름. 기존 훈련 데이터(OpenR1-Math 등)에도 스킬 라벨만 있으면 그대로 적용 가능함.
 
-558개 스킬, 9개 도메인으로 벤치마크를 만들었습니다.
+7. 내 에이전트 루프 설계에 바로 적용한 것. 첫째, 도메인이 바뀌는 단계(검색→코딩→요약)마다 "지금 필요한 스킬이 무엇인지"를 먼저 명시하게 프롬프트를 고정함. 스킬 라벨 예측을 훈련으로 넣은 것과 같은 효과를 추론 시점 컨텍스트로 근사하는 것임. 둘째, 앞 단계의 출력 양식이 뒷단계로 새어들어가는 걸 막으려고 단계별 출력 포맷을 강제로 분리함. 재사용이 아니라 전환을 해야 하니까임.
 
-| 도메인 | 시드 데이터 | 검증 가능 | 스킬 수 |
-|---|---|---|---|
-| Math | OpenR1-Math | ✓ | 186 |
-| Science | MMLU-Pro | ✓ | 137 |
-| Coding | LiveCodeBench | ✓ | 46 |
-| Logic | ZebraLogicBench | ✓ | 14 |
-| Information Extraction | WikiTable, WebSRC | ✓ | 92 |
-| Planning | NaturalPlan | ✓ | 34 |
-| Creative Writing | — | × | 12 |
-| Context Retrieval | — | × | 12 |
-| Instruction Following | — | × | 25 |
+8. 문제제기. 스킬 라벨이 필요하다는 게 실무 데이터에서의 제약임. 스킬 시퀀스를 손으로 라벨링하기 어려운 복잡한 업무에는 바로 적용이 어려움. 그리고 전환 난이도 기준이 특정 기준 모델(claude-opus-4.7) 종속이라 모델마다 다시 재야 정확함.
 
-태스크 하나 = 2~10단계 시퀀스. 각 단계가 다른 도메인의 스킬을 요구하고, 앞 단계 정답에 의존합니다. 태스크 난이도는 skill entropy 스칼라값으로 3단계(Low/Medium/High)로 나눕니다.
+9. 결론. "LLM이 각 스킬을 잘한다"와 "긴 호라이즌 태스크를 잘한다"는 다른 문제이고, 그 사이에는 전환 비용이라는 구조적 간극이 있음. 그 간극을 측정하고(벤치마크) 좁히고(RL 보상) 대응하는(루프 설계) 세 가지 도구를 한 번에 준 논문임. 코드는 [GitHub](https://github.com/Gen-Verse/Skill-Entropy-RL), 데이터는 [HuggingFace](https://huggingface.co/datasets/Gen-Verse/Skill2-Bench)에 공개돼 있음.
 
-## 평가 결과: 스킬 전환 격차
-
-![](/images/2026-08-06-skill-entropy-cross-skill-long-horizon-rl/table-2-p7.png)
-
-12개 모델(프론티어 8 + 오픈소스 4)을 평가했습니다.
-
-- skill entropy가 높아질수록 정확도가 거의 단조 감소합니다
-- 같은 스킬이어도 cross-skill 태스크 안에서 쓰이면 단독 풀이보다 −4~−13% 떨어집니다
-- 주요 실패 모드: 뒷단계에서 앞 단계의 스킬과 답변 양식을 그대로 재사용합니다. 전환을 안 합니다
-
-## Skill-Entropy RL: 전환 난이도를 훈련 신호로
-
-여기서 skill entropy를 벤치마크 점수에서 훈련 보상으로 바꿉니다.
-
-모델이 각 단계의 정답 전에 스킬 라벨을 먼저 예측합니다. 보상은 두 성분의 합입니다:
-
-1. 단계별 정답 정확도
-2. 예측 스킬 시퀀스와 정답 스킬 시퀀스의 정렬도 (skill-entropy reward)
-
-![](/images/2026-08-06-skill-entropy-cross-skill-long-horizon-rl/fig-1-p2.png)
-
-Qwen3-4B-Instruct 기준 Skill2-Bench 점수가 34.4% → 68.4%로 올랐습니다. Qwen3-1.7B는 14.6% → 40.1%.
-
-OpenR1-Math 같은 기존 훈련 데이터에도 그대로 적용할 수 있습니다. 스킬 라벨만 있으면 되니까요.
-
-## 에이전트 루프와의 연결
-
-LLM이 각 스킬을 잘한다고 해서 긴 호라이즌 태스크를 잘하는 게 아닙니다. 스킬 사이의 "전환 비용"이 구조적으로 존재하고, 이걸 측정하고 훈련해야 합니다.
-
-에이전트 루프에서 도메인이 바뀌는 순간(검색→코딩→요약)이 같은 문제입니다. skill entropy는 그 전환 지점을 정량화한 첫 프레임워크입니다.
-
-## 더 실습해보고 싶은 분들께
-
-- 『[이게 되네? 오픈클로 미친 활용법 50제](https://product.kyobobook.co.kr/detail/S000219615902)』
-- 「[모두를 위한 루프 엔지니어링](https://aifrenz.liveklass.com/classes/309184)」
-
-논문: [arXiv:2608.05139](https://arxiv.org/abs/2608.05139)
-코드: [github.com/Gen-Verse/Skill-Entropy-RL](https://github.com/Gen-Verse/Skill-Entropy-RL)
-데이터: [huggingface.co/datasets/Gen-Verse/Skill2-Bench](https://huggingface.co/datasets/Gen-Verse/Skill2-Bench)
+스킬 전환 지점을 관리하는 루프 설계 실습은 『[이게 되네? 오픈클로 미친 활용법 50제](https://product.kyobobook.co.kr/detail/S000219615902)』에서 해볼 수 있음.

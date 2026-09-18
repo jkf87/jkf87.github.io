@@ -15,6 +15,7 @@ authors:
   - name: conanssam
     url: https://github.com/conanssam
     original: https://arxiv.org/abs/2608.02276
+noindex: true
 ---
 
 ## 개요

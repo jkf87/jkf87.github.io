@@ -1,78 +1,29 @@
 ---
-title: "논문 정리: Skill-Use — 에이전트 하네스에서 LLM의 스킬 사용 능력 측정 (arXiv 2608.04828)"
+title: "스킬 문서를 읽어도 절차를 못 지킴 — Skill-Use 벤치마크가 찾은 두 개의 독립 병목"
 date: 2026-08-24T19:00:00+09:00
 tags: [agent, LLM, benchmark, skill, harness, evaluation]
 draft: false
+description: "공개 스킬 7,979개와 과제 17만 개로 스킬 인식·준수·경계 준수를 측정한 Skill-Use 벤치마크. 최고 조합도 SU 0.613이었고, 인식과 절차 준수는 독립 병목이며 SU 0.5 미만 스킬은 없느니만 못했다."
 ---
 
-## 개요
+스킬 라이브러리를 달면 에이전트가 잘 쓸 거라는 가정을 대규모로 검증한 벤치마크가 나옴. 결론이 "공짜 개선이 아니다"라서 정리함. 원문은 [arXiv:2608.04828](https://arxiv.org/abs/2608.04828).
 
-Skill-Use(arXiv 2608.04828)는 LLM 에이전트가 스킬 문서를 실제로 인식하고 준수하는지를 측정하는 벤치마크다. 공개 GitHub 스킬 <span style="background-color: #fff59d"><strong>7,979개</strong></span>와 실행 가능한 과제 <span style="background-color: #fff59d"><strong>17만 7,177개</strong></span>를 9개 도역에서 짝지었고, 각 과제는 Docker 샌드박스에서 실행되어 트레이스 기반 루브릭으로 채점된다. 8개 프론티어 모델을 Claude Code(CC)와 Codex 두 하네스에서 평가했다.
+1. 설계가 실무 조건을 잘 반영함. 공개 GitHub 스킬 7,979개와 실행 가능 과제 177,177개를 9개 도메인에서 짝지었고, 각 과제는 Docker 샌드박스에서 실행돼 트레이스 기반 루브릭으로 채점됨. 스킬 문서는 progressive disclosure 방식 — 에이전트는 이름과 한 줄 설명만 받고 시작하고 전문은 직접 조회해야 함. 실제 하네스와 같은 조건이라는 뜻임.
 
-논문: <https://arxiv.org/abs/2608.04828>
+2. 평가 축이 셋으로 쪼개져 있는 게 이 논문의 핵심 기여임. Trigger(스킬을 인식하고 가져왔나), Compliance(스킬이 규정한 요구 사항의 충족 비율), Boundary(금지 행동 부재 비율). 통합 점수는 Trigger × (0.7·Compliance + 0.3·Boundary)로 스킬 발동 전엔 실행 점수를 안 주는 게이티드 구조임.
 
-## 측정 정의
+3. 결과부터. 최고 성능 조합이 Claude Code 하네스의 GPT-5.5로 SU 0.613. 신뢰 가능 수준과 거리가 멂. Trigger는 0.972인데 Compliance가 0.611, Boundary가 0.718임. 즉 스킬을 찾아내는 것과 스킬대로 실행하는 건 다른 능력이라는 것.
 
-스킬 문서 전체는 에이전트가 해당 파일을 직접 조회해야만 확인할 수 있는 <span style="background-color: #fff59d"><strong>progressive disclosure</strong></span> 방식으로 제공된다. 에이전트는 이름과 한 줄 설명만 받고 시작한다. 평가 축은 세 가지다.
+4. 첫 번째 주요 발견은 병목의 독립성임. 오픈웨이트 중상위 모델(GLM-5.1, DeepSeek-V4-Pro, Kimi-K2.6)은 Trigger가 0.32~0.34에 그치지만 조건부 Compliance는 0.58~0.64로 선두권과 대등함. 못 찾아서 못 쓰는 것이지 못 따라 해서가 아니라는 것. preloaded 모드 실험이 이걸 확정함 — 스킬 전문을 미리 넣어주면 Trigger는 개선되지만 Compliance는 거의 안 변함.
 
-- Trigger: 대상 스킬을 인식하고 retrieve했는지 여부
-- Compliance: 스킬이 규정한 요구 사항의 가중 충족 비율
-- Boundary: 금지 행동의 부재 비율
+5. 두 번째는 Boundary > Compliance 패턴이 모든 구성에서 나온다는 것. 모델은 금지 항목을 피하는 것보다 요구된 절차를 끝까지 완수하는 데 더 자주 실패함. 예외는 보안·컴플라이언스 도메인에서 Boundary가 최저를 기록하는 것. 절차 완수가 진짜 약점이라는 걸 방향까지 보여줌.
 
-통합 점수는 <span style="background-color: #fff59d"><strong>SU = Trigger × (0.7·Compliance + 0.3·Boundary)</strong></span>이며, 스킬 발동 전에는 실행 점수가 인정되지 않는 게이티드 구조다.
+6. 세 번째는 하네스 의존성임. GPT-5.5는 Claude Code→Codex 이동 시 SU가 0.613→0.503으로 떨어지는데 GLM-5.1은 0.267→0.421로 오름. 중위권 모델은 하네스를 바꾸면 순위가 역전됨. 스킬 사용 능력은 모델의 고정 속성이 아니라 모델-하네스 구성의 속성이라는 게 이 벤치마크의 결론적 통찰임.
 
-![](/images/2026-08-24-skill-use-trigger-compliance-boundary/fig-1-p1.png)
+7. 네 번째이자 실무적으로 제일 아픈 발견은 범위 밖 절제와 순수 이득임. 스킬을 가장 잘 따르는 모델이 불필요한 발동을 가장 못 막음 — 과잉 발동은 Claude Opus와 GPT-5.5에 집중됨. 그리고 스킬 on/off 짝 비교에서 순수 이득은 SU≈0.5를 기준으로 부호가 바뀜. SU 0.5 미만 스킬은 부분 준수 탓에 스킬이 없을 때보다 성적이 낮아짐. 스킬 라이브러리는 잘 쓰면 이득, 대충 쓰면 독이라는 것.
 
-## 주요 결과
+8. 필자 적용 포인트. 이 블로그 파이프라인도 스킬(merche, 게이트 스크립트)을 하네스가 로드하는 구조라 그대로 해당됨. 첫째, 스킬 인식이 약한 모델엔 설명을 매 단계 재주입하는 게 preloaded 효과로 이어지니 모델별로 주입 전략을 다르게 가져갈 것. 둘째, 스킬을 늘리기 전에 기존 스킬의 SU를 측정할 것. 0.5를 못 넘는 스킬은 정리하거나 병합하는 게 이득임. 셋째, 라이브러리 크기 실험에서 손실 대부분이 오선택이 아닌 미발동이었으니 스킬 수보다 발동 힌트 품질이 먼저임.
 
-![](/images/2026-08-24-skill-use-trigger-compliance-boundary/table-1-p6.png)
+9. 문제제기. 채점 루브릭이 다중 에이전트 심사 + 인간 감사(κ=0.65)를 거쳤지만 여전히 자동 채점 의존도가 큼. 그리고 두 하네스(CC, Codex)만 비교해서 다른 하네스 일반화는 열려있음. κ=0.65도 상당히 낮은 동의 수준이라 루브릭 자체의 모호함이 결과에 섞였을 수 있음.
 
-최고 성능 조합은 CC 하네스의 GPT-5.5로 <span style="background-color: #fff59d"><strong>SU 0.613</strong></span>이었다. 신뢰 가능한 수준과는 거리가 있다. CC 하네스 기준 수치는 다음과 같다.
-
-| 모델 | Trigger | Compliance | Boundary | SU |
-|---|---|---|---|---|
-| GPT-5.5 | 0.972 | 0.611 | 0.718 | 0.613 |
-| Claude Opus 4.7 | 0.966 | 0.609 | 0.712 | 0.599 |
-| Claude Opus 4.8 | 0.940 | 0.625 | 0.704 | 0.597 |
-| MiniMax-M3 | 0.833 | 0.569 | 0.706 | 0.501 |
-| Qwen3.6-Max | 0.446 | 0.475 | 0.625 | 0.318 |
-| GLM-5.1 | 0.324 | 0.455 | 0.639 | 0.267 |
-| DeepSeek-V4-Pro | 0.324 | 0.439 | 0.658 | 0.250 |
-| Kimi-K2.6 | 0.337 | 0.447 | 0.580 | 0.190 |
-
-주요 발견은 다음과 같다.
-
-1. <span style="background-color: #fff59d"><strong>Trigger와 Compliance는 독립적 병목이다.</strong></span> 오픈웨이트 중상위 모델(GLM-5.1, DeepSeek-V4-Pro, Kimi-K2.6)은 Trigger가 0.32~0.34에 그치지만 조건부 Compliance†(0.58~0.64)는 선두권과 대등하다.
-2. 모든 구성에서 Boundary가 Compliance보다 높다. 모델은 금지 항목을 회피하는 것보다 <span style="background-color: #fff59d"><strong>요구된 절차를 끝까지 완수하는 데 더 자주 실패한다.</strong></span> 예외는 보안/컴플라이언스 도역으로, 이 경우 Boundary가 최저를 기록한다.
-3. 하네스 의존성: GPT-5.5는 CC→Codex 이동 시 SU가 0.613→0.503으로 하락하고, GLM-5.1(0.267→0.421)과 Kimi-K2.6(0.190→0.374)은 상승한다. 두 하네스의 모델별 SU 상관은 중간 수준이며 <span style="background-color: #fff59d"><strong>중위권 모델은 순위가 역전된다.</strong></span>
-
-![](/images/2026-08-24-skill-use-trigger-compliance-boundary/fig-3-p7.png)
-
-## 분석 결과
-
-**인젝션 모드(4.4절).** 스킬 전문을 미리 삽입하는 preloaded 모드는 Trigger를 개선하되 조건부 Compliance는 거의 변화시키지 않는다. 개선 효과는 추상적 이름의 스킬에서 크다. <span style="background-color: #fff59d"><strong>병목은 절차 실행이 아니라 검색·인식 단계</strong></span>임을 시사한다.
-
-![](/images/2026-08-24-skill-use-trigger-compliance-boundary/fig-4-p8.png)
-
-**라이브러리 크기(4.5절).** 스킬 수를 1→10으로 늘리면 SU가 하락하며, 손실의 대부분은 오선택이 아닌 미발동(none)에서 발생한다. 10개 이후 감소세는 완만하다.
-
-**범위 밖 절제(4.6절).** 스킬이 불필요한 53개 과제에서 범위 내 SU와 avoidance의 상관은 음수다. <span style="background-color: #fff59d"><strong>스킬을 가장 잘 따르는 모델이 불필요한 발동을 가장 못 막는다.</strong></span> 과잉 발동은 Claude Opus과 GPT-5.5에 집중되며, 주제가 겹치는 문서형 요청에서 유발된다.
-
-![](/images/2026-08-24-skill-use-trigger-compliance-boundary/fig-6-p9.png)
-
-**과제 완수 기여(4.7절).** 동일 과제·모델에서 스킬 on/off 짝 비교 시 순수 이득은 <span style="background-color: #fff59d"><strong>SU≈0.5를 기준으로 부호가 바뀐다.</strong></span> SU 0.5 미만에서는 부분 준수로 인해 스킬이 무제 상태보다 성적을 낮춘다. <span style="background-color: #fff59d"><strong>스킬 라이브러리는 공짜 개선이 아니다.</strong></span>
-
-## 벤치마크 구축 파이프라인
-
-10만 5,586개 후보를 4단계(필터·클러스터링 → 쿼터 기반 수집 → 규칙 점수화 → masked-skill 평가)로 7,979개까지 선별했다. 태스크와 루브릭은 서로 다른 모델 패밀리의 리뷰어가 참여하는 다중 에이전트 대항 심사를 통과했고, 크라우드 인간 감사(<span style="background-color: #fff59d"><strong>Cohen κ=0.65</strong></span>)로 검증되었다. 채점은 정규식·상태 diff 등 결정적 검증을 우선한다.
-
-![](/images/2026-08-24-skill-use-trigger-compliance-boundary/fig-2-p5.png)
-
-## 결론
-
-Skill-Use의 측정에 따르면 스킬 사용 능력은 모델의 고정 속성이 아니라 <span style="background-color: #fff59d"><strong>모델-하네스 구성의 속성</strong></span>이며, 인식과 절차 준수는 분리된 병목이다. 스킬 라이브러리 도입의 실제 손익은 인식률, 조건부 준수율, 범위 밖 절제를 함께 측정해야 판단할 수 있다.
-
-## 더 실습해보고 싶은 분들께
-
-- 『[이게 되네? 오픈클로 미친 활용법 50제](https://product.kyobobook.co.kr/detail/S000219615902)』
-- 「[모두를 위한 루프 엔지니어링](https://aifrenz.liveklass.com/classes/309184)」
+10. 남는 결론. 스킬 사용 능력은 인식과 준수로 분리해 측정해야 하고, 라이브러리 도입 손익은 인식률·조건부 준수율·범위 밖 절제를 같이 재야 판단됨. 스킬을 쌓는 것보다 스킬별 SU를 재고 0.5선을 못 넘는 걸 걷어내는 관리가 성과를 만든다는 게 이 벤치마크의 실무 교훈임.

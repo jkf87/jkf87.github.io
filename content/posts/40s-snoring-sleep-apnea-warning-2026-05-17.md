@@ -12,6 +12,7 @@ tags:
 description: "40대 코골이는 피곤해서만 생기지 않음. 수면무호흡, 낮 졸림, 아침 두통, 목둘레 신호까지 같이 보면 놓치지 않음."
 cover: ../images/40s-snoring-sleep-apnea-warning-2026-05-17/hero.jpg
 draft: false
+noindex: true
 aliases:
   - 40s-snoring-sleep-apnea-warning-2026-05-17/index
 ---

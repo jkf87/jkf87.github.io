@@ -1,5 +1,5 @@
 ---
-title: "Terminal-Universe: 에이전트 트라젝토리로부터 실행 환경을 재구성하는 프레임워크 논문 요약"
+title: "에이전트 로그는 버리는 게 아니다 — 트라젝토리에서 실행 환경을 되살리는 법"
 date: 2026-09-05
 tags:
   - agent
@@ -8,96 +8,29 @@ tags:
   - evaluation
   - fine-tuning
 draft: false
-description: "arXiv 2609.04148 Terminal-Universe 논문 요약. 트라젝토리 재생과 에이전트 완성으로 37,273개의 태스크-충분 환경을 복원하고 Qwen3.5-27B SFT로 Terminal-Bench 2.1 58.1%를 달성한 방법과 어블레이션을 정리합니다."
+description: "Terminal-Universe 분석. 기록된 트라젝토리를 역순 재생하고 에이전트로 누락분을 완성해서 37,273개 실행 환경을 복원. 재구성 환경을 다시 푸는 SFT가 원본 모방보다 15점 이상 앞섬. 환경 확장이 쿼리 확장보다 효과적."
 ---
 
-## 결론 먼저
+터미널 에이전트가 늘면서 트라젝토리는 대량으로 쌓여 있는데 에이전트 후학습이 필요로 하는 건 재쿼리 가능하고 실행 피드백을 주는 환경임. [Terminal-Universe](https://arxiv.org/abs/2609.04148)의 출발점은 이 관찰임. 트라젝토리의 tool 실행 기록은 실행 환경의 구조와 내용을 노출하니까, 트라젝토리로부터 환경을 재구성할 수 있다는 것. 로그를 데이터가 아니라 환경의 두 관점으로 보는 발상의 전환이 마음에 들어 정리함.
 
-Terminal-Universe(arXiv 2609.04148v1)는 터미널 에이전트의 기록된 트라젝토리로부터 실행 가능한 학습 환경을 재구성하는 프레임워크입니다. <span style="background-color: #fff59d"><strong>결정론적 재생과 에이전트 완성을 거쳐 공개 트라젝토리에서 태스크-충분 환경 37,273개를 복원</strong></span>했으며, 합성 데이터 32.0k 레코드로 Qwen3.5-27B를 SFT하여 <span style="background-color: #fff59d"><strong>Terminal-Bench 2.1에서 46.2%에서 58.1%로 +11.9pt 향상</strong></span>시켰습니다. 기준일: 2026-09-05, 논문 v1 기준입니다.
+1. 재구성은 두 단계임. 1단계, 결정론적 재생. 트라젝토리에 기록된 파일 연산을 역순 재생해서 에이전트 수정 이전 상태의 파일을 복원함. 2단계, 에이전트 완성. completion 에이전트가 누락된 파일과 의존성을 보충함. 재생 직후 워크스페이스 충분률은 Terminal 40.2%, SWE 20.1%에 불과한데 완성 후 93.5%, 77.1%로 회복함. 재생만으로는 부족하고 보충 에이전트가 필요하다는 것. git처럼 되감기와 보강을 함께 쓰는 구조임.
 
-| 항목 | 값 |
-|---|---|
-| 복원된 충분 환경 | 37,273 |
-| Full Mixture 학습 데이터 | 32.0k records |
-| Terminal-Bench 2.0 | 41.6 → 52.8 |
-| Terminal-Bench 2.1 | 46.2 → 58.1 |
-| EvoCode-Bench v2 MT@4 / Case | 6.3 → 20.1 / 67.8 → 76.1 |
+![전체 구성](/images/2026-09-05-terminal-universe/fig-1-p2.png)
 
-## 문제 정의
+2. 복원된 환경에서는 세 축으로 태스크를 합성함. 인텐트 복구는 원래 태스크를 재구성해서 다시 풀어보는 것. 폭 축은 환경 간 의존 관계를 마이닝해서 복수 코드베이스에 걸친 쿼리를 만드는 것. 깊이 축은 사용자-에이전트 반복 세션으로 확장하는 것. 하나의 복원 환경에서 폭과 깊이를 뽑아내는 구조임.
 
-터미널 기반 코드 에이전트의 보급으로 트라젝토리는 대량 축적되어 있으나, 에이전트 후학습(post-training)이 요구하는 것은 재쿼리 가능하고 실행 피드백을 제공하는 환경입니다. 트라젝토리의 tool 실행 기록은 실행 환경의 구조와 내용을 노출하므로, <span style="background-color: #fff59d"><strong>트라젝토리로부터 환경을 재구성할 수 있다</strong></span>는 관찰이 출발점입니다.
+3. 결과. 32.0k 레코드로 Qwen3.5-27B를 SFT해서 Terminal-Bench 2.1을 46.2%에서 58.1%로 +11.9pt. Claude Code 스캐폴드에서도 58.2%(+10.4)로 게인이 유지됨. 동일 규모 비교에서 TerminalTraj-32B(28.5%), RST(49.4%), FACET(47.6%)를 상회함. 게인이 특정 하네스에 묶이지 않는다는 게 신뢰 포인트임.
 
-![](/images/2026-09-05-terminal-universe/fig-1-p2.png)
-*그림 1. Terminal-Universe 전체 구성. 트라젝토리와 환경을 같은 대상의 두 관점으로 보고, 단일 워크스페이스·여러 의존 워크스페이스·여러 사용자 라운드로 확장한다. 출처: arXiv 2609.04148 Figure 1.*
+![복원 풀의 다양성](/images/2026-09-05-terminal-universe/fig-5-p7.png)
 
-## 프레임워크: 2단계 재구성
+4. 어블레이션에서 제일 중요한 발견. 재구성한 환경을 다시 푸는 SFT가 원본 트라젝토리를 그대로 흉내 내는 SFT보다 52.1 대 36.7로 크게 앞섬. 원본 모방이 아니라 환경 재구성이 핵심 기여라는 뜻임. 이건 파인튜닝을 안 하더라도 적용되는 원칙임. 남의 좋은 실행 기록을 베끼는 것보다 그 상황을 재현해서 스스로 풀어보게 하는 편이 훨씬 큰 학습이 된다는 것.
 
-재구성은 2단계로 수행됩니다. 1단계 <span style="background-color: #fff59d"><strong>결정론적 재생(deterministic replay)</strong></span>은 트라젝토리에 기록된 파일 연산을 역순 재생하여 에이전트 수정 이전 상태의 파일을 복원합니다. 2단계 <span style="background-color: #fff59d"><strong>에이전트 완성(agentic completion)</strong></span>은 completion 에이전트가 누락된 파일과 의존성을 보충합니다.
+![재생 후 vs 완성 후 충분률](/images/2026-09-05-terminal-universe/table-2-p7.png)
 
-재생 직후 워크스페이스 충분률은 Terminal 40.2%, SWE 20.1%이며 <span style="background-color: #fff59d"><strong>완성 후 93.5%, 77.1%로 회복</strong></span>합니다.
+5. 예산 배분 결과도 실무적임. 환경 확장(53.2→56.0)이 쿼리 확장(53.8)이나 솔루션 확장(53.9)보다 효과적이었음. 같은 환경에서 질문을 늘리거나 답을 늘리는 것보다 새로운 실행 컨텍스트를 하나 더 복원하는 게 낫다는 것. 그리고 Cross-WS 혼합으로 티처 pass@1이 72.3%에서 49.2%로 하락하는데 성적은 56.4→58.4로 오름. 티처가 못 푸는 어려운 데이터가 오히려 가치 있다는 것.
 
-![](/images/2026-09-05-terminal-universe/table-2-p7.png)
-*표 2. 복원된 인텐트 기준 워크스페이스 충분률. 재생 후 vs 완성 후 비교. 출처: arXiv 2609.04148 Table 2.*
+6. 한계는 논문이 명시함. 표준 Ubuntu 24.04 컨테이너를 쓰므로 특수 시스템 의존성이 필요한 사례의 충실도가 제한되고, 도메인 분포는 수집 트라젝토리 커버리지에 종속되며, 태스크·솔루션·verifier를 단일 티처가 생성해서 티처 오류가 검증을 우회할 수 있음. 마지막이 구조적 약점인데 앞서 정리한 "판정자 오염" 계열 리스크와 같은 것임.
 
-![](/images/2026-09-05-terminal-universe/fig-2-p5.png)
-*그림 2. 프레임워크 상세. 재생과 완성, 4가지 재쿼리 변형 구조. 출처: arXiv 2609.04148 Figure 2.*
+7. 내 적용. 나는 에이전트 실행 로그를 분석 자료로만 쓰고 버리는 경우가 많았는데 이 논문 이후엔 로그를 환경 재구성 자원으로 보기로 함. 실패한 작업의 워크스페이스 상태를 되돌려서 같은 상황에서 다른 접근을 시도해보는 것. 그게 성공 사례를 하나 더 읽는 것보다 낫다는 게 이 논문의 숫자가 주는 교훈임.
 
-## 재쿼리 3축
-
-복원된 환경에서는 세 축으로 태스크를 합성합니다. Intent Recovery는 원 인텐트 태스크를 재구성·재해결합니다. <span style="background-color: #fff59d"><strong>Cross-WS(breadth)</strong></span>는 환경 간 방향성 의존 관계를 마이닝하여 복수 코드베이스에 걸친 쿼리를 합성합니다. <span style="background-color: #fff59d"><strong>Multi-Round(depth)</strong></span>는 사용자 에이전트를 통해 반복 요구사항 세션으로 확장합니다.
-
-## 주요 결과
-
-Terminus2-XML 스캐폴드 기준으로 Full Mixture 학습 결과는 Terminal-Bench 2.0 52.8%, 2.1 58.1%입니다. <span style="background-color: #fff59d"><strong>Claude Code 스캐폴드에서도 58.2%(+10.4)로 게인이 유지</strong></span>됩니다. 동일 규모 비교에서 유사 방법들을 상회합니다.
-
-| 모델 | Base | 데이터 | TB2.1 | MT@4 |
-|---|---|---|---|---|
-| Qwen3.5-27B (base) | – | – | 46.2 | 6.3 |
-| TerminalTraj-32B | Qwen2.5-Coder-32B | 50.7k | 28.5 | 0.0 |
-| RST-27B | Qwen3.5-27B | 37.5k | 49.4 | – |
-| FACET-Terminal-27B | Qwen3.5-27B | 1.2k | 47.6 | – |
-| Terminal-Universe-27B | Qwen3.5-27B | 32.0k | 58.1 | 20.1 |
-
-![](/images/2026-09-05-terminal-universe/fig-5-p7.png)
-*그림 5. 복원된 터미널 풀의 다양성. Python 84.7%가 주력이고 데이터 처리·DevOps·보안이 기술 도메인의 80% 이상. 출처: arXiv 2609.04148 Figure 5.*
-
-## 어블레이션
-
-- 재해결 vs 원본 SFT(35.8k 동일): <span style="background-color: #fff59d"><strong>52.1 vs 36.7</strong></span> (TB2.1, 두 스캐폴드 평균). 재구성한 환경을 다시 푸는 것이 원본 모방보다 우위입니다.
-- 완성 단계 제거: 52.9 → 48.7, 런 간 편차 ±1.4 → ±3.5.
-- Verifier 필터: Cross-WS에서 데이터 감소에도 <span style="background-color: #fff59d"><strong>53.2 → 55.4</strong></span>.
-- Cross-WS 혼합: 56.4 → 58.4. 티처 pass@1은 72.3% → 49.2%로 하락(난이도 상승).
-- Multi-Round: MT@4 18.4 → 21.0, Case 71.9 → 76.9. 라운드별 verifier 제거 시 MT@4 -2.2.
-- 예산 배분: <span style="background-color: #fff59d"><strong>환경 확장(53.2 → 56.0)이 쿼리 확장(53.8)·솔루션 확장(53.9)보다 효과적</strong></span>. 환경 하나가 곧 새 실행 컨텍스트입니다.
-- 도메인 이전: SWE 저장소 1,900개 중 1,464개 충분, 10.3k 학습으로 TB2.1 평균 47.0 → 50.0.
-
-![](/images/2026-09-05-terminal-universe/fig-3-p6.png)
-*그림 3. Multi-Round 세션의 통과/실패 패턴. 출처: arXiv 2609.04148 Figure 3.*
-
-## 한계 (논문 명시)
-
-- 모든 워크스페이스에 <span style="background-color: #fff59d"><strong>표준 Ubuntu 24.04 컨테이너를 사용</strong></span>하여 특수 시스템 의존성이 필요한 사례의 충실도가 제한됩니다.
-- 도메인·언어·툴체인 분포는 수집 트라젝토리 커버리지에 종속됩니다.
-- <span style="background-color: #fff59d"><strong>태스크·솔루션·verifier를 단일 티처가 생성</strong></span>하므로 티처 오류가 검증을 우회할 수 있습니다.
-
-## 더 실습해보고 싶은 분들께
-
-- 『[이게 되네? 오픈클로 미친 활용법 50제](https://product.kyobobook.co.kr/detail/S000219615902)』
-- 「[모두를 위한 루프 엔지니어링](https://aifrenz.liveklass.com/classes/309184)』
-
-## 자주 묻는 질문
-
-**Terminal-Universe의 핵심 기여는 무엇인가요?**
-기존 트라젝토리로부터 재생·완성을 통해 재사용 가능한 실행 환경을 복원하고, 그 환경에서 폭·깊이 축으로 태스크를 합성하는 프레임워크입니다.
-
-**재생만으로 환경 복원이 충분한가요?**
-불충분합니다. 재생 후 충분률은 Terminal 40.2%이며 완성 후 93.5%입니다.
-
-**학습 데이터 규모와 성능은 어느 정도인가요?**
-32.0k 레코드로 Qwen3.5-27B를 SFT하여 Terminal-Bench 2.1 58.1%, EvoCode-Bench v2 MT@4 20.1을 달성했습니다.
-
-**결과가 특정 스캐폴드에만 유효한가요?**
-Terminus2-XML과 Claude Code 모두에서 유사한 게인(+11.9 / +10.4)이 확인되었습니다.
-
-**원문은 어디서 확인할 수 있나요?**
-[arXiv:2609.04148](https://arxiv.org/abs/2609.04148)에서 확인할 수 있습니다. 기준일 2026-09-05.
+『[이게 되네? 오픈클로 미친 활용법 50제](https://product.kyobobook.co.kr/detail/S000219615902)』와 「[모두를 위한 루프 엔지니어링](https://aifrenz.liveklass.com/classes/309184)」 강의에서 실행 환경과 루프 설계를 다룸.

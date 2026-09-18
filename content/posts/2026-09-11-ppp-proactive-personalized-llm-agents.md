@@ -1,132 +1,30 @@
 ---
-title: "Training Proactive and Personalized LLM Agents 논문 정리 (arXiv 2511.02208, COLM 2026)"
+title: "에이전트는 질문을 안 함 — 생산성·주도성·개인화를 같이 학습시킨 PPP 결과"
 date: 2026-09-11
 tags:
   - ai-agent
   - reinforcement-learning
   - human-agent-interaction
 draft: false
-description: "COLM 2026 논문 Training Proactive and Personalized LLM Agents 정리. UserVille 환경과 PPP 다목적 강화학습 프레임워크의 구성, SWE-Bench/BrowseComp-Plus 실험 결과(평균 +16.72), 33인 실사용자 연구 결과를 수치 중심으로 요약합니다."
+description: "사용자 상호작용과 선호 준수를 보상에 넣은 다목적 RL 프레임워크 PPP. 36B 모델이 GPT-5 포함 baseline을 평균 +16.72점 앞섰고 33인 실사용자 연구에서도 만족도 대등, 선호 준수는 최고였다."
 ---
 
-## 핵심 요약
+기존 에이전트 RL이 태스크 완수만 최적화한다는 문제의식에서 출발한 논문이 나옴. 애매한 지시에서 질문하고 사용자 선호를 맞추는 능력을 학습시킨 결과가 좋아서 정리함. 원문은 [arXiv:2511.02208](https://arxiv.org/abs/2511.02208)(COLM 2026).
 
-- 논문: Training Proactive and Personalized LLM Agents (arXiv 2511.02208, COLM 2026, v2 기준일 2026-09-11)
-- 결론: <span style="background-color: #fff59d"><strong>사용자와의 상호작용·적응을 보상에 넣는 다목적 RL로, 36B 모델이 GPT-5 포함 baseline을 평균 +16.72점 앞선다</strong></span>
-- 제안: 사용자 시뮬레이션 환경 UserVille, 다목적 강화학습 프레임워크 PPP
-- 베이스 모델: Seed-OSS-36B-Instruct
-- 핵심 결과: <span style="background-color: #fff59d"><strong>SWE-Bench-Verified (Func-Loc), BrowseComp-Plus에서 평균 +16.72점 개선, GPT-5 포함 baseline 대비 전 차원 우위</strong></span>
+1. 문제 정의가 실무적임. 실제 사용자의 지시는 애매함. 논문 프롬프트 통계에서 SWE-Bench 원본 이슈는 평균 193.8 단어인데 vague 버전은 11.4단어, BrowseComp는 97.1→17.8단어임. 이렇게 짧아진 지시에서는 태스크 성능만 학습된 에이전트가 무너진다는 것. 그래서 생산성(Productivity), 주도성(Proactivity — 저비용 질문으로 세션을 끝내는 능력), 개인화(Personalization — 사용자 선호 준수) 세 차원을 같이 최적화함.
 
-| 항목 | 내용 |
-| --- | --- |
-| 환경 | UserVille (LLM 사용자 시뮬레이터 3단계 파이프라인) |
-| 최적화 목표 | Productivity, Proactivity, Personalization |
-| 훈련 | Verl, lr 1e-6, batch 64, group 8, 200 steps |
-| 평가 | SWE-Bench-Verified Func-Loc N=488, BrowseComp-Plus 450/100 분할 |
+2. UserVille 환경이 핵심 기여임. 정밀 프롬프트를 불완전한 버전으로 바꾸고, 선호 파라미터를 가진 LLM 사용자 시뮬레이터와 상호작용시키고, 주도성·개인화 피드백을 산출하는 3단계 파이프라인. 선호 20종 중 8종은 unseen으로 평가 전용이고, 6종은 규칙 기반 보상, 14종은 선호별 루브릭의 LLM judge로 평가함. 질문 비용을 저/중/고로 나눈 것도 현실적임.
 
-## 문제 정의
+3. 결과는 Seed-OSS-36B 기준 vague 프롬프트에서 F1 44.11→64.50. 그리고 20 선호 평균에서 PPP가 62.04로 GPT-5(40.40), 베이스 Seed-36B(45.32)를 크게 앞섬. 특히 Personalization에서 GPT-5가 12.96인데 PPP가 89.26. 프론티어 모델이 사용자 선호 준수에 사실상 실패하고 있다는 게 수치로 드러남.
 
-<span style="background-color: #fff59d"><strong>기존 에이전트 RL은 태스크 완수 중심이다</strong></span>. 논문은 세 가지 협업 차원을 정의한다.
+4. 질문 전략 학습 결과가 흥미로움. 질문 수가 0.5→1.2로 늘되 저비용 질문 중심이고 중비용은 증가 후 감소, 고비용은 미미함. 주도성 보상을 빼면 중·고비용 질문이 늘어남 — 보상 설계가 질문의 경제성을 통제한다는 것. 부록 실험에서 페널티+보너스 조합이 좋은 질문 비율을 51.39→92.72%로 올림.
 
-1. Productivity: 태스크 성능
-2. Proactivity: 상호작용 품질
-3. Personalization: 사용자 선호 준수
+5. 일반화와 트레이드오프도 정직함. unseen 선호 8종에서 일관 개선, SWE-Full로 전이 시 성공률 0.29→0.36. 대신 정밀 프롬프트에서는 0.558→0.530으로 소폭 감소 — 상호작용 훈련의 이득은 애매한 지시에 집중되고 정밀한 지시에선 미세 비용이 있다는 것.
 
-프롬프트 통계 (Appendix B):
+6. 실사용자 연구 33인 결과가 진짜 교훈임. 전체 만족도 PPP-36B 3.75, GPT-5 3.79로 대등. 근데 문제 해결률은 GPT-5가 85%로 PPP 71%보다 높음. 선호 준수 "Yes"는 PPP가 67.7%로 최고. 즉 만족도는 코딩 실력이 아니라 상호작용 기술이 좌우한다는 해석이 나옴. 실무 에이전트 설계에서 성능 지표만 보면 이걸 놓친다는 것.
 
-| 데이터셋 | vague 평균 단어 | 원본 평균 단어 |
-| --- | --- | --- |
-| SWE-Bench | 11.4 | 193.8 |
-| BrowseComp | 17.8 | 97.1 |
+7. 필자 적용 포인트. 블로그 자동화도 지시가 애매한 경계 케이스에서 서브에이전트가 질문 없이 추측해서 틀리는 실패가 있음. PPP의 관점을 빌리면 이렇게 됨 — 애매한 입력은 저비용 질문(한 줄 확인)으로 명확화하고, 사용자(메인 세션)의 상투적 선호는 명시적 규칙으로 굳혀서 준수율을 올리는 것. 질문에 비용 등급을 두고 저비용 질문을 유도하는 게 성능과 개인화를 동시에 지킨다는 게 이 논문의 검증된 전략임.
 
-## UserVille 구조
+8. 문제제기. 사용자 시뮬레이터가 GPT 계열이라 시뮬레이터 편향 가능성이 있고(강건성 테스트로 소폭 변동만 확인), 실사용자 연구가 33명·SWE 태스크로 한정됨. 그리고 개인화 보상 제거 시 JSON_Format 선호가 1.00→0.30으로 붕괴하는 걸 보면 개인화 성능이 보상 설계에 크게 의존함.
 
-세 단계로 구성된다.
-
-1. Prompt Vaguenization: 정밀 프롬프트를 불완전한 버전으로 변환
-2. Preference-Aware User Simulation: 선호 파라미터 기반 LLM 사용자 시뮬레이터
-3. User-Centric Evaluation: 주도성/개인화 피드백 산출
-
-사용자 선호 20종 중 8종은 unseen으로 평가 전용이다. <span style="background-color: #fff59d"><strong>6종(no_ask, answer_more, only_begin 등)은 규칙 기반 보상, 14종은 LLM-as-a-judge(선호별 루브릭)으로 평가한다</strong></span>.
-
-질문 비용 분류: 저비용/중비용/고비용. 주도성 점수는 세션 user effort가 저비용일 때 1.
-
-![Figure 1: 논문 개요](/images/2026-09-11-ppp-proactive-personalized-llm-agents/fig-1-p2.png)
-
-![Figure 2: UserVille 파이프라인](/images/2026-09-11-ppp-proactive-personalized-llm-agents/fig-2-p3.png)
-
-## PPP 프레임워크
-
-에이전트는 태스크 툴과 사용자 시뮬레이터 양쪽과 상호작용하며 복합 보상을 최대화한다. 보상 구성요소:
-
-| 보상 | 정의 |
-| --- | --- |
-| Productivity | SWE는 F1, 검색은 EM, 풀태스크는 유닛테스트 성공률 |
-| Proactivity | 세션 user effort가 low-effort면 1 |
-| Personalization | 질문 1개 이상 세션의 선호 준수율 평균 |
-
-구현 상세: 사용자 시뮬레이터 GPT-5-Nano, 최대 출력 32K(Func-Loc)/65K(Full)/41K(Deep-Research), SWE 스캐폴드 OpenHands 기반, 검색 툴 search/open_page, retriever Qwen3-Embed-8B.
-
-## 실험 결과
-
-RQ1 (상호작용 효과): vague 프롬프트에서 <span style="background-color: #fff59d"><strong>F1 44.11 → 64.50 (상호작용 + PPP 훈련)</strong></span>.
-
-![Figure 3: SWE-Bench Func-Loc F1](/images/2026-09-11-ppp-proactive-personalized-llm-agents/fig-3-p6.png)
-
-RQ2 (Table 1, vague 프롬프트 + 20 선호 평균):
-
-| 방법 | 평균 | Productivity | Proactivity | Personalization |
-| --- | --- | --- | --- | --- |
-| GPT-5 | 40.40 | 55.83 | 36.60 | 12.96 |
-| GPT-5-Mini | 35.82 | 35.00 | 15.90 | 24.82 |
-| GPT-5-Nano | 30.09 | 24.30 | 11.10 | 16.92 |
-| GPT-4.1 | 38.86 | 25.08 | 11.35 | 53.04 |
-| Seed-OSS-36B | 45.32 | 38.59 | 43.70 | 69.07 |
-| PPP | <span style="background-color: #fff59d"><strong>62.04</strong></span> | <span style="background-color: #fff59d"><strong>56.26</strong></span> | <span style="background-color: #fff59d"><strong>75.55</strong></span> | <span style="background-color: #fff59d"><strong>89.26</strong></span> |
-
-RQ3 (질문 전략 학습): <span style="background-color: #fff59d"><strong>질문 수 0.5 → 1.2. 저비용 질문 중심 증가, 중비용 질문은 증가 후 감소, 고비용 질문은 미미</strong></span>. 주도성 보상 제거 시 중·고비용 질문 증가.
-
-![Figure 7: 세션당 평균 상호작용](/images/2026-09-11-ppp-proactive-personalized-llm-agents/fig-7-p8.png)
-
-RQ4 (일반화): unseen 선호 8종에서 일관된 개선. 개인화 보상 제거 시 <span style="background-color: #fff59d"><strong>JSON_Format 선호 점수 1.00 → 0.30 붕괴</strong></span>. <span style="background-color: #fff59d"><strong>Func-Loc → SWE-Full 전이 시 성공률 0.29 → 약 0.36, 상호작용 0.10 → 1.8</strong></span>. <span style="background-color: #fff59d"><strong>정밀 프롬프트에서는 0.558 → 약 0.530으로 소폭 감소</strong></span> — 상호작용 훈련의 이득은 애매한 지시에서 집중되고 정밀한 지시에서는 미세 비용이 있다.
-
-시뮬레이터 강건성 (Table 3): GPT-5/GPT-5-Mini/GPT-4.1/GPT-4o 시뮬레이터로 평가해도 성능 변동 소폭.
-
-## 실사용자 연구 (Section 8)
-
-- 참가자: Prolific, 프로그래밍 경험자 33명, SWE-Bench Verified 첫 100 인스턴스
-- 비교: GPT-5, Seed-36B, PPP-36B 익명 배정
-- 결과: 전체 점수 <span style="background-color: #fff59d"><strong>PPP-36B 3.75, GPT-5 3.79, Seed-36B 3.45</strong></span>. 선호 준수 "Yes" <span style="background-color: #fff59d"><strong>PPP-36B 67.7%로 최고</strong></span>. 문제 해결률 PPP-36B 71.0%, Seed-36B 70.0%, GPT-5 85%. <span style="background-color: #fff59d"><strong>만족도는 코딩 실력이 아니라 상호작용 기술이 좌우한다</strong></span>는 해석이 가능하다.
-
-## 부록: 질문 설계 실험
-
-| 설정 | 질문 수 | 좋은 질문 수 | 비율 |
-| --- | --- | --- | --- |
-| 페널티/보너스 없음 | 4.65 | 2.39 | 51.39% |
-| 페널티 추가 | 0.806 | 0.722 | 89.57% |
-| 페널티 + 보너스 | 1.10 | 1.02 | <span style="background-color: #fff59d"><strong>92.72%</strong></span> |
-
-## 관련 URL
-
-- arXiv abstract: https://arxiv.org/abs/2511.02208
-- PDF: https://arxiv.org/pdf/2511.02208
-- HTML (v2): https://arxiv.org/html/2511.02208v2
-
-## 더 실습해보고 싶은 분들께
-
-- 『[이게 되네? 오픈클로 미친 활용법 50제](https://product.kyobobook.co.kr/detail/S000219615902)』
-- 「[모두를 위한 루프 엔지니어링](https://aifrenz.liveklass.com/classes/309184)」
-
-## 자주 묻는 질문
-
-### 세 가지 평가 지표는 무엇인가?
-
-Productivity(태스크 성공), Proactivity(저비용 질문 기반 세션 비율), Personalization(선호 준수율)이다.
-
-### 실사용자 연구 규모와 결과는?
-
-33명, PPP-36B 3.75점으로 GPT-5(3.79)와 대등, Seed-36B(3.45)보다 우수.
-
-### 프론티어 모델의 한계는?
-
-GPT-5의 Personalization 점수가 12.96으로 낮고, GPT-4.1(53.04)보다도 낮다.
+9. 남는 결론. 에이전트의 다음 경쟁축은 태스크 성능이 아니라 상호작용 품질임. 애매한 지시에서 저비용으로 물어보고 선호를 지키는 능력은 학습 가능하고, 그 학습이 만족도를 만든다는 게 이 논문의 실무적 메시지임.
