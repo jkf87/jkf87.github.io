@@ -5387,6 +5387,35 @@
         5,
         6
       ]
+    },
+    {
+      "date": "2026-09-18",
+      "slug": "2026-09-18-raft-stateful-rag-troubleshooting-agents",
+      "title": "고객지원 트러블슈팅 에이전트에 일반 RAG가 안 맞는 이유: Microsoft RAFT 논문 정리",
+      "source_url": "https://arxiv.org/abs/2609.20754",
+      "source_type": "arxiv",
+      "blog_url": "https://jkf87.github.io/posts/2026-09-18-raft-stateful-rag-troubleshooting-agents",
+      "tags": [
+        "RAG",
+        "agent",
+        "customer-support",
+        "retrieval",
+        "LLM",
+        "Microsoft",
+        "GraphRAG",
+        "benchmark",
+        "enterprise",
+        "tool-use"
+      ],
+      "voice": "conanssam-voice/kakao/plain",
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_winner": "a2-kakao-revised",
+      "voice_spyrl_score": 96.0,
+      "voice_spyrl_grade": "A",
+      "voice_spyrl_spy": "b-newsletter",
+      "voice_spyrl_spy_suspicion": 55.08,
+      "highlights": 10,
+      "published": "2026-09-18T16:20:00+09:00"
     }
   ]
 }
