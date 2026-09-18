@@ -10,6 +10,8 @@ description: "경험은 도움이 될 때가 있지만 자동 개선을 보장�
 
 1. 구성은 3단임. Self-Testing(relaxed 설정에서 여러 에피소드를 돌며 행동과 관찰을 모음), Self-Judging(각 transition에 스스로 점수를 매기고 판단), Self-Improvement(그 경험을 History ICL, Summary Memory, Parameter Training 중 하나로 반영하고 strict held-out 설정에서 재평가)임. 환경은 Chess, Minesweeper, Tetris, Snake, Plants-vs-Zombies, Trust Evolution 등 7개 텍스트 게임임.
 
+![](/images/2026-09-01-s3gym-self-testing-judging-improvement/gifs/chessboard-move.gif)
+
 2. 중요한 장치가 둘임. 탐색 seed와 평가 seed가 분리되고 평가 trajectory는 경험에 다시 들어가지 않음. 외운 행동이 아니라 경험에서 뽑은 규칙이나 정책이 옮겨가는지를 보는 것임. 내 자동화 평가에도 이 분리 원칙이 그대로 필요해서 바로 챙겼음.
 
 ![S3Gym 3단 구성](/images/2026-09-01-s3gym-self-testing-judging-improvement/fig-1-p3.png)
@@ -21,6 +23,8 @@ description: "경험은 도움이 될 때가 있지만 자동 개선을 보장�
 ![게임별 결과 비교](/images/2026-09-01-s3gym-self-testing-judging-improvement/fig-2-p7.png)
 
 5. 제일 중요한 발견은 자기판단과 개선의 단절임. 7개 모델·7개 게임, 98런, 116,117개 transition을 비교했을 때 판단 agreement와 다음 strict 점수 게인의 상관이 ρ=-0.010, calibration 오차 반대값과 게인의 상관도 ρ=-0.018로 거의 신호가 없었음. 좋은 행동을 알아보는 단계와 그 판단을 다음 정책으로 바꾸는 단계가 분리되어 있다는 뜻임.
+
+![](/images/2026-09-01-s3gym-self-testing-judging-improvement/gifs/nothing-to-see-here.gif)
 
 6. 판단 자체도 부분적임. Minesweeper, Nullify, PvZ, Snake, Tetris에서 event agreement가 0.82-0.881까지 나오지만 이건 zero-reward transition이 많은 영향도 있음. PvZ는 agreement가 높아도 NMAE가 0.882로 큼. 좋아 보이는 행동인지 정도는 알아도 가치 크기를 잘 맞춘다는 뜻은 아님.
 

@@ -11,6 +11,8 @@ LLM 에이전트에게 "이 순서대로 처리하라"고 자연어로 지시하
 
 1. 문제 정의. SOP, 결제 정책, 도구 사용 프로토콜 같은 자연어 지시를 프롬프트로 넣으면 모델이 절차 선택과 단계 실행 모두의 제어권을 쥐게 됨. 상호작용이 쌓일수록 필수 단계를 생략하고 지원 안 되는 분기를 탐. 논문은 이걸 둘로 나눔. 추적 위정합성(허용되지 않은 경로로 빠지는 것)과 실행 위정합성(올바른 경로상의 단계를 틀린 방식으로 수행하는 것)임.
 
+![](/images/covenant-workflow-alignment-llm-agents/gifs/struggling-with-instructions.gif)
+
 2. 기존 연구의 가정이 현실과 안 맞음. AgentLTL, FlowAgent 등은 워크플로우가 이미 정형·반정형 표현으로 작성돼 있다고 가장했는데 현실의 지시는 사람을 위해 쓰인 자유 형식 문서임. 이 격차가 출발점임.
 
 ![COVENANT 컴파일 구조](/images/covenant-workflow-alignment-llm-agents/fig-1-p2.png)
@@ -20,6 +22,8 @@ LLM 에이전트에게 "이 순서대로 처리하라"고 자연어로 지시하
 4. 1단계는 오프라인 컴파일임. Stage I에서 전통적 컴파일러 프론트엔드처럼 어휘 분석 → 파싱 → 구문 주도 구성의 3패스로 WAST(워크플로우 추상 구문 트리)를 만듦. 고정된 토큰 클래스 대신 레이아웃 규칙으로 문서를 분할하고 스키마 제약 LLM으로 각 청크의 절차적 역할을 라벨링함. Stage II에서 WAST를 제어 흐름 그래프(WCFG)로 저급화함. 액션은 블록 노드, 가드는 디시전 노드, 분기 후에는 머지 노드로 재결합됨. 결과는 그래프 구조의 "워크플로우 바이트코드"임.
 
 ![WAST→WCFG 컴파일](/images/covenant-workflow-alignment-llm-agents/fig-3-p4.png)
+
+![](/images/covenant-workflow-alignment-llm-agents/gifs/studying-instructions.gif)
 
 5. 컴파일의 핵심 성질은 경로 보존임. WCFG의 모든 엔트리-투-엑시트 경로가 WAST의 유효한 경로에 대응하고 역도 성립함. 컴파일 과정에서 새로운 잘못된 경로가 만들어지지 않는다는 보장임.
 

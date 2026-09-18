@@ -19,6 +19,8 @@ description: "짧은 프롬프트와 선호 이미지 2~5장, 사용자 프로�
 
 ![PIPBench 파이프라인](/images/2026-08-15-pipbench-personalized-image-generation/fig-1-pipeline.png)
 
+![](/images/2026-08-15-pipbench-personalized-image-generation/gifs/highly-selective-clueless.gif)
+
 2. 평가 설계가 균형 잡혀 있음. 프롬프트 충실도(CLIP 텍스트-이미지 유사도)와 취향 적합도(reference 이미지와의 지각·시맨틱 유사도)를 같이 보고, 여기에 전체 프로필을 조건으로 둘 중 어느 쪽이 취향에 맞는지 비교하는 persona-aware Elo를 얹음. 이 judge가 사람 주석과 약 91% 일치했다고 함. 규모 있는 취향 평가에는 자동 평가가 필수라는 판단임.
 
 3. 결과의 핵심은 이미지 모델을 파인튜닝하지 않아도 된다는 것임. 최강은 GPT-5 fusion — VLM이 짧은 프롬프트, reference 이미지, 프로필을 읽어 preference-aware 프롬프트로 재작성해 이미지 모델에 넘기는 방식. real-user Elo 1765로 no-preference 기준 1427, DreamBooth 1452를 크게 앞섬. 취향 해석 레이어로 VLM이 잘 작동한다는 결론임. 필자가 이미지 생성할 때 프롬프트 재작성 단계를 거치는 것과 같은 구조인데, 그 효과가 숫자로 확인된 셈임.
@@ -32,6 +34,8 @@ description: "짧은 프롬프트와 선호 이미지 2~5장, 사용자 프로�
 5. 좋은 방법의 특징도 명확함. reference를 복사하지 않고 프롬프트 내용은 유지하면서 색감·질감·분위기·구도 같은 취향 신호만 가져옴. 실패는 세 가지 패턴 — reference에 과적합, 프롬프트 충실도 상실, 취향 신호 미반영. 사용자가 좋아한 걸 따라가되 지금 요청을 버리면 안 된다는 균형임.
 
 6. 필자가 바로 적용할 것. 블로그 이미지용 taste card를 파일로 두는 것임. 선호(클린 다이어그램, 따뜻한 중립 배경, 2D 에디토리얼 일러스트), 기피(글로시 스톡사진, 보라-파랑 사이버펑크 그라디언트), 좋아한/버린 이미지 목록. 생성할 때마다 이 카드를 VLM 재작성 단계에 같이 넣으면 재시도 횟수가 줄 것임. 그리고 결과물만 저장하지 말고 선택 로그를 남기는 것 — "이 색감은 우리 채널에 맞다" 같은 메모가 쌓이면 preference 신호가 됨.
+
+![](/images/2026-08-15-pipbench-personalized-image-generation/gifs/flowchart-whiteboard-leslie.gif)
 
 7. 문제제기. 취향을 자동 평가한다는 것 자체가 불안정함. human study도 상위 4개 모델 100샘플 수준으로 제한적임. 그리고 프로필 기반 개인화는 민감함 — 인구통계·심리 정보를 이미지 생성에 쓰려면 동의, 삭제, 편향 문제가 따라옴. synthetic agent persona가 실제 인간의 모순적 취향을 얼마나 담는지도 별도 과제임.
 

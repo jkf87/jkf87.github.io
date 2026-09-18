@@ -14,11 +14,15 @@ description: 멀티에이전트 성능은 에이전트 수가 아니라 일을 �
 
 ![그래프 엔지니어링 3기둥](/images/2026-08-26-graph-engineering-system-intelligence/fig-1-p4.png)
 
+![](/images/2026-08-26-graph-engineering-system-intelligence/gifs/blueprint-cat-drafting.gif)
+
 3. 프레임은 세 기둥임. Task Organization은 무엇을 할지를 다룸. 전역 목표를 실행 단위로 쪼개고 의존성 그래프(DAG)로 순서·동시성·검증 제약을 표현함. 인용 사례 중 순차 계획을 병렬화 가능한 데이터플로우 그래프로 컴파일하는 접근이 대표적임.
 
 4. Agent Coordination은 누가 할지를 다룸. 이질적 에이전트에 태스크를 매핑하고 통신·위임·동기화와 결과 통합을 설계함. Runtime State Management는 어떻게 굴러갈지를 다룸. 진행 추적, 출처 보존, 고장 국소화, 부분 복구를 그래프 상태로 유지함. 공유 컨텍스트 하나에 모든 상태를 몰아넣는 방식과 정반대의 설계라서 실무자에게 제일 와닿는 부분임.
 
 ![태스크 조직화 사례](/images/2026-08-26-graph-engineering-system-intelligence/fig-2-p7.png)
+
+![](/images/2026-08-26-graph-engineering-system-intelligence/gifs/teamwork-high-five.gif)
 
 5. 70페이지 서베이라 다 읽기 부담스러운데 실무자가 챙길 건 두 가지임. 첫째, 벤치마크·오픈소스를 3계층(모델 인텔리전스, 개별 인텔리전스, 시스템 인텔리전스)으로 정리해둠. 지금 내 시스템이 어느 계층의 문제를 풀고 있는지 진단할 때 바로 쓸 수 있음. 나도 자동화가 안 될 때 "모델 문제인가, 하네스 문제인가, 조직 문제인가"를 먼저 분리하는데 그 습관의 이론적 뼈대가 여기 있음.
 

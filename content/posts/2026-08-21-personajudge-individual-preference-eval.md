@@ -15,6 +15,8 @@ LLM-as-Judge를 쓰면 평가 비용은 내려가지만 하나가 자주 빠짐.
 
 1. 배경. 기존 LLM-as-Judge는 여러 사람의 선호를 합쳐 consensus label을 만드는데 그 과정에서 평가자 사이의 차이는 평균 속으로 사라짐. 근데 disagreement가 항상 노이즈가 아님. 평가자가 서로 다른 기준을 적용했다면 그 차이 자체가 평가 대상임. 어떤 사람은 조심성을, 어떤 사람은 직접성을 높게 보고 어떤 사람은 둘 다 애매하면 Neutral을 자주 고름.
 
+![](/images/2026-08-21-personajudge-individual-preference-eval/gifs/judging-skeptical-man.gif)
+
 2. 설정. 특정 평가자 한 명이 새 pairwise task에서 Prefer A, Neutral, Prefer B 중 무엇을 고를지 맞추는 문제임. 데모에 세 가지 신호가 들어감. Judgment(과거에 고른 라벨), Interface Telemetry(클릭·dwell time·reveal 기록), Retrospective Reasoning(판단 뒤 남긴 사후 이유)임. 새 학습 모델이 아니라 evaluator-specific demonstration을 넣은 in-context learning 실험이라는 점이 실무적임.
 
 ![PersonaJudge 워크플로우](/images/2026-08-21-personajudge-individual-preference-eval/personajudge-figure-1-workflow.png)
@@ -38,3 +40,5 @@ LLM-as-Judge를 쓰면 평가 비용은 내려가지만 하나가 자주 빠짐.
 11. 문제제기. HH pairwise preference 한정이라 실제 에이전트 태스크(웹 탐색, 파일 수정, 장기 상태) 검증이 아니고 annotator 32명이라 일반 사용자 대표성이 약함. 사후 reasoning은 그럴듯한 이유 만들기일 수 있어서 "진짜 내면을 읽었다"로 받아들이면 안 되고, telemetry·reasoning 수집의 privacy 문제도 논문이 스스로 명시함.
 
 12. 결론. 좋은 Judge는 평균 인간을 흉내 내는 모델이 아니라 누구의 기준을 평가 기준으로 삼고 있는지 드러내는 시스템임. 에이전트를 실무에 붙이면 사용자는 결국 "정답은 맞는데 내 스타일은 아니야"라고 말함. 그 문장이 개인화 평가의 진짜 문제이고, 시작점은 라벨이 아니라 판단 사례와 이유를 같이 저장하는 것임.
+
+![](/images/2026-08-21-personajudge-individual-preference-eval/gifs/unimpressed-office-skeptic.gif)

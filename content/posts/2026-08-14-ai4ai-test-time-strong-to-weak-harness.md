@@ -21,9 +21,13 @@ description: 강한 모델이 과제 구조를 하네스로 컴파일해 약한 
 
 ![AI4AI 실험 설계](/images/2026-08-14-ai4ai-test-time-strong-to-weak-harness/fig-1-p4.png)
 
+![](/images/2026-08-14-ai4ai-test-time-strong-to-weak-harness/gifs/piggyback-ride.gif)
+
 2. 메인 결과. 총 72개 실행 전부 기본 성능을 넘었고 실패가 한 건도 없었음. GPT-5.4-mini 기본 0.488이 최고 실행(GPT-5.5/GPT Codex)에서 0.912로 오름(+0.423, 상대율 86.7%). GPT-5.4 정식 모델의 기본 점수(0.619)도 넘고 인간이 설계한 하네스 참고치(0.939)에 근접함.
 
 ![72개 실행 결과 분포](/images/2026-08-14-ai4ai-test-time-strong-to-weak-harness/fig-2-p5.png)
+
+![](/images/2026-08-14-ai4ai-test-time-strong-to-weak-harness/gifs/mind-blown-will-ferrell.gif)
 
 3. 변동의 주원인은 빌더 모델이었음. 같은 빌더 안에서 플랫폼 차이는 2차 효과에 그침. 빌더 간 격차가 플랫폼 간 격차보다 훨씬 큼. 그리고 빌더의 추론 노력을 low에서 extra-high로 올리면 결과가 단조 증가함(Spearman ρ=0.77). 풀링하면 0.711→0.793→0.807→0.856. 과잉 엔지니어링 징후는 없었음. 스캐폴드 코드도 510-650줄에서 1,000-1,300줄로 커지는데, 더 깊이 고민할수록 더 많은 과제 로직이 하네스로 컴파일된다는 뜻임.
 

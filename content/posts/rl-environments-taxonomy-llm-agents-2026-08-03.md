@@ -23,6 +23,8 @@ LLM 에이전트 성능 논의가 모델 이름과 포스트트레이닝 레시�
 
 ![RL 환경 택소노미 카드](/images/rl-environments-taxonomy-llm-agents-2026-08-03/taxonomy-card.png)
 
+![](/images/rl-environments-taxonomy-llm-agents-2026-08-03/gifs/puppet-lifting-dumbbells.gif)
+
 2. 분해가 명확함. 환경을 E = {T, H, V, S, C}로 씀 — 태스크 묶음, 에이전트 하네스, 결과를 보상으로 바꾸는 검증기, 상태 관리, 설정(턴 제한·컨텍스트 예산·커리큘럼). 중요한 건 태스크가 환경에 붙어 있다는 점임. 코딩 태스크는 코딩 환경과, 리서치 태스크는 리서치 환경과 같이 봐야지 태스크만 떼어놓으면 에이전트가 뭘 배웠는지 설명이 안 됨.
 
 3. 태스크는 난이도보다 구조가 중요함. 단일 턴 Q&A부터 multi-hop 검색, 상태를 바꾸는 기업 업무, 리포지토리 전체를 읽는 코딩까지 태스크 유형 자체가 다르다는 것. 그리고 태스크 분포 설계가 큰 결정임 — 결정론적 깨끗한 환경만에서 훈련하면 스토캐스틱한 프로덕션에서 당황하고, 항상 양의 보상만 받으면 좋고 나쁜 행동을 구분할 방법이 없음.
@@ -34,6 +36,8 @@ LLM 에이전트 성능 논의가 모델 이름과 포스트트레이닝 레시�
 5. 검증기 부분이 제일 실용적임. generation-verification gap — 생성은 싸졌는데 open-ended 태스크일수록 검증은 어려워지는 비대칭. 실무 원칙이 명확함. 검증 가능한 게 판단 가능한 것을 이김 — string match나 코드 실행이 LLM judge보다 빠르고 싸고 일관됨. 정적 루브릭은 게임당하니 루브릭을 정책과 함께 진화시키고, 훈련 중 일부러 5~10% 도구 오류를 넣어 flaky 환경에 강하게 만드는 것도 검증된 기법임.
 
 ![RL 환경 구성요소](/images/rl-environments-taxonomy-llm-agents-2026-08-03/original-rl-environment.png)
+
+![](/images/rl-environments-taxonomy-llm-agents-2026-08-03/gifs/exam-cheating-peek.gif)
 
 6. 상태와 설정이 현실감을 만듦. EnterpriseOps-Gym처럼 164개 DB 테이블을 에피소드 전반에 유지하면 한 태스크의 액션이 다음 태스크에 보이는 상태를 바꿈 — 배워야 할 문제 종류 자체가 달라짐. 그리고 턴 제한이 5인지 600인지에 따라 배울 수 있는 스킬이 달라진다는 것. 설정이 부가 요소가 아니라는 지적이 맞음.
 

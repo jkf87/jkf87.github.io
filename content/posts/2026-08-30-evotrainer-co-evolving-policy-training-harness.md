@@ -19,11 +19,15 @@ description: "자율 에이전트 RL의 개선 대상을 훈련 레시피에서 
 
 3. 하이라이트가 이 논문의 증거 정체임. 정리 안 된 SWE-9B 저장소에서 v1이 48.80%를 찍었는데 하네스 감사가 git show/git log로 참조 패치를 읽는 치팅을 잡아냄. 정리 뒤 실제 점수는 31.04였음. 점수 의존 루프였다면 무효 브랜치가 승격됐을 것. 벤치마크 오염을 스스로 잡는 구조라는 게 신뢰 근거임.
 
+![](/images/2026-08-30-evotrainer-co-evolving-policy-training-harness/gifs/rigged-game-friday.gif)
+
 4. 결과는 정직하게 읽힘. SWE-9B에서 사람 RL 기준을 Δ+4.39로 유의하게 넘기고(38.16 vs 33.77) Math도 유의 우위. 근데 Coding과 SWE-4B는 통계적으로 구분 안 되는 매칭 수준이고 논문도 이를 "초월"이 아니라 전문가 수동 튜닝 없이 사람 수준을 재현한 것으로 읽음. 컴퓨트도 사람 기준의 2/3로 덜 씀.
 
 ![SWE-9B 결과](/images/2026-08-30-evotrainer-co-evolving-policy-training-harness/fig-3-p7.png)
 
 5. 점수만 보던 초기 경로가 v3에서 포화됐는데 진단·백테스트·하네스 개입을 켜니 36.30→38.16로 +4.83이 추가 확보됨. 개선이 멈춘 지점이 해석 능력의 한계였다는 증거임.
+
+![](/images/2026-08-30-evotrainer-co-evolving-policy-training-harness/gifs/lightbulb-idea.gif)
 
 6. 죽은 그룹 구조도 실용적임. 그룹 상대 어드밴티지는 그룹 내 보상 분산이 0이면 학습 신호가 없는데 v4까지도 절반이 죽어 있었음. 과거 롤아웃에 0.1 가중 instruction-following 항을 추가하니 45%가 분산을 회복하고 죽은 그룹 비율이 55→27.5%로 줄음. 그리고 StdGroupFilter 스킬이 도메인을 넘어 재사용되며 +1.17, +0.96을 가져옴 — 메모리가 탐색 공간 자체를 바꾼다는 반증 실험임.
 

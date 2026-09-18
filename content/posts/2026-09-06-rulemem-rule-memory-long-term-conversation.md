@@ -18,9 +18,13 @@ description: "대화 이력에서 자연어 Horn 절 규칙을 유도해 검색 
 
 2. 예시가 직관적임. "왜 Alice가 회의에 안 왔지?"라는 질문엔 "absent"라는 단어가 없음. "Alice가 휴가를 예약했다"는 기록에서 "여행 계획이 있으면 약속된 일정에 참석 못할 수 있다"는 규칙을 유도해야 답이 나옴. 사실 메모리로는 이 질문에 도달할 수 없다는 것.
 
+![](/images/2026-09-06-rulemem-rule-memory-long-term-conversation/gifs/sherlock-deduction.gif)
+
 3. RuleMem은 3단계로 돌아감. 첫째, 대화에서 (주체, 관계, 객체, 시각) 4원조 사실을 뽑고 그래프에서 경로를 샘플링해 같은 관계 패턴을 공통 규칙으로 유도함. 이때 고유명사를 [Person] 같은 타입 placeholder로 치환해 일반화함. 규칙은 자연어 Horn 절 — 전제들의 conjunct이 결론 하나로 가는 형식인데 형식 논리의 엄격함과 자연어의 유연함을 같이 씀.
 
 ![RuleMem 프레임워크](/images/2026-09-06-rulemem-rule-memory-long-term-conversation/figure2-framework.png)
+
+![](/images/2026-09-06-rulemem-rule-memory-long-term-conversation/gifs/those-are-the-rules.gif)
 
 4. 둘째가 검증임. LLM에 규칙을 뽑게 하면 과잉 일반화와 환각 규칙이 기본으로 나옴. 그래서 규칙 몸통을 조건으로 줬을 때 결론의 perplexity가 얼마나 감소하는지(내부 일관성)와 실제 사실 증거가 결론을 지지하는지(외부 일관성)를 결합해 RPC 점수로 필터링함. 규칙 생성 후 검증 게이트를 다는 구조는 앞서 정리한 Recuris·PoisonedEvolution과 같은 원칙임.
 

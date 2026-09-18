@@ -20,6 +20,8 @@ LLM이 근거 없는 질문에 억지로 답하는 대신 스스로 판단해 �
 
 ![CoSQ 3단 파이프라인](/images/2026-09-17-llm-abstention-cosq-selective-risk/fig-1-p4.png)
 
+![](/images/2026-09-17-llm-abstention-cosq-selective-risk/gifs/red-light-stop.gif)
+
 3. 변형이 세 개임. Grounded-CoSQ는 전체 정보 단위 평균 점수가 임계값 이상이면 커밋하는데, 통과한 단위만 답 생성에 넘기므로 기각된 전제로 답을 만들 확률이 줄어듦. Critical-CoSQ는 정보 단위를 critical/supporting으로 분류해서 critical만 게이트에 씀. Adaptive-CoSQ는 전체 평균, critical 평균, critical 최솟값의 3중 검사에 커밋 후 모순 검출 시 기권까지 붙임. 임계값은 보정 확률이 아니라 리스크-커버리지 프론티어 상의 운영 파라미터임.
 
 4. 실험 설계가 꼼꼼함. TruthfulQA-MC 검증 분할 817문항에서 선지 위치를 결정론적 균형화해서 고정 위치 단축키(라벨 편향)를 제거했고, 모델 패널 11종(Llama 3/4, Gemma 3/4, Mistral, GPT-OSS, GPT-5.5, Claude 5 Sonnet, DeepSeek Flash)로 돌림. 부차 평가로 NQ-Short 300문항도 돌림.
@@ -37,3 +39,5 @@ LLM이 근거 없는 질문에 억지로 답하는 대신 스스로 판단해 �
 9. 문제제기. TruthfulQA가 MC 형식이라 개방형 생성에서의 재현이 NQ-Short 300문항에 의존적임. 'self-questioning'은 프롬프트 수준 절차이지 내성 접근이 아니라고 논문 스스로 못박고, 호스팅 엔드포인트의 가중치 개정 비고정 한계도 스스로 보고함. 그리고 기권의 68.7%가 자동화 범위 축소라는 점은 도입 전에 자기 도메인의 오답 비용을 먼저 계산해야 한다는 조건임.
 
 10. 결론. 기권은 실패가 아니라 설계 가능한 출력 클래스임. 답 생성 전에 정보 단위 분해와 근거 게이트를 넣는 것만으로 파인튜닝 없이 오답 커밋을 3분의 1로 줄일 수 있고, 그 대가는 커버리지와 추론 비용임. 이 거래를 명시적으로 선택하는 게 신뢰성 설계의 시작임.
+
+![](/images/2026-09-17-llm-abstention-cosq-selective-risk/gifs/no-comment-press.gif)

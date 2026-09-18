@@ -12,7 +12,11 @@ description: "JIT-Agent는 하네스를 메모리·계획·액션·도구 4모�
 
 ![JIT-Agent 방법 개요](/images/2026-08-28-jit-agent-just-in-time-harness/jit_method_overview_final.png)
 
+![](/images/2026-08-28-jit-agent-just-in-time-harness/gifs/3d-printing-on-demand.gif)
+
 2. 훈련이 세 단계로 쌓임. Stage I 생성. 교사 모델이 ReAct, Plan-and-Execute 같은 시드 뱅크를 보고 태스크에 맞게 하네스를 다시 짜고 그 데이터로 SFT와 선호 학습을 돌림. 성능이 오르면서 비용을 희생하지 않는 하네스를 선호하도록 가중치를 줌. Stage II 수리. 생성한 코드는 인터페이스 불일치와 런타임 예외로 깨짐. 컴파일 에러와 스택 트레이스 같은 진단 리포트를 입력으로 넣고 로컬 패치를 생성하도록 훈련함. 개발자가 디버깅하듯 실행 가능해질 때까지 고치는 것. Stage III 진화. Evo-GDPO로 후보 하네스 그룹을 병렬 실행하고 성과·지연·비용 보상으로 하네스 뱅크를 갱신함. 테스트 타임에도 생성 전략이 계속 좋아지는 구조임.
+
+![](/images/2026-08-28-jit-agent-just-in-time-harness/gifs/repair-technicians.gif)
 
 3. 숫자. DeepSearchQA에서 DeepSeek-V4-Flash + JIT-Agent가 GPT-5.6 대비 +9.1. OdysseyBench +4.3. 태스크당 API 비용 평균 36% 감소. xBench-DS에서는 표준 ReAct 대비 토큰 절반 이하로 더 높은 정확도. 저비용·고성능 파레토 프론티어에 위치한다는 게 논문의 프레임임. 작은 모델이 하네스로 큰 모델을 넘는다는 결과는 하네스 인텔리전스가 스케일링과 직교한다는 주장의 근거가 됨.
 

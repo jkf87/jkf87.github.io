@@ -19,6 +19,8 @@ tags:
 
 ![오류 폭발 직관](/images/2026-09-16-agent-error-avalanche-world-model-soc/fig1-soc-intuition.png)
 
+![](/images/2026-09-16-agent-error-avalanche-world-model-soc/gifs/avalanche-snow-cascade.gif)
+
 2. 방법이 특이함. 은닉 활성값이 아니라 로그에서 상태 벡터(진행도, 믿음, 제약, 불확실성, 위험, 메모리, 계획)를 뽑아 정답 상태와 정렬해서 "에이전트가 믿는 세계"와 "실제 세계"의 간극을 재는 것. 22개 실험에 StatefulPuzzle, τ-bench, GAIA, ALFWorld 등 8개 환경을 씀.
 
 3. 첫 번째 결과는 스트레스 주입 실험임. 외부에서 스트레스를 주입하면 붕괴 예측 AUROC가 0.979로 거의 확정적 붕괴로 넘어감. 근데 정직한 건 자연 로그에서 관찰된 스트레스의 예측력은 미미했다는 점 — 인과는 통제 실험에서만 성립하고 실제 트레이스에선 난이도 프록시보다 못했다는 것.
@@ -26,6 +28,8 @@ tags:
 ![분석 파이프라인](/images/2026-09-16-agent-error-avalanche-world-model-soc/fig2-pipeline.png)
 
 4. 두 번째 결과가 실무적으로 제일 아픔. 국소-전역 격차. GAIA Level-1에서 증거 상태가 이미 붕괴한 뒤에도 중간 결론 스텝이 국소적으로 유효하게 유지되는 격차가 0.857. 툴콜이 실행 가능한지, 문법이 맞는지, 최종 답이 통과하는지 같은 검사만으론 무너진 세계 모델을 못 잡는다는 것. 앞서 정리한 LHTB의 조기 종료·약한 자기 검증 분석과 정확히 같은 실패의 다른 측정임.
+
+![](/images/2026-09-16-agent-error-avalanche-world-model-soc/gifs/iceberg-hidden-depth.gif)
 
 5. 세 번째는 오류가 기억을 가진다는 것. 오류 스트림이 백색잡음과 호환되는지 검정했더니 모든 호라이즌에서 장기 기억 영역. 그리고 HotpotQA로 검색 폭을 바꾸니 전체 컨텍스트를 주면 오류가 거의 상관없어지고 top-2 좁은 검색만 주면 지속성이 생김. 검색 폭이 오류의 시간 구조 자체를 바꾼다는 것.
 

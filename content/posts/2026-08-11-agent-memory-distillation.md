@@ -17,7 +17,11 @@ cover: /images/2026-08-11-agent-memory-distillation/fig-1-p1.png
 
 ![메모리 계층 상세](/images/2026-08-11-agent-memory-distillation/fig-2-p4.png)
 
+![](/images/2026-08-11-agent-memory-distillation/gifs/dog-teacher-chalkboard.gif)
+
 3. 결과. 파인튜닝 없이 메모리 주입만으로 Qwen3-4B가 AppWorld 14.88%에서 49.40%로 오름(+34.5%p), BFCL V3도 29.13%에서 40.38%로 오름. Gemma4-E4B와 Qwen3-8B는 AppWorld에서 선생(50.00%)을 넘김. 작은 모델에 맞게 정제된 메모리가 원본 선생 능력보다 효율적일 수 있다는 뜻임.
+
+![](/images/2026-08-11-agent-memory-distillation/gifs/leveling-up.gif)
 
 4. 어블레이션의 교훈이 제일 값짐. Subtask 메모리 추가가 AppWorld에서 +25.0%p로 가장 큰 기여를 함. 구체적인 코드 예시가 있어야 4B가 실제로 행동을 바꿈. 자연어 설명만으론 부족함. 내가 소형 모델 에이전트에 가이드를 줄 때 추상 원칙을 늘어놓는 습관을 고쳐야겠다는 대목임.
 

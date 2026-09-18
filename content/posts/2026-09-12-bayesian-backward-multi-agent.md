@@ -15,9 +15,13 @@ description: "명시적 우도 기반 베이즈 역방향 추론으로 역방향
 
 1. 문제 진단. 기존 집계는 투표 기반(Plurality, Range, Borda 등)과 독재 기반(LLM-as-a-judge)으로 나뉘는데, 저자는 집계 실패의 근본 원인이 알고리즘보다 방향적이라고 봄. 순방향 풀 내부 오류는 공선형이라 다수가 환각하면 투표와 판정 모두 동일 오류를 반복함. LLM 판정관도 평가 대상과 동일한 순방향 트레이스에서 판단해서 상관 오류를 상속하고 위치 편향·자기강화 편향도 보고됨.
 
+![](/images/2026-09-12-bayesian-backward-multi-agent/gifs/bandwagon-fans-everywhere.gif)
+
 2. 제안. 베이즈 정리는 동일 사후확률에 대해 두 인수분해를 제공함. 순방향이 evidence→label 판별 매핑이라면 이 논문은 명시적 우도 P(e|d)와 맥락 사전확률 P(d|a)를 정의해 인스턴스당 1회 역방향 반전을 수행하고 공유 역방향 사후분포 R을 구성함. 순방향 사후분포와 R 사이의 Jensen-Shannon divergence로 에이전트별 교차 경로 일관성을 측정해서 하드 선택, 재가중치, 로그선형 융합의 앵커로 씀.
 
 ![베이즈 역방향 추린 구조](/images/2026-09-12-bayesian-backward-multi-agent/fig-1-p4.png)
+
+![](/images/2026-09-12-bayesian-backward-multi-agent/gifs/midair-backflip.gif)
 
 3. 비용이 실무적으로 매력적임. 역방향 반전은 LLM 호출 2회로 구성되고 동일 R을 전 집계 연산자가 재사용함. 테스트 시점 파라미터 갱신 없음. 라벨이 있으면 2단계 캘리브레이션을 적용할 수 있는 정도임.
 
