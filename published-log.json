@@ -5370,8 +5370,23 @@
       "voice_spyrl_final_score": 87.0,
       "highlights": 15,
       "published": "2026-09-18T13:05:54+09:00",
-      "note": "13:00 KST run; harness design ablation(arXiv:2609.20804) 176 settings; A won r1 85.0, headings revised via spyTags to 87.0",
-      "commit": "d30bb5eb"
+      "note": "13:00 KST run; harness design ablation(arXiv:2609.20804) 176 settings; A won r1 85.0, headings revised via spyTags to 87.0; GitHub Pages 404 ~4min then 200; threads media container 400 twice (image fetch race), fixed via --rehost-image catbox + resume from state file",
+      "commit": "d30bb5eb",
+      "threads_root_id": "17980621817902607",
+      "threads_reply_ids": [
+        "18472840018114865",
+        "18070623158737350",
+        "18632540353042125",
+        "17881111245523011",
+        "18107360702617300"
+      ],
+      "threads_image_posts": [
+        1,
+        2,
+        4,
+        5,
+        6
+      ]
     }
   ]
 }
