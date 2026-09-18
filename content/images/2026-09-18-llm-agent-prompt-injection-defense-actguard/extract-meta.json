@@ -1,0 +1,53 @@
+[
+  {
+    "page": 3,
+    "file": "fig-1-p3.png",
+    "method": "caption_crop (1584x707)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 231,
+    "width": 1584,
+    "height": 707,
+    "caption": "Figure 1: Overview of ActGuard. A step-wise tool prior provides a local reference for auditing each candidate action, while",
+    "crop": [
+      42.0,
+      42.0,
+      570.0,
+      277.45
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-3-p5.png",
+    "method": "caption_crop (1584x651)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 76,
+    "width": 1584,
+    "height": 651,
+    "caption": "Figure 3: Defense performance on AgentDojo in terms of attack-free utility, under-attack utility, and attack success rate.",
+    "crop": [
+      42.0,
+      42.0,
+      570.0,
+      258.52
+    ]
+  },
+  {
+    "page": 5,
+    "file": "table-1-p5.png",
+    "method": "caption_crop (1584x941)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 166,
+    "width": 1584,
+    "height": 941,
+    "caption": "Table 1: Planning effectiveness at different horizons under",
+    "crop": [
+      42.0,
+      42.0,
+      570.0,
+      355.12
+    ]
+  }
+]
