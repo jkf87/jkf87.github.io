@@ -5543,9 +5543,25 @@
       "voice_spyrl_final_score": 80.5,
       "highlights": 16,
       "published": "2026-09-19T07:00:00+09:00",
-      "note": "07:00 KST run; BLINDSPOT (IBM Research/RPI) trajectory-level safety calibration; live URL uses no-trailing-slash form (slash variant served 404 by CDN during propagation)",
+      "note": "07:00 KST run; BLINDSPOT (IBM Research/RPI) trajectory-level safety calibration; live URL uses no-trailing-slash form (slash variant served 404 by CDN during propagation); threads: first attempt hit media-container 400 (OG image), resumed with --rehost-image (catbox), 7/7 published",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-19-llm-agent-safety-refusal-calibration-blindspot.md",
-      "commit": "381b42b0"
+      "commit": "381b42b0",
+      "threads_root_id": "18149196808535266",
+      "threads_reply_ids": [
+        "18078378947371456",
+        "18076457606399786",
+        "17899796310377506",
+        "18100814321130297",
+        "17944839039071670",
+        "18068832665754302"
+      ],
+      "threads_image_posts": [
+        1,
+        2,
+        5,
+        6,
+        7
+      ]
     }
   ]
 }
