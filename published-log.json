@@ -5499,8 +5499,25 @@
       "voice_spyrl_final_score": 94.5,
       "highlights": 10,
       "published": "2026-09-18T22:20:00+09:00",
-      "note": "22:00 KST run; RSIAgent(arXiv:2609.15364) training-free recursive self-improvement; first candidate Gavel(arXiv:2609.15982) aborted as duplicate of 2026-09-15 post, no build/commit of the duplicate",
-      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-18-llm-agent-new-environment-self-improvement-rsiagent.md"
+      "note": "22:00 KST run; RSIAgent(arXiv:2609.15364) training-free recursive self-improvement; first candidate Gavel(arXiv:2609.15982) aborted as duplicate of 2026-09-15 post, no build/commit of the duplicate; threads uploader needed 3 resumes (state file); one stray duplicate of post3 (id 17963437419192203, reply to post2) was published during a concurrent resume and remains in the thread as an extra reply",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-18-llm-agent-new-environment-self-improvement-rsiagent.md",
+      "threads_root_id": "17935644933124893",
+      "threads_reply_ids": [
+        "18014341883959776",
+        "18130386754676208",
+        "18344602771251609",
+        "18093011228441470",
+        "18122427550918070",
+        "17907411675519244"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        4,
+        5,
+        7
+      ],
+      "commit": "5166a7c3"
     }
   ]
 }
