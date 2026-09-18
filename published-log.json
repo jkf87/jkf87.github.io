@@ -5329,7 +5329,22 @@
       "voice_spyrl_final_score": 91.0,
       "highlights": 16,
       "published": "2026-09-18T10:09:19+09:00",
-      "note": "10:00 KST run; ERPBench(arXiv:2609.17885); first round all D-grade, revised A via spyTags then passed"
+      "note": "10:00 KST run; ERPBench(arXiv:2609.17885); first SpyRL round all D-grade, revised A via spyTags then passed; threads uploader hit 'media not found' 400 on first attempt (container unpublished, expires), retry published fresh chain; resumed from state file across two windows",
+      "threads_root_id": "18118330351972469",
+      "threads_reply_ids": [
+        "18097066061244607",
+        "18093867899124535",
+        "18096193334426590",
+        "18426841792147145",
+        "17920598874219826",
+        "18248576545313895"
+      ],
+      "threads_image_posts": [
+        1,
+        4,
+        7
+      ],
+      "commit": "99c517f7"
     }
   ]
 }
