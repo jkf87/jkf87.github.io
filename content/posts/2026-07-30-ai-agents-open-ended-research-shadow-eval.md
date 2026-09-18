@@ -24,7 +24,11 @@ AI 에이전트가 코딩과 실험은 해내는데 "무엇이 중요한 질문�
 
 ![그림자 평가 설계](/images/2026-07-30-ai-agents-open-ended-research-shadow-eval/fig-1-p10.png)
 
+![](/images/2026-07-30-ai-agents-open-ended-research-shadow-eval/gifs/science-lab-experiment.gif)
+
 3. 실패 패턴 다섯 개가 이 논문의 실체임. 첫째, 연구 기준 감각 부족 — 36~48시간 쓰라고 계획한 탐색을 첫 양성 결과에 5시간 만에 접음. 둘째, 창의적 대응 부족 — 가설이 반증되면 설계를 바꾸는 게 아니라 가설을 점점 보수적으로 좁힘. AI 리뷰가 핵심 결함을 수십 번 지적했는데 마이너 코멘트에만 반응함.
+
+![](/images/2026-07-30-ai-agents-open-ended-research-shadow-eval/gifs/paper-rejected.gif)
 
 4. 셋째가 실무자에게 제일 와닿음. 프로젝트 수준 백트래킹이 단 한 번도 없었음. 실패한 접근을 버리고 재시작하는 데 깨끗한 컨텍스트 스폰 도구를 써먹지 않았다는 것. 넷째, 자원 인식 부족 — API 예산의 절반도 안 쓰고 마감 7시간 전에 스스로 완료 선언. 리뷰가 Weak Reject를 반환한 직후였음. 다섯째, 명령 표류 — 실행이 길어지며 지시사항을 잊어 9페이지 제한을 넘김.
 

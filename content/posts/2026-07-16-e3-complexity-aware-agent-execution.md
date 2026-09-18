@@ -10,6 +10,8 @@ tags: ["LLM", "agent", "efficiency", "task-complexity", "adaptive-execution"]
 
 1. 논문의 진단은 이거임. 에이전트는 불확실하면 "가능한 모든 컨텍스트를 모아 모든 위험을 제거"하는 최대 컨텍스트 우선 전략을 기본으로 씀. 복잡한 작업엔 맞는데 단순한 작업엔 순수 낭비임. 두 아이콘 마크업 통일 같은 찾아바꾸기 수준 작업에 몇 분을 씀.
 
+![과잉 수행의 풍경](/images/2026-07-16-e3-complexity-aware-agent-execution/gifs/overthinking.gif)
+
 2. 이 낭비를 처음으로 숫자로 잡은 게 ACRR(인지 중복 비율)임. 실제 소비 비용에서 오라클이 정의한 최소 충분 비용을 빼고 나눈 지표인데, 쉬운 작업일수록 이 값이 극단적으로 커짐. "성공은 같은데 비용이 다르다"를 비교할 언어가 생긴 셈임.
 
 3. 해법 E3는 3단계임. Estimate에서 작업 난이도와 필요 파일·도구 집합을 구조화된 예측으로 뽑고, Execute에서 예측된 범위만 실행하고, 검증이 실패하면 Expand로 필요한 만큼만 점진 확장함. 전력 계산의 flat start에서 시작해 반복으로 수렴시키는 구조를 그대로 가져온 것임.
@@ -23,6 +25,8 @@ tags: ["LLM", "agent", "efficiency", "task-complexity", "adaptive-execution"]
 ![MSE-Bench 결과 비교(논문 Figure 2)](/images/2026-07-16-e3-complexity-aware-agent-execution/fig-2-p13.png)
 
 ![Gmail 아이콘 작업 비용 분석(논문 Table 4)](/images/2026-07-16-e3-complexity-aware-agent-execution/table-4-p14.png)
+
+![일은 똑똑하게](/images/2026-07-16-e3-complexity-aware-agent-execution/gifs/work-smarter.gif)
 
 6. 내 자동화 파이프라인에 바로 적용할 것. 블로그 마이그레이션 작업도 사실 다 편집 작업임. 슬라이스 목록을 보고 파일당 난이도를 먼저 추정하게 한 다음, 재작성 글은 전체 읽기, noindex 후보는 frontmatter만 만지게 차등을 두는 식임. 프롬프트에 "필요한 만큼만 읽어라"라고 쓰는 것보다 실행 범위를 시스템 차원에서 묶는 게 이긴다는 게 이 논문의 주장이고, 숫자가 그걸 뒷받침함.
 

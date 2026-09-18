@@ -13,11 +13,15 @@ description: "NVIDIA Nemotron-3-Ultra-CC가 IOI 2026에서 인간 참가자와 �
 
 IOI 2026에서 AI 시스템이 처음으로 인간 최고 득점자를 넘겼다는 논문이 나옴. 인간 참가자와 동일한 시간·인터넷 차단·제출 제한 조건이었다는 게 의미가 커서 정리함. 원문은 [arXiv:2609.02849](https://arxiv.org/abs/2609.02849).
 
-1. 결과부터. NVIDIA의 Nemotron-3-Ultra-CC가 535.4/600점으로 인간 최고 득점자 498.27점을 넘김. 다만 비공식·무감독 평가라 순위엔 포함 안 됨. 파이프라인은 데이터 큐레이션 → SFT → RL(Nano만) → GenCorrect 테스트타임 루프 4단계임.
+1. 결과부터. NVIDIA의 Nemotron-3-Ultra-CC가 535.4/600점으로 인간 최고 득점자 498.27점을 넘김.
+
+![](/images/2026-09-04-nemotron-ioi-gold-posttraining-rl/gifs/gold-medal-first-place.gif) 다만 비공식·무감독 평가라 순위엔 포함 안 됨. 파이프라인은 데이터 큐레이션 → SFT → RL(Nano만) → GenCorrect 테스트타임 루프 4단계임.
 
 2. 큐레이션 단계가 기초임. 20년치 대회에서 22,000문제를 모으고 각 문제를 문제 설명·제약·테스트케이스·레퍼런스 정답을 갖춘 실행형 평가 환경으로 패키징함. 레퍼런스 정답과 생성 정답의 판정이 일관할 때만 남기고 평가 문제는 전부 제외·중복 제거함. 검증 통과 환경만 쓴다는 원칙이 뒷단계 신뢰성의 기반임.
 
 ![포스트트레이닝 RL 파이프라인](/images/2026-09-04-nemotron-ioi-gold-posttraining-rl/fig-1-p2.png)
+
+![](/images/2026-09-04-nemotron-ioi-gold-posttraining-rl/gifs/excited-typing.gif)
 
 3. SFT가 게인의 대부분을 만듦. DeepSeek-V4-Flash로 Nano용 120만 트레이스, Ultra용 47만 트레이스를 생성해서 어려운 문제에 배분을 늘리고 "이전 풀이를 고치는" 자기개선 트레이스도 포함함. Nano 기준 IOI 2025 Score@1이 21.7→47.3%. 게인 대부분이 첫 에폭에서 나옴.
 

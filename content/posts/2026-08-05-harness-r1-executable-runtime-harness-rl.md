@@ -23,6 +23,8 @@ description: "에이전트 하네스 코드를 고치는 전용 모델을 RL로 
 
 ![Harness-R1 구조: target/engineer 분리](/images/2026-08-05-harness-r1-executable-runtime-harness-rl/fig-1-p2.png)
 
+![](/images/2026-08-05-harness-r1-executable-runtime-harness-rl/gifs/mechanic-fixing-harness.gif)
+
 3. 훅 4곳이 실무적으로 정리가 잘 돼 있음. 에피소드 시작(초기 컨텍스트 설정), pre-decision(결정 전 컨텍스트 보강), pre-action(환경 전달 전 액션 정규화·재작성·거부), post-feedback(관측 검사, 정체 시 복구 트리거). 모델 가중치를 안 건드리고 이 네 지점만 건드린다는 게 하네스 개입의 표준 지도로 쓸 만함.
 
 ![라이프사이클 훅 4곳](/images/2026-08-05-harness-r1-executable-runtime-harness-rl/fig-2-p3.png)

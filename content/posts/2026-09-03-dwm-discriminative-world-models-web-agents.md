@@ -17,7 +17,11 @@ Berkeley와 MIT-IBM 팀이 웹 에이전트용 월드 모델의 학습 목표를
 
 2. 문제 지적이 날카로움. 이 목표가 하류 순위 결정과 어긋난다는 것임. 텍스트 요약 방식(WebDreamer)은 압축된 요약이 구별에 필요한 변경을 빠뜨릴 수 있고, 전체 구조 방식(WebWorld)은 AXTree 전체를 뱉으면 바뀐 부분이 그대로 있는 부분에 묻힘. 행동 선택에 쓰이는 예측 상태는 경쟁 행동 결과와 잘 구별될 때 가치가 있다는 게 핵심 통찰임.
 
+![](/images/2026-09-03-dwm-discriminative-world-models-web-agents/gifs/crystal-ball-prediction.gif)
+
 ![DWM 개요](/images/2026-09-03-dwm-discriminative-world-models-web-agents/fig-1-p2.png)
+
+![](/images/2026-09-03-dwm-discriminative-world-models-web-agents/gifs/spot-the-difference.gif)
 
 3. 방법. 현재 상태와 질의 행동이 주어지면 웰드 모델이 다음 상태 표현을 생성함. 그 표현을 고정 판정자(judge)에게 주고 진짜 결과 상태와 다른 행동의 결과 상태 중 무엇에 대응하는지 맞히게 함. 문자열 일치 대신 구별력 기준으로 학습하고 평가하는 것임. 월드 모델은 Qwen3-8B 파인튜닝, 판정자는 Qwen3-32B를 쓰고 검증에 GPT-4o와 Llama-3.1-70B로 바꿔봤음.
 

@@ -12,7 +12,11 @@ description: "트레이서만 보고 기억을 남기는 큐레이터에게 읽�
 
 2. 해법이 최소주의라 좋음. 큐레이터가 평소 쓰는 모델, 입력, 메모리 CRUD 도구, 시스템 프롬프트는 그대로 두고 해당 태스크의 읽기 전용 도구 서브셋만 프로브로 추가함. 프로브는 제안된 메모리를 검증만 하고 미래 태스크를 풀지 않고, 환경을 변경할 수 없고, 태스크 예산을 안 씀. 안전한 읽기 표면이 없으면 트레이서 온리로 폴백함. 메모리 쓰기 시점의 증거 품질만 개선하는 것임.
 
+![](/images/2026-09-14-env-probing-agent-memory-curation/gifs/verified.gif)
+
 ![환경 탐사-메모리 큐레이션 개요](/images/2026-09-14-env-probing-agent-memory-curation/fig-1.png)
+
+![](/images/2026-09-14-env-probing-agent-memory-curation/gifs/get-rid-of-everything.gif)
 
 3. 결과가 극적임. CLBench 데이터베이스 탐색에서 pass rate 39→73%, pass-discounted reward 8.60→22.60. 질문당 쿼리 8.8→4.7, 태스크 에이전트 비용 $3.38→$1.68로 절반. 기억이 정확해지니 태스크 에이전트가 같은 환경을 다시 팔 일이 줄어드는 것 — 메모리 품질 개선이 비용 절감으로 직결된다는 구조임.
 

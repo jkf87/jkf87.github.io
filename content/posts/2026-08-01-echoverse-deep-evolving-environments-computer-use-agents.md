@@ -19,9 +19,13 @@ institution: "Microsoft Research"
 
 1. 배경. 진짜 업무(예약 결제, 메일 발송, 뱅킹 이체)는 전부 로그인 뒤에 있음. 이 작업은 상태를 바꾸고, 여러 화면·사용자에 걸쳐 의존성을 갖고, 성공을 화면이 아니라 DB로 판단해야 함. 실제 웹사이트는 리셋도 안 되고 그라운드 트루스도 안 보여줘서 훈련에 못 씀. 그래서 합성 환경인데, 기존 파이프라인은 "몇 개를 만드는가"에만 집중했음.
 
+![](/images/2026-08-01-echoverse-deep-evolving-environments-computer-use-agents/gifs/training-simulation.gif)
+
 2. Echoverse의 깊이 정의는 다섯 가지임. 제어·권한·오류의 충실도(예약 인원을 바꾸면 가격이 바뀌어야 함), 교차 행위자 상태(한 사용자의 메시지가 다른 사용자 받은 편지함에 나타남), 워크플로우 의존성(항공편 없이 좌석 선택 불가), 그라운드 가능한 검증(픽셀이 아니라 SQL diff로 판정), 능력 타겟팅(에이전트가 실제로 실패하는 인터랙션에 맞춤). 그리고 이걸 기계 검증 가능한 클레임으로 변환해서 95% 이상 통과할 때까지 수리함.
 
 ![Echoverse 환경 설계](/images/2026-08-01-echoverse-deep-evolving-environments-computer-use-agents/fig-1-p2.png)
+
+![](/images/2026-08-01-echoverse-deep-evolving-environments-computer-use-agents/gifs/booking-flight-computer.gif)
 
 3. 가장 파괴적인 발견. 얕은 환경에서 훈련하면 훈련 안 한 것보다 나쁨. Allrecipes 도메인에서 베이스 80.0이 얕은 환경 학습 후 75.0으로 퇴행함. 깊은 환경은 85.0으로 오름. 얕은 환경은 "외형적으로 옳아 보이는 클릭"만 반복하게 만들어서 작동하지 않는 행동을 성공으로 학습하게 한다는 것임. 합성 환경 양산 파이프라인이 벤치마크 숫자는 올리면서 실제 성능을 깎아먹는 함정이라는 경고임.
 

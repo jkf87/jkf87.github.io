@@ -15,6 +15,8 @@ aliases:
 
 에이전트 벤치마크 점수를 볼 때마다 드는 의심 하나. "이 점수, 모델 실력인가 하네스 실력인가." AgentCompass가 그 의심을 데이터로 확인해 줬음. 같은 모델인데 하네스를 바꾸면 점수가 유의미하게 움직임.
 
+![](/images/2026-07-19-agentcompass-unified-agent-evaluation-infrastructure/gifs/suspicious-sus-cat.gif)
+
 1. 배경. 각 벤치마크가 자체 실행 환경·데이터 포맷·평가 스크립트를 갖고 있어서 새 벤치마크 추가마다 파이프라인을 처음부터 다시 짜야 했음. 재현성은 무너지고 중복 개발 비용만 쌓임. 나도 에이전트 실험 돌릴 때마다 평가 스크립트를 새로 만드는 게 제일 귀찮았던 부분이라 이 문제가 바로 와닿았음.
 
 2. AgentCompass(OpenCompass 팀, PJLab)의 조치는 구조적 분리임. 평가를 Benchmark·Harness·Environment 세 컴포넌트로 쪼갬. 벤치마크는 데이터를 TaskSpec으로 정규화하고 채점 방식(결정적 매칭·실행 검증·LLM-as-judge)을 고르는 역할, 하네스는 LLM을 대화형 에이전트로 만들어주는 래퍼, 환경은 실행 컨텍스트와 격리 경계임.
@@ -32,6 +34,8 @@ aliases:
 7. 핵심 발견은 하네스 효과임. Qwen3.5-397B, GPT-5.5, Claude-Opus-4.8 등 7개 모델로 8개 벤치마크를 돌렸더니 같은 모델이라도 하네스에 따라 점수가 크게 요동침. SkillsBench에서 OpenClaw와 OpenHands 하네스 사이, SWE-bench 변형에서 Mini-SWE-agent와 OpenHands 사이에 유의미한 차이가 났음. 그래서 "어떤 하네스로 측정했는가"를 명시하지 않은 에이전트 점수는 비교 대상 자체가 안 됨.
 
 ![하네스별 점수 요동 예시](/images/2026-07-19-agentcompass-unified-agent-evaluation-infrastructure/x3.png)
+
+![](/images/2026-07-19-agentcompass-unified-agent-evaluation-infrastructure/gifs/confused-bewildered.gif)
 
 8. 그래서 내 평가 워크플로우에 붙인 규칙 세 가지. 첫째, 모델 비교 시 하네스와 환경을 고정하고 선언적으로 기록함. 둘째, 점수와 함께 궤적을 남겨서 실패 모드를 진단 가능하게 함. 궤적은 진단뿐 아니라 학습 데이터 구축에도 재활용됨. 셋째, "코드 공개"와 "재현 가능"은 다른 문제라서 선언적 RunRequest 같은 구조로 실행 자체를 명세화함.
 

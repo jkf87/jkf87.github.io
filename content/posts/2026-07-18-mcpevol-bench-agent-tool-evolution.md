@@ -17,6 +17,8 @@ MCP 도구를 물고 돌아가는 에이전트를 운영 중이면 겪는 일이
 
 ![원격 MCP 서버 가용성 추이(논문 Figure 2)](/images/2026-07-18-mcpevol-bench-agent-tool-evolution/fig-2-p4.png)
 
+![업데이트 한 번에 조용히 무너지는 중](/images/2026-07-18-mcpevol-bench-agent-tool-evolution/gifs/this-is-fine.gif)
+
 2. MCPEvol-Bench는 123개 실제 MCP 서버(1,272개 도구)에 11가지 변이 연산자를 적용해서 도구 진화를 시뮬레이션함. 도구 추가·삭제·통합, 파라미터 수정, 설명 변경 등 실제 진화 패턴에서 추출한 연산자를 Claude-Opus가 실제 소스 코드를 고치는 방식으로 적용함.
 
 ![MCPEvol-Bench 프레임워크(논문 Figure 1)](/images/2026-07-18-mcpevol-bench-agent-tool-evolution/fig-1-p2.png)
@@ -30,6 +32,8 @@ MCP 도구를 물고 돌아가는 에이전트를 운영 중이면 겪는 일이
 ![연산자별 성능 기여(논문 Figure 6b)](/images/2026-07-18-mcpevol-bench-agent-tool-evolution/fig-6-p8-2.png)
 
 5. 대응 실험 결과가 제일 실용적임. GPT-5.4에 인지 모듈 세 개를 얹었는데 반성과 계획보다 메모리가 압도적임. Task Fulfillment 6.24→6.71, Planning 3.87→5.04. 도구의 이전 버전 사용 경험을 기억하고 진화된 도구에 패턴을 적응시키는 능력이 진화 내성의 핵심이라는 것임.
+
+![계속 적응하기](/images/2026-07-18-mcpevol-bench-agent-tool-evolution/gifs/adapting.gif)
 
 6. 필자 운영 관점에서 빌릴 것 두 가지. 첫째, MCP 도구 세트를 늘리는 게 항상 이득이 아니라는 것. 도구 추가가 가장 큰 성능 하락 요인이므로, 필요 없는 도구는 등록 자체를 안 하는 게 성능 대책임. 둘째, 도구 사용 성공 기록을 세션 밖 메모리로 쌓는 것. 업데이트 후에도 과거 패턴이 적응 단서가 됨.
 

@@ -17,6 +17,8 @@ source_url: "https://arxiv.org/abs/2607.14989"
 
 ![능력 차원 설계](/images/2026-07-19-omniabench-general-ai-agent-benchmark/fig-2-p3.png)
 
+![](/images/2026-07-19-omniabench-general-ai-agent-benchmark/gifs/benchmark-exam.gif)
+
 3. 결과 숫자가 먼저임. 최전선 모델조차 Overall Pass@1 60% 미만. Claude-Sonnet-5 58.54%, GPT-5.6-Sol 57.14%. 범용 과제 공간이 기존 벤치마크가 커버하던 것보다 훨씬 넓다는 뜻임.
 
 ![메인 결과: 최전선 모델도 Pass@1 60% 미만](/images/2026-07-19-omniabench-general-ai-agent-benchmark/fig-3-p5.png)
@@ -24,6 +26,8 @@ source_url: "https://arxiv.org/abs/2607.14989"
 4. 근데 진짜 쓸모 있는 발견은 약점의 위치임. 일관되게 낮은 세 역량이 계획, 제약 유지, 적응적 수정. 전부 장기 실행(long-horizon)과 직결되는 능력임. 도메인 간으로는 ToC보다 ToB/ToE에서 확실히 낮음. 전문적·절차적 워크플로가 약하다는 것. 난이도 요인 중에는 멀티턴 의존성과 제약 조합이 성능을 가장 크게 깎음.
 
 ![역량별 강약 프로파일](/images/2026-07-19-omniabench-general-ai-agent-benchmark/fig-4-p7.png)
+
+![](/images/2026-07-19-omniabench-general-ai-agent-benchmark/gifs/planning-chess.gif)
 
 5. 이건 필자가 매일 겪는 현상과 정확히 일치함. 마이그레이션 자동화를 돌릴 때 실패는 "글을 못 써서"가 아니라 초반에 준 규칙(제약)을 50번째 파일쯤에서 잊어버리거나, 오류가 났을 때 경로를 스스로 못 바꿔서 생김. 벤치마크 숫자가 그 경험을 확인해줌.
 

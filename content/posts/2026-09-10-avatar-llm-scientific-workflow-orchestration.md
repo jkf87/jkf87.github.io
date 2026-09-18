@@ -17,7 +17,11 @@ description: "오케스트레이터·실행자·모니터 3-액터에 고정 액
 
 2. 이 설계가 실무적으로 제일 배울 만함. "LLM을 오케스트레이션에 넣으면 위험하다"가 아니라 "액션 카탈로그로 경계를 그리면 안전하게 넣을 수 있다"는 접근임. 내 자동화에도 LLM 결정 단계가 있는데, 허용 액션 목록을 코드가 소유하고 밖의 제안은 거부하는 구조로 되어 있어서 이 논문의 원칙과 같은 방향임. LLM의 자유도를 프롬프트로 조절하는 게 아니라 액션 공간으로 조절하는 것임.
 
+![](/images/2026-09-10-avatar-llm-scientific-workflow-orchestration/gifs/orchestra-conductor.gif)
+
 ![Avatar 오케스트레이션 개요](/images/2026-09-10-avatar-llm-scientific-workflow-orchestration/fig-1-p3.png)
+
+![](/images/2026-09-10-avatar-llm-scientific-workflow-orchestration/gifs/train-on-tracks.gif)
 
 3. 재현성 검증이 정직함. 규칙 모드 M0는 TaskVine 네이티브와 retry·완료·영구 실패 카운트가 전 구간 정확히 일치했음. 같은 코어가 TaskVine/Parsl/Colmena 세 워크로드에서 카탈로그의 서로 다른 부분만 쓰면서도 바이트 단위로 동일하게 유지됐다는 것도 확인함. 기존 WMS를 대체하는 게 아니라 같은 코어에서 정책만 갈아끼우는 구조라는 뜻임.
 

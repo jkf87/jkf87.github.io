@@ -17,6 +17,8 @@ description: 매 턴 점수가 있어도 어느 턴이 공로인지는 모름. �
 
 1. 예시가 직관적임. 3턴에 걸쳐 문제를 풀어서 30점, 30점, 100점을 받았다고 하면 2턴은 쓸모없는 실패인지 3턴 정답의 발판인지 알 수 없음. 반대로 100점, 100점, 60점이면 3턴은 명백한 회귀인데 trajectory-level reward는 이걸 구분 못 함. GRPO의 시퀀스 수준 어드밴티지도 어느 턴이 공로인지 안 알려줌.
 
+![](/images/2026-08-09-tcpo-turn-level-credit-policy-optimization/gifs/applause-credit.gif)
+
 2. TCPO의 해법은 점수를 세 렌즈로 해석하는 것임. 첫째, retrospective. 턴 k의 점수가 이전 최고점보다 높으면 개선 크레딧, 성공 상태 유지면 보존 크레딧, 성공 후 하락이면 회귀 페널티임. 이것만으로 trajectory-level보다 훨씬 정밀함.
 
 ![TCPO 전체 구조](/images/2026-08-09-tcpo-turn-level-credit-policy-optimization/fig-1-p3.png)
@@ -24,6 +26,8 @@ description: 매 턴 점수가 있어도 어느 턴이 공로인지는 모름. �
 3. 둘째, hindsight. 같은 프롬프트에 궤적 8개를 샘플링했을 때 턴 2에서 점수가 안 올랐어도 턴 3에서 100점에 도달한 궤적이라면, 그 턴 2는 보이지 않는 기여를 한 것임. 같은 턴 인덱스의 다른 궤적들 future-best 평균과 비교해서 계산하므로 추가 검증자 호출이 필요 없음.
 
 4. 셋째, counterfactual. 서프라이즈가 높은 턴(모델이 불확실해서 출력이 갈리는 상황)만 최대 L개 골라서 그 턴의 히스토리를 고정하고 대안 출력 M개를 샘플링해 검증자로 평가함. 원래 출력이 대안 평균보다 좋았으면 양의 크레딧임. 전체 턴에 하면 비싸지만 high-surprisal 타겟팅이라 오버헤드가 3-5%에 그침. 랜덤 선택은 효과가 거의 없었다는 게 타겟팅이 핵심이라는 증거임.
+
+![](/images/2026-08-09-tcpo-turn-level-credit-policy-optimization/gifs/a-plus-grade.gif)
 
 ![턴레벨 크레딧 설계](/images/2026-08-09-tcpo-turn-level-credit-policy-optimization/table-1-p6.png)
 

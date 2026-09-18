@@ -11,13 +11,17 @@ description: "사용자 상호작용과 선호 준수를 보상에 넣은 다목
 
 기존 에이전트 RL이 태스크 완수만 최적화한다는 문제의식에서 출발한 논문이 나옴. 애매한 지시에서 질문하고 사용자 선호를 맞추는 능력을 학습시킨 결과가 좋아서 정리함. 원문은 [arXiv:2511.02208](https://arxiv.org/abs/2511.02208)(COLM 2026).
 
-1. 문제 정의가 실무적임. 실제 사용자의 지시는 애매함. 논문 프롬프트 통계에서 SWE-Bench 원본 이슈는 평균 193.8 단어인데 vague 버전은 11.4단어, BrowseComp는 97.1→17.8단어임. 이렇게 짧아진 지시에서는 태스크 성능만 학습된 에이전트가 무너진다는 것. 그래서 생산성(Productivity), 주도성(Proactivity — 저비용 질문으로 세션을 끝내는 능력), 개인화(Personalization — 사용자 선호 준수) 세 차원을 같이 최적화함.
+1. 문제 정의가 실무적임. 실제 사용자의 지시는 애매함. 논문 프롬프트 통계에서 SWE-Bench 원본 이슈는 평균 193.8 단어인데 vague 버전은 11.4단어, BrowseComp는 97.1→17.8단어임. 이렇게 짧아진 지시에서는 태스크 성능만 학습된 에이전트가 무너진다는 것.
+
+![](/images/2026-09-11-ppp-proactive-personalized-llm-agents/gifs/not-a-question-mike.gif) 그래서 생산성(Productivity), 주도성(Proactivity — 저비용 질문으로 세션을 끝내는 능력), 개인화(Personalization — 사용자 선호 준수) 세 차원을 같이 최적화함.
 
 2. UserVille 환경이 핵심 기여임. 정밀 프롬프트를 불완전한 버전으로 바꾸고, 선호 파라미터를 가진 LLM 사용자 시뮬레이터와 상호작용시키고, 주도성·개인화 피드백을 산출하는 3단계 파이프라인. 선호 20종 중 8종은 unseen으로 평가 전용이고, 6종은 규칙 기반 보상, 14종은 선호별 루브릭의 LLM judge로 평가함. 질문 비용을 저/중/고로 나눈 것도 현실적임.
 
 ![PPP 프레임워크 개요](/images/2026-09-11-ppp-proactive-personalized-llm-agents/fig-1-p2.png)
 
 3. 결과는 Seed-OSS-36B 기준 vague 프롬프트에서 F1 44.11→64.50. 그리고 20 선호 평균에서 PPP가 62.04로 GPT-5(40.40), 베이스 Seed-36B(45.32)를 크게 앞섬. 특히 Personalization에서 GPT-5가 12.96인데 PPP가 89.26. 프론티어 모델이 사용자 선호 준수에 사실상 실패하고 있다는 게 수치로 드러남.
+
+![](/images/2026-09-11-ppp-proactive-personalized-llm-agents/gifs/excited-approval.gif)
 
 ![개인화 파이프라인](/images/2026-09-11-ppp-proactive-personalized-llm-agents/fig-2-p3.png)
 

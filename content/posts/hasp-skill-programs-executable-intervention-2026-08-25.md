@@ -12,11 +12,15 @@ description: "경험에서 뽑은 스킬을 실행 가능한 Program Function으
 
 2. HASP의 해법은 스킬을 두 인터페이스를 가진 함수로 만드는 것임. should_activate(state, action)이 발동 조건을 판단하고 intervene(...)이 다음 액션을 고치거나 교정 맥락을 주입함. "같은 검색어를 반복하지 마라"는 텍스트 대신 반복 검색 상태를 감지하면 검색어를 다시 써주는 PF가 동작하는 식임.
 
+![](/images/hasp-skill-programs-executable-intervention-2026-08-25/gifs/terminal-code-screen.gif)
+
 ![HASP 스킬 프로그램 개요](/images/hasp-skill-programs-executable-intervention-2026-08-25/fig-1-p2.png)
 
 3. 결과가 30점 차이임. 같은 스킬을 프롬프트에 넣으면 20.5%, 실행형으로 감싸면 PF-only 51.0%, 보조 티처 선택으로 56.2%, 학습과 스킬 진화까지 더한 HASP-Evolve+RS가 60.3%. 학습 기반 Search-R1(29.9%)도 크게 앞섬. 병목은 스킬 본문 품질이 아니라 발동 조건과 개입 방식을 코드로 명시하는 일이었다는 결론임.
 
 4. 하네스 구조가 외부형이라 적용이 쉬움. 매 스텝 기본 정책이 액션을 제안하면 하네스가 PF 후보를 검색해 활성화를 평가하고 개입함. 개입은 액션 수정과 경고 맥락 주입 두 가지. 그리고 원본 제안-수정 액션 쌍이 기록돼서 그대로 학습 신호가 됨. 이중 구조 — 추론 시점 개입 + 개입 기록의 학습 내재화 — 가 설계의 뼈대임.
+
+![](/images/hasp-skill-programs-executable-intervention-2026-08-25/gifs/tesla-autopilot.gif)
 
 ![하네스 구조](/images/hasp-skill-programs-executable-intervention-2026-08-25/fig-2-p4.png)
 

@@ -12,9 +12,13 @@ description: 성공 궤적 100개만으로 실패 스텝을 찾는 OAT. GPT-5 �
 
 1. 배경. 실패 귀인(failure attribution)은 실패 궤적에 단계별 에러 라벨이 필요한 지도 학습 아니면 LLM 프롬프팅이었음. 전자는 라벨링 비용이 크고 모호하고, 후자는 궤적 하나당 평균 39초에 토큰 3천 개를 태움. 매일 도는 자동화에서는 쓸 수 없는 비용임.
 
+![](/images/2026-07-16-oat-tracing-agentic-failure/gifs/internally-screaming.gif)
+
 2. OAT의 발상은 단순함. 성공한 궤적만 100개 모아서 정상 패턴을 학습하고, 실패 궤적에서 정상에서 벗어나는 스텝에 이상 점수를 매기는 것임. 실패 데이터도, 라벨도 필요 없음. 성공 궤적은 정상 운영의 부산물이라 그냥 쌓여 있음.
 
 ![OAT 개요: 성공 궤적만으로 이상 스텝 탐지](/images/2026-07-16-oat-tracing-agentic-failure/fig-1-p2.png)
+
+![](/images/2026-07-16-oat-tracing-agentic-failure/gifs/detective-magnifying-glass.gif)
 
 3. 방법. 각 스텝을 LLM 은닉 표현으로 인코딩하고 Neural CDE로 성공 궤적의 연속적 동역학을 학습함. 에이전트 행동은 액션이 상태를 만들고 상태가 액션을 유도하는 연속 과정이라 이산 모델(RNN)보다 연속 시간 모델링이 유리함. 추론 시 예상 경로와 실제 표현의 거리로 이상 스텝을 뽑음.
 

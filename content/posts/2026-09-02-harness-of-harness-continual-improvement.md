@@ -17,6 +17,8 @@ description: "기존 하네스를 기획-개발-테스트 3중 루프로 감싼 
 
 1. 문제 정의가 맞음. 요즘 코딩 에이전트는 한 번 실행하면 끝이고 다음 실행이 이전 실행의 기억을 못 이어받음. 이전 루프에서 뭘 검증했고 뭘 실패했는지가 안 넘어가고, 고수준 스펙만으로는 다음에 뭘 고쳐야 할지가 결정이 안 되며, 시나리오별 동작이라 미완성 산출물이 완성으로 받아들여질 수 있음.
 
+![하네스 안의 하네스](/images/2026-09-02-harness-of-harness-continual-improvement/gifs/recursion.gif)
+
 2. 구조는 3-에이전트 루프임. Project Planner가 PRD와 테스트 증거로 다음 계획을 세우고, Developer가 구현하고, QA Tester가 독립적으로 평가함. 이 사이클이 반복되며 아티팩트와 증거가 누적됨. 설계 원칙도 단순함 — 한 루프에 검증 가능한 증분 하나, 도구·스킬의 점진적 노출, 구현 테스트와 독립 평가의 분리, 그리고 회귀 시 이전 검증 상태로 롤백 가능한 버전 관리 이력.
 
 ![Harness-of-Harness 개요(논문 Figure 3)](/images/2026-09-02-harness-of-harness-continual-improvement/fig-3-p5.png)
@@ -24,6 +26,8 @@ description: "기존 하네스를 기획-개발-테스트 3중 루프로 감싼 
 3. 결과는 세 하네스-모델 조합에서 전 구성·전 카테고리 개선. 3루프 후 평균 상대 향상 52.25%, 최대 82.86%. 시작 성적이 낮은 구성이든 높은 구성이든 다 올랐고 FrontierSWE는 10루프까지 단조 상승함. Codex 구성 Dominance가 27.33%(vanilla)에서 9루프에 76.00%까지 감.
 
 ![카테고리별 점수 변화(논문 Figure 4)](/images/2026-09-02-harness-of-harness-continual-improvement/fig-4-p12.png)
+
+![루프마다 계속 오르는 계단](/images/2026-09-02-harness-of-harness-continual-improvement/gifs/inception-stairs.gif)
 
 4. 제일 설득력 있는 근거는 동일 패스 예산 비교임. 같은 세션에서 이어서 3번 돌린 반복 실행이 58.24에 6.33M 토큰인데 HoH 2루프가 64.84에 5.67M 토큰, 3루프가 71.52에 8.41M 토큰. 단순 반복이 아니라 루프 구조가 실제로 하는 일이 있다는 것.
 

@@ -21,11 +21,15 @@ ARC-AGI-3 공개 25게임 183레벨 전체를 만점으로 끝낸 에이전트 �
 
 ![Tycho 전체 파이프라인](/images/2026-08-02-tycho-active-abstraction-programmatic-world-models/fig-1-p3.png)
 
+![](/images/2026-08-02-tycho-active-abstraction-programmatic-world-models/gifs/solving-rubiks-cube.gif)
+
 3. 부분 예측 설계가 좋음. 렌더러가 모르는 셀은 모름(⊥)을 반환할 수 있음. HUD의 남은 이동 횟수가 64→63로 줄었다면 초기 예산이 43~127 어디든 될 수 있는데, 이런 걸 관측 변형으로 처리하고 후속 관측으로 가설을 좁힘. 전부 맞히려다 과적합하는 것보다 불확실성을 명시하는 게 이긴다는 설계임.
 
 4. 근데 제일 중요한 발견은 모델 사용 정책 비교임. 네 정책을 돌렸는데 모델을 안 쓰는 게 79.07, 액터가 위임하는 Orchestrator가 88.49로 최고. 그리고 검증 실패 시 자동으로 모델을 계속 정확하게 만드는 Trigger 정책은 전이 예측 정확도 88.1%에도 83.07으로 낮음. 정확한 시뮬레이터가 좋은 플레이를 보장하지 않는다는 것. 모델 구축에 추론 비용을 과하게 쓰기 때문임.
 
 ![모델 사용 정책 비교](/images/2026-08-02-tycho-active-abstraction-programmatic-world-models/fig-4-p12.png)
+
+![](/images/2026-08-02-tycho-active-abstraction-programmatic-world-models/gifs/level-complete-victory.gif)
 
 5. 이건 실무에 그대로 적용되는 교훈임. 자동화 파이프라인에서 "정확한 검증기"를 만드는 데 리소스를 쏟는 경우가 많은데, 검증기 정확도와 그 검증기가 파이프라인 성과에 기여하는 정도는 별개임. 검증 실패 시마다 무조건 완벽 모델을 만들면 비용이 폭주함. 어느 수준에서 "충분함"을 선언하고 진행하는 메타 정책이 성과를 좌우함.
 

@@ -16,11 +16,15 @@ description: "arXiv 2024-2026 자기개선 논문 1,250편을 두 축으로 정�
 
 ![RSI 연구 지형 개요](/images/2026-08-20-rsi-taxonomy-survey/fig-1-p5.png)
 
+![](/images/2026-08-20-rsi-taxonomy-survey/gifs/paper-piles-archive.gif)
+
 2. 지도의 첫 발견은 밀도임. 실용 시스템 거의 전부가 중간 단계, 즉 자동 검증 신호를 사람이 감사하는 구간에 몰려 있음. 폐쇄 루프 행은 어디나 성김. 그리고 가장 중요한 칸은 자기평가 × 폐쇄 루프 — 시스템이 자기 기준("더 나음")을 스스로 다시 쓰는 지점. 유계 자기정제가 열린 RSI로 넘어가는 경계가 정확히 거기임.
 
 ![문헌 밀도 분포](/images/2026-08-20-rsi-taxonomy-survey/fig-3-p7.png)
 
 3. 두 번째이자 핵심 발견은 검증 계층임. 서베이가 자기평가를 부록이 아니라 독립 카테고리로 다룬 이유는 모든 개선 루프가 "어떤 신호가 인간 판단을 대체할 수 있다"는 주장이기 때문. 신호를 강한 순서로 세우면 형식 검증기(증명 검사기, 실행 피드백), 학습된 보상 모델, LLM judge·루브릭, 내재적 자기평가(최약)임.
+
+![](/images/2026-08-20-rsi-taxonomy-survey/gifs/look-in-the-mirror.gif)
 
 ![부정 결과 계보](/images/2026-08-20-rsi-taxonomy-survey/fig-4-p13.png)
 

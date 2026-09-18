@@ -15,9 +15,13 @@ source_url: "https://arxiv.org/abs/2607.17947"
 
 ![AAS 7차원 구조](/images/2026-07-21-autonomous-agency-scale/fig1-official.png)
 
+![](/images/2026-07-21-autonomous-agency-scale/gifs/robot-vacuum-autonomous.gif)
+
 3. 레벨은 0-5임. 0은 자율 행동 없음, 1은 명시적 프롬프트에만 반응, 2는 스케줄·규칙 기반, 3은 맥락 적응, 4는 외부 트리거 없이 내부 상태에서 비롯된 행동, 5는 자체 인지 구조를 스스로 수정하는 단계임.
 
 4. 제일 날카로운 건 Idle-Gap Test임. 모든 트리거를 제거했을 때 아무것도 산출하지 않으면 최대 Level 3라는 규칙임. 매시간 명언을 포스트하는 에이전트는 Level 2임. 시간이라는 트리거로 출력이 예측 가능하니까. 반면 틱은 연산을 배정할 뿐 내용이 내부 상태에서 나오면 Level 4 후보임.
+
+![](/images/2026-07-21-autonomous-agency-scale/gifs/idle-sleeping-desk.gif)
 
 5. 이 기준으로 6개 시스템을 평가한 결과가 흥미로움. Claude Code·Manus·Hermes 같은 태스크 에이전트는 Active 합산 2.29-2.43로 거의 동일한데 Ambient는 0.57-1.86로 무너짐. 크론 작업이든 야간 사이클이든 전부 사용자가 설정한 스케줄이라 Idle-Gap Test를 통과하는 게 없음.
 

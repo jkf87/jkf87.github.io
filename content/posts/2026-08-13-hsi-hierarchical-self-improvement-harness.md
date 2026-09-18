@@ -25,9 +25,13 @@ description: 동결된 LLM 하나가 태스크 수행, 하네스 수정, 전략 
 
 ![HSI 3계층 프레임워크(논문 Figure 1)](/images/2026-08-13-hsi-hierarchical-self-improvement-harness/fig-1-p5.png)
 
+![이게 피라미드인가](/images/2026-08-13-hsi-hierarchical-self-improvement-harness/gifs/pyramid-scheme.gif)
+
 2. 실험 설계의 디테일이 좋음. 백본은 DeepSeek-V4-Flash-Preview(동결)이고 태스크 수행 시 추론(thinking)을 OFF로 고정함. 성능 변화가 순수하게 하네스 개선에서 오는 걸 보장하는 장치임. 하네스 수정 시에만 thinking을 켬.
 
 3. 결과. BabyAI 42.0→81.3(+39.3), Crafter 11.6→44.6(+33.0), TextWorld 40.0→65.0(+25.0), MiniHack 0.8→15.8임. TextWorld 65.0%는 Grok-4(62.9%)와 Claude-Opus-4.5-Thinking(59.0%)을 넘는 수치임. 같은 모델, 같은 추론 예산에서 하네스만 바꿔서 얻은 결과라는 게 의미임.
+
+![하네스만 바꿔도 좋아짐](/images/2026-08-13-hsi-hierarchical-self-improvement-harness/gifs/self-improvement.gif)
 
 4. 메타 진화를 끄면 전 환경에서 떨어짐. TextWorld 65.0→46.0, MiniHack 15.8→5.8. 진화 전략 자체를 진화시키는 게 유효하다는 뜻임. 하네스 수정도 중요하지만 "어떻게 수정할지"의 원칙을 코드화해 재사용하는 계층이 별도로 필요하다는 것임.
 

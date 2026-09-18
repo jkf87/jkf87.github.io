@@ -19,9 +19,13 @@ description: "하네스 전체를 버전 관리 대상으로 두고 reviewed com
 
 에이전트가 자기 자신을 고치는 시스템은 많았지만 배포 상태에서 감사 가능한 커밋 게이트를 통과시키는 설계로 161일을 버틴 사례가 나옴. 자기 참조 시스템을 운영해본 사람 입장에서 정리할 가치가 큼. 원문은 [arXiv:2608.08311](https://arxiv.org/abs/2608.08311).
 
+![하네스 전체가 버전 관리 대상](/images/2026-08-11-ouroboros-self-developing-frontier-coding-agent/gifs/robot-coding.gif)
+
 1. 구조가 먼저임. Ouroboros는 launcher/supervisor 경계와 변경 가능한 에이전트 저장소로 나뉨. launcher는 시작, 프로세스 감독, 릴리스 부트스트래핑, 패닉 스톱을 담당하고 저장소는 태스크 루프, 도구, 프롬프트, 메모리, 리뷰 로직까지 전부임. 하네스 전체가 버전 관리 대상이라는 게 출발점임.
 
 ![Ouroboros 아키텍처(논문 Figure 1)](/images/2026-08-11-ouroboros-self-developing-frontier-coding-agent/fig-1-p4.png)
+
+![스스로를 고치며 일하는 중](/images/2026-08-11-ouroboros-self-developing-frontier-coding-agent/gifs/self-improving-at-work.gif)
 
 2. 진화는 두 모드임. 재귀적 자유 진화는 "개선 자체"를 태스크로 스케줄해서 시스템이 검토 후 변경을 구현하고 리뷰 통과 시 커밋함. 경험 기반 핵심 진화는 일반 작업 중 발견한 버그, 비효율 컨텍스트, 도구 경로 문제를 내구성 있는 에러 클래스로 기록해서 같은 게이트로 수정함. 즉흥 고침이 아니라 분류된 에러 클래스 단위로 고친다는 게 운영 지속성의 비결로 보임.
 

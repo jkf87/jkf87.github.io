@@ -27,7 +27,11 @@ aliases:
 
 3. capability 스킬과 preference 스킬 구분도 실무적임. 전자는 모델이 아직 못 하는 능력을 보완하는 임시 장치라서 모델이 좋아지면 은퇴시켜야 하고, 후자는 팀의 워크플로와 도메인 규칙을 담아서 더 오래 감. eval의 목적도 달라짐 — capability는 은퇴 시점을 알려주고 preference는 회귀를 막음.
 
+![잠깐, eval 없이 ship?](/images/dont-ship-skills-without-evals-2026-07-17/gifs/hold-on.gif)
+
 4. AI가 만든 스킬은 성능을 떨어뜨릴 수 있다는 경고가 핵심임. SkillsBench 1.1에서 스킬은 평균 약 15% 향상이 있었지만 사람이 쓴 스킬이 가장 좋았고, AI 생성 스킬엔 no-op이 많이 들어감. "명확하고 고품질의 코드를 작성하라" 같은 문장은 틀리지 않았지만 모델이 원래 할 말이라 행동을 바꾸지 않음. 행동을 바꾸지 않는 문장은 비용이라는 것 — 좋은 스킬 문장은 아름다운 문장이 아니라 나쁜 선택지를 줄이는 문장임.
+
+![eval은 TEST부터 작게](/images/dont-ship-skills-without-evals-2026-07-17/gifs/testing.gif)
 
 5. negative test 없이는 과호출을 못 잡음. happy path만 평가하면 React 전용 스킬이 CSS 수정, Angular 마이그레이션에까지 불려서 불필요한 참조 읽기와 잘못된 제약 적용, 비용 증가를 만듦. 시작은 작아도 됨 — 발동되어야 할 프롬프트 5개, 되면 안 되는 프롬프트 5개, 가능하면 실제 트레이스 몇 개. JSON 케이스와 regex 체크면 거창한 judge 없이 시작할 수 있음.
 

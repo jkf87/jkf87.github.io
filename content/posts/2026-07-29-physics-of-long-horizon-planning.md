@@ -25,6 +25,8 @@ summary: "장기 계획 능력이 사전학습·후속학습·증류 각 단계�
 
 2. 사전학습 발견 1. CoT로 상태 전이를 명시적으로 모델링하는 데이터가 액션만 직접 예측하는 포맷보다 롱호라이즌 일반화에서 압도적임. 에이전트가 환경의 역학을 내재화해야 긴 궤적을 이어갈 수 있다는 뜻임.
 
+![](/images/2026-07-29-physics-of-long-horizon-planning/gifs/brains-playing-chess.gif)
+
 ![CoT 상태 추적 효과](/images/2026-07-29-physics-of-long-horizon-planning/fig-2-p6.png)
 
 3. 사전학습 발견 2. Short 태스크만 100% 학습해도 Middle/Long 성능은 거의 0%임. 근데 Long 궤적을 5%만 섞으면 Long pass@8이 0%에서 11%, Middle 5% 섞으면 0.8%에서 52%로 급등함. 원자 스킬을 쌓으면 자동으로 긴 계획이 된다는 가정이 틀렸고, 긴 궤적 자체를 최소한으로라도 봐야 조립 능력이 생김.
@@ -34,6 +36,8 @@ summary: "장기 계획 능력이 사전학습·후속학습·증류 각 단계�
 ![태스크 난이도별 성능](/images/2026-07-29-physics-of-long-horizon-planning/fig-3-p7.png)
 
 5. 후속학습 발견. RL의 유효 영역이 3개로 나뉨. 고품질 사전학습이면 RL은 불필요하고, 저품질 + 중간 호라이즌이면 GRPO·OPD 둘 다 유효, 저품질 + 롱호라이즌이면 GRPO는 실패하고 OPD만 유효함. GRPO가 긴 궤적에서 무너지는 이유는 결과 기반 보상의 역전파에서 올바른 액션과 잘못된 액션이 뒤섞여 신용 할당이 붕괴해서임.
+
+![](/images/2026-07-29-physics-of-long-horizon-planning/gifs/dominoes-falling.gif)
 
 ![RL 유효 영역 분석](/images/2026-07-29-physics-of-long-horizon-planning/fig-4-p8.png)
 

@@ -16,6 +16,8 @@ GUI 에이전트를 데스크톱이랑 모바일에 동시에 쓰려면 데이�
 
 ![플랫폼 혼합 학습의 실패 구조](/images/2026-07-08-ui-mopd-multi-platform-gui-agent-distillation/fig-p1.png)
 
+![](/images/2026-07-08-ui-mopd-multi-platform-gui-agent-distillation/gifs/robot-no-idea-what-im-doing.gif)
+
 3. UI-MOPD의 조치는 세 단계임. 첫째, 데스크톱·모바일 각각의 교사 모델을 Qwen3-VL-32B로 SFT 구축. 둘째, 8B 학생 정책을 강화학습으로 훈련하되 롤아웃마다 환경 타입을 감지해 맞는 교사를 동적으로 선택. 셋째, 교사의 행동 분포를 KL로 학생에 주입하는 온폴리시 증류.
 
 ![UI-MOPD 전체 파이프라인](/images/2026-07-08-ui-mopd-multi-platform-gui-agent-distillation/fig-p4.png)
@@ -29,6 +31,8 @@ GUI 에이전트를 데스크톱이랑 모바일에 동시에 쓰려면 데이�
 6. 결과. OSWorld 38.2%로 베이스 대비 상대 +12.7%, MobileWorld 12.0%로 상대 +55.8%임. 단일 플랫폼 GUI 모델들도 제침. 더 흥미로운 건 새 플랫폼을 배우면서 기존 플랫폼이 안 떨어졌다는 점임. 보통은 트레이드오프가 상식인데, 플랫폼별 교사가 행동 닻 역할을 해서 학생이 기존 행동 분포에서 크게 벗어나지 못하게 막은 것임.
 
 ![OSWorld·MobileWorld 결과 비교](/images/2026-07-08-ui-mopd-multi-platform-gui-agent-distillation/fig-p6.png)
+
+![](/images/2026-07-08-ui-mopd-multi-platform-gui-agent-distillation/gifs/robot-double-thumbs-up.gif)
 
 7. 근데 문제제기. 이 설계는 교사 품질이 전체 상한선임. 교사가 나쁘면 증류는 그 나쁨을 충실히 옮김. 그리고 검증은 2개 플랫폼뿐이라 웹·태블릿으로 늘어날 때 라우팅 로직이 복잡해지는 비용은 아직 안 측정됐음. 모바일 12.0%도 개선폭에 비해 절대치가 낮음. 데이터가 부족한 쪽이 그대로 약한 채 남는다는 뜻임.
 

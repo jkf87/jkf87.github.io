@@ -18,6 +18,8 @@ categories:
 
 에이전트 모델을 고를 때 SWE-bench 점수는 이제 참고가 안 됨. 오염 문제도 있지만 "단일 이슈 해결"만 측정하기 때문. WorkBuddy Bench는 코드·웹·오피스·보안 4개 영역 260태스크로 실무 분포를 잼. 모델 선정 기준을 다시 세우게 되는 벤치마크라 정리함.
 
+![](/images/2026-07-24-workbuddy-bench-multi-domain-coding-agent/gifs/interview-time-nervous.gif)
+
 1. 배경. 기존 평가는 두 극단 사이에 끼어 있었음. SWE-bench식 공개 벤치마크는 문제와 정답이 웹에 있어서 모델이 이슈를 암기했는지 이해했는지 구분이 안 됨. 벤더 프로덕션 벤치마크는 실사용 분포를 반영하지만 비공개라 감사 불가. [WorkBuddy Bench](https://arxiv.org/abs/2607.20911)는 그 사이를 노림 — 실사용 분포에서 카테고리를 매칭하되 원본을 직접 안 쓰고 역설계해서 새로 작성.
 
 ![WorkBuddy Bench 개요](/images/2026-07-24-workbuddy-bench-multi-domain-coding-agent/fig-1-p2.png)
@@ -25,6 +27,8 @@ categories:
 2. 오염 저항 설계가 핵심임. 실제 커밋, PR, CVE에서 출발하되 "이거 좀 해줘"라고 동료에게 부탁하는 구어체 요청으로 재작성. 근본 원인, 참조 diff, 해결 힌트를 의도적으로 생략. 그러니 웹에서 원본을 검색해도 프롬프트가 복원이 안 됨. 비밀이 아니라 신선도로 오염을 다루는 접근.
 
 3. 구성은 4개 서브셋임. Code 80개는 히든 테스트로 채점. Web 70개는 룰 체크+LLM/VLM 저지로 786개 루브릭 아이템 검사. Office 50개는 결정론적 룰 체크+증거 기반 저지. Security 60개는 LLM 저지 없이 결정론적 scoring.py로만 채점. 서브셋 간 점수 비교도, 전체 평균도 안 냄 — 의도된 설계임.
+
+![](/images/2026-07-24-workbuddy-bench-multi-domain-coding-agent/gifs/swiss-army-knife-tool.gif)
 
 ![4개 서브셋 구성](/images/2026-07-24-workbuddy-bench-multi-domain-coding-agent/fig-2-p9.png)
 

@@ -13,6 +13,8 @@ authors: ["Zhejiang University", "NUS", "SJTU", "Meituan"]
 
 1. 기존 접근의 문제. LaMer는 같은 인스턴스를 반복하며 reflection을 개선하지만 스킬이 인스턴스 특화에 머물러 전이가 안 됨. RetroAgent·SkillRL은 추출-저장-검색-실행 파이프라인을 거치는데 어느 단계에서 실패했는지 귀인이 어렵고, 외부 티처(Gemini-2.5-Pro)에 의존하며 런타임이 4-6배임.
 
+![푸면서 다음용 스킬을 정리하는 중](/images/2026-07-30-skillrise-cross-task-skill-evolution/gifs/writing-notes.gif)
+
 2. SkillRise의 설계는 세 조각임. 첫째, 관련 작업을 하나의 시퀀스로 묶음(예: 청바지 검색 2속성 → 3속성 → 4속성). 둘째, 단일 정책이 task solving(현재 작업 해결)과 skill curation(궤적으로 스킬 문서 개정)을 번갈아 수행. 개정된 스킬 문서만 다음 작업으로 넘어가고 이전 궤적은 안 넘어감. 스킬 문서가 작업 간 유일한 정보 채널임.
 
 ![SkillRise 프레임워크 개요(논문 Figure 1)](/images/2026-07-30-skillrise-cross-task-skill-evolution/fig-1-p3.png)
@@ -22,6 +24,8 @@ authors: ["Zhejiang University", "NUS", "SJTU", "Meituan"]
 4. 결과. Qwen3-4B 백본으로 ALFWorld 85.9%, WebShop 84.4%, ScienceWorld 54.6%로 전 벤치마크 최고임. 최강 베이스라인 GiGPO 대비 ScienceWorld +8.5pp가 제일 큰데, 과학 주제가 가장 다양해서 크로스태스크 전이 효과가 크게 나온 것임.
 
 ![벤치마크별 Pass@k 결과(논문 Table 2)](/images/2026-07-30-skillrise-cross-task-skill-evolution/table-2-p6.png)
+
+![테스트 타임에도 계속 상승](/images/2026-07-30-skillrise-cross-task-skill-evolution/gifs/getting-better.gif)
 
 5. 제일 흥미로운 발견은 테스트 타임 크로스태스크 스케일링임. 훈련은 K=3 시퀀스로 했는데 테스트에서 시퀀스를 늘리면 성능이 계속 오름. 에이전트가 특정 스킬을 암기한 게 아니라 "스킬을 정리하는 방법" 자체를 배웠다는 증거임. 같은 작업 반복형 베이스라인은 이런 경향이 전혀 없음.
 

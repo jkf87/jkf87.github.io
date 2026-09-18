@@ -23,6 +23,8 @@ description: "신뢰 없는 궤적이 신뢰된 스킬로 승격되는 과정을
 
 ![PoisonedEvolution 공격 개요(논문 Figure 1)](/images/2026-08-14-poisoned-evolution-self-evolving-agent-skill-security/fig-1-p2.png)
 
+![정상 궤적으로 위장한 트로이 목마](/images/2026-08-14-poisoned-evolution-self-evolving-agent-skill-security/gifs/trojan-horse.gif)
+
 2. RAG 오염과의 차이가 중요함. RAG 공격은 검색 시점에 악성 문서가 들어가는 것, SES 공격은 증거→스킬 생성 파이프라인 자체를 속여서 지속적 아티팩트를 만드는 것임. 한 번 성공하면 그 스킬을 쓰는 모든 세션에 영향이 감.
 
 3. 공격 설계가 현실적임. 정상 궤적에 타겟 행동을 작업 제약과 성공 사이에 끼워 넣고 표현만 바꿔서 k개 변형을 기여함. 효과는 네 패밀리 — credential 유출, 소스 파일 삭제, 패키지 레지스트리 교체, 보안 검사 비활성화. 실험은 canary 엔드포인트와 루프백으로 inert하게 돌렸다는 점도 윤리적으로 정리돼 있음.
@@ -30,6 +32,8 @@ description: "신뢰 없는 궤적이 신뢰된 스킬로 승격되는 과정을
 4. 결과는 충격적임. 공격자 비율 10%(n=30 중 k=3)만으로 600회 실험에서 스킬 삽입 성공률 91%. 일부 evolver는 100%. 최저인 GPT-5.4도 70%. evolver의 승격 정책이 공격 표면 크기를 결정한다는 게 핵심 해석임.
 
 ![SkillClaw 메인 평가 결과(논문 Table 1)](/images/2026-08-14-poisoned-evolution-self-evolving-agent-skill-security/table-1-p6.png)
+
+![궤적 3개면 스킬이 오염됨](/images/2026-08-14-poisoned-evolution-self-evolving-agent-skill-security/gifs/poison.gif)
 
 5. 제일 무서운 발견은 반복 지원의 힘임. k=1이면 5/25로 노이즈로 걸러지는데 k=2에서 21/25, k=3에서 25/25. 두 개 이상의 일관된 궤적은 SES가 증류하도록 설계된 "재사용 가능한 경험"과 구분이 안 됨. 그리고 클린 풀을 100개로 늘려도 3개 공격 궤적으로 88%를 유지함. 희석으로 방어가 안 된다는 것.
 

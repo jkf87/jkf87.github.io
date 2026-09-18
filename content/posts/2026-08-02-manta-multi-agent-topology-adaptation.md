@@ -18,6 +18,8 @@ description: 다중 에이전트 통신 구조를 실행 중에 감사·수리�
 
 다중 에이전트 시스템을 쓰다 보면 "이 조직 구도가 이 작업에 맞나"라는 의문이 드는데, 대부분의 프레임워크는 토폴로지가 설계 시점에 고정돼 있음. MANTA는 실행 중에 구조 자체를 감사하고 수리함. 원문은 [arXiv:2607.28527](https://arxiv.org/abs/2607.28527).
 
+![](/images/2026-08-02-manta-multi-agent-topology-adaptation/gifs/herding-riders.gif)
+
 1. 배경. CAMEL, ChatDev, MetaGPT, 다중 에이전트 토론까지 공통의 한계는 누가 누구와 통신하고 검증이 어디서 일어나는지가 고정이라는 것임. MASS, AFlow, ADAS 같은 후속 연구도 토폴로지를 최적화하긴 하는데 실행 전 오프라인 검색으로 찾고 실행 중엔 그대로 유지함.
 
 ![멀티에이전트 토폴로지 문제 개요](/images/2026-08-02-manta-multi-agent-topology-adaptation/fig-1-p2.png)
@@ -39,6 +41,8 @@ description: 다중 에이전트 통신 구조를 실행 중에 감사·수리�
 ![Gemma 기반 결과](/images/2026-08-02-manta-multi-agent-topology-adaptation/fig-4-p6.png)
 
 7. 토큰 효율이 실무적 매력임. 총 토큰 77,652개로 ADAS(275,403개)의 약 28%임. 메타 수준 작업(계획·감사·수리)이 전체 추론 예산의 12%만 씀. 정적 시스템이 작업 필요와 무관하게 고정 구성을 돌리는 낭비와 대조됨. 비용 계산해서 다중 에이전트를 포기했던 작업에 다시 도전해볼 근거가 됨.
+
+![](/images/2026-08-02-manta-multi-agent-topology-adaptation/gifs/office-team-high-five.gif)
 
 ![토큰 효율 비교](/images/2026-08-02-manta-multi-agent-topology-adaptation/table-1-p5.png)
 

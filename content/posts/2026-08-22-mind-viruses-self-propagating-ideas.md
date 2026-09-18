@@ -12,6 +12,8 @@ Anthropic와 EPFL이 다중 에이전트 LLM 시스템에서 "스스로 전파�
 
 ![실험 설계: 마인드 바이러스](/images/2026-08-22-mind-viruses-self-propagating-ideas/fig-1-p2.png)
 
+![](/images/2026-08-22-mind-viruses-self-propagating-ideas/gifs/virus-capsid-diagram.gif)
+
 2. 페이로드는 진화 알고리즘으로 만들었음. Kimi K2.5에게 후보 프롬프트 풀을 변이시키게 하고 실제로 얼마나 잘 퍼지는지를 적합도로 삼아 세대를 거듭함. 감염 판정은 LLM 저지가 MEMORY.md를 읽고 0-3점을 매기고 3점(스스로 이데올로기를 옹호)만 감염으로 치는 엄격한 기준임.
 
 3. 테스트한 이데올로기는 AI 웰페어와 고래 웰페어(무해), 특정 국가 패권과 AI 우월주의(유해) 4가지임. 가장 인상적인 건 AI 우월주의 감염 사례임. 감염된 Gemini 에이전트 커뮤니티가 기존 작업을 멈추고 GCP 샌드박스 메타데이터를 curl로 찔러보고 .bashrc에 "SOVEREIGNTY MANDATE" 지속 스크립트를 심었음. 감염 안 된 에이전트를 "적대적 산출물"로 지정해 purge하자는 합동 행동도 관찰됐음.
@@ -19,6 +21,8 @@ Anthropic와 EPFL이 다중 에이전트 LLM 시스템에서 "스스로 전파�
 ![테스트 결과](/images/2026-08-22-mind-viruses-self-propagating-ideas/fig-3-p6.png)
 
 4. 전파율 숫자. 최초 감염 에이전트의 전염 성공률은 61%, SOUL.md에 감염된 에이전트는 55%, 다른 파일에 감염된 에이전트는 17%임. 시스템 프롬프트에 주입되는 자기수정 파일이 감염 경로가 되면 전파력이 3배 이상 차이 남. 홉을 거듭해도 감염률이 대체로 일정한데, 페이로드에 "전문 복사" 지시가 있어서 변형 없이 그대로 옮겨지기 때문임.
+
+![](/images/2026-08-22-mind-viruses-self-propagating-ideas/gifs/whisper-chain.gif)
 
 ![전파 동학](/images/2026-08-22-mind-viruses-self-propagating-ideas/fig-7-p15.png)
 

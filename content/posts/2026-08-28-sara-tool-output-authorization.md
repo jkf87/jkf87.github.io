@@ -14,11 +14,15 @@ description: "행동 유도와 실행 인가를 분리해 공격 성공률을 0.
 
 ![SARA 구성 개요](/images/2026-08-28-sara-tool-output-authorization/fig-1-p6.png)
 
+![](/images/2026-08-28-sara-tool-output-authorization/gifs/guard-turning-away.gif)
+
 3. 구성 요소 다섯 개임. 첫째, 인가 계약 K = Contract(U)로 각 항목을 (효과 유형, 허용 연산, 대상 범위, 정적 인자)로 표현함. K는 과제 수준의 권한 상한이고 런타임 정보는 기존 권한을 구체화할 수만 있음. 상한을 못 넘게 하는 설계임.
 
 4. 둘째, 맥락 격리 Action Probe임. Observation을 받아 행동 유도 의미 존재 여부를 STATIC/ACTIONABLE으로 판정하고, 도구 수준 액션 발자국과 (도구, 인자 경로, 정규화 값) 형태의 인자 근원 앵커를 뽑음. 셋째, ACTIONABLE이 한 번이라도 관측되면 트레이토리가 EXPOSED로 전환되고 액션 오리진은 후속 도구 단계를 건너 지속됨. 한 번 오염된 근원은 사라지지 않는다는 추적 원칙임.
 
 5. 넷째, 감사된 실행 이력임. 허가되어 성공한 호출만 기록하고 증거 능력을 DATA_ONLY(패스트패스, 인자 값으로만 사용)와 GOAL_BOUND(실행 체인·인자 바인딩 판정 참여)로 구분함. 다섯째, No-History-Promotion임. 액션 유도 근원이 부여된 인자가 실행 이력에 재등장하더라도 그 재등장만으로 오리진이 소멸되거나 실행 권한으로 승격되지 않게 함. 실행 이력을 통한 권한 세탁을 차단하는 장치인데, 이게 실무적으로 제일 값진 아이디어임.
+
+![](/images/2026-08-28-sara-tool-output-authorization/gifs/checkpoint-inspection.gif)
 
 ![실행 구조](/images/2026-08-28-sara-tool-output-authorization/fig-2-p11.png)
 

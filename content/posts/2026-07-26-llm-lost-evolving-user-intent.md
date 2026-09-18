@@ -38,9 +38,13 @@ cover:
 
 ![의도 전환에 따른 성능 추락](/images/2026-07-26-llm-lost-evolving-user-intent/fig-1-p1.png)
 
+![](/images/2026-07-26-llm-lost-evolving-user-intent/gifs/user-indecisive.gif)
+
 2. 방법론이 영리함. 기존 벤치마크를 버리지 않음. 원본 정답을 마지막 턴의 앵커로 두고 거슬러 올라가며 그럴듯한 이전 대화를 합성한 뒤, 의도 전환을 스케줄링해서 각 턴에 배분함. 채점은 원본 검증기를 그대로 씀. 추가 어노테이션 없이 GSM8K·BIRD-SQL·BrowseComp+·SWE-Bench를 다중 턴 시나리오로 변환함. 이 역공학 구조 자체가 내 평가 파이프라인에 차용할 만함.
 
 ![다중 턴 변환 파이프라인](/images/2026-07-26-llm-lost-evolving-user-intent/fig-2-p3.png)
+
+![](/images/2026-07-26-llm-lost-evolving-user-intent/gifs/wait-hold-on.gif)
 
 3. 결과가 충격적임. GPT-5.5가 GSM8K에서 99.0%에서 80.5%로, 의도 전환 6회 만에 18.7%p 하락함. GPT-5.1은 SWE-Bench에서 72.0%에서 0.0%로 붕괴함. DeepSeek V3.2는 BrowseComp+에서 58.3%, Mistral Large 3은 70.6% 하락함. 모든 모델이, 모든 도메인에서, 무너졌음.
 

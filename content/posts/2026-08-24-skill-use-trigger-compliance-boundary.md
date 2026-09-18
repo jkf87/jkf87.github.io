@@ -12,9 +12,13 @@ description: "공개 스킬 7,979개와 과제 17만 개로 스킬 인식·준�
 
 ![스킬 사용 트리거 실험 개요](/images/2026-08-24-skill-use-trigger-compliance-boundary/fig-1-p1.png)
 
+![](/images/2026-08-24-skill-use-trigger-compliance-boundary/gifs/its-library-time.gif)
+
 2. 평가 축이 셋으로 쪼개져 있는 게 이 논문의 핵심 기여임. Trigger(스킬을 인식하고 가져왔나), Compliance(스킬이 규정한 요구 사항의 충족 비율), Boundary(금지 행동 부재 비율). 통합 점수는 Trigger × (0.7·Compliance + 0.3·Boundary)로 스킬 발동 전엔 실행 점수를 안 주는 게이티드 구조임.
 
 3. 결과부터. 최고 성능 조합이 Claude Code 하네스의 GPT-5.5로 SU 0.613. 신뢰 가능 수준과 거리가 멂. Trigger는 0.972인데 Compliance가 0.611, Boundary가 0.718임. 즉 스킬을 찾아내는 것과 스킬대로 실행하는 건 다른 능력이라는 것.
+
+![](/images/2026-08-24-skill-use-trigger-compliance-boundary/gifs/do-my-own-thing.gif)
 
 ![컴플라이언스 경계 측정](/images/2026-08-24-skill-use-trigger-compliance-boundary/fig-2-p5.png)
 

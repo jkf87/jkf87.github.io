@@ -20,11 +20,15 @@ description: 감시 LLM 대신 정상 실행 데이터만으로 학습한 200마
 
 에이전트는 실행 중간에 망가짐. 도구 오류가 연쇄되고 같은 행동을 반복하다 루프에 빠지고 목표에서 이탈함. 표준 해법인 "매 스텝 두 번째 LLM으로 판단"은 감시 비용이 본체보다 큼. 원문은 [arXiv:2608.02464](https://arxiv.org/abs/2608.02464).
 
-1. 제안은 정상 실행 데이터만으로 학습한 스텝당 200마이크로초짜리 감시기임. 2,823개 실제 에피소드로 검증했고 모델은 qwen2.5 7b/3b, llama3.1 8b, gemini-2.5-flash 다섯 종, 프레임워크도 bespoke·LangGraph·AutoGen 세 개를 씀.
+1. 제안은 정상 실행 데이터만으로 학습한 스텝당 200마이크로초짜리 감시기임.
+
+![](/images/2026-08-04-real-time-agent-failure-detection-repair/gifs/smoke-detector.gif) 2,823개 실제 에피소드로 검증했고 모델은 qwen2.5 7b/3b, llama3.1 8b, gemini-2.5-flash 다섯 종, 프레임워크도 bespoke·LangGraph·AutoGen 세 개를 씀.
 
 ![정상 궤적 대비 이상 감지 개요](/images/2026-08-04-real-time-agent-failure-detection-repair/fig-1-p6.png)
 
 2. 숫자부터. 행동 모니터(ESN-CUSUM)가 실패의 71%를 오탐 5% 예산에서 탐지함(AUROC 0.872). 결정론적 검증은 실패의 60%를 오탐 0%로 잡음. 수리(롤백+재실행)는 실패한 실행의 45%를 회수해서 작업 성공률을 52%에서 73%로 올림. 추가 모델 호출 약 1회 비용임.
+
+![](/images/2026-08-04-real-time-agent-failure-detection-repair/gifs/vhs-rewind.gif)
 
 3. 감시기 입력은 세 관측 신호임. 의미 임베딩(char-3-gram 해시라 모델 다운로드 불필요), 토큰 불확실성(logprob 기반), 액션 메타데이터(도구 타입·지연·에러 여부). 이걸 echo-state network에 먹이는데 고정 랜덤 순환 맵 + 폐형 최소제곱이라 학습이 1.7초면 끝남. 같은 데이터로 GRU를 학습하면 68초임.
 

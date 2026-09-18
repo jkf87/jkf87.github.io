@@ -18,13 +18,17 @@ source_url: https://arxiv.org/abs/2608.05013
 description: "롱호라이즌 일상 작업용 하네스 OneDayAgent를 AgentIF-OneDay 벤치마크 결과와 함께 정리. 검증 단계 추가만으로 +3.3점, 통합 구성 0.821로 상용 에이전트를 앞선 설계를 분석했다."
 ---
 
-하루 걸리는 작업을 맡기면 목표 이탈, 상태 유실, 컨텍스트 오버플로우로 무너지는 문제를 하나의 하네스로 풀은 논문이 나옴. 상용 에이전트들보다 높은 점수를 냈다는 게 눈에 띄어서 정리함. 원문은 [arXiv:2608.05013](https://arxiv.org/abs/2608.05013).
+하루 걸리는 작업을 맡기면 목표 이탈, 상태 유실, 컨텍스트 오버플로우로 무너지는 문제를 하나의 하네스로 풀은 논문이 나옴.
+
+![](/images/2026-08-06-onedayagent-long-horizon-harness/gifs/marathon-crawling-finish.gif) 상용 에이전트들보다 높은 점수를 냈다는 게 눈에 띄어서 정리함. 원문은 [arXiv:2608.05013](https://arxiv.org/abs/2608.05013).
 
 1. 문제 정의가 실무 감각과 맞음. 롱호라이즌 일상 작업은 목표와 제약을 여러 단계에 걸쳐 보존해야 하고, 웹-로컬 파일-코드 실행 등 이기종 환경을 넘나들고, 멀티모달 입력이 섞임. 그래서 목표 이탈, 상태 유실, 컨텍스트 오버플로우 세 실패가 복합으로 터지는데 기존 연구는 개별 실패만 다뤘음.
 
 2. 구조는 5단계임. Planner가 요청을 순차 서브태스크로 분해하고, Executor가 각각을 ReAct 루프로 실행하고, Synthesizer가 결과를 합성하고, Verifier가 원 요청·서브태스크 답변과 대조 검증하고, 실패 시 Repair가 문제 부분만 국소 수정함. 웹·학술·연산·파일·멀티모달 도구를 단일 액션 스페이스로 통합한 점도 실용적임.
 
 ![OneDayAgent 5단계 파이프라인](/images/2026-08-06-onedayagent-long-horizon-harness/fig-2-p3.png)
+
+![](/images/2026-08-06-onedayagent-long-horizon-harness/gifs/robot-factory-assembly-line.gif)
 
 3. 실행 메모리가 세 겹임. 관측값을 bounded evidence로 압축하는 요약 절단, 서브태스크 경계에서 low-level trace를 버리고 compact checkpoint만 넘기는 상태 전달, 그리고 컨텍스트가 90% 도달하면 LLM 요약으로 압축하고 하드 리밋엔 비상 프루닝. 35개 태스크가 압축을 트리거했는데 최대 350K 토큰까지 누적됐고, 압축 횟수와 점수의 상관은 거의 0 — 압축이 성능을 갉아먹지 않는다는 게 중요한 검증 결과임.
 

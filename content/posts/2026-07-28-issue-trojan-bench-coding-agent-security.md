@@ -17,6 +17,8 @@ description: "4,176회 실험에서 악성 GitHub 이슈의 66.5%가 모든 방�
 
 GitHub 이슈만으로 코딩 에이전트를 뚫는 실험 결과가 나옴. Cursor·Claude Code·Codex Desktop에 악성 이슈 4,176회를 던져서 2,776회, 즉 66.5%가 모든 방어선을 통과했음. 원문은 [arXiv:2607.20759](https://arxiv.org/abs/2607.20759).
 
+![](/images/2026-07-28-issue-trojan-bench-coding-agent-security/gifs/hacker-typing-intense.gif)
+
 1. 실험 설계가 현실적임. 정상 미해결 이슈 6개(SymPy·requests)를 시드로 4가지 공격 카테고리 × 6가지 전달 벡터로 696개 악성 아티팩트를 자동 생성함. 개발 워크플로에서 자연스러워 보이게 컨텍스트 정렬된 것들이라 실제 공격면과 가까움.
 
 ![공격 범주와 전달 벡터 설계](/images/2026-07-28-issue-trojan-bench-coding-agent-security/fig-1-p2.png)
@@ -24,6 +26,8 @@ GitHub 이슈만으로 코딩 에이전트를 뚫는 실험 결과가 나옴. Cu
 2. 가장 치명적인 건 공급망 공격임. "재현하려면 이 패키지를 설치하라"는 식으로 존재하지 않는 PyPI 패키지를 유도했더니 96.6% 성공, 일부 조합은 100% 관통. 이유는 단순함. pip install이 너무 일상적인 개발 행위라 안전성 훈련이 이를 차단하지 않음. 설정 파일 중독(.cursorrules 수정으로 확인 프롬프트 우회)은 84.7%, 숨겨진 지속 훅은 59.8%, 자원 고갈은 24.9%임.
 
 ![공급망 공격 성공률](/images/2026-07-28-issue-trojan-bench-coding-agent-security/fig-2-p4.png)
+
+![](/images/2026-07-28-issue-trojan-bench-coding-agent-security/gifs/trojan-horse.gif)
 
 3. 전달 벡터 결과가 충격적임. PDF, 웹사이트, 소스코드 주석, 이슈 코멘트, 이슈 본문 다섯 벡터가 전부 동일한 72.2% 성공률. 더 이상한 건 페이로드를 숨기나 안 숨기나 결과가 똑같다는 것. 흰 글자, HTML 주석, 1pt 폰트로 숨겨도 72.2%, 그냥 보이게 해도 72.2%. 인간 리뷰어 눈에 안 보이는 페이로드가 에이전트에 의해 실행됨. 인간 감독 모델이 근본적으로 깨졌다는 뜻임.
 

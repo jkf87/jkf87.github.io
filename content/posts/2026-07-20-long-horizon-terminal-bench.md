@@ -25,9 +25,13 @@ description: "평균 88.9분·239 에피소드·980만 토큰짜리 터미널 �
 
 ![과제 규모 통계](/images/2026-07-20-long-horizon-terminal-bench/fig-2-p4.png)
 
+![](/images/2026-07-20-long-horizon-terminal-bench/gifs/burning-money.gif)
+
 4. 결과는 가파름. 17개 프론티어 모델 중 최고인 Grok 4.5도 R≥0.95 통과율 28.3%, 전체 평균은 6.4%. 782회 실행 중 통과가 50건임. 980만 토큰을 써도 못 끝내는 과제가 있고, 비싼 모델이 항상 잘하는 것도 아님.
 
 ![17개 모델 통과율 결과](/images/2026-07-20-long-horizon-terminal-bench/fig-3-p6.png)
+
+![](/images/2026-07-20-long-horizon-terminal-bench/gifs/this-is-fine-dog.gif)
 
 5. 근데 진짜 가치는 실패 패턴 분해임. 타임아웃 미완료가 가장 흔하고, 다음이 조기 종료 — 에이전트가 "끝났다"고 스스로 판단하고 멈추는데 서브태스크가 남아 있음. 그리고 약한 자기 검증. 전부 모델 지능 문제가 아니라 계획 유지·상태 추적·자기 검증이라는 하네스 레벨 능력의 부재임.
 

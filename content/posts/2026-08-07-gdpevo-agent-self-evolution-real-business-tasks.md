@@ -36,6 +36,8 @@ description: "자기진화가 실제 기업 워크플로우에서 효과가 있�
 
 5. 결과 1. fewshot이 모든 에이전트에서 최고였고 base 대비 +2.59~+16.44pp 향상이었음. 진화는 모델 훈련을 대체할 수 있음. GLM-5.2 fewshot이 GPT-5.5 base를 10.72pp 차이로 앞섰는데 비용은 절반 수준, DeepSeek fewshot은 GPT-5.5 base와 비슷한 정확도에 비용 1/28이었음. 진화가 비용도 줄임. GPT-5.5 fewshot은 정확도를 15.14pp 올리면서 테스트 비용을 20.88% 줄였음.
 
+![](/images/2026-08-07-gdpevo-agent-self-evolution-real-business-tasks/gifs/pokemon-evolving-glow.gif)
+
 ![feature 관점 결과](/images/2026-08-07-gdpevo-agent-self-evolution-real-business-tasks/fig-3-p9.png)
 
 6. 결과 2, 그리고 반직관적인 부분. 출발점이 낮다고 더 많이 배우지 않음. base가 가장 낮았던 DeepSeek(43.58%)의 진화 효과도 가장 작았고(+5.21pp), base가 가장 높았던 Opus 4.8(50.63%)의 진화 효과가 가장 컸음(+16.44pp). 강한 모델일수록 경험에서 더 뽑아낸다는 것임.
@@ -45,6 +47,8 @@ description: "자기진화가 실제 기업 워크플로우에서 효과가 있�
 ![상한 분석](/images/2026-08-07-gdpevo-agent-self-evolution-real-business-tasks/fig-4-p16.png)
 
 8. 결과 4가 내겐 제일 중요함. 스킬 생성기 비교에서 가장 단순한 Naive 생성기가 가장 성능이 좋았음(65.12%, +15.46pp). Codex, Claude Code, DeepAgents 같은 정교한 하네스가 전부 Naive보다 아래였음. 진화 방법보다 모델 자체 지능이 진화 효과를 결정한다는 뜻임. 하네스를 과도하게 엔지니어링하면 오히려 역효과가 났다는, 나 같은 하네스 만드는 사람에게는 약간 아픈 결과임. 근데 내 체감과도 맞음. 스킬 추출 파이프라인을 정교하게 만들수록 본질 아닌 데 토큰을 쓰는 경우가 있었음.
+
+![](/images/2026-08-07-gdpevo-agent-self-evolution-real-business-tasks/gifs/this-meeting-is-over.gif)
 
 9. 상한 분석. 모든 규칙을 미리 알려준 oracle 설정이 91.6%인데 최고 진화 에이전트는 65%대임. 자기진화 능력이 아직 갈 길이 멀다는 정직한 측정임. 채점도 LLM judge가 아니라 결정론적 규칙 그레이더라 각 실패를 특정 규칙 위반으로 추적 가능함. 비용을 토큰·턴·달러로 정확도와 함께 보고하는 것도 운영 관점에서 올바름.
 

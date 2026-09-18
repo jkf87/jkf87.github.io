@@ -23,6 +23,8 @@ description: "에이전트 RL의 최대 병목인 환경 구축을 정책 안으
 
 ![EnvACE 프레임워크 개요](/images/2026-08-07-envace-world-rehearsal-agentic-rl/framework-overview.png)
 
+![환경을 상상으로 리허설](/images/2026-08-07-envace-world-rehearsal-agentic-rl/gifs/imagination.gif)
+
 2. 왜 되는가. 행동과 환경 응답을 같은 파라미터로 학습하면 "이 도구를 이렇게 부르면 환경이 이렇게 반응한다"는 관계가 가중치에 묻어남. 이 환경 지식이 행동 개선으로 직결됨. 실제로 별도 정책으로 역할을 나누면 1.2% 떨어짐. 파라미터 공유가 핵심이라는 게 실험으로 확인된 것임.
 
 ![기존 패러다임과의 비교](/images/2026-08-07-envace-world-rehearsal-agentic-rl/paradigm-comparison.png)

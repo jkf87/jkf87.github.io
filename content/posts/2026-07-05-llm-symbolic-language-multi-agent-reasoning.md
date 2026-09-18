@@ -22,6 +22,10 @@ tags: [LLM, Multi-Agent, SymbolicCommunication, Reasoning, ICML2026, Efficiency,
 
 5. 이걸 업무 자동화에 어떻게 쓰나. 에이전트 A가 조사 결과를 에이전트 B에 넘길 때 자연어 리포트 대신, 반복 작업 도메인에서는 도메인 약어 체계를 프롬프트로 굳혀두는 식으로 축소판을 먼저 만들 수 있음. 필자 블로그 파이프라인도 "요약→재작성→게이트" 단계 간 전달 페이로드를 줄이면 그대로 비용 절감임. LSF 전체를 도입 안 해도 전달 포맷 압축만으로 이득이 남.
 
+![토큰 절감의 맛](/images/2026-07-05-llm-symbolic-language-multi-agent-reasoning/gifs/money-saving.gif)
+
+![에이전트 간 상징 통신](/images/2026-07-05-llm-symbolic-language-multi-agent-reasoning/gifs/agents-talking.gif)
+
 6. 이론 기여도 참고할 만함. 임의 상징 체계에서 정확도 달성에 필요한 최소 토큰 수의 정보이론적 하한을 도출했고, 충분히 표현력 있는 언어와 라운드가 있으면 코드 실행 기반 추론을 상징 통신으로 모방 가능함을 증명함. "압축 언어가 성능 천장을 만든다"는 직관적 우려를 부정한 셈임.
 
 ![토큰 하한 정리와 보편성 이론(논문 도식)](/images/2026-07-05-llm-symbolic-language-multi-agent-reasoning/fig-p6.png)

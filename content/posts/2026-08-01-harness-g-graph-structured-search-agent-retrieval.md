@@ -20,7 +20,11 @@ RL 검색 에이전트 학습이 불안정한 원인을 보상 설계가 아니�
 
 ![검색 등가 붕괴 현상(논문 Figure 1)](/images/2026-08-01-harness-g-graph-structured-search-agent-retrieval/fig1-retrieval-collapse.png)
 
+![검색어는 다른데 결과는 데자뷰](/images/2026-08-01-harness-g-graph-structured-search-agent-retrieval/gifs/deja-vu.gif)
+
 2. 왜 문제냐면 GRPO의 전제가 무너지기 때문임. 같은 증거 → 같은 답 → 같은 보상 → within-group advantage가 0. 8개 롤아웃을 돌려도 의미 있는 비교 샘플이 1~2개뿐임. 반대로 같은 증경인데 답이 다르면 그 차이는 검색 품질이 아니라 답변 생성 능력에서 온 건데, 이걸 검색 행동에 귀인시키면 신호가 오염됨.
+
+![유한 메뉴에서 고르기](/images/2026-08-01-harness-g-graph-structured-search-agent-retrieval/gifs/multiple-choice.gif)
 
 3. 해법은 과감하게 단순함. 자유 형식 검색어 생성을 유한 액션 메뉴로 바꿈. 코퍼스를 문단-문장-엔티티 삼분 그래프로 프로그램 처리해두고, 정책은 Select(문장 확정)·Lookup(엔티티 탐색)·Answer 세 가지에서만 선택함. 검색어 문자열 생성은 환경이 결정론적으로 수행함. 정책은 "무슨 증거를 추구할지"라는 의미적 결정만 내림.
 

@@ -20,7 +20,11 @@ description: "재귀 자기개선을 메모리 제어 레이어만 재귀 수정
 
 3. 재귀 루프가 명확함. 실행 → 고정된 Meta-Agent가 구조화 트레이스를 읽고 실패를 네 메모리 컴포넌트 중 하나로 귀속 → 연루된 컴포넌트만 패치 → 검증 게이트 통과 조건은 진단 태스크가 고쳐지고 헬드아웃에서 회귀가 없을 것 → 바뀐 메모리가 다음 실행을 바꾸고 새 트레이스가 다시 증거가 됨. 모델도 개선 절차도 그대로 두고 메모리-제어 레이어만 재귀적으로 진화하는 것임.
 
+![](/images/2026-08-31-recuris-recursive-memory-evolution/gifs/frozen-let-it-go.gif)
+
 ![재귀적 메모리 진화 과정](/images/2026-08-31-recuris-recursive-memory-evolution/fig-3-p6.png)
+
+![](/images/2026-08-31-recuris-recursive-memory-evolution/gifs/writing-journal.gif)
 
 4. 결과는 베이스 모델을 얼어둔 조건에서 37개 모델-벤치마크 조합 중 35개 개선. τ²-Bench에서 GPT-5.6 Sol +17.8pt, Claude Opus 5 +15.6pt로 87.9% 도달. 배포 모델 기준 τ²-Retail +23.3pt. 그리고 이득이 인터랙션이 길수록 커져서 최장 태스크 구간에선 +32.2pt까지 벌어짐. 긴 태스크일수록 상태 유실이 병목이라는 진단의 정확한 방증임.
 

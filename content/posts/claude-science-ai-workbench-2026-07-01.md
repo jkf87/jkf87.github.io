@@ -19,7 +19,11 @@ Anthropic이 과학자용 AI 워크벤치 Claude Science를 베타로 공개함.
 
 1. 노리는 지점이 정확함. 과학 연구의 병목은 아이디어 부족이 아니라 도구 사이 마찰임. 논문은 PubMed에서, 데이터는 GEO·UniProt에서, 분석은 Jupyter·R에서, 큰 작업은 클러스터에, 그림은 다시 고치고 인용은 따로 확인함. "이 후보 타깃을 조직별 발현·안전성·문헌 기준으로 봐줘"라는 말 하나가 실제로는 여러 시스템을 건너는 작업임. 이 마찰을 에이전트가 이어 붙이는 것임.
 
+![](/images/claude-science-ai-workbench-2026-07-01/gifs/scientist-microscope.gif)
+
 2. 중요한 변화는 지식이 아니라 실행의 흔적임. AI가 과학 지식을 아느냐가 아니라 연구 작업의 흔적을 남기며 실행하느냐가 차이를 만듦. 그림 하나를 만들어도 어떤 코드·환경·입력·대화 흐름에서 나왔는지를 같이 남김. "그럴듯한 그래프"는 연구실에서 쓸모가 없고 재현·검토·추적이 가능해야 한다는 요구를 제품 구조로 넣은 것임.
+
+![](/images/claude-science-ai-workbench-2026-07-01/gifs/stack-of-documents.gif)
 
 ![데이터베이스 연동 구조](/images/claude-science-ai-workbench-2026-07-01/databases.jpg)
 

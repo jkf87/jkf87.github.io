@@ -32,9 +32,13 @@ source_url: "https://arxiv.org/abs/2606.28480"
 
 ![리더보드 결과](/images/2026-07-03-tua-bench-terminal-use-agents/fig-p6.png)
 
+![](/images/2026-07-03-tua-bench-terminal-use-agents/gifs/robot-working-terminal.gif)
+
 5. 카테고리별로 보면 패턴이 보임. System & SW가 가장 쉽고 Office와 Multimedia가 가장 어려움. Opus는 Web & Info에서 압도적이고 나머지는 중위권, GPT-5.5 xhigh가 전 카테고리 고른 편임. 그래서 "어떤 모델을 쓸까"보다 "어떤 종류 과제를 맡길까"가 먼저임.
 
 6. 실패 패턴이 실무적으로 제일 유용함. 장기 계획에서 길을 잃음, CLI 도구 옵션 오해, 중간 결과 확인 없이 진행, 실패 후 원인 파악 없이 재시도 반복. 똑똑해진다고 저절로 해결되는 게 아니라 하네스 설계·피드백 루프 문제임.
+
+![](/images/2026-07-03-tua-bench-terminal-use-agents/gifs/agent-fail-facepalm.gif)
 
 7. 그래서 내 조치. 터미널 에이전트에 위임할 때 시스템 설정·스크립트류는 적극적으로, 멀티스텝 문서·미디어 처리는 중간 결과 체크포인트를 강제로 넣음. 그리고 실패 시 무작정 재시도하지 않게 실패 원인을 먼저 보고하게 프롬프트를 고정함. 34.2%의 실패율을 전제로 설계해야 함.
 

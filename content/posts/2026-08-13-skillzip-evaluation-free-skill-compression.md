@@ -21,6 +21,8 @@ description: "append-only로 자라는 에이전트 스킬의 구조적 중복�
 
 ![스킬 압축 문제 개요](/images/2026-08-13-skillzip-evaluation-free-skill-compression/fig-1-p1.png)
 
+![](/images/2026-08-13-skillzip-evaluation-free-skill-compression/gifs/toolbox-organizer.gif)
+
 2. 기존 해법이 왜 안 맞는지도 명확함. LLMLingua 같은 프롬프트 압축은 쿼리 의존적 중요도 기반이라 미래 작업을 모르는 스킬엔 부적합. SkillReducer는 검증에 40~80회 롤아웃이 필요해서 평가 셋 의존적이고 비쌈.
 
 3. SkillZip의 접근은 중요도가 아니라 구조임. 스킬을 6개 타입의 계약으로 분해함 — 인터페이스(이름·목적·트리거), 워크플로우(액션 순서·결정점·폴백), 도구 프로토콜(인자·전제·예상 관측), 스코프 규칙, 출력 계약, 증거. 압축의 안전 기준은 토큰 중요도가 아니라 타입별 커버리지임. 같은 도구를 다뤄도 인자가 다르면 병합 불가, 모든 브랜치에 반복되는 규칙은 상위 스코프로 이동.
@@ -32,6 +34,8 @@ description: "append-only로 자라는 에이전트 스킬의 구조적 중복�
 5. 두 가지 모드가 있음. 원샷은 기존 스킬 체크포인트를 1회 구조화 추출로 압축. Zip-on-Write는 진화 루프 안에서 패치 도착 시 계약과 비교해 흡수·정제·추가·리팩터링하는 방식. 쓰면서 압축하는 것임.
 
 6. 결과가 깔끔함. 압축률 평균 31.2%(SkillReducer 9.2%), 태스크 성능은 오히려 0.577 vs 0.544로 높음. 소요 시간 286초 vs 1,006초, 롤아웃 0회. 다른 모델에서 실행해도 retention 0.97로 압축이 모델 종속적이지 않음.
+
+![](/images/2026-08-13-skillzip-evaluation-free-skill-compression/gifs/vacuuming-clutter.gif)
 
 ![압축률-성능 결과](/images/2026-08-13-skillzip-evaluation-free-skill-compression/fig-3-p6.png)
 

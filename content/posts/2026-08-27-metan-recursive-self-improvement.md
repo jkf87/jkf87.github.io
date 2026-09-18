@@ -14,6 +14,8 @@ description: 자기개선 에이전트의 메타 깊이가 약 2에 제한되는
 
 ![Meta^n 개요](/images/2026-08-27-metan-recursive-self-improvement/fig1-overview.png)
 
+![](/images/2026-08-27-metan-recursive-self-improvement/gifs/recursive-repeating-pattern.gif)
+
 3. 왜 발산하지 않는가. Ω는 변경되지 않으므로 시스템이 발산하지 않고, 입력은 단조 증가하므로 각 층은 이전 층보다 많은 정보 위에서 추론함. 깊이는 미리 정하지 않고 수렴 기준으로 결정되며, 진화적 아카이브가 층 체인을 탐색함. 불변 영역을 연산자 하나로 최소화한 게 핵심 설계임.
 
 4. 결과. Gemma 4 31B-IT와 GPT-5.2 두 백본, 시드 3개 평균으로 8개 벤치마크 패밀리 전부에서 선행 자기개선 에이전트(OpenEvolve, Gödel Agent)를 능가했음. CO-Bench 0.851 vs 0.814 vs 0.451, LawBench 0.815 vs 0.745, AlgoTune 15.10배 vs 10.45배임. GPT-5.2에서도 순위가 동일함.
@@ -21,6 +23,8 @@ description: 자기개선 에이전트의 메타 깊이가 약 2에 제한되는
 ![검색 진행 상황](/images/2026-08-27-metan-recursive-self-improvement/fig5-search-progress.png)
 
 5. 가장 주목할 숫자는 ARC-AGI-2임. 스킬 암기에 저항하도록 설계된 벤치마크에서 0.331을 기록해 비교군 중 유일하게 0을 넘었음(OpenEvolve 0.003, Gödel Agent 0.054). 진짜 일반화가 필요한 영역에서 재귀가 차이를 만든다는 증거로 읽힘.
+
+![](/images/2026-08-27-metan-recursive-self-improvement/gifs/spiral-staircase-candle.gif)
 
 ![레이어별 역할 분석](/images/2026-08-27-metan-recursive-self-improvement/fig6-layer-roles.png)
 

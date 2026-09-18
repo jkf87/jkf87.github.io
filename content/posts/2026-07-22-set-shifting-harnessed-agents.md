@@ -24,7 +24,11 @@ API가 죽거나 백엔드가 장애로 바뀌어도 에이전트는 예전에 �
 
 ![shift 후 루틴 수렵 패턴](/images/2026-07-22-set-shifting-harnessed-agents/fig-3-p6.png)
 
+![](/images/2026-07-22-set-shifting-harnessed-agents/gifs/same-thing-every-night-brain.gif)
+
 4. 발견 2. 실패 모드가 모델마다 질적으로 다름. mimo-v2.5는 예전에 쓴 도구 그룹들을 섞어서 계속 호출하고 새 그룹 탐험을 안 함. deepseek-v4-pro는 궤적 시작에 고른 단일 그룹에 고착해서 그게 신뢰 불가능해져도 전환을 안 함. 같은 하네스, 같은 도구인데 사전 학습이 도구 선택 편향을 결정한다는 뜻임.
+
+![](/images/2026-07-22-set-shifting-harnessed-agents/gifs/why-so-stubborn.gif)
 
 5. 발견 3. set-shifting 정확도 Φ는 올바른 그룹을 post-shift 전 구간에서 호출할 결합 확률임. 단일 shift에서 60%대가 2단계 shift에서 20% 이하로 추락함. shift가 누적될수록 회복이 극히 드묾.
 

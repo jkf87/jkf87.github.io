@@ -24,7 +24,11 @@ description: 참조 궤적과 현재 상태가 어긋나면 teacher가 올바른
 
 ![상태-레퍼런스 불일치 문제](/images/2026-08-11-smrc-sd-state-matched-routing-self-distillation/fig1-state-reference-mismatch.png)
 
+![](/images/2026-08-11-smrc-sd-state-matched-routing-self-distillation/gifs/gps-recalculating.gif)
+
 2. 구체 예시가 와닿음. 참조 궤적은 "Product A를 Results A에서 클릭"하라고 가르치는데 학생은 Product B 상세 페이지에 있음. 이 상태에서 올바른 행동은 "Back to Search"인데도 teacher는 여전히 Product A 경로를 평가 기준으로 삼아서 학생의 올바른 행동을 낮게 매김.
+
+![](/images/2026-08-11-smrc-sd-state-matched-routing-self-distillation/gifs/classroom-exam.gif)
 
 ![SMRC-SD 개요](/images/2026-08-11-smrc-sd-state-matched-routing-self-distillation/fig2-smrc-sd-overview.png)
 
