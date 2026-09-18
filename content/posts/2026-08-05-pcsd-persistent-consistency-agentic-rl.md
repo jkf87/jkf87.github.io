@@ -16,13 +16,13 @@ description: "PCSD 분석. 멀티턴 에이전트 RL의 크레딧 할당 문제�
 
 에이전트 강화학습의 고질병은 보상이 희소하다는 것. 수십 턴에 걸친 궤적 끝에 성공/실패 하나만 돌아오는데 그 사이 어떤 액션이 도움이 됐는지 알기 어려움. [PCSD](https://arxiv.org/abs/2608.01837)는 이 크레딧 할당 문제를 토큰 수준에서 풂. 핵심 발상이 단순해서 좋음. privileged teacher가 학생 토큰에 높은 확률을 할당하는 구간이 주변 토큰까지 일관되게 지속되면 그 신호를 믿고, 고립된 점 하나만 높으면 노이즈로 보고 무시하는 것.
 
-1. 배경. GRPO는 그룹 내 상대 보상으로 advantage를 만들지만 궤적 내 모든 토큰에 같은 advantage를 줌. 어떤 액션이 성공에 기여했는지 구분이 안 됨. 기존 self-distillation(OPSD, SDAR, RLSD)은 teacher에게 스킬이나 정답 같은 privileged context를 주고 학생 토큰을 평가하는데, teacher의 판단이 토큰마다 들쭉날쭉해서 그대로 쓰면 노이즈가 학습됨.
+1. 배경. GRPO(같은 프롬프트의 여러 롤아웃을 뽑아 그룹 평균 대비 성과로 학습 신호를 만드는 강화학습 알고리즘)는 그룹 내 상대 보상으로 advantage를 만들지만 궤적 내 모든 토큰에 같은 advantage(각 토큰에 매기는 학습 신호 강도)를 줌. 어떤 액션이 성공에 기여했는지 구분이 안 됨. 기존 self-distillation(OPSD, SDAR, RLSD)은 teacher에게 스킬이나 정답 같은 privileged context를 주고 학생 토큰을 평가하는데, teacher의 판단이 토큰마다 들쭉날쭉해서 그대로 쓰면 노이즈가 학습됨.
 
 2. 세 메커니즘으로 이 원칙을 구현함. 첫째, 적응 집계. teacher-student 확률 차이를 로컬 윈도우에서 모아 보는데, 지역 분산이 낮으면 짧은 윈도우(토큰 1개)로 세밀하게, 높으면 긴 윈도우(8개)로 평탄하게 만듦. 둘째, 트렌드 변조. 윈도우 안에서 teacher 지지가 감소 추세면 가중치를 깎음. 증폭은 안 하고 감소하는 신호만 약화하는 단방향 설계임. 셋째, 연속 게이팅. 최종 가중치를 sigmoid로 매핑해서 하드 셀렉션이 아니라 연속 분배로 줌. 전체 토큰의 20~28% 정도가 의미 있는 가중치를 받는다고 함.
 
 ![PCSD 프레임워크](/images/2026-08-05-pcsd-persistent-consistency-agentic-rl/fig-2-p4.png)
 
-3. 결과. ALFWorld에서 Qwen2.5-3B 기준 GRPO 75.0%, GRPO+OPSD 81.2%, SDAR 84.4%인데 PCSD는 90.6%. GRPO 대비 +15.6pp, 최강 경쟁자 대비 +6.2pp임. WebShop에서도 Score 85.0으로 최상위권이고, unseen 환경에서 86.7%로 GRPO(70.9%), SDAR(72.7%)를 크게 앞섬. 손실 결합 계수 λ는 0.01이 최적인데 0.05로 올리면 teacher 신호가 너무 강해져서 RL 탐색이 약해져 83.6%로 떨어짐. 좋은 신호도 과하면 독이 된다는 것.
+3. 결과. ALFWorld(텍스트 기반 가사 과제 시뮬레이션 벤치마크)에서 Qwen2.5-3B 기준 GRPO 75.0%, GRPO+OPSD 81.2%, SDAR 84.4%인데 PCSD는 90.6%. GRPO 대비 +15.6pp, 최강 경쟁자 대비 +6.2pp임. WebShop(웹 쇼핑 과제 벤치마크)에서도 Score 85.0으로 최상위권이고, unseen 환경에서 86.7%로 GRPO(70.9%), SDAR(72.7%)를 크게 앞섬. 손실 결합 계수 λ(teacher 신호를 전체 학습 손실에 섞는 비율)는 0.01이 최적인데 0.05로 올리면 teacher 신호가 너무 강해져서 RL 탐색이 약해져 83.6%로 떨어짐. 좋은 신호도 과하면 독이 된다는 것.
 
 ![결과 비교](/images/2026-08-05-pcsd-persistent-consistency-agentic-rl/fig-1-p2.png)
 

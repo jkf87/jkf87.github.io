@@ -20,7 +20,7 @@ description: 다중 에이전트 통신 구조를 실행 중에 감사·수리�
 
 ![](/images/2026-08-02-manta-multi-agent-topology-adaptation/gifs/herding-riders.gif)
 
-1. 배경. CAMEL, ChatDev, MetaGPT, 다중 에이전트 토론까지 공통의 한계는 누가 누구와 통신하고 검증이 어디서 일어나는지가 고정이라는 것임. MASS, AFlow, ADAS 같은 후속 연구도 토폴로지를 최적화하긴 하는데 실행 전 오프라인 검색으로 찾고 실행 중엔 그대로 유지함.
+1. 배경. CAMEL, ChatDev, MetaGPT(역할 분담형 다중 에이전트 협업 프레임워크들), 다중 에이전트 토론까지 공통의 한계는 누가 누구와 통신하고 검증이 어디서 일어나는지가 고정이라는 것임. MASS, AFlow, ADAS(워크플로우나 에이전트 구성을 자동 탐색으로 찾는 후속 연구들)도 토폴로지를 최적화하긴 하는데 실행 전 오프라인 검색으로 찾고 실행 중엔 그대로 유지함.
 
 ![멀티에이전트 토폴로지 문제 개요](/images/2026-08-02-manta-multi-agent-topology-adaptation/fig-1-p2.png)
 
@@ -36,7 +36,7 @@ description: 다중 에이전트 통신 구조를 실행 중에 감사·수리�
 
 ![구체 사례 흐름](/images/2026-08-02-manta-multi-agent-topology-adaptation/fig-3-p5.png)
 
-6. 결과. Gemma 4 31B 백본으로 5개 벤치마크 평균 74.0점으로 최강 베이스라인 ADAS(68.2점) 대비 +5.8점임. BrowseComp 76.7점, PlanCraft 76.7점, MATH 91.1점. 근데 WorkBench에서는 43.3점으로 ADAS(66.7점)에 크게 뒤짐. 오프라인 최적화가 유리한 영역이 여전히 있다는 반증임.
+6. 결과. Gemma 4 31B 백본으로 5개 벤치마크 평균 74.0점으로 최강 베이스라인 ADAS(에이전트 시스템 설계 자체를 코드로 자동 탐색하는 기법)의 68.2점 대비 +5.8점임. BrowseComp(여러 사이트를 넘나드는 깊은 탐색 끝에 온라인상의 희귀 정보를 찾아야 하는 웹 검색 벤치마크) 76.7점, PlanCraft 76.7점, MATH(경쟁 수학 문제 세트로 수학 추론 능력을 재는 벤치마크) 91.1점. 근데 WorkBench에서는 43.3점으로 ADAS(66.7점)에 크게 뒤짐. 오프라인 최적화가 유리한 영역이 여전히 있다는 반증임.
 
 ![Gemma 기반 결과](/images/2026-08-02-manta-multi-agent-topology-adaptation/fig-4-p6.png)
 

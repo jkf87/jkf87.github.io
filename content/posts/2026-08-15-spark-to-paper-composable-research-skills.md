@@ -27,7 +27,7 @@ description: 전용 플랫폼 없이 Claude Code 위에서 스킬 13개로 논�
 
 ![스킬 13개로 논문을 쓰는 중](/images/2026-08-15-spark-to-paper-composable-research-skills/gifs/writing-paper.gif)
 
-2. 실행 구조. ts-paper 오케스트레이터가 스킬 13개를 순서대로 돌림. 8단계는 입력 라우팅, 기획(청사진), 인용(DOI·arXiv ID로 검증된 BibTeX), 집필(LaTeX 원고), 정제, 리뷰, 그림, 조립, 실험 실행임. 중요한 설계는 파이프라인이 다음 작업 순서만 정하고 수행 방법은 현재 프로젝트 상태를 보고 어시스턴트가 정한다는 것임. 매 추론 단계를 미리 박아둔 에이전트 그래프 방식과 다른 지점임.
+2. 실행 구조. ts-paper 오케스트레이터가 스킬 13개를 순서대로 돌림. 8단계는 입력 라우팅, 기획(청사진), 인용(DOI·arXiv ID로 검증된 BibTeX — DOI는 학술 논문에 부여되는 고유 식별번호, BibTeX는 논문 서지 정보를 담는 표준 서식), 집필(LaTeX 원고), 정제, 리뷰, 그림, 조립, 실험 실행임. 중요한 설계는 파이프라인이 다음 작업 순서만 정하고 수행 방법은 현재 프로젝트 상태를 보고 어시스턴트가 정한다는 것임. 매 추론 단계를 미리 박아둔 에이전트 그래프 방식과 다른 지점임.
 
 ![Spark-to-Paper 실행 개요(논문 Figure 2)](/images/2026-08-15-spark-to-paper-composable-research-skills/fig-2-p6.png)
 

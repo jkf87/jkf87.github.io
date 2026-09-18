@@ -19,7 +19,7 @@ cover: /images/2026-08-11-agent-memory-distillation/fig-1-p1.png
 
 ![](/images/2026-08-11-agent-memory-distillation/gifs/dog-teacher-chalkboard.gif)
 
-3. 결과. 파인튜닝 없이 메모리 주입만으로 Qwen3-4B가 AppWorld 14.88%에서 49.40%로 오름(+34.5%p), BFCL V3도 29.13%에서 40.38%로 오름. Gemma4-E4B와 Qwen3-8B는 AppWorld에서 선생(50.00%)을 넘김. 작은 모델에 맞게 정제된 메모리가 원본 선생 능력보다 효율적일 수 있다는 뜻임.
+3. 결과. 파인튜닝 없이 메모리 주입만으로 Qwen3-4B가 AppWorld(API 호출로 앱 내 과제를 수행하는 에이전트 벤치마크) 14.88%에서 49.40%로 오름(+34.5%p), BFCL V3(도구·함수 호출 정확도를 측정하는 벤치마크)도 29.13%에서 40.38%로 오름. Gemma4-E4B와 Qwen3-8B는 AppWorld에서 선생(50.00%)을 넘김. 작은 모델에 맞게 정제된 메모리가 원본 선생 능력보다 효율적일 수 있다는 뜻임.
 
 ![](/images/2026-08-11-agent-memory-distillation/gifs/leveling-up.gif)
 

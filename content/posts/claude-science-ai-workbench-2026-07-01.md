@@ -17,7 +17,7 @@ description: "Anthropic이 공개한 과학용 AI 워크벤치 Claude Science를
 
 Anthropic이 과학자용 AI 워크벤치 Claude Science를 베타로 공개함. 논문 잘 읽는 챗봇이 아니라 PubMed, Jupyter, HPC 클러스터, 단백질 뷰어, 유전체 DB를 하나의 작업대에 올리겠다는 선언에 가까워서 정리함. 원문은 [Anthropic 발표](https://www.anthropic.com/news/claude-science-ai-workbench).
 
-1. 노리는 지점이 정확함. 과학 연구의 병목은 아이디어 부족이 아니라 도구 사이 마찰임. 논문은 PubMed에서, 데이터는 GEO·UniProt에서, 분석은 Jupyter·R에서, 큰 작업은 클러스터에, 그림은 다시 고치고 인용은 따로 확인함. "이 후보 타깃을 조직별 발현·안전성·문헌 기준으로 봐줘"라는 말 하나가 실제로는 여러 시스템을 건너는 작업임. 이 마찰을 에이전트가 이어 붙이는 것임.
+1. 노리는 지점이 정확함. 과학 연구의 병목은 아이디어 부족이 아니라 도구 사이 마찰임. 논문은 PubMed(생물의학 논문 검색 데이터베이스)에서, 데이터는 GEO·UniProt에서, 분석은 Jupyter·R에서, 큰 작업은 클러스터에, 그림은 다시 고치고 인용은 따로 확인함. "이 후보 타깃을 조직별 발현·안전성·문헌 기준으로 봐줘"라는 말 하나가 실제로는 여러 시스템을 건너는 작업임. 이 마찰을 에이전트가 이어 붙이는 것임.
 
 ![](/images/claude-science-ai-workbench-2026-07-01/gifs/scientist-microscope.gif)
 
@@ -33,11 +33,11 @@ Anthropic이 과학자용 AI 워크벤치 Claude Science를 베타로 공개함.
 
 ![컴퓨트 관리 화면](/images/claude-science-ai-workbench-2026-07-01/compute.jpg)
 
-5. 60개 이상의 큐레이티드 스킬과 커넥터가 연결 층임. UniProt, PDB, Ensembl, ClinVar, ChEMBL 같은 DB가 각각 다른 스키마를 가진 상태에서 범용 모델 하나가 전부 외우는 대신 도메인별 스킬과 검증 가능한 실행 환경을 붙이는 구조임. BioNeMo로 Evo 2, Boltz-2 같은 생명과학 모델까지 닿고 연구실 내부 파이프라인도 커넥터로 붙일 수 있음.
+5. 60개 이상의 큐레이티드 스킬과 커넥터가 연결 층임. UniProt, PDB, Ensembl, ClinVar, ChEMBL 같은 DB가 각각 다른 스키마를 가진 상태에서 범용 모델 하나가 전부 외우는 대신 도메인별 스킬과 검증 가능한 실행 환경을 붙이는 구조임. BioNeMo(생명과학용 AI 프레임워크)로 Evo 2, Boltz-2 같은 생명과학 모델까지 닿고 연구실 내부 파이프라인도 커넥터로 붙일 수 있음.
 
 ![아티팩트 재현성](/images/claude-science-ai-workbench-2026-07-01/artifacts.jpg)
 
-6. 베타 사례 세 개가 방향을 보여줌. Manifold Bio가 표적 치료제 후보를 내부 독점 데이터 기준까지 반영해 순위화한 것. Allen Institute가 커스텀 스킬 20개로 수천 편 논문에서 주장·정량 결과를 뽑아 evidence database를 만들고, 한 에이전트가 쓰고 다른 리뷰어 에이전트가 인용과 정확성을 비판하는 actor-critic 구조를 쓴 것. UCSF가 germline workup을 이전의 10분의 1 시간에 수행하고 연구팀이 독립 검증한 것.
+6. 베타 사례 세 개가 방향을 보여줌. Manifold Bio가 표적 치료제 후보를 내부 독점 데이터 기준까지 반영해 순위화한 것. Allen Institute가 커스텀 스킬 20개로 수천 편 논문에서 주장·정량 결과를 뽑아 evidence database를 만들고, 한 에이전트가 쓰고 다른 리뷰어 에이전트가 인용과 정확성을 비판하는 actor-critic(생성 담당과 비평 담당을 분리해 서로 검증하게 하는 구조)를 쓴 것. UCSF가 germline workup을 이전의 10분의 1 시간에 수행하고 연구팀이 독립 검증한 것.
 
 7. 필자 관점에서 관전 포인트는 속도가 아니라 검증 구조임. 속도가 빨라질수록 검증 구조도 같이 빨라졌는지가 문제고, 에이전트가 너무 매끄럽게 결과를 만들면 연구자가 검증을 덜 하게 되는 위험이 있음. 내부 데이터·외부 모델·HPC·인용이 한 세션에 묶일수록 권한 관리와 감사 로그가 중요해지고 "AI가 알아서 했다"는 연구에서 면책 사유가 될 수 없음.
 

@@ -26,15 +26,15 @@ Anthropic이 공개한 Model Hardware Standard, MHS의 핵심은 간단함. AI �
 
 ![실험실 비교](/images/2026-08-29-anthropic-mhs-physical-agents/official-03.png)
 
-3. 제어 경로는 세 개임. MCP는 에이전트가 장비를 도구처럼 호출하는 경로. CLI는 사람이 터미널에서 다루는 방식. 코드 API는 장시간 작업이나 빠른 반복을 스크립트로 묶을 때 씀. 세 경로를 다 준 게 실무적 판단임.
+3. 제어 경로는 세 개임. MCP(Model Context Protocol, AI 에이전트가 외부 도구·데이터 소스에 표준 방식으로 접속하게 하는 연결 규약)는 에이전트가 장비를 도구처럼 호출하는 경로. CLI는 사람이 터미널에서 다루는 방식. 코드 API는 장시간 작업이나 빠른 반복을 스크립트로 묶을 때 씀. 세 경로를 다 준 게 실무적 판단임.
 
 4. Anthropic이 든 Claude 레이저 조정 사례가 구조의 핵심을 보여줌. Claude가 카메라로 결과를 보고 레이저 빔이 어떻게 움직였는지 확인하고 다시 조정함. 그리고 배운 절차를 deterministic script로 패키징함. 이후엔 매 단계 온라인 추론 없이 한 번의 명령으로 정렬 작업을 돌림.
 
 5. 이 대목이 중요함. 물리 세계의 에이전트는 말로 계획하는 모델만으로는 느리고 위험함. 반복 가능하고 검증 가능한 부분은 코드로 내려야 하고 MHS는 그 경계를 표준화하려는 시도임. 에이전트로 탐색하고 스크립트로 고정하는 이중 구조는 우리 자동화 파이프라인에서도 그대로 쓰는 원칙임.
 
-6. 초기 사례가 생각보다 넓음. Genentech는 BCA protein assay 자동화 PoC를 구현함. 액체 핸들러, 로봇팔, 플레이트 리더를 함께 조율하는 절차임. University of Washington은 qPCR 증폭 곡선을 보다가 적절한 순간에 멈추는 에이전트 감독과 collision-free plate handoff를 만듦.
+6. 초기 사례가 생각보다 넓음. Genentech는 BCA protein assay 자동화 PoC를 구현함. 액체 핸들러, 로봇팔, 플레이트 리더를 함께 조율하는 절차임. University of Washington은 qPCR(DNA를 증폭하며 진행 상황을 실시간 측정하는 실험) 증폭 곡선을 보다가 적절한 순간에 멈추는 에이전트 감독과 collision-free plate handoff를 만듦.
 
-7. CMU는 serial dilution 실험을 기존보다 약 3배 빠르게 돌림. 액체 핸들러, 플레이트 리더, 로봇팔, 모니터링 카메라가 3대 컴퓨터에 흩어져 있고 인터페이스도 달랐는데 에이전트가 조율함. HHMI Janelia는 예전에 서로 공유 인터페이스가 없는 7개 vendor program을 엮어야 했던 현미경 rig를 MHS로 씀.
+7. CMU는 serial dilution(시료를 단계적으로 희석해 여러 농도를 만드는 실험)을 기존보다 약 3배 빠르게 돌림. 액체 핸들러, 플레이트 리더, 로봇팔, 모니터링 카메라가 3대 컴퓨터에 흩어져 있고 인터페이스도 달랐는데 에이전트가 조율함. HHMI Janelia는 예전에 서로 공유 인터페이스가 없는 7개 vendor program을 엮어야 했던 현미경 rig를 MHS로 씀.
 
 8. QuEra 사례도 눈에 띔. 중성 원자 양자컴퓨터 안의 레이저 시스템 일부를 에이전트가 제어했고 레이저 lock을 99.3% 확률로 사람 개입 없이 복구하는 controller를 만듦. 물리 계층 운영까지 에이전트가 들어갔다는 신호임.
 

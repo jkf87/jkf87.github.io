@@ -33,7 +33,7 @@ description: "하네스 전체를 버전 관리 대상으로 두고 reviewed com
 
 ![서브에이전트 패치 통합 프로토콜(논문 Figure 2)](/images/2026-08-11-ouroboros-self-developing-frontier-coding-agent/fig-2-p4.png)
 
-4. 벤치마크는 Terminal-Bench 2.1 86.74%(이전 최고 83.8%를 약 2표준편차 차이로 상회), OSWorld-Verified 90.69%, SWE-bench Pro 58.2%, GAIA 78.2%. trajectory audit으로 shortcut trial 1건을 스스로 식별해 제외한 것도 평가 신뢰성 관점에서 좋은 습관임. 벤치마크는 frozen seed로 평가하고 실사용 진화는 별도 라인으로 분리해서 재현 가능성과 진화를 안 섞음.
+4. 벤치마크는 Terminal-Bench 2.1(터미널에서 실제 작업을 수행하는 능력을 재는 벤치마크) 86.74%(이전 최고 83.8%를 약 2표준편차 차이로 상회), OSWorld-Verified(실제 컴퓨터 화면을 GUI로 조작하는 과제 벤치마크, 검증본) 90.69%, SWE-bench Pro(실제 저장소의 난이도 높은 이슈를 고치는 코딩 벤치마크) 58.2%, GAIA(검색·도구 사용·추론이 섞인 범용 어시스턴트 과제 벤치마크) 78.2%. trajectory audit으로 shortcut trial 1건을 스스로 식별해 제외한 것도 평가 신뢰성 관점에서 좋은 습관임. 벤치마크는 frozen seed로 평가하고 실사용 진화는 별도 라인으로 분리해서 재현 가능성과 진화를 안 섞음.
 
 ![벤치마크 패밀리별 결과(논문 Table 2)](/images/2026-08-11-ouroboros-self-developing-frontier-coding-agent/table-2-p6.png)
 

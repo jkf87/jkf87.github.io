@@ -17,7 +17,7 @@ github_url: "https://github.com/TheJoshBrod/KernelForge"
 description: "Kernel Forge 분석. 실제 모델 실행을 캡처해 LLM이 CUDA 커널을 생성·검증·교체하는 하네스. 지역 속도 2.83배와 실제 배포 영향이 다르다는 통찰과, 가드드 디스패치의 실무 교훈."
 ---
 
-LLM이 생성한 CUDA 커널이 PyTorch eager보다 최대 2.83배 빨라질 수 있다는 [연구](https://arxiv.org/abs/2607.24762)가 나옴. Michigan 대학의 Kernel Forge는 MCTS 기반 하네스로, 수정하지 않은 PyTorch 모델에서 실제 실행되는 연산자를 자동 캡처해서 LLM이 만든 특화 커널로 교체함. 근데 이 논문의 진짜 가치는 커널 속도가 아니라 **"가장 빨라진 커널이 가장 영향력 있는 커널은 아니었다"**는 발견임. GPU 최적화를 안 하더라도 에이전트 시스템의 우선순위 설계에 적용되는 교훈이라 정리함.
+LLM이 생성한 CUDA 커널이 PyTorch eager보다 최대 2.83배 빨라질 수 있다는 [연구](https://arxiv.org/abs/2607.24762)가 나옴. PyTorch eager는 연산을 그래프 컴파일 없이 하나씩 즉시 실행하는 기본 모드임. Michigan 대학의 Kernel Forge는 MCTS 기반 하네스로, MCTS는 몬테카를로 트리 탐색을 뜻하는데 선택지를 트리로 펼치고 시뮬레이션 결과를 반영해 유망한 경로를 집중 탐색하는 기법임. 수정하지 않은 PyTorch 모델에서 실제 실행되는 연산자를 자동 캡처해서 LLM이 만든 특화 커널로 교체함. 근데 이 논문의 진짜 가치는 커널 속도가 아니라 **"가장 빨라진 커널이 가장 영향력 있는 커널은 아니었다"**는 발견임. GPU 최적화를 안 하더라도 에이전트 시스템의 우선순위 설계에 적용되는 교훈이라 정리함.
 
 1. 배경. 기존 LLM 기반 커널 최적화 도구(AutoComp, GEAK, CudaForge)는 네 가지 한계가 있었음. 랜덤 텐서로 테스트한 분리된 벤치마크에서만 평가했다는 것, 최적화된 코드를 스탠드얼론으로 뽑아줘서 개발자가 수동으로 다시 끼워야 한다는 것, LLM 워크로드만 봤다는 것, 선형 정제나 빔 서치로 탐색해서 초기 선택에 묶인다는 것. 랜덤 텐서로 빨랐던 커널이 실제 모델에서 같은 성능이 안 나오는 건 shape, 활성화 분포, 인접 연산자, 메모리 동작이 전부 다르기 때문.
 
@@ -27,7 +27,7 @@ LLM이 생성한 CUDA 커널이 PyTorch eager보다 최대 2.83배 빨라질 수
 
 3. 이 "실제 실행을 캡처해서 타겟을 만든다"는 설계는 그대로 내 자동화에 이식됨. 에이전트로 뭔가를 최적화할 때 감으로 대상을 고르지 말고, 실제 프로덕션 로그에서 호출·실행 컨텍스트를 캡처해서 우선순위를 매기는 것. 그리고 같은 기능이라도 호출 맥락이 다르면 다른 케이스로 분리해서 관리하는 것. 벤치마크용 가상 데이터가 아니라 실제 워크로드로 검증해야 한다는 원칙임.
 
-4. 결과가 재밌음. DGX Spark에서 네 모델을 돌려서 ResNet-50의 adaptive_avgpool2d 1.52배, Stable Diffusion의 group_norm 1.70배, Gemma 4 E2B의 softmax 2.83배, Qwen 3.5의 softmax 1.54배를 달성함. 근데 Gemma의 softmax는 전체 연산자 런타임의 5.93%만 차지하고, 90.13%를 차지하는 linear는 0.246배, 즉 커스텀 커널이 더 느려서 쓸 수 없었음. Stable Diffusion도 group_norm을 1.70배로 만들어봤자 group_norm + layer_norm + SiLU 합쳐 10.48%이고, linear와 SDPA가 80% 이상을 차지하는데 여기는 여전히 eager가 빠름.
+4. 결과가 재밌음. DGX Spark에서 네 모델을 돌려서 ResNet-50의 adaptive_avgpool2d 1.52배, Stable Diffusion의 group_norm 1.70배, Gemma 4 E2B의 softmax 2.83배, Qwen 3.5의 softmax 1.54배를 달성함. 근데 Gemma의 softmax는 전체 연산자 런타임의 5.93%만 차지하고, 90.13%를 차지하는 linear는 0.246배, 즉 커스텀 커널이 더 느려서 쓸 수 없었음. Stable Diffusion도 group_norm을 1.70배로 만들어봤자 group_norm + layer_norm + SiLU 합쳐 10.48%이고, linear와 SDPA가 80% 이상을 차지하는데, SDPA는 스케일드 닷-프로덕트 어텐션 연산을 뜻하며 여기는 여전히 eager가 빠름.
 
 ![Gemma 4 E2B 결과 — softmax 2.83배지만 런타임 5.93%](/images/2026-07-29-kernel-forge-agent-harness-cuda-optimization/fig-5-p8.png)
 

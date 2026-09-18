@@ -35,9 +35,9 @@ description: "자동 하네스 진화의 과적합·신호 부족·컴포넌트 
 
 ![하네스가 갈리고 있는 중](/images/2026-08-09-harnesscompass-guiding-automatic-harness-evolution/gifs/harness-at-work.gif)
 
-5. 최종 결과는 SWE-bench Verified, GPT-5.4 기준 전체 51.8→61.0%. 기존 AHE는 20회 반복해도 55.5%인데 5회 반복으로 앞섬. 미지 작업 450개에서 60.4%로 AHE 대비 5.7%p 우위임.
+5. 최종 결과는 SWE-bench Verified(실제 GitHub 이슈를 고치는 코딩 벤치마크의 사람이 검증한 서브셋), GPT-5.4 기준 전체 51.8→61.0%. 기존 AHE(자동 하네스 진화 기존 방법)는 20회 반복해도 55.5%인데 5회 반복으로 앞섬. 미지 작업 450개에서 60.4%로 AHE 대비 5.7%p 우위임.
 
-![진화 반복별 Pass@1(논문 Figure 2)](/images/2026-08-09-harnesscompass-guiding-automatic-harness-evolution/fig-2-p6.png)
+![진화 반복별 Pass@1, 한 번 시도해서 통과할 확률(논문 Figure 2)](/images/2026-08-09-harnesscompass-guiding-automatic-harness-evolution/fig-2-p6.png)
 
 6. 교차 모델 이전도 확인됨. GPT-5.4로 진화한 하네스를 Claude-Sonnet-4.6에 얹으면 70.0→73.8%로 개선이 유지됨. 하네스 개선이 모델 종속적이지 않다는 건 진화 결과를 자산으로 축적할 수 있다는 뜻이라 실무 가치가 큼.
 

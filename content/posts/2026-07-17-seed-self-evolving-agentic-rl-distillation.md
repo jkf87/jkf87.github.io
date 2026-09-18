@@ -26,7 +26,7 @@ cover:
 
 5. 여기서 기술적으로 눈여겨볼 건 게이팅임. skill을 그대로 흉내 내는 게 아니라 같은 행동 토큰에 대한 맥락 간 로그 확률 차이를 쓰니까, skill이 실제 행동 선택에 영향을 주는 토큰에서만 신호가 강해짐. 노이즈가 많은 궤적 수준 감독을 다루는 요령임.
 
-6. 결과. ALFWorld, WebShop, Search-based QA 세 벤치마크에서 GRPO를 일관되게 앞섬. 수렴도 빠르고 데이터 분율이 작아도 GRPO 수준 이상을 유지함. Ablation은 세 구성요소(교훈 추출, on-policy 증류, 자가진화) 각각의 기여를 확인해줌.
+6. 결과. ALFWorld(텍스트로 가사·조작 과제를 수행하는 에이전트 환경), WebShop(웹 쇼핑몰에서 주문 조건을 맞추는 구매를 완성하는 벤치마크), Search-based QA(검색으로 답하는 질의응답 벤치마크) 세 벤치마크에서 GRPO를 일관되게 앞섬. 수렴도 빠르고 데이터 분율이 작아도 GRPO 수준 이상을 유지함. Ablation은 세 구성요소(교훈 추출, on-policy 증류, 자가진화) 각각의 기여를 확인해줌.
 
 ![SEED 결과](/images/2026-07-17-seed-self-evolving-agentic-rl-distillation/results-github.png)
 

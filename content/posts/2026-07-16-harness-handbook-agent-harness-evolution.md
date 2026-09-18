@@ -27,7 +27,7 @@ affiliations: ["Tencent HY LLM Frontier", "Indiana University", "University of M
 
 6. 검증 환경은 Codex와 Terminus-2 두 오픈소스 하네스에 행동 기반 수정 요청 30개씩임. 요청은 목표 위치를 안 알려주는 Query, 여러 파일을 가로지르는 Cross-file, 키워드 검색으로 안 잡히는 Search-Hostile 세 유형으로 나눴음.
 
-7. 결과. 계획 품질 win rate가 Codex에서 38.3% vs 28.3%, Terminus-2에서 45.6% vs 26.7%. Planner 토큰 사용량은 Codex에서 12.7%, Terminus-2에서 8.6% 감소함. Localization F1은 24개 비교 전부에서 개선, 폭은 5.0~18.8포인트였음.
+7. 결과. 계획 품질 win rate가 Codex에서 38.3% vs 28.3%, Terminus-2에서 45.6% vs 26.7%. Planner 토큰 사용량은 Codex에서 12.7%, Terminus-2에서 8.6% 감소함. Localization F1(정답 위치와 예측 위치의 겹침을 정밀도·재현율로 계산한 점수)은 24개 비교 전부에서 개선, 폭은 5.0~18.8포인트였음.
 
 ![계획 품질 및 토큰 비교](/images/2026-07-16-harness-handbook-agent-harness-evolution/fig-3-p8.png)
 

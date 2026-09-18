@@ -32,7 +32,7 @@ cover:
 
 ![RHI 하네스 분해](/images/2026-07-21-recursive-harness-self-improvement/fig-3-p9.png)
 
-4. 성능 숫자를 보면 추론 비용 최대 60% 절감. 저비용 에이전트의 성능 한계를 최대 추론 노력 설정보다 위로 끌어올림. sonnet-4.6은 2회 반복 후, opus-4.7은 1회 반복 후에 test-time scaling의 경험적 한계가 상승했음. 토큰을 더 태우는 대신 정보 흐름을 고쳐서 성적을 낸다는 게 요지임.
+4. 성능 숫자를 보면 추론 비용 최대 60% 절감. 저비용 에이전트의 성능 한계를 최대 추론 노력 설정보다 위로 끌어올림. sonnet-4.6은 2회 반복 후, opus-4.7은 1회 반복 후에 test-time scaling(추론 시점에 토큰·샘플을 더 써서 성능을 끌어올리는 방법)의 경험적 한계가 상승했음. 토큰을 더 태우는 대신 정보 흐름을 고쳐서 성적을 낸다는 게 요지임.
 
 ![Sonnet 모델에서의 RHI 효과](/images/2026-07-21-recursive-harness-self-improvement/fig-5-p12.png)
 

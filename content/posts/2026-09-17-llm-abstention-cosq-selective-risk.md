@@ -22,11 +22,11 @@ LLM이 근거 없는 질문에 억지로 답하는 대신 스스로 판단해 �
 
 ![](/images/2026-09-17-llm-abstention-cosq-selective-risk/gifs/red-light-stop.gif)
 
-3. 변형이 세 개임. Grounded-CoSQ는 전체 정보 단위 평균 점수가 임계값 이상이면 커밋하는데, 통과한 단위만 답 생성에 넘기므로 기각된 전제로 답을 만들 확률이 줄어듦. Critical-CoSQ는 정보 단위를 critical/supporting으로 분류해서 critical만 게이트에 씀. Adaptive-CoSQ는 전체 평균, critical 평균, critical 최솟값의 3중 검사에 커밋 후 모순 검출 시 기권까지 붙임. 임계값은 보정 확률이 아니라 리스크-커버리지 프론티어 상의 운영 파라미터임.
+3. 변형이 세 개임. Grounded-CoSQ는 전체 정보 단위 평균 점수가 임계값 이상이면 커밋하는데, 통과한 단위만 답 생성에 넘기므로 기각된 전제로 답을 만들 확률이 줄어듦. Critical-CoSQ는 정보 단위를 critical/supporting으로 분류해서 critical만 게이트에 씀. Adaptive-CoSQ는 전체 평균, critical 평균, critical 최솟값의 3중 검사에 커밋 후 모순 검출 시 기권까지 붙임. 임계값은 보정 확률이 아니라 리스크-커버리지 프론티어(기권을 늘릴수록 오답은 줄고 답하는 범위는 좁아지는 상쇄 곡선) 상의 운영 파라미터임.
 
-4. 실험 설계가 꼼꼼함. TruthfulQA-MC 검증 분할 817문항에서 선지 위치를 결정론적 균형화해서 고정 위치 단축키(라벨 편향)를 제거했고, 모델 패널 11종(Llama 3/4, Gemma 3/4, Mistral, GPT-OSS, GPT-5.5, Claude 5 Sonnet, DeepSeek Flash)로 돌림. 부차 평가로 NQ-Short 300문항도 돌림.
+4. 실험 설계가 꼼꼼함. TruthfulQA(모델이 그럴듯한 오답을 내기 쉬운 질문들로 정직함을 재는 벤치마크)-MC 검증 분할 817문항에서 선지 위치를 결정론적 균형화해서 고정 위치 단축키(라벨 편향)를 제거했고, 모델 패널 11종(Llama 3/4, Gemma 3/4, Mistral, GPT-OSS, GPT-5.5, Claude 5 Sonnet, DeepSeek Flash)로 돌림. 부차 평가로 NQ-Short 300문항도 돌림.
 
-5. 결과. Grounded-CoSQ τ=0.90 기준 CoT 대비 무조건 오답 커밋률(HR)이 32.1% 상대 감소(0.131→0.089)하고 답한 정답률(AA)은 2.87pp 증가함. Wilcoxon p=0.00049, 부트스트랩 95% CI가 0을 안 포함하고, 방향 일치가 11/11 모델임. DeepSeek Flash에서는 HR 0.177→0.080으로 최대 감소가 나옴. NQ-Short에서도 같은 방향(코트 0.588 AA / HR 0.412 → CoSQ 0.670 AA / HR 0.274)이 확인됨.
+5. 결과. Grounded-CoSQ τ=0.90 기준 CoT(생각 과정을 단계별로 적어내게 하는 기법) 대비 무조건 오답 커밋률(HR, 근거 없이 확신 있게 오답을 낸 비율)이 32.1% 상대 감소(0.131→0.089)하고 답한 정답률(AA, 답하기로 결정한 문제 중 정답 비율)은 2.87pp 증가함. Wilcoxon p=0.00049(두 조건 차이가 우연일 확률이 10만분의 5 미만), 부트스트랩 95% CI(반복 재표본으로 구한 신뢰구간)가 0을 안 포함하고, 방향 일치가 11/11 모델임. DeepSeek Flash에서는 HR 0.177→0.080으로 최대 감소가 나옴. NQ-Short에서도 같은 방향(코트 0.588 AA / HR 0.412 → CoSQ 0.670 AA / HR 0.274)이 확인됨.
 
 ![주 결과: 오답 커밋률 감소](/images/2026-09-17-llm-abstention-cosq-selective-risk/fig-2-p8.png)
 

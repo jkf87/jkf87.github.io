@@ -17,7 +17,7 @@ authors:
 
 ![자가진화 루프](/images/2026-07-23-gsme-gated-semantic-quality-diversity-harness/fig-1-p3.png)
 
-3. 3중 게이트가 크레딧의 조건임. Validity gate는 샌드박스 크래시 같은 인프라 실패를 재실행으로 걸러냄. Activation gate는 패치가 실제로 발동했는지 확인해서 발동 안 한 시도의 효과를 귀속 안 시킴. Significance gate는 paired 2σ 검정(z ≥ 1.96)을 통과한 개선만 인정함. "평균이 올라갔다"가 아니라 동일 태스크 쌍 비교임.
+3. 3중 게이트가 크레딧의 조건임. Validity gate는 샌드박스 크래시 같은 인프라 실패를 재실행으로 걸러냄. Activation gate는 패치가 실제로 발동했는지 확인해서 발동 안 한 시도의 효과를 귀속 안 시킴. Significance gate는 paired 2σ 검정(z ≥ 1.96, 동일 태스크 쌍 비교에서 개선 폭이 우연 변동 범위를 95% 신뢰 수준으로 벗어났는지 보는 통계 기준)을 통과한 개선만 인정함. "평균이 올라갔다"가 아니라 동일 태스크 쌍 비교임.
 
 4. 두 번째 설계는 병리 기반 품질-다양성 아카이브임. 패치를 (where: 프롬프트·지식·런타임·설정 4레버) × (why: 모델이 진단한 실패 병리) 범주형 셀에 배치함. 검색이 태스크 ID가 아니라 실패 유형별로 조직되니까 오버피팅 방지 바이어스가 생김. 셀당 게이트된 엘리트 하나, 셀 간 재조합 허용으로 다양성 유지함.
 
@@ -25,7 +25,7 @@ authors:
 
 5. 실행 예가 직관적임. BrowseComp+에서 모델이 추론 중 토큰 예산을 소진해 빈 턴을 반환하는 thinking-runaway와 검증 없이 종료하는 premature finalization 두 병리를 보임. 각각 선택적 회복 패치(+6.1pp), 검증-종료 패치(+9.8pp)를 만들고, 둘을 재조합하니 sealed test에서 +13.9pp. 단독보다 나으면서 일반화됐음.
 
-6. 결과. 7개 도메인 중 6개가 paired 2σ를 통과함. AppWorld +15.5pp, BrowseComp+ +13.9pp, LiveCode +12.8pp 등. 훈련 게인의 86~147%를 sealed test에서 유지해서 오버피팅 붕괴가 없었음. pass@3도 전 도메인에서 상승해서 분산 감소가 아니라 풀 수 있는 태스크 집합 자체가 늘어난 것임.
+6. 결과. 7개 도메인 중 6개가 paired 2σ를 통과함. AppWorld(시뮬레이션된 앱들로 구성된 환경에서 과제를 수행하는 에이전트 벤치마크) +15.5pp, BrowseComp+(웹 검색 벤치마크 BrowseComp의 강화판) +13.9pp, LiveCode(최신 코딩 문제로 코딩 능력을 측정하는 벤치마크) +12.8pp 등. 훈련 게인의 86~147%를 sealed test(진화에 쓰이지 않은 봉인된 평가 세트)에서 유지해서 오버피팅 붕괴가 없었음. pass@3(세 번 시도 안에 하나라도 성공할 확률)도 전 도메인에서 상승해서 분산 감소가 아니라 풀 수 있는 태스크 집합 자체가 늘어난 것임.
 
 ![sealed test 결과](/images/2026-07-23-gsme-gated-semantic-quality-diversity-harness/fig-3-p6.png)
 

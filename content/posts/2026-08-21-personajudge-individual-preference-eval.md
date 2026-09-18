@@ -11,7 +11,7 @@ tags:
 description: "평균 점수를 잘 맞추는 Judge가 특정 평가자의 취향까지 맞추는 건 아님. 판단 라벨과 사후 이유를 함께 넣은 개인화 데모가 클릭 로그보다 셌다는 결과를 평가 시스템 설계 관점으로 정리함."
 ---
 
-LLM-as-Judge를 쓰면 평가 비용은 내려가지만 하나가 자주 빠짐. 평균 점수를 잘 맞추는 Judge가 특정 평가자의 취향까지 맞춘다는 보장이 없다는 것임. PersonaJudge가 이 문제를 정면으로 다룸. 원문은 [arXiv:2607.05742](https://arxiv.org/abs/2607.05742).
+LLM-as-Judge(LLM이 채점자가 되어 답변 품질을 평가하는 방식)를 쓰면 평가 비용은 내려가지만 하나가 자주 빠짐. 평균 점수를 잘 맞추는 Judge가 특정 평가자의 취향까지 맞춘다는 보장이 없다는 것임. PersonaJudge가 이 문제를 정면으로 다룸. 원문은 [arXiv:2607.05742](https://arxiv.org/abs/2607.05742).
 
 1. 배경. 기존 LLM-as-Judge는 여러 사람의 선호를 합쳐 consensus label을 만드는데 그 과정에서 평가자 사이의 차이는 평균 속으로 사라짐. 근데 disagreement가 항상 노이즈가 아님. 평가자가 서로 다른 기준을 적용했다면 그 차이 자체가 평가 대상임. 어떤 사람은 조심성을, 어떤 사람은 직접성을 높게 보고 어떤 사람은 둘 다 애매하면 Neutral을 자주 고름.
 
@@ -23,7 +23,7 @@ LLM-as-Judge를 쓰면 평가 비용은 내려가지만 하나가 자주 빠짐.
 
 3. Neutral을 독립된 세 번째 라벨로 보존한 설계가 좋음. 흔한 preference 데이터셋은 A/B 이진으로 밀어붙이는데 실제 평가에서는 "둘 다 비슷하다", "둘 다 문제 있다", "기준상 결정 못 하겠다"가 자주 나옴. 모델 호출도 두 단계로 나눠서 먼저 preference를 낼지 Neutral을 고를지 맞추고, preference가 있다고 판단되면 방향을 다시 맞춤.
 
-4. 데이터. Anthropic HH에서 helpfulness·harmlessness 평가 태스크를 뽑아서 annotator 32명, 데이터셋당 evaluator 21명, evaluator당 100개 판단으로 총 4,200개 preference judgment을 모았음. 라벨만이 아니라 판단 결과·행동 흔적·사후 설명이 같은 평가자 단위로 묶인 게 차별점임.
+4. 데이터. Anthropic HH(Anthropic이 공개한 인간 선호 데이터셋, 두 답변 중 어느 쪽이 더 도움되고 무해한지 사람이 골라 기록한 쌍 모음)에서 helpfulness·harmlessness 평가 태스크를 뽑아서 annotator 32명, 데이터셋당 evaluator 21명, evaluator당 100개 판단으로 총 4,200개 preference judgment을 모았음. 라벨만이 아니라 판단 결과·행동 흔적·사후 설명이 같은 평가자 단위로 묶인 게 차별점임.
 
 5. 결과 1. Base Judge 대비 개인화 데모는 Harmlessness +2.8%p, Helpfulness +1.4%p임. 평균 폭은 크지 않은데, 다른 evaluator의 데모를 넣은 컨트롤과 비교하면 차이가 선명함(0.477 vs 0.450, 0.515 vs 0.471). "그 평가자의 과거 판단"이 예시 이상의 신호를 줬다는 뜻임.
 

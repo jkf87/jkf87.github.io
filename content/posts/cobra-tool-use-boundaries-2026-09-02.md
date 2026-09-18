@@ -16,7 +16,7 @@ description: "EMNLP 2026 수록 CoBRA(arXiv:2609.00967) 정리. 동일 쿼리의
 
 4. S2가 핵심 단계임. 동일 쿼리 풀에 두 전문가를 온도 0으로 실행해서 페어 롤아웃을 수집함. 효용 R(τ)=S(τ)−λC(τ)의 차이로 internal-favored, external-favored, ambiguous 세 파티션을 구성함(λ=0.10, ε=0.10). 이 파티션 판정이 인간 어노테이션과 92.5% 일치(κ=0.85)함. 라벨이 믿을 만하다는 근거임.
 
-5. S3은 경계 인식 콜드스타트 SFT임. clear-margin 샘플로 라우팅 형식과 분기 사전을 학습함. S4는 MARS-RL로 경계·애매 쿼리에 대해 reference-split 롤아웃(G_int=G_ext=4)과 반사실 한계 어드밴티지를 적용한 GRPO 확장임. LoRA(r=16, α=32), KL 계수 0.01임.
+5. S3은 경계 인식 콜드스타트 SFT임. clear-margin 샘플로 라우팅 형식과 분기 사전을 학습함. S4는 MARS-RL로 경계·애매 쿼리에 대해 reference-split 롤아웃(G_int=G_ext=4)과 반사실 한계 어드밴티지를 적용한 GRPO(같은 프롬프트의 여러 응답을 그룹 비교해 학습하는 강화학습 알고리즘) 확장임. LoRA(r=16, α=32, 가중치 일부에 저랭크 행렬만 추가 학습하는 경량 파인튜닝), KL 계수 0.01임.
 
 ![프레임워크 개요](/images/cobra-tool-use-boundaries-2026-09-02/fig-2-p3.png)
 

@@ -20,11 +20,11 @@ github_url: https://github.com/NVIDIA-NeMo/labs-OO-Agents
 
 ![NOOA 구현 예시](/images/2026-07-25-nvidia-oo-agents/fig-1-p2.png)
 
-2. 실행 전략은 두 개임. Predict는 싱글샷으로 분류·추출에 쓰고, 반환 타입으로 검증 후 실패 시 로컬 재시도를 돌림. CodeAct는 모델이 파이썬 코드를 쓰고 실행하고 관찰하는 REPL 세션으로, 타입 검증된 값을 return할 때까지 반복함.
+2. 실행 전략은 두 개임. Predict는 싱글샷으로 분류·추출에 쓰고, 반환 타입으로 검증 후 실패 시 로컬 재시도를 돌림. CodeAct는 모델이 파이썬 코드를 쓰고 실행하고 관찰하는 REPL(코드를 입력하면 즉시 결과를 보는 대화형 실행 환경) 세션으로, 타입 검증된 값을 return할 때까지 반복함.
 
 3. 여기서 좋은 지점은 결정론적 코드와 에이전트 루프의 경계가 소스 코드에 그대로 보인다는 것임. `...` 바디는 LLM 루프, 일반 바디는 그냥 파이썬. 개발자와 모델이 같은 인터페이스를 공유함. 어떤 프레임워크 DSL도 새로 익힐 필요가 없음.
 
-4. 컨텍스트 렌더링은 3개 영역임. Static block은 시스템 프롬프트처럼 불변이라 KV-cache 재사용을 극대화함. Event history는 타입화된 이벤트의 append-only 시퀀스. Dynamic block은 매 호출 전 재평가되는 TODO나 live state임. 3층을 캐시 효율 순서로 배치한 설계임.
+4. 컨텍스트 렌더링은 3개 영역임. Static block은 시스템 프롬프트처럼 불변이라 KV-cache(이전 토큰의 계산 결과를 저장해 재사용하는 캐시) 재사용을 극대화함. Event history는 타입화된 이벤트의 append-only 시퀀스. Dynamic block은 매 호출 전 재평가되는 TODO나 live state임. 3층을 캐시 효율 순서로 배치한 설계임.
 
 ![컨텍스트 렌더링](/images/2026-07-25-nvidia-oo-agents/fig-3-p6.png)
 
@@ -36,7 +36,7 @@ github_url: https://github.com/NVIDIA-NeMo/labs-OO-Agents
 
 ![메모리 시스템](/images/2026-07-25-nvidia-oo-agents/fig-5-p10.png)
 
-8. 성능은 프레임워크 논문치고 실용적임. SWE-bench Verified에서 공개 모델 기준 경쟁력 있는 패스율을 냈고, ARC-AGI-3에선 멀티에이전트 월드 모델 시스템을 단일 에이전트 + 1페이지 스킬로 압축하면서도 score-cost Pareto frontier를 개선함. 단순화가 손해가 아니었다는 증거임.
+8. 성능은 프레임워크 논문치고 실용적임. SWE-bench Verified에서 공개 모델 기준 경쟁력 있는 패스율을 냈고, ARC-AGI-3(인터랙티브 환경 과제로 에이전트 능력을 측정하는 벤치마크)에선 멀티에이전트 월드 모델 시스템을 단일 에이전트 + 1페이지 스킬로 압축하면서도 score-cost Pareto frontier(점수-비용 트레이드오프에서 최적 균형을 이루는 경계선)를 개선함. 단순화가 손해가 아니었다는 증거임.
 
 9. 논문의 실질 기여 하나는 14개 프레임워크 비교표임. Typed I/O, pass by reference, code as action, loop engineering, object state, harness APIs 여섯 역량 기준으로 LangGraph, Claude Agent SDK, OpenAI Codex, Google ADK, OpenClaw 등을 비교함. NOOA는 여섯 개를 단일 표면에서 전부 지원하는 최초를 주장함.
 

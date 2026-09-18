@@ -6,9 +6,9 @@ draft: false
 description: "경험은 도움이 될 때가 있지만 자동 개선을 보장하지 않음. 판단 품질과 다음 성능 향상의 상관이 거의 0이었다는 결과와 과제 구조별 최적 반영 방식을 정리함."
 ---
 
-에이전트가 스스로 테스트하고 스스로 점수를 매기고 그 경험을 다음 행동에 쓰면 정말 좋아지는가. S3Gym이 이 질문을 따로 재는 벤치마크를 만들었음. 원문은 [arXiv 2608.31100](https://arxiv.org/abs/2608.31100).
+에이전트가 스스로 테스트하고 스스로 점수를 매기고 그 경험을 다음 행동에 쓰면 정말 좋아지는가. S3Gym(자기테스트—자기판단—자기개선 세 단계를 분리해 측정하는 에이전트 벤치마크)이 이 질문을 따로 재는 벤치마크를 만들었음. 원문은 [arXiv 2608.31100](https://arxiv.org/abs/2608.31100).
 
-1. 구성은 3단임. Self-Testing(relaxed 설정에서 여러 에피소드를 돌며 행동과 관찰을 모음), Self-Judging(각 transition에 스스로 점수를 매기고 판단), Self-Improvement(그 경험을 History ICL, Summary Memory, Parameter Training 중 하나로 반영하고 strict held-out 설정에서 재평가)임. 환경은 Chess, Minesweeper, Tetris, Snake, Plants-vs-Zombies, Trust Evolution 등 7개 텍스트 게임임.
+1. 구성은 3단임. Self-Testing(relaxed 설정에서 여러 에피소드를 돌며 행동과 관찰을 모음), Self-Judging(각 transition에 스스로 점수를 매기고 판단), Self-Improvement(그 경험을 History ICL(과거 사례를 그대로 프롬프트에 넣는 방식), Summary Memory, Parameter Training 중 하나로 반영하고 strict held-out 설정에서 재평가)임. 환경은 Chess, Minesweeper, Tetris, Snake, Plants-vs-Zombies, Trust Evolution 등 7개 텍스트 게임임.
 
 ![](/images/2026-09-01-s3gym-self-testing-judging-improvement/gifs/chessboard-move.gif)
 
@@ -22,11 +22,11 @@ description: "경험은 도움이 될 때가 있지만 자동 개선을 보장�
 
 ![게임별 결과 비교](/images/2026-09-01-s3gym-self-testing-judging-improvement/fig-2-p7.png)
 
-5. 제일 중요한 발견은 자기판단과 개선의 단절임. 7개 모델·7개 게임, 98런, 116,117개 transition을 비교했을 때 판단 agreement와 다음 strict 점수 게인의 상관이 ρ=-0.010, calibration 오차 반대값과 게인의 상관도 ρ=-0.018로 거의 신호가 없었음. 좋은 행동을 알아보는 단계와 그 판단을 다음 정책으로 바꾸는 단계가 분리되어 있다는 뜻임.
+5. 제일 중요한 발견은 자기판단과 개선의 단절임. 7개 모델·7개 게임, 98런, 116,117개 transition을 비교했을 때 판단 agreement(자기 판단이 실제 보상과 일치하는 비율)와 다음 strict 점수 게인의 상관이 ρ=-0.010, calibration 오차 반대값과 게인의 상관도 ρ=-0.018로 거의 신호가 없었음. 좋은 행동을 알아보는 단계와 그 판단을 다음 정책으로 바꾸는 단계가 분리되어 있다는 뜻임.
 
 ![](/images/2026-09-01-s3gym-self-testing-judging-improvement/gifs/nothing-to-see-here.gif)
 
-6. 판단 자체도 부분적임. Minesweeper, Nullify, PvZ, Snake, Tetris에서 event agreement가 0.82-0.881까지 나오지만 이건 zero-reward transition이 많은 영향도 있음. PvZ는 agreement가 높아도 NMAE가 0.882로 큼. 좋아 보이는 행동인지 정도는 알아도 가치 크기를 잘 맞춘다는 뜻은 아님.
+6. 판단 자체도 부분적임. Minesweeper, Nullify, PvZ, Snake, Tetris에서 event agreement가 0.82-0.881까지 나오지만 이건 zero-reward transition이 많은 영향도 있음. PvZ는 agreement가 높아도 NMAE(예측값과 실제값의 평균 크기 오차, 낮을수록 정확)가 0.882로 큼. 좋아 보이는 행동인지 정도는 알아도 가치 크기를 잘 맞춘다는 뜻은 아님.
 
 7. 내 업무에 적용한 프레임. "지난 실행에서 배웠다"는 말을 하려면 최소 세 개를 나눠봐야 함. 테스트를 잘했는가(실패가 드러나는 케이스를 스스로 만들었는가), 판단을 잘했는가(로그의 성공/실패 원인을 환경 신호와 맞게 봤는가), 반영을 잘했는가(다음 실행에 쓸 규칙·메모리·스킬·코드 변경으로 바꿨는가)임. 그리고 내 자동화 로그 관리에도 이 원칙을 붙였음. 상태 디테일이 중요한 작업(디버깅, 데이터 처리)은 raw 로그를 남기고, 규칙이 잘 압축되는 작업(운영 절차, 반복 검사)은 요약 메모리를 남김.
 

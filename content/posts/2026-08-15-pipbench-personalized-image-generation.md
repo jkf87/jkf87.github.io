@@ -21,9 +21,9 @@ description: "짧은 프롬프트와 선호 이미지 2~5장, 사용자 프로�
 
 ![](/images/2026-08-15-pipbench-personalized-image-generation/gifs/highly-selective-clueless.gif)
 
-2. 평가 설계가 균형 잡혀 있음. 프롬프트 충실도(CLIP 텍스트-이미지 유사도)와 취향 적합도(reference 이미지와의 지각·시맨틱 유사도)를 같이 보고, 여기에 전체 프로필을 조건으로 둘 중 어느 쪽이 취향에 맞는지 비교하는 persona-aware Elo를 얹음. 이 judge가 사람 주석과 약 91% 일치했다고 함. 규모 있는 취향 평가에는 자동 평가가 필수라는 판단임.
+2. 평가 설계가 균형 잡혀 있음. 프롬프트 충실도(CLIP 텍스트-이미지 유사도 — CLIP은 이미지와 텍스트를 같은 임베딩 공간에 놓아 유사도를 재는 모델)와 취향 적합도(reference 이미지와의 지각·시맨틱 유사도)를 같이 보고, 여기에 전체 프로필을 조건으로 둘 중 어느 쪽이 취향에 맞는지 비교하는 persona-aware Elo(Elo는 승패 기록으로 상대 강도를 점수화하는 체스 레이팅 방식)를 얹음. 이 judge가 사람 주석과 약 91% 일치했다고 함. 규모 있는 취향 평가에는 자동 평가가 필수라는 판단임.
 
-3. 결과의 핵심은 이미지 모델을 파인튜닝하지 않아도 된다는 것임. 최강은 GPT-5 fusion — VLM이 짧은 프롬프트, reference 이미지, 프로필을 읽어 preference-aware 프롬프트로 재작성해 이미지 모델에 넘기는 방식. real-user Elo 1765로 no-preference 기준 1427, DreamBooth 1452를 크게 앞섬. 취향 해석 레이어로 VLM이 잘 작동한다는 결론임. 필자가 이미지 생성할 때 프롬프트 재작성 단계를 거치는 것과 같은 구조인데, 그 효과가 숫자로 확인된 셈임.
+3. 결과의 핵심은 이미지 모델을 파인튜닝하지 않아도 된다는 것임. 최강은 GPT-5 fusion — VLM(이미지와 텍스트를 함께 이해하는 비전-언어 모델)이 짧은 프롬프트, reference 이미지, 프로필을 읽어 preference-aware 프롬프트로 재작성해 이미지 모델에 넘기는 방식. real-user Elo 1765로 no-preference 기준 1427, DreamBooth(좋아한 이미지 몇 장으로 생성 모델을 파인튜칭하는 기법) 1452를 크게 앞섬. 취향 해석 레이어로 VLM이 잘 작동한다는 결론임. 필자가 이미지 생성할 때 프롬프트 재작성 단계를 거치는 것과 같은 구조인데, 그 효과가 숫자로 확인된 셈임.
 
 ![방법별 Elo 비교](/images/2026-08-15-pipbench-personalized-image-generation/fig-3-method-comparison.png)
 

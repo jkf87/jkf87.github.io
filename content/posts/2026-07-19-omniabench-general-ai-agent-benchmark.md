@@ -13,13 +13,13 @@ source_url: "https://arxiv.org/abs/2607.14989"
 
 ![OmniaBench 개요](/images/2026-07-19-omniabench-general-ai-agent-benchmark/fig-1-p1.png)
 
-2. OmniaBench는 세 축으로 설계됨. ToC·ToB·ToE를 아우르는 90개 대분류·354개 소분류 도메인에서 1,431개 과제를 구성하고, 능력을 10차원(지시 이해, 계획, 도구 사용, 제약 유지, 적응적 수정 등)으로 분해하며, 8가지 난이도 요인(제약 수, 턴 수, 의존성 깊이 등)을 통제함.
+2. OmniaBench는 세 축으로 설계됨. ToC(일반 소비자용 과제)·ToB(기업 업무용 과제)·ToE(전문가·전문 영역 과제)를 아우르는 90개 대분류·354개 소분류 도메인에서 1,431개 과제를 구성하고, 능력을 10차원(지시 이해, 계획, 도구 사용, 제약 유지, 적응적 수정 등)으로 분해하며, 8가지 난이도 요인(제약 수, 턴 수, 의존성 깊이 등)을 통제함.
 
 ![능력 차원 설계](/images/2026-07-19-omniabench-general-ai-agent-benchmark/fig-2-p3.png)
 
 ![](/images/2026-07-19-omniabench-general-ai-agent-benchmark/gifs/benchmark-exam.gif)
 
-3. 결과 숫자가 먼저임. 최전선 모델조차 Overall Pass@1 60% 미만. Claude-Sonnet-5 58.54%, GPT-5.6-Sol 57.14%. 범용 과제 공간이 기존 벤치마크가 커버하던 것보다 훨씬 넓다는 뜻임.
+3. 결과 숫자가 먼저임. 최전선 모델조차 Overall Pass@1(한 번의 실행으로 과제를 완수할 확률 지표) 60% 미만. Claude-Sonnet-5 58.54%, GPT-5.6-Sol 57.14%. 범용 과제 공간이 기존 벤치마크가 커버하던 것보다 훨씬 넓다는 뜻임.
 
 ![메인 결과: 최전선 모델도 Pass@1 60% 미만](/images/2026-07-19-omniabench-general-ai-agent-benchmark/fig-3-p5.png)
 

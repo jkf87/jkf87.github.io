@@ -5,7 +5,7 @@ tags: [agent, in-context-rl, skill-bank, LLM, benchmark]
 draft: false
 ---
 
-HExA(Hierarchical Experimentalist Agents, arXiv 2606.29315)는 가중치 업데이트 없이 에이전트가 직접 실험을 설계·수행하고 그 결과를 자연어 스킬 뱅크로 증류해 재사용하는 프레임워크임. Claude Sonnet 4.6 기준 catapult 난이도 성공률 2%→67.3±9.3%, 에피소드당 평균 반복 22.9(ReAct)→14.4로 줄었음.
+HExA(Hierarchical Experimentalist Agents, arXiv 2606.29315)는 가중치 업데이트 없이 에이전트가 직접 실험을 설계·수행하고 그 결과를 자연어 스킬 뱅크로 증류해 재사용하는 프레임워크임. Claude Sonnet 4.6 기준 catapult 난이도 성공률 2%→67.3±9.3%, 에피소드당 평균 반복 22.9(ReAct, 생각과 행동을 번갈아 출력하며 도구를 쓰는 기본 에이전트 프롬프트 방식)→14.4로 줄었음.
 
 1. 문제의 출발. LLM이 물리 법칙을 파라미터에 알고 있다고 새 물리 퍼즐에서 올바른 배치를 바로 찾진 못함. 도구 없이 한 번에 답하는 Direct 조건에서 Claude Sonnet 4.6가 8개 레벨 중 가장 어려운 catapult에서 2% 성공에 그침. 아는 것과 쓸 수 있는 것은 다르다는 것임.
 
@@ -23,7 +23,7 @@ HExA(Hierarchical Experimentalist Agents, arXiv 2606.29315)는 가중치 업데�
 
 6. 평가 환경 Interphyre는 PHYRE 2D 절차적 물리 환경 위에 tool-calling API를 얹은 벤치마크임. 에이전트가 장면 조회, 개입 배치, 시뮬레이션 실행 API로 가설을 검증함. 50 seed 성공률과 seed당 평균 반복 횟수로 측정함.
 
-7. 결과. catapult에서 Direct 2.0%, ReAct 8.0%, Reflexion 21.3%에 비해 HExA(Off2On Evolving) 67.3±9.3%. 성공률이 오르는 동시에 반복 횟수도 약 37% 줄어듦. 누적 스킬이 탐색 비용을 상각해주는 것임. Reflexion의 언어적 성찰이 21.3%에 머무는 것과 비교하면 경험을 명시적·재사용 가능한 뱅크로 바꾸는 게 성찰만으로는 부족하다는 뜻임.
+7. 결과. catapult에서 Direct 2.0%, ReAct 8.0%, Reflexion(실패 후 언어로 성찰을 남겨 다음 시도 프롬프트에 반영하는 방식) 21.3%에 비해 HExA(Off2On Evolving) 67.3±9.3%. 성공률이 오르는 동시에 반복 횟수도 약 37% 줄어듦. 누적 스킬이 탐색 비용을 상각해주는 것임. Reflexion의 언어적 성찰이 21.3%에 머무는 것과 비교하면 경험을 명시적·재사용 가능한 뱅크로 바꾸는 게 성찰만으로는 부족하다는 뜻임.
 
 ![보상 유도 스킬 축적 효과](/images/2026-08-21-hexa-experiment-driven-skill-evolution/fig-5-p10.png)
 
@@ -33,7 +33,7 @@ HExA(Hierarchical Experimentalist Agents, arXiv 2606.29315)는 가중치 업데�
 
 10. 보상 라벨을 빼면 catapult 67.3%→50.7%로 떨어짐. 다만 보상이 아예 없어도 evolver의 사전 지식만으로 50% 선은 지킴. 환경 보상이 없는 도메인에도 적용 여지가 있다는 뜻임.
 
-11. GRPO와의 비교가 정직함. 동일 seed 예산의 저데이터 영역에선 HExA가 앞서지만 학습을 충분히 돌리면 GRPO가 역전함(down_to_earth 100% 수렴). 그래서 "새 도메인 초기 진전 확보용 in-context 부트스트랩 + 이후 파라미터 RL" 하이브리드를 후속 과제로 제시함. 이 순서가 실무 로드맵이기도 함.
+11. GRPO(가중치를 미분으로 직접 갱신하는 대표적인 RL 파인튜닝 알고리즘)와의 비교가 정직함. 동일 seed 예산의 저데이터 영역에선 HExA가 앞서지만 학습을 충분히 돌리면 GRPO가 역전함(down_to_earth 100% 수렴). 그래서 "새 도메인 초기 진전 확보용 in-context 부트스트랩 + 이후 파라미터 RL" 하이브리드를 후속 과제로 제시함. 이 순서가 실무 로드맵이기도 함.
 
 12. 스킬 이전 결과도 강력함. catapult를 한 번도 안 푼 상태에서 쉬운 레벨에서 진화한 스킬 뱅크를 재접지해 주입하는 zero-shot 이전만으로 44%. ReAct 8%, Reflexion 16%와 비교됨. 이전 프롬프트에 "대상 좌표를 지어내지 말 것, 원본 스킬 ID로 소급 가능해야 할 것" 제약을 붙여서 좌표 암기를 차단하고 메커니즘 추상화만 옮겨가게 설계했다는 게 핵심임.
 

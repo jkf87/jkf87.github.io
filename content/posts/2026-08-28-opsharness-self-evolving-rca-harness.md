@@ -6,9 +6,9 @@ draft: false
 description: "arXiv 2608.25661 정리. 범용 코딩 에이전트를 감싸는 자가진화형 RCA 하네스 OpsHarness가 OpenRCA/RCAEval에서 top-1 59.0%, 전용 RCA 에이전트 대비 4.02배를 기록한 구조를 풀어둔 글."
 ---
 
-이 논문의 핵심 주장은 명확함. LLM 기반 루트 코즈 분석(RCA)의 성능 격차는 에이전트 바깥의 하네스 레이어에서 발생한다는 것. CUHK와 ByteDance의 OpsHarness는 Claude Code나 Codex 같은 범용 에이전트를 그대로 재사용하면서 바깥에 자가진화하는 하네스를 얹었음. 4개 백본 평균 top-1 정확도 59.0%, 맨살 범용 에이전트 대비 +63.4%, 전용 RCA 에이전트 대비 4.02배임.
+이 논문의 핵심 주장은 명확함. LLM 기반 루트 코즈 분석(RCA, 장애가 발생한 근본 원인을 데이터로 역추적하는 작업)의 성능 격차는 에이전트 바깥의 하네스 레이어에서 발생한다는 것. CUHK와 ByteDance의 OpsHarness는 Claude Code나 Codex 같은 범용 에이전트를 그대로 재사용하면서 바깥에 자가진화하는 하네스를 얹었음. 4개 백본 평균 top-1 정확도 59.0%, 맨살 범용 에이전트 대비 +63.4%, 전용 RCA 에이전트 대비 4.02배임.
 
-1. 출발점이 흥미로움. OpenRCA와 RCAEval에서 GPT-5.5, Claude Sonnet 4.6, GLM-5.2, DeepSeek-V4 네 모델로 비교했더니 RCA 전용 에이전트(RCA-Agent 17.9%, mABC 5.6%)보다 그냥 Codex/Claude Code 범용 에이전트(36.1%)가 전 백본에서 앞섰음. GPT-5.5 기준 bare Codex가 OpenRCA 질의의 45%를 맞히고 RCA-Agent는 32%에 그침. 전용 설계가 이미 범용을 못 따라잡은 상태였던 것임.
+1. 출발점이 흥미로움. OpenRCA와 RCAEval(둘 다 장애 주입 시나리오로 근본 원인을 맞히는지 채점하는 RCA 벤치마크)에서 GPT-5.5, Claude Sonnet 4.6, GLM-5.2, DeepSeek-V4 네 모델로 비교했더니 RCA 전용 에이전트(RCA-Agent 17.9%, mABC 5.6%)보다 그냥 Codex/Claude Code 범용 에이전트(36.1%)가 전 백본에서 앞섰음. GPT-5.5 기준 bare Codex가 OpenRCA 질의의 45%를 맞히고 RCA-Agent는 32%에 그침. 전용 설계가 이미 범용을 못 따라잡은 상태였던 것임.
 
 2. 근데 범용 에이전트도 51.2%가 최대라 프로덕션 요구엔 못 미침. 저자들의 분석은 실패 원인이 추론 능력 부족이 아니라 시스템 특화 진단 지식 부족이라는 것. 새로 합류한 유능한 엔지니어가 팀의 노이즈 프로필을 모르는 상황과 같음. 실제 실패 사례로 절대값이 크게 튀는 노이즈 카운터를 원인으로 오판하고 baseline이 0 근처라 상대적으로 작은 컨테이너 CPU 포화를 놓친 케이스가 나왔음.
 
@@ -28,7 +28,7 @@ description: "arXiv 2608.25661 정리. 범용 코딩 에이전트를 감싸는 �
 
 ![12 윈도우 변화](/images/2026-08-28-opsharness-self-evolving-rca-harness/fig-5-p9.png)
 
-7. 산업 배포 결과도 강력함. Company A 변경 이상 데이터셋에서 6개 설정 전부 Direct 대비 개선돼서 평균 0.74 vs 0.24 A@1임. 오픈소스 스택(OpenCode + GLM-5.2)에서도 0.73으로 유지됨. 특정 상용 모델 의존이 아니라는 것임.
+7. 산업 배포 결과도 강력함. Company A 변경 이상 데이터셋에서 6개 설정 전부 Direct 대비 개선돼서 평균 0.74 vs 0.24 A@1(첫 번째로 제시한 원인이 정답인 비율)임. 오픈소스 스택(OpenCode + GLM-5.2)에서도 0.73으로 유지됨. 특정 상용 모델 의존이 아니라는 것임.
 
 ![산업 결과](/images/2026-08-28-opsharness-self-evolving-rca-harness/fig-8-p10.png)
 

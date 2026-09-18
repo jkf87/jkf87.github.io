@@ -34,13 +34,13 @@ coverImage: /images/memora-harmonic-memory-2026-07-06/hero.jpg
 
 7. 재밌는 건 "RAG와 KG가 Memora의 특수 케이스"라는 주장임. 큐 앵커를 없애고 메모리 값 자체로만 검색하면 RAG가 되고 주요 추상화를 엔티티로, 큐 앵커를 엣지로 고정하면 KG가 됨. Appendix D에 증명이 들어있음. 기존 방법들을 품는 구조적 상위집합이라는 주장인데, RAG의 단순함과 KG의 연결성을 같이 챙기면서 각각의 약점(파편화, 스키마 경직성)은 회피한다는 실용적 함의가 있음.
 
-8. 검색도 특이함. 수동적 매칭이 아니라 능동적 추론 과정으로 모델링함. Query refinement(쿼리 다듬기), Memory expansion(연결된 메모리 따라가기, multi-hop), Termination(충분하면 멈추기)의 이산 행동 공간을 정의하고 policy retriever를 GRPO로 훈련함.
+8. 검색도 특이함. 수동적 매칭이 아니라 능동적 추론 과정으로 모델링함. Query refinement(쿼리 다듬기), Memory expansion(연결된 메모리 따라가기, multi-hop), Termination(충분하면 멈추기)의 이산 행동 공간을 정의하고 policy retriever를 GRPO로 훈련함. GRPO는 같은 문제의 여러 출력을 한 그룹으로 묶어 그룹 내 상대적 우열로 보상을 정규화하는 강화학습 알고리즘임.
 
 ![GRPO 훈련](/images/memora-harmonic-memory-2026-07-06/fig5-grpo-training.png)
 
 9. 핵심은 정적 임베딩 유사도로 잡을 수 없는 multi-hop 의존성을 잡아낸다는 것. A가 B를 알고 B가 C를 알 때 A의 쿼리에 C가 필요한 상황에서 semantic retriever는 C를 못 찾지만 policy retriever는 expansion 액션으로 도달함.
 
-10. 성능. LoCoMo에서 RAG 0.633, Mem0 0.653, Nemori 0.683에 비해 Memora Semantic Retriever 0.849, Policy Retriever 0.863임. LongMemEval_S(115k 컨텍스트, 500문제)에서 87.4%임.
+10. 성능. LoCoMo는 평균 300턴이 넘는 초장기 대화에서 기억 회상과 추론 정확도를 재는 벤치마크임. 거기서 RAG 0.633, Mem0 0.653, Nemori 0.683에 비해 Memora Semantic Retriever 0.849, Policy Retriever 0.863임. LongMemEval_S(115k 컨텍스트, 500문제)에서 87.4%임.
 
 ![LoCoMo 결과](/images/memora-harmonic-memory-2026-07-06/fig2-locomo-results.png)
 

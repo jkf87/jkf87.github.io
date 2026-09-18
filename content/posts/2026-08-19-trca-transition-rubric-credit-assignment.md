@@ -29,7 +29,7 @@ tags:
 
 6. 스텝 상대 어드밴티지 계산을 위해 유사한 결정 컨텍스트끼리 그룹을 묶는데, 텍스트 정합이 아니라 페이지 타입, 상품 식별, 태스크 술어 같은 환경별 구조 정보로 함. 그룹핑 기준을 도메인 구조로 잡는 게 이식의 핵심 지점임.
 
-7. 결과. ALFWorld(Qwen2.5-7B)에서 TRCA 94.5로 GRPO 83.3, GiGPO 90.8, GraphGPO 93.3을 앞섬. WebShop에서 83.8 vs GraphGPO 80.3. SearchQA 평균(3B) 45.4%로 7개 개별 데이터셋 전부 1위였음.
+7. 결과. ALFWorld(텍스트 가상 집안에서 그릇 옮기기·물건 찾기 같은 일상 과제를 시키는 에이전트 벤치마크)의 Qwen2.5-7B 설정에서 TRCA 94.5로 GRPO 83.3, GiGPO 90.8, GraphGPO 93.3을 앞섬. WebShop(가상 쇼핑몰에서 주문서대로 상품을 검색·구매하는 벤치마크)에서 83.8 vs GraphGPO 80.3. SearchQA(검색 기반 질의응답 모음) 평균(3B) 45.4%로 7개 개별 데이터셋 전부 1위였음.
 
 ![결과](/images/2026-08-19-trca-transition-rubric-credit-assignment/trca-results.png)
 

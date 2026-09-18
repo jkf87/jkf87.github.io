@@ -13,13 +13,13 @@ tags:
 description: "Claude Code 같은 하네스는 롤아웃 중 컨텍스트를 압축하는데 이 트랜스크립트를 그대로 학습 데이터로 쓰면 조건부 분포가 트리로 갈라져 성능이 무너짐. LogitTree, 4D mask, SDCC 세 복구법과 학습 직렬화만 바꿔 EM 28.9→45.9이 된 결과를 정리함."
 ---
 
-Claude Code, Qwen-Agent 같은 프로덕션 하네스는 롤아웃 중에 컨텍스트를 계속 압축함(eviction). 근데 이 압축된 트랜스크립트를 그대로 RL 학습 데이터로 쓰면 학습-추론 조건부 분포가 어긋남. MemoryWalker(arXiv:2609.00865)는 이 어긋남을 수식으로 정의하고 복구 방법 세 가지를 제안함. 핵심 수치가 말을 대신함. Qwen3-4B, 7개 웹검색 벤치마크 평균 EM에서 Naive-Compressed 학습이 28.9, 무압축 물리 트레이스 학습이 32.1, 정확 보정 LogitTree가 45.9. 롤아웃과 보상은 동일하고 학습 직렬화 방식만 바꿨는데 17포인트가 오름.
+Claude Code, Qwen-Agent 같은 프로덕션 하네스는 롤아웃 중에 컨텍스트를 계속 압축함(eviction). 근데 이 압축된 트랜스크립트를 그대로 RL 학습 데이터로 쓰면 학습-추론 조건부 분포가 어긋남. MemoryWalker(arXiv:2609.00865)는 이 어긋남을 수식으로 정의하고 복구 방법 세 가지를 제안함. 핵심 수치가 말을 대신함. Qwen3-4B, 7개 웹검색 벤치마크 평균 EM(정답 문자열과 정확히 일치해야 점수를 주는 지표)에서 Naive-Compressed 학습이 28.9, 무압축 물리 트레이스 학습이 32.1, 정확 보정 LogitTree가 45.9. 롤아웃과 보상은 동일하고 학습 직렬화 방식만 바꿨는데 17포인트가 오름.
 
-1. 문제의 정체가 명확함. 하네스가 컨텍스트에서 토큰을 빼내는 시점마다 그 이후의 실효 히스토리는 갈라짐. 학습 대상이 시퀀스에서 트리로 바뀌는 것. 기존 선형화는 두 함정에 빠짐. 오른쪽 경로만 남기면 time-travel leakage, 이미 지워진 정보를 알고 있던 시점의 로짓으로 학습하게 됨. 깊이우선 순회를 재생하면 train-inference mismatch, 실제 배포에서 모델이 본 적 없는 프리픽스로 학습하게 됨. 측정값도 있음. 학습 안 된 Qwen3-4B에서 압축 스트림 재생은 Δcomp = -22.8 nats, 전체 트레이스 재생은 +18.5 nats. 부호가 반대고 크기가 비슷함. 어느 쪽으로 틀어도 손해라는 것.
+1. 문제의 정체가 명확함. 하네스가 컨텍스트에서 토큰을 빼내는 시점마다 그 이후의 실효 히스토리는 갈라짐. 학습 대상이 시퀀스에서 트리로 바뀌는 것. 기존 선형화는 두 함정에 빠짐. 오른쪽 경로만 남기면 time-travel leakage, 이미 지워진 정보를 알고 있던 시점의 로짓으로 학습하게 됨. 깊이우선 순회를 재생하면 train-inference mismatch, 실제 배포에서 모델이 본 적 없는 프리픽스로 학습하게 됨. 측정값도 있음. 학습 안 된 Qwen3-4B에서 압축 스트림 재생은 Δcomp = -22.8 nats(nats는 자연로그 기반 정보량 단위), 전체 트레이스 재생은 +18.5 nats. 부호가 반대고 크기가 비슷함. 어느 쪽으로 틀어도 손해라는 것.
 
 ![](/images/2026-09-03-memorywalker-context-compression/fig-1-p4.png)
 
-2. 복구법이 세 개임. LogitTree는 트리를 K+1개의 루트-리프 분기로 쪼개서 정확하게 학습. 비용이 기준 대비 4.20배. 4D attention mask는 같은 목표를 어텐션 마스크 하나로 구현, 1.35배. 둘 다 gradient-equivalent라는 증명이 있음. 그리고 SDCC(Self-Distillation for Conditioning Consistency)가 실용 포인트. 각 eviction 지점에서 압축된 학생 정책과 압축 전 프리픽스를 복원한 stop-gradient 교사 정책 사이의 forward KL을 최소화함. 백워드 1회로 끝나고(1.55배) 잔여 KL에 대해 학습-배포 TV 거리 상한 O(√ε_KL)를 보장함. 교사 eviction 로그를 못 받는 블랙박스 하네스에도 적용 가능함.
+2. 복구법이 세 개임. LogitTree는 트리를 K+1개의 루트-리프 분기로 쪼개서 정확하게 학습. 비용이 기준 대비 4.20배. 4D attention mask는 같은 목표를 어텐션 마스크 하나로 구현, 1.35배. 둘 다 gradient-equivalent라는 증명이 있음. 그리고 SDCC(Self-Distillation for Conditioning Consistency)가 실용 포인트. 각 eviction 지점에서 압축된 학생 정책과 압축 전 프리픽스를 복원한 stop-gradient 교사 정책 사이의 forward KL(교사 분포를 고정하고 학생 분포를 그쪽으로 맞추는 방향의 KL 발산)을 최소화함. 백워드(역전파) 1회로 끝나고(1.55배) 잔여 KL에 대해 학습-배포 TV 거리(두 확률분포 차이를 0~1로 재는 거리) 상한 O(√ε_KL)를 보장함. 교사 eviction 로그를 못 받는 블랙박스 하네스에도 적용 가능함.
 
 ![](/images/2026-09-03-memorywalker-context-compression/fig-2-p5.png)
 

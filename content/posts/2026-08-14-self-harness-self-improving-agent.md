@@ -22,11 +22,11 @@ tags:
 
 2. 한 바퀴는 3단계임. 약점 채굴은 현재 하네스로 과제를 돌리고 실패한 실행 궤적을 클러스터링해서 반복 실패 패턴을 뽑는 것. 하네스 제안은 패턴마다 걸리는 최소 수정안을 여러 개 만드는 것. 수정 검증은 회귀 테스트를 돌려 조건을 통과해야 승인하는 것임.
 
-3. 핵심은 승인 규칙임. Δ(held-in) ≥ 0, Δ(held-out) ≥ 0, 둘 중 하나는 > 0. 이 조건을 못 넘기면 수정은 버려지고 하네스는 유지됨. 자기 수정 루프가 스스로를 악화시키는 걸 게이트로 차단한 것임. 이 규칙 하나가 루프의 안전장치임.
+3. 핵심은 승인 규칙임. Δ(held-in) ≥ 0, Δ(held-out) ≥ 0, 둘 중 하나는 > 0. Δ는 성능 변화량이고 held-in은 개선에 쓴 과제, held-out은 개선에 쓰지 않고 떼어둔 검증용 과제라는 뜻임. 즉 어느 쪽에서도 떨어지지 않아야 하고 한쪽은 올라야 한다는 조건임. 이 조건을 못 넘기면 수정은 버려지고 하네스는 유지됨. 자기 수정 루프가 스스로를 악화시키는 걸 게이트로 차단한 것임. 이 규칙 하나가 루프의 안전장치임.
 
 ![Self-Harness 루프](/images/2026-08-14-self-harness-self-improving-agent/fig-2-p5.png)
 
-4. 실험 설정. 모델은 MiniMax M2.5, Qwen3.5-35B-A3B, GLM-5. 벤치마크는 Terminal-Bench-2.0, SWE-bench Verified(67 held-in / 33 held-out), AppWorld(90/90). 시작점은 DeepAgent 기반 최소 하네스. 가중치는 고정이고 바뀌는 건 하네스만임.
+4. 실험 설정. 모델은 MiniMax M2.5, Qwen3.5-35B-A3B, GLM-5. 벤치마크는 Terminal-Bench-2.0(터미널 명령으로 컴퓨팅 과제를 풀게 하는 벤치마크), SWE-bench Verified(실제 GitHub 이슈를 고치는 코딩 벤치마크의 검증 서브셋, 67 held-in / 33 held-out), AppWorld(일상 앱을 조작해 과제를 수행하게 하는 벤치마크, 90/90). 시작점은 DeepAgent 기반 최소 하네스. 가중치는 고정이고 바뀌는 건 하네스만임.
 
 5. 결과. 9개 조합 전부 held-in과 held-out이 동반 상승함. Terminal-Bench held-out에서 MiniMax M2.5가 40.5→61.9. SWE-bench에서 Qwen3.5-35B-A3B가 19.5→41.5로 두 배 이상. AppWorld에서 GLM-5가 44.4→85.0임.
 

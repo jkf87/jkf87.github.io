@@ -8,7 +8,7 @@ description: 스킬 효과의 65.7%가 절차 안정화에서 나오고 지식 �
 
 Princeton·Stanford·UCSD 팀이 에이전트 스킬이 실제로 어떻게 작동하는지 분해했음. 스킬을 "넣으면 성공률이 오르는가"가 아니라 왜 작동하고 어디서 깨지는지를 쪼갬. 원문은 [arXiv 2608.14036](https://arxiv.org/abs/2608.14036).
 
-1. 방법. 같은 태스크를 스킬 없이 / 워크플로 메모리로 / 스킬로 세팅해서 돌리는 대조 실행(paired execution)임. 8,135개 트라이얼을 정규화하고 240개 트랙토리를 열린 코딩으로 분석해서 238개 라벨을 뽑고, 카테고리 3개·세부 모드 12개인 택소노미로 정리했음. 세팅은 Codex + GPT-5.3-Codex, Gemini CLI + Gemini-3.1-Pro 두 페어링으로 Terminal-Bench와 SkillsBench를 돌렸음.
+1. 방법. 같은 태스크를 스킬 없이 / 워크플로 메모리로 / 스킬로 세팅해서 돌리는 대조 실행(paired execution)임. 8,135개 트라이얼을 정규화하고 240개 트랙토리를 열린 코딩으로 분석해서 238개 라벨을 뽑고, 카테고리 3개·세부 모드 12개인 택소노미로 정리했음. 세팅은 Codex + GPT-5.3-Codex, Gemini CLI + Gemini-3.1-Pro 두 페어링으로 Terminal-Bench(실제 터미널에서 시스템 과제를 수행시켜 채점하는 벤치마크)와 SkillsBench(에이전트가 스킬을 활용해 과제를 푸는 능력을 측정하는 벤치마크)를 돌렸음.
 
 ![비교 실험 파이프라인](/images/2026-08-19-demystifying-agent-skills/fig1-pipeline.png)
 

@@ -15,7 +15,7 @@ description: 매 턴 점수가 있어도 어느 턴이 공로인지는 모름. �
 
 에이전트 RL에서 검증자가 매 턴 점수를 준다고 "어느 턴이 공로인지" 아는 건 아님. Moore Threads의 TCPO가 점수→크레딧 변환 문제를 정의하고 풀었음. 원문은 [arXiv:2608.01667](https://arxiv.org/abs/2608.01667).
 
-1. 예시가 직관적임. 3턴에 걸쳐 문제를 풀어서 30점, 30점, 100점을 받았다고 하면 2턴은 쓸모없는 실패인지 3턴 정답의 발판인지 알 수 없음. 반대로 100점, 100점, 60점이면 3턴은 명백한 회귀인데 trajectory-level reward는 이걸 구분 못 함. GRPO의 시퀀스 수준 어드밴티지도 어느 턴이 공로인지 안 알려줌.
+1. 예시가 직관적임. 3턴에 걸쳐 문제를 풀어서 30점, 30점, 100점을 받았다고 하면 2턴은 쓸모없는 실패인지 3턴 정답의 발판인지 알 수 없음. 반대로 100점, 100점, 60점이면 3턴은 명백한 회귀인데 trajectory-level reward는 이걸 구분 못 함. GRPO(같은 프롬프트의 여러 롤아웃을 뽑아 그룹 평균 대비 성과로 학습 신호를 만드는 강화학습 알고리즘)의 시퀀스 수준 어드밴티지도 어느 턴이 공로인지 안 알려줌.
 
 ![](/images/2026-08-09-tcpo-turn-level-credit-policy-optimization/gifs/applause-credit.gif)
 
@@ -31,7 +31,7 @@ description: 매 턴 점수가 있어도 어느 턴이 공로인지는 모름. �
 
 ![턴레벨 크레딧 설계](/images/2026-08-09-tcpo-turn-level-credit-policy-optimization/table-1-p6.png)
 
-5. 결과. Qwen3-4B 기준 MATH-500에서 MT-GRPO 대비 +4.4점, DeepSeek-R1-Distill-Llama-8B에서 +6.2점, LiveCodeBench에서도 일관된 이득임. 특히 AppWorld처럼 상태가 유지되는 도구 사용 환경에서도 개선됨. 수학·코드와 완전히 다른 검증자 구조인데도 효과가 있다는 게 실무적 힌트임.
+5. 결과. Qwen3-4B 기준 MATH-500(수학 경시 문제 500개로 구성된 벤치마크)에서 MT-GRPO(멀티턴 확장 GRPO 기준선) 대비 +4.4점, DeepSeek-R1-Distill-Llama-8B에서 +6.2점, LiveCodeBench(최신 코딩 대회 문제를 계속 갱신해 오염을 막는 벤치마크)에서도 일관된 이득임. 특히 AppWorld처럼 상태가 유지되는 도구 사용 환경에서도 개선됨. 수학·코드와 완전히 다른 검증자 구조인데도 효과가 있다는 게 실무적 힌트임.
 
 ![메인 결과](/images/2026-08-09-tcpo-turn-level-credit-policy-optimization/fig-2-p8.png)
 

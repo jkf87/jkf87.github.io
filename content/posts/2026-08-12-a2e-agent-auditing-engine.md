@@ -10,9 +10,9 @@ paper_url: https://arxiv.org/abs/2608.07346
 
 1. 배경. "정답만 맞췄는지" 평가로는 하네스 간 차이의 원인을 알 수 없음. Shanghai AI Lab의 [A²E(Agent Auditing Engine)](https://arxiv.org/abs/2608.07346)는 9개 하네스 × 23개 벤치마크를 한 파이프라인에서 돌리고 궤적을 감사함.
 
-2. 구조는 3계층임. Task Layer는 ATP(Agent Task Protocol)로 벤치마크와 하네스를 분리 — m×n 조합을 m+n 어댑터로 커버함. Monitor Layer는 OpenTelemetry 스팬으로 실행 궤적을 기록. Evaluation Layer는 라이프사이클 정렬 평가로 추론, 도구 사용, 최종 답변, 운영 품질 4단계에 메트릭을 등록함.
+2. 구조는 3계층임. Task Layer는 ATP(Agent Task Protocol)로 벤치마크와 하네스를 분리 — m×n 조합을 m+n 어댑터로 커버함. Monitor Layer는 OpenTelemetry(분산 시스템 계측 표준) 스팬으로 실행 궤적을 기록. Evaluation Layer는 라이프사이클 정렬 평가로 추론, 도구 사용, 최종 답변, 운영 품질 4단계에 메트릭을 등록함.
 
-3. 핵심 데이터. 같은 GLM-5.2인데 하네스에 따라 성공률 차이가 GDPVal 0.20, MMLU-Pro 0.30, τ³-bench 0.66. 정답률은 0.568~0.663으로 좁은데 토큰 비용은 3.5배(Claude-Agent-SDK 평균 2,063 vs smolagents 7,319). 프롬프트 구성, 도구 인터페이스, 컨텍스트 관리, 실행 루프 정책이 성능과 비용을 결정한다는 것.
+3. 핵심 데이터. 같은 GLM-5.2인데 하네스에 따라 성공률 차이가 GDPVal 0.20(GDPVal은 경제적으로 가치 있는 실무 과제 수행 능력을 재는 벤치마크), MMLU-Pro 0.30(MMLU-Pro는 지식·추론을 객관식 10개 보기로 재는, 기존 MMLU의 난이도를 올린 벤치마크), τ³-bench 0.66(τ³-bench는 사용자·에이전트·도구 세 주체가 섞인 다중 턴 대화에서 도구 사용 능력을 재는 벤치마크). 정답률은 0.568~0.663으로 좁은데 토큰 비용은 3.5배(Claude-Agent-SDK 평균 2,063 vs smolagents 7,319). 프롬프트 구성, 도구 인터페이스, 컨텍스트 관리, 실행 루프 정책이 성능과 비용을 결정한다는 것.
 
 4. 벤치마크마다 순위가 다름. 모든 벤치마크에서 우위인 하네스는 없었음. openai-agents는 traject-bench 1.00인데 τ-bench 0.20. llama-index는 대화형에선 리드하는데 traject-bench 0.40. 글로벌 랭킹은 의미가 없다는 결론.
 

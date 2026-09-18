@@ -26,7 +26,7 @@ description: "재귀 자기개선을 메모리 제어 레이어만 재귀 수정
 
 ![](/images/2026-08-31-recuris-recursive-memory-evolution/gifs/writing-journal.gif)
 
-4. 결과는 베이스 모델을 얼어둔 조건에서 37개 모델-벤치마크 조합 중 35개 개선. τ²-Bench에서 GPT-5.6 Sol +17.8pt, Claude Opus 5 +15.6pt로 87.9% 도달. 배포 모델 기준 τ²-Retail +23.3pt. 그리고 이득이 인터랙션이 길수록 커져서 최장 태스크 구간에선 +32.2pt까지 벌어짐. 긴 태스크일수록 상태 유실이 병목이라는 진단의 정확한 방증임.
+4. 결과는 베이스 모델을 얼어둔 조건에서 37개 모델-벤치마크 조합 중 35개 개선. τ²-Bench(시뮬레이션 사용자와 통신사·리테일 시나리오에서 도구 사용·대화 능력을 재는 벤치마크)에서 GPT-5.6 Sol +17.8pt, Claude Opus 5 +15.6pt로 87.9% 도달. 배포 모델 기준 τ²-Retail +23.3pt. 그리고 이득이 인터랙션이 길수록 커져서 최장 태스크 구간에선 +32.2pt까지 벌어짐. 긴 태스크일수록 상태 유실이 병목이라는 진단의 정확한 방증임.
 
 ![결과](/images/2026-08-31-recuris-recursive-memory-evolution/fig-4-p13.png)
 

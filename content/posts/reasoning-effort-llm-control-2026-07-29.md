@@ -18,17 +18,17 @@ aliases:
 
 "Reasoning effort: low, medium, high"라는 메뉴가 이제 이상하지 않음. 모델을 고르던 시대에서 같은 모델 안에서 얼마나 오래 생각하게 할지 고르는 시대가 됨. Sebastian Raschka의 [Controlling Reasoning Effort in LLMs](https://magazine.sebastianraschka.com/p/controlling-reasoning-effort-in-llms)를 읽고 정리함 — 핵심은 reasoning effort가 prompt trick이 아니라 비용과 정확도 사이를 움직이도록 학습된 조절 노브라는 것.
 
-1. 정의부터. reasoning model은 인간처럼 사유하는 모델이 아니라 최종 답만 내는 대신 중간 reasoning trace를 만들어가며 문제를 푸는 모델임. RLVR(검증 가능 보상 RL)로 수학·코딩에서 정답 보상을 주면 풀이·되돌아가기·자기수정 행동이 저절로 학습됨 — DeepSeek-R1의 "Aha moment". 긴 생각을 쓰라고 가르친 게 아니라 맞는 답을 찾는 과정에서 긴 생각이 유용해지도록 만든 것.
+1. 정의부터. reasoning model은 인간처럼 사유하는 모델이 아니라 최종 답만 내는 대신 중간 reasoning trace(중간 풀이 과정 텍스트)를 만들어가며 문제를 푸는 모델임. RLVR(검증 가능한 보상 RL, 정답을 프로그램으로 확인할 수 있는 과제에서 보상을 주는 강화학습)로 수학·코딩에서 정답 보상을 주면 풀이·되돌아가기·자기수정 행동이 저절로 학습됨 — DeepSeek-R1의 "Aha moment". 긴 생각을 쓰라고 가르친 게 아니라 맞는 답을 찾는 과정에서 긴 생각이 유용해지도록 만든 것.
 
 2. `<think>` 태그 오해부터 풀어야 함. 이 태그는 reasoning 능력을 만드는 장치가 아니라 trace의 시작과 끝을 표시하는 경계선임. UI가 중간 풀이를 감추고 최종 답만 보여줄 수 있는 것도 이 분리 덕분. format reward가 붙어서 모델이 태그 안에 trace를 넣는 법을 배우는 것 — 중요한 건 태그가 아니라 그 형식을 따르게 만든 post-training과 보상 구조임.
 
-3. thinking on/off의 내부. Qwen3의 enable_thinking=False는 대체로 assistant 응답 앞에 빈 `<think></think>` 블록을 prefill하는 방식 — "생각은 이미 끝났으니 바로 답하라"는 상태에서 생성을 시작하는 것. Thinking Mode Fusion 같은 SFT로 /think와 /no_think 예시를 섞어 학습함. 모드 전환은 프롬프트 지시가 아니라 그 지시를 따라본 데이터와 훈련 흔적이 있어야 작동한다는 것 — 임의 모델에 "think less"라고 쓴다고 스위치가 생기지 않음.
+3. thinking on/off의 내부. Qwen3의 enable_thinking=False는 대체로 assistant 응답 앞에 빈 `<think></think>` 블록을 prefill하는 방식 — "생각은 이미 끝났으니 바로 답하라"는 상태에서 생성을 시작하는 것. Thinking Mode Fusion 같은 SFT(정답 예시로 가르치는 지도학습)로 /think와 /no_think 예시를 섞어 학습함. 모드 전환은 프롬프트 지시가 아니라 그 지시를 따라본 데이터와 훈련 흔적이 있어야 작동한다는 것 — 임의 모델에 "think less"라고 쓴다고 스위치가 생기지 않음.
 
 4. reasoning effort의 본질. 모델 선택은 다른 scale의 모델을 고르는 일이고 effort 조절은 같은 모델이 추론 시점에 더 많은 토큰과 컴퓨트를 쓰게 허용하는 일. effort를 올리면 성능도 오르지만 높은 구간에서 수익 체감이 옴 — 돈 두 배 쓰고 점수 조금 오르는 구간이 생긴다는 것.
 
 5. 그래서 이 메뉴의 정체는 unit economics 옵션임. 최고 성능만 보면 항상 max를 고르고 싶지만 서비스는 latency, API 비용, 사용자 체감, 재시도 비용을 같이 봄. "이 모델이 제일 똑똑한가"보다 "이 작업에 얼마만큼의 생각을 사는 게 맞는가"가 질문이 되는 것.
 
-6. effort level은 학습 때 만들어짐. system prompt에 effort label을 넣고, SFT에서 low엔 짧은 target high엔 긴 target을 붙이고, RLVR에서 토큰 페널티 λ(e)를 effort마다 다르게 주는 방식. Inkling은 effort를 0~1 연속값으로 다루는데 — UI에선 슬라이더, 하네스에선 router가 세밀하게 조절할 수 있는 숫자임.
+6. effort level은 학습 때 만들어짐. system prompt에 effort label을 넣고, SFT에서 low엔 짧은 target high엔 긴 target을 붙이고, RLVR에서 토큰 페널티 λ(e)(생성 길이에 부과되는 비용 계수, effort 등급마다 다르게 설정)를 effort마다 다르게 주는 방식. Inkling은 effort를 0~1 연속값으로 다루는데 — UI에선 슬라이더, 하네스에선 router가 세밀하게 조절할 수 있는 숫자임.
 
 7. 공개 모델 비교에서 세 가지 공통 패턴. chat template과 SFT로 모드의 문법을 만들고(DeepSeek V4, GLM-5), RL에서 길이와 비용을 조정하고(Inkling, Nemotron), hard budget에 견디는 훈련을 넣음(Nemotron은 trace를 무작위 예산에서 자른 예시, Kimi는 budgeted/unconstrained phase). 비슷한 UI 라벨 뒤에 완전히 다른 훈련 레시피가 숨어 있다는 것 — 어떤 모델의 "medium"과 다른 모델의 "medium"은 같은 의미가 아님.
 

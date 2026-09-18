@@ -26,7 +26,7 @@ Claude Code, Codex, OpenClaw 같은 하네스 없이 에이전트는 제 역량�
 
 5. 설계의 요점은 훈련과 추론의 분리임. 하네스를 바꾸지 않고 LLM 호출 경로만 가로채서 RL 엔진으로 라우팅하는 것. any harness × any environment × 표준 RL 코드베이스 조합이 성립함.
 
-6. 결과. 도구 에이전트 OpenForge-Claw(30B-A3B MoE)가 ClawEval pass@3 55.9, MCPAtlas 28.1. GUI 에이전트 OpenForge-GUI(8B)는 OSWorld-Verified 37.7, WebVoyager 72.3으로 몇 배 큰 모델과 맞먹거나 능가함. 훈련 데이터는 수백~수천 태스크에 불과했음.
+6. 결과. 도구 에이전트 OpenForge-Claw(30B-A3B MoE)가 ClawEval(논문 자체 도구 사용 평가 세트) pass@3(3회 시도 중 한 번이라도 성공할 확률) 55.9, MCPAtlas(MCP 환경 과제 벤치마크) 28.1. GUI 에이전트 OpenForge-GUI(8B)는 OSWorld-Verified(실제 OS 화면에서 과제를 수행시키는 GUI 벤치마크) 37.7, WebVoyager(실제 웹사이트 탐색 과제 벤치마크) 72.3으로 몇 배 큰 모델과 맞먹거나 능가함. 훈련 데이터는 수백~수천 태스크에 불과했음.
 
 7. 제일 흥미로운 발견은 하네스 선택이 에이전트 행동을 결정한다는 것임. ZeroClaw, OpenClaw, Codex 세 하네스로 같은 모델을 훈련해 비교함. 더 단순하고 정렬된 하네스일수록 학습이 쉬움. 복잡한 하네스는 탐색 공간을 넓혀 RL 수렴을 어렵게 만듦.
 
