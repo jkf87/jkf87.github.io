@@ -1,0 +1,111 @@
+[
+  {
+    "page": 8,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (420x2pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  3  reports accuracy changes in percentage points (pp), the embedding-migration gap, the stage",
+    "crop": [
+      96.0,
+      358.2337646484375,
+      515.9990234375,
+      360.4253845214844
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-3-p8.png",
+    "method": "caption_crop (1260x1043)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 847,
+    "width": 1260,
+    "height": 1043,
+    "caption": "Figure 3: Key empirical results. NOTES transfer changes sharply by migration direction, a mixed",
+    "crop": [
+      96.0,
+      358.23,
+      516.0,
+      705.55
+    ]
+  },
+  {
+    "page": 9,
+    "file": "table-2-p9.png",
+    "method": "caption_crop_table_below (1262x885)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 176,
+    "width": 1262,
+    "height": 885,
+    "caption": "Table  2  reports the four tests chosen before the main results were collected using the definitions in",
+    "crop": [
+      95.69,
+      86.35,
+      516.0,
+      381.12
+    ]
+  },
+  {
+    "page": 9,
+    "file": "table-1-p9.png",
+    "method": "caption_crop_table_below (1262x900)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 183,
+    "width": 1262,
+    "height": 900,
+    "caption": "Table  1 . Two effects exceed the five-point action threshold: using a partly migrated embedding index",
+    "crop": [
+      95.69,
+      97.38,
+      516.25,
+      397.11
+    ]
+  },
+  {
+    "page": 9,
+    "file": "table-2-p9-3.png",
+    "method": "caption_crop_table_below (1262x625)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 111,
+    "width": 1262,
+    "height": 625,
+    "caption": "Table 2: Results for the planned tests across 48 histories. “Margin vs. 5 pp” is the estimate minus",
+    "crop": [
+      95.69,
+      239.5,
+      516.0,
+      447.47
+    ]
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Accuracy across 48 histories, reorganized around migration impact. Own-store memory",
+    "crop": null
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4: Results of upgrading  bge-large-en  from v1.0 to v1.5 across 48 histories and two readers.",
+    "crop": null
+  }
+]

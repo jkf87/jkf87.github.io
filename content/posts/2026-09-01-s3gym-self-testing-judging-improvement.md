@@ -12,9 +12,13 @@ description: "경험은 도움이 될 때가 있지만 자동 개선을 보장�
 
 2. 중요한 장치가 둘임. 탐색 seed와 평가 seed가 분리되고 평가 trajectory는 경험에 다시 들어가지 않음. 외운 행동이 아니라 경험에서 뽑은 규칙이나 정책이 옮겨가는지를 보는 것임. 내 자동화 평가에도 이 분리 원칙이 그대로 필요해서 바로 챙겼음.
 
+![S3Gym 3단 구성](/images/2026-09-01-s3gym-self-testing-judging-improvement/fig-1-p3.png)
+
 3. 결과의 첫 줄은 "경험은 도움이 될 때가 있지만 자동 개선을 보장하지 않음"임. Summary Memory는 규칙으로 압축되는 게임(Nullify, Tetris, Trust)에서 좋았음. GPT-5.5/Trust에서는 요약이 opponent-conditioned policy로 바뀌며 +66.89를 만들었음. 근데 현재 상태 디테일이 중요한 게임(Minesweeper, PvZ, Snake)은 raw history가 더 좋았음. "무조건 요약해서 메모리에 넣자"가 답이 아니라 과제 구조에 따라 갈린다는 것임.
 
 4. Parameter Training은 강하고 불안정함. Qwen3-8B를 20개 체크포인트로 본 결과 Trust Evolution은 0점에서 최대 30점까지 올라갔는데 PvZ는 초기 23점에서 업데이트된 모든 체크포인트가 6점을 받고 회복하지 못했음. 같은 훈련 경로가 환경에 따라 정반대 결과를 냄. 논문은 원인을 단정하지 않고 exploration overfitting, 설정 mismatch, 잘못된 자기판단 굳화 가능성만 조심스럽게 제시함.
+
+![게임별 결과 비교](/images/2026-09-01-s3gym-self-testing-judging-improvement/fig-2-p7.png)
 
 5. 제일 중요한 발견은 자기판단과 개선의 단절임. 7개 모델·7개 게임, 98런, 116,117개 transition을 비교했을 때 판단 agreement와 다음 strict 점수 게인의 상관이 ρ=-0.010, calibration 오차 반대값과 게인의 상관도 ρ=-0.018로 거의 신호가 없었음. 좋은 행동을 알아보는 단계와 그 판단을 다음 정책으로 바꾸는 단계가 분리되어 있다는 뜻임.
 

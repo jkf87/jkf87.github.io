@@ -24,11 +24,19 @@ description: "롱호라이즌 일상 작업용 하네스 OneDayAgent를 AgentIF-
 
 2. 구조는 5단계임. Planner가 요청을 순차 서브태스크로 분해하고, Executor가 각각을 ReAct 루프로 실행하고, Synthesizer가 결과를 합성하고, Verifier가 원 요청·서브태스크 답변과 대조 검증하고, 실패 시 Repair가 문제 부분만 국소 수정함. 웹·학술·연산·파일·멀티모달 도구를 단일 액션 스페이스로 통합한 점도 실용적임.
 
+![OneDayAgent 5단계 파이프라인](/images/2026-08-06-onedayagent-long-horizon-harness/fig-2-p3.png)
+
 3. 실행 메모리가 세 겹임. 관측값을 bounded evidence로 압축하는 요약 절단, 서브태스크 경계에서 low-level trace를 버리고 compact checkpoint만 넘기는 상태 전달, 그리고 컨텍스트가 90% 도달하면 LLM 요약으로 압축하고 하드 리밋엔 비상 프루닝. 35개 태스크가 압축을 트리거했는데 최대 350K 토큰까지 누적됐고, 압축 횟수와 점수의 상관은 거의 0 — 압축이 성능을 갉아먹지 않는다는 게 중요한 검증 결과임.
+
+![3겹 실행 메모리 구조](/images/2026-08-06-onedayagent-long-horizon-harness/fig-3-p8.png)
 
 4. 성적은 AgentIF-OneDay에서 GLM-5.2 백엔드로 0.821. Manus 0.645, Codex 0.664, ChatGPT-Agent 0.626 같은 상용 에이전트를 크게 앞섬. 모든 슬라이스에서 1위. 대신 지연 3,217초로 느림. 하루짜리 작업 기준으론 감수 가능한 트레이드오프임.
 
+![AgentIF-OneDay 성적](/images/2026-08-06-onedayagent-long-horizon-harness/fig-4-p9.png)
+
 5. 근데 제일 값진 건 에블레이션임. 검증만 추가하면 +3.3점에 지연 2분 증가. 분해만 추가하면 같은 점수에 10분 추가. 즉 비용 효율 최적점은 verification-only라는 결론임. 필자 관점에서도 검증기 다는 게 제일 저렴하고 확실한 개선이었음. 이 순서 — 검증 먼저, 분해는 필요할 때 — 는 그대로 배포 플레이북이 됨.
+
+![실패 모드 분석](/images/2026-08-06-onedayagent-long-horizon-harness/table-2-p6.png)
 
 6. 백엔드 분석도 참고할 만함. 파라미터 스케일과 점수는 약한 상관만 보이고 단조적이지 않음. 9B가 27B보다 높고, 백엔드마다 툴콜 수와 컨텍스트 축적 스타일이 다름. 하네스가 같아도 모델의 실행 스타일이 다르게 나온다는 건 백엔드 교체 시 재튜닝이 필요하다는 뜻임.
 

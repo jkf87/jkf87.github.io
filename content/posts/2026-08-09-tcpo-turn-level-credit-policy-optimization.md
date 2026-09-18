@@ -19,13 +19,21 @@ description: 매 턴 점수가 있어도 어느 턴이 공로인지는 모름. �
 
 2. TCPO의 해법은 점수를 세 렌즈로 해석하는 것임. 첫째, retrospective. 턴 k의 점수가 이전 최고점보다 높으면 개선 크레딧, 성공 상태 유지면 보존 크레딧, 성공 후 하락이면 회귀 페널티임. 이것만으로 trajectory-level보다 훨씬 정밀함.
 
+![TCPO 전체 구조](/images/2026-08-09-tcpo-turn-level-credit-policy-optimization/fig-1-p3.png)
+
 3. 둘째, hindsight. 같은 프롬프트에 궤적 8개를 샘플링했을 때 턴 2에서 점수가 안 올랐어도 턴 3에서 100점에 도달한 궤적이라면, 그 턴 2는 보이지 않는 기여를 한 것임. 같은 턴 인덱스의 다른 궤적들 future-best 평균과 비교해서 계산하므로 추가 검증자 호출이 필요 없음.
 
 4. 셋째, counterfactual. 서프라이즈가 높은 턴(모델이 불확실해서 출력이 갈리는 상황)만 최대 L개 골라서 그 턴의 히스토리를 고정하고 대안 출력 M개를 샘플링해 검증자로 평가함. 원래 출력이 대안 평균보다 좋았으면 양의 크레딧임. 전체 턴에 하면 비싸지만 high-surprisal 타겟팅이라 오버헤드가 3-5%에 그침. 랜덤 선택은 효과가 거의 없었다는 게 타겟팅이 핵심이라는 증거임.
 
+![턴레벨 크레딧 설계](/images/2026-08-09-tcpo-turn-level-credit-policy-optimization/table-1-p6.png)
+
 5. 결과. Qwen3-4B 기준 MATH-500에서 MT-GRPO 대비 +4.4점, DeepSeek-R1-Distill-Llama-8B에서 +6.2점, LiveCodeBench에서도 일관된 이득임. 특히 AppWorld처럼 상태가 유지되는 도구 사용 환경에서도 개선됨. 수학·코드와 완전히 다른 검증자 구조인데도 효과가 있다는 게 실무적 힌트임.
 
+![메인 결과](/images/2026-08-09-tcpo-turn-level-credit-policy-optimization/fig-2-p8.png)
+
 6. 크레딧 분해 결과도 참고할 만함. retrospective를 더할 때 가장 큰 점프가 나고 hindsight와 counterfactual이 각각 추가 이득을 냄. 그리고 궤적이 길어질수록(MATH 3턴 vs AppWorld 20턴) 턴별 크레딧의 가치가 커짐. 에이전트가 오래 일할수록 어느 턴이 진짜 기여했는지 구분이 더 중요해진다는 뜻임.
+
+![크레딧 추정 비교](/images/2026-08-09-tcpo-turn-level-credit-policy-optimization/table-2-p8.png)
 
 7. 내 워크플로우에 가져갈 것. 필요한 게 기존 롤아웃 데이터뿐이라 추가 라벨·크리틱·인프라 없이 GRPO 파이프라인에 얹을 수 있다는 점임. 그리고 retrospective 렌즈의 발상은 RL이 아니어도 쓸 수 있음. 내 에이전트 재시도 로그에서 "직전 최고 상태 대비 이번 시도가 개선인지 회귀인지"를 매 시도마다 기록하게 해서, 개선이 아니면 이전 상태로 롤백하는 정책에 그대로 옮겨 붙임. 점수 흐름만으로 회귀를 잡는 게 제일 싸고 효과가 컸다는 어블레이션과 같은 방향임.
 

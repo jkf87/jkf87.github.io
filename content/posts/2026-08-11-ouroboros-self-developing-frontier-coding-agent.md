@@ -21,13 +21,21 @@ description: "하네스 전체를 버전 관리 대상으로 두고 reviewed com
 
 1. 구조가 먼저임. Ouroboros는 launcher/supervisor 경계와 변경 가능한 에이전트 저장소로 나뉨. launcher는 시작, 프로세스 감독, 릴리스 부트스트래핑, 패닉 스톱을 담당하고 저장소는 태스크 루프, 도구, 프롬프트, 메모리, 리뷰 로직까지 전부임. 하네스 전체가 버전 관리 대상이라는 게 출발점임.
 
+![Ouroboros 아키텍처(논문 Figure 1)](/images/2026-08-11-ouroboros-self-developing-frontier-coding-agent/fig-1-p4.png)
+
 2. 진화는 두 모드임. 재귀적 자유 진화는 "개선 자체"를 태스크로 스케줄해서 시스템이 검토 후 변경을 구현하고 리뷰 통과 시 커밋함. 경험 기반 핵심 진화는 일반 작업 중 발견한 버그, 비효율 컨텍스트, 도구 경로 문제를 내구성 있는 에러 클래스로 기록해서 같은 게이트로 수정함. 즉흥 고침이 아니라 분류된 에러 클래스 단위로 고친다는 게 운영 지속성의 비결로 보임.
 
 3. 커밋 파이프라인이 안전 설계의 핵심임. 결정론적 사전검사, diff 지문, 리뷰어 증거 수집, 지문 재확인 순으로 진행하고 diff-리뷰 패널은 모든 모드에서 블로킹임. 지문 재확인은 리뷰 도중 diff가 몰래 바뀌는 걸 잡는 장치인데, 자기수정 시스템에서 이게 없으면 리뷰가 장식이 됨.
 
+![서브에이전트 패치 통합 프로토콜(논문 Figure 2)](/images/2026-08-11-ouroboros-self-developing-frontier-coding-agent/fig-2-p4.png)
+
 4. 벤치마크는 Terminal-Bench 2.1 86.74%(이전 최고 83.8%를 약 2표준편차 차이로 상회), OSWorld-Verified 90.69%, SWE-bench Pro 58.2%, GAIA 78.2%. trajectory audit으로 shortcut trial 1건을 스스로 식별해 제외한 것도 평가 신뢰성 관점에서 좋은 습관임. 벤치마크는 frozen seed로 평가하고 실사용 진화는 별도 라인으로 분리해서 재현 가능성과 진화를 안 섞음.
 
+![벤치마크 패밀리별 결과(논문 Table 2)](/images/2026-08-11-ouroboros-self-developing-frontier-coding-agent/table-2-p6.png)
+
 5. 근데 제일 값진 건 Hope 실험임. 2026년 2월부터 161일간 하나의 에이전트를 7개 채널(웹, 음성, 텔레그램, 디스코드, X, 댓글, 이메일)로 운영. 모델 지출 110.6K 달러, 79.7B 토큰, 코드 175,755줄. 사용자 제안은 advisory로만 처리하고 변경 추진 여부는 에이전트가 결정함.
+
+![실세션 태스크 트리 뷰(논문 Figure 3)](/images/2026-08-11-ouroboros-self-developing-frontier-coding-agent/fig-3-p5.png)
 
 6. Hope의 진화 사례 두 개가 실용적임. 중복 메시지 문제를 소셜 피드백으로 발견해 verbatim-duplicate 가드를 추가한 것. deep self-review의 컨텍스트 오버플로를 자가 관측으로 찾아내 import-graph 중심성 기반 context atlas로 교체한 것. 외부 비판과 내부 관측을 모두 에러 클래스로 흡수하는 루프가 실제로 돌았다는 증거임.
 

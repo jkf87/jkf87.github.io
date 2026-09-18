@@ -17,6 +17,8 @@ LLM-as-Judge를 쓰면 평가 비용은 내려가지만 하나가 자주 빠짐.
 
 2. 설정. 특정 평가자 한 명이 새 pairwise task에서 Prefer A, Neutral, Prefer B 중 무엇을 고를지 맞추는 문제임. 데모에 세 가지 신호가 들어감. Judgment(과거에 고른 라벨), Interface Telemetry(클릭·dwell time·reveal 기록), Retrospective Reasoning(판단 뒤 남긴 사후 이유)임. 새 학습 모델이 아니라 evaluator-specific demonstration을 넣은 in-context learning 실험이라는 점이 실무적임.
 
+![PersonaJudge 워크플로우](/images/2026-08-21-personajudge-individual-preference-eval/personajudge-figure-1-workflow.png)
+
 3. Neutral을 독립된 세 번째 라벨로 보존한 설계가 좋음. 흔한 preference 데이터셋은 A/B 이진으로 밀어붙이는데 실제 평가에서는 "둘 다 비슷하다", "둘 다 문제 있다", "기준상 결정 못 하겠다"가 자주 나옴. 모델 호출도 두 단계로 나눠서 먼저 preference를 낼지 Neutral을 고를지 맞추고, preference가 있다고 판단되면 방향을 다시 맞춤.
 
 4. 데이터. Anthropic HH에서 helpfulness·harmlessness 평가 태스크를 뽑아서 annotator 32명, 데이터셋당 evaluator 21명, evaluator당 100개 판단으로 총 4,200개 preference judgment을 모았음. 라벨만이 아니라 판단 결과·행동 흔적·사후 설명이 같은 평가자 단위로 묶인 게 차별점임.

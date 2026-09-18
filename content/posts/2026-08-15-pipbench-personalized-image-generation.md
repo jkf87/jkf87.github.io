@@ -17,11 +17,17 @@ description: "짧은 프롬프트와 선호 이미지 2~5장, 사용자 프로�
 
 1. 문제 설정이 실무 그 자체임. "a cozy study room"이라는 프롬프트 하나로는 북유럽 미니멀을 원하는 사람과 원목 책상·노란 조명을 원하는 사람을 구분 못 함. 사용자가 그 차이를 말로 못 쓰니까 지금은 프롬프트 길게 확장하고 후보 여러 장 뽑고 골라달라고 하는 워크플로가 됨. PIPBench는 과거 선호 이미지와 프로필을 조건으로 주면 첫 방부터 취향에 가깝게 만들 수 있는지를 봄.
 
+![PIPBench 파이프라인](/images/2026-08-15-pipbench-personalized-image-generation/fig-1-pipeline.png)
+
 2. 평가 설계가 균형 잡혀 있음. 프롬프트 충실도(CLIP 텍스트-이미지 유사도)와 취향 적합도(reference 이미지와의 지각·시맨틱 유사도)를 같이 보고, 여기에 전체 프로필을 조건으로 둘 중 어느 쪽이 취향에 맞는지 비교하는 persona-aware Elo를 얹음. 이 judge가 사람 주석과 약 91% 일치했다고 함. 규모 있는 취향 평가에는 자동 평가가 필수라는 판단임.
 
 3. 결과의 핵심은 이미지 모델을 파인튜닝하지 않아도 된다는 것임. 최강은 GPT-5 fusion — VLM이 짧은 프롬프트, reference 이미지, 프로필을 읽어 preference-aware 프롬프트로 재작성해 이미지 모델에 넘기는 방식. real-user Elo 1765로 no-preference 기준 1427, DreamBooth 1452를 크게 앞섬. 취향 해석 레이어로 VLM이 잘 작동한다는 결론임. 필자가 이미지 생성할 때 프롬프트 재작성 단계를 거치는 것과 같은 구조인데, 그 효과가 숫자로 확인된 셈임.
 
+![방법별 Elo 비교](/images/2026-08-15-pipbench-personalized-image-generation/fig-3-method-comparison.png)
+
 4. 제일 흥미로운 발견은 reference 수의 역설임. Qwen-Image-Edit이 reference 1개일 때 Elo 1521인데 2개를 주면 1354로 떨어짐. 모델이 여러 reference의 공통 취향을 뽑지 못하고 신호를 섞는 데 실패한다는 것. 예시는 많을수록 좋은 게 아니라 모델이 해석할 수 있게 구조화돼야 한다는 교훈임. 10장 몰아주는 게 아니라 색감 때문에 좋은 건지 구도 때문인지를 정리해서 줘야 함.
+
+![win rate 매트릭스](/images/2026-08-15-pipbench-personalized-image-generation/fig-4-win-rate-matrix.png)
 
 5. 좋은 방법의 특징도 명확함. reference를 복사하지 않고 프롬프트 내용은 유지하면서 색감·질감·분위기·구도 같은 취향 신호만 가져옴. 실패는 세 가지 패턴 — reference에 과적합, 프롬프트 충실도 상실, 취향 신호 미반영. 사용자가 좋아한 걸 따라가되 지금 요청을 버리면 안 된다는 균형임.
 

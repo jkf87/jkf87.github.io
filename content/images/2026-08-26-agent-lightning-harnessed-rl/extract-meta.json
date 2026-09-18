@@ -1,0 +1,174 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (1450x583)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 118,
+    "width": 1450,
+    "height": 583,
+    "caption": "Figure 1  The overall framework of Agent Lightning v1.0.",
+    "crop": [
+      56.03,
+      168.99,
+      539.25,
+      362.99
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-2-p3.png",
+    "method": "caption_crop (830x494)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 49,
+    "width": 830,
+    "height": 494,
+    "caption": "Figure 2",
+    "crop": [
+      56.03,
+      50.36,
+      332.59,
+      214.74
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-3-p4.png",
+    "method": "caption_crop (1450x375)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 55,
+    "width": 1450,
+    "height": 375,
+    "caption": "Figure 3  A retokenization example. The word  having  sampled as the two tokens  h  and  aving  in call  i",
+    "crop": [
+      56.03,
+      50.56,
+      539.25,
+      175.02
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  3  gives a concrete example: the word  having  is sampled as the two tokens  h  and",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "fig-4-p7.png",
+    "method": "caption_crop (1451x417)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 60,
+    "width": 1451,
+    "height": 417,
+    "caption": "Figure 4  Traditional agentic RL, where each rollout is one training sample ( left ), versus harnessed agentic",
+    "crop": [
+      56.03,
+      50.36,
+      539.39,
+      189.28
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-4-p7-2.png",
+    "method": "caption_crop (1451x684)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 119,
+    "width": 1451,
+    "height": 684,
+    "caption": "Figure  4  gives a concrete example. Suppose Rollout 1 and Rollout 2 are generated from the same",
+    "crop": [
+      56.03,
+      50.36,
+      539.43,
+      278.28
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-5-p8.png",
+    "method": "caption_crop (1335x435)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 33,
+    "width": 1335,
+    "height": 435,
+    "caption": "Figure 5  An example batch with three rollouts of different sample counts and response lengths.",
+    "crop": [
+      56.03,
+      50.36,
+      500.76,
+      195.29
+    ]
+  },
+  {
+    "page": 10,
+    "file": "fig-6-p10.png",
+    "method": "caption_crop (1451x629)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 84,
+    "width": 1451,
+    "height": 629,
+    "caption": "Figure 6  Sync RL, async RL, and our collocated async RL. Collocated async RL shares the same GPUs",
+    "crop": [
+      56.03,
+      50.36,
+      539.35,
+      259.95
+    ]
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  7  summarizes the training dynamics. The mean training reward increases steadily. On",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  8  shows that the batch-level training reward is noisy, whereas the validation reward",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "fig-7-p12.png",
+    "method": "caption_crop (1451x507)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 66,
+    "width": 1451,
+    "height": 507,
+    "caption": "Figure 7  Search-agent training dynamics. From left to right: mean training reward and mean validation",
+    "crop": [
+      56.03,
+      50.36,
+      539.39,
+      219.3
+    ]
+  }
+]

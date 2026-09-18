@@ -23,7 +23,11 @@ GUI 에이전트의 화면 성공과 데이터베이스 실제 반영이 어긋�
 
 5. 실패 분류 다섯 가지 중 Save-step(값은 맞게 넣었는데 save를 안 누름)과 Perception(save는 했는데 DB에 잘못된 값 기록)이 DB 레벨 채점이 필요한 이유임. Qwen3-VL-32B는 Grounding 실패가 59%로 주된 반면 UI-TARS-7B는 Perception 59% — 모델마다 무너지는 지점이 다르다는 것도 진단 가치임.
 
+![실패 유형 분류](/images/2026-09-18-gui-agent-erp-reliability-erpbench/fig3-failure-taxonomy.png)
+
 6. 하네스 설계도 같이 공개함. 각 턴마다 에이전트가 액션과 리스크 등급(safe/commit/irreversible)을 제안하면 배포 모드에서는 사람이 승인해야 실행되고 commit/irreversible은 항상 명시적 확인이 필요함. 평가 모드에서만 자동 승인으로 무인 돌림. 앞서 정리한 IssueTrojanBench의 프레임워크 방어 0건 결과와 연결하면 — 모델이 허용한 행위를 막는 건 결국 이런 하네스 게이팅뿐이라는 결론이 재확인됨.
+
+![리스크 게이팅 하네스 UI](/images/2026-09-18-gui-agent-erp-reliability-erpbench/fig2-harness-ui.png)
 
 7. 비용도 짚을 만함. Claude는 T3에서 런당 입력 토큰이 약 2.0M까지 늘어남(T1 231K). 오픈 모델의 낮은 토큰 사용은 효율이 아니라 조기 루프 탈출 때문 — OpenCUA-7B는 T1에서 평균 1.6 액션으로 사실상 포기하는 그림임. 토큰 사용량 지표는 방향을 함께 봐야 한다는 교훈임.
 

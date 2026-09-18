@@ -21,6 +21,8 @@ aliases:
 
 1. 출발 구분이 좋음. 내가 쓰는 코딩 에이전트에서 스킬이 안 불리면 내가 바로 "그 스킬 써서 해"라고 고쳐줌 — 내가 fallback임. 근데 제품 안의 에이전트는 고객이 "환불하고 싶어요"라고만 말하고 모델이 알아서 스킬을 찾아야 함. description 트리거가 실패하면 스킬은 존재하지만 없는 것이 됨. 고객용 에이전트에서는 eval이 fallback이어야 한다는 것.
 
+![Philipp Schmid 발표 영상 썸네일](/images/dont-ship-skills-without-evals-2026-07-17/hero.jpg)
+
 2. 스킬의 첫 비용이 description임. progressive disclosure의 첫 층인 description은 모든 모델 호출 컨텍스트에 항상 들어가서 매번 토큰 비용을 냄. 그래서 에세이가 아니라 지시어여야 함. "chat application을 만들 때 Interactions API를 사용하라"가 "Interactions API는 multi-chat에 권장됩니다"보다 낫다는 것. 배경지식이 아니라 행동을 바꾸는 지시를 줘야 함.
 
 3. capability 스킬과 preference 스킬 구분도 실무적임. 전자는 모델이 아직 못 하는 능력을 보완하는 임시 장치라서 모델이 좋아지면 은퇴시켜야 하고, 후자는 팀의 워크플로와 도메인 규칙을 담아서 더 오래 감. eval의 목적도 달라짐 — capability는 은퇴 시점을 알려주고 preference는 회귀를 막음.

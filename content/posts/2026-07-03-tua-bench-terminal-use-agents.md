@@ -20,11 +20,17 @@ source_url: "https://arxiv.org/abs/2606.28480"
 
 1. 배경. LLM이 컴퓨터를 다루는 방식은 GUI 클릭 방식과 터미널 CLI 방식으로 나뉨. 터미널이 텍스트 네이티브라 LLM의 강점과 잘 맞음. 근데 기존 터미널 벤치마크는 SWE-bench처럼 코딩에 펏중돼 있었음. 현실 터미널 작업은 문서 편집, 메일 정리, 데이터 수집까지 훨씬 넓음. 이 간극을 메운 게 TUA-Bench임. 원문은 [arXiv:2606.28480](https://arxiv.org/abs/2606.28480).
 
+![TUA-Bench 개요](/images/2026-07-03-tua-bench-terminal-use-agents/fig-p1.jpeg)
+
 2. 구성. 초안 394개 과제를 큐레이션해 120개만 남김. Office(문서·메일), Web & Info(실시간 검색·API 수집), Multimedia(FFmpeg 편집·리사이즈), System & SW(패키지·서비스 설정), Science & Eng(생물정보학 파이프라인·물리 시뮬레이션) 5개 도메인임. Science 트랙은 박사 연구자들과 공동 설계해서 단순 코딩이 아닌 도메인 지식이 필요한 과제임.
+
+![TUA-Bench 과제 구성](/images/2026-07-03-tua-bench-terminal-use-agents/fig-p2.png)
 
 3. 채점은 전부 실행 기반임. 컨테이너 샌드박스에서 실제로 돌리고 결과를 검증함. 모델 자기 보고를 안 믿는다는 점이 신뢰 포인트임. 나도 에이전트 결과 검증할 때 "했다고 함"이 아니라 산출물 확인으로 게이트를 짜는데, 그 설계와 같은 방향임.
 
 4. 결과. 1위 Claude Code + Opus 4.8(max)이 65.8%, 2위 Codex + GPT-5.5(xhigh)가 64.7%, OpenHands + Opus 4.8이 63.4%임. 오픈웨이트는 GLM-5.1 48.1%, DeepSeek-V4 Pro 46.2%로 아직 격차가 큼.
+
+![리더보드 결과](/images/2026-07-03-tua-bench-terminal-use-agents/fig-p6.png)
 
 5. 카테고리별로 보면 패턴이 보임. System & SW가 가장 쉽고 Office와 Multimedia가 가장 어려움. Opus는 Web & Info에서 압도적이고 나머지는 중위권, GPT-5.5 xhigh가 전 카테고리 고른 편임. 그래서 "어떤 모델을 쓸까"보다 "어떤 종류 과제를 맡길까"가 먼저임.
 

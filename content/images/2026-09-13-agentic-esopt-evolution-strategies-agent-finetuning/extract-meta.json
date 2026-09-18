@@ -1,0 +1,191 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (1672x821)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 449,
+    "width": 1672,
+    "height": 821,
+    "caption": "Figure 1",
+    "crop": [
+      48.45,
+      451.48,
+      605.61,
+      724.97
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (1525x593)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 193,
+    "width": 1525,
+    "height": 593,
+    "caption": "Figure 2 Detailed workflow of Agentic ESOpt.  Starting from the current LLM, Agentic ESOpt samples parameter",
+    "crop": [
+      53.25,
+      44.59,
+      561.07,
+      241.76
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-3-p6.png",
+    "method": "caption_crop (1477x536)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 116,
+    "width": 1477,
+    "height": 536,
+    "caption": "Figure 3  Agentic Sudoku performance grouped by minimum successful horizon  H ∗ . (a) reports final success rate",
+    "crop": [
+      60.0,
+      352.64,
+      552.02,
+      530.8
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-1-p6.png",
+    "method": "caption_crop (1478x676)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 152,
+    "width": 1478,
+    "height": 676,
+    "caption": "Table 1  Agentic Sudoku final evaluation success rate ( × 100) and GPU memory requirement, grouped by minimum",
+    "crop": [
+      59.69,
+      352.64,
+      552.0,
+      577.63
+    ]
+  },
+  {
+    "page": 7,
+    "file": "table-1-p7.png",
+    "method": "caption_crop_table_below (1483x1011)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 289,
+    "width": 1483,
+    "height": 1011,
+    "caption": "Table 1  and  Figure 3  (a) show a clear tendency that changes with the minimum successful horizon. At  H ∗ = 5 ,",
+    "crop": [
+      59.65,
+      64.68,
+      553.34,
+      401.46
+    ]
+  },
+  {
+    "page": 7,
+    "file": "table-2-p7.png",
+    "method": "caption_crop (1478x357)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 81,
+    "width": 1478,
+    "height": 357,
+    "caption": "Table 2  Training compute and wall-clock time on agentic Sudoku. Both Agentic GRPO and Agentic ESOpt are",
+    "crop": [
+      59.69,
+      308.27,
+      552.06,
+      426.99
+    ]
+  },
+  {
+    "page": 8,
+    "file": "table-3-p8.png",
+    "method": "caption_crop_table_below (1478x636)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 151,
+    "width": 1478,
+    "height": 636,
+    "caption": "Table 3  Math-reasoning and DocVQA results under No Skill and Trace2Skill contexts. Qwen3.5-27B No Skill is an",
+    "crop": [
+      59.69,
+      301.41,
+      552.05,
+      513.14
+    ]
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4 , while Wikipedia is only included in the dataset average.",
+    "crop": null
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4  WebArena-Lite success rates (%). We report the average over 3 runs and the standard deviations. Improved",
+    "crop": null
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5  Design constructive heuristics at total evaluation  T  ∈{ 1000 ,  2000 } . TSP is minimized; KP and ASP are",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (498x42pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6  Vanilla-ES population sensitivity on 15-turn Sudoku.",
+    "crop": [
+      59.68800354003906,
+      153.56698608398438,
+      557.3673095703125,
+      195.26683044433594
+    ]
+  },
+  {
+    "page": 11,
+    "file": "fig-4-p11.png",
+    "method": "caption_crop (709x443)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 173,
+    "width": 709,
+    "height": 443,
+    "caption": "Figure 4  Intuition for population scaling: sampled",
+    "crop": [
+      321.55,
+      153.57,
+      557.37,
+      300.76
+    ]
+  }
+]

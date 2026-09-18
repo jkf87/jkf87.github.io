@@ -22,7 +22,11 @@ description: 장기 에이전트의 목표 이탈을 두 독립 실패로 쪼개
 
 5. 메인 결과. 커밋먼트 스토어만 제거한 A0 셀에서 어밴던먼트가 0.00에서 1.00으로 감. 최대 394개 기준 비트에 대해 사실상 매 비트마다 자기 플랜을 버리는 것임. 반면 FULL과 조인 제거(J0)는 어밴던먼트 0.00을 유지하고 바인딩 에러는 어느 셀에서도 0.00임.
 
+![커밋먼트 스토어 제거 어블레이션(논문 Table 1)](/images/2026-08-20-commitment-vs-binding-drift/table1-commitment-ablation.png)
+
 6. 반대 실험이 반직관적임. 바인딩 조인을 꺼도 per-beat 바인딩 드리프트가 오르지 않았음. 이유는 구조임. 조준, 컨테인먼트 체크, 영수증 귀속이 전부 코드(Executive) 소유라서 착지는 좌표 기하로 결정되고 잘못된 착지는 믿음 상태를 오염시키기 전에 잡힘. 바인딩 실패 클래스가 구조적으로 흡수된 것임. 흔적은 효과 연결 가설 형성률에 남음. FULL 3/3 = J0 3/3 > A0 2/3 > J0A0 0/4로, 두 메커니즘을 다 끄면 드리프트 이전 단계인 가설 형성 자체가 바닥남.
+
+![바인딩 조인 짝 비교 실험(논문 Table 2)](/images/2026-08-20-commitment-vs-binding-drift/table2-binding-paired.png)
 
 7. 아키텍처가 "검증이 구조"임을 보여줌. LLM은 Observer, Surveyor, Actuator 세 기관으로만 참여하고 타입 제안(typed proposal)만 제출할 수 있음. 결정론적 Executive(diff, matcher, validator, compiler, renderer, test-evaluator)이 모든 상태 전이를 소유함. 주장은 행동 전에 로그로 사전 등록된 예측이 코드로 관측과 대조될 때만 상태에 들어감. "LLM이 done이라고 말하는 것은 이벤트가 아니다"라는 원칙이 핵심임. 달성은 로그된 이벤트 위의 서술형 술어라는 것임.
 

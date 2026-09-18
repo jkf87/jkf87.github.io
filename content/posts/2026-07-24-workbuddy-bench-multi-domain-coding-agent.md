@@ -20,11 +20,17 @@ categories:
 
 1. 배경. 기존 평가는 두 극단 사이에 끼어 있었음. SWE-bench식 공개 벤치마크는 문제와 정답이 웹에 있어서 모델이 이슈를 암기했는지 이해했는지 구분이 안 됨. 벤더 프로덕션 벤치마크는 실사용 분포를 반영하지만 비공개라 감사 불가. [WorkBuddy Bench](https://arxiv.org/abs/2607.20911)는 그 사이를 노림 — 실사용 분포에서 카테고리를 매칭하되 원본을 직접 안 쓰고 역설계해서 새로 작성.
 
+![WorkBuddy Bench 개요](/images/2026-07-24-workbuddy-bench-multi-domain-coding-agent/fig-1-p2.png)
+
 2. 오염 저항 설계가 핵심임. 실제 커밋, PR, CVE에서 출발하되 "이거 좀 해줘"라고 동료에게 부탁하는 구어체 요청으로 재작성. 근본 원인, 참조 diff, 해결 힌트를 의도적으로 생략. 그러니 웹에서 원본을 검색해도 프롬프트가 복원이 안 됨. 비밀이 아니라 신선도로 오염을 다루는 접근.
 
 3. 구성은 4개 서브셋임. Code 80개는 히든 테스트로 채점. Web 70개는 룰 체크+LLM/VLM 저지로 786개 루브릭 아이템 검사. Office 50개는 결정론적 룰 체크+증거 기반 저지. Security 60개는 LLM 저지 없이 결정론적 scoring.py로만 채점. 서브셋 간 점수 비교도, 전체 평균도 안 냄 — 의도된 설계임.
 
+![4개 서브셋 구성](/images/2026-07-24-workbuddy-bench-multi-domain-coding-agent/fig-2-p9.png)
+
 4. Code의 난이도 지도가 흥미로움. 제일 어려운 건 bug_fix(평균 0.47)와 api_contract(0.47). 구어체 증상만으로 대형 코드베이스에서 회귀 버그를 찾는 것, 필드 하나 빠뜨리면 0점인 인터페이스 수정이 어려움. 반면 feature_pipeline(0.94)과 testing(0.88)은 쉬움. 코드 합성보다 비즈니스 의도를 읽는 게 더 어려워진 시대라는 것.
+
+![Code 난이도 지도](/images/2026-07-24-workbuddy-bench-multi-domain-coding-agent/fig-3-p10.png)
 
 5. Web의 발견도 명확함. 모델들은 UI를 그리는 건 잘하는데 상태 일관성에서 무너짐. 비인터랙티브 태스크 점수가 상호작용/상태 태스크보다 훨씬 높음. 렌더링은 되는데 상태 소스·디스플레이·지속성·최종 페이로드 사이가 깨지는 패턴이 반복됨.
 
@@ -34,9 +40,15 @@ categories:
 
 8. 리더보드의 교훈 — 만능 모델은 없음. 8개 보드의 1위가 세 모델에 분산됨. Claude Opus 4.8이 Code 양쪽, Web 양쪽, Office 하나로 5개. GLM-5.2가 Security 양쪽(오픈웨이트로). GPT-5.5가 Office 하나. 용도별로 다른 모델을 써야 한다는 실무 결론이 숫자로 나온 것.
 
+![리더보드: 1위 분산](/images/2026-07-24-workbuddy-bench-multi-domain-coding-agent/fig-5-p12.png)
+
 9. 하네스가 결과를 바꾼다는 것도 데이터로 확인됨. 같은 모델이 하네스만 바뀌어도 GPT-5.5는 Security에서 77.91 → 64.39로 13.52점 하락. 하네스는 중립 측정 도구가 아니라 결과의 일부. 내 에이전트 성적을 올리고 싶으면 모델 교체 전에 하네스부터 볼 것.
 
+![하네스 변경에 따른 점수 변동](/images/2026-07-24-workbuddy-bench-multi-domain-coding-agent/fig-6-p13.png)
+
 10. 토큰 효율도 순위와 일치하지 않음. GPT-5.5는 모든 서브셋에서 가장 적은 출력 토큰(Code 6.9k)으로 1티어 점수. GLM-5.2의 Security 1위는 런당 30k+ 토큰, MiniMax-M3는 Security에서 평균 88.8턴, 약 1,110만 입력 토큰을 씀. 점수만 보고 도입하면 비용 폭탄 맞을 수 있다는 것.
+
+![토큰 효율 비교](/images/2026-07-24-workbuddy-bench-multi-domain-coding-agent/table-7-p23.png)
 
 11. 여기서 문제제기. 내 업무 자동화를 이 벤치마크 점수로 골라도 되는가. 도메인 분포를 볼 것. Code가 Python 중심이고, Office는 텍스트 위주로 GUI 조작·OCR이 빠져 있음. 화면 조작 자동화가 내 주 업무라면 이 점수표는 절반만 내 얘기임.
 

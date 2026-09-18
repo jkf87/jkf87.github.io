@@ -22,7 +22,13 @@ description: "검색 에이전트와 피드백 비평가를 같은 파라미터�
 
 4. 소거 실험이 이 논문의 증거 핵심임. 2Wiki에서 에이전트만 학습하면 84.2에서 정점을 찍고 멈춤. 피드백 모델만 학습하면 71.3까지밖에 못 감. 둘을 교대로 학습하면 계속 오름. 크로스플레이 분석도 같은 결론 — 초기 에이전트는 초기 critic과, 후기 에이전트는 후기 critic과 짝일 때 성능이 최고. 정책과 피드백이 서로 맞춰 진화했다는 뜻임.
 
+![크로스플레이 분석 결과](/images/2026-08-27-cafe-co-evolving-feedback-search-agent/fig3-crossplay.png)
+
 5. 최종 성적은 7개 검색 벤치마크에서 Qwen2.5-7B 기준 평균 EM 52.5, F1 60.7. GRPO(49.7/58.0) 대비 전 벤치마크 개선이고 6개 아웃도메인에서 유지됨. Search-R1 대비 멀티홉에서 7.4 EM 향상 — 중간 검색 오류를 번지기 전에 잡는 구조라 긴 궤적에서 이득이 크다는 설계 의도와 일치함. 환각률도 GRPO 17.6%에서 12.6%로 감소.
+
+![7개 벤치마크 메인 결과](/images/2026-08-27-cafe-co-evolving-feedback-search-agent/fig-table1-main-results.png)
+
+![환각률 비교](/images/2026-08-27-cafe-co-evolving-feedback-search-agent/fig4-hallucination.png)
 
 6. call–skip success gap 개념도 재사용 가치가 큼. 피드백 요청을 포함한 롤아웃과 생략한 롤아웃의 성공률 차이로 개입의 반환값을 계산하는 것. 별도 보상 모델 없이 프롬프트 수준 A/B로 개입 가치를 측정하는 셈이라 다른 개입형 도구 호출에도 적용되는 패턴임.
 

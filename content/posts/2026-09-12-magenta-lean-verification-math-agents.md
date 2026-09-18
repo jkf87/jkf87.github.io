@@ -12,9 +12,17 @@ description: "자연어 문제를 Lean 4 명제로 바꾸고 기계 검증 증�
 
 2. 구조는 역할 분리임. 리저너가 자연어 풀이로 답을 확정하고, 포멀라이저가 문제와 답을 Lean 4 명제로 변환하고, 스테이트먼트 저지가 명제가 원래 문제를 보존하는지 검사하고(가설 누락, 상수 변경, 자명해지는 가정 기각), 프로버가 Lean 증명 스크립트를 작성함. 무엇을 증명할지 결정하는 저지가 Lean 보증과 원래 문제를 잇는 다리라는 게 설계의 핵심임.
 
+![Magenta 파이프라인 개요](/images/2026-09-12-magenta-lean-verification-math-agents/fig1-overview.png)
+
 3. 실패 처리도 정교함. 증명이 실패하면 error-attribution 저지가 원인을 SYNTAX와 Math로 분류해서 코드 문제면 지역 Lean 수리로, 수학 문제면 새 추론 체인으로 되돌림. 무작정 리샘플하지 않고 원인별로 라우팅하는 게 기존 재시도 루프와 다른 점이고, 실제로 어려운 문제에서 피드백 기반 수정이 독립 리샘플링보다 효율이 좋았음.
 
+![오류 원인별 자기 수정 루프](/images/2026-09-12-magenta-lean-verification-math-agents/fig2-self-corrections.png)
+
 4. 결과가 놀라움. K2-HORIZON-7B 단독은 93문제 평균 74.19%인데 Magenta를 얹으면 100%. AIME 2025, AIME 2026, HMMT Feb 2026 전부 만점. 그리고 리저너를 GPT-5.6-Sol로 바꿔도, 포멀라이저·프로버를 통째로 바꿔도 전부 100%가 나옴. 성능 향상이 특정 모델이 아니라 검증이 포함된 파이프라인 구조 자체에서 나온다는 해석이 숫자로 뒷받침됨. 리저너별 상승폭은 +8.6~+25.8점.
+
+![문제별 통과율](/images/2026-09-12-magenta-lean-verification-math-agents/fig3-pass-rate.png)
+
+![리저너별 정확도](/images/2026-09-12-magenta-lean-verification-math-agents/table1-accuracy.png)
 
 5. 스테이트먼트 저지를 빼면 문제가 자명해지는 명제나 조건 빠진 명제의 증명이 통과함. 증명은 성공했는데 푼 건 다른 문제인 상태가 되는 것 — 저지가 이 파이프라인의 실질적 안전장치라는 뜻임.
 

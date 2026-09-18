@@ -22,13 +22,19 @@ description: 참조 궤적과 현재 상태가 어긋나면 teacher가 올바른
 
 1. 문제는 state-reference mismatch임. 멀티턴 환경에서 이전 행동이 다음 상태를 바꾸는데, 기존 FullPath-SD는 성공한 전체 궤적을 매 턴 teacher에게 보여줌. 학생이 참조와 다른 행동을 하면 참조에 없는 상태에 도달하는데도 참조를 계속 주입함.
 
+![상태-레퍼런스 불일치 문제](/images/2026-08-11-smrc-sd-state-matched-routing-self-distillation/fig1-state-reference-mismatch.png)
+
 2. 구체 예시가 와닿음. 참조 궤적은 "Product A를 Results A에서 클릭"하라고 가르치는데 학생은 Product B 상세 페이지에 있음. 이 상태에서 올바른 행동은 "Back to Search"인데도 teacher는 여전히 Product A 경로를 평가 기준으로 삼아서 학생의 올바른 행동을 낮게 매김.
+
+![SMRC-SD 개요](/images/2026-08-11-smrc-sd-state-matched-routing-self-distillation/fig2-smrc-sd-overview.png)
 
 3. 이걸 실험으로 증명한 게 이 논문의 첫 기여임. 상태·프롬프트·응답을 고정하고 teacher 컨텍스트만 바꿔본 결과, 매칭된 상태에서는 FullPath-SD가 올바른 행동의 로그 확률을 올리지만 비매칭 상태에서는 억누름(+0.070 차이). 무조건적 증류가 해가 된다는 직접 증거임.
 
 4. 해법은 두 단계임. 첫째, 상태 매칭 라우팅. 환경 어댑터가 학생의 현재 상태 서명(작업 ID, 진행도, 인벤토리, 현재 페이지)과 참조 궤적 각 위치의 서명을 비교해서 매칭될 때만 증류를 적용하고 비매칭 시 GRPO만 씀. 둘째, 상태 맞춤 teacher 컨텍스트. 매칭된 턴에서 성공 전체 궤적과 현재 상태 요약, 매칭된 후보 행동을 함께 줘서 teacher가 도달한 상태에 근거해 re-scaring하게 함. 추론 시엔 참조·서명·teacher 컨텍스트를 전부 제거해서 배포 정책은 일반 프롬프트만 받음.
 
 5. 결과. Qwen3-1.7B 기준 ALFWorld Avg@4가 0.746에서 0.865로, WebShop Acc가 0.574에서 0.693로 오름. 특히 Skill-SD(0.379)와 SDAR(0.578)는 GRPO(0.717)보다 떨어지는데, 무조건적 증류가 1.7B 같은 작은 모델에서는 학습을 해친다는 뜻임. 같은 참조를 쓰면서 매칭된 턴만 골라내니 문제가 사라짐.
+
+![학습 다이내믹스](/images/2026-08-11-smrc-sd-state-matched-routing-self-distillation/fig3-training-dynamics.png)
 
 6. 부수 효과도 좋음. 응답 길이가 GRPO 수준(78.8 vs 79.5 토큰)으로 유지되는데 FullPath-SD는 142.6, Skill-SD는 255.6 토큰임. 반복 4-gram 비율도 8.8%로 Skill-SD의 38.6%와 대비됨. 잘못된 참조가 낳는 장황함과 반복을 매칭만으로 없앤 것임.
 

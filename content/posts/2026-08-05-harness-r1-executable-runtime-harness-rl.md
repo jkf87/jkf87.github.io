@@ -21,11 +21,17 @@ description: "에이전트 하네스 코드를 고치는 전용 모델을 RL로 
 
 2. Harness-R1의 구조는 역할 분리임. 과제를 푸는 target 에이전트는 얼려두고, 하네스를 고치는 engineer 모델만 훈련시킴. 실패 궤적을 failure packet으로 만들어 engineer에게 주면, engineer가 라이프사이클 훅 4곳에 실행 가능한 패치를 작성함. 패치 적용 후 target을 다시 돌려서 성공률 변화가 engineer의 보상이 되는 것임.
 
+![Harness-R1 구조: target/engineer 분리](/images/2026-08-05-harness-r1-executable-runtime-harness-rl/fig-1-p2.png)
+
 3. 훅 4곳이 실무적으로 정리가 잘 돼 있음. 에피소드 시작(초기 컨텍스트 설정), pre-decision(결정 전 컨텍스트 보강), pre-action(환경 전달 전 액션 정규화·재작성·거부), post-feedback(관측 검사, 정체 시 복구 트리거). 모델 가중치를 안 건드리고 이 네 지점만 건드린다는 게 하네스 개입의 표준 지도로 쓸 만함.
+
+![라이프사이클 훅 4곳](/images/2026-08-05-harness-r1-executable-runtime-harness-rl/fig-2-p3.png)
 
 4. 훈련은 SFT 콜드스타트 후 온라인 GRPO임. failure packet마다 패치 8개를 샘플링해서 각각 target에 적용해 재실행하고 보상 차이로 업데이트. 보상 식은 패치가 유효·완전하면 성공률 변화, 아니면 0. 실행 결과만이 판단 기준이라는 단순함이 강점임.
 
 5. 결과는 vanilla Qwen3.5-9B 기준 WebShop +7.2, ALFWorld +12.6, DBBench +8.0, 평균 44.3→53.6%. SFT만 한 engineer보다 7.1%p, 가장 강한 프롬프트 기반 에디터(GLM-5.2)보다 4.8%p 위임. target을 직접 파인튜닝한 뒤에도 얹으면 +5.0%p 추가 이득이 있어서 경로가 독립적임.
+
+![벤치마크 성능 향상](/images/2026-08-05-harness-r1-executable-runtime-harness-rl/fig-3-p8.png)
 
 6. 일반화 결과가 핵심 증거임. 학습에 안 쓴 20개 target 모델에 적용해서 평균 +7.06%p, 전부 양수. 63개 조합 중 56개 개선. 그리고 failure 10개만 보고 만든 패치를 1,270개 안 본 과제에 적용해도 +8.9%p인데, 같은 설정에서 Qwen3.5-397B는 -4.3, DeepSeek-V4-Pro는 -0.4였음. 스케일로는 안 되는 능력이라는 것임.
 
