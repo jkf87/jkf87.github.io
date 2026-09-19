@@ -5677,7 +5677,21 @@
       "voice_spyrl_final_score": 86.5,
       "highlights": 12,
       "published": "2026-09-19T19:10:00+09:00",
-      "note": "19:00 KST run; HarnessDev (ByteDance Seed+SUTD+Georgia Tech) LLM self-harness creation/evolution benchmark; multi-candidate A/B/C winner a-kakao 86.5/A; final post-path gate 86.5/A"
+      "note": "19:00 KST run; HarnessDev (ByteDance Seed+SUTD+Georgia Tech) LLM self-harness creation/evolution benchmark; multi-candidate A/B/C winner a-kakao 86.5/A; final post-path gate 86.5/A; threads: 5/5 published via state-file resume after two interrupted runs (concurrent resume may have left up to 2 duplicate replies: 17994892674046481, 18173363938453938)",
+      "commit": "e4f9ebab",
+      "threads_root_id": "17881605045689837",
+      "threads_reply_ids": [
+        "18490214728103618",
+        "18095780105644929",
+        "17962848483195071",
+        "17976390692919703"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        4,
+        5
+      ]
     }
   ]
 }
