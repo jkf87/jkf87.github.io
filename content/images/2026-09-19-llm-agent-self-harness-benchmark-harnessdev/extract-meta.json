@@ -1,0 +1,101 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1484x627)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 166,
+    "width": 1484,
+    "height": 627,
+    "caption": "Figure 1 HarnessDev covers two stages of harness development.  In  Creation , a creator builds a complete harness",
+    "crop": [
+      58.87,
+      101.52,
+      553.15,
+      310.07
+    ]
+  },
+  {
+    "page": 4,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1 Harness-development settings.  Creation builds a new harness; Evolution improves that harness from",
+    "crop": null
+  },
+  {
+    "page": 5,
+    "file": "fig-2-p5.png",
+    "method": "caption_crop (1485x598)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 129,
+    "width": 1485,
+    "height": 598,
+    "caption": "Figure 2 The weak Seed Harness and its development environment.  The seed fixes only the input and audit",
+    "crop": [
+      58.87,
+      116.28,
+      553.39,
+      315.25
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-3-p5.png",
+    "method": "caption_crop (1059x579)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 81,
+    "width": 1059,
+    "height": 579,
+    "caption": "Figure 3",
+    "crop": [
+      58.87,
+      558.92,
+      411.37,
+      751.6
+    ]
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2 Downstream evaluation coverage for Creation.  Creation uses all 731 instances of the SWE-bench Pro",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3 RQ1 / Harness Creation under Self-Eval.  Unless noted otherwise, each creator independently builds and",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4 RQ1 / Harness Creation under a fixed Gemini executor.  Every creator harness is executed by Gemini 3.1 Pro.",
+    "crop": null
+  }
+]
