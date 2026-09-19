@@ -5562,6 +5562,34 @@
         6,
         7
       ]
+    },
+    {
+      "slug": "2026-09-19-llm-agent-regression-testing-chronicle",
+      "source_url": "https://arxiv.org/abs/2609.20625",
+      "source_type": "arxiv",
+      "title": "LLM 에이전트 장애를 재현하는 방법: Chronicle 컷포인트 리플레이 논문 정리 (arXiv 2609.20625)",
+      "blog_url": "https://conanssam.com/posts/2026-09-19-llm-agent-regression-testing-chronicle",
+      "tags": [
+        "llm-agent",
+        "agent-reliability",
+        "regression-testing",
+        "record-replay",
+        "paper-summary"
+      ],
+      "voice": "conanssam-voice/kakao/plain",
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_winner": "a-kakao (with SEO FAQ revisions)",
+      "voice_spyrl_score": 84.4,
+      "voice_spyrl_grade": "A",
+      "voice_spyrl_spy": "a-kakao",
+      "voice_spyrl_suspicion": 15.6,
+      "voice_spyrl_report": "../memory/voice-feedback/2026-09-19-2026-09-19-llm-agent-regression-testing-chronicle-spyrl-r2.json",
+      "voice_spyrl_final_score": 84.4,
+      "highlights": 15,
+      "published": "2026-09-19T10:20:00+09:00",
+      "note": "10:00 KST run; Chronicle (Microsoft, arXiv 2609.20625) cut-point replay for LLM agent regression testing; r1 winner a-kakao scored 60.9 (no_images/question_heading) so revised with images+FAQ list; final gate 84.4/A; trailing-slash URL variant 404 like prior posts",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-19-llm-agent-regression-testing-chronicle.md",
+      "commit": "5aebbcea"
     }
   ]
 }
