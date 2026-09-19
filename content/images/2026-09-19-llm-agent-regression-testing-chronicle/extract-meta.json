@@ -1,0 +1,99 @@
+[
+  {
+    "page": 3,
+    "file": "fig-1-p3.png",
+    "method": "caption_crop (1209x413)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 81,
+    "width": 1209,
+    "height": 413,
+    "caption": "Figure 1: Recording annotation and a cut-point plan:",
+    "crop": [
+      58.87,
+      59.09,
+      461.5,
+      196.44
+    ]
+  },
+  {
+    "page": 3,
+    "file": "table-1-p3.png",
+    "method": "caption_crop (729x773)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 89,
+    "width": 729,
+    "height": 773,
+    "caption": "Table 1: The 6 recorded incidents. Each unguarded tool",
+    "crop": [
+      293.83,
+      59.09,
+      536.41,
+      316.34
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Harness results on the released fixtures. Cut-",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (242x78pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 3: Full replay: every boundary returns its",
+    "crop": [
+      294.1419982910156,
+      371.4408264160156,
+      536.4085693359375,
+      449.9320068359375
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-4-p6.png",
+    "method": "caption_crop (728x570)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 56,
+    "width": 728,
+    "height": 570,
+    "caption": "Figure 4: Any subset may be live: tool live, both model",
+    "crop": [
+      294.14,
+      371.44,
+      536.41,
+      561.15
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-5-p6.png",
+    "method": "caption_crop (733x630)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 62,
+    "width": 733,
+    "height": 630,
+    "caption": "Figure 5: Boundary indexing: the two model cross-",
+    "crop": [
+      294.14,
+      454.95,
+      538.06,
+      664.65
+    ]
+  }
+]
