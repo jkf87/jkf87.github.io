@@ -5603,6 +5603,17 @@
         4,
         5
       ]
+    },
+    {
+      "date": "2026-09-19",
+      "slug": "2026-09-19-harness-value-planning-release-control",
+      "title": "AI 에이전트 하네스의 가치가 어디서 나오는지 측정한 실험: 계획 주입과 완료 검증 분리",
+      "source": "arxiv:2609.20474",
+      "url": "https://conanssam.com/posts/2026-09-19-harness-value-planning-release-control",
+      "voice": "kakao/plain",
+      "mode": "multi-candidate",
+      "winner": "A",
+      "score": 85.3
     }
   ]
 }
