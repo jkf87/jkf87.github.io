@@ -5614,6 +5614,31 @@
       "mode": "multi-candidate",
       "winner": "A",
       "score": 85.3
+    },
+    {
+      "slug": "2026-09-19-llm-agent-memory-reconsolidation-realm",
+      "source_url": "https://arxiv.org/abs/2609.16053",
+      "source_type": "arxiv",
+      "title": "LLM 에이전트 장기 기억이 검색할수록 좋아지는 이유: REALM 논문 정리 (arXiv 2609.16053)",
+      "blog_url": "https://conanssam.com/posts/2026-09-19-llm-agent-memory-reconsolidation-realm",
+      "tags": [
+        "llm-agent",
+        "agent-memory",
+        "memory-reconsolidation",
+        "paper-summary"
+      ],
+      "voice": "conanssam-voice/kakao/plain",
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_winner": "a-kakao",
+      "voice_spyrl_score": 88.8,
+      "voice_spyrl_grade": "A",
+      "voice_spyrl_spy": "a-kakao",
+      "voice_spyrl_suspicion": 11.2,
+      "voice_spyrl_report": "../memory/voice-feedback/2026-09-19-llm-agent-memory-reconsolidation-realm-spyrl.json",
+      "voice_spyrl_final_score": 93.8,
+      "highlights": 11,
+      "published": "2026-09-19T16:10:00+09:00",
+      "note": "16:00 KST run; REALM (SJTU+OPPO, arXiv 2609.16053) retrieval-driven memory reconsolidation; multi-candidate A/B/C, winner a-kakao 88.8/A, final post-path gate 93.8/A after binary_contrast+slop fixes"
     }
   ]
 }
