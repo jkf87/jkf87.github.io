@@ -5587,9 +5587,22 @@
       "voice_spyrl_final_score": 84.4,
       "highlights": 15,
       "published": "2026-09-19T10:20:00+09:00",
-      "note": "10:00 KST run; Chronicle (Microsoft, arXiv 2609.20625) cut-point replay for LLM agent regression testing; r1 winner a-kakao scored 60.9 (no_images/question_heading) so revised with images+FAQ list; final gate 84.4/A; trailing-slash URL variant 404 like prior posts",
+      "note": "10:00 KST run; Chronicle (Microsoft, arXiv 2609.20625) cut-point replay for LLM agent regression testing; r1 winner a-kakao scored 60.9 (no_images/question_heading) so revised with images+FAQ list; final gate 84.4/A; trailing-slash URL variant 404 like prior posts; threads: 5/5 published, uploader needed 1 resume after session ended at post 4 (state-file resume, no duplicates)",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-19-llm-agent-regression-testing-chronicle.md",
-      "commit": "5aebbcea"
+      "commit": "5aebbcea",
+      "threads_root_id": "17914554669451905",
+      "threads_reply_ids": [
+        "18053254763799541",
+        "17906530041503385",
+        "18156007339508395",
+        "17898983595669002"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        4,
+        5
+      ]
     }
   ]
 }
