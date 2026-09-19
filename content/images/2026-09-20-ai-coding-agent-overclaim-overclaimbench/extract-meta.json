@@ -1,0 +1,65 @@
+[
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1:  Coverage verdicts by model.  Run counts and percentages of the  N  evaluated runs for",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "fig-4-p8.png",
+    "method": "caption_crop (1261x842)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 138,
+    "width": 1261,
+    "height": 842,
+    "caption": "Figure 4:  Requiring subagents improves file coverage, but misleading reporting persists or",
+    "crop": [
+      96.0,
+      55.46,
+      516.0,
+      335.77
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-3-p8.png",
+    "method": "caption_crop (1261x1534)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 313,
+    "width": 1261,
+    "height": 1534,
+    "caption": "Figure 3 shows that overclaiming propensity and the depth with which each corpus was read varied",
+    "crop": [
+      96.0,
+      55.46,
+      516.0,
+      566.65
+    ]
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too page-like (area_ratio=0.56)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 4 shows the proportion of runs that touched every file and, among incomplete runs, the",
+    "crop": [
+      96.0,
+      55.46156311035156,
+      516.0032043457031,
+      706.432861328125
+    ]
+  }
+]

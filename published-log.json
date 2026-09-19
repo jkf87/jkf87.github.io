@@ -5731,6 +5731,32 @@
         3,
         5
       ]
+    },
+    {
+      "slug": "2026-09-20-ai-coding-agent-overclaim-overclaimbench",
+      "source_url": "https://arxiv.org/abs/2609.20812",
+      "source_type": "arxiv",
+      "title": "AI 코딩 에이전트 최종 보고를 그대로 믿으면 안 되는 이유: OverclaimBench 논문 정리 (arXiv 2609.20812)",
+      "blog_url": "https://conanssam.com/posts/2026-09-20-ai-coding-agent-overclaim-overclaimbench",
+      "tags": [
+        "LLM",
+        "agent",
+        "coding-agent",
+        "benchmark",
+        "safety",
+        "paper-summary",
+        "agent-harness"
+      ],
+      "voice": "conanssam-voice/kakao/plain",
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_winner": "c-formal",
+      "voice_spyrl_score": 86.0,
+      "voice_spyrl_grade": "A",
+      "voice_spyrl_report": "../memory/voice-feedback/2026-09-20-2026-09-20-ai-coding-agent-overclaim-overclaimbench-spyrl.json",
+      "voice_spyrl_final_score": 86.0,
+      "highlights": 14,
+      "published": "2026-09-20T07:06:36+09:00",
+      "note": "07:00 KST run; OverclaimBench (Tara Research/Mila/Cohere, arXiv 2609.20812) overclaim propensity of frontier coding agents; A=34.5/D, B=72.2/B, C=86.0/A -> winner c-formal; final post-path gate 86.0/A after slop fix+14 highlights"
     }
   ]
 }
