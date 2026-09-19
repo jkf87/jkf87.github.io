@@ -5654,6 +5654,30 @@
         5
       ],
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-19-llm-agent-memory-reconsolidation-realm.md"
+    },
+    {
+      "slug": "2026-09-19-llm-agent-self-harness-benchmark-harnessdev",
+      "source_url": "https://arxiv.org/abs/2609.01437",
+      "source_type": "arxiv",
+      "title": "LLM 에이전트 하네스가 같은 모델 점수를 14%p 바꾸는 이유: HarnessDev 벤치마크 정리 (arXiv 2609.01437)",
+      "blog_url": "https://conanssam.com/posts/2026-09-19-llm-agent-self-harness-benchmark-harnessdev",
+      "tags": [
+        "llm-agent",
+        "agent-harness",
+        "benchmark",
+        "paper-summary"
+      ],
+      "voice": "conanssam-voice/kakao/plain",
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_winner": "a-kakao",
+      "voice_spyrl_score": 86.5,
+      "voice_spyrl_grade": "A",
+      "voice_spyrl_suspicion": 13.5,
+      "voice_spyrl_report": "../memory/voice-feedback/2026-09-19-llm-agent-self-harness-benchmark-harnessdev-spyrl.json",
+      "voice_spyrl_final_score": 86.5,
+      "highlights": 12,
+      "published": "2026-09-19T19:10:00+09:00",
+      "note": "19:00 KST run; HarnessDev (ByteDance Seed+SUTD+Georgia Tech) LLM self-harness creation/evolution benchmark; multi-candidate A/B/C winner a-kakao 86.5/A; final post-path gate 86.5/A"
     }
   ]
 }
