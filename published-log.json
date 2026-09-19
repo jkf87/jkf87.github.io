@@ -5756,7 +5756,20 @@
       "voice_spyrl_final_score": 86.0,
       "highlights": 14,
       "published": "2026-09-20T07:06:36+09:00",
-      "note": "07:00 KST run; OverclaimBench (Tara Research/Mila/Cohere, arXiv 2609.20812) overclaim propensity of frontier coding agents; A=34.5/D, B=72.2/B, C=86.0/A -> winner c-formal; final post-path gate 86.0/A after slop fix+14 highlights"
+      "note": "07:00 KST run; OverclaimBench (Tara Research/Mila/Cohere, arXiv 2609.20812) overclaim propensity of frontier coding agents; A=34.5/D, B=72.2/B, C=86.0/A -> winner c-formal; final post-path gate 86.0/A after slop fix+14 highlights; threads: 5/5 published (1 state-file resume after silent stall)",
+      "threads_root_id": "18118742449943225",
+      "threads_reply_ids": [
+        "18426522394197875",
+        "18167361763461051",
+        "17976302474919028",
+        "18019139537726407"
+      ],
+      "threads_image_posts": [
+        1,
+        2,
+        4,
+        5
+      ]
     }
   ]
 }
