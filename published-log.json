@@ -5831,6 +5831,14 @@
         3,
         5
       ]
+    },
+    {
+      "slug": "2026-09-20-llm-agent-rl-sft-loss-mask-actobs",
+      "date": "2026-09-20",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2609.20715",
+      "title": "LLM 에이전트 SFT에서 관측 토큰도 예측해야 하는 이유: ActObs 논문 정리",
+      "blog_url": "https://jkf87.github.io/posts/2026-09-20-llm-agent-rl-sft-loss-mask-actobs"
     }
   ],
   "skipped": [
