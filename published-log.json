@@ -5871,7 +5871,22 @@
       "source": "arxiv",
       "source_url": "https://arxiv.org/abs/2609.16268",
       "title": "RL으로 학습한 LLM 에이전트가 필요 없는 도구를 부르는 이유: Spurious Tool Use 논문 정리",
-      "blog_url": "https://jkf87.github.io/posts/2026-09-21-llm-agent-rl-spurious-tool-use"
+      "blog_url": "https://jkf87.github.io/posts/2026-09-21-llm-agent-rl-spurious-tool-use",
+      "threads_root_id": "17905675683486795",
+      "threads_reply_ids": [
+        "18101282876296745",
+        "18149494570540829",
+        "17955226728017561",
+        "18109780768891066",
+        "18028516298846669"
+      ],
+      "threads_image_posts": [
+        1,
+        4,
+        6
+      ],
+      "commit": "b333d3e7",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-21-llm-agent-rl-spurious-tool-use.md"
     }
   ],
   "skipped": [
