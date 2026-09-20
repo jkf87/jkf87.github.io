@@ -5794,7 +5794,20 @@
       "voice_spyrl_final_score": 95.6,
       "highlights": 10,
       "published": "2026-09-20T13:07:58+09:00",
-      "note": "13:00 KST run; RetireOPD (ZJU/Alibaba, arXiv 2609.20784) adaptive teacher retirement for agentic RL; A=95.6/A (revised), B=43.5/D, C=65.5/C -> winner a-kakao; final post-path gate 95.6/A; 10 highlights"
+      "note": "13:00 KST run; RetireOPD (ZJU/Alibaba, arXiv 2609.20784) adaptive teacher retirement for agentic RL; A=95.6/A (revised), B=43.5/D, C=65.5/C -> winner a-kakao; final post-path gate 95.6/A; 10 highlights; threads: 6/6 published (uploader needed resume after silent stall, posts 5-6 finished via state-file resume)",
+      "threads_root_id": "17915691261454000",
+      "threads_reply_ids": [
+        "18340180783250795",
+        "17996232827826701",
+        "18216683590332054",
+        "18090971102661728",
+        "18102339119198332"
+      ],
+      "threads_image_posts": [
+        1,
+        4,
+        6
+      ]
     }
   ],
   "skipped": [
