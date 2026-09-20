@@ -5838,7 +5838,15 @@
       "source": "arxiv",
       "source_url": "https://arxiv.org/abs/2609.20715",
       "title": "LLM 에이전트 SFT에서 관측 토큰도 예측해야 하는 이유: ActObs 논문 정리",
-      "blog_url": "https://jkf87.github.io/posts/2026-09-20-llm-agent-rl-sft-loss-mask-actobs"
+      "blog_url": "https://jkf87.github.io/posts/2026-09-20-llm-agent-rl-sft-loss-mask-actobs",
+      "threads_root_id": "18093385397539126",
+      "threads_reply_ids": [
+        "17968443093150758",
+        "17987498298052213",
+        "18244389733314017",
+        "18146897998558397"
+      ],
+      "commit": "fe525764"
     }
   ],
   "skipped": [
