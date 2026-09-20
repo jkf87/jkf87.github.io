@@ -5770,6 +5770,31 @@
         4,
         5
       ]
+    },
+    {
+      "slug": "2026-09-20-llm-agent-rl-teacher-distillation-retireopd",
+      "source_url": "https://arxiv.org/abs/2609.20784",
+      "source_type": "arxiv",
+      "title": "강화학습 LLM 에이전트에서 증류 티처를 자동으로 퇴직시키는 방법: RetireOPD 논문 정리 (arXiv 2609.20784)",
+      "blog_url": "https://conanssam.com/posts/2026-09-20-llm-agent-rl-teacher-distillation-retireopd",
+      "tags": [
+        "LLM",
+        "agent",
+        "reinforcement-learning",
+        "distillation",
+        "paper-summary",
+        "agent-harness"
+      ],
+      "voice": "conanssam-voice/kakao/plain",
+      "voice_spyrl_mode": "multi-candidate",
+      "voice_spyrl_winner": "a-kakao",
+      "voice_spyrl_score": 95.6,
+      "voice_spyrl_grade": "A",
+      "voice_spyrl_report": "../memory/voice-feedback/2026-09-20-2026-09-20-llm-agent-rl-teacher-distillation-retireopd-spyrl.json",
+      "voice_spyrl_final_score": 95.6,
+      "highlights": 10,
+      "published": "2026-09-20T13:07:58+09:00",
+      "note": "13:00 KST run; RetireOPD (ZJU/Alibaba, arXiv 2609.20784) adaptive teacher retirement for agentic RL; A=95.6/A (revised), B=43.5/D, C=65.5/C -> winner a-kakao; final post-path gate 95.6/A; 10 highlights"
     }
   ],
   "skipped": [

@@ -1,0 +1,138 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (1261x685)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 171,
+    "width": 1261,
+    "height": 685,
+    "caption": "Figure 1:  Left:  GRPO and teacher guidance align early but later diverge, making teacher matching",
+    "crop": [
+      96.0,
+      457.78,
+      516.0,
+      685.93
+    ]
+  },
+  {
+    "page": 2,
+    "file": "fig-2-p2.png",
+    "method": "caption_crop (1261x490)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 186,
+    "width": 1261,
+    "height": 490,
+    "caption": "Figure 2: Training dynamics of the 3B student on ALFWorld.  Left : success rate of the teacher",
+    "crop": [
+      96.0,
+      268.2,
+      516.17,
+      431.09
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-3-p4.png",
+    "method": "caption_crop (1260x682)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 161,
+    "width": 1260,
+    "height": 682,
+    "caption": "Figure 3:  Overview of RetireOPD. (1) Teacher Construction : We optimize a skill-conditioned",
+    "crop": [
+      96.0,
+      60.0,
+      516.0,
+      287.11
+    ]
+  },
+  {
+    "page": 7,
+    "file": "table-1-p7.png",
+    "method": "caption_crop_table_below (1258x763)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 156,
+    "width": 1258,
+    "height": 763,
+    "caption": "Table 1: Main results on ALFWorld and WebShop.   ∗ means validation with skills. The highlighted",
+    "crop": [
+      95.69,
+      62.79,
+      514.8,
+      316.9
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-4-p8.png",
+    "method": "caption_crop (1261x514)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 71,
+    "width": 1261,
+    "height": 514,
+    "caption": "Figure 4: Training dynamics of the Qwen2.5-3B-Instruct on ALFWorld under RetireOPD, continued",
+    "crop": [
+      96.0,
+      60.0,
+      516.0,
+      230.96
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-5-p8.png",
+    "method": "caption_crop (1321x573)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 100,
+    "width": 1321,
+    "height": 573,
+    "caption": "Figure 5: Ablation study of teacher construction and teacher",
+    "crop": [
+      76.18,
+      214.36,
+      516.0,
+      405.17
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-6-p8.png",
+    "method": "caption_crop (1326x573)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 100,
+    "width": 1326,
+    "height": 573,
+    "caption": "Figure 6: Adaptive Retirement vs.",
+    "crop": [
+      76.18,
+      214.36,
+      517.74,
+      405.17
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-5-p8-4.png",
+    "method": "caption_crop (1322x1546)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 323,
+    "width": 1322,
+    "height": 1546,
+    "caption": "Figure  5  examines how explicit teacher optimization affects teacher quality",
+    "crop": [
+      76.18,
+      214.36,
+      516.35,
+      729.47
+    ]
+  }
+]
