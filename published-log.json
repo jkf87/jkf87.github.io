@@ -5771,5 +5771,17 @@
         5
       ]
     }
+  ],
+  "skipped": [
+    {
+      "slug": "2026-09-20-llm-agent-memory-poisoning-vs-preference-drift-capture",
+      "source_url": "https://arxiv.org/abs/2609.02265",
+      "source_type": "arxiv",
+      "duplicate_of": "2026-09-06-capture-preference-drift-memory-poisoning",
+      "title": "LLM 에이전트 메모리 오염과 진짜 취향 변화를 구분하는 방법: CAPTURE 논문 정리 (arXiv 2609.02265)",
+      "status": "duplicate-source-skipped",
+      "skipped": "2026-09-20T10:00+09:00",
+      "note": "10:00 KST run; candidate CAPTURE arXiv 2609.02265 rejected at pre-commit duplicate check: already published 2026-09-06 as 2026-09-06-capture-preference-drift-memory-poisoning (same source arXiv 2609.02265). Draft+images+spyrl work discarded; no commit/push/threads. Next runs should pick a different candidate."
+    }
   ]
 }
