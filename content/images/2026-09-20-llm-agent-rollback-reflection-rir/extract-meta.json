@@ -1,0 +1,138 @@
+[
+  {
+    "page": 4,
+    "file": "fig-1-p4.png",
+    "method": "caption_crop (1158x731)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 234,
+    "width": 1158,
+    "height": 731,
+    "caption": "Figure 1: Overview of the Rollback-Induced Reflection (RIR) framework.",
+    "crop": [
+      111.76,
+      65.07,
+      497.63,
+      308.56
+    ]
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (420x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Main results across three benchmarks. SR denotes success rate and DR denotes normalized",
+    "crop": [
+      96.0,
+      492.20550537109375,
+      516.0034484863281,
+      109.06307983398438
+    ]
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (218x10pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 2: Efficiency trade-off on ScienceWorld",
+    "crop": [
+      297.9580078125,
+      492.20550537109375,
+      515.99951171875,
+      502.3680725097656
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-3-p8.png",
+    "method": "caption_crop (597x521)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 117,
+    "width": 597,
+    "height": 521,
+    "caption": "Figure 3:",
+    "crop": [
+      297.96,
+      484.02,
+      496.61,
+      657.47
+    ]
+  },
+  {
+    "page": 8,
+    "file": "table-2-p8.png",
+    "method": "caption_crop (655x670)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 143,
+    "width": 655,
+    "height": 670,
+    "caption": "Table 2: Average executed rollbacks per task on",
+    "crop": [
+      297.96,
+      484.02,
+      516.0,
+      707.29
+    ]
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (232x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2",
+    "crop": [
+      255.39169311523438,
+      492.20550537109375,
+      487.7051696777344,
+      463.8940124511719
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-4-p9.png",
+    "method": "caption_crop (1202x438)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 83,
+    "width": 1202,
+    "height": 438,
+    "caption": "Figure 4:",
+    "crop": [
+      96.0,
+      69.86,
+      496.34,
+      215.61
+    ]
+  },
+  {
+    "page": 9,
+    "file": "table-3-p9.png",
+    "method": "caption_crop (1207x904)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 209,
+    "width": 1207,
+    "height": 904,
+    "caption": "Table 3: Ablations on ScienceWorld with DeepSeek-V3 as",
+    "crop": [
+      114.0,
+      69.86,
+      516.0,
+      370.84
+    ]
+  }
+]
