@@ -5854,7 +5854,16 @@
       "source": "arxiv",
       "source_url": "https://arxiv.org/abs/2609.18304",
       "title": "LLM 에이전트가 실패한 시점으로 되돌아갈 때 기억까지 버리는 문제: RIR 논문 정리 (arXiv 2609.18304)",
-      "blog_url": "https://jkf87.github.io/posts/2026-09-20-llm-agent-rollback-reflection-rir"
+      "blog_url": "https://jkf87.github.io/posts/2026-09-20-llm-agent-rollback-reflection-rir",
+      "threads_root_id": "18103736237365744",
+      "threads_reply_ids": [
+        "18391181554165127",
+        "18434545504181450",
+        "17902708074351961",
+        "18132712570676989"
+      ],
+      "commit": "ecaa4c21",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-20-llm-agent-rollback-reflection-rir.md"
     }
   ],
   "skipped": [
