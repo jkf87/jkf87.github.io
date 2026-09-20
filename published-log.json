@@ -5818,7 +5818,19 @@
       "blog_url": "https://conanssam.com/posts/2026-09-20-diffmining-logit-diff-finetune-audit",
       "voice": "kakao/plain",
       "mode": "multi-candidate",
-      "published_at": "2026-09-20T16:06:41"
+      "published_at": "2026-09-20T16:06:41",
+      "threads_root_id": "18104254469249158",
+      "threads_reply_ids": [
+        "17981586237088056",
+        "17986277334115198",
+        "18130526929742559",
+        "18139720915590794"
+      ],
+      "threads_image_posts": [
+        1,
+        3,
+        5
+      ]
     }
   ],
   "skipped": [
