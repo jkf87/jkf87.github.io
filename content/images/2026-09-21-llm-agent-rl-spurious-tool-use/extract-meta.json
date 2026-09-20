@@ -1,0 +1,87 @@
+[
+  {
+    "page": 3,
+    "file": "fig-1-p3.png",
+    "method": "caption_crop (1264x513)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 164,
+    "width": 1264,
+    "height": 513,
+    "caption": "Figure 1:  Overview of shortcut formation in tool-using RL agents. (A)  During training,",
+    "crop": [
+      96.0,
+      69.86,
+      517.25,
+      240.56
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-2-p7.png",
+    "method": "caption_crop (1260x500)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 112,
+    "width": 1260,
+    "height": 500,
+    "caption": "Figure 2:  Accuracy curves over training steps for DeepMath (blue) and NQ (orange).  We",
+    "crop": [
+      96.0,
+      69.86,
+      516.0,
+      236.09
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-2-p7-2.png",
+    "method": "caption_crop (1260x909)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 188,
+    "width": 1260,
+    "height": 909,
+    "caption": "Figure  2  supports this hypothesis. Validation accuracy on NQ rises steadily from  ∼ 45% to",
+    "crop": [
+      96.0,
+      69.86,
+      516.0,
+      372.63
+    ]
+  },
+  {
+    "page": 7,
+    "file": "table-4-p7.png",
+    "method": "caption_crop (1262x1646)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 351,
+    "width": 1262,
+    "height": 1646,
+    "caption": "Table  4  reports results for search-semantic cues injected into DeepMath, where the agent",
+    "crop": [
+      95.69,
+      69.86,
+      516.0,
+      618.2
+    ]
+  },
+  {
+    "page": 7,
+    "file": "table-3-p7.png",
+    "method": "caption_crop (1266x1796)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 386,
+    "width": 1266,
+    "height": 1796,
+    "caption": "Table  3  reports results for code-semantic cues injected into NQ, where the task is well-",
+    "crop": [
+      95.69,
+      69.86,
+      517.65,
+      668.02
+    ]
+  }
+]

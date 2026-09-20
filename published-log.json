@@ -5864,6 +5864,14 @@
       ],
       "commit": "ecaa4c21",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-20-llm-agent-rollback-reflection-rir.md"
+    },
+    {
+      "slug": "2026-09-21-llm-agent-rl-spurious-tool-use",
+      "date": "2026-09-21",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2609.16268",
+      "title": "RL으로 학습한 LLM 에이전트가 필요 없는 도구를 부르는 이유: Spurious Tool Use 논문 정리",
+      "blog_url": "https://jkf87.github.io/posts/2026-09-21-llm-agent-rl-spurious-tool-use"
     }
   ],
   "skipped": [
