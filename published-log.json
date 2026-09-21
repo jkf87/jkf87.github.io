@@ -6044,7 +6044,16 @@
         "OpenClaw",
         "human-values"
       ],
-      "blog_url": "https://jkf87.github.io/posts/2026-09-22-openclaw-reddit-value-delegation"
+      "blog_url": "https://jkf87.github.io/posts/2026-09-22-openclaw-reddit-value-delegation",
+      "threads_root_id": "18105301220257791",
+      "threads_reply_ids": [
+        "18112484747042953",
+        "17914693701263582",
+        "17996249021825994",
+        "18175444052480129"
+      ],
+      "commit": "640416fa",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-22-openclaw-reddit-value-delegation.md"
     }
   ],
   "skipped": [
