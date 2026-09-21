@@ -6029,6 +6029,22 @@
         "18115860443103137"
       ],
       "commit": "ea82e0d5"
+    },
+    {
+      "slug": "2026-09-22-openclaw-reddit-value-delegation",
+      "date": "2026-09-22",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2609.22067",
+      "title": "AI 에이전트 사용자는 무엇에 불만을 말하는가: OpenClaw Reddit 73,093건 분석",
+      "tags": [
+        "agent",
+        "LLM",
+        "evaluation",
+        "HCI",
+        "OpenClaw",
+        "human-values"
+      ],
+      "blog_url": "https://jkf87.github.io/posts/2026-09-22-openclaw-reddit-value-delegation"
     }
   ],
   "skipped": [

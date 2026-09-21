@@ -1,0 +1,217 @@
+[
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: The coding schema. The table lists six value groups constructed for this analysis, the 18 agent aspects in corpus-",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 1 shows all 21 values within their six groups. Specifically,",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "fig-1-p7.png",
+    "method": "caption_crop (1586x715)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 131,
+    "width": 1586,
+    "height": 715,
+    "caption": "Figure 1: Distribution of values and their six value groups in the RQ1 sample ( 𝑁 =  73 , 093 ). Solid bars show the number of posts",
+    "crop": [
+      41.8,
+      71.69,
+      570.2,
+      309.73
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-2-p7.png",
+    "method": "caption_crop (1586x766)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 143,
+    "width": 1586,
+    "height": 766,
+    "caption": "Figure 2: Distribution of agent aspects across the six value groups in the RQ1 sample ( 𝑁 =  73 , 093 ). Each cell shows the percentage",
+    "crop": [
+      41.8,
+      314.67,
+      570.21,
+      569.8
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-3-p8.png",
+    "method": "caption_crop (1591x670)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 112,
+    "width": 1591,
+    "height": 670,
+    "caption": "Figure 3: Value fulfillment in the RQ1 sample ( 𝑁 =  73 , 093 ). Panel (a) reports met and not-met shares for the six value groups.",
+    "crop": [
+      41.8,
+      71.69,
+      571.74,
+      294.89
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-4-p8.png",
+    "method": "caption_crop (1586x486)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 84,
+    "width": 1586,
+    "height": 486,
+    "caption": "Figure 4: Observed value fulfillment and fulfillment expected from the distribution of agent aspects in each group in the",
+    "crop": [
+      41.8,
+      288.85,
+      570.2,
+      450.45
+    ]
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (528x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure 5: Value group by user outcome among the 44,767 outcome-coded posts. Each cell describes the post count and the met",
+    "crop": [
+      41.79800033569336,
+      554.9240112304688,
+      570.2055053710938,
+      301.05328369140625
+    ]
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (529x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: User outcomes among the 44,767 outcome-coded posts, split by whether the post’s value was coded met. Rows sum to",
+    "crop": [
+      41.50199890136719,
+      554.9240112304688,
+      570.2037963867188,
+      345.8852844238281
+    ]
+  },
+  {
+    "page": 12,
+    "file": "fig-6-p12.png",
+    "method": "caption_crop (1589x721)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 160,
+    "width": 1589,
+    "height": 721,
+    "caption": "Figure 6: Value-sensitive delegation across the six value groups. Each row gives a group’s most discussed agent aspect (Section 4.2),",
+    "crop": [
+      41.8,
+      398.55,
+      571.29,
+      638.43
+    ]
+  },
+  {
+    "page": 18,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4 lists the 21 human values with their value groups, and Ta-",
+    "crop": null
+  },
+  {
+    "page": 18,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5 gives the codebook produced by the thematic analysis de-",
+    "crop": null
+  },
+  {
+    "page": 19,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: The nine user-outcome categories, defined as in Table 1. Each names what a reported consequence concerned; value",
+    "crop": null
+  },
+  {
+    "page": 20,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4: The 21 human values and their six value groups; † marks the nine study-specific categories. Example excerpts come",
+    "crop": null
+  },
+  {
+    "page": 21,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5: Thematic analysis codebook. Each row pairs a sub-theme with one representative excerpt from the sampled posts. The",
+    "crop": null
+  },
+  {
+    "page": 22,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6: Human validation in the 400-post codebook-development sample. Blank review cells retain the initial LLM label and",
+    "crop": null
+  }
+]
