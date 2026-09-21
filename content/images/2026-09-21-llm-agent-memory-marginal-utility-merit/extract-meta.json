@@ -1,0 +1,138 @@
+[
+  {
+    "page": 6,
+    "file": "table-1-p6.png",
+    "method": "caption_crop_table_below (1484x972)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 153,
+    "width": 1484,
+    "height": 972,
+    "caption": "Table 1: Dependent-task TSR by difficulty tier and memory condition, real implementations (D1 / D2 / D3).",
+    "crop": [
+      59.66,
+      73.07,
+      553.91,
+      396.85
+    ]
+  },
+  {
+    "page": 6,
+    "file": "fig-1-p6.png",
+    "method": "caption_crop (1477x790)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 129,
+    "width": 1477,
+    "height": 790,
+    "caption": "Figure 1: Dependent-task TSR across the difficulty ladder, per memory condition and domain (real",
+    "crop": [
+      60.0,
+      166.16,
+      552.01,
+      429.01
+    ]
+  },
+  {
+    "page": 6,
+    "file": "table-1-p6-3.png",
+    "method": "caption_crop (1479x1424)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 252,
+    "width": 1479,
+    "height": 1424,
+    "caption": "Table 1 and Figure 1 show three dissociations: (1)  Updated facts break retrieval memory, including",
+    "crop": [
+      59.66,
+      166.16,
+      552.01,
+      640.52
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-3-p9.png",
+    "method": "caption_crop (1477x756)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 76,
+    "width": 1477,
+    "height": 756,
+    "caption": "Figure 3: Ignore Rate (the fraction of dependent episodes where every gold value was present in the",
+    "crop": [
+      60.0,
+      60.0,
+      552.02,
+      311.84
+    ]
+  },
+  {
+    "page": 9,
+    "file": "table-2-p9.png",
+    "method": "caption_crop (1477x1107)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 137,
+    "width": 1477,
+    "height": 1107,
+    "caption": "Table 2 and",
+    "crop": [
+      60.0,
+      60.0,
+      552.02,
+      428.79
+    ]
+  },
+  {
+    "page": 9,
+    "file": "fig-6-p9.png",
+    "method": "caption_crop (1478x1148)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 151,
+    "width": 1478,
+    "height": 1148,
+    "caption": "Figure 6 report the hard (updated-fact) tier for all three models. Embedding retrieval (C2) is the only",
+    "crop": [
+      60.0,
+      60.0,
+      552.38,
+      442.34
+    ]
+  },
+  {
+    "page": 10,
+    "file": "fig-4-p10.png",
+    "method": "caption_crop (1478x716)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 86,
+    "width": 1478,
+    "height": 716,
+    "caption": "Figure 4: Stale-memory harm (TSR clean  − corrupted, dependent tasks, D1, real implementations) by",
+    "crop": [
+      60.0,
+      60.0,
+      552.38,
+      298.42
+    ]
+  },
+  {
+    "page": 10,
+    "file": "table-2-p10.png",
+    "method": "caption_crop (1479x1282)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 167,
+    "width": 1479,
+    "height": 1282,
+    "caption": "Table 2: Hard (updated-fact) tier across agent models, memory side pinned to  gpt-4.1-mini . C0 floor is",
+    "crop": [
+      59.66,
+      60.0,
+      552.01,
+      487.2
+    ]
+  }
+]
