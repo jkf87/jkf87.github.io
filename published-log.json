@@ -5998,6 +5998,30 @@
         "18484235701108067",
         "18215725504352906"
       ]
+    },
+    {
+      "slug": "2026-09-21-llm-agent-memory-trust-decision-mdl",
+      "date": "2026-09-21",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2609.22043",
+      "title": "LLM 에이전트가 검색된 메모리를 무조건 믿으면 생기는 일: MDL 메모리 판단층 논문 정리 (arXiv 2609.22043)",
+      "blog_url": "https://jkf87.github.io/posts/2026-09-21-llm-agent-memory-trust-decision-mdl",
+      "voice": "kakao/plain",
+      "voice_spyrl_mode": "multi-candidate",
+      "winner": "B",
+      "winner_score": 84.0,
+      "winner_grade": "A",
+      "tags": [
+        "LLM 에이전트",
+        "RAG",
+        "메모리",
+        "할루시네이션",
+        "신뢰성",
+        "paper-summary"
+      ],
+      "spy_tags": [
+        "question_heading"
+      ]
     }
   ],
   "skipped": [

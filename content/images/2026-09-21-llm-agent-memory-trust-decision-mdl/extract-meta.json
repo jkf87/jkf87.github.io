@@ -1,0 +1,222 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1261x627)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 125,
+    "width": 1261,
+    "height": 627,
+    "caption": "Figure 1:  Complete four-stage architecture of the Memory Decision Layer (MDL):  1  multi-source",
+    "crop": [
+      96.0,
+      60.0,
+      516.0,
+      268.65
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-2-p3.png",
+    "method": "caption_crop (1260x534)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 111,
+    "width": 1260,
+    "height": 534,
+    "caption": "Figure 2:  Illustration of the four-stage gated decision and action-mapping mechanism.",
+    "crop": [
+      96.0,
+      60.0,
+      516.0,
+      237.82
+    ]
+  },
+  {
+    "page": 3,
+    "file": "fig-1-p3.png",
+    "method": "caption_crop (1264x663)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 149,
+    "width": 1264,
+    "height": 663,
+    "caption": "Fig.  1 ): it sits between the retrieval and generation layers and answers, with zero trained parameters,",
+    "crop": [
+      96.0,
+      60.0,
+      517.25,
+      280.76
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Innovation matrix: existing methods vs. the proposed MDL.",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Complete hyperparameter configuration of the MDL controller.",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  9  of Appendix  A.1 ). End-to-end LLM inference used OpenAI-compatible API endpoints for",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Precise definitions of the baselines compared in this article. All baselines use the same input",
+    "crop": null
+  },
+  {
+    "page": 9,
+    "file": "fig-3-p9.png",
+    "method": "caption_crop (1261x486)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 94,
+    "width": 1261,
+    "height": 486,
+    "caption": "Figure 3:  Hallucination control and generalization of the MDL controller.  (a) Hallucination rates",
+    "crop": [
+      96.0,
+      60.0,
+      516.0,
+      221.64
+    ]
+  },
+  {
+    "page": 9,
+    "file": "table-4-p9.png",
+    "method": "caption_crop (1261x1400)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 314,
+    "width": 1261,
+    "height": 1400,
+    "caption": "Table 4: Cross-dataset hallucination-rate comparison (deepseek-v4-flash, 200 questions  ×  3 seeds).",
+    "crop": [
+      95.69,
+      60.0,
+      516.0,
+      526.08
+    ]
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  5  reports the results on TruthfulQA (200 questions  ×  2 seeds), where the Refusal column",
+    "crop": null
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5: Baseline comparison on TruthfulQA (deepseek-v4-flash, 200 questions  ×  2 seeds).",
+    "crop": null
+  },
+  {
+    "page": 10,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Fig.  4  visualizes the three-signal interactions and the confidence distributions and decision boundaries",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "fig-4-p11.png",
+    "method": "caption_crop (1266x625)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 166,
+    "width": 1266,
+    "height": 625,
+    "caption": "Figure 4:  Decision behavior of the MDL controller over the  ( M, R )  plane at three risk levels.",
+    "crop": [
+      96.0,
+      60.0,
+      517.74,
+      268.12
+    ]
+  },
+  {
+    "page": 11,
+    "file": "table-6-p11.png",
+    "method": "caption_crop (1262x1149)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 274,
+    "width": 1262,
+    "height": 1149,
+    "caption": "Table 6: Decision accuracy of different signal combinations with paired  t -tests ( N  = 3600  records",
+    "crop": [
+      95.69,
+      60.0,
+      516.0,
+      443.0
+    ]
+  },
+  {
+    "page": 12,
+    "file": "fig-5-p12.png",
+    "method": "caption_crop (1264x543)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 134,
+    "width": 1264,
+    "height": 543,
+    "caption": "Figure 5:  Ablation analysis, parameter sensitivity, and action distribution of the MDL controller,",
+    "crop": [
+      96.0,
+      60.0,
+      517.24,
+      240.58
+    ]
+  }
+]
