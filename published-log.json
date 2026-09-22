@@ -6079,7 +6079,16 @@
         "too_long_paragraph",
         "question_heading"
       ],
-      "report": "../memory/voice-feedback/2026-09-22-llm-agent-memory-benchmark-memgym-spyrl.json"
+      "report": "../memory/voice-feedback/2026-09-22-llm-agent-memory-benchmark-memgym-spyrl.json",
+      "threads_root_id": "18629705845019317",
+      "threads_reply_ids": [
+        "18166362358481607",
+        "17976419756919151",
+        "18096892490187108",
+        "18115084820086741"
+      ],
+      "commit": "d9f266eb",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-22-llm-agent-memory-benchmark-memgym.md"
     }
   ],
   "skipped": [
