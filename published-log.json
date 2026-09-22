@@ -6185,7 +6185,17 @@
         "too_long_paragraph"
       ],
       "report": "../memory/voice-feedback/2026-09-22-llm-agent-memory-overuse-underuse-memcalib-spyrl.json",
-      "published_run": "2026-09-22T22:00+09:00"
+      "published_run": "2026-09-22T22:00+09:00",
+      "threads_root_id": "18115832674983838",
+      "threads_reply_ids": [
+        "17892043932655443",
+        "18109861769141382",
+        "18058050191565545",
+        "18125972137848358",
+        "17906718843558857"
+      ],
+      "commit": "a35cbf70",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-22-llm-agent-memory-overuse-underuse-memcalib.md"
     }
   ],
   "skipped": [
