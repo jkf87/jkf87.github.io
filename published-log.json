@@ -6089,6 +6089,42 @@
       ],
       "commit": "d9f266eb",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-22-llm-agent-memory-benchmark-memgym.md"
+    },
+    {
+      "slug": "2026-09-22-memory-rl-fair-credit-memory-r2",
+      "date": "2026-09-22",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2605.21768",
+      "title": "강화학습으로 LLM 에이전트 메모리를 학습할 때 같은 조건 비교가 깨지는 문제: Memory-R2 논문 정리 (arXiv 2605.21768)",
+      "blog_url": "https://jkf87.github.io/posts/2026-09-22-memory-rl-fair-credit-memory-r2",
+      "voice": "kakao/plain",
+      "voice_spyrl_mode": "multi-candidate",
+      "winner": "A",
+      "winner_score": 90.2,
+      "winner_grade": "A",
+      "tags": [
+        "LLM 에이전트",
+        "메모리",
+        "강화학습",
+        "GRPO",
+        "paper-summary"
+      ],
+      "spy_tags": [
+        "importance_puffery",
+        "korean_ai_slop",
+        "metaphor_heading"
+      ],
+      "report": "../memory/voice-feedback/2026-09-22-memory-rl-fair-credit-memory-r2-spyrl.json",
+      "threads_root_id": "17898510360670661",
+      "threads_reply_ids": [
+        "17993679822045562",
+        "18632831860034343",
+        "18130768927676979",
+        "18126446633506531",
+        "18133279651641566"
+      ],
+      "commit": "a671ea85",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-22-memory-rl-fair-credit-memory-r2.md"
     }
   ],
   "skipped": [
