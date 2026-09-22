@@ -1,0 +1,155 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (1261x536)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 214,
+    "width": 1261,
+    "height": 536,
+    "caption": "Figure 1: Overview of Memory-R2. (a) Memory-R2 uses a shared-backbone extractor–manager",
+    "crop": [
+      96.0,
+      60.0,
+      516.17,
+      238.35
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (422x0pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Main results on LoCoMo. We report token-level F1 (F1), BLEU-1 (B1), and LLM-as-a-",
+    "crop": [
+      95.69100189208984,
+      259.9498291015625,
+      517.6497802734375,
+      107.04100799560547
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-2-p7.png",
+    "method": "caption_crop (1263x538)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 130,
+    "width": 1263,
+    "height": 538,
+    "caption": "Figure 2: Generalization of Memory-R2 across (a) OOD benchmarks, (b) backbone sizes, and (c)",
+    "crop": [
+      96.0,
+      259.95,
+      516.67,
+      438.95
+    ]
+  },
+  {
+    "page": 7,
+    "file": "table-1-p7.png",
+    "method": "caption_crop (1260x742)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 164,
+    "width": 1260,
+    "height": 742,
+    "caption": "Table 1 reports the main results on LoCoMo. Under the backbone-controlled",
+    "crop": [
+      96.0,
+      259.95,
+      516.0,
+      506.95
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-2-p7-4.png",
+    "method": "caption_crop (1265x1148)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 275,
+    "width": 1265,
+    "height": 1148,
+    "caption": "Figure 2 further demonstrates the strong generalization ability of Memory-",
+    "crop": [
+      96.0,
+      259.95,
+      517.66,
+      642.2
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-3-p8.png",
+    "method": "caption_crop (1265x425)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 123,
+    "width": 1265,
+    "height": 425,
+    "caption": "Figure 3:  LoGo-GRPO and curriculum learning are both essential. (a,b)  LoGo-GRPO consis-",
+    "crop": [
+      96.0,
+      60.0,
+      517.65,
+      201.44
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-2-p8.png",
+    "method": "caption_crop (1266x692)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 180,
+    "width": 1266,
+    "height": 692,
+    "caption": "Figure 2(c) decomposes the contribution of training the memory module versus the answer agent.",
+    "crop": [
+      96.0,
+      60.0,
+      517.75,
+      290.38
+    ]
+  },
+  {
+    "page": 8,
+    "file": "table-2-p8.png",
+    "method": "caption_crop (1265x1037)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 251,
+    "width": 1265,
+    "height": 1037,
+    "caption": "Table 2: Ablation studies on components of LoGo-",
+    "crop": [
+      96.0,
+      60.0,
+      517.65,
+      405.51
+    ]
+  },
+  {
+    "page": 8,
+    "file": "table-2-p8-4.png",
+    "method": "caption_crop (1260x1027)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 249,
+    "width": 1260,
+    "height": 1027,
+    "caption": "Table 2 summarizes ablations on the major com-",
+    "crop": [
+      96.0,
+      60.0,
+      515.99,
+      402.15
+    ]
+  }
+]
