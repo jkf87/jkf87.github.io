@@ -6054,6 +6054,32 @@
       ],
       "commit": "640416fa",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-22-openclaw-reddit-value-delegation.md"
+    },
+    {
+      "slug": "2026-09-22-llm-agent-memory-benchmark-memgym",
+      "date": "2026-09-22",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2605.20833",
+      "title": "LLM 에이전트 메모리가 실제로 도움이 되는지 측정하는 법: MemGym 벤치마크 논문 정리 (arXiv 2605.20833)",
+      "blog_url": "https://jkf87.github.io/posts/2026-09-22-llm-agent-memory-benchmark-memgym",
+      "voice": "kakao/plain",
+      "voice_spyrl_mode": "multi-candidate",
+      "winner": "A",
+      "winner_score": 75.6,
+      "winner_grade": "B",
+      "tags": [
+        "LLM 에이전트",
+        "메모리",
+        "벤치마크",
+        "RAG",
+        "paper-summary"
+      ],
+      "spy_tags": [
+        "binary_contrast",
+        "too_long_paragraph",
+        "question_heading"
+      ],
+      "report": "../memory/voice-feedback/2026-09-22-llm-agent-memory-benchmark-memgym-spyrl.json"
     }
   ],
   "skipped": [
