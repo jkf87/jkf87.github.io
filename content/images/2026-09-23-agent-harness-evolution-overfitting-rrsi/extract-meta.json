@@ -1,0 +1,77 @@
+[
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (1484x839)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 223,
+    "width": 1484,
+    "height": 839,
+    "caption": "Figure 2  |  Overview of RRSI. RRSI regularizes the search trajectory, not restricting the potential",
+    "crop": [
+      50.36,
+      67.16,
+      544.91,
+      346.62
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-3-p8.png",
+    "method": "caption_crop (1428x767)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 80,
+    "width": 1428,
+    "height": 767,
+    "caption": "Figure 3  |  Main results in all three domains.",
+    "crop": [
+      50.36,
+      73.04,
+      526.11,
+      328.65
+    ]
+  },
+  {
+    "page": 8,
+    "file": "table-1-p8.png",
+    "method": "caption_crop (1429x1190)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 153,
+    "width": 1429,
+    "height": 1190,
+    "caption": "Table 1  |  Comparison with prior harness evolution methods on agentic workspace tasks.",
+    "crop": [
+      50.03,
+      73.04,
+      526.11,
+      469.64
+    ]
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2  |  Ablation study of the regularizers on agentic workspace tasks. OOD Avg. is the mean over",
+    "crop": null
+  },
+  {
+    "page": 9,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3  |  Policy robustness in the coding domain. Harness evolution is run independently with each",
+    "crop": null
+  }
+]

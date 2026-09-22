@@ -6196,6 +6196,30 @@
       ],
       "commit": "a35cbf70",
       "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-22-llm-agent-memory-overuse-underuse-memcalib.md"
+    },
+    {
+      "slug": "2026-09-23-agent-harness-evolution-overfitting-rrsi",
+      "date": "2026-09-23",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2609.24972",
+      "title": "LLM 에이전트 하네스 자기진화가 과적합되는 이유: RRSI 논문 정리 (arXiv 2609.24972)",
+      "blog_url": "https://jkf87.github.io/posts/2026-09-23-agent-harness-evolution-overfitting-rrsi",
+      "voice": "kakao/plain",
+      "voice_spyrl_mode": "multi-candidate",
+      "winner": "A",
+      "winner_score": 79.4,
+      "winner_grade": "B",
+      "tags": [
+        "LLM 에이전트",
+        "하네스",
+        "벤치마크",
+        "paper-summary"
+      ],
+      "spy_tags": [
+        "question_heading"
+      ],
+      "report": "../memory/voice-feedback/2026-09-23-agent-harness-evolution-overfitting-rrsi-spyrl.json",
+      "published_run": "2026-09-23T07:00+09:00"
     }
   ],
   "skipped": [
