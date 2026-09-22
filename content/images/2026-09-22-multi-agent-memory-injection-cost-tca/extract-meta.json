@@ -1,0 +1,77 @@
+[
+  {
+    "page": 1,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Fig. 1 traces this accumulation and the accounting that follows",
+    "crop": null
+  },
+  {
+    "page": 4,
+    "file": "fig-1-p4.png",
+    "method": "caption_crop (1114x598)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 92,
+    "width": 1114,
+    "height": 598,
+    "caption": "Fig. 1.",
+    "crop": [
+      36.96,
+      79.09,
+      407.79,
+      278.01
+    ]
+  },
+  {
+    "page": 5,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Fig. 2 reports injection behavior across workflow depth for",
+    "crop": null
+  },
+  {
+    "page": 6,
+    "file": "fig-2-p6.png",
+    "method": "caption_crop (827x984)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 125,
+    "width": 827,
+    "height": 984,
+    "caption": "Fig. 2.",
+    "crop": [
+      36.96,
+      38.54,
+      312.04,
+      366.14
+    ]
+  },
+  {
+    "page": 7,
+    "file": "fig-3-p7.png",
+    "method": "caption_crop (827x579)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 63,
+    "width": 827,
+    "height": 579,
+    "caption": "Fig. 3.",
+    "crop": [
+      36.96,
+      38.54,
+      312.03,
+      231.08
+    ]
+  }
+]
