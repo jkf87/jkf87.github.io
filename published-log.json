@@ -6331,7 +6331,15 @@
       "source": "arxiv",
       "source_url": "https://arxiv.org/abs/2609.23986",
       "title": "LLM 에이전트 메모리가 느리고 비싼 이유: System 1 제어로 바꾼 Jev-Mem 논문 정리 (arXiv 2609.23986)",
-      "blog_url": "https://jkf87.github.io/posts/2026-09-23-agent-memory-system1-fast-control-jevmem"
+      "blog_url": "https://jkf87.github.io/posts/2026-09-23-agent-memory-system1-fast-control-jevmem",
+      "threads_root_id": "18342098317253322",
+      "threads_reply_ids": [
+        "18018949688953238",
+        "18122733277859781",
+        "18215372152356386",
+        "17981496960085491"
+      ],
+      "commit": "47a61665"
     }
   ],
   "skipped": [
