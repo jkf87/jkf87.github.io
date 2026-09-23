@@ -27,6 +27,7 @@ Gate: `scripts/blog-refactor-gate.py --mode hub|expand|new`
 
 0. `git fetch origin`. Use today's branch `refactor/<YYYY-MM-DD>`. If that branch's PR is already merged, create `refactor/<YYYY-MM-DD>-<HHMM>` from `origin/main`.
 0b. Late arrivals: if any post you published under v4 is still live (`draft` not true, not in `scripts/expand-targets.json`, not a hub), add it to the closest hub's `members` in the queue and run `python3 scripts/mark-refactor-queue.py`. The script is idempotent.
+0c. Priority: if `scripts/refactor-priority.json` lists hubs whose queue status is still `queued`, do the first of them in this run, before EXPAND. These hubs fix live links that were already shared on Threads.
 1. **EXPAND (first):** pick one of the 10 live setup posts in `scripts/expand-targets.json` that has no `verified_at` in its frontmatter.
    - Re-run the documented steps on this machine in `~/.openclaw/workspace-blogbot/sandbox/<slug>/`.
    - Add `## 검증 로그`: the date, OpenClaw and tool versions, the exact commands, and trimmed real output in code blocks.
