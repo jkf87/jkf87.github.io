@@ -1,0 +1,270 @@
+[
+  {
+    "page": 1,
+    "file": "fig-1-p1.png",
+    "method": "caption_crop (1265x722)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 117,
+    "width": 1265,
+    "height": 722,
+    "caption": "Figure 1: Continual learning of CUDA kernel development on KernelBench using  OpenHands :",
+    "crop": [
+      96.0,
+      451.1,
+      517.38,
+      691.66
+    ]
+  },
+  {
+    "page": 2,
+    "file": "table-1-p2.png",
+    "method": "caption_crop_table_below (1262x520)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 84,
+    "width": 1262,
+    "height": 520,
+    "caption": "Table 1: Context-management approaches.",
+    "crop": [
+      95.69,
+      533.52,
+      516.0,
+      706.46
+    ]
+  },
+  {
+    "page": 3,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  6 ). This leads to subtle but continuous context drift if the summary does not preserve the right",
+    "crop": null
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (1260x902)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 108,
+    "width": 1260,
+    "height": 902,
+    "caption": "Figure 2:  Overview of C LIFF C OMPACTION .  C LIFF C OMPACTION  strictly discards previous",
+    "crop": [
+      96.0,
+      97.92,
+      516.0,
+      398.29
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4-2.png",
+    "method": "caption_crop (1260x1553)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 275,
+    "width": 1260,
+    "height": 1553,
+    "caption": "Figure  2 . While each compaction event unavoidably resets the cache and requires a re-prefill, the",
+    "crop": [
+      96.0,
+      97.92,
+      516.0,
+      615.07
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: Performance and cost on Terminal-Bench across context length budgets with C LIFF C OM -",
+    "crop": null
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Performance and cost on SWE-bench Verified across context length budgets, evaluated",
+    "crop": null
+  },
+  {
+    "page": 9,
+    "file": "table-4-p9.png",
+    "method": "caption_crop_table_below (1261x640)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 164,
+    "width": 1261,
+    "height": 640,
+    "caption": "Table 4: Test-time scaling on Terminal-Bench 2.0, ordered by accuracy. With C LIFF C OMPACTION",
+    "crop": [
+      95.69,
+      73.95,
+      516.0,
+      286.99
+    ]
+  },
+  {
+    "page": 10,
+    "file": "fig-3-p10.png",
+    "method": "caption_crop (1226x618)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 84,
+    "width": 1226,
+    "height": 618,
+    "caption": "Figure 3: Best-so-far kernel speedup on KernelBench Level 3, by steps and by cost.",
+    "crop": [
+      101.94,
+      69.86,
+      510.06,
+      275.52
+    ]
+  },
+  {
+    "page": 10,
+    "file": "table-5-p10.png",
+    "method": "caption_crop (1262x842)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 150,
+    "width": 1262,
+    "height": 842,
+    "caption": "Table 5: KernelBench Level 3 results. Top: specialized kernel-optimization agents ( † as reported in",
+    "crop": [
+      95.69,
+      69.86,
+      516.0,
+      350.13
+    ]
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Figure  3a  shows how speedup evolves for both. C LIFF C OMPACTION  begins well behind, because",
+    "crop": null
+  },
+  {
+    "page": 11,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 6: Performance and cost of compaction methods across benchmarks. SWE-bench Verified",
+    "crop": null
+  },
+  {
+    "page": 16,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 7: Token and cost attribution by context component, before and after compaction (Terminal-",
+    "crop": null
+  },
+  {
+    "page": 17,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 8: Real (provider-metered) cost and provider cache-hit rate across scaffolds and context budgets.",
+    "crop": null
+  },
+  {
+    "page": 18,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 9: Token prices used for cost calculation. Prices are reported in USD per one million tokens.",
+    "crop": null
+  },
+  {
+    "page": 18,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  11  shows the run time and speedup of C LIFF C OMPACTION  on  mini-swe-agent  with",
+    "crop": null
+  },
+  {
+    "page": 18,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 10: Per-instance wall-clock duration on  OpenHands  (SWE-bench Verified), with the corre-",
+    "crop": null
+  },
+  {
+    "page": 18,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 11: Measured inference time of C LIFF C OMPACTION  at different context thresholds (GLM-4.7-",
+    "crop": null
+  },
+  {
+    "page": 19,
+    "file": "fig-4-p19.png",
+    "method": "caption_crop (1260x1258)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 119,
+    "width": 1260,
+    "height": 1258,
+    "caption": "Figure 4: Per-step input cost on a KernelBench task, decomposed into uncached prefill and cache",
+    "crop": [
+      96.0,
+      69.86,
+      516.0,
+      488.78
+    ]
+  }
+]
