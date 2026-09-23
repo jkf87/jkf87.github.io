@@ -1,0 +1,101 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (685x630)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 97,
+    "width": 685,
+    "height": 630,
+    "caption": "Figure 1: Workflow of agentic memory.",
+    "crop": [
+      301.23,
+      58.86,
+      529.26,
+      268.47
+    ]
+  },
+  {
+    "page": 2,
+    "file": "fig-1-p2-2.png",
+    "method": "caption_crop (728x1902)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 259,
+    "width": 728,
+    "height": 1902,
+    "caption": "Figure  1  demonstrates the workflow of agnetic",
+    "crop": [
+      294.14,
+      58.86,
+      536.41,
+      692.48
+    ]
+  },
+  {
+    "page": 4,
+    "file": "fig-2-p4.png",
+    "method": "caption_crop (1434x657)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 132,
+    "width": 1434,
+    "height": 657,
+    "caption": "Figure 2: Overview of Jev-Mem. A lightweight System-One control plane manages memory construction and",
+    "crop": [
+      58.87,
+      58.87,
+      536.41,
+      277.43
+    ]
+  },
+  {
+    "page": 7,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  1  summarizes the performance of Jev-Mem",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 1: Performance on the LoCoMo benchmark evaluated using the LLM-as-a-Judge metric. Higher scores",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 2: System efficiency comparison with total mem-",
+    "crop": null
+  },
+  {
+    "page": 8,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  2  compares the system efficiency of Jev-Mem",
+    "crop": null
+  }
+]
