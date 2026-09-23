@@ -6416,7 +6416,24 @@
       "final_report": "../memory/voice-feedback/2026-09-23-2026-09-23-mcp-agent-hijacking-a2m-final-spyrl.json",
       "highlights": 17,
       "images_included": 4,
-      "published_run": "2026-09-23T22:00+09:00"
+      "published_run": "2026-09-23T22:00+09:00",
+      "threads_root_id": "18229424608323453",
+      "threads_reply_ids": [
+        "18120063877932675",
+        "18075156818442954",
+        "17909548395503492",
+        "18103034096113878"
+      ],
+      "threads_image_posts": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "commit": "18ec94d7",
+      "threads_quality_gate": "PASS: /tmp/2026-09-23-mcp-agent-hijacking-a2m-threads-payload.json, 5 posts, images [1,2,3,4,5]",
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-23-mcp-agent-hijacking-a2m.md"
     }
   ],
   "skipped": [
