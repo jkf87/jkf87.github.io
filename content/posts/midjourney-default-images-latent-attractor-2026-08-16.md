@@ -12,6 +12,9 @@ tags:
 source: arxiv
 source_url: https://arxiv.org/abs/2505.09166
 paper_url: https://arxiv.org/abs/2505.09166
+draft: true
+refactor_hub: eval-benchmarks-03
+refactor_status: queued
 ---
 
 이미지 모델은 모르는 단어를 만나도 멈추지 않습니다. 에러를 내지도 않습니다. 이미지를 내는 경우가 많습니다. 문제는 그 다음입니다. 모델이 프롬프트를 잘 모를 때, 어디로 가는가.

@@ -9,6 +9,9 @@ tags:
   - development
   - harness
 description: "LLM을 중심으로 한 코딩 에이전트의 구조와 하니스 설계 원리를 분석하고, 실전 개발 환경에서 성능을 극대화하는 6가지 핵심 요소를 소개합니다. 개발자들이 알아야 할 에이전트 아키텍처의 모든 것."
+draft: true
+refactor_hub: harness-self-improve-14
+refactor_status: queued
 ---
 
 최근 AI 코딩 도구가 개발 생산성을 혁신하는 방식으로 빠르게 진화하고 있습니다. Claude Code, Codex, Cursor 등 에이전트 기반 개발 환경은 단순 코드 자동 완성을 넘어 실제 개발 작업을 수행하는 시스템으로 발전했습니다.

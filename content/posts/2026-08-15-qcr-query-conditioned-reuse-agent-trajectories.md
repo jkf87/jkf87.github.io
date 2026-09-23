@@ -13,6 +13,9 @@ tags:
 source: arxiv
 source_url: https://arxiv.org/abs/2608.12847
 paper_url: https://arxiv.org/html/2608.12847v1
+draft: true
+refactor_hub: agent-memory-09
+refactor_status: queued
 ---
 
 에이전트 메모리에서 검색기가 과거 트레이토리(궤적, 에이전트가 과제를 수행하며 남긴 실행 기록 전체)를 잘 찾아와도 그걸 지금 쿼리에 맞게 다시 쓰는 단계가 따로 있고 병목은 거기에 있음. QCR 논문(arXiv:2608.12847)이 그 재사용 단계만 분리해서 측정하는 프레임워크를 만들었고, 테스트용 최소 구현인 QCR 노트로 평균 62.3% Success, Full Trajectory 대비 +10.7pt, 온라인 토큰 48.9% 감소를 냈음. WebArena(실제 사이트를 본뜬 가상 웹에서 과제를 수행하는 벤치마크)·WorkArena(기업 업무 웹 앱 과제 벤치마크)·AppWorld(일상 앱 조작 과제 벤치마크)의 2,391개 타깃 인스턴스로 평가함.

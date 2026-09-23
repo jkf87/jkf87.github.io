@@ -2,8 +2,10 @@
 title: "틀린 기억은 저장이 아니라 검증에서 터짐 — 읽기 전용 프로브로 통과율 39→73% 만든 큐레이션"
 date: 2026-09-14
 tags: [llm, agent, memory, curation, arxiv]
-draft: false
 description: "트레이서만 보고 기억을 남기는 큐레이터에게 읽기 전용 환경 도구를 줘 쓰기 전 검증하게 한 Environment-Probing Curation. CLBench 통과율 39→73%, 태스크 에이전트 비용 절반, 18개 비교 전부 양수였다."
+draft: true
+refactor_hub: agent-memory-07
+refactor_status: queued
 ---
 
 에이전트 메모리의 문제가 저장이 아니라 검증에서 생긴다는 걸 보여준 논문이 나옴. 재학습 없이 프로브 하나 붙이는 배포 호환 확장이라 정리함. 원문은 [arXiv:2609.11060](https://arxiv.org/abs/2609.11060).

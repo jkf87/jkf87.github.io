@@ -14,6 +14,9 @@ tags:
 description: "UIUC·Meta·Stanford 공동으로 발표한 102쪽 서베이 논문 'Code as Agent Harness'를 정리합니다. 코드가 단순한 생성물이 아니라 에이전트의 실행 가능한 인프라가 되는 과정을 하네스 인터페이스, 메커니즘, 멀티에이전트 확장 세 레이어로 나누어 설명합니다."
 aliases:
   - code-as-agent-harness-2026-05-20/index
+draft: true
+refactor_hub: harness-self-improve-14
+refactor_status: queued
 ---
 
 > 원문: [Code as Agent Harness: Toward Executable, Verifiable, and Stateful Agent Systems](https://arxiv.org/abs/2605.18747) (arXiv:2605.18747)

@@ -17,6 +17,9 @@ source_url: https://arxiv.org/abs/2608.11924
 paper_url: https://arxiv.org/abs/2608.11924
 github_url: https://github.com/Spark-To-Paper-Skills/spark-to-paper-skills
 description: 전용 플랫폼 없이 Claude Code 위에서 스킬 13개로 논문을 완성한 시스템. 인용 유효성 99.5%, 조작 탐지 14%→92% 곡선에서 배울 검증 계층 설계를 정리함.
+draft: true
+refactor_hub: harness-self-improve-05
+refactor_status: queued
 ---
 
 전용 에이전트 플랫폼 없이 코딩 어시스턴트 안에서 스킬 13개만으로 연구 논문을 끝까지 쓰는 시스템이 나왔음. 파일 읽기, 코드 실행, 검색, 외부 도구 호출을 어시스턴트 기본 기능으로 재사용함. 오케스트레이션 서버·그래프 DB·클러스터 스케줄러가 필요 없음. 원문은 [arXiv:2608.11924](https://arxiv.org/abs/2608.11924), 스킬 저장소는 [GitHub](https://github.com/Spark-To-Paper-Skills/spark-to-paper-skills)에 공개돼 있음.

@@ -10,6 +10,9 @@ tags:
   - loop
   - tool use
 description: "Living-Harness 논문 분석. 에피소드가 끝나면 사라지는 텍스트 교훈이 아니라, 트리거 조건과 수리 액션을 구조화해서 하네스에 영구 기록하는 설계. GPT-5.2로 Gemini 3 Pro를 앞지른 숫자와 모델 간 전이 결과."
+draft: true
+refactor_hub: harness-self-improve-21
+refactor_status: queued
 ---
 
 에이전트가 같은 실수를 반복하는 이유는 모델이 멍청해서가 아님. 배운 교훈이 다음 에피소드를 인도하는 하네스에 도달하지 않기 때문임. [Living-Harness](https://arxiv.org/abs/2607.26598)는 이 갭을 "다음 응답 개선"이 아니라 "미래 에피소드의 절차적 수리"로 정의하고 해결함. GPT-5.2 medium 백본으로 τ²-Bench(통신·항공·소매 도메인에서 사용자와 에이전트가 도구를 주고받으며 과제를 완수하게 하는 다중 턴 상호작용 벤치마크)에서 Gemini 3 Pro를 앞지른 결과도 인상적이지만, 내가 주목한 건 구조임. 내 에이전트 운영에 그대로 이식할 수 있는 구조라 정리함.

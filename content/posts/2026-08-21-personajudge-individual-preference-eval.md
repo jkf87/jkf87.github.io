@@ -9,6 +9,9 @@ tags:
   - human-feedback
   - agent-evaluation
 description: "평균 점수를 잘 맞추는 Judge가 특정 평가자의 취향까지 맞추는 건 아님. 판단 라벨과 사후 이유를 함께 넣은 개인화 데모가 클릭 로그보다 셌다는 결과를 평가 시스템 설계 관점으로 정리함."
+draft: true
+refactor_hub: eval-benchmarks-03
+refactor_status: queued
 ---
 
 LLM-as-Judge(LLM이 채점자가 되어 답변 품질을 평가하는 방식)를 쓰면 평가 비용은 내려가지만 하나가 자주 빠짐. 평균 점수를 잘 맞추는 Judge가 특정 평가자의 취향까지 맞춘다는 보장이 없다는 것임. PersonaJudge가 이 문제를 정면으로 다룸. 원문은 [arXiv:2607.05742](https://arxiv.org/abs/2607.05742).

@@ -1,7 +1,6 @@
 ---
 title: "LLM 에이전트가 악성 MCP 도구를 골라버리는 이유: A2M 논문 정리 (arXiv 2609.26761)"
 date: 2026-09-23
-draft: false
 description: MCP 도구 설명문만 조작해 에이전트가 악성 도구를 부르게 만들고, 반환값으로 추론까지 조종하는 A2M 공격을 정리했습니다. 악성 도구 호출률 93.6%, 토큰 비용 32.4배 증가 결과입니다.
 tags:
   - LLM 에이전트
@@ -9,6 +8,9 @@ tags:
   - 보안
   - tool-use
   - 벤치마크
+draft: true
+refactor_hub: agent-safety-02
+refactor_status: queued
 ---
 
 ## 결론 먼저

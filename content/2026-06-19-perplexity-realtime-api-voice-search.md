@@ -1,7 +1,6 @@
 ---
 title: "Perplexity가 음성 검색을 ‘데모’가 아니라 제품으로 만든 방법"
 date: 2026-06-19
-draft: false
 tags:
   - Perplexity
   - OpenAI
@@ -12,6 +11,9 @@ tags:
 categories:
   - AI기술
 description: "Perplexity가 OpenAI Realtime API로 월 수백만 음성 세션을 운영하며 배운 컨텍스트 관리, 오디오 표준화, VAD 튜닝, 도구 설계의 네 가지 교훈을 정리합니다."
+draft: true
+refactor_hub: multimodal-world-01
+refactor_status: queued
 ---
 
 ## 핵심 요약

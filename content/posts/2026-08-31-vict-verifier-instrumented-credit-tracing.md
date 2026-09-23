@@ -2,8 +2,10 @@
 title: "검증기 안에 이미 크레딧 답이 있음 — VICT의 애턴 추적 방식 정리"
 date: 2026-08-31
 tags: [agent, rl, credit-assignment, verifier]
-draft: false
 description: "종단 보상 대신 검증기 내부의 검사 항목을 액션 단위로 추적해 GRPO 대비 ALFWorld +18.2pt를 얻은 VICT. 구조, 수치, 적용 조건을 정리함."
+draft: true
+refactor_hub: agent-rl-06
+refactor_status: queued
 ---
 
 긴 궤적의 에이전트 RL에서 제일 아픈 지점은 종단 보상 하나를 모든 액션에 똑같이 뿌리는 일임. VICT(Verifier-Instrumented Credit Tracing)는 이 문제를 검증기 쪽에서 풂. 검증기 내부의 검사 항목을 그대로 꺼내서 액션 단위 크레딧의 근거로 쓰는 것임. 학습된 크리틱, 프로세스 라벨, 브랜치 롤아웃 전부 필요 없고 훈련 타임 어드밴티지 텐서만 수정함. Qwen2.5-1.5B 기준 ALFWorld 평균 성공률 +18.2pt, WebShop strict +24.9pt임.

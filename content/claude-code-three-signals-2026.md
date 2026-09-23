@@ -10,6 +10,9 @@ tags:
   - metr
   - ai-education
 description: "클로드 디자인 공개, Mythos 논쟁, METR time-horizon 차트까지. 최근 기사 3개를 바탕으로 Claude Code 생태계가 어디로 가는지 실무와 교육 관점에서 정리했다."
+draft: true
+refactor_hub: coding-agents-02
+refactor_status: queued
 ---
 
 최근 `Claude Code`를 키워드로 네이버에서 최신 기사를 훑어보면, 단순한 "코딩 보조 도구" 이상의 흐름이 보인다. 한쪽에서는 자연어로 디자인과 프로토타입을 만들고, 다른 한쪽에서는 에이전트 권한과 안전 문제가 부각되며, 또 다른 쪽에서는 AI의 발전 속도를 어떻게 측정할 것인가가 중요한 논점으로 떠오른다.

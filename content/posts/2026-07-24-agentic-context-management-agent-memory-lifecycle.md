@@ -1,7 +1,6 @@
 ---
 title: "에이전트는 추론이 아니라 자기 역사에 빠져 죽음 — 컨텍스트 라이프사이클 5원시"
 date: 2026-07-24T22:00:00+09:00
-draft: false
 summary: "프로덕션 에이전트 실패의 진짜 원인은 컨텍스트 관리 부재임. 저장이 아니라 라이프사이클로 관리해야 비용이 O(n²)에서 O(n)으로 내려감(매턴 전체 대화를 다시 보내면 토큰이 턴 수의 제곱으로 늘지만, 고정 크기로 유지하면 턴 수에 비례해 선형으로만 늘어난다는 뜻). 5원시 프레임을 실무에 적용하는 관점으로 정리함."
 tags:
   - agent
@@ -15,6 +14,9 @@ categories:
   - AI Agents
   - LLM Research
 source_url: "https://arxiv.org/abs/2607.21503"
+draft: true
+refactor_hub: agent-memory-02
+refactor_status: queued
 ---
 
 프로덕션 에이전트가 죽는 이유는 대부분 추론 능력이 아니라 컨텍스트 관리임. 이 논문은 "메모리 = 저장소" 프레임을 버리고 라이프사이클로 관리하라고 주장함. 원문은 [arXiv:2607.21503](https://arxiv.org/abs/2607.21503).

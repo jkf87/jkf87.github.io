@@ -11,6 +11,9 @@ tags:
 description: "40대 피로, 체중 증가, 추위 민감함을 그냥 나이 탓으로 넘기기 쉬움. 갑상선 기능저하증의 신호와 검사 순서를 정리함."
 aliases:
   - 40s-hypothyroidism-fatigue-weight-gain-2026-05-03/index
+draft: true
+refactor_hub: archive-health-01
+refactor_status: archived
 ---
 
 # 40대 갑상선 기능저하증, 피곤함과 체중 증가를 나이 탓으로 넘기면 안 되는 이유

@@ -7,8 +7,10 @@ tags:
   - latency
   - speculative-execution
   - tool-use
-draft: false
 description: "작은 드래프터 모델이 반복 액션 체인을 미리 실행해두고 큰 모델의 다음 호출이 일치하면 나머지 스텝을 통째로 커밋하는 Speculative Macro Commit. τ² Telecom에서 지연 18.59% 절감, 커밋 정밀도 100%를 정리했다."
+draft: true
+refactor_hub: reasoning-efficiency-01
+refactor_status: queued
 ---
 
 툴 에이전트의 지연시간은 모델 추론만이 아니라 도구 실행 대기가 큰 몫을 차지함. 이 구조를 공략한 가속 기법이 나와서 정리함. 원문은 [arXiv:2609.03236](https://arxiv.org/abs/2609.03236).

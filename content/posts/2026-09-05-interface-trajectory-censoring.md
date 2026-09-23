@@ -8,8 +8,10 @@ tags:
   - tool-use
   - RL
   - benchmark
-draft: false
 description: "tool-call rate가 0이어도 모델이 정상 호출을 내보내고 있을 수 있음. 서빙 인터페이스의 템플릿-파서 계약 불일치로 호출이 사라지는 interface-induced trajectory censoring을 정리."
+draft: true
+refactor_hub: agent-rl-03
+refactor_status: queued
 ---
 
 에이전트 벤치마크에서 tool-call rate가 0으로 나와도 모델이 도구를 못 쓰는 게 아닐 수 있음. 모델이 정상적인 툴 호출을 내보내고 있어도 서빙 인터페이스의 채팅 템플릿과 파서 계약이 안 맞으면 호출이 실행 직전에 사라지고 서버는 HTTP 200과 빈 tool_calls 배열을 돌려줌. [논문](https://arxiv.org/abs/2609.03966)이 이 현상에 interface-induced trajectory censoring이라는 이름을 붙였음. 겪을 확률이 높은 함정이라 정리함.

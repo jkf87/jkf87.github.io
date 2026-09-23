@@ -1,10 +1,12 @@
 ---
 title: "작은 에이전트에 선생 메모리를 물려주는 법 — AMD 3단계 증류 실무 노트"
 date: 2026-08-11
-draft: false
 summary: "4B 학생 에이전트가 GPT-5-mini 선생의 경험을 3단계 메모리로 흡수함. 파인튜닝 없이 메모리 주입만으로 AppWorld +27.2%p. 코드 예시 중심의 Subtask 메모리가 핵심이었다는 결과를 정리함."
 tags: ["agent", "memory", "LLM", "knowledge-distillation", "tool-use", "small-model", "harness", "KAIST"]
 cover: /images/2026-08-11-agent-memory-distillation/fig-1-p1.png
+draft: true
+refactor_hub: agent-memory-09
+refactor_status: queued
 ---
 
 작은 LLM 에이전트는 성공률이 낮아서 성공 궤적 자체를 못 만듦. 그래서 자기 경험에서 뽑은 메모리도 실패 투성이가 됨. KAIST의 AMD는 선생 에이전트의 성공 궤적에서 3단계 메모리를 뽑아 학생에게 주입함. 원문은 [arXiv:2608.07169](https://arxiv.org/abs/2608.07169).

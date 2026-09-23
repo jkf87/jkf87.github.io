@@ -11,6 +11,9 @@ tags:
 description: "40대 피로와 근육통을 그냥 영양제 문제로 넘기기 쉬움. 햇빛 부족과 실내 생활이 만드는 비타민 D 결핍 신호를 정리함."
 aliases:
   - 40s-vitamin-d-deficiency-2026-04-30/index
+draft: true
+refactor_hub: archive-health-01
+refactor_status: archived
 ---
 
 # 40대 비타민 D 부족, 피곤함을 영양제만으로 넘기면 안 되는 이유

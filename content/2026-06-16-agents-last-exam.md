@@ -2,7 +2,6 @@
 title: "Agents' Last Exam: AI 에이전트, 전문가의 실제 업무를 통과할 수 있는가"
 slug: 2026-06-16-agents-last-exam
 date: 2026-06-16
-draft: false
 tags:
   - agent
   - benchmark
@@ -15,6 +14,9 @@ categories:
 description: UC Berkeley 연진팀이 250+ 업계 전문가와 구축한 Agents' Last Exam(ALE) 벤치마크는 13개 산업 55개 하위 분야 1,490개 실제 전문가 워크플로우에서 AI 에이전트를 평가한다. 최첨단 에이전트(Codex+GPT-5.5)도 Terminal-Bench 82%를 기록하지만 ALE 최하위 tier 통과율은 0%—GDP에 직결되는 작업에서 평가와 현실의 격차를 정확히 측정한다.
 source: https://arxiv.org/abs/2606.05405
 project: https://agents-last-exam.org/
+draft: true
+refactor_hub: eval-benchmarks-01
+refactor_status: queued
 ---
 
 ## 한 줄 요약

@@ -2,8 +2,10 @@
 title: "에이전트 실행에도 커밋과 롤백이 필요하다 — ACID 트랜잭션을 하네스로 이식"
 date: 2026-08-20
 tags: [agent, harness, paper]
-draft: false
 description: "ACID-Agent 분석. 탐색-실행-검증 사이클을 트랜잭션 단위로 묶어 검증 통과만 커밋하는 하네스. Claude Code 대비 10.6%p 상승, 대신 비용이 최대 5배. 최소 버전으로 바로 적용할 것들."
+draft: true
+refactor_hub: harness-self-improve-21
+refactor_status: queued
 ---
 
 Tsinghua 데이터베이스 그룹이 ACID 트랜잭션(데이터베이스에서 원자성·일관성·격리·지속성을 보장하는 실행 단위 개념)을 LLM 에이전트 실행으로 재해석한 [ACID-Agent](https://arxiv.org/abs/2608.13900)(탐색-실행-검증 사이클을 트랜잭션으로 묶어 검증 통과만 커밋하는 하네스)를 냈고, KramaBench(데이터 분석·과학 계산 같은 지식 작업으로 에이전트를 채점하는 벤치마크)에서 Claude Code 대비 전체 점수 10.6%p 상승(64.0 → 74.6)을 확인했음. 대신 토큰 비용이 백본에 따라 최대 5배 가까이 늘어나는 트레이드오프가 있음. 앞서 정리한 MemTX와 같은 "데이터베이스 교훈의 에이전트 이식" 계열이라 정리함.

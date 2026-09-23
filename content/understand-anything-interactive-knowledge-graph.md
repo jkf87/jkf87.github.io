@@ -3,6 +3,9 @@ title: "코드를 지식 그래프로 — Understand Anything 플러그인 완�
 date: 2026-05-05
 tags: [개발도구, Claude Code, 생산성]
 description: "복잡한 코드베이스를 인터랙티브 그래프로 변환해서 한눈에 파악하기"
+draft: true
+refactor_hub: coding-agents-05
+refactor_status: queued
 ---
 
 새 팀에 들어가서 받은 코드베이스가 20만 줄이라면?

@@ -12,6 +12,9 @@ tags:
   - automation
   - loop
   - tool-use
+draft: true
+refactor_hub: harness-self-improve-12
+refactor_status: queued
 ---
 
 LLM이 다른 LLM 에이전트의 하네스(프롬프트, 도구, 제어 흐름, 메모리)를 자동 최적화하는 능력을 재는 벤치마크가 나옴. 하네스 개선을 에이전트에게 맡기는 사람이 늘어나는 시점에 필요한 데이터라 정리함.

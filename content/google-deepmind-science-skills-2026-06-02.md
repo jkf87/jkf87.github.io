@@ -7,8 +7,10 @@ tags:
   - scientific-discovery
   - science-skills
   - google-antigravity
-draft: false
 coverImage: /images/google-deepmind-science-skills-2026-06-02/hero.jpg
+draft: true
+refactor_hub: harness-self-improve-15
+refactor_status: queued
 ---
 
 Google DeepMind가 에이전트에게 **30개 이상의 생명과학 데이터베이스**를 한 번에 쓸 수 있게 만들었다. 유전체 분석, 단백질 구조 예측, 약물 후보 탐색, 임상시험 검색까지—연구자가 수시간 걸리던 워크플로를 몇 분 안에 끝내는 'Science Skills' 번들을 공개했다. 그것도 **에이전트가 알아서 도구를 고르고, 순서를 짜고, 결과를 종합하는** 방식으로.

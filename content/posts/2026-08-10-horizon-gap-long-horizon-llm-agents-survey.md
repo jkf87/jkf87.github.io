@@ -14,6 +14,9 @@ tags:
   - safety
 authors:
   - conanssam
+draft: true
+refactor_hub: agent-memory-07
+refactor_status: queued
 ---
 
 최고 성능 모델도 에이전트 루프에 넣어 몇 시간짜리 작업을 시키면 중간 결정을 잊고, 반쯤 끝난 작업을 완료라고 선언하고, 목표에서 조용히 벗어남. 이 간격이 호라이즌 갭임. 1,547편(2024-2026)을 수집해 이 문제를 6축으로 분류한 서베이(arXiv 2608.06663)를 정리함.

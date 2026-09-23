@@ -11,6 +11,9 @@ tags:
 description: 아침 혈압이 높게 나올 때 먼저 볼 건 수면, 측정 타이밍, 짠 음식임. 40대가 놓치기 쉬운 패턴을 정리함.
 aliases:
   - 40s-morning-blood-pressure-2026-05-09/index
+draft: true
+refactor_hub: archive-health-01
+refactor_status: archived
 ---
 
 # 40대 아침 혈압이 높게 나오는 이유, 커피보다 먼저 볼 것 3가지

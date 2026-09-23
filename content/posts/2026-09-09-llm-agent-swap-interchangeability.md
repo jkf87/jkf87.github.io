@@ -6,8 +6,10 @@ tags:
   - multi-agent
   - coordination
   - evaluation
-draft: false
 description: "같은 모델·역할·경험량의 에이전트를 팀 간에 맞바꾼 스왑 테스트. 과제 점수는 거의 안 흔들리지만 진행당 통신 비용이 16~63% 올랐고 원인은 파트너 노트에 쌓인 관습이었다."
+draft: true
+refactor_hub: multi-agent-01
+refactor_status: queued
 ---
 
 멀티에이전트 시스템에서 에이전트 교체가 실제로 얼마나 비싼지 통제 실험으로 잰 논문이 나옴. 결과가 직관적이지 않아서 정리함. 원문은 [arXiv:2609.05279](https://arxiv.org/abs/2609.05279).

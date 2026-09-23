@@ -1,7 +1,6 @@
 ---
 title: "LLM 에이전트가 실패한 시점으로 되돌아갈 때 기억까지 버리는 문제: RIR 논문 정리"
 date: 2026-09-20
-draft: false
 tags:
   - LLM 에이전트
   - 롤백
@@ -9,6 +8,9 @@ tags:
   - 메모리
   - 하네스
 description: "롤백으로 상태를 되돌릴 때 성공 루트와 실패 원인 같은 반성 지식은 함께 가져가야 한다는 RIR 프레임워크를 정리했습니다. 3개 벤치마크에서 평균 성공률이 최대 6.57%p 올랐습니다."
+draft: true
+refactor_hub: agent-memory-08
+refactor_status: queued
 ---
 
 ## 결론 먼저

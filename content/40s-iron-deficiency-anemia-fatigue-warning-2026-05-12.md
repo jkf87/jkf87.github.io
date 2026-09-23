@@ -11,6 +11,9 @@ tags:
 description: 40대 피로는 잠 부족만이 원인 아님. 철결핍 빈혈, ferritin, 출혈 신호, 식사·약물 영향까지 같이 봐야 함.
 aliases:
   - 40s-iron-deficiency-anemia-fatigue-warning-2026-05-12/index
+draft: true
+refactor_hub: archive-health-01
+refactor_status: archived
 ---
 
 # 40대 피로가 계속되면 빈혈부터 봐야 하는 이유, 철결핍을 놓치기 쉬운 신호 3가지

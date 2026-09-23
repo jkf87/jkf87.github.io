@@ -4,6 +4,9 @@ date: 2026-08-12
 tags: [agent, harness, LLM, evaluation, benchmark, auditing, tool-use, Shanghai-AI-Lab]
 source: arxiv
 paper_url: https://arxiv.org/abs/2608.07346
+draft: true
+refactor_hub: harness-self-improve-12
+refactor_status: queued
 ---
 
 같은 모델인데 하네스만 바꿔서 성공률이 0.20~0.66까지 벌어지고 토큰은 3.5배 차이가 남. A²E는 이 간극을 진단하는 감사 엔진임. 하네스 선택이 곧 성능과 비용이라는 걸 데이터로 보여줘서 정리함.

@@ -10,6 +10,9 @@ tags:
 description: "40대 불면은 의지 문제가 아니라 수면 위생, 생체리듬, 동반 질환이 겹친 신호일 수 있음. 언제 병원에 가야 하는지와 지금 바꿀 수 있는 습관을 정리함."
 aliases:
   - 40s-insomnia-not-just-willpower-2026-05-01/index
+draft: true
+refactor_hub: archive-health-01
+refactor_status: archived
 ---
 
 # 40대 불면, 잠 못 드는 밤을 의지 문제로 넘기면 안 되는 이유

@@ -6,9 +6,11 @@ tags:
   - multimodal
   - audio-visual
   - latent-reasoning
-draft: false
 enableToc: true
 description: "LatentOmni은 오디오와 비디오를 텍스트가 아닌 잠재 공간에서 직접 추론하는 멀티모달 모델이다."
+draft: true
+refactor_hub: reasoning-efficiency-01
+refactor_status: queued
 ---
 
 ## 오디오와 비디오를 같이 이해한다는 건 어떤 의미일까?

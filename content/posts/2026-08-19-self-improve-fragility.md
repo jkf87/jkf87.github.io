@@ -1,7 +1,6 @@
 ---
 title: "자기개선 에이전트가 흔들리는 이유 — 분산 71% 증가, 셔플만으로 개선이 하락으로 뒤집힘"
 date: 2026-08-19T16:05:00+09:00
-draft: false
 tags:
   - agent
   - self-improvement
@@ -9,6 +8,9 @@ tags:
   - evaluation
   - reliability
   - paper-review
+draft: true
+refactor_hub: agent-memory-09
+refactor_status: queued
 ---
 
 메모리 기반 자기개선 에이전트가 실제로는 취약하다는 재평가가 나왔음. 실행 분산이 24개 케이스 중 17개(71%)에서 오히려 커졌고, 태스크 순서만 섞어도 +1.5% 개선이 -4.5% 하락으로 뒤집힘. 내 자기개선 루프 평가 방식을 고치게 되는 논문이라 정리함.

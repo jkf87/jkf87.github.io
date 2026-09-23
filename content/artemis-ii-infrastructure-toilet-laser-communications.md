@@ -9,6 +9,9 @@ tags:
   - communications
   - geeknews
 description: "Artemis II의 화장실 시스템과 레이저 통신 사례를 통해, 현대 우주탐사가 왜 추진체 경쟁이 아니라 생활·통신 인프라 경쟁으로 바뀌고 있는지 정리합니다."
+draft: true
+refactor_hub: archive-offtopic-01
+refactor_status: archived
 ---
 
 Artemis II 관련 GeekNews 글 두 개를 같이 보면 꽤 흥미로운 그림이 보입니다. 하나는 **신형 우주 화장실 시스템** 이야기이고, 다른 하나는 **달에서 4K 영상을 레이저로 실시간 전송하는 통신 시스템** 이야기입니다. 얼핏 보면 하나는 생활 편의, 하나는 첨단 기술처럼 보이지만, 사실 둘은 같은 메시지를 말하고 있습니다.

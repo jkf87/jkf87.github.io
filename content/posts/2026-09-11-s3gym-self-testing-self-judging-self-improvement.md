@@ -2,8 +2,10 @@
 title: "스스로 잘했다고 믿는 것과 실제로 잘된 것은 다름 — S3Gym 자기 개선 측정 정리"
 date: 2026-09-11
 tags: [ai, llm, agent, rl, self-improvement, benchmark, arxiv]
-draft: false
 description: "arXiv 2608.31100 S3Gym 정리. Self-Testing·Self-Judging·Self-Improvement 세 능력을 7개 텍스트 게임에서 평가하고 History ICL, Summary Memory, 파라미터 트레이닝 세 경로를 통일된 프로토콜로 비교한 결과와 실패 지점을 풀어둔 글."
+draft: true
+refactor_hub: harness-self-improve-07
+refactor_status: queued
 ---
 
 테스트 게임 7종에서 LLM 에이전트 30 에피소드씩 놀아보게 하고 그 경험으로 점수가 오르는지 지켜본 벤치마크가 나왔음. S3Gym(ByteDance Seed 외, arXiv 2608.31100)임. 결론부터 말하면 스스로 좋아지는 일은 일어나기는 하는데 절대 자동이 아님.

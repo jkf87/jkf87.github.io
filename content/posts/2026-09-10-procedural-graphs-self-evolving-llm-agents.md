@@ -7,8 +7,10 @@ tags:
   - self-evolution
   - knowledge-graph
   - arxiv
-draft: false
 description: "Procedural Graph 논문 분석. 절차 지식을 (절차, 관계, 절차) 트리플릿 그래프로 표현하고 활성 노드 기반 안내와 검증 게이팅 자가진화를 적용. 6개 벤치마크에서 19승 2무 3패, 장기 의사결정 생존율 0%→90%."
+draft: true
+refactor_hub: harness-self-improve-21
+refactor_status: queued
 ---
 
 에이전트의 절차 지식은 대개 자유 텍스트 메모리로 저장됨. 근데 그러면 솔버가 과거 기록을 현재 스텝에 어떻게 적용할지 매번 재구성해야 함. [Procedural Graph](https://arxiv.org/abs/2609.09153)는 절차 지식을 그래프로 명시하는 쪽을 감. 지식그래프가 사실(what-is)을 다루는 것과 대비되게 이쪽은 행동(what-to-do)을 다룸. 절차 간 연결과 조건을 엣지로 박아두고 현재 진행 상태에서 해당 서브그래프만 안내로 받는 것. 앞서 정리한 그래프 엔지니어링 글과 짝을 이루는 방향이라 정리함.

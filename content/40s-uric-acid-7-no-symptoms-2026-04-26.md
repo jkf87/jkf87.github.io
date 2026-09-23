@@ -12,6 +12,9 @@ tags:
 description: "40대 건강검진에서 요산 수치가 7mg/dL 근처로 나오면 통증이 없더라도 그냥 정상이라고 넘기기 애매함. 국가건강정보포털, 서울대병원, 서울아산병원 자료를 바탕으로 왜 생활 조정과 추가 확인이 필요한지 정리함."
 aliases:
   - 40s-uric-acid-7-no-symptoms-2026-04-26/index
+draft: true
+refactor_hub: archive-health-01
+refactor_status: archived
 ---
 
 건강검진표에서 요산 수치가 7 근처로 찍히면 애매해서 그냥 넘기기 쉬움. 아픈 데도 없고, 엄지발가락이 붓는 일도 없으면 더 그럼. 근데 40대부터는 이 숫자가 완전한 무의미는 아님.

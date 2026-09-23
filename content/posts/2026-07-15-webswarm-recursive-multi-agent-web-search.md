@@ -1,10 +1,12 @@
 ---
 title: "검색 에이전트를 '위임 트리'로 돌리기 — WebSwarm이 보여주는 오케스트레이션 설계"
 date: 2026-07-15
-draft: false
 description: "WebSwarm은 검색 과제를 재귀적 위임 트리로 쪼개고, 노드마다 목표와 검색 모드를 부여해 깊이와 넓이를 동시에 잡음. 리서치 자동화 파이프라인 설계에 바로 쓸 포인트를 정리함."
 tags: [LLM, Agent, Multi-Agent, Web Search, Deep Research]
 categories: [AI Research]
+draft: true
+refactor_hub: multi-agent-02
+refactor_status: queued
 ---
 
 딥 리서치 에이전트를 만들다 보면 항상 같은 벽에 부딪힘. 단일 ReAct 에이전트(생각-행동-관찰을 한 스텝씩 반복하며 도구를 부르는 표준 에이전트 루프)는 컨텍스트가 길어지면서 탐색이 얕아지고, 무작정 병렬로 나누면 이번엔 깊이를 못 파고. WebSwarm이라는 프레임워크가 이 "깊이냐 넓이냐" 딜레마를 재귀 위임으로 풀었음. 오케스트레이션 설계를 고민 중이라면 참고할 게 많은 구조임.

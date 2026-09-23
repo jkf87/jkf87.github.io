@@ -6,8 +6,10 @@ tags:
   - interpretability
   - finetuning
   - 오픈소스 모델
-draft: false
 description: "오픈소스 LLM 파인튜닝 결과물에서 어떤 행동이 새로 생겼는지, 모델 내부 접근 없이 출력 로짓 차이만으로 지문처럼 뽑아내는 Diff Mining 프레임워크를 정리했습니다."
+draft: true
+refactor_hub: dev-tools-02
+refactor_status: queued
 ---
 
 ## 결론 먼저

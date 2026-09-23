@@ -7,8 +7,10 @@ tags:
   - security
   - prompt-injection
   - paper-summary
-draft: false
 description: "Claude Code와 Codex를 포함한 12개 실전 하네스를 분석해 컨텍스트 조립 단계의 권한 상승 공격(M-CPE, X-CPE) 1,761개 경로를 찾아낸 논문 정리. Claude Code RCE 사례와 방어 포인트까지 담음."
+draft: true
+refactor_hub: harness-self-improve-02
+refactor_status: queued
 ---
 
 에이전트 하네스의 컨텍스트 조립 단계 자체가 공격 지점임. 이 논문(arXiv:2609.01222)은 Claude Code와 Codex를 포함한 12개 실전 하네스를 분석해서 낮은 권한의 컨텍스트에 심은 공격 내용이 높은 권한의 메시지 역할로 흘러들어가는 경로 1,761개를 찾아냈음.

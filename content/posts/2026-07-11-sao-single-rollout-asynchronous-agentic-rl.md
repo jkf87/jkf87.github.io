@@ -1,7 +1,6 @@
 ---
 title: "GLM-5.2를 훈련한 단일 롤아웃 비동기 RL — SAO 설계에서 가져올 것들"
 date: 2026-07-11
-draft: false
 tags:
   - reinforcement-learning
   - LLM
@@ -15,6 +14,9 @@ categories:
 description: "GRPO의 그룹 샘플링을 버리고 단일 롤아웃으로 비동기 RL을 안정화한 SAO. GLM-5.2에 실제로 쓰인 설계를 에이전트 훈련 인프라 관점에서 정리함."
 aliases:
   - /posts/2026-07-11-sao-single-rollout-asynchronous-agentic-rl
+draft: true
+refactor_hub: agent-rl-02
+refactor_status: queued
 ---
 
 에이전트 코딩 워크로드를 RL로 돌리면 GPU가 가장 느린 롤아웃을 기다리며 놀아남. SAO(Single-rollout Asynchronous Optimization)는 이 병목을 그룹 샘플링 자체를 버리는 걸로 풀었고, GLM-5.2 훈련에 실제로 들어갔음. 설계 결정 몇 개가 따로 가져올 만해서 정리함.

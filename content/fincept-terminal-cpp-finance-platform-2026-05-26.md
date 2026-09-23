@@ -14,6 +14,9 @@ tags:
 description: "Fincept Terminal v4는 C++20 + Qt6로 만든 네이티브 금융 인텔리전스 플랫폼. 37개 AI 에이전트, 100개 이상 데이터 커넥터, 16개 브로커 연동, QuantLib 기반 퀀트 분석을 단일 바이너리로 제공함."
 aliases:
   - fincept-terminal-cpp-finance-platform-2026-05-26/index
+draft: true
+refactor_hub: dev-tools-01
+refactor_status: queued
 ---
 
 블룸버그 터미널이 연간 2만 4천 달러임. 개인 투자자나 스타트업에겐 접근 불가능한 가격. 그런데 이걸 오픈소스로 만들려는 사람들이 있음.

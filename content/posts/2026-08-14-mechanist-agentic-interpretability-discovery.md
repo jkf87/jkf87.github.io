@@ -11,6 +11,9 @@ tags:
   - harness
   - loop
 description: "Mechanist는 가설-실험-검증-반복 에이전트 루프로 AI 모델 자체의 메커니즘을 발견함. Claude Code를 재현 신뢰성에서 앞서고, 안전 데이터만으로 학습해도 위험해지는 다중 모달 서브리미널 러닝까지 밝혀냄. 자율 연구 자동화의 실무 교훈을 정리함."
+draft: true
+refactor_hub: harness-self-improve-04
+refactor_status: queued
 ---
 
 모델은 하루가 다르게 좋아지는데 그 모델이 왜 그 답을 내는지 아는 사람은 줄어들고 있음. 인간 연구자가 수동으로 내부를 분석하는 동안 모델은 다음 세대로 넘어감. 저장강소대학교 zjunlp 팀이 이 간극에 에이전트를 투입함. Mechanist. AI를 과학 도구로 써서 AI 자체의 메커니즘을 발견하는 자율 에이전트 시스템임. 대상이 약물이나 코드가 아니라 AI 모델 그 자체라는 점이 새로움.

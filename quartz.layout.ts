@@ -46,7 +46,18 @@ export const sharedPageComponents: SharedLayout = {
       condition: (page) => page.fileData.slug === "index",
     }),
     Component.ConditionalRender({
-      component: Component.PostsByMonth({}),
+      component: Component.PostsByMonth({
+        // 안내 페이지(소개·연락처·정책 등)는 글 목록에서 뺀다
+        filter: (f) => {
+          const slug = f.slug ?? ""
+          if (!slug || slug.startsWith("tags/") || slug.startsWith("_drafts/")) return false
+          if (
+            ["index", "posts", "about", "contact", "privacy-policy", "categories", "editorial-policy"].includes(slug)
+          )
+            return false
+          return Boolean(f.dates)
+        },
+      }),
       condition: (page) => page.fileData.slug === "posts",
     }),
   ],

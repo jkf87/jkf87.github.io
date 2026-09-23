@@ -9,9 +9,11 @@ tags:
   - loop-library
   - automation
 description: "Forward Future의 Loop Library는 AI 에이전트가 반복적으로 실행할 수 있는 검증형 워크플로우 44개를 모아둔 라이브러리다. 문서 정리, 제품 평가, 성능 최적화, 운영 점검처럼 끝까지 돌려야 하는 일을 루프로 구조화한다."
-draft: false
 source: forward-future-loop-library
 source_url: https://signals.forwardfuture.ai/loop-library/
+draft: true
+refactor_hub: ai-trends-misc-05
+refactor_status: queued
 ---
 
 AI 에이전트를 잘 쓰는 사람과 못 쓰는 사람의 차이는 프롬프트 문장력보다 **반복 구조를 설계하느냐**에 있음.

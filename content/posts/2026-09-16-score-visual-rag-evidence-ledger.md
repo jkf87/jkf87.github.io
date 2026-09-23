@@ -1,6 +1,5 @@
 ---
 title: "Visual RAG의 병목은 검색이 아니라 증거 정리임 — SCoRE의 증거 장부 구조"
-draft: false
 date: 2026-09-16
 tags:
   - visual-rag
@@ -9,6 +8,9 @@ tags:
   - reinforcement-learning
   - benchmark
 description: "답 생성 직전의 증거 보존과 정리가 병목이라는 관점에서 SCoRE의 텍스트 증거 장부, consolidate 액션, 커버리지 게이트 보상과 세 벤치마크 결과를 정리함."
+draft: true
+refactor_hub: agent-memory-05
+refactor_status: queued
 ---
 
 Visual RAG에서 성능 병목의 상당 부분은 검색 품질보다 답 생성 직전의 증거 보존과 정리에서 나온다는 게 이 논문의 핵심 주장임. SCoRE(Selection and COnsolidation for Robust Evidence)는 탐색 중 관련 관찰만 텍스트 증거 장부에 남기고 답 생성 직전에 원본 페이지 이미지를 다시 불러와 걸러내고 순서를 세우는 에이전트 루프임. 원문은 [arXiv:2609.15800](https://arxiv.org/abs/2609.15800).

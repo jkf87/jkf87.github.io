@@ -8,8 +8,10 @@ tags:
   - spatial-reasoning
   - multimodal
   - arxiv
-draft: false
 description: "연속변형에 불변하는 위상 관계를 13개 과제로 측정한 MindTopo(arXiv 2609.11900) 벤치마크 정리. 최고 모델 53.5% vs 인간 97.4%, 추론에서 계획으로 옮기는 순간 무너지는 이유까지."
+draft: true
+refactor_hub: eval-benchmarks-02
+refactor_status: queued
 ---
 
 로프를 구부리고 늘여도 매듭은 그대로 남음. 이런 성질을 위상(topology)이라고 부름. Northwestern·Microsoft Research·Stanford 팀이 이 위상 감각으로 멀티모달 LLM을 측정한 MindTopo 벤치마크를 공개했음. 결과는 1차원적임. 모델은 정적 장면에서 위상 관계를 알아보는데 행동 연속으로 옮기는 순간 무너짐. 최고 모델 전체 평균 53.5%, 인간은 97.4%임.

@@ -1,7 +1,6 @@
 ---
 title: "컴퓨터 사용 에이전트에 CLI 다리를 얹으니 9B도 23→40% — CUA-Universe 하이브리드 학습 결과"
 date: 2026-09-08
-draft: false
 tags:
   - agent
   - computer-use
@@ -10,6 +9,9 @@ tags:
   - fine-tuning
   - llm
 description: "실제 데스크톱 앱 16종을 GUI+CLI 하이브리드 환경으로 만들고 검증 궤적 4,923개로 Qwen3.5-9B를 학습시킨 CUA-Universe. OSWorld 성공률 +16.8pp, 토큰 44% 절감, 미학습 MCP 인터페이스까지 일반화된 결과를 정리했다."
+draft: true
+refactor_hub: web-gui-agents-01
+refactor_status: queued
 ---
 
 컴퓨터 사용 에이전트(CUA)가 클릭만으로 일하는 비효율을 하이브리드 인터페이스로 푼 연구가 나옴. 작은 모델이 언제 CLI로 전환할지 배우는 것만으로 큰 폭이 오른다는 결과라 정리함. 원문은 [arXiv:2609.05374](https://arxiv.org/abs/2609.05374).

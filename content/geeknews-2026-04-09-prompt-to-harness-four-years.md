@@ -8,6 +8,9 @@ tags:
   - automation
   - productivity
 description: "2022년 프롬프트 엔지니어링, 2025년 컨텍스트 엔지니어링, 2026년 하네스 엔지니어링. AI 개발 패러다임이 세 번 전환한 이유와 각 시대가 왜 실패했는지, 그리고 지금 우리가 서 있는 곳을 정리한다."
+draft: true
+refactor_hub: harness-self-improve-14
+refactor_status: queued
 ---
 
 2023년, Andrej Karpathy는 "가장 핫한 새 프로그래밍 언어는 영어"라고 선언했다. 3년 뒤 그 말은 절반만 맞았다. 영어로 지시하는 능력은 여전히 중요하지만, 그것이 전부는 아니라는 게 명확해졌다. 지난 4년간 AI 개발 패러다임은 세 번이나 전환했고, 각 전환의 동인은 같았다 — **이전 방식이 약속한 것을 지키지 못했기 때문.**

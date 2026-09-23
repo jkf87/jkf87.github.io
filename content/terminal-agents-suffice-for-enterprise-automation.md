@@ -9,6 +9,9 @@ tags:
   - paper
   - openclaw
 description: "웹 에이전트나 MCP보다 단순한 터미널 에이전트가 기업 자동화에서 더 싸고 더 잘할 수 있다는 논문을 정리했다. 실전 자동화 관점에서 왜 중요한지도 함께 본다."
+draft: true
+refactor_hub: ai-trends-misc-06
+refactor_status: queued
 ---
 
 요즘 에이전트 이야기를 보면 자꾸 구조가 커집니다. MCP를 붙이고, 웹 UI를 조작하고, 툴 레지스트리를 만들고, 추상화를 더 얹습니다. 그런데 이번 논문 **_Terminal Agents Suffice for Enterprise Automation_**은 꽤 도발적인 질문을 던집니다.

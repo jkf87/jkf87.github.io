@@ -9,6 +9,9 @@ tags:
   - 업무자동화
   - webinar
 description: "LLM 서비스 도입·운영 시 필요한 평가 기준을 목적 정의→지표 설계→루브릭 작성→자동화 운영 순서로 정리한 실무형 가이드."
+draft: true
+refactor_hub: agent-memory-01
+refactor_status: queued
 ---
 
 LLM 서비스를 실제로 운영해 보면, **모델 성능 자체보다 ‘평가 기준의 부재’가 더 큰 리스크**가 됩니다.  

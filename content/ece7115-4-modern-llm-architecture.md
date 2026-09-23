@@ -10,6 +10,9 @@ tags:
 description: "ECE7115 4강 Modern LLM Architecture를 Pre-Norm, RMSNorm, RoPE, SwiGLU 중심으로 정리한 짧은 강의노트."
 aliases:
   - ece7115-4-modern-llm-architecture/index
+draft: true
+refactor_hub: llm-course-notes-01
+refactor_status: queued
 ---
 
 ECE7115 4강은 vanilla Transformer를 요즘 LLM 스타일로 바꾸는 핵심 선택지를 압축해서 보여준다. Pre-Norm, RMSNorm, RoPE, SwiGLU가 사실상 표준 조합에 가깝다는 점이 핵심이다.

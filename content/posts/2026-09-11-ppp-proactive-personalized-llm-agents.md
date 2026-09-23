@@ -5,8 +5,10 @@ tags:
   - ai-agent
   - reinforcement-learning
   - human-agent-interaction
-draft: false
 description: "사용자 상호작용과 선호 준수를 보상에 넣은 다목적 RL 프레임워크 PPP. 36B 모델이 GPT-5 포함 baseline을 평균 +16.72점 앞섰고 33인 실사용자 연구에서도 만족도 대등, 선호 준수는 최고였다."
+draft: true
+refactor_hub: ai-trends-misc-07
+refactor_status: queued
 ---
 
 기존 에이전트 RL이 태스크 완수만 최적화한다는 문제의식에서 출발한 논문이 나옴. 애매한 지시에서 질문하고 사용자 선호를 맞추는 능력을 학습시킨 결과가 좋아서 정리함. 원문은 [arXiv:2511.02208](https://arxiv.org/abs/2511.02208)(COLM 2026).

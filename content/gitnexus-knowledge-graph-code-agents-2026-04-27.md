@@ -17,6 +17,9 @@ tags:
 description: "Cursor·Claude Code·Codex가 큰 레포에서 콜체인이나 의존성을 놓치는 이유는 단순함. 코드 전체를 못 보기 때문임. GitNexus는 레포를 통째로 knowledge graph로 만들어 MCP 서버로 띄워주는 오픈소스인데, 한 달 만에 30k 스타가 붙음. Tree-sitter WASM, LadybugDB, RDF/LPG, SPARQL/Cypher 같은 받쳐주는 개념까지 같이 정리함."
 aliases:
   - gitnexus-knowledge-graph-code-agents-2026-04-27/index
+draft: true
+refactor_hub: coding-agents-05
+refactor_status: queued
 ---
 
 요즘 Cursor, Claude Code, Codex 같은 코딩 에이전트로 일하다 보면 비슷한 좌절을 만남. 작은 함수 하나 고치라고 시켰는데 그게 다른 파일의 콜체인을 깨버리는 일임. 잘 만든 모델이라도 그럼.

@@ -8,6 +8,9 @@ tags:
   - 본인부담상한제
   - 소득 부과 건강보험료 조정 정산
 description: 건강보험료 환급 신청이라고 검색해도 실제 제도는 하나가 아님. 보험료 정산 환급인지, 병원비 환급인지 먼저 구분해야 신청이 쉬워짐.
+draft: true
+refactor_hub: archive-draft-01
+refactor_status: archived
 ---
 
 # 건강보험료 환급 신청, 먼저 돈의 종류부터 확인해야 함

@@ -12,6 +12,9 @@ tags:
 description: "국민건강보험공단 기본검진만 받으면 40대부터 늘어나는 위험을 거의 못 잡음. 녹내장·복부초음파·저선량폐CT·PSA·유방초음파·NK세포활성도까지 40대가 추가로 받아야 할 검사 6가지를 번호로 정리함."
 aliases:
   - 40s-health-checkup-missing-6-2026-04-21/index
+draft: true
+refactor_hub: archive-health-01
+refactor_status: archived
 ---
 
 공단이 2년에 한 번씩 보내주는 건강검진표. 그거 하나로 충분한 줄 알고 받아오면, 40대부터는 사실상 절반쯤 눈 감고 검진하는 셈임. 뭐가 빠졌는지 정리해봄.

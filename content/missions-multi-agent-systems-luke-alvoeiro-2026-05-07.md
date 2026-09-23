@@ -5,6 +5,9 @@ date: 2026-05-07
 tags: [AI, multi-agent, Factory, LLM, 소프트웨어개발, AI엔지니어링, 코딩에이전트]
 description: "Factory의 Luke Alvoeiro가 AI Engineer Europe 2026에서 소개한 Missions. 16일간 90% 테스트 커버리지로 Slack 클론을 빌드한 멀티에이전트 시스템의 아키텍처와 전략을 정리합니다."
 aliases: [missions-multi-agent-systems-luke-alvoeiro-2026-05-07/index]
+draft: true
+refactor_hub: coding-agents-01
+refactor_status: queued
 ---
 
 London, AI Engineer Europe 2026. 무대 위에서 한 남자가 말한다. "우리 팀은 16일 동안 Slack 클론을 90% 테스트 커버리지로 빌드했습니다. 인간은 주기적으로 확인만 했고요."

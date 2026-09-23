@@ -9,6 +9,9 @@ tags:
   - 혈압기록
   - 건강기록
 description: "병원에서만 정상처럼 보이거나 반대로 집에서만 높게 나오는 혈압 패턴을 40대 기준으로 정리함."
+draft: true
+refactor_hub: archive-health-01
+refactor_status: archived
 ---
 
 # 40대 혈압이 병원과 집에서 다르게 나오는 이유

@@ -7,8 +7,10 @@ tags:
   - sft
   - grpo
   - terminal-agent
-draft: false
 description: 에이전트 SFT가 행동 토큰에만 손실을 걸면 환경 예측 능력이 오히려 떨어집니다. AWS AI Labs의 ActObs 논문은 관측 토큰도 손실에 포함하는 것만으로 GRPO 이후 pass@k가 최대 43% 상대적으로 오른다고 보고합니다.
+draft: true
+refactor_hub: ai-trends-misc-07
+refactor_status: queued
 ---
 
 ## 결론 먼저

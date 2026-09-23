@@ -12,6 +12,9 @@ tags:
   - 교육
   - 마케팅
 description: "OpenAI가 ChatGPT Images 2.0을 공개했습니다. 뭐가 달라졌는지, 어디까지 실무에 쓸 수 있는지, 실제로 복붙해서 쓸 프롬프트 6개까지 한 번에 정리했습니다."
+draft: true
+refactor_hub: web-gui-agents-03
+refactor_status: queued
 ---
 
 - **공식 발표 1**: [Introducing ChatGPT Images 2.0](https://openai.com/index/introducing-chatgpt-images-2-0/)

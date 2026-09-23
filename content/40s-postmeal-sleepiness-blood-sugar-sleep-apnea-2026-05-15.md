@@ -12,6 +12,9 @@ tags:
 description: "밥 먹고 나면 졸린 40대가 혈당만 볼 때 놓치기 쉬운 원인을 정리함. 수면무호흡, 식사 패턴, 당뇨전단계 신호를 같이 봄."
 aliases:
   - 40s-postmeal-sleepiness-blood-sugar-sleep-apnea-2026-05-15/index
+draft: true
+refactor_hub: archive-health-01
+refactor_status: archived
 ---
 
 <!--

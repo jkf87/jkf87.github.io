@@ -9,8 +9,10 @@ tags:
   - small-model
   - harness
   - automation
-draft: false
 description: "SKILLER는 강한 모델이 critic과 actor를 맡아 작은 모델을 위한 맞춤 스킬을 자연어 강화학습으로 뽑아주는 프레임워크임. Qwen3.5-9B에서 최대 +20.4%p, 4B가 스킬 하나로 9B를 이기는 결과와 모델 미스매치의 실증을 정리함."
+draft: true
+refactor_hub: harness-self-improve-01
+refactor_status: queued
 ---
 
 에이전트 하네스에서 스킬은 이제 표준이 됐음. OpenClaw, Codex, Claude Code 모두 숙련자가 쓴 스킬을 재사용해서 반복 작업 품질을 올림. 근데 숨겨진 비용 문제가 있음. 이런 스킬이 제대로 작동하려면 프론티어급 클로즈드 모델이 필요한데 실서비스에서 계속 돌리면 비용이 걷잡을 수 없이 커진다는 것. 상하이AI랩 등이 낸 SKILLER(arXiv:2608.10538, 강한 모델이 critic·actor를 맡아 작은 모델용 스킬을 자연어 강화학습으로 뽑아주는 프레임)가 이 문제의 답을 바꿈. GPT-5.4 같은 강한 모델이 스킬을 쓰는 게 아니라 작은 모델을 위해 맞춤 스킬을 가르쳐주는 것. Qwen3.5-9B에서 최대 +20.4%p, 심지어 4B 모델이 최적화된 스킬 하나로 9B를 이겨버리는 장면도 나옴.

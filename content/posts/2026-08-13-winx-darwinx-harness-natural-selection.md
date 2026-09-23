@@ -15,11 +15,13 @@ source: arxiv
 source_url: https://arxiv.org/abs/2608.07545
 authors:
   - conanssam
-draft: false
 cover:
   relative: true
   name: fig-1-p2.png
 description: "Salesforce DarwinX 분석. 단일 계통 keep-best 방식의 경로 의존성과 교차 작업 간섭을 집단 선택과 재조합으로 해결. 모델 가중치 동결 상태로 Terminal-Bench 2.1 84.7%, 진화한 하네스의 교차 벤치마크 전이까지 확인."
+draft: true
+refactor_hub: harness-self-improve-19
+refactor_status: queued
 ---
 
 모델 가중치를 얼린 채 하네스만 진화시켜서 Terminal-Bench 2.1 avg@5 84.7%, WebArena-Infinity 실제 작업 pass@1(한 번 시도로 성공할 확률) 93.0%를 달성한 [연구](https://arxiv.org/abs/2608.07545)가 Salesforce에서 나옴. 하네스 자가진화의 두 고질병을 집단 수준의 자연선택으로 푸는 레시피가 인상적이라 정리함. DarwinX(여러 하네스 변종을 집단으로 보관하고 보존-확장 조건으로 세대를 선택해 진화시키는 프레임)가 그 방법임. 앞서 정리한 여러 하네스 진화 연구들의 문제의식이 여기서 한 덩어리로 합쳐지는 느낌임.

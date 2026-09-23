@@ -13,6 +13,9 @@ tags:
 summary: "Anthropic 공개 자료 기반 Graph Engineering 플레이북을 실무 파이프라인 관점으로 정리. NER·관계 분류·엔티티 해소·요약을 structured outputs 프롬프트 네 개로 대체하는 구조와, precision 1.00 recall 0.55라는 숫자가 말해주는 운영상의 의미."
 authors:
   - jkf87
+draft: true
+refactor_hub: eval-benchmarks-02
+refactor_status: queued
 ---
 
 지식그래프를 만들려면 예전엔 시스템 네 개가 필요했음. 개체명 인식(NER), 관계 분류기, 엔티티 해소 엔진, 요약 모델. 각자 레이블된 데이터셋과 학습 파이프라인과 평가 하네스가 필요했고, 도메인이 바뀌면 다시 학습해야 했음. Boris Cherny가 Anthropic 공개 자료를 바탕으로 정리한 Graph Engineering 플레이북은 이 네 덩어리를 **프롬프트 네 개 + structured outputs + Pydantic 스키마**(파이썬 데이터 검증 라이브러리)로 바꿈. 공식 Anthropic 문서는 아니고 학습용 노트지만, 실무 파이프라인 설계에 바로 쓸 수 있는 내용이라 정리함.

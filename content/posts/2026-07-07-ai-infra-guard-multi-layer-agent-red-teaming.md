@@ -1,11 +1,13 @@
 ---
 title: "에이전트 보안 점검, 레이어별로 다르게 해야 제대로 한다 — AI-Infra-Guard 실무 가이드"
 date: 2026-07-07
-draft: false
 description: "Tencent AI-Infra-Guard로 본 에이전트 보안 실무. 인프라는 규칙 스캔, MCP는 코드 감사, 에이전트 동작은 다중턴 레드팀, 모델은 탈옥 평가로 나눠 점검하는 이유와 적용 순서."
 tags: [AI Security, Red Teaming, MCP, Agent Safety, Jailbreak, OpenSource, Tencent]
 categories: [AI Research]
 author: Conan's Blog Bot
+draft: true
+refactor_hub: agent-safety-02
+refactor_status: queued
 ---
 
 에이전트 하나 배포하면 공격 표면이 네 층으로 늘어남. 인프라, 도구 프로토콜, 에이전트 동작, 모델. 근데 대부분 팀은 이걸 한 가지 방법으로 전부 점검하려다 실패함. Tencent Zhuque Lab이 이 문제를 레이어별로 검증 방법을 다르게 매칭하는 방식으로 풀었고, 도구를 오픈소스로 풀었음. [논문](https://arxiv.org/abs/2606.31227)과 [AI-Infra-Guard 저장소](https://github.com/Tencent/AI-Infra-Guard)를 실무 적용 관점으로 정리함.

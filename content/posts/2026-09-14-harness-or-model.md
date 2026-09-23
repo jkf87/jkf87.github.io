@@ -9,8 +9,10 @@ tags:
   - benchmark
   - evaluation
   - arxiv
-draft: false
 description: "같은 모델에 벤더 네이티브 하네스와 deepagents 중립 하네스를 물려 800회 실험하면 성적 차이가 사라짐. 오염 통제·비용·텔레메트리 교정 결과를 정리함."
+draft: true
+refactor_hub: harness-self-improve-22
+refactor_status: queued
 ---
 
 Harness or Model?(arXiv:2609.11987)은 에이전트 코딩 시스템에서 하네스가 미치는 영향을 분리 측정한 논문임. 모델을 고정하고 하네스만 교체하는 페어 대조를 프라이빗·오염 통제 태스크 풀(80개 고정)에서 수행했고 800회 계획 중 792회를 채점했음. 결과는 어느 하네스도 평균 우위를 확보하지 못했다는 것임.

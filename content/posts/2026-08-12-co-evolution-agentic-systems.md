@@ -4,6 +4,9 @@ date: 2026-08-12
 tags: [agent, co-evolution, self-evolution, harness, LLM, multi-agent, environment, open-endedness, survey]
 source: https://arxiv.org/abs/2608.10299
 description: "단일 자가진화의 한계를 Red Queen 가설로 진단하고 에이전트 간·에이전트-환경·메타 공진화로 나눈 최초의 체계적 설문. 각 단계 대표 연구와 실무적 시사점을 정리했다."
+draft: true
+refactor_hub: harness-self-improve-03
+refactor_status: queued
 ---
 
 에이전트 자가진화 연구가 갈수록 개별 요소 튜닝에 갇혀 있다는 문제의식으로 쓰인 설문이 나옴. 공진화를 최초로 체계화했다고 해서 정리함. 원문은 [arXiv:2608.10299](https://arxiv.org/abs/2608.10299).

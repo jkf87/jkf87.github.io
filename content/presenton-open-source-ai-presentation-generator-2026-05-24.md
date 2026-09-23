@@ -2,6 +2,9 @@
 title: "Presenton — 오픈소스 AI 프레젠테이션 제너레이터, SaaS 락인에서 벗어나는 법"
 date: 2026-05-24
 tags: [ai, presentation, open-source, mcp, tool]
+draft: true
+refactor_hub: dev-tools-01
+refactor_status: queued
 ---
 
 ![Presenton OG Image](images/presenton-2026-05-24/og-image.webp)

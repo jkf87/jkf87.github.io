@@ -2,7 +2,9 @@
 title: "롱호라이즌이 길어지면 RL 대신 진화 전략이 이김 — Agentic ESOpt 정리"
 date: 2026-08-22
 tags: [agent, LLM, RL, evolution-strategies, fine-tuning, long-horizon]
-draft: false
+draft: true
+refactor_hub: harness-self-improve-18
+refactor_status: queued
 ---
 
 에이전트 RL 파인튜닝은 두 벽에 부딪힘. 역전파 스택 때문에 큰 모델을 풀파라미터로 못 돌린다는 것, 그리고 롱호라이즌 트레이토리에서 크레딧 어사인먼트가 터무니없이 어렵다는 것. NUS·SUSTech·옥스포드 팀의 Agentic ESOpt(arXiv:2608.17310)는 이 지점에서 RL 대신 진화 전략(ES)을 쓰자는 논문임. 풀파라미터 ES 파인튜닝이 추론 수준의 GPU 메모리(8.41GB)로 가능하고 호라이즌이 길수록 RL 대비 우위가 커진다는 게 주장임.

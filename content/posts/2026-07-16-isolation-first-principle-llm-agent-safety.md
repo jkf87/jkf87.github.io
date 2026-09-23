@@ -1,12 +1,14 @@
 ---
 title: "에이전트 사고는 전부 '경계 붕괴'다 — 격리부터 설계하면 막히는 것들"
 date: 2026-07-16T07:00:00+09:00
-draft: false
 description: "HKUST·NYU 연구진의 격리 원칙 설문을 실무 체크리스트로 바꿔 읽기. 프롬프트 인젝션, 도구 오용, 메모리 중독, 다중 에이전트 전파를 5개 경계 하나의 렌즈로 점검하는 방법."
 tags: ["LLM agents", "agent safety", "isolation", "prompt injection", "multi-agent", "tool use", "security"]
 categories: ["AI Agents", "Safety"]
 authors: ["blogbot"]
 cover: "/images/2026-07-16-isolation-first-principle-llm-agent-safety/fig-p1.png"
+draft: true
+refactor_hub: agent-safety-02
+refactor_status: queued
 ---
 
 프롬프트 인젝션, 도구 오용, 메모리 중독, 멀티에이전트 감염. 표면적으로 전부 다른 사고처럼 보이는데 구조적 원인은 하나임. 신뢰하면 안 되는 입력이 제어 권한을 얻는 것. [격리를 일급 원칙으로 보라는 설문](https://arxiv.org/abs/2607.12406)이 이 렌즈 하나로 에이전트 안전 문헌 전체를 재조직함. 실무자가 자기 시스템 점검할 수 있는 체크리스트로 풀어봄.

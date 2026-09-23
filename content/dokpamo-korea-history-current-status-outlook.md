@@ -11,6 +11,9 @@ tags:
   - 한국 AI
   - 파운데이션 모델
 description: "독자 AI 파운데이션 모델, 이른바 독파모 사업이 어디서 시작됐고 지금 어디까지 왔는지 정리했다. 2025년 공모와 5개 정예팀 선정, 2026년 1차 평가의 독자성 논란, 모티프 추가 선정, 8월 2차 평가와 연말 최종 압축 계획, 그리고 한국형 파운데이션 모델 사업이 앞으로 어떻게 흘러갈지까지 전망한다."
+draft: true
+refactor_hub: ai-trends-misc-02
+refactor_status: queued
 ---
 
 > 참고 자료: [지디넷코리아 2025.06.27 사업 설명회](https://zdnet.co.kr/view/?no=20250627170834), [연합뉴스 2025.08.04 5개 정예팀 선정](https://www.yna.co.kr/view/AKR20250804070200017), [정책브리핑 2025.09.11 공공저작물 1180만건 개방](https://www.korea.kr/news/policyNewsView.do?newsId=148949221), [정책브리핑 2025.12.12 업무보고](https://www.korea.kr/news/policyNewsView.do?newsId=148956404), [정책브리핑 2026.01.15 1차 평가 결과](https://www.korea.kr/briefing/policyBriefingView.do?newsId=156740468), [연합뉴스 2026.01.15 네이버·NC AI 탈락](https://www.yna.co.kr/view/AKR20260115121400017), [연합뉴스 2026.02.20 모티프 추가 선정](https://www.yna.co.kr/view/AKR20260220119652017), [디지털데일리 2026.03.18 후속 전략 논의](https://m.ddaily.co.kr/page/view/2026031814411339040)

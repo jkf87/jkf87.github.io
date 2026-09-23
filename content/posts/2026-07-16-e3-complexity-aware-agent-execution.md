@@ -1,9 +1,11 @@
 ---
 title: "에이전트는 쉬운 일도 전체 프로젝트를 읽는다 — E3 낙관적 추정으로 비용 85% 줄이기"
 date: 2026-07-16T13:00:00+09:00
-draft: false
 description: "LLM 에이전트의 과잉 수행을 진단하고 난이도 추정→최소 실행→점진 확장으로 해결한 E3. 비용 85%·토큰 91% 절감에 성공률 100% 유지 결과를 실무 관점으로 정리했다."
 tags: ["LLM", "agent", "efficiency", "task-complexity", "adaptive-execution"]
+draft: true
+refactor_hub: ai-trends-misc-02
+refactor_status: queued
 ---
 
 한 줄 바꾸면 끝나는 수정에 에이전트가 프로젝트 전체를 다시 읽는 건 다 아는 문제임. 이걸 정량화하고 구조적으로 고친 논문이 나왔음. 원문은 [arXiv:2607.13034](https://arxiv.org/abs/2607.13034).

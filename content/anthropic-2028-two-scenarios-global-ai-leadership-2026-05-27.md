@@ -9,9 +9,11 @@ tags:
   - compute
   - ai-safety
   - frontier-ai
-draft: false
 enableToc: true
 description: "Anthropic이 발표한 미·중 AI 경쟁 분석 리포트. 컴퓨트 우위를 지키면 민주주의가 AI를 리드하고, 놓치면 권위주의가 앞서는 두 가지 2028년 시나리오. 수출 통제, 증류 공격 차단, Mythos Preview의 시사점까지."
+draft: true
+refactor_hub: agent-safety-03
+refactor_status: queued
 ---
 
 원본: [anthropic.com/research/2028-ai-leadership](https://www.anthropic.com/research/2028-ai-leadership)

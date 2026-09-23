@@ -1,7 +1,6 @@
 ---
 title: "에이전트 수를 늘리기 전에 볼 숫자 — 45% 임계점과 조정 세금"
 date: 2026-07-26T13:00:00+09:00
-draft: false
 tags: ["LLM", "agent", "multi-agent", "single-agent", "coordination", "benchmark", "Nature MI"]
 categories: ["AI Agent"]
 summary: "260개 구성, 6개 벤치마크, 3개 LLM 패밀리 통제 실험에서 단일 에이전트 기준 성능이 약 45%를 넘으면 멀티에이전트 조정이 오히려 성능을 깎아먹음. 아키텍처 선택의 실무 기준을 정리함."
@@ -9,6 +8,9 @@ source_url: "https://www.nature.com/articles/s42256-026-01268-y"
 authors: ["Yubin Kim", "Ken Gu", "Chanwoo Park", "Chunjong Park", "Samuel Schmidgall", "Daniel McDuff", "Xin Liu"]
 publication: "Nature Machine Intelligence"
 doi: "10.1038/s42256-026-01268-y"
+draft: true
+refactor_hub: multi-agent-02
+refactor_status: queued
 ---
 
 "에이전트를 더 붙이면 성능이 오른다"는 통념이 오래 지속됐음. 근데 프롬프트·도구·컴퓨트 예산이 제각각이라 깨끗한 비교가 없었음. Nature MI에 실린 이 연구는 처음으로 통제된 조건에서 이 질문에 답함. 결론은 단순하고 강력함. 단일 에이전트 기준 성능이 약 45%를 넘으면 에이전트를 추가하는 게 성능을 깎아먹는다는 것. 멀티에이전트 도입을 검토 중이라면 이 숫자부터 채점하고 시작해야 함.

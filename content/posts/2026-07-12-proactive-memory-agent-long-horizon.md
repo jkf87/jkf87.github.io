@@ -1,7 +1,6 @@
 ---
 title: "에이전트가 아는 걸 행동에 못 쓰는 문제 — 메모리는 저장이 아니라 개입이다"
 date: 2026-07-12
-draft: false
 tags:
   - LLM-agent
   - memory
@@ -15,6 +14,9 @@ categories:
 description: "Meta의 사기억 에이전트 논문을 실무에 적용하는 법. 장기 작업에서 에이전트가 조건을 잊고 같은 실수를 반복하는 '행동 상태 붕괴'를 메모리 에이전트의 선택적 개입으로 잡는 구조와, 내 하네스에 붙이는 방법."
 aliases:
   - /posts/2026-07-12-proactive-memory-agent-long-horizon
+draft: true
+refactor_hub: agent-memory-07
+refactor_status: queued
 ---
 
 에이전트를 오래 돌리다 보면 이상한 실수가 나옴. 처음에 분명히 인지했던 요구사항을 어기고, 방금 실패한 명령을 똑같이 다시 치고, 한 시간 전에 진단해 둔 오류를 새것처럼 다시 만남. Meta AI가 이걸 **행동 상태 붕괴(behavioral state decay)**라고 이름 붙이고, 해결책을 제시한 [논문](https://arxiv.org/abs/2607.08716)이 나옴. 핵심은 메모리를 저장 문제가 아니라 개입 문제로 보는 것. 실무 적용 관점으로 풀어봄.

@@ -2,8 +2,10 @@
 title: "세계의 규칙은 코드가 지키고 화면은 비디오 모델이 그린다 — 월드 브레인 구조"
 date: 2026-08-29
 tags: [paper-review, world-model, coding-agent, video-model]
-draft: false
 description: "Code World Model 분석. 코딩 에이전트가 코드로 월드 상태를 갱신하고 프록시 비디오를 통해 비디오 모델이 시각을 렌더링하는 구조. GTA V 5시간 데이터만으로 파인튜닝해도 강한 일반화가 나온 이유와 한계."
+draft: true
+refactor_hub: coding-agents-03
+refactor_status: queued
 ---
 
 세상에 상호작용하는 게임 월드를 통째로 생성하는 모델들이 쏟아지는데 다들 비슷한 벽에 부딪힘. 화면은 그럴듯한데 세계의 규칙이 안 지켜진다는 것. [Code World Model](https://arxiv.org/abs/2608.25927)은 이 문제에 색다른 답을 냄. 세계의 진화는 코딩 에이전트가 코드로 관리하고 화면 구현은 비디오 모델이 맡는 것. 논문은 이 코딩 에이전트를 "월드 브레인"이라 부름. 규칙과 렌더링의 분리라는 관점이 에이전트 설계 일반에도 적용돼서 정리함.

@@ -12,6 +12,9 @@ tags:
   - evaluation
   - living-world
   - tool-use
+draft: true
+refactor_hub: harness-self-improve-07
+refactor_status: queued
 ---
 
 생활 보조 에이전트가 정말 필요한 능력은 사용자가 시키기 전에 상황을 확인하고 움직이는 것임. 근데 기존 벤치마크는 단발적 요청을 정적 환경에서 평가해서 이걸 못 재줬음. VibeLifeBench는 200개 작업, 10개 일상 도메인, 22개 모의 서비스로 능동성과 장기 일관성을 측정함. 작업당 시뮬레이션 호라이즌 중위값이 29일임.

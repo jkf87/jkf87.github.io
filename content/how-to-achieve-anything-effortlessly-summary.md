@@ -9,6 +9,9 @@ tags:
   - 흐름
 description: "유튜브 영상 How to Achieve Anything Effortlessly 핵심 요약. 성취를 막는 내부 난류를 줄이고 Light → Level → Lean 프레임으로 흐름 기반 실행을 만드는 실전 포인트를 정리했다."
 slug: "how-to-achieve-anything-effortlessly-summary"
+draft: true
+refactor_hub: archive-offtopic-01
+refactor_status: archived
 ---
 
 > 원문 영상: [How to Achieve Anything Effortlessly](https://youtu.be/xL77Py39JQA?si=M_qxhN_xkFjJoUgO)

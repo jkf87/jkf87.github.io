@@ -10,6 +10,9 @@ tags:
   - 분산학습
   - 오픈소스
 description: DeepSeek가 MoE 모델용 GPU 통신 라이브러리 DeepEP를 오픈소스로 공개. all-to-all dispatch/combine 커널, FP8 지원, H800에서 153GB/s NVLink·43GB/s RDMA 처리. MoE 학습/추론의 병목을 직접 푼 결과물임.
+draft: true
+refactor_hub: model-releases-04
+refactor_status: queued
 ---
 
 1\. DeepSeek가 **DeepEP**라는 라이브러리를 오픈소스로 풀었음.

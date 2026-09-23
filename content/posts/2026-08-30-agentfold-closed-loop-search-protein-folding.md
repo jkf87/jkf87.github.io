@@ -7,8 +7,10 @@ tags:
   - protein-folding
   - mcts
   - scientific-ml
-draft: false
 description: "LLM 멀티 에이전트가 ESMFold 계열 코드베이스를 직접 수정·학습·평가하며 단백질 접힘 예측을 개선한 AgentFold. 80개 변형 탐색의 구조와 하네스 설계 교훈을 정리."
+draft: true
+refactor_hub: coding-agents-04
+refactor_status: queued
 ---
 
 LLM 멀티 에이전트가 단백질 접힘 예측 모델의 코드를 직접 고치고 학습시키고 평가하는 닫힌 루프가 실제 결과를 냄. [AgentFold](https://arxiv.org/abs/2608.26747). 성능 자체보다 증거 구조가 하네스 설계에 참고가 돼서 정리함.

@@ -4,7 +4,9 @@ date: 2026-07-21T07:00:00+09:00
 tags: [agent, RL, MCP, tool-use, long-horizon, LLM]
 source_url: https://arxiv.org/abs/2607.15660
 description: "422개 실제 MCP 환경과 도구 의존성 그래프 기반 장기 과제 합성, 턴별 크레딧 할당 TARA로 에이전트 RL을 스케일링한 ToolVerse. 세 벤치마크에서 일관된 향상을 확인한 설계를 정리했다."
-draft: false
+draft: true
+refactor_hub: agent-rl-03
+refactor_status: queued
 ---
 
 에이전트 RL 연구가 검색·코드 실행 한두 개 환경에 갇혀 있다는 문제의식에서 출발한 프레임워크가 나옴. MCP 환경 422개로 훈련을 스케일링한 사례라 정리함. 원문은 [arXiv:2607.15660](https://arxiv.org/abs/2607.15660).

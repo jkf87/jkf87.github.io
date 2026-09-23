@@ -10,6 +10,9 @@ tags:
   - 로컬AI
   - Quartz
 description: "Gemma 4 소개 영상을 바탕으로 Apache 2.0 라이선스 전환, 모델 라인업, 하이브리드 어텐션 구조, 벤치마크, 로컬 OpenCode 실험까지 핵심만 정리했다."
+draft: true
+refactor_hub: model-releases-03
+refactor_status: queued
 ---
 
 > 원본 영상: [First Look at Google's Gemma 4: Architecture Breakdown and Real Testing](https://www.youtube.com/watch?v=LTYF2UNXG2M)

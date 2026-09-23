@@ -3,7 +3,6 @@ title: "에이전트에 과거 경험을 그대로 넣으면 성능이 떨어짐
 pubDatetime: 2026-07-31T19:00:00+09:00
 modDatetime: 2026-07-31T19:00:00+09:00
 featured: true
-draft: false
 tags:
   - agent
   - memory
@@ -19,6 +18,9 @@ tags:
   - loop
   - tool-use
 description: "MemHarness는 검색된 과거 경험을 현재 상황에 맞게 비판하고 재구성하는 단계를 GRPO로 훈련해 부정 전이를 해결함. 7B 모델이 Gemini-2.5-Pro를 크게 앞지르고, 메모리를 안 넣는 게 나은 경우가 있다는 사실도 증명함."
+draft: true
+refactor_hub: agent-memory-09
+refactor_status: queued
 ---
 
 에이전트에 "예전에 성공한 경험"을 넣어주면 도움이 될 것 같지만 실제론 자주 독이 됨. ALFWorld(텍스트 명령으로 가상 가정집에서 물건을 찾아 옮기는 일상 과제를 모은 에이전트 벤치마크)에서 apple을 refrigerator에 넣어 성공한 경험이 현재 과제가 tomato를 microwave에 넣기일 때 그대로 재생되면 에이전트는 refrigerator를 계속 찾아다님. 검색은 의미 관련성 기준으로 되는데 행동은 상태 의존적이라서 벌어지는 틈임. 논문은 이걸 부정 전이라 부름. MemHarness는 검색과 행동 사이에 "비판하고 재구성하는" 단계를 끼워 넣어 이걸 해결함. 결과가 강렬함. 7B가 Gemini-2.5-Pro를 크게 앞질렀고, 메모리만 넣은 버전은 메모리를 안 넣은 것보다 못했다는 것까지 증명됨.

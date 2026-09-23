@@ -2,7 +2,6 @@
 title: "GPT-5.5도 의도가 6번만 바뀌면 무너짐 — 진화하는 사용자 의도 추적 실험"
 slug: 2026-07-26-llm-lost-evolving-user-intent
 date: 2026-07-26T07:00:00+09:00
-draft: false
 description: "단일 턴 벤치마크 99%가 의도 전환 6회 만에 80%로 추락함. 정적 평가가 못 보는 에이전트 약점과 의도 상태를 명시적으로 관리해야 하는 이유를 정리함."
 tags:
   - LLM
@@ -30,6 +29,9 @@ cover:
   alt: "LLMs get lost in evolving user intent - GPT-5.5 성능 추락 그래프"
   relative: false
   hidden: false
+draft: true
+refactor_hub: harness-self-improve-07
+refactor_status: queued
 ---
 
 사용자가 대화하면서 요구를 바꾸는 건 예외가 아니라 일상임. 근데 그 상황에서 모델이 얼마나 무너지는지 정적 벤치마크는 전혀 못 봄. Microsoft Research가 그 빈틈을 측정했음. 원문은 [arXiv:2607.20734](https://arxiv.org/abs/2607.20734).

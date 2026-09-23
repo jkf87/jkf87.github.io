@@ -12,6 +12,9 @@ tags:
 description: "40대 건강검진에서 중성지방이 200mg/dL를 넘으면 단순히 전날 회식 탓으로만 넘기기 애매함. 질병관리청과 서울아산병원 자료를 바탕으로 왜 생활 조정과 재확인이 필요한지 정리함."
 aliases:
   - 40s-triglycerides-200-not-just-cheat-day-2026-04-27/index
+draft: true
+refactor_hub: archive-health-01
+refactor_status: archived
 ---
 
 건강검진표에서 중성지방이 200으로 찍히면 제일 먼저 나오는 말이 있음. 전날 고기 먹어서 그런가, 술 마셔서 그런가 하는 말임. 실제로 식사 영향은 큼. 근데 40대에서는 그 한마디로 끝내기엔 숫자가 가볍지 않음.

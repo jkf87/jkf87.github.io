@@ -12,6 +12,9 @@ tags:
   - evaluation
   - persistence
   - recursive-self-improvement
+draft: true
+refactor_hub: agent-memory-05
+refactor_status: queued
 ---
 
 에이전트가 이전 세션 경험을 저장하고 다음 세션에서 더 나은 행동을 하는지, 통제된 조건에서 제대로 측정한 벤치마크가 없었음. PAST-Bench가 그걸 처음 한다는 것 자체가 의미임. 26개 시나리오, 204개 에피소드로 같은 작업 패밀리 안에서 경험 저장 기회를 주고 재사용을 검사하는 구조임.

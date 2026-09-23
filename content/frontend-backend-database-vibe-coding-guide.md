@@ -10,6 +10,9 @@ tags:
   - 서버
   - API
 description: "프론트엔드, 백엔드, 데이터베이스의 전체 시스템 구조를 비전공자도 이해할 수 있도록 쉽게 정리했습니다. 기술노트 알렉의 바이브코딩 영상을 바탕으로 웹/앱 개발의 핵심 흐름을 한눈에 파악해 보세요."
+draft: true
+refactor_hub: coding-agents-03
+refactor_status: queued
 ---
 
 # 프론트엔드 백엔드 데이터베이스 전체 구조를 한눈에 이해하는 바이브코딩 가이드

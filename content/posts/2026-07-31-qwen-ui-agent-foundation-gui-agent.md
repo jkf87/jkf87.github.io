@@ -1,10 +1,12 @@
 ---
 title: "Qwen-UI-Agent: 27B 모델이 GPT-5.6·Opus 4.8을 이기는 방법 — 실기기·크로스플랫폼·하이브리드 GUI+CLI 에이전트의 등장"
 date: 2026-07-31T16:05:00+09:00
-draft: false
 summary: "Alibaba Qwen 팀의 Qwen-UI-Agent는 27B 파라미터로 모바일·데스크톱·웹·DeepSearch를 아우르는 범용 GUI 에이전트다. 실기기 100대 이상의 런타임, 10,000개 동시 환경의 온라인 RL, GUI+CLI 하이브리드 액션 공간, 그리고 알림 기반 프로액티브 서비스 하네스까지 — 이 기술보고서가 제시하는 '차세대 GUI 에이전트'의 설계 청사진을 뜯어본다."
 tags: ["agent", "GUI", "LLM", "harness", "automation", "tool-use", "RL", "Qwen", "Alibaba", "computer-use", "mobile-agent", "cross-platform", "loop"]
 cover: ""
+draft: true
+refactor_hub: web-gui-agents-01
+refactor_status: queued
 ---
 
 **27B 모델이 실기기 모바일에서 92.2%의 성공률을 기록하며 GPT-5.6 Sol(85.4%), Claude Opus 4.8(84.7%), Seed 2.1 Pro(88.7%)를 모두 제쳤다.** 컴퓨터 사용(OSWorld)에서는 Opus 4.8(83.4%) 바로 다음인 79.5%, 웹 브라우저(WebArena)에서는 73.6%로 1위. 이것이 Alibaba Qwen 팀이 공개한 **Qwen-UI-Agent**의 성적표다.

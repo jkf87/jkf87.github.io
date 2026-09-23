@@ -11,6 +11,9 @@ tags:
 description: "AI 하네스에서 가장 어려운 verifier 설계 문제. LLM-as-judge의 함정을 피하고, 묵시지를 루브릭으로 변환하는 실용적 절차."
 aliases:
   - tacit-to-paper-verifier-design-2026-05-09/index
+draft: true
+refactor_hub: harness-self-improve-16
+refactor_status: queued
 ---
 
 ## 1. 왜 이 글이 필요한가

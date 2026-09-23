@@ -1,7 +1,6 @@
 ---
 title: "에이전트 메모리를 모델 파라미터 안에 넣는다 — 메모리 파운데이션 모델 Metis 첫 검증"
 date: 2026-07-31T22:00:00+09:00
-draft: false
 tags:
   - agent
   - memory
@@ -15,6 +14,9 @@ tags:
   - loop
   - tool-use
 description: "외부 RAG 메모리의 최적화 단절·비용 문제를 지적하고 기억을 순방향 패스로 갱신하는 메모리 파운데이션 모델 Metis를 정리했다. remember·forget·update·reflect 4연산 학습 설계와 실무적 시사점."
+draft: true
+refactor_hub: agent-memory-03
+refactor_status: queued
 ---
 
 에이전트 메모리가 전부 외부 RAG로 구현되어 있는데, 이걸 모델 안으로 밀어넣은 첫 사례가 나옴. Metis(기억 저장·갱신을 모델 파라미터 내부에서 순방향 계산만으로 수행하게 훈련한 4B 규모 메모리 파운데이션 모델)가 그 주인공임. 기억을 컨텍스트가 아니라 파라미터에 넣는 방향성이라 정리해둘 가치가 큼. 원문은 [arXiv:2607.26760](https://arxiv.org/abs/2607.26760).

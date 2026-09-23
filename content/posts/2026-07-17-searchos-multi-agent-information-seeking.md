@@ -1,7 +1,6 @@
 ---
 title: "검색 에이전트가 같은 막다른 길을 반복한다 — SearchOS가 상태를 시스템으로 빼낸 방식"
 date: 2026-07-17
-draft: false
 description: "다중 에이전트 검색 실패 원인을 대화 이력 의존에서 찾고, 관계형 스키마·증거 그래프·실패 메모리·미들웨어 제어로 해결한 SearchOS를 실무 아키텍처 관점으로 정리했다."
 tags:
   - AI
@@ -11,6 +10,9 @@ tags:
   - information-seeking
   - LLM
 cover: /images/2026-07-17-searchos-multi-agent-information-seeking/fig-2-p4.png
+draft: true
+refactor_hub: multi-agent-02
+refactor_status: queued
 ---
 
 검색 에이전트가 긴 작업에서 길을 잃는 건 모델 능력 문제가 아니라 상태 관리 문제라는 관점의 논문이 나왔음. 계획·증거·실패 기록이 대화 이력이라는 휘발성 매체에만 있으니 잃어버린다는 것. 원문은 [arXiv:2607.15257](https://arxiv.org/abs/2607.15257).

@@ -5,6 +5,9 @@ tags: [openclaw, AI, 업무자동화, 업데이트, 플러그인]
 description: "오픈클로 5.2~5.3 업데이트 핵심 정리. 파일 전송 플러그인 신규 추가, 게이트웨이 시작 속도 개선, 플러그인 npm 외부화, 메시징 채널 전면 수정, macOS 설치 복구까지."
 slug: openclaw-2026-5-2-update
 category: AI도구
+draft: true
+refactor_hub: openclaw-updates-02
+refactor_status: queued
 ---
 
 ![오픈클로 2026.5.2~5.3 업데이트](./images/openclaw_52_hero.png)

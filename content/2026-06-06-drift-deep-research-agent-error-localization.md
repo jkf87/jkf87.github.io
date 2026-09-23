@@ -1,7 +1,6 @@
 ---
 title: "딥 리서치 에이전트는 어디서 틀리는가? DRIFT: 스팬 수준 궤적 오류 국소화 프레임워크"
 date: 2026-06-06
-draft: false
 tags:
   - AI-Agent
   - Deep-Research
@@ -9,6 +8,9 @@ tags:
   - LLM
   - Benchmark
   - Auditing
+draft: true
+refactor_hub: research-agents-01
+refactor_status: queued
 ---
 
 ## 한눈에 보기

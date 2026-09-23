@@ -8,6 +8,9 @@ tags:
   - 뇌 건강
   - 인지 저하
 description: 40대에 이름이 안 떠오르고 약속을 잊는 건 건망증일까, 인지 저하의 신호일까. 구별법과 뇌 건강 회복 방법을 정리함.
+draft: true
+refactor_hub: archive-health-01
+refactor_status: archived
 ---
 
 # 40대 기억력 감퇴, 단순 건망증이라 방치했다간 큰일남

@@ -7,7 +7,9 @@ tags:
   - chatgpt
   - memory
   - dreaming
-draft: false
+draft: true
+refactor_hub: agent-memory-03
+refactor_status: queued
 ---
 
 당신이 어제 했던 말을 AI가 기억하지 못한다면, 그건 대화가 아니다. 문서 작성이다. OpenAI가 이 문제를 푸는 방식이 꽤 흥미롭다. **AI가 당신을 이해하기 위해 밤새 꿈을 꾼다.**

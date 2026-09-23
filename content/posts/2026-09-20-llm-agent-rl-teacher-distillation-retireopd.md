@@ -8,8 +8,10 @@ tags:
   - distillation
   - paper-summary
   - agent-harness
-draft: false
 description: "Qwen2.5 1.5B~7B 에이전트에 GRPO+온폴리시 증류를 함께 쓰다가, 티처-스튜던트 격차가 멈추고 성공률이 티처의 90%에 도달하면 증류를 끊는 RetireOPD 정리. ALFWorld +14.1~18.8pt, WebShop +11.8~19.0pt."
+draft: true
+refactor_hub: harness-self-improve-18
+refactor_status: queued
 ---
 
 ## 결론 먼저

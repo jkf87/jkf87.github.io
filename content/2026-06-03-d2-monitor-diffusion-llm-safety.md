@@ -9,6 +9,9 @@ tags:
   - llm-safety
 source: huggingface
 source_url: https://huggingface.co/papers/2605.25893
+draft: true
+refactor_hub: agent-safety-03
+refactor_status: queued
 ---
 
 자동회귀(Autoregressive) LLM이 아닌, Diffusion 방식의 LLM이 점점 늘어나고 있습니다. 생성 속도가 빠르고 병렬 처리가 가능하니까요. 하지만 "안전성 모니터링"은 거의 연구가 없었습니다. 옥스퍼드 대학 연구진이 발표한 D²-Monitor는 Diffusion LLM의 위험한 출력을 실시간으로 감지하는 최초의 체계적 프레임워크입니다. 핵심 개념은 "망설임(hesitation)"입니다.

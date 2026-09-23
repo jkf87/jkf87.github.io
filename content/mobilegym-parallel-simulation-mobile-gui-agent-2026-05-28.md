@@ -11,6 +11,9 @@ tags:
 slug: mobilegym-parallel-simulation-mobile-gui-agent-2026-05-28
 source: huggingface
 source_url: https://arxiv.org/abs/2605.26114
+draft: true
+refactor_hub: web-gui-agents-01
+refactor_status: queued
 ---
 
 모바일 GUI 에이전트 연구에서 가장 성가신 문제 하나는 "실험 환경"이다. Android 에뮬레이터를 띄우려면 자원을 많이 먹고, 한 대의 머신에서 동시에 여러 에이전트를 돌리기 어렵다. 평가도 골칫거리인데, 에이전트가 앱을 올바르게 조작했는지 판정하려면 VLM 기반 judge를 돌려야 하니 비용과 비결정성이 따라온다.

@@ -11,10 +11,12 @@ tags:
   - 중년건강
 description: "40대 코골이는 피곤해서만 생기지 않음. 수면무호흡, 낮 졸림, 아침 두통, 목둘레 신호까지 같이 보면 놓치지 않음."
 cover: ../images/40s-snoring-sleep-apnea-warning-2026-05-17/hero.jpg
-draft: false
 noindex: true
 aliases:
   - 40s-snoring-sleep-apnea-warning-2026-05-17/index
+draft: true
+refactor_hub: archive-health-01
+refactor_status: archived
 ---
 
 # 40대 코골이, 잠버릇으로 넘기면 안 되는 이유

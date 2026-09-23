@@ -6,8 +6,10 @@ tags:
   - llm
   - cyber-defense
   - architecture
-draft: false
 description: "SIEM 원본 로그를 LLM에 직접 넣는 구성이 라이브 네트워크에서 무너졌고, 행위자 단위 IOC로 집계하는 신호 추출 계층을 앞세우니 같은 모델로 18,000배 싼 비용에 정확도 100%. Tier 1/Tier 2 계층 방어 구조 정리."
+draft: true
+refactor_hub: ai-trends-misc-01
+refactor_status: queued
 ---
 
 공격은 기계 속도로 움직임 — 평균 브레이크아웃 시간 29분, 최단 27초. 방어 자동화는 탐지와 실행까지만 되고 "어떤 경보가 진짜인지 판단하는" 단계는 사람 몫이었음. [BlueSTAR](https://arxiv.org/abs/2609.11852)가 이 판단 단계를 라이브 사이버 레인지 2곳에서 검증함. 고처리량 데이터에 LLM을 붙이는 구조 문제라 정리함.

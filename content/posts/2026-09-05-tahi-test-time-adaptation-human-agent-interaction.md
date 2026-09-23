@@ -1,7 +1,6 @@
 ---
 title: "사용자가 결과물을 고치는 기록 자체가 학습 데이터임 — TAHI 개인화 적응 정리"
 date: 2026-09-05
-draft: false
 tags:
   - agent
   - personalization
@@ -9,6 +8,9 @@ tags:
   - test-time-adaptation
   - evaluation
 description: "사람이 에이전트 결과를 고치는 반복 상호작용 데이터만으로 에이전트를 개인별 기준에 맞춰 적응시키는 TAHI. 30명 600 태스크에서 성공률 4.5~20.9%p 개선, 진화형 루브릭이 LLM·인간 단독보다 실패를 16.0~22.3%p 더 많이 잡아낸 구조를 정리함."
+draft: true
+refactor_hub: eval-benchmarks-03
+refactor_status: queued
 ---
 
 TAHI(Test-time adaptation through Human-agent Interaction)는 사람이 에이전트 산출물을 고치는 세션 간 상호작용 기록을 에이전트 컨텍스트와 가중치에 넣어 개인 전문가의 기준으로 적응시키는 방법임. 사전에 다 적을 수 없는 개인별 평가 기준을 상호작용 중에 루브릭(평가 항목과 기준을 적어둔 체크리스트) 모듈로 굳혀서 재사용한다는 게 핵심임. 글쓰기·데이터 시각화 두 도메인, 30명, 총 600 태스크로 검증했음.

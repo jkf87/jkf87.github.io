@@ -13,6 +13,9 @@ tags:
 description: "40대에 흔한 대사증후군은 증상이 거의 없어 더 늦게 발견됨. 허리둘레·혈압·혈당·중성지방·HDL 숫자를 먼저 보는 법을 정리함."
 aliases:
   - 40s-metabolic-syndrome-2026-05-07/index
+draft: true
+refactor_hub: archive-health-01
+refactor_status: archived
 ---
 
 # 40대 대사증후군, 체중보다 먼저 봐야 할 숫자 5개

@@ -1,11 +1,13 @@
 ---
 title: "에이전트 실패의 진짜 원인은 모델이 아니라 컨텍스트임 — 7기준 측정 실험"
 date: 2026-07-20T16:00:00+09:00
-draft: false
 summary: "컨텍스트만 구조화해서 치명적 실패를 68% 줄일 수 있었음. 컨텍스트 품질 7기준이 행동 신뢰성의 선행 지표라는 실험을 실무 관점으로 정리함."
 tags: ["agent", "context-engineering", "LLM", "harness", "evaluation", "reliability"]
 categories: ["AI Agent"]
 source_url: "https://arxiv.org/abs/2607.14275"
+draft: true
+refactor_hub: ai-trends-misc-01
+refactor_status: queued
 ---
 
 에이전트가 실패하면 모델 탓부터 하게 됨. 근데 같은 모델인데 컨텍스트만 바꿨더니 행동이 극적으로 달라지는 실험이 있음. 원문은 [arXiv:2607.14275](https://arxiv.org/abs/2607.14275).

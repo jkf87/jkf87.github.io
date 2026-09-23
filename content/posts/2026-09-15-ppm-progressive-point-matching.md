@@ -6,8 +6,10 @@ tags:
   - LLM
   - reward
   - math-reasoning
-draft: false
 description: "Progressive Point Matching 분석. 참조 트랙토리의 중간 추론 지점 도달을 세그먼트별로 보상해 희소 보상의 지수적 신호 소멸을 회복. 문제당 참조 해답 1개만 필요하고 최적 정책 일치가 증명됨. 성공률 0.004 문제 세트에서만 학습에 성공."
+draft: true
+refactor_hub: agent-rl-04
+refactor_status: queued
 ---
 
 LLM 강화학습의 표준은 최종 정답만 보상하는 희소 결과 보상임. 이 방식은 문제가 길어질수록 성공 트랙토리가 지수적으로 희귀해져서 학습 신호가 죽음. 하위 문제 n개를 각각 p 확률로 풀면 전체 성공 확률은 p^n이라 시뮬레이션에서 성공 샘플 1개를 관측하려면 1,200만 개 이상의 샘플이 필요한 설정도 나옴. Berkeley/CMU의 [PPM](https://arxiv.org/abs/2609.07303)은 참조 트랙토리 하나에서 뽑은 중간 추론 지점(reasoning points)에 도달했는지를 세그먼트 단위로 측정해서 밀도 보상을 만들고, 희소 보상 대비 지수적으로 빠른 학습을 이론과 실험으로 보여줌.

@@ -13,6 +13,9 @@ tags:
 description: "뉴욕대 AI4CE 연구실이 발표한 EgoPush는 이동 로봇이 카메라 하나만으로 여러 물체를 밀어서 재배치하는 프레임워크다. 글로벌 맵 없이, 외부 트래킹 없이, 1인칭 시점만으로 동작한다."
 aliases:
   - egopush-egocentric-robot-rearrangement-2026-05-04/index
+draft: true
+refactor_hub: agent-rl-01
+refactor_status: queued
 ---
 
 # EgoPush: 로봇이 자기 눈으로만 물건을 밀어 재배치하는 뉴욕대 연구

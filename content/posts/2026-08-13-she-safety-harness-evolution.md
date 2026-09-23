@@ -12,8 +12,10 @@ tags:
   - attribution
   - loop
   - automation
-draft: false
 description: "SHE는 안전 하네스를 네 가지 편집 가능한 아티팩트로 분해하고, 궤적에서 진단한 안전 실패를 귀인해 해당 아티팩트만 국소 수정하는 진화 루프를 돌림. 공격 성공률 3.1배 감소, 크로스모델 전이도 확인됨. 안전 하네스 운영의 실무 교훈을 정리함."
+draft: true
+refactor_hub: harness-self-improve-03
+refactor_status: queued
 ---
 
 에이전트 안전은 모델 가중치만의 문제가 아님. 하네스, 그러니까 컨텍스트 관리·메모리·도구 접근·권한 제어를 담당하는 실행 계층이 안전의 상당 부분을 결정함. 근데 기존 안전 메커니즘은 배포 후 고정돼서 새로운 위험에 적응을 못 함. SHE(Safety Harness Evolution)는 이 문제를 "하네스를 진화시키자"로 품. 모델은 그대로 두고 궤적에서 안전 실패를 진단해 하네스만 고쳐나가는 루프임.

@@ -11,6 +11,9 @@ tags:
   - paper-review
 description: "AKBE와 MUSE-Autoskill 두 논문을 함께 읽고, 에이전트 학습에서 RL이 도구 호출 경계와 재사용 가능한 스킬 생애주기를 어떻게 최적화하는지 정리합니다."
 image: images/agent-rl-optimization-akbe-muse-2026-05-28/akbe-framework.png
+draft: true
+refactor_hub: agent-memory-03
+refactor_status: queued
 ---
 
 원문:

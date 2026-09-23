@@ -11,6 +11,9 @@ tags:
   - agent-harness
   - sebastian-raschka
 description: "Sebastian Raschka의 Components of A Coding Agent를 바탕으로, 코딩 에이전트가 일반 챗봇보다 더 강력하게 느껴지는 이유를 6가지 하네스 구조 중심으로 정리했습니다."
+draft: true
+refactor_hub: harness-self-improve-14
+refactor_status: queued
 ---
 
 최근 읽은 글 중에서, “왜 코딩 에이전트는 일반 챗봇보다 더 똑똑하게 느껴질까?”라는 질문에 가장 잘 답해주는 글 하나를 꼽자면 저는 Sebastian Raschka의 **_Components of A Coding Agent_**를 고르고 싶습니다.

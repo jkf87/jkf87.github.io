@@ -8,8 +8,10 @@ tags:
   - swe-bench
   - test-generation
   - arxiv
-draft: false
 description: "패치와 그걸 검증하는 테스트를 같은 에이전트가 만들면 오류가 공명해서 가짜 확신이 생김. ExecCritic은 Test와 Repair 에이전트를 분리하고 테스트를 동결한 뒤 실행 피드백으로 수정하게 함. SWE-bench Verified 72.6% 달성 과정과 실무 교훈을 정리함."
+draft: true
+refactor_hub: coding-agents-04
+refactor_status: queued
 ---
 
 코딩 에이전트의 실행 피드백 루프에서 가장 위험한 지점을 찌른 논문이 나옴. 패치와 그 패치를 검증하는 테스트를 같은 에이전트가 같은 트라젝토리에서 만들면 두 오류가 서로 공명해서 가짜 확신이 생긴다는 것. ExecCritic(arXiv 2609.09133, Microsoft Research·UW-Madison·Georgia Tech)이 이 문제를 역할 분리로 풀어서 SWE-bench Verified(실제 GitHub 이슈 기반 코딩 벤치마크 중 사람이 검증한 500문제 서브셋) 72.6%, 베이스라인 대비 +11.4포인트를 냈음. 평가 시점에 stronger model도 Oracle(정답 공식 테스트) 피드백도 안 쓰고.

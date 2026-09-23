@@ -12,6 +12,9 @@ tags:
 source: huggingface
 source_url: https://huggingface.co/papers/2608.13546
 paper_url: https://arxiv.org/html/2608.13546v1
+draft: true
+refactor_hub: agent-memory-08
+refactor_status: queued
 ---
 
 인터랙티브 월드 모델은 영구 기억, 즉각 반응, 장시간 생성을 동시에 만족해야 하는데 셋이 충돌함. [Evoke](https://arxiv.org/html/2608.13546v1)는 이걸 상태를 어디 두는가라는 시스템 설계 문제로 바꿔서 품. "상태를 외부로 내보내라"는 원칙이 에이전트 설계와 동일해서 정리함.

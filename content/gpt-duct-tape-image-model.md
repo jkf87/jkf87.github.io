@@ -7,6 +7,9 @@ tags:
   - 이미지생성
   - GPT
 description: "OpenAI가 LM Arena에서 익명으로 테스트 중인 차세대 이미지 모델 duct-tape 시리즈가 공개되었습니다. 브랜드 광고부터 옛날 자료 복원, 한국어 텍스트 렌더링까지, 기존 이미지 생성 AI의 한계를 완전히 뛰어넘은 결과물들을 정리합니다."
+draft: true
+refactor_hub: model-releases-04
+refactor_status: queued
 ---
 
 ## duct-tape 시리즈란?

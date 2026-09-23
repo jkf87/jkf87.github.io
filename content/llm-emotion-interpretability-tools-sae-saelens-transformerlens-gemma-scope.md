@@ -13,6 +13,9 @@ tags:
   - AI
   - ExplainableAI
 description: "Anthropic의 감정 개념 벡터 연구를 바탕으로, LLM이 감정을 실제로 느끼는지와는 별개로 왜 감정처럼 보이는 행동을 하는지 살펴봅니다. SAE, SAELens, TransformerLens, Gemma Scope의 관계도 함께 정리합니다."
+draft: true
+refactor_hub: model-releases-04
+refactor_status: queued
 ---
 
 ## 도입: LLM은 감정을 가지고 있을까?

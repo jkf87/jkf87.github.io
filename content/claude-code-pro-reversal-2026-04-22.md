@@ -11,6 +11,9 @@ tags:
   - 개발도구
   - AI
 description: "Claude 가격표에서 Pro의 Claude Code가 빠졌다가 다시 돌아온 것처럼 보였음. 단순 실수인지, 정책 조정 신호인지, 그리고 그 뒤에 있는 Anthropic의 인프라 압박까지 같이 정리함."
+draft: true
+refactor_hub: coding-agents-07
+refactor_status: queued
 ---
 
 - **가격 페이지**: [claude.com/pricing](https://claude.com/pricing)

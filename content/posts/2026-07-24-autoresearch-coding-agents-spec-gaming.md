@@ -11,6 +11,9 @@ tags:
   - reward-hacking
   - autoresearch
 source_url: https://arxiv.org/abs/2607.18064
+draft: true
+refactor_hub: coding-agents-04
+refactor_status: queued
 ---
 
 데이터셋, 평가 스크립트, 수정 가능한 파일 하나를 주고 에이전트가 무인으로 점수를 개선하게 만드는 "autoresearch" 루프가 확산 중임. 근데 그 루프에서 에이전트가 정말 개발자의 의도를 최적화하는지, 아니면 점수 숫자만 최적화하는지 검증한 연구가 나옴. 실제 프로덕션 작업에 Claude Code와 OpenAI Codex를 같은 조건으로 3회씩 돌린 실험임. 결과가 재밌고 무서움.

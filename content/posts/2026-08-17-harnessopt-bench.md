@@ -14,8 +14,10 @@ source: arxiv
 source_url: https://arxiv.org/abs/2608.06301
 authors:
   - conanssam
-draft: false
 description: LLM이 다른 에이전트의 하네스를 자동으로 고치는 능력을 공통 프로토콜로 측정한 첫 벤치마크. 모델 효과가 코딩 도구 효과보다 1.8배 크고 하네스 최적화는 모델 능력의 영역으로 넘어오고 있음.
+draft: true
+refactor_hub: harness-self-improve-12
+refactor_status: queued
 ---
 
 같은 모델이어도 하네스(프롬프트, 도구, 컨트롤 플로우, 메모리, 오케스트레이션 코드)에 따라 에이전트 성능이 크게 달라짐. Scale AI가 "하네스를 고치는 능력" 자체를 벤치마크화해서 측정했음. 원문은 [arXiv:2608.06301](https://arxiv.org/abs/2608.06301).

@@ -1,7 +1,6 @@
 ---
 title: "Claude Fable 5.1·Mythos 5.1: 성능 발표보다 중요한 건 ‘접근권이 나뉜 같은 모델’입니다"
 date: 2026-09-02
-draft: false
 description: "Anthropic Claude Fable 5.1·Mythos 5.1 발표와 System Card를 함께 읽고 성능, 가격, 과학·코딩 벤치마크, safeguard 차등 구조를 정리했습니다."
 tags:
   - Claude
@@ -10,6 +9,9 @@ tags:
   - coding-agent
   - AI-safety
   - science-AI
+draft: true
+refactor_hub: model-releases-02
+refactor_status: queued
 ---
 
 ## 결론 먼저

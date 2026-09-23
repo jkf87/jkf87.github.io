@@ -11,6 +11,9 @@ tags:
 description: "OpenClaw v2026.5.27 릴리즈 핵심 정리. 보안 경계 강화, Codex OAuth 런타임 안정화, Pixverse·DeepInfra·VLLM 프로바이더 확장, 텔레그램/Slack/Discord 채널 안정성 개선까지."
 aliases:
   - openclaw-2026-5-28-release-security-codex-provider/index
+draft: true
+refactor_hub: openclaw-updates-01
+refactor_status: queued
 ---
 
 ## 들어가며

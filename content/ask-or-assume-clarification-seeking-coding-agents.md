@@ -10,6 +10,9 @@ tags:
   - prompt
   - education
 description: "Ask or Assume? 논문을 바탕으로, 코딩 에이전트가 불완전한 지시를 받았을 때 왜 추측보다 질문이 중요한지 실무와 교육 관점에서 정리했습니다."
+draft: true
+refactor_hub: coding-agents-01
+refactor_status: queued
 ---
 
 최근 AI 코딩 도구를 쓰다 보면 자주 느끼는 장면이 있습니다.

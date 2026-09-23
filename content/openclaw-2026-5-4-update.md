@@ -5,6 +5,9 @@ tags: [openclaw, AI, 업무자동화, 업데이트, GoogleMeet, 플러그인]
 description: "오픈클로 2026.5.4 업데이트 핵심 정리. Google Meet 실시간 음성 브릿지, Discord/Telegram/Slack/Mattermost/Feishu 스트리밍 카드 개편, 플러그인 npm 외부화 확대, 세션 성능 최적화, 크론/메모리/구글챗 수정까지."
 slug: openclaw-2026-5-4-update
 category: AI도구
+draft: true
+refactor_hub: openclaw-updates-02
+refactor_status: queued
 ---
 
 ![오픈클로 2026.5.4 업데이트](https://github.com/openclaw/openclaw/raw/main/docs/static/icon.png)

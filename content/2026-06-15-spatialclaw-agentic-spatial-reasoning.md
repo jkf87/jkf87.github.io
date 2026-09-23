@@ -2,7 +2,6 @@
 title: "SpatialClaw: VLM 에이전트에 코드를 쥐여주면 공간 추론이 바뀐다"
 slug: 2026-06-15-spatialclaw-agentic-spatial-reasoning
 date: 2026-06-15
-draft: false
 tags:
   - VLM
   - spatial-reasoning
@@ -15,6 +14,9 @@ categories:
 description: NVIDIA 연구팀이 제안한 SpatialClaw는 VLM 기반 공간 추론 에이전트에 "코드"라는 액션 인터페이스를 제공하여, 20개 벤치마크에서 평균 +11.2%p 향상을 달성한 training-free 프레임워크다.
 source: https://arxiv.org/abs/2606.13673
 project: https://spatialclaw.github.io/
+draft: true
+refactor_hub: coding-agents-03
+refactor_status: queued
 ---
 
 ## 한 줄 요약

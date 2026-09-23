@@ -1,7 +1,6 @@
 ---
 title: "에이전트는 도구가 죽어도 옛 루틴을 버리지 못함 — set-shifting 실험 교훈"
 date: 2026-07-22T22:00:00+09:00
-draft: false
 summary: "도구 그룹의 신뢰성이 조용히 바뀌었을 때 에이전트가 어떻게 무너지는지 측정한 연구. 프롬프트 지시보다 도구 설명 프레이밍이 더 강한 개입 채널이라는 발견까지 정리함."
 tags: ["agent", "harness", "LLM", "tool-use", "cognitive-flexibility", "evaluation", "WCST"]
 categories: ["AIAgent"]
@@ -10,6 +9,9 @@ sources:
     url: "https://arxiv.org/abs/2607.13396"
     authors: ["Ziwei Ye", "et al."]
     date: 2026-07-15
+draft: true
+refactor_hub: harness-self-improve-07
+refactor_status: queued
 ---
 
 API가 죽거나 백엔드가 장애로 바뀌어도 에이전트는 예전에 성공했던 도구를 계속 호출하는 경우가 많음. 인지심리학의 WCST(Wisconsin Card Sorting Test, 정답 규칙이 몰래 바뀌었을 때 사람이 규칙 전환을 얼마나 잘하는지 재는 고전 실험)를 에이전트 하네스로 옮긴 연구가 이 현상을 측정했음. 원문은 [arXiv:2607.13396](https://arxiv.org/abs/2607.13396).

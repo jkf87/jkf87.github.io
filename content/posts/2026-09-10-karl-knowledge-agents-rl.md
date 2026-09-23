@@ -6,8 +6,10 @@ tags:
   - agents
   - rl
   - research
-draft: false
 description: "GLM 4.5 Air를 베이스로 합성 데이터 + 오프라인 대배치 RL로 학습한 지식 에이전트 KARL 정리. KARLBench 6개 영역에서 Claude 4.6, GPT 5.2 대비 비용·지연 파레토 최적이라는 논문의 수치와 한계를 풀어둔 글."
+draft: true
+refactor_hub: agent-rl-01
+refactor_status: queued
 ---
 
 논문의 핵심은 이것임. 작은 모델(GLM 4.5 Air)을 에이전트 롤아웃 기반 합성 데이터 + 반복 오프라인 RL로 학습시키면 클로즈드 최상위 모델과 동등한 그라운디드 추론 품질을 훨씬 낮은 비용·지연으로 얻을 수 있다는 결과임.

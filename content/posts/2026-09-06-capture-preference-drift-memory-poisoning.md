@@ -2,8 +2,10 @@
 title: "취향 변화와 메모리 포이즈닝은 같아 보임 — CAPTURE가 둘을 가르는 법"
 date: 2026-09-06
 tags: [agent-memory, llm-agent, memory-poisoning, personalization, security]
-draft: false
 description: "개인화 에이전트에서 진짜 취향 변화와 메모리 포이즈닝을 한 턴의 증거로 구분할 수 없다는 문제 정의와, 연속시간 신념 추적+다중 시간규모 원장으로 독성 주입 11.5%와 정당 수용 83.5%를 동시에 잡은 CAPTURE 정리."
+draft: true
+refactor_hub: agent-memory-01
+refactor_status: queued
 ---
 
 사용자가 "이제 요약만 줘"라고 말했을 때 이게 진짜 역할 변화인지, 미팅 맥락인지, 빈정거림인지, 검색된 문서에 숨어든 공격인지 한 턴의 증거로는 구분이 안 됨. [CAPTURE](https://arxiv.org/abs/2609.02265)는 이 모호성에 정면으로 맞서는 시스템임. 개인화 에이전트의 메모리를 운영하는 사람에게 문제 정의 자체가 가치 있어서 정리함.

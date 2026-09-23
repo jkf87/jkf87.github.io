@@ -15,8 +15,10 @@ source: arxiv
 source_url: https://arxiv.org/abs/2608.08466
 authors:
   - conanssam
-draft: false
 description: 동결된 LLM 하나가 태스크 수행, 하네스 수정, 전략 수정 세 역할을 겸하는 계층 구조로 BALROG에서 큰 폭 향상. 하네스 진화가 커버 못 하는 두 경계까지 정리함.
+draft: true
+refactor_hub: harness-self-improve-08
+refactor_status: queued
 ---
 
 모델 가중치를 안 바꾸고 하네스(프롬프트·도구·메모리·검증 로직)만 고쳐서 성능을 올릴 수 있는가. HSI가 그 실험을 했고 결과가 유의미했음. 원문은 [arXiv:2608.08466](https://arxiv.org/abs/2608.08466).

@@ -7,7 +7,9 @@ tags:
   - credit-assignment
   - self-distillation
   - grpo
-draft: false
+draft: true
+refactor_hub: agent-rl-06
+refactor_status: queued
 ---
 
 에이전트 RL의 함정은 환경이 궤적 끝의 성공/실패만 준다는 것. 50스텝 궤적에서 어떤 액션이 기여했는지 알 방법이 없음. ADRS는 이걸 훈련 전용 특권 컨텍스트(정답·해설처럼 훈련 때만 보여주는 추가 정보)로 품. 크레딧 할당 시리즈의 한 축이라 정리함.

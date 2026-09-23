@@ -7,8 +7,10 @@ tags:
   - inference
   - parallel-reasoning
   - latency
-draft: false
 description: "ReAct 에이전트의 Action-Observation 대기 구간에 네 개의 보조 추론 브랜치를 병렬 실행하는 Second Thought를 정리함. 턴 수 9개 조합 전부 감소, 메인 디코딩 최대 43% 감소, 과제당 지연 중간값 10.9% 감소. training-free 구조의 실무 적용점을 다룸."
+draft: true
+refactor_hub: reasoning-efficiency-01
+refactor_status: queued
 ---
 
 ReAct 에이전트(생각-행동-관찰을 반복하며 도구를 쓰는 프롬프트 패턴으로 만든 에이전트)에서 실질 추론은 Thought 단계에서만 일어남. Action 직렬화와 Observation 대기 동안엔 추론이 정지함. Second Thought(arXiv 2608.13667, SMU)는 이 반복 구간을 reasoning idle window로 formalize하고 거기에 미래 턴을 위한 보조 추론을 병렬로 돌림. 결론부터. 정확도를 유지하면서 추가 추론을 임계경로 밖으로 이동시켜 턴 수와 지연시간을 줄이는 학습 불필요 프레임워크임.

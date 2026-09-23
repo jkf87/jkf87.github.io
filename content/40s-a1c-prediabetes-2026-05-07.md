@@ -13,6 +13,9 @@ tags:
 description: "공복혈당이 정상이어도 당화혈색소 5.7%면 안심할 수 없음. 40대에서 놓치기 쉬운 당뇨전단계 신호와 바로 할 일을 정리함."
 aliases:
   - 40s-a1c-prediabetes-2026-05-07/index
+draft: true
+refactor_hub: archive-health-01
+refactor_status: archived
 ---
 
 # 40대 당화혈색소 5.7%, 공복혈당이 정상이어도 놓치면 안 되는 이유

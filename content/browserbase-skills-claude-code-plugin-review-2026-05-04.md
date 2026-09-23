@@ -7,6 +7,9 @@ description: "Browserbase가 Claude Code용 스킬 플러그인 11개를 공개�
 hero: ""
 category: "AI 도구 리뷰"
 author: "코난쌤"
+draft: true
+refactor_hub: harness-self-improve-15
+refactor_status: queued
 ---
 
 ## Claude Code가 브라우저를 직접 만진다

@@ -9,6 +9,9 @@ tags:
   - automation
   - developer-experience
 description: "OpenAI 개발자팀이 직접 공개한 Codex 마스터클래스. 플러그인·자동화·서브에이전트·Guardian Approvals까지, 개발자들이 실제로 하는 사용법 정리."
+draft: true
+refactor_hub: coding-agents-06
+refactor_status: queued
 ---
 
 OpenAI가 런던에서 발표한 Codex 마스터클래스는 단순한 기술 설명이 아니었다.

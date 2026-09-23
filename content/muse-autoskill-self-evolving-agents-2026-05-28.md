@@ -11,6 +11,9 @@ tags:
 slug: muse-autoskill-self-evolving-agents-2026-05-28
 source: huggingface
 source_url: https://arxiv.org/abs/2605.27366
+draft: true
+refactor_hub: harness-self-improve-01
+refactor_status: queued
 ---
 
 에이전트가 복잡한 문제를 풀려면 재사용 가능한 "스킬"이 필요하다는 건 이제 업계 공통 인식입니다. Voyager가 마인크래프트에서 코드 라이브러리를 쌓기 시작한 이후로, AutoSkill, EvoSkill, Skill1 등 다양한 접근이 이어졌죠. 하지만 대부분 한 가지 공통된 한계가 있었습니다. 스킬을 만들고 나면 그걸로 끝이라는 거죠. 한 번 만들어진 스킬은 고정된 파일처럼 방치되고, 실패하면 버려지고, 경험이 축적되지 않습니다.

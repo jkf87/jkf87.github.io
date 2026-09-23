@@ -13,6 +13,9 @@ tags:
   - 자동화
   - ai 에이전트
 description: "오픈클로 책이 골든래빗에서 출간된다. 《오픈클로 완벽 가이드 - AI 비서로 50가지 업무 자동화》의 핵심 포인트와 추천 이유, 찜하기 링크, 독자 이벤트 정보를 한 번에 정리했다."
+draft: true
+refactor_hub: ai-trends-misc-06
+refactor_status: queued
 ---
 
 드디어 나왔습니다. **오픈클로(OpenClaw) 책이 골든래빗에서 출간**됩니다.

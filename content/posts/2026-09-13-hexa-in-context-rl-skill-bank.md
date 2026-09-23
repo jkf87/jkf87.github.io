@@ -8,8 +8,10 @@ tags:
   - in-context-learning
   - skill-library
   - arxiv
-draft: false
 description: "HExA는 가중치 업데이트 없이 에이전트 경험을 스킬 뱅크로 증류해 재주입하는 인컨텍스트 강화학습 프레임워크임. Qwen-2.5-3B가 catapult 0%에서 54%로 오르고 동일 샘플 예산에서 GRPO보다 효율적이었음. 파인튜닝 예산 없는 팀의 대안을 정리함."
+draft: true
+refactor_hub: harness-self-improve-18
+refactor_status: queued
 ---
 
 에이전트가 실패하면 그 실패는 보통 에피소드와 함께 사라짐. 근데 그 실패를 모아서 다음 에피소드에 도구로 쓰는 방법이 있음. HExA(Hierarchical Experimentalist Agents, arXiv 2606.29315)가 그것. 가중치 업데이트 없이 에이전트 경험을 스킬 뱅크로 증류해 재주입하는 인컨텍스트 강화학습(가중치를 고정한 채 컨텍스트에 넣어주는 경험·전략을 바꿔 성능을 올리는 학습 방식) 프레임워크임. 핵심 결과. Qwen-2.5-3B의 catapult 해결률이 사실상 0%에서 54%로 오르고 동일 샘플 예산에서 GRPO(그룹 단위로 여러 응답을 뽑아 그룹 평균과 비교해 상대 보상을 매기는 강화학습 알고리즘) 파인튜닝보다 sample efficiency(같은 성능에 필요한 시행 횟수 효율)가 좋았음.

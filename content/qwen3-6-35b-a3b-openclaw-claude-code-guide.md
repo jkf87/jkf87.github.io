@@ -15,6 +15,9 @@ tags:
   - macbook
   - 맥북-ai
 description: "Qwen3.6-35B-A3B 오픈소스 모델을 Ollama로 로컬에서 돌리고, OpenClaw와 Claude Code에 연결하는 방법을 단계별로 안내합니다. API 비용 없이 내 컴퓨터에서 무료로 사용하세요."
+draft: true
+refactor_hub: model-releases-03
+refactor_status: queued
 ---
 
 > 원문: [Qwen Blog — Qwen3.6-35B-A3B](https://qwen.ai/blog?id=qwen3.6-35b-a3b)

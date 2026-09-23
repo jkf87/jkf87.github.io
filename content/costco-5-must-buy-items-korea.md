@@ -10,6 +10,9 @@ tags:
   - 맞벌이
   - Quartz
 description: "코스트코 회원권 가격은 오르는데 뭘 사야 할지 모르겠는 경우가 많음. 1인 가구와 맞벌이 가구 기준으로, 집에서 해먹고 싶지만 요리는 힘든 사람을 위해 코스트코 재료로 만드는 밀키트 레시피 5개를 정리함."
+draft: true
+refactor_hub: archive-offtopic-01
+refactor_status: archived
 ---
 
 코스트코 회원권 가격은 계속 오름. 근데 막상 들어가면 뭘 사야 할지 모르게 됨.

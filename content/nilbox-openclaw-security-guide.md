@@ -14,7 +14,7 @@ description: "Nilbox는 OpenClaw를 실제 VM 안에서 돌리면서 API 키를 
 
 > 참고 링크: [nilbox 공식 사이트](https://nilbox.run/), [다운로드 페이지](https://nilbox.run/download), [GitHub 저장소](https://github.com/rednakta/nilbox), [README.ko](https://github.com/rednakta/nilbox/blob/main/README.ko.md), [Zero Token Architecture 문서](https://github.com/rednakta/nilbox/blob/main/docs/zero-token-architecture.md)
 
-![Nilbox로 OpenClaw 안전하게 실행하기](./images/nilbox-openclaw-security-guide/hero.png)
+![Nilbox로 OpenClaw 안전하게 실행하기](./media/nilbox-openclaw-security-guide/hero.png)
 
 ## 한 줄 요약
 
@@ -71,7 +71,7 @@ GEMINI_API_KEY=GEMINI_API_KEY
 
 왜냐하면 둘이 해결하는 문제가 다르기 때문입니다.
 
-![키체인과 Nilbox 비교](./images/nilbox-openclaw-security-guide/keychain-vs-nilbox.png)
+![키체인과 Nilbox 비교](./media/nilbox-openclaw-security-guide/keychain-vs-nilbox.png)
 
 ### 키체인이 잘하는 것
 
@@ -329,7 +329,7 @@ VM, 허용 도메인, 디렉토리 매핑, 토큰 설정, 한도 설정까지 �
 
 이 질문 자체가 앞으로 에이전트 보안에서 점점 더 중요해질 가능성이 큽니다.
 
-![Nilbox 실제 UI 스크린샷](./images/nilbox-openclaw-security-guide/nilbox-screen.png)
+![Nilbox 실제 UI 스크린샷](./media/nilbox-openclaw-security-guide/nilbox-screen.png)
 *GitHub 저장소에 공개된 nilbox 화면 예시*
 
 ## FAQ

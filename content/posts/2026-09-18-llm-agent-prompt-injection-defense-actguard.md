@@ -7,8 +7,10 @@ tags:
   - prompt-injection
   - agent-safety
   - paper-summary
-draft: false
 description: "간접 프롬프트 인젝션에 걸린 LLM 에이전트의 도구 호출을 실행 직전에 감사해 ASR 2.14%, 과업 완료율 47.5%를 동시에 달성한 ActGuard(arXiv:2609.14987) 논문 정리."
+draft: true
+refactor_hub: agent-safety-02
+refactor_status: queued
 ---
 
 ## 결론 먼저

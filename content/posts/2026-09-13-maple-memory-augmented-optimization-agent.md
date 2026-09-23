@@ -6,8 +6,10 @@ tags:
   - llm
   - optimization
   - arxiv
-draft: false
 description: "최적화 프로그램·수락된 계획·후보 해를 상태로 유지하며 연속 수정 요청을 처리하는 MAPLE. 동적 설정에서 품질 0.951을 내며 Persistent ReAct(0.501)를 크게 앞섰고 TSS 제거 시 유효 출력의 20%가 무너졌다."
+draft: true
+refactor_hub: agent-memory-08
+refactor_status: queued
 ---
 
 최적화 에이전트가 현실 운영의 연속 변경 요청을 못 처리한다는 문제를 상태 유지로 푼 논문이 나옴. 하네스 설계 원칙이 많이 보여서 정리함. 원문은 [arXiv:2609.11636](https://arxiv.org/abs/2609.11636).

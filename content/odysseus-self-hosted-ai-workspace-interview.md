@@ -8,7 +8,9 @@ tags:
   - 오픈소스
   - Odysseus
 description: "pewdiepie-archdaemon/odysseus README와 로드맵을 바탕으로, 셀프호스팅 AI 작업실이 무엇을 약속하고 어디가 아직 거친지 인터뷰체로 정리했다."
-draft: false
+draft: true
+refactor_hub: dev-tools-01
+refactor_status: queued
 ---
 
 ChatGPT나 Claude를 쓰다 보면 어느 순간 이런 생각이 든다. "좋은데, 이 모든 작업실이 내 컴퓨터 안에 있으면 안 되나?" Odysseus는 그 질문에 꽤 직접적으로 답합니다.

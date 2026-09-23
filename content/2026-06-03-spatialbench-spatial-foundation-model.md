@@ -9,6 +9,9 @@ tags:
   - robotics
 source: huggingface
 source_url: https://huggingface.co/papers/2605.27367
+draft: true
+refactor_hub: eval-benchmarks-01
+refactor_status: queued
 ---
 
 로봇이나 자율주행차가 3차원 공간을 이해하려면 "공간 기반 모델(Spatial Foundation Model)"이 필수입니다. 근데 이 모델들이 진짜로 공간을 잘 이해하고 있을까요? 19개 데이터셋, 546개 장면, 41개 모델을 전방위로 테스트한 SpatialBench 논문이 그 답을 찾았습니다. 결론부터 말하면 — 아직 멀었습니다.

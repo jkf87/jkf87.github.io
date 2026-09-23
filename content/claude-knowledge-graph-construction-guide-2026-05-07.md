@@ -11,6 +11,9 @@ tags:
   - pydantic
   - networkx
 description: "Anthropic 쿡북 원문 기반, Claude로 지식 그래프를 구축하는 전체 과정을 인터뷰 체로 정리. 엔티티 추출, 관계 마이닝, 중복 제거, 그래프 쿼리까지 단계별 가이드."
+draft: true
+refactor_hub: web-gui-agents-02
+refactor_status: queued
 ---
 
 > 원문: [Knowledge Graph Construction with Claude — Anthropic Cookbook](https://platform.claude.com/cookbook/capabilities-knowledge-graph-guide)

@@ -9,6 +9,9 @@ tags:
   - turboquant
   - quantization
 description: "Google이 발표한 TurboQuant는 KV 캐시를 압축해 16GB 맥에서도 131K 컨텍스트를 사용할 수 있게 한다. Alex Ziskind의 실험 결과를 정리한다."
+draft: true
+refactor_hub: reasoning-efficiency-02
+refactor_status: queued
 ---
 
 > "Same model, same machine. Turbo gives you two times more usable context." — Alex Ziskind

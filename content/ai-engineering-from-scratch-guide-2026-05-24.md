@@ -3,6 +3,9 @@ title: "AI 엔지니어링을 처음부터 배우는 320시간 — 435레슨 오
 date: 2026-05-24
 tags: [ai, education, llm, agent, open-source]
 image: images/ai-engineering-from-scratch-2026-05-24/og-image.jpg
+draft: true
+refactor_hub: web-gui-agents-02
+refactor_status: queued
 ---
 
 **Q1. AI Engineering from Scratch가 뭔가요?**

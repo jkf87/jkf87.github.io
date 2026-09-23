@@ -1,9 +1,11 @@
 ---
 title: "되돌릴 수 없으면 채택하지 않는다 — 자기진화 하네스의 undo 게이트, EvoUndo"
 date: 2026-08-31
-draft: false
 tags: [agent, harness, self-evolution, safety, LLM]
 description: "EvoUndo는 능력을 개선하는 하네스 변형이라도 복구 검증을 통과 못 하면 영구 적용하지 않음. 600개 자기진화 태스크 중 197개가 능력 개선+복구 실패였고 기존 수리 방식은 0/197 전멸. 원인이 모델 능력이 아니라 표현력과 상태 주소 grounding이었다는 결과를 정리함."
+draft: true
+refactor_hub: harness-self-improve-11
+refactor_status: queued
 ---
 
 에이전트가 실행 중 자기 하네스를 고치는 자기진화가 늘어나면서 새로운 안전 문제가 생김. 능력은 올라가는데 나중에 안전하게 되돌릴 수 없는 변형이 생기는 것. EvoUndo(Sah et al., arXiv:2608.28363)는 이 문제를 복구 가능성 제약으로 formalize함. 핵심 설계는 한 줄. 능력을 개선하는 변형이라도 복구 검증을 통과하지 못하면 영구 적용하지 않는다는 것.

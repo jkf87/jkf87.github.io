@@ -9,6 +9,9 @@ tags:
   - ai-safety
 source: anthropic-blog
 source_url: https://www.anthropic.com/research/expanding-project-glasswing
+draft: true
+refactor_hub: model-releases-02
+refactor_status: queued
 ---
 
 4월, Anthropic이 약 50개 파트너와 시작한 프로젝트 글래스윙이 대폭 확대됩니다. 보안 특화 모델 Claude Mythos Preview를 활용해 10,000건 이상의 고위험 취약점을 발견한 초기 성과를 바탕으로, 이번엔 약 150개 새 조직에 참여 자격을 열었습니다. 전력, 수도, 의료, 통신, 하드웨어까지. 공격 한 번에 1억 명 이상이 영향받을 수 있는 핵심 인프라를 지키는 프로젝트입니다.

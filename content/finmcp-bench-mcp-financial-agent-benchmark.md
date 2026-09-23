@@ -10,6 +10,9 @@ tags:
   - finance
   - quartz
 description: "FinMCP-Bench 논문을 바탕으로 MCP 기반 금융 에이전트 벤치마크의 구조, 평가 방식, 핵심 결과, 그리고 왜 이 연구가 실전 에이전트 시대에 중요한지 정리했습니다."
+draft: true
+refactor_hub: eval-benchmarks-01
+refactor_status: queued
 ---
 
 금융 도메인에서 LLM 에이전트가 진짜 일을 하려면 단순히 답을 잘 말하는 것만으로는 부족합니다. **사용자 의도를 해석하고, 적절한 도구를 호출하고, 여러 단계의 의존성을 가진 워크플로를 끝까지 수행하는 능력**이 필요합니다. 그런 점에서 오늘 고른 논문 **FinMCP-Bench**는 아주 실전적인 질문을 던집니다.

@@ -8,6 +8,9 @@ tags:
   - verifier
   - rubric
 description: "AI 에이전트 하네스에서 가장 중요한 건 verifier. 사람의 taste를 루브릭으로 변환하고, 루브릭을 코드로 구현하는 과정을 교육학과 엮어서 정리."
+draft: true
+refactor_hub: harness-self-improve-16
+refactor_status: queued
 ---
 
 블로그에 번역이나 기획, 카드뉴스 같은 걸 AI한테 맡기면 처음엔 결과물이 엉망이다. 프롬프트 고치고, 컨텍스트 추가하고, 훅 박고 — 이 과정을 몇 번 반복하면 어느 순간 "이 정도면 되네" 하는 지점에 닿는다.

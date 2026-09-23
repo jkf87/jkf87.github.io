@@ -9,9 +9,11 @@ tags:
   - GRPO
   - loop
   - automation
-draft: false
 socialImage: /images/2026-08-05-skill-alpha-progressive-agent-skill-rl/fig-1-p4.png
 description: 스킬 생성을 증거 하나씩 읽으며 편집하는 의사결정 시퀀스로 쪼개고 각 편집의 가치를 rollback으로 측정함. 스킬 문서 운영에 바로 쓸 편집 액션 설계와 증거 배치 규칙을 정리함.
+draft: true
+refactor_hub: harness-self-improve-01
+refactor_status: queued
 ---
 
 에이전트 스킬을 자동으로 만들 때의 고민은 "이 스킬이 좋은 스킬인가"를 직접 판정할 수 없다는 것임. CUHK의 Skill-α가 그 문제를 RL로 풀었음. 원문은 [arXiv:2608.01678](https://arxiv.org/abs/2608.01678), 코드는 [GitHub](https://github.com/ejhshen/skill-alpha)에 공개돼 있음.

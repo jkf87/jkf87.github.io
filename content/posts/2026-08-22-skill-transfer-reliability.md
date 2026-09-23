@@ -7,8 +7,10 @@ tags:
   - skill
   - memory
   - evaluation
-draft: false
 description: "태스크 전체 요약 스킬은 성공률을 떨어뜨리고 서브태스크 단위 스킬은 올림. 텍스트 노트가 코드보다 이전이 잘 되고, specificity × abstractness 곱이 스킬 유틸리티를 예측함. 스킬 저장 단위와 형식의 실무 체크리스트를 정리함."
+draft: true
+refactor_hub: agent-memory-09
+refactor_status: queued
 ---
 
 에이전트 프레임워크 대부분이 "태스크 끝나면 회고를 저장해서 다음에 재사용한다"는 패턴을 기본으로 깔고 있음. 근데 Stony Brook 팀의 연구(arXiv:2608.20274)가 그 저장 단위가 성능 방향을 가른다는 걸 분리 실험으로 보여줌. 태스크 전체를 요약해서 만든 스킬은 성능을 오히려 떨어뜨리고, 서브태스크 단위로 쪼개서 만든 스킬은 올림. 그리고 텍스트 노트가 코드보다 이전이 잘 됨.

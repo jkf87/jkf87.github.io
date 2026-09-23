@@ -7,6 +7,9 @@ tags:
   - developer-tools
   - memory
 description: "매 세션마다 까먹는 AI 코딩 에이전트에게 영구 기억을 달아주는 agentmemory. 개발자 로히트에게 직접 물어봤다."
+draft: true
+refactor_hub: agent-memory-02
+refactor_status: queued
 ---
 
 ![4컷만화: AI 에이전트의 기억 여정](./images/agentmemory-4panel-comic.jpg)

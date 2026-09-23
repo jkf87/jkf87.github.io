@@ -9,6 +9,9 @@ tags:
   - parallel-decoding
 source: huggingface
 source_url: https://huggingface.co/papers/2605.27365
+draft: true
+refactor_hub: coding-agents-03
+refactor_status: queued
 ---
 
 "빨간색 컵이 어디 있어?" 이 질문에 이미지에서 해당 위치를 박스로 표시하는 기술을 비전-언어 그라운딩(visual grounding)이라고 합니다. NVIDIA 연구진이 발표한 LocateAnything은 기존 방식의 근본적 병목을 해결하고, 속도는 10배 빠르면서 정확도까지 높인 프레임워크입니다. 비결은 "바운딩 박스를 한 번에 병렬로 디코딩"하는 데 있었습니다.

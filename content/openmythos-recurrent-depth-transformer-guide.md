@@ -10,6 +10,9 @@ tags:
   - 사이버보안
   - Anthropic
 description: "Anthropic의 비공개 AI 모델 Claude Mythos의 아키텍처를 오픈소스로 재구현한 OpenMythos 프로젝트를 분석합니다."
+draft: true
+refactor_hub: agent-safety-04
+refactor_status: queued
 ---
 
 # OpenMythos: Claude Mythos의 비밀을 파헤친 오픈소스 재구현 프로젝트

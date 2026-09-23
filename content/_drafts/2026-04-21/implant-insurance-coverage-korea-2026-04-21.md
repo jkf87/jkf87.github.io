@@ -9,6 +9,8 @@ tags:
   - 노인임플란트
 description: 만 65세 이상 부분무치악 환자는 국민건강보험 치과임플란트 급여를 받을 수 있음. 평생 2개, 본인부담 30%, 사전등록이 필요하고 완전무치악과 비급여 재료는 제외됨.
 draft: true
+refactor_hub: archive-draft-01
+refactor_status: archived
 ---
 
 임플란트는 나이만 넘겼다고 바로 보험되는 치료가 아님.

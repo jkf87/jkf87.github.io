@@ -7,8 +7,10 @@ tags:
   - benchmark
   - refusal-calibration
   - paper-summary
-draft: false
 description: "BLINDSPOT(arXiv 2609.16305)은 14.7턴짜리 장기 상호작용 2,500개 이상으로 13개 모델의 거부 캘리브레이션을 평가한 벤치마크입니다. 전체 턴의 절반은 9턴 이후에야 실패가 드러났습니다."
+draft: true
+refactor_hub: agent-safety-01
+refactor_status: queued
 ---
 
 ## 결론 먼저

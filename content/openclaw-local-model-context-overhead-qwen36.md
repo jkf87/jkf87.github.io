@@ -11,6 +11,9 @@ tags:
   - 오픈소스AI
   - 코딩에이전트
 description: "Qwen3.6-35B-A3B를 OpenClaw에 붙였는데 생각보다 답답했다면, 모델 탓이 아닐 수 있다. 실제 병목은 하네스 컨텍스트 오버헤드였고, 해법은 더 큰 모델보다 더 가벼운 에이전트 구조에 있었다."
+draft: true
+refactor_hub: model-releases-03
+refactor_status: queued
 ---
 
 > 참고: 이 글은 Qwen3.6-35B-A3B를 OpenClaw에 붙여보며 겪은 실제 운영 관찰을 바탕으로 정리한 글입니다.

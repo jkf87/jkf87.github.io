@@ -8,6 +8,9 @@ tags:
   - automation
   - startup
 description: "Greg Isenberg와 Airtable 공동창업자 Howie Liu의 HyperAgent 인터뷰를 뉴스레터 인터뷰 형식으로 재구성했습니다."
+draft: true
+refactor_hub: agent-memory-03
+refactor_status: queued
 ---
 
 > 원본 영상: [Making \$\$ with AI Agents - Greg Isenberg × Howie Liu](https://www.youtube.com/watch?v=nyO60uzTnP4)  

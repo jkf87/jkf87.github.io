@@ -11,6 +11,9 @@ tags:
 slug: d2-monitor-dynamic-safety-diffusion-llms-2026-05-28
 source: huggingface
 source_url: https://arxiv.org/abs/2605.25893
+draft: true
+refactor_hub: agent-safety-03
+refactor_status: queued
 ---
 
 최근 AI 업계에서 '디퓨전 LLM'이라는 새로운 계열이 빠르게 자리잡고 있다. 기존 GPT 같은 모델들이 글자를 왼쪽에서 오른쪽으로 하나씩 순서대로 생성하는 방식이었다면, 디퓨전 LLM은 전체 문장을 한꺼번에 노이즈 상태에서 시작해 여러 단계에 걸쳐 동시에 정제한다. 상용 모델인 Mercury 2는 초당 1,009 토큰을 생성한다고 하니, 속도 면에서 기존 방식을 압도하는 셈이다.

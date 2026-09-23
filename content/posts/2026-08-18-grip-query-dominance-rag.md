@@ -10,6 +10,9 @@ tags:
   - grounding
 source: https://arxiv.org/abs/2608.16776
 description: "증거를 바꿔도 답이 안 바뀌는 query dominance를 표현 구조 문제로 진단하고, 증거 채널에 4차원 병목을 건 GRIP. 환각 73% 감소와 5개 벤치마크 전면 개선을 정리했다."
+draft: true
+refactor_hub: agent-memory-01
+refactor_status: queued
 ---
 
 RAG 시스템의 고질병을 정면으로 짚은 논문이 나옴. 검색해 온 문서를 사실상 무시하고 모델이 원래 알던 지식으로 답하는 문제를 query dominance로 명명하고, 원인을 프롬프트가 아니라 표현 구조에서 찾았다는 것. 원문은 [arXiv:2608.16776](https://arxiv.org/abs/2608.16776).

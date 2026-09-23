@@ -2,13 +2,15 @@
 title: "모델 업그레이드 다음 날 에이전트가 기억을 잃는 이유 — 메모리 포맷별 생존율"
 description: "모델만 바꿨는데 저장소 파일은 그대로인데 에이전트가 기억을 잃음. 4가지 메모리 포맷의 업그레이드 내성을 잰 arXiv 2609.05339 정리. 고정 스키마 KG는 무사, 모델 요약 노트는 ±13pp 출렁임."
 date: 2026-09-08
-draft: false
 tags:
   - agent
   - memory
   - rag
   - knowledge-graph
   - llm
+draft: true
+refactor_hub: agent-memory-02
+refactor_status: queued
 ---
 
 업그레이드 배포 다음 날 에이전트가 지난 몇 달 쌓은 기억을 잊기 시작하는 상상. 저장소 파일은 한 글자도 안 바뀌었고 바뀐 건 읽는 모델 하나뿐임. [arXiv 2609.05339](https://arxiv.org/abs/2609.05339)는 이 지점을 4가지 메모리 포맷으로 측정함. 포맷 선택이 곧 업그레이드 내성이라는 결론이라 정리함.

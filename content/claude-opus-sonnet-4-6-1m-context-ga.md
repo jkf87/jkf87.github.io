@@ -8,6 +8,9 @@ tags:
   - long-context
   - anthropic
 description: "Anthropic이 Claude Opus 4.6과 Sonnet 4.6의 1M 토큰 컨텍스트 윈도우를 일반 공개(GA)했다. 롱컨텍스트 프리미엄 없이 표준 가격으로 최대 100만 토큰을 처리하며, 이미지/PDF 페이지 제한도 6배 확대됐다."
+draft: true
+refactor_hub: model-releases-01
+refactor_status: queued
 ---
 
 # Claude Opus 4.6 / Sonnet 4.6 — 1M 컨텍스트 윈도우 GA, 표준 가격으로 제공

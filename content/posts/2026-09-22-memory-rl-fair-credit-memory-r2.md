@@ -7,8 +7,10 @@ tags:
   - 강화학습
   - GRPO
   - paper-summary
-draft: false
 description: "LLM 에이전트의 메모리를 RL로 학습하면 롤아웃마다 메모리 상태가 달라져 GRPO 비교가 불공평해집니다. Memory-R2의 LoGo-GRPO, 공유 백본 구조, 8→16→32 세션 커리큘럼을 수치와 함께 정리했습니다."
+draft: true
+refactor_hub: agent-memory-03
+refactor_status: queued
 ---
 
 ## 핵심 요약

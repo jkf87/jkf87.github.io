@@ -1,7 +1,6 @@
 ---
 title: "Claude Sonnet 5 공개: ‘에이전트 실행층’이 미드티어 모델로 내려왔다"
 date: 2026-07-01
-draft: false
 tags:
   - anthropic
   - claude
@@ -13,6 +12,9 @@ tags:
 description: "Anthropic의 Claude Sonnet 5 발표를 한국어로 정리했다. 핵심은 Opus급 에이전트 실행 능력에 가까워진 Sonnet, effort 기반 비용-성능 조절, Claude Code와 API 가격 변화다."
 aliases:
   - "claude-sonnet-5"
+draft: true
+refactor_hub: model-releases-01
+refactor_status: queued
 ---
 
 > [!info] 한 줄 요약

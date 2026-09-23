@@ -7,6 +7,9 @@ tags:
   - ai-coding
   - release-notes
 description: "Claude Code v2.1.83~v2.1.85 주간 다이제스트. Auto Mode 권한 분류, Desktop Computer Use, PR 자동 수정, 트랜스크립트 검색, PowerShell 툴, 조건부 훅을 소개합니다."
+draft: true
+refactor_hub: coding-agents-07
+refactor_status: queued
 ---
 
 # Week 13 · 3월 23–27일, 2026

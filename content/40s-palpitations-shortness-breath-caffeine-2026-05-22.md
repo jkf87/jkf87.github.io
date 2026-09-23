@@ -9,6 +9,9 @@ tags:
   - 빈혈
   - 갑상선
 description: 40대 두근거림과 숨참은 카페인·스트레스만이 아니라 빈혈, 갑상선, 부정맥, 심장 경고 신호를 같이 봐야 했음.
+draft: true
+refactor_hub: archive-health-01
+refactor_status: archived
 ---
 
 # 40대 심장이 두근거리고 숨이 찰 때, 카페인 탓만 하면 안 되는 이유 4가지

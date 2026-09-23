@@ -13,6 +13,9 @@ tags:
 source: arxiv
 source_url: https://arxiv.org/abs/2503.08455
 paper_url: https://arxiv.org/abs/2503.08455
+draft: true
+refactor_hub: coding-agents-02
+refactor_status: queued
 ---
 
 이미지 생성은 이미 latent(이미지를 작은 연속 벡터로 압축한 내부 표현) 세계에서 일어나는데 평가는 아직 픽셀 세계에 있음 — 중간 결과를 보려면 매번 VAE(이미지와 압축 표현 사이를 오가는 인코더-디코더 신경망) 디코딩을 해야 하는 병목. [Latent-CLIP](https://arxiv.org/abs/2503.08455)은 latent를 직접 읽는 CLIP(이미지와 텍스트를 같은 공간에 놓아 유사도를 재는 멀티모달 모델)을 학습해서 이 병목을 없앰. 제어 지점이 안쪽으로 이동하는 흐름이라 정리함.

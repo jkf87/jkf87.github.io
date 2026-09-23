@@ -10,6 +10,9 @@ tags:
   - 개발자도구
   - GitHub트렌딩
 description: ComposioHQ가 큐레이션한 awesome-codex-skills 레포가 1,500스타 찍음. Codex CLI에 모듈식 명령 번들 붙이는 표준이 등장. Claude Code Skill 컨셉을 OpenAI도 따라옴.
+draft: true
+refactor_hub: harness-self-improve-15
+refactor_status: queued
 ---
 
 ![](./images/awesome-codex-skills-composio-2026-04-26/cover.png)

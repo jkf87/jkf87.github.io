@@ -2,7 +2,9 @@
 title: "가중치 못 고치는 API 모델도 실험에서 배움 — HExA의 스킬 뱅크 자동 증류 구조"
 date: 2026-08-21
 tags: [agent, in-context-rl, skill-bank, LLM, benchmark]
-draft: false
+draft: true
+refactor_hub: harness-self-improve-18
+refactor_status: queued
 ---
 
 HExA(Hierarchical Experimentalist Agents, arXiv 2606.29315)는 가중치 업데이트 없이 에이전트가 직접 실험을 설계·수행하고 그 결과를 자연어 스킬 뱅크로 증류해 재사용하는 프레임워크임. Claude Sonnet 4.6 기준 catapult 난이도 성공률 2%→67.3±9.3%, 에피소드당 평균 반복 22.9(ReAct, 생각과 행동을 번갈아 출력하며 도구를 쓰는 기본 에이전트 프롬프트 방식)→14.4로 줄었음.

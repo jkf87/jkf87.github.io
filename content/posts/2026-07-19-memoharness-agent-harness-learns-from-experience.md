@@ -1,11 +1,13 @@
 ---
 title: "에이전트 성능은 하네스가 결정함 — MemoHarness가 보여주는 '실행 환경 학습' 패턴"
 date: 2026-07-19T13:00:00+09:00
-draft: false
 tags: ["agent", "harness", "LLM", "자동화", "최적화"]
 categories: ["AI 연구"]
 description: "MemoHarness는 프롬프트·도구·오케스트레이션 등 하네스 6차원을 경험에서 학습해 케이스별로 적응시킴. 같은 모델으로 성공률을 두 자릿수 올리는 하네스 최적화 관점을 정리함."
 source_url: "https://arxiv.org/abs/2607.14159"
+draft: true
+refactor_hub: harness-self-improve-12
+refactor_status: queued
 ---
 
 같은 모델, 같은 도구인데 프롬프트 구성과 오케스트레이션만 바꾸면 에이전트 성공률이 수십 포인트 움직임. 실무자라면 다 겪어본 일인데, 대부분의 최적화 연구는 프롬프트 튜닝에만 머물렀음. MemoHarness는 그 관심을 실행 환경 전체, 즉 하네스로 옮김. 하네스를 고정 구성이 아니라 경험으로 진화하는 학습 대상으로 취급한 것임.

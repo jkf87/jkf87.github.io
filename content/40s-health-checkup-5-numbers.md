@@ -10,6 +10,9 @@ tags:
   - 간수치
   - 허리둘레
 description: "40대는 증상보다 수치가 먼저 흔들림. 혈압·혈당·콜레스테롤·간수치·허리둘레를 읽는 법을 짧게 정리함."
+draft: true
+refactor_hub: archive-health-01
+refactor_status: archived
 ---
 
 # 40대 건강검진표에서 꼭 봐야 하는 숫자 5개

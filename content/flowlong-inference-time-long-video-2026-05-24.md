@@ -6,9 +6,11 @@ tags:
   - video-generation
   - diffusion
   - long-video
-draft: false
 enableToc: true
 description: "FlowLong은 manifold-constrained Tweedie matching으로 장편 비디오 생성의 일관성을 유지한다."
+draft: true
+refactor_hub: reasoning-efficiency-01
+refactor_status: queued
 ---
 
 ## 긴 영상 생성, 왜 어려운가요?

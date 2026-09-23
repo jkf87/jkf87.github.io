@@ -10,6 +10,9 @@ tags:
   - AI 산업
   - Quartz
 description: "Stanford HAI의 AI Index 2026 보고서 핵심 12가지를 원문 이미지와 함께 한국어로 정리한 번역형 해설 포스트."
+draft: true
+refactor_hub: web-gui-agents-03
+refactor_status: queued
 ---
 
 ![Stanford AI Index 2026 대표 이미지](./images/stanford-ai-index-2026-12-takeaways-korean-guide-refresh/hero.png)

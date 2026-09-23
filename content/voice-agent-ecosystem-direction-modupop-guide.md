@@ -11,6 +11,9 @@ tags:
   - 모두팝
   - ai product
 description: "[모두팝] 음성 에이전트 생태계와 앞으로의 방향 발표를 바탕으로, 음성 AI가 어디까지 왔는지, 지금 어디서 막히는지, 특히 고령자·장애인·비표준 발화 환경에서 어떤 제품 기회가 있는지 정리했다."
+draft: true
+refactor_hub: web-gui-agents-02
+refactor_status: queued
 ---
 
 # 음성 에이전트는 어디로 가고 있나: 모두팝 발표에서 읽은 현재 한계와 다음 기회

@@ -8,8 +8,10 @@ tags:
   - 할루시네이션
   - 신뢰성
   - paper-summary
-draft: false
 description: "검색과 생성 사이에 학습 파라미터 없는 메모리 판단층(MDL)을 넣어 충돌 메모리 기인 할루시네이션을 억제한 논문 정리. 일반 시나리오 약 56% 감소, 고위험 시나리오 0.0%, 판단 지연 약 0.14 ms."
+draft: true
+refactor_hub: agent-memory-10
+refactor_status: queued
 ---
 
 ## 결론 먼저

@@ -8,8 +8,10 @@ tags:
   - retrieval
   - search-agent
   - GRPO
-draft: false
 summary: "RL 검색 에이전트의 retrieval-equivalence collapse를 진단하고, 자유 형식 쿼리 생성을 그래프 기반 유한 액션 메뉴로 교체한 Harness-G를 정리함. 액션 공간 설계가 보상 설계와 동등한 축이라는 결론까지."
+draft: true
+refactor_hub: agent-memory-02
+refactor_status: queued
 ---
 
 RL로 훈련된 검색 에이전트가 함정에 빌 때가 있음. 쿼리 문자열은 수십 가지로 다양하게 만드는데 실제로 검색되는 문서 집합은 거의 동일해짐. 표면적 쿼리 다양성이 진짜 검색 다양성으로 이어지지 않는 것임. Harness-G는 이 문제의 원인이 보상이 아니라 검색 인터페이스 설계 자체라고 진단하고 액션 공간을 통째로 바꿨음.

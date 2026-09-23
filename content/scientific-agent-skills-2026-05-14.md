@@ -9,6 +9,9 @@ tags:
   - cheminformatics
   - open-source
 description: "K-Dense가 공개한 Scientific Agent Skills는 생물정보학, 신약 개발, 임상 연구, 머신러닝 등 17개 과학 도메인에 걸친 135개 스킬과 100개 이상의 데이터베이스를 AI 에이전트에 제공하는 오픈소스 프로젝트다."
+draft: true
+refactor_hub: harness-self-improve-15
+refactor_status: queued
 ---
 
 > K-Dense가 공개한 **Scientific Agent Skills**는 Cursor, Claude Code, Codex, Gemini CLI 등 AI 코딩 에이전트를 연구 파트너로 만들어주는 135개 스킬 컬렉션이다. 생물정보학부터 신약 개발, 임상 연구, 천문학까지 — 복잡한 다단계 과학 워크플로를 프롬프트 하나로 실행할 수 있게 해준다.

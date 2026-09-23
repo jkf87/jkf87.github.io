@@ -1,0 +1,42 @@
+[
+ {
+  "path": "gemma4-codex-cli-local.md",
+  "why": "공식 문서 기반 설정 가이드 — 블로그봇이 직접 재실행해 검증 로그·자체 캡처 보강"
+ },
+ {
+  "path": "gemma4-openclaw-local-backend-practical-guide.md",
+  "why": "공식 문서 기반 설정 가이드 — 블로그봇이 직접 재실행해 검증 로그·자체 캡처 보강"
+ },
+ {
+  "path": "nilbox-openclaw-security-guide.md",
+  "why": "공식 문서 기반 설정 가이드 — 블로그봇이 직접 재실행해 검증 로그·자체 캡처 보강"
+ },
+ {
+  "path": "openclaw-active-memory-setup-guide.md",
+  "why": "공식 문서 기반 설정 가이드 — 블로그봇이 직접 재실행해 검증 로그·자체 캡처 보강"
+ },
+ {
+  "path": "openclaw-context-engine-plugins.md",
+  "why": "공식 문서 기반 설정 가이드 — 블로그봇이 직접 재실행해 검증 로그·자체 캡처 보강"
+ },
+ {
+  "path": "openclaw-google-meet-plugin-setup-guide-2026-05-28.md",
+  "why": "공식 문서 기반 설정 가이드 — 블로그봇이 직접 재실행해 검증 로그·자체 캡처 보강"
+ },
+ {
+  "path": "openclaw-memory-lancedb-slot-warning-2026-05-28.md",
+  "why": "공식 문서 기반 설정 가이드 — 블로그봇이 직접 재실행해 검증 로그·자체 캡처 보강"
+ },
+ {
+  "path": "openclaw-obsidian-memory-wiki-llm-wiki-setup-2026-05-28.md",
+  "why": "공식 문서 기반 설정 가이드 — 블로그봇이 직접 재실행해 검증 로그·자체 캡처 보강"
+ },
+ {
+  "path": "qwen3-6-27b-lmstudio-openclaw-2026-04-23.md",
+  "why": "공식 문서 기반 설정 가이드 — 블로그봇이 직접 재실행해 검증 로그·자체 캡처 보강"
+ },
+ {
+  "path": "qwen3-6-35b-a3b-mlx-macbook-local.md",
+  "why": "공식 문서 기반 설정 가이드 — 블로그봇이 직접 재실행해 검증 로그·자체 캡처 보강"
+ }
+]

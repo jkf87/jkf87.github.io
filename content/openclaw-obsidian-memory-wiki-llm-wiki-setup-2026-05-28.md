@@ -16,7 +16,7 @@ draft: false
 
 OpenClaw 2026.5.x 기준으로 Obsidian은 독립 기본 플러그인보다 **`memory-wiki` + 공식 `obsidian` CLI** 조합으로 쓰는 쪽이 맞다. `memory-wiki`가 LLM Wiki 역할을 하고, Obsidian은 그 vault를 읽고 편집하는 UI가 된다.
 
-![OpenClaw Memory Wiki와 Obsidian 연동 구조](./images/openclaw-obsidian-memory-wiki/architecture.png)
+![OpenClaw Memory Wiki와 Obsidian 연동 구조](./media/openclaw-obsidian-memory-wiki/architecture.png)
 
 ## 0. 구조
 

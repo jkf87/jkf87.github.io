@@ -1,7 +1,6 @@
 ---
 title: "ForeSci: LLM 에이전트의 전망적 연구 판단 능력 평가 벤치마크"
 date: 2026-06-07
-draft: false
 tags:
   - ai-agent
   - llm
@@ -16,6 +15,9 @@ authors:
   - Zequn Liu
 source: arxiv
 source_url: https://arxiv.org/abs/2606.00644
+draft: true
+refactor_hub: eval-benchmarks-02
+refactor_status: queued
 ---
 
 ## 한 줄 요약

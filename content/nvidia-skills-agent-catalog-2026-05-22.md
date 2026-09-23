@@ -13,6 +13,9 @@ tags:
 description: "NVIDIA가 AI 에이전트용 공식 스킬 카탈로그를 GitHub에 공개했습니다. CUDA-X, NeMo, TensorRT-LLM 등 17개 제품군 155개 이상의 스킬을 Claude Code, Codex, Cursor, Kiro 에이전트에 바로 설치할 수 있습니다. 스킬이 뭔지, 왜 중요한지, 어떻게 쓰는지 정리합니다."
 aliases:
   - /nvidia-skills-agent-catalog-2026-05-22
+draft: true
+refactor_hub: harness-self-improve-15
+refactor_status: queued
 ---
 
 원문: [NVIDIA/skills](https://github.com/NVIDIA/skills) (GitHub)

@@ -9,6 +9,9 @@ tags:
   - GRPO
   - long-horizon
   - agent-training
+draft: true
+refactor_hub: agent-rl-06
+refactor_status: queued
 ---
 
 긴 호라이즌 에이전트 학습에서 실패한 롤아웃은 대부분 버려짐. TRCA(arXiv 2608.16156)는 그 버린 실패 안에 이미 학습 신호가 들어 있다는 걸 보이고 루브릭 기반 전환 단위 보상으로 꺼내는 방법을 제안함. 학습된 평가기도 성공 앵커도 안 쓰는 게 차별점임.

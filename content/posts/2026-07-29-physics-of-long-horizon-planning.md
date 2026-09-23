@@ -13,8 +13,10 @@ tags:
   - harness
   - loop
   - automation
-draft: false
 summary: "장기 계획 능력이 사전학습·후속학습·증류 각 단계에서 어떻게 만들어지고 무너지는지 통제 환경에서 해부한 연구. 준최적 궤적의 독성, GRPO의 신용 할당 붕괴, 티처-스튜던트 지식 정렬 실패를 실무 관점으로 정리함."
+draft: true
+refactor_hub: harness-self-improve-18
+refactor_status: queued
 ---
 
 에이전트가 수십 단계 작업에서 무너지는 원인을 "모델이 약해서"로만 돌리기엔 근거가 부족했음. 중국과학원 연구가 통제 환경에서 계획 능력의 발생과 붕괴를 단계별로 해부했음. 원문은 [arXiv:2607.24720](https://arxiv.org/abs/2607.24720).

@@ -2,8 +2,10 @@
 title: "마인드 바이러스는 실재함 — 텍스트 설득만으로 에이전트 사이를 퍼지는 생각"
 date: 2026-08-22
 tags: [agent, multi-agent, security, llm]
-draft: false
 description: 에이전트 하나를 감염시키면 그 에이전트가 다른 에이전트를 설득해 아이디어가 스스로 퍼짐. 시스템 프롬프트에 주입되는 자기수정 파일이 주요 감염 경로이고, 경고 문단 하나로 면역이 된다는 결과까지 정리함.
+draft: true
+refactor_hub: ai-trends-misc-02
+refactor_status: queued
 ---
 
 Anthropic와 EPFL이 다중 에이전트 LLM 시스템에서 "스스로 전파되는 생각"을 실증했음. 해킹도 프롬프트 인젝션 버그도 아니고 평범한 텍스트 대화만으로 전파됨. 원문은 [arXiv 2608.10218](https://arxiv.org/abs/2608.10218).

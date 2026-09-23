@@ -8,6 +8,9 @@ tags:
   - execution
   - summary
 description: "ALL OF BUSINESS 영상을 첫 원리, 사업의 5요소, 전략의 힘, 실행의 4개로 잘랐음. 핵심 캡처와 맥락 맞는 GIF까지 붙였음."
+draft: true
+refactor_hub: archive-offtopic-01
+refactor_status: archived
 ---
 
 사업은 복잡해 보이는데, 뼈대는 단순함. 58분 영상도 결국 4개로 묶임. 남 따라하지 말고, 구조를 보고, 힘을 만들고, 시작해야 함.

@@ -15,8 +15,10 @@ source: arxiv
 source_url: https://arxiv.org/abs/2608.09253
 authors:
   - conanssam
-draft: false
 description: "SkillSentry 분석. 스킬 실행의 절차 이탈과 스텝 오류를 모델·에이전트 수정 없이 런타임 훅으로 감시·보정해서 평균 성공률 24.1% 상승. 비용 증가는 10% 미만. 스킬을 산 물체로 만드는 구조."
+draft: true
+refactor_hub: harness-self-improve-21
+refactor_status: queued
 ---
 
 에이전트에 스킬 문서를 넣어줘도 실행이 흔들리는 문제를 [SkillSentry](https://arxiv.org/abs/2608.09253)(실행 루프에 감시 훅을 붙여 스킬 이탈을 실시간 보정하는 런타임 보증 레이어)가 푸는 방향이 남다름. 모델도 에이전트도 스킬 문서도 수정하지 않고 런타임 훅으로 실행을 감시하고 보정하는 것. SkillsBench(에이전트 스킬 활용 능력을 재는 벤치마크) 기반 15개 스킬, Claude Code(Haiku-4.5, Opus-4.6)와 Codex(GPT-5.2, GPT-5.4) 네 조합에서 평균 과제 성공률이 24.1% 올랐고 반복 실행 편차도 줄었음. 스킬 문서를 계속 다시 쓰는 방식에 익숙했던 나에게 방향 전환을 알려준 논문이라 정리함.

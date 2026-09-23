@@ -14,6 +14,9 @@ source: arxiv
 source_url: https://arxiv.org/abs/2608.13560
 paper_url: https://arxiv.org/html/2608.13560v1
 description: "AutoDesign은 내부 루프(디자이너·크리틱 산출물 개선)와 외부 루프(코딩 에이전트가 하네스를 유한 업데이트)로 구성됨. 논문-포스터 변환 벤치마크에서 78.32점으로 1위, 하네스 부착만으로 평균 +12.40점. 하네스 최적화 운영의 실무 교훈을 정리함."
+draft: true
+refactor_hub: harness-self-improve-22
+refactor_status: queued
 ---
 
 에이전트 성능 개선의 무게중심이 모델 가중치에서 하네스로 옮겨가는 흐름이 이어지고 있음. AutoDesign은 그 완성형에 가까움. 모델을 고정한 상태에서 에이전트를 둘러싼 시스템 자체를 재귀적으로 최적화해서 롱호라이즌 멀티모달 설계 작업의 품질을 올림. 과제가 논문-포스터 변환이라는 점도 실무적임. 반복 생성·수정이 필요한 실제 디자인 워크로드이기 때문.

@@ -1,7 +1,6 @@
 ---
 title: "리더보드 1위와 2위는 실제로 못 가림 — SWE-bench Verified 순위 분해능 감사"
 date: 2026-09-16
-draft: false
 tags:
   - benchmark
   - coding-agent
@@ -12,6 +11,9 @@ tags:
   - leaderboard
   - statistics
 description: "SWE-bench Verified 상위 30개 코딩 에이전트의 인접 순위 간 통계적 구분이 29쌍 중 0쌍이었다는 감사 결과를 정리함. 상위 에이전트가 같은 문제를 같이 풀어 실효 비교 집합이 무너지는 원리와 티어·n_eff 대안 지표를 다룸."
+draft: true
+refactor_hub: coding-agents-04
+refactor_status: queued
 ---
 
 SWE-bench Verified(실제 GitHub 이슈 500문제를 에이전트가 패치로 풀어 통과율로 채점하는 코딩 벤치마크) 상위권의 순위는 통계적으로 읽히지 않음. 구분되는 인접 쌍이 29쌍 중 0쌍. 1등과 2등이 각각 500개 중 396개를 푸는데 그 차이가 우연인지 아닌지 데이터가 판정해주지 못한다는 것. 254개 공개 제출 결과를 전수 검증한 감사 논문(arXiv 2609.17394)의 결론임. 우열을 말하는 시대는 끝났고 티어와 유효 비교 크기 n_eff(순위를 실제로 가릴 수 있는 문제만 세어 환산한 표본 크기)를 함께 봐야 한다는 주장.

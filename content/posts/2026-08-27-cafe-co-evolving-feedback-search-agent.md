@@ -8,8 +8,10 @@ tags:
   - RL
   - self-improvement
   - credit-assignment
-draft: false
 description: "검색 에이전트와 피드백 비평가를 같은 파라미터로 교대 학습시킨 CAFE. 에이전트만 학습하면 84.2에서 정체되던 것이 공진화로 계속 상승했고 환각률도 17.6%에서 12.6%로 떨어졌다."
+draft: true
+refactor_hub: harness-self-improve-11
+refactor_status: queued
 ---
 
 자기 개선 에이전트에서 정책만 학습하면 plateau에 닿는 이유를 깔끔하게 보여준 논문이 나옴. 해법이 "피드백을 주는 쪽도 같이 진화"라서 정리함. 원문은 [arXiv:2608.24794](https://arxiv.org/abs/2608.24794).

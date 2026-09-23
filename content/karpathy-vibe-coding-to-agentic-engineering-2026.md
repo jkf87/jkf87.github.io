@@ -9,6 +9,9 @@ tags:
   - software-3.0
   - llm
 description: "\"바이브 코딩\"이라는 말을 만든 카파시가 1년 후 무슨 말을 하고 있는지 들어봤다. 소프트웨어 3.0, 에이전틱 엔지니어링, 유령 vs 동물, 검증 가능성. 30분짜리 강연에서 핵심만 뽑았다."
+draft: true
+refactor_hub: coding-agents-01
+refactor_status: queued
 ---
 
 원본 영상: [Andrej Karpathy: From Vibe Coding to Agentic Engineering — AI Ascent 2026](https://youtu.be/96jN2OCOfLs)

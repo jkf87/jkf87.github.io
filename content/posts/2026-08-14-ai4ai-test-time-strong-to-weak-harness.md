@@ -13,6 +13,9 @@ tags:
   - Salesforce
   - evaluation
 description: 강한 모델이 과제 구조를 하네스로 컴파일해 약한 모델에 얹는 strong-to-weak 전이 실험. 상향폭은 타깃의 헤드룸으로 예측되고, 코드 줄수보다 "무엇을 옮겼는지"가 관건임.
+draft: true
+refactor_hub: harness-self-improve-12
+refactor_status: queued
 ---
 
 약한 모델의 가중치는 그대로 두고 강한 모델이 짜준 하네스만 얹으면 어떻게 되는가. Salesforce AI Research와 UIUC이 그 실험을 했고 결과가 강력했음. 원문은 [arXiv:2608.12307](https://arxiv.org/abs/2608.12307).

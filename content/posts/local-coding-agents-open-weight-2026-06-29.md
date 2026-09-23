@@ -14,8 +14,10 @@ tags:
 description: "Sebastian Raschka의 Using Local Coding Agents를 바탕으로, 로컬 LLM과 코딩 에이전트 하네스를 실전에서 어떻게 조합하고 평가해야 하는지 정리했다."
 aliases:
   - local-coding-agents-open-weight-2026-06-29/index
-draft: false
 cover: images/local-coding-agents-open-weight-2026-06-29/hero-local-stack.png
+draft: true
+refactor_hub: model-releases-03
+refactor_status: queued
 ---
 
 클라우드 코딩 에이전트가 너무 좋아졌다. Codex도, Claude Code도 이제는 하루 업무의 기본 도구가 됐다. 그런데 바로 그래서 이상한 질문이 다시 중요해진다. **이걸 전부 내 컴퓨터 안에서 돌릴 수는 없을까?**

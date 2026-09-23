@@ -30,6 +30,9 @@ authors:
   - Hanghang Tong
   - Jingrui He
 affiliation: UIUC, Meta AI
+draft: true
+refactor_hub: harness-self-improve-18
+refactor_status: queued
 ---
 
 에이전트 하네스 사용 규칙은 대부분 프롬프트로 사람이 정함 — "매 스텝 상태 기록하라" 식으로. 근데 하네스를 읽는 것도 스텝을 소모하는 비용임. EvoHarness-RL은 이 결정을 모델이 배우게 함. 하네스 설계의 숨은 질문을 건드려서 정리함.

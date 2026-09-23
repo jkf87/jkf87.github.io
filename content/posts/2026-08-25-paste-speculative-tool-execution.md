@@ -8,7 +8,9 @@ tags:
   - tool-use
   - latency
   - systems
-draft: false
+draft: true
+refactor_hub: reasoning-efficiency-01
+refactor_status: queued
 ---
 
 에이전트가 느린 이유 중 하나는 LLM 생성과 툴 실행이 한 줄로 직렬로 묶여 있다는 것임. LLM이 툴 콜을 내보내면 툴이 끝날 때까지 GPU는 기다림. PASTE는 이 직렬 루프를 깨는 서빙 시스템임. 과거 트레이스에서 반복 툴 호출 패턴을 학습해 LLM이 생성 중일 때 다음 툴 호출을 예측 실행함. 평균 태스크 완료 시간 43.5% 감소, p99 테일 지연(가장 느린 1% 요청의 지연시간) 최대 55.4% 감소임.

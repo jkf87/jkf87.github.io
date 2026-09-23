@@ -9,6 +9,9 @@ tags:
   - survey
 source: anthropic-blog
 source_url: https://www.anthropic.com/research/coding-agents-social-sciences
+draft: true
+refactor_hub: coding-agents-01
+refactor_status: queued
 ---
 
 AI가 연구 논문을 쓴다? 이제 익숙한 이야기다. 하지만 AI가 직접 코드를 짜고 실행하고 결과를 해석하는 시대라면 얘기가 달라진다. Anthropic 경제연구팀이 1,260명의 사회과학자를 대상으로 "코딩 에이전트" 사용 실태를 조사했다. 결과는 예상보다 복잡하고, 생각보다 불평등했다.

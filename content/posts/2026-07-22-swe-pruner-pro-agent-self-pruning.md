@@ -1,11 +1,13 @@
 ---
 title: "에이전트가 도구 출력을 읽는 순간 이미 뭘 지울지 알고 있었음 — SWE-Pruner Pro 컨텍스트 다이어트"
 date: 2026-07-22T10:00:00+09:00
-draft: false
 tags: ["agent", "coding-agent", "context-engineering", "LLM", "harness", "tool-use"]
 categories: ["AI Agents", "LLM"]
 source_url: "https://arxiv.org/abs/2607.18213"
 github_url: "https://github.com/Ayanami1314/swe-pruner-pro"
+draft: true
+refactor_hub: coding-agents-04
+refactor_status: queued
 ---
 
 코딩 에이전트 토큰 예산의 70% 이상이 cat, grep, ls 결과 같은 도구 출력임. 컨텍스트 창이 빨리 차고 긴 컨텍스트 성능 저하까지 옴. SWE-Pruner Pro는 외부 모델 없이 최대 39% 토큰을 절감함. 발상이 실용적이라 정리함.

@@ -10,6 +10,9 @@ tags:
   - Synthetic
   - Agent
 description: NVIDIA가 KOSIS·건보공단·법원 통계에 묶인 합성 한국인 페르소나 700만 명을 공개함. 26개 필드, 17개 시·도, 2천 개 직업. LLM 에이전트가 "Hi, I'm your AI"가 아니라 "안녕하세요, 보건소로 가시면 됩니다" 하게 만드는 재료임.
+draft: true
+refactor_hub: archive-offtopic-01
+refactor_status: archived
 ---
 
 한국어 에이전트 만든다고 LLM 기본값에 "너는 한국인이야" 한 줄 넣으면 끝나는 줄 알았음. 근데 물어보면 *"Hi, I'm your AI assistant"* 식 영어 답이 돌아오거나, 독감 예방접종을 CDC 기준으로 설명해줌. NVIDIA가 그 공백을 메우려고 내놓은 게 Nemotron-Personas-Korea임.

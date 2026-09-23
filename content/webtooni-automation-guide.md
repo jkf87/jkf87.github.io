@@ -8,6 +8,9 @@ tags:
   - 캐릭터 디자인
 description: 웹툰이(Webtooni)를 사용하여 AI 캐릭터를 자동으로 생성하는 방법을 안내합니다. 표정, 포즈, 의상, 배경, 스타일 등 다양한 옵션과 예시 이미지를 포함합니다.
 publishDate: 2025-03-26
+draft: true
+refactor_hub: web-gui-agents-02
+refactor_status: queued
 ---
 
 # 웹툰이-자동으로-만들어진다

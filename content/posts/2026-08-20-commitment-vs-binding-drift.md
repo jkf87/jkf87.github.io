@@ -6,8 +6,10 @@ tags:
   - harness
   - evaluation
   - paper-review
-draft: false
 description: 장기 에이전트의 목표 이탈을 두 독립 실패로 쪼개고 각각 다른 수리를 적용한 구조 실험. 커밋먼트 스토어 제거만으로 어밴던먼트가 0.00에서 1.00으로 감. 성과 0을 먼저 공개한 정직함까지 정리함.
+draft: true
+refactor_hub: harness-self-improve-09
+refactor_status: queued
 ---
 
 장기 실행 에이전트가 목표에서 벗어나는 "골 드리프트"는 하나의 실패가 아님. 최소 두 개로 쪼개야 한다는 논문을 읽었음. 원문은 [arXiv:2608.04066](https://arxiv.org/abs/2608.04066)(개인 연구자, 2026-08).

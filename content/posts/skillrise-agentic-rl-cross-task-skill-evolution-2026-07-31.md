@@ -8,6 +8,9 @@ source_url: https://huggingface.co/papers/2607.26784
 paper_url: https://arxiv.org/abs/2607.26784
 github_url: https://github.com/Within-yao/SkillRise
 description: "태스크 풀기와 스킬 문서 큐레이팅을 단일 정책이 번갈아 수행하며 관련 태스크가 이어질수록 성능이 오르는 SkillRise. 세 벤치마크에서 최고 성능에 다단계 파이프라인 대비 4~6배 빠른 런타임을 냈다."
+draft: true
+refactor_hub: harness-self-improve-18
+refactor_status: queued
 ---
 
 에이전트가 태스크를 풀며 스킬 문서를 스스로 정리하고 다음 태스크에 재사용하는 RL 프레임워크가 나옴. 단일 정책으로 end-to-end라서 구조가 깔끔해 정리함. 원문은 [arXiv:2607.26784](https://arxiv.org/abs/2607.26784).

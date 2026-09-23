@@ -11,6 +11,9 @@ tags:
 description: 40대 두통은 피곤해서만 생기지 않음. 진통제 과다복용, 수면, 카페인, 목·어깨 긴장, 빨간 신호까지 같이 봐야 함.
 aliases:
   - 40s-headache-painkiller-overuse-2026-05-11/index
+draft: true
+refactor_hub: archive-health-01
+refactor_status: archived
 ---
 
 # 40대 두통, 진통제 자주 먹는 습관이 더 위험한 이유

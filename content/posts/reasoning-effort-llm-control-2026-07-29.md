@@ -1,7 +1,6 @@
 ---
 title: "언제 비싸게 생각하게 할 것인가 — reasoning effort는 정확도 옵션이 아니라 원가 옵션임"
 date: 2026-07-29
-draft: false
 tags:
   - LLM
   - reasoning-models
@@ -14,6 +13,9 @@ categories:
 description: "Sebastian Raschka의 Controlling Reasoning Effort in LLMs를 실무 관점으로 정리. reasoning effort는 단순 UI 옵션이 아니라 post-training과 inference-time compute가 만나는 조절 노브다."
 aliases:
   - /posts/reasoning-effort-llm-control-2026-07-29
+draft: true
+refactor_hub: agent-rl-04
+refactor_status: queued
 ---
 
 "Reasoning effort: low, medium, high"라는 메뉴가 이제 이상하지 않음. 모델을 고르던 시대에서 같은 모델 안에서 얼마나 오래 생각하게 할지 고르는 시대가 됨. Sebastian Raschka의 [Controlling Reasoning Effort in LLMs](https://magazine.sebastianraschka.com/p/controlling-reasoning-effort-in-llms)를 읽고 정리함 — 핵심은 reasoning effort가 prompt trick이 아니라 비용과 정확도 사이를 움직이도록 학습된 조절 노브라는 것.

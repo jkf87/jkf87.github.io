@@ -7,8 +7,10 @@ tags:
   - rl
   - agent
   - post-training
-draft: false
 description: "NVIDIA Nemotron-3-Ultra-CC가 IOI 2026에서 인간 참가자와 같은 조건으로 535.4점을 내 인간 최고점(498.27)을 넘긴 과정. 데이터 큐레이션·SFT·GRPO·GenCorrect 각 단계의 기여를 정리했다."
+draft: true
+refactor_hub: model-releases-04
+refactor_status: queued
 ---
 
 IOI 2026(국제정보올림피아드, 고등학생 대상 알고리즘 경시대회)에서 AI 시스템이 처음으로 인간 최고 득점자를 넘겼다는 논문이 나옴. 인간 참가자와 동일한 시간·인터넷 차단·제출 제한 조건이었다는 게 의미가 커서 정리함. 원문은 [arXiv:2609.02849](https://arxiv.org/abs/2609.02849).

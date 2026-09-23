@@ -1,7 +1,6 @@
 ---
 title: "RLVR 환경: 에이전트는 이제 문제집이 아니라 훈련장을 필요로 한다"
 date: 2026-07-28
-draft: false
 tags:
   - RLVR
   - reinforcement-learning
@@ -15,6 +14,9 @@ categories:
 description: "Deep Learning with Yacine의 RLVR 환경 소개 영상을 뉴스레터 형식으로 정리했다. 핵심은 데이터셋, 정책, 롤아웃, 루브릭을 묶은 재사용 가능한 환경이 에이전트 학습과 평가의 새 단위가 되고 있다는 점이다."
 aliases:
   - /posts/rlvr-environments-llm-agents-2026-07-28
+draft: true
+refactor_hub: agent-rl-04
+refactor_status: queued
 ---
 
 ![RLVR 환경을 데이터셋, 정책, 롤아웃, 루브릭이 연결된 훈련 루프로 표현한 이미지. 에이전트가 잘하는지를 묻는 시대에서, 무엇으로 반복 훈련시킬 것인지를 묻는 시대로 이동하고 있다.](/images/rlvr-environments-llm-agents-2026-07-28/hero.jpg)

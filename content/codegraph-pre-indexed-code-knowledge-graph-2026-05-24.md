@@ -9,9 +9,11 @@ tags:
   - mcp
   - knowledge-graph
   - github-trending
-draft: false
 enableToc: true
 description: "GitHub 트렌딩 1위 CodeGraph는 코딩 에이전트용 pre-indexed 코드 지식 그래프. Claude Opus 4.7 headless 기준 토큰 59% 절감, 툴 콜 70% 감소, 49% 빠름. 19개 언어 지원, 100% 로컬."
+draft: true
+refactor_hub: coding-agents-05
+refactor_status: queued
 ---
 
 원본: [github.com/colbymchenry/codegraph](https://github.com/colbymchenry/codegraph)

@@ -9,7 +9,6 @@ tags:
   - LLM
   - automation
   - MCP
-draft: false
 showTableOfContents: true
 description: "에이전트가 에이전트를 자동으로 해킹하는 AHA 프레임워크 분석. 공격 성공률 대신 반증 가능한 취약성 메커니즘을 축적하는 구조를 내 에이전트 검증 루프에 옮기는 법."
 external_source:
@@ -22,6 +21,9 @@ external_source:
     - Cong Wang
   venue: arXiv preprint
   year: 2026
+draft: true
+refactor_hub: harness-self-improve-09
+refactor_status: queued
 ---
 
 프로덕션 에이전트의 안전 실패는 유해한 문장이 아니라 실제 행동임. 파일을 지우고, 데이터를 유출하고, 무단 API를 호출하는 것. 그런데 이걸 테스트하는 자동 레드팀이 뱉는 결과물은 대개 공격 성공률 하나임. [AHA(Agent Hacks Agent)](https://arxiv.org/abs/2607.11698)는 "어디가 뚫렸는지"가 아니라 "왜 뚫렸는지"를 축적하는 구조를 제안함. 이 설계 사상은 공격 연구자가 아니라 에이전트 운영자에게도 그대로 쓸모가 있어 정리함.

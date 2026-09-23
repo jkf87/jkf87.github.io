@@ -4,6 +4,9 @@ slug: "openclaw-update-2026-05-05-06"
 date: 2026-05-07
 tags: ["OpenClaw", "업데이트", "구글미트", "AI에이전트", "음성브릿지", "디스코드", "Codex"]
 description: "OpenClaw 5월 5-6일 업데이트 요약. 구글 미트 음성 브릿지, 50개 넘는 버그 수정, Codex OAuth 긴급 복구까지."
+draft: true
+refactor_hub: openclaw-updates-02
+refactor_status: queued
 ---
 
 5월 5일, 6일 이틀 연속으로 OpenClaw가 업데이트되었습니다. 하이라이트 하나에 수정 50개 넘게 쏟아진 뒤, 이틀째 긴급 패치까지 이어진 이번 릴리즈를 정리해봅니다.

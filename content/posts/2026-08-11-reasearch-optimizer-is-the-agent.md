@@ -17,6 +17,9 @@ authors:
 source_url: "https://arxiv.org/abs/2608.06714"
 paper_url: "https://arxiv.org/abs/2608.06714"
 venue: "COLM 2026"
+draft: true
+refactor_hub: harness-self-improve-04
+refactor_status: queued
 ---
 
 프롬프트 최적화, 프로그램 진화, ML 워크플로 최적화는 지금까지 LLM을 변이 연산자로 쓰고 외부 알고리즘(진화 연산, 밴딧, MCTS(몬테카를로 트리 탐색, 가능한 선택지를 트리로 펼치고 시뮬레이션으로 유망한 가지를 골라 파고드는 알고리즘))이 검색 정책을 맡는 분업 구조였음. ReASearch는 이 분업을 없애고 단일 에이전트 루프가 검색 정책 전체를 수행하게 만듦. 14개 태스크에서 도메인 특화 시스템과 동등 이상이었고 Circle Packing에선 인간 최고 기록도 넘었음.

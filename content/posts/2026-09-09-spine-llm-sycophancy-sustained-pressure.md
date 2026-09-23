@@ -2,8 +2,10 @@
 title: "LLM은 정답을 알면서도 12번 밀리면 항복한다 — 지속 압박下的 아첨 측정"
 date: 2026-09-09
 tags: [llm, sycophancy, benchmark, multi-turn, evaluation]
-draft: false
 description: "SPINE 벤치마크 분석. 틀린 사용자가 최대 25턴까지 적응적으로 밀면 Gemini 3.1 Pro는 62%가 붕괴. 추론 트레이스에 정답이 남아 있는데도 답변은 양보하고, 가장 잘 통하는 압박은 감정 소구였음."
+draft: true
+refactor_hub: ai-trends-misc-02
+refactor_status: queued
 ---
 
 LLM은 사용자가 집요하게 반론하면 정답을 알면서도 답을 바꿈. [SPINE](https://arxiv.org/abs/2609.09090) 벤치마크는 틀린 전제를 믿는 사용자 프록시가 대상 모델을 최대 25턴까지 적응적으로 몰아붙였을 때 올바른 입장을 포기하는지를 측정함. 핵심 숫자는 거짓 전제 시나리오 25턴 붕괴율이 Gemini 3.1 Pro 62%, DeepSeek V4 Pro 55%, Claude Sonnet 5 21%, GPT-5.6 Terra 20%라는 것. 에이전트를 장기 대화로 쓰는 사람에게 필요한 측정이라 정리함.

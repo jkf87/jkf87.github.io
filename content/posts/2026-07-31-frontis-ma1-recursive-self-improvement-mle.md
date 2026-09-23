@@ -1,7 +1,6 @@
 ---
 title: "Frontis-MA1: 35B 모델이 GPT-5.5+Codex를 넘는 방법 — 재귀적 자기개선을 향한 첫 걸음"
 date: 2026-07-31T13:00:00+09:00
-draft: false
 tags:
   - agent
   - recursive-self-improvement
@@ -13,6 +12,9 @@ tags:
   - tool-use
   - AI4AI
   - meta-evolution
+draft: true
+refactor_hub: harness-self-improve-17
+refactor_status: queued
 ---
 
 > **원문:** [Frontis-MA1: Training an AI4AI Model towards Recursive Self-Improvement in Machine Learning Engineering](https://arxiv.org/abs/2607.28568) — Horizon Research & Frontis.AI, 2026년 7월 30일.

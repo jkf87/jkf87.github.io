@@ -1,10 +1,12 @@
 ---
 title: "최강 에이전트도 60점 못 넘는다 — OmniaBench가 드러낸 약점은 계획·제약·수정 능력"
 date: 2026-07-19T16:05:00+09:00
-draft: false
 tags: ["agent", "benchmark", "LLM", "에이전트 평가", "범용 에이전트"]
 description: "ToC·ToB·ToE 354개 도메인 1,431 과제로 범용 에이전트를 진단한 OmniaBench. 최전선 모델도 Pass@1 60% 미만이었고 계획·제약 유지·적응적 수정이 일관된 약점이었다."
 source_url: "https://arxiv.org/abs/2607.14989"
+draft: true
+refactor_hub: eval-benchmarks-02
+refactor_status: queued
 ---
 
 에이전트 성능표를 보면 "몇 점"만 있고 어디가 약한지는 없음. 근데 실무는 약한 지점을 아는 게 중요함. 범용 에이전트를 역량별로 해부한 벤치마크가 나와서 정리함. 원문은 [arXiv:2607.14989](https://arxiv.org/abs/2607.14989).

@@ -10,6 +10,9 @@ tags:
   - automation
   - DAG
   - code-agent
+draft: true
+refactor_hub: harness-self-improve-05
+refactor_status: queued
 ---
 
 코딩 에이전트에게 데이터 파이프라인을 시키면 대부분 일회성 파이썬 스크립트를 내놓음. 실행은 되지만 관리도 검수도 재사용도 안 됨. 여기서 DAG는 방향성 비순환 그래프를 뜻하는데, 데이터 처리 단계들을 화살표로 연결해 앞 단계가 끝나야 뒤 단계가 실행되는 순서 구조로 파이프라인을 표현하는 방식임. DataFlow-Harness 연구는 이 간극에 NL2Pipeline gap이라는 이름을 붙이고, 에이전트가 플랫폼 네이티브 DAG를 직접 조립하게 만듦. 자동화 파이프라인을 에이전트로 짜는 사람에게 실무 교훈이 많은 구조임.

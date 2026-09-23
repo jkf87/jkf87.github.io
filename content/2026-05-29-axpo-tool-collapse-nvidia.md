@@ -1,7 +1,6 @@
 ---
 title: "AI가 도구를 쓰는 법을 배우지 못하는 이유, NVIDIA가 찾은 해법"
 date: 2026-05-29
-draft: false
 tags:
   - AI
   - NVIDIA
@@ -10,6 +9,9 @@ tags:
   - agentic-reasoning
   - AXPO
   - paper-review
+draft: true
+refactor_hub: reasoning-efficiency-01
+refactor_status: queued
 ---
 
 ![AXPO의 핵심 아이디어: 도구 호출이 실패하면, 생각은 그대로 두고 도구 호출 부분만 다시 생성한다.](images/axpo-2026-05-29/fig1-concept.png)

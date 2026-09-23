@@ -8,6 +8,9 @@ tags:
   - memory
   - obsidian
 description: "tinyhumans.ai가 공개한 OpenHuman은 118개 이상의 서비스와 원클릭 연동, 20분마다 자동 동기화, 로컬 기반 메모리 트리로 설치 후 몇 분 만에 당신의 전체 맥락을 이해하는 오픈소스 AI 에이전트다."
+draft: true
+refactor_hub: agent-memory-03
+refactor_status: queued
 ---
 
 > 2026년 5월, tinyhumans.ai가 공개한 **OpenHuman**은 "AI가 나에 대해 뭘 알고 있나?"라는 근본적인 질문에서 출발한다. 118개 이상의 서비스와 원클릭 연동, 20분마다 자동 동기화, 로컬 기반 메모리 트리. Karpathy의 Obsidian 위키 워크플로에서 영감받은 이 프로젝트가 왜 주목받는지 정리했다.

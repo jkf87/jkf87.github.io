@@ -12,8 +12,10 @@ tags:
   - tool-use
   - RL
   - frozen-model
-draft: false
 summary: "동결된 모델 바깥에서 컨텍스트 구성을 행동 공간으로 정의하고 bandit/REINFORCE로 학습시키는 구조. 729개 구성에서 60 에피소드로는 안정성도 교정도 실패한다는 정직한 부정 결과까지 정리함."
+draft: true
+refactor_hub: harness-self-improve-13
+refactor_status: queued
 ---
 
 에이전트 하네스를 제어 이론의 렌즈로 보면 "무엇을 통제할 것인가"가 첫 질문임. 이 논문의 대답은 도구 선택도 코드 재작성도 아니고 컨텍스트 어셈블리 그 자체임. 그리고 냉정한 부정 결과까지 그대로 보고해서 실무자에게 유용함.

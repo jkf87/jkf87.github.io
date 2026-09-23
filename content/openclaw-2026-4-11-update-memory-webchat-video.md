@@ -8,6 +8,9 @@ tags:
   - webchat
   - video-generation
 description: "OpenClaw 2026.4.11 업데이트의 핵심 변화를 실사용자 관점에서 정리했습니다. ChatGPT 기억 가져오기, 웹챗 리치 버블, 영상 생성 고도화, Codex OAuth 수정까지 한 번에 살펴봅니다."
+draft: true
+refactor_hub: openclaw-updates-01
+refactor_status: queued
 ---
 
 # 블로그 제목 후보

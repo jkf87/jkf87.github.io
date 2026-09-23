@@ -9,6 +9,9 @@ tags:
   - development
   - devops
 description: "LiteLLM·Telnyx 악성 패키지 사건이 알려준 오픈소스 생태계의 보험, 개발자와 오픈소스 관리자를 위한 구체적인 방어 전략 정리"
+draft: true
+refactor_hub: agent-safety-01
+refactor_status: queued
 ---
 
 GeekNews에 올라온 **PyPI 보안팀의 공식 공급망 공격 사고 보고서**는 단순히 "악성 패키지가 발견됐다"는 뉴스가 아닙니다. 이 사건이 중요한 이유는, 오픈소스 생태계의 보안 위혘이 더 이상 이론적인 가능성이 아니라 **매일 맞이해야 하는 현실 위협**으로 자리 잡았음을 보여주기 때문입니다.

@@ -2,8 +2,10 @@
 title: "스킬 문서를 읽어도 절차를 못 지킴 — Skill-Use 벤치마크가 찾은 두 개의 독립 병목"
 date: 2026-08-24T19:00:00+09:00
 tags: [agent, LLM, benchmark, skill, harness, evaluation]
-draft: false
 description: "공개 스킬 7,979개와 과제 17만 개로 스킬 인식·준수·경계 준수를 측정한 Skill-Use 벤치마크. 최고 조합도 SU 0.613이었고, 인식과 절차 준수는 독립 병목이며 SU 0.5 미만 스킬은 없느니만 못했다."
+draft: true
+refactor_hub: harness-self-improve-01
+refactor_status: queued
 ---
 
 스킬 라이브러리를 달면 에이전트가 잘 쓸 거라는 가정을 대규모로 검증한 벤치마크가 나옴. 결론이 "공짜 개선이 아니다"라서 정리함. 원문은 [arXiv:2608.04828](https://arxiv.org/abs/2608.04828).

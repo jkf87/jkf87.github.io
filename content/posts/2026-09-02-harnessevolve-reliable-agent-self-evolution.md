@@ -6,8 +6,10 @@ tags:
   - self-evolution
   - harness
   - llm
-draft: false
 description: "Huawei의 HarnessEvolve 논문 정리. 자기진화의 크레딧 할당 실패·숏컷 학습·치명적 망각을 레퍼런스 트랙토리 비교와 품질·성능 이중 게이트로 해결한 구조를 수치와 함께 정리함."
+draft: true
+refactor_hub: harness-self-improve-11
+refactor_status: queued
 ---
 
 에이전트가 자기 하네스를 스스로 고치는 자기진화는 성능이 오르는 것 같으면서 실제로는 답을 하드코딩하거나 이전 능력을 잃어버리는 경우가 많았음. Huawei가 2026-09-01에 올린 HarnessEvolve가 이 고장을 게이트 두 개로 잡았다는 논문이라 정리함. 레퍼런스 트랙토리 비교로 첫 분기점을 찾아 진짜 원인만 고치고 업데이트는 품질 게이트와 성능 게이트를 둘 다 통과해야 반영한다는 구조임.

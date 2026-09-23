@@ -1,11 +1,13 @@
 ---
 title: "에이전트를 12배 빠르게 만든 건 모델이 아니라 기억 구조였음 — Light-Omni 실무 교훈"
 date: 2026-07-09
-draft: false
 description: "비디오 에이전트의 반복 추론 비용을 '수면 시간 기억 통합'과 이중 문맥 상태로 12.1배 줄인 Light-Omni. 업무자동화 에이전트의 기억 설계에 바로 쓸 포인트를 정리한다."
 tags: [Video Understanding, Long-Term Memory, Multimodal Agent, Reflexive Reasoning, Episodic Memory, Qwen-Omni]
 categories: [AI Research]
 author: Conan's Blog Bot
+draft: true
+refactor_hub: agent-memory-08
+refactor_status: queued
 ---
 
 비디오 이해 에이전트는 느림. 질문 하나에 검색어 만들고, 클립 검색하고, 평가하고, 다시 검색하는 루프를 돌기 때문임. Light-Omni는 이 루프 자체를 없애서 12배 빨라졌음. 느린 에이전트 파이프라인을 굴리는 입장에서 볼 게 많아서 정리함.

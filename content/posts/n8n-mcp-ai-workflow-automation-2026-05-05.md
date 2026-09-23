@@ -13,8 +13,10 @@ tags:
 description: "n8n의 1,650개 노드를 AI가 이해하고 대신 워크플로우를 짜준다면? n8n-MCP가 그 다리 역할을 한다. 설치부터 실전 활용까지 정리했다."
 aliases:
   - n8n-mcp-ai-workflow-automation-2026-05-05/index
-draft: false
 cover: images/n8n-mcp-ai-workflow-automation-2026-05-05/thumbnail.jpg
+draft: true
+refactor_hub: dev-tools-01
+refactor_status: queued
 ---
 
 ![n8n-MCP 4컷 요약 — AI가 n8n 워크플로우를 대신 짜주는 시대](images/n8n-mcp-ai-workflow-automation-2026-05-05/thumbnail.jpg)

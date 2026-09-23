@@ -7,8 +7,10 @@ tags:
   - benchmark
   - multimodal
   - arxiv
-draft: false
 description: "문항당 평균 12.1개 필수 중간 결론과 의존 깊이 10.4로 장기 딥리서치를 측정한 Mr.LHDR 벤치마크. GPT-5.5도 OA 43.1%, o3 Deep Research는 32.4%에 그치는 결과와 이미지 절제 실험을 정리함."
+draft: true
+refactor_hub: research-agents-01
+refactor_status: queued
 ---
 
 Mr.LHDR(Multimodal real-world Long-Horizon Deep Research, arXiv 2609.11318)은 실전 웹 기반 장기 딥리서치 능력을 평가하는 벤치마크임. 102문항, 8개 카테고리, 문항당 평균 12.1개의 필수 중간 결론, 의존 깊이 10.4가 구조임. 최종 답은 짧고 유일하며 검증 가능하고 각 문항에 추론 상태를 바꾸는 비텍스트 증거(이미지, 지도, PDF, 로고, 차트, 표, 영상 프레임)가 최소 1개 포함됨.

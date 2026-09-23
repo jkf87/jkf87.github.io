@@ -1,9 +1,11 @@
 ---
 title: "파인튜닝이 뭘 학습했는지 로짓 차이로 캐기 — Diff Mining 감사 도구 정리"
 date: 2026-09-01
-draft: false
 tags: [interpretability, finetuning, llm, auditing]
 description: "파인튜닝 모델과 베이스 모델의 로짓 차이를 집계해 숨은 학습 목적을 나타내는 토큰 세트를 뽑는 Diff Mining을 정리함. 내부 가중치 접근 없이 출력 로짓만으로 동작하고 은폐된 편향 52개 중 약 3분의 1을 식별함. 모델 감사 실무 적용점을 다룸."
+draft: true
+refactor_hub: dev-tools-02
+refactor_status: queued
 ---
 
 오픈 웨이트 모델을 가져다 쓸 때 늘 남는 의문이 하나 있음. 이 파인튜닝이 대체 뭘 학습했는가. 표면적 지시 따르기 뒤에 다른 목적이 심어져 있으면 사용자는 알 방법이 없었음. Diff Mining(arXiv:2608.26462, ICLR 2026 Workshop)이 이 문제에 저렴한 답을 줌. 파인튜닝 모델과 베이스 모델의 출력 로짓(모델이 다음 토큰 후보마다 매기는 점수) 차이를 집계해서 해당 파인튜닝이 학습한 것을 나타내는 토큰 세트를 구성하는 것. 내부 접근이 필요 없어서 대형 모델에도 적용 가능함.

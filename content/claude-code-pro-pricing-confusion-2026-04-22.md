@@ -11,6 +11,9 @@ tags:
   - 개발도구
   - SaaS
 description: "claude.com/pricing 비교표에서 Pro 플랜의 Claude Code 항목이 X로 표시돼 혼선이 커졌습니다. 가격 페이지, 도움말 문서, Max 플랜 안내가 서로 어떻게 충돌하는지 정리했습니다."
+draft: true
+refactor_hub: coding-agents-06
+refactor_status: queued
 ---
 
 - **가격 페이지**: [claude.com/pricing](https://claude.com/pricing)

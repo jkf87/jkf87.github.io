@@ -10,6 +10,9 @@ tags:
   - hacker-news
   - thinking
 description: "Hacker News에서 화제가 된 ‘The machines are fine. I’m worried about us.’를 바탕으로, AI가 생산성은 높이지만 사고력과 학습 과정을 약화시킬 수 있다는 문제를 교육과 연구의 관점에서 정리합니다."
+draft: true
+refactor_hub: ai-trends-misc-06
+refactor_status: queued
 ---
 
 > **원문**: [The machines are fine. I’m worried about us.](https://ergosphere.blog/posts/the-machines-are-fine/)

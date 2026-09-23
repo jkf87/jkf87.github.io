@@ -11,6 +11,9 @@ tags:
 description: "40대 건강검진에서 LDL이 130대면 그냥 정상 끝자락으로 넘기기 쉬움. 증상 없는 고지혈증의 신호와 먼저 손봐야 할 생활 포인트를 정리함."
 aliases:
   - 40s-ldl-cholesterol-130-warning-2026-05-04/index
+draft: true
+refactor_hub: archive-health-01
+refactor_status: archived
 ---
 
 # 40대 LDL 콜레스테롤 130, 그냥 괜찮다고 넘기면 안 되는 이유

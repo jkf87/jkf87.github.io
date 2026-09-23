@@ -2,8 +2,10 @@
 title: "하네스 최적화 이득은 어느 슬롯에서 나오는가 — HarnessEvo의 크레딧 측정과 예산 분할 함정"
 date: 2026-09-06
 tags: [agent, harness, prompt-engineering, credit-assignment, LLM]
-draft: false
 description: "얼어붙은 에이전트의 하네스를 4개 슬롯으로 분해해 크레딧을 측정하니 이득은 reflection/control 슬롯에 국한됐고 균등 예산 분할은 최적화를 정지시킴. 예산을 고신용 슬롯에 집중하자 0.657 → 0.761. 하네스 튜닝 전 크레딧 할당 먼저라는 교훈을 정리함."
+draft: true
+refactor_hub: harness-self-improve-19
+refactor_status: queued
 ---
 
 하네스(모델을 실제로 구동하는 프롬프트·도구 규칙·루프 제어 등 실행 설계 전반)를 최적화할 때 전체 성능만 보면 뭐가 이득을 만드는지 모름. HarnessEvo(arXiv 2609.02889)는 얼어붙은 LLM 에이전트의 하네스를 4개 슬롯으로 분해하고 슬롯별 크레딧을 leave-one-in / leave-one-out(슬롯 하나만 남기거나 하나만 빼서 성공률 변화로 기여를 측정하는 프로토콜)로 측정함. 결과가 흥미로움. 전체 성공률은 기준선과 동점인데 이득 전부가 reflection/control 슬롯 하나에 국한됐고, 균등 예산 분할은 최적화를 아예 정지시킴. 하네스 최적화를 시작하기 전에 크레딧 할당을 먼저 하면 된다는 결론.

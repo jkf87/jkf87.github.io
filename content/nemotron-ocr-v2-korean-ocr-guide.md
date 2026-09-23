@@ -10,6 +10,9 @@ tags:
   - multimodal
   - rag
 description: "NVIDIA가 공개한 Nemotron OCR v2를 한국어 관점에서 정리했다. 한국어 NED 0.047이 의미하는 것, 왜 SOTA급이라고 불리는지, Hugging Face 사용법과 CUDA 기반 하드웨어 요구사항까지 한 번에 설명한다."
+draft: true
+refactor_hub: model-releases-03
+refactor_status: queued
 ---
 
 > 원문 및 참고: [Hugging Face 모델 카드](https://huggingface.co/nvidia/nemotron-ocr-v2), [NVIDIA/Hugging Face 블로그](https://huggingface.co/blog/nvidia/nemotron-ocr-v2), [Quickstart](https://huggingface.co/nvidia/nemotron-ocr-v2/blob/main/quickstart.md), [관련 Threads 글](https://www.threads.com/@byeongki_j/post/DXRpWiKFOLS)

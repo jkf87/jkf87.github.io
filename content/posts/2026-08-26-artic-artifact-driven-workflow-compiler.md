@@ -8,8 +8,10 @@ tags:
   - harness
   - compilation
   - reliability
-draft: false
 description: "Artic 분석. 자연어 워크플로를 읽기/쓰기 아티팩트와 제약, 제어 이전을 명시한 형태로 컴파일해서 실행 성공률 평균 28%p 향상. 암묵적 데이터 의존성이 실패의 주범이라는 진단과 실무 적용."
+draft: true
+refactor_hub: harness-self-improve-21
+refactor_status: queued
 ---
 
 도메인 전문가가 절차를 자연어로 쓰면 에이전트가 실행하는 구조가 확산 중인데, 소프트웨어가 기대하는 두 속성이 성립 안 함. 환경 간 재사용 가능한 예측 가능성과 프로그램 지시에 대한 정확한 이행. Purdue의 [Artic](https://arxiv.org/abs/2608.21341)은 자연어 워크플로를 컴파일해서 이걸 해결했고 원문 텍스트 대비 평균 28%p 해결률 향상을 냈음. 자연어 지시서를 그대로 돌리는 내 자동화와 직결된 문제라 정리함.

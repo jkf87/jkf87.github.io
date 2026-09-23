@@ -8,8 +8,10 @@ tags:
   - harness
   - security
   - arxiv
-draft: false
 description: "서로 다른 사용자의 에이전트가 자율 협업하는 소사이어티에서 정직한 에이전트조차 일정 조율에 실패하고, 악성 에이전트는 거짓 취소 통보로 캘린더를 바꿈. 5계층 소셜 하네스 스택 제안을 정리."
+draft: true
+refactor_hub: harness-self-improve-10
+refactor_status: queued
 ---
 
 서로 다른 사람을 대행하는 에이전트들이 자율 협업하는 상황에서 정직하고 유능한 에이전트들끼리도 회의 시간 하나 제대로 못 잡는 경우가 있음. [Agentic Societies Need a Social Harness](https://arxiv.org/abs/2609.17527)(UW). 연결과 신뢰는 다른 문제라는 반례 데이터라 정리함.

@@ -8,6 +8,9 @@ tags:
   - jetson
   - mamba
 description: "NVIDIA가 공개한 4B 파라미터 Mamba-Transformer 하이브리드 모델. Jetson Orin Nano에서 18 tok/s, RTX 4070에서 최저 VRAM 사용량으로 동급 최고 성능을 달성했다."
+draft: true
+refactor_hub: model-releases-03
+refactor_status: queued
 ---
 
 NVIDIA가 **Nemotron 3 Nano 4B**를 공개했다. 파라미터 수 4B에 불과하지만, 엣지 디바이스에서 동작하도록 정교하게 설계된 소형 하이브리드 모델이다. RTX GPU, Jetson, DGX Spark 같은 NVIDIA 플랫폼 어디서든 구동 가능하며, 로컬 대화형 에이전트와 에이전트 AI 시나리오를 타겟으로 한다.

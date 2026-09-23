@@ -8,6 +8,9 @@ tags:
   - transformer
   - lecture
 description: "ECE7115 7강 LLM Case Study를 LLaMA, LLaMA 2, Mistral 흐름 중심으로 짧게 정리한 Quartz 노트."
+draft: true
+refactor_hub: llm-course-notes-01
+refactor_status: queued
 ---
 
 # ECE7115 7강 요약: LLM Case Study로 보는 아키텍처 변화

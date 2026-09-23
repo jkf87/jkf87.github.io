@@ -7,6 +7,9 @@ tags: [agent, harness, LLM, automation, self-evolution, quality-diversity]
 source_url: https://arxiv.org/abs/2607.13683
 authors:
   - jkf87
+draft: true
+refactor_hub: harness-self-improve-19
+refactor_status: queued
 ---
 
 모델 가중치를 못 바꾸는 배포 환경에서 하네스가 유일한 레버임. 그래서 하네스를 스스로 진화시키는 시도가 늘고 있는데, GSME 논문이 짚는 진짜 난제는 "무엇을 바꿀까"가 아니라 "무엇이 진짜 도움이 됐는지 아는 것"임. 이 지점을 정리해둘 가치가 큼.

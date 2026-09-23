@@ -8,6 +8,9 @@ tags:
   - automation
   - development
 description: "ROACH PI 사례를 바탕으로, 코딩 에이전트의 경쟁력이 모델 성능보다 계획, 검증, 투명성 같은 엔지니어링 규율로 이동하는 흐름을 실무 관점에서 정리합니다."
+draft: true
+refactor_hub: coding-agents-01
+refactor_status: queued
 ---
 
 코딩 에이전트, 멀티 에이전트, 검증 루프 같은 키워드가 익숙해진 지금은 더 좋은 모델 하나를 붙이는 것만으로는 차이가 오래가지 않습니다. 오늘 GeekNews에서 눈에 띈 **ROACH PI**는 바로 그 다음 질문을 던집니다. 에이전트가 코드를 잘 쓰는 것과, 그 결과를 **믿을 수 있게 만드는 구조**는 전혀 다른 문제라는 점입니다.

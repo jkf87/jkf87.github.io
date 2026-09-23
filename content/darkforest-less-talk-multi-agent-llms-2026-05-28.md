@@ -10,6 +10,9 @@ tags:
 slug: darkforest-less-talk-multi-agent-llms-2026-05-28
 source: huggingface
 source_url: https://arxiv.org/abs/2605.25188
+draft: true
+refactor_hub: multi-agent-02
+refactor_status: queued
 ---
 
 멀티에이전트 LLM 시스템에서 가장 많이 쓰는 방식은 에이전트끼리 대화를 시키는 거다. 토론하게 하고, 서로의 추론 과정을 공유하고, 몇 라운드를 거치며 답을 다듬는다. 직관적으로는 말이 많을수록 좋아질 것 같다. 더 많은 시각이 모이고, 실수가 교정되고, 합의가 탄탄해지니까.

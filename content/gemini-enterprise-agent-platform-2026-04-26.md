@@ -11,6 +11,9 @@ tags:
   - AgentCore
   - 에이전트
 description: 구글의 Gemini Enterprise Agent Platform과 AWS의 Bedrock AgentCore를 나란히 놓고 비교. 모델 시대에서 에이전트 운영 시대로 넘어가는 두 가지 답안.
+draft: true
+refactor_hub: ai-trends-misc-01
+refactor_status: queued
 ---
 
 1\. 2026년 4월 23일, 구글 클라우드가 새 플랫폼을 냈음. 이름은 **Gemini Enterprise Agent Platform**임.

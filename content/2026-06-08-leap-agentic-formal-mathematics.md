@@ -1,7 +1,6 @@
 ---
 title: "LEAP: 범용 LLM으로 정형 수학 증명의 최고 수준 달성"
 date: 2026-06-08
-draft: false
 tags:
   - AI
   - LLM
@@ -12,6 +11,9 @@ tags:
   - mathematics
 source: huggingface
 source_url: https://arxiv.org/abs/2606.03303
+draft: true
+refactor_hub: ai-trends-misc-04
+refactor_status: queued
 ---
 
 ![LEAP 워크플로우 다이어그램](/images/2026-06-08-leap-agentic-formal-mathematics/figure-1.png)

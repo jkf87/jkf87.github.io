@@ -1,7 +1,6 @@
 ---
 title: "GPT-5.6 Preview System Card — 진짜 뉴스는 성능이 아니라 ‘배포 운영’이다"
 date: 2026-06-27
-draft: false
 tags:
   - OpenAI
   - GPT-5.6
@@ -14,6 +13,9 @@ tags:
 description: "OpenAI GPT-5.6 Preview System Card를 BlogLoop 기준으로 다시 정리했다. Sol·Terra·Luna의 High 역량 판정, 에이전트 코딩의 과도한 persistence, activation classifier 기반 실시간 세이프가드, 그리고 AI 제품 운영자가 봐야 할 함의를 해설한다."
 aliases:
   - "gpt-5-6-preview-system-card"
+draft: true
+refactor_hub: model-releases-02
+refactor_status: queued
 ---
 
 > [!info] 원문

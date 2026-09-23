@@ -1,7 +1,6 @@
 ---
 title: "Claude Opus 4.8 System Card 정독 — RSP·정렬·복지·능력 96개 figure 전수 해설"
 date: 2026-05-29
-draft: false
 tags:
   - anthropic
   - claude
@@ -15,6 +14,9 @@ tags:
 description: "244페이지짜리 Claude Opus 4.8 System Card를 한국어 기술 블로그 형태로 정독. 96개 figure 모두에 대해 벤치마크 정의 + 평가 방법 + 결과 해석 단락을 부착. RSP 위협모델 / 사이버 / 안전장치 / 에이전트 / 정렬 / 모델 복지 / 능력 평가 7개 축으로 정리."
 aliases:
   - "opus-4-8-system-card-blog"
+draft: true
+refactor_hub: model-releases-02
+refactor_status: queued
 ---
 
 > [!info] 이 글의 위치

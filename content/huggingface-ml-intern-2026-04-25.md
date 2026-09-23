@@ -11,6 +11,9 @@ tags:
 description: "허깅페이스가 공개한 ml-intern 레포 분석. CLI에서 'fine-tune llama on my dataset' 한 줄로 논문 검색→데이터셋 준비→학습 잡 실행→HF 허브 배포까지 자동화하는 오픈소스 ML 엔지니어 에이전트의 구조와 의의."
 aliases:
   - huggingface-ml-intern-2026-04-25/index
+draft: true
+refactor_hub: dev-tools-01
+refactor_status: queued
 ---
 
 허깅페이스가 [ml-intern](https://github.com/huggingface/ml-intern) 레포를 공개했다. 논문 읽고, 데이터셋 준비하고, 모델 학습시키고, 허브에 배포하는 흐름을 자동으로 처리하는 오픈소스 ML 엔지니어 에이전트다. 공개 6개월 만에 별 5,500개, 포크 485개를 찍었다.

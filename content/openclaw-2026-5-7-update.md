@@ -5,6 +5,9 @@ tags: [openclaw, 오픈클로, AI, 업무자동화, 업데이트, Codex, Telegra
 description: "오픈클로 2026.5.7 업데이트 핵심 정리. ClawHub 배포 안정화, openai/chat-latest 모델 옵션, 크론 JSON 상태, 채널 권한, Telegram·Discord·WhatsApp·Codex 승인 개선을 한국어로 쉽게 정리했습니다."
 slug: openclaw-2026-5-7-update
 category: AI도구
+draft: true
+refactor_hub: openclaw-updates-01
+refactor_status: queued
 ---
 
 ![오픈클로 2026.5.7 업데이트 4컷 만화](./images/openclaw-2026-5-7-comic/4panel-comic.jpg)

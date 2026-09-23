@@ -1,7 +1,6 @@
 ---
 title: "GateMem: 에이전트 메모리는 ‘기억력’이 아니라 거버넌스다"
 date: 2026-06-23
-draft: false
 tags:
   - GateMem
   - MemoryAgent
@@ -12,6 +11,9 @@ tags:
 categories:
   - AI기술
 description: "GateMem 논문을 통해 병원·회사·학교·가정처럼 여러 사람이 함께 쓰는 AI 에이전트에서 메모리 품질이 왜 단순 recall이 아니라 권한, 삭제, 최신 상태를 함께 다루는 거버넌스 문제인지 정리합니다."
+draft: true
+refactor_hub: agent-memory-03
+refactor_status: queued
 ---
 
 ## 핵심 요약

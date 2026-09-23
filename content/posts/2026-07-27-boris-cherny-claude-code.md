@@ -9,8 +9,10 @@ tags:
   - harness
   - dynamic-workflow
 date: 2026-07-27
-draft: false
 summary: "클로드 코드를 만든 보리스 체르니가 YC 스타트업 스쿨에서 밝힌 에이전트 시대의 코딩 철학. 시스템 프롬프트 80% 삭제, Bun 런타임 11일 Zig→Rust 재작성, 일렉트론→스위프트 2주차 세션, 다이내믹 워크플로로 수천 에이전트 동시 구동까지 — 코딩의 병목이 검증 능력으로 옮겨간 현장을 분석한다."
+draft: true
+refactor_hub: harness-self-improve-14
+refactor_status: queued
 ---
 
 

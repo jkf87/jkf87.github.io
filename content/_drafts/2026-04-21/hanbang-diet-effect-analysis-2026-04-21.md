@@ -1,7 +1,6 @@
 ---
 title: "한방 다이어트 효과 분석, 단기 신호는 있지만 근거는 아직 약함"
 date: 2026-04-21
-draft: true
 tags:
   - 한방 다이어트
   - 한약 다이어트
@@ -15,6 +14,9 @@ keywords:
   - 비만 한약
   - 체중 감량 근거
   - 마황 부작용
+draft: true
+refactor_hub: archive-draft-01
+refactor_status: archived
 ---
 
 한방 다이어트는 늘 관심이 큼.

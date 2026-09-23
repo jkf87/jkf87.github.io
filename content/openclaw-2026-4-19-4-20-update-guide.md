@@ -13,6 +13,9 @@ tags:
   - 업무자동화
   - ai-비서
 description: "OpenClaw 2026.4.19-beta.2와 2026.4.20 업데이트 핵심 정리. 텔레그램, 크론, 상태 표시, Codex, 보안 강화까지 실제 체감 변화와 바로 써보는 사용법을 한 번에 정리했습니다."
+draft: true
+refactor_hub: openclaw-updates-01
+refactor_status: queued
 ---
 
 - **GitHub Releases**: [v2026.4.19-beta.2](https://github.com/openclaw/openclaw/releases/tag/v2026.4.19-beta.2), [v2026.4.20](https://github.com/openclaw/openclaw/releases/tag/v2026.4.20)

@@ -6,8 +6,10 @@ tags:
   - security
   - llm
   - arxiv
-draft: false
 description: "개별 에이전트 보안 컨트롤이 파이프라인으로 합쳐질 때 보안 문맥이 경계에서 사라지는 security-context discontinuity를 assume-guarantee 컨트랙트와 witness 체인으로 해결한 CONTINUITY를 정리함. 2,560개 공격 Effect ASR 0.0%, 최강 대조군 65.6%. 조각 단위 적용점을 다룸."
+draft: true
+refactor_hub: agent-safety-02
+refactor_status: queued
 ---
 
 에이전트 보안 컨트롤의 난점은 개별 성능이 아님. 각각 따로 보면 다 맞는데 파이프라인으로 합치면 보안 문맥이 경계에서 사라지거나 바뀌는 것. CONTINUITY(arXiv 2609.05269)는 이걸 security-context discontinuity로 정의하고 검증 가능한 컨트랙트 체인으로 해결함. 핵심 수치부터. 공격 인스턴스 2,560건 중 유해 효과 0건(Effect ASR, 공격이 유해한 외부 행동까지 도달해 성공한 비율, 0.0%). 정상 태스크 700건 자동 완료 100%, 모호 태스크 200건 에스컬레이션 100%. 그리고 최강 불완전 대조군(Gateway+Finality)은 ASR 65.6%. 컴포지션 갭이 곧 공격면이라는 중심 주장의 수치 근거임.

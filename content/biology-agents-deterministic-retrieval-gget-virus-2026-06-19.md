@@ -13,11 +13,13 @@ tags:
   - data-infrastructure
   - AI-research
 description: "Anthropic의 Paving the way for agents in biology 정리. Claude, Biomni, Edison, GPT가 NCBI Virus 데이터 검색에서 왜 불안정했는지, gget virus 같은 결정론적 검색 계층이 정확도를 90~99.7%까지 끌어올린 이유를 정리했다."
-draft: false
 source: anthropic-research
 source_url: https://www.anthropic.com/research/agents-in-biology
 aliases:
   - biology-agents-deterministic-retrieval-gget-virus-2026-06-19/index
+draft: true
+refactor_hub: agent-memory-05
+refactor_status: queued
 ---
 
 코딩 에이전트는 빠르게 좋아지고 있다. Claude Code, Codex, Gemini CLI 같은 도구는 이미 파일을 읽고, 코드를 고치고, 테스트를 돌리고, PR 수준 작업까지 처리한다.

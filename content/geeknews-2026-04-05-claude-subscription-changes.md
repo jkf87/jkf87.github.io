@@ -10,6 +10,9 @@ tags:
   - development
   - productivity
 description: "Claude 구독 정책 변경과 OpenClaw 금지 사건이 드러낸 AI 서비스의 근본적인 문제와 개발자 대응 전략 분석"
+draft: true
+refactor_hub: ai-trends-misc-06
+refactor_status: queued
 ---
 
 GeekNews를 통해 전해진 **Claude 구독 정책 변경 소식**은 단순히 "요금제가 바뀌었다"는 뉴스 이상의 의미를 담고 있습니다. OpenClaw 같은 서드파티 툴 사용을 금지하고 구독 모델을 변경한 이번 조치는, AI 서비스가 맞이하는 **규모와 수익성 사이의 근본적인 갈등**을 보여줍니다.

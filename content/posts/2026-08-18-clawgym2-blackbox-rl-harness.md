@@ -14,8 +14,10 @@ source: arxiv
 source_url: https://arxiv.org/abs/2608.16798
 authors:
   - conanssam
-draft: false
 description: "ClawGym II는 내부가 안 보이는 상용 하네스를 RL 파이프라인에 올림. 서빙 프록시로 호출을 캡처하고 prefix tree로 궤적을 재구성해 PPO/GRPO로 학습. 하네스별 +9.98/+14.81p 향상과 mix-harness 학습 결과를 정리함."
+draft: true
+refactor_hub: harness-self-improve-12
+refactor_status: queued
 ---
 
 Claude Code, Codex, OpenClaw 같은 프로덕션 하네스는 롱호라이즌 과제 성능을 크게 올려줌. 근데 이 하네스를 RL(강화학습, 보상 신호를 받으며 시행착오로 정책을 개선하는 학습 방식) 학습에 쓰는 건 막혀 있었음. 내부가 블랙박스라 무슨 호출이 일어나는지 정리가 안 되고, 롱호라이즌 과제의 상태ful 환경에서 대규모 동시 롤아웃이 인프라를 무너뜨리고, 중간 한 번의 실패로 배치 전체가 날아가고, 호출 로그는 잘리고 갈라져서 그냥 독립 학습시키면 공유 히스토리를 반복 학습함. ClawGym II는 이 벽을 넘음. 하네스 내부를 안 고치고 겉에서 도는 RL로 안정적으로 에이전트를 최적화한 것.

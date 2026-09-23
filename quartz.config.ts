@@ -18,7 +18,25 @@ const config: QuartzConfig = {
     },
     locale: "ko-KR",
     baseUrl: "conanssam.com",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    ignorePatterns: [
+      "private",
+      "templates",
+      ".obsidian",
+      "_drafts",
+      // 옛 이미지(논문 그림·슬라이드·기사 캡처·추출 부산물)는 저장소에만 두고 웹에는 내보내지 않는다.
+      // 공개 글의 이미지는 media/<slug>/ 에 둔다(운영자 캡처, 봇이 직접 실행·제작한 이미지만).
+      "images",
+      "assets",
+      "posts/images",
+      "laws-of-ux/**/*.{png,jpg,jpeg,gif,webp,svg}",
+      "openhuman-ai-agent-2026-05-14",
+      "qwen3.6-mtp-guide-2026-05-14",
+      "scientific-agent-skills-2026-05-14",
+      "nvidia-skills-*",
+      "understand-anything-*",
+      "**/*.jsonl",
+      "**/*.log",
+    ],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",

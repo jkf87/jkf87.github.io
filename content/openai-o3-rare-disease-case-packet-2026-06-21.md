@@ -13,8 +13,10 @@ tags:
   - AI
 source: OpenAI
 source_url: https://openai.com/index/diagnose-rare-childhood-diseases/
-draft: false
 description: "OpenAI o3 Deep Research가 희귀질환 미진단 사례 376건을 재분석해 18건의 진단 단서를 찾은 연구. 핵심은 AI 단독 진단이 아니라, 사람이 만든 de-identified case packet과 전문가 검증 워크플로우였다."
+draft: true
+refactor_hub: archive-health-01
+refactor_status: archived
 ---
 
 9살 아이가 가라테 수업에서 예전처럼 자세를 낮추지 못했다. 축구장에서도 느려졌고, 걸을 때 발끝으로 서기 시작했다. 병원은 원인을 찾지 못했고, 검사는 이어졌고, 답은 거의 20년 동안 나오지 않았다.

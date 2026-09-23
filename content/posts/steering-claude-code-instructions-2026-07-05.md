@@ -10,8 +10,10 @@ tags:
   - hooks
   - AI-agents
   - developer-tools
-draft: false
 coverImage: /images/steering-claude-code-instructions-2026-07-05/hero.jpg
+draft: true
+refactor_hub: harness-self-improve-15
+refactor_status: queued
 ---
 
 Anthropic이 Claude Code에 지시 넣는 법을 정리했다. 방법이 일곱 가지다.

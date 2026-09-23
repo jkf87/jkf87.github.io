@@ -2,8 +2,10 @@
 title: "디바이스 3개를 넘나드는 GUI 과제에선 최고 모델도 2% — JarvisGUI가 드러낸 크로스 디바이스 붕괴"
 date: 2026-09-10
 tags: [agent, benchmark, gui-agent, cross-device, evaluation]
-draft: false
 description: "Android·Windows·Ubuntu를 아우르는 크로스 디바이스 GUI 에이전트 벤치마크 JarvisGUI. 원자 과제 최고 42.4%인데 멀티 디바이스 의존 과제는 최고 2%, 서브태스크 4개 이상에서 전 모델 0% 부근이었다."
+draft: true
+refactor_hub: web-gui-agents-01
+refactor_status: queued
 ---
 
 GUI 에이전트 벤치마크가 전부 단일 디바이스 관행에 맞춰 있다는 문제의식에서 만들어진 벤치마크가 나옴. 결과의 낙차가 극단적이라 정리함. 원문은 [arXiv:2609.10451](https://arxiv.org/abs/2609.10451)(EMNLP 2026 Main).

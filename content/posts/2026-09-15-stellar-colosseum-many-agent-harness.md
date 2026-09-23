@@ -6,8 +6,10 @@ tags:
   - harness
   - benchmark
   - LLM
-draft: false
 description: "전략 탐색→준비 게이트→증명 분해→병렬 해결→전역 검증의 5단계 하네스가 TCS-Bench 71.0%, Codeforces 218/222를 달성. 반증 기반 트리 집계와 실패 지식의 축적 구조를 중심으로 정리."
+draft: true
+refactor_hub: harness-self-improve-10
+refactor_status: queued
 ---
 
 LLM 하나로 긴 수학 증명을 만들지 않고 5단계 하네스로 연구를 나눠서 끝내는 구조가 나옴. [Stellar Colosseum](https://arxiv.org/abs/2609.15983)(Google Research). 긴 호라이즌 과제를 쪼개는 설계의 교과서격 사례라 정리함.

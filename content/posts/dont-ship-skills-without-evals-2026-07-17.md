@@ -1,7 +1,6 @@
 ---
 title: "스킬은 코드임 — eval 없이 ship하면 비용과 실패 원인을 동시에 숨김"
 date: 2026-07-17
-draft: false
 tags:
   - agent-skills
   - evaluation
@@ -15,6 +14,9 @@ categories:
 description: "Google DeepMind Philipp Schmid의 'Don't Ship Skills Without Evals' 발표 정리. description 트리거 평가, negative case, on/off ablation, regression eval 없이 배포된 스킬은 성능이 아니라 부채가 된다."
 aliases:
   - /posts/dont-ship-skills-without-evals-2026-07-17
+draft: true
+refactor_hub: harness-self-improve-01
+refactor_status: queued
 ---
 
 스킬이 만능 도구처럼 쓰이는 시절에 정반대 문장을 던진 발표가 있어서 정리함. Google DeepMind의 Philipp Schmid가 AI Engineer 채널에서 한 "Don't ship skills without evals"임. 원본은 [발표 영상](https://www.youtube.com/watch?v=0vphxNt4wyk).

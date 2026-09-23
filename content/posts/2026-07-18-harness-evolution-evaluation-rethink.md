@@ -7,8 +7,10 @@ tags:
   - LLM
   - evaluation
   - test-time-scaling
-draft: false
 description: "AI2·UW가 자동 하네스 진화를 동일 예산의 test-time scaling과 정면 비교했다. 일관된 우위는 없었고, 검색·평가 태스크가 겹치면 과적합이었다. 내 자동화 개선 루프를 점검하는 기준으로 정리한다."
+draft: true
+refactor_hub: harness-self-improve-19
+refactor_status: queued
 ---
 
 에이전트 하네스를 자동으로 개선하는 루프가 유행임. 근데 그 효과가 하네스 설계 개선인지 그냥 여러 번 시도한 것인지 검증한 연구가 나왔음. 결론부터 — 동일 예산의 test-time scaling(문제를 풀 때 여러 번 시도하고 그중 좋은 답을 고르는 방식)을 일관되게 이기지 못했음. 나도 비슷한 개선 루프를 굴리는 입장이라 기준 삼아 정리함.

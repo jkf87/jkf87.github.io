@@ -9,6 +9,9 @@ tags:
   - opensource
   - quartz
 description: "Anthropic의 Project Glasswing 발표를 바탕으로, Claude Mythos Preview의 보안 취약점 발굴 사례와 검증 과정, 그리고 기술적 한계까지 한국어로 정리했다."
+draft: true
+refactor_hub: agent-safety-04
+refactor_status: queued
 ---
 
 > 원문: [Project Glasswing: Securing critical software for the AI era](https://www.anthropic.com/glasswing)

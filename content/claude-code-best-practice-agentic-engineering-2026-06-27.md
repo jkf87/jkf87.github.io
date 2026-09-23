@@ -11,6 +11,9 @@ tags:
   - AI
   - GitHub
 description: "shanraisshan의 claude-code-best-practice 저장소를 바탕으로, 클로드 코드를 단순 바이브 코딩 도구가 아니라 에이전틱 엔지니어링 시스템으로 쓰는 법을 정리했습니다."
+draft: true
+refactor_hub: coding-agents-01
+refactor_status: queued
 ---
 
 이거보다 나은 클로드 코드 사용법은 없습니다.

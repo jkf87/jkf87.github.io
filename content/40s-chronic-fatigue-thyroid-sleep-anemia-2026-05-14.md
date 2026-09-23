@@ -13,6 +13,9 @@ tags:
 description: 40대 만성 피로는 수면무호흡, 빈혈, 갑상선, 혈당 문제를 같이 봐야 함. 바로 점검할 신호와 검사 우선순위를 정리함.
 aliases:
   - 40s-chronic-fatigue-thyroid-sleep-anemia-2026-05-14/index
+draft: true
+refactor_hub: archive-health-01
+refactor_status: archived
 ---
 
 # 40대 만성 피로, 갑상선만 찾으면 놓치는 것들

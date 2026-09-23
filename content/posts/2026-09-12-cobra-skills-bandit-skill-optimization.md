@@ -8,8 +8,10 @@ tags:
   - optimization
   - LLM
   - harness
-draft: false
 description: "에이전트 스킬 최적화를 평가 예산이 제한된 순차 최적화로 정의하고 컨텍스트 밴딧으로 실행할 후보를 고른 COBRA-Skills. SkillOpt 대비 비용 55~58% 감소와 함께 6벤치마크 최고 성능을 낸 구조를 정리."
+draft: true
+refactor_hub: harness-self-improve-01
+refactor_status: queued
 ---
 
 스킬 후보의 성능을 알아보려면 타깃 에이전트로 실제 실행해야 하는데 이 실행이 비쌈. 그러면 실행할 후보를 고르는 것 자체가 최적화 문제가 됨 — [COBRA-Skills](https://arxiv.org/abs/2609.11682)가 이 선택을 밴딧으로 품. 스킬 최적화 비용에 고생하는 사람에게 직결이라 정리함.

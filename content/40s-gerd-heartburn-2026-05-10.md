@@ -11,6 +11,9 @@ tags:
 description: 40대 속쓰림은 늦은 저녁, 과식, 음주, 눕는 습관이 묶여 있는 경우가 많음. 반복 신호와 바로 손볼 습관을 정리함.
 aliases:
   - 40s-gerd-heartburn-2026-05-10/index
+draft: true
+refactor_hub: archive-health-01
+refactor_status: archived
 ---
 
 # 40대 속쓰림, 위산 때문만으로 넘기면 안 되는 이유

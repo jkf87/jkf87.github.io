@@ -1,7 +1,6 @@
 ---
 title: "ego lite: 사람과 AI 에이전트가 같은 브라우저를 나눠 쓰면 생기는 일"
 date: 2026-07-24
-draft: false
 tags:
   - ego-lite
   - AI-agent
@@ -15,6 +14,9 @@ categories:
 description: "CitroLabs ego lite를 README 기준으로 읽었다. 핵심은 브라우저 자동화 라이브러리가 아니라, 사람과 AI 에이전트가 같은 Chromium 브라우저를 병렬로 쓰도록 만든 일상용 브라우저라는 점이다."
 aliases:
   - /posts/ego-lite-parallel-agent-browser-2026-07-24
+draft: true
+refactor_hub: web-gui-agents-02
+refactor_status: queued
 ---
 
 ![ego lite README의 배너. 이 프로젝트가 말하는 핵심은 에이전트용 별도 브라우저가 아니라, 사람이 쓰는 브라우저 안에 에이전트용 작업공간을 함께 두는 것이다.](/images/ego-lite-parallel-agent-browser-2026-07-24/banner.png)

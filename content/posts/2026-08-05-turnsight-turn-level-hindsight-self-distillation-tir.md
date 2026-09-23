@@ -11,6 +11,9 @@ tags:
   - credit-assignment
   - GRPO
   - loop
+draft: true
+refactor_hub: agent-rl-06
+refactor_status: queued
 ---
 
 도구 호출 에이전트 RL 훈련의 최대 병목은 크레딧 할당임 — 어떤 호출이 성공에 기여했는지 궤적 끝 보상 하나로는 모름. TurnSight는 실행 결과를 hindsight로 활용해 턴 단위로 크레딧을 나눔. 에이전트 궤적 분석에 바로 쓸 수 있는 아이디어라 정리함.

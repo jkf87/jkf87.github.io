@@ -11,7 +11,9 @@ description: "MemForest 논문 리뷰. 장기 상호작용 에이전트의 persi
 aliases:
   - memforest
   - memforest-agent-memory
-draft: false
+draft: true
+refactor_hub: agent-memory-03
+refactor_status: queued
 ---
 
 ## 왜 이 논문이 중요한가

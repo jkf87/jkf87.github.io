@@ -12,6 +12,9 @@ tags:
 description: "40대 건강검진에서 혈압이 130/80 근처로 나오면 정상 끝자락이 아니라 관리 시작선일 수 있음. 질병관리청과 서울아산병원 자료를 바탕으로, 왜 이 숫자를 그냥 넘기면 안 되는지와 지금 바꿔야 할 생활 포인트를 정리함."
 aliases:
   - 40s-blood-pressure-130-80-warning-2026-04-25/index
+draft: true
+refactor_hub: archive-health-01
+refactor_status: archived
 ---
 
 건강검진표에서 혈압이 130/80 근처로 찍히면 애매해서 그냥 넘기기 쉬움. 근데 40대부터는 이 숫자가 정상 끝자락이 아니라 생활을 바로 손봐야 하는 경고등인 경우가 많음.

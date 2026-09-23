@@ -11,8 +11,10 @@ tags:
   - loop
   - automation
   - open-source
-draft: false
 socialDescription: "Prime Intellect Prime Agent — RLM과 Continual Harness 기반 자가개선 코딩 에이전트. ARC-AGI-3 95.5%, MIT 오픈소스."
+draft: true
+refactor_hub: harness-self-improve-23
+refactor_status: queued
 ---
 
 ## 개요

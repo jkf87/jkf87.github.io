@@ -11,6 +11,9 @@ tags:
   - mobile
   - developer
 description: "Windows 샌드박스 구축, ChatGPT 모바일 Codex 출시, 민감한 대화 안전 강화까지 — OpenAI가 5월 2주에 터뜨린 세 가지 업데이트를 인터뷰 형식으로 파헤쳤다."
+draft: true
+refactor_hub: coding-agents-06
+refactor_status: queued
 ---
 
 5월 13일부터 14일 사이, OpenAI가 3개의 블로그 포스트를 연달아 냈다. 하나는 엔지니어링, 하나는 제품, 하나는 안전. 얼핏 따로 노는 것 같지만 실은 같은 방향을 가리키고 있다. **Codex를 더 안전하게, 더 어디서나, 더 맥락 있게.**

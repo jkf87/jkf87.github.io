@@ -12,6 +12,9 @@ tags:
   - tool-use
 source_url: "https://arxiv.org/abs/2607.27652"
 description: "RL 검색 에이전트에서 롤아웃별 검색어는 달라도 검색 결과가 같아지며 GRPO 크레딧이 무력화되는 현상을 발견하고, 자유 검색어를 그래프 기반 유한 메뉴로 바꿔 해결한 Harness-G를 정리했다."
+draft: true
+refactor_hub: agent-memory-02
+refactor_status: queued
 ---
 
 RL 검색 에이전트 학습이 불안정한 원인을 보상 설계가 아니라 액션 인터페이스에서 찾은 논문이 나옴. 발견 자체가 재밌어서 정리함. 방법 이름은 Harness-G(자유 검색어 대신 그래프 기반 유한 메뉴로 검색 행동을 제한하는 검색 에이전트 학습 프레임)임. 원문은 [arXiv:2607.27652](https://arxiv.org/abs/2607.27652).

@@ -2,8 +2,10 @@
 title: "에이전트가 못 바꾸는 건 전략임 — 포스트트레이닝 트레이토리 3,557쌍에서 나온 16건"
 date: 2026-08-21
 tags: [agent, LLM, post-training, self-improvement, AI-for-AI, strategy]
-draft: false
 description: "AI가 AI를 학습시키는 파이프라인에서 전략은 시작에 고정되고 남은 예산 전부가 국소 조정에 쓰임. 경험 스캐폴드, 인간 가이드, 추론 컴퓨트 세 인터벤션 모두 실행 개선만 있고 전략 수정은 일어나지 않았음. 메타 판단 루프의 부재를 정리함."
+draft: true
+refactor_hub: ai-trends-misc-02
+refactor_status: queued
 ---
 
 에이전트가 코드를 쓰고 학습을 띄우고 체크포인트를 평가하는 그림이 이제 흔함. 스스로 진화하는 시스템으로 보임. 근데 "What is Missing from AI Post-Training AI"(arXiv:2608.19072)가 그 화려함에 냉정한 질문을 던짐. 에이전트에게 부족한 게 경험일까, 가이드일까, 추론 컴퓨트일까. 답은 셋 다 아니었음. 실행 중에 전략 자체를 다시 평가하는 메커니즘이 없다는 것.

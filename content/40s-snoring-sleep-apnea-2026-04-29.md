@@ -11,6 +11,9 @@ tags:
 description: "40대 코골이는 단순한 소음이 아니라 수면무호흡증 신호일 수 있음. NHIS와 서울아산병원 자료를 바탕으로, 어떤 증상에서 검사를 받아야 하는지 정리함."
 aliases:
   - 40s-snoring-sleep-apnea-2026-04-29/index
+draft: true
+refactor_hub: archive-health-01
+refactor_status: archived
 ---
 
 40대가 되면 코골이가 그냥 피곤해서 나는 소리처럼 들릴 때가 많음. 근데 이 시기 코골이는 체중, 목둘레, 술자리, 수면부족이 한꺼번에 쌓인 결과인 경우가 많아서 가볍게 넘기면 안 됨.

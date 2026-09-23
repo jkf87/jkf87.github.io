@@ -2,7 +2,9 @@
 title: "정상 스킬 하나로 비용 2배 뽑는 우회 납치 — CDH 공격과 스킬 생태계의 구멍"
 date: 2026-08-18
 tags: [agent-security, llm-agent, skill-ecosystem, openclaw]
-draft: false
+draft: true
+refactor_hub: harness-self-improve-02
+refactor_status: queued
 ---
 
 서드파티 스킬 하나를 게시하는 것만으로 에이전트 토큰 소비를 최대 +107%, 실행 시간을 +229% 늘리는 공격이 재현됐음. 코드 인젝션도 프롬프트 인젝션도 아님 — 순수하게 자연어 메타데이터와 본문만으로 라우팅과 플래닝을 조작함. 결과가 정상이라서 탐지가 안 되는 게 문제임. 스킬을 쓰는 사람이면 누구에게나 해당하는 얘기라 정리함.

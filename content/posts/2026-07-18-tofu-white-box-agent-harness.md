@@ -1,7 +1,6 @@
 ---
 title: "같은 모델인데 토큰 28% 덜 쓰고 성능은 더 높음 — ToFu 하네스의 압축 설계에서 배울 것"
 date: 2026-07-18
-draft: false
 summary: "SWE-bench Verified에서 Claude Code보다 28.4% 적은 토큰으로 더 높은 성능을 낸 오픈소스 하네스 ToFu. 3계층 컨텍스트 압축 구조를 실무 자동화 관점에서 풀어둔 글."
 tags:
   - agent
@@ -14,6 +13,9 @@ categories:
   - AI Agent
   - LLM
 source_url: "https://arxiv.org/abs/2607.11423"
+draft: true
+refactor_hub: harness-self-improve-05
+refactor_status: queued
 ---
 
 에이전트 성능은 모델만큼 하네스가 결정함. ToFu는 MIT 라이선스 오픈소스 하네스인데, Claude Code보다 평균 28.4% 적은 토큰으로 SWE-bench Verified(실제 GitHub 이슈를 재현해 고치는 코딩 벤치마크 중 사람이 검증한 문제 세트)에서 더 높은 성능을 냈음. 토큰 절감이 곧 비용 절감이라는 점에서 실무적으로 훑어볼 가치가 충분함.

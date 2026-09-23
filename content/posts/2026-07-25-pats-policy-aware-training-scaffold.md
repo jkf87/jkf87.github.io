@@ -8,8 +8,10 @@ tags:
   - LLM
   - automation
   - loop
-draft: false
 summary: "정책이 약할 땐 가이드를 넣고 강해지면 빼는 적응형 비계 훈련. 배포 시 스킬 없이도 더 높은 성능을 냄. 하네스 의존성을 만들지 않는 설계 원칙으로 정리함."
+draft: true
+refactor_hub: harness-self-improve-18
+refactor_status: queued
 ---
 
 에이전트 RL에서 스킬 라이브러리를 쌓는 게 정석처럼 여겨졌음. PATS(정책 성공률을 보고 훈련용 스킬 가이드를 넣고 빼는 적응형 비계 기법)는 스킬을 배포 자산이 아니라 훈련용 비계로 쓰고 끝나면 치우는 게 낫다는 걸 데이터로 보여줌. 원문은 [arXiv:2607.21419](https://arxiv.org/abs/2607.21419).

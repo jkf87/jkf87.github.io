@@ -7,6 +7,9 @@ tags:
   - prompt-engineering
   - agent
 description: "Anthropic Claude Code팀이 실제 제품에서 터득한 프롬프트 캐싱 최적화 5가지 핵심 교훈을 정리합니다. 캐시 설계, 메시지 전략, 모델/도구 변경 금지, Compaction까지."
+draft: true
+refactor_hub: coding-agents-01
+refactor_status: queued
 ---
 
 안녕하세요! 오늘은 Anthropic에서 최근 공개한 기술 블로그 글 하나를 소개해 드리려고 합니다. 바로 **"Lessons from building Claude Code: Prompt caching is everything"**이라는 주제의 글인데요, Claude Code 팀이 실제 제품을 만들면서 터득한 프롬프트 캐싱 최적화 노하우를 아낌없이 공유한 내용입니다.

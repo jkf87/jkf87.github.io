@@ -10,8 +10,10 @@ tags:
   - LLM
   - continual-learning
   - automation
-draft: false
 description: "에이전트 하네스 옵티마이저를 Terminal-Bench 2.0에서 두 번 최적화해 본 결과기. 첫 라운드 성적과 누적 성적은 다르고, 회귀 제어를 루프 안에 넣었는지가 갈림길이 됨."
+draft: true
+refactor_hub: harness-self-improve-19
+refactor_status: queued
 ---
 
 에이전트 프롬프트나 하네스를 자동 최적화했다는 보고는 많음. 근데 전부 "한 번 돌려서 점수가 올랐다"는 얘기임. 실무에서는 최적화가 반복됨. 새 실패 모드가 생기면 다시 돌리는데, 그때 지난번 개선이 살아있는지가 문제임. [RELAI 연구](https://arxiv.org/abs/2607.14004)가 이 "누적 질문"을 Terminal-Bench 2.0(실제 터미널에서 명령을 내려 과제를 완수하는 능력을 재는 벤치마크)으로 직접 테스트함. 결과가 뼈아픔. 세 방법 중 하나만 누적에 성공했고, 첫 라운드 1위는 전이에서 베이스라인 아래로 떨어졌음.

@@ -1,7 +1,6 @@
 ---
 title: "AI 코딩 에이전트 RL 학습 데이터를 이슈·커밋 없이 코드만으로 만드는 방법: CodeMidas 논문 정리 (arXiv 2609.22068)"
 date: 2026-09-21
-draft: false
 description: "Xiaomi·북경대 등이 공개한 CodeMidas 논문 정리. 오픈소스 코드베이스의 구현된 기능을 실행 기반 검증자가 달린 RL 환경 5,545개로 변환해 MiMo-V2.5를 GRPO로 학습시키니 5개 벤치마크가 전부 올랐습니다."
 tags:
   - AI-코딩-에이전트
@@ -11,6 +10,9 @@ tags:
   - coding-agent
   - benchmark
   - paper-summary
+draft: true
+refactor_hub: agent-rl-02
+refactor_status: queued
 ---
 
 ## 결론 먼저

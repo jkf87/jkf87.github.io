@@ -13,6 +13,9 @@ tags:
 description: "40대 잇몸 출혈을 칫솔질 문제로만 넘기기 쉬움. 치은염, 치주질환, 당뇨, 흡연, 약물까지 같이 보는 기준을 정리함."
 aliases:
   - 40s-gum-bleeding-2026-05-16/index
+draft: true
+refactor_hub: archive-health-01
+refactor_status: archived
 ---
 
 <!--

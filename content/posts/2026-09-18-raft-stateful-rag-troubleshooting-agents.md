@@ -1,7 +1,6 @@
 ---
 title: "고객지원 트러블슈팅 에이전트에 일반 RAG가 안 맞는 이유: Microsoft RAFT 논문 정리"
 date: 2026-09-18
-draft: false
 description: "Microsoft RAFT는 지원 사례를 상태가 흐르는 타임라인으로 인덱싱해, 증상만 있는 초기 단계에서도 유사 케이스 검색(Case Hit)을 84.2%까지 끌어올린 stateful RAG 프레임워크입니다. 구조, 벤치마크, 한계를 정리했습니다."
 tags:
   - RAG
@@ -14,6 +13,9 @@ tags:
   - benchmark
   - enterprise
   - tool-use
+draft: true
+refactor_hub: agent-memory-10
+refactor_status: queued
 ---
 
 ## 결론 먼저

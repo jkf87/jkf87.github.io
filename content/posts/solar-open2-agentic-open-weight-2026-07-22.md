@@ -1,7 +1,6 @@
 ---
 title: "Solar Open 2: 한국 모델도 이제 업무 모델 쪽으로 오고 있다"
 date: 2026-07-22
-draft: false
 tags:
   - Solar-Open-2
   - Upstage
@@ -18,6 +17,9 @@ categories:
 description: "Upstage Solar Open 2 250B-A15B를 기술 리포트와 모델카드 기준으로 읽었다. 핵심은 한국어 모델이 단순 대화를 넘어 오피스 문서와 업무 산출물, 온프레미스 agent model 쪽으로 이동하고 있다는 점이다."
 aliases:
   - /posts/solar-open2-agentic-open-weight-2026-07-22
+draft: true
+refactor_hub: model-releases-04
+refactor_status: queued
 ---
 
 ![Solar Open 2를 에이전트용 command center로 재구성한 이미지. 250B MoE 모델이 여러 전문가 모듈, 긴 컨텍스트 타임라인, 문서·코드·도구 호출 흐름을 하나로 묶는다는 점을 시각화했다.](/images/solar-open2-agentic-open-weight-2026-07-22/hero.jpg)

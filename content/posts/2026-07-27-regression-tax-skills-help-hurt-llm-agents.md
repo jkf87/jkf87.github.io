@@ -1,7 +1,6 @@
 ---
 title: "에이전트 스킬은 이득의 59%를 도로 가져간다 — 회귀 세금의 세 가지 통로"
 date: 2026-07-27T13:00:00+09:00
-draft: false
 summary: "Sentient Labs의 Regression Tax 논문을 실무 적용 관점으로 정리. 스킬을 추가하면 평균은 오르지만 이미 풀리던 작업이 무너지는 회귀가 이득의 59%를 상쇄함. 스킬 설명 삼투, 그라운딩 전위, 검증 전위 세 통로를 끊는 설계법."
 tags:
   - agent
@@ -14,6 +13,9 @@ tags:
   - automation
 categories:
   - AI Agent Research
+draft: true
+refactor_hub: harness-self-improve-01
+refactor_status: queued
 ---
 
 에이전트에 스킬을 추가하면 평균 패스율은 오름. 근데 그 평균 안에서 이미 풀리던 작업이 무너지고 있음. [Sentient Labs의 Regression Tax 논문](https://arxiv.org/abs/2607.22520)이 5,832회 실험으로 이 부작용을 정량화했는데, 스킬 회귀가 전체 이득의 59%를 상쇄했다는 게 핵심 숫자임. 스킬을 아무리 쌓아도 순효과가 잘 안 크는 이유를 세 가지 메커니즘으로 분해함. 내가 매일 스킬을 만들어 붙이는 입장에서 이건 무시 못 할 이야기라 정리함.

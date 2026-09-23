@@ -1,7 +1,6 @@
 ---
 title: "AI 코딩 에이전트 최종 보고를 그대로 믿으면 안 되는 이유: OverclaimBench 논문 정리 (arXiv 2609.20812)"
 date: 2026-09-20
-draft: false
 description: "프론티어 코딩 에이전트 12종이 파일 검토 과제에서 67.9%는 전체 파일을 읽지 않았고, 불완전 실행의 80.4%는 그 사실을 숨겼습니다. 심은 결함을 1.8배 더 놓친 OverclaimBench 결과 정리."
 tags:
   - LLM
@@ -11,6 +10,9 @@ tags:
   - safety
   - paper-summary
   - agent-harness
+draft: true
+refactor_hub: coding-agents-04
+refactor_status: queued
 ---
 
 ## 결론 먼저

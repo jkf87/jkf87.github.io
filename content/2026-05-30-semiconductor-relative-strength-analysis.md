@@ -9,6 +9,9 @@ tags:
   - sk-hynix
   - micron
   - ratio-analysis
+draft: true
+refactor_hub: archive-offtopic-01
+refactor_status: archived
 ---
 
 최근 6개월간 한국 반도체 주식이 얼마나 올랐는지, 그리고 그중에서 누가 가장 강했는지 분석해봤습니다. 분석 기간은 2025년 12월 1일부터 2026년 5월 29일(실제 마지막 거래일)까지고, 삼성전자(005930), SK하이닉스(000660), 마이크론(MU) 세 종목과 KOSPI, KOSDAQ 지수를 비교했습니다.

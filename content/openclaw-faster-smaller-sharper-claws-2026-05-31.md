@@ -8,7 +8,9 @@ tags:
   - 에이전트
   - devtools
 description: "2월부터 5월까지, 에이전트 응답은 5배 빨라지고 패키지 크기는 59% 줄었다. 어떻게?"
-draft: false
+draft: true
+refactor_hub: openclaw-updates-01
+refactor_status: queued
 ---
 
 ![OpenClaw](images/openclaw-faster-smaller/og-image.png)

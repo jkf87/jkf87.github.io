@@ -2,7 +2,6 @@
 title: "에이전트는 메모리 도구를 줘도 안 씀 — 114턴 0회 호출, 그래서 주입이 답임"
 slug: 2026-07-26-cue-anchored-working-memory-harness
 date: 2026-07-26T19:05:00+09:00
-draft: false
 tags:
   - agent
   - harness
@@ -14,6 +13,9 @@ tags:
   - tool use
   - context-engineering
 description: "작업 관련 사실을 미리 채워넣어도 에이전트의 자발적 메모리 호출은 0%였다는 실험. 큐 앵커 작업 메모리를 하네스가 결정론적으로 주입하면 139/139 전달되고 컴팩션에도 살아남는다."
+draft: true
+refactor_hub: agent-memory-07
+refactor_status: queued
 ---
 
 코딩 에이전트에 메모리 기능을 붙여봤자 안 쓴다는 걸 실험으로 밝힌 논문이 나옴. 결론부터 말하면 메모리는 콘텐츠가 아니라 컨트롤이고, 하네스의 책임이라는 것. 원문은 [arXiv:2607.20972](https://arxiv.org/abs/2607.20972).

@@ -8,8 +8,10 @@ tags:
   - kv-cache
   - fine-tuning
   - benchmark
-draft: false
 description: "문서를 컨텍스트에 넣는 RAG, 파라미터에 넣는 파인튜닝, KV 캐시에 넣는 Cartridges/Compaction을 5개 벤치마크에서 비교한 arXiv 2609.17346 정리. 다중 문서 조합에서는 Cartridges만 ICL과 동급이고 파라미터 주입은 29점 뒤짐."
+draft: true
+refactor_hub: agent-memory-01
+refactor_status: queued
 ---
 
 문서를 어디에 넣을지 — 컨텍스트(RAG, 검색 증강 생성으로 문서를 찾아 프롬프트에 넣는 방식), 파라미터(파인튜닝), KV 캐시(Cartridges/Compaction, 문서를 미리 계산한 어텐션 메모리인 KV 캐시 형태로 저장해 추론 시 로드하는 방식) — 를 통제 비교한 실험이 나옴. Amazon AGI의 [논문](https://arxiv.org/abs/2609.17346). 지식 주입 방식을 고르는 사람에게 선택표가 돼서 정리함.

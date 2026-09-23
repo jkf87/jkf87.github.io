@@ -7,8 +7,10 @@ tags:
   - collective-decision
   - bayesian
   - arxiv
-draft: false
 description: "명시적 우도 기반 베이즈 역방향 추론으로 역방향 사후분포 앵커를 만들어 집단 의사결정을 개선한 논문을 정리함. 앵커는 단독으론 약하지만 융합 시 최고 성능을 냄."
+draft: true
+refactor_hub: multi-agent-02
+refactor_status: queued
 ---
 
 여러 LLM 에이전트가 답을 내놓고 의견이 갈릴 때 기존 투표·LLM 판정관 방식은 같은 오류를 되풀이하기 쉬움. 둘 다 증거에서 결론으로 가는 순방향 경로 안에서만 판단하기 때문임. University of Melbourne의 논문이 명시적 우도(어떤 진단이 참일 때 이 증거가 관찰될 확률)로 사후확률을 한 번 뒤집는 해법을 제안했음. 원문은 [arXiv 2609.11709](https://arxiv.org/abs/2609.11709).

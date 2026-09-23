@@ -7,9 +7,11 @@ tags:
   - Interpretability
   - Claude
   - AI안전
-draft: false
 enableToc: true
 description: "Anthropic이 Claude의 내부 활성화를 자연어로 변환하는 NLA 방법을 발표했다. 모델이 말하지 않는 생각까지 읽어내는 이 기술, 어떤 의미가 있을까."
+draft: true
+refactor_hub: coding-agents-02
+refactor_status: queued
 ---
 
 ## 개요 — 모델의 머릿속을 읽는다는 것

@@ -10,6 +10,9 @@ tags:
 description: "ECE7115 6강 Scaling Laws를 데이터/모델 규모, 하이퍼파라미터 추정, compute allocation 관점으로 짧게 정리한 노트."
 aliases:
   - ece7115-6-scaling-laws/index
+draft: true
+refactor_hub: llm-course-notes-01
+refactor_status: queued
 ---
 
 ECE7115 6강은 큰 모델을 감으로 키우는 대신, 작은 실험에서 나온 scaling law로 큰 모델을 예측하는 방법을 정리한다. 데이터, 모델 크기, compute 배분을 같은 틀에서 보는 강의다.

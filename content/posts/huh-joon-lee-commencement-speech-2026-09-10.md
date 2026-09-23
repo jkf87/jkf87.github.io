@@ -1,7 +1,6 @@
 ---
 title: "허준이 교수 서울대 졸업식 축사 정리: 길을 잃은 사람에게 필요한 친절"
 date: 2026-09-10
-draft: false
 noindex: true
 tags:
   - june-huh
@@ -15,6 +14,9 @@ categories:
 description: "허준이 교수의 서울대 졸업식 축사를 성공담이 아니라 길 잃음, 매일의 경험, 도전 조언의 비용, 자신과 타인에게 건네는 친절의 관점에서 정리했습니다."
 aliases:
   - /posts/huh-joon-lee-commencement-speech-2026-09-10
+draft: true
+refactor_hub: archive-offtopic-01
+refactor_status: archived
 ---
 
 ## 결론 먼저

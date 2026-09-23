@@ -6,9 +6,11 @@ tags:
   - llm-memory
   - associative-memory
   - online-learning
-draft: false
 enableToc: true
 description: "δ-mem은 동결된 LLM 백본에 compact online associative memory를 추가해, 8×8 상태 행렬만으로 MemoryAgentBench 1.31× 향상을 달성하는 경량 메모리 메커니즘이다."
+draft: true
+refactor_hub: agent-memory-01
+refactor_status: queued
 ---
 
 ## δ-mem이 뭔가요?

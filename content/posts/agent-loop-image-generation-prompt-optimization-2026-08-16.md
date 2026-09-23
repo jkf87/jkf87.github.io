@@ -12,6 +12,9 @@ tags:
 source: arxiv-acl
 source_url: https://arxiv.org/abs/2509.10704
 paper_url: https://arxiv.org/abs/2509.10704
+draft: true
+refactor_hub: multi-agent-01
+refactor_status: queued
 ---
 
 이미지 프롬프트를 잘 쓰는 법을 찾다 보면 결국 같은 장면으로 돌아옵니다. 한 번에 완벽한 문장을 쓰는 사람은 거의 없습니다. 이미지를 뽑아보고, 틀린 부분을 보고, 문장을 고치고, 다시 뽑습니다.

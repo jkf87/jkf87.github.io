@@ -27,6 +27,9 @@ authors:
   - Albert Y. Zomaya
   - Renyu Yang
 affiliation: Beihang University, University of Leeds, University of Sydney
+draft: true
+refactor_hub: harness-self-improve-05
+refactor_status: queued
 ---
 
 MCP(모델이 외부 도구·데이터에 표준 프로토콜로 연결되는 규격) 기반 에이전트를 운영하면 짜증 나는 순간이 하나 있음. 모델이 "도구를 쓰겠다"고 결정한 뒤 샌드박스가 뜨길 기다리는 몇 초. 그동안 GPU는 놀고 있음. SpecBox는 이 콜드 스타트를 추측적 사전 할당으로 공략함. 토큰이 생성되는 도중에 다음 도구를 예측해서 샌드박스를 미리 켜두는 것. P99 지연(응답 시간이 늦은 상위 1% 구간의 값, 즉 가장 느린 응답 기준) 2.9배 단축, 상시 대기 방식 대비 메모리 45.9% 절감. 에이전트 인프라 실무자에게 바로 와닿는 결과임.

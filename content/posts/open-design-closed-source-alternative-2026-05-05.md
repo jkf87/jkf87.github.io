@@ -13,8 +13,10 @@ tags:
 description: "Anthropic의 Claude Design이 폐쇄형이라면, Open Design은 로컬에서 15개 코딩 에이전트를 디자인 엔진으로 쓴다. 129개 디자인 시스템, 31개 스킬, 웹·모바일·슬라이드·영상까지."
 aliases:
   - open-design-closed-source-alternative-2026-05-05/index
-draft: false
 cover: ../images/open-design-closed-source-alternative-2026-05-05/thumbnail.jpg
+draft: true
+refactor_hub: dev-tools-01
+refactor_status: queued
 ---
 
 ![Open Design 4컷 요약 — Claude Design의 오픈소스 대항마](../images/open-design-closed-source-alternative-2026-05-05/thumbnail.jpg)

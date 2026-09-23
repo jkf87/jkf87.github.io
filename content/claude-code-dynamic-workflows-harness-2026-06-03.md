@@ -8,7 +8,9 @@ tags:
   - 워크플로우
   - 하네스
 description: "Claude Code의 동적 워크플로우는 복잡한 작업을 여러 하위 에이전트와 검증 루프로 나누는 방식이다. 언제 쓰고, 왜 강력한지 정리했다."
-draft: false
+draft: true
+refactor_hub: harness-self-improve-14
+refactor_status: queued
 ---
 
 Claude Code에 흥미로운 변화가 들어왔다. 이제 Claude가 작업마다 자기만의 **하네스**, 그러니까 여러 하위 에이전트를 어떻게 부르고, 어떤 순서로 검증하고, 어디서 멈출지를 정하는 실행 구조를 즉석에서 만들 수 있다.

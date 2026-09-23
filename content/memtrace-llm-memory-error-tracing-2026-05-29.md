@@ -10,6 +10,9 @@ tags:
   - benchmark
   - paper-review
 description: "MemTrace 논문을 바탕으로 LLM 메모리 시스템에서 에러가 어떻게 발생하고 전파되는지, 이를 자동으로 추적해 원인을 찾아내는 프레임워크와 벤치마크 MemTraceBench를 정리했습니다."
+draft: true
+refactor_hub: agent-memory-03
+refactor_status: queued
 ---
 
 LLM 에이전트에 메모리를 붙이면 멀티턴 대화와 장기 태스크가 가능해진다. 문제는 메모리가 붙으면서 **에러의 원인을 추적하기 극도로 어려워진다**는 점이다. 오늘 다룰 논문 **MemTrace**는 바로 이 지점을 정면으로 공략한다.

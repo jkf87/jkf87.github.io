@@ -10,6 +10,9 @@ tags:
   - agent
   - Z.ai
   - open-weights
+draft: true
+refactor_hub: model-releases-04
+refactor_status: queued
 ---
 
 ![](/images/glm-5-3-post-training-coding-cyber-2026-08-14/hero-performance.png)

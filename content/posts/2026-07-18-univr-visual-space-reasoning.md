@@ -11,6 +11,9 @@ tags:
   - world-model
   - agent
 cover: /images/2026-07-18-univr-visual-space-reasoning/fig1_univr_overview.png
+draft: true
+refactor_hub: agent-rl-01
+refactor_status: queued
 ---
 
 AI 에이전트의 추론은 전부 텍스트 공간에서 일어남. 이미지를 봐도 일단 글자로 바꾸고, 글자로 생각하고, 결과물이 필요하면 다시 렌더링함. 이 우회 경로가 물리적 일관성을 자주 잃어버린다는 문제의식에서 [UniVR](https://arxiv.org/abs/2607.12800)이 나옴. 텍스트를 거치지 않고 시각 공간에서 직접 추론하는 프레임워크임. 당장 쓸 수 있는 도구는 아니지만, 에이전트 설계 관점에서 짚어둘 지점이 있어 정리함.

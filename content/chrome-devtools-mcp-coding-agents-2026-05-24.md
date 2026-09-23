@@ -2,6 +2,9 @@
 title: "코딩 에이전트가 브라우저를 들여다본다 — Chrome DevTools MCP 리뷰"
 date: 2026-05-24
 tags: [chrome, devtools, mcp, ai-agent, debugging]
+draft: true
+refactor_hub: coding-agents-05
+refactor_status: queued
 ---
 
 **Q1. Chrome DevTools MCP가 뭔가요? 한 줄로 요약해주세요.**

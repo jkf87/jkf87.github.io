@@ -9,10 +9,12 @@ tags:
   - fine-tuning
   - discovery
 description: 대형 모델 없이 진화 탐색을 돌리고 싶다면, 탐색 궤적 자체를 학습 데이터로 만드는 Evolution Fine-Tuning 접근이 실무 힌트가 됨. 371개 과제, 156K 궤적으로 2B~9B 모델을 키운 Finch 결과를 자동화 파이프라인 관점에서 정리함.
-draft: false
 sources:
   - label: "arXiv:2606.29082"
     url: "https://arxiv.org/abs/2606.29082"
+draft: true
+refactor_hub: harness-self-improve-04
+refactor_status: queued
 ---
 
 에이전트로 최적화 과제를 돌릴 때마다 새 문제는 처음부터 다시 풀어야 했음. 진화 탐색으로 얻은 경험이 모델에 남지 않으니까. Evolution Fine-Tuning(EFT)은 그 궤적을 학습 데이터로 바꿔서 소형 모델 안에 경험을 박아넣는 방법임.

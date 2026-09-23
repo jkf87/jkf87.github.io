@@ -7,7 +7,7 @@ slug: openclaw-windows-native-no-wsl
 category: AI도구
 ---
 
-![윈도우에서 오픈클로 — WSL 없이 시작하기](./images/openclaw-win-comic/4panel-comic.jpg)
+![윈도우에서 오픈클로 — WSL 없이 시작하기](./media/openclaw-win-comic/4panel-comic.jpg)
 
 오픈클로(OpenClaw) 공식 문서에 보면 "WSL2 권장"이라고 적혀있음.
 

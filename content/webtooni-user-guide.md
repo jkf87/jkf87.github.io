@@ -8,6 +8,9 @@ tags:
   - 스킬 가이드
 description: 웹툰이(Webtooni)의 완전 사용법을 안내합니다. 기본 사용법부터 고급 팁, 웹툰이 가이드, 트레블슈팅, 오류 해결까지 포괄적으로 정리했습니다.
 publishDate: 2025-03-26
+draft: true
+refactor_hub: harness-self-improve-07
+refactor_status: queued
 ---
 
 # 웹툰이(Webtooni) 사용법 완전 가이드

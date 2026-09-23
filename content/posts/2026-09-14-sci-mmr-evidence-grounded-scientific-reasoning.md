@@ -8,8 +8,10 @@ tags:
   - benchmark
   - multimodal
   - arxiv
-draft: false
 description: "멀티모달 연구 에이전트의 정답률이 증거 복원률보다 20점 이상 높게 나오는 현상을 측정한 Sci-MMR 벤치마크. 오류의 57%가 증거 확보 단계, 32%가 해석 단계라는 분리 진단을 정리."
+draft: true
+refactor_hub: research-agents-01
+refactor_status: queued
 ---
 
 멀티모달 연구 에이전트를 "정답 맞혔는가"만으로 평가하면 안 된다는 수치가 나옴. Fudan NLP의 [Sci-MMR](https://arxiv.org/abs/2609.11243). 정답률과 근거 복원률이 갈라진다는 발견이라 정리함.

@@ -16,6 +16,9 @@ tags:
 description: "AionUi는 단순한 AI 채팅 앱이 아니라, 내 컴퓨터에서 파일을 읽고 쓰고 웹을 탐색하며 작업을 자동화하는 오픈소스 Cowork 앱이다. 내장 에이전트, Claude Code·Codex·Gemini CLI·OpenClaw 같은 CLI 에이전트 통합, MCP 관리, 팀 모드, WebUI·Telegram 원격 접근, Cron 자동화까지 한 화면에 묶는다."
 aliases:
   - aionui-open-source-cowork-ai-agent-2026-04-29/index
+draft: true
+refactor_hub: coding-agents-06
+refactor_status: queued
 ---
 
 AI 도구가 채팅창에서 에이전트로 넘어가는 중임. 예전에는 ChatGPT 창에 질문을 던지고 답을 복사해 쓰는 방식이 중심이었음. 지금은 Claude Code, Codex, Gemini CLI 같은 도구가 파일을 읽고, 코드를 고치고, 명령을 실행하고, 작업을 끝까지 밀고 감.

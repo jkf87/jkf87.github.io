@@ -9,6 +9,9 @@ tags:
   - embodied-intelligence
   - openclaw
 description: "리오토(Li Auto)가 발표한 StreamingClaw는 실시간 스트리밍 비디오 이해와 구현 지능(Embodied Intelligence)을 위한 통합 에이전트 프레임워크다. OpenClaw 호환 프레임워크로, 실시간 멀티모달 스트리밍 상호작용을 지원한다."
+draft: true
+refactor_hub: multimodal-world-01
+refactor_status: queued
 ---
 
 ![StreamingClaw Pipeline](./images/streamingclaw/figure-1-pipeline.png)

@@ -11,8 +11,10 @@ tags:
   - MDL
   - loop
   - automation
-draft: false
 description: "append-only로 자라는 에이전트 스킬의 구조적 중복을 평가 롤아웃 없이 압축하는 SkillZip. 압축률 31.2%, 롤아웃 0회, 16라운드 진화에서 스킬 증가를 절반 이하로 억제한 결과를 정리했다."
+draft: true
+refactor_hub: harness-self-improve-01
+refactor_status: queued
 ---
 
 스킬을 계속 쌓는 self-evolving 에이전트의 숨은 비용을 정량화한 논문이 나옴. 스킬 텍스트 길이는 단조 증가하는데 실제 새 절차는 일찍 포화한다는 것. 원문은 [arXiv:2608.11079](https://arxiv.org/abs/2608.11079).

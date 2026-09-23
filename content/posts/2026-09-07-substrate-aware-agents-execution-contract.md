@@ -6,8 +6,10 @@ tags:
   - llm
   - prompt-engineering
   - execution-context
-draft: false
 description: arXiv 2609.05232 정리. RAM 128MB·10초 제약 한 줄을 프롬프트에 넣으니 Claude Opus 5, GPT-5.6-Sol, Gemini 3.7 Flash가 생성한 코드의 메모리 사용량과 실행시간이 함께 줄었습니다. '기판 맹목' 개념과 실험 수치를 정리했습니다.
+draft: true
+refactor_hub: coding-agents-04
+refactor_status: queued
 ---
 
 ## 결론 먼저

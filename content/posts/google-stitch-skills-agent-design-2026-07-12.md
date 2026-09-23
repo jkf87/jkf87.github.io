@@ -1,7 +1,6 @@
 ---
 title: "구글이 디자인 에이전트 생태계를 열었다 — stitch-skills로 코딩 에이전트와 Stitch를 연결하는 법"
 date: 2026-07-12
-draft: false
 tags:
   - google-stitch
   - ai-design
@@ -14,6 +13,9 @@ categories:
 description: "Google Labs가 stitch-skills 저장소를 공개했다. Stitch MCP 서버와 코딩 에이전트(Claude Code, Cursor, Codex, Gemini CLI, Antigravity)를 잇는 Agent Skills 모음이다. 디자인 생성부터 React 컴포넌트 변환, React Native, Remotion 영상까지 — 실제로 어떤 워크플로우가 만들어지는지 정리했다."
 aliases:
   - /posts/google-stitch-skills-agent-design-2026-07-12
+draft: true
+refactor_hub: harness-self-improve-15
+refactor_status: queued
 ---
 
 ![Stitch Skills 워크플로우: 프롬프트 → 디자인 → 코드 → 실행 앱, 4컷 만화](/images/google-stitch-skills-agent-design-2026-07-12/stitch-skills-comic.png)

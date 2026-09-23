@@ -1,6 +1,5 @@
 ---
 title: "SOPHIA: LLM 추론 루프가 늪에 빠졌을 때 — 숨겨진 활성화 벡터로 탈출시키는 방법"
-draft: false
 publish: true
 date: 2026-07-22T07:00:00+09:00
 tags:
@@ -26,6 +25,9 @@ affiliations:
   - UC San Diego
   - Adobe Research
   - University of New South Wales
+draft: true
+refactor_hub: reasoning-efficiency-01
+refactor_status: queued
 ---
 
 ## 한 줄 요약

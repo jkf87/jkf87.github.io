@@ -9,6 +9,9 @@ tags:
   - evaluation
 source: https://arxiv.org/abs/2608.14992
 description: "지지 근거 없는 허위 주장의 채택률이 메시지 패키지 유형에 따라 달라지는지 검증한 사전등록 연구 3건. 도구 결과 경로의 채택률이 58%까지 올랐고 unchecked 경고 라벨은 방어 효과가 없었다."
+draft: true
+refactor_hub: agent-safety-01
+refactor_status: queued
 ---
 
 에이전트가 도구 결과를 왜 그렇게 무비판적으로 믿는지 실험으로 쪼갠 연구가 나옴. 규모는 작지만 사전등록(가설과 분석 절차를 실험 전에 공개 문서로 못 박아두는 연구 설계)이라 결과 해석이 정직해서 정리함. 원문은 [arXiv:2608.14992](https://arxiv.org/abs/2608.14992).

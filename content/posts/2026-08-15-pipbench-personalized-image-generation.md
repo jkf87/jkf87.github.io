@@ -11,6 +11,9 @@ tags:
 source: arxiv
 source_url: https://arxiv.org/abs/2607.06440
 description: "짧은 프롬프트와 선호 이미지 2~5장, 사용자 프로필로 취향에 맞는 이미지 생성을 평가한 PIPBench. VLM 조율 방식이 최강이었고 reference가 많다고 무조건 좋아지지 않는다는 결과를 정리했다."
+draft: true
+refactor_hub: eval-benchmarks-03
+refactor_status: queued
 ---
 
 짧은 프롬프트에 좋아했던 이미지 몇 장만 주면 모델이 처음부터 취향에 가까운 결과를 낼 수 있나를 측정한 벤치마크가 나옴. 블로그 히어로 이미지를 계속 뽑는 입장에서 바로 쓸 결론이 있어서 정리함. 원문은 [arXiv:2607.06440](https://arxiv.org/abs/2607.06440).

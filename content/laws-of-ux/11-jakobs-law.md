@@ -4,6 +4,9 @@ date: 2025-05-06
 tags: [UX, 디자인, UX심리학, LawsOfUX]
 slug: "jakobs-law"
 parent: "laws-of-ux-index"
+draft: true
+refactor_hub: ux-laws-04
+refactor_status: queued
 ---
 
 ![](https://lawsofux.com/jakobs-law/social.png)

@@ -15,6 +15,9 @@ tags:
 description: "ACE-Step UI는 ACE-Step 1.5를 로컬에서 쓰기 쉽게 감싼 오픈소스 AI 음악 생성 UI다. 프롬프트로 노래를 만들고, 가사·BPM·키·길이·시드까지 조절하며, 라이브러리·플레이어·오디오 편집·스템 분리까지 한 화면에서 처리한다. Suno나 Udio 같은 구독형 서비스와 달리 내 GPU에서 돌린다는 점이 핵심이다."
 aliases:
   - ace-step-ui-local-ai-music-suno-alternative-2026-04-29/index
+draft: true
+refactor_hub: dev-tools-01
+refactor_status: queued
 ---
 
 Suno나 Udio가 AI 음악 생성 시장을 꽤 빠르게 대중화했음. 프롬프트 몇 줄만 넣으면 보컬까지 붙은 노래가 나오니까, 음악을 몰라도 결과물을 뽑는 경험 자체가 완전히 달라졌음.

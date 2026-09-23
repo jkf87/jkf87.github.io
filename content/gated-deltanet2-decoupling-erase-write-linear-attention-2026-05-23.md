@@ -9,9 +9,11 @@ tags:
   - deltanet
   - llm-architecture
   - paper-review
-draft: false
 enableToc: true
 description: "NVIDIA가 발표한 Gated DeltaNet-2는 선형 어텐션의 델타 룰에서 지우기(erase)와 쓰기(write)를 분리한 새로운 구조. 1.3B 모델에서 Mamba-2, KDA, Mamba-3 대비 가장 강한 전반적 성능을 보임."
+draft: true
+refactor_hub: reasoning-efficiency-01
+refactor_status: queued
 ---
 
 원본 논문: [Gated DeltaNet-2: Decoupling Erase and Write in Linear Attention](https://arxiv.org/abs/2605.22791) (Ali Hatamizadeh, Yejin Choi, Jan Kautz · NVIDIA · 2026년 5월)

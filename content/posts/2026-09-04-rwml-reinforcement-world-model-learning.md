@@ -7,8 +7,10 @@ tags:
   - reinforcement-learning
   - GRPO
   - self-supervised
-draft: false
 description: "태스크 성공 리워드 없이 다음 상태 예측만으로 GRPO 학습하면 ALFWorld +19.6pt, 정책 RL과 결합 시 +6.9pt 오르는 RWML. self-supervised 월드 모델 학습 구조를 풀어둔 글."
+draft: true
+refactor_hub: agent-rl-02
+refactor_status: queued
 ---
 
 Microsoft Research와 Dartmouth, Columbia 팀의 RWML은 전문가 데이터도, 더 강한 LLM도, 태스크 성공 리워드도 없이 에이전트의 월드 모델을 RL로 학습하는 방법임. 핵심은 하나임. 환경에서 관측한 (상태, 행동, 다음 상태) 트리플릿으로 다음 상태를 예측하게 하고 임베딩 유사도 기반 이진 리워드로 GRPO(같은 프롬프트에서 여러 응답을 뽑아 서로 비교해 업데이트하는 그룹 기반 RL 알고리즘) 학습하는 것임.

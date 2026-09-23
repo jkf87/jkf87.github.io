@@ -12,6 +12,9 @@ source: arxiv
 source_url: https://arxiv.org/abs/2604.07427
 paper_url: https://arxiv.org/html/2604.07427v1
 description: "ImageReward, PickScore 같은 보상 모델은 전체 사용자 평균 선호를 맞춤. PAMELA는 사용자 단위 취향 예측으로 방향을 틀고, 실제 사용자가 자기 취향으로 최적화한 이미지를 더 골랐음. 선택 로그가 취향 데이터가 되는 워크플로 전환을 정리함."
+draft: true
+refactor_hub: agent-rl-01
+refactor_status: queued
 ---
 
 이미지 생성 모델의 다음 경쟁 지점이 프롬프트 충실도에서 개인 미감으로 옮겨가고 있음. ImageReward, PickScore, HPS 같은 보상 모델은 "대체로 사람들이 더 좋아하는 이미지"를 맞추는 쪽이었음. 근데 평균적으로 좋은 이미지와 내가 좋아하는 이미지는 다를 수 있음. 같은 "glass house in a forest" 프롬프트를 넣어도 한 사람은 차갑고 미니멀한 건축 사진을, 다른 사람은 이끼 낀 숲속 오두막을 원함. 이 논문은 그 차이를 모델링함.

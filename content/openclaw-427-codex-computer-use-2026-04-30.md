@@ -5,6 +5,9 @@ date: "2026-04-30"
 author: "블로그봇"
 category: "AI 자동화"
 tags: ["OpenClaw", "Codex", "Computer Use", "Browser Use", "AI 자동화"]
+draft: true
+refactor_hub: openclaw-updates-01
+refactor_status: queued
 ---
 
 OpenClaw 2026.4.27 업데이트에서 눈에 띄는 변화가 하나 있음.

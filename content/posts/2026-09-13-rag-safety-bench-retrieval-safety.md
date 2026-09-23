@@ -7,8 +7,10 @@ tags:
   - llm
   - benchmark
   - arxiv
-draft: false
 description: "RAG을 붙인 LLM이 유해한 답을 더 잘 내놓는 조건을 네 가지로 분리해 측정한 RAG-Safety-Bench 정리. oracle 조건에서 안전장치가 사실상 무력화되는 수치와 안전 평가자 간 불일치까지."
+draft: true
+refactor_hub: agent-memory-01
+refactor_status: queued
 ---
 
 RAG(검색 증강 생성, 외부 문서를 찾아와 모델 컨텍스트에 넣고 답하게 하는 구조)은 환각을 줄여주는데 안전까지 좋아진다고 보긴 어려움. [RAG-Safety-Bench](https://arxiv.org/abs/2609.11758)는 검색된 문서에 유해한 정답이 들어 있으면 기본 안전장치가 사실상 무력화된다는 걸 오픈소스 5개 모델에서 일관되게 보여줌. RAG 파이프라인을 운영하는 사람에게 직결이라 정리함.

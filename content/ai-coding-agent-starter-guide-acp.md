@@ -8,7 +8,9 @@ tags:
   - codex
   - automation
 description: "Claude Code, Codex 같은 AI 코딩 에이전트를 처음 쓸 때 알아야 할 일회성 작업, 지속 세션, 스레드 맥락, 검수 루프 운영법을 정리했습니다."
-draft: false
+draft: true
+refactor_hub: coding-agents-01
+refactor_status: queued
 ---
 
 ## 결론 먼저

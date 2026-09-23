@@ -9,8 +9,10 @@ tags:
   - safety
   - benchmark
   - arxiv
-draft: false
 description: "잘못된 명령과 코드 편집이 에러 없이 조용히 실패하는 구조를 측정하고, 모델 호출 없는 실행 전 정적 검증으로 조용한 실패를 99.1%에서 0.01%까지 줄인 논문을 정리함."
+draft: true
+refactor_hub: coding-agents-04
+refactor_status: queued
 ---
 
 LLM 에이전트가 내는 액션은 에러 없이 조용히 실패하는 경우가 핵심 위험임. Look Before You Leap 논문은 셸 명령과 코드 편집 두 가지 액션에 대해 실행 전 결정론적 검증을 걸면 얼마나 막을 수 있는지 측정했음. 원문은 [arXiv:2609.11957](https://arxiv.org/abs/2609.11957).

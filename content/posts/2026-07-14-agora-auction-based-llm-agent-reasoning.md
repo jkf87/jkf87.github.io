@@ -2,9 +2,11 @@
 title: "어떤 에이전트에게 일을 줄 것인가, 경매로 정함 — Agora 라우팅 실무 노트"
 date: 2026-07-14
 tags: [LLM, Agent, Multi-Agent, Auction, Mechanism-Design, Calibration]
-draft: false
 description: "추론 단계를 경매에 붙여 보정된 신뢰도+비용으로 최적 에이전트에 할당하는 Agora. β 파라미터 하나로 비용-품질을 제어하는 구조를 라우팅 실무 관점으로 정리한다."
 cover: "/images/2026-07-14-agora-auction-based-llm-agent-reasoning/fig-p1.png"
+draft: true
+refactor_hub: reasoning-efficiency-01
+refactor_status: queued
 ---
 
 여러 LLM을 섞어 쓰는 시점에서 진짜 문제는 "누가 어느 단계를 처리하나"임. Agora는 이걸 경매로 풂. 단순한데 숨은 조건이 있어서 실무적으로 볼 게 많음.

@@ -1,13 +1,15 @@
 ---
 title: "실제 하네스를 입힌 채로 에이전트를 훈련시키는 법 — OpenForge RL 구조 정리"
 date: 2026-07-27
-draft: false
 tags:
   - agent
   - RL
   - harness
   - open-source
   - LLM
+draft: true
+refactor_hub: harness-self-improve-13
+refactor_status: queued
 ---
 
 Claude Code, Codex, OpenClaw 같은 하네스 없이 에이전트는 제 역량을 못 냄. 근데 그 하네스가 RL 기반 end-to-end 훈련을 극도로 어렵게 만든다는 사실은 잘 안 알려져 있음. OpenForge RL은 이 문제를 프록시 + 오케스트레이터 두 개의 가벼운 컴포넌트로 푼 최초의 오픈소스 프레임워크임.

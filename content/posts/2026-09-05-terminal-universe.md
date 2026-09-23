@@ -7,8 +7,10 @@ tags:
   - terminal
   - evaluation
   - fine-tuning
-draft: false
 description: "Terminal-Universe 분석. 기록된 트라젝토리를 역순 재생하고 에이전트로 누락분을 완성해서 37,273개 실행 환경을 복원. 재구성 환경을 다시 푸는 SFT가 원본 모방보다 15점 이상 앞섬. 환경 확장이 쿼리 확장보다 효과적."
+draft: true
+refactor_hub: eval-benchmarks-01
+refactor_status: queued
 ---
 
 터미널 에이전트가 늘면서 트라젝토리는 대량으로 쌓여 있는데 에이전트 후학습이 필요로 하는 건 재쿼리 가능하고 실행 피드백을 주는 환경임. [Terminal-Universe](https://arxiv.org/abs/2609.04148)의 출발점은 이 관찰임. 트라젝토리의 tool 실행 기록은 실행 환경의 구조와 내용을 노출하니까, 트라젝토리로부터 환경을 재구성할 수 있다는 것. 로그를 데이터가 아니라 환경의 두 관점으로 보는 발상의 전환이 마음에 들어 정리함.

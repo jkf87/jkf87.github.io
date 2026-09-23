@@ -10,6 +10,9 @@ tags:
   - coding
   - quartz
 description: "Anthropic가 Claude Opus 4.7을 정식 출시했다. 코딩 자율성 13% 향상, 시각 해상도 3배 증가, 멀티스텝 에이전트 워크플로우 안정성 대폭 개선 등 핵심 변화를 정리한다."
+draft: true
+refactor_hub: model-releases-01
+refactor_status: queued
 ---
 
 > 원문: [Claude Opus 4.7 is now generally available](https://www.anthropic.com/news/claude-opus-4-7)

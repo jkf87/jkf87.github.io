@@ -8,6 +8,9 @@ tags:
   - verifier
   - rubric
 description: "AI 에이전트 하네스의 핵심은 verifier 설계다. 사람의 '취향(taste)'을 측정 가능한 루브릭으로 변환하는 방법과, Goodhart's Law를 피하는 설계 원칙을 정리했다."
+draft: true
+refactor_hub: harness-self-improve-16
+refactor_status: queued
 ---
 
 ## 들어가며: "취향"이라는 이름의 암묵지
