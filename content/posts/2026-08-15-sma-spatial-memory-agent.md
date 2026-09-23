@@ -13,6 +13,9 @@ source: arxiv
 source_url: https://arxiv.org/abs/2608.12743
 paper_url: https://arxiv.org/abs/2608.12743
 description: "Spatial Memory Agent 분석. 동결 VLM에 검증된 경험 카드만 쌓고 이식 신뢰도(TRS) 순으로 꺼내 쓰는 구조로 파인튜닝 없이 평균 +16.4pt. 유사도 재랭킹에 신뢰도를 섞는 설계가 핵심."
+draft: true
+refactor_hub: agent-memory-05
+refactor_status: queued
 ---
 
 VLM 파라미터를 하나도 안 건드리고, 검증된 풀이 경험을 교훈 카드로 쌓은 뒤, 각 카드의 이식 신뢰도 순으로 꺼내 쓰는 것만으로 공간 추론 정확도를 올린 [연구](https://arxiv.org/abs/2608.12743)가 나옴. ZJU·상교대 중심의 Spatial Memory Agent(SMA, 검증된 경험을 교훈 카드로 쌓고 이식 신뢰도 순으로 꺼내 쓰는 메모리 에이전트)임. 동결 VLM 4종 × 공간 벤치마크 5개 조합으로 평가해서 전 모델 블록 1위, 파인튜닝 기반 대비 평균 +16.4pt. RAG로 "비슷한 사례 붙였더니 오히려 성적이 내려가는" 경험을 한 사람에게 특히 유용한 구조라 정리함.

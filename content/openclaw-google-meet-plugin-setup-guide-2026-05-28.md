@@ -16,7 +16,7 @@ draft: false
 
 OpenClaw에서 Google Meet을 쓰려면 `@openclaw/google-meet` 플러그인을 설치하고, 목적에 맞게 `transcribe`, `agent`, `chrome-node`, `twilio` 중 하나를 고르면 된다.
 
-![OpenClaw Google Meet 플러그인 설정 흐름](./images/openclaw-google-meet-plugin/setup-flow.png)
+![OpenClaw Google Meet 플러그인 설정 흐름](./media/openclaw-google-meet-plugin/setup-flow.png)
 
 ## 0. 먼저 확인
 

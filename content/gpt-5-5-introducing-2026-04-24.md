@@ -9,6 +9,9 @@ tags:
   - AI벤치마크
   - Codex
 description: OpenAI가 2026-04-23 GPT-5.5 출시. Terminal-Bench 2.0 82.7%, GDPval 84.9%, 가격은 $5/$30. 오픈클로에서 돌릴 때 뭐가 달라지는지 정리.
+draft: true
+refactor_hub: model-releases-01
+refactor_status: queued
 ---
 
 2026-04-23 OpenAI가 GPT-5.5를 풀었음. 한 줄 요약하면 **GPT-5.4와 같은 토큰당 지연시간으로 한 단계 위의 지능**임. 근데 벤치 숫자보다 더 큰 포인트는 따로 있음.

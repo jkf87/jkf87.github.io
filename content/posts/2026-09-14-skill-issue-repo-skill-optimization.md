@@ -1,7 +1,6 @@
 ---
 title: "SKILL.md 자동 최적화, 숫자는 흔들리는데 리뷰어는 확실히 갈렸음 — Skill Issue 논문 교훈"
 date: 2026-09-14
-draft: false
 tags:
   - ai-coding-agent
   - agent-skills
@@ -9,6 +8,9 @@ tags:
   - skillopt
   - benchmark
 description: "레포지토리 SKILL.md를 머지된 PR을 되돌려 만든 태스크로 최적화한 실험. GEPA +4.9pp지만 20~26개 홀드아웃에선 통계적 유의성을 못 얻음. 대신 메인테이너 리뷰에서 GEPA 문서는 초안 채택, SkillOpt는 일반론으로 잘림. 자동 최적화의 실무적 올바른 쓰임을 정리함."
+draft: true
+refactor_hub: harness-self-improve-19
+refactor_status: queued
 ---
 
 레포지토리 하나에 붙는 SKILL.md, 그러니까 에이전트에게 읽히는 .md 문서를 자동 최적화하는 실험 결과가 나옴. 결론부터. GEPA(실행 피드백을 받아 프롬프트·지시문을 후보 여러 개로 유지하며 통째로 재작성을 반복하는 진화형 최적화기)가 만든 문서는 테스트 점수를 평균 4.9pp 올렸지만 20~26개짜리 홀드아웃에서는 에이전트 실행 분산과 통계적으로 구분이 안 됐음(최고 p=0.29). SkillOpt(기존 문서 하나에 add/delete/replace 증분 편집을 누적하는 최적화기) 문서는 사실상 제자리. 대신 정성 평가에서 차이가 명확했음. 실제 레포 메인테이너는 GEPA 문서를 "초안으로 받아서 다듬겠다"고 했고 SkillOpt 문서는 "일반론이 많다"고 평가 절반을 덜어냈음.

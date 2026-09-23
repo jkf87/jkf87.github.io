@@ -2,8 +2,10 @@
 title: "도구 호출률을 토큰 하나로 조절함 — 표현 스티어링으로 튜닝하는 에이전트 비용 다이얼"
 date: 2026-08-29
 tags: [agent, llm, tool-use, interpretability, steering]
-draft: false
 description: "도구 호출 여부를 잔여 스트림에 선형 벡터 하나를 더하는 것만으로 추론 시점에 조절함. 호출률 0-90%+, PopQA 정확도 0.29→0.56. 배포 시점 비용 다이얼로 쓸 결과를 정리함."
+draft: true
+refactor_hub: dev-tools-02
+refactor_status: queued
 ---
 
 에이전트가 도구를 부를지 말지를 프롬프트나 파인튜닝 없이 모델 내부에 벡터 하나를 더하는 걸로 추론 시점에 조절하는 연구가 나왔음. 원문은 [arXiv:2608.25198](https://arxiv.org/abs/2608.25198), 코드는 [GitHub](https://github.com/YuqiChen4188/Steering-Tool-Use-Propensity)에 공개돼 있음.

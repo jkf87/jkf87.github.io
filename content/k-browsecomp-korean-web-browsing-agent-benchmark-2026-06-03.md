@@ -7,7 +7,9 @@ tags:
   - korean-ai
   - agentic-evaluation
   - K-BrowseComp
-draft: false
+draft: true
+refactor_hub: eval-benchmarks-01
+refactor_status: queued
 ---
 
 GPT-5.5가 한국어 웹 검색 문제 300개를 풀었더니 **45.67%**만 맞췄다. 영어 벤치마크에선 84.4%였는데. 한국 자체 개발 LLM은? **0~10%**다. 중앙대·KAIST·서울대·카네기멜론 연합팀이 만든 **K-BrowseComp**는 "최고급 AI가 한국어 웹을 얼마나 못 쓰는지"를 적나라하게 보여주는 벤치마크다.

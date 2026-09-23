@@ -9,6 +9,9 @@ tags:
   - flops
   - gpu
 description: "ECE7115 1강 Resource Accounting을 정리한 노트. FLOPs, 메모리, dtype, MFU를 기준으로 학습 비용을 계산하는 방법을 정리한다."
+draft: true
+refactor_hub: llm-course-notes-01
+refactor_status: queued
 ---
 
 # ECE7115 1강: Resource Accounting

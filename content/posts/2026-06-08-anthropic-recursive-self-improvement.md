@@ -1,10 +1,12 @@
 ---
 title: "Claude가 Claude를 만드는 시대가 왔음 — 재귀적 자기개선, 내 업무에 끼치는 것"
 date: 2026-06-08
-draft: false
 tags: ["AI", "Anthropic", "재귀적자기개선", "Claude", "코딩에이전트", "AI안전"]
 categories: ["AI 리서치 리뷰"]
 description: Anthropic 코드의 80% 이상을 Claude가 작성하는 시대가 됐음. 에이전트로 업무를 돌리는 입장에서 무엇이 바뀌는지 정리함.
+draft: true
+refactor_hub: harness-self-improve-17
+refactor_status: queued
 ---
 
 Anthropic이 자사 데이터를 공개했다. 2026년 5월 기준 병합되는 코드의 80% 이상을 Claude가 작성하고 있음. 1년 전엔 한자릿수였음.

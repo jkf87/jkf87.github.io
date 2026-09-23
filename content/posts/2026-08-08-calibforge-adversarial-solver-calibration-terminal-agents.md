@@ -1,7 +1,6 @@
 ---
 title: "합성 훈련 태스크의 문제는 '난이도'임 — CalibForge의 솔버 캘리브레이션 루프"
 date: 2026-08-08
-draft: false
 description: "CalibForge는 솔버들의 실제 pass/fail을 피드백으로 삼아 강한 모델은 풀고 약한 모델은 못 푸는 학습 가능 영역의 태스크만 남김. 이렇게 만든 5,431개 태스크로 Qwen3.5-35B가 Terminal-Bench 2.0(터미널 명령으로 실제 컴퓨팅 과제를 해결하게 하는 에이전트 벤치마크) 47.57%를 기록함. 합성 데이터 검증 관점의 실무 교훈을 정리함."
 tags:
   - agent
@@ -16,6 +15,9 @@ tags:
   - benchmark
 authors:
   - conanssam
+draft: true
+refactor_hub: ai-trends-misc-07
+refactor_status: queued
 ---
 
 터미널 에이전트 훈련용 태스크를 자동으로 만드는 시스템이 여럿 나왔음. TermiGen, Endless Terminals 같은 것들. 공통 검증법은 구조 검사와 자가 풀기. 근데 이 검증이 "풀 수 있는가"만 알려줄 뿐 "적절한 난이도인가"는 못 알려줌. 너무 쉬워서 전부 통과하거나 너무 어려워서 전부 실패하거나 검증 코드가 깨져 있어도 통과함. CalibForge의 출발점은 단순하고 정확함. 태스크의 학습 가치는 솔버 행동으로만 판단할 수 있다는 것.

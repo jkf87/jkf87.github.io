@@ -7,6 +7,9 @@ tags:
   - 네이버부동산
   - 스크래핑
 description: "네이버부동산 기준 압구정현대 주요 단지의 상한가, 하한가, 최근 실거래가를 스크래핑해 단지별로 정리했습니다."
+draft: true
+refactor_hub: archive-offtopic-01
+refactor_status: archived
 ---
 
 압구정현대 주요 단지의 매매 시세를 네이버부동산 기준으로 수집해 정리했습니다. 시세는 시점과 선택 평형에 따라 달라질 수 있으니 참고용으로 활용해주세요.

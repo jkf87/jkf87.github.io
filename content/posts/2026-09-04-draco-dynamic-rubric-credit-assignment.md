@@ -1,7 +1,6 @@
 ---
 title: "검증자 없이 에이전트를 학습시키는 법 — DRACO 동적 루브릭 크레딧 할당"
 date: 2026-09-04
-draft: false
 tags:
   - LLM-agent
   - reinforcement-learning
@@ -9,6 +8,9 @@ tags:
   - credit-assignment
   - rubric-reward
 description: "프로그램 검증자가 없는 롱호라이즌 에이전트 학습에서 궤적별 동적 루브릭 점수를 스텝별 어드밴티지로 재분배한 DRACO를 정리함. AppWorld TGC 85.3, 검증자 학습 대비 +5.3점, 셀프-저지로 판정 비용 5.1배 절감까지."
+draft: true
+refactor_hub: agent-rl-06
+refactor_status: queued
 ---
 
 RLVR(검증 가능한 보상으로 강화학습하는 방식)은 유닛테스트 같은 프로그램 검증자가 있을 때만 통하는 레시피임. 근데 실제 에이전트 도메인 대부분은 검증자가 없음. IBM의 DRACO(정답 없이 동적 루브릭 채점으로 학습 신호를 만드는 에이전트 학습 프레임)가 이 문제를 풀었음. 원문은 [arXiv 2609.04094](https://arxiv.org/abs/2609.04094), 코드는 [github.com/IBM/draco](https://github.com/IBM/draco)에 공개돼 있음.

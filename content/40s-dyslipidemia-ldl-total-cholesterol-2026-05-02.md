@@ -10,6 +10,9 @@ tags:
 description: "40대 건강검진에서 총콜레스테롤만 보고 넘기면 놓치는 게 많음. LDL, HDL, 중성지방을 같이 봐야 하는 이유와 지금 손볼 생활 습관을 정리함."
 aliases:
   - 40s-dyslipidemia-ldl-total-cholesterol-2026-05-02/index
+draft: true
+refactor_hub: archive-health-01
+refactor_status: archived
 ---
 
 # 40대 이상지질혈증, 총콜레스테롤만 보고 안심하면 안 되는 이유

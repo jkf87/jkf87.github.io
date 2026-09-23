@@ -1,7 +1,6 @@
 ---
 title: "Jeff Dean이 말한 AI 시대의 1% 룰: 모델보다 루프를 설계하는 사람이 이긴다"
 date: 2026-07-31
-draft: false
 tags:
   - AI
   - agents
@@ -16,6 +15,9 @@ categories:
 description: "Y Combinator 인터뷰 ‘Jeff Dean: The 1% Rule for Building in AI’를 뉴스레터 형식으로 발췌·정리했다. 핵심은 더 큰 모델이 아니라 inference hardware, context engineering, skills, multi-agent search, spec, taste, automated experiment loop다."
 aliases:
   - /posts/jeff-dean-one-percent-rule-ai-2026-07-31
+draft: true
+refactor_hub: ai-trends-misc-05
+refactor_status: queued
 ---
 
 ![Y Combinator 무대에서 Jeff Dean이 57분 동안 AI 시스템, 하드웨어, 에이전트, 창업자의 문제 선택을 이야기하는 인터뷰 장면. 이 인터뷰는 “모델이 좋아진다”보다 “무엇을 루프로 만들 것인가”에 가깝다.](/images/jeff-dean-one-percent-rule-ai-2026-07-31/opening.jpg)

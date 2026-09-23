@@ -38,6 +38,18 @@ export default (() => {
     )
     const ogImageDefaultPath = `https://${cfg.baseUrl}/static/og-image.png`
 
+    // 애드센스: 자동 생성 목록(태그·폴더)·목록형 허브·404에는 광고 스크립트를 넣지 않는다.
+    // 소유권 확인용 google-adsense-account 메타는 모든 페이지에 유지한다.
+    const slug = fileData.slug ?? ""
+    const showAds = !(
+      slug === "404" ||
+      slug === "posts" ||
+      slug === "categories" ||
+      slug === "tags" ||
+      slug.startsWith("tags/") ||
+      slug.endsWith("/index")
+    )
+
     return (
       <head>
         <title>{title}</title>
@@ -94,11 +106,13 @@ export default (() => {
         />
         <meta name="naver-site-verification" content="30b0bd386fc7187199c06a8842d92949da967fcb" />
         <meta name="google-adsense-account" content="ca-pub-4778921872258874" />
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4778921872258874"
-          crossOrigin="anonymous"
-        />
+        {showAds && (
+          <script
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4778921872258874"
+            crossOrigin="anonymous"
+          />
+        )}
 
         {css.map((resource) => CSSResourceToStyleElement(resource, true))}
         {js

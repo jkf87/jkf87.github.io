@@ -10,6 +10,9 @@ tags:
   - loop
   - automation
 description: "하네스 자가진화에서 쌓인 경험이 현재 상태에 유효한지 재평가하고 역할별 검색 의도로 바꿔 안정화한 DREvo. 5개 벤치마크 평균 14~16% 향상과 진화 궤적 안정화 결과를 정리했다."
+draft: true
+refactor_hub: harness-self-improve-20
+refactor_status: queued
 ---
 
 에이전트 하네스를 자동 개선하는 연구가 늘었는데 반복할수록 성능이 출렁인다는 문제가 있었음. 이걸 "과거 경험이 지금 하네스에도 유효한가"라는 질문으로 푼 논문이 나옴. DREvo(쌓인 경험을 함수 단위로 재평가해 하네스 자가진화를 안정화하는 프레임워크)가 그 방법임. 원문은 [arXiv:2607.26722](https://arxiv.org/abs/2607.26722).

@@ -9,6 +9,9 @@ tags:
   - science
   - sakana-ai
 description: "Sakana AI와 Oxford, UBC 연구진이 Nature에 발표한 The AI Scientist. 연구 아이디어 생성부터 실험, 논문 작성, 동료 평가까지 전체 과학적 과정을 종단간 자동화하는 시스템이다. 최초로 AI가 작성한 논문이 1티어 머신러닝 컨퍼런스 워크샵 동료 평가를 통과했다."
+draft: true
+refactor_hub: research-agents-01
+refactor_status: queued
 ---
 
 ![The AI Scientist Workflow](./images/ai-scientist/figure-1-workflow.png)

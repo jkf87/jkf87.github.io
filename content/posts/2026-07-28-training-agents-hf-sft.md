@@ -10,8 +10,10 @@ tags:
   - harness
   - continual-learning
 date: 2026-07-28
-draft: false
 summary: "Hugging Face 팀이 공개한 'Training Agents' 시리즈 1편. 에이전트에게 SFT 파이프라인 전체를 맡기고, 자체 수집한 에이전트 트레이스로 소형 모델을 미세조정하는 전 과정을 분석한다. 매개변수 스윕부터 Trackio 메트릭 추적, HumanEval/MBPP 평가까지, '에이전트가 에이전트를 훈련한다'는 메타적 루프의 실체를 파헤친다."
+draft: true
+refactor_hub: harness-self-improve-14
+refactor_status: queued
 ---
 
 ## 에이전트에게 훈련을 맡기는 시대: Hugging Face의 'Training Agents' 1편

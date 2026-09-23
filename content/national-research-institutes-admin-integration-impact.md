@@ -11,6 +11,9 @@ tags:
   - 연구행정
   - 과학기술계
 description: "40여 개 국책연구기관의 쪼개기 운영을 줄이고 공통 행정을 통합하라는 메시지가 나왔다. 무엇이 비효율이고, 무엇은 건드리면 안 되는지, 그리고 과학기술계에는 어떤 영향이 생길지를 차분하게 정리했다."
+draft: true
+refactor_hub: archive-offtopic-01
+refactor_status: archived
 ---
 
 > 참고 링크: [MBC강원영동NEWS 유튜브 영상](https://www.youtube.com/watch?v=z0BEvrqZ9ck), [국가과학기술연구회 NST](https://www.nst.re.kr/), [경제인문사회연구회 NRC](https://www.nrc.re.kr/)

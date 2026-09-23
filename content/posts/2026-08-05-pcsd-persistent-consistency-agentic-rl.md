@@ -10,8 +10,10 @@ tags:
   - credit-assignment
   - GRPO
   - loop
-draft: false
 description: "PCSD 분석. 멀티턴 에이전트 RL의 크레딧 할당 문제를 교사 신호의 '지속적 일관성'으로 푸는 방법. GRPO 대비 +15.6pp. 고립된 신호는 노이즈로 보는 원칙은 RL이 아니라도 적용되는 교훈."
+draft: true
+refactor_hub: agent-rl-06
+refactor_status: queued
 ---
 
 에이전트 강화학습의 고질병은 보상이 희소하다는 것. 수십 턴에 걸친 궤적 끝에 성공/실패 하나만 돌아오는데 그 사이 어떤 액션이 도움이 됐는지 알기 어려움. [PCSD](https://arxiv.org/abs/2608.01837)는 이 크레딧 할당 문제를 토큰 수준에서 풂. 핵심 발상이 단순해서 좋음. privileged teacher가 학생 토큰에 높은 확률을 할당하는 구간이 주변 토큰까지 일관되게 지속되면 그 신호를 믿고, 고립된 점 하나만 높으면 노이즈로 보고 무시하는 것.

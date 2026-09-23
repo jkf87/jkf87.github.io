@@ -1,7 +1,6 @@
 ---
 title: "LLM 에이전트 하네스가 실행 경험에서 배워야 하는 이유: MemoHarness 논문 정리"
 date: 2026-09-23
-draft: false
 tags:
   - LLM 에이전트
   - 하네스
@@ -9,6 +8,9 @@ tags:
   - 벤치마크
   - paper-summary
 description: 같은 모델·같은 도구로 Terminal-Bench 0.722에서 0.806까지 오린 MemoHarness를 정리했습니다. 하네스를 6개 제어 차원으로 쪼개고, 실행 경험을 이중 은행에 쌓아 케이스별로 하네스를 적응시키는 구조입니다.
+draft: true
+refactor_hub: agent-memory-10
+refactor_status: queued
 ---
 
 ## 결론 먼저

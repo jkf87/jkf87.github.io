@@ -10,6 +10,9 @@ tags:
   - local-ai
   - gguf
 description: "Unsloth에서 정리한 Qwen3.6 로컬 실행 가이드를 원문에 충실하게 번역했다. MTP로 1.4~2배 빠른 추론, llama.cpp 빌드, GGUF 벤치마크, Unsloth Studio, MLX 동적 퀀트, Claude Code 연동까지 모든 내용을 담았다."
+draft: true
+refactor_hub: model-releases-03
+refactor_status: queued
 ---
 
 > [Unsloth에서 공개한 Qwen3.6 로컬 실행 가이드](https://unsloth.ai/docs/models/qwen3.6)를 원문에 충실하게 번역·정리한 글이다. 원문의 모든 섹션, 코드, 이미지를 포함했다.

@@ -11,6 +11,9 @@ tags:
 description: "체중계 숫자가 괜찮아 보여도 허리둘레가 먼저 위험 신호를 보내는 경우가 많음. 40대 복부비만을 보는 법과 줄이는 순서를 정리함."
 aliases:
   - 40s-waist-circumference-belly-fat-2026-05-06/index
+draft: true
+refactor_hub: archive-health-01
+refactor_status: archived
 ---
 
 # 40대 복부비만, 체중이 괜찮아도 허리둘레를 먼저 봐야 하는 이유

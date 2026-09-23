@@ -1,7 +1,6 @@
 ---
 title: "OpenSkill: LLM 에이전트가 열린 세상에서 스스로 진화하는 방법"
 date: 2026-06-18
-draft: false
 tags:
   - LLM
   - AI-Agent
@@ -11,6 +10,9 @@ tags:
 categories:
   - AI연구
 description: "OpenSkill은 LLM 에이전트가 작업 프롬프트만 주어진 상태에서 외부 문서·웹·코드 리포지토리를 활용해 스스로 스킬을 학습하고 검증하는 오픈 월드 자가 진화 프레임워크입니다."
+draft: true
+refactor_hub: harness-self-improve-01
+refactor_status: queued
 ---
 
 ## 핵심 요약

@@ -8,11 +8,13 @@ tags:
   - harness
   - synthetic-environment
   - LLM
-draft: false
 summary: "컴퓨터 사용 에이전트 훈련의 병목은 환경 개수가 아니라 깊이였음. 얕은 환경은 훈련 안 한 것보다 나쁘고, 깊은 환경은 9B 모델을 36.5%에서 67.1%로 올림. 환경 설계 원칙을 실무 관점으로 정리함."
 source_url: "https://arxiv.org/abs/2607.28074"
 authors: ["Yash Pandya", "Sahil Gupta", "Sarthak Harne", "Archana Yadav", "Kavyansh Chourasia", "Hussein Mozannar", "Vibhav Vineet", "Sara Abdali", "Corby Rosset", "Yash Lara", "Ahmed Awadallah", "Ece Kamar", "Akshay Nambi"]
 institution: "Microsoft Research"
+draft: true
+refactor_hub: harness-self-improve-08
+refactor_status: queued
 ---
 
 컴퓨터 사용 에이전트를 훈련하려면 합성 환경을 많이 만들면 된다고 믿기 쉬움. Microsoft Research의 Echoverse가 그 가설을 깨고 "깊이"가 진짜 병목임을 증명했음. 원문은 [arXiv:2607.28074](https://arxiv.org/abs/2607.28074).

@@ -1,8 +1,10 @@
 ---
 title: "Nomon: '평가 기준을 먼저 정하면 AI 코딩 에이전트가 달라질까?'"
 date: 2026-05-11
-draft: true
 tags: ["AI", "SWE-bench", "에이전트", "평가", "Nomon"]
+draft: true
+refactor_hub: owner-review-01
+refactor_status: queued
 ---
 
 # Nomon: '평가 기준을 먼저 정하면 AI 코딩 에이전트가 달라질까?'

@@ -1,13 +1,15 @@
 ---
 title: "실패한 궤적에서도 옳은 행동을 찾아내는 법 — TRACE 턴 단위 크레딧 실무 정리"
 date: 2026-07-20T13:00:00+09:00
-draft: false
 summary: "긴 호라이즌 에이전트 RL에서 수십 번의 도구 호출 중 무엇이 기여했는지 알 수 없는 문제를, 동결 참조 모델의 TD 차이로 턴 단위 크레딧을 계산해 해결한 TRACE. 크리틱 없이 Qwen3-4B를 평균 13.4→34.0까지 끌어올린 구조를 정리함."
 tags: ["agent", "RL", "LLM", "credit-assignment", "long-horizon", "tool-use", "automation"]
 categories: ["AI연구"]
 authors:
   - name: "conan"
     url: "https://jkf87.github.io/"
+draft: true
+refactor_hub: agent-rl-06
+refactor_status: queued
 ---
 
 에이전트 RL에서 제일 골치 아픈 게 크레딧 할당임. 수십 번의 도구 호출 중 정확히 어느 것이 정답 도달에 기여했는지 결과 보상은 말을 안 해줌. TRACE는 동결된 참조 모델을 탐침으로 써서 턴 단위 보상을 계산해냈음. 추가 크리틱, 과정 라벨, 판단 모델 다 없이 작동함.

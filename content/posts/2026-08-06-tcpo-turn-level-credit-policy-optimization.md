@@ -13,6 +13,9 @@ tags:
   - automation
 source: arxiv
 source_url: https://arxiv.org/abs/2608.01667
+draft: true
+refactor_hub: agent-rl-06
+refactor_status: queued
 ---
 
 멀티턴 RL에서 검증자가 매 턴 점수를 줘도 그게 곧 크레딧은 아님. 이 차이를 못 잡으면 실패한 행동에 보상을 주고 올바른 수리에 벌점을 물림. TCPO가 이 변환 문제를 정면으로 다룸. 에이전트 평가 설계에 그대로 적용되는 구분이라 정리함.

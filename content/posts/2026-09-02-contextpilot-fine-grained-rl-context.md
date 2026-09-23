@@ -1,7 +1,6 @@
 ---
 title: "32K 윈도우로 128K를 이기는 법 — ContextPilot의 학습된 문맥 관리 정책"
 date: 2026-09-02
-draft: false
 tags:
   - agent
   - context-management
@@ -12,6 +11,9 @@ tags:
   - loop
   - EMNLP
 description: "문맥 편집 도구 17종과 액션 단위 파인그레인 RL을 결합해 에이전트가 자기 문맥을 스스로 관리하게 만든 ContextPilot. 턴당 입력 토큰을 30K에서 8-10K로 안정시킨 구조를 정리."
+draft: true
+refactor_hub: harness-self-improve-07
+refactor_status: queued
 ---
 
 긴 에이전트 루프의 병목을 "더 긴 윈도우"가 아니라 "학습된 문맥 관리 정책"으로 푼 논문이 EMNLP 2026 메인트랙에 받아들여짐. 텐센트 유튜랩의 [ContextPilot](https://arxiv.org/abs/2608.28476). 컨텍스트 비용에 고생하는 사람에게 방향이 명확해서 정리함.

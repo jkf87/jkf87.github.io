@@ -10,7 +10,9 @@ tags:
   - open-ended
   - SpyRL
   - COLM-2026
-draft: false
+draft: true
+refactor_hub: harness-self-improve-08
+refactor_status: queued
 ---
 
 RLVR(검증 가능한 보상으로 학습시키는 강화학습)은 수학·코딩에서만 통함 — 정답이 있어야 검증이 되니까. 요약·창작 같은 열린 과제엔 LLM 판사를 쓰는데, 판사가 천장이 되는 한계가 있었음. RLSVR은 작업 자체를 변환해서 검증 가능한 게임으로 바꿔버림. 발상이 실무에도 적용돼서 정리함.

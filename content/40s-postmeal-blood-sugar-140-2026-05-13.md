@@ -12,6 +12,9 @@ tags:
 description: "공복혈당이 정상이어도 식후혈당이 먼저 흔들릴 수 있음. 40대에서 식후 140을 반복해 보면 좋은 이유와 바로 할 일을 정리함."
 aliases:
   - 40s-postmeal-blood-sugar-140-2026-05-13/index
+draft: true
+refactor_hub: archive-health-01
+refactor_status: archived
 ---
 
 # 40대 식후혈당 140, 공복혈당이 정상이어도 놓치기 쉬운 이유

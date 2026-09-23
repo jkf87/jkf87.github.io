@@ -8,8 +8,10 @@ tags:
   - reasoning
   - agent
   - RLVR
-draft: false
 description: "긴 컨텍스트 추론의 반복 복사 실패를 진단하고 핵심 증거 복사엔 보상, 방해물 복사엔 페널티를 준 GEAR. 5개 벤치마크에서 일관 개선과 토큰 절감을 확인한 결과를 정리했다."
+draft: true
+refactor_hub: agent-rl-04
+refactor_status: queued
 ---
 
 긴 문서를 에이전트에 넘기면 답을 추론하는 게 아니라 입력을 사고 흐름에 통째로 베껴 쓰다가 토큰이 터지는 실패가 있음. 이걸 처음으로 체계적으로 잰 논문이 나와서 정리함. 원문은 [arXiv:2607.19345](https://arxiv.org/abs/2607.19345).

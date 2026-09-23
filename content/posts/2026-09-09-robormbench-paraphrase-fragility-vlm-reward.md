@@ -1,9 +1,11 @@
 ---
 title: "같은 로봇 동작인데 문장만 바꿨는데 보상이 뒤집힘 — 패러프레이즈 취약성 측정 정리"
 date: 2026-09-09
-draft: false
 tags: [VLM, reward-model, robotics, benchmark, arxiv]
 description: "VLM을 로봇 학습 보상 함수로 쓸 때 의미 동일 지시문만 바꾸면 점수가 실패/성공으로 뒤집히는 현상을 2,390개 실물 로봇 트라젝토리와 21,673개 검증 패러프레이즈로 측정한 ROBORMBENCH 논문 정리."
+draft: true
+refactor_hub: agent-memory-05
+refactor_status: queued
 ---
 
 연세대·CMU·서울대 연구진이 VLM(이미지·비디오까지 이해하는 멀티모달 언어모델)을 로봇 보상 함수로 쓸 때 치명적인 문제를 잡았음. 같은 로봇 동작인데 목표 설명 문장만 바꾸면 보상 점수가 크게 달라지고 실패/성공 판정까지 뒤집힘. 이걸 측정한 ROBORMBENCH는 실물 로봇 트라젝토리 2,390개와 검증된 패러프레이즈 21,673개로 구성됨.

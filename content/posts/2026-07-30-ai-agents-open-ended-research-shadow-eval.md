@@ -12,8 +12,10 @@ tags:
   - tool-use
   - reasoning
   - NeurIPS
-draft: false
 description: "미공개 NeurIPS 논문 두 편의 연구 질문을 에이전트에게 맡긴 그림자 평가. 엔지니어링은 자율 완수했지만 두 논문 모두 거절 판정. 다섯 가지 실패 패턴을 실무 관점으로 정리했다."
+draft: true
+refactor_hub: harness-self-improve-05
+refactor_status: queued
 ---
 
 AI 에이전트가 코딩과 실험은 해내는데 "무엇이 중요한 질문인가"를 못 판단한다는 걸 검증한 실험이 나옴. Princeton·Stanford 등이 미공개 NeurIPS 2026 논문 두 편의 연구 질문을 에이전트에게 맡기고 6일과 3,000달러를 줬음. 원문은 [arXiv:2607.27191](https://arxiv.org/abs/2607.27191).

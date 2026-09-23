@@ -8,6 +8,9 @@ tags:
   - hugging-face
   - benchmark
 description: "Hugging Face의 Agentic Evaluations Workshop 라이브를 바탕으로, 에이전트 평가에서 왜 정확도만으로는 부족한지와 신뢰성·환경·공개 검증의 중요성을 한국어로 정리했습니다."
+draft: true
+refactor_hub: eval-benchmarks-02
+refactor_status: queued
 ---
 
 ![Agentic Evaluations Workshop 유튜브 썸네일](./images/agentic-evals-workshop-future-of-agent-evaluations/youtube-thumbnail.jpg)

@@ -10,6 +10,9 @@ tags:
   - 에너지 절약
   - Quartz
 description: "차량 2부제는 미세먼지 대책으로만 나온 제도가 아님. 1973년 오일쇼크부터 1988 서울올림픽, 2002 월드컵, 2018 평창올림픽, 2026년 공공기관 2부제까지, 국제유가와 에너지 위기 속에서 반복된 차량 부제의 역사와 효과를 정리함."
+draft: true
+refactor_hub: archive-offtopic-01
+refactor_status: archived
 ---
 
 전쟁은 멀리서 벌어짐. 근데 유가는 바로 들어옴.

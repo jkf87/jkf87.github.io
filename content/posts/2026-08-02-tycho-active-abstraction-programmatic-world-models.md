@@ -8,9 +8,11 @@ tags:
   - coding-agent
   - LLM
   - harness
-draft: false
 source_url: "https://arxiv.org/abs/2607.28287"
 description: "미지 게임의 규칙을 실행 가능한 파이썬 세계 모델로 구축하고 그 안에서 계획해 ARC-AGI-3 183레벨 전체를 완수한 Tycho. 모델 정확성과 유용성이 다르다는 메타추론 결과를 정리했다."
+draft: true
+refactor_hub: harness-self-improve-09
+refactor_status: queued
 ---
 
 ARC-AGI-3(ARC-AGI 시리즈의 게임 버전으로, 규칙·목표가 공개되지 않은 64×64 격자 게임을 반복 플레이하며 일반 지능을 재는 벤치마크) 공개 25게임 183레벨 전체를 만점으로 끝낸 에이전트 시스템이 나옴. 핵심이 강한 모델이 아니라 "언제 세계 모델(환경의 규칙을 예측 가능한 형태로 만든 내부 재현)을 만들고 언제 무시할지"라는 메타추론 설계였다는 게 흥미로워서 정리함. 원문은 [arXiv:2607.28287](https://arxiv.org/abs/2607.28287).

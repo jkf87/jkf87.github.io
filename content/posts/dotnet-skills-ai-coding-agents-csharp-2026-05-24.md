@@ -14,8 +14,10 @@ tags:
 description: "마이크로소프트가 공개한 dotnet/skills 리포지토리는 AI 코딩 에이전트가 .NET 생태계를 정확하게 이해하도록 돕는 12개 전문 스킬 플러그인을 제공한다. Agent Skills 표준부터 실전 활용까지 정리했다."
 aliases:
   - dotnet-skills-ai-coding-agents-csharp-2026-05-24/index
-draft: false
 cover: images/dotnet-skills-ai-coding-agents-csharp-2026-05-24/thumbnail.jpg
+draft: true
+refactor_hub: harness-self-improve-15
+refactor_status: queued
 ---
 
 ![dotnet/skills — AI 코딩 에이전트에게 .NET 전문성을 부여하는 방법](images/dotnet-skills-ai-coding-agents-csharp-2026-05-24/thumbnail.jpg)

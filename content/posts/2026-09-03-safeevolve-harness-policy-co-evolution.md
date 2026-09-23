@@ -8,8 +8,10 @@ tags:
   - RL
   - LLM
   - prompt-injection
-draft: false
 description: "arXiv 2609.02786 정리. 트레이스의 안전 경험을 하네스 업데이트와 정책 RL이 같이 쓰는 공진화 루프로 AgentDojo ASR 2.37%→0.79%, AgentHarm 유해 점수 56.45→12.27을 달성한 구조와 수치를 풀어둔 글."
+draft: true
+refactor_hub: harness-self-improve-03
+refactor_status: queued
 ---
 
 에이전트를 운영해 보면 이런 실패를 다 겪음. 프롬프트와 스킬을 아무리 정교하게 다듬어도 약한 모델은 그걸 끝까지 따라 하지 못하고, 모델만 파인튜닝하면 새로 생기는 실패 패턴에 대응이 늦음. SafeEvolve(arXiv 2609.02786, Shanghai AI Lab 외)의 답은 하네스 업데이트와 정책 학습 두 바퀴를 트레이스 증거로 맞물려 돌리는 것임. Qwen3.5-4B 기준 AgentDojo(프롬프트 인젝션 공격이 섞인 도구 사용 환경에서 에이전트를 평가하는 벤치마크) ASR(공격 성공률) 2.37%→0.79%, AgentHarm(정당해 보이는 유해 지시를 거부하는지 평가하는 벤치마크) 유해 점수 56.45→12.27, 거부율 28.98%→83.83%임.

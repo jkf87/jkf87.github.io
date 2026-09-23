@@ -9,8 +9,10 @@ tags:
   - LLM
   - GSPO
   - SWE-bench
-draft: false
 description: "LEGO-RL 분석. Claude Code·OpenCode 같은 코딩 에이전트 하네스를 내부 수정 없이 RL 훈련 루프에 직접 연결. 컨텍스트 컴팩션이 있어도 토큰 단위 정렬을 유지하는 in-process 프록시와 하네스별 4~9.4%p 상승 결과."
+draft: true
+refactor_hub: harness-self-improve-13
+refactor_status: queued
 ---
 
 코딩 에이전트 하네스를 RL 훈련에 올리려면 보통 하네스 코드를 훈련용로 뜯어고쳤음. [LEGO-RL](https://arxiv.org/abs/2608.17393)은 반대로 훈련 엔진 쪽에서 하네스의 LLM 호출을 프록시로 가로채서 토큰 단위 정렬을 맞춤. 하네스 내부 제어 흐름을 거의 건드리지 않고 OpenHands SDK, Claude Code, OpenCode를 그대로 정책경사 RL(GSPO, 시퀀스 단위로 어드밴티지를 정규화하는 정책경사 알고리즘) 훈련에 연결함. Qwen3.5-35B-A3B 기준 SWE-bench Verified(실제 GitHub 이슈와 정답 패치를 모은 코딩 벤치마크 중 사람이 검증한 서브셋)에서 하네스별로 4~9.4%p 상승. 앞서 정리한 OpenForge RL과 같은 방향의 후속으로 볼 수 있어 정리함.

@@ -6,8 +6,10 @@ tags:
   - harness
   - self-evolution
   - arxiv
-draft: false
 description: "Ecdysis는 하네스 자기진화를 개별 실패 기록이 아니라 교차 태스크 반복 실패 패턴 기반으로 수행함. 학습 시간 1.84배 단축, 정확도 18.56% 상대 개선, 모델 순응 비율을 60.0%에서 45.5%로 낮춤. 하네스 개선 루프 설계의 실무 교훈을 정리함."
+draft: true
+refactor_hub: harness-self-improve-19
+refactor_status: queued
 ---
 
 하네스(모델을 실제로 구동하는 프롬프트·도구 규칙·루프 제어 등 실행 설계 전반) 자기진화의 흔한 방식은 개별 실패 기록마다 코딩 에이전트를 호출해 하네스를 수정하는 직렬 탐색임. Ecdysis(arXiv 2609.11677)는 이게 느리고 부정확한 이유를 짚음. 하나의 실패 기록은 모델 고유의 한계와 하네스의 체계적 결함을 구분하는 증거로 불충분하다는 것. 그래서 배치 레벨 교차 인스턴스 실패 집계와 FDCR(Failure-Driven Collaborative Refinement)을 결합해서 학습 시간 최대 1.84배 단축, 추론 정확도 최대 18.56% 상대 개선을 냄.

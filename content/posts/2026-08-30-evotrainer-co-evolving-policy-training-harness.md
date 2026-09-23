@@ -5,8 +5,10 @@ tags:
   - agent
   - rl
   - harness
-draft: false
 description: "자율 에이전트 RL의 개선 대상을 훈련 레시피에서 '훈련을 해석하는 진단 하네스'까지 확장한 EvoTrainer. SWE-9B 38.16%로 사람 기준을 넘기고, git 누수 차단 사례로 하네스 감사의 가치를 보인 결과를 정리했다."
+draft: true
+refactor_hub: harness-self-improve-11
+refactor_status: queued
 ---
 
 자율 학습 루프가 레시피 서치에서 멈추는 이유를 짚고 개선 대상 자체를 확장한 논문이 나옴. 점수는 오르는데 왜 오르는지 설명 못 하는 학습 루프라는 출발점이 실감나서 정리함. 원문은 [arXiv:2606.03108](https://arxiv.org/abs/2606.03108).

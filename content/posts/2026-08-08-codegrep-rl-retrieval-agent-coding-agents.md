@@ -13,6 +13,9 @@ tags:
   - GRPO
   - RL
 description: "파일 탐색에 토큰을 태우는 코딩 에이전트를 위해 GRPO로 훈련된 14B 검색 에이전트 CodeGrep. 라운드 15%·토큰 19% 절감과 검색 정밀도 0.677 임계점 발견을 정리했다."
+draft: true
+refactor_hub: agent-memory-02
+refactor_status: queued
 ---
 
 코딩 에이전트가 코드를 고치기 전에 파일을 뒤지며 태우는 토큰이 생각보다 큼. 이 탐색 단계만 전담하는 작은 검색 에이전트를 RL로 훈련시킨 논문이 나와서 정리함. CodeGrep(파일 검색만 전담하도록 강화학습된 14B 검색 에이전트)가 그 결과물임. 원문은 [arXiv:2608.05886](https://arxiv.org/abs/2608.05886).

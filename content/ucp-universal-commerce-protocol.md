@@ -11,6 +11,9 @@ tags:
   - open-source
 description: "Google, Shopify, Etsy 등이 공동 개발한 UCP(Universal Commerce Protocol)는 AI 에이전트가 상품을 검색하고, 장바구니에 담고, 결제까지 완료하는 에이전트 커머스의 공통 언어입니다. 작동 원리, 핵심 개념, 생태계를 정리합니다."
 image: images/ucp-universal-commerce-protocol/ucp-hero.png
+draft: true
+refactor_hub: dev-tools-01
+refactor_status: queued
 ---
 
 ## UCP가 뭔가요?

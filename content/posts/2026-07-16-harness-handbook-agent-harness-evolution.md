@@ -1,7 +1,6 @@
 ---
 title: "에이전트 하네스를 파일이 아니라 행동 지도로 읽는 법 — Harness Handbook 실무 정리"
 date: 2026-07-18T01:20:00+09:00
-draft: false
 summary: "하네스 수정 요청은 행동 언어로 들어오는데 저장소는 파일·함수로 짜여 있음. 이 간극을 행동 중심 지도로 메우는 Harness Handbook 논문을 하네스 운영 관점에서 정리함."
 tags: ["AI Agent", "Agent Harness", "Behavior Localization", "Code Understanding", "Tencent Hunyuan", "Loop Engineering"]
 categories: ["AI Agent", "Software Engineering"]
@@ -9,6 +8,9 @@ source_url: "https://arxiv.org/abs/2607.13285"
 project_url: "https://ruhan-wang.github.io/Harness-Handbook/"
 authors: ["Ruhan Wang", "Yucheng Shi", "Zongxia Li", "Haitao Mi", "Dongruo Zhou"]
 affiliations: ["Tencent HY LLM Frontier", "Indiana University", "University of Maryland", "University of Georgia", "National University of Singapore"]
+draft: true
+refactor_hub: harness-self-improve-12
+refactor_status: queued
 ---
 
 하네스를 고쳐본 사람은 앎. 어려운 건 코드를 못 짜는 게 아니라 어디를 고쳐야 하는지 찾는 것임. "파일 삭제 전에 확인을 넣어줘" 하나가 프롬프트 생성, 도구 래퍼, 권한 정책, 상태 관리에 흩어져 있으니까. Harness Handbook은 이걸 행동 중심 지도로 푸는 접근임.

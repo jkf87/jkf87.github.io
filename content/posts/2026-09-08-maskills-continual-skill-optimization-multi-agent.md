@@ -2,8 +2,10 @@
 title: "멀티에이전트는 경험 메모리가 아니라 스킬 라이브러리로 최적화해야 함 — MASkills 정리"
 date: 2026-09-08
 tags: [multi-agent, skill, credit-assignment, emnlp2026]
-draft: false
 description: "EMNLP 2026 Findings MASkills(arXiv 2609.02094) 정리. 멀티에이전트의 스킬 라이브러리를 검증 롤백과 함께 계속 최적화해 HotpotQA F1 76.3, LoCoMo 멀티홉 F1 17.22, GAIA 23.3%를 달성한 방법과 절제 실험을 수치로 정리함."
+draft: true
+refactor_hub: agent-memory-09
+refactor_status: queued
 ---
 
 LLM 에이전트 팀에 '경험 메모리' 대신 '스킬 라이브러리'를 달아주고 그걸 계속 최적화하면 어떻게 되는가. EMNLP 2026 Findings의 MASkills 논문 답은 HotpotQA(위키백과 여러 글을 걸쳐 답해야 하는 멀티홉 질의응답 벤치마크) F1 69.2→76.3, LoCoMo(긴 대화 기록 속에서 과거 정보를 묻는 벤치마크) 멀티홉 F1 12.04→17.22, GAIA(웹·코드·파일을 넘나드는 범용 어시스턴트 과제 벤치마크) 평균 20.4%→23.3%임. 검증 롤백이 최대 기여 모듈이라는 점까지 실무적으로 중요한 논문이라 정리함.

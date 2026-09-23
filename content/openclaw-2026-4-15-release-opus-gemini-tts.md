@@ -24,6 +24,9 @@ tags:
   - 초등-ai-교육
   - 업무-자동화-책
 description: "OpenClaw 2026.4.15 업데이트 핵심 정리. Anthropic Claude Opus 4.7 공식 지원, Google Gemini TTS 내장, 컨텍스트 최적화, Codex 자가 복구 등 주요 변화를 알기 쉽게 설명합니다. 오픈클로 설치, 사용법, 튜토리얼까지."
+draft: true
+refactor_hub: openclaw-updates-02
+refactor_status: queued
 ---
 
 - **공식 웹사이트:** [openclaw.ai](https://openclaw.ai)

@@ -13,6 +13,9 @@ tags:
   - ai 에이전트
   - chatgpt 자동화
 description: "《이게 되네? 오픈클로 미친 활용법 50제》 신간이 나왔다. 예스24 예판 링크, 독자 이벤트, 책 특징과 추천 대상을 한 번에 정리했다."
+draft: true
+refactor_hub: web-gui-agents-02
+refactor_status: queued
 ---
 
 드디어 **오픈클로 신간**이 나왔습니다. 오픈클로(OpenClaw)에 관심 있던 분이라면, 이번 책은 그냥 넘어가기 어렵습니다.

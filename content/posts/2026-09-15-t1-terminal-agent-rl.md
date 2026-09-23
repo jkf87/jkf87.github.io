@@ -7,8 +7,10 @@ tags:
   - terminal-agent
   - moe
   - benchmark
-draft: false
 description: "Tencent의 T1은 Qwen3.5-122B-A10B를 실제 셸에서 최대 300턴 돌리는 RL로 Terminal-Bench 2.1을 43.8%에서 64.0%로 올림. 상승분의 4분의 3을 RL이 담당했고 TITO, R3, 밀집 검증 보상이 각각의 불일치를 수치로 줄임. 레시피와 실패 기록을 정리함."
+draft: true
+refactor_hub: agent-rl-02
+refactor_status: queued
 ---
 
 Tencent Hy Foundation Model Frontier 등이 만든 T1(arXiv 2609.11042)의 핵심은 단순함. Qwen3.5-122B-A10B를 실제 리눅스 셸에서 태스크당 최대 300턴 이상 돌리고, 태스크별 검증기를 실행한 결과로 보상을 주는 강화학습만으로 Terminal-Bench 2.1(에이전트가 실제 리눅스 셸에서 다단계 실무 태스크를 수행해 검증기 통과율로 채점하는 벤치마크)을 43.8%에서 64.0%로 올렸다는 것. 같은 Terminus-2 하네스(모델을 실제 셸·도구와 연결해 태스크를 실행·채점하는 프레임) 기준으로 GPT-5.4(54.8%), DeepSeek-V4-Flash(56.9%), Claude Opus 4.6(63.8%)보다 높고 Opus 4.7(66.1%)에 근접함. 활성 파라미터는 10B. 전체 상승분 20.2점 중 SFT가 5.6점, RL이 14.6점을 담당해서 총 상승분의 약 4분의 3을 실행 기반 RL이 만들었다는 게 중심 근거임.

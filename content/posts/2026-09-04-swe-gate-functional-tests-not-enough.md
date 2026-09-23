@@ -1,9 +1,11 @@
 ---
 title: "테스트를 통과한 패치의 3분의 1은 리뷰에서 떨어진다 — 숨은 실패 측정하기"
 date: 2026-09-04
-draft: false
 tags: [agent, SWE-bench, benchmark, code-review, evaluation, LLM]
 description: "SWE-Gate 분석. 기능 테스트를 통과한 644개 패치 중 34.3%가 리뷰 제약 위반으로 실패. 리뷰 반려 사유를 테스트로 컴파일하는 파이프라인과, 제약 설명을 프롬프트에 넣는 것만으로 성적이 오른다는 결과."
+draft: true
+refactor_hub: ai-trends-misc-07
+refactor_status: queued
 ---
 
 코딩 에이전트 평가는 대개 기능 테스트 통과율로 끝남. 근데 실제 소프트웨어 엔지니어링에서 패치는 테스트만 통과하면 끝나는 게 아니라 리뷰를 통과해야 함. [SWE-Gate](https://arxiv.org/abs/2609.04167)가 이 둘을 분리해서 측정했는데 결과가 뼈아픔. 기능 테스트를 통과한 644개 패치 중 221개, 34.3%가 리뷰 제약 위반으로 실패했음. 테스트만 보는 평가 프로토콜에서 성공으로 세어지는 실패라서 논문은 이걸 hidden failure라고 부름. 앞서 정리한 보상 해킹·검증 신호 연구들과 같은 방향의 코딩 버전이라 정리함.

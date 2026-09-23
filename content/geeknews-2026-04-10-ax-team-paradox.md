@@ -8,6 +8,9 @@ tags:
   - productivity
   - automation
 description: "MIT 연구에서 AI 전환 성공한 5%는 중앙 AI 랩이 아니라 현장 관리자가 주도한 조직이었다. AX 추진팀 신설이 왜 역설인지, 그리고 실제로 작동하는 구조는 무엇인지 정리한다."
+draft: true
+refactor_hub: multi-agent-03
+refactor_status: queued
 ---
 
 AI를 도입하려는 기업이 가장 먼저 하는 일은 뭘까. 십중팔구 "AI 전환 추진팀"을 만든다. 전용 조직, 전용 예산, 전용 리더. 그런데 15년 차 CTO와 MIT 연구가 동시에 말하는 결론은 뜻밖에도 같다. **별도 조직을 만드는 순간, AX는 남의 일이 된다.**

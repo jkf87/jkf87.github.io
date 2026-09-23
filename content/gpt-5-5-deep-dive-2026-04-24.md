@@ -9,6 +9,9 @@ tags:
   - Codex
   - 코딩에이전트
 description: "2026-04-23 OpenAI GPT-5.5 공식 발표 전문을 8개 카테고리 벤치마크 표, 원본 인용, 이미지·영상과 함께 정리. 오픈클로 멀티 모델 라우팅 관점 해석 포함."
+draft: true
+refactor_hub: model-releases-01
+refactor_status: queued
 ---
 
 > **TL;DR** — 2026-04-23 OpenAI가 GPT-5.5를 공개했다. GPT-5.4 대비 같은 토큰당 지연시간을 유지하면서 Terminal-Bench 2.0 82.7%, GDPval 84.9%, ARC-AGI-2 85.0%로 도약했다. Codex에서 같은 과제를 더 적은 토큰으로 풀고, 자신이 돌아가는 GB200 스케줄링 휴리스틱을 직접 개선해 토큰 생성 속도를 20%+ 끌어올렸다. API는 1M 컨텍스트에 `$5 / $30`(입력/출력), Pro는 `$30 / $180`. 사이버보안은 Preparedness Framework에서 **High**로 승격.

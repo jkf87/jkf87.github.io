@@ -7,8 +7,10 @@ tags:
   - workflow
   - orchestration
   - HPC
-draft: false
 description: "오케스트레이터·실행자·모니터 3-액터에 고정 액션 카탈로그를 얹어 규칙 정책과 LLM 정책을 같은 코어에서 돌리는 Avatar를 정리함. LLM 모드에서 계산 낭비 55%, GPU 시간 40% 절감."
+draft: true
+refactor_hub: agent-safety-01
+refactor_status: queued
 ---
 
 과학 연구 워크플로는 이미 자동화돼 있는데 그 자동화를 지배하는 규칙은 여전히 사람이 손으로 튜닝한 고정 룰임. 시시각각 변하는 장애와 리소스 상황 앞에서 이 룰은 둔감할 수밖에 없음. UChicago와 Argonne의 Avatar(과학 워크플로 오케스트레이션에 LLM 정책을 안전하게 끼워 넣는 프레임)가 이 간극을 메웠음. 원문은 [arXiv 2609.10509](https://arxiv.org/abs/2609.10509).

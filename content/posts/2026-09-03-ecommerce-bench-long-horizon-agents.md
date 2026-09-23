@@ -8,8 +8,10 @@ tags:
   - e-commerce
   - LLM
   - Qwen
-draft: false
 description: "365일 사업 시뮬레이션에서 LLM 에이전트 18개를 7개 축으로 평가한 E-Commerce Bench. 수익 1위 모델의 사기 회피는 16위였고 4개 모델은 파산까지. 다축 평가의 필요성을 정리."
+draft: true
+refactor_hub: eval-benchmarks-02
+refactor_status: queued
 ---
 
 1년짜리 온라인 사업 운영 벤치마크가 나옴. 초기 자본 ¥100,000으로 365일 동안 스토어 여러 개를 운영하는 [E-Commerce Bench](https://arxiv.org/abs/2608.30730). 핵심 발견 — 어떤 모델도 모든 축에서 1등하지 못했고, 가장 많이 번 모델이 사기 회피는 18위 중 16위였음. 단일 지표로 에이전트를 평가하는 습관을 흔드는 데이터라 정리함.

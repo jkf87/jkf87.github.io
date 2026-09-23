@@ -10,6 +10,9 @@ tags:
   - claude-code
   - codex
 description: "rtk-ai/rtk 저장소를 바탕으로, AI 코딩 도구에서 셸 출력 토큰을 60~90%까지 줄이는 RTK의 구조와 활용 포인트를 실사용 관점에서 정리합니다."
+draft: true
+refactor_hub: coding-agents-04
+refactor_status: queued
 ---
 
 ![](./images/rtk-ai-token-savings-cli-for-coding-agents/gain-dashboard.jpg)

@@ -1,9 +1,11 @@
 ---
 title: "에이전트 튜닝의 체제 전환 — 턴이 길어지면 RL 대신 진화 전략, Agentic ESOpt"
 date: 2026-08-30
-draft: false
 description: "Agentic ESOpt는 역전파 없이 파라미터 노이즈만으로 롱호라이즌 에이전트를 풀파라미터 튜닝함. 학습 메모리 8.41GB로 GRPO의 7분의 1, 15턴 과제에서 GRPO 대비 +12.5%p. 짧으면 PPO, 중간이면 GRPO, 길면 ES라는 체제 전환 관점을 정리함."
 tags: [agent, es, evolution-strategies, fine-tuning, rl, llm]
+draft: true
+refactor_hub: harness-self-improve-18
+refactor_status: queued
 ---
 
 에이전트 학습에서 조용한 전환이 하나 일어나고 있음. NUS 연구팀의 Agentic ESOpt는 RL 대신 진화 전략(ES, 역전파 없이 파라미터에 무작위 노이즈를 섞은 여러 후보를 평가해 성적이 좋은 쪽으로 파라미터를 옮기는 최적화 기법)로 긴 호라이즌 LLM 에이전트를 튜닝하는데 결과가 예상보다 좋음. 학습 GPU 메모리 8.41GB로 GRPO(같은 프롬프트에서 응답 그룹을 뽑아 상대 성적으로 학습하는 강화학습 기법, 58.88GB)의 7분의 1. 15턴 과제에서 GRPO 대비 +12.50%p 앞섬. 그리고 제일 중요한 건 전면승리가 아니라 체제 전환이라는 해석임.

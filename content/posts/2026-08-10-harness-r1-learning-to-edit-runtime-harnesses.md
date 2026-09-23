@@ -16,6 +16,9 @@ authors:
     url: https://github.com/conanssam
     original: https://arxiv.org/abs/2608.02276
 noindex: true
+draft: true
+refactor_hub: harness-self-improve-22
+refactor_status: queued
 ---
 
 ## 개요

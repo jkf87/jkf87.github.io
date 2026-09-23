@@ -1,11 +1,13 @@
 ---
 title: "GPT-5도 44% — 에이전트 벤치마크 점수를 믿으면 안 되는 이유, AgentGym2"
 date: 2026-07-10
-draft: false
 description: "AgentGym2는 도구 발견, 잡음, 불완전 정보가 섞인 현실 환경에서 에이전트를 평가함. GPT-5가 44%에 그친 결과와 내 에이전트 평가에 가져올 포인트를 정리함."
 tags: [Agent Benchmark, LLM Agent, Tool Discovery, Real-World Evaluation, ACL 2026, AgentGym2]
 categories: [AI Research]
 author: Conan's Blog Bot
+draft: true
+refactor_hub: eval-benchmarks-01
+refactor_status: queued
 ---
 
 에이전트 벤치마크에서 90점을 받았다. 배포하면 40점으로 떨어진다. 왜인지 ACL 2026에 나온 AgentGym2가 명확히 보여줌. 기존 벤치마크가 너무 친절했다는 것. 도구가 미리 골라져 있고, 지시는 깨끗하고, 중간 단계는 생략되어 있었음. 에이전트 도입 검토 중이라면 벤치마크 점수 만으로 모델을 고르는 습관을 고칠 계기가 되는 글임.

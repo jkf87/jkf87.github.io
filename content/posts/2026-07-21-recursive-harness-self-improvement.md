@@ -1,7 +1,6 @@
 ---
 title: "하네스 프롬프트를 에이전트가 스스로 고치게 하기 — RHI 3회 반복의 실무 의미"
 date: 2026-07-21
-draft: false
 summary: "Sakana AI의 RHI는 하네스를 prompt 수준 명세로 표현하고 자기 실행 이력의 pairwise 피드백으로 반복 개선함. 몇 번의 반복으로 최대 추론 노력 설정보다 높은 성능을 60% 적은 비용으로 냄."
 tags:
   - agent
@@ -18,6 +17,9 @@ cover:
   alt: "RHI: Few-shot 반복으로 test-time scaling 성능 한계 상승"
   caption: "Figure 1: Few-shot RHI가 test-time scaling의 성능 한계를 끌어올리는 모습 (출처: 원 논문)"
   relative: true
+draft: true
+refactor_hub: harness-self-improve-12
+refactor_status: queued
 ---
 
 에이전트 성능은 모델만큼 실행 환경, 즉 하네스가 결정함. 근데 하네스 튜닝은 아직도 사람 수작업임. 시스템 프롬프트 고치고, 서브 에이전트 배치 바꾸고, 결과 전달 규약 손보는 일을 반복함. Sakana AI가 이 작업을 자동화한 RHI(Recursive Harness Self-Improvement)를 냈음. 결론부터면 하네스를 스스로 개정하게 만드니 몇 번 만에 비싼 추론 설정보다 싸게 좋은 성적이 나왔다는 것임.

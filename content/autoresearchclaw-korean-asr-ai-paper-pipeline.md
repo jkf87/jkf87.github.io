@@ -130,11 +130,11 @@ researchclaw run --config config.arc.yaml --auto-approve
 
 ### 생성된 차트
 
-![메인 결과 비교](/images/autoresearchclaw/fig_main_results.png)
+![메인 결과 비교](./media/autoresearchclaw/fig_main_results.png)
 
-![효율 분석](/images/autoresearchclaw/fig_efficiency_analysis.png)
+![효율 분석](./media/autoresearchclaw/fig_efficiency_analysis.png)
 
-![음소 분석](/images/autoresearchclaw/fig_phoneme_analysis.png)
+![음소 분석](./media/autoresearchclaw/fig_phoneme_analysis.png)
 
 ### 논문 아웃라인 (자동 생성)
 

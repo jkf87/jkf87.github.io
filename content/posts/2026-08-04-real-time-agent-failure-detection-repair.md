@@ -16,6 +16,9 @@ source: arxiv
 source_url: https://arxiv.org/abs/2608.02464
 github_url: https://github.com/sunnydubey1111/agent-trajectory-sentinel
 description: 감시 LLM 대신 정상 실행 데이터만으로 학습한 200마이크로초 감시기로 실패를 실시간 탐지하고 롤백으로 45%를 회수함. 비용 거의 0인 결정론적 검증을 먼저 깔라는 배포 구조를 정리함.
+draft: true
+refactor_hub: harness-self-improve-10
+refactor_status: queued
 ---
 
 에이전트는 실행 중간에 망가짐. 도구 오류가 연쇄되고 같은 행동을 반복하다 루프에 빠지고 목표에서 이탈함. 표준 해법인 "매 스텝 두 번째 LLM으로 판단"은 감시 비용이 본체보다 큼. 원문은 [arXiv:2608.02464](https://arxiv.org/abs/2608.02464).

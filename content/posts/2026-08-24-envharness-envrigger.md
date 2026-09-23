@@ -2,7 +2,9 @@
 title: "에이전트가 정체된 이유가 환경일 수 있음 — EnvHarness의 발상 전환"
 date: 2026-08-24
 tags: [agent, LLM, RL, environment, harness, skill-learning]
-draft: false
+draft: true
+refactor_hub: harness-self-improve-08
+refactor_status: queued
 ---
 
 에이전트 학습이 평평해지는 시점의 원인을 모델이 아니라 환경에서 찾은 논문이 나옴. 환경을 새로 만들지 말고 감싸서 재구성하자는 제안. 하네스 개념을 상호작용의 반대편에 적용한 게 신선해서 정리함.

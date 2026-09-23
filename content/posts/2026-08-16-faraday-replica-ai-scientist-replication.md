@@ -15,7 +15,9 @@ source: arxiv
 source_url: https://arxiv.org/abs/2608.13331
 authors:
   - conanssam
-draft: false
+draft: true
+refactor_hub: agent-rl-02
+refactor_status: queued
 ---
 
 Inherent가 2026-08-14에 낸 논문(arXiv:2608.13331) 정리함. 27B 파라미터 에이전트 Faraday가 논문 재현 과제에서 Claude Opus 4.8과 GPT-5.5(Codex)를 넘어섰음. 미학습 68과제 평균이 Faraday 0.791, Claude 0.748, Codex 0.729임. 핵심은 논문 재현을 RL 과제 공간(Replica)으로 바꾸고 과제별 루브릭(채점 기준표) 판정관으로 보상을 만들어 턴 단위 크레딧 변형 GRPO(같은 문제의 여러 롤아웃을 비교해 상대적으로 나은 행동을 강화하는 강화학습 알고리즘)로 Qwen3.6-27B를 포스트트레이닝했다는 것임.

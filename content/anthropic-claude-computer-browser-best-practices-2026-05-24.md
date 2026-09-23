@@ -7,9 +7,11 @@ tags:
   - browser-use
   - claude-api
   - best-practices
-draft: false
 enableToc: true
 description: "Anthropic이 공식 가이드로 정리한 Claude Computer Use 해상도·클릭·보안·컨텍스트 관리 모범 사례."
+draft: true
+refactor_hub: web-gui-agents-03
+refactor_status: queued
 ---
 
 Anthropic이 2026년 5월 23일, Claude 모델 패밀리로 컴퓨터 및 브라우저 자동화를 구축하는 개발자를 위한 **종합 모범 사례 가이드**를 발표했습니다. 단순한 팁 모음이 아니라, 해상도 세팅부터 보안·컨텍스트 관리까지 실전에서 부딪히는 문제들을 체계적으로 풀어낸 문서입니다.

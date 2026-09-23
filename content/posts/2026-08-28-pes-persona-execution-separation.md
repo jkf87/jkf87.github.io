@@ -5,8 +5,10 @@ tags:
   - agent
   - architecture
   - governance
-draft: false
 description: "Persona-Execution Separation 패턴 분석. 에이전트의 페르소나와 실행을 하나의 트러스트 도메인에 두면 얼거나 풀거나의 이지선다에 걸림. 분리 도메인과 fail-closed 계약 브리지로 푼 구조와 핀테크 파일럿 검증 결과."
+draft: true
+refactor_hub: ai-trends-misc-01
+refactor_status: queued
 ---
 
 에이전트의 페르소나(지시문, 말투, 자기소개)와 실행(상태를 바꾸는 실제 작업)을 하나의 프로세스, 하나의 트러스트 도메인에 두면 둘 중 하나를 포기하게 됨. 페르소나를 자주 고치면 감사 추적이 무너지고, 감사를 엄격히 하면 페르소나가 얼어붙음. [PES 패턴 논문](https://arxiv.org/abs/2608.27427)은 이 딜레마를 아키텍처로 품. 페르소나는 저통제 도메인에 두고 자유롭게 드리프트, 실행은 고통제 도메인에 두고 전량 감사, 둘 사이는 fail-closed 계약 브리지로만 연결하는 것. 에이전트의 정체성 파일을 매일 고치면서도 실행 검증을 믿고 싶은 나에게 필요한 구조라 정리함.

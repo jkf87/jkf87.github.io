@@ -13,6 +13,9 @@ tags:
 source: arxiv
 source_url: https://arxiv.org/abs/2608.02276
 description: "에이전트 하네스 코드를 고치는 전용 모델을 RL로 훈련한 Harness-R1. 동결된 타깃 에이전트의 성공률을 평균 9.3%p 올리고, 안 본 20개 모델에서 전부 양수 개선을 낸 결과를 정리했다."
+draft: true
+refactor_hub: harness-self-improve-18
+refactor_status: queued
 ---
 
 에이전트가 실패할 때 모델 가중치 말고 하네스 코드를 고치는 쪽을 훈련시킨 연구가 나옴. Harness-R1(하네스 수정 전용 9B 모델을 실제 성공률 변화로 강화학습시킨 프레임워크)이 주인공임. 결과가 9B 모델이 397B 제안자를 이기는 구조라 흥미로워서 정리함. 원문은 [arXiv:2608.02276](https://arxiv.org/abs/2608.02276).

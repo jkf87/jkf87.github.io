@@ -10,10 +10,12 @@ tags:
   - Chan-Lam
   - TEMPO
   - drug-discovery
-draft: false
 source: OpenAI
 source_url: https://openai.com/index/ai-chemist-improves-reaction/
 description: OpenAI와 Molecule.one이 GPT-5.4, Maria AI, 고처리량 실험실을 연결해 primary sulfonamide Chan–Lam coupling을 개선한 과정을 인터뷰 형식으로 정리했다.
+draft: true
+refactor_hub: ai-trends-misc-06
+refactor_status: queued
 ---
 
 AI가 화학 논문을 읽고 “그럴듯한 아이디어”를 내는 단계는 이미 지나갔다. 이번에는 모델이 연구 제안을 만들고, 자동화 실험실이 10,080번의 반응을 돌렸고, 사람 화학자가 그 결과를 다시 손으로 검증했다. OpenAI와 Molecule.one은 이 과정을 “완전 자율”이 아니라 **near-autonomous, 거의 자율적인 AI 화학자**라고 불렀다.

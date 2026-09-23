@@ -12,6 +12,9 @@ tags:
 description: "40대 어지럼증은 빈혈만으로 설명되지 않았음. 저혈압, 탈수, 귀 질환, 약물, 응급 신호를 같이 봐야 했음."
 aliases:
   - 40s-dizziness-not-just-anemia-2026-05-24/index
+draft: true
+refactor_hub: archive-health-01
+refactor_status: archived
 ---
 
 # 40대 어지럼증, 빈혈만 탓하면 안 되는 이유 4가지

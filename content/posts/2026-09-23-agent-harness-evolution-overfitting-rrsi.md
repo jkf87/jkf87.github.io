@@ -1,13 +1,15 @@
 ---
 title: "LLM 에이전트 하네스 자기진화가 과적합되는 이유: RRSI 논문 정리 (arXiv 2609.24972)"
 date: 2026-09-23
-draft: false
 tags:
   - LLM 에이전트
   - 하네스
   - 벤치마크
   - paper-summary
 description: LLM 에이전트 하네스를 자동으로 진화시키는 방법이 진화에 쓴 벤치마크만 외워서 과적합되는 문제를 확인하고, 제안·선택 양쪽에 정규화를 넣어 일반화시킨 RRSI 논문을 정리했습니다.
+draft: true
+refactor_hub: harness-self-improve-20
+refactor_status: queued
 ---
 
 ## 결론 먼저

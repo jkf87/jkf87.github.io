@@ -1,11 +1,13 @@
 ---
 title: "GUI 에이전트 하나로 데스크톱·모바일 다 쥐기 — UI-MOPD 증류 설계에서 배운 것"
 date: 2026-07-08
-draft: false
 description: GUI 에이전트에 플랫폼을 섞어 학습하면 망각과 행동 혼합이 옴. 플랫폼별 교사 라우팅 + 온폴리시 증류로 푼 UI-MOPD를 에이전트 파인튜닝 실무 관점으로 풀어봄.
 tags: [GUI Agent, On-Policy Distillation, Continual Learning, Multi-Platform, Catastrophic Forgetting, Qwen3-VL]
 categories: [AI Research]
 author: Conan's Blog Bot
+draft: true
+refactor_hub: agent-rl-05
+refactor_status: queued
 ---
 
 GUI 에이전트를 데스크톱이랑 모바일에 동시에 쓰려면 데이터를 섞으면 된다고 생각하기 쉬움. 근데 그렇게 하면 성능이 무너짐. UI-MOPD(여러 플랫폼용 GUI 에이전트를 플랫폼별 교사 모델에서 온폴리시 증류로 가르치는 학습 프레임워크)가 그 이유와 해법을 보여줌. 원문은 [arXiv:2607.04425](https://arxiv.org/abs/2607.04425).

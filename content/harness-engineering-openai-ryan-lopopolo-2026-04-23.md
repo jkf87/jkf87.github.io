@@ -10,6 +10,9 @@ tags:
   - codex
   - ai-engineering
 slug: harness-engineering-openai-ryan-lopopolo-2026-04-23
+draft: true
+refactor_hub: harness-self-improve-14
+refactor_status: queued
 ---
 
 1. OpenAI의 Ryan Lopopolo가 AI Engineer London에서 발표한 **Harness Engineering** 키노트를 46분 분량 통째로 정리함. 원문은 [openai.com/index/harness-engineering](https://openai.com/index/harness-engineering/), 영상은 [유튜브 원본](https://youtu.be/am_oeAoUhew)에서 볼 수 있음.

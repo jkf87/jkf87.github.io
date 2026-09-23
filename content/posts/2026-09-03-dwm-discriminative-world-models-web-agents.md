@@ -7,8 +7,10 @@ tags:
   - PRM
   - benchmark
   - WebArena
-draft: false
 description: 월드 모델의 학습 목표를 다음 상태 재현에서 행동 결과 구별로 바꾼 predicted-state matching 논문을 정리함. WebArena-Lite 성공률이 13.94%에서 28.48%로 오른 실험까지 실무 관점으로 풀었음.
+draft: true
+refactor_hub: web-gui-agents-01
+refactor_status: queued
 ---
 
 Berkeley와 MIT-IBM 팀이 웹 에이전트용 월드 모델의 학습 목표를 바꿨음. 기존은 다음 상태를 HTML·AXTree·요약문 같은 고정 형식으로 재생하는 supervised next-state prediction이었는데, 예측 표현이 같은 분기점의 다른 행동 결과와 구별되도록 훈련하는 predicted-state matching을 제안했음. 원문은 [arXiv:2609.02885](https://arxiv.org/abs/2609.02885).

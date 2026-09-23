@@ -14,6 +14,9 @@ tags:
   - open-source
 authors:
   - конанссам
+draft: true
+refactor_hub: harness-self-improve-24
+refactor_status: queued
 ---
 
 744B 기반 모델을 동결하고 LoRA(LoRA는 기반 가중치를 얼려두고 저랭크 행렬만 추가로 학습해 붙이는 경량 파인튜닝 기법) 어댑터만 갈아끼우면서 지속 학습과 자기개선을 하겠다는 실험이 나옴. 배포 후 모델을 어떻게 관리할지 고민하는 사람에게 구조 참고가 돼서 정리함.

@@ -11,9 +11,11 @@ tags:
   - tool-use
   - automation
   - context-engineering
-draft: false
 socialImage: /images/2026-08-01-bm25-wins-rag-scaling-agent-vs-lexical/fig-1-p2.png
 description: "28단계 코퍼스 스케일링 실험에서 밝혀진 것. 코퍼스가 약 1,000만 토큰을 넘으면 인덱스 없이 파일을 탐색하는 에이전트가 BM25에게 역전당함. 에이전트+BM25 하이브리드가 정답인 이유."
+draft: true
+refactor_hub: agent-memory-02
+refactor_status: queued
 ---
 
 RAG 검색 방식 논쟁에 통제된 답이 나옴. [USTC와 Metastone의 스케일링 실험](https://arxiv.org/abs/2607.26497)이 51만 개 문서, 6억 토큰 코퍼스에서 28개 중첩 단계를 만들고 네 가지 RAG 패러다임(어휘 검색, 밀도 검색, 그래프 RAG, 에이전트 검색)을 같은 조건에서 돌림. 밀도 검색은 문서와 질의를 벡터로 바꿔 의미 유사도로 찾는 방식이고, 그래프 RAG는 문서 속 개체와 관계를 그래프로 추출해 검색에 활용하는 방식임. 결론이 충격적임. 코퍼스가 커질수록 가장 단순한 BM25가 가장 정교한 에이전트 검색과 그래프 RAG를 이김. BM25는 질의와 문서에 공통으로 들어간 단어의 빈도와 희귀도를 점수화해 문서 순위를 매기는 대표적인 키워드 기반 어휘 검색 알고리즘임. 교차점은 약 1,000만 토큰. 에이전트로 검색을 시키는 사람이 꼭 알아야 할 그래프라 정리함.

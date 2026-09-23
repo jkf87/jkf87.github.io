@@ -1,7 +1,6 @@
 ---
 title: "에이전트의 절반은 환경임 — RL 환경을 tasks·harness·verifier·state·config로 쪼개서 보기"
 date: 2026-08-03
-draft: false
 tags:
   - reinforcement-learning
   - LLM-agent
@@ -15,6 +14,9 @@ categories:
 description: "LLM 에이전트 RL 환경을 다섯 구성요소로 분해한 Hanchung Lee의 택소노미 정리. 모델만 보면 반쪽이고, 어떤 환경에서 반복 실패시키고 무엇으로 다시 일으킬지가 에이전트 능력을 결정한다."
 aliases:
   - /posts/rl-environments-taxonomy-llm-agents-2026-08-03
+draft: true
+refactor_hub: harness-self-improve-08
+refactor_status: queued
 ---
 
 LLM 에이전트 성능 논의가 모델 이름과 포스트트레이닝 레시피에 몰려 있는데 정작 에이전트가 반복해서 실패하고 다시 배우는 훈련장, 즉 RL 환경 이야기가 빠져 있음. 이 빈 자리를 채운 택소노미 글이 있어서 정리함. 원문은 [Hanchung Lee의 블로그](https://leehanchung.github.io/blogs/2026/03/21/rl-environments-for-llm-agents/).

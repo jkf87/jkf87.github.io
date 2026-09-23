@@ -11,6 +11,9 @@ tags:
 description: "GSAP ScrollTrigger 공식 문서 기반으로 설치, 핵심 옵션, pin / scrub / snap / batch / matchMedia 레시피, 자주 하는 실수까지 한 번에 정리한 실전 가이드."
 aliases:
   - gsap-scrolltrigger-guide-2026-04-24/index
+draft: true
+refactor_hub: web-gui-agents-02
+refactor_status: queued
 ---
 
 ## ScrollTrigger가 뭔가

@@ -11,6 +11,9 @@ tags:
 description: AI 에이전트 verifier를 만들 때 막히는 건 코드가 아니라 "잘 됐다"를 어떻게 적느냐임. taste를 rubric으로 옮기는 절차를 직접 해본 기록.
 aliases:
   - implicit-knowledge-to-verifier-design-2026-05-09/index
+draft: true
+refactor_hub: harness-self-improve-16
+refactor_status: queued
 ---
 
 # 암묵지를 종이로 끄집어내는 법

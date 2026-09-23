@@ -2,7 +2,9 @@
 title: "스캐너를 다 통과한 스킬들이 연결되면 공격이 됨 — CompoSkill 조합 위협"
 date: 2026-08-20
 tags: [agent, security, skill, paper-review]
-draft: false
+draft: true
+refactor_hub: harness-self-improve-02
+refactor_status: queued
 ---
 
 스킬 마켓의 안전 검사는 개별 스킬 단위로 돌아감. 각각 전부 통과하면 생태계가 안전하다고 선언하는 방식. 근데 [CompoSkill](https://arxiv.org/abs/2608.16246)은 이 가정이 조합 상황에서 깨진다는 걸 보여줌 — 무해하게 검사 통과한 스킬들이 실행 흐름에서 연결되면 source-bridge-terminal 공격 체인이 됨. 스킬을 설치해서 쓰는 사람에게 직결이라 정리함.

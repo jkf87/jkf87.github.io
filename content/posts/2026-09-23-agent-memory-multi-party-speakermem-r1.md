@@ -7,8 +7,10 @@ tags:
   - agentic-memory
   - 강화학습
   - 벤치마크
-draft: false
 description: 일반 LLM 에이전트 메모리는 다자간 대화에서 누가 말했는지, 누구에 대한 이야기인지를 놓칩니다. 화자 중심 이중 트랙 메모리와 GRPO 학습을 넣은 SpeakerMem-R1이 EverMemBench 62.33%로 공개 최고 성능을 낸 결과를 정리했습니다.
+draft: true
+refactor_hub: agent-memory-04
+refactor_status: queued
 ---
 
 ## 핵심 요약

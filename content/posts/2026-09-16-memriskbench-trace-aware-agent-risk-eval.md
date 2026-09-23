@@ -1,6 +1,5 @@
 ---
 title: "78% 평균 성공 옆에 4% 유출이 숨어 있음 — MemRiskBench의 트레이스 리스크 평가 정리"
-draft: false
 date: 2026-09-16
 tags:
   - llm-agent
@@ -9,6 +8,9 @@ tags:
   - evaluation
   - open-source-model
 description: "장기 기억 LLM 에이전트의 희귀 고위험 실패(오래된 기억, 크로스 유저 유출, 제약 소멸)를 평균 점수가 숨긴다는 관점에서 MemRiskBench(arXiv:2609.14976)의 5개 리스크 분류, 결정론적 트레이스 채점, 20% 부분집합 선택기를 정리함."
+draft: true
+refactor_hub: agent-memory-07
+refactor_status: queued
 ---
 
 에이전트 벤치마크의 평균 점수는 가장 위험한 실패를 가장 잘 숨김. 78% 평균 성공을 내는 모델도 4% 에피소드에서 크로스 유저 데이터를 유출할 수 있음. MemRiskBench는 이런 희귀하면서 치명적인 메모리 리스크를 분류하고 LLM 심판 없이 트레이스만으로 결정론적으로 채점하는 벤치마크임.

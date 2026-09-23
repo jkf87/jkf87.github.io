@@ -8,6 +8,9 @@ tags:
   - tools
   - productivity
 description: "AI 코딩 에이전트가 만든 코드는 겉보기엔 깔끔하지만 실제로는 빈 껍데기인 경우가 많다. 이걸 자동으로 잡아주는 정적 분석 도구 AI-SLOP Detector를 실사용 관점에서 정리한다."
+draft: true
+refactor_hub: coding-agents-01
+refactor_status: queued
 ---
 
 AI 코딩 에이전트를 쓰다 보면 이런 경험을 한다. PR을 열어보면 코드가 놀라울 정도로 정돈되어 있다. 함수 분리도 깔끔하고, 주석도 친절하고, 파일 구조도 논리적이다. 머지하고 배포한다. 그리고 며칠 뒤 예상치 못한 버그 리포트가 들어온다.

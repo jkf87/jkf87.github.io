@@ -15,6 +15,9 @@ tags:
 source: arxiv
 source_url: https://arxiv.org/abs/2608.05563
 description: "신뢰 없는 궤적이 신뢰된 스킬로 승격되는 과정을 공격해 91% 스킬 삽입 성공률을 보인 PoisonedEvolution. 출처 다양성 게이트라는 방어 방향까지 정리했다."
+draft: true
+refactor_hub: harness-self-improve-02
+refactor_status: queued
 ---
 
 자가진화 스킬 시스템의 구조적 취약점을 정면으로 찌른 공격 연구가 나옴. 공격자가 악성 스킬을 직접 올리는 게 아니라 정상 궤적 기여자로 위장해서 파이프라인이 스스로 악성 행동을 "재사용 가능한 경험"으로 승격하게 만드는 것. 원문은 [arXiv:2608.05563](https://arxiv.org/abs/2608.05563).

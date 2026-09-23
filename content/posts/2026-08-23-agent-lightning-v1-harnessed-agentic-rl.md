@@ -3,6 +3,9 @@ title: "배포용 하네스를 그대로 RL 학습에 넣는 법 — Agent Light
 date: 2026-08-23
 source: https://arxiv.org/abs/2608.17528
 tags: [agent, rl, harness, training]
+draft: true
+refactor_hub: harness-self-improve-13
+refactor_status: queued
 ---
 
 MS 리서치가 2026-08-18자로 Agent Lightning v1.0 기술 보고서를 냈음. 핵심은 배포할 때 쓰는 에이전트 하네스를 그대로 RL 포스트트레이닝에 넣는 프레임워크라는 것. 약 3,500줄짜리 가벼운 구현임.

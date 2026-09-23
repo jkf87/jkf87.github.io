@@ -9,6 +9,9 @@ tags:
   - empirical-study
   - quartz
 description: "arXiv 2604.00917 논문을 바탕으로 5개 코딩 에이전트의 오픈소스 기여를 분석하고, 에이전트 코드의 churn rate, survival rate, 그리고 실전 에이전트 설계에 주는 인사이트를 정리합니다."
+draft: true
+refactor_hub: coding-agents-01
+refactor_status: queued
 ---
 
 최근 오픈소스 프로젝트에서 AI 코딩 에이전트의 활동이 급격히 늘고 있습니다. 이미 GitHub PR의 10% 이상이 에이전트가 생성한 것으로 추정됩니다. 그런데 정말 궁금한 게 있습니다.

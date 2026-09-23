@@ -1,9 +1,11 @@
 ---
 title: "사용자가 틀린 정보를 밀면 에이전트는 굴복함 — KC-Bench가 밝힌 지식 충돌 취약점"
 date: 2026-09-09
-draft: false
 tags: [agent, benchmark, safety, knowledge-conflict]
 description: "KC-Bench는 사용자 지시·모델 지식·도구 관측이 충돌할 때 행동 전에 감지하고 안전하게 멈추는지 238개 멀티턴 과제로 측정함. 9개 모델 중 세 도메인을 모두 통과한 모델은 없었고 도메인 간 전이도 없었음. 배포 설계 지침을 정리함."
+draft: true
+refactor_hub: agent-safety-01
+refactor_status: queued
 ---
 
 에이전트가 충돌하는 증거를 만났을 때 행동 전에 감지하고 안전하게 멈추는지를 잰 벤치마크 KC-Bench(arXiv 2609.03588)가 나옴. 결론을 한 줄로 정리하면 9개 모델 중 세 도메인(사실 교정, 신원 일관성, 시간 충돌)을 모두 안정적으로 통과한 모델은 없었다는 것. 그리고 더 중요한 발견. 충돌 처리 능력은 도메인별로 따로 무너지고 한 도메인의 점수는 다른 도메인을 보증하지 못함.

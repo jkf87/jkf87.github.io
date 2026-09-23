@@ -1,7 +1,6 @@
 ---
 title: "에이전트가 실험실 장비를 직접 잡는 날 — Anthropic MHS 연구 프리뷰 정리"
 date: 2026-08-29
-draft: false
 tags:
   - ai-agents
   - anthropic
@@ -14,6 +13,9 @@ categories:
 description: "Anthropic과 HHMI Janelia가 공개한 Model Hardware Standard 연구 프리뷰 정리. MCP·CLI·API로 실험실 장비를 연결하는 표준이고 초기 사례는 바이오·현미경·양자 레이저까지 넓음."
 aliases:
   - /posts/2026-08-29-anthropic-mhs-physical-agents
+draft: true
+refactor_hub: multimodal-world-01
+refactor_status: queued
 ---
 
 Anthropic이 공개한 Model Hardware Standard, MHS의 핵심은 간단함. AI 에이전트가 현미경, 액체 핸들러, 로봇팔, 플레이트 리더 같은 물리 장비를 공통 방식으로 발견하고 제어하게 만드는 표준이라는 것. 아직 오픈소스는 아니고 research preview이며 첫 파트너는 과학 연구소와 고급 제조 현장임. 시작점은 Anthropic과 HHMI Janelia Research Campus의 협업이었음.

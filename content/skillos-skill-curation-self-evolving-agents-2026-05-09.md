@@ -3,6 +3,9 @@ title: "SkillOS: 스트리밍 태스크에서 스스로 진화하는 에이전�
 date: 2026-05-09
 tags: [AI, LLM, agent, reinforcement-learning, skill-learning, paper-review]
 enableToc: true
+draft: true
+refactor_hub: harness-self-improve-01
+refactor_status: queued
 ---
 
 ## 개요

@@ -11,6 +11,9 @@ tags:
   - LLM
   - frontier-models
 description: "Sakana AI가 공개한 Fugu와 Fugu Ultra를 정리함. 여러 모델을 직접 엮는 복잡한 멀티에이전트 시스템을 하나의 OpenAI 호환 API 뒤에 감추고, 모델 선택·위임·검증·종합을 학습된 오케스트레이터가 맡는다는 접근을 살펴본다."
+draft: true
+refactor_hub: multi-agent-03
+refactor_status: queued
 ---
 
 출처:

@@ -15,6 +15,9 @@ tags:
 source: huggingface
 source_url: https://arxiv.org/abs/2608.06197
 description: "에이전트 RL의 최대 병목인 환경 구축을 정책 안으로 흡수한 EnvACE. 정책이 도구 호출과 환경 응답을 같은 파라미터로 생성·학습해 4개 벤치마크에서 환경 스케일링 기법을 앞선 결과를 정리했다."
+draft: true
+refactor_hub: harness-self-improve-08
+refactor_status: queued
 ---
 
 에이전트 RL의 진짜 병목은 환경 구축임. 환경을 만들고 검증하고 유지하는 비용이 훈련보다 큰 경우가 흔했는데, 이걸 정책 안으로 흡수해버린 논문이 나옴. EnvACE(정책이 도구 호출뿐 아니라 환경의 응답까지 스스로 생성하며 훈련하는 기법)가 그 방법임. 원문은 [arXiv:2608.06197](https://arxiv.org/abs/2608.06197).

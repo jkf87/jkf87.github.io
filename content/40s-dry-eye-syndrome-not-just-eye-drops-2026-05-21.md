@@ -8,6 +8,9 @@ tags:
   - 눈 건강
   - 슈렌겔라플룬
 description: 40대에 눈이 시리고 건조한 게 안약으로 안 되는 이유. 눈물층 구조가 바뀌는 시기가 40대부터임. 방치하면 각막염까지 올 수 있음.
+draft: true
+refactor_hub: archive-health-01
+refactor_status: archived
 ---
 
 # 40대 눈 건조·시린 증상, 안약만 넘기다간 각막 상처남

@@ -1,7 +1,6 @@
 ---
 title: "LLM 에이전트에 토큰을 더 주면 왜 한계에 부딪히나: When Agents Slow Down 논문 정리 (arXiv 2609.15309)"
 date: 2026-09-19
-draft: false
 description: "에이전트 4종을 100M 토큰까지 돌려 테스트타임 스케일링을 측정한 Elo-per-token 분석입니다. 긴 세션보다 변곡점 3세션 분할이 +264 Elo 우세했고, 인간 참가자는 며칠간 계속 성장하며 에이전트를 추월했습니다."
 tags:
   - LLM
@@ -11,6 +10,9 @@ tags:
   - benchmark
   - paper-summary
   - agent-harness
+draft: true
+refactor_hub: reasoning-efficiency-01
+refactor_status: queued
 ---
 
 ## 결론 먼저

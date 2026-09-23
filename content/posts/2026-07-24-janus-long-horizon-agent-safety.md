@@ -7,9 +7,11 @@ tags:
   - reinforcement-learning
   - long-horizon
   - LLM-agent
-draft: false
 source_url: https://arxiv.org/abs/2607.19913
 description: "궤적 prefix만 보고 미래 위험을 예측해 사전 차단하는 JANUS. 지연된 위험이 많은 LPS-Bench에서 공격 성공률을 0.323에서 0.075로 낮춘 설계와 시사점을 정리했다."
+draft: true
+refactor_hub: agent-safety-01
+refactor_status: queued
 ---
 
 에이전트가 코드를 고치고 파일을 옮기는 지금, 안전 문제의 본질이 바뀌었음. 단일 프롬프트 유해성 판별이 아니라 여러 스텝에 걸쳐 누적되는 궤적 전체에서 위험이 생김. 이걸 예측으로 푼 논문이 나와서 정리함. 원문은 [arXiv:2607.19913](https://arxiv.org/abs/2607.19913).

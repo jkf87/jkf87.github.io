@@ -8,8 +8,10 @@ tags:
   - skill-library
   - 에이전트
   - paper-summary
-draft: false
 description: "파인튜닝 없이 사용자 트래픽만으로 SKILL.md 절차 메모리를 진화시켜 디자인 에이전트의 GenEval2 성공률을 72.7%에서 99.3%로 끌어올린 Adobe의 절차적 메모리 논문(arXiv 2609.22086) 정리"
+draft: true
+refactor_hub: agent-memory-10
+refactor_status: queued
 ---
 
 ## 결론 먼저

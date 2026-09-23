@@ -1,7 +1,6 @@
 ---
 title: "하네스를 학습 가능한 제어층으로 — 오프라인 RL이 에이전트 실행 흐름을 바꿀 수 있다"
 date: 2026-08-11
-draft: false
 tags:
   - agent
   - harness
@@ -15,6 +14,9 @@ tags:
 authors:
   - conanssam
 description: "하네스의 제어 결정(관찰·도구 호출·검증·제출)을 MDP로 정식화하고 기존 롤아웃 버퍼에서 오프라인 RL로 학습함. 제출 전 검증 행동이 전 도메인에서 증가했고 결과 개선은 버퍼 품질에 달림. 하네스 제어 학습의 실무 교훈을 정리함."
+draft: true
+refactor_hub: harness-self-improve-18
+refactor_status: queued
 ---
 
 source: arXiv:2607.05458

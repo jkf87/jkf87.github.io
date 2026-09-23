@@ -8,9 +8,11 @@ tags:
   - co-evolution
   - reinforcement-learning
   - paper-review
-draft: false
 enableToc: true
 description: "Ant Group·서호대학교 연구진이 제안한 SEAL은 에이전트 정책과 학습 환경을 폐루프로 공동 진화시키는 프레임워크. 400개 샘플만으로 +8.25~+26.25%p 성능 향상, OOD 전이까지 달성."
+draft: true
+refactor_hub: harness-self-improve-08
+refactor_status: queued
 ---
 
 원본: [arxiv.org/abs/2605.24426](https://arxiv.org/abs/2605.24426) | [HTML 전문](https://arxiv.org/html/2605.24426v1)

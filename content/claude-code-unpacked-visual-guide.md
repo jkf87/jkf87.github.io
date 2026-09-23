@@ -10,6 +10,9 @@ tags:
   - visualization
   - anthropic
 description: "ccunpacked.dev는 Claude Code의 에이전트 루프, 도구 체계, 명령어 카탈로그, 숨겨진 기능까지 시각적으로 정리해 보여주는 사이트입니다. 왜 흥미로운지와 어떻게 보면 좋은지 정리했습니다."
+draft: true
+refactor_hub: coding-agents-01
+refactor_status: queued
 ---
 
 최근 AI 개발자 커뮤니티에서 꽤 흥미로운 링크 하나가 돌고 있습니다. 바로 **[ccunpacked.dev](https://ccunpacked.dev)** 입니다.

@@ -8,6 +8,9 @@ tags:
   - performance
   - lecture
 description: "ECE7115 8강 GPU 구조와 성능 감각을 CPU 대비, 메모리 계층, 실행 모델, 최적화 관점에서 정리한 Quartz 노트."
+draft: true
+refactor_hub: llm-course-notes-01
+refactor_status: queued
 ---
 
 # ECE7115 8강 요약: Understanding GPUs

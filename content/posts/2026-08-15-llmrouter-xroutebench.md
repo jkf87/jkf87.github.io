@@ -13,6 +13,9 @@ tags:
 source: huggingface
 source_url: https://huggingface.co/papers/2608.06867
 paper_url: https://arxiv.org/abs/2608.06867
+draft: true
+refactor_hub: eval-benchmarks-02
+refactor_status: queued
 ---
 
 쿼리마다 어떤 모델로 보낼지 정하는 라우팅을 하나의 프레임워크로 통합하고 16종 이상의 라우터를 같은 조건으로 비교한 인프라가 나옴. 여러 모델을 섞어 쓰는 사람에게 비용 결정의 근거가 되는 데이터라 정리함.

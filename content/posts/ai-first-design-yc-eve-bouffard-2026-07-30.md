@@ -1,7 +1,6 @@
 ---
 title: "AI로 디자인한다는 건, 툴을 바꾸는 게 아니라 작업의 단위를 바꾸는 일"
 date: 2026-07-30
-draft: false
 tags:
   - AI
   - design
@@ -15,6 +14,9 @@ categories:
 description: "Y Combinator의 Design Review 영상, YC Head of Design Eve Bouffard가 보여준 AI-first 디자인 워크플로우를 뉴스레터 형식으로 정리했다. 핵심은 디자인 툴 목록이 아니라, 말하기·컨텍스트·에이전트·소프트웨어화된 브랜드 시스템이다."
 aliases:
   - /posts/ai-first-design-yc-eve-bouffard-2026-07-30
+draft: true
+refactor_hub: coding-agents-02
+refactor_status: queued
 ---
 
 ![디자이너가 음성으로 의도를 말하고, 에이전트가 Paxel, SOTA Zine, machine-readable page, Startup School 브랜딩을 만들어내는 흐름. 이 글의 핵심은 “AI 디자인”이 이미지 생성이 아니라 작업 단위의 재구성이라는 점이다.](/images/ai-first-design-yc-eve-bouffard-2026-07-30/hero.svg)

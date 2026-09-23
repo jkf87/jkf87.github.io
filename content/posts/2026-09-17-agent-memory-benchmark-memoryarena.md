@@ -1,7 +1,6 @@
 ---
 title: "기억을 불러오는 것과 행동에 쓰는 것은 다른 능력이다 — 메모리 벤치마크의 맹점"
 date: 2026-09-17
-draft: false
 tags:
   - llm-agent
   - memory
@@ -10,6 +9,9 @@ tags:
   - long-context
   - paper-summary
 description: "MemoryArena 분석. LoCoMo에서 준최고 점수를 내던 에이전트가 기억과 행동이 묶인 다중 세션 태스크에서 평균 성공률 0.12~0.17로 무너짐. 그룹 여행 계획은 전 방법 0.00. 외부 메모리와 RAG가 유리한 조건의 구분까지."
+draft: true
+refactor_hub: agent-memory-07
+refactor_status: queued
 ---
 
 기존 메모리 벤치마크에서 준최고 점수를 내던 에이전트들이 [MemoryArena](https://arxiv.org/abs/2602.16313)에서는 평균 태스크 성공률 0.12~0.17에 그침. 그룹 여행 계획 환경에서는 모든 방법의 성공률이 0.00이었음. 핵심은 이것임. 기억을 불러오는 것과 기억을 다음 행동에 쓰는 것은 다른 능력인데 기존 벤치마크는 앞쪽만 측정했다는 것. ICML 2026 정규 논문이고 Stanfold·UCSD 등이 참여함. 나처럼 메모리 시스템을 붙여서 쓰는 사람에게 도입 결정의 기준이 바뀌는 결과라 정리함.

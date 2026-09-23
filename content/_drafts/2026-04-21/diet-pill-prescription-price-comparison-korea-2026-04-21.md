@@ -12,6 +12,8 @@ tags:
   - mohw
 description: "다이어트 약 처방 가격은 약값 하나로 보면 계속 틀리게 됨. 진찰료, 처방전이 붙는 외래비, 약값, 약국 조제비, 비급여 항목을 나눠서 비교해야 덜 헷갈림."
 draft: true
+refactor_hub: archive-draft-01
+refactor_status: archived
 ---
 
 # 다이어트 약 처방받기, 가격 비교, 먼저 쪼개서 봐야 덜 헷갈림

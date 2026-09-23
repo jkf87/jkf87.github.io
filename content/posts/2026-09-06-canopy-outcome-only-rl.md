@@ -7,8 +7,10 @@ tags:
   - agent
   - LLM
   - post-training
-draft: false
 description: "Qwen3-14B를 AppWorld 리더보드 정상까지 올린 CANOPY 프로토콜을 정리함. 신호 고갈과 정책 드리프트라는 두 실패 원인과 절제 실험의 교훈, 그리고 '보상 설계 전에 탐색 규모부터'라는 실무 결론까지."
+draft: true
+refactor_hub: agent-rl-02
+refactor_status: queued
 ---
 
 "소형 오픈 모델은 아웃컴 온리 RL로 오래 못 간다"는 통념이 있었음. 알리바바의 CANOPY(탐색 규모 확대와 KL 앵커로 아웃컴 온리 강화학습을 안정화시킨 훈련 프로토콜)가 이걸 뒤집었음. Qwen3-14B를 환경 상호작용만으로 훈련해 AppWorld(가상 앱 환경에서 일상 업무를 도구 호출로 수행하게 채점하는 벤치마크) 공식 리더보드 정상(Test-Normal TGC, 태스크 완수 점수)에 올림. SFT(정답 예시로 가르치는 지도학습 사전학습), 스킬 라이브러리, 다중 에이전트 오케스트레이션 없이임. 원문은 [arXiv 2609.01245](https://arxiv.org/abs/2609.01245).

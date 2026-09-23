@@ -10,6 +10,9 @@ tags:
   - 솔라
   - 스타트업
 description: 1996년에 한글 검색엔진 까치네를 만든 대학생이 2026년 다음을 인수하러 옴. 투자 배수 71배부터 다음 검색 점유율 2.72%, 택갈이 논란까지.
+draft: true
+refactor_hub: archive-offtopic-01
+refactor_status: archived
 ---
 
 1. 1996년에 한글 검색엔진 '까치네'를 만든 대학생이 있었음.

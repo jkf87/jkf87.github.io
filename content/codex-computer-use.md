@@ -10,6 +10,9 @@ tags:
   - agent
   - desktop-automation
 description: "OpenAI Codex 앱에 Computer Use 기능이 추가되었다. macOS에서 데스크톱 앱을 시각적으로 인식하고 조작할 수 있게 되며, 화면 녹화 및 접근성 권한만으로 설정 가능하다. 사용 사례, 보안 가이드라인, Claude Computer Use와의 비교를 정리한다."
+draft: true
+refactor_hub: coding-agents-06
+refactor_status: queued
 ---
 
 > 원문: [Computer Use – Codex app](https://developers.openai.com/codex/app/computer-use)

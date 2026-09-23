@@ -12,8 +12,10 @@ tags:
   - paper-review
   - tutorial
   - open-source
-draft: false
 summary: "포켓몬스터 레드(1996)를 강화학습으로 플레이하는 PokeRL 시스템을 분석한다. 커리큘럼 러닝, 안티루프 메커니즘, 계층적 보상 설계를 살펴보고, PyBoy 에뮬레이터 위에서 PPO 에이전트를 직접 학습시키는 방법까지 정리했다."
+draft: true
+refactor_hub: agent-rl-01
+refactor_status: queued
 ---
 
 ## 포켓몬 레드 — 강화학습의 궁극 벤치마크

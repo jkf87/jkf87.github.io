@@ -18,7 +18,7 @@ Config warnings:
 
 처음 보면 "이미 `memory-lancedb`로 바꿨는데 왜 `memory-core`가 계속 나오지?" 싶은 메시지다. 결론부터 말하면, **메모리 슬롯은 `memory-lancedb`로 바뀌었지만 예전 `memory-core` 플러그인 설정이 config 안에 남아 있어서 생긴 경고**였다.
 
-이 글은 OpenClaw 운영 중 실제로 마주친 메모리 슬롯 전환 경고를 기준으로, 원인과 정리 절차를 짧게 남긴 기록이다. AI 에이전트 메모리 시스템 전반이 궁금하다면 이전 글인 [[agentmemory-ai-coding-agent-persistent-memory-2026-05-10|AI 코딩 에이전트가 기억을 잃는 병]]도 함께 보면 흐름을 잡기 좋다.
+이 글은 OpenClaw 운영 중 실제로 마주친 메모리 슬롯 전환 경고를 기준으로, 원인과 정리 절차를 짧게 남긴 기록이다. OpenClaw 메모리 설정 전반이 궁금하다면 [[openclaw-active-memory-setup-guide|OpenClaw Active Memory 설정]] 글도 함께 보면 흐름을 잡기 좋다.
 
 ## 문제 상황
 

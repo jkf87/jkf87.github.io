@@ -8,9 +8,11 @@ tags:
   - reasoning
   - evaluation
   - agent
-draft: false
 summary: "한 프롬프트에 수학·코딩·검색·분석을 직렬로 묶은 Relay-Bench에서 GPT-5.5가 43.3%에 그침. 단일 도메인 점수가 무의미해지는 지점과, 하네스 설계자가 가져야 할 교훈을 정리함."
 coverImage: ""
+draft: true
+refactor_hub: eval-benchmarks-01
+refactor_status: queued
 ---
 
 GPQA(전문가 수준의 과학 문제로 모델 지식을 재는 벤치마크)든 MATH(수학 경시 문제 모음 벤치마크)든 프론티어 모델들이 90% 이상을 받는 시대임. 근데 한 프롬프트 안에 수학·코딩·검색·데이터 분석을 연쇄로 묶은 [Relay-Bench](https://arxiv.org/abs/2607.18438)에서는 GPT-5.5가 43.3%, Gemini 3.1 Pro가 40.0%, Claude Opus 4.7이 16.7%에 그침. 모델을 고르거나 에이전트를 설계하는 사람이 이 격차를 이해 안 하면 비용만 쓰고 일을 못 시킴. 왜 이런 벌어짐이 생기는지와 실무 교훈을 정리함.

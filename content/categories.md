@@ -8,66 +8,37 @@ tags:
 
 # 카테고리
 
-처음 방문한 분들이 관심사별로 글을 찾을 수 있도록 주요 주제를 묶었습니다. 모든 글은 [[posts|전체 글 모아보기]]에서 최신순으로 확인할 수 있습니다.
+관심사별로 글을 찾을 수 있도록 묶었습니다. 모든 글은 [[posts|전체 글 모아보기]]에서 최신순으로 확인할 수 있습니다.
 
+## 직접 해본 실험·비교
 
-## AI 논문·에이전트 주제 클러스터
-
-검색 유입과 내부 링크 강화를 위해 AI 글을 세부 주제별 허브로 다시 묶었습니다.
-
-- [[topic-clusters|AI 블로그 주제 클러스터 전체]]
-- [[llm-agent-papers|LLM 에이전트 논문 모음]]
-- [[ai-coding-agent-papers|AI 코딩 에이전트 논문·도구 모음]]
-- [[agent-memory-rag|LLM 메모리·RAG 논문 모음]]
-- [[agent-rl-harness|에이전트 강화학습·하네스 논문 모음]]
-- [[ai-model-updates-open-source|오픈소스 LLM·모델 업데이트 모음]]
-
-## AI 교육·수업 활용
-
-초등학생, 교사, 학부모가 AI를 실제 교육 현장에서 어떻게 활용할 수 있는지 다룹니다.
-
-- [[ai-thinking-warning-learning-vs-output|AI 사고력 경고: 배움과 결과물의 차이]]
-- [[ai-agent-trend-nanoclaw-openclaw-for-everyone|AI 에이전트 흐름과 NanoClaw/OpenClaw]]
-- [[gemma4-openclaw-local-backend-practical-guide|Gemma 4와 OpenClaw 로컬 백엔드 활용]]
-- [[ece7115-0-course-introduction|ECE7115 강의 노트: 과정 소개]]
-
-## 업무 자동화·생산성
-
-교사와 직장인이 반복 업무를 줄이는 자동화 사례를 정리합니다.
-
-- [[frontend-backend-database-vibe-coding-guide|프론트엔드·백엔드·DB 바이브코딩 가이드]]
-- [[openclaw-book-recommendation-2026|오픈클로 책 추천과 활용법]]
-- [[webtooni-automation-guide|Webtooni 자동화 가이드]]
-- [[secretary-problem-37-rule|비서 문제와 37% 규칙]]
-
-## AI 에이전트·코딩 에이전트
-
-Codex, Claude Code, OpenClaw, 코딩 에이전트와 하네스 생태계를 실전 관점으로 분석합니다.
+같은 조건에서 도구를 돌려 보고 결과를 기록한 글입니다.
 
 - [[ai-coding-harness-6-tools-review-2026-05-03|AI 코딩 하네스 6종 실전 비교]]
-- [[agent-harness-engineering-2026|에이전트 하네스 엔지니어링]]
-- [[claude-code-three-signals-2026|Claude Code를 볼 때 중요한 3가지 신호]]
-- [[openai-codex-masterclass-2026-05-02|OpenAI Codex 마스터클래스 정리]]
-- [[harness-engineering-openai-ryan-lopopolo-2026-04-23|OpenAI 하네스 엔지니어링 인터뷰]]
+- [[skillopt-voice-memo-doc-2026-06-03|SkillOpt로 에이전트 스킬 학습시키기: 자막 추출 오타 점검 예시]]
+- [[autoresearchclaw-korean-asr-ai-paper-pipeline|AutoResearchClaw 실전 사용기]]
 
-## 로컬 LLM·오픈소스 AI
+## 오픈클로(OpenClaw) 설치·설정
 
-개인 PC와 맥에서 AI 모델을 실행하고 활용하는 방법을 다룹니다.
+오픈클로를 설치하고 기능을 설정하는 방법을 정리합니다.
 
-- [[mac-local-ai-model-guide-for-everyone|맥 로컬 AI 모델 입문 가이드]]
-- [[qwen3-6-35b-a3b-mlx-macbook-local|Qwen3 6/35B A3B MLX 맥북 로컬 실행]]
-- [[turboquant-16gb-mac-local-llm-revolution|16GB 맥 로컬 LLM과 TurboQuant]]
-- [[nvidia-nemotron-3-nano-4b-local-ai-hybrid|NVIDIA Nemotron 3 Nano 4B]]
+- [[openclaw-windows-native-no-wsl|윈도우에서 WSL 없이 오픈클로 쓰기]]
+- [[openclaw-context-engine-plugins|Context Engine Plugin으로 커스텀 파이프라인 만들기]]
+- [[openclaw-active-memory-setup-guide|Active Memory 설정]]
+- [[openclaw-obsidian-memory-wiki-llm-wiki-setup-2026-05-28|Obsidian 연동과 Memory Wiki 설정]]
+- [[openclaw-memory-lancedb-slot-warning-2026-05-28|메모리 슬롯 전환과 LanceDB 경고 정리]]
+- [[openclaw-google-meet-plugin-setup-guide-2026-05-28|Google Meet 플러그인 설치]]
+- [[nilbox-openclaw-security-guide|Nilbox로 오픈클로 안전하게 실행하기]]
+- [[openclaw-book-recommendation-2026|오픈클로 입문서 고르기]]
 
-## 40대 건강·생활 정보
+## 로컬 LLM 연결
 
-건강검진 수치와 생활 습관을 일반 독자가 이해하기 쉽게 정리합니다.
+맥과 PC에서 오픈 모델을 돌리고 에이전트에 연결하는 방법입니다.
 
-- [[40s-dyslipidemia-ldl-total-cholesterol-2026-05-02|40대 이상지질혈증, 총콜레스테롤만 보고 안심하면 안 되는 이유]]
-- [[40s-hypothyroidism-fatigue-weight-gain-2026-05-03|40대 갑상샘저하증 신호]]
-- [[40s-insomnia-not-just-willpower-2026-05-01|40대 불면증은 의지만의 문제가 아닙니다]]
-- [[40s-vitamin-d-deficiency-2026-04-30|40대 비타민 D 부족]]
-- [[40s-blood-pressure-130-80-warning-2026-04-25|혈압 130/80의 의미]]
+- [[gemma4-openclaw-local-backend-practical-guide|Gemma 4를 OpenClaw에 붙이는 순서]]
+- [[gemma4-codex-cli-local|Gemma 4를 Codex CLI에서 로컬로 실행하기]]
+- [[qwen3-6-27b-lmstudio-openclaw-2026-04-23|Qwen3.6-27B를 LM Studio + OpenClaw로 굴리기]]
+- [[qwen3-6-35b-a3b-mlx-macbook-local|Qwen3.6-35B-A3B MLX를 맥북 M4에서 돌리기]]
 
 ## 사이트 안내
 

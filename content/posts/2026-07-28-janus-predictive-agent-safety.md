@@ -11,8 +11,10 @@ tags:
   - tool-use
   - automation
   - harness
-draft: false
 summary: "궤적 접두사만 보고 미래 위험을 예측해 실행 전에 차단하는 JANUS. 4개 벤치마크에서 평균 공격 성공률을 0.230에서 0.071로 낮추면서 유틸리티는 유지한 구조를 에이전트 운영 관점에서 풀어둔 글."
+draft: true
+refactor_hub: harness-self-improve-03
+refactor_status: queued
 ---
 
 에이전트가 코드를 고치고 파일에 접근하는 지금, 실패는 텍스트 문제가 아니라 운영 문제임. 한 번의 안전하지 않은 행동이 파일을 지우고 개인정보를 흘림. 실행 후 감지는 너무 늦음. JANUS는 궤적 일부만 보고 미래 위험을 예측해 실행 전에 차단하는 프레임워크임.

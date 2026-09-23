@@ -1,7 +1,6 @@
 ---
 title: "에이전트는 980만 토큰을 써도 반나절짜리 작업을 못 끝냄 — LHTB가 잰 장기 실행 한계"
 date: 2026-07-20T10:05:00+09:00
-draft: false
 tags:
   - agent
   - benchmark
@@ -11,6 +10,9 @@ tags:
   - harness
   - evaluation
 description: "평균 88.9분·239 에피소드·980만 토큰짜리 터미널 과제 46개로 17개 모델을 측정한 Long-Horizon-Terminal-Bench. 최강 모델도 통과율 28.3%였고 실패 원인은 타임아웃·조기 종료·약한 자기 검증이었다."
+draft: true
+refactor_hub: harness-self-improve-07
+refactor_status: queued
 ---
 
 에이전트 벤치마크 점수는 좋아지는데 실무에서 반나절짜리 작업을 맡기면 무너짐. 그 차이를 정량화한 벤치마크가 나와서 정리함. 원문은 [arXiv:2607.08964](https://arxiv.org/abs/2607.08964).

@@ -53,9 +53,9 @@ description: "jcode, Gstack, Everything Claude Code, Ouroboros, revfactory/harne
 | 5 | **[Gstack](https://github.com/garrytan/gstack)** | **78.0** | **74.3** | 가능성 큼 | skill/command pack으로는 좋지만 하네스 자동화 근거는 약했어요 |
 | 6 | **[jcode](https://github.com/1jehuang/jcode)** | **77.7** | **74.0** | 가능성 큼 | 빠르지만 build, 인증, hook 쪽에서 아쉬움이 있었어요 |
 
-![AI 코딩 하네스 6종 최종 점수](./images/ai-coding-harness-6-tools-review-2026-05-03/final-score-ranking-ko.png)
+![AI 코딩 하네스 6종 최종 점수](./media/ai-coding-harness-6-tools-review-2026-05-03/final-score-ranking-ko.png)
 
-![항목별 점수 분포](./images/ai-coding-harness-6-tools-review-2026-05-03/category-heatmap-ko.png)
+![항목별 점수 분포](./media/ai-coding-harness-6-tools-review-2026-05-03/category-heatmap-ko.png)
 
 100점 환산 기준으로도 순위는 같습니다. Ouroboros가 1위, revfactory가 2위, Everything Claude Code와 oh-my-codex가 근소한 차이로 따라붙는 구조입니다.
 

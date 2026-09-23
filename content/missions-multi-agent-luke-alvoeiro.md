@@ -3,6 +3,9 @@ title: "다중 에이전트 팀을 짜는 법 — Factory의 Missions는 왜 모
 date: 2026-05-07
 tags: ["AI", "다중에이전트", "에이전트", "소프트웨어개발", "자동화", "LLM"]
 description: "Luke Alvoeiro(Factory)의 AI Engineer Europe 발표를 통해 배우는 실무형 다중 에이전트 시스템. 5가지 패턴부터 구조화된 핸드오프, 역할별 모델 선택까지."
+draft: true
+refactor_hub: multi-agent-01
+refactor_status: queued
 ---
 
 무대 위에 선 남자가 한 문장을 던진다.

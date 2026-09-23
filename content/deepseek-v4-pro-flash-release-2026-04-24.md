@@ -13,6 +13,9 @@ tags:
   - open-source
 description: "DeepSeek-V4-Pro와 DeepSeek-V4-Flash 공개 소식을 정리합니다. 100만 토큰 컨텍스트, MoE 구조, 공식 벤치마크 이미지, 핵심 수치까지 한 번에 봅니다."
 socialImage: deepseek-v4-thumb.png
+draft: true
+refactor_hub: model-releases-04
+refactor_status: queued
 ---
 
 # DeepSeek-V4-Pro / Flash 공개 정리: 100만 토큰 컨텍스트와 벤치마크 결과

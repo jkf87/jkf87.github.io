@@ -1,7 +1,6 @@
 ---
 title: "MCP 서버가 업데이트되면 에이전트가 무너진다 — MCPEvol-Bench가 잰 진화 적응력"
 date: 2026-07-18T10:00:00+09:00
-draft: false
 tags:
   - LLM
   - Agent
@@ -9,6 +8,9 @@ tags:
   - Benchmark
   - Tool-Use
 description: "도구 인터페이스가 변하면 GPT-5.4도 13.7% 하락. MCP 서버 진화를 시뮬레이션해 에이전트 적응력을 측정한 MCPEvol-Bench 결과와 실무 대응책을 정리했다."
+draft: true
+refactor_hub: harness-self-improve-05
+refactor_status: queued
 ---
 
 MCP(Model Context Protocol, LLM 에이전트가 외부 도구·데이터에 연결하는 표준 규약) 도구를 물고 돌아가는 에이전트를 운영 중이면 겪는 일이 있음. 서버 업데이트 한 번에 워크플로우가 조용히 깨짐. 이걸 정식으로 측정한 벤치마크가 나와서 정리함. 원문은 [arXiv:2607.14642](https://arxiv.org/abs/2607.14642).

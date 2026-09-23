@@ -1,9 +1,11 @@
 ---
 title: "오픈클로 2026.5.28 — 더 단단해진 에이전트 런타임, 더 넓어진 모델 지원"
 date: 2026-06-01
-draft: false
 tags: ["OpenClaw", "업데이트", "AI에이전트", "릴리즈노트"]
 categories: ["OpenClaw 업데이트"]
+draft: true
+refactor_hub: openclaw-updates-02
+refactor_status: queued
 ---
 
 ![오픈클로 2026.5.28 업데이트 히어로 이미지](/images/2026-06-01-openclaw-528-update/hero.jpg)

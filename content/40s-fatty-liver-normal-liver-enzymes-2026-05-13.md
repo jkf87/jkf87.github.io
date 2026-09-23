@@ -12,6 +12,9 @@ tags:
 description: 40대 건강검진에서 AST·ALT가 정상이어도 지방간은 숨어 있을 수 있음. 같이 봐야 할 숫자와 생활교정 우선순위를 정리함.
 aliases:
   - 40s-fatty-liver-normal-liver-enzymes-2026-05-13/index
+draft: true
+refactor_hub: archive-health-01
+refactor_status: archived
 ---
 
 # 40대 지방간, 간수치 정상이어도 안심하면 안 되는 이유

@@ -10,6 +10,10 @@ tags:
 
 코난쌤 블로그와 관련한 문의는 아래 채널을 통해 보내주세요.
 
+## 이메일
+
+- jjoongoo@gmail.com — 강의·연수, 협업, 오류 정정 문의 모두 이 주소로 받습니다.
+
 ## 공식 채널
 
 - YouTube: [코난쌤 @conanssam](https://youtube.com/@conanssam)

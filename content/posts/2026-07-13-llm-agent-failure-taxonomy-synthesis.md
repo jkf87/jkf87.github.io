@@ -1,7 +1,6 @@
 ---
 title: "에이전트가 부분에선 뛰어난데 전체에선 무너지는 이유 — 실패 6클러스터 종합"
 date: 2026-07-13
-draft: false
 tags:
   - LLM-agent
   - failure-taxonomy
@@ -16,6 +15,9 @@ categories:
 description: 27편 종합 결과 에이전트 실패는 6개 클러스터로 수렴함. 하위 작업 성공이 전체 성공으로 이어지지 않는 구조와 내 워크플로우 방어책을 정리함.
 aliases:
   - /posts/2026-07-13-llm-agent-failure-taxonomy-synthesis
+draft: true
+refactor_hub: multi-agent-02
+refactor_status: queued
 ---
 
 에이전트를 실무에 돌리다 보면 데모는 잘 되는데 실제 업무에서만 무너지는 경험이 반복됨. 그 이유를 27편의 벤치마크·감아 연구를 종합한 논문이 정리했음. 원문은 [arXiv:2607.05775](https://arxiv.org/abs/2607.05775).

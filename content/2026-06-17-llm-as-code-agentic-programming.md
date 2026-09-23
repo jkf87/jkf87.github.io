@@ -2,7 +2,6 @@
 title: "LLM-as-Code: 에이전트의 통제권을 코드로 돌려라"
 slug: 2026-06-17-llm-as-code-agentic-programming
 date: 2026-06-17
-draft: false
 tags:
   - LLM
   - agent
@@ -15,6 +14,9 @@ categories:
 description: KDD 2026 AgenticSE 워크숍에 채택된 "LLM-as-Code" 논문은 토큰 폭발, 제어 흐름 환각, 불안정한 완료라는 에이전트의 3대 고질병이 버그가 아닌 구조적 귀결이라고 진단한다. LLM이 오케스트레이터 역할을 하는 한 더 좋은 프롬프트나 더 강한 모델로는 해결할 수 없다. 대안으로 "Agentic Programming"을 제안하며, 코드가 모든 제어 흐름을 관장하고 LLM은 추론·생성이 필요한 지점에만 호출되는 컴포넌트가 된다. OSWorld 벤치마크에서 86.8점(15단계)으로 기존 최고 80.4점(100단계)을 능가하는 결과를 입증했다.
 source: https://arxiv.org/abs/2606.15874
 project: https://arxiv.org/html/2606.15874v1
+draft: true
+refactor_hub: coding-agents-03
+refactor_status: queued
 ---
 
 ## 한 줄 요약

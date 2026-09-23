@@ -11,6 +11,9 @@ tags:
   - huggingface
   - diffusion
 description: "Netflix가 공개한 VOID 모델은 영상 속 물체만 지우는 것이 아니라, 그 물체가 장면에 남긴 상호작용까지 함께 제거하는 비디오 편집 모델이다. 무엇이 새로운지, 어떻게 동작하는지, 실제 실행 조건은 어떤지 정리했다."
+draft: true
+refactor_hub: web-gui-agents-02
+refactor_status: queued
 ---
 
 # Netflix VOID란 무엇인가: 영상에서 물체뿐 아니라 상호작용까지 지우는 비디오 편집 모델

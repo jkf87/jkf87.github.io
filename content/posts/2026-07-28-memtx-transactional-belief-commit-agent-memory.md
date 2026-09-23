@@ -1,7 +1,6 @@
 ---
 title: "에이전트 메모리의 사고는 '기록했지만 커밋 안 함'에서 시작된다"
 date: 2026-07-28T19:00:00+09:00
-draft: false
 tags:
   - agent-memory
   - transactional-commit
@@ -14,6 +13,9 @@ tags:
   - belief-revision
   - cascade-repair
 description: "MemTX 논문을 실무 관점으로 정리. 관측 기록과 행동 근거 확정을 분리하고, 되돌릴 수 없는 도구 호출 전에 action gate를 두는 트랜잭션 원칙을 에이전트 메모리에 이식한 구조와 적용 방법."
+draft: true
+refactor_hub: agent-memory-07
+refactor_status: queued
 ---
 
 한 에이전트가 기록한 오염된 관측이 다른 에이전트의 전제가 되고, 그 전제가 환불 오류나 권한 침해로 이어지는 경로를 막으려면 뭐가 필요한가. [MemTX](https://arxiv.org/abs/2607.23929)의 답은 데이터베이스가 수십 년 전에 확립한 원칙임. **기록(record)은 커밋(commit)이 아니다.** 지금 대부분의 에이전트 메모리는 쓰기 경로를 통과한 모든 걸 즉시 진실로 취급하는데, MemTX는 이 간극을 여덟 상태 라이프사이클과 행동 게이트로 메움. 스키마를 다 도입 안 해도 가져갈 원칙이 많아 정리함.

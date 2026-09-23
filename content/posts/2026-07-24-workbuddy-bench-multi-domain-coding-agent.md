@@ -1,7 +1,6 @@
 ---
 title: "코딩 에이전트를 뽑을 때 볼 벤치마크 — WorkBuddy Bench가 보여준 현실 점수표"
 date: 2026-07-24T19:00:00+09:00
-draft: false
 summary: "4개 도메인 260태스크로 코딩 에이전트를 측정한 Tencent WorkBuddy Bench. 오염 저항 설계, 듀얼 하네스, 그리고 만능 모델은 없다는 리더보드의 교훈을 정리한다."
 tags:
   - agent
@@ -14,6 +13,9 @@ tags:
 categories:
   - AI Agent
   - Benchmark
+draft: true
+refactor_hub: harness-self-improve-02
+refactor_status: queued
 ---
 
 에이전트 모델을 고를 때 SWE-bench(실제 깃허브 이슈를 고치는 코드를 작성시켜 채점하는 벤치마크) 점수는 이제 참고가 안 됨. 오염 문제도 있지만 "단일 이슈 해결"만 측정하기 때문. WorkBuddy Bench는 코드·웹·오피스·보안 4개 영역 260태스크로 실무 분포를 잼. 모델 선정 기준을 다시 세우게 되는 벤치마크라 정리함.

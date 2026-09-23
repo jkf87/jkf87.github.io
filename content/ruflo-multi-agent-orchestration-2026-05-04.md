@@ -13,6 +13,9 @@ tags:
 description: "ruvnet/ruflo는 Claude Code 위에서 100개 이상의 전문 에이전트를 스웜으로 조정하고, 자가학습 메모리와 제로트러스트 페더레이션까지 제공하는 멀티에이전트 플랫폼이다. 어떤 구조인지, 어디까지 가능한지 정리했다."
 aliases:
   - ruflo-multi-agent-orchestration-2026-05-04/index
+draft: true
+refactor_hub: multi-agent-01
+refactor_status: queued
 ---
 
 # Ruflo: Claude Code에 스웜·자가학습·페더레이션을 얹은 멀티에이전트 오케스트레이터

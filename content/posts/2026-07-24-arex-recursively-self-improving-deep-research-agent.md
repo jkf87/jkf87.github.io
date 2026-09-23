@@ -1,7 +1,6 @@
 ---
 title: "답을 찾는 건 비싸지만 확인은 쌈 — AREX가 검증을 루프의 엔진으로 씀"
 date: 2026-07-24T13:00:00+09:00
-draft: false
 tags:
   - AI에이전트
   - 딥리서치
@@ -20,6 +19,9 @@ authors:
   - "Kun Luo"
   - "Zheng Liu"
   - "BAAI"
+draft: true
+refactor_hub: harness-self-improve-07
+refactor_status: queued
 ---
 
 딥리서치 에이전트의 개선책은 대부분 "더 오래 검색하기"였음. AREX는 방향을 바꿔서 검증을 검색의 엔진으로 씀. 리서치 자동화 루프를 직접 굴리는 입장에서 베낄 게 많아서 정리함.

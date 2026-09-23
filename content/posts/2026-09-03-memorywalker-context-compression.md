@@ -1,7 +1,6 @@
 ---
 title: "압축된 컨텍스트로 학습시키면 에이전트가 깨짐 — MemoryWalker가 정의한 조건부 불일치와 복구법"
 date: 2026-09-03
-draft: false
 tags:
   - agent
   - harness
@@ -11,6 +10,9 @@ tags:
   - context-engineering
   - training
 description: "Claude Code 같은 하네스는 롤아웃 중 컨텍스트를 압축하는데 이 트랜스크립트를 그대로 학습 데이터로 쓰면 조건부 분포가 트리로 갈라져 성능이 무너짐. LogitTree, 4D mask, SDCC 세 복구법과 학습 직렬화만 바꿔 EM 28.9→45.9이 된 결과를 정리함."
+draft: true
+refactor_hub: agent-memory-05
+refactor_status: queued
 ---
 
 Claude Code, Qwen-Agent 같은 프로덕션 하네스는 롤아웃 중에 컨텍스트를 계속 압축함(eviction). 근데 이 압축된 트랜스크립트를 그대로 RL 학습 데이터로 쓰면 학습-추론 조건부 분포가 어긋남. MemoryWalker(arXiv:2609.00865)는 이 어긋남을 수식으로 정의하고 복구 방법 세 가지를 제안함. 핵심 수치가 말을 대신함. Qwen3-4B, 7개 웹검색 벤치마크 평균 EM(정답 문자열과 정확히 일치해야 점수를 주는 지표)에서 Naive-Compressed 학습이 28.9, 무압축 물리 트레이스 학습이 32.1, 정확 보정 LogitTree가 45.9. 롤아웃과 보상은 동일하고 학습 직렬화 방식만 바꿨는데 17포인트가 오름.

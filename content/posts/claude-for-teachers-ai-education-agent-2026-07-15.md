@@ -1,11 +1,13 @@
 ---
 title: "Claude for Teachers: Anthropic은 왜 학생이 아니라 교사를 먼저 공략했나"
 date: 2026-07-15
-draft: false
 description: "Anthropic의 Claude for Teachers 발표를 교사용 AI 에이전트, 교육과정 연결, 개인정보 보호, K-12 생태계 전략 관점에서 읽는다."
 tags: [Claude, Anthropic, AI교육, 교사, 에이전트, K12, Education]
 categories: [AI]
 source: "https://www.anthropic.com/news/claude-for-teachers"
+draft: true
+refactor_hub: ai-trends-misc-05
+refactor_status: queued
 ---
 
 Anthropic이 학생용 AI 튜터가 아니라 **교사용 Claude**를 먼저 밀고 나왔다. 이 선택이 꽤 중요하다. AI가 교육을 바꾼다는 말은 오래됐지만, 실제 학교 현장에서 가장 먼저 병목이 터지는 곳은 학생의 질문창이 아니라 교사의 수업 준비 시간이다.

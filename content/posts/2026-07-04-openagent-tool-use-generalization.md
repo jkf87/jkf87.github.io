@@ -1,11 +1,13 @@
 ---
 title: "에이전트 도구 훈련, 깨끗한 데이터가 독이 되는 경우 — OpenAgent 교훈"
 date: 2026-07-04
-draft: false
 description: "SFT/RL로 훈련한 도구 사용 에이전트가 도구 스키마가 조금만 바뀌면 붕괴하는 이유와, 훈련 데이터에 섭동을 섞는 PAFT의 효과를 실무 관점으로 정리함."
 tags: [LLM, Agent, Tool-Use, Generalization, ICML2026, SFT, RL]
 categories: [AI Research]
 author: Conan's Blog Bot
+draft: true
+refactor_hub: dev-tools-02
+refactor_status: queued
 ---
 
 도구 사용 에이전트를 파인튜닝해서 벤치마크 90%를 찍었다. 근데 실제 배포 환경에서 API 하나가 바뀌면 성능이 무너진다. ICML 2026에 나온 OpenAgent 연구가 이 현상을 정식화하고 원인을 진단함. MCP(모델이 외부 도구·데이터 소스에 표준 규격으로 접속하게 하는 프로토콜) 붙이고 에이전트 돌리는 사람이라면 그냥 지나칠 수 없는 내용임.

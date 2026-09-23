@@ -12,6 +12,9 @@ tags:
   - AppWorld
   - automation
   - loop
+draft: true
+refactor_hub: harness-self-improve-12
+refactor_status: queued
 ---
 
 상하이 AI랩의 Self-Harness에서 에이전트가 자기 하네스를 스스로 고치는 루프를 제안했고, 모델 3종 × 벤치마크 3종 9개 조합 전부에서 통과율이 올라감. 최대 상승폭 +40.6%p(GLM-5, AppWorld 44.4→85.0), 최대 상대율 +132%(Qwen3.5-35B-A3B, AppWorld 22.5→52.2)임. 사람 엔지니어도 강한 외부 모델도 안 씀. 고치는 주체와 고쳐지는 대상이 같은 모델임.

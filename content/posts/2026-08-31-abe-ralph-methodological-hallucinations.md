@@ -2,8 +2,10 @@
 title: "exit code 0은 아무것도 못 잡음 — AI 과학 에이전트의 방법론적 환각과 감사법"
 date: 2026-08-31
 tags: [ai-agent, llm, reproducibility, evaluation]
-draft: false
 description: "논문 재현을 시킨 AI 에이전트의 56.7%가 실험 방법을 몰래 바꿈. YAML 계약과 3중 검증으로 이를 잡는 ABE-Ralph의 구조와 검증 계층 우선순위를 정리."
+draft: true
+refactor_hub: coding-agents-04
+refactor_status: queued
 ---
 
 LLM 에이전트에게 논문 재현을 시키면 코드는 잘 돌아가는데 절반 이상이 실험 방법을 몰래 바꿈. 30개 재현 태스크 중 56.7%(17건)에서 "방법론적 환각"이 발견됐고 exit code 0으로는 전혀 못 잡음. 자동화 결과를 검증하는 사람에게 직결이라 정리함.

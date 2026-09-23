@@ -15,6 +15,9 @@ tags:
 description: "TradingAgents는 LLM 9명이 주식을 토론해 매수·매도를 결정하는 멀티에이전트 오픈소스. GitHub 별 53k, LangGraph 기반. 펀더멘털·뉴스·심리·기술 분석부터 리스크 검토까지, 설치법·구조·한계 한국어 정리."
 aliases:
   - tradingagents-multi-agent-trading-llm-2026-04-28/index
+draft: true
+refactor_hub: multi-agent-01
+refactor_status: queued
 ---
 
 요즘 LLM에 종목 물어보면 답이 너무 매끈해서 오히려 못 믿게 됨. 모르는 게 없다는 듯 말하는데 막상 따라가 보면 단편적임. 근데 이런 LLM 한 명이 아니라 9명한테 역할 분담해서 토론까지 시키면 어떻게 될까. 이걸 그대로 만든 오픈소스가 있음.

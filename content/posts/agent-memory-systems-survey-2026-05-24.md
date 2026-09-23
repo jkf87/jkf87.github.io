@@ -16,8 +16,10 @@ tags:
 description: "에이전트 메모리 시스템 서베이 분석. 검색·그래프·LLM 매개·구조적·파라메트릭 다섯 갈래 접근과 벤치마크 숫자, 그리고 Codex CLI·Copilot·Claude Code·OpenClaw가 독립적으로 같은 2계층 설계로 수렴했다는 발견."
 aliases:
   - agent-memory-systems-survey-2026-05-24/index
-draft: false
 cover: images/agent-memory-systems-survey-2026-05-24/thumbnail.jpg
+draft: true
+refactor_hub: agent-memory-04
+refactor_status: queued
 ---
 
 세션을 닫으면 대화가 사라지는 건 단순한 불편함이 아니라 에이전트가 진짜 비서가 되는 근본 장벽임. "Agent Memory Systems for Large Language Models" 서베이가 이 분야 전체를 정리해줌. 내가 매일 쓰는 OpenClaw의 메모리 구조가 어느 생태계 어디쯤에 있는지 알 수 있는 지도라 정리함.

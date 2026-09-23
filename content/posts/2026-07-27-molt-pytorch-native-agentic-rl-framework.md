@@ -17,6 +17,9 @@ tags:
   - tool-use
   - training
 description: "에이전트 RL 훈련 프레임워크의 복잡성은 능력의 대가가 아니라 물려받은 선택이라는 NVIDIA Molt. 8.6K 줄로 Megatron급 스택과 통계적 동등 처리량을 유지한 설계를 정리했다."
+draft: true
+refactor_hub: harness-self-improve-05
+refactor_status: queued
 ---
 
 에이전트 RL 프레임워크가 다루기 어려운 이유가 궁금했는데 NVIDIA 논문이 명쾌한 답을 냈음. 복잡성은 능력의 대가가 아니라 하이퍼스케일에서 물려받은 선택이라는 것. 원문은 [arXiv:2607.21653](https://arxiv.org/abs/2607.21653).

@@ -7,6 +7,9 @@ tags:
   - 근감소증
   - 근육량
 description: 40대부터 시작되는 근육 감소, 운동해도 근육이 안 붙는다면 이미 근감소증이 진행 중일 수 있음. 원인과 대처법을 정리함.
+draft: true
+refactor_hub: archive-health-01
+refactor_status: archived
 ---
 
 # 40대 근감소증, 운동하는데 근육이 안 붙으면 이미 늦은 것

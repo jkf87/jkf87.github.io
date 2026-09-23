@@ -11,6 +11,9 @@ tags:
   - progressive-editing
   - automation
   - loop
+draft: true
+refactor_hub: harness-self-improve-01
+refactor_status: queued
 ---
 
 에이전트 스킬 자동 생성을 RL로 푼 논문임. 핵심은 스킬을 한 방에 만들지 않고 순차적 편집으로 쪼개고, 편집 하나하나를 롤백 비교로 평가한다는 것. 스킬 파일을 직접 유지보수하는 사람에게 적용할 원칙이 많아서 정리함.

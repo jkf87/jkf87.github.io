@@ -11,6 +11,9 @@ tags:
 description: 40대는 크레아티닌과 eGFR 숫자만 보면 놓치는 게 많음. 수분, 혈압, 소변 단백부터 같이 봐야 하는 이유를 정리함.
 aliases:
   - 40s-kidney-egfr-creatinine-warning-2026-05-09/index
+draft: true
+refactor_hub: archive-health-01
+refactor_status: archived
 ---
 
 # 40대 신장 수치가 정상이어도 안심하면 안 되는 이유, eGFR보다 먼저 볼 것 3가지

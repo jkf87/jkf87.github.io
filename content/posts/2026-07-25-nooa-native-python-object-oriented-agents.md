@@ -1,9 +1,11 @@
 ---
 title: "에이전트를 파이썬 클래스로 만들면 프레임워크가 필요없어짐 — NVIDIA NOOA 설계 분석"
 date: 2026-07-25T13:00:00+09:00
-draft: false
 tags: ["agent", "harness", "LLM", "NVIDIA", "Python", "automation", "loop", "tool use"]
 description: "에이전트=클래스, 액션=메서드, 상태=필드, 독스트링=프롬프트로 정리한 NVIDIA NOOA. 프롬프트 엔지니어링을 소프트웨어 엔지니어링으로 끌어들이는 여섯 가지 인터페이스를 정리했다."
+draft: true
+refactor_hub: ai-trends-misc-01
+refactor_status: queued
 ---
 
 에이전트 프레임워크가 너무 많아서 각자 DSL을 배우는 비용이 크잖음. NVIDIA가 "에이전트가 그냥 파이썬 객체면 되지 않나"로 접근한 프레임워크를 봤음. 원문은 [arXiv:2607.20709](https://arxiv.org/abs/2607.20709).

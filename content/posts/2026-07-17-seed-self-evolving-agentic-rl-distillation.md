@@ -1,7 +1,6 @@
 ---
 title: "에이전트 RL의 희소 보상을 자기 반성으로 메우는 법 — SEED 증류 구조 정리"
 date: 2026-07-17T13:00:00+09:00
-draft: false
 summary: "완료된 궤적에서 hindsight skill을 뽑아 on-policy distillation으로 토큰 단위 신호로 바꾸는 SEED. GRPO에 손실항 하나 추가로 붙이는 구조를 에이전트 훈련 실무 관점에서 풀어둔 글."
 tags: ["agentic-rl", "on-policy-distillation", "self-evolving", "hindsight-learning", "LLM-agent"]
 categories: ["AI-Agents"]
@@ -10,6 +9,9 @@ cover:
   alt: "SEED 프레임워크 전체 파이프라인 — Hindsight Skill SFT와 Self-Evolving OPD 단계"
   caption: "SEED의 두 단계: (1) Hindsight Skill SFT로 궤적 분석 능력을 확보하고, (2) Self-Evolving OPD에서 정책과 분석 능력이 공동 진화한다."
   relative: true
+draft: true
+refactor_hub: harness-self-improve-18
+refactor_status: queued
 ---
 
 에이전트 RL의 고질 문제는 보상이 에피소드 단위로만 떨어진다는 것임. 성공/실패는 알려주지만 어느 중간 결정이 옳았는지는 안 알려줌. SEED는 완료된 궤적에서 정책 스스로 교훈을 뽑아 토큰 단위 학습 신호로 되돌리는 구조로 이 간극을 메움.

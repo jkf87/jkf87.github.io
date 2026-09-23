@@ -11,6 +11,9 @@ tags:
   - 생활습관
 description: "40대에 건강검진에서 공복혈당 100이 찍히면 정상 끝자락이 아니라 당뇨 전단계 시작점일 수 있음. 질병관리청과 대한진단검사의학회 기준, 꼭 바꿔야 할 생활 신호와 검사 포인트를 같이 봐야 함."
 aliases: [40s-prediabetes-fasting-glucose-100-2026-04-22/index]
+draft: true
+refactor_hub: archive-health-01
+refactor_status: archived
 ---
 
 건강검진표에 공복혈당 **100** 하나 찍히면 애매해서 그냥 넘기기 쉬움. 근데 40대부터는 이 숫자가 생활습관 경고등 역할을 하는 경우가 많음.

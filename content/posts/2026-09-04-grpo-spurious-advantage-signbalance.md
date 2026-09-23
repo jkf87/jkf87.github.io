@@ -1,7 +1,6 @@
 ---
 title: "찍어서 맞힌 정답까지 강화하는 GRPO — 가짜 어드밴티지와 SignBalance 수술"
 date: 2026-09-04
-draft: false
 description: "GRPO의 그룹 내 어드밴티지가 추측으로 맞힌 롤아웃에도 높은 크기를 부여한다는 논문 정리. 부호 유지+전역 상수로 이를 없앤 SignBalance의 결과와 트레이드오프까지."
 tags:
   - GRPO
@@ -9,6 +8,9 @@ tags:
   - advantage-estimation
   - agent-RL
   - benchmark
+draft: true
+refactor_hub: agent-rl-02
+refactor_status: queued
 ---
 
 GRPO(같은 프롬프트에서 여러 응답을 뽑아 그룹 내 상대 비교로 학습하는 강화학습 알고리즘)는 그룹 내 보상 통계로 롤아웃별 어드밴티지 크기를 정하는데, "추론해서 맞힌 것"과 "찍어서 맞힌 것"을 구분 못 함. 찍어서 맞은 롤아웃에도 높은 크기가 붙어 그래디언트 가중치에 들어감. 이걸 가짜 어드밴티지(spurious advantage)라 부르는 [논문](https://arxiv.org/abs/2609.04063)이 나옴. 보상 설계의 숨은 구멍이라 정리함.

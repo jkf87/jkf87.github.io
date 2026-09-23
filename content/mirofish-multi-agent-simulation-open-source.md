@@ -8,6 +8,9 @@ tags:
   - simulation
   - graphrag
 description: "문서 업로드→지식그래프→수천 AI 에이전트 트위터/레딧 시뮬레이션→ReACT 보고서까지 자동화하는 MiroFish를 구조·실행법·비용 리스크 관점에서 정리합니다."
+draft: true
+refactor_hub: agent-memory-03
+refactor_status: queued
 ---
 
 요즘 ‘AI 에이전트’ 이야기가 많지만, 정작 **여러 에이전트가 사회를 흉내 내며 토론하고 예측 보고서까지 뽑아주는** 오픈소스는 흔치 않습니다. 이번 글은 GitHub에서 화제가 된 **MiroFish**(MIT) 저장소를 분석한 내용을 바탕으로, *무엇을 하는 프로젝트인지 / 구조가 어떻게 생겼는지 / 실행하려면 뭘 준비해야 하는지 / 비용·리스크는 무엇인지*를 한 번에 정리합니다.

@@ -9,6 +9,9 @@ tags:
   - self-evolution
   - automation
   - loop
+draft: true
+refactor_hub: harness-self-improve-08
+refactor_status: queued
 ---
 
 LLM이 자기가 쓰는 하네스를 스스로 개선할 수 있는가를 처음으로 체계적으로 잰 벤치마크가 나옴. 결과 — GPT-5.6이 16.6점 개선으로 사람이 만든 전용 하네스에 근접했고 범용 태스크에선 추월함. 하네스 자동 개선을 검토 중이라 정리함.

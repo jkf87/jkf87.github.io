@@ -6,8 +6,10 @@ tags:
   - benchmark
   - coding-agent
   - evaluation
-draft: false
 description: "개발 에이전트에게 사업 기록·시뮬레이션 클라이언트·예산을 주고 고객상담 에이전트를 직접 만들게 하는 ττ-bench를 정리함. 최강 조합 23.9%, 전문가 레퍼런스 82.2%의 격차가 말해주는 실패 패턴까지."
+draft: true
+refactor_hub: coding-agents-04
+refactor_status: queued
 ---
 
 Sierra와 Princeton의 ττ-bench(에이전트를 만드는 코딩 에이전트 자체를 채점하는 벤치마크)는 방향을 뒤집은 벤치마크임. 기존 τ-bench(사용자와 여러 번 주고받으며 업무를 처리하는 완성된 고객상담 에이전트를 채점하는 벤치마크) 계열이 "완성된 에이전트"를 시뮬레이션 고객에게 점수 매긴다면, ττ-bench는 에이전트를 만드는 코딩 에이전트 자체를 채점함. 원문은 [arXiv:2609.04611](https://arxiv.org/abs/2609.04611).

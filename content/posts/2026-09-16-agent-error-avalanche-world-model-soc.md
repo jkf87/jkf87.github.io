@@ -1,7 +1,6 @@
 ---
 title: "에이전트 오류는 흩어지지 않고 몰려서 무너짐 — 오류 폭발과 세계 모델 붕괴를 측정한 22개 실험"
 date: 2026-09-16
-draft: false
 description: "롱호라이즌 에이전트의 오류가 독립적이지 않고 폭발 형태로 몰려온다는 것을 22개 실험으로 측정한 논문 정리. 최대 폭발 크기가 호라이즌에 따라 7에서 490까지 커지고, 행동이 유효해도 내부 세계 모델은 이미 무너져 있었다."
 tags:
   - llm-agent
@@ -11,6 +10,9 @@ tags:
   - world-model
   - long-horizon
   - benchmark
+draft: true
+refactor_hub: ai-trends-misc-02
+refactor_status: queued
 ---
 
 롱호라이즌 에이전트가 왜 한 번에 무너지는지 물리학 프레임으로 측정한 논문이 나옴. 과장 없이 자기 검정까지 해서 정리할 가치가 큼. 원문은 [arXiv:2609.17419](https://arxiv.org/abs/2609.17419).

@@ -7,7 +7,9 @@ tags:
   - foundation-model
   - korea-startup
   - dexterity
-draft: false
+draft: true
+refactor_hub: agent-rl-01
+refactor_status: queued
 ---
 
 **2026년 5월 7일**, 한국 로보틱스 스타트업 RLWRLD(리얼월드)가 로봇 손을 위한 파운데이션 모델 **RLDX-1**을 발표했다. 기존 VLA(Vision-Language-Action) 모델들이 시각과 언어만 처리하던 것과 달리, RLDX-1은 **토크, 촉각, 작업 메모리까지 하나의 모델에서 처리**하는 것이 핵심 차별점이다.

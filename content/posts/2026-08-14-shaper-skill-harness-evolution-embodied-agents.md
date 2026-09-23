@@ -13,6 +13,9 @@ tags:
   - Microsoft
   - loop
 description: "Microsoft SHAPER 분석. VLM 플래너와 실행기를 동결한 채 텍스트 스킬과 Python 하네스만 진화시켜 로봇 조작 +11.25pp, 거울 반사 과제 20%→60%. 테스트타임 스케일링과 비용 구조가 다른 이유."
+draft: true
+refactor_hub: harness-self-improve-22
+refactor_status: queued
 ---
 
 모델은 그대로 두고 스킬과 하네스만 고쳤더니 embodied 에이전트 성능이 확 오름. Microsoft Research의 [SHAPER](https://arxiv.org/abs/2608.11350)(동결된 모델 위에서 텍스트 스킬과 Python 하네스 코드만 피드백으로 진화시키는 프레임)는 VLM 플래너(이미지·텍스트를 같이 보는 비전-언어 모델)와 VLA 실행기(비전 입력을 로봇 행동으로 바꾸는 모델)를 동결한 채 텍스트 스킬과 Python 하네스 코드만 롤아웃 피드백으로 진화시킴. 진화 1회당 API 비용이 $2.25~$2.83인데 SFT(정답 예시 데이터로 가중치를 미세조정하는 지도학습)를 넘어서는 성적을 냄. 앞서 정리한 하네스 진화 계열 연구의 embodied 버전이면서 비용 구조가 결정적으로 다름.

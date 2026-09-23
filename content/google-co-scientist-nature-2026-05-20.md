@@ -14,6 +14,9 @@ tags:
 description: "Google DeepMind가 Nature에 발표한 Co-Scientist를 Mermaid 다이어그램과 함께 정리합니다. Gemini 기반 멀티에이전트 아키텍처로 과학적 가설을 생성·토론·진화시키는 시스템이 급성 골수성 백혈병 약물 재포지셔닝, 간섬유화 신규 타겟 발굴, 항생제 내성 기전 규명에서 실험적으로 검증된 성과를 리뷰합니다."
 aliases:
   - /google-co-scientist-nature-2026-05-20
+draft: true
+refactor_hub: multi-agent-01
+refactor_status: queued
 ---
 
 원문: Accelerating scientific discovery with Co-Scientist (Nature, 2026)

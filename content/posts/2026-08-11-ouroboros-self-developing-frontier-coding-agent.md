@@ -15,6 +15,9 @@ tags:
 source: arxiv
 source_url: https://arxiv.org/abs/2608.08311
 description: "하네스 전체를 버전 관리 대상으로 두고 reviewed commit으로 지속 개선하는 자기진화 코딩 에이전트 Ouroboros. Terminal-Bench 86.74%와 161일·11만 달러 실사용 실험에서 나온 안전 설계를 정리했다."
+draft: true
+refactor_hub: harness-self-improve-05
+refactor_status: queued
 ---
 
 에이전트가 자기 자신을 고치는 시스템은 많았지만 배포 상태에서 감사 가능한 커밋 게이트를 통과시키는 설계로 161일을 버틴 사례가 나옴. 자기 참조 시스템을 운영해본 사람 입장에서 정리할 가치가 큼. 원문은 [arXiv:2608.08311](https://arxiv.org/abs/2608.08311).

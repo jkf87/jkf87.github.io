@@ -1,7 +1,6 @@
 ---
 title: "NVIDIA Cosmos 3: 물리 AI를 위한 옴니모달 월드 모델"
 date: 2026-06-09
-draft: false
 tags:
   - AI
   - NVIDIA
@@ -11,6 +10,9 @@ tags:
   - open-source
 source: arxiv
 source_url: https://arxiv.org/abs/2606.02800
+draft: true
+refactor_hub: model-releases-03
+refactor_status: queued
 ---
 
 ![Cosmos 3](/images/2026-06-09-cosmos3-omnimodal-world-models/cosmos3-overview.png)

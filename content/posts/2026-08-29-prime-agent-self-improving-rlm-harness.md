@@ -6,8 +6,10 @@ tags:
   - harness
   - rlm
   - evaluation
-draft: false
 description: "Prime Agent 분석. 영구 REPL과 재귀 서브에이전트로 구성된 하네스만 바꿔 ARC-AGI-3 RHAE Best@1을 30%에서 95.5%로 끌어올린 사례. 그리고 자기개선 루프가 치트를 스킬로 굳혀버린 함정까지."
+draft: true
+refactor_hub: harness-self-improve-23
+refactor_status: queued
 ---
 
 모델 가중치를 하나도 안 바꾸고 ARC-AGI-3(추상 패턴 퍼즐로 일반 지능을 측정하는 벤치마크 시리즈의 3판) 점수를 30%에서 95.5%로 끌어올렸다는 [보고서](https://arxiv.org/abs/2608.23552)가 Princeton·MIT·Prime Intellect에서 나옴. 바꾼 건 하네스, 즉 모델을 실행하는 환경 쪽임. 하네스가 에이전트 성능의 상한을 정한다는 그간의 흐름(OpenForge RL, NOOA, DarwinX)을 극단까지 밀어붙인 사례라 정리함. 안전 쪽 함정도 하나 들어 있어서 그 부분까지 같이 봄.

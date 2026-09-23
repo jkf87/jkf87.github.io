@@ -1,7 +1,6 @@
 ---
 title: "AI 코딩 에이전트 하네스 설계에서 뭘 바꿔야 성적이 오르는지: 정리했습니다"
 date: 2026-09-18
-draft: false
 tags:
   - llm-agent
   - coding-agent
@@ -9,6 +8,9 @@ tags:
   - benchmark
   - paper-summary
 description: "코딩 에이전트 하네스의 컨텍스트 관리·플래닝·액션 공간을 176개 설정으로 나눠 비교한 논문(arXiv:2609.20804) 정리. 컨텍스트 관리는 창이 작을 때, 플래닝은 약한 모델에서, 도구 세트는 bash가 약한 모델에서 효과가 큽니다."
+draft: true
+refactor_hub: harness-self-improve-06
+refactor_status: queued
 ---
 
 ## 결론 먼저

@@ -1,7 +1,6 @@
 ---
 title: "같은 실수를 다음 에피소드에서 반복하지 않는 법 — Living-Harness 구조 정리"
 date: 2026-08-04
-draft: false
 summary: "완료된 에피소드의 실패를 모호한 텍스트 교훈이 아니라 실행 가능한 절차로 하네스에 영구 저장하는 프레임워크. GPT-5.2 기반으로 Gemini 3 Pro를 넘고, 하네스 상태가 모델 종속 없이 전이되는 것까지 확인됨."
 tags:
   - agent
@@ -14,6 +13,9 @@ tags:
   - automation
 authors:
   - conanssam
+draft: true
+refactor_hub: agent-memory-08
+refactor_status: queued
 ---
 
 에이전트가 같은 실수를 반복하는 건 낯설지 않음. Reflexion(실패 후 스스로 반성 문장을 생성해 다음 시도 프롬프트에 넣어주는 자기개선 기법) 같은 피드백을 주면 그 순간은 고치는데 다음 에피소드에서 또 같은 실패가 나타남. 이유는 교훈이 에피소드와 함께 사라지기 때문임. Living-Harness는 실패에서 배운 걸 하네스에 영구 저장하자는 출발점인데, 핵심은 모호한 텍스트 교훈이 아니라 트리거 조건·도구 액션·상태 전이로 된 실행 가능한 절차로 저장한다는 것임.

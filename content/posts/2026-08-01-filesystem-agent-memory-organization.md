@@ -1,7 +1,6 @@
 ---
 title: "에이전트 메모리, 정리하지 말고 쌓아둬도 됨 — 파일시스템 기억 실험의 실무 결론"
 date: 2026-08-01T19:00:00+09:00
-draft: false
 tags:
   - agent
   - memory
@@ -13,6 +12,9 @@ tags:
   - context-engineering
   - organization
   - sustainability
+draft: true
+refactor_hub: agent-memory-07
+refactor_status: queued
 ---
 
 배포된 에이전트의 메모리는 이미 파일시스템임 — Claude Code의 메모리 폴더, memory tool, 전부 마크다운 파일을 디렉토리에 쓰는 방식. 근데 그 메모리가 시간이 지나며 어떻게 변하는지 검증한 연구는 없었음. 내 작업 디렉토리도 같은 구조라 그대로 적용할 결론이 많아서 정리함.

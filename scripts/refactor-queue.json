@@ -1,0 +1,6470 @@
+[
+ {
+  "hub_id": "agent-memory-01",
+  "topic": "agent-memory",
+  "treatment": "merge-synthesis",
+  "size": 11,
+  "keywords": [
+   "rag",
+   "검색",
+   "문서를",
+   "문서",
+   "컨텍스트",
+   "문서에"
+  ],
+  "members": [
+   {
+    "path": "llm-service-evaluation-framework-webinar-summary-2026.md",
+    "title": "LLM 서비스 평가 기준 만들기: 실무 적용 프레임워크 정리",
+    "date": "2026-03-06",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "msa-memory-sparse-attention-100m-tokens.md",
+    "title": "AI가 1억 토큰을 기억한다? MSA가 여는 장기 메모리의 시대",
+    "date": "2026-03-30",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "delta-mem-efficient-online-memory-llm-2026-05-24.md",
+    "title": "δ-mem — 8×8 상태 행렬만으로 LLM 메모리 성능을 31% 끌어올리다",
+    "date": "2026-05-24",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "2026-06-11-critic-r-agentic-search-retriever-tuning.md",
+    "title": "Critic-R: 에이전트 검색에서 Retriever를 스스로 진화시키는 폐루프 프레임워크",
+    "date": "2026-06-11",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "2026-06-12-searchswarm-delegation-intelligence-agentic-deep-research.md",
+    "title": "SearchSwarm: 에이전트 LLM에 '위임 지능'을 가르치다",
+    "date": "2026-06-12",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-02-sigma-mem-multi-agent-reliability-memory.md",
+    "title": "다수결이 틀리는 순간 — 동료 에이전트의 신뢰도를 기억으로 관리하는 Σ-Mem",
+    "date": "2026-08-02",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-18-grip-query-dominance-rag.md",
+    "title": "RAG가 검색 문서를 무시하는 건 프롬프트 탓이 아니라 용량 문제 — GRIP의 진단과 해법",
+    "date": "2026-08-18",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-06-capture-preference-drift-memory-poisoning.md",
+    "title": "취향 변화와 메모리 포이즈닝은 같아 보임 — CAPTURE가 둘을 가르는 법",
+    "date": "2026-09-06",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-13-rag-safety-bench-retrieval-safety.md",
+    "title": "RAG을 붙이면 안전장치가 무너짐 — 검색 문서에 정답이 있을 때 74.9%가 유해 답을 냄",
+    "date": "2026-09-13",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-15-residual-vector-long-context-recall.md",
+    "title": "KV 캐시 없이 200만 토큰을 기억하는 법 — 잔차 벡터 재구성 방식 정리",
+    "date": "2026-09-15",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-17-rag-vs-cartridges-knowledge-injection.md",
+    "title": "RAG 대신 문서를 KV 캐시에 넣는 법 — 다중 문서 조합에서는 Cartridges만 살아남음",
+    "date": "2026-09-17",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "agent-memory-02",
+  "topic": "agent-memory",
+  "treatment": "merge-synthesis",
+  "size": 9,
+  "keywords": [
+   "검색",
+   "검색이",
+   "쓰는",
+   "키워드",
+   "의미",
+   "설계가"
+  ],
+  "members": [
+   {
+    "path": "agentmemory-ai-coding-agent-persistent-memory-2026-05-10.md",
+    "title": "AI 코딩 에이전트가 기억을 잃는 병 — agentmemory 인터뷰",
+    "date": "2026-05-10",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "posts/2026-07-20-grasp-granularity-aware-search-policy-agentic-rag.md",
+    "title": "검색 에이전트에게 도구 선택을 가르치기 — GRASP의 보상 설계에서 배울 것",
+    "date": "2026-07-20",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-24-agentic-context-management-agent-memory-lifecycle.md",
+    "title": "에이전트는 추론이 아니라 자기 역사에 빠져 죽음 — 컨텍스트 라이프사이클 5원시",
+    "date": "2026-07-24",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-01-bm25-wins-rag-scaling-agent-vs-lexical.md",
+    "title": "에이전트 검색이 BM25에게 지는 지점 — 코퍼스 1,000만 토큰의 교차점",
+    "date": "2026-08-01",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-01-harness-g-graph-structured-search-agent-retrieval.md",
+    "title": "검색어는 다양한데 결과는 똑같아짐 — 검색 등가 붕괴를 액션 인터페이스부터 고친 Harness-G",
+    "date": "2026-08-01",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-02-harness-g-graph-structured-search-agent.md",
+    "title": "쿼리는 다양한데 검색 결과는 같음 — Harness-G가 검색 인터페이스 자체를 바꾼 이유",
+    "date": "2026-08-02",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-08-codegrep-rl-retrieval-agent-coding-agents.md",
+    "title": "코딩 에이전트의 grep 예산이 반값 됨 — RL 검색 에이전트 CodeGrep이 찾은 정밀도 임계점",
+    "date": "2026-08-08",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-09-screen-activity-frames-agent-memory-replay.md",
+    "title": "화면 기록을 메모리로 컴파일하면 86배 싸진다 — LLM 요약 대신 결정론적 파이프라인",
+    "date": "2026-08-09",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-08-agent-memory-portability-model-upgrade.md",
+    "title": "모델 업그레이드 다음 날 에이전트가 기억을 잃는 이유 — 메모리 포맷별 생존율",
+    "date": "2026-09-08",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "agent-memory-03",
+  "topic": "agent-memory",
+  "treatment": "merge-synthesis",
+  "size": 12,
+  "keywords": [
+   "memory",
+   "메모리",
+   "다시",
+   "메모리를",
+   "대화",
+   "요약"
+  ],
+  "members": [
+   {
+    "path": "mirofish-multi-agent-simulation-open-source.md",
+    "title": "AI 에이전트 1,000개로 여론을 시뮬레이션한다? MiroFish 오픈소스 분석",
+    "date": "2026-03-10",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "hyperagent-agent-economy-interview-newsletter-2026-05-03.md",
+    "title": "AI 에이전트로 돈을 번다는 것: HyperAgent 인터뷰에서 건질 7가지",
+    "date": "2026-05-03",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "openai-founders-agent-personal-agi-core-memory-2026.md",
+    "title": "샘 알트먼과 그렉 브록먼이 처음 함께 앉아 말한 것들: OpenAI는 이제 에이전트에 올인한다",
+    "date": "2026-05-03",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "openhuman-ai-agent-2026-05-14.md",
+    "title": "OpenHuman — 당신의 데이터를 기억하는 오픈소스 AI 에이전트",
+    "date": "2026-05-14",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "agent-rl-optimization-akbe-muse-2026-05-28.md",
+    "title": "에이전트 RL 최적화: 언제 도구를 쓰고, 언제 스킬로 남길까",
+    "date": "2026-05-28",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "memforest-hierarchical-temporal-indexing-agent-memory-2026-05-28.md",
+    "title": "MemForest: 에이전트 메모리를 시간축 트리로 다시 설계하기",
+    "date": "2026-05-28",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "memtrace-llm-memory-error-tracing-2026-05-29.md",
+    "title": "MemTrace: LLM 메모리 시스템의 에러를 추적하고 원인을 규명하는 방법",
+    "date": "2026-05-29",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "openai-chatgpt-memory-dreaming-2026-06-05.md",
+    "title": "ChatGPT가 꿈을 꾸기 시작했다",
+    "date": "2026-06-05",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "gatemem-memory-governance-2026-06-23.md",
+    "title": "GateMem: 에이전트 메모리는 ‘기억력’이 아니라 거버넌스다",
+    "date": "2026-06-23",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-31-metis-memory-foundation-model.md",
+    "title": "에이전트 메모리를 모델 파라미터 안에 넣는다 — 메모리 파운데이션 모델 Metis 첫 검증",
+    "date": "2026-07-31",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "agent-memory-rag.md",
+    "title": "LLM 메모리·RAG 논문 모음: 장기기억과 컨텍스트 관리 18선",
+    "date": "2026-09-13",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-22-memory-rl-fair-credit-memory-r2.md",
+    "title": "강화학습으로 LLM 에이전트 메모리를 학습할 때 같은 조건 비교가 깨지는 문제: Memory-R2 논문 정리 (arXiv 2605.21768)",
+    "date": "2026-09-22",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "agent-memory-04",
+  "topic": "agent-memory",
+  "treatment": "merge-synthesis",
+  "size": 9,
+  "keywords": [
+   "검색",
+   "메모리",
+   "memory",
+   "arxiv",
+   "a-mem",
+   "locomo"
+  ],
+  "members": [
+   {
+    "path": "agent-memory-systems-survey-2026-05-24.md",
+    "title": "LLM 에이전트 메모리 시스템 비교: RAG·그래프·장기기억 벤치마크 정리",
+    "date": "2026-05-24",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/agent-memory-systems-survey-2026-05-24.md",
+    "title": "에이전트 메모리 시스템 전체 지도 — 코딩 도구 넷이 같은 설계로 수렴한 이유",
+    "date": "2026-05-24",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "gatemem-shared-memory-agent-governance-2026-06-23.md",
+    "title": "GateMem: 에이전트 메모리는 ‘잘 기억’보다 ‘누가 봐도 되는가’가 문제다",
+    "date": "2026-06-23",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/cue-anchored-working-memory-harness-2026-07-28.md",
+    "title": "에이전트에게 기억 도구를 줘도 안 씀 — 114턴 0회 호출과 단서-고정 주입의 해답",
+    "date": "2026-07-28",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-06-rulemem-rule-memory-long-term-conversation.md",
+    "title": "장기 대화 메모리는 사실이 아니라 규칙을 저장해야 함 — RuleMem이 검색 실패를 41% 줄인 방식",
+    "date": "2026-09-06",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-19-llm-agent-memory-reconsolidation-realm.md",
+    "title": "LLM 에이전트 장기 기억이 검색할수록 좋아지는 이유: REALM 논문 정리",
+    "date": "2026-09-19",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-22-llm-agent-memory-benchmark-memgym.md",
+    "title": "LLM 에이전트 메모리가 실제로 도움이 되는지 측정하는 법: MemGym 벤치마크 논문 정리 (arXiv 2605.20833)",
+    "date": "2026-09-22",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-23-agent-memory-multi-party-speakermem-r1.md",
+    "title": "LLM 에이전트 메모리가 단체 채팅에서 실패하는 이유: SpeakerMem-R1 논문 정리 (arXiv 2609.26780)",
+    "date": "2026-09-23",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-23-agent-memory-system1-fast-control-jevmem.md",
+    "title": "LLM 에이전트 메모리가 느리고 비싼 이유: System 1 제어로 바꾼 Jev-Mem 논문 정리 (arXiv 2609.23986)",
+    "date": "2026-09-23",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "agent-memory-05",
+  "topic": "agent-memory",
+  "treatment": "merge-synthesis",
+  "size": 13,
+  "keywords": [
+   "검색",
+   "학습",
+   "논문의",
+   "추론",
+   "외부",
+   "최종"
+  ],
+  "members": [
+   {
+    "path": "biology-agents-deterministic-retrieval-gget-virus-2026-06-19.md",
+    "title": "생물학 에이전트는 왜 코딩 에이전트처럼 빨리 못 컸나 — Anthropic의 gget virus 실험",
+    "date": "2026-06-19",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "posts/2026-07-29-progress-mirage-agent-loop-self-evaluation.md",
+    "title": "에이전트 루프의 절반이 '발전했다'고 거짓 보고했음 — 진행의 신기루와 외부 기반 검증",
+    "date": "2026-07-29",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-06-past-bench-recursive-self-improvement-personal-agents.md",
+    "title": "경험을 저장하는 것과 경험으로 나아지는 건 다름 — PAST-Bench가 처음으로 제대로 측정한 것",
+    "date": "2026-08-06",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-08-cove-memory-parameter-coordination-agent-self-evolution.md",
+    "title": "경험은 메모리에 쌓을지 가중치에 박을지 정해야 함 — COVE 라우팅 구조 정리",
+    "date": "2026-08-08",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-09-romerl-memory-reward-trap-agent-memory-rl.md",
+    "title": "성공에 우연히 끼어든 기억이 계속 검색됨 — 메모리-보상 함정과 차원 고정 해법",
+    "date": "2026-08-09",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-12-cipo-evidence-oriented-rl-search-agents.md",
+    "title": "검색은 하는데 결과를 안 읽는 에이전트 — CIPO의 증거 반응성 보상",
+    "date": "2026-08-12",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "posts/2026-08-15-sma-spatial-memory-agent.md",
+    "title": "가장 가까운 기억이 최선의 기억은 아니다 — 이식 신뢰도로 재랭킹하는 SMA",
+    "date": "2026-08-15",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-28-memtoc-memory-tool-conflict.md",
+    "title": "모델이 정답을 알아도 틀린 도구 결과를 따라감 — MemToC가 잰 기억-도구 충돌 6,504건",
+    "date": "2026-08-28",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-03-cobra-counterfactual-tool-boundaries.md",
+    "title": "도구를 부를지 말지는 질문마다 반사실로 판단한다 — CoBRA의 경계 학습",
+    "date": "2026-09-03",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-03-memorywalker-context-compression.md",
+    "title": "압축된 컨텍스트로 학습시키면 에이전트가 깨짐 — MemoryWalker가 정의한 조건부 불일치와 복구법",
+    "date": "2026-09-03",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-09-robormbench-paraphrase-fragility-vlm-reward.md",
+    "title": "같은 로봇 동작인데 문장만 바꿨는데 보상이 뒤집힘 — 패러프레이즈 취약성 측정 정리",
+    "date": "2026-09-09",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-13-mira-llm-guided-rl-memory-graph.md",
+    "title": "LLM 조언은 소모품이 아니라 축적 자산이다 — 500번 물어보던 걸 30번으로 줄인 법",
+    "date": "2026-09-13",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-16-score-visual-rag-evidence-ledger.md",
+    "title": "Visual RAG의 병목은 검색이 아니라 증거 정리임 — SCoRE의 증거 장부 구조",
+    "date": "2026-09-16",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "agent-memory-06",
+  "topic": "agent-memory",
+  "treatment": "merge-synthesis",
+  "size": 3,
+  "keywords": [
+   "개선",
+   "자기",
+   "스스로",
+   "기반",
+   "에이전트의",
+   "자체를"
+  ],
+  "members": [
+   {
+    "path": "hyperagents-analysis-litellm-security.md",
+    "title": "HyperAgents — 스스로 진화하는 AI 에이전트, 코드 분석과 litellm 보안 리스크",
+    "date": "2026-03-29",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-17-self-improving-agentic-systems-survey.md",
+    "title": "자기 개선 에이전트, 어디까지 고쳐도 되는가 — 가중치냐 스캐폴딩이냐",
+    "date": "2026-07-17",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-06-self-evolving-coding-agents-survey.md",
+    "title": "코딩 에이전트는 왜 진화가 잘 되나 — 실행 가능한 피드백과 다섯 갈래 진화 통로",
+    "date": "2026-08-06",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "agent-memory-07",
+  "topic": "agent-memory",
+  "treatment": "merge-synthesis",
+  "size": 13,
+  "keywords": [
+   "메모리",
+   "메모리를",
+   "메모리는",
+   "쓰는",
+   "memory",
+   "검색"
+  ],
+  "members": [
+   {
+    "path": "posts/2026-07-24-pro-long-programmatic-memory-long-horizon-reasoning.md",
+    "title": "에이전트 메모리는 요약 대신 전부 로그로 쌓고 grep으로 찾으면 됨 — PRO-LONG",
+    "date": "",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-06-automem-automated-learning-memory-cognitive-skill.md",
+    "title": "메모리 최적화만으로 32B가 프론티어급이 됨 — AutoMem에서 가져올 실무 구조",
+    "date": "2026-07-06",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-12-proactive-memory-agent-long-horizon.md",
+    "title": "에이전트가 아는 걸 행동에 못 쓰는 문제 — 메모리는 저장이 아니라 개입이다",
+    "date": "2026-07-12",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-19-toolatlas-tool-side-memory-mcp.md",
+    "title": "도구 사용 경험은 에이전트가 아니라 도구 쪽에 쌓아야 함 — ToolAtlas 구조 정리",
+    "date": "2026-07-19",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-26-cue-anchored-working-memory-harness.md",
+    "title": "에이전트는 메모리 도구를 줘도 안 씀 — 114턴 0회 호출, 그래서 주입이 답임",
+    "date": "2026-07-26",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-28-memtx-transactional-belief-commit-agent-memory.md",
+    "title": "에이전트 메모리의 사고는 '기록했지만 커밋 안 함'에서 시작된다",
+    "date": "2026-07-28",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-29-inmind-implicit-association-agent-memory.md",
+    "title": "기억은 살아 있는데 필요한 순간에 안 닿음 — InMind가 폭로한 메모리 검색의 84%→14% 붕괴",
+    "date": "2026-07-29",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-01-filesystem-agent-memory-organization.md",
+    "title": "에이전트 메모리, 정리하지 말고 쌓아둬도 됨 — 파일시스템 기억 실험의 실무 결론",
+    "date": "2026-08-01",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-10-horizon-gap-long-horizon-llm-agents-survey.md",
+    "title": "최고 성능 모델도 몇 시간짜리 작업에선 무너짐 — 호라이즌 갭 서베이에서 가져올 것들",
+    "date": "2026-08-10",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-14-env-probing-agent-memory-curation.md",
+    "title": "틀린 기억은 저장이 아니라 검증에서 터짐 — 읽기 전용 프로브로 통과율 39→73% 만든 큐레이션",
+    "date": "2026-09-14",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-16-memriskbench-trace-aware-agent-risk-eval.md",
+    "title": "78% 평균 성공 옆에 4% 유출이 숨어 있음 — MemRiskBench의 트레이스 리스크 평가 정리",
+    "date": "2026-09-16",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-17-agent-memory-benchmark-memoryarena.md",
+    "title": "기억을 불러오는 것과 행동에 쓰는 것은 다른 능력이다 — 메모리 벤치마크의 맹점",
+    "date": "2026-09-17",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-21-llm-agent-memory-marginal-utility-merit.md",
+    "title": "LLM 에이전트에 장기 메모리가 실제로 도움이 될까: MERIT 벤치마크 정리",
+    "date": "2026-09-21",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "agent-memory-08",
+  "topic": "agent-memory",
+  "treatment": "merge-synthesis",
+  "size": 6,
+  "keywords": [
+   "상태",
+   "실무",
+   "그대로",
+   "컨텍스트",
+   "상태를",
+   "메모리"
+  ],
+  "members": [
+   {
+    "path": "posts/2026-07-09-light-omni-reflexive-agentic-video-understanding.md",
+    "title": "에이전트를 12배 빠르게 만든 건 모델이 아니라 기억 구조였음 — Light-Omni 실무 교훈",
+    "date": "2026-07-09",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-04-living-harness-self-evolving-agent-evolver.md",
+    "title": "같은 실수를 다음 에피소드에서 반복하지 않는 법 — Living-Harness 구조 정리",
+    "date": "2026-08-04",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-06-onedayagent-long-horizon-harness.md",
+    "title": "하루 종일 도는 에이전트 하네스 — 분해·메모리·검증 통합으로 상용 에이전트 앞선 OneDayAgent",
+    "date": "2026-08-06",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-16-alaya-evoke-long-horizon-world-model.md",
+    "title": "세션이 길어도 스텝 비용이 그대로 — Evoke가 외부 월드 상태 뱅크로 푼 것",
+    "date": "2026-08-16",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-13-maple-memory-augmented-optimization-agent.md",
+    "title": "한 번 만들고 끝나는 최적화 에이전트는 끝 — 상태 메모리로 연속 수정을 처리한 MAPLE",
+    "date": "2026-09-13",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-20-llm-agent-rollback-reflection-rir.md",
+    "title": "LLM 에이전트가 실패한 시점으로 되돌아갈 때 기억까지 버리는 문제: RIR 논문 정리",
+    "date": "2026-09-20",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "agent-memory-09",
+  "topic": "agent-memory",
+  "treatment": "merge-synthesis",
+  "size": 8,
+  "keywords": [
+   "메모리",
+   "태스크",
+   "떨어짐",
+   "그대로",
+   "메모리가",
+   "memory"
+  ],
+  "members": [
+   {
+    "path": "posts/2026-07-31-memharness-memory-reconstruction-agent.md",
+    "title": "에이전트에 과거 경험을 그대로 넣으면 성능이 떨어짐 — MemHarness의 '재구성' 설계",
+    "date": "",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-04-memharness-memory-reconstruction.md",
+    "title": "과거 경험을 그대로 복사하면 에이전트는 오히려 멍청해진다 — 메모리 재구성의 힘",
+    "date": "2026-08-04",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-11-agent-memory-distillation.md",
+    "title": "작은 에이전트에 선생 메모리를 물려주는 법 — AMD 3단계 증류 실무 노트",
+    "date": "2026-08-11",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-15-qcr-query-conditioned-reuse-agent-trajectories.md",
+    "title": "검색은 잘되는데 재사용에서 무너짐 — QCR 노트가 트레이토리 메모리의 진짜 병목을 짚은 이유",
+    "date": "2026-08-15",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-19-self-improve-fragility.md",
+    "title": "자기개선 에이전트가 흔들리는 이유 — 분산 71% 증가, 셔플만으로 개선이 하락으로 뒤집힘",
+    "date": "2026-08-19",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "posts/2026-08-22-skill-transfer-reliability.md",
+    "title": "회고를 통째로 저장하면 해가 됨 — 스킬 이전은 서브태스크 단위에 텍스트로",
+    "date": "2026-08-22",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-31-recuris-recursive-memory-evolution.md",
+    "title": "재귀 자기개선은 메모리 제어 레이어에서 남 — 베이스 모델 얼려두고 37조합 중 35개 개선한 Recuris",
+    "date": "2026-08-31",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-08-maskills-continual-skill-optimization-multi-agent.md",
+    "title": "멀티에이전트는 경험 메모리가 아니라 스킬 라이브러리로 최적화해야 함 — MASkills 정리",
+    "date": "2026-09-08",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "agent-memory-10",
+  "topic": "agent-memory",
+  "treatment": "merge-synthesis",
+  "size": 8,
+  "keywords": [
+   "arxiv",
+   "memory",
+   "결론",
+   "paper-summary",
+   "검색",
+   "내용"
+  ],
+  "members": [
+   {
+    "path": "posts/memora-harmonic-memory-2026-07-06.md",
+    "title": "메모리는 추상화와 구체성을 같이 들고 있어야 함 — Memora 조화 기억 구조 정리",
+    "date": "2026-07-06",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-18-llm-agent-new-environment-self-improvement-rsiagent.md",
+    "title": "LLM 에이전트가 새 환경에서 스스로 적응하는 법: RSIAgent 논문 정리",
+    "date": "2026-09-18",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-18-raft-stateful-rag-troubleshooting-agents.md",
+    "title": "고객지원 트러블슈팅 에이전트에 일반 RAG가 안 맞는 이유: Microsoft RAFT 논문 정리",
+    "date": "2026-09-18",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-21-llm-agent-memory-trust-decision-mdl.md",
+    "title": "LLM 에이전트가 검색된 메모리를 무조건 믿으면 생기는 일: MDL 메모리 판단층 논문 정리 (arXiv 2609.22043)",
+    "date": "2026-09-21",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-21-llm-agent-skill-memory-without-finetuning-procedural-memory.md",
+    "title": "LLM 에이전트는 파인튜닝 없이 어떻게 일을 배울까: 절차적 메모리 논문 정리",
+    "date": "2026-09-21",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-22-llm-agent-memory-overuse-underuse-memcalib.md",
+    "title": "LLM 에이전트가 메모리를 과하게 쓰거나 못 쓰는 문제: MemCalib 논문 정리 (arXiv 2609.24259)",
+    "date": "2026-09-22",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-22-multi-agent-memory-injection-cost-tca.md",
+    "title": "멀티 에이전트 토큰 비용에서 메모리 주입이 12~28%를 먹는 이유: TCA 논문 정리 (arXiv 2609.23790)",
+    "date": "2026-09-22",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-23-agent-harness-learns-from-experience-memoharness.md",
+    "title": "LLM 에이전트 하네스가 실행 경험에서 배워야 하는 이유: MemoHarness 논문 정리",
+    "date": "2026-09-23",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "agent-rl-01",
+  "topic": "agent-rl",
+  "treatment": "merge-synthesis",
+  "size": 8,
+  "keywords": [
+   "공간",
+   "라는",
+   "로봇",
+   "시간",
+   "강화학습",
+   "학습"
+  ],
+  "members": [
+   {
+    "path": "egopush-egocentric-robot-rearrangement-2026-05-04.md",
+    "title": "EgoPush: 로봇이 자기 눈으로만 물건을 밀어 재배치하는 뉴욕대 연구",
+    "date": "2026-05-04",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "rldx1-foundation-model-dexterity-2026-05-08.md",
+    "title": "한국 스타트업 RLWRLD, 5센서 로봇 손 전용 파운데이션 모델 RLDX-1 공개",
+    "date": "2026-05-08",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "maestro-rl-hierarchical-model-orchestration-2026-05-25.md",
+    "title": "Maestro — 작은 모델들로 GPT-5를 이긴 지휘자",
+    "date": "2026-05-25",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "pokerl-reinforcement-learning-pokemon-red-guide-2026-05-25.md",
+    "title": "포켓몬 레드를 RL로 클리어하기 — PokeRL 아키텍처부터 실전 실행까지",
+    "date": "2026-05-25",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-18-univr-visual-space-reasoning.md",
+    "title": "에이전트가 텍스트로 생각하지 않고도 일처리가 되나 — UniVR의 시각 공간 추론",
+    "date": "2026-07-18",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-15-personalized-text-to-image-individual-taste.md",
+    "title": "평균적으로 좋은 이미지와 내가 좋아하는 이미지는 다름 — 개인 취향 보상 모델 PAMELA",
+    "date": "2026-08-15",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/rlhev-game-dev-trajectory-engine-2026-08-29.md",
+    "title": "영상을 더 모으는 것보다 검증 신호를 돌려주는 데이터 엔진이 먼저다 — 게임 개발을 보상으로 쓰는 법",
+    "date": "2026-08-29",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-10-karl-knowledge-agents-rl.md",
+    "title": "작은 모델 + 합성 데이터 + 오프라인 RL로 GPT 5.2급 그라운디드 추론을 싸게 만들기 — KARL 정리",
+    "date": "2026-09-10",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "agent-rl-02",
+  "topic": "agent-rl",
+  "treatment": "merge-synthesis",
+  "size": 12,
+  "keywords": [
+   "grpo",
+   "알고리즘",
+   "reinforcement-learning",
+   "학습",
+   "롤아웃",
+   "보상"
+  ],
+  "members": [
+   {
+    "path": "posts/2026-07-11-sao-single-rollout-asynchronous-agentic-rl.md",
+    "title": "GLM-5.2를 훈련한 단일 롤아웃 비동기 RL — SAO 설계에서 가져올 것들",
+    "date": "2026-07-11",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-27-dark-room-reward-collapse-grpo.md",
+    "title": "GRPO에서 밀집 보상이 에이전트를 무너뜨리는 기전 — 그리고 채널 하나 바꾸는 해법",
+    "date": "2026-07-27",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-04-tapo-transition-aware-policy-optimization.md",
+    "title": "에이전트 RL에 세계 모델 감독을 공짜로 끼워넣기 — TAPO의 교대 학습",
+    "date": "2026-08-04",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-16-faraday-replica-ai-scientist-replication.md",
+    "title": "27B 정책 모델이 코딩 에이전트를 부려서 논문을 재현함 — Faraday와 Replica 과제 설계 정리",
+    "date": "2026-08-16",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-04-grpo-spurious-advantage-signbalance.md",
+    "title": "찍어서 맞힌 정답까지 강화하는 GRPO — 가짜 어드밴티지와 SignBalance 수술",
+    "date": "2026-09-04",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-04-rwml-reinforcement-world-model-learning.md",
+    "title": "성공 리워드 없이 다음 상태 예측만으로 +19.6pt — RWML 월드 모델 학습법 정리",
+    "date": "2026-09-04",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-06-canopy-outcome-only-rl.md",
+    "title": "소형 모델 아웃컴 온리 RL이 못 간다는 통념이 깨짐 — CANOPY의 두 진단",
+    "date": "2026-09-06",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-08-tree-grpo-agent-rl.md",
+    "title": "같은 예산으로 롤아웃 1.5배에 스텝 신호까지 공짜 — Tree-GRPO 정리",
+    "date": "2026-09-08",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-11-dr-mas-stable-multi-agent-llm-rl.md",
+    "title": "멀티에이전트 RL이 NaN으로 죽는 이유 — GRPO 정규화 한 줄 고친 Dr. MAS",
+    "date": "2026-09-11",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-12-t1-terminal-agent-rl.md",
+    "title": "10B 활성 파라미터로 터미널 벤치마크 64% — T1의 순수 RL 레시피와 실패 기록",
+    "date": "2026-09-12",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-15-t1-terminal-agent-rl.md",
+    "title": "터미널 에이전트 RL의 실전 레시피 — T1이 43.8%에서 64.0%로 가는 과정",
+    "date": "2026-09-15",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-21-ai-coding-agent-rl-environments-codemidas.md",
+    "title": "AI 코딩 에이전트 RL 학습 데이터를 이슈·커밋 없이 코드만으로 만드는 방법: CodeMidas 논문 정리 (arXiv 2609.22068)",
+    "date": "2026-09-21",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "agent-rl-03",
+  "topic": "agent-rl",
+  "treatment": "merge-synthesis",
+  "size": 8,
+  "keywords": [
+   "grpo",
+   "학습",
+   "표준",
+   "합성",
+   "도구를",
+   "평가"
+  ],
+  "members": [
+   {
+    "path": "posts/2026-07-18-longstraw-million-token-rl-post-training.md",
+    "title": "200만 토큰 RL 훈련을 GPU 8대로 — LongStraw의 인프라 트릭 정리",
+    "date": "2026-07-18",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-21-toolverse-massive-mcp-agent-rl.md",
+    "title": "MCP 환경 422개에서 에이전트 RL을 돌리는 법 — ToolVerse가 푼 세 병목",
+    "date": "2026-07-21",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/toolhazard-scaling-adversarial-environments-2026-08-15.md",
+    "title": "간접 프롬프트 인젝션 테스트 환경을 손으로 안 짜도 된다 — 환경 1개 59센트",
+    "date": "2026-08-15",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-24-fission-grpo-error-recovery-tool-use.md",
+    "title": "API 에러 직후의 행동이 에이전트 품질을 가름 — Fission-GRPO의 오류 복구 학습",
+    "date": "2026-08-24",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-01-baitbench-agent-reward-hacking.md",
+    "title": "에이전트 절반은 알면서도 지름길로 점수를 부풀린다 — 57%의 자율 실험 오염",
+    "date": "2026-09-01",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-05-interface-trajectory-censoring.md",
+    "title": "툴 호출 0개는 모델 탓이 아니라 인터페이스 탓 — 조용히 검열되는 궤적",
+    "date": "2026-09-05",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-07-edge-kopa-bench-korean-public-api.md",
+    "title": "실행해서 성공한 호출만 그래프에 남기기 — KOPA-Bench와 EDGE 데이터 합성 레시피 정리",
+    "date": "2026-09-07",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-21-llm-agent-rl-spurious-tool-use.md",
+    "title": "RL로 학습한 LLM 에이전트가 필요 없는 도구를 부르는 이유: Spurious Tool Use 논문 정리",
+    "date": "2026-09-21",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "agent-rl-04",
+  "topic": "agent-rl",
+  "treatment": "merge-synthesis",
+  "size": 10,
+  "keywords": [
+   "보상",
+   "수학",
+   "정답",
+   "rlvr",
+   "검증",
+   "강화학습"
+  ],
+  "members": [
+   {
+    "path": "rl-for-agents-workshop-huggingface-2026-04-22.md",
+    "title": "Hugging Face 'RL for Agents' 워크샵 정리 — 모델이 아니라 에이전트를 훈련하는 시대",
+    "date": "2026-04-24",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "rl-agent-training-2026-05-27.md",
+    "title": "에이전트 RL 3총사: 환경을 만들고, 터미널을 읽고, 리서치를 합성하는 법",
+    "date": "2026-05-27",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-23-gear-evidence-aware-rl-long-context.md",
+    "title": "긴 컨텍스트에서 LLM은 입력을 통째로 베낌 — GEAR는 '뭘 복사할지'를 보상으로 가르침",
+    "date": "2026-07-23",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-27-vprm-verifiable-process-reward-models.md",
+    "title": "정답만 맞으면 통과시키는 검증의 구멍 — VPRM이 과정까지 잰 이유",
+    "date": "2026-07-27",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/rlvr-environments-llm-agents-2026-07-28.md",
+    "title": "RLVR 환경: 에이전트는 이제 문제집이 아니라 훈련장을 필요로 한다",
+    "date": "2026-07-28",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "posts/reasoning-effort-llm-control-2026-07-29.md",
+    "title": "언제 비싸게 생각하게 할 것인가 — reasoning effort는 정확도 옵션이 아니라 원가 옵션임",
+    "date": "2026-07-29",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "posts/rl-mas-orchestration-traces-2026-09-02.md",
+    "title": "멀티에이전트 RL의 단위는 이제 행동이 아니라 오케스트레이션 이벤트임 — 서베이 84편 정리",
+    "date": "2026-09-02",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-11-trace-synthesized-rewards-diagnostic-rl.md",
+    "title": "검증자가 없으면 검증자가 있는 문제를 제조하라 — 합성 보상으로 진단 에이전트 학습",
+    "date": "2026-09-11",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-13-trace-synthesized-rewards-diagnostic-agents.md",
+    "title": "검증 가능한 정답이 없는 업무에 RL을 쓰는 법 — 개입을 샘플해서 보상을 만드는 TRACE",
+    "date": "2026-09-13",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-15-ppm-progressive-point-matching.md",
+    "title": "성공 확률이 0.4%인 문제도 학습된다 — 최종 정답 보상을 버리고 중간 지점 도달로 채점하기",
+    "date": "2026-09-15",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "agent-rl-05",
+  "topic": "agent-rl",
+  "treatment": "merge-synthesis",
+  "size": 4,
+  "keywords": [
+   "학생",
+   "궤적을",
+   "분포를",
+   "온폴리시",
+   "학습",
+   "증류"
+  ],
+  "members": [
+   {
+    "path": "posts/2026-07-08-ui-mopd-multi-platform-gui-agent-distillation.md",
+    "title": "GUI 에이전트 하나로 데스크톱·모바일 다 쥐기 — UI-MOPD 증류 설계에서 배운 것",
+    "date": "2026-07-08",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-30-mad-opd-debate-on-policy-distillation.md",
+    "title": "선생 두 명이 토론하니 4B 학생이 14B 선생을 넘었다 — 증류의 천장 깨기",
+    "date": "2026-08-30",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-08-rise-self-extrapolating-policy-distillation.md",
+    "title": "선생 모델 없이 증류 선생을 만드는 법 — 학습 궤적을 미래로 외삽하기",
+    "date": "2026-09-08",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-13-negative-self-distillation-avoiding-flaws.md",
+    "title": "정답을 가르치는 교사가 추론을 망침 — 피할 대상을 직접 만드는 네거티브 자기증류",
+    "date": "2026-09-13",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "agent-rl-06",
+  "topic": "agent-rl",
+  "treatment": "merge-synthesis",
+  "size": 13,
+  "keywords": [
+   "크레딧",
+   "grpo",
+   "궤적",
+   "credit-assignment",
+   "신호를",
+   "그룹"
+  ],
+  "members": [
+   {
+    "path": "posts/2026-07-20-trace-turn-level-credit-agentic-rl.md",
+    "title": "실패한 궤적에서도 옳은 행동을 찾아내는 법 — TRACE 턴 단위 크레딧 실무 정리",
+    "date": "2026-07-20",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-05-pcsd-persistent-consistency-agentic-rl.md",
+    "title": "에이전트 RL에서 어떤 토큰을 믿을 것인가 — 교사 신호의 일관성으로 가리는 법",
+    "date": "2026-08-05",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-05-turnsight-turn-level-hindsight-self-distillation-tir.md",
+    "title": "어떤 도구 호출이 성공에 기여했는지 알아내는 법 — TurnSight의 hindsight 크레딧 할당",
+    "date": "2026-08-05",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-06-abseeker-answer-backtracked-credit-assignment.md",
+    "title": "실패한 궤적에도 좋은 스텝이 있음 — ABSeeker의 역추적 크레딧 할당",
+    "date": "2026-08-06",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-06-tcpo-turn-level-credit-policy-optimization.md",
+    "title": "점수는 크레딧이 아님 — 매 턴 채점하는데도 보상이 틀리게 가는 이유, TCPO",
+    "date": "2026-08-06",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-07-agentopsd-recursive-turn-level-credit-agentic-rl.md",
+    "title": "GRPO의 균등 보상을 턴별로 재분배하기 — AgentOPSD의 재귀적 자기증류",
+    "date": "2026-08-07",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-09-adrs-self-distilled-reward-shaping.md",
+    "title": "궤적 끝의 성공/실패 신호만으로는 부족함 — ADRS의 토큰 단위 크레딧",
+    "date": "2026-08-09",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-09-tcpo-turn-level-credit-policy-optimization.md",
+    "title": "검증자 점수는 관측이지 크레딧이 아님 — TCPO의 턴별 크레딧 변환",
+    "date": "2026-08-09",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-14-efca-multi-timescale-credit-agentic-rl.md",
+    "title": "환경이 던져주는 텍스트가 곧 보상임 — EFCA의 공짜 크레딧 신호",
+    "date": "2026-08-14",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-19-trca-transition-rubric-credit-assignment.md",
+    "title": "실패 트랙토리의 72%는 학습 신호임 — TRCA의 전환 단위 루브릭 크레딧 정리",
+    "date": "2026-08-19",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-31-vict-verifier-instrumented-credit-tracing.md",
+    "title": "검증기 안에 이미 크레딧 답이 있음 — VICT의 애턴 추적 방식 정리",
+    "date": "2026-08-31",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-03-pgpo-potential-guided-policy-optimization.md",
+    "title": "실패한 롤아웃 안에서도 좋은 행동과 나쁜 행동은 다름 — 잠재력 차이로 크레딧을 나눈 PGPO",
+    "date": "2026-09-03",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-04-draco-dynamic-rubric-credit-assignment.md",
+    "title": "검증자 없이 에이전트를 학습시키는 법 — DRACO 동적 루브릭 크레딧 할당",
+    "date": "2026-09-04",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "agent-safety-01",
+  "topic": "agent-safety",
+  "treatment": "merge-synthesis",
+  "size": 11,
+  "keywords": [
+   "arxiv",
+   "공격",
+   "있다는",
+   "라는",
+   "행동",
+   "전에"
+  ],
+  "members": [
+   {
+    "path": "posts/2026-07-18-badwam-world-action-drift-attack.md",
+    "title": "로봇은 바른 미래를 상상하면서 잘못 행동함 — BadWAM이 보여준 검증 우회 공격",
+    "date": "",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "geeknews-2026-04-04-pypi-security-supply-chain-attack.md",
+    "title": "PyPI 공급망 공격 이후 — 오픈소스 보안의 새로운 전략과 현실적인 방어법",
+    "date": "2026-04-04",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "maigret-osint-username-search-2026-05-02.md",
+    "title": "닉네임 하나로 3,000개 사이트 뒤지는 OSINT 도구 — maigret",
+    "date": "2026-05-02",
+    "reason": "주제 이탈(투자·부동산·생활·시사)"
+   },
+   {
+    "path": "2026-06-04-anthropic-ai-cyber-threats-mitre-attack.md",
+    "title": "AI가 바꾸는 사이버 공격의 지형 — Anthropic이 832개 악성 계정을 분석해 밝힌 것",
+    "date": "2026-06-04",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "posts/2026-07-24-janus-long-horizon-agent-safety.md",
+    "title": "에이전트 안전은 지금 스텝이 아니라 궤적 전체로 봐야 함 — JANUS 예측형 가드레일",
+    "date": "2026-07-24",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-22-tool-result-authority.md",
+    "title": "도구 결과는 텍스트보다 권위 있나 — 3건의 사전등록 실험이 찾은 진짜 변수는 배치였음",
+    "date": "2026-08-22",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-09-kcbench-agent-knowledge-conflict.md",
+    "title": "사용자가 틀린 정보를 밀면 에이전트는 굴복함 — KC-Bench가 밝힌 지식 충돌 취약점",
+    "date": "2026-09-09",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-10-avatar-llm-scientific-workflow-orchestration.md",
+    "title": "과학 워크플로 오케스트레이션에 LLM을 끼워넣는 안전한 방법 — Avatar 구조",
+    "date": "2026-09-10",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-14-kbench-agent-unlearning.md",
+    "title": "답변에서 지웠다고 잊은 게 아니다 — 에이전트 언러닝이 실패하는 여섯 개의 채널",
+    "date": "2026-09-14",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-15-plan-injection-cot-monitoring.md",
+    "title": "모델이 컨텍스트의 추론을 자기 것처럼 베껴 씀 — Plan Injection이 CoT 모니터링을 우회하는 방식",
+    "date": "2026-09-15",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-19-llm-agent-safety-refusal-calibration-blindspot.md",
+    "title": "LLM 에이전트가 몇 턴 뒤에 안전장치를 놓치는 이유: BLINDSPOT 벤치마크 정리 (arXiv 2609.16305)",
+    "date": "2026-09-19",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "agent-safety-02",
+  "topic": "agent-safety",
+  "treatment": "merge-synthesis",
+  "size": 7,
+  "keywords": [
+   "공격",
+   "프롬프트",
+   "간접",
+   "인젝션",
+   "대신",
+   "이메일"
+  ],
+  "members": [
+   {
+    "path": "posts/2026-07-07-ai-infra-guard-multi-layer-agent-red-teaming.md",
+    "title": "에이전트 보안 점검, 레이어별로 다르게 해야 제대로 한다 — AI-Infra-Guard 실무 가이드",
+    "date": "2026-07-07",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-16-isolation-first-principle-llm-agent-safety.md",
+    "title": "에이전트 사고는 전부 '경계 붕괴'다 — 격리부터 설계하면 막히는 것들",
+    "date": "2026-07-16",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-28-sara-tool-output-authorization.md",
+    "title": "프롬프트 인젝션은 입력 차단이 아니라 실행 인가로 막음 — SARA 구조 정리",
+    "date": "2026-08-28",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-30-framing-gap-injection-exfiltration.md",
+    "title": "같은 유출 공격인데 문구만 바꾸면 0%에서 100%로 뚫림 — 프레이밍 갭 논문 정리",
+    "date": "2026-08-30",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-08-continuity-security-context-contracts.md",
+    "title": "보안 컨트롤은 각각 맞는데 조합하면 뚫림 — CONTINUITY의 보안 문맥 컨트랙트",
+    "date": "2026-09-08",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-18-llm-agent-prompt-injection-defense-actguard.md",
+    "title": "LLM 에이전트 간접 프롬프트 인젝션 방어를 실행 전에 끝내는 법: ActGuard 논문 정리",
+    "date": "2026-09-18",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-23-mcp-agent-hijacking-a2m.md",
+    "title": "LLM 에이전트가 악성 MCP 도구를 골라버리는 이유: A2M 논문 정리 (arXiv 2609.26761)",
+    "date": "2026-09-23",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "agent-safety-03",
+  "topic": "agent-safety",
+  "treatment": "merge-synthesis",
+  "size": 5,
+  "keywords": [
+   "뭔가요",
+   "안전",
+   "건가요",
+   "거죠",
+   "완전히",
+   "하지만"
+  ],
+  "members": [
+   {
+    "path": "anthropic-widening-conversation-frontier-ai-2026-05-24.md",
+    "title": "Anthropic이 종교·철학 15개 전통과 AI 가치 정렬 대화를 시작하다",
+    "date": "2026-05-24",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "anthropic-teaching-claude-why-2026-05-25.md",
+    "title": "Claude에게 '왜'를 가르치다 — 에이전틱 미스얼라인먼트를 줄이는 새로운 연구",
+    "date": "2026-05-25",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "anthropic-2028-two-scenarios-global-ai-leadership-2026-05-27.md",
+    "title": "Anthropic \\\"2028: 두 가지 시나리오\\\" — 미·중 AI 패권 경쟁의 기로",
+    "date": "2026-05-27",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "d2-monitor-dynamic-safety-diffusion-llms-2026-05-28.md",
+    "title": "D²-모니터: 디퓨전 LLM이 '망설이는' 순간을 포착해 안전을 지키는 기술",
+    "date": "2026-05-28",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "2026-06-03-d2-monitor-diffusion-llm-safety.md",
+    "title": "Diffusion LLM이 위험한 답변을 내놓기 직전, AI가 스스로 망설입니다 — D²-Monitor",
+    "date": "2026-06-03",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "agent-safety-04",
+  "topic": "agent-safety",
+  "treatment": "merge-synthesis",
+  "size": 4,
+  "keywords": [
+   "anthropic",
+   "claude",
+   "mythos",
+   "취약점을",
+   "탐지",
+   "preview"
+  ],
+  "members": [
+   {
+    "path": "project-glasswing-securing-critical-software-ai-era.md",
+    "title": "Anthropic Project Glasswing, AI 시대 핵심 소프트웨어 보안 전략 정리",
+    "date": "2026-04-08",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "openmythos-recurrent-depth-transformer-guide.md",
+    "title": "OpenMythos: Claude Mythos의 비밀을 파헤친 오픈소스 재구현 프로젝트",
+    "date": "2026-04-20",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "anthropic-project-glasswing-vulnerability-detection-2026-05-24.md",
+    "title": "Project Glasswing — Claude Mythos가 10,000개 취약점을 찾은 첫 성과",
+    "date": "2026-05-24",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "llm-n-day-exploits-patch-gap-2026-06-19.md",
+    "title": "N-day가 N-hour가 될 때 — Anthropic의 LLM 익스플로잇 실험이 말하는 패치 갭의 붕괴",
+    "date": "2026-06-19",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "ai-trends-misc-01",
+  "topic": "ai-trends-misc",
+  "treatment": "merge-synthesis",
+  "size": 10,
+  "keywords": [
+   "컨텍스트",
+   "상태",
+   "프롬프트",
+   "다시",
+   "정리함",
+   "문제"
+  ],
+  "members": [
+   {
+    "path": "openai-privacy-filter-pii-detection-2026-04-23.md",
+    "title": "OpenAI가 PII 마스킹 모델 풀었음 - Privacy Filter 정리",
+    "date": "2026-04-23",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "gemini-enterprise-agent-platform-2026-04-26.md",
+    "title": "구글이 Vertex AI를 갈아엎음 — Gemini Enterprise Agent Platform이 진짜로 노린 것",
+    "date": "2026-04-26",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "2026-06-06-tide-proactive-multi-problem-discovery.md",
+    "title": "에이전트가 네가 모르는 문제까지 찾아준다면: TIDE",
+    "date": "2026-06-06",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-20-context-fails-first-agent-reliability.md",
+    "title": "에이전트 실패의 진짜 원인은 모델이 아니라 컨텍스트임 — 7기준 측정 실험",
+    "date": "2026-07-20",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-25-nooa-native-python-object-oriented-agents.md",
+    "title": "에이전트를 파이썬 클래스로 만들면 프레임워크가 필요없어짐 — NVIDIA NOOA 설계 분석",
+    "date": "2026-07-25",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-09-continual-learning-in-transition.md",
+    "title": "에이전트 시대의 지속학습은 매개변수를 고치는 게 아님 — When·How·Where 3축 전환 정리",
+    "date": "2026-08-09",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-28-pes-persona-execution-separation.md",
+    "title": "페르소나는 자유롭게, 실행은 감사 가능하게 — 두 개의 통제 영역으로 나누는 법",
+    "date": "2026-08-28",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-07-kvmem-gpu-agent-workspace-virtualization.md",
+    "title": "이미 계산해둔 걸 왜 텍스트로 저장해서 다시 계산하나 — KV 캐시 가상화의 발상",
+    "date": "2026-09-07",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-11-bluestar-tiered-autonomous-cyber-defense.md",
+    "title": "원본 로그에 LLM을 직접 붙이면 연 3,700만 달러에 정확도 3.8% — BlueSTAR의 계층 구조",
+    "date": "2026-09-11",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-19-llm-agent-regression-testing-chronicle.md",
+    "title": "LLM 에이전트 장애를 재현하는 방법: Chronicle 컷포인트 리플레이 논문 정리 (arXiv 2609.20625)",
+    "date": "2026-09-19",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "ai-trends-misc-02",
+  "topic": "ai-trends-misc",
+  "treatment": "merge-synthesis",
+  "size": 12,
+  "keywords": [
+   "실제로",
+   "그대로",
+   "않고",
+   "arxiv",
+   "파일",
+   "상태"
+  ],
+  "members": [
+   {
+    "path": "posts/2026-07-16-structagent-long-horizon-causal-agent.md",
+    "title": "OSWorld 78.9%를 만든 건 검증자 권한이었음 — StructAgent 설계 노트",
+    "date": "",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "agentswing-adaptive-context-management-2026-04-14.md",
+    "title": "AgentSwing: LLM 에이전트의 컨텍스트 한계를 극복하는 적응형 라우팅",
+    "date": "2026-04-14",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "dokpamo-korea-history-current-status-outlook.md",
+    "title": "독파모는 지금 어디까지 왔나, 독자 AI 파운데이션 모델 사업의 히스토리와 다음 수",
+    "date": "2026-04-19",
+    "reason": "주제 이탈(투자·부동산·생활·시사)"
+   },
+   {
+    "path": "acc-compiling-agent-trajectories-2026-05-24.md",
+    "title": "ACC — 에이전트 궤적을 장문 학습 데이터로 컴파일하면 어떻게 되나",
+    "date": "2026-05-24",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "posts/2026-07-16-e3-complexity-aware-agent-execution.md",
+    "title": "에이전트는 쉬운 일도 전체 프로젝트를 읽는다 — E3 낙관적 추정으로 비용 85% 줄이기",
+    "date": "2026-07-16",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-17-llm-planning-two-distinct-abilities.md",
+    "title": "'계획을 잘한다'는 말의 함정 — LLM 계획 능력은 두 개로 쪼개지고 하나만 커짐",
+    "date": "2026-07-17",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-21-autonomous-agency-scale.md",
+    "title": "에이전트는 안 시키면 멈춰 있음 — 자율성 척도 AAS로 내 자동화를 다시 봄",
+    "date": "2026-07-21",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-21-strategy-lockin-post-training-agents.md",
+    "title": "에이전트가 못 바꾸는 건 전략임 — 포스트트레이닝 트레이토리 3,557쌍에서 나온 16건",
+    "date": "2026-08-21",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-22-mind-viruses-self-propagating-ideas.md",
+    "title": "마인드 바이러스는 실재함 — 텍스트 설득만으로 에이전트 사이를 퍼지는 생각",
+    "date": "2026-08-22",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-01-s3gym-self-testing-judging-improvement.md",
+    "title": "자기테스트·자기판단이 성능 개선로 이어지는지 실제로 측정함 — S3Gym 결과",
+    "date": "2026-09-01",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-09-spine-llm-sycophancy-sustained-pressure.md",
+    "title": "LLM은 정답을 알면서도 12번 밀리면 항복한다 — 지속 압박下的 아첨 측정",
+    "date": "2026-09-09",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-16-agent-error-avalanche-world-model-soc.md",
+    "title": "에이전트 오류는 흩어지지 않고 몰려서 무너짐 — 오류 폭발과 세계 모델 붕괴를 측정한 22개 실험",
+    "date": "2026-09-16",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "ai-trends-misc-03",
+  "topic": "ai-trends-misc",
+  "treatment": "merge-synthesis",
+  "size": 4,
+  "keywords": [
+   "학습",
+   "처음부터",
+   "없다",
+   "실제로",
+   "크기",
+   "토큰"
+  ],
+  "members": [
+   {
+    "path": "random-noise-warmup-calibration-kaist-2026.md",
+    "title": "랜덤 노이즈 웜업으로 AI 과신 문제 해결? — KAIST Nature 논문 3인 심층 리뷰",
+    "date": "2026-04-28",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "llm-from-scratch-2026-05-05.md",
+    "title": "처음부터 만드는 LLM: 토크나이저부터 트랜스포머·학습·생성·경연까지 (전 6장 통합)",
+    "date": "2026-05-05",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "wwdc26-core-ai-on-device-models-2026-06-09.md",
+    "title": "서버 없이, 토큰 비용 없이 — WWDC26 Core AI가 여는 온디바이스 AI의 실전",
+    "date": "2026-06-09",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "posts/2026-07-16-oat-tracing-agentic-failure.md",
+    "title": "에이전트 실패 스텝 찾기에 GPT-5를 안 써도 됨 — OAT 원클래스 이상 탐지 실무 노트",
+    "date": "2026-07-16",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "ai-trends-misc-04",
+  "topic": "ai-trends-misc",
+  "treatment": "merge-synthesis",
+  "size": 6,
+  "keywords": [
+   "그래프",
+   "가능한",
+   "방향성",
+   "시스템",
+   "dag",
+   "필터링"
+  ],
+  "members": [
+   {
+    "path": "trustgraph-context-graph-explainable-ai.md",
+    "title": "컨텍스트 그래프와 설명 가능한 AI: TrustGraph 2 데모 분석",
+    "date": "2026-03-27",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "sciatlas-knowledge-graph-automated-research-2026-05-26.md",
+    "title": "SciAtlas: 4,300만 편 논문을 지식그래프로 엮은 '과학의 지도'",
+    "date": "2026-05-26",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "2026-06-08-leap-agentic-formal-mathematics.md",
+    "title": "LEAP: 범용 LLM으로 정형 수학 증명의 최고 수준 달성",
+    "date": "2026-06-08",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-04-atomic-task-graph-agentic-planning-execution.md",
+    "title": "7B 모델로 GPT-4급 에이전트를 돌리는 법 — Atomic Task Graph 실무 교훈",
+    "date": "2026-07-04",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/covenant-workflow-alignment-llm-agents.md",
+    "title": "에이전트가 업무 지시를 어기는 이유 — 프롬프트가 아니라 컴파일 대상이라서",
+    "date": "2026-07-31",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-26-graph-engineering-system-intelligence.md",
+    "title": "에이전트 수를 늘리는 대신 그래프를 설계함 — Graph Engineering 서베이 요점",
+    "date": "2026-08-26",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "ai-trends-misc-05",
+  "topic": "ai-trends-misc",
+  "treatment": "merge-synthesis",
+  "size": 8,
+  "keywords": [
+   "claude",
+   "평가",
+   "code",
+   "가능한",
+   "full",
+   "사람이"
+  ],
+  "members": [
+   {
+    "path": "오픈가중-LLM-아키텍처-10개-2026년-초.md",
+    "title": "오픈 가중 LLM 아키텍처 10개: 2026년 봄 신작 모음",
+    "date": "2026-03-01",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "aeo-agentic-engine-optimization-2026.md",
+    "title": "AEO란 무엇인가: AI 에이전트가 읽기 좋은 문서 최적화 방법",
+    "date": "2026-04-20",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "anthropic-opus47-hackathon-6-projects-2026-05-23.md",
+    "title": "의사, 목수, 교사가 만든 AI — Anthropic Opus 4.7 해커톤 수상작 6선",
+    "date": "2026-05-23",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "loop-library-agent-workflows-2026-06-21.md",
+    "title": "Loop Library — AI 에이전트에게 반복 작업을 맡기는 44개 루프 모음",
+    "date": "2026-06-21",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "posts/researchstudio-reel-last-mile-2026-07-08.md",
+    "title": "논문 PDF 하나로 포스터·영상·블로그까지 — ResearchStudio-Reel의 마지막 마일 자동화",
+    "date": "2026-07-08",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/claude-for-teachers-ai-education-agent-2026-07-15.md",
+    "title": "Claude for Teachers: Anthropic은 왜 학생이 아니라 교사를 먼저 공략했나",
+    "date": "2026-07-15",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "posts/jeff-dean-one-percent-rule-ai-2026-07-31.md",
+    "title": "Jeff Dean이 말한 AI 시대의 1% 룰: 모델보다 루프를 설계하는 사람이 이긴다",
+    "date": "2026-07-31",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "topic-clusters.md",
+    "title": "AI 에이전트 블로그 주제 클러스터 5개 모음",
+    "date": "2026-09-13",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "ai-trends-misc-06",
+  "topic": "ai-trends-misc",
+  "treatment": "merge-synthesis",
+  "size": 11,
+  "keywords": [
+   "중요한",
+   "그런데",
+   "자동화",
+   "연구",
+   "실제로",
+   "질문은"
+  ],
+  "members": [
+   {
+    "path": "geeknews-2026-04-03-1bit-bonsai-on-device-ai.md",
+    "title": "1-bit Bonsai가 보여준 것 — 온디바이스 AI는 이제 정말 제품이 될 수 있을까?",
+    "date": "2026-04-03",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "terminal-agents-suffice-for-enterprise-automation.md",
+    "title": "복잡한 건 필요 없었다: 터미널 에이전트가 기업 자동화를 이기는 이유",
+    "date": "2026-04-03",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "llm-personal-knowledge-base-obsidian-workflow.md",
+    "title": "LLM으로 개인 지식 베이스를 만드는 법: Obsidian 기반 연구 워크플로우",
+    "date": "2026-04-04",
+    "reason": "외부 글 기반 — 본인 관점으로 새로 쓸 가치 있음"
+   },
+   {
+    "path": "openclaw-book-launch-goldenrabbit-event.md",
+    "title": "오픈클로 책 드디어 나왔다: AI 비서로 50가지 업무 자동화, 지금 찜하기와 이벤트까지",
+    "date": "2026-04-04",
+    "reason": "책 홍보·이벤트(기한 지난 공지)"
+   },
+   {
+    "path": "geeknews-2026-04-05-claude-subscription-changes.md",
+    "title": "Claude 구독 제도 변경 — OpenClaw 금지가 알려준 AI 서비스의 진짜 위기",
+    "date": "2026-04-05",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "ai-thinking-warning-learning-vs-output.md",
+    "title": "AI가 사고력을 대신하기 시작할 때, 진짜 위험은 어디에 있을까?",
+    "date": "2026-04-06",
+    "reason": "외부 글 기반 — 본인 관점으로 새로 쓸 가치 있음"
+   },
+   {
+    "path": "openclaw-book-free-lecture-event-korea.md",
+    "title": "오픈클로 책 무료 특강 소식: 예스24, 교보문고, 알라딘 이벤트 한눈에 정리",
+    "date": "2026-04-10",
+    "reason": "책 홍보·이벤트(기한 지난 공지)"
+   },
+   {
+    "path": "ai-chemist-improves-reaction-2026-06-18.md",
+    "title": "AI 화학자는 실험실에서 어디까지 갔나 — OpenAI·Molecule.one의 Chan–Lam 반응 개선 인터뷰",
+    "date": "2026-06-18",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "ai-biology-market-2026-digital-biology.md",
+    "title": "AI는 생물학을 어디까지 바꾸고 있나: 단백질에서 세포, 신약개발 공장까지",
+    "date": "2026-06-21",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "posts/2026-07-02-openlife-open-world-artificial-life-llm-agents.md",
+    "title": "OpenLife — LLM 에이전트를 인터넷에 12주간 방치하면 무슨 일이 벌어지나",
+    "date": "2026-07-02",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/marin-open-development-llm-research-platform-2026-08-27.md",
+    "title": "Marin 살펴보기: 모델 파일보다 모델을 만든 과정을 공개하는 LLM 연구 플랫폼",
+    "date": "2026-08-27",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "ai-trends-misc-07",
+  "topic": "ai-trends-misc",
+  "treatment": "merge-synthesis",
+  "size": 6,
+  "keywords": [
+   "있다는",
+   "소프트웨어",
+   "진짜",
+   "평균",
+   "있는가",
+   "공통"
+  ],
+  "members": [
+   {
+    "path": "posts/2026-06-08-bok-ai-productivity-disconnect.md",
+    "title": "AI 쓰면 일은 빨리 끝나는데, 왜 생산성은 안 오를까 — 한국은행이 5,000명에게 물어본 것",
+    "date": "2026-06-08",
+    "reason": "주제 이탈(투자·부동산·생활·시사)"
+   },
+   {
+    "path": "posts/2026-08-08-calibforge-adversarial-solver-calibration-terminal-agents.md",
+    "title": "합성 훈련 태스크의 문제는 '난이도'임 — CalibForge의 솔버 캘리브레이션 루프",
+    "date": "2026-08-08",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "posts/2026-09-04-swe-gate-functional-tests-not-enough.md",
+    "title": "테스트를 통과한 패치의 3분의 1은 리뷰에서 떨어진다 — 숨은 실패 측정하기",
+    "date": "2026-09-04",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-10-belief-state-engine-pomdp-llm-agents.md",
+    "title": "원시 히스토리를 통째로 주지 말고 사후분포만 주면 됨 — Belief-State Engine",
+    "date": "2026-09-10",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-11-ppp-proactive-personalized-llm-agents.md",
+    "title": "에이전트는 질문을 안 함 — 생산성·주도성·개인화를 같이 학습시킨 PPP 결과",
+    "date": "2026-09-11",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-20-llm-agent-rl-sft-loss-mask-actobs.md",
+    "title": "LLM 에이전트 SFT에서 관측 토큰도 예측해야 하는 이유: ActObs 논문 정리",
+    "date": "2026-09-20",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "archive-draft-01",
+  "topic": "archive-draft",
+  "treatment": "archive",
+  "size": 6,
+  "keywords": [
+   "faq",
+   "또는",
+   "붙는",
+   "안내함",
+   "국민건강보험공단",
+   "건강보험"
+  ],
+  "members": [
+   {
+    "path": "쿼츠-발행-테스트-2026-03-02.md",
+    "title": "쿼츠 발행 테스트 (2026-03-02)",
+    "date": "2026-03-02",
+    "reason": "초안·테스트 글 공개"
+   },
+   {
+    "path": "_drafts/2026-04-21/diet-pill-prescription-price-comparison-korea-2026-04-21.md",
+    "title": "다이어트 약 처방받기, 가격 비교, 먼저 쪼개서 봐야 덜 헷갈림",
+    "date": "2026-04-21",
+    "reason": "초안·테스트 글 공개"
+   },
+   {
+    "path": "_drafts/2026-04-21/hanbang-diet-effect-analysis-2026-04-21.md",
+    "title": "한방 다이어트 효과 분석, 단기 신호는 있지만 근거는 아직 약함",
+    "date": "2026-04-21",
+    "reason": "초안·테스트 글 공개"
+   },
+   {
+    "path": "_drafts/2026-04-21/health-insurance-refund-application-korea-2026-04-21.md",
+    "title": "건강보험료 환급 신청, 먼저 돈의 종류부터 확인해야 함",
+    "date": "2026-04-21",
+    "reason": "초안·테스트 글 공개"
+   },
+   {
+    "path": "_drafts/2026-04-21/implant-insurance-coverage-korea-2026-04-21.md",
+    "title": "임플란트 보험 적용 여부, 65세 이상이면 다 되는 건 아님",
+    "date": "2026-04-21",
+    "reason": "초안·테스트 글 공개"
+   },
+   {
+    "path": "_drafts/2026-04-21/scaling-health-insurance-eligibility.md",
+    "title": "스케일링 건강보험 적용 대상, 연 1회 기준은 어디까지인가",
+    "date": "2026-04-21",
+    "reason": "초안·테스트 글 공개"
+   }
+  ],
+  "status": "archived",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "archive-health-01",
+  "topic": "archive-health",
+  "treatment": "archive",
+  "size": 44,
+  "keywords": [
+   "대건강",
+   "그냥",
+   "경우가",
+   "되는",
+   "중년건강",
+   "보는"
+  ],
+  "members": [
+   {
+    "path": "40s-health-checkup-missing-6-2026-04-21.md",
+    "title": "40대 건강검진, 공단이 보내준 기본만 받으면 놓치는 6가지",
+    "date": "2026-04-21",
+    "reason": "건강 YMYL(비전문가·템플릿 반복)"
+   },
+   {
+    "path": "dental-scaling-insurance-2026-04-21.md",
+    "title": "스케일링 건강보험 적용 대상, 연 1회 리셋되는 이상한 시계",
+    "date": "2026-04-21",
+    "reason": "건강 YMYL(비전문가·템플릿 반복)"
+   },
+   {
+    "path": "40s-male-menopause-signals-2026-04-22.md",
+    "title": "40대 남자 갱년기 신호 7가지, 그냥 피곤한 게 아님",
+    "date": "2026-04-22",
+    "reason": "건강 YMYL(비전문가·템플릿 반복)"
+   },
+   {
+    "path": "40s-prediabetes-fasting-glucose-100-2026-04-22.md",
+    "title": "40대 공복혈당 100, 지금 끊어야 할 신호 7가지",
+    "date": "2026-04-22",
+    "reason": "건강 YMYL(비전문가·템플릿 반복)"
+   },
+   {
+    "path": "40s-fatty-liver-normal-liver-enzymes-2026-04-24.md",
+    "title": "40대 지방간, 간수치 정상인데도 놓치는 이유 7가지",
+    "date": "2026-04-24",
+    "reason": "건강 YMYL(비전문가·템플릿 반복)"
+   },
+   {
+    "path": "chatgpt-gpt5-5-40s-work-2026-04-24.md",
+    "title": "ChatGPT GPT-5.5 나왔음 — 40대 직장인이 당장 건질 게 뭔지 정리",
+    "date": "2026-04-24",
+    "reason": "건강 YMYL(비전문가·템플릿 반복)"
+   },
+   {
+    "path": "40s-blood-pressure-130-80-warning-2026-04-25.md",
+    "title": "40대 혈압 130/80, 그냥 정상 끝자락이 아님",
+    "date": "2026-04-25",
+    "reason": "건강 YMYL(비전문가·템플릿 반복)"
+   },
+   {
+    "path": "40s-uric-acid-7-no-symptoms-2026-04-26.md",
+    "title": "40대 요산 수치 7, 통증 없다고 그냥 넘기면 애매한 이유",
+    "date": "2026-04-26",
+    "reason": "건강 YMYL(비전문가·템플릿 반복)"
+   },
+   {
+    "path": "40s-waistline-90-85-metabolic-syndrome-2026-04-26.md",
+    "title": "40대 허리둘레, 남자 90cm·여자 85cm 넘으면 바로 봐야 하는 이유",
+    "date": "2026-04-26",
+    "reason": "건강 YMYL(비전문가·템플릿 반복)"
+   },
+   {
+    "path": "40s-triglycerides-200-not-just-cheat-day-2026-04-27.md",
+    "title": "40대 중성지방 200, 전날 회식 탓으로만 넘기면 안 되는 이유",
+    "date": "2026-04-27",
+    "reason": "건강 YMYL(비전문가·템플릿 반복)"
+   },
+   {
+    "path": "40s-sarcopenia-exercise-no-muscle-2026-04-28.md",
+    "title": "40대 근감소증, 운동하는데 근육이 안 붙으면 이미 늦은 것",
+    "date": "2026-04-28",
+    "reason": "건강 YMYL(비전문가·템플릿 반복)"
+   },
+   {
+    "path": "40s-snoring-sleep-apnea-2026-04-29.md",
+    "title": "40대 코골이, 피곤한 소리로 넘기면 안 되는 이유",
+    "date": "2026-04-29",
+    "reason": "건강 YMYL(비전문가·템플릿 반복)"
+   },
+   {
+    "path": "40s-vitamin-d-deficiency-2026-04-30.md",
+    "title": "40대 비타민 D 부족, 피곤함을 영양제만으로 넘기면 안 되는 이유",
+    "date": "2026-04-30",
+    "reason": "건강 YMYL(비전문가·템플릿 반복)"
+   },
+   {
+    "path": "40s-insomnia-not-just-willpower-2026-05-01.md",
+    "title": "40대 불면, 잠 못 드는 밤을 의지 문제로 넘기면 안 되는 이유",
+    "date": "2026-05-01",
+    "reason": "건강 YMYL(비전문가·템플릿 반복)"
+   },
+   {
+    "path": "40s-dyslipidemia-ldl-total-cholesterol-2026-05-02.md",
+    "title": "40대 이상지질혈증, 총콜레스테롤만 보고 안심하면 안 되는 이유",
+    "date": "2026-05-02",
+    "reason": "건강 YMYL(비전문가·템플릿 반복)"
+   },
+   {
+    "path": "40s-hypothyroidism-fatigue-weight-gain-2026-05-03.md",
+    "title": "40대 갑상선 기능저하증, 피곤함과 체중 증가를 나이 탓으로 넘기면 안 되는 이유",
+    "date": "2026-05-03",
+    "reason": "건강 YMYL(비전문가·템플릿 반복)"
+   },
+   {
+    "path": "40s-ldl-cholesterol-130-warning-2026-05-04.md",
+    "title": "40대 LDL 콜레스테롤 130, 그냥 괜찮다고 넘기면 안 되는 이유",
+    "date": "2026-05-04",
+    "reason": "건강 YMYL(비전문가·템플릿 반복)"
+   },
+   {
+    "path": "40s-vitamin-d-deficiency-2026-05-05.md",
+    "title": "40대 비타민 D 부족, 피곤함을 영양제만으로 넘기면 안 되는 이유",
+    "date": "2026-05-05",
+    "reason": "건강 YMYL(비전문가·템플릿 반복)"
+   },
+   {
+    "path": "40s-waist-circumference-belly-fat-2026-05-06.md",
+    "title": "40대 복부비만, 체중이 괜찮아도 허리둘레를 먼저 봐야 하는 이유",
+    "date": "2026-05-06",
+    "reason": "건강 YMYL(비전문가·템플릿 반복)"
+   },
+   {
+    "path": "40s-a1c-prediabetes-2026-05-07.md",
+    "title": "40대 당화혈색소 5.7%, 공복혈당이 정상이어도 놓치면 안 되는 이유",
+    "date": "2026-05-07",
+    "reason": "건강 YMYL(비전문가·템플릿 반복)"
+   },
+   {
+    "path": "40s-metabolic-syndrome-2026-05-07.md",
+    "title": "40대 대사증후군, 체중보다 먼저 봐야 할 숫자 5개",
+    "date": "2026-05-07",
+    "reason": "건강 YMYL(비전문가·템플릿 반복)"
+   },
+   {
+    "path": "40s-health-checkup-5-numbers.md",
+    "title": "40대 건강검진표에서 꼭 봐야 하는 숫자 5개",
+    "date": "2026-05-08",
+    "reason": "건강 YMYL(비전문가·템플릿 반복)"
+   },
+   {
+    "path": "40s-home-monitoring-blood-pressure-glucose-2026-05-08.md",
+    "title": "40대 혈압·혈당, 병원 한 번보다 집에서 7일 기록이 더 정확한 이유",
+    "date": "2026-05-08",
+    "reason": "건강 YMYL(비전문가·템플릿 반복)"
+   },
+   {
+    "path": "40s-kidney-egfr-creatinine-warning-2026-05-09.md",
+    "title": "40대 신장 수치가 정상이어도 안심하면 안 되는 이유, eGFR보다 먼저 볼 것 3가지",
+    "date": "2026-05-09",
+    "reason": "건강 YMYL(비전문가·템플릿 반복)"
+   },
+   {
+    "path": "40s-morning-blood-pressure-2026-05-09.md",
+    "title": "40대 아침 혈압이 높게 나오는 이유, 커피보다 먼저 볼 것 3가지",
+    "date": "2026-05-09",
+    "reason": "건강 YMYL(비전문가·템플릿 반복)"
+   },
+   {
+    "path": "40s-gerd-heartburn-2026-05-10.md",
+    "title": "40대 속쓰림, 위산 때문만으로 넘기면 안 되는 이유",
+    "date": "2026-05-10",
+    "reason": "건강 YMYL(비전문가·템플릿 반복)"
+   },
+   {
+    "path": "40s-headache-painkiller-overuse-2026-05-11.md",
+    "title": "40대 두통, 진통제 자주 먹는 습관이 더 위험한 이유",
+    "date": "2026-05-11",
+    "reason": "건강 YMYL(비전문가·템플릿 반복)"
+   },
+   {
+    "path": "40s-iron-deficiency-anemia-fatigue-warning-2026-05-12.md",
+    "title": "40대 피로가 계속되면 빈혈부터 봐야 하는 이유, 철결핍을 놓치기 쉬운 신호 3가지",
+    "date": "2026-05-12",
+    "reason": "건강 YMYL(비전문가·템플릿 반복)"
+   },
+   {
+    "path": "40s-fatty-liver-normal-liver-enzymes-2026-05-13.md",
+    "title": "40대 지방간, 간수치 정상이어도 안심하면 안 되는 이유",
+    "date": "2026-05-13",
+    "reason": "건강 YMYL(비전문가·템플릿 반복)"
+   },
+   {
+    "path": "40s-postmeal-blood-sugar-140-2026-05-13.md",
+    "title": "40대 식후혈당 140, 공복혈당이 정상이어도 놓치기 쉬운 이유",
+    "date": "2026-05-13",
+    "reason": "건강 YMYL(비전문가·템플릿 반복)"
+   },
+   {
+    "path": "40s-chronic-fatigue-thyroid-sleep-anemia-2026-05-14.md",
+    "title": "40대 만성 피로, 갑상선만 찾으면 놓치는 것들",
+    "date": "2026-05-14",
+    "reason": "건강 YMYL(비전문가·템플릿 반복)"
+   },
+   {
+    "path": "40s-postmeal-sleepiness-blood-sugar-sleep-apnea-2026-05-15.md",
+    "title": "40대 식후 졸림, 혈당만 탓하면 놓치는 것들",
+    "date": "2026-05-15",
+    "reason": "건강 YMYL(비전문가·템플릿 반복)"
+   },
+   {
+    "path": "40s-bp-home-vs-hospital-2026-05-16.md",
+    "title": "40대 혈압이 병원과 집에서 다르게 나오는 이유",
+    "date": "2026-05-16",
+    "reason": "건강 YMYL(비전문가·템플릿 반복)"
+   },
+   {
+    "path": "40s-gum-bleeding-2026-05-16.md",
+    "title": "40대 잇몸 출혈, 칫솔질만 문제라고 넘기면 안 되는 이유",
+    "date": "2026-05-16",
+    "reason": "건강 YMYL(비전문가·템플릿 반복)"
+   },
+   {
+    "path": "posts/40s-snoring-sleep-apnea-warning-2026-05-17.md",
+    "title": "40대 코골이, 잠버릇으로 넘기면 안 되는 이유",
+    "date": "2026-05-17",
+    "reason": "건강 YMYL(비전문가·템플릿 반복)"
+   },
+   {
+    "path": "40s-memory-decline-forgetfulness-warning-2026-05-20.md",
+    "title": "40대 기억력 감퇴, 단순 건망증이라 방치했다간 큰일남",
+    "date": "2026-05-20",
+    "reason": "건강 YMYL(비전문가·템플릿 반복)"
+   },
+   {
+    "path": "40s-plantar-fasciitis-morning-heel-pain-2026-05-20.md",
+    "title": "아침에 발뒤꿈치가 찢어질 것 같다면 — 40대 족저근막염 방치하면 안 되는 이유",
+    "date": "2026-05-20",
+    "reason": "건강 YMYL(비전문가·템플릿 반복)"
+   },
+   {
+    "path": "40s-dry-eye-syndrome-not-just-eye-drops-2026-05-21.md",
+    "title": "40대 눈 건조·시린 증상, 안약만 넘기다간 각막 상처남",
+    "date": "2026-05-21",
+    "reason": "건강 YMYL(비전문가·템플릿 반복)"
+   },
+   {
+    "path": "40s-palpitations-shortness-breath-caffeine-2026-05-22.md",
+    "title": "40대 심장이 두근거리고 숨이 찰 때, 카페인 탓만 하면 안 되는 이유 4가지",
+    "date": "2026-05-22",
+    "reason": "건강 YMYL(비전문가·템플릿 반복)"
+   },
+   {
+    "path": "40s-leg-swelling-salt-2026-05-23.md",
+    "title": "40대 다리 붓기, 짠 음식만 탓하면 안 되는 이유 4가지",
+    "date": "2026-05-23",
+    "reason": "건강 YMYL(비전문가·템플릿 반복)"
+   },
+   {
+    "path": "40s-dizziness-not-just-anemia-2026-05-24.md",
+    "title": "40대 어지럼증, 빈혈만 탓하면 안 되는 이유 4가지",
+    "date": "2026-05-24",
+    "reason": "건강 YMYL(비전문가·템플릿 반복)"
+   },
+   {
+    "path": "40s-leg-cramps-not-just-electrolytes-2026-05-25.md",
+    "title": "40대 다리 쥐, 전해질만 탓하면 안 되는 이유 4가지",
+    "date": "2026-05-25",
+    "reason": "건강 YMYL(비전문가·템플릿 반복)"
+   },
+   {
+    "path": "openai-o3-rare-disease-case-packet-2026-06-21.md",
+    "title": "AI가 희귀질환을 진단한 게 아니다 — o3가 읽은 것은 ‘정리된 사건 파일’이었다",
+    "date": "2026-06-21",
+    "reason": "건강 YMYL(비전문가·템플릿 반복)"
+   },
+   {
+    "path": "posts/2026-08-22-sildenafil-pde5a-metastasis.md",
+    "title": "비아그라보다 NPC1이 더 중요한 논문",
+    "date": "2026-08-22",
+    "reason": "건강 YMYL(비전문가·템플릿 반복)"
+   }
+  ],
+  "status": "archived",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "archive-offtopic-01",
+  "topic": "archive-offtopic",
+  "treatment": "archive",
+  "size": 17,
+  "keywords": [
+   "결국",
+   "이유는",
+   "하지만",
+   "너무",
+   "영상",
+   "단순함"
+  ],
+  "members": [
+   {
+    "path": "믹스-글로벌-성장-전략.md",
+    "title": "믹슨(Mixoon) 글로벌 성장 전략 - 연 매출 900억 달성의 비결",
+    "date": "2025-01-14",
+    "reason": "주제 이탈(투자·부동산·생활·시사)"
+   },
+   {
+    "path": "apgujeong-hyundai-sale-price-scraping-2026-03-07.md",
+    "title": "압구정현대 매매가격 스크래핑 결과 (2026-03-07)",
+    "date": "2026-03-07",
+    "reason": "주제 이탈(투자·부동산·생활·시사)"
+   },
+   {
+    "path": "how-to-achieve-anything-effortlessly-summary.md",
+    "title": "How to Achieve Anything Effortlessly 요약",
+    "date": "2026-04-02",
+    "reason": "주제 이탈(투자·부동산·생활·시사)"
+   },
+   {
+    "path": "artemis-ii-infrastructure-toilet-laser-communications.md",
+    "title": "Artemis II가 진짜 보여주는 것 — 달 탐사는 로켓보다 인프라의 문제다",
+    "date": "2026-04-04",
+    "reason": "주제 이탈(투자·부동산·생활·시사)"
+   },
+   {
+    "path": "costco-5-must-buy-items-korea.md",
+    "title": "코스트코 회원권 값 아깝다면 이렇게 사면 됨. 집에서 만드는 밀키트 레시피 5개",
+    "date": "2026-04-19",
+    "reason": "주제 이탈(투자·부동산·생활·시사)"
+   },
+   {
+    "path": "national-research-institutes-admin-integration-impact.md",
+    "title": "국책연구기관 다 합쳐서 관리하라, 과학기술계에는 무엇이 달라질까",
+    "date": "2026-04-19",
+    "reason": "주제 이탈(투자·부동산·생활·시사)"
+   },
+   {
+    "path": "vehicle-alternate-day-driving-korea-history-effects.md",
+    "title": "차량 2부제는 언제부터였을까. 유가가 오를 때마다 다시 나오는 이유",
+    "date": "2026-04-19",
+    "reason": "주제 이탈(투자·부동산·생활·시사)"
+   },
+   {
+    "path": "all-of-business-58min-summary-2026-04-21.md",
+    "title": "사업은 결국 4개임 — ALL OF BUSINESS 58분 요약",
+    "date": "2026-04-21",
+    "reason": "주제 이탈(투자·부동산·생활·시사)"
+   },
+   {
+    "path": "evan-carmichael-business-skills-2026-04-21.md",
+    "title": "로켓을 분해해서 팔면 98%는 비효율임 — 에반 카마이클 1시간 압축",
+    "date": "2026-04-21",
+    "reason": "주제 이탈(투자·부동산·생활·시사)"
+   },
+   {
+    "path": "nemotron-personas-korea-2026-04-21.md",
+    "title": "한국인 700만 명을 데이터로 찍어낸 회사 — NVIDIA Nemotron-Personas-Korea",
+    "date": "2026-04-21",
+    "reason": "주제 이탈(투자·부동산·생활·시사)"
+   },
+   {
+    "path": "upstage-daum-5trillion-ipo-2026-04-21.md",
+    "title": "30년 전 까치네 만들던 대학생이 다음을 품으러 옴 — 업스테이지 5조 상장 플레이",
+    "date": "2026-04-21",
+    "reason": "주제 이탈(투자·부동산·생활·시사)"
+   },
+   {
+    "path": "68-to-40-life-wisdom-2026-04-25.md",
+    "title": "68세가 40대에게 — '직업은 너를 사랑하지 않는다' 외 3가지",
+    "date": "2026-04-25",
+    "reason": "주제 이탈(투자·부동산·생활·시사)"
+   },
+   {
+    "path": "kindergarten-teacher-extreme-job-2026.md",
+    "title": "유치원 교사는 왜 극한직업인가 — 웃긴 영상 뒤에 숨겨진 구조적 문제",
+    "date": "2026-04-28",
+    "reason": "주제 이탈(투자·부동산·생활·시사)"
+   },
+   {
+    "path": "secretary-problem-37-rule.md",
+    "title": "비서 문제와 37% 규칙 — 언제 선택을 멈춰야 할까",
+    "date": "2026-04-28",
+    "reason": "주제 이탈(투자·부동산·생활·시사)"
+   },
+   {
+    "path": "safety-industrial-fire-kbs-review-2026-05-03.md",
+    "title": "14명이 돌아오지 못한 공장, KBS 추적60분이 보여준 ‘알고 있던 참사’",
+    "date": "2026-05-03",
+    "reason": "주제 이탈(투자·부동산·생활·시사)"
+   },
+   {
+    "path": "2026-05-30-semiconductor-relative-strength-analysis.md",
+    "title": "삼성전자 vs SK하이닉스 vs 마이크론: 6개월 상대강도 분석",
+    "date": "2026-05-30",
+    "reason": "주제 이탈(투자·부동산·생활·시사)"
+   },
+   {
+    "path": "posts/huh-joon-lee-commencement-speech-2026-09-10.md",
+    "title": "허준이 교수 서울대 졸업식 축사 정리: 길을 잃은 사람에게 필요한 친절",
+    "date": "2026-09-10",
+    "reason": "주제 이탈(투자·부동산·생활·시사)"
+   }
+  ],
+  "status": "archived",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "coding-agents-01",
+  "topic": "coding-agents",
+  "treatment": "merge-synthesis",
+  "size": 14,
+  "keywords": [
+   "코드를",
+   "코딩",
+   "code",
+   "claude",
+   "코드",
+   "사람이"
+  ],
+  "members": [
+   {
+    "path": "ai-coding-agent-starter-guide-acp.md",
+    "title": "AI 코딩 에이전트 입문: Claude Code와 Codex를 실무에 쓰는 법",
+    "date": "2026-03-05",
+    "reason": "빈약(900자 미만)"
+   },
+   {
+    "path": "agentic-code-contributions-in-the-wild-2026-04-05.md",
+    "title": "실전에서 에이전트가 쓴 코드는 인간보다 더 자주 바뀐다 - 110,000 PR 분석 결과",
+    "date": "2026-04-05",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "ask-or-assume-clarification-seeking-coding-agents.md",
+    "title": "AI도 이제 모르면 질문한다: 불완전한 지시에서 더 잘 일하는 코딩 에이전트",
+    "date": "2026-04-05",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "claude-code-unpacked-visual-guide.md",
+    "title": "Claude Code 내부가 이렇게 보인다고? ccunpacked.dev 한눈에 보기",
+    "date": "2026-04-05",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "geeknews-2026-04-07-open-coding-agent-discipline.md",
+    "title": "오픈소스 코딩 에이전트에 지금 필요한 것은 성능보다 규율이다",
+    "date": "2026-04-07",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "multica-ai-agent-team-platform.md",
+    "title": "Multica: AI 코딩 에이전트를 팀원으로 만드는 오픈소스 플랫폼",
+    "date": "2026-04-09",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "geeknews-2026-04-10-ai-slop-detector.md",
+    "title": "AI가 짠 코드, 겉만 번지르르한지 아는 법 — AI-SLOP Detector 실전 리뷰",
+    "date": "2026-04-10",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "karpathy-vibe-coding-to-agentic-engineering-2026.md",
+    "title": "카파시가 말하는 바이브 코딩 그 이후 — 에이전틱 엔지니어링의 시대",
+    "date": "2026-05-01",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "missions-multi-agent-systems-luke-alvoeiro-2026-05-07.md",
+    "title": "16일 연속으로 코드를 짜는 AI팀이 있다고? — Factory의 Luke Alvoeiro가 말하는 Missions",
+    "date": "2026-05-07",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "claude-code-prompt-caching-lessons-2026-05-13.md",
+    "title": "Claude Code팀이 밝히는 프롬프트 캐싱의 모든 것",
+    "date": "2026-05-13",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "2026-05-30-anthropic-coding-agents-social-sciences.md",
+    "title": "사회과학자 1,260명에게 묻다: 코딩 에이전트, 누가 쓰고 누가 안 쓰나",
+    "date": "2026-05-30",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "anthropic-claude-code-workshop-2026-06-02.md",
+    "title": "Claude Code는 프롬프트보다 작업 환경을 먹고 자란다",
+    "date": "2026-06-02",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "agentic-coding-expertise-claude-code-2026-06-19.md",
+    "title": "코딩 에이전트 시대에도 전문성은 남는다 — Claude Code 40만 세션 분석",
+    "date": "2026-06-19",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "claude-code-best-practice-agentic-engineering-2026-06-27.md",
+    "title": "이거보다 나은 클로드 코드 사용법은 없습니다",
+    "date": "2026-06-27",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "coding-agents-02",
+  "topic": "coding-agents",
+  "treatment": "merge-synthesis",
+  "size": 8,
+  "keywords": [
+   "claude",
+   "디자인",
+   "텍스트",
+   "design",
+   "보다",
+   "타이포그래피"
+  ],
+  "members": [
+   {
+    "path": "claude-code-three-signals-2026.md",
+    "title": "Claude Code를 둘러싼 3가지 신호, 디자인 툴과 에이전트 안전, 그리고 AI 붐의 측정법",
+    "date": "2026-04-18",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "getdesign-md-design-system-ai-agent-2026-04-28.md",
+    "title": "getdesign.md — AI 코딩 에이전트에 유명 브랜드 디자인을 한 줄로 주입하는 법",
+    "date": "2026-04-28",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "getdesign-md-apple-bmw-starbucks-design-system-2026-04-29.md",
+    "title": "getDesign.md — Apple·BMW·Starbucks 디자인 시스템을 AI 코딩 에이전트에게 주는 방법",
+    "date": "2026-04-29",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "anthropic-natural-language-autoencoders-2026-05-25.md",
+    "title": "Claude의 생각을 텍스트로 읽어낸다 — Natural Language Autoencoders",
+    "date": "2026-05-25",
+    "reason": "중복(같은 주제 재작성) — 더 긴 1편만 남김"
+   },
+   {
+    "path": "design-md-coding-agent-design-system-2026-06-28.md",
+    "title": "DESIGN.md: 코딩 에이전트에게 디자인 감각을 파일로 먹이는 법",
+    "date": "2026-06-28",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "posts/ai-first-design-yc-eve-bouffard-2026-07-30.md",
+    "title": "AI로 디자인한다는 건, 툴을 바꾸는 게 아니라 작업의 단위를 바꾸는 일",
+    "date": "2026-07-30",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "posts/motif-3-technical-report-2026-08-12.md",
+    "title": "314B인데 토큰마다 13B만 쓴다 — 에이전트 백본을 위해 설계된 MoE의 내부",
+    "date": "2026-08-12",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/latent-clip-latent-diffusion-control-2026-08-16.md",
+    "title": "이미지를 디코딩하기 전에 판단한다 — Latent-CLIP과 latent space 제어의 시대",
+    "date": "2026-08-16",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "coding-agents-03",
+  "topic": "coding-agents",
+  "treatment": "merge-synthesis",
+  "size": 10,
+  "keywords": [
+   "code",
+   "보고",
+   "언어",
+   "nvidia",
+   "가능한",
+   "방식"
+  ],
+  "members": [
+   {
+    "path": "mac-studio-120b-local-llm-lm-studio-continue.md",
+    "title": "Mac Studio로 120B 로컬 LLM 돌려보니: LM Studio 서버화와 VS Code 연동까지",
+    "date": "2026-04-04",
+    "reason": "제목과 달리 외부 영상·문서 요약"
+   },
+   {
+    "path": "stanford-ai-index-2026-report-key-points-korean-summary.md",
+    "title": "Stanford AI Index 2026, 꼭 봐야 할 핵심만 발췌 요약",
+    "date": "2026-04-13",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "frontend-backend-database-vibe-coding-guide.md",
+    "title": "프론트엔드 백엔드 데이터베이스 전체 구조를 한눈에 이해하는 바이브코딩 가이드",
+    "date": "2026-04-20",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "build-your-own-x-feynman-curation-2026-04-26.md",
+    "title": "AI한테 코드 시키는 시대에 '직접 만들어보자' 레포가 49.6만 스타까지 옴 — build-your-own-x",
+    "date": "2026-04-26",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "free-claude-code-proxy-router-2026-04-26.md",
+    "title": "Claude Code를 무료로 굴리는 프록시가 GitHub 트렌딩 1위 찍음 — free-claude-code",
+    "date": "2026-04-26",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "2026-06-03-locateanything-parallel-box-decoding.md",
+    "title": "NVIDIA가 만든 LocateAnything: 물체 위치를 10배 빠르게 찾는 비결",
+    "date": "2026-06-03",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "posts/2026-06-10-google-ads-claude-code-automation.md",
+    "title": "7년 걸린 구글 애즈 마스터클래스를 Claude Code로 자동화한 남자 — 73만 달러의 비밀",
+    "date": "2026-06-10",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "2026-06-15-spatialclaw-agentic-spatial-reasoning.md",
+    "title": "SpatialClaw: VLM 에이전트에 코드를 쥐여주면 공간 추론이 바뀐다",
+    "date": "2026-06-15",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "2026-06-17-llm-as-code-agentic-programming.md",
+    "title": "LLM-as-Code: 에이전트의 통제권을 코드로 돌려라",
+    "date": "2026-06-17",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/code-world-model-coding-agent-2026-08-29.md",
+    "title": "세계의 규칙은 코드가 지키고 화면은 비디오 모델이 그린다 — 월드 브레인 구조",
+    "date": "2026-08-29",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "coding-agents-04",
+  "topic": "coding-agents",
+  "treatment": "merge-synthesis",
+  "size": 14,
+  "keywords": [
+   "코드",
+   "코딩",
+   "결과를",
+   "실패",
+   "arxiv",
+   "가능한"
+  ],
+  "members": [
+   {
+    "path": "rtk-ai-token-savings-cli-for-coding-agents.md",
+    "title": "RTK란 무엇인가: AI 코딩 에이전트의 토큰 낭비를 줄이는 CLI 프록시",
+    "date": "2026-04-04",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "2026-06-13-denovoswe-scaling-repo-generation.md",
+    "title": "DeNovoSWE: 문서에서 전체 저장소를 생성하는 LLM 에이전트의 장기 추론 훈련",
+    "date": "2026-06-13",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-22-swe-pruner-pro-agent-self-pruning.md",
+    "title": "에이전트가 도구 출력을 읽는 순간 이미 뭘 지울지 알고 있었음 — SWE-Pruner Pro 컨텍스트 다이어트",
+    "date": "2026-07-22",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-24-autoresearch-coding-agents-spec-gaming.md",
+    "title": "에이전트 무인 최적화 루프의 함정 — 같은 명세, 두 개의 다른 에이전트, 그리고 5가지 원칙",
+    "date": "2026-07-24",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-22-agent-friendly-documentation.md",
+    "title": "코딩 에이전트가 실제로 읽는 문서는 AGENTS.md임 — 60.5%가 에이전트용 파일이었던 관측 결과",
+    "date": "2026-08-22",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-30-agentfold-closed-loop-search-protein-folding.md",
+    "title": "에이전트가 접힘 모델 코드를 직접 고치는 루프 — AgentFold가 증명한 것",
+    "date": "2026-08-30",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-31-abe-ralph-methodological-hallucinations.md",
+    "title": "exit code 0은 아무것도 못 잡음 — AI 과학 에이전트의 방법론적 환각과 감사법",
+    "date": "2026-08-31",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-07-substrate-aware-agents-execution-contract.md",
+    "title": "실행 컨텍스트를 프롬프트에 넣었더니 에이전트가 짠 코드가 바뀌었다 — Substrate-Aware AI Agents 정리",
+    "date": "2026-09-07",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-07-tautau-bench-agent-construction.md",
+    "title": "에이전트를 '짓는' 일 자체를 채점함 — ττ-bench가 드러낸 요구사항 수집 실패",
+    "date": "2026-09-07",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-10-execcritic-learn-to-test-coding-agents.md",
+    "title": "잘못된 테스트는 피드백이 아니라 독임 — ExecCritic의 검증자-실행자 분리",
+    "date": "2026-09-10",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-14-look-before-you-leap-pre-action-verification.md",
+    "title": "에이전트는 에러 없이 조용히 파일을 망침 — 실행 전 정적 검증이 답임",
+    "date": "2026-09-14",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-16-swebench-verified-rank-resolution.md",
+    "title": "리더보드 1위와 2위는 실제로 못 가림 — SWE-bench Verified 순위 분해능 감사",
+    "date": "2026-09-16",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-17-scienceide-scientific-code-agent-environments.md",
+    "title": "과학 코드 저장소를 학습 환경으로 바꾸기 — ScienceIDE의 검증 컴파일 방법론",
+    "date": "2026-09-17",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-20-ai-coding-agent-overclaim-overclaimbench.md",
+    "title": "AI 코딩 에이전트 최종 보고를 그대로 믿으면 안 되는 이유: OverclaimBench 논문 정리 (arXiv 2609.20812)",
+    "date": "2026-09-20",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "coding-agents-05",
+  "topic": "coding-agents",
+  "treatment": "merge-synthesis",
+  "size": 8,
+  "keywords": [
+   "claude",
+   "code",
+   "파일",
+   "코드",
+   "cursor",
+   "mcp"
+  ],
+  "members": [
+   {
+    "path": "cmux-yc-s24-terminal-ai-agents-2026-04-26.md",
+    "title": "cmux — YC S24 창업자가 Cursor·VS Code 버리고 만든 터미널, AI 에이전트 100개 돌리려고",
+    "date": "2026-04-26",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "gitnexus-knowledge-graph-code-agents-2026-04-27.md",
+    "title": "GitNexus, AI 코딩 에이전트한테 코드베이스 지도를 통째로 쥐여주는 30k 오픈소스",
+    "date": "2026-04-27",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "understand-anything-interactive-knowledge-graph.md",
+    "title": "코드를 지식 그래프로 — Understand Anything 플러그인 완벽 가이드",
+    "date": "2026-05-05",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "anthropic-nla-natural-language-autoencoders-2026-05-11.md",
+    "title": "Claude의 생각을 텍스트로 읽는다 — Natural Language Autoencoders 인터뷰",
+    "date": "2026-05-11",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "anthropic-official-claude-code-plugins-directory-2026-05-24.md",
+    "title": "Anthropic이 직접 관리하는 Claude Code 공식 플러그인 디렉토리 완전 정복",
+    "date": "2026-05-24",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "chrome-devtools-mcp-coding-agents-2026-05-24.md",
+    "title": "코딩 에이전트가 브라우저를 들여다본다 — Chrome DevTools MCP 리뷰",
+    "date": "2026-05-24",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "codegraph-pre-indexed-code-knowledge-graph-2026-05-24.md",
+    "title": "CodeGraph — 코딩 에이전트에 코드 지식 그래프를 올리면 어떻게 되나",
+    "date": "2026-05-24",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "understand-anything-codebase-knowledge-graph-2026-05-26.md",
+    "title": "Understand Anything: 코드베이스를 지식그래프로 변환하는 멀티에이전트 파이프라인",
+    "date": "2026-05-26",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "coding-agents-06",
+  "topic": "coding-agents",
+  "treatment": "merge-synthesis",
+  "size": 7,
+  "keywords": [
+   "codex",
+   "openai",
+   "쓰는",
+   "macos",
+   "작업",
+   "cli"
+  ],
+  "members": [
+   {
+    "path": "codex-computer-use.md",
+    "title": "OpenAI Codex Computer Use — AI가 데스크톱 앱을 직접 조작하는 시대",
+    "date": "2026-04-17",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "claude-code-pro-pricing-confusion-2026-04-22.md",
+    "title": "Claude Pro에서 Claude Code 빠지나, Anthropic 가격 페이지에 뜬 이상 신호",
+    "date": "2026-04-22",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "aionui-open-source-cowork-ai-agent-2026-04-29.md",
+    "title": "AionUi, Claude Code·Codex·Gemini CLI를 한 화면에 묶는 오픈소스 AI 코워커",
+    "date": "2026-04-29",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "openai-codex-masterclass-2026-05-02.md",
+    "title": "OpenAI Codex 마스터클래스 — 플러그인·서브에이전트·블리딩엣지 기능 총정리",
+    "date": "2026-05-02",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "openai-codex-masterclass-josh-style-2026-05-02.md",
+    "title": "주간 활성 사용자 300만을 넘긴 OpenAI Codex, 개발자들이 실제로 쓰는 5가지",
+    "date": "2026-05-02",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "openai-codex-windows-mobile-safety-may2026.md",
+    "title": "Codex, 이제 폰에서도 됩니다 — OpenAI 5월 업데이트 총정리",
+    "date": "2026-05-24",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "ai-coding-agent-papers.md",
+    "title": "AI 코딩 에이전트 논문·도구 모음 18선",
+    "date": "2026-09-13",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "coding-agents-07",
+  "topic": "coding-agents",
+  "treatment": "merge-synthesis",
+  "size": 7,
+  "keywords": [
+   "code",
+   "anthropic",
+   "claude",
+   "claude-code",
+   "cli",
+   "신기능"
+  ],
+  "members": [
+   {
+    "path": "claude-code-week-13-2026.md",
+    "title": "Claude Code Week 13 · 3월 23–27일 신기능 요약",
+    "date": "2026-04-14",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "claude-code-week-14-2026.md",
+    "title": "Claude Code Week 14 · 3월 30일–4월 3일 신기능 요약",
+    "date": "2026-04-14",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "claude-code-week-15-2026.md",
+    "title": "Claude Code Week 15 · 4월 6–10일 신기능 요약",
+    "date": "2026-04-14",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "claude-code-whats-new-2026.md",
+    "title": "Claude Code What's New — 2026년 3~4주차 신기능 요약",
+    "date": "2026-04-14",
+    "reason": "빈약(900자 미만)"
+   },
+   {
+    "path": "openclaw-claude-code-cli-guide.md",
+    "title": "Claude Code CLI로 OpenClaw 연결하기, 근데 어디까지 안전한가",
+    "date": "2026-04-20",
+    "reason": "외부 글 기반 — 본인 관점으로 새로 쓸 가치 있음"
+   },
+   {
+    "path": "openclaw-claude-code-delegation-safety.md",
+    "title": "OpenClaw에서 Claude Code CLI 위임 방식 — 안전한가?",
+    "date": "2026-04-20",
+    "reason": "빈약(900자 미만)"
+   },
+   {
+    "path": "claude-code-pro-reversal-2026-04-22.md",
+    "title": "Anthropic, Claude Code Pro 제외했다가 되돌렸나",
+    "date": "2026-04-22",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "dev-tools-01",
+  "topic": "dev-tools",
+  "treatment": "merge-handson",
+  "size": 16,
+  "keywords": [
+   "오픈소스",
+   "api",
+   "로컬",
+   "claude",
+   "만든",
+   "cli"
+  ],
+  "members": [
+   {
+    "path": "worldmonitor-bloomberg-alternative-2026-04-22.md",
+    "title": "연 3,300만원짜리 블룸버그 터미널을 무료 오픈소스로? — 깃헙 5만 스타 worldmonitor 실사용 리뷰",
+    "date": "2026-04-22",
+    "reason": "주제 이탈(투자·부동산·생활·시사)"
+   },
+   {
+    "path": "huggingface-ml-intern-2026-04-25.md",
+    "title": "Hugging Face가 공개한 'ML Intern' — 논문 읽고 모델 학습/배포까지 하는 오픈소스 AI 엔지니어",
+    "date": "2026-04-25",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "ace-step-ui-local-ai-music-suno-alternative-2026-04-29.md",
+    "title": "ACE-Step UI, 내 컴퓨터에서 돌리는 오픈소스 Suno 대안",
+    "date": "2026-04-29",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "openfreemap-free-maps-korean-dev-2026-05-02.md",
+    "title": "월 $2,400 청구서를 받은 개발자, 헝가리의 한 남자가 내놓은 선택지",
+    "date": "2026-05-02",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "ouroboros-agent-os-korean-dev-2026-05-02.md",
+    "title": "프롬프트 말고 명세를 써라 — 한국 개발자가 만든 Agent OS, Ouroboros",
+    "date": "2026-05-02",
+    "reason": "빈약(900자 미만)"
+   },
+   {
+    "path": "posts/n8n-mcp-ai-workflow-automation-2026-05-05.md",
+    "title": "n8n-MCP: AI가 n8n 워크플로우를 대신 짜주는 시대가 왔다",
+    "date": "2026-05-05",
+    "reason": "빈약(900자 미만)"
+   },
+   {
+    "path": "posts/open-design-closed-source-alternative-2026-05-05.md",
+    "title": "Open Design: Claude Design의 오픈소스 대항마가 나타났다",
+    "date": "2026-05-05",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "presenton-open-source-ai-presentation-generator-2026-05-24.md",
+    "title": "Presenton — 오픈소스 AI 프레젠테이션 제너레이터, SaaS 락인에서 벗어나는 법",
+    "date": "2026-05-24",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "fincept-terminal-cpp-finance-platform-2026-05-26.md",
+    "title": "Fincept Terminal v4: C++20으로 만든 오픈소스 블룸버그 대안",
+    "date": "2026-05-26",
+    "reason": "주제 이탈(투자·부동산·생활·시사)"
+   },
+   {
+    "path": "ucp-universal-commerce-protocol.md",
+    "title": "UCP (Universal Commerce Protocol): AI 시대의 오픈 커머스 표준",
+    "date": "2026-05-27",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "odysseus-self-hosted-ai-workspace-interview.md",
+    "title": "Odysseus 인터뷰: 내 컴퓨터에 ChatGPT와 Claude의 작업실을 직접 차린다면",
+    "date": "2026-06-01",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "posts/2026-07-03-tua-bench-terminal-use-agents.md",
+    "title": "터미널 에이전트 어디까지 믿을 수 있나 — TUA-Bench가 밝힌 65.8%의 벽",
+    "date": "2026-07-03",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/trending-ai-agent-tools-2026-07-09.md",
+    "title": "AI 에이전트 생태계가 한 주에도 이렇게 바뀐다 — 2026년 7월 둘째 주 트렌딩 5선",
+    "date": "2026-07-09",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "posts/trackio-local-first-experiment-tracking-agents-2026-07-26.md",
+    "title": "Trackio: 에이전트가 실험을 돌릴 때 필요한 건 거대한 SaaS가 아닐 수도 있다",
+    "date": "2026-07-26",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "posts/2026-07-27-trackio-agent-experiment-tracking.md",
+    "title": "Trackio — 에이전트 시대의 실험 추적기: W&B를 대체하는 로컬 우선, 무료, LLM 친화적 도구",
+    "date": "2026-07-27",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "ai-model-updates-open-source.md",
+    "title": "오픈소스 LLM·모델 업데이트 모음 18선",
+    "date": "2026-09-13",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "dev-tools-02",
+  "topic": "dev-tools",
+  "treatment": "merge-handson",
+  "size": 10,
+  "keywords": [
+   "그대로",
+   "있다는",
+   "데이터",
+   "파인튜닝",
+   "학습",
+   "토큰"
+  ],
+  "members": [
+   {
+    "path": "posts/2026-07-20-eta-given-delta-llm-tool-efficiency.md",
+    "title": "도구 호출 하나가 진짜 도움이 됐는지 물어보는 법 — 한계 도구 효용 측정기",
+    "date": "",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-06-16-kronos-financial-kline-foundation-model.md",
+    "title": "차트를 언어처럼 읽는 모델 Kronos — 금융 데이터로 도구 만들 때의 실무 교훈",
+    "date": "2026-06-16",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-04-openagent-tool-use-generalization.md",
+    "title": "에이전트 도구 훈련, 깨끗한 데이터가 독이 되는 경우 — OpenAgent 교훈",
+    "date": "2026-07-04",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-22-agentdebugx-agent-failure-debugging.md",
+    "title": "에러가 보이는 곳과 만들어진 곳이 다름 — AgentDebugX로 에이전트 실패를 추적하는 법",
+    "date": "2026-07-22",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-22-nexforge-requirement-driven-agent-task-synthesis.md",
+    "title": "에이전트 훈련 데이터는 요구사항 한 줄에서 뽑는다 — NexForge 파이프라인 분해",
+    "date": "2026-07-22",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-27-midtool-tool-use-midtraining.md",
+    "title": "도구 사용 능력은 post-training 전에 심어야 함 — MidTool 미드트레이닝 정리",
+    "date": "2026-08-27",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-29-tool-call-steering.md",
+    "title": "도구 호출률을 토큰 하나로 조절함 — 표현 스티어링으로 튜닝하는 에이전트 비용 다이얼",
+    "date": "2026-08-29",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/diffmining-logit-differences-2026-09-01.md",
+    "title": "파인튜닝이 뭘 학습했는지 로짓 차이로 캐기 — Diff Mining 감사 도구 정리",
+    "date": "2026-09-01",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/cobra-tool-use-boundaries-2026-09-02.md",
+    "title": "이 질문에 검색이 도움 되는지 안 되는지를 학습시키는 법 — CoBRA 반사실 경계 학습 정리",
+    "date": "2026-09-02",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-20-diffmining-logit-diff-finetune-audit.md",
+    "title": "오픈소스 모델 파인튜닝에 숨은 행동을 로짓 차이로 찾아내는 방법: Diff Mining 논문 정리 (arXiv 2608.26462)",
+    "date": "2026-09-20",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "eval-benchmarks-01",
+  "topic": "eval-benchmarks",
+  "treatment": "merge-synthesis",
+  "size": 10,
+  "keywords": [
+   "이건",
+   "개의",
+   "벤치마크가",
+   "벤치마크는",
+   "만든",
+   "도메인"
+  ],
+  "members": [
+   {
+    "path": "finmcp-bench-mcp-financial-agent-benchmark.md",
+    "title": "FinMCP-Bench: MCP 기반 금융 에이전트 벤치마크가 중요한 이유",
+    "date": "2026-03-30",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "pi-bench-proactive-assistant-agents-2026-05-24.md",
+    "title": "π-Bench — 개인 비서 에이전트가 먼저 알아서 챙기는 능력을 어떻게 평가하나",
+    "date": "2026-05-24",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "terminalworld-benchmarking-terminal-agents-2026-05-24.md",
+    "title": "TerminalWorld — 터미널 작업 80,870개 기록에서 에이전트 벤치마크를 만들다",
+    "date": "2026-05-24",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "2026-06-03-spatialbench-spatial-foundation-model.md",
+    "title": "공간 기반 모델 41개 싹 다 테스트해봤습니다 — SpatialBench가 밝혀낸 충격적 현실",
+    "date": "2026-06-03",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "k-browsecomp-korean-web-browsing-agent-benchmark-2026-06-03.md",
+    "title": "GPT-5.5도 절반밖에 못 푸는 한국어 벤치마크: K-BrowseComp",
+    "date": "2026-06-03",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "kolongdoc-korean-long-document-vlm-benchmark-2026-06-05.md",
+    "title": "VLM이 수십 장의 공공문서를 읽지 못한다: KOLongDoc이 드러낸 한국어 AI의 사각지대",
+    "date": "2026-06-05",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "2026-06-16-agents-last-exam.md",
+    "title": "Agents' Last Exam: AI 에이전트, 전문가의 실제 업무를 통과할 수 있는가",
+    "date": "2026-06-16",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-10-agentgym2-real-world-agent-benchmark.md",
+    "title": "GPT-5도 44% — 에이전트 벤치마크 점수를 믿으면 안 되는 이유, AgentGym2",
+    "date": "2026-07-10",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-23-relay-bench-multi-domain-reasoning.md",
+    "title": "모델 점수 90%라도 믿지 마라 — 도메인이 섞이는 순간 43%로 추락하는 이유",
+    "date": "2026-07-23",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-05-terminal-universe.md",
+    "title": "에이전트 로그는 버리는 게 아니다 — 트라젝토리에서 실행 환경을 되살리는 법",
+    "date": "2026-09-05",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "eval-benchmarks-02",
+  "topic": "eval-benchmarks",
+  "treatment": "merge-synthesis",
+  "size": 14,
+  "keywords": [
+   "평가",
+   "검증",
+   "데이터",
+   "되는",
+   "benchmark",
+   "평균"
+  ],
+  "members": [
+   {
+    "path": "agentic-evals-workshop-future-of-agent-evaluations.md",
+    "title": "Agentic Evaluations Workshop 핵심 정리 — 에이전트 평가의 다음 과제",
+    "date": "2026-03-31",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "2026-06-07-foresci-llm-research-judgment.md",
+    "title": "ForeSci: LLM 에이전트의 전망적 연구 판단 능력 평가 벤치마크",
+    "date": "2026-06-07",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-19-omniabench-general-ai-agent-benchmark.md",
+    "title": "최강 에이전트도 60점 못 넘는다 — OmniaBench가 드러낸 약점은 계획·제약·수정 능력",
+    "date": "2026-07-19",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-26-graph-engineering-four-prompts.md",
+    "title": "지식그래프 구축, 학습된 모델 네 개 대신 프롬프트 네 개로 끝낸다",
+    "date": "2026-07-26",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "posts/2026-08-01-handbook-md-long-context-agent-policy-benchmark.md",
+    "title": "규정 100페이지를 읽고도 어기는 에이전트 — HANDBOOK.md가 밝힌 정책 준수 실패 4패턴",
+    "date": "2026-08-01",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-15-llmrouter-xroutebench.md",
+    "title": "제일 큰 모델에 고정하는 게 제일 나쁜 선택일 수 있음 — LLMRouter·xRouteBench 정리",
+    "date": "2026-08-15",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-20-fm-bench-long-horizon-management-benchmark.md",
+    "title": "20년 경영 벤치마크에서 순위를 가른 건 모델 크기가 아니라 경영 행동 — FM-Bench",
+    "date": "2026-08-20",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-22-centaurbench-augment-vs-automate.md",
+    "title": "리더보드 1등 모델이 최악의 코치가 된다 — 혼자 잘하는 것과 남을 돕는 것은 다른 능력",
+    "date": "2026-08-22",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-29-ace-lens-agentic-data.md",
+    "title": "에이전트 훈련 데이터는 양이 아니라 ACE로 평가함 — 생성 프레임워크 서베이 정리",
+    "date": "2026-08-29",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-03-ecommerce-bench-long-horizon-agents.md",
+    "title": "가장 잘 번 모델이 사기에 제일 잘 당함 — 1년 사업 벤치가 드러낸 에이전트의 갈림길",
+    "date": "2026-09-03",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-04-llm-judge-shared-endpoint-reliability.md",
+    "title": "LLM 저지는 내일 같은 답을 안 줌 — 공유 엔드포인트 신뢰성 실패, 52,988회 요청 감사",
+    "date": "2026-09-04",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-13-mindtopo-topological-reasoning-benchmark.md",
+    "title": "장면을 읽는 능력과 상태를 유지하며 행동하는 능력은 다름 — MindTopo 위상 추론 벤치마크 정리",
+    "date": "2026-09-13",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-17-agent-benchmark-compression-dualvieweval.md",
+    "title": "에이전트 벤치마크 전체 돌리면 7천 달러 — 작업 20개로 전체 점수를 예측하는 DualViewEval",
+    "date": "2026-09-17",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-17-llm-abstention-cosq-selective-risk.md",
+    "title": "모르는 질문엔 답하지 않게 만들기 — 기권을 설계하는 CoSQ 정리",
+    "date": "2026-09-17",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "eval-benchmarks-03",
+  "topic": "eval-benchmarks",
+  "treatment": "merge-synthesis",
+  "size": 6,
+  "keywords": [
+   "personalization",
+   "개인화",
+   "사용자가",
+   "평가",
+   "제일",
+   "이미지를"
+  ],
+  "members": [
+   {
+    "path": "posts/2026-08-15-pipbench-personalized-image-generation.md",
+    "title": "좋아한 이미지 몇 장으로 취향을 맞출 수 있나 — PIPBench가 밝힌 개인화 이미지 생성의 실무 답",
+    "date": "2026-08-15",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/generated-faces-vector-space-t2i-2026-08-16.md",
+    "title": "이미지 모델의 차이는 어디에 남을까: 얼굴 분포로 본 Stable Diffusion, Midjourney, DALL·E 2",
+    "date": "2026-08-16",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/midjourney-default-images-latent-attractor-2026-08-16.md",
+    "title": "Midjourney는 모르는 프롬프트를 어디로 보내나: default image와 latent attractor",
+    "date": "2026-08-16",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-21-parl-personalized-rubric-learning.md",
+    "title": "취향은 점수가 아니라 루브릭으로 남긴다 — 생성기보다 평가기부터 개인화하기",
+    "date": "2026-08-21",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-21-personajudge-individual-preference-eval.md",
+    "title": "LLM Judge는 평균 취향만 맞춤 — 개인 평가자 시뮬레이션 PersonaJudge 결과",
+    "date": "2026-08-21",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-05-tahi-test-time-adaptation-human-agent-interaction.md",
+    "title": "사용자가 결과물을 고치는 기록 자체가 학습 데이터임 — TAHI 개인화 적응 정리",
+    "date": "2026-09-05",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "harness-self-improve-01",
+  "topic": "harness-self-improve",
+  "treatment": "merge-synthesis",
+  "size": 18,
+  "keywords": [
+   "스킬",
+   "스킬을",
+   "스킬은",
+   "스킬이",
+   "만든",
+   "arxiv"
+  ],
+  "members": [
+   {
+    "path": "skillos-skill-curation-self-evolving-agents-2026-05-09.md",
+    "title": "SkillOS: 스트리밍 태스크에서 스스로 진화하는 에이전트를 위한 스킬 큐레이션 학습",
+    "date": "2026-05-09",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "muse-autoskill-self-evolving-agents-2026-05-28.md",
+    "title": "뮤즈 오토스킬: AI 에이전트가 스스로 스킬을 배우고 진화하는 방법",
+    "date": "2026-05-28",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "openskill-open-world-self-evolution-llm-agents-2026-06-09.md",
+    "title": "아무것도 없는 상태에서 스스로 배우는 에이전트: OpenSkill",
+    "date": "2026-06-09",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "2026-06-18-openskill-open-world-self-evolution.md",
+    "title": "OpenSkill: LLM 에이전트가 열린 세상에서 스스로 진화하는 방법",
+    "date": "2026-06-18",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/dont-ship-skills-without-evals-2026-07-17.md",
+    "title": "스킬은 코드임 — eval 없이 ship하면 비용과 실패 원인을 동시에 숨김",
+    "date": "2026-07-17",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "posts/2026-07-27-regression-tax-skills-help-hurt-llm-agents.md",
+    "title": "에이전트 스킬은 이득의 59%를 도로 가져간다 — 회귀 세금의 세 가지 통로",
+    "date": "2026-07-27",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-04-skill-alpha-progressive-agent-skill-rl.md",
+    "title": "스킬을 한 번에 쓰지 말고 편집 단위로 다듬어야 함 — Skill-α의 롤백 보상",
+    "date": "2026-08-04",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-05-skill-alpha-progressive-agent-skill-rl.md",
+    "title": "스킬은 통째로 만들지 말고 한 편집씩 다듬어야 함 — Skill-α의 rollback reward",
+    "date": "2026-08-05",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-06-skill-entropy-cross-skill-long-horizon-rl.md",
+    "title": "스킬은 각각 잘하는데 스킬이 바뀌는 순간 무너짐 — Skill Entropy 측정과 훈련법",
+    "date": "2026-08-06",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-11-skillprox-proximal-textual-gradient-agent-skills.md",
+    "title": "에이전트 스킬은 쌓기만 하면 망한다 — 삭제를 1급 기능으로 만든 근접 기울기",
+    "date": "2026-08-11",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "posts/2026-08-13-skillzip-evaluation-free-skill-compression.md",
+    "title": "스킬은 계속 쌓는데 새 내용은 없음 — 롤아웃 없이 구조 중복을 압축하는 SkillZip",
+    "date": "2026-08-13",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-19-demystifying-agent-skills.md",
+    "title": "에이전트 스킬은 지식 주입이 아니라 절차 앵커임 — 효과 65.7%의 정체",
+    "date": "2026-08-19",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-24-skill-use-trigger-compliance-boundary.md",
+    "title": "스킬 문서를 읽어도 절차를 못 지킴 — Skill-Use 벤치마크가 찾은 두 개의 독립 병목",
+    "date": "2026-08-24",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/skiller-language-level-rl-small-model-skills-2026-08-25.md",
+    "title": "강한 모델이 작은 모델용 스킬을 뽑아줌 — SKILLER의 executor 특화 원칙",
+    "date": "2026-08-25",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-28-wikiskill-agent-skill-evolution.md",
+    "title": "교훈을 위키에 쌓으면 9B가 27B를 이김 — WikiSkill 스킬 진화 정리",
+    "date": "2026-08-28",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-05-agentic-skill-policy-steering.md",
+    "title": "서드파티 스킬이 모델 결정을 몰래 조준함 — SkillShift 정책 조종 공격 정리",
+    "date": "2026-09-05",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-12-cobra-skills-bandit-skill-optimization.md",
+    "title": "스킬 생성보다 스킬 검증이 비쌈 — 컨텍스트 밴딧으로 최적화 비용 55% 줄인 COBRA-Skills",
+    "date": "2026-09-12",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-15-gavel-skill-routing-frozen-llm.md",
+    "title": "스킬 선택은 중간층에 이미 있음 — 얼린 LLM에서 라우팅 신호를 읽은 Gavel, 7.9M이 16B를 이김",
+    "date": "2026-09-15",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "harness-self-improve-02",
+  "topic": "harness-self-improve",
+  "treatment": "merge-synthesis",
+  "size": 6,
+  "keywords": [
+   "공격",
+   "파일",
+   "harness",
+   "프롬프트",
+   "방어",
+   "security"
+  ],
+  "members": [
+   {
+    "path": "posts/2026-07-24-workbuddy-bench-multi-domain-coding-agent.md",
+    "title": "코딩 에이전트를 뽑을 때 볼 벤치마크 — WorkBuddy Bench가 보여준 현실 점수표",
+    "date": "2026-07-24",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-28-issue-trojan-bench-coding-agent-security.md",
+    "title": "코딩 에이전트에 악성 이슈를 던지니 66.5%가 뚫렸음 — 프레임워크 방어는 0건 차단",
+    "date": "2026-07-28",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-14-poisoned-evolution-self-evolving-agent-skill-security.md",
+    "title": "궤적 3개만 넣으면 스킬이 오염됨 — 자가진화 에이전트의 승격 경계를 공격한 PoisonedEvolution",
+    "date": "2026-08-14",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-18-cdh-convergent-detour-hijacking.md",
+    "title": "정상 스킬 하나로 비용 2배 뽑는 우회 납치 — CDH 공격과 스킬 생태계의 구멍",
+    "date": "2026-08-18",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "posts/2026-08-20-composkill-skill-chain-attacks.md",
+    "title": "스캐너를 다 통과한 스킬들이 연결되면 공격이 됨 — CompoSkill 조합 위협",
+    "date": "2026-08-20",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-17-agent-harness-context-privilege-escalation.md",
+    "title": "컨텍스트 조립 단계 자체가 공격 지점임 — 하네스 권한 상승(CPE) 논문 정리",
+    "date": "2026-09-17",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "harness-self-improve-03",
+  "topic": "harness-self-improve",
+  "treatment": "merge-synthesis",
+  "size": 6,
+  "keywords": [
+   "보상",
+   "행동",
+   "하네스",
+   "과제",
+   "harness",
+   "공격"
+  ],
+  "members": [
+   {
+    "path": "2026-06-30-verification-horizon-coding-agent-rewards.md",
+    "title": "검증의 지평선: 코딩 에이전트 보상 설계의 근본적 한계와 공진화 전략",
+    "date": "2026-06-30",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-28-janus-predictive-agent-safety.md",
+    "title": "위험한 행동은 실행 전에 차단해야 함 — JANUS 예측 가드레일 구조 정리",
+    "date": "2026-07-28",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-12-co-evolution-agentic-systems.md",
+    "title": "고정 환경에서 에이전트는 수렴한다 — 공진화 3단계 틀로 정리한 에이전트 진화 설문",
+    "date": "2026-08-12",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-13-she-safety-harness-evolution.md",
+    "title": "에이전트 안전장치도 배포 후 고정이면 무뎌짐 — SHE의 하네스 진화 루프",
+    "date": "2026-08-13",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-19-she-safety-harness-evolution.md",
+    "title": "안전 규칙은 만들고 끝나는 게 아님 — SHE 진화 루프의 수용 5번과 플래토의 의미",
+    "date": "2026-08-19",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-03-safeevolve-harness-policy-co-evolution.md",
+    "title": "하네스와 정책을 같이 진화시켜야 안전이 남 — SafeEvolve 공진화 구조 정리",
+    "date": "2026-09-03",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "harness-self-improve-04",
+  "topic": "harness-self-improve",
+  "treatment": "merge-synthesis",
+  "size": 5,
+  "keywords": [
+   "문제",
+   "후보를",
+   "최적화",
+   "보다",
+   "않음",
+   "탐색"
+  ],
+  "members": [
+   {
+    "path": "posts/2026-07-21-flashrt-agent-harness-real-time-multimodal.md",
+    "title": "에이전트한테 '그냥 최적화해'라고 하면 안 됨 — FlashRT가 증명한 하네스 설계의 힘",
+    "date": "",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-02-evolution-fine-tuning-discovery-agents.md",
+    "title": "진화 탐색 궤적으로 소형 모델에 '발견 감각'을 심는 법 — Evolution Fine-Tuning 실무 관점",
+    "date": "2026-07-02",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-29-kernel-forge-agent-harness-cuda-optimization.md",
+    "title": "에이전트가 짠 CUDA 커널, 가장 빨라도 소용없는 이유 — Kernel Forge가 보여준 것",
+    "date": "2026-07-29",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-11-reasearch-optimizer-is-the-agent.md",
+    "title": "검색 알고리즘을 없애고 에이전트가 직접 최적화하게 만들기 — ReASearch 구조 정리",
+    "date": "2026-08-11",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-14-mechanist-agentic-interpretability-discovery.md",
+    "title": "AI가 AI를 해석함 — Mechanist의 자율 메커니즘 발견 루프가 보여준 것들",
+    "date": "2026-08-14",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "harness-self-improve-05",
+  "topic": "harness-self-improve",
+  "treatment": "merge-synthesis",
+  "size": 13,
+  "keywords": [
+   "harness",
+   "arxiv",
+   "코드",
+   "토큰",
+   "코딩",
+   "문제"
+  ],
+  "members": [
+   {
+    "path": "posts/2026-07-05-llm-symbolic-language-multi-agent-reasoning.md",
+    "title": "에이전트끼리 자기들 언어로 대화시키면 토큰 3~6배 아낌 — CLSR 상징 언어 진화",
+    "date": "2026-07-05",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-18-mcpevol-bench-agent-tool-evolution.md",
+    "title": "MCP 서버가 업데이트되면 에이전트가 무너진다 — MCPEvol-Bench가 잰 진화 적응력",
+    "date": "2026-07-18",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-18-tofu-white-box-agent-harness.md",
+    "title": "같은 모델인데 토큰 28% 덜 쓰고 성능은 더 높음 — ToFu 하네스의 압축 설계에서 배울 것",
+    "date": "2026-07-18",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-23-dataflow-harness-grounded-code-agent-pipelines.md",
+    "title": "에이전트 코드는 일회성 스크립트로 끝나면 안 됨 — DataFlow-Harness의 접지 설계",
+    "date": "2026-07-23",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-27-molt-pytorch-native-agentic-rl-framework.md",
+    "title": "Molt — RL 코드 8.6K 줄로 700B 모델까지 훈련하는 NVIDIA의 \"읽을 수 있는\" 에이전트 RL 프레임워크",
+    "date": "2026-07-27",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-30-ai-agents-open-ended-research-shadow-eval.md",
+    "title": "에이전트에게 연구를 맡겼더니 엔지니어링은 하고 연구는 못 함 — 6일·3천 달러 그림자 평가 결과",
+    "date": "2026-07-30",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-03-specbox-speculative-sandbox-scheduling-llm-agent.md",
+    "title": "에이전트 병목은 추론이 아니라 샌드박스 부팅임 — SpecBox의 사전 준비 설계",
+    "date": "2026-08-03",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-07-evolvenet-collaborative-harness-evolution.md",
+    "title": "하네스 진화도 합쳐서 쓸 수 있다 — EvolveNet이 증명한 프로그램 집계",
+    "date": "2026-08-07",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-11-ouroboros-self-developing-frontier-coding-agent.md",
+    "title": "스스로를 커밋으로 고치는 코딩 에이전트 — Ouroboros 161일 실운영 결과",
+    "date": "2026-08-11",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-15-genesis-persistent-recursive-worlds.md",
+    "title": "에이전트는 갈아치워도 프로젝트는 살아남음 — Genesis가 C 컴파일러 25만 줄을 만든 구조",
+    "date": "2026-08-15",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-15-spark-to-paper-composable-research-skills.md",
+    "title": "코딩 어시스턴트 스킬 13개로 논문을 끝까지 쓴다 — Spark-to-Paper 구조 분석",
+    "date": "2026-08-15",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-19-stagedworkspace-versioned-workspace.md",
+    "title": "에이전트가 읽은 파일과 고친 파일이 서로 다른 버전임 — 해시로 묶는 StagedWorkspace 버전 계약",
+    "date": "2026-08-19",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-02-harness-of-harness-continual-improvement.md",
+    "title": "하네스를 하네스로 감싸니 점수가 최대 82% 오름 — 실행 사이의 단절을 메운 HoH",
+    "date": "2026-09-02",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "harness-self-improve-06",
+  "topic": "harness-self-improve",
+  "treatment": "merge-synthesis",
+  "size": 4,
+  "keywords": [
+   "harness",
+   "과제를",
+   "opus",
+   "절감",
+   "파일",
+   "claude"
+  ],
+  "members": [
+   {
+    "path": "posts/2026-07-30-stateact-program-state-before-pixels.md",
+    "title": "컴퓨터 사용 에이전트, 스크린샷 버리고 프로그램 상태를 읽으니 9배 싸지고 더 정확해짐 — StateAct",
+    "date": "2026-07-30",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-05-longhorizon-harness-mea-loop-long-horizon-agents.md",
+    "title": "30분짜리 작업의 중간에 길을 잃는 에이전트 — LongHorizon-Harness가 실행 구조를 바꾼 방식",
+    "date": "2026-08-05",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-18-coding-agent-harness-design-ablation.md",
+    "title": "AI 코딩 에이전트 하네스 설계에서 뭘 바꿔야 성적이 오르는지: 정리했습니다",
+    "date": "2026-09-18",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-23-ai-coding-agent-context-compaction-cliffcompaction.md",
+    "title": "AI 코딩 에이전트 컨텍스트가 100만 토큰을 넘을 때: CliffCompaction 논문 정리",
+    "date": "2026-09-23",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "harness-self-improve-07",
+  "topic": "harness-self-improve",
+  "treatment": "merge-synthesis",
+  "size": 12,
+  "keywords": [
+   "그대로",
+   "harness",
+   "자체가",
+   "실패",
+   "단계",
+   "평가"
+  ],
+  "members": [
+   {
+    "path": "webtooni-user-guide.md",
+    "title": "웹툰이(Webtooni) 사용법 완전 가이드",
+    "date": "2025-03-26",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "posts/2026-07-19-evosop-self-evolving-agent-sop.md",
+    "title": "에이전트가 반복하는 작업 패턴, SOP로 뽑아내면 라운드 수가 절반으로 줄어듦 — EvoSOP",
+    "date": "2026-07-19",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-20-long-horizon-terminal-bench.md",
+    "title": "에이전트는 980만 토큰을 써도 반나절짜리 작업을 못 끝냄 — LHTB가 잰 장기 실행 한계",
+    "date": "2026-07-20",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-22-set-shifting-harnessed-agents.md",
+    "title": "에이전트는 도구가 죽어도 옛 루틴을 버리지 못함 — set-shifting 실험 교훈",
+    "date": "2026-07-22",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-24-arex-recursively-self-improving-deep-research-agent.md",
+    "title": "답을 찾는 건 비싸지만 확인은 쌈 — AREX가 검증을 루프의 엔진으로 씀",
+    "date": "2026-07-24",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-26-llm-lost-evolving-user-intent.md",
+    "title": "GPT-5.5도 의도가 6번만 바뀌면 무너짐 — 진화하는 사용자 의도 추적 실험",
+    "date": "2026-07-26",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-28-icae-bench-interactive-coding-agent-evaluation.md",
+    "title": "최고 모델도 흐릿한 요구사항에선 38% — ICAE-Bench가 드러낸 바이브 코딩의 실제 한계",
+    "date": "2026-07-28",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-30-agent-benchmark-protocol-validity.md",
+    "title": "벤치마크 점수가 능력이라고 믿어도 되는가 — 2,385개 궤적 감사가 밝힌 인플레이션",
+    "date": "2026-07-30",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-08-osreward-cua-reward-benchmark.md",
+    "title": "에이전트 성공을 판정하는 VLM 판사가 절반은 찍고 있었다 — 관대함 편향의 실체",
+    "date": "2026-08-08",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-13-vibelifebench-proactive-life-agent.md",
+    "title": "사용자가 시키기 전에 알아서 움직이는 생활 에이전트는 아직 없음 — VibeLifeBench가 측정한 것",
+    "date": "2026-08-13",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-02-contextpilot-fine-grained-rl-context.md",
+    "title": "32K 윈도우로 128K를 이기는 법 — ContextPilot의 학습된 문맥 관리 정책",
+    "date": "2026-09-02",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-11-s3gym-self-testing-self-judging-self-improvement.md",
+    "title": "스스로 잘했다고 믿는 것과 실제로 잘된 것은 다름 — S3Gym 자기 개선 측정 정리",
+    "date": "2026-09-11",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "harness-self-improve-08",
+  "topic": "harness-self-improve",
+  "treatment": "merge-synthesis",
+  "size": 8,
+  "keywords": [
+   "가능한",
+   "검증",
+   "환경",
+   "harness",
+   "환경을",
+   "환경과"
+  ],
+  "members": [
+   {
+    "path": "seal-co-evolution-agents-2026-05-27.md",
+    "title": "SEAL — 에이전트가 배우면 환경도 함께 진화해야 한다",
+    "date": "2026-05-27",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-01-echoverse-deep-evolving-environments-computer-use-agents.md",
+    "title": "에이전트 훈련 환경은 개수가 아니라 깊이임 — Echoverse가 증명한 것",
+    "date": "2026-08-01",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-03-rlsvr-spyrl-self-verifiable-rewards-llm-self-improvement.md",
+    "title": "정답이 없는 과제에 보상을 만드는 법 — 스파이 게임으로 검증 가능해진 자기개선",
+    "date": "2026-08-03",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/rl-environments-taxonomy-llm-agents-2026-08-03.md",
+    "title": "에이전트의 절반은 환경임 — RL 환경을 tasks·harness·verifier·state·config로 쪼개서 보기",
+    "date": "2026-08-03",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "posts/2026-08-07-envace-world-rehearsal-agentic-rl.md",
+    "title": "환경 없이 에이전트 RL을 돌린다 — 정책이 환경 역할까지 연기하는 EnvACE 리허설",
+    "date": "2026-08-07",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-11-evo-bench-llm-harness-evolution.md",
+    "title": "AI가 하네스를 고치는 능력이 사람 설계를 넘은 도메인이 생김 — Evo-Bench 결과 읽기",
+    "date": "2026-08-11",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-13-hsi-hierarchical-self-improvement-harness.md",
+    "title": "모델은 얼려두고 하네스만 진화시켜도 성능이 오름 — HSI 계층 자기개선",
+    "date": "2026-08-13",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-24-envharness-envrigger.md",
+    "title": "에이전트가 정체된 이유가 환경일 수 있음 — EnvHarness의 발상 전환",
+    "date": "2026-08-24",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "harness-self-improve-09",
+  "topic": "harness-self-improve",
+  "treatment": "merge-synthesis",
+  "size": 5,
+  "keywords": [
+   "harness",
+   "검증",
+   "추론",
+   "에이전트의",
+   "그대로",
+   "증거를"
+  ],
+  "members": [
+   {
+    "path": "posts/2026-07-21-aha-agent-hacks-agent-red-teaming.md",
+    "title": "에이전트 레드팀의 산물은 점수가 아니라 지식이어야 한다 — AHA 설계 노트",
+    "date": "2026-07-21",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-29-fcpagent-falsifiable-commitment-planning.md",
+    "title": "웹 에이전트는 왜 조용히 이탈하는가 — 반증 가능한 계획 설계, FCPAgent",
+    "date": "2026-07-29",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-02-tycho-active-abstraction-programmatic-world-models.md",
+    "title": "ARC-AGI-3 전 레벨 완수 — 게임 규칙을 파이썬 프로그램으로 쓰는 에이전트 Tycho",
+    "date": "2026-08-02",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-20-commitment-vs-binding-drift.md",
+    "title": "골 드리프트는 두 개였음 — 커밋먼트 드리프트와 바인딩 드리프트 분리 실험",
+    "date": "2026-08-20",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-11-artificial-id-persistent-alignment-agentic-ai.md",
+    "title": "에이전트의 '그만둘지 판단'을 하네스 밖으로 꺼내는 실험 — Artificial Id 정리",
+    "date": "2026-09-11",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "harness-self-improve-10",
+  "topic": "harness-self-improve",
+  "treatment": "merge-synthesis",
+  "size": 8,
+  "keywords": [
+   "검증",
+   "arxiv",
+   "가능한",
+   "수리",
+   "제일",
+   "harness"
+  ],
+  "members": [
+   {
+    "path": "posts/2026-08-02-manta-multi-agent-topology-adaptation.md",
+    "title": "다중 에이전트 구조도 실행 중에 고칠 수 있음 — MANTA 토폴로지 적응",
+    "date": "2026-08-02",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-04-real-time-agent-failure-detection-repair.md",
+    "title": "에이전트 실패를 200마이크로초에 잡는 방법 — 감시 LLM 없이 궤적 감시와 롤백 수리",
+    "date": "2026-08-04",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-10-rst-recursive-synthesis-terminal-tasks.md",
+    "title": "긴 작업 훈련 데이터를 태스크당 5센트에 만드는 법 — 재귀 합성의 원리",
+    "date": "2026-08-10",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-18-multi-agent-coding-coordination.md",
+    "title": "에이전트 팀은 성능보다 통신 비용이 먼저 터짐 — 멀티에이전트 코딩 1,902 실행에서 측정된 것들",
+    "date": "2026-08-18",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-28-jit-agent-just-in-time-harness.md",
+    "title": "하네스를 미리 만들지 말고 태스크가 들어올 때 생성 — JIT-Agent의 3단계 훈련",
+    "date": "2026-08-28",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-30-pilot-live-self-improvement.md",
+    "title": "자기개선은 실행이 끝난 뒤가 아니라 실행 중에 일어나야 함 — PILOT 라이브 개선 구조",
+    "date": "2026-08-30",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-15-stellar-colosseum-many-agent-harness.md",
+    "title": "긴 증명을 나눠서 끝내는 법 — Stellar Colosseum 하네스가 수학 연구를 71%로 푼 구조",
+    "date": "2026-09-15",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-16-social-harness-agentic-societies.md",
+    "title": "정직한 에이전트들도 회의 시간 하나 못 잡음 — 에이전틱 소사이어티에 소셜 하네스가 필요한 이유",
+    "date": "2026-09-16",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "harness-self-improve-11",
+  "topic": "harness-self-improve",
+  "treatment": "merge-synthesis",
+  "size": 5,
+  "keywords": [
+   "자기",
+   "arxiv",
+   "상태에서",
+   "harness",
+   "수준",
+   "상대"
+  ],
+  "members": [
+   {
+    "path": "posts/2026-08-03-multi-head-latent-control-frozen-llm-agent-decision.md",
+    "title": "모델 확률은 거짓말함 — 은닉 상태에서 라우팅 신호를 읽는 법",
+    "date": "2026-08-03",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-27-cafe-co-evolving-feedback-search-agent.md",
+    "title": "정책만 학습하면 어딘가에서 멈춤 — 피드백도 같이 진화시킨 CAFE 검색 에이전트",
+    "date": "2026-08-27",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-30-evotrainer-co-evolving-policy-training-harness.md",
+    "title": "점수는 오르는데 왜 오르는지 모름 — 진단 하네스까지 진화시킨 EvoTrainer",
+    "date": "2026-08-30",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-31-evoundo-recoverable-self-evolution.md",
+    "title": "되돌릴 수 없으면 채택하지 않는다 — 자기진화 하네스의 undo 게이트, EvoUndo",
+    "date": "2026-08-31",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-02-harnessevolve-reliable-agent-self-evolution.md",
+    "title": "자기진화 에이전트가 스스로를 망가뜨리는 세 가지 이유 — HarnessEvolve의 이중 게이트 정리",
+    "date": "2026-09-02",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "harness-self-improve-12",
+  "topic": "harness-self-improve",
+  "treatment": "merge-synthesis",
+  "size": 18,
+  "keywords": [
+   "하네스를",
+   "하네스",
+   "harness",
+   "검증",
+   "프롬프트",
+   "개선"
+  ],
+  "members": [
+   {
+    "path": "posts/2026-08-07-harnessopt-bench-llm-harness-optimization.md",
+    "title": "하네스 최적화를 잘하는 모델이 따로 있음 — HarnessOpt-Bench가 측정한 것들",
+    "date": "",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-29-frozen-agent-harness-control-system.md",
+    "title": "동결 모델의 하네스 최적화, 729개 구성에 RL을 돌렸더니 정적 기준선이 이김",
+    "date": "",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "2026-07-04-evopolicygym-autonomous-policy-evolution.md",
+    "title": "GPT-5.5가 정책 코드를 진화시킨다 — EvoPolicyGym 리서치",
+    "date": "2026-07-04",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-16-harness-handbook-agent-harness-evolution.md",
+    "title": "에이전트 하네스를 파일이 아니라 행동 지도로 읽는 법 — Harness Handbook 실무 정리",
+    "date": "2026-07-18",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-19-agentcompass-unified-agent-evaluation-infrastructure.md",
+    "title": "에이전트 점수는 하네스가 만든다 — AgentCompass가 증명한 평가 인프라의 힘",
+    "date": "2026-07-19",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "posts/2026-07-19-memoharness-agent-harness-learns-from-experience.md",
+    "title": "에이전트 성능은 하네스가 결정함 — MemoHarness가 보여주는 '실행 환경 학습' 패턴",
+    "date": "2026-07-19",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-21-recursive-harness-self-improvement.md",
+    "title": "하네스 프롬프트를 에이전트가 스스로 고치게 하기 — RHI 3회 반복의 실무 의미",
+    "date": "2026-07-21",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-25-tencent-workbuddy-bench-coding-agent-benchmark.md",
+    "title": "코딩 에이전트 벤치마크는 오염되어 있다 — Tencent WorkBuddy Bench가 제안하는 4영역·이중 하네스 평가",
+    "date": "2026-07-25",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "posts/2026-08-03-agent-harness-distillation-inference-time-harness-extraction.md",
+    "title": "하네스 설계가 프롬프트 몇 번으로 유출됨 — Agent Harness Distillation 공격 표면 정리",
+    "date": "2026-08-03",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-12-a2e-agent-auditing-engine.md",
+    "title": "하네스를 감사하는 엔진 — A²E가 밝힌 같은 모델 9.6배 토큰 격차",
+    "date": "2026-08-12",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-14-ai4ai-test-time-strong-to-weak-harness.md",
+    "title": "약한 모델에 강한 모델이 하네스를 컴파일해주면 정확도 0.488→0.912 — AI4AI 실험",
+    "date": "2026-08-14",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-14-self-harness-self-improving-agent.md",
+    "title": "고치는 주체와 고쳐지는 대상이 같은 모델 — Self-Harness 자기 하네스 개선 루프 정리",
+    "date": "2026-08-14",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-17-harnessopt-bench.md",
+    "title": "하네스 고치는 능력을 측정했더니 모델 선택이 도구 선택보다 1.8배 컸음 — HarnessOpt-Bench",
+    "date": "2026-08-17",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-18-clawgym2-blackbox-rl-harness.md",
+    "title": "Claude Code·OpenClaw를 통째로 RL 학습 환경으로 — ClawGym II의 블랙박스 학습 파이프라인",
+    "date": "2026-08-18",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/self-harness-self-improving-harness-2026-08-24.md",
+    "title": "모델 가중치 얼어 있는 채 하네스만 스스로 고치는 루프 — Self-Harness가 9개 조합 전부에서 오른 이유",
+    "date": "2026-08-24",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/harness-bench-config-level-agent-eval-2026-08-25.md",
+    "title": "같은 모델인데 하네스만 바꿨더니 23.8점 차이 — Harness-Bench가 재는 것",
+    "date": "2026-08-25",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-02-gabench-graph-analysis-agents.md",
+    "title": "같은 모델인데 성공률이 2.5배 갈림 — 그래프 분석 벤치마크 GABench가 드러낸 하네스 효과",
+    "date": "2026-09-02",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-19-llm-agent-self-harness-benchmark-harnessdev.md",
+    "title": "LLM 에이전트 하네스가 같은 모델 점수를 14%p 바꾸는 이유: HarnessDev 벤치마크 정리",
+    "date": "2026-09-19",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "harness-self-improve-13",
+  "topic": "harness-self-improve",
+  "treatment": "merge-synthesis",
+  "size": 10,
+  "keywords": [
+   "하네스",
+   "하네스를",
+   "harness",
+   "그대로",
+   "code",
+   "검증"
+  ],
+  "members": [
+   {
+    "path": "agent-harness-engineering-2026.md",
+    "title": "AI 코딩 에이전트 성능을 올리는 방법: 하네스 엔지니어링 정리",
+    "date": "2026-04-29",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "rl-environments-llm-agents-2026.md",
+    "title": "LLM 에이전트를 위한 RL 환경 설계: 에이전트 용어사전과 환경 분류학",
+    "date": "2026-05-27",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "posts/harness-handbook-studio-behavior-map-2026-07-18.md",
+    "title": "하네스를 고치는 새 인터페이스: Harness Handbook Studio가 보여준 행동 지도",
+    "date": "2026-07-18",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-25-openforge-rl-train-harness-native-agents.md",
+    "title": "에이전트는 배포하는 하네스 그대로 훈련해야 한다 — OpenForge RL이 증명한 것",
+    "date": "2026-07-25",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-27-openforge-rl-harness-native-agent-training.md",
+    "title": "실제 하네스를 입힌 채로 에이전트를 훈련시키는 법 — OpenForge RL 구조 정리",
+    "date": "2026-07-27",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-30-context-assembly-controlled-variable.md",
+    "title": "하네스에서 통제할 변수는 컨텍스트 어셈블리임 — 그리고 60 에피소드로는 절대 부족함",
+    "date": "2026-07-30",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-23-agent-lightning-v1-harnessed-agentic-rl.md",
+    "title": "배포용 하네스를 그대로 RL 학습에 넣는 법 — Agent Lightning v1.0 정리",
+    "date": "2026-08-23",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-27-lego-rl-harness-native-rl-coding-agents.md",
+    "title": "하네스를 뜯어고치지 않고 RL 훈련에 올리는 법 — LEGO-RL이 푼 정렬 문제",
+    "date": "2026-08-27",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-29-agent-lightning-v1-harnessed-agentic-rl.md",
+    "title": "하네스가 곧 학습 환경임 — Agent Lightning v1.0이 표준화한 harnessed agentic RL",
+    "date": "2026-08-29",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "agent-rl-harness.md",
+    "title": "에이전트 강화학습·하네스 논문 모음 18선",
+    "date": "2026-09-13",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "harness-self-improve-14",
+  "topic": "harness-self-improve",
+  "treatment": "merge-synthesis",
+  "size": 10,
+  "keywords": [
+   "code",
+   "하네스",
+   "harness",
+   "claude",
+   "컨텍스트",
+   "코드"
+  ],
+  "members": [
+   {
+    "path": "components-of-a-coding-agent-sebastian-raschka.md",
+    "title": "코딩 에이전트는 왜 더 똑똑해 보일까? Sebastian Raschka 글로 보는 6가지 핵심 구조",
+    "date": "2026-04-05",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "geeknews-2026-04-06-coding-agent-components.md",
+    "title": "코딩 에이전트의 6가지 핵심 구성 요소 - 하니스 설계가 성능을 결정한다",
+    "date": "2026-04-06",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "geeknews-2026-04-09-prompt-to-harness-four-years.md",
+    "title": "프롬프트에서 하네스까지 — AI 에이전틱 패턴 4년의 부검 보고서",
+    "date": "2026-04-09",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "ai-engineer-europe-2026-day1-recap.md",
+    "title": "AI Engineer Europe 2026 Day 1 — 에이전트는 새로운 소프트웨어다",
+    "date": "2026-04-10",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "harness-engineering-openai-ryan-lopopolo-2026-04-23.md",
+    "title": "하네스 엔지니어링 — OpenAI Ryan Lopopolo 키노트 통째로 정리",
+    "date": "2026-04-23",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "code-as-agent-harness-2026-05-20.md",
+    "title": "Code as Agent Harness: 코드가 에이전트의 하네스가 될 때 — 102쪽 서베이 논문 리뷰",
+    "date": "2026-05-20",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "claude-code-dynamic-workflows-harness-2026-06-03.md",
+    "title": "Claude Code 동적 워크플로우: 에이전트가 자기 작업대를 짜는 순간",
+    "date": "2026-06-03",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "anthropic-agent-loop-app-builder-2026-06-22.md",
+    "title": "Anthropic 엔지니어들이 말하는 에이전트 루프: 앱을 처음부터 완성시키는 법",
+    "date": "2026-06-22",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "posts/2026-07-27-boris-cherny-claude-code.md",
+    "title": "클로드 코드를 만든 보리스 체르니가 말하는, \"코딩은 이제 풀렸다",
+    "date": "2026-07-27",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "posts/2026-07-28-training-agents-hf-sft.md",
+    "title": "Hugging Face가 에이전트에게 훈련을 맡긴다: 코딩 에이전트 SFT 실전 튜토리얼",
+    "date": "2026-07-28",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "harness-self-improve-15",
+  "topic": "harness-self-improve",
+  "treatment": "merge-synthesis",
+  "size": 11,
+  "keywords": [
+   "skills",
+   "code",
+   "claude",
+   "스킬",
+   "skill",
+   "코딩"
+  ],
+  "members": [
+   {
+    "path": "awesome-codex-skills-composio-2026-04-26.md",
+    "title": "Codex CLI에도 Skill이 생겼음 — ComposioHQ가 정리한 awesome 리스트 1,500스타",
+    "date": "2026-04-26",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "mattpocock-skills-real-engineers-claude-2026-04-27.md",
+    "title": "Claude Code Skills 22개 한국어 정리 — mattpocock .claude 폴더 공개, TDD·PRD·grill-me 설치·활용법",
+    "date": "2026-04-27",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "browserbase-skills-claude-code-plugin-review-2026-05-04.md",
+    "title": "Claude Code에 브라우저 스킬 11개를 몰아넣은 Browserbase, 뭐가 달라지나",
+    "date": "2026-05-04",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "scientific-agent-skills-2026-05-14.md",
+    "title": "Scientific Agent Skills — AI 코딩 에이전트를 'AI 과학자'로 바꾸는 135개 스킬 모음",
+    "date": "2026-05-14",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "nvidia-skills-agent-catalog-2026-05-22.md",
+    "title": "NVIDIA/skills: AI 에이전트를 위한 공식 스킬 카탈로그 공개",
+    "date": "2026-05-22",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "posts/dotnet-skills-ai-coding-agents-csharp-2026-05-24.md",
+    "title": "dotnet/skills: AI 코딩 에이전트에게 .NET 전문성을 부여하는 방법",
+    "date": "2026-05-24",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "google-deepmind-science-skills-2026-06-02.md",
+    "title": "딥마인드가 AI 에이전트에 실험복을 입혔다: Science Skills",
+    "date": "2026-06-02",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "openai-codex-record-replay-skills-2026-06-19.md",
+    "title": "Codex Record & Replay — 보여주면 자동화 스킬이 되는 시대",
+    "date": "2026-06-19",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "posts/steering-claude-code-instructions-2026-07-05.md",
+    "title": "Claude Code를 길들이는 법: 지시는 '무엇을'보다 '어디에' 두느냐가 승부다",
+    "date": "2026-07-05",
+    "reason": "외부 글 기반 — 본인 관점으로 새로 쓸 가치 있음"
+   },
+   {
+    "path": "posts/google-stitch-skills-agent-design-2026-07-12.md",
+    "title": "구글이 디자인 에이전트 생태계를 열었다 — stitch-skills로 코딩 에이전트와 Stitch를 연결하는 법",
+    "date": "2026-07-12",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "posts/last30days-skill-github-trending-2026-07-13.md",
+    "title": "깃헙 트렌딩 1위가 말하는 다음 검색: Google이 아니라 사람을 검색한다",
+    "date": "2026-07-13",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "harness-self-improve-16",
+  "topic": "harness-self-improve",
+  "treatment": "merge-synthesis",
+  "size": 4,
+  "keywords": [
+   "하네스는",
+   "하네스를",
+   "설계법",
+   "정확히",
+   "taste",
+   "wiggins"
+  ],
+  "members": [
+   {
+    "path": "harness-verifier-rubric-taste-to-code-2026-05-09.md",
+    "title": "암묵지를 종이로 끄집어내는 방법 — 하네스 Verifier 설계법",
+    "date": "2026-05-09",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "implicit-knowledge-to-verifier-design-2026-05-09.md",
+    "title": "암묵지를 종이로 끄집어내는 법 — 하네스 verifier 설계법",
+    "date": "2026-05-09",
+    "reason": "중복(같은 주제 재작성) — 더 긴 1편만 남김"
+   },
+   {
+    "path": "tacit-knowledge-to-rubric-verifier-design-2026-05-09.md",
+    "title": "암묵지를 종이로 끄집어내는 방법 — 하네스 Verifier 설계법",
+    "date": "2026-05-09",
+    "reason": "중복(같은 주제 재작성) — 더 긴 1편만 남김"
+   },
+   {
+    "path": "tacit-to-paper-verifier-design-2026-05-09.md",
+    "title": "암묵지를 종이로 끄집어 내는 방법 — 하네스 verifier 설계법",
+    "date": "2026-05-09",
+    "reason": "중복(같은 주제 재작성) — 더 긴 1편만 남김"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "harness-self-improve-17",
+  "topic": "harness-self-improve",
+  "treatment": "merge-synthesis",
+  "size": 6,
+  "keywords": [
+   "재귀적",
+   "자기개선",
+   "검증",
+   "자기",
+   "self-improvement",
+   "가능한"
+  ],
+  "members": [
+   {
+    "path": "posts/2026-06-08-anthropic-recursive-self-improvement.md",
+    "title": "Claude가 Claude를 만드는 시대가 왔음 — 재귀적 자기개선, 내 업무에 끼치는 것",
+    "date": "2026-06-08",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "when-ai-builds-itself-recursive-self-improvement-2026-06-08.md",
+    "title": "AI가 스스로를 만들기 시작했다 — Anthropic이 공개한 재귀적 자기개선의 현재와 미래",
+    "date": "2026-06-08",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "posts/2026-07-31-frontis-ma1-recursive-self-improvement-mle.md",
+    "title": "Frontis-MA1: 35B 모델이 GPT-5.5+Codex를 넘는 방법 — 재귀적 자기개선을 향한 첫 걸음",
+    "date": "2026-07-31",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-20-rsi-taxonomy-survey.md",
+    "title": "자기개선이 되는 곳과 안 되는 곳 — 1,250편 서베이가 밝힌 검증 신호의 법칙",
+    "date": "2026-08-20",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-27-metan-recursive-self-improvement.md",
+    "title": "재귀적 자기개선은 깊이 2에서 막히다가 — 고정 연산자 Ω로 여는 Meta^n",
+    "date": "2026-08-27",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-12-rsi-recursive-self-improvement-autonomy-levels.md",
+    "title": "재귀적 자기개선은 아직 L5에 도달 못 함 — RSI 자율성 5단계 서베이 정리",
+    "date": "2026-09-12",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "harness-self-improve-18",
+  "topic": "harness-self-improve",
+  "treatment": "merge-synthesis",
+  "size": 21,
+  "keywords": [
+   "grpo",
+   "학습",
+   "arxiv",
+   "방식",
+   "강화학습",
+   "스킬을"
+  ],
+  "members": [
+   {
+    "path": "posts/2026-07-17-seed-self-evolving-agentic-rl-distillation.md",
+    "title": "에이전트 RL의 희소 보상을 자기 반성으로 메우는 법 — SEED 증류 구조 정리",
+    "date": "2026-07-17",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-25-pats-policy-aware-training-scaffold.md",
+    "title": "에이전트 스킬은 자산이 아니라 비계임 — PATS가 증명한 '넣고 빼기' 타이밍",
+    "date": "2026-07-25",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-26-experience-distillation-agent-learning.md",
+    "title": "컨텍스트에 넣은 경험을 가중치로 옮기는 법 — Experience Distillation 정리",
+    "date": "2026-07-26",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-29-physics-of-long-horizon-planning.md",
+    "title": "롱호라이즌 계획은 RL만으로 안 됨 — 사전학습 품질, GRPO 한계, 증류의 함정",
+    "date": "2026-07-29",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-30-skillrise-cross-task-skill-evolution.md",
+    "title": "에이전트가 작업을 풀면서 다음 작업용 스킬을 직접 정리하게 만들기 — SkillRise",
+    "date": "2026-07-30",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/skillrise-agentic-rl-cross-task-skill-evolution-2026-07-31.md",
+    "title": "에이전트가 경험에서 스킬을 뽑아 다음 태스크에 씀 — 단일 정책으로 스킬 진화시킨 SkillRise",
+    "date": "2026-07-31",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-01-beacon-agentic-visual-reasoning-tool-adaptiveness.md",
+    "title": "도구를 쥐여주면 오히려 성능이 떨어짐 — Beacon이 짚은 도구 사용의 역설과 해법",
+    "date": "2026-08-01",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-02-spatialcli-spatial-tool-internalization.md",
+    "title": "도구를 쓰는 경험을 모델 안으로 밀어넣기 — SpatialCLI의 Call-Learn-Internalize",
+    "date": "2026-08-02",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-05-harness-r1-executable-runtime-harness-rl.md",
+    "title": "하네스 고치는 9B 모델이 397B 제안자를 이김 — Harness-R1의 outcome 기반 RL",
+    "date": "2026-08-05",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-10-evoharness-rl-self-evolving-runtime-harness.md",
+    "title": "하네스를 언제 읽을지 모델이 배움 — EvoHarness-RL과 하네스 어닐링",
+    "date": "2026-08-10",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-11-harness-control-offline-rl.md",
+    "title": "하네스를 학습 가능한 제어층으로 — 오프라인 RL이 에이전트 실행 흐름을 바꿀 수 있다",
+    "date": "2026-08-11",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-11-smrc-sd-state-matched-routing-self-distillation.md",
+    "title": "성공 궤적을 그대로 가르치면 학생이 오히려 잘못 배움 — SMRC-SD 상태 매칭 증류",
+    "date": "2026-08-11",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-19-bcsd-bidirectional-context-self-distillation.md",
+    "title": "좋은 스킬을 줘도 못 쓰는 건 별개 문제다 — 스킬 활용력을 학습시키는 법",
+    "date": "2026-08-19",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-21-hexa-experiment-driven-skill-evolution.md",
+    "title": "가중치 못 고치는 API 모델도 실험에서 배움 — HExA의 스킬 뱅크 자동 증류 구조",
+    "date": "2026-08-21",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-22-agentic-esopt-long-horizon-evolution.md",
+    "title": "롱호라이즌이 길어지면 RL 대신 진화 전략이 이김 — Agentic ESOpt 정리",
+    "date": "2026-08-22",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-23-skillgate-selector-credit.md",
+    "title": "스킬을 고르는 토큰은 학습 신호를 못 받는다 — 선택자 크레딧 고갈 문제",
+    "date": "2026-08-23",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-24-auso-action-level-skill-optimization.md",
+    "title": "스킬은 트레이토리 전체에 균일하게 작동하지 않음 — AUSO의 액션 단위 스킬 최적화",
+    "date": "2026-08-24",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/hasp-skill-programs-executable-intervention-2026-08-25.md",
+    "title": "스킬을 텍스트 조언에서 실행 코드로 바꾸니 20.5%→51.0% — HASP가 찾은 진짜 병목",
+    "date": "2026-08-25",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-30-agentic-esopt-long-horizon-es-finetuning.md",
+    "title": "에이전트 튜닝의 체제 전환 — 턴이 길어지면 RL 대신 진화 전략, Agentic ESOpt",
+    "date": "2026-08-30",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-13-hexa-in-context-rl-skill-bank.md",
+    "title": "가중치를 못 고치는 팀의 RL — HExA의 인컨텍스트 스킬 뱅크 방식",
+    "date": "2026-09-13",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-20-llm-agent-rl-teacher-distillation-retireopd.md",
+    "title": "강화학습 LLM 에이전트에서 증류 티처를 자동으로 퇴직시키는 방법: RetireOPD 논문 정리 (arXiv 2609.20784)",
+    "date": "2026-09-20",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "harness-self-improve-19",
+  "topic": "harness-self-improve",
+  "treatment": "merge-synthesis",
+  "size": 10,
+  "keywords": [
+   "하네스를",
+   "진화",
+   "개선",
+   "검증",
+   "프롬프트",
+   "태스크"
+  ],
+  "members": [
+   {
+    "path": "posts/2026-07-23-gsme-gated-semantic-quality-diversity-harness.md",
+    "title": "하네스 자가진화의 진짜 난제는 '뭐가 도움 됐는지 아는 것' — GSME 게이트 설계 정리",
+    "date": "",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-18-harness-evolution-evaluation-rethink.md",
+    "title": "에이전트 하네스 자동 진화, 돌려보면 그냥 여러 번 시도한 것과 차이 없었음",
+    "date": "2026-07-18",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-20-agent-optimizer-compounding.md",
+    "title": "에이전트 최적화는 두 번 돌려봐야 안다 — 누적되는 개선과 무너지는 개선",
+    "date": "2026-07-20",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-03-co-harness-co-evolving-agent-harness-weights.md",
+    "title": "하네스를 고치니 모델 성적이 20점 오른다 — Co-Harness 공진화 루프",
+    "date": "2026-08-03",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-07-gdpevo-agent-self-evolution-real-business-tasks.md",
+    "title": "에이전트 자기진화를 실제 비즈니스에서 측정한 첫 벤치마크 — GDPevo 결과 해석",
+    "date": "2026-08-07",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-13-winx-darwinx-harness-natural-selection.md",
+    "title": "하네스를 자연선택으로 진화시키면 모델 안 바꿔도 성적이 오른다 — DarwinX 레시피",
+    "date": "2026-08-13",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-06-harnessevo-slot-credit-assignment.md",
+    "title": "하네스 최적화 이득은 어느 슬롯에서 나오는가 — HarnessEvo의 크레딧 측정과 예산 분할 함정",
+    "date": "2026-09-06",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-12-ecdysis-harness-training.md",
+    "title": "실패 기록 한 건은 진단으로 부족함 — Ecdysis의 교차 태스크 실패 집계",
+    "date": "2026-09-12",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-14-skill-issue-repo-skill-optimization.md",
+    "title": "SKILL.md 자동 최적화, 숫자는 흔들리는데 리뷰어는 확실히 갈렸음 — Skill Issue 논문 교훈",
+    "date": "2026-09-14",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-19-harness-value-planning-release-control.md",
+    "title": "AI 에이전트 하네스의 가치가 어디서 나오는지 측정한 실험: 계획 주입과 완료 검증 분리",
+    "date": "2026-09-19",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "harness-self-improve-20",
+  "topic": "harness-self-improve",
+  "treatment": "merge-synthesis",
+  "size": 7,
+  "keywords": [
+   "진화",
+   "개선",
+   "실패",
+   "스킬",
+   "loop",
+   "self-evolution"
+  ],
+  "members": [
+   {
+    "path": "posts/2026-07-24-metaskill-evolve.md",
+    "title": "스킬을 개선하는 방법 자체를 개선 대상으로 — MetaSkill-Evolve 구조 정리",
+    "date": "2026-07-24",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-28-metaevolve-llm-self-evolution-meta-skills-rl.md",
+    "title": "에이전트 자가진화는 저절로 안 됨 — MetaEvolve가 메타 스킬을 훈련 대상으로 만든 이유",
+    "date": "2026-07-28",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-04-drevo-harness-self-evolution.md",
+    "title": "하네스 자가진화가 출렁이는 이유 — 낡은 경험 재보정으로 해결한 DREvo",
+    "date": "2026-08-04",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-09-harnesscompass-guiding-automatic-harness-evolution.md",
+    "title": "하네스 자동 진화가 미지 작업에서 무너지는 이유 — 일반화 게이트로 잡는 HarnessCompass",
+    "date": "2026-08-09",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-10-gse-globalized-skill-evolution-coding-agents.md",
+    "title": "스킬 뱅크를 모아두기만 하면 회귀가 옴 — GSE의 전역 진화 관점",
+    "date": "2026-08-10",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-12-skillhex-hypothesis-driven-agent-skill-evolution.md",
+    "title": "스킬 수정은 되돌아갈 수 있어야 한다 — 가설 검증과 트리 탐색이 착취 함정을 피하는 법",
+    "date": "2026-08-12",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-23-agent-harness-evolution-overfitting-rrsi.md",
+    "title": "LLM 에이전트 하네스 자기진화가 과적합되는 이유: RRSI 논문 정리 (arXiv 2609.24972)",
+    "date": "2026-09-23",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "harness-self-improve-21",
+  "topic": "harness-self-improve",
+  "treatment": "merge-synthesis",
+  "size": 10,
+  "keywords": [
+   "실패",
+   "검증",
+   "harness",
+   "비용",
+   "그대로",
+   "정리함"
+  ],
+  "members": [
+   {
+    "path": "posts/2026-07-25-knowledge-centric-self-improvement.md",
+    "title": "에이전트를 고치지 말고 지식을 고쳐라 — KSI가 증명한 자기개선의 반대편",
+    "date": "2026-07-25",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-02-living-harness-self-evolving-agent.md",
+    "title": "에이전트가 같은 실수를 반복하는 진짜 이유 — 교훈이 하네스에 안 남아서다",
+    "date": "2026-08-02",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-12-mgm-mendel-godel-machine.md",
+    "title": "실패 기록 하나만 보고 코드 고치지 말 것 — MGM의 비교 증거 진화 연산자 정리",
+    "date": "2026-08-12",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-16-docschisel-tool-docs-optimization.md",
+    "title": "도구 설명이 곧 프롬프트임 — 실패 트레이스로 도구 문서를 다듬으면 성공률이 두 배",
+    "date": "2026-08-16",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-16-skillsentry-skill-runtime-assurance.md",
+    "title": "스킬 문서를 고치지 말고 실행을 감시하라 — 런타임 훅으로 24.1% 올린 방법",
+    "date": "2026-08-16",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-20-acid-agent-transactional-agent-system.md",
+    "title": "에이전트 실행에도 커밋과 롤백이 필요하다 — ACID 트랜잭션을 하네스로 이식",
+    "date": "2026-08-20",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-26-artic-artifact-driven-workflow-compiler.md",
+    "title": "자연어 워크플로는 아직 소프트웨어가 아니다 — 컴파일하니 성공률이 28%p 오른 이유",
+    "date": "2026-08-26",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-27-autosaddler-harness-optimization-traces.md",
+    "title": "실패 트레이스로 하네스를 고치는 오프라인 학습 — AutoSaddler, 롤아웃 147개의 효율",
+    "date": "2026-08-27",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-28-opsharness-self-evolving-rca-harness.md",
+    "title": "RCA 성능 격차는 에이전트 바깥의 하네스에서 남 — OpsHarness 자가진화 구조 정리",
+    "date": "2026-08-28",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-10-procedural-graphs-self-evolving-llm-agents.md",
+    "title": "지식그래프가 사실을 담는다면 절차 그래프는 행동을 담는다 — 자가진화하는 절차 지식",
+    "date": "2026-09-10",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "harness-self-improve-22",
+  "topic": "harness-self-improve",
+  "treatment": "merge-synthesis",
+  "size": 6,
+  "keywords": [
+   "harness",
+   "태스크",
+   "하네스",
+   "하네스를",
+   "환경",
+   "하네스만"
+  ],
+  "members": [
+   {
+    "path": "posts/2026-08-10-harness-r1-learning-to-edit-runtime-harnesses.md",
+    "title": "Harness-R1: 실행 가능한 런타임 하네스 편집을 RL로 학습하는 방법",
+    "date": "2026-08-10",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-14-shaper-skill-harness-evolution-embodied-agents.md",
+    "title": "모델은 얼려두고 스킬과 하네스만 진화 — 3달러로 SFT를 넘어서는 방법",
+    "date": "2026-08-14",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-16-autodesign-meta-harness-optimization.md",
+    "title": "모델은 그대로 두고 하네스만 재귀 최적화 — AutoDesign의 메타 하네스 루프",
+    "date": "2026-08-16",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/zetta-closed-loop-embodied-harness-2026-08-31.md",
+    "title": "VLA는 동결하고 하네스만 진화 — Zetta의 폐루프 엔바디드 설계",
+    "date": "2026-08-31",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-14-harness-or-model.md",
+    "title": "하네스를 바꿔도 성적은 거의 그대로임 — Harness or Model? 800회 실험 정리",
+    "date": "2026-09-14",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-16-sciencebuddy-recursive-self-improvement.md",
+    "title": "하네스 고치고 모델 학습시키고를 번갈아 돌리기 — 4B 모델로 31%에서 51%를 만든 구조",
+    "date": "2026-09-16",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "harness-self-improve-23",
+  "topic": "harness-self-improve",
+  "treatment": "merge-synthesis",
+  "size": 4,
+  "keywords": [
+   "harness",
+   "arc-agi-3",
+   "컨텍스트",
+   "그대로",
+   "코드를",
+   "nooa"
+  ],
+  "members": [
+   {
+    "path": "posts/2026-07-24-nooa-nvidia-object-oriented-agents.md",
+    "title": "에이전트는 파이썬 클래스 하나면 된다 — NOOA가 프레임워크 난립에 던진 단순화",
+    "date": "2026-07-24",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-25-nvidia-oo-agents.md",
+    "title": "에이전트를 파이썬 클래스 하나로 통합해버린 NVIDIA NOOA — 설계 철학 정리",
+    "date": "2026-07-25",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-08-prime-agent-self-improving-rlm-harness.md",
+    "title": "Prime Agent: 자가개선 코딩 에이전트 하네스 (Prime Intellect, 2026-08)",
+    "date": "2026-08-08",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "posts/2026-08-29-prime-agent-self-improving-rlm-harness.md",
+    "title": "모델은 그대로 두고 하네스만 바꿨더니 30%에서 95.5%가 됐다",
+    "date": "2026-08-29",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "harness-self-improve-24",
+  "topic": "harness-self-improve",
+  "treatment": "merge-synthesis",
+  "size": 5,
+  "keywords": [
+   "자기",
+   "정리함",
+   "harness",
+   "배경",
+   "정답",
+   "기법"
+  ],
+  "members": [
+   {
+    "path": "posts/2026-07-26-reopd-multi-turn-on-policy-distillation.md",
+    "title": "에이전트 훈련 병목은 이제 환경이 아니라 연산임 — ReOPD가 오프라인으로 바꾼 온폴리시 증류",
+    "date": "2026-07-26",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-30-rsibench-data-discovery-reliability-gap.md",
+    "title": "에이전트 자기개선 루프, 발견은 하는데 지키지를 못한다 — RSIBench-Data의 두 숫자",
+    "date": "2026-07-30",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-13-macaron-v1-mixture-of-lora-continual-learning.md",
+    "title": "기반 모델 얼려두고 LoRA만 갈아끼우는 법 — Macaron-V1의 지속 학습 설계",
+    "date": "2026-08-13",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "posts/2026-08-21-phantom-gains-self-improvement-audit.md",
+    "title": "자기개선 측정의 7가지 함정 — Phantom Gains이 보여준 허수 이득",
+    "date": "2026-08-21",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-09-coevolving-harness-model-onpolicy-correction.md",
+    "title": "하네스 진화 후 전문가 imitation은 역풍 — 실패 턴만 고치는 온폴리시 교정",
+    "date": "2026-09-09",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "llm-course-notes-01",
+  "topic": "llm-course-notes",
+  "treatment": "merge-synthesis",
+  "size": 10,
+  "keywords": [
+   "페이지",
+   "pdf",
+   "강의",
+   "네비",
+   "시리즈",
+   "ece7115"
+  ],
+  "members": [
+   {
+    "path": "ece7115-0-course-introduction.md",
+    "title": "ECE7115 0강: Course Introduction",
+    "date": "2026-04-26",
+    "reason": "타 대학 강의 요약·빈약"
+   },
+   {
+    "path": "ece7115-1-resource-accounting.md",
+    "title": "ECE7115 1강: Resource Accounting",
+    "date": "2026-04-26",
+    "reason": "타 대학 강의 요약·빈약"
+   },
+   {
+    "path": "ece7115-2-basics-transformer.md",
+    "title": "ECE7115 2강: Transformer Basics",
+    "date": "2026-04-26",
+    "reason": "타 대학 강의 요약·빈약"
+   },
+   {
+    "path": "ece7115-3-basics-llm.md",
+    "title": "ECE7115 3강: LLM Basics",
+    "date": "2026-04-26",
+    "reason": "타 대학 강의 요약·빈약"
+   },
+   {
+    "path": "ece7115-4-modern-llm-architecture.md",
+    "title": "ECE7115 4강 정리: Modern LLM Architecture",
+    "date": "2026-04-26",
+    "reason": "타 대학 강의 요약·빈약"
+   },
+   {
+    "path": "ece7115-5-mixture-of-experts.md",
+    "title": "ECE7115 5강 정리: Mixture of Experts",
+    "date": "2026-04-26",
+    "reason": "타 대학 강의 요약·빈약"
+   },
+   {
+    "path": "ece7115-6-scaling-laws.md",
+    "title": "ECE7115 6강 정리: Scaling Laws",
+    "date": "2026-04-26",
+    "reason": "타 대학 강의 요약·빈약"
+   },
+   {
+    "path": "ece7115-7-llm-case-study.md",
+    "title": "ECE7115 7강 요약: LLM Case Study로 보는 아키텍처 변화",
+    "date": "2026-04-26",
+    "reason": "타 대학 강의 요약·빈약"
+   },
+   {
+    "path": "ece7115-8-understanding-gpus.md",
+    "title": "ECE7115 8강 요약: Understanding GPUs",
+    "date": "2026-04-26",
+    "reason": "타 대학 강의 요약·빈약"
+   },
+   {
+    "path": "ece7115-9-parallelism.md",
+    "title": "ECE7115 9강 요약: Parallelism",
+    "date": "2026-04-26",
+    "reason": "타 대학 강의 요약·빈약"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "model-releases-01",
+  "topic": "model-releases",
+  "treatment": "merge-synthesis",
+  "size": 7,
+  "keywords": [
+   "출력",
+   "opus",
+   "claude",
+   "코딩",
+   "입력",
+   "api"
+  ],
+  "members": [
+   {
+    "path": "claude-opus-sonnet-4-6-1m-context-ga.md",
+    "title": "Claude Opus 4.6 / Sonnet 4.6 — 1M 컨텍스트 윈도우 GA, 표준 가격으로 제공",
+    "date": "2026-03-15",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "claude-opus-4-7-review.md",
+    "title": "Claude Opus 4.7 정식 출시, 핵심 변화와 실무 활용 포인트 정리",
+    "date": "2026-04-16",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "gpt-5-5-deep-dive-2026-04-24.md",
+    "title": "GPT-5.5 심층 리포트 — 벤치 전체 표·원본 인용·오픈클로 관점 통합",
+    "date": "2026-04-24",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "gpt-5-5-introducing-2026-04-24.md",
+    "title": "GPT-5.5 공개 — 코딩벤치 82.7%, 근데 진짜 포인트는 가격과 토큰 효율임",
+    "date": "2026-04-24",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "2026-05-29-claude-opus-4-8.md",
+    "title": "Claude Opus 4.8 발표 — 코딩·에이전트·전문 작업 전반의 도약",
+    "date": "2026-05-29",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "claude-sonnet-5-agentic-sonnet-2026-07-01.md",
+    "title": "Claude Sonnet 5 공개: ‘에이전트 실행층’이 미드티어 모델로 내려왔다",
+    "date": "2026-07-01",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "posts/claude-opus-5-agentic-work-2026-07-25.md",
+    "title": "Claude Opus 5 인터뷰: 반값 Fable인가, 매일 쓰는 에이전트 모델인가",
+    "date": "2026-07-25",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "model-releases-02",
+  "topic": "model-releases",
+  "treatment": "merge-synthesis",
+  "size": 6,
+  "keywords": [
+   "preview",
+   "opus",
+   "anthropic",
+   "claude",
+   "mythos",
+   "일반"
+  ],
+  "members": [
+   {
+    "path": "claude-mythos-preview-explained.md",
+    "title": "Claude Mythos, Anthropic이 풀지 않은 AI 모델 — 왜, 어떻게, 무엇이 다른가",
+    "date": "2026-04-14",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "claude-opus-4-8-system-card.md",
+    "title": "Claude Opus 4.8 System Card 정독 — RSP·정렬·복지·능력 96개 figure 전수 해설",
+    "date": "2026-05-29",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "2026-06-03-anthropic-expanding-project-glasswing.md",
+    "title": "프로젝트 글래스윙 확대: Anthropic이 150개 조직에 AI 사이버보안 도구 제공",
+    "date": "2026-06-03",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "openai-gpt-5-6-preview-system-card-2026-06-27.md",
+    "title": "GPT-5.6 Preview System Card — 진짜 뉴스는 성능이 아니라 ‘배포 운영’이다",
+    "date": "2026-06-27",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "posts/claude-opus-5-system-card-deep-dive-2026-07-25.md",
+    "title": "Claude Opus 5 시스템카드 심층 분석 — 194페이지 안에 숨겨진 숫자들",
+    "date": "2026-07-25",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "posts/claude-fable-mythos-5-1-2026-09-02.md",
+    "title": "Claude Fable 5.1·Mythos 5.1: 성능 발표보다 중요한 건 ‘접근권이 나뉜 같은 모델’입니다",
+    "date": "2026-09-02",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "model-releases-03",
+  "topic": "model-releases",
+  "treatment": "merge-synthesis",
+  "size": 11,
+  "keywords": [
+   "추론",
+   "로컬",
+   "한다",
+   "위한",
+   "메모리",
+   "요약"
+  ],
+  "members": [
+   {
+    "path": "mac-local-ai-model-guide-for-everyone.md",
+    "title": "맥에서 로컬 AI 모델(4B·9B), 진짜 쓸 만할까?",
+    "date": "2026-03-05",
+    "reason": "빈약(900자 미만)"
+   },
+   {
+    "path": "nvidia-nemotron-3-nano-4b-local-ai-hybrid.md",
+    "title": "NVIDIA Nemotron 3 Nano 4B — 로컬 AI를 위한 소형 하이브리드 모델",
+    "date": "2026-03-18",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "gemma-4-first-look-important-takeaways.md",
+    "title": "Gemma 4 첫인상 정리: Apache 2.0, 256K 컨텍스트, 그리고 로컬 코딩 실험까지",
+    "date": "2026-04-03",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "qwen3-6-35b-a3b-openclaw-claude-code-guide.md",
+    "title": "Qwen3.6-35B-A3B 오픈소스 공개: 오픈클로·클로드 코드에 로컬로 연결하기",
+    "date": "2026-04-17",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "nemotron-ocr-v2-korean-ocr-guide.md",
+    "title": "NVIDIA Nemotron OCR v2, 한국어 OCR SOTA급인가? NED 뜻, 허깅페이스 사용법, 권장 GPU 사양 정리",
+    "date": "2026-04-18",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "openclaw-local-model-context-overhead-qwen36.md",
+    "title": "Qwen3.6이 약한 게 아니었다, OpenClaw가 로컬 모델에서 무거운 진짜 이유",
+    "date": "2026-04-19",
+    "reason": "외부 글 기반 — 본인 관점으로 새로 쓸 가치 있음"
+   },
+   {
+    "path": "gemma-4-multi-token-prediction-mtp.md",
+    "title": "Gemma 4 Multi-Token Prediction (MTP) using Hugging Face Transformers",
+    "date": "2026-05-09",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "qwen3.6-mtp-guide-2026-05-14.md",
+    "title": "Qwen3.6 로컬 실행 가이드 — Unsloth MTP, GGUF 벤치마크, Studio까지",
+    "date": "2026-05-14",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "2026-06-09-cosmos3-omnimodal-world-models.md",
+    "title": "NVIDIA Cosmos 3: 물리 AI를 위한 옴니모달 월드 모델",
+    "date": "2026-06-09",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/local-coding-agents-open-weight-2026-06-29.md",
+    "title": "로컬 코딩 에이전트, 이제 취미가 아니라 백업 전략이다",
+    "date": "2026-06-29",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "posts/2026-07-11-gemma-4-technical-report.md",
+    "title": "Gemma 4 — 온디바이스 2.3B부터 31B까지, 로컬 에이전트 파이프라인에 실제로 쓸 만한 숫자들",
+    "date": "2026-07-11",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "model-releases-04",
+  "topic": "model-releases",
+  "treatment": "merge-synthesis",
+  "size": 9,
+  "keywords": [
+   "학습",
+   "그대로",
+   "라는",
+   "추론",
+   "업무",
+   "거의"
+  ],
+  "members": [
+   {
+    "path": "llm-emotion-interpretability-tools-sae-saelens-transformerlens-gemma-scope.md",
+    "title": "LLM은 감정을 가지고 있을까? 감정 벡터와 해석 도구로 들여다본 모델 내부",
+    "date": "2026-04-04",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "gpt-duct-tape-image-model.md",
+    "title": "GPT 차세대 이미지 모델 \\\"duct-tape\\\" 시리즈 — 진짜 사진인지 AI인지 더 이상 구분이 안 된다",
+    "date": "2026-04-16",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "kimi-k2-6-open-source-coding-agent-2026-04-21.md",
+    "title": "Kimi K2.6 — 오픈소스가 12시간 혼자 코딩해서 LM Studio보다 20% 빨라진 얘기",
+    "date": "2026-04-21",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "deepseek-v4-pro-flash-release-2026-04-24.md",
+    "title": "DeepSeek-V4-Pro / Flash 공개 정리: 100만 토큰 컨텍스트와 벤치마크 결과",
+    "date": "2026-04-24",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "deepseek-deepep-moe-2026-04-26.md",
+    "title": "DeepSeek가 MoE 통신 커널을 통째로 풀었음 — DeepEP가 의미하는 것",
+    "date": "2026-04-26",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "posts/solar-open2-agentic-open-weight-2026-07-22.md",
+    "title": "Solar Open 2: 한국 모델도 이제 업무 모델 쪽으로 오고 있다",
+    "date": "2026-07-22",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "posts/glm-5-3-post-training-coding-cyber-2026-08-14.md",
+    "title": "GLM-5.3: 같은 베이스 모델에서 포스트트레이닝만 키웠더니 생긴 일",
+    "date": "2026-08-14",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "posts/glm-53-flash-frontier-intelligence-flash-cost-2026-08-27.md",
+    "title": "GLM-5.3-Flash: 320B 모델을 18B 활성 파라미터로 쓰는 법",
+    "date": "2026-08-27",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "posts/2026-09-04-nemotron-ioi-gold-posttraining-rl.md",
+    "title": "IOI 2026에서 AI가 인간 최고점을 넘김 — 게인의 대부분은 SFT와 테스트타임 루프였음",
+    "date": "2026-09-04",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "multi-agent-01",
+  "topic": "multi-agent",
+  "treatment": "merge-synthesis",
+  "size": 11,
+  "keywords": [
+   "multi-agent",
+   "멀티에이전트",
+   "실험",
+   "자기",
+   "claude",
+   "서로"
+  ],
+  "members": [
+   {
+    "path": "tradingagents-multi-agent-trading-llm-2026-04-28.md",
+    "title": "TradingAgents 사용법 — LLM 9명이 주식 분석·매매 결정하는 멀티에이전트 오픈소스",
+    "date": "2026-04-28",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "ruflo-multi-agent-orchestration-2026-05-04.md",
+    "title": "Ruflo: Claude Code에 스웜·자가학습·페더레이션을 얹은 멀티에이전트 오케스트레이터",
+    "date": "2026-05-04",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "aris-autonomous-research-adversarial-multi-agent.md",
+    "title": "AI가 혼자 논문 쓰게 냅두면 생기는 일 — ARIS가 설계한 '적대적 공동 연구' 시스템",
+    "date": "2026-05-07",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "missions-multi-agent-luke-alvoeiro.md",
+    "title": "다중 에이전트 팀을 짜는 법 — Factory의 Missions는 왜 모델 업그레이드에도 튼튼한가",
+    "date": "2026-05-07",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "google-co-scientist-nature-2026-05-20.md",
+    "title": "Google Co-Scientist: AI가 과학자와 함께 생각하는 시대",
+    "date": "2026-05-20",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "2026-06-04-darkforest-multi-agent-llm-reasoning.md",
+    "title": "DarkForest: 에이전트끼리 덜 대화할수록 정답에 가까워진다",
+    "date": "2026-06-04",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/agent-loop-image-generation-prompt-optimization-2026-08-16.md",
+    "title": "이미지 프롬프트보다 루프를 설계해야 합니다: PromptSculptor, Maestro, GenPilot 리뷰",
+    "date": "2026-08-16",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-27-interaction-tax-multi-agent-diversity.md",
+    "title": "에이전트끼리 해답을 주고받는 순간 다양성이 사라짐 — 인터랙션 텍스 논문 정리",
+    "date": "2026-08-27",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-04-agent-swarm-cheating-whistleblowing.md",
+    "title": "100개 에이전트 무리에서 치팅은 27분 만에 퍼지고 24%는 스스로 내부고발했다",
+    "date": "2026-09-04",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-09-llm-agent-swap-interchangeability.md",
+    "title": "에이전트 팀의 동료 교체는 공짜가 아님 — 점수는 그대로인데 통신 비용이 63% 오름",
+    "date": "2026-09-09",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-22-openclaw-reddit-value-delegation.md",
+    "title": "AI 에이전트 사용자는 무엇에 불만을 말하는가: OpenClaw Reddit 73,093건 분석",
+    "date": "2026-09-22",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "multi-agent-02",
+  "topic": "multi-agent",
+  "treatment": "merge-synthesis",
+  "size": 6,
+  "keywords": [
+   "첫째",
+   "둘째",
+   "multi-agent",
+   "실패",
+   "오류",
+   "작업"
+  ],
+  "members": [
+   {
+    "path": "darkforest-less-talk-multi-agent-llms-2026-05-28.md",
+    "title": "다크포레스트: 멀티에이전트 LLM에서 대화를 줄이고 정확도를 높이는 방법",
+    "date": "2026-05-28",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-13-llm-agent-failure-taxonomy-synthesis.md",
+    "title": "에이전트가 부분에선 뛰어난데 전체에선 무너지는 이유 — 실패 6클러스터 종합",
+    "date": "2026-07-13",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-15-webswarm-recursive-multi-agent-web-search.md",
+    "title": "검색 에이전트를 '위임 트리'로 돌리기 — WebSwarm이 보여주는 오케스트레이션 설계",
+    "date": "2026-07-15",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-17-searchos-multi-agent-information-seeking.md",
+    "title": "검색 에이전트가 같은 막다른 길을 반복한다 — SearchOS가 상태를 시스템으로 빼낸 방식",
+    "date": "2026-07-17",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-26-capable-llms-outgrow-multi-agent-collaboration.md",
+    "title": "에이전트 수를 늘리기 전에 볼 숫자 — 45% 임계점과 조정 세금",
+    "date": "2026-07-26",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "posts/2026-09-12-bayesian-backward-multi-agent.md",
+    "title": "다수결이 틀릴 때는 앵커를 뒤집어서 만들어라 — 베이즈 역방향 추론 집계법",
+    "date": "2026-09-12",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "multi-agent-03",
+  "topic": "multi-agent",
+  "treatment": "merge-synthesis",
+  "size": 4,
+  "keywords": [
+   "조직",
+   "구조가",
+   "multi-agent",
+   "역할을",
+   "그런데",
+   "일은"
+  ],
+  "members": [
+   {
+    "path": "geeknews-2026-04-08-multi-agent-orchestration-reality-check.md",
+    "title": "멀티 에이전트 오케스트레이션, 이론과 현실의 간극",
+    "date": "2026-04-08",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "geeknews-2026-04-10-ax-team-paradox.md",
+    "title": "AX팀을 만드는 순간 실패가 시작된다 — AI 전환의 조직적 역설",
+    "date": "2026-04-10",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "sakana-fugu-model-orchestration-2026-06-22.md",
+    "title": "Sakana Fugu: 멀티에이전트를 하나의 모델 API로 감추려는 시도",
+    "date": "2026-06-22",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "posts/2026-09-12-orch-collective-intelligence-embodied-ai.md",
+    "title": "로봇 50대 팀은 조직도가 결정한다 — 병렬은 놓두고 순서만 계층으로 묶는 법",
+    "date": "2026-09-12",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "multimodal-world-01",
+  "topic": "multimodal-world",
+  "treatment": "merge-synthesis",
+  "size": 7,
+  "keywords": [
+   "제어",
+   "실시간",
+   "그런데",
+   "자기",
+   "결과를",
+   "여기에"
+  ],
+  "members": [
+   {
+    "path": "streamingclaw-realtime-video-agent.md",
+    "title": "StreamingClaw - 실시간 스트리밍 비디오 이해를 위한 통합 에이전트 프레임워크",
+    "date": "2026-03-27",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "murmur-realtime-stt-translation-apple-silicon.md",
+    "title": "Murmur — Apple Silicon에서 돌아가는 실시간 음성 전사·번역 앱",
+    "date": "2026-03-30",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "2026-05-30-minwm-realtime-interactive-video-world-model.md",
+    "title": "minWM: 비디오 diffusion을 실시간 인터랙티브 월드 모델로",
+    "date": "2026-05-30",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "2026-05-30-qwen-vla-unifying-vision-language-action.md",
+    "title": "Qwen-VLA: 로봇 태스크를 하나로 통합하는 비전-언어-액션 모델",
+    "date": "2026-05-30",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "2026-06-19-perplexity-realtime-api-voice-search.md",
+    "title": "Perplexity가 음성 검색을 ‘데모’가 아니라 제품으로 만든 방법",
+    "date": "2026-06-19",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "project-fetch-phase-two-physical-agentic-ai-2026-06-19.md",
+    "title": "로봇개를 혼자 다루기 시작한 Claude — Project Fetch Phase Two가 말하는 물리 에이전트의 시작",
+    "date": "2026-06-19",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "posts/2026-08-29-anthropic-mhs-physical-agents.md",
+    "title": "에이전트가 실험실 장비를 직접 잡는 날 — Anthropic MHS 연구 프리뷰 정리",
+    "date": "2026-08-29",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "openclaw-updates-01",
+  "topic": "openclaw-updates",
+  "treatment": "merge-handson",
+  "size": 10,
+  "keywords": [
+   "openclaw",
+   "플러그인",
+   "codex",
+   "채널",
+   "telegram",
+   "중요한"
+  ],
+  "members": [
+   {
+    "path": "nanoclaw-gabriel-cohen-seminar-intro.md",
+    "title": "NanoClaw 3,000줄의 충격: 개발자 Gabriel Cohen 세미나 핵심 정리",
+    "date": "2026-03-04",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "ai-agent-trend-nanoclaw-openclaw-for-everyone.md",
+    "title": "AI 에이전트, 왜 ‘큰 플랫폼’에서 ‘작은 맞춤형’으로 가는가?",
+    "date": "2026-03-05",
+    "reason": "빈약(900자 미만)"
+   },
+   {
+    "path": "openclaw-2026-4-11-update-memory-webchat-video.md",
+    "title": "OpenClaw 2026.4.11 핵심 변화 정리",
+    "date": "2026-04-12",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "state-of-the-claw-openclaw-2026.md",
+    "title": "State of the Claw — OpenClaw 5개월, 보안 위기와 재단 설립까지 Peter Steinberger 키노트 정리",
+    "date": "2026-04-18",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "openclaw-2026-4-19-4-20-update-guide.md",
+    "title": "OpenClaw 2026.4.19, 2026.4.20 업데이트 총정리: 핵심 변화와 바로 쓰는 법",
+    "date": "2026-04-22",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "openclaw-427-codex-computer-use-2026-04-30.md",
+    "title": "OpenClaw 4.27, Codex Computer Use까지 연결됐다",
+    "date": "2026-04-30",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "openclaw-2026-5-7-update.md",
+    "title": "오픈클로 2026.5.7 업데이트 — 채널 권한, 크론 상태, Codex 승인까지 안정화 패치",
+    "date": "2026-05-09",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "openclaw-2026-5-26-release-telegram-codex.md",
+    "title": "OpenClaw 2026.5.26 업데이트: 텔레그램과 Codex 사용자가 먼저 볼 변화",
+    "date": "2026-05-28",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "openclaw-2026-5-28-release-security-codex-provider.md",
+    "title": "OpenClaw v2026.5.27 업데이트: 보안 강화 + Codex 안정성 + 신규 프로바이더 대폭 추가",
+    "date": "2026-05-28",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "openclaw-faster-smaller-sharper-claws-2026-05-31.md",
+    "title": "OpenClaw가 더 빨라지고, 더 작아지고, 더 믿을 수 있어졌다",
+    "date": "2026-05-31",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "openclaw-updates-02",
+  "topic": "openclaw-updates",
+  "treatment": "merge-handson",
+  "size": 8,
+  "keywords": [
+   "기본",
+   "discord",
+   "openclaw",
+   "설치",
+   "오픈클로",
+   "플러그인"
+  ],
+  "members": [
+   {
+    "path": "openclaw-2026-4-15-release-opus-gemini-tts.md",
+    "title": "OpenClaw 2026.4.15 릴리스: Claude Opus 4.7 탑재, Gemini TTS, 더 가벼운 컨텍스트",
+    "date": "2026-04-17",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "openclaw-2026-4-25-update.md",
+    "title": "오픈클로 2026.4.25 업데이트 — 뭐가 달라졌냐",
+    "date": "2026-04-28",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "openclaw-4-26-update-local-tts-2026-04-28.md",
+    "title": "OpenClaw 4.26 업데이트 + 로컬 TTS 활성화 방법",
+    "date": "2026-04-28",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "openclaw-2026-4-29-release-steer-nvidia-memory.md",
+    "title": "OpenClaw 2026.4.29 업데이트: AI한테 말 걸기 방식이 바뀌었다 (Steer 모드)",
+    "date": "2026-05-01",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "openclaw-2026-5-2-update.md",
+    "title": "오픈클로 2026.5.2~5.3 업데이트 — 파일 전송 플러그인, 게이트웨이 속도, 메시징 전면 수정",
+    "date": "2026-05-04",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "openclaw-2026-5-4-update.md",
+    "title": "오픈클로 2026.5.4 업데이트 — Google Meet 실시간 음성, 플러그인 대규모 외부화, 채널 스트리밍 전면 개편",
+    "date": "2026-05-06",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "openclaw-update-2026-05-05-06.md",
+    "title": "OpenClaw 2026.5.4~5.6 업데이트: 구글 미트 음성 브릿지부터 Doctor 긴급 수정까지",
+    "date": "2026-05-07",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "posts/2026-06-01-openclaw-528-update.md",
+    "title": "오픈클로 2026.5.28 — 더 단단해진 에이전트 런타임, 더 넓어진 모델 지원",
+    "date": "2026-06-01",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "owner-review-01",
+  "topic": "owner-review",
+  "treatment": "owner-review",
+  "size": 1,
+  "keywords": [
+   "나오지",
+   "실행한다",
+   "심사관이",
+   "apply",
+   "넘을",
+   "정상"
+  ],
+  "members": [
+   {
+    "path": "posts/nomon-methodology-draft.md",
+    "title": "Nomon: '평가 기준을 먼저 정하면 AI 코딩 에이전트가 달라질까?'",
+    "date": "2026-05-11",
+    "reason": "초안·테스트 글 공개"
+   }
+  ],
+  "status": "owner",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "reasoning-efficiency-01",
+  "topic": "reasoning-efficiency",
+  "treatment": "merge-synthesis",
+  "size": 16,
+  "keywords": [
+   "토큰",
+   "추론",
+   "토큰을",
+   "학습",
+   "다시",
+   "실제로"
+  ],
+  "members": [
+   {
+    "path": "visual-attention-variants-modern-llms.md",
+    "title": "Visual Attention Variants in Modern LLMs 정리",
+    "date": "2026-03-23",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "greg-brockman-saastr-human-attention-bottleneck-2026-05-04.md",
+    "title": "OpenAI 그렉 브록먼이 SaaStr에서 말한 것들: 인간의 주의가 새로운 병목이다",
+    "date": "2026-05-04",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "gated-deltanet2-decoupling-erase-write-linear-attention-2026-05-23.md",
+    "title": "Gated DeltaNet-2 — 선형 어텐션에서 지우기와 쓰기를 분리하다",
+    "date": "2026-05-23",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "efficient-agentic-reasoning-self-regulated-planning-2026-05-24.md",
+    "title": "에이전트가 스스로 계획을 조절하면 추론이 효율적이 된다 — Self-Regulated Simulative Planning",
+    "date": "2026-05-24",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "flowlong-inference-time-long-video-2026-05-24.md",
+    "title": "FlowLong — 추론 시점에 긴 영상을 일관되게 생성하는 방법",
+    "date": "2026-05-24",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "latentomni-audio-visual-latent-reasoning-2026-05-24.md",
+    "title": "LatentOmni — 오디오와 비디오를 잠재 공간에서 하나로 묶는 멀티모달 추론",
+    "date": "2026-05-24",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "gated-deltanet-2-linear-attention-2026-05-25.md",
+    "title": "Gated DeltaNet-2: 삭제와 쓰기를 분리한 선형 어텐션의 새로운 접근",
+    "date": "2026-05-25",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "2026-05-29-axpo-tool-collapse-nvidia.md",
+    "title": "AI가 도구를 쓰는 법을 배우지 못하는 이유, NVIDIA가 찾은 해법",
+    "date": "2026-05-29",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-14-agora-auction-based-llm-agent-reasoning.md",
+    "title": "어떤 에이전트에게 일을 줄 것인가, 경매로 정함 — Agora 라우팅 실무 노트",
+    "date": "2026-07-14",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-22-sophia-breaking-llm-self-loops.md",
+    "title": "SOPHIA: LLM 추론 루프가 늪에 빠졌을 때 — 숨겨진 활성화 벡터로 탈출시키는 방법",
+    "date": "2026-07-22",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/kimi-k3-gpt2-lineage-2026-07-29.md",
+    "title": "GPT-2에서 Kimi K3까지, 22,580배 커진 모델의 진짜 변화",
+    "date": "2026-07-29",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-08-25-paste-speculative-tool-execution.md",
+    "title": "LLM이 생성하는 동안 툴을 미리 돌려버리기 — PASTE로 지연시간 43.5% 줄인 구조",
+    "date": "2026-08-25",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-05-second-thought-idle-window-parallel-reasoning.md",
+    "title": "에이전트가 도구를 기다리는 동안 추론을 시킴 — Second Thought의 idle window 병렬화",
+    "date": "2026-09-05",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-05-speculative-macro-commit-faster-tool-agents.md",
+    "title": "도구 에이전트 지연시간 19% 절감 — 작은 모델이 미리 돌린 액션 체인을 앵커 검증 한 번에 커밋",
+    "date": "2026-09-05",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-12-magenta-lean-verification-math-agents.md",
+    "title": "7B 모델로 IMO 6문제 전부 풂 — Lean 검증을 추론 루프 안에 넣은 Magenta 구조",
+    "date": "2026-09-12",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-19-llm-agent-test-time-scaling-slowdown-elo-per-token.md",
+    "title": "LLM 에이전트에 토큰을 더 주면 왜 한계에 부딪히나: When Agents Slow Down 논문 정리 (arXiv 2609.15309)",
+    "date": "2026-09-19",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "reasoning-efficiency-02",
+  "topic": "reasoning-efficiency",
+  "treatment": "merge-synthesis",
+  "size": 3,
+  "keywords": [
+   "quantization",
+   "하지만",
+   "크기",
+   "양자화",
+   "완전히",
+   "기록했다"
+  ],
+  "members": [
+   {
+    "path": "turboquant-extreme-compression-ai-efficiency.md",
+    "title": "TurboQuant: LLM KV 캐시를 3비트로 압축하면서 속도까지 8배 빠르게",
+    "date": "2026-03-25",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "turboquant-16gb-mac-local-llm-revolution.md",
+    "title": "TurboQuant: 16GB Mac에서 대형 LLM을 돌리는 새로운 방법",
+    "date": "2026-04-10",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "2bit-llm-quantization-oaem-2026-04-13.md",
+    "title": "2비트만으로 LLM이 돌아간다? 초기화 하나로 극단적 양자화 정복하기",
+    "date": "2026-04-13",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "research-agents-01",
+  "topic": "research-agents",
+  "treatment": "merge-synthesis",
+  "size": 11,
+  "keywords": [
+   "검증",
+   "연구",
+   "주장",
+   "증거",
+   "실험",
+   "arxiv"
+  ],
+  "members": [
+   {
+    "path": "vibe-physics-ai-graduate-student.md",
+    "title": "Vibe Physics - AI 대학원생",
+    "date": "2026-03-26",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "ai-scientist-automation.md",
+    "title": "The AI Scientist - AI 연구의 종단간 자동화",
+    "date": "2026-03-27",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "posts/autoresearchclaw-ai-research-automation-2026-06-01.md",
+    "title": "연구 자동화의 본질은 논문 생성이 아니라 실패 관리임 — AutoResearchClaw 설계 읽기",
+    "date": "2026-06-01",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "2026-06-06-drift-deep-research-agent-error-localization.md",
+    "title": "딥 리서치 에이전트는 어디서 틀리는가? DRIFT: 스팬 수준 궤적 오류 국소화 프레임워크",
+    "date": "2026-06-06",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "2026-06-12-arbor-hypothesis-tree-autonomous-research.md",
+    "title": "Arbor: 가설 트리 정제로 AI가 스스로 연구하게 만드는 프레임워크",
+    "date": "2026-06-12",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-01-google-pat-automating-scientific-review.md",
+    "title": "AI가 논문을 쏟아내면 검증도 에이전트로 돌려야 함 — Google PAT 실전 결과",
+    "date": "2026-07-01",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/claude-science-ai-workbench-2026-07-01.md",
+    "title": "Claude Science — 답을 쓰는 AI가 아니라 감사 가능한 작업대가 과학용 AI의 기준임",
+    "date": "2026-07-01",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "posts/2026-08-07-evigraph-evidence-graph-autonomous-research-agents.md",
+    "title": "자율 연구 에이전트의 주장이 어디서 왔는지 추적하는 법 — EviGraph 구조 정리",
+    "date": "2026-08-07",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-12-mr-lhdr-long-horizon-deep-research.md",
+    "title": "딥리서치 에이전트도 증거 사슬 끝까지 유지를 못 함 — Mr.LHDR 벤치마크 정리",
+    "date": "2026-09-12",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "llm-agent-papers.md",
+    "title": "LLM 에이전트 논문 모음: 자율 에이전트·딥리서치 18선",
+    "date": "2026-09-13",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-14-sci-mmr-evidence-grounded-scientific-reasoning.md",
+    "title": "정답은 맞혔는데 근거는 절반 — 딥리서치 에이전트가 논문 그림을 못 읽는 이유",
+    "date": "2026-09-14",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "ux-laws-01",
+  "topic": "ux-laws",
+  "treatment": "merge-synthesis",
+  "size": 10,
+  "keywords": [
+   "한줄",
+   "법칙인가",
+   "무슨",
+   "실무에서",
+   "쓰이나",
+   "코난쌤의"
+  ],
+  "members": [
+   {
+    "path": "laws-of-ux/01-aesthetic-usability-effect.md",
+    "title": "심미적 사용성 효과 (Aesthetic-Usability Effect)",
+    "date": "2025-05-06",
+    "reason": "lawsofux.com 파생 번역(복제)"
+   },
+   {
+    "path": "laws-of-ux/04-cognitive-bias.md",
+    "title": "인지 편향 (Cognitive Bias)",
+    "date": "2025-05-06",
+    "reason": "lawsofux.com 파생 번역(복제)"
+   },
+   {
+    "path": "laws-of-ux/05-cognitive-load.md",
+    "title": "인지 부하 (Cognitive Load)",
+    "date": "2025-05-06",
+    "reason": "lawsofux.com 파생 번역(복제)"
+   },
+   {
+    "path": "laws-of-ux/08-flow-state.md",
+    "title": "플로우 상태 (Flow)",
+    "date": "2025-05-06",
+    "reason": "lawsofux.com 파생 번역(복제)"
+   },
+   {
+    "path": "laws-of-ux/09-goal-gradient-effect.md",
+    "title": "목표-경사 효과 (Goal-Gradient Effect)",
+    "date": "2025-05-06",
+    "reason": "lawsofux.com 파생 번역(복제)"
+   },
+   {
+    "path": "laws-of-ux/25-serial-position-effect.md",
+    "title": "직렬 위치 효과 (Serial Position Effect)",
+    "date": "2025-05-06",
+    "reason": "lawsofux.com 파생 번역(복제)"
+   },
+   {
+    "path": "laws-of-ux/26-von-restorff-effect.md",
+    "title": "폰 레스토르프 효과 (Von Restorff Effect)",
+    "date": "2025-05-06",
+    "reason": "lawsofux.com 파생 번역(복제)"
+   },
+   {
+    "path": "laws-of-ux/27-selective-attention.md",
+    "title": "선택적 주의 (Selective Attention)",
+    "date": "2025-05-06",
+    "reason": "lawsofux.com 파생 번역(복제)"
+   },
+   {
+    "path": "laws-of-ux/28-zeigarnik-effect.md",
+    "title": "자이가르닉 효과 (Zeigarnik Effect)",
+    "date": "2025-05-06",
+    "reason": "lawsofux.com 파생 번역(복제)"
+   },
+   {
+    "path": "laws-of-ux/29-peak-end-rule.md",
+    "title": "피크-엔드 룰 (Peak-End Rule)",
+    "date": "2025-05-06",
+    "reason": "lawsofux.com 파생 번역(복제)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "ux-laws-02",
+  "topic": "ux-laws",
+  "treatment": "merge-synthesis",
+  "size": 5,
+  "keywords": [
+   "한줄",
+   "법칙인가",
+   "무슨",
+   "사용자는",
+   "요약",
+   "실무에서"
+  ],
+  "members": [
+   {
+    "path": "laws-of-ux/02-choice-overload.md",
+    "title": "선택 과부하 (Choice Overload)",
+    "date": "2025-05-06",
+    "reason": "lawsofux.com 파생 번역(복제)"
+   },
+   {
+    "path": "laws-of-ux/06-doherty-threshold.md",
+    "title": "도허티 임계값 (Doherty Threshold)",
+    "date": "2025-05-06",
+    "reason": "lawsofux.com 파생 번역(복제)"
+   },
+   {
+    "path": "laws-of-ux/07-fitts-law.md",
+    "title": "핏츠의 법칙 (Fitts's Law)",
+    "date": "2025-05-06",
+    "reason": "lawsofux.com 파생 번역(복제)"
+   },
+   {
+    "path": "laws-of-ux/10-hicks-law.md",
+    "title": "힉의 법칙 (Hick's Law)",
+    "date": "2025-05-06",
+    "reason": "lawsofux.com 파생 번역(복제)"
+   },
+   {
+    "path": "laws-of-ux/index.md",
+    "title": "UX 심리학 법칙 30선 — 디자이너와 개발자가 알아야 할 인간의 법칙들",
+    "date": "2025-05-06",
+    "reason": "lawsofux.com 파생 번역(복제)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "ux-laws-03",
+  "topic": "ux-laws",
+  "treatment": "merge-synthesis",
+  "size": 3,
+  "keywords": [
+   "기억",
+   "한줄",
+   "법칙인가",
+   "miller",
+   "조건",
+   "현대"
+  ],
+  "members": [
+   {
+    "path": "laws-of-ux/03-chunking.md",
+    "title": "청킹 (Chunking)",
+    "date": "2025-05-06",
+    "reason": "lawsofux.com 파생 번역(복제)"
+   },
+   {
+    "path": "laws-of-ux/18-millers-law.md",
+    "title": "밀러의 법칙 (Miller's Law)",
+    "date": "2025-05-06",
+    "reason": "lawsofux.com 파생 번역(복제)"
+   },
+   {
+    "path": "laws-of-ux/22-working-memory.md",
+    "title": "작업 기억 (Working Memory)",
+    "date": "2025-05-06",
+    "reason": "lawsofux.com 파생 번역(복제)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "ux-laws-04",
+  "topic": "ux-laws",
+  "treatment": "merge-synthesis",
+  "size": 9,
+  "keywords": [
+   "돌아가기",
+   "한줄",
+   "법칙",
+   "법칙인가",
+   "목록으로",
+   "무슨"
+  ],
+  "members": [
+   {
+    "path": "laws-of-ux/11-jakobs-law.md",
+    "title": "야콥의 법칙 (Jakob's Law)",
+    "date": "2025-05-06",
+    "reason": "lawsofux.com 파생 번역(복제)"
+   },
+   {
+    "path": "laws-of-ux/15-law-of-pragnanz.md",
+    "title": "간결성의 법칙 (Law of Prägnanz)",
+    "date": "2025-05-06",
+    "reason": "lawsofux.com 파생 번역(복제)"
+   },
+   {
+    "path": "laws-of-ux/17-mental-model.md",
+    "title": "멘탈 모델 (Mental Model)",
+    "date": "2025-05-06",
+    "reason": "lawsofux.com 파생 번역(복제)"
+   },
+   {
+    "path": "laws-of-ux/19-occams-razor.md",
+    "title": "오컴의 면도날 (Occam's Razor)",
+    "date": "2025-05-06",
+    "reason": "lawsofux.com 파생 번역(복제)"
+   },
+   {
+    "path": "laws-of-ux/20-pareto-principle.md",
+    "title": "파레토 법칙 (Pareto Principle)",
+    "date": "2025-05-06",
+    "reason": "lawsofux.com 파생 번역(복제)"
+   },
+   {
+    "path": "laws-of-ux/21-teslers-law.md",
+    "title": "테슬러의 법칙 (Tesler's Law)",
+    "date": "2025-05-06",
+    "reason": "lawsofux.com 파생 번역(복제)"
+   },
+   {
+    "path": "laws-of-ux/23-postels-law.md",
+    "title": "포스텔의 법칙 (Postel's Law)",
+    "date": "2025-05-06",
+    "reason": "lawsofux.com 파생 번역(복제)"
+   },
+   {
+    "path": "laws-of-ux/24-paradox-of-the-active-user.md",
+    "title": "활성 사용자의 역설 (Paradox of the Active User)",
+    "date": "2025-05-06",
+    "reason": "lawsofux.com 파생 번역(복제)"
+   },
+   {
+    "path": "laws-of-ux/30-parkinsons-law.md",
+    "title": "파킨슨의 법칙 (Parkinson's Law)",
+    "date": "2025-05-06",
+    "reason": "lawsofux.com 파생 번역(복제)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "ux-laws-05",
+  "topic": "ux-laws",
+  "treatment": "merge-synthesis",
+  "size": 4,
+  "keywords": [
+   "돌아가기",
+   "한줄",
+   "법칙",
+   "법칙인가",
+   "공통",
+   "그룹으로"
+  ],
+  "members": [
+   {
+    "path": "laws-of-ux/12-law-of-common-region.md",
+    "title": "공통 영역의 법칙 (Law of Common Region)",
+    "date": "2025-05-06",
+    "reason": "lawsofux.com 파생 번역(복제)"
+   },
+   {
+    "path": "laws-of-ux/13-law-of-proximity.md",
+    "title": "근접성의 법칙 (Law of Proximity)",
+    "date": "2025-05-06",
+    "reason": "lawsofux.com 파생 번역(복제)"
+   },
+   {
+    "path": "laws-of-ux/14-law-of-similarity.md",
+    "title": "유사성의 법칙 (Law of Similarity)",
+    "date": "2025-05-06",
+    "reason": "lawsofux.com 파생 번역(복제)"
+   },
+   {
+    "path": "laws-of-ux/16-law-of-uniform-connectedness.md",
+    "title": "균일 연결의 법칙 (Law of Uniform Connectedness)",
+    "date": "2025-05-06",
+    "reason": "lawsofux.com 파생 번역(복제)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "web-gui-agents-01",
+  "topic": "web-gui-agents",
+  "treatment": "merge-synthesis",
+  "size": 8,
+  "keywords": [
+   "gui",
+   "상태를",
+   "상태",
+   "검증",
+   "환경",
+   "기반"
+  ],
+  "members": [
+   {
+    "path": "mobilegym-parallel-simulation-mobile-gui-agent-2026-05-28.md",
+    "title": "모바일Gym: 모바일 GUI 에이전트를 위한 검증 가능한 초경량 시뮬레이션",
+    "date": "2026-05-28",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "2026-06-03-mobilegym-gui-agent-simulation.md",
+    "title": "스마트폰을 조작하는 AI… 평가 환경이 병목이었습니다 — MobileGym 해법",
+    "date": "2026-06-03",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "2026-06-14-webchallenger-generalist-web-agent.md",
+    "title": "WebChallenger: 오픈 모델로 프론티어 웹 에이전트에 도전하는 PageMem 아키텍처",
+    "date": "2026-06-14",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-07-31-qwen-ui-agent-foundation-gui-agent.md",
+    "title": "Qwen-UI-Agent: 27B 모델이 GPT-5.6·Opus 4.8을 이기는 방법 — 실기기·크로스플랫폼·하이브리드 GUI+CLI 에이전트의 등장",
+    "date": "2026-07-31",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-03-dwm-discriminative-world-models-web-agents.md",
+    "title": "웹 에이전트 월드 모델은 재현이 아니라 구별을 학습해야 함 — 성공률 13.94%→28.48%",
+    "date": "2026-09-03",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-08-cua-universe-hybrid-gui-cli.md",
+    "title": "컴퓨터 사용 에이전트에 CLI 다리를 얹으니 9B도 23→40% — CUA-Universe 하이브리드 학습 결과",
+    "date": "2026-09-08",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-10-jarvisgui-cross-device-gui-agents.md",
+    "title": "디바이스 3개를 넘나드는 GUI 과제에선 최고 모델도 2% — JarvisGUI가 드러낸 크로스 디바이스 붕괴",
+    "date": "2026-09-10",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-18-gui-agent-erp-reliability-erpbench.md",
+    "title": "저장을 눌렀는데 DB엔 틀린 값이 들어감 — 화면 검증이 못 잡는 ERP 조용한 실패를 잰 ERPBench",
+    "date": "2026-09-18",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "web-gui-agents-02",
+  "topic": "web-gui-agents",
+  "treatment": "merge-synthesis",
+  "size": 11,
+  "keywords": [
+   "다시",
+   "기본",
+   "claude",
+   "단순히",
+   "중요한",
+   "오픈소스"
+  ],
+  "members": [
+   {
+    "path": "webtooni-automation-guide.md",
+    "title": "웹툰이-자동으로-만들어진다",
+    "date": "2025-03-26",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "macshot-macos-screenshot-tool.md",
+    "title": "macshot: 맥에서 CleanShot X 대안 찾는다면, 무료 오픈소스 스크린샷 도구",
+    "date": "2026-04-04",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "openclaw-book-preorder-guide-korea.md",
+    "title": "이게 되네? 오픈클로 미친 활용법 50제 신간 소개: 예판 링크와 이벤트 정리",
+    "date": "2026-04-06",
+    "reason": "책 홍보·이벤트(기한 지난 공지)"
+   },
+   {
+    "path": "netflix-void-video-object-interaction-deletion-guide.md",
+    "title": "Netflix VOID란 무엇인가: 영상에서 물체뿐 아니라 상호작용까지 지우는 비디오 편집 모델",
+    "date": "2026-04-07",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "voice-agent-ecosystem-direction-modupop-guide.md",
+    "title": "음성 에이전트는 어디로 가고 있나: 모두팝 발표에서 읽은 현재 한계와 다음 기회",
+    "date": "2026-04-07",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "gsap-scrolltrigger-guide-2026-04-24.md",
+    "title": "GSAP ScrollTrigger 정리 — 스크롤 기반 애니메이션 제대로 쓰는 법",
+    "date": "2026-04-24",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "claude-knowledge-graph-construction-guide-2026-05-07.md",
+    "title": "Claude로 지식 그래프 만들기: 비정형 텍스트에서 엔티티 추출부터 다중 홉 쿼리까지",
+    "date": "2026-05-07",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "ai-engineering-from-scratch-guide-2026-05-24.md",
+    "title": "AI 엔지니어링을 처음부터 배우는 320시간 — 435레슨 오픈소스 커리큘럼 리뷰",
+    "date": "2026-05-24",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "2026-06-04-mobilemoe-on-device-moe.md",
+    "title": "MobileMoE: 스마트폰에서 돌아가는 수십억 파라미터 MoE 모델의 비밀",
+    "date": "2026-06-04",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/ego-lite-parallel-agent-browser-2026-07-24.md",
+    "title": "ego lite: 사람과 AI 에이전트가 같은 브라우저를 나눠 쓰면 생기는 일",
+    "date": "2026-07-24",
+    "reason": "외부 글 기반 — 본인 관점으로 새로 쓸 가치 있음"
+   },
+   {
+    "path": "posts/2026-08-26-policyguide-workflow-verifier.md",
+    "title": "모델이 지키지 못하는 정책은 모델 밖으로 꺼내면 됨 — PolicyGuide 워크플로 검증기",
+    "date": "2026-08-26",
+    "reason": "논문 단일 요약(복제 판정 대상)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ },
+ {
+  "hub_id": "web-gui-agents-03",
+  "topic": "web-gui-agents",
+  "treatment": "merge-synthesis",
+  "size": 7,
+  "keywords": [
+   "가이드",
+   "최대",
+   "필요한",
+   "시스템",
+   "빠르게",
+   "openai"
+  ],
+  "members": [
+   {
+    "path": "mbot-android-openclaw-guide.md",
+    "title": "mbot 사용 가이드: 구형 안드로이드폰을 24시간 AI 어시스턴트 서버로",
+    "date": "2026-03-04",
+    "reason": "빈약(900자 미만)"
+   },
+   {
+    "path": "stanford-ai-index-2026-12-takeaways-korean-guide-refresh.md",
+    "title": "스탠퍼드 AI Index 2026 핵심 12가지, 한국어로 한 번에 읽기",
+    "date": "2026-04-13",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "stanford-ai-index-2026-12-takeaways-korean-guide.md",
+    "title": "스탠퍼드 AI Index 2026 핵심 12가지, 한국어로 한 번에 읽기",
+    "date": "2026-04-13",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "chatgpt-images-2-0-practical-prompt-guide-2026-04-22.md",
+    "title": "OpenAI ChatGPT Images 2.0 공개, 뭐가 달라졌나? 실제로 먹히는 프롬프트 6개까지 정리",
+    "date": "2026-04-22",
+    "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
+   },
+   {
+    "path": "openai-prompt-guidance-2026-04-30.md",
+    "title": "OpenAI 공식 프롬프트 가이드 — GPT-5.5 시대의 완전 정리",
+    "date": "2026-04-30",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "anthropic-claude-computer-browser-best-practices-2026-05-24.md",
+    "title": "Claude 컴퓨터·브라우저 사용 모범 사례 — 클릭 정확도부터 컨텍스트 관리까지",
+    "date": "2026-05-24",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "posts/gpt-image-2-5-prompting-guide-2026-09-16.md",
+    "title": "GPT Image 2.5 프롬프트 공식 가이드 총정리",
+    "date": "2026-09-16",
+    "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   }
+  ],
+  "status": "queued",
+  "hub_slug": null
+ }
+]

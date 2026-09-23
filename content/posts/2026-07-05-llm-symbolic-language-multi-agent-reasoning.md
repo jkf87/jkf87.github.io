@@ -1,9 +1,11 @@
 ---
 title: "에이전트끼리 자기들 언어로 대화시키면 토큰 3~6배 아낌 — CLSR 상징 언어 진화"
 date: 2026-07-05
-draft: false
 description: "다중 에이전트가 컴팩트한 상징 언어를 자율 발명·진화하고 라우터가 쿼리 난이도별로 선택하는 CLSR. 멀티에이전트 파이프라인 토큰 비용 절감 관점으로 정리했다."
 tags: [LLM, Multi-Agent, SymbolicCommunication, Reasoning, ICML2026, Efficiency, Evolution]
+draft: true
+refactor_hub: harness-self-improve-05
+refactor_status: queued
 ---
 
 멀티에이전트 파이프라인을 돌리면 토큰 비용이 곧 배포 비용임. 에이전트 간 통신을 자연어로 쭉 쓰는 게 기본값인데, ICML 2026 논문이 이 전제를 깨는 결과를 냈음. 원문은 [arXiv:2606.29354](https://arxiv.org/abs/2606.29354).

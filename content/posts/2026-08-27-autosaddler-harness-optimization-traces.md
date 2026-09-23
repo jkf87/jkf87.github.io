@@ -1,13 +1,15 @@
 ---
 title: "실패 트레이스로 하네스를 고치는 오프라인 학습 — AutoSaddler, 롤아웃 147개의 효율"
 date: 2026-08-27
-draft: false
 tags:
   - agent
   - harness
   - llm
   - rl
 description: "AutoSaddler는 하네스 최적화를 실패 실행 트레이스 기반 오프라인 학습으로 재정식화함. GAIA2 +9.0%p, SWE-Bench Pro +9.6%p, Terminal-Bench 2.0 +10.0%p를 롤아웃 147개로 달성. 하네스를 코드로 다루는 세 단계 구조를 정리함."
+draft: true
+refactor_hub: harness-self-improve-21
+refactor_status: queued
 ---
 
 하네스가 에이전트 성능의 큰 몫을 정한다는 건 이제 상식이 됐음. 근데 하네스 최적화는 여전히 대부분 수작업임. 마이크로소프트·POSTECH·KAIST 공동의 AutoSaddler(arXiv 2608.23041)가 이 문제를 오프라인 학습 문제로 바꿈. 실패 실행 트레이스에서 신호를 뽑아 하네스 업데이트에 반영하는 방식. 결과가 효율 면에서 인상적. GAIA2(웹 검색·도구 사용·추론을 섞은 범용 어시스턴트 과제 벤치마크) +9.0%p, SWE-Bench Pro(실제 오픈소스 저장소의 이슈를 해결하는 코드 벤치마크의 상위 난도판) +9.6%p, Terminal-Bench 2.0(터미널 명령으로 실제 작업을 끝내는지 재는 벤치마크) +10.0%p를 롤아웃 147개 만에 도달함. 비교 기법은 약 2,800 실행을 써도 64.6~61.5%에 그침.

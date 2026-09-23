@@ -16,6 +16,9 @@ tags:
 source: arxiv
 source_url: https://arxiv.org/abs/2608.05013
 description: "롱호라이즌 일상 작업용 하네스 OneDayAgent를 AgentIF-OneDay 벤치마크 결과와 함께 정리. 검증 단계 추가만으로 +3.3점, 통합 구성 0.821로 상용 에이전트를 앞선 설계를 분석했다."
+draft: true
+refactor_hub: agent-memory-08
+refactor_status: queued
 ---
 
 하루 걸리는 작업을 맡기면 목표 이탈, 상태 유실, 컨텍스트 오버플로우로 무너지는 문제를 하나의 하네스로 풀은 논문이 나옴. OneDayAgent(분해·압축·검증·수리를 한 루프로 묶은 롱호라이즌 작업 전용 하네스)가 그 설계임.

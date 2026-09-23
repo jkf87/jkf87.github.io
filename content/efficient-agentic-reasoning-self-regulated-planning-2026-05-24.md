@@ -6,9 +6,11 @@ tags:
   - planning
   - llm-efficiency
   - self-regulated
-draft: false
 enableToc: true
 description: "에이전트가 스스로 시뮬레이션 계획을 조절해 토큰 소모를 줄이고 추론 효율을 높이는 방법을 분석한다."
+draft: true
+refactor_hub: reasoning-efficiency-01
+refactor_status: queued
 ---
 
 ## Q. 최근 "에이전트가 알아서 잘 추론하겠지"라는 접근에 문제가 있다고 들었는데, 어떤 점이 비효율적인 건가요?

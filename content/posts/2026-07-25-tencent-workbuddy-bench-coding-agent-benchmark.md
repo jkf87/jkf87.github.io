@@ -9,9 +9,11 @@ tags:
   - evaluation
   - LLM
   - contamination
-draft: false
 noindex: true
 summary: Tencent가 발표한 WorkBuddy Bench는 Code·Web·Office·Security 4개 영역에서 코딩 에이전트를 평가하는 다영역 벤치마크다. 모든 태스크를 실제 커밋·PR·비즈니스 시나리오에서 역공학하여 "웹 검색이 가능한 프롬프트" 오염 경로를 원천 차단하고, CodeBuddy Code와 Claude Code 두 하네스에서 동시 측정한다. GPT-5.5, Claude Opus 4.8, GLM-5.2 등 7개 모델의 리더보드에서 하네스가 바뀌면 순위도 바뀌는 현상까지 포착했다.
+draft: true
+refactor_hub: harness-self-improve-12
+refactor_status: queued
 ---
 
 ## 코딩 에이전트 벤치마크의 두 가지 딜레마

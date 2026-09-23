@@ -8,6 +8,9 @@ tags:
   - automation
   - productivity
 description: "Paperclip, Gastown 등 멀티 에이전트 조직 모델이 화제인 가운데, API 비용 $5,000의 실전 경험을 바탕으로 왜 '회사형 에이전트'가 아직 답이 아닌지, 그럼 무엇이 강건한 구조인지 정리합니다."
+draft: true
+refactor_hub: multi-agent-03
+refactor_status: queued
 ---
 
 에이전트 여러 개를 조직처럼 굴리자는 흐름이 업계 전반에 퍼지고 있다. Paperclip은 에이전트에 CEO, 팀장, 실무자 역할을 부여해 회사처럼 운영하는 프로젝트로 한 달 만에 GitHub 스타 4만 개를 돌파했고, Gastown은 에이전트를 "도시"로 은유해 비슷한 시도를 한다. Anthropic의 Claude Code Agent Teams, Cursor의 클라우드 에이전트까지 포함하면 멀티 에이전트 오케스트레이션은 2026년 상반기 가장 뜨거운 키워드 중 하나다.

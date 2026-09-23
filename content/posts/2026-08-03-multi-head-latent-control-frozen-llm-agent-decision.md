@@ -13,6 +13,9 @@ tags:
   - automation
   - inference-time
 description: 동결된 모델의 은닉 상태에서 "내가 풀 수 있나"와 "어떤 개입이 필요한가"를 읽어내는 가벼운 헤드. 대형 모델 호출을 90.7% 줄이면서 성능은 올림. 비용 라우팅 설계의 근거를 정리함.
+draft: true
+refactor_hub: harness-self-improve-11
+refactor_status: queued
 ---
 
 작은 모델로 돌리다 막히면 큰 모델에 넘기는 라우팅은 자연스러운 전략임. 근데 "언제 넘길까"가 어려움. Huawei와 University of Alberta가 은닉 상태에서 그 신호를 읽어냈음. 원문은 [arXiv:2607.14277](https://arxiv.org/abs/2607.14277).

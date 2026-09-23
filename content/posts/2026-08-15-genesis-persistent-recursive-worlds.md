@@ -13,6 +13,9 @@ tags:
   - evolution
   - loop
 description: 긴 개발의 연속성 주체를 에이전트에서 프로젝트로 옮긴 지속형 재귀 월드. 빈 저장소에서 C 컴파일러 248,989줄을 123시간·44달러로 완성함. 버전 히스토리와 승인 게이트 설계의 교훈을 정리함.
+draft: true
+refactor_hub: harness-self-improve-05
+refactor_status: queued
 ---
 
 긴 소프트웨어 개발을 에이전트 하나가 끝까지 버티는 구조는 한계가 명확함. 홍콩이공대의 EvoX Genesis가 연속성의 주체를 에이전트에서 프로젝트로 옮겼음. 원문은 [arXiv:2608.10450](https://arxiv.org/abs/2608.10450), 프로젝트 페이지는 [genesis.evox.group](https://genesis.evox.group)임.

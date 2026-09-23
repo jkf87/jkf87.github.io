@@ -12,6 +12,9 @@ tags:
 description: "Hugging Face가 주최한 'RL for Agents' 라이브 워크샵 1시간 54분을 스피커별(Lewis Tunstall, Ofir Press, Alex Zhang, Will Brown)로 정리. 오픈소스 RL 파이프라인, 벤치마크 5단계, Recursive Language Models, Prime Intellect Verifiers/PrimRL, 패널 Q&A까지."
 aliases:
   - rl-for-agents-workshop-huggingface-2026-04-22/index
+draft: true
+refactor_hub: agent-rl-04
+refactor_status: queued
 ---
 
 Hugging Face가 2026년 4월 22일 공개한 라이브 워크샵 **"RL for Agents — Deep Dive on Training Agents with RL and Open Source"**(1시간 54분)를 스피커별로 정리한다.

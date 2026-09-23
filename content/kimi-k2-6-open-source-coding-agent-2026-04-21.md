@@ -10,6 +10,9 @@ tags:
   - 코딩에이전트
   - Agent-Swarm
 description: "중국 Moonshot AI가 2026년 4월 20일 공개한 오픈소스 1T MoE 모델 Kimi K2.6. 4000번+ 도구 호출, 12시간 연속 실행, 300개 서브에이전트까지. GPT-5.4·Claude Opus 4.6과 실제로 붙는 벤치마크와 실전 사례 정리."
+draft: true
+refactor_hub: model-releases-04
+refactor_status: queued
 ---
 
 ![Kimi K2.6 hero](./images/kimi-k2-6/hero.jpg)

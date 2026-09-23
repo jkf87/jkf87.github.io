@@ -6,8 +6,10 @@ tags:
   - self-improvement
   - evaluation
   - paper-review
-draft: false
 description: "arXiv 2024-2026 자기개선 논문 1,250편을 두 축으로 정리한 서베이. 성공·실패를 가르는 변수는 검증 신호 강도 하나로, 형식 검증기가 최강, 모델 자기평가가 최약이라는 규칙을 정리했다."
+draft: true
+refactor_hub: harness-self-improve-17
+refactor_status: queued
 ---
 
 자기개선이라는 말이 너무 뭉뚱그려져 있어서 그 지도가 필요했는데, 1,250편을 관통한 서베이가 나옴. 결론이 하나의 법칙으로 압축돼서 정리함. 원문은 [arXiv:2607.07663](https://arxiv.org/abs/2607.07663).

@@ -1,13 +1,15 @@
 ---
 title: "재귀 자기개선은 메모리 제어 레이어에서 남 — 베이스 모델 얼려두고 37조합 중 35개 개선한 Recuris"
 date: 2026-08-31
-draft: false
 tags:
   - agent
   - memory
   - recursive-self-improvement
   - harness
 description: "재귀 자기개선을 메모리 제어 레이어만 재귀 수정하는 구조로 재정의한 Recuris. 베이스 모델을 얼려둔 촤 37개 모델-벤치마크 조합 중 35개에서 성공률을 올렸고 최장 태스크에서 +32.2점까지 벌어졌다."
+draft: true
+refactor_hub: agent-memory-09
+refactor_status: queued
 ---
 
 재귀 자기개선(RSI)을 모델 가중치가 아니라 메모리 제어 레이어에서 구현한 연구가 나옴. 수정 면적을 국소화하면 개선이 안전해진다는 방향이 숫자로 확인돼서 정리함. 원문은 [arXiv:2608.24876](https://arxiv.org/abs/2608.24876).

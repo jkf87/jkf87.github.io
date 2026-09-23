@@ -1,7 +1,6 @@
 ---
 title: "AI 에이전트 생태계가 한 주에도 이렇게 바뀐다 — 2026년 7월 둘째 주 트렌딩 5선"
 date: 2026-07-09
-draft: false
 tags:
   - ai-agents
   - open-source
@@ -13,6 +12,9 @@ categories:
 description: "GitHub 트렌딩에 오른 다섯 개 저장소를 직접 들어가서 읽었다. 에이전트 코딩 스킬셋부터 오피스 CLI, 시스템 프롬프트 아카이브, 로컬 장기기억, 비디오 시청까지 — 2026년 7월 둘째 주, AI 에이전트 도구 생태계가 어디로 가고 있는지 보고서로 정리한다."
 aliases:
   - /posts/trending-ai-agent-tools-2026-07-09
+draft: true
+refactor_hub: dev-tools-01
+refactor_status: queued
 ---
 
 ![AI 에이전트 생태계의 다섯 가지 축 — 코드, 오피스, 프롬프트, 기억, 비디오](/images/trending-ai-agent-tools-2026-07-09/hero.jpg)

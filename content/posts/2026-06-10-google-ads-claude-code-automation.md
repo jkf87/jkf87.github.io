@@ -1,9 +1,11 @@
 ---
 title: "7년 걸린 구글 애즈 마스터클래스를 Claude Code로 자동화한 남자 — 73만 달러의 비밀"
 date: 2026-06-10
-draft: false
 tags: ["Google Ads", "Claude Code", "자동화", "디지털마케팅", "광고최적화", "AI"]
 categories: ["AI 실전 활용"]
+draft: true
+refactor_hub: coding-agents-03
+refactor_status: queued
 ---
 
 "통장에 10,000달러가 있었어요. 그게 9,000, 8,000, 7,000... 월세가 나가니까 6,000에서 4,000, 3,000. 솔직히 겁날 정도였죠. 추가 수입도 없고, 남은 기간이 2주."

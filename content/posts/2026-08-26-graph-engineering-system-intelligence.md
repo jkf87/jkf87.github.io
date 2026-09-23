@@ -2,8 +2,10 @@
 title: "에이전트 수를 늘리는 대신 그래프를 설계함 — Graph Engineering 서베이 요점"
 date: 2026-08-26
 tags: [agent, LLM, multi-agent, system-intelligence, graph, survey]
-draft: false
 description: 멀티에이전트 성능은 에이전트 수가 아니라 일을 조직하는 방식이 결정함. 태스크·에이전트·상태를 명시적 그래프로 구조화하는 설계 패러다임의 세 기둥을 실무 관점으로 정리함.
+draft: true
+refactor_hub: ai-trends-misc-04
+refactor_status: queued
 ---
 
 멀티에이전트 시스템에서 에이전트 수를 늘리는 것만으로는 성능이 안 나옴. JLU DEEP 등의 서베이가 태스크·에이전트·시스템 상태를 명시적 그래프로 구조화하는 설계 패러다임을 제안함. 원문은 [arXiv 2608.21156](https://arxiv.org/abs/2608.21156).

@@ -1,11 +1,13 @@
 ---
 title: "'계획을 잘한다'는 말의 함정 — LLM 계획 능력은 두 개로 쪼개지고 하나만 커짐"
 date: 2026-07-17
-draft: false
 description: "MIRT 분석으로 LLM 계획 능력을 조작적 추론과 구조적 열거로 분해한 연구. 스케일과 CoT가 개선하는 건 전자뿐, 후자는 정체됨. 에이전트 설계에서 외부 플래너가 필요한 이유를 정리함."
 tags: ["LLM", "planning", "IRT", "agent", "reasoning", "benchmark"]
 categories: ["AI 연구"]
 cover: ""
+draft: true
+refactor_hub: ai-trends-misc-02
+refactor_status: queued
 ---
 
 에이전트를 만들다 보면 답답한 순간이 반복됨. 모델은 커지고 추론도 길어지는데 "전체 경로가 있는지" 같은 질문에서만 계속 막힘. 이게 모델 성능 문제인지 뭔지 헷갈렸는데, 통계 측정 도구로 이걸 분해한 연구가 나옴. 결론부터 말하면 계획 능력은 하나가 아니라 둘이고, 둘 중 하나만 스케일링의 효과를 받음.

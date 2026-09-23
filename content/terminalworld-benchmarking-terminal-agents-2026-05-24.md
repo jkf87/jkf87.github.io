@@ -6,9 +6,11 @@ tags:
   - agent-benchmark
   - terminal
   - cli-agents
-draft: false
 enableToc: true
 description: "실제 터미널 기록 80,870개에서 1,530개 검증된 작업을 추출해 CLI 에이전트를 평가하는 벤치마크."
+draft: true
+refactor_hub: eval-benchmarks-01
+refactor_status: queued
 ---
 
 ## 인터뷰: TerminalWorld, "실제 개발자가 터미널에서 하는 일"을 벤치마크로 만들다

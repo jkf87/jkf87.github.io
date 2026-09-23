@@ -9,6 +9,9 @@ tags:
   - android
 source: huggingface
 source_url: https://huggingface.co/papers/2605.26114
+draft: true
+refactor_hub: web-gui-agents-01
+refactor_status: queued
 ---
 
 모바일 GUI 에이전트가 스마트폰 화면만 보고 앱을 조작하는 시대가 왔습니다. 문제는 "이 에이전트가 제대로 작동하는지 어떻게 검증하느냐"였어요. 에뮬레이터는 무겁고 느리고, 실제 기기는 재현이 불가능하죠. 중국과학원과 북경대 연구진이 발표한 MobileGym은 이 딜레마를 해결하는 브라우저 기반 시뮬레이션 플랫폼입니다.

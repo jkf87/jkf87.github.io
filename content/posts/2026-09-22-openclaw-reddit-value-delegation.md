@@ -1,7 +1,6 @@
 ---
 title: "AI 에이전트 사용자는 무엇에 불만을 말하는가: OpenClaw Reddit 73,093건 분석"
 date: 2026-09-22
-draft: false
 tags:
   - agent
   - LLM
@@ -10,6 +9,9 @@ tags:
   - OpenClaw
   - human-values
 description: "OpenClaw 관련 Reddit 게시물 73,093건을 가치 민감 설계(VSD) 관점에서 코딩한 논문을 정리했습니다. 사용자 불만은 모델 출력이 아니라 비용, 접근 권한, 감독 지점 같은 '위임 조건'에 몰려 있고, 감독 이야기에서는 여섯 가치 그룹 전부에서 미충족이 다수였습니다."
+draft: true
+refactor_hub: multi-agent-01
+refactor_status: queued
 ---
 
 ## 결론 먼저

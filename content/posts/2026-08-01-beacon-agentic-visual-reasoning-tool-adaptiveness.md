@@ -14,7 +14,9 @@ tags:
   - GRPO
   - adaptive
   - evaluation
-draft: false
+draft: true
+refactor_hub: harness-self-improve-18
+refactor_status: queued
 ---
 
 에이전트에게 도구를 주면 똑똑해진다고 믿었는데 분석 결과가 반대였음. 도구 사용 RL 훈련을 거친 기존 모델들이 쉬운 문제에서 도구를 쓰다가 오히려 틀리는 패턴을 보였고 도구 이득이 거의 상쇄됐음. Beacon은 이 문제를 "언제 도구를 쓸지 아는 능력" 관점에서 정의하고 풀었음.

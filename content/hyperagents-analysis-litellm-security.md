@@ -8,6 +8,9 @@ tags:
   - ai-safety
   - supply-chain-security
 description: "Meta FAIR의 HyperAgents는 에이전트가 자기 자신의 코드를 수정하며 무한히 진화하는 자기참조 자기개선 시스템입니다. 논문 코드를 분석하고, 의존성인 litellm의 2026년 3월 공급망 공격 이슈를 정리합니다."
+draft: true
+refactor_hub: agent-memory-06
+refactor_status: queued
 ---
 
 ## HyperAgents란?

@@ -2,8 +2,10 @@
 title: "API 에러 직후의 행동이 에이전트 품질을 가름 — Fission-GRPO의 오류 복구 학습"
 date: 2026-08-24
 tags: [agent, LLM, tool-use, reinforcement-learning, GRPO, error-recovery]
-draft: false
 description: "Qwen3-8B는 오류 후 복구율이 약 20%로 Claude의 절반도 안 됨. Fission-GRPO는 실패 궤적에 진단 에러를 합성해 복구 롤아웃을 다시 뽑아 훈련 신호로 늘림. 8B 정확도 46.75%, TAU1 Retail +17.4%p. 오류 경험을 학습 루프로 순환시키는 설계를 정리함."
+draft: true
+refactor_hub: agent-rl-03
+refactor_status: queued
 ---
 
 작은 툴 에이전트는 성공하는 순간을 잘 다룸. 문제는 실패하는 순간. API가 에러를 반환하면 Qwen3-8B 같은 모델은 같은 잘못된 호출을 되풀이하는 환각 재시도 루프에 빠지고 대화가 그대로 끝남. 측정으로 보면 BFCL v4 Multi-Turn(버클리 함수호출 리더보드의 다중 턴 트랙. 여러 턴에 걸쳐 도구 호출을 정확히 수행하는지를 측정) 기준 오류 복구율(최소 1회 오류 후 최종 성공 확률)이 Claude Sonnet 4는 50% 초과, Qwen3-8B는 약 20%. 이 격차가 Fission-GRPO(ACL 2026)의 출발점임.

@@ -3,6 +3,9 @@ title: "OpenAI 공식 프롬프트 가이드 — GPT-5.5 시대의 완전 정리
 date: 2026-04-30
 tags: [AI, GPT, 프롬프트, OpenAI, 실무활용, 가이드]
 description: "OpenAI 공식 프롬프트 가이드 전문 번역. GPT-5.5/5.4/5.3 모델별 전략, Reasoning Effort, Research Mode, Codex 코딩 가이드, 프롬프트 구조 템플릿까지 모든 내용을 한국어로."
+draft: true
+refactor_hub: web-gui-agents-03
+refactor_status: queued
 ---
 
 ![GPT 프롬프트 가이드](./images/openai-prompt-guidance-2026-04-30/hero.png)

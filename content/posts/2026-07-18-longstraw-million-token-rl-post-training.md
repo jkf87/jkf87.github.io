@@ -1,7 +1,6 @@
 ---
 title: "200만 토큰 RL 훈련을 GPU 8대로 — LongStraw의 인프라 트릭 정리"
 date: 2026-07-18T13:30:00+09:00
-draft: false
 tags:
   - LLM
   - Agent
@@ -12,6 +11,9 @@ tags:
 categories:
   - AI Research
 description: "LongStraw는 프롬프트 상태를 한 번 캡처하고 응답 브랜치만 직렬 재생해 200만 토큰 GRPO를 H20 8대로 돌림. 긴 궤적 에이전트 훈련 비용을 어떻게 낮추는지 실무 관점으로 정리함."
+draft: true
+refactor_hub: agent-rl-03
+refactor_status: queued
 ---
 
 추론은 이미 100만~200만 토큰 컨텍스트를 소화함. 근데 RL 포스트트레이닝은 대부분 256K 이하에 갇혀 있음. 이 격차가 에이전트 품질을 제한한다는 문제의식에서 출발한 시스템이 LongStraw임. 긴 궤적 에이전트를 훈련하려는 입장에서 비용 계산이 어떻게 바뀌는지 볼 필요가 있음.

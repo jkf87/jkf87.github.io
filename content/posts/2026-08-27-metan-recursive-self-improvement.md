@@ -2,8 +2,10 @@
 title: "재귀적 자기개선은 깊이 2에서 막히다가 — 고정 연산자 Ω로 여는 Meta^n"
 date: 2026-08-27
 tags: [LLM, agent, self-improvement, recursion, ARC-AGI-2, evolution, harness]
-draft: false
 description: 자기개선 에이전트의 메타 깊이가 약 2에 제한되는 문제를 고정 메타 연산자 하나로 푼 프레임워크. 불변 영역 최소화와 코드+트레이스 개선 원칙을 실무 관점으로 정리함.
+draft: true
+refactor_hub: harness-self-improve-17
+refactor_status: queued
 ---
 
 자기개선 LLM 에이전트는 메타 깊이가 약 2에 제한된다는 문제가 있었음. Minnesota NLP가 이를 분석하고 뚫는 프레임워크 Meta^n(고정 메타 연산자 하나를 자기 출력에 재귀적으로 적용해 메타 깊이 제한을 넘게 하는 자기개선 구조)을 냈음. 원문은 [arXiv 2608.24735](https://arxiv.org/abs/2608.24735).

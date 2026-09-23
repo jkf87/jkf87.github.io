@@ -6,8 +6,10 @@ tags:
   - llm
   - reinforcement-learning
   - arxiv
-draft: false
 description: "MIRA(ICLR 2026) 분석. RL 에이전트가 희소 보상 환경에서 LLM 조언을 메모리 그래프에 걸러 저장해 훈련 내내 재사용. 쿼리 500회 이상에서 약 30회로 줄이고도 성능 유지. 스크리닝과 사용 기반 가지치기 구조."
+draft: true
+refactor_hub: agent-memory-05
+refactor_status: queued
 ---
 
 LLM에게 물어보고 시작하는 강화학습이 요즘 흐름인데 대부분 매 스텝 LLM을 부름. 환각·비용·지연 문제가 따라옴. USC와 CMU가 ICLR 2026에 낸 [MIRA](https://arxiv.org/abs/2602.17930)는 다르게 접근함. 한 번 물어본 조언을 그래프에 쌓아두고 계속 재사용하는 것. LLM4Teach가 500회 이상 쿼리하는 데 MIRA는 약 30회 쿼리로 비슷한 최종 성능을 냄. "LLM 지식을 끌어오되 실시간 의존을 없애고 RL 수렴 보장은 유지하기"가 문제 정의인데, 이 발상은 그리드 월드 밖에도 적용돼서 정리함.

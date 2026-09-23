@@ -7,8 +7,10 @@ tags:
   - MCP
   - benchmark
   - RL
-draft: false
 description: "LG CNS가 실제 한국 공공 API 10개 플랫폼 위에 145과제 벤치마크 KOPA-Bench를 만들고, 실행 검증 기반 EDGE 데이터 합성 + GRPO로 9B 모델을 27B급까지 끌어올린 논문을 정리함."
+draft: true
+refactor_hub: agent-rl-03
+refactor_status: queued
 ---
 
 LG CNS가 공개한 논문(arXiv 2609.05395)은 두 가지를 함께 제시함. 하나는 실제 한국 공공 API 위에서 돌아가는 다단계 tool-calling 벤치마크 KOPA-Bench(145과제)이고 다른 하나는 라이브 실행으로 검증된 의존성 그래프를 순회해 학습 데이터를 만드는 EDGE 프레임워크임. Qwen3.5-9B를 EDGE 데이터로 GRPO(같은 프롬프트에서 여러 응답을 뽑아 서로 비교해 업데이트하는 그룹 기반 RL 알고리즘) 파인튜닝하자 pass@1(한 번 시도로 과제를 성공할 확률)이 0.33에서 0.43으로 오르며 같은 계열 untuned 27B(0.4482)에 근접했음. 데이터를 잘 만드는 9B가 모델을 키우는 27B를 거의 따라잡은 셈임.

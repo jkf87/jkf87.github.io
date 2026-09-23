@@ -2,8 +2,10 @@
 title: "AI 에이전트 하네스의 가치가 어디서 나오는지 측정한 실험: 계획 주입과 완료 검증 분리"
 date: 2026-09-19
 tags: [agent-harness, llm-agent, benchmark, verification, tau-bench]
-draft: false
 description: "τ²-bench 3,007개 궤적으로 에이전트 하네스를 분해한 논문 정리. 사전 작성 계획 주입은 성공률 +7.17pp, 읽기전용 종료 검증기는 거짓 완료를 57%에서 21%로 낮추는데 비용은 1센트 미만입니다."
+draft: true
+refactor_hub: harness-self-improve-19
+refactor_status: queued
 ---
 
 ## 결론 먼저

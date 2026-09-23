@@ -9,6 +9,9 @@ tags:
   - 국민건강보험공단
   - nhis
 description: "스케일링 건강보험은 만 19세 이상 건강보험 가입자 또는 피부양자 중 후속 치주질환 치료 없이 전악 치석제거만으로 끝나는 경우에 연 1회 적용됨. 연간 기준과 방문 전 확인할 점을 NHIS 기준으로 정리함."
+draft: true
+refactor_hub: archive-draft-01
+refactor_status: archived
 ---
 
 치과 가기 전에 제일 많이 헷갈리는 게 이것임.

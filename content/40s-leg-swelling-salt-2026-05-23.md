@@ -12,6 +12,9 @@ tags:
 description: "40대 다리 붓기는 짠 음식만으로 설명되지 않음. 오래 앉기, 정맥 문제, 신장·심장 신호, 응급 신호를 같이 정리함."
 aliases:
   - 40s-leg-swelling-salt-2026-05-23/index
+draft: true
+refactor_hub: archive-health-01
+refactor_status: archived
 ---
 
 # 40대 다리 붓기, 짠 음식만 탓하면 안 되는 이유 4가지

@@ -7,9 +7,11 @@ tags:
   - Anthropic
   - coding-agent
   - prompt-engineering
-draft: false
 description: "AilaunchX가 공유한 Anthropic Claude Code 워크숍 전체 자막을 바탕으로, 도구 연결·컨텍스트 전달·검증 루프가 왜 프롬프트보다 중요한지 정리했다."
 coverImage: /images/anthropic-claude-code-workshop-2026-06-02/03-tools-mcp-bash.jpg
+draft: true
+refactor_hub: coding-agents-01
+refactor_status: queued
 ---
 
 앤트로픽이 직접 알려주는 클코 워크숍을 알아보자. 미리보기 영상만 보면 "오, Claude Code가 PR도 만들 수 있네" 정도로 끝날 수 있다. 그런데 27분 전체 자막을 따라가보면 핵심은 훨씬 더 분명하다. **Claude Code는 프롬프트를 예쁘게 쓰는 도구가 아니라, 작업 환경을 통째로 넘겨받을 때 힘이 나는 에이전트**다.

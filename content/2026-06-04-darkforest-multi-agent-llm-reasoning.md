@@ -7,7 +7,9 @@ tags:
   - reasoning
   - paper-review
   - AI-benchmark
-draft: false
+draft: true
+refactor_hub: multi-agent-01
+refactor_status: queued
 ---
 
 멀티에이전트 LLM 시스템이 인기입니다. 여러 AI 에이전트가 토론하고 합의해서 더 나은 답을 내는 방식이죠. 그런데 에이전트들끼리 **더 많이 대화할수록** 정말 더 정확해질까요? DarkForest 논문은 "아니다"라고 대답합니다.

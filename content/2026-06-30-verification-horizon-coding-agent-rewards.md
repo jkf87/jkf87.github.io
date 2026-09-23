@@ -1,7 +1,6 @@
 ---
 title: "검증의 지평선: 코딩 에이전트 보상 설계의 근본적 한계와 공진화 전략"
 date: 2026-06-30
-draft: false
 description: "Qwen 팀이 발표한 'The Verification Horizon' 논문을 깊이 있게 분석한다. 코딩 에이전트 시대에 검증(verification)이 생성(generation)보다 어려워지는 역전 현상, 보상 해킹의 불가피성, 그리고 검증자와 정책 모델이 함께 진화해야 한다는 핵심 통찰을 다룬다."
 tags: ["LLM", "Coding Agent", "Reinforcement Learning", "Reward Design", "Verification", "Qwen"]
 categories: ["AI 연구"]
@@ -26,6 +25,9 @@ cover:
   alt: "정책 모델과 검증자의 공진화 다이어그램"
   caption: "Figure 1: 정책 모델과 검증자의 공진화 — 검증자가 제공하는 보상 신호가 포화되면 보상 해킹이 발생하고, 검증자를 업그레이드해야 다음 단계로 진행할 수 있다."
   relative: false
+draft: true
+refactor_hub: harness-self-improve-03
+refactor_status: queued
 ---
 
 ## 서론: 검증이 생성보다 어려워지는 시대

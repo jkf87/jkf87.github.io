@@ -15,6 +15,9 @@ source: arxiv
 source_url: https://arxiv.org/abs/2608.11878
 paper_url: https://arxiv.org/abs/2608.11878
 description: "ToolHazard 분석. 간접 프롬프트 인젝션 테스트 환경을 자동 합성으로 늘리는 프레임워크. 환경 28개·태스크 87개·도구 512개를 환경당 $0.59에 만들고, GPT-5도 새 공격 전략 앞에서 ASR 40%를 넘는다는 측정과 정렬 결과까지."
+draft: true
+refactor_hub: agent-rl-03
+refactor_status: queued
 ---
 
 LLM 에이전트를 노리는 간접 프롬프트 인젝션 테스트 환경을 사람이 손으로 짜지 않고 합성 파이프라인으로 계속 늘리는 [프레임워크](https://arxiv.org/abs/2608.11878)가 나옴. 기존 보안 벤치마크는 AgentDojo(간접 프롭프트 인젝션 등 에이전트 공격을 평가하는 공개 벤치마크) 도메인 4개, ASB(에이전트 보안 시나리오 벤치마크) 10개 전부 수작업 환경인데다 주입 위치도 미리 정해둬서 새 공격 표면을 시험하려면 또 손으로 고쳐야 했음. 확장이 안 되는 이유가 제작 비용이었는데 ToolHazard는 환경 코드, 공격 지점, 검증 함수까지 자동 생성으로 바꿈. 환경 1개 합성 비용이 $0.59임.

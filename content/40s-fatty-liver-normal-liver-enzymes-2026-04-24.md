@@ -11,6 +11,9 @@ tags:
 description: "40대 건강검진에서 AST·ALT가 정상이라도 지방간을 놓칠 수 있음. 질병관리청, 서울대병원, 서울아산병원 자료를 바탕으로 간수치 정상과 초음파 추가 확인이 왜 같이 가야 하는지 정리함."
 aliases:
   - 40s-fatty-liver-normal-liver-enzymes-2026-04-24/index
+draft: true
+refactor_hub: archive-health-01
+refactor_status: archived
 ---
 
 건강검진표에서 AST, ALT가 정상으로 찍히면 일단 안심하게 됨. 근데 40대 간은 생각보다 조용해서, 숫자만 보고 넘기면 지방간을 뒤늦게 발견하는 일이 꽤 흔함.

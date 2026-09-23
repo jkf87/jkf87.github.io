@@ -6,7 +6,9 @@ tags:
   - topic-cluster
   - seo
   - aeo
-draft: false
+draft: true
+refactor_hub: research-agents-01
+refactor_status: queued
 ---
 
 ## 결론 먼저

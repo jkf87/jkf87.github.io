@@ -2,8 +2,10 @@
 title: "프롬프트 인젝션은 입력 차단이 아니라 실행 인가로 막음 — SARA 구조 정리"
 date: 2026-08-28
 tags: [agent, security, tool-use, llm, prompt-injection, runtime-authorization]
-draft: false
 description: "행동 유도와 실행 인가를 분리해 공격 성공률을 0.63% 이하로 낮추면서 정상 작업 완수율을 유지한 런타임 방어. 권한 세탁 차단 설계를 실무 관점으로 정리함."
+draft: true
+refactor_hub: agent-safety-02
+refactor_status: queued
 ---
 
 도구 증강 에이전트는 신뢰할 수 없는 Observation(웹페이지, 이메일, 검색 결과)에서 파일 ID 같은 런타임 정보를 얻어 후속 호출을 구체화해야 해서, 외부 콘텐츠를 차단하면 정상 작업 능력까지 같이 무너짐. SARA(행동 유도 판정과 실행 권한 심사를 분리하는 런타임 방어 구조)가 이 딜레마를 역할 분리로 풀었음. 원문은 [arXiv:2608.27146](https://arxiv.org/abs/2608.27146).

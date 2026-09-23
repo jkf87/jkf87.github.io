@@ -18,6 +18,9 @@ authors:
   - Tong Xiao
   - Jingbo Zhu
 affiliation: Northeastern University (China), NiuTrans Research, Institute of Psychology CAS
+draft: true
+refactor_hub: agent-rl-06
+refactor_status: queued
 ---
 
 에이전트 RL의 크레딧 할당 시리즈 마지막 축임 — 이번엔 보상 모델도 특권 정보도 없이 환경 피드백 텍스트만으로 턴별 크레딧을 만듦. "공짜 신호를 버리지 마라"는 교훈이라 정리함.

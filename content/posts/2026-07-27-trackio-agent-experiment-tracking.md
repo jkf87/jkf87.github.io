@@ -14,6 +14,9 @@ tags:
   - tool-use
 source: github
 source_url: https://github.com/gradio-app/trackio
+draft: true
+refactor_hub: dev-tools-01
+refactor_status: queued
 ---
 
 실험 추적(experiment tracking)은 머신러닝 파이프라인의 척추다. 그런데 기존 도구들은 에이전트 시대에 맞지 않는다. 계정이 필요하고, 클라우드에 종속되며, API 호출이 무겁고,何より LLM이 다루기 어렵다. Hugging Face의 Gradio 팀이 이 문제를 풀기 위해 내놓은 것이 **Trackio**다.

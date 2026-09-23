@@ -8,8 +8,10 @@ tags:
   - rsi
   - self-improvement
   - survey
-draft: false
 description: "RSI 서베이 arXiv 2609.11873을 정리함. 자율성 L1~L5 프레임워크, 도메인별 남은 헤드룸, 자기개선이 실패하는 세 지점(안전한 상속, 자율성 귀속, 신뢰 검증)까지 실무 관점으로 요약함."
+draft: true
+refactor_hub: harness-self-improve-17
+refactor_status: queued
 ---
 
 재귀적 자기개선(RSI, AI가 자기 자신을 개선하는 변경을 재귀적으로 수행하는 구조) 서베이 논문을 정리했음. RSI를 한 문장으로 정의하면 AI가 경험과 피드백을 자기 자신에 대한 영구적인 변경으로 바꾸고, 그 변경이 이후 개선 방식 자체에도 영향을 주는 폐쇄 루프임. 원문은 [arXiv 2609.11873](https://arxiv.org/abs/2609.11873)(Tsinghua, SJT 등 33인).

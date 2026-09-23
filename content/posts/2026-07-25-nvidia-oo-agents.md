@@ -8,10 +8,12 @@ tags:
   - LLM
   - harness
   - code-as-action
-draft: false
 source_url: https://arxiv.org/abs/2607.20709
 source: "arxiv"
 github_url: https://github.com/NVIDIA-NeMo/labs-OO-Agents
+draft: true
+refactor_hub: harness-self-improve-23
+refactor_status: queued
 ---
 
 에이전트 개발의 고통은 "분할"에 있음. 프롬프트는 템플릿 파일에, 툴 정의는 JSON 스키마에, 콜백은 별도 코드에, 워크플로우는 그래프 설정에 흩어져 있음. NVIDIA의 NOOA는 이걸 "에이전트는 하나의 파이썬 객체다"라는 철학으로 통합함. 메서드는 액션, 필드는 상태, docstring은 프롬프트, 타입 어노테이션은 계약임.

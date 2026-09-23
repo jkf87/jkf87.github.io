@@ -2,8 +2,10 @@
 title: "10B 활성 파라미터로 터미널 벤치마크 64% — T1의 순수 RL 레시피와 실패 기록"
 date: 2026-09-12
 tags: [ai, llm, agent, rl, terminal, arxiv, moe]
-draft: false
 description: "Qwen3.5-122B MoE를 터미널 태스크 순수 강화학습으로 Terminal-Bench 2.1 49.4%에서 64.0%까지 올린 TITO·R3·test-count dense reward 레시피. 이진 보상이 실패한 기록까지 정리."
+draft: true
+refactor_hub: agent-rl-02
+refactor_status: queued
 ---
 
 Tencent Hy 팀이 Qwen3.5-122B-A10B(활성 10B)를 터미널 태스크 강화학습만으로 Terminal-Bench 2.1 49.4% → 64.0%까지 올림. 같은 하네스에서 GPT-5.4, DeepSeek-V4-Flash를 넘고 Claude Opus 4.6과 0.2점 차이. [T1](https://arxiv.org/abs/2609.11042). 숫자보다 레시피와 실패 기록이 값져서 정리함.

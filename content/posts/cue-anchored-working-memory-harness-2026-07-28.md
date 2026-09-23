@@ -7,9 +7,11 @@ tags:
   - harness
   - coding-agent
   - context-management
-draft: false
 description: "코딩 에이전트의 자발적 기억 사용은 0에 수렴한다. 하네스가 단서 기반으로 결정론적으로 기억을 주입해야 한다는 논문(arXiv 2607.20972)을 138회 컴팩션 실험 중심으로 정리한다."
 cover_image: "https://jkf87.github.io/cue-anchored-working-memory-harness-2026-07-28-static/05-trigger-vocabulary.png"
+draft: true
+refactor_hub: agent-memory-04
+refactor_status: queued
 ---
 
 에이전트에게 기억 도구를 주면 에이전트는 그것을 절대 안 씀 — 114턴 동안 기억 저장소가 세팅되어 있고 도구도 연결돼 있고 가이드도 있었는데 자발적 호출이 0회였음. [Delivery, Not Storage](https://arxiv.org/abs/2607.20972)는 기억 문제를 콘텐츠 문제가 아니라 제어 평면 문제로 재정의함. 하네스 설계의 근본 질문이라 정리함.

@@ -12,6 +12,9 @@ tags:
   - DGM
   - HGM
   - loop
+draft: true
+refactor_hub: harness-self-improve-21
+refactor_status: queued
 ---
 
 코딩 에이전트가 자기 코드를 고치며 성능을 올리는 연구가 이어지고 있음. DGM(Darwin-Gödel Machine, 에이전트가 자기 코드를 스스로 수정하며 진화하는 자기개선 연구), HGM이 대표적인데 공통 문제가 하나 있음. 실패하면 그 실패 궤적 하나만 보고 코드를 고침. 여러 실패 기록을 비교하면 더 정확히 고칠 수 있는데 그걸 안 씀. MGM은 비교 증거를 쓰는 세 연산자로 이 지점을 개선함.

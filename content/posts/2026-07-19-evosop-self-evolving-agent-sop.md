@@ -7,11 +7,13 @@ tags:
   - tool-use
   - self-evolving
   - SOP
-draft: false
 description: "실행 궤적에서 반복 패턴을 추출해 재사용 가능한 SOP 도구로 압축하는 EvoSOP. 모델 바꾸지 않고 성공률을 올리고 상호작용 라운드를 크게 줄인 구조를 실무 관점으로 정리한다."
 source_url: "https://arxiv.org/abs/2607.07321"
 authors:
   - jkf87
+draft: true
+refactor_hub: harness-self-improve-07
+refactor_status: queued
 ---
 
 에이전트를 오래 굴리면 같은 도구 호출 시퀀스가 계속 반복됨. 그걸 그대로 두면 매번 추론 비용을 다시 지불하는 것. EvoSOP는 이 반복을 SOP(표준 작업 절차) 도구로 뽑아내서 압축함. 내 에이전트 운영에 그대로 적용할 수 있는 구조라 정리함.

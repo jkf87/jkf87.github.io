@@ -12,11 +12,13 @@ tags:
   - agentic
   - AI-research
 description: "Anthropic의 Project Fetch Phase Two 정리. Claude Opus 4.7이 로봇개의 카메라·라이다 연결, 제어 코드 작성, 공 감지 과제를 인간 팀보다 10~37배 빠르게 수행했다. 하지만 폐루프 제어와 정밀한 물리 조작은 여전히 한계로 남았다."
-draft: false
 source: anthropic-research
 source_url: https://www.anthropic.com/research/project-fetch-phase-two
 aliases:
   - project-fetch-phase-two-physical-agentic-ai-2026-06-19/index
+draft: true
+refactor_hub: multimodal-world-01
+refactor_status: queued
 ---
 
 AI가 코드를 짜는 건 이제 놀랍지 않다. 그런데 그 코드가 브라우저나 서버가 아니라 **실제 로봇개**를 움직이기 시작하면 이야기가 달라진다.

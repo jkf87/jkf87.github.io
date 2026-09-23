@@ -3,7 +3,9 @@ title: "비아그라보다 NPC1이 더 중요한 논문"
 date: 2026-08-22
 tags: [paper-review, oncology, metabolism]
 noindex: true
-draft: false
+draft: true
+refactor_hub: archive-health-01
+refactor_status: archived
 ---
 
 오늘은 Cancer Research에 올라온 실데나필(sildenafil) 논문을 다시 정리해보겠습니다. 흔히 비아그라 논문으로 읽히기 쉬운데, 저는 이 논문의 주인공을 약 이름보다 <span style="background-color: #fff59d"><strong>NPC1-mediated cholesterol trafficking</strong></span>으로 보는 것이 맞다고 생각합니다. 원문 Figure 기준으로 다시 읽어보니, 메시지는 꽤 분명합니다. PDE5A inhibitor가 암을 바로 치료한다는 이야기가 아니고, PDE5A inhibition으로 올라간 cGMP가 암세포의 리소좀 콜레스테롤 수송을 흔들고, 그 결과 전이 능력이 줄어들 수 있다는 기전 논문입니다.

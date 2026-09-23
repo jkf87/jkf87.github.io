@@ -10,6 +10,9 @@ tags:
   - Project Glasswing
   - Claude Opus
 description: "Anthropic이 2026년 4월에 발표한 Claude Mythos Preview는 기존 Claude Opus 4.6을 압도하는 성능을 보여줬지만, 악용 위험 때문에 일반 공개하지 않았습니다. Project Glasswing, 벤치마크, 참여 기관, 보안 영향까지 정리합니다."
+draft: true
+refactor_hub: model-releases-02
+refactor_status: queued
 ---
 
 2026년 4월 7일, Anthropic은 평소와 다른 발표를 했습니다. 새 모델을 만들었는데, **일반 사용자에게는 주지 않겠다**는 것입니다.

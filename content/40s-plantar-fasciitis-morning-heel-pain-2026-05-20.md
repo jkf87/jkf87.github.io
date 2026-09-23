@@ -8,6 +8,9 @@ tags:
   - 아침 통증
   - 정형외과
 description: 아침에 첫발을 디딜 때 발뒤꿈치가 찢어질 듯 아프다면 족저근막염일 가능성이 높음. 40대에 급증하는 원인과 대처법을 정리함.
+draft: true
+refactor_hub: archive-health-01
+refactor_status: archived
 ---
 
 # 아침에 발뒤꿈치가 찢어질 것 같다면 — 40대 족저근막염 방치하면 안 되는 이유

@@ -2,8 +2,10 @@
 title: "스킬은 트레이토리 전체에 균일하게 작동하지 않음 — AUSO의 액션 단위 스킬 최적화"
 date: 2026-08-24
 tags: [agent, LLM, RL, skill, GRPO, credit-assignment]
-draft: false
 description: 같은 궤적 안에서도 스킬이 어떤 액션은 돕고 어떤 액션은 방해함. 액션별 스킬 민감도로 업데이트 강도를 재분배한 AUSO를 스킬 크레딧 할당 관점으로 정리함.
+draft: true
+refactor_hub: harness-self-improve-18
+refactor_status: queued
 ---
 
 에이전트 RL에서 스킬을 넣는 방식이 몇 갈래로 갈려 있음. 컨텍스트에 두고 쓰기만 하는 방식(Skill0), 가중치에 증류해서 없애는 방식(Skill1), 태스크 성공률로 고르는 방식(Skill0.5)이요. 중국과학기술대학·UNSW의 AUSO(같은 궤적 안에서 액션별로 스킬이 돕는지 방해하는지를 측정해 학습 강도를 재분배하는 기법)가 여기에 "액션 단위"라는 축을 추가했음. 원문은 [arXiv:2608.21292](https://arxiv.org/abs/2608.21292).

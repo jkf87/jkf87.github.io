@@ -1,7 +1,6 @@
 ---
 title: "에이전트 시대의 지속학습은 매개변수를 고치는 게 아님 — When·How·Where 3축 전환 정리"
 date: 2026-08-09
-draft: false
 description: "Continual learning 연구가 매개변수 중심에서 시스템 수준 적응으로 전환 중임. 학습 시점이 추론까지, 저장 위치가 하네스까지, 업데이트 방식이 그래디언트 프리까지 확장된 3축 프레임과 실무적 함의를 정리함."
 tags:
   - continual-learning
@@ -14,6 +13,9 @@ tags:
   - self-evolution
 authors:
   - conanssam
+draft: true
+refactor_hub: ai-trends-misc-01
+refactor_status: queued
 ---
 
 "파인튜닝하면 예전 능력을 까먹는다"가 continual learning의 전부였던 시절이 있었음. 근데 LLM 에이전트 시대에 이 틀이 흔들리고 있음. 에이전트는 배포 뒤에도 살아있고, 능력을 파일과 메모리에 쌓고, 그래디언트 없이도 개선됨. 이 서베이는 그 전환을 When·How·Where 세 축으로 정리함. 에이전트를 운영하며 "우리 시스템은 어디서 학습하고 있나"를 물을 때 지도가 되는 문서임.

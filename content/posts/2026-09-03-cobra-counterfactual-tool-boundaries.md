@@ -10,8 +10,10 @@ tags:
   - harness
   - loop
   - EMNLP
-draft: false
 description: "CoBRA 분석. 같은 질문을 도구 있이/없이 각각 풀어보고 보상 차이로 도구 호출 경계를 학습하는 반사실 마진 방법. Search-R1 대비 성능은 높이고 호출은 20% 줄임. 오호출·미호출 측정의 실무 교훈."
+draft: true
+refactor_hub: agent-memory-05
+refactor_status: queued
 ---
 
 에이전트가 검색이나 API를 붙이면 생기는 비용 문제는 흔함. 불필요한 호출은 지연과 비용, 검색 노이즈를 만들고 오호출은 관련 없는 증거가 맞는 내부 지식을 덮어쓰는 오류 전파를 일으킴. 반대로 미호출은 최신 정보나 롱테일 사실에서 정확도를 떨어뜨림. [CoBRA](https://arxiv.org/abs/2609.00967)는 이 판단을 질문 난이도 같은 절대 신호 대신 질문별 반사실(counterfactual)로 바꿈. 도구를 부르면 이 질문에서 실제로 이득인지를 측정해서 학습하는 것. 실무적으로 바로 와닿는 부분이 많아 정리함.

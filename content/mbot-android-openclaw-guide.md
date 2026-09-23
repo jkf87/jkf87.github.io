@@ -7,6 +7,9 @@ tags:
   - android
   - mbot
 description: "Play Store 설치만으로 OpenClaw AI 게이트웨이를 자동 구성하는 mbot 서비스를 소개합니다. 설치, 모델 연결, 대시보드, 채널 연동까지 한 번에 정리했습니다."
+draft: true
+refactor_hub: web-gui-agents-03
+refactor_status: queued
 ---
 
 > 원문 가이드: https://pocket-server-palank.web.app/mbot-guide.html

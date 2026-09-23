@@ -1,7 +1,6 @@
 ---
 title: "RL로 학습한 LLM 에이전트가 필요 없는 도구를 부르는 이유: Spurious Tool Use 논문 정리"
 date: 2026-09-21
-draft: false
 description: "강화학습으로 학습한 LLM 에이전트가 프롬프트의 표면 단서만 보고 웹 검색·코드 실행 같은 도구를 잘못 호출하는 스퍼리어스 툴 유즈(spurious tool use) 현상을 arXiv 2609.16268 논문으로 정리했습니다. 최대 39.2%p의 불필요한 도구 호출 증가와 도구 필요성 보상으로 해결한 방법까지 정리합니다."
 tags:
   - LLM에이전트
@@ -9,6 +8,9 @@ tags:
   - tool-use
   - GRPO
   - robustness
+draft: true
+refactor_hub: agent-rl-03
+refactor_status: queued
 ---
 
 ## 결론 먼저

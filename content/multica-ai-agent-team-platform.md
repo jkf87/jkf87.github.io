@@ -8,6 +8,9 @@ tags:
   - devops
   - automation
 description: "코딩 에이전트를 이슈 할당으로 관리하는 오픈소스 플랫폼 Multica. Claude Code와 Codex를 팀원처럼 운용하는 방법과 아키텍처를 정리한다."
+draft: true
+refactor_hub: coding-agents-01
+refactor_status: queued
 ---
 
 > "Your next 10 hires won't be human." — Multica

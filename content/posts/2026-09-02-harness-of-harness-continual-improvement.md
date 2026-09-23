@@ -9,8 +9,10 @@ tags:
   - autonomous-development
   - loop
   - benchmark
-draft: false
 description: "기존 하네스를 기획-개발-테스트 3중 루프로 감싼 Harness-of-Harness. 3개 벤치마크에서 평균 상대 52.25% 향상, 같은 패스 예산에서 반복 실행을 이겼고 6일 70루프로 FPS 게임을 자율 완성했다."
+draft: true
+refactor_hub: harness-self-improve-05
+refactor_status: queued
 ---
 
 코딩 에이전트 하네스를 또다른 하네스로 감싸는 구조의 논문이 나옴. 하네스 내부를 안 고치고 바깥 루프만 추가해서 벤치마크 점수가 크게 올랐다는 게 실용적이라 정리함. 원문은 [arXiv:2609.01481](https://arxiv.org/abs/2609.01481).

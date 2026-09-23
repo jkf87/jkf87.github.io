@@ -14,6 +14,9 @@ tags:
 description: "Understand Anything은 Tree-sitter 정적분석 + LLM 시맨틱 분석을 결합해 코드베이스 전체를 대화형 지식그래프로 변환하는 Claude Code 플러그인. 구조 그래프, 도메인 뷰, 가이드 투어, 임팩트 분석까지."
 aliases:
   - understand-anything-codebase-knowledge-graph-2026-05-26/index
+draft: true
+refactor_hub: coding-agents-05
+refactor_status: queued
 ---
 
 새 팀에 합류했다. 코드베이스가 20만 줄. 어디서부터 읽어야 할지 모르겠다. — 이 경험, 개발자라면 누구나 해봤을 거다.

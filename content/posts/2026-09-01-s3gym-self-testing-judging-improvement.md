@@ -2,8 +2,10 @@
 title: "자기테스트·자기판단이 성능 개선로 이어지는지 실제로 측정함 — S3Gym 결과"
 date: 2026-09-01
 tags: [agent, LLM, self-improvement, benchmark, memory, RL]
-draft: false
 description: "경험은 도움이 될 때가 있지만 자동 개선을 보장하지 않음. 판단 품질과 다음 성능 향상의 상관이 거의 0이었다는 결과와 과제 구조별 최적 반영 방식을 정리함."
+draft: true
+refactor_hub: ai-trends-misc-02
+refactor_status: queued
 ---
 
 에이전트가 스스로 테스트하고 스스로 점수를 매기고 그 경험을 다음 행동에 쓰면 정말 좋아지는가. S3Gym(자기테스트—자기판단—자기개선 세 단계를 분리해 측정하는 에이전트 벤치마크)이 이 질문을 따로 재는 벤치마크를 만들었음. 원문은 [arXiv 2608.31100](https://arxiv.org/abs/2608.31100).

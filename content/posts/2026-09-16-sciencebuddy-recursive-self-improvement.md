@@ -1,7 +1,6 @@
 ---
 title: "하네스 고치고 모델 학습시키고를 번갈아 돌리기 — 4B 모델로 31%에서 51%를 만든 구조"
 date: 2026-09-16
-draft: false
 tags:
   - llm-agent
   - harness
@@ -10,6 +9,9 @@ tags:
   - science-agent
   - GRPO
 description: "ScienceBuddy 분석. 하네스 진화(내부 루프)와 모델 RL(외부 루프)을 중첩시킨 재귀 내 재귀 구조. 하네스만 고쳐도 검증 정확도 +20pp, 모델 RL만으로 커버리지 +19.5pp, 3사이클 후 정답 42.2%→73.3%."
+draft: true
+refactor_hub: harness-self-improve-22
+refactor_status: queued
 ---
 
 과학 연구 에이전트의 문제의식은 이것임. 대화 안에서 답을 고치는 것과 다음 작업에서 실제로 더 잘하는 것은 다름. [ScienceBuddy](https://arxiv.org/abs/2609.17523)는 협업 기록을 지속 가능한 개선으로 바꾸는 구조를 제안하는데 핵심은 하네스 개선과 모델 강화학습을 중첩 루프로 묶었다는 것. 하네스만 바꿔도 검증 정확도가 31.1%에서 51.1%로 올라갔고 모델 RL만으로도 커버리지가 48.3%에서 67.8%로 늘었다는 분리 측정이 이 논문의 뼈대임. 앞서 정리한 Co-Harness와 같은 문제의식을 4B 소형 모델로 검증했다는 점이 의미 있어 정리함.

@@ -13,8 +13,10 @@ tags:
 description: "자율 연구 자동화가 단순 '논문 생성'과 어떻게 다른지, 실패 감지·복구·실행 간 진화의 5개 핵심 장치와 ARC-Bench 결과를 정리했다."
 aliases:
   - autoresearchclaw-ai-research-automation-2026-06-01/index
-draft: false
 cover: images/autoresearchclaw-ai-research-automation-2026-06-01/architecture-diagram.jpg
+draft: true
+refactor_hub: research-agents-01
+refactor_status: queued
 ---
 
 "AI가 논문을 쓴다"는 뉴스는 흔함. 근데 실제 연구는 직선이 아님 — 가설이 무너지고, 코드가 에러를 뱉고, 결과가 기대와 달라 방향을 틀고, 이번 실패가 다음 실험의 단서가 됨. 이 반복과 학습의 고리 없이는 "아이디어→논문" 파이프라인은 그럴듯한 보고서 찍어내는 기계일 뿐. [AutoResearchClaw](https://arxiv.org/abs/2605.20025)는 바로 그 지점에서 갈라섬. 리서치 자동화를 설계하는 사람에게 볼 게 많아서 정리함.

@@ -8,8 +8,10 @@ tags:
   - benchmark
   - hallucination
   - fine-tuning
-draft: false
 description: "정답 유무를 통제한 도구 결과를 삽입해 기억-도구 충돌을 측정한 MemToC. 정답을 가진 모델이 틀린 도구를 만나면 6.5~17.1%만 자기 답을 지켰고, 파인튜닝 20개 조합 중 19개에서 기권이 줄었다."
+draft: true
+refactor_hub: agent-memory-05
+refactor_status: queued
 ---
 
 에이전트 운영 중 반드시 만나는 장면을 통제 실험으로 재현한 벤치마크가 나옴. 모델이 분명 정답을 아는데 API 결과가 다르게 내려오면 조용히 자기 답을 버린다는 것. 원문은 [arXiv:2608.26295](https://arxiv.org/abs/2608.26295).

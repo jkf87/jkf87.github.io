@@ -1,7 +1,6 @@
 ---
 title: "정답만 맞으면 통과시키는 검증의 구멍 — VPRM이 과정까지 잰 이유"
 date: 2026-07-27T13:20:00+09:00
-draft: false
 tags:
   - RLVR
   - process-supervision
@@ -14,6 +13,9 @@ tags:
 categories:
   - AI Research
 summary: "결과만 검증하는 RLVR과 불투명한 신경망 판단자 사이의 제3길. 규칙 기반으로 추론 단계별 보상을 주는 VPRM을 에이전트 검증 설계 관점에서 정리한다."
+draft: true
+refactor_hub: agent-rl-04
+refactor_status: queued
 ---
 
 결과만 맞으면 보상을 주는 검증 방식엔 구멍이 있음 — 과정이 엉망여도 통과한다는 것. VPRM은 이 구멍을 규칙 기반 단계 검증으로 막음. 에이전트 파이프라인의 검증 설계에 그대로 적용되는 문제라 정리함.

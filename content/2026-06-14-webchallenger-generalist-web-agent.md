@@ -1,7 +1,6 @@
 ---
 title: "WebChallenger: 오픈 모델로 프론티어 웹 에이전트에 도전하는 PageMem 아키텍처"
 date: 2026-06-14
-draft: false
 tags:
   - llm
   - web-agent
@@ -12,6 +11,9 @@ tags:
   - dom
 source: arxiv
 source_url: https://arxiv.org/abs/2606.10423
+draft: true
+refactor_hub: web-gui-agents-01
+refactor_status: queued
 ---
 
 > 웹 브라우징 자동화는 LLM 에이전트에게 여전히 어려운 과제다. WebChallenger는 PageMem이라는 구조화된 페이지 표현을 핵심으로, 선택적 주의력·지속적 기억·절차적 숙련도라는 인간의 세 가지 인지 장점을 에이전트 아키텍처 차원에서 구현한다. 파인튜닝 없이 오픈 가중치 모델만으로 WebArena 56.3%, WorkArena 70.9%를 달성했다.

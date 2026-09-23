@@ -13,11 +13,13 @@ tags:
   - AI-agent
   - desktop-automation
 description: "OpenAI Codex의 Record & Replay 기능 정리. 사용자가 Mac에서 반복 업무를 한 번 시연하면 Codex가 이를 SKILL.md 형태의 재사용 가능한 자동화 스킬로 바꾸는 기능이다."
-draft: false
 source: openai-developers
 source_url: https://developers.openai.com/codex/record-and-replay
 aliases:
   - openai-codex-record-replay-skills-2026-06-19/index
+draft: true
+refactor_hub: harness-self-improve-15
+refactor_status: queued
 ---
 
 OpenAI Codex에 **Record & Replay**가 들어왔다. 이름 그대로다. 사용자가 Mac에서 반복 작업을 한 번 보여주면, Codex가 그 과정을 관찰해서 다시 쓸 수 있는 **스킬(skill)** 로 만든다.

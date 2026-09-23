@@ -1,9 +1,11 @@
 ---
 title: "하네스를 미리 만들지 말고 태스크가 들어올 때 생성 — JIT-Agent의 3단계 훈련"
 date: 2026-08-28
-draft: false
 tags: [agent, harness, LLM, arxiv]
 description: "JIT-Agent는 하네스를 메모리·계획·액션·도구 4모듈로 정형화하고 태스크마다 맞춤 하네스를 실시간 생성·수리·진화시킴. DeepSeek-V4-Flash가 GPT-5.6을 넘고 태스크당 API 비용 평균 36% 감소. 하네스 인텔리전스 관점을 정리함."
+draft: true
+refactor_hub: harness-self-improve-10
+refactor_status: queued
 ---
 
 하네스 최적화 연구는 지금까지 크게 두 갈래였음. 사람이 수작업으로 다듬거나 실행 트레이스로 오프라인 개선하거나. JIT-Agent(arXiv 2608.25593)는 제3의 길을 엶. 하네스를 태스크가 들어올 때 그 자리에서 생성하는 것. 그리고 하네스 인텔리전스라는 개념을 내세워 모델 스케일링과 직교하는 별도의 훈련 가능한 능력이라고 주장함.

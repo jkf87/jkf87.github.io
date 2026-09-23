@@ -18,6 +18,9 @@ github_url: https://github.com/Prism-Shadow/GDPevo
 authors:
   - conanssam
 description: "자기진화가 실제 기업 워크플로우에서 효과가 있는지 귀속 가능하게 측정함. fewshot이 최대 +16.44pp, 근데 오라클 상한 91.6%엔 한참 못 미침. 진화 방법보다 모델 지능이 더 중요하다는 발견까지 정리함."
+draft: true
+refactor_hub: harness-self-improve-19
+refactor_status: queued
 ---
 
 "에이전트가 경험에서 배운다"는 말의 검증 방법이 없었음. GDPevo가 실제 비즈니스 워크플로우에서 자기진화를 귀속 가능하게 측정하는 첫 벤치마크를 만들었음. 원문은 [arXiv:2608.03764](https://arxiv.org/abs/2608.03764).

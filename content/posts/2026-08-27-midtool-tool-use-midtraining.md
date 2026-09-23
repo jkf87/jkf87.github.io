@@ -9,8 +9,10 @@ tags:
   - MCP
   - fine-tuning
   - arxiv
-draft: false
 description: "20.3B 토큰의 도구 사용 mid-training 데이터를 Qwen3-4B/8B에 넣으니 BFCL·τ²-Bench·MCP-Universe 전반에서 SFT/RL 성능이 일관되게 오름. 데이터 구성과 능력 경계까지 정리."
+draft: true
+refactor_hub: dev-tools-02
+refactor_status: queued
 ---
 
 도구 사용 능력을 post-training(SFT·강화학습 같이 사전학습 이후에 가중치를 조정하는 단계)에만 맡기지 말고 mid-training(사전학습과 post-training 사이 중간 학습 단계) 단계에서 전용 데이터로 심어야 한다는 주장이 나옴. Snowflake의 [MidTool](https://arxiv.org/abs/2608.20314). 소형 에이전트 모델을 직접 튜닝하는 사람에게 데이터 설계 철학이 참고가 돼서 정리함.

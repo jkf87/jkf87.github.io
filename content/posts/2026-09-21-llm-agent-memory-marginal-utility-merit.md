@@ -1,7 +1,6 @@
 ---
 title: "LLM 에이전트에 장기 메모리가 실제로 도움이 될까: MERIT 벤치마크 정리"
 date: 2026-09-21
-draft: false
 description: "LLM 에이전트 장기 메모리를 대화 리콜이 아니라 작업 수행 성공으로 평가한 MERIT 벤치마크(arXiv 2609.05441)를 정리했습니다. 임베딩 검색은 갱신된 사실에서 0.30-0.95로 불안정하게 무너지고, 업데이트-온-라이트 방식이 안정적이라는 결과와 비용 대비 한계효용(CAMU)까지 정리합니다."
 tags:
   - LLM에이전트
@@ -9,6 +8,9 @@ tags:
   - benchmark
   - RAG
   - tool-use
+draft: true
+refactor_hub: agent-memory-07
+refactor_status: queued
 ---
 
 ## 결론 먼저

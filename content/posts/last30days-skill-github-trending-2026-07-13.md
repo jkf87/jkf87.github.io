@@ -1,7 +1,6 @@
 ---
 title: "깃헙 트렌딩 1위가 말하는 다음 검색: Google이 아니라 사람을 검색한다"
 date: 2026-07-13
-draft: false
 tags:
   - github-trending
   - ai-agent
@@ -14,6 +13,9 @@ categories:
 description: "GitHub Trending #1에 오른 mvanhorn/last30days-skill을 읽었다. Reddit, X, YouTube, Hacker News, Polymarket, GitHub, 웹을 한 번에 훑고, 사람들의 반응과 돈이 걸린 신호로 최근 30일의 진짜 흐름을 브리핑하는 에이전트 스킬이다."
 aliases:
   - /posts/last30days-skill-github-trending-2026-07-13
+draft: true
+refactor_hub: harness-self-improve-15
+refactor_status: queued
 ---
 
 ![Reddit, X, YouTube, Hacker News, Polymarket, GitHub, 웹 신호가 하나의 30일 브리핑으로 합쳐지는 장면](/images/last30days-skill-github-trending-2026-07-13/hero.jpg)

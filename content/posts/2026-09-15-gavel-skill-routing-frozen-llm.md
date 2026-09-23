@@ -5,8 +5,10 @@ tags:
   - LLM-agent
   - skill-routing
   - harness
-draft: false
 description: "얼린 에이전트 LLM의 순전파 중간층에서 선형 사영 두 개로 스킬 선택 신호를 읽어내는 Gavel. 학습 파라미터 7.9M으로 외부 1.2B~16B 검색 파이프라인을 이기고 Skill-Use 트리거율 .909를 기록했다."
+draft: true
+refactor_hub: harness-self-improve-01
+refactor_status: queued
 ---
 
 스킬이 수만 개 달리는 시대의 선택 병목을 제3의 방식으로 푼 논문이 나옴. 관점 전환이 인상적이라 정리함. 원문은 [arXiv:2609.15982](https://arxiv.org/abs/2609.15982).

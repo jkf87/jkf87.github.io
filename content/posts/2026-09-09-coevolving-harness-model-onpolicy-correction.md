@@ -7,8 +7,10 @@ tags:
   - imitation-learning
   - lora
   - arxiv
-draft: false
 description: "하네스 진화 후 강한 모델 궤적을 통째로 imitation하면 7개 태스크 전부에서 4~30포인트 후퇴. 학생 롤아웃의 실패 턴만 전문가가 다시 쓰는 온폴리시 교정으로 이득을 지킨 레시피 정리."
+draft: true
+refactor_hub: harness-self-improve-24
+refactor_status: queued
 ---
 
 하네스를 약한 모델에 맞춰 진화시킨 뒤 강한 모델의 궤적을 통째로 imitation하면 오히려 성능이 후퇴함. Salesforce AI의 [논문](https://arxiv.org/abs/2609.09134)이 그 이유와 해법을 정리함. 파인튜닝 데이터를 만드는 사람에게 직결이라 정리함.

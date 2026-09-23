@@ -12,6 +12,9 @@ description: "PyTorch로 GPT를 처음부터 직접 짜보는 워크숍 — 토�
 aliases:
   - llm-from-scratch-2026-05-05/index
   - llm-from-scratch
+draft: true
+refactor_hub: ai-trends-misc-03
+refactor_status: queued
 ---
 
 이 글은 [angelos-p/llm-from-scratch](https://github.com/angelos-p/llm-from-scratch) 워크숍의 영문 docs 6편을 한국어로 옮겨 한 편으로 합친 것임. PyTorch로 GPT를 처음부터 직접 짜보는 핸즈온 워크숍이고, 셰익스피어 텍스트로 ~10M 파라미터 모델을 노트북에서 한 시간 안에 학습시키는 게 목표임. 코드/식별자/수식은 원문 그대로 두고 본문만 자연스러운 한국어로 옮김.

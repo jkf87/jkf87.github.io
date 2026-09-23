@@ -1,7 +1,6 @@
 ---
 title: "GPT Image 2.5 프롬프트 공식 가이드 총정리"
 date: 2026-09-16
-draft: false
 tags:
   - OpenAI
   - GPT-Image
@@ -13,6 +12,9 @@ categories:
 description: "OpenAI가 공개한 GPT Image 2.5 공식 프롬프팅 가이드를 통째로 읽었다. Flare/Sunburst 두 모델 선택 기준, 파라미터 제약, 프롬프트 8원칙, 편집·참조이미지·연속 편집 패턴까지 실무에서 바로 쓸 수 있는 부분만 정리한다."
 aliases:
   - /posts/gpt-image-2-5-prompting-guide-2026-09-16
+draft: true
+refactor_hub: web-gui-agents-03
+refactor_status: queued
 ---
 
 ![노년의 뱃사람이 그물을 손질하는 사진 예제. 가이드가 말하는 photorealistic의 기준 — 주름, 모공, 필름 그레인까지 '보이는 디테일'을 프롬프트에 쓰라는 것이다.](/images/gpt-image-2-5-prompting-guide-2026-09-16/sailor-sunburst.webp)

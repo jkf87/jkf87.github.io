@@ -4,6 +4,9 @@ date: 2026-08-09
 source: arxiv
 source_url: https://arxiv.org/abs/2608.02508
 tags: [agent, memory, reinforcement-learning, LLM, self-evolving, reward-hacking, utility-learning]
+draft: true
+refactor_hub: agent-memory-05
+refactor_status: queued
 ---
 
 자가진화 에이전트의 메모리 시스템엔 조용한 함정이 있음. 무관한 기억이 성공 에피소드에 우연히 포함되면 양의 보상을 받고, Q값이 올라 더 자주 검색되고, 오염이 자기강화됨. RoMeRL은 이 메모리-보상 함정을 궤적별 Q값 학습 자체를 버리는 걸로 푼 프레임워크임.

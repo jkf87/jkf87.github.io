@@ -9,6 +9,9 @@ tags:
   - edge
   - efficiency
 description: "1-bit Bonsai 8B가 왜 단순한 경량화 뉴스가 아니라 온디바이스 AI의 설계 기준을 바꿀 신호인지, 속도·전력·배포 관점에서 한국어로 정리합니다."
+draft: true
+refactor_hub: ai-trends-misc-06
+refactor_status: queued
 ---
 
 GeekNews에 올라온 **1-bit Bonsai 8B** 소식은 단순히 "모델이 더 작아졌다"는 이야기가 아닙니다. 이 주제가 중요한 이유는, 이제 AI 모델의 경쟁 기준이 파라미터 수 자체보다 **어디에서, 얼마나 싸고 빠르게, 얼마나 안정적으로 돌릴 수 있는가**로 이동하고 있다는 점을 아주 선명하게 보여주기 때문입니다.

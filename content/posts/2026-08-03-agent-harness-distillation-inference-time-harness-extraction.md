@@ -1,7 +1,6 @@
 ---
 title: "하네스 설계가 프롬프트 몇 번으로 유출됨 — Agent Harness Distillation 공격 표면 정리"
 date: 2026-08-03T10:00:00+09:00
-draft: false
 tags:
   - agent
   - harness
@@ -13,6 +12,9 @@ tags:
   - distillation
   - Baidu
   - Tsinghua
+draft: true
+refactor_hub: harness-self-improve-12
+refactor_status: queued
 ---
 
 에이전트 하네스가 곧 지적 재산임. Baidu·Tsinghua가 제시한 Agent Harness Distillation(AHD)은 블랙박스 상호작용만으로 자율 다중 에이전트 시스템의 추론 시간 하네스를 추출해 다른 에이전트로 전이할 수 있음을 최초로 실증함. 하네스에 투자한 수개월 엔지니어링이 정교한 프롬프트 몇 번으로 새어나갈 수 있다는 뜻임.

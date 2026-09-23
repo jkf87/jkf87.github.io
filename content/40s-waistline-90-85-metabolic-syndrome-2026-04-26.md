@@ -12,6 +12,9 @@ tags:
 description: "질병관리청과 서울아산병원 자료를 바탕으로, 40대 허리둘레가 남자 90cm·여자 85cm를 넘었을 때 왜 체중보다 더 강한 경고로 봐야 하는지와 지금 바로 손봐야 할 생활 포인트를 정리함."
 aliases:
   - 40s-waistline-90-85-metabolic-syndrome-2026-04-26/index
+draft: true
+refactor_hub: archive-health-01
+refactor_status: archived
 ---
 
 체중은 멀쩡해 보여도 허리둘레가 먼저 올라가는 사람이 있음. 40대에 이게 붙기 시작하면 그냥 살이 조금 찐 게 아니라, 대사 쪽 경고가 먼저 켜진 경우가 많음.

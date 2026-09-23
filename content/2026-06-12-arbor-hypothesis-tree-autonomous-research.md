@@ -1,7 +1,6 @@
 ---
 title: "Arbor: 가설 트리 정제로 AI가 스스로 연구하게 만드는 프레임워크"
 date: 2026-06-12
-draft: false
 tags:
   - AI
   - autonomous-research
@@ -12,6 +11,9 @@ tags:
   - Microsoft-Research
 source: arxiv
 source_url: https://arxiv.org/abs/2606.11926
+draft: true
+refactor_hub: research-agents-01
+refactor_status: queued
 ---
 
 인민대학(RUC)과 Microsoft Research가 발표한 **Arbor**는 AI 에이전트가 **가설 트리(Hypothesis Tree)**를 유지하면서 장기간 자율 연구를 수행하는 프레임워크다. Codex나 Claude Code 같은 코딩 에이전트보다 2.5배 높은 성능 개선을 달성했다. 핵심 질문: "AI가 실험을 오래 돌린다고 연구가 되는가?" — Arbor의 답은 **아니다, 구조가 필요하다**다.

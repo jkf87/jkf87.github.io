@@ -1,7 +1,6 @@
 ---
 title: "SearchSwarm: 에이전트 LLM에 '위임 지능'을 가르치다"
 date: 2026-06-12
-draft: false
 tags:
   - ai-agent
   - llm
@@ -11,6 +10,9 @@ tags:
   - rag
 source: arxiv
 source_url: https://arxiv.org/abs/2606.09730
+draft: true
+refactor_hub: agent-memory-01
+refactor_status: queued
 ---
 
 # SearchSwarm: 에이전트 LLM에 '위임 지능'을 가르치다

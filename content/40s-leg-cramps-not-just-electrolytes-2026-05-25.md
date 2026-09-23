@@ -12,6 +12,9 @@ tags:
 description: "40대 다리 쥐는 전해질 부족만의 문제가 아니었음. 탈수, 오래 같은 자세, 약물, 혈류 문제까지 같이 보면 원인을 빨리 좁힐 수 있었음."
 aliases:
   - 40s-leg-cramps-not-just-electrolytes-2026-05-25/index
+draft: true
+refactor_hub: archive-health-01
+refactor_status: archived
 ---
 
 # 40대 다리 쥐, 전해질만 탓하면 안 되는 이유 4가지

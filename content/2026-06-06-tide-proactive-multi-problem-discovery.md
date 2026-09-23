@@ -7,8 +7,10 @@ tags:
   - KAIST
   - LLM
   - paper-review
-draft: false
 coverImage: /images/tide-proactive-discovery/fig1.jpeg
+draft: true
+refactor_hub: ai-trends-misc-01
+refactor_status: queued
 ---
 
 KAIST 연구팀이 "사용자가 묻지 않아도 숨겨진 문제를 찾아내는" 에이전트 프레임워크를 발표했습니다. 이름하여 **TIDE** (Template-guided Iterative Discovery and rEsolution).

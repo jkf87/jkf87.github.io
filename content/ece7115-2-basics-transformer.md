@@ -9,6 +9,9 @@ tags:
   - transformer
   - attention
 description: "ECE7115 2강 Transformer 기초를 정리한 노트. attention, seq2seq, tokenizer, residual, layer norm의 흐름을 짧게 정리한다."
+draft: true
+refactor_hub: llm-course-notes-01
+refactor_status: queued
 ---
 
 # ECE7115 2강: Transformer Basics

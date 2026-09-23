@@ -9,7 +9,7 @@ tags:
   - prompt-optimization
 description: "Microsoft SkillOpt의 설치와 사용법을 정리하고, voice-memo-doc 전사 결과를 자막 오타 점검 스킬로 최적화하는 예시를 설명합니다."
 draft: false
-coverImage: /images/skillopt-voice-memo-doc-2026-06-03/skillopt-pipeline.png
+coverImage: /media/skillopt-voice-memo-doc-2026-06-03/skillopt-pipeline.png
 ---
 
 Microsoft가 공개한 **SkillOpt**는 에이전트용 `SKILL.md`를 손으로 조금씩 고치는 대신, **평가 데이터와 점수로 자연어 스킬 문서를 반복 개선하는 옵티마이저**다. 모델 가중치는 건드리지 않는다. 바뀌는 건 에이전트가 읽는 스킬 문서다.
@@ -20,7 +20,7 @@ Microsoft가 공개한 **SkillOpt**는 에이전트용 `SKILL.md`를 손으로 �
 
 공식 저장소는 여기다: [microsoft/SkillOpt](https://github.com/microsoft/SkillOpt). 이 글에서는 기본 사용법을 정리하고, 예시로 [jkf87/voice-memo-doc](https://github.com/jkf87/voice-memo-doc)의 전사 결과를 **자막 오타 점검/정정 스킬**로 확장하는 흐름을 잡아본다.
 
-![SkillOpt의 핵심 루프. 스킬 문서를 현재 상태로 두고, 태스크 실행 결과를 반성한 뒤 제한된 자연어 편집을 적용하고 검증 점수가 오를 때만 채택한다.](/images/skillopt-voice-memo-doc-2026-06-03/skillopt-pipeline.png)
+![SkillOpt의 핵심 루프. 스킬 문서를 현재 상태로 두고, 태스크 실행 결과를 반성한 뒤 제한된 자연어 편집을 적용하고 검증 점수가 오를 때만 채택한다.](./media/skillopt-voice-memo-doc-2026-06-03/skillopt-pipeline.png)
 
 ---
 
@@ -79,7 +79,7 @@ WebUI도 켜진다.
 python -m skillopt_webui.app --port 7867
 ```
 
-![로컬에서 실행한 SkillOpt WebUI. config를 고르고 학습 파라미터를 조정한 뒤 실행 로그를 볼 수 있다.](/images/skillopt-voice-memo-doc-2026-06-03/skillopt-webui.png)
+![로컬에서 실행한 SkillOpt WebUI. config를 고르고 학습 파라미터를 조정한 뒤 실행 로그를 볼 수 있다.](./media/skillopt-voice-memo-doc-2026-06-03/skillopt-webui.png)
 
 ---
 
@@ -142,7 +142,7 @@ python scripts/train.py \
 - test hard/soft: 1.0 / 1.0
 - wall time: 약 56초
 
-![API 키 없이 Claude CLI 조합으로 돌린 SkillOpt smoke run 결과. target은 claude_code_exec, optimizer는 claude_chat을 사용했고, 1개 edit가 생성됐지만 validation gate에서 reject됐다.](/images/skillopt-voice-memo-doc-2026-06-03/skillopt-claude-cli-result.png)
+![API 키 없이 Claude CLI 조합으로 돌린 SkillOpt smoke run 결과. target은 claude_code_exec, optimizer는 claude_chat을 사용했고, 1개 edit가 생성됐지만 validation gate에서 reject됐다.](./media/skillopt-voice-memo-doc-2026-06-03/skillopt-claude-cli-result.png)
 
 여기서 중요한 점은 두 가지다. 첫째, **API 키를 환경변수로 넣지 않아도 로그인된 Claude CLI로 SkillOpt 루프가 실제 실행된다.** 둘째, `codex exec`도 코드상 지원되지만 현재 내 로컬에서는 인증 문제로 실패했다. Codex CLI 쪽 로그인/프로바이더 설정이 잡혀 있으면 같은 방식으로 테스트할 수 있다.
 
@@ -472,7 +472,7 @@ steps/step_XXXX/step_record.json
 - exact match에 과적합해서 자연스러운 동등 표현을 실패로 본다.
 - 검증 세트가 너무 작아 한두 문제에 규칙이 흔들린다.
 
-![SkillOpt의 epoch trend 예시. 학습이 안정적이면 검증 점수와 채택된 skill snapshot의 흐름을 함께 확인할 수 있다.](/images/skillopt-voice-memo-doc-2026-06-03/skillopt-epoch-trends.png)
+![SkillOpt의 epoch trend 예시. 학습이 안정적이면 검증 점수와 채택된 skill snapshot의 흐름을 함께 확인할 수 있다.](./media/skillopt-voice-memo-doc-2026-06-03/skillopt-epoch-trends.png)
 
 ---
 

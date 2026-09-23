@@ -5,8 +5,10 @@ tags:
   - agentic-rl
   - credit-assignment
   - paper-notes
-draft: false
 description: "희소 보상 멀티턴 RL에서 실패 트랙토리 내부의 크레딧 퇴화를 앵커 상태 잠재력 차이로 푼 PGPO. 크리틱·추가 롤아웃 없이 WebShop 성공률 66.5%에서 75.0%까지 올린 결과를 정리했다."
+draft: true
+refactor_hub: agent-rl-06
+refactor_status: queued
 ---
 
 희소 보상 에이전트 RL의 구조적 낭비를 정면으로 다룬 논문이 나옴. 실패한 궤적 안에도 좋은 행동이 있는데 전부 같은 실패 크레딧을 받는다는 것. 원문은 [arXiv:2609.02236](https://arxiv.org/abs/2609.02236).

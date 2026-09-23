@@ -1,7 +1,6 @@
 ---
 title: "Trackio: 에이전트가 실험을 돌릴 때 필요한 건 거대한 SaaS가 아닐 수도 있다"
 date: 2026-07-26
-draft: false
 tags:
   - Trackio
   - Hugging-Face
@@ -16,6 +15,9 @@ categories:
 description: "Hugging Face Gradio 팀의 Trackio를 읽었다. 핵심은 W&B 대체재라는 말보다, 로컬 SQLite와 CLI query를 전제로 한 에이전트 친화적 실험 추적 도구라는 점이다."
 aliases:
   - /posts/trackio-local-first-experiment-tracking-agents-2026-07-26
+draft: true
+refactor_hub: dev-tools-01
+refactor_status: queued
 ---
 
 ![Trackio 로고. 이 프로젝트의 흥미로운 지점은 예쁜 대시보드보다, 실험 로그를 로컬 SQLite에 쌓고 CLI와 SQL로 다시 읽을 수 있게 했다는 점이다.](/images/trackio-local-first-experiment-tracking-agents-2026-07-26/trackio-logo.png)

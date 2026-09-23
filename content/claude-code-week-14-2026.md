@@ -7,6 +7,9 @@ tags:
   - ai-coding
   - release-notes
 description: "Claude Code v2.1.86~v2.1.91 주간 다이제스트. CLI에서 Computer Use, /powerup 인터랙티브 레슨, 깜빡임 없는 렌더링, MCP 결과 크기 오버라이드, 플러그인 PATH 실행 파일 지원을 소개합니다."
+draft: true
+refactor_hub: coding-agents-07
+refactor_status: queued
 ---
 
 # Week 14 · 3월 30일–4월 3일, 2026

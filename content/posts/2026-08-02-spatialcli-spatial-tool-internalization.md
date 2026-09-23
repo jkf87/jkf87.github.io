@@ -12,8 +12,10 @@ tags:
   - automation
   - GRPO
   - embodied-AI
-draft: false
 description: "SpatialCLI는 VLM(비전-언어 모델, 이미지와 텍스트를 함께 이해하는 모델)이 전문 비전 도구를 호출하게 하고 그 궤적을 증류해 도구 없이도 추론하게 만듦. 8B 모델이 도구 사용 시 GPT-5.6을 크게 앞서고 도구를 빼도 73%대를 유지함. 도구 경험을 학습 데이터로 보는 패러다임을 정리함."
+draft: true
+refactor_hub: harness-self-improve-18
+refactor_status: queued
 ---
 
 에이전트에게 도구를 주는 건 이제 상식임. 근데 그 도구 사용 경험이 모델 안에 축적되는 설계는 드묾. SpatialCLI는 이 질문을 정면으로 다룸. 도구를 쓰는 능력을 모델 안으로 밀어넣을 수 있는가. 8B 모델이 도구를 쓸 때 GPT-5.6을 크게 앞서고, 도구를 뺏어도 성능의 대부분을 유지한다는 결과를 냄. 도구를 런타임 보조 수단이 아니라 학습 데이터로 보는 패러다임 전환임.

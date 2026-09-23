@@ -13,6 +13,9 @@ tags:
   - memory
   - tool-use
 cover: /images/2026-07-17-self-improving-agentic-systems-survey/fig-1-p1.png
+draft: true
+refactor_hub: agent-memory-06
+refactor_status: queued
 ---
 
 에이전트가 경험으로 스스로를 고친다는 얘기가 많은데, "고친다"의 대상이 두 갈래임. 모델 가중치를 업데이트하는 느린 길과, 프롬프트·메모리·도구·제어 로직을 고치는 빠른 길. 97페이지 [서베이](https://arxiv.org/abs/2607.13104)가 이 둘을 하나의 지도로 정리함. 파인튜닝을 못 하는 실무자 입장에서도 후자는 오늘 당장 쓸 수 있는 것들이라 정리해둘 가치가 큼.

@@ -16,6 +16,9 @@ source: huggingface
 source_url: https://arxiv.org/abs/2608.05219
 github_url: https://github.com/liujunzhuo/SMRC-SD
 description: 참조 궤적과 현재 상태가 어긋나면 teacher가 올바른 행동을 억누름. 상태 매칭 라우팅으로 호환되는 턴에만 증류 신호를 주는 방법을 예시 재사용 설계 관점으로 정리함.
+draft: true
+refactor_hub: harness-self-improve-18
+refactor_status: queued
 ---
 
 멀티턴 에이전트 자기증류에서 성공한 궤적을 매 턴 무조건 teacher에게 보여주는 관행에 구조적 결함이 있었음. SMRC-SD가 그 결함을 측정하고 고쳤음. 원문은 [arXiv:2608.05219](https://arxiv.org/abs/2608.05219).

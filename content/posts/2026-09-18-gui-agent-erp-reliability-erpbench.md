@@ -7,8 +7,10 @@ tags:
   - benchmark
   - enterprise
   - paper-summary
-draft: false
 description: "GUI 에이전트를 실제 ERPNext에 스크린샷만으로 조작하게 하고 DB 필드 값으로 채점한 ERPBench. Claude는 인간급이었지만 오픈 모델은 목표 도달 95%에 DB 정답 9%인 조용한 실패가 핵심이었다."
+draft: true
+refactor_hub: web-gui-agents-01
+refactor_status: queued
 ---
 
 GUI 에이전트의 화면 성공과 데이터베이스 실제 반영이 어긋난다는 걸 정량화한 벤치마크가 나옴. 엔터프라이즈 도입 검토에 직결되는 숫자라 정리함. 원문은 [arXiv:2609.17885](https://arxiv.org/abs/2609.17885).

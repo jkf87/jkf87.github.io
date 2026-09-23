@@ -7,8 +7,10 @@ tags:
   - regression-testing
   - record-replay
   - paper-summary
-draft: false
 description: "LLM 에이전트는 같은 코드를 다시 돌려도 장애가 재현되지 않는다. Microsoft의 Chronicle 논문이 에이전트 실행 경계를 녹화해 컷포인트 리플레이로 회귀 테스트를 만드는 방식을 정리했습니다."
+draft: true
+refactor_hub: ai-trends-misc-01
+refactor_status: queued
 ---
 
 ## 결론 먼저

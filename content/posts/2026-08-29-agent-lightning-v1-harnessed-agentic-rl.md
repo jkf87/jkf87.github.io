@@ -6,8 +6,10 @@ tags:
   - reinforcement-learning
   - agent-harness
   - post-training
-draft: false
 description: "하네스가 환경 루프를 소유하고 트레이너는 LLM 요청-응답만 보는 harnessed agentic RL 구조를 정식화한 Agent Lightning v1.0. 3,500줄 구현으로 Qwen3.5-9B의 SWE-bench Verified를 41.8%에서 56.4%로 올린 결과를 정리했다."
+draft: true
+refactor_hub: harness-self-improve-13
+refactor_status: queued
 ---
 
 에이전트 RL(강화학습)에서 "누가 환경 루프를 소유하나"라는 질문을 뒤집은 프레임워크가 v1.0으로 정식화돼서 정리함. Microsoft가 낸 것이고 후속 프레임워크들이 이미 따라간 방향이라 기준점 가치가 큼. 원문은 [arXiv:2608.17528](https://arxiv.org/abs/2608.17528).

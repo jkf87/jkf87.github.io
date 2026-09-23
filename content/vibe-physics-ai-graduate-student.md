@@ -8,6 +8,9 @@ tags:
   - physics
   - research
 description: "하버드 물리학 교수가 Claude Opus 4.5를 실제 이론물리학 연구 프로젝트에 투입해 본 경험담. AI가 대학원생 수준의 연구를 수행할 수 있는지, 그 한계와 가능성을 실험한 결과를 공유한다."
+draft: true
+refactor_hub: research-agents-01
+refactor_status: queued
 ---
 
 ![Vibe Physics Hero](./images/vibe-physics/hero.svg)

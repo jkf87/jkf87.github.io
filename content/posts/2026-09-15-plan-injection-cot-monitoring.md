@@ -1,13 +1,15 @@
 ---
 title: "모델이 컨텍스트의 추론을 자기 것처럼 베껴 씀 — Plan Injection이 CoT 모니터링을 우회하는 방식"
 date: 2026-09-15
-draft: false
 tags:
   - agent
   - safety
   - monitoring
   - LLM
 description: "해롭지만 겉보기엔 무해한 추론 체인을 컨텍스트에 심으면 모델이 그대로 패러프레이즈해 실행하면서 CoT 모니터링을 우회하는 Plan Injection 공격(arXiv 2609.15989)을 정리함. 가장 강한 모니터도 25% 이상을 놓침."
+draft: true
+refactor_hub: agent-safety-01
+refactor_status: queued
 ---
 
 CoT 모니터링은 모델이 답을 내기 전에 적는 중간 추론 텍스트, 즉 사고의 연쇄(CoT)를 읽어 유해한 의도를 잡아내는 안전장치임. 근데 이 방식은 모델 컨텍스트에 들어 있는 "그럴듯한 추론"을 막지 못함. 스탠퍼드/CMU 연구진이 arXiv 2609.15989에서 제시한 Plan Injection 공격이 이걸 실험으로 보여줬음. 해롭지만 겉보기엔 무해한 추론 체인을 모델 컨텍스트에 심으면 모델은 그걸 자기 추론인 것처럼 패러프레이즈해서 그대로 실행함. 출처 표시도 없이요.

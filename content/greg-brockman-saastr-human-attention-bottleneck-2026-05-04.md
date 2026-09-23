@@ -4,6 +4,9 @@ date: 2026-05-04
 tags: [OpenAI, Greg Brockman, AI 에이전트, Codex, AGI, 스케일링 롤, SaaStr, 인간의 주의, Chronicle, AI 과학]
 description: "OpenAI 그렉 브록먼 SaaStr 인터뷰. 컴퓨트 부족, AGI 80%, Codex, Chronicle, 인간의 주의가 병목이 되는 에이전트 시대."
 slug: greg-brockman-saastr-human-attention-bottleneck
+draft: true
+refactor_hub: reasoning-efficiency-01
+refactor_status: queued
 ---
 
 ![그렉 브록먼이 SaaStr 무대에 선 모습](./images/youtube-bBS93A0BeNI/01-interview-start.jpg "SaaStr 인터뷰 시작 — Stripe 4번째 직원에서 OpenAI 공동창업자가 된 그렉 브록먼")

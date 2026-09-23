@@ -16,6 +16,9 @@ source: arxiv
 source_url: https://arxiv.org/abs/2608.03392
 github_url: https://github.com/zhouhao1024/Awesome-Self-Evolving-Coding-Agents
 description: "자기 진화 코딩 에이전트 설문을 실무 관점으로 정리. 테스트·컴파일러·CI라는 조작 불가능한 피드백이 진화를 가능하게 한다는 점과, 프레임워크·메모리·스킬·모델·워크플로우 다섯 통로별 적용 포인트."
+draft: true
+refactor_hub: agent-memory-06
+refactor_status: queued
 ---
 
 SWE-bench(실제 GitHub 리포지토리의 이슈를 재현해 버그를 고치게 하는 코딩 벤치마크)에서 30%를 맞는 코딩 에이전트가 다음 날 비슷한 이슈에서 같은 파일을 또 잘못 고침. 정적 에이전트의 한계임. 남경공업대의 2026년 8월 [설문](https://arxiv.org/abs/2608.03392)이 "자기 진화하는 코딩 에이전트"라는 프레임으로 이 문제의 연구 지도를 정리함. 내가 볼 포인트는 하나임. 왜 하필 코딩 에이전트에서 자기 진화가 가장 잘 작동하는가. 그 답이 다른 도메인의 자동화에도 적용되기 때문임.

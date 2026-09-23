@@ -10,9 +10,11 @@ tags:
   - bioinformatics
   - MCP
   - Skills
-draft: false
 coverImage: /images/claude-science-ai-workbench-2026-07-01/hero.jpg
 description: "Anthropic이 공개한 과학용 AI 워크벤치 Claude Science를 업무자동화 관점으로 정리. 도구 간 마찰 제거, 감사 가능한 산출물, 리스크 게이팅된 컴퓨트 관리가 핵심이다."
+draft: true
+refactor_hub: research-agents-01
+refactor_status: queued
 ---
 
 Anthropic이 과학자용 AI 워크벤치 Claude Science를 베타로 공개함. 논문 잘 읽는 챗봇이 아니라 PubMed, Jupyter, HPC 클러스터, 단백질 뷰어, 유전체 DB를 하나의 작업대에 올리겠다는 선언에 가까워서 정리함. 원문은 [Anthropic 발표](https://www.anthropic.com/news/claude-science-ai-workbench).

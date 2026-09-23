@@ -1,12 +1,14 @@
 ---
 title: "하네스를 고치는 새 인터페이스: Harness Handbook Studio가 보여준 행동 지도"
 date: 2026-07-18T02:05:00+09:00
-draft: false
 summary: "Harness Handbook 프로젝트 페이지는 논문 수치보다 더 실무적인 질문을 던진다. 에이전트 하네스를 이해하고, 감사하고, 수정하려면 파일 트리가 아니라 행동 질문에서 코드 증거로 내려가는 지도가 필요하다는 것이다. Handbook Studio는 이 지도를 읽기·검증·수정 작업대까지 확장한다."
 tags: ["AI Agent", "Agent Harness", "Harness Handbook", "Behavior Localization", "Handbook Studio", "Loop Engineering", "Agentic Coding"]
 categories: ["AI Agent", "Software Engineering"]
 source_url: "https://ruhan-wang.github.io/Harness-Handbook/"
 paper_url: "https://arxiv.org/abs/2607.13285"
+draft: true
+refactor_hub: harness-self-improve-13
+refactor_status: queued
 ---
 
 에이전트 하네스를 수정할 때, 사용자는 보통 이렇게 말한다. “이 명령에만 임시 환경변수를 넣게 해줘.” “파일 삭제 전에는 꼭 확인하게 해줘.” “이 도구는 승인 없이는 실행하지 말아줘.” 요구는 한 문장이다. 그런데 저장소를 열면 이 한 문장은 스키마, 프롬프트, 도구 설명, 실행 래퍼, 상태 관리, 테스트로 흩어진다.

@@ -13,6 +13,9 @@ tags:
 source: arxiv
 source_url: https://arxiv.org/abs/2210.00586
 paper_url: https://arxiv.org/abs/2210.00586
+draft: true
+refactor_hub: eval-benchmarks-03
+refactor_status: queued
 ---
 
 같은 프롬프트를 넣었는데 왜 모델마다 그림이 다르게 나올까요. 흔한 답은 이겁니다. Midjourney는 예쁘고, DALL·E는 말을 잘 듣고, Stable Diffusion은 조절이 쉽다. 틀린 말은 아닌데, 조금 표면적입니다.

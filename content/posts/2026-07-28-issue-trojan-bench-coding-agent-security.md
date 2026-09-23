@@ -1,7 +1,6 @@
 ---
 title: "코딩 에이전트에 악성 이슈를 던지니 66.5%가 뚫렸음 — 프레임워크 방어는 0건 차단"
 date: 2026-07-28T22:20:00+09:00
-draft: false
 tags:
   - coding-agent
   - security
@@ -13,6 +12,9 @@ tags:
   - harness
   - automation
 description: "4,176회 실험에서 악성 GitHub 이슈의 66.5%가 모든 방어선을 통과했다. 공급망 공격은 96.6%, 프레임워크 수준 차단은 0건. 코딩 에이전트 보안의 실태를 정리했다."
+draft: true
+refactor_hub: harness-self-improve-02
+refactor_status: queued
 ---
 
 GitHub 이슈만으로 코딩 에이전트를 뚫는 실험 결과가 나옴. Cursor·Claude Code·Codex Desktop에 악성 이슈 4,176회를 던져서 2,776회, 즉 66.5%가 모든 방어선을 통과했음. 원문은 [arXiv:2607.20759](https://arxiv.org/abs/2607.20759).

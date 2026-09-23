@@ -2,6 +2,9 @@
 title: OpenClaw에서 Claude Code CLI 위임 방식 — 안전한가?
 date: 2026-04-20
 tags: [claude-code, openclaw, anthropic, tos]
+draft: true
+refactor_hub: coding-agents-07
+refactor_status: queued
 ---
 
 공식 Claude Code CLI 단독 사용은 안전합니다.  

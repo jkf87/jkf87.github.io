@@ -12,6 +12,9 @@ tags:
   - automation
   - tool-use
   - long-horizon
+draft: true
+refactor_hub: harness-self-improve-06
+refactor_status: queued
 ---
 
 컴퓨터 사용 에이전트 개선책은 죄다 "더 잘 보게 만드는 것"이었음. StateAct는 반대로 스크린샷을 버리고 프로그램 내부 상태를 코드로 직접 읽음. 같은 모델로 성공률을 올리고 비용은 9분의 1로 줄임. 화면 자동화를 실무에서 쓰는 사람에게 직결되서 정리함.

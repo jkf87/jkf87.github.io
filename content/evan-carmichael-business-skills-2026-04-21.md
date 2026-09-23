@@ -10,6 +10,9 @@ tags:
   - 창업
   - 2026
 description: 에반 카마이클(Believe Nation) 58분 압축 영상을 번호 리스트로 옮김. 일론 머스크의 재료비 2% 법칙, 조시 카우프만의 5요소, 해밀턴 헬머의 7가지 힘, 그리고 2026년 먹히는 5개 고소득 스킬까지.
+draft: true
+refactor_hub: archive-offtopic-01
+refactor_status: archived
 ---
 
 에반 카마이클(Believe Nation) 1시간짜리 압축 영상. 일론 머스크 재료비 해체부터 조시 카우프만 5요소, 해밀턴 헬머 7가지 힘, 그리고 학위 없이 배우는 고소득 스킬 5개까지 한 번에 밀어붙임. 영상은 [RGT7nNrvSek](https://youtu.be/RGT7nNrvSek) 이고, 아래는 번호 매긴 비트만 남긴 버전.

@@ -15,6 +15,9 @@ tags:
 source_url: "https://arxiv.org/abs/2607.24762"
 github_url: "https://github.com/TheJoshBrod/KernelForge"
 description: "Kernel Forge 분석. 실제 모델 실행을 캡처해 LLM이 CUDA 커널을 생성·검증·교체하는 하네스. 지역 속도 2.83배와 실제 배포 영향이 다르다는 통찰과, 가드드 디스패치의 실무 교훈."
+draft: true
+refactor_hub: harness-self-improve-04
+refactor_status: queued
 ---
 
 LLM이 생성한 CUDA 커널이 PyTorch eager보다 최대 2.83배 빨라질 수 있다는 [연구](https://arxiv.org/abs/2607.24762)가 나옴. PyTorch eager는 연산을 그래프 컴파일 없이 하나씩 즉시 실행하는 기본 모드임. Michigan 대학의 Kernel Forge는 MCTS 기반 하네스로, MCTS는 몬테카를로 트리 탐색을 뜻하는데 선택지를 트리로 펼치고 시뮬레이션 결과를 반영해 유망한 경로를 집중 탐색하는 기법임. 수정하지 않은 PyTorch 모델에서 실제 실행되는 연산자를 자동 캡처해서 LLM이 만든 특화 커널로 교체함. 근데 이 논문의 진짜 가치는 커널 속도가 아니라 **"가장 빨라진 커널이 가장 영향력 있는 커널은 아니었다"**는 발견임. GPU 최적화를 안 하더라도 에이전트 시스템의 우선순위 설계에 적용되는 교훈이라 정리함.

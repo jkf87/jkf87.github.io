@@ -12,6 +12,9 @@ tags:
 description: "getDesign.md는 Apple, BMW, Starbucks 등 유명 브랜드 디자인 시스템을 DESIGN.md 파일 한 장으로 추출해, AI 코딩 에이전트에게 넘겨주는 오픈소스 툴. 세 브랜드의 색상·타이포·컴포넌트 시스템을 비교 정리함."
 aliases:
   - getdesign-md-apple-bmw-starbucks-design-system-2026-04-29/index
+draft: true
+refactor_hub: coding-agents-02
+refactor_status: queued
 ---
 
 AI 코딩 에이전트로 UI를 만들 때 가장 먼저 부딪히는 문제가 있음. 에이전트가 코드는 잘 짜는데, 브랜드 감이 없는 UI를 뱉어낸다는 것. Apple 스타일로 만들어달라고 해도 그게 뭔지 정확히 모르고, 그냥 "깔끔한 흰 배경"으로 때움.

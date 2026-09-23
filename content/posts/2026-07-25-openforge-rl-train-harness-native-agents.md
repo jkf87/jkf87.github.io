@@ -1,7 +1,6 @@
 ---
 title: "에이전트는 배포하는 하네스 그대로 훈련해야 한다 — OpenForge RL이 증명한 것"
 date: 2026-07-25
-draft: false
 tags:
   - agent
   - harness
@@ -15,6 +14,9 @@ categories:
   - AI Agent
   - Reinforcement Learning
 summary: "Columbia·Microsoft Research의 OpenForge RL 분석. 하네스의 모델 호출을 프록시로 가로채 훈련-배포 불일치를 없앤 구조와, '어떤 하네스로 훈련하느냐'가 성능을 어떻게 바꾸는지의 실험 결과를 실무 관점으로 정리함."
+draft: true
+refactor_hub: harness-self-improve-13
+refactor_status: queued
 ---
 
 에이전트 성능의 상당 부분은 모델이 아니라 하네스에서 나옴. 근데 오픈소스 RL 프레임워크는 단순 롤아웃을 가정해서 Claude Code·OpenClaw 같은 복잡한 하네스를 훈련 루프에 못 올림. 그래서 연구자들은 훈련용으로 단순화한 하네스를 다시 짜고, 그 순간 배포 환경과 다른 훈련-배포 불일치가 생김. [OpenForge RL](https://arxiv.org/abs/2607.21557)이 이 문제를 프록시 하나로 풀었음. 나아가서 어떤 하네스로 훈련하느냐가 성능을 얼마나 바꾸는지 처음으로 데이터로 보여줌.

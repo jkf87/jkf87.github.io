@@ -8,11 +8,13 @@ tags:
   - LLM
   - automation
   - memory
-draft: false
 summary: "MCP 시대에 같은 도구 서버를 수많은 에이전트가 각각 다시 배우는 낭비를, 도구 공급자 측 메모리 그래프로 해결한 ToolAtlas. 교차 에이전트 이전까지 검증된 구조를 자동화 운영 관점에서 풀어둔 글."
 source_url: "https://arxiv.org/abs/2607.11126"
 authors:
   - jkf87
+draft: true
+refactor_hub: agent-memory-07
+refactor_status: queued
 ---
 
 MCP가 표준화되면서 같은 도구 서버를 수많은 에이전트가 부르는 세계가 됐음. 근데 각 에이전트는 도구를 시도하고, 실패하고, 다시 배움. 같은 실수를 수십 번 반복하는 셈임. ToolAtlas는 이 문제를 도구 경험을 공급자 쪽에 저장하는 걸로 풀었음.

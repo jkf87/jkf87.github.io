@@ -3,6 +3,9 @@ title: "비서 문제와 37% 규칙 — 언제 선택을 멈춰야 할까"
 date: 2026-04-28
 tags: [수학, 의사결정, 확률, 최적정지, 알고리즘]
 description: "비서 문제(Secretary Problem)와 37% 규칙. 수학이 알려주는 최적의 선택 타이밍 — 연애, 취업, 집 구하기에도 적용된다."
+draft: true
+refactor_hub: archive-offtopic-01
+refactor_status: archived
 ---
 
 ![비서 문제 — 37% 규칙](./images/secretary_problem_hero.png)

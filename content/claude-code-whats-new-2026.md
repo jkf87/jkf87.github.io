@@ -6,6 +6,9 @@ tags:
   - anthropic
   - ai-coding
 description: "Claude Code Week 13~15(2026년 3월 23일~4월 10일) 주간 신기능 다이제스트 한국어 번역. Auto Mode, Computer Use, Ultraplan, Monitor Tool 등 핵심 변경사항 정리."
+draft: true
+refactor_hub: coding-agents-07
+refactor_status: queued
 ---
 
 # Claude Code What's New — 2026년 3~4주차

@@ -12,7 +12,9 @@ aliases:
   - agentswing-adaptive-context-management-2026-04-14/index
   - agentswing-adaptive-context-management
   - agentswing
-draft: false
+draft: true
+refactor_hub: ai-trends-misc-02
+refactor_status: queued
 ---
 
 ## 왜 이 논문이 중요한가

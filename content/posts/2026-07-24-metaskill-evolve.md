@@ -7,7 +7,6 @@ tags:
   - skill-evolution
   - LLM
   - recursive
-draft: false
 source_url: "https://arxiv.org/abs/2607.05297"
 authors:
   - "Zefeng Wang"
@@ -17,6 +16,9 @@ authors:
   - "Volker Tresp"
   - "Yunpu Ma"
 affiliation: "LMU Munich, CUHK, MCML, MemAgents Lab"
+draft: true
+refactor_hub: harness-self-improve-20
+refactor_status: queued
 ---
 
 에이전트 자기개선 시스템 대부분엔 모순이 하나 있음. 무엇을 하는지(태스크 스킬)는 바꾸면서 어떻게 개선하는지(개선 절차)는 고정해둠. MetaSkill-Evolve는 이 개선 절차 자체를 학습 가능한 객체로 만들어서 두 층위를 동시에 진화시킴. Gemma-4 31B 기준 OfficeQA +23.54점, SealQA +16.09점임.

@@ -15,6 +15,9 @@ tags:
 authors:
   - conanssam
 description: 수학→계획→추출처럼 스킬이 바뀌는 순간 정확도가 4-13% 떨어짐. 전환 난이도를 skill entropy로 정량화하고 RL 보상으로 쓴 연구를 에이전트 루프 설계 관점으로 정리함.
+draft: true
+refactor_hub: harness-self-improve-01
+refactor_status: queued
 ---
 
 수학 풀고 → 그 결과로 일정 짜고 → 그 일정에서 정보 추출하기. 이렇게 스킬이 바뀌는 순간 LLM 정확도가 떨어짐. Princeton 팀이 이 현상을 "Skill Entropy"로 정량화하고 훈련 신호로 썼음. 원문은 [arXiv:2608.05139](https://arxiv.org/abs/2608.05139).

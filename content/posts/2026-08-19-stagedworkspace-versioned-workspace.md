@@ -7,6 +7,9 @@ tags:
   - workspace
   - paper-review
 description: "문서 작업 에이전트의 검색·수정·제출이 저마다 다른 파일 버전을 참조하는 문제를 콘텐츠 해시 기반 워크스페이스 계약으로 해결한 StagedWorkspace. Gemini 3.1 Pro가 29.3%에서 63.9%로 오른 결과를 정리했다."
+draft: true
+refactor_hub: harness-self-improve-05
+refactor_status: queued
 ---
 
 지식노동 에이전트가 겪는 흔한 실패 하나를 정면으로 다룬 논문이 나옴. 검색한 파일, 수정한 파일, 제출한 파일이 서로 다른 버전인 경우가 있다는 것. 원문은 [arXiv:2608.18050](https://arxiv.org/abs/2608.18050).

@@ -7,6 +7,9 @@ tags:
   - mac
   - ollama
 description: "맥에서 로컬 4B/9B 모델을 실사용할 때의 현실적인 기준과 하이브리드 운영 전략을 정리합니다."
+draft: true
+refactor_hub: model-releases-03
+refactor_status: queued
 ---
 
 결론부터 말하면, 로컬 AI 모델은 충분히 실사용 가능합니다.  

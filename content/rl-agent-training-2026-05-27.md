@@ -10,6 +10,9 @@ tags:
 description: "CUA-Gym, ECHO, QUEST — 세 편의 최신 논문이 알려주는 에이전트 학습에 강화학습을 쓰는 세 가지 접근. 환경 생성, 밀도 있는 보상, 합성 데이터 파이프라인까지."
 aliases:
   - rl-agent-training-2026-05-27/index
+draft: true
+refactor_hub: agent-rl-04
+refactor_status: queued
 ---
 
 2025년 초만 해도 "에이전트에 RL을 쓴다"는 말은 거의 실험실 얘기였다. SFT만으로도 충분히 잘 돌아가니까. 그런데 2026년, 상황이 완전히 바뀌었다. 수학·코딩·도구 사용에서 RLVR(Reinforcement Learning with Verifiable Rewards)이 성능을 폭발시킨 뒤, 그 열기가 에이전트 영역으로 번지고 있다. 문제는 에이전트는 수학 문제처럼 정답이 깔끔하지 않다는 것. 웹을 탐색하고, 터미널을 조작하고, 리서치 보고서를 쓰는 행동은 연속적이고, 보상은 희소하고, 환경은 비싸다. 26년 5월 말에 나온 세 편의 논문이 이 문제를 각자 다른 각도에서 고민한 결과인듯하여 함께 소개한다.

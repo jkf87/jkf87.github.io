@@ -11,6 +11,9 @@ tags:
   - plugin
   - software-engineering
 description: "OpenAI 개발자 경험팀이 직접 발표한 Codex 마스터클래스 전체 내용 정리. 모델 진화부터 플러그인·자동화·서브에이전트·Guardian Approvals·훅까지 빠짐없이 다룸."
+draft: true
+refactor_hub: coding-agents-06
+refactor_status: queued
 ---
 
 OpenAI 개발자 경험팀의 Katia Gil Guzman과 Vaibhav Srivastav(VB)가 런던에서 진행한 Codex 마스터클래스 전체 내용을 정리했다. 이미 Codex를 쓰고 있는 사람도 몰랐을 내용들이 꽤 많이 나온다.

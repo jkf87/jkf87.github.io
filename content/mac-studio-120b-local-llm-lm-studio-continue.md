@@ -11,6 +11,9 @@ tags:
   - continue
   - productivity
 description: "Mac Studio 128GB에서 120B급 로컬 LLM을 돌리고, LM Studio를 서버로 열어 VS Code Continue와 연결하는 실전 워크플로우를 정리했습니다."
+draft: true
+refactor_hub: coding-agents-03
+refactor_status: queued
 ---
 
 최근 본 영상 중에서 꽤 인상적이었던 하나를 꼽자면, **Mac Studio 한 대로 120B급 로컬 LLM을 실사용 수준으로 운영하는 데모**였습니다. 단순히 “큰 모델도 돌아간다” 수준이 아니라, **LM Studio를 서버처럼 열고 VS Code Continue와 연결해서 개발 워크플로우까지 이어가는 방식**을 보여줬다는 점이 좋았습니다.

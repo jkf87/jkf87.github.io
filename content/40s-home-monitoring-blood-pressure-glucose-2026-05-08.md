@@ -11,6 +11,9 @@ tags:
 description: "40대는 건강검진 한 번보다 집에서 며칠 기록한 혈압·혈당이 더 많은 걸 말해줌. 숫자보다 패턴을 보는 법을 정리함."
 aliases:
   - 40s-home-monitoring-blood-pressure-glucose-2026-05-08/index
+draft: true
+refactor_hub: archive-health-01
+refactor_status: archived
 ---
 
 # 40대 혈압·혈당, 병원 한 번보다 집에서 7일 기록이 더 정확한 이유

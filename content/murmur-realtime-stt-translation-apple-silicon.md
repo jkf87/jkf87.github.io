@@ -7,6 +7,9 @@ tags:
   - apple-silicon
   - open-source
 description: "Murmur는 Apple Silicon Mac에서 로컬로 돌아가는 실시간 음성 전사·번역 앱입니다. whisper-small-mlx와 NLLB-200을 활용해 오프라인에서도 다국어 전사와 번역을 제공합니다."
+draft: true
+refactor_hub: multimodal-world-01
+refactor_status: queued
 ---
 
 ![Murmur 아이콘](./images/murmur-icon.png)

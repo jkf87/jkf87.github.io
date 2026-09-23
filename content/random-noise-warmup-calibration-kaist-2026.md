@@ -10,6 +10,9 @@ tags:
   - 논문리뷰
   - KAIST
 description: KAIST가 Nature Machine Intelligence에 발표한 랜덤 노이즈 웜업 훈련법. AI 과신(hallucination)의 근본 원인이 초기화에 있다는 주장을 학술 리뷰어·LLM 엔지니어·회의론자 3인이 독립적으로 평가했다.
+draft: true
+refactor_hub: ai-trends-misc-03
+refactor_status: queued
 ---
 
 # 랜덤 노이즈 웜업으로 AI 과신 문제 해결? — KAIST Nature 논문 3인 심층 리뷰

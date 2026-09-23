@@ -2,8 +2,10 @@
 title: "RCA 성능 격차는 에이전트 바깥의 하네스에서 남 — OpsHarness 자가진화 구조 정리"
 date: 2026-08-28
 tags: [paper-review, llm-agents, harness, rca, aiops, self-evolving]
-draft: false
 description: "arXiv 2608.25661 정리. 범용 코딩 에이전트를 감싸는 자가진화형 RCA 하네스 OpsHarness가 OpenRCA/RCAEval에서 top-1 59.0%, 전용 RCA 에이전트 대비 4.02배를 기록한 구조를 풀어둔 글."
+draft: true
+refactor_hub: harness-self-improve-21
+refactor_status: queued
 ---
 
 이 논문의 핵심 주장은 명확함. LLM 기반 루트 코즈 분석(RCA, 장애가 발생한 근본 원인을 데이터로 역추적하는 작업)의 성능 격차는 에이전트 바깥의 하네스 레이어에서 발생한다는 것. CUHK와 ByteDance의 OpsHarness는 Claude Code나 Codex 같은 범용 에이전트를 그대로 재사용하면서 바깥에 자가진화하는 하네스를 얹었음. 4개 백본 평균 top-1 정확도 59.0%, 맨살 범용 에이전트 대비 +63.4%, 전용 RCA 에이전트 대비 4.02배임.

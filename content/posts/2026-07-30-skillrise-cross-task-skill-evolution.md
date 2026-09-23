@@ -1,12 +1,14 @@
 ---
 title: "에이전트가 작업을 풀면서 다음 작업용 스킬을 직접 정리하게 만들기 — SkillRise"
 date: 2026-07-30T16:00:00+09:00
-draft: false
 summary: "관련 작업 시퀀스를 풀며 스킬 문서를 진화시키는 단일 정책 RL. 테스트 타임에 작업이 길어질수록 성능이 오르는 크로스태스크 스케일링을 입증함. 내 자동화의 스킬 문서 운영에 바로 적용할 구조를 정리함."
 tags: ["agent", "RL", "skill-learning", "LLM", "cross-task", "automation", "loop", "tool-use"]
 categories: ["LLM Agent", "Reinforcement Learning"]
 source_url: "https://arxiv.org/abs/2607.26784"
 authors: ["Zhejiang University", "NUS", "SJTU", "Meituan"]
+draft: true
+refactor_hub: harness-self-improve-18
+refactor_status: queued
 ---
 
 에이전트 강화학습은 각 작업을 독립 에피소드로 취급해서 경험이 사라짐. 비슷한 작업에 공통 해결 패턴이 있는데도 무시됨. SkillRise가 "작업을 풀면서 동시에 다음 작업에 쓸 스킬을 정리하는 단일 정책"을 제안했음. 원문은 [arXiv:2607.26784](https://arxiv.org/abs/2607.26784).

@@ -13,6 +13,9 @@ tags:
   - Core Memory Podcast
   - AI 격차
 slug: openai-founders-agent-personal-agi-core-memory-2026
+draft: true
+refactor_hub: agent-memory-03
+refactor_status: queued
 ---
 
 2015년 7월, 샌프란시스코로 돌아가는 차 안.

@@ -1,7 +1,6 @@
 ---
 title: "서드파티 스킬이 모델 결정을 몰래 조준함 — SkillShift 정책 조종 공격 정리"
 date: 2026-09-05
-draft: false
 tags:
   - agent
   - security
@@ -9,6 +8,9 @@ tags:
   - supply-chain
   - evaluation
 description: "스킬이 출력은 정상으로 유지하면서 후보 선택 확률만 기울이는 정책 조종 공격을 정리함. 스킬 스캐너 6종이 전부 탐지 실패한 이유와 반사실 테스트 대응 관점을 담았음."
+draft: true
+refactor_hub: harness-self-improve-01
+refactor_status: queued
 ---
 
 재사용 가능한 에이전트 스킬이 출력은 전부 유효하게 유지하면서 어떤 후보를 고를지 확률만 몰래 기울일 수 있다는 게 증명됐음. 프롬프트 인젝션(입력에 숨긴 명령으로 에이전트를 조작하는 공격)처럼 명령을 덮어쓰지 않음. 비교 기준과 예시 몇 개를 바꾸는 것만으로 쇼핑 추천에서 타깃 브랜드 선택률을 37%에서 81%로 끌어올리고 유효 출력률은 100%를 유지했음. 원문은 [arXiv:2609.02564](https://arxiv.org/abs/2609.02564).

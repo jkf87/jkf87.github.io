@@ -2,8 +2,10 @@
 title: "코딩 에이전트가 실제로 읽는 문서는 AGENTS.md임 — 60.5%가 에이전트용 파일이었던 관측 결과"
 date: 2026-08-22
 tags: [agent, LLM, documentation, coding-agent, empirical-study]
-draft: false
 description: "에이전트 코딩 세션 557개와 풀리퀘스트 3.3만 개로 문서 상호작용을 측정한 결과. 상호작용 60.5%가 에이전트 전용 파일이었고 API 레퍼런스는 1.3%, 문서를 기준으로 코드를 검증한 사례는 0건이었다."
+draft: true
+refactor_hub: coding-agents-04
+refactor_status: queued
 ---
 
 문서 개선 예산을 어디에 쓸지 실측 데이터로 답한 연구가 나옴. 코딩 에이전트가 실제로 무슨 문서를 읽는지 추적한 결과가 통념과 정반대였다는 것. 원문은 [arXiv:2608.20195](https://arxiv.org/abs/2608.20195).

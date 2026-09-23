@@ -13,8 +13,10 @@ tags:
   - automation
   - loop
   - tool-use
-draft: false
 description: "프로덕션 에이전트에서 하네스 구성이 모델 선택보다 성능 분산이 크다는 전제 아래, 729개 구성 공간에 bandit과 REINFORCE를 적용한 실험. 결과는 DSPy 정적 기준선이 전 도메인에서 승리했다."
+draft: true
+refactor_hub: harness-self-improve-12
+refactor_status: queued
 ---
 
 모델은 못 바꾸는데 하네스는 고칠 수 있는 게 프로덕션의 현실임. 그럼 하네스(동결된 모델을 실제로 돌리는 실행틀 — 프롬프트·도구·메모리·검증 설정 전체)를 어떻게 최적화해야 하나를 실험한 논문이 나왔는데, 결과가 예상을 깜. 원문은 [arXiv:2607.25415](https://arxiv.org/abs/2607.25415).

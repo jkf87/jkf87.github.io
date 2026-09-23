@@ -17,6 +17,9 @@ authors:
 source: https://arxiv.org/abs/2608.05987
 github: https://github.com/ZethWang/AgentOPSD
 description: "AgentOPSD는 teacher-student log-prob 격차를 턴별 증거로 집계하고 Bayesian belief를 재귀 갱신해 궤적 어드밴티지를 턴별로 재분배함. 크리틱·추가 롤아웃 없이 세 환경에서 GRPO를 꾸준히 앞짬. 크레딧 설계의 실무 교훈을 정리함."
+draft: true
+refactor_hub: agent-rl-06
+refactor_status: queued
 ---
 
 agentic RL에서 GRPO(같은 문제의 여러 롤아웃을 비교해 상대적으로 나은 행동을 강화하는 강화학습 알고리즘)가 널리 쓰이는 이유는 크리틱이 필요 없다는 점임. 근데 대가가 있음. 궤적 단위 어드밴티지(어떤 행동이 평균보다 얼마나 나은지 나타내는 학습 신호)를 모든 토큰에 균등하게 나누는 것. 그래서 성공 궤적의 무의미한 행동도 보상을 받고, 긴 호라이즌에서 비효율이 커짐. AgentOPSD는 이 균등 할당을 크리틱 없이 턴별로 재분배함. 방법이 재밌음. 자기 자신을 증류 교사로 쓰는 것.

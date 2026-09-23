@@ -2,8 +2,10 @@
 title: "이 질문에 검색이 도움 되는지 안 되는지를 학습시키는 법 — CoBRA 반사실 경계 학습 정리"
 date: 2026-09-02
 tags: [agent, tool-use, reinforcement-learning, LLM]
-draft: false
 description: "EMNLP 2026 수록 CoBRA(arXiv:2609.00967) 정리. 동일 쿼리의 툴 사용/미사용 트레이지토리 보상 차이를 학습 신호로 쓰는 프레임워크를 실무 관점에서 풀어둔 글."
+draft: true
+refactor_hub: dev-tools-02
+refactor_status: queued
 ---
 
 툴을 쓰는 에이전트의 고질 낭비는 두 방향임. 불필요한 툴 호출은 레이턴시, 비용, 검색 노이즈, 오류 전파를 부르고 누락된 호출은 지식 집약 질의에서 정확도를 깎음. CoBRA(Counterfactual Boundary leARning)는 이 판단을 인스턴스 수준의 한계 효용으로 학습하는 프레임워크임. EMNLP 2026 수록, arXiv:2609.00967임.

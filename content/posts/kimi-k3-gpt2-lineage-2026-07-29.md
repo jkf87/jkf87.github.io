@@ -1,7 +1,6 @@
 ---
 title: "GPT-2에서 Kimi K3까지, 22,580배 커진 모델의 진짜 변화"
 date: 2026-07-29
-draft: false
 tags:
   - LLM
   - Kimi-K3
@@ -14,6 +13,9 @@ categories:
 description: "ali(@waterloo_intern)의 X Article ‘22580: From GPT2 to Kimi3, Explained’를 뉴스레터 스타일로 정리했다. 22,580배 커진 것은 파라미터만이 아니라, 기억을 저장하고 지우고 다시 읽는 방식이다."
 aliases:
   - /posts/kimi-k3-gpt2-lineage-2026-07-29
+draft: true
+refactor_hub: reasoning-efficiency-01
+refactor_status: queued
 ---
 
 ![GPT-2에서 Kimi K3까지 이어지는 attention 계보도. 이 글의 핵심은 “그냥 커졌다”가 아니라, 기억을 다루는 방식이 단계적으로 바뀌었다는 점이다. 출처: ali, 22580: From GPT2 to Kimi3, Explained.](/images/kimi-k3-gpt2-lineage-2026-07-29/hero.jpg)

@@ -12,11 +12,13 @@ tags:
   - labor-market
   - AI-research
 description: "Anthropic의 Claude Code 약 40만 세션 분석 정리. 사람은 무엇을 만들지 결정하고 Claude는 어떻게 만들지 실행한다. 성공률을 가르는 핵심은 코딩 실력보다 도메인 전문성이었다."
-draft: false
 source: anthropic-research
 source_url: https://www.anthropic.com/research/claude-code-expertise
 aliases:
   - agentic-coding-expertise-claude-code-2026-06-19/index
+draft: true
+refactor_hub: coding-agents-01
+refactor_status: queued
 ---
 
 코딩 에이전트가 좋아지면 개발자의 전문성은 덜 중요해질까. 아니면 오히려 더 중요해질까.

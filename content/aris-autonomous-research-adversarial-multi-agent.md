@@ -13,6 +13,9 @@ tags:
 description: "상하이 교통대팀이 발표한 ARIS — 단일 에이전트의 '그럴듯한 거짓 성공'을 막기 위해 서로 다른 모델이 적대적으로 리뷰하는 자율 ML 연구 하네스. 65개 이상 스킬, 3단계 증거 검증, 5패스 과학 에디팅까지."
 aliases:
   - aris-autonomous-research-adversarial-multi-agent/index
+draft: true
+refactor_hub: multi-agent-01
+refactor_status: queued
 ---
 
 AI가 논문을 혼자 쓴다. 아이디어를 떠올리고, 실험을 돌리고, 결과를 분석하고, 원고를 작성하고, 리뷰어 코멘트까지 대응하는 전 과정을 한 번에.

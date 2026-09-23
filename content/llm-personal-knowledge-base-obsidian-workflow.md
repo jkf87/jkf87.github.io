@@ -9,6 +9,9 @@ tags:
   - research
   - productivity
 description: "원문 자료를 raw 폴더에 쌓고, LLM으로 마크다운 위키를 컴파일한 뒤 Obsidian에서 질의·시각화·지식 확장을 이어가는 개인 지식 베이스 워크플로우를 정리했다."
+draft: true
+refactor_hub: ai-trends-misc-06
+refactor_status: queued
 ---
 
 개인적으로 요즘 가장 흥미롭게 보는 흐름 중 하나는, **LLM을 코드 보조 도구가 아니라 지식 컴파일러로 쓰는 방식**입니다. 코드를 직접 많이 만지는 대신, 논문·아티클·리포지토리·데이터셋·이미지 같은 자료를 모아서 하나의 개인 지식 베이스로 정리하고, 그 위에서 다시 질문하고 확장해 가는 방식이죠.

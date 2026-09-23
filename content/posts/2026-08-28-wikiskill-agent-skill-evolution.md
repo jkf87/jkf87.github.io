@@ -1,9 +1,11 @@
 ---
 title: "교훈을 위키에 쌓으면 9B가 27B를 이김 — WikiSkill 스킬 진화 정리"
 date: 2026-08-28
-draft: false
 tags: [agent, skill-evolution, wiki, llm, paper-review]
 description: "실행 트레이스를 위키라는 영구 지식층에 컴파일하고 그 위에서 스킬을 진화시켜 5개 모델 평균 최대 +23.9pt를 얻은 WikiSkill. 3층 구조와 롤백 규칙을 정리."
+draft: true
+refactor_hub: harness-self-improve-01
+refactor_status: queued
 ---
 
 에이전트가 실험하며 얻은 교훈을 통째로 버리지 말고 위키에 컴파일해서 쌓으면 스킬 진화 성능이 크게 오른다는 결과가 나옴. 구글 리서치의 [WikiSkill](https://arxiv.org/abs/2608.27454). 스킬과 메모리 관리 원칙이 명확해서 정리함.
