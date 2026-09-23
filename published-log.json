@@ -6369,7 +6369,24 @@
       "final_report": "../memory/voice-feedback/2026-09-23-2026-09-23-agent-memory-multi-party-speakermem-r1-final-spyrl.json",
       "highlights": 17,
       "images_included": 6,
-      "published_run": "2026-09-23T19:00+09:00"
+      "published_run": "2026-09-23T19:00+09:00",
+      "commit": "86cfff9a",
+      "threads_root_id": "17956988463232685",
+      "threads_reply_ids": [
+        "17935387188127903",
+        "18131660842669538",
+        "18117866152981540",
+        "18130591477781675"
+      ],
+      "threads_image_posts": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "obsidian_note": "/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/2026-09-23-agent-memory-multi-party-speakermem-r1.md",
+      "threads_quality_gate": "PASS: /tmp/2026-09-23-agent-memory-multi-party-speakermem-r1-threads-payload.json, 5 posts, images [1,2,3,4,5]"
     }
   ],
   "skipped": [
