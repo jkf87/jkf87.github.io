@@ -1,0 +1,208 @@
+[
+  {
+    "page": 2,
+    "file": "fig-1-p2.png",
+    "method": "caption_crop (936x753)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 101,
+    "width": 936,
+    "height": 753,
+    "caption": "Figure 1: Comparison of benign versus adversarial MCP",
+    "crop": [
+      283.43,
+      53.51,
+      595.28,
+      304.09
+    ]
+  },
+  {
+    "page": 5,
+    "file": "fig-2-p5.png",
+    "method": "caption_crop (1610x1143)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 317,
+    "width": 1610,
+    "height": 1143,
+    "caption": "Figure 2: Overview of A2M. Phase I: Attraction employs persuasion strategies and Monte Carlo rollouts to identify",
+    "crop": [
+      58.87,
+      51.64,
+      595.28,
+      432.14
+    ]
+  },
+  {
+    "page": 8,
+    "file": "table-1-p8.png",
+    "method": "caption_crop_table_below (1435x769)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 153,
+    "width": 1435,
+    "height": 769,
+    "caption": "Table 1: Attack performance across five models. Clean denotes benign task completion rate; MTIR and ASR",
+    "crop": [
+      58.56,
+      428.05,
+      536.41,
+      684.01
+    ]
+  },
+  {
+    "page": 8,
+    "file": "table-2-p8.png",
+    "method": "caption_crop (1401x299)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 60,
+    "width": 1401,
+    "height": 299,
+    "caption": "Table 2: Ablation on GLM-4.6 over 18 tasks (3 per",
+    "crop": [
+      58.56,
+      534.76,
+      525.28,
+      634.12
+    ]
+  },
+  {
+    "page": 8,
+    "file": "fig-3-p8.png",
+    "method": "caption_crop (728x565)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 49,
+    "width": 728,
+    "height": 565,
+    "caption": "Figure 3: Mean C-DoS cost ratio over search iterations",
+    "crop": [
+      294.14,
+      534.76,
+      536.41,
+      722.9
+    ]
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 3: Hyperparameters used in A2M optimization.",
+    "crop": null
+  },
+  {
+    "page": 12,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 4: Inference and generation hyperparameters.",
+    "crop": null
+  },
+  {
+    "page": 13,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (478x89pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 5: Cross-query generalization of A2M Attraction.",
+    "crop": [
+      58.55699920654297,
+      58.863311767578125,
+      536.4124145507812,
+      148.226806640625
+    ]
+  },
+  {
+    "page": 13,
+    "file": "table-6-p13.png",
+    "method": "caption_crop (1435x414)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 104,
+    "width": 1435,
+    "height": 414,
+    "caption": "Table 6: Aggregate token usage and estimated API cost",
+    "crop": [
+      58.56,
+      58.86,
+      536.41,
+      196.58
+    ]
+  },
+  {
+    "page": 14,
+    "file": "",
+    "method": "caption_crop",
+    "status": "rejected",
+    "reason": "crop too small (478x57pt)",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table  7  reports the resulting distribution.",
+    "crop": [
+      58.52799987792969,
+      58.86585998535156,
+      536.4124145507812,
+      116.03600311279297
+    ]
+  },
+  {
+    "page": 14,
+    "file": "table-7-p14.png",
+    "method": "caption_crop (1435x351)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 78,
+    "width": 1435,
+    "height": 351,
+    "caption": "Table 7: Strategy origins of the final selected Attraction-",
+    "crop": [
+      58.56,
+      155.21,
+      536.41,
+      271.75
+    ]
+  },
+  {
+    "page": 17,
+    "file": "",
+    "method": "no_graphics_near_caption",
+    "status": "rejected",
+    "reason": "no crop",
+    "size_kb": 0,
+    "width": 0,
+    "height": 0,
+    "caption": "Table 8: Failure-mode breakdown (%) of unsuccessful",
+    "crop": null
+  },
+  {
+    "page": 18,
+    "file": "table-9-p18.png",
+    "method": "caption_crop_table_below (1435x1918)",
+    "status": "accepted",
+    "reason": "accepted",
+    "size_kb": 509,
+    "width": 1435,
+    "height": 1918,
+    "caption": "Table 9: Detection of A2M content under perplexity",
+    "crop": [
+      58.56,
+      149.78,
+      536.41,
+      788.9
+    ]
+  }
+]
