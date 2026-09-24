@@ -2577,7 +2577,7 @@
   "hub_id": "coding-agents-04",
   "topic": "coding-agents",
   "treatment": "merge-synthesis",
-  "size": 14,
+  "size": 15,
   "keywords": [
    "코드",
    "코딩",
@@ -2670,6 +2670,12 @@
     "title": "AI 코딩 에이전트 최종 보고를 그대로 믿으면 안 되는 이유: OverclaimBench 논문 정리 (arXiv 2609.20812)",
     "date": "2026-09-20",
     "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "ai-coding-harness-6-tools-review-2026-05-03.md",
+    "title": "AI 코딩 하네스 6종을 실제로 돌려봤습니다",
+    "date": "2026-05-03",
+    "reason": "v4 잔여 라이브 포스트 지연 편입(2026-09-24 late arrival)"
    }
   ],
   "status": "queued",
@@ -3291,7 +3297,7 @@
   "hub_id": "harness-self-improve-01",
   "topic": "harness-self-improve",
   "treatment": "merge-synthesis",
-  "size": 18,
+  "size": 19,
   "keywords": [
    "스킬",
    "스킬을",
@@ -3408,6 +3414,12 @@
     "title": "스킬 선택은 중간층에 이미 있음 — 얼린 LLM에서 라우팅 신호를 읽은 Gavel, 7.9M이 16B를 이김",
     "date": "2026-09-15",
     "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "skillopt-voice-memo-doc-2026-06-03.md",
+    "title": "SkillOpt로 에이전트 스킬을 학습시키기: 자막 추출 오타 점검 예시",
+    "date": "2026-06-03",
+    "reason": "v4 잔여 라이브 포스트 지연 편입(2026-09-24 late arrival)"
    }
   ],
   "status": "queued",
@@ -5583,7 +5595,7 @@
   "hub_id": "openclaw-updates-01",
   "topic": "openclaw-updates",
   "treatment": "merge-handson",
-  "size": 10,
+  "size": 11,
   "keywords": [
    "openclaw",
    "플러그인",
@@ -5652,6 +5664,12 @@
     "title": "OpenClaw가 더 빨라지고, 더 작아지고, 더 믿을 수 있어졌다",
     "date": "2026-05-31",
     "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "openclaw-book-recommendation-2026.md",
+    "title": "오픈클로 책 추천, 입문자는 어떤 책부터 봐야 할까?",
+    "date": "2026-04-18",
+    "reason": "v4 잔여 라이브 포스트 지연 편입(2026-09-24 late arrival)"
    }
   ],
   "status": "queued",
@@ -5661,7 +5679,7 @@
   "hub_id": "openclaw-updates-02",
   "topic": "openclaw-updates",
   "treatment": "merge-handson",
-  "size": 8,
+  "size": 9,
   "keywords": [
    "기본",
    "discord",
@@ -5718,6 +5736,12 @@
     "title": "오픈클로 2026.5.28 — 더 단단해진 에이전트 런타임, 더 넓어진 모델 지원",
     "date": "2026-06-01",
     "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
+   },
+   {
+    "path": "openclaw-windows-native-no-wsl.md",
+    "title": "윈도우에서 오픈클로, WSL 안 깔고 쓰기 — PowerShell 한 줄로 시작하는 AI 어시스턴트",
+    "date": "2026-05-07",
+    "reason": "v4 잔여 라이브 포스트 지연 편입(2026-09-24 late arrival)"
    }
   ],
   "status": "queued",
@@ -5901,7 +5925,7 @@
   "hub_id": "research-agents-01",
   "topic": "research-agents",
   "treatment": "merge-synthesis",
-  "size": 11,
+  "size": 12,
   "keywords": [
    "검증",
    "연구",
@@ -5976,6 +6000,12 @@
     "title": "정답은 맞혔는데 근거는 절반 — 딥리서치 에이전트가 논문 그림을 못 읽는 이유",
     "date": "2026-09-14",
     "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "autoresearchclaw-korean-asr-ai-paper-pipeline.md",
+    "title": "AutoResearchClaw 실전 사용기: 아이디어 하나로 논문 초안 자동 생성",
+    "date": "2026-03-29",
+    "reason": "v4 잔여 라이브 포스트 지연 편입(2026-09-24 late arrival)"
    }
   ],
   "status": "queued",

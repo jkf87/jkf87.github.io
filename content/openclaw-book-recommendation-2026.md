@@ -9,6 +9,9 @@ tags:
   - ai-education
   - productivity
 description: "오픈클로 책을 찾는 분들을 위해 입문자 기준에서 책 선택 포인트를 정리했다. 실전 예제 중심으로 배우고 싶다면 《이게 되네? 오픈클로 미친 활용법 50제》가 왜 좋은 출발점인지 설명한다."
+draft: true
+refactor_hub: openclaw-updates-01
+refactor_status: queued
 ---
 
 `오픈클로 책`을 찾는 사람이 많아졌다. AI 에이전트, 업무 자동화, Claude Code, 로컬 LLM 같은 흐름이 커지면서, 이제는 단순히 뉴스를 읽는 수준을 넘어 **직접 써먹을 수 있는 오픈클로 활용법**을 배우고 싶은 수요가 분명해졌기 때문이다.

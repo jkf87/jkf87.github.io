@@ -8,8 +8,10 @@ tags:
   - voice-memo-doc
   - prompt-optimization
 description: "Microsoft SkillOpt의 설치와 사용법을 정리하고, voice-memo-doc 전사 결과를 자막 오타 점검 스킬로 최적화하는 예시를 설명합니다."
-draft: false
 coverImage: /media/skillopt-voice-memo-doc-2026-06-03/skillopt-pipeline.png
+draft: true
+refactor_hub: harness-self-improve-01
+refactor_status: queued
 ---
 
 Microsoft가 공개한 **SkillOpt**는 에이전트용 `SKILL.md`를 손으로 조금씩 고치는 대신, **평가 데이터와 점수로 자연어 스킬 문서를 반복 개선하는 옵티마이저**다. 모델 가중치는 건드리지 않는다. 바뀌는 건 에이전트가 읽는 스킬 문서다.
