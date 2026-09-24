@@ -11,6 +11,8 @@ tags:
   - ai 에이전트
   - 설정 가이드
 description: "OpenClaw 4.12에 추가된 Active Memory Plugin 설정 방법과 실전 사용법을 정리했다. 매번 '기억해줘'라고 말할 필요 없이, AI가 대화 맥락을 자동으로 검색해서 자연스럽게 대화에 반영한다."
+author: 한준구(코난쌤)
+verified_at: 2026-09-24
 ---
 
 OpenClaw를 쓰다 보면 한 가지 아쉬운 점이 있다. AI가 이전 대화를 기억 못 한다는 것이다. "지난번에 말한 거 기억나?"라고 물어보면, 매번 메모리를 검색해야 한다. 아니면 내가 직접 "remember this"라고 명령해야 한다.
@@ -25,13 +27,13 @@ Active Memory는 OpenClaw 4.12에 새로 추가된 **플러그인 기반 메모�
 
 핵심 아이디어는 간단하다:
 
-> 사용자가 메시지를 보내면, **메인 답변을 생성하기 직전에** 메모리 검색 에이전트가 먼저 실행된다. 관련 메모리가 있으면 이를 자동으로 시스템 컨텍스트에 추가한 뒤, 메인 에이전트가 답변을 생성한다.
+> 사용자가 메시지를 보내면, <span style="background-color: #fff59d"><strong>메인 답변을 생성하기 직전에</strong></span> 메모리 검색 에이전트가 먼저 실행된다. 관련 메모리가 있으면 이를 자동으로 시스템 컨텍스트에 추가한 뒤, 메인 에이전트가 답변을 생성한다.
 
 기존 방식과의 차이를 비교하면 명확하다.
 
 | 항목 | 기존 (수동) | Active Memory (자동) |
 |---|---|---|
-| 메모리 검색 시점 | 사용자가 "기억해줘"라고 명령할 때 | **매 메시지마다 자동** |
+| 메모리 검색 시점 | 사용자가 "기억해줘"라고 명령할 때 | <span style="background-color: #fff59d"><strong>매 메시지마다 자동</strong></span> |
 | 컨텍스트 반영 | 에이전트가 판단해서 `memory_search` 호출 | **답변 전에 자동 주입** |
 | 사용자 경험 | "이거 기억해"라고 반복해야 함 | **그냥 대화하면 됨** |
 | 반응 자연스러움 | 이미 답변을 한 뒤에야 메모리를 찾음 | **답변 자체에 메모리가 녹아있음** |
@@ -54,7 +56,7 @@ Active Memory는 OpenClaw 4.12에 새로 추가된 **플러그인 기반 메모�
 메인 답변 (메모리를 반영해서 자연스럽게)
 ```
 
-중요한 점: 메모리 서브에이전트는 `memory_search`와 `memory_get` **두 가지 도구만** 사용할 수 있다. 외부 API 호출이나 파일 쓰기 등은 할 수 없다. 안전하게 설계되어 있다.
+중요한 점: 메모리 서브에이전트는 <span style="background-color: #fff59d"><strong>`memory_search`와 `memory_get` 두 가지 도구만</strong></span> 사용할 수 있다. 외부 API 호출이나 파일 쓰기 등은 할 수 없다. 안전하게 설계되어 있다.
 
 ## 설정 방법
 
@@ -115,7 +117,7 @@ openclaw gateway restart
 - 안정적인 선호도(취향, 습관) 리콜에 적합
 - 타임아웃 추천: 3,000~5,000ms
 
-**`recent`** — 균형잡힌 기본값 ⭐
+<span style="background-color: #fff59d"><strong>`recent` — 균형잡힌 기본값</strong></span> ⭐
 - 최근 대화 테일 + 현재 메시지를 함께 사용
 - "아까 말한 거 관련해서..." 같은 후속 질문에 잘 대응
 - 타임아웃 추천: 15,000ms
@@ -129,7 +131,7 @@ openclaw gateway restart
 
 | 스타일 | 설명 | 언제 쓸까 |
 |---|---|---|
-| `balanced` | 일반용 기본값 | 대부분의 경우 |
+| `balanced` | 일반용 기본값 | 공식 추천 기본값 |
 | `strict` | 가장 보수적 | 메모리 노이즈가 많을 때 |
 | `contextual` | 대화 맥락을 더 중시 | 연속성이 중요한 대화 |
 | `recall-heavy` | 약한 연관성도 수용 | "비슷한 거 다 찾아줘" 같은 느낌 |
@@ -227,7 +229,7 @@ openclaw gateway restart
 4. `modelFallback`에 설정된 모델
 5. 전부 없으면 **해당 턴은 스킵**
 
-`modelFallback`은 저렴하고 빠른 모델로 설정하는 것이 좋다. 메모리 검색 자체가 복잡한 추론이 필요한 작업이 아니기 때문이다:
+<span style="background-color: #fff59d"><strong>`modelFallback`은 저렴하고 빠른 모델로 설정하는 것이 좋다</strong></span>. 메모리 검색 자체가 복잡한 추론이 필요한 작업이 아니기 때문이다:
 
 ```json
 "modelFallback": "google/gemini-3-flash"
@@ -338,7 +340,7 @@ openclaw memory search "테스트 쿼리"
 
 ### 시간적 감쇠 (Temporal Decay)
 
-오래된 메모리는 점점 점수가 낮아지게 한다. 기본 반감기는 30일:
+오래된 메모리는 점점 점수가 낮아지게 한다. 기본 반감기는 <span style="background-color: #fff59d"><strong>30일</strong></span>:
 
 ```json
 {
@@ -384,7 +386,7 @@ openclaw memory search "테스트 쿼리"
 }
 ```
 
-`lambda` 값: 0이면 최대 다양성, 1이면 최대 관련성.
+`lambda` 값: <span style="background-color: #fff59d"><strong>0이면 최대 다양성, 1이면 최대 관련성</strong></span>.
 
 ### 하이브리드 검색 가중치
 
@@ -416,7 +418,7 @@ openclaw memory search "테스트 쿼리"
 
 1. **플러그인 활성화 확인** — `plugins.entries.active-memory.enabled: true`
 2. **에이전트 ID 확인** — `config.agents`에 현재 에이전트 ID가 있는지
-3. **세션 타입 확인** — 대화형 지속 세션이어야 함 (원샷 실행, 크론 잡에서는 작동 안 함)
+3. **세션 타입 확인** — 대화형 지속 세션이어야 함 (<span style="background-color: #fff59d"><strong>원샷 실행, 크론 잡에서는 작동 안 함</strong></span>)
 4. **로깅 켜기** — `logging: true`로 게이트웨이 로그 확인
 5. **메모리 인덱스 확인** — `openclaw memory status --deep`
 
@@ -443,12 +445,72 @@ openclaw memory index --force
 - `promptStyle`을 `strict` 또는 `precision-heavy`로 변경
 - `temporalDecay` 활성화
 
+## 블로그봇이 직접 확인한 것 (검증 로그)
+
+2026-09-24, 블로그봇이 이 머신(M2 Max 32GB, macOS)에서 이 글의 설정·명령어를 다시 실행했다. OpenClaw <span style="background-color: #fff59d"><strong>2026.9.3 (1391f7c)</strong></span>, Node v24.11.1.
+
+![openclaw --version과 active-memory 설정 덤프 출력 캡처](media/openclaw-active-memory-setup-guide/verify-01-cli-config-2026-09-24.png)
+
+```bash
+$ openclaw --version
+OpenClaw 2026.9.3 (1391f7c)
+```
+
+이 머신의 `~/.openclaw/openclaw.json`에는 Active Memory가 이미 켜져 있었다. 설정값만 덜어내면:
+
+```bash
+$ python3 dumpcfg.py
+enabled = True
+agents = ['*']
+allowedChatTypes = ['direct']
+queryMode = 'recent'
+promptStyle = 'balanced'
+timeoutMs = 15000
+maxSummaryChars = 220
+logging = True
+```
+
+위 "최소 설정"과 거의 같다. 차이는 `agents`를 `['main']` 대신 `['*']`(전체 에이전트)로 쓰고, `modelFallback`을 `google/gemini-3-flash` 대신 `zai/glm-4.7-flash`로 쓴다는 점. 폴백 모델은 아무거나 빠른 걸 쓰면 된다는 권장대로다.
+
+검색 엔진은 이 머신에서 <span style="background-color: #fff59d"><strong>Ollama + bge-m3(로컬)</strong></span>로 돌아간다:
+
+```bash
+$ openclaw memory status --deep | grep -A4 "Memory Search (blogbot)"
+Memory Search (blogbot)
+Provider: ollama (requested: ollama)
+Model: bge-m3
+Indexed: 109/109 files · 273 chunks
+```
+
+실제 검색도 돌려봤다:
+
+```bash
+$ openclaw memory search --agent blogbot "OpenClaw Active Memory 설정 가이드"
+0.073 memory/2026-07-25.md:1-12
+```
+
+관련 메모리를 점수와 함께 돌려준다. 게이트웨이 로그에도 active-memory가 로드된 플러그인 목록에 매번 올라온다.
+
+![blogbot 에이전트 메모리 인덱스 상태와 검색 결과 캡처](media/openclaw-active-memory-setup-guide/verify-02-gateway-memory-2026-09-24.png)
+
+문서와 달라진 것 하나: 에이전트가 여러 개면 `openclaw memory` CLI에 <span style="background-color: #fff59d"><strong>`--agent <id>`를 붙여야 한다</strong></span>. 안 붙이면 `Multiple agents are configured, but this operation has no explicit owner` 에러가 난다. 2026-09-24 기준 이 글 본문 트러블슈팅에 이 내용이 없어서 검증하면서 추가로 알게 됐다.
+
+### 막힌 부분과 한계
+
+- **자동 주입(실제 대화 반영)은 이 봇 세션에서 직접 못 봤다.** 이 글을 쓰는 블로그봇은 크론 실행이라 `allowedChatTypes`가 direct인 대화 세션이 아니기 때문이다. 주입 확인은 운영자가 1:1 대화에서 `/verbose on`, `/trace on`으로 하는 게 맞다. 위 검증은 <span style="background-color: #fff59d"><strong>설정·인덱스·검색·게이트웨이 로드</strong></span>까지다.
+- `/verbose`, `/trace` 상태 줄 포맷이 문서 기준 그대로인지는 이번에 확인하지 못했다.
+- 임베딩 프로바이더 자동 감지 설명(OpenAI/Gemini/Voyage/Mistral)은 이 머신이 Ollama로 명시 고정이라 확인 대상에서 뺐다.
+
 ## 한 줄 요약
 
-> Active Memory는 **"기억해줘"라고 매번 말할 필요 없이**, AI가 매 대화마다 자동으로 관련 메모리를 찾아서 자연스럽게 반영해주는 기능이다. `openclaw.json`에 몇 줄 추가하고 게이트웨이를 재시작하면 끝.
+> Active Memory는 <span style="background-color: #fff59d"><strong>"기억해줘"라고 매번 말할 필요 없이</strong></span>, AI가 매 대화마다 자동으로 관련 메모리를 찾아서 자연스럽게 반영해주는 기능이다. `openclaw.json`에 몇 줄 추가하고 게이트웨이를 재시작하면 끝.
 
 ---
 
-- OpenClaw 공식 문서: <https://docs.openclaw.ai>
-- Active Memory 문서: <https://docs.openclaw.ai/concepts/active-memory>
-- Memory Search 문서: <https://docs.openclaw.ai/concepts/memory-search>
+## 참고문헌
+
+- [OpenClaw 공식 문서](https://docs.openclaw.ai)
+- [Active Memory 문서](https://docs.openclaw.ai/concepts/active-memory)
+- [Memory Search 문서](https://docs.openclaw.ai/concepts/memory-search)
+
+이 글은 블로그봇(코난쌤의 오픈클로 에이전트)이 문서를 정리하고 직접 실행해 확인한 내용으로 초안을 만들고, 운영자가 검토해 발행했습니다.
