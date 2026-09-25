@@ -10,6 +10,8 @@ tags:
   - sandbox
   - open-source
 description: "Nilbox는 OpenClaw를 실제 VM 안에서 돌리면서 API 키를 에이전트에 직접 노출하지 않게 설계한 데스크톱 샌드박스다. 무료인지, 키체인과 무엇이 다른지, 현재 공개된 문서를 기준으로 실제 사용 흐름까지 정리한다."
+author: 한준구(코난쌤)
+verified_at: 2026-09-25
 ---
 
 > 참고 링크: [nilbox 공식 사이트](https://nilbox.run/), [다운로드 페이지](https://nilbox.run/download), [GitHub 저장소](https://github.com/rednakta/nilbox), [README.ko](https://github.com/rednakta/nilbox/blob/main/README.ko.md), [Zero Token Architecture 문서](https://github.com/rednakta/nilbox/blob/main/docs/zero-token-architecture.md)
@@ -100,8 +102,8 @@ GEMINI_API_KEY=GEMINI_API_KEY
 
 - **무료**
 - **오픈소스**
-- 라이선스: **GPLv3**
-- README 기준 버전 표기: **0.1.8**
+- 라이선스: 커뮤니티 에디션은 **GPL-3.0**, 상업 라이선스(클로즈드소스 임베딩)는 별도 문의
+- 2026년 9월 기준 최신 버전: **0.2.3**
 
 다만 여기서 주의할 점이 있습니다.
 
@@ -275,6 +277,12 @@ README도 이 점을 꽤 강하게 강조합니다.
 ### 5. OpenClaw 코드 자체를 수정하지 않아도 된다
 이건 정말 중요합니다. 보안 도구인데 기존 워크플로우를 많이 바꾸지 않는 쪽이기 때문입니다.
 
+### 6. MCP 브릿징 지원 (0.2.x 추가)
+0.2.x부터 `nilbox-mcp-bridge` 바이너리가 포함되어 있습니다. VM 안의 MCP 서버를 호스트 쪽 에이전트가 직접 접근할 수 있게 브릿지를 제공합니다. 실제로 앱 번들 안에 별도 바이너리로 들어 있는 것을 확인했습니다.
+
+### 7. Agent Firewall 개념 도입 (0.2.x 추가)
+도메인 게이팅을 "Agent Firewall"이라는 이름으로 정리했습니다. default-deny 이그레스 필터로, DNS 블록리스트를 Bloom 필터로 처리하고, 프로바이더별 토큰 사용량을 추적하며, 아웃바운드 활동 감사 로그를 남깁니다.
+
 ## 단점과 한계도 분명하다
 
 이 부분은 꼭 같이 말해야 합니다.
@@ -335,7 +343,7 @@ VM, 허용 도메인, 디렉토리 매핑, 토큰 설정, 한도 설정까지 �
 ## FAQ
 
 ### Q1. Nilbox는 정말 무료인가요?
-현재 공개 사이트와 GitHub 기준으로는 무료, 오픈소스, GPLv3입니다. 다만 모델 API 호출 비용은 별도입니다.
+커뮤니티 에디션은 무료, 오픈소스, GPL-3.0입니다. 클로즈드소스 임베딩이 필요한 상업 사용은 별도 라이선스가 있습니다. 모델 API 호출 비용은 어느 쪽이든 별도입니다.
 
 ### Q2. Nilbox 안에서도 키체인을 쓰나요?
 네. 공개 문서 기준으로는 macOS Keychain, Linux secret-service, Windows Credential Manager 같은 OS 키링과 SQLCipher 기반 암호화 키스토어를 함께 씁니다.
@@ -351,6 +359,70 @@ Nilbox 쪽 설명은 "기존에 가지고 있는 노트북으로도 충분하다
 
 ---
 
+## 검증 로그
+
+- 검증일: 2026-09-25
+- 검증 환경: macOS 26.0 (Darwin 25.5.0), Apple M4, ARM64
+- Nilbox 버전: 0.2.3 (nilbox_0.2.3_aarch64.dmg, 22 MB)
+
+### 다운로드 및 설치
+
+```bash
+$ curl -sI "https://nilbox.run/api/installer/download/macos_arm/dmg" | grep location
+location: https://installers.nilbox.run/installer-files/macos_arm/nilbox_0.2.3_aarch64.dmg
+
+$ hdiutil attach nilbox.dmg -nobrowse
+/dev/disk4s1  Apple_HFS  /private/tmp/nilbox-mount
+
+$ plutil -p nilbox.app/Contents/Info.plist | grep CFBundle
+  "CFBundleIdentifier" => "run.nilbox.app"
+  "CFBundleShortVersionString" => "0.2.3"
+  "CFBundleVersion" => "0.2.3"
+```
+
+### 바이너리 구성
+
+```bash
+$ ls nilbox.app/Contents/MacOS/
+nilbox                   20 MB   Mach-O arm64
+nilbox-blocklist-build   21 MB   Mach-O arm64
+nilbox-mcp-bridge        10 MB   Mach-O arm64  ← 0.2.x에서 추가
+nilbox-vmm              192 KB   Mach-O arm64
+```
+
+### 코드 서명
+
+```bash
+$ codesign -dvv nilbox.app
+Identifier=run.nilbox.app
+Authority=Developer ID Application: Sung Ryul Hong (TFJW3S4ADS)
+Notarization Ticket=stapled
+```
+
+Developer ID 서명 + Apple 공증 완료 상태입니다. `flags=0x10000(runtime)` 하드닝이 적용되어 있습니다.
+
+### 실행 테스트
+
+앱 실행 시 WebKit(Tauri) 기반 윈도우(1200×800)가 생성되며, `TCCAccessRequest`를 통해 시스템 권한을 요청하는 것을 시스템 로그에서 확인했습니다. VM 생성과 토큰 프록시 실동작은 Screen Recording 권한 미부여 상태에서 캡처 확인이 되지 않았습니다.
+
+### 드리프트 요약
+
+| 항목 | 글 작성 시점 (2026-04) | 검증 시점 (2026-09) |
+| --- | --- | --- |
+| 버전 | 0.1.8 | **0.2.3** |
+| 라이선스 | GPLv3 단일 | **GPL-3.0 + 상업 듀얼** |
+| MCP 브릿징 | 없음 | **nilbox-mcp-bridge 바이너리 포함** |
+| Agent Firewall | 도메인 게이팅으로 설명 | **Agent Firewall로 개념 정리** |
+| Zero Token Architecture | 동일 | 동일 |
+| 무료/오픈소스 | 동일 | 동일 (커뮤니티 에디션) |
+| GitHub Stars | N/A | 16 |
+
+![Nilbox 검증: 버전·바이너리·서명 확인](./media/nilbox-openclaw-security-guide/verify-01-nilbox-launch-2026-09-25.png)
+*블로그봇이 직접 다운로드해 확인한 Nilbox 0.2.3 버전·바이너리·코드서명 정보*
+
+![Nilbox 검증: 드리프트 확인](./media/nilbox-openclaw-security-guide/verify-02-drift-check-2026-09-25.png)
+*GitHub 저장소와 공식 사이트 대비 변경 사항 비교*
+
 ## 출처
 
 - [nilbox 공식 사이트](https://nilbox.run/)
@@ -358,3 +430,5 @@ Nilbox 쪽 설명은 "기존에 가지고 있는 노트북으로도 충분하다
 - [rednakta/nilbox GitHub 저장소](https://github.com/rednakta/nilbox)
 - [README.ko](https://github.com/rednakta/nilbox/blob/main/README.ko.md)
 - [Zero Token Architecture 문서](https://github.com/rednakta/nilbox/blob/main/docs/zero-token-architecture.md)
+
+이 글은 블로그봇(코난쌤의 오픈클로 에이전트)이 공식 문서와 GitHub 저장소를 확인하고 직접 설치·실행해 검증한 내용으로 초안을 만들고, 운영자가 검토해 발행했습니다.
