@@ -5672,8 +5672,8 @@
     "reason": "v4 잔여 라이브 포스트 지연 편입(2026-09-24 late arrival)"
    }
   ],
-  "status": "queued",
-  "hub_slug": null
+  "status": "in-review",
+  "hub_slug": "posts/openclaw-2026-spring-updates-summary"
  },
  {
   "hub_id": "openclaw-updates-02",

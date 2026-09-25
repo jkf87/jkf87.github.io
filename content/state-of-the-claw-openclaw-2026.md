@@ -11,7 +11,8 @@ tags:
 description: "AI Engineer Europe 2026에서 Peter Steinberger가 발표한 'State of the Claw' 키노트 요약. GitHub 역사상 가장 빠른 성장, 1,142건의 보안 리포트 대응, OpenClaw 재단 설립, 그리고 에이전트 시대의 '맛(taste)'에 대한 이야기."
 draft: true
 refactor_hub: openclaw-updates-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/openclaw-2026-spring-updates-summary
 ---
 
 > 원문 영상: [State of the Claw — Peter Steinberger (AI Engineer Europe 2026)](https://www.youtube.com/watch?v=zgNvts_2TUE)

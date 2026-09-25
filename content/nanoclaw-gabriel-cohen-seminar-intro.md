@@ -11,7 +11,8 @@ tags:
 description: "NanoClaw 창시자 Gabriel Cohen 세미나 전사문을 바탕으로, 3,000줄 아키텍처·보안 철학·AI 네이티브 개발 패러다임을 교육자 관점에서 쉽게 정리했습니다."
 draft: true
 refactor_hub: openclaw-updates-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/openclaw-2026-spring-updates-summary
 ---
 
 최근 커뮤니티 세미나에서 **NanoClaw 창시자 Gabriel Cohen**이 직접 등장해, 왜 “거대한 에이전트 플랫폼을 더 작고 단단하게 만들려 했는지”를 아주 솔직하게 설명했습니다.  
