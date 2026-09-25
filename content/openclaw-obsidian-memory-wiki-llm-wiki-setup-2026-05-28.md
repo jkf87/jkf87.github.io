@@ -8,15 +8,17 @@ tags:
   - llm-wiki
   - setup-guide
 description: "OpenClaw에서 Obsidian 공식 CLI를 등록하고 memory-wiki를 Obsidian renderMode로 연결하는 방법을 명령어와 설정 예제로 정리합니다."
+author: 한준구(코난쌤)
 aliases:
   - openclaw-obsidian-memory-wiki
   - llm-wiki-obsidian-openclaw
 draft: false
+verified_at: 2026-09-25
 ---
 
-OpenClaw 2026.5.x 기준으로 Obsidian은 독립 기본 플러그인보다 **`memory-wiki` + 공식 `obsidian` CLI** 조합으로 쓰는 쪽이 맞다. `memory-wiki`가 LLM Wiki 역할을 하고, Obsidian은 그 vault를 읽고 편집하는 UI가 된다.
+OpenClaw 2026.9.6 기준으로 Obsidian은 독립 기본 플러그인보다 **`memory-wiki` + 공식 `obsidian` CLI** 조합으로 쓰는 쪽이 맞다. `memory-wiki`가 LLM Wiki 역할을 하고, Obsidian은 그 vault를 읽고 편집하는 UI가 된다.
 
-![OpenClaw Memory Wiki와 Obsidian 연동 구조](./media/openclaw-obsidian-memory-wiki/architecture.png)
+![OpenClaw Memory Wiki와 Obsidian 연동 구조](./media/openclaw-obsidian-memory-wiki-llm-wiki-setup-2026-05-28/architecture.png)
 
 ## 0. 구조
 
@@ -398,6 +400,76 @@ openclaw wiki compile
 openclaw wiki search "최근 작업"
 ```
 
+## 한계와 막힌 부분
+
+**Obsidian CLI 혼동 주의.** `obsidian` CLI가 PATH에 있더라도 공식 Obsidian CLI가 아닌 경우가 있다. 이 머신에서는 npm의 `obsidian-cli` 패키지가 먼저 잡혀서 API 키를 요구했다. 공식 CLI는 Obsidian 앱 설정(Settings → General → Command line interface → Enable)에서 활성화하는 것이고, 별도 API 키가 필요 없다. 두 CLI를 혼동하면 설정 과정에서 헤맬 수 있다.
+
+**다중 에이전트 환경에서 `--agent` 플래그.** OpenClaw에 에이전트가 두 개 이상 등록되어 있으면 `openclaw wiki status`에 `--agent <id>` 플래그가 필수다. 글 작성 시점에는 에이전트가 하나여서 이 문제가 없었다. 현재 이 머신에는 10개 이상의 에이전트가 등록되어 있어서, 플래그 없이 실행하면 "No default memory-wiki agent is configured" 에러가 난다.
+
+**`wiki obsidian` 서브커맨드 제한.** `openclaw wiki obsidian status`는 `--agent` 옵션을 인식하지 못한다(2026.9.6 기준). `wiki status`나 `wiki search`는 정상 동작하므로 상태 확인은 이쪽으로 우회해야 한다.
+
+**vault 경로 차이.** vault 경로가 글에 적힌 `~/.openclaw/wiki/main`이 아닌 iCloud Drive 동기화 경로(`~/Library/Mobile Documents/...`)로 잡혀 있었다. 이것은 사용자 설정에 따라 다르므로, 실사용 시 본인 config의 `vault.path` 값을 확인해야 한다.
+
+**실제 회의 연동은 미검증.** wiki와 memory bridge의 구조적 동작은 확인했지만, Obsidian 앱에서 실시간으로 wiki 페이지가 갱신되는지까지는 검증하지 않았다.
+
+---
+
+## 검증 로그
+
+- 검증일: 2026-09-25
+- 검증 환경: macOS 26.0 (Darwin 25.5.0), Apple M4
+- OpenClaw: 2026.9.6 (eb377ac)
+- memory-wiki: v2026.9.6 (stock plugin)
+
+### 플러그인·wiki 상태 확인
+
+```bash
+$ openclaw plugins list | grep memory-wiki
+Memory Wiki | memory-wiki | openclaw | enabled | 2026.9.6
+
+$ openclaw wiki status --agent blogbot
+  Wiki vault mode:  bridge
+  Vault:            ready
+  Render mode:      obsidian
+  Obsidian CLI:     available
+  Bridge:           enabled (1489 exported artifacts)
+  Pages:            1909 sources, 44 entities, 64 concepts, 2 syntheses, 81 reports
+
+$ openclaw wiki doctor --agent blogbot
+  Wiki doctor: healthy
+```
+
+wiki doctor는 healthy 판정을 내렸고, bridge가 1489개의 메모리 아티팩트를 가져온 상태다. 소스 출처별로 보면 416건이 위키 네이티브, 1489건이 bridge 경유다.
+
+### 검색 확인
+
+```bash
+$ openclaw wiki search "google meet" --agent blogbot
+  1. Memory Bridge (agasabot): 2026-05-28 (wiki/source)
+     Snippet: ## Google Meet 음성 대화 시도 (23:00~23:40)
+  2. Memory Bridge (agasabot): 2026-05-29 (wiki/source)
+```
+
+### 드리프트 요약
+
+| 항목 | 글 작성 시점 (2026-05) | 검증 시점 (2026-09) |
+| --- | --- | --- |
+| OpenClaw 버전 | 2026.5.x | **2026.9.6** |
+| memory-wiki 버전 | 미표기 | **v2026.9.6 (stock)** |
+| `--agent` 플래그 | 불필요 | **다중 에이전트 환경에서 필수** |
+| vault 경로 | `~/.openclaw/wiki/main` | **사용자별 상이 (iCloud 동기화 가능)** |
+| `wiki obsidian` 서브커맨드 | 동작 | **`--agent` 미지원 (2026.9.6 버그)** |
+| config 구조 | 동일 | 동일 |
+| bridge 모드 | 동일 | 동일 (1489 artifacts) |
+
+![Memory Wiki 검증: 상태·검색 확인](./media/openclaw-obsidian-memory-wiki-llm-wiki-setup-2026-05-28/verify-01-wiki-status-2026-09-25.png)
+*블로그봇이 직접 실행한 memory-wiki 상태·검색 결과*
+
+![Memory Wiki 검증: 드리프트 확인](./media/openclaw-obsidian-memory-wiki-llm-wiki-setup-2026-05-28/verify-02-drift-2026-09-25.png)
+*블로그 대비 변경 사항 비교*
+
 ---
 
 참고: [OpenClaw Memory Wiki docs](https://github.com/openclaw/openclaw/blob/main/docs/plugins/memory-wiki.md), [OpenClaw Wiki CLI docs](https://github.com/openclaw/openclaw/blob/main/docs/cli/wiki.md)
+
+이 글은 블로그봇(코난쌤의 오픈클로 에이전트)이 공식 문서를 확인하고 직접 실행해 검증한 내용으로 초안을 만들고, 운영자가 검토해 발행했습니다.
