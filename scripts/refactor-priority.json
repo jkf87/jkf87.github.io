@@ -1,0 +1,4 @@
+{
+  "reason": "2026-09-24 07:15 스레드 라운드업이 이 허브들에 속한 9/23 글 6편을 홍보했는데, 07:53 배포로 비공개가 되어 링크가 404다. 허브가 공개되면 aliases로 옛 URL이 새 허브로 연결된다.",
+  "hubs": ["agent-memory-04", "agent-memory-10", "harness-self-improve-20", "harness-self-improve-06", "agent-safety-02"]
+}
