@@ -5,10 +5,7 @@ tags: [openclaw, AI, 업무자동화, Windows, 설치가이드]
 description: "WSL 설치가 어려운 윈도우 사용자를 위한 오픈클로 네이티브 설치 가이드. PowerShell 한 줄로 설치하고, WSL 없이 뭘 할 수 있는지, 안 되는 건 뭔지 정리."
 slug: openclaw-windows-native-no-wsl
 category: AI도구
-draft: true
-refactor_hub: openclaw-updates-02
-refactor_status: merged
-merged_into: posts/openclaw-2026-mid-spring-updates-guide
+draft: false
 ---
 
 ![윈도우에서 오픈클로 — WSL 없이 시작하기](./media/openclaw-win-comic/4panel-comic.jpg)

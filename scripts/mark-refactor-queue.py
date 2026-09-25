@@ -13,19 +13,30 @@ import argparse, json, os, re, sys
 
 
 def set_fm(text, updates, remove=()):
-    """frontmatter의 최상위 키만 교체·삭제한다. text[3:end]는 '\n'으로 시작하고 rest는 '\n---'로 시작한다."""
+    """frontmatter 최상위 키를 제자리에서 바꾸고, 없으면 끝에 붙이고, remove는 지운다. 같은 값이면 텍스트가 그대로다."""
     if not text.startswith("---"):
         text = "---\n---\n" + text
     end = text.find("\n---", 3)
     fm, rest = text[3:end], text[end:]
-    keys = set(updates) | set(remove)
-    lines = [l for l in fm.split("\n") if not any(re.match(rf"^{re.escape(k)}\s*:", l) for k in keys)]
-    while lines and not lines[-1].strip():
-        lines.pop()
+    out, seen = [], set()
+    for l in fm.split("\n"):
+        m = re.match(r"^([A-Za-z_][\w-]*)\s*:", l)
+        k = m.group(1) if m else None
+        if k in remove:
+            continue
+        if k in updates:
+            if k in seen:
+                continue
+            seen.add(k)
+            out.append(f"{k}: {updates[k]}")
+            continue
+        out.append(l)
+    while out and not out[-1].strip():
+        out.pop()
     for k, v in updates.items():
-        lines.append(f"{k}: {v}")
-    return "---" + "\n".join(lines) + rest
-
+        if k not in seen:
+            out.append(f"{k}: {v}")
+    return "---" + "\n".join(out) + rest
 
 def main():
     ap = argparse.ArgumentParser()
@@ -35,23 +46,37 @@ def main():
     a = ap.parse_args()
 
     queue = json.load(open(os.path.join(a.site_root, a.queue), encoding="utf-8"))
-    changed = missing = 0
+    kp = os.path.join(a.site_root, "scripts", "keep-posts.json")
+    protected = set()
+    if os.path.isfile(kp):
+        k = json.load(open(kp, encoding="utf-8"))
+        protected = set(k.get("originals", [])) | set(k.get("expand_targets", [])) | set(k.get("site_pages", []))
+    changed = missing = refused = 0
     for hub in queue:
         status = "archived" if hub["treatment"] == "archive" else "queued"
         for m in hub["members"]:
+            if m["path"] in protected and not a.undo:
+                refused += 1
+                print(f"refused (keep-posts.json): {m['path']} in {hub['hub_id']}", file=sys.stderr)
+                continue
             p = os.path.join(a.site_root, "content", m["path"])
             if not os.path.isfile(p):
                 missing += 1
                 continue
             t = open(p, encoding="utf-8").read()
+            cur = re.search(r"^refactor_status:\s*(\S+)", t.split("\n---", 1)[0], re.M)
+            cur = cur.group(1) if cur else ""
             if a.undo:
                 new = set_fm(t, {"draft": "false"}, remove=("refactor_hub", "refactor_status"))
+            elif cur in ("merged", "published", "in-review"):
+                new = set_fm(t, {"draft": "true"})  # 허브에 흡수된 글의 상태·merged_into는 보존
             else:
                 new = set_fm(t, {"draft": "true", "refactor_hub": hub["hub_id"], "refactor_status": status})
             if new != t:
                 open(p, "w", encoding="utf-8").write(new)
                 changed += 1
-    print(json.dumps({"changed": changed, "missing": missing, "undo": a.undo}, ensure_ascii=False))
+    print(json.dumps({"changed": changed, "missing": missing, "refused": refused, "undo": a.undo}, ensure_ascii=False))
+    return 1 if refused else 0
 
 
 if __name__ == "__main__":

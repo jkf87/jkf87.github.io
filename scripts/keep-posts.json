@@ -1,0 +1,31 @@
+{
+ "why": "공개 유지가 확정된 글. 비공개 전환·큐 편입·허브 흡수·aliases 대상으로 쓰지 않는다(2026-09-26 0b 오작동 재발 방지).",
+ "originals": [
+  "ai-coding-harness-6-tools-review-2026-05-03.md",
+  "skillopt-voice-memo-doc-2026-06-03.md",
+  "autoresearchclaw-korean-asr-ai-paper-pipeline.md",
+  "openclaw-windows-native-no-wsl.md",
+  "openclaw-book-recommendation-2026.md"
+ ],
+ "expand_targets": [
+  "gemma4-codex-cli-local.md",
+  "gemma4-openclaw-local-backend-practical-guide.md",
+  "nilbox-openclaw-security-guide.md",
+  "openclaw-active-memory-setup-guide.md",
+  "openclaw-context-engine-plugins.md",
+  "openclaw-google-meet-plugin-setup-guide-2026-05-28.md",
+  "openclaw-memory-lancedb-slot-warning-2026-05-28.md",
+  "openclaw-obsidian-memory-wiki-llm-wiki-setup-2026-05-28.md",
+  "qwen3-6-27b-lmstudio-openclaw-2026-04-23.md",
+  "qwen3-6-35b-a3b-mlx-macbook-local.md"
+ ],
+ "site_pages": [
+  "index.md",
+  "about.md",
+  "contact.md",
+  "privacy-policy.md",
+  "categories.md",
+  "editorial-policy.md",
+  "posts.md"
+ ]
+}

@@ -16,7 +16,6 @@ aliases:
   - openclaw-2026-5-26-release-telegram-codex
   - openclaw-2026-5-28-release-security-codex-provider
   - openclaw-faster-smaller-sharper-claws-2026-05-31
-  - openclaw-book-recommendation-2026
 draft: false
 ---
 ## 한눈에 보는 결론

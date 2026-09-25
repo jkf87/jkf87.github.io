@@ -14,7 +14,6 @@ aliases:
   - openclaw-2026-5-4-update
   - openclaw-update-2026-05-05-06
   - posts/2026-06-01-openclaw-528-update
-  - openclaw-windows-native-no-wsl
 draft: false
 ---
 ## 한눈에 보는 결론

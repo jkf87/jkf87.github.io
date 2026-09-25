@@ -9,9 +9,7 @@ tags:
   - automation
   - whisper
   - korean-asr
-draft: true
-refactor_hub: research-agents-01
-refactor_status: queued
+draft: false
 ---
 
 ## 연구자의 가장 지루한 순간을 자동화하라

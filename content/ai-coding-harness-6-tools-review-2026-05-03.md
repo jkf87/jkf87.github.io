@@ -9,9 +9,7 @@ tags:
   - ai-agent
   - review
 description: "jcode, Gstack, Everything Claude Code, Ouroboros, revfactory/harness, oh-my-codex를 같은 과제로 직접 실행해본 실전 비교 리뷰"
-draft: true
-refactor_hub: coding-agents-04
-refactor_status: queued
+draft: false
 ---
 
 # AI 코딩 하네스 6종을 실제로 돌려봤습니다: 답을 잘하는 도구보다 실패를 관리하는 도구가 이겼어요
