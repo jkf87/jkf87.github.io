@@ -10,7 +10,8 @@ tags:
 description: OpenClaw 4.26 패치 내용 정리. 채널 자동화 수정, 온보딩 속도 개선, Bonjour 안정화. 그리고 API 키 없이 쓸 수 있는 로컬 TTS 활성화 방법까지.
 draft: true
 refactor_hub: openclaw-updates-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/openclaw-2026-mid-spring-updates-guide
 ---
 
 ![OpenClaw 4.26 업데이트](./images/openclaw-4-26-update-local-tts-2026-04-28/hero.png)

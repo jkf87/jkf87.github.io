@@ -7,7 +7,8 @@ slug: openclaw-windows-native-no-wsl
 category: AI도구
 draft: true
 refactor_hub: openclaw-updates-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/openclaw-2026-mid-spring-updates-guide
 ---
 
 ![윈도우에서 오픈클로 — WSL 없이 시작하기](./media/openclaw-win-comic/4panel-comic.jpg)
