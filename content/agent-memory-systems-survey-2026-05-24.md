@@ -11,7 +11,8 @@ enableToc: true
 description: "LLM 에이전트 메모리 시스템을 RAG, 지식그래프, 계층형 메모리, 프로덕션 도구 관점에서 비교하고 LoCoMo·LongMemEval 벤치마크를 정리했습니다."
 draft: true
 refactor_hub: agent-memory-04
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-memory-design-guide-2026
 ---
 
 ## 결론 먼저

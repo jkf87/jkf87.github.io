@@ -314,8 +314,8 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "queued",
-  "hub_slug": null
+  "status": "in-review",
+  "hub_slug": "posts/llm-agent-memory-design-guide-2026"
  },
  {
   "hub_id": "agent-memory-05",
@@ -540,6 +540,12 @@
     "title": "LLM 에이전트에 장기 메모리가 실제로 도움이 될까: MERIT 벤치마크 정리",
     "date": "2026-09-21",
     "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-22-llm-agent-latent-memory-disentanglement-lgm.md",
+    "title": "LLM 에이전트 메모리를 흑백 문서 대신 잠재 공간에서 풀어내는 방법: LGM 논문 정리 (arXiv 2609.18461)",
+    "date": "2026-09-22",
+    "reason": "0b 늦은 도착 — v2 중단 시점에 남은 미발행 초안, 허브 병합 대기"
    }
   ],
   "status": "queued",
@@ -6318,6 +6324,12 @@
     "title": "저장을 눌렀는데 DB엔 틀린 값이 들어감 — 화면 검증이 못 잡는 ERP 조용한 실패를 잰 ERPBench",
     "date": "2026-09-18",
     "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-21-recreationworld-hybrid-cua.md",
+    "title": "GUI 에이전트와 코딩 에이전트를 하나로: RecreationWorld 하이브리드 CUA 벤치마크 정리",
+    "date": "2026-09-21",
+    "reason": "0b 늦은 도착 — v2 중단 시점에 남은 미발행 초안, 허브 병합 대기"
    }
   ],
   "status": "queued",

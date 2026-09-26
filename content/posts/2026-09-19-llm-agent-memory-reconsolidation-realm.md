@@ -9,7 +9,8 @@ tags:
 description: LLM 에이전트의 장기 기억 시스템은 정보가 들어올 때만 갱신합니다. REALM은 검색 피드백으로 기억 그래프를 다시 재편하는 재통합 프레임워크로 LoCoMo 75.97%를 달성했습니다.
 draft: true
 refactor_hub: agent-memory-04
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-memory-design-guide-2026
 ---
 
 ## 결론 먼저

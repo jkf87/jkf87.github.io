@@ -10,7 +10,8 @@ tags:
 description: "에이전트 실행 중 만들어지는 메모리를 코딩·웹·대화·딥리서치 5개 트랙에서 분리 측정하는 MemGym 벤치마크 정리. 코딩에서는 메모리가 중립, 대화·웹에서는 +8.7pp, 극한 압박에서는 A-Mem이 최강."
 draft: true
 refactor_hub: agent-memory-04
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-memory-design-guide-2026
 ---
 
 ## 결론 먼저

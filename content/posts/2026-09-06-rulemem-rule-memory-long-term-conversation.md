@@ -9,7 +9,8 @@ tags:
 description: "대화 이력에서 자연어 Horn 절 규칙을 유도해 검색 쿼리와 추론 대전제로 쓰는 RuleMem. LoCoMo에서 14개 baseline 평균보다 27.47점 높은 78.05를 기록했고 검색률이 0.56에서 0.79로 올랐다."
 draft: true
 refactor_hub: agent-memory-04
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-memory-design-guide-2026
 ---
 
 장기 대화 에이전트의 메모리를 사실 저장소가 아니라 규칙 저장소로 만든 연구가 나옴. 검색 실패와 추론 실패를 분리해서 다룬다는 점이 실용적이라 정리함. 원문은 [arXiv:2609.03915](https://arxiv.org/abs/2609.03915).

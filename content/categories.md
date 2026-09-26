@@ -42,6 +42,12 @@ tags:
 - [[qwen3-6-27b-lmstudio-openclaw-2026-04-23|Qwen3.6-27B를 LM Studio + OpenClaw로 굴리기]]
 - [[qwen3-6-35b-a3b-mlx-macbook-local|Qwen3.6-35B-A3B MLX를 맥북 M4에서 돌리기]]
 
+## 에이전트 메모리·연구 정리
+
+논문 여러 편을 비교해 설계 기준으로 묶은 글입니다.
+
+- [[posts/llm-agent-memory-design-guide-2026|LLM 에이전트 메모리 설계 기준 정리 (2026 논문 8편 비교)]]
+
 ## 사이트 안내
 
 - [[about|운영자 소개]]

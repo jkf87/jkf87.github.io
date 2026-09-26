@@ -19,7 +19,8 @@ aliases:
 cover: images/agent-memory-systems-survey-2026-05-24/thumbnail.jpg
 draft: true
 refactor_hub: agent-memory-04
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-memory-design-guide-2026
 ---
 
 세션을 닫으면 대화가 사라지는 건 단순한 불편함이 아니라 에이전트가 진짜 비서가 되는 근본 장벽임. "Agent Memory Systems for Large Language Models" 서베이가 이 분야 전체를 정리해줌. 내가 매일 쓰는 OpenClaw의 메모리 구조가 어느 생태계 어디쯤에 있는지 알 수 있는 지도라 정리함.

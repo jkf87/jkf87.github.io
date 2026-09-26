@@ -16,7 +16,8 @@ tags:
 description: "GateMem 논문을 정리함. 병원·회사·학교·가정처럼 여러 사람이 같은 에이전트 메모리를 쓰는 상황에서, 기억 성능뿐 아니라 권한 경계와 삭제 이후 비복구까지 함께 평가해야 한다는 벤치마크다."
 draft: true
 refactor_hub: agent-memory-04
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-memory-design-guide-2026
 ---
 
 출처:
