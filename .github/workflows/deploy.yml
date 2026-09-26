@@ -24,11 +24,11 @@ jobs:
       LC_ALL: ko_KR.UTF-8
       LANG: ko_KR.UTF-8
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0 # Fetch all history for git info
 
-      - uses: actions/setup-node@v6
+      - uses: actions/setup-node@v7
         with:
           node-version: 22
 
