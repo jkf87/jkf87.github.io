@@ -10,7 +10,8 @@ tags:
 description: LLM 에이전트가 검색된 메모리를 너무 많이 반영하거나 오히려 무시하는 문제를 원자 단위로 측정한 MemCalib 벤치마크와, GRPO의 일방향 편향을 잡는 MemCalib-RL 알고리즘을 정리했습니다.
 draft: true
 refactor_hub: agent-memory-10
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-experience-learning-2026
 ---
 
 ## 결론 먼저

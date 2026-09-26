@@ -10,7 +10,8 @@ tags:
 description: "에이전트를 파인튜닝하지 않고 탐색-검증-메모리 루프만으로 새 환경에 적응시키는 RSIAgent(arXiv:2609.15364) 정리. GLM-5.3와 Kimi-K3 조합이 OSWorld 2.0에서 GPT-6 Astra를 6.38포인트 앞질렀습니다."
 draft: true
 refactor_hub: agent-memory-10
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-experience-learning-2026
 ---
 
 ## 결론 먼저

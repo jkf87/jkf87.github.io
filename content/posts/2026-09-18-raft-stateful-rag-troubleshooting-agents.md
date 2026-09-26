@@ -15,7 +15,8 @@ tags:
   - tool-use
 draft: true
 refactor_hub: agent-memory-10
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-experience-learning-2026
 ---
 
 ## 결론 먼저
