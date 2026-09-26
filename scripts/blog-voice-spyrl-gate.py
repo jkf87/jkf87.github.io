@@ -216,7 +216,13 @@ def evaluate(path: Path) -> CandidateReport:
     rhetorical_qa = len(RHETORICAL_QA_RE.findall(body))
     bold = len(BOLD_RE.findall(body))
     images = IMAGE_RE.findall(body)
-    abs_image_bad = sum(1 for img in images if not img.startswith("/images/"))
+    # 2026-09-26: 공개 이미지는 content/media/<slug>/ 로 옮겼고 images/·assets 는 빌드에서 제외됐다.
+    # 본문 이미지는 media/ 를 가리키는 상대경로여야 하고, 외부 핫링크와 빌드 제외 폴더는 위반이다.
+    def _bad_image(u: str) -> bool:
+        if u.startswith(("http://", "https://", "//")):
+            return True
+        return "media/" not in u.lstrip("./")
+    abs_image_bad = sum(1 for img in images if _bad_image(img))
     headings = HEADING_RE.findall(body)
     question_headings = sum(1 for h in headings if "?" in h or "까요" in h or "나요" in h)
     # rough metaphor signal: headings with em dash or poetic commas and no concrete tech nouns/numbers
@@ -277,7 +283,7 @@ def evaluate(path: Path) -> CandidateReport:
         notes.append("이미지 없음")
     if abs_image_bad:
         penalty += 6 * abs_image_bad
-        notes.append(f"Quartz 절대 이미지 경로 위반 {abs_image_bad}개")
+        notes.append(f"본문 이미지 경로 위반 {abs_image_bad}개 (content/media/<slug>/ 상대경로만 허용)")
     if numbers < 8 and tables < 4:
         penalty += 4
         tags.append("few_numbers")
