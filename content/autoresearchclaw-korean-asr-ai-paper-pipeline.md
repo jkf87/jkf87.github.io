@@ -9,6 +9,7 @@ tags:
   - automation
   - whisper
   - korean-asr
+draft: false
 ---
 
 ## 연구자의 가장 지루한 순간을 자동화하라

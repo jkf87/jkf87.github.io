@@ -5654,8 +5654,8 @@
     "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
    }
   ],
-  "status": "queued",
-  "hub_slug": null
+  "status": "in-review",
+  "hub_slug": "posts/openclaw-2026-spring-updates-summary"
  },
  {
   "hub_id": "openclaw-updates-02",
@@ -5720,8 +5720,8 @@
     "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
    }
   ],
-  "status": "queued",
-  "hub_slug": null
+  "status": "in-review",
+  "hub_slug": "posts/openclaw-2026-mid-spring-updates-guide"
  },
  {
   "hub_id": "owner-review-01",

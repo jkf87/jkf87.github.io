@@ -14,6 +14,7 @@ Gate: `scripts/blog-refactor-gate.py --mode hub|expand|new`
 
 ## Hard rules
 
+- Never draft, queue, merge or alias a post listed in `scripts/keep-posts.json`. Those posts stay public. EXPAND may edit the expand targets in place.
 - Never delete a post file. Old posts stay in the repo with `draft: true`. Merging only changes their `refactor_status`.
 - Never publish a summary, translation or rewrite of a single source (paper, system card, vendor blog, news, video, talk, README, release notes).
 - Never commit copied figures, tables, slides or screenshots from papers or other sites. Every image in a live post lives in `content/media/<slug>/` and is made by you: a diagram or chart from your own analysis, or a capture of your own command output or UI run.
@@ -25,8 +26,8 @@ Gate: `scripts/blog-refactor-gate.py --mode hub|expand|new`
 
 ## Each run: exactly one unit of work, in this priority order
 
-0. `git fetch origin`. Use today's branch `refactor/<YYYY-MM-DD>`. If that branch's PR is already merged, create `refactor/<YYYY-MM-DD>-<HHMM>` from `origin/main`.
-0b. Late arrivals: if any post you published under v4 is still live (`draft` not true, not in `scripts/expand-targets.json`, not a hub), add it to the closest hub's `members` in the queue and run `python3 scripts/mark-refactor-queue.py`. The script is idempotent.
+0. Branch: always work on the single long-lived branch `refactor/live`. Run `git fetch origin`. If `origin/refactor/live` exists, check it out, `git pull --ff-only origin refactor/live`, then `git merge --no-edit origin/main`. If it does not exist (for example it was merged and deleted), create it from `origin/main`. Keep exactly one open PR `refactor/live` → `main` titled `refactor: 누적 리팩토링` and update its checklist every run. Never create date branches, so work never forks when the owner merges late.
+0b. Late arrivals: a late arrival is a live post (`draft` not true) that is NOT listed in `scripts/keep-posts.json`, has no `refactor_hub_id`, and is not in `scripts/expand-targets.json`. Add each one to the closest hub's `members` and run `python3 scripts/mark-refactor-queue.py`. The script is idempotent and refuses protected posts.
 0c. Priority: if `scripts/refactor-priority.json` lists hubs whose queue status is still `queued`, do the first of them in this run, before EXPAND. These hubs fix live links that were already shared on Threads.
 0d. Never let one unit block the queue. If an EXPAND needs a download or job longer than about 20 minutes, start it in the background (tmux), record progress and resume steps in `sandbox/<slug>/RESUME.md`, and do the next HUB in the same run. Resume that EXPAND in a later run once the job has finished. If verification would need more than 20 GB of downloads, skip it and note that in `## 한계와 반론`.
 1. **EXPAND (first):** pick one of the 10 live setup posts in `scripts/expand-targets.json` that has no `verified_at` in its frontmatter.

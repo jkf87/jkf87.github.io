@@ -5,7 +5,8 @@ tags: ["OpenClaw", "업데이트", "AI에이전트", "릴리즈노트"]
 categories: ["OpenClaw 업데이트"]
 draft: true
 refactor_hub: openclaw-updates-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/openclaw-2026-mid-spring-updates-guide
 ---
 
 ![오픈클로 2026.5.28 업데이트 히어로 이미지](/images/2026-06-01-openclaw-528-update/hero.jpg)

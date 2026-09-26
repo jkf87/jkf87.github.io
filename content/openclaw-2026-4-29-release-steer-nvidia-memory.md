@@ -21,7 +21,8 @@ tags:
 description: "OpenClaw 2026.4.29 업데이트 핵심 정리. AI가 작업 중일 때 추가 메시지를 보내는 방식이 Queue에서 Steer로 바뀌었습니다. NVIDIA 제공자 추가, 사람 인식 메모리, 모델 억제 등 주요 변화를 알기 쉽게 설명합니다."
 draft: true
 refactor_hub: openclaw-updates-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/openclaw-2026-mid-spring-updates-guide
 ---
 
 - **공식 웹사이트:** [openclaw.ai](https://openclaw.ai)

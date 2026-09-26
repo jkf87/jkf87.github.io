@@ -16,6 +16,8 @@ tags:
 
 - [[ai-coding-harness-6-tools-review-2026-05-03|AI 코딩 하네스 6종 실전 비교]]
 - [[skillopt-voice-memo-doc-2026-06-03|SkillOpt로 에이전트 스킬 학습시키기: 자막 추출 오타 점검 예시]]
+- [[posts/openclaw-2026-spring-updates-summary|오픈클로 2026년 봄 업데이트 3개월치 한눈에 (4.11~5.31)]]
+- [[posts/openclaw-2026-mid-spring-updates-guide|오픈클로 음성·Steer 업데이트 통합 (4.15~5.28, 로컬 TTS·외부화 실측)]]
 - [[autoresearchclaw-korean-asr-ai-paper-pipeline|AutoResearchClaw 실전 사용기]]
 
 ## 오픈클로(OpenClaw) 설치·설정

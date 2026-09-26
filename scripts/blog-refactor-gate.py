@@ -147,6 +147,17 @@ def main():
             else:
                 need = {re.sub(r"\.md$", "", m["path"]) for m in q[hub_id]["members"]}
                 have = set(fm_list(fm, "aliases"))
+                kp = os.path.join(a.site_root, "scripts", "keep-posts.json")
+                if os.path.isfile(kp):
+                    k = json.load(open(kp, encoding="utf-8"))
+                    prot = {re.sub(r"\.md$", "", x) for x in k.get("originals", []) + k.get("expand_targets", []) + k.get("site_pages", [])}
+                    bad = sorted(have & prot)
+                    if bad:
+                        fails.append(f"보호 글을 aliases로 흡수함(keep-posts.json): {bad[:3]}")
+                for al in have:
+                    ap = os.path.join(a.site_root, "content", al + ".md")
+                    if os.path.isfile(ap) and fm_get(split_fm(open(ap, encoding="utf-8").read())[0], "draft").lower() != "true":
+                        fails.append(f"공개 중인 글을 aliases로 덮음: {al}")
                 miss = sorted(need - have)
                 if miss:
                     fails.append(f"aliases 누락 {len(miss)}개(옛 URL 리디렉트): {miss[:3]}")

@@ -7,7 +7,8 @@ category: "AI 자동화"
 tags: ["OpenClaw", "Codex", "Computer Use", "Browser Use", "AI 자동화"]
 draft: true
 refactor_hub: openclaw-updates-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/openclaw-2026-spring-updates-summary
 ---
 
 OpenClaw 2026.4.27 업데이트에서 눈에 띄는 변화가 하나 있음.

@@ -5,7 +5,8 @@ tags: [openclaw, AI, 업무자동화, TTS, 업데이트]
 description: "오픈클로 4.25 업데이트 핵심 정리. TTS 전면 개편, 플러그인 속도 개선, 브라우저 자동화 강화, OpenTelemetry 확장까지."
 draft: true
 refactor_hub: openclaw-updates-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/openclaw-2026-mid-spring-updates-guide
 ---
 
 ![오픈클로 2026.4.25 업데이트](./images/openclaw_425_hero_ko.png)

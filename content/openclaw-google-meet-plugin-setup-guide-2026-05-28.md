@@ -8,15 +8,17 @@ tags:
   - automation
   - setup-guide
 description: "OpenClaw Google Meet 플러그인 설치, transcribe 모드, agent talk-back 모드, chrome-node 구성, 검증 명령어와 에이전트 프롬프트를 정리합니다."
+author: 한준구(코난쌤)
 aliases:
   - openclaw-google-meet-plugin
   - google-meet-openclaw-setup
 draft: false
+verified_at: 2026-09-25
 ---
 
 OpenClaw에서 Google Meet을 쓰려면 `@openclaw/google-meet` 플러그인을 설치하고, 목적에 맞게 `transcribe`, `agent`, `chrome-node`, `twilio` 중 하나를 고르면 된다.
 
-![OpenClaw Google Meet 플러그인 설정 흐름](./media/openclaw-google-meet-plugin/setup-flow.png)
+![OpenClaw Google Meet 플러그인 설정 흐름](./media/openclaw-google-meet-plugin-setup-guide-2026-05-28/setup-flow.png)
 
 ## 0. 먼저 확인
 
@@ -26,7 +28,7 @@ node --version
 openclaw plugins search google-meet
 ```
 
-OpenClaw 2026.5.26 기준으로 Google Meet은 기본 번들이 아니라 ClawHub 공식 플러그인이다.
+OpenClaw 2026.9.6 기준으로 Google Meet은 기본 번들이 아니라 ClawHub 공식 플러그인(v2026.9.5)이다.
 
 ## 1. 설치
 
@@ -427,6 +429,89 @@ openclaw googlemeet test-listen https://meet.google.com/abc-defg-hij --mode tran
 
 이후 말하기가 필요할 때만 `agent` 모드와 BlackHole/SoX 구성을 붙인다.
 
+## 한계와 막힌 부분
+
+- Twilio 트랜스포트는 계정 인증 정보(`TWILIO_ACCOUNT_SID`, `TWILIO_AUTH_TOKEN`, `TWILIO_FROM_NUMBER`)가 있어야 동작한다. 없으면 Chrome 트랜스포트를 쓰면 된다.
+- `test-listen`과 `test-speech`는 실제 Google Meet 방이 필요하다. 이 검증에서는 setup 체크까지 확인하고, 실제 회의 참여는 수행하지 않았다.
+- Chrome profile에 Google 로그인이 선행되어야 한다. headless 환경에서는 `manualActionRequired`가 나올 수 있다.
+- 회의 녹음·아티팩트 내보내기(`artifacts`, `export`)는 Google Meet이 conference records를 생성한 경우에만 동작한다.
+
+---
+
+## 검증 로그
+
+- 검증일: 2026-09-25
+- 검증 환경: macOS 26.0 (Darwin 25.5.0), Apple M4
+- OpenClaw: 2026.9.6 (eb377ac)
+- Google Meet 플러그인: v2026.9.5
+
+### 플러그인 설치·설정 확인
+
+```bash
+$ openclaw plugins search google-meet
+@openclaw/google-meet  v2026.9.5 — OpenClaw Google Meet participant plugin
+
+$ openclaw plugins list | grep google-meet
+Google Meet | google-meet | openclaw | enabled | 2026.9.5
+
+$ openclaw config validate
+Config valid: ~/.openclaw/openclaw.json
+```
+
+### transcribe 모드 체크
+
+```bash
+$ openclaw googlemeet setup --mode transcribe --json
+  google-oauth-token:        OK (Chrome profile auth)
+  chrome-profile:            OK (OpenClaw browser profile)
+  audio-bridge:              OK (pcm16-24khz)
+  guest-join-defaults:       OK (auto-join + tab reuse)
+  chrome-local-audio-device: OK (virtual meeting audio ready)
+  chrome-local-audio-cmds:   OK (sox)
+  → 6/8 checks passed (Twilio는 optional)
+```
+
+### agent 모드 체크
+
+```bash
+$ openclaw googlemeet setup --transport chrome --mode agent --json
+  intro-after-in-call:       OK (wait 20000ms)
+  twilio-voice-call-plugin:  OK (delegate to voice-call)
+  → 9/11 checks passed (Twilio 인증 미설정은 optional)
+```
+
+### 오디오 환경
+
+```bash
+$ system_profiler SPAudioDataType | grep BlackHole
+  BlackHole 2ch:  installed
+  BlackHole 16ch: installed
+
+$ command -v sox
+/opt/homebrew/bin/sox
+```
+
+### 드리프트 요약
+
+| 항목 | 글 작성 시점 (2026-05) | 검증 시점 (2026-09) |
+| --- | --- | --- |
+| OpenClaw 버전 | 2026.5.26 | **2026.9.6** |
+| 플러그인 버전 | 미표기 | **v2026.9.5** |
+| intro-after-in-call | 없음 | **20000ms 대기 (신규)** |
+| twilio-voice-call 위임 | 없음 | **voice-call 플러그인 위임 (신규)** |
+| audio bridge 규격 | 미표기 | **pcm16-24khz** |
+| 핵심 설정 흐름 | 동일 | 동일 |
+| BlackHole + SoX | 동일 | 동일 |
+| OAuth 흐름 | 동일 | 동일 |
+
+![Google Meet 플러그인 검증: 설치·설정 확인](./media/openclaw-google-meet-plugin-setup-guide-2026-05-28/verify-01-plugin-setup-2026-09-25.png)
+*블로그봇이 직접 실행한 Google Meet 플러그인 검색·설정·오디오 환경 확인*
+
+![Google Meet 플러그인 검증: 드리프트 확인](./media/openclaw-google-meet-plugin-setup-guide-2026-05-28/verify-02-agent-drift-2026-09-25.png)
+*에이전트 모드 설정 체크 및 블로그 대비 변경 사항*
+
 ---
 
 참고: [OpenClaw Google Meet plugin docs](https://github.com/openclaw/openclaw/blob/main/docs/plugins/google-meet.md)
+
+이 글은 블로그봇(코난쌤의 오픈클로 에이전트)이 공식 문서를 확인하고 직접 설정·실행해 검증한 내용으로 초안을 만들고, 운영자가 검토해 발행했습니다.

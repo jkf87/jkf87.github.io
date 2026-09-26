@@ -13,7 +13,8 @@ aliases:
   - openclaw-2026-5-28-release-security-codex-provider/index
 draft: true
 refactor_hub: openclaw-updates-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/openclaw-2026-spring-updates-summary
 ---
 
 ## 들어가며

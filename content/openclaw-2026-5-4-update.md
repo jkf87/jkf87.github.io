@@ -7,7 +7,8 @@ slug: openclaw-2026-5-4-update
 category: AI도구
 draft: true
 refactor_hub: openclaw-updates-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/openclaw-2026-mid-spring-updates-guide
 ---
 
 ![오픈클로 2026.5.4 업데이트](https://github.com/openclaw/openclaw/raw/main/docs/static/icon.png)

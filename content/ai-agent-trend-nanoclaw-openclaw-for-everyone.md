@@ -10,7 +10,8 @@ tags:
 description: "NanoClaw 세미나를 바탕으로 AI 에이전트가 소형 코어+맞춤 확장으로 가는 이유를 일반 사용자 관점에서 정리합니다."
 draft: true
 refactor_hub: openclaw-updates-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/openclaw-2026-spring-updates-summary
 ---
 
 최근 AI 에이전트 시장의 화두는 단순합니다. **더 거대하게 갈 것인가, 더 맞춤형으로 갈 것인가.**

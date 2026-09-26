@@ -7,7 +7,8 @@ slug: openclaw-2026-5-7-update
 category: AI도구
 draft: true
 refactor_hub: openclaw-updates-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/openclaw-2026-spring-updates-summary
 ---
 
 ![오픈클로 2026.5.7 업데이트 4컷 만화](./images/openclaw-2026-5-7-comic/4panel-comic.jpg)

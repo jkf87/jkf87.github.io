@@ -13,7 +13,8 @@ aliases:
   - openclaw-telegram-codex-update
 draft: true
 refactor_hub: openclaw-updates-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/openclaw-2026-spring-updates-summary
 ---
 
 OpenClaw 2026.5.26은 "기능이 많이 늘었다"보다 **실사용 중 덜 답답하게 만드는 릴리즈**에 가깝습니다. 특히 텔레그램으로 OpenClaw를 쓰거나, Codex 계정을 연결해 코딩 작업을 맡기는 사용자라면 바로 체감할 지점이 있습니다.
