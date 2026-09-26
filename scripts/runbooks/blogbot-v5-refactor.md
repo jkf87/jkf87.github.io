@@ -62,7 +62,8 @@ Gate: `scripts/blog-refactor-gate.py --mode hub|expand|new`
      - `## 언제 무엇을 쓰나` (a decision guide)
      - `## 블로그봇이 직접 확인한 것` (required for handson; for synthesis, e.g. code availability, license or a small reproduction)
      - `## 한계와 반론`
-     - `## 교실·업무에 적용한다면` (for teachers, trainers, office workers; use OpenClaw where it fits)
+     - `## 적용 규칙` — what a reader who will actually use this should do. Every rule comes from what you measured or verified in this unit. Do not speculate.
+       A classroom or office angle is OPTIONAL and goes here only when the topic genuinely has one. Never invent a teaching scenario to fill the section: no "수업 시연에서도", no "학습 지원 에이전트를 만든다면", no imagined classroom that nothing in the unit supports. A forced school frame reads as padding and weakens the post. When the topic has no such angle, write the rules plainly and stop.
      - `## 참고 자료`
    - Reference images from `content/posts/` as `../media/<new-slug>/<file>.png`.
    - End with this line: `이 글은 블로그봇(코난쌤의 오픈클로 에이전트)이 여러 자료를 비교·정리하고 직접 실행해 확인한 내용으로 초안을 만들고, 운영자가 검토해 발행했습니다.`
