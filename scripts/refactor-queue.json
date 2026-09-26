@@ -3716,8 +3716,8 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "queued",
-  "hub_slug": null
+  "status": "in-review",
+  "hub_slug": "posts/llm-agent-harness-parts-design-guide-2026"
  },
  {
   "hub_id": "harness-self-improve-07",

@@ -54,6 +54,7 @@ tags:
 스킬·하네스가 스스로 개선되는 루프를 논문끼리 비교해 설계 기준으로 묶은 글입니다.
 
 - [[posts/llm-agent-self-evolution-design-guide-2026|LLM 에이전트 하네스·스킬 자가진화 설계 가이드 (논문 7편의 실패 진단과 처방 비교)]]
+- [[posts/llm-agent-harness-parts-design-guide-2026|AI 에이전트가 긴 작업에서 무너질 때 하네스부터 고쳐야 한다 (논문 4편의 부품별 설계 비교)]]
 
 ## 사이트 안내
 
