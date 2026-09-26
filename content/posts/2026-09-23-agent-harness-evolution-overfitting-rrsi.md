@@ -9,7 +9,8 @@ tags:
 description: LLM 에이전트 하네스를 자동으로 진화시키는 방법이 진화에 쓴 벤치마크만 외워서 과적합되는 문제를 확인하고, 제안·선택 양쪽에 정규화를 넣어 일반화시킨 RRSI 논문을 정리했습니다.
 draft: true
 refactor_hub: harness-self-improve-20
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-self-evolution-design-guide-2026
 ---
 
 ## 결론 먼저

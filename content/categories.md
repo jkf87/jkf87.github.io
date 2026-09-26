@@ -49,6 +49,12 @@ tags:
 - [[posts/llm-agent-memory-design-guide-2026|LLM 에이전트 메모리 설계 기준 정리 (2026 논문 8편 비교)]]
 - [[posts/llm-agent-experience-learning-2026|LLM 에이전트가 경험으로 배우게 하는 법 (파인튜닝 없는 학습 루프 8편 비교)]]
 
+## 에이전트 자가진화·하네스 연구 정리
+
+스킬·하네스가 스스로 개선되는 루프를 논문끼리 비교해 설계 기준으로 묶은 글입니다.
+
+- [[posts/llm-agent-self-evolution-design-guide-2026|LLM 에이전트 하네스·스킬 자가진화 설계 가이드 (논문 7편의 실패 진단과 처방 비교)]]
+
 ## 사이트 안내
 
 - [[about|운영자 소개]]

@@ -18,7 +18,8 @@ source_url: https://arxiv.org/abs/2608.05628
 description: "SkillHEX 분석. 검증 데이터 없이 이진 성공/실패만 주어지는 희소 보상 환경에서 스킬을 진화시키는 구조. 가설 기반 자기검증과 되돌아가기 가능한 수정 트리로 기존 대비 최대 9.5pp 상승."
 draft: true
 refactor_hub: harness-self-improve-20
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-self-evolution-design-guide-2026
 ---
 
 스킬 진화 연구 대부분은 검증 데이터셋이 있다고 가정하는데 실제 배포 환경엔 없음. 에이전트에게 주어지는 건 이진 종료 보상뿐이고 시도 횟수도 제한적임. 이 희소 보상 설정에서 매번 최선 수정을 커밋하는 탐욕적 방식은 초기 진단이 틀리면 이후 전부를 낭비하는 착취 함정에 빠짐. [SkillHEX](https://arxiv.org/abs/2608.05628)(가설을 세워 자기검증하고 수정 이력을 트리로 보관하는 스킬 진화 프레임)가 두 가지 구조로 이걸 풂. 가설 기반 자기검증과 증거 기반 트리 탐색. 시도 예산 안에서 기존 대비 최대 9.5pp 높은 통과율을 냄.

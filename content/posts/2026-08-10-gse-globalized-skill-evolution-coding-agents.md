@@ -15,7 +15,8 @@ tags:
 description: "GSE는 스킬 뱅크를 관계 그래프로 모델링하고 업데이트의 영향을 전역적으로 추론해 호환성·과적합 문제를 해결함. 테스트 생성 F1 0.31, 버그 리포트 필터링 F1 0.71, 산업 배포에서 61.4% 개선을 기록함. 스킬 관리 실무 교훈을 정리함."
 draft: true
 refactor_hub: harness-self-improve-20
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-self-evolution-design-guide-2026
 ---
 
 코딩 에이전트에 스킬 뱅크를 붙이는 건 이제 흔함. 실행 궤적에서 교훈을 뽑아 스킬로 저장하고 재사용하는 구조. 근데 대부분 국소적 업데이트로 돌아감. 한 궤적에서 배운 걸 그대로 뱅크에 반영하는 것. GSE 연구는 이 방식의 두 문제를 짚음. 첫째, 호환성. 한 스킬을 고치면 다른 스킬의 전제가 깨질 수 있음. 둘째, 과적합. 특정 궤적에 특화된 업데이트가 다른 작업에서 회귀를 부름. 스킬 관리를 해본 사람이라면 공감하는 실패 모드임.
