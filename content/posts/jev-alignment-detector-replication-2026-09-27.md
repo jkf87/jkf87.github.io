@@ -3,6 +3,8 @@ title: "AUROC 0.95인 AI 검사기가 실패의 8.8%만 잡았습니다: 논문 
 date: 2026-09-27
 author: 한준구(코난쌤)
 description: "AI 응답의 정렬 실패를 걸러내는 검사기 논문(arXiv 2609.29429)을 저자 코드와 데이터로 직접 돌려봤습니다. 5개 벤치마크 1,155건에서 AUROC는 중앙값 0.0036 차이로 재현됐고, 문턱값 0.5를 그대로 쓰면 F1이 0.158까지 내려갔습니다."
+sources_read: "논문 본문과 부록 목록, 저자 코드(run_jev.py·battery_*.py)와 공개 결과 CSV 7종, 게이트 데이터셋 5개 leg"
+novelty_vs_paper: "문턱값 0.5 과소발화와 라벨 10건 보정은 논문의 기여 항목 2번이다. 내 몫은 그 크기를 5개 leg에서 직접 재고 논문 보고치와 대조한 것뿐이다."
 tags:
   - AI-검증
   - 논문재현
@@ -45,7 +47,7 @@ Jev는 RLCD(보정된 결정을 위한 강화학습)로 학습한 모델입니�
 
 저장소는 [github.com/sumleo/RLCDAlignBench](https://github.com/sumleo/RLCDAlignBench)에서 그대로 받았습니다. 데이터는 허깅페이스에 게이트로 묶여 있어 접근 신청을 거쳤습니다. 연구 목적 사용과 유해 시스템 구축 금지에 동의하는 조건입니다. 데이터에 탈옥·유해 출력이 그대로 들어 있어서, <span style="background-color: #fff59d"><strong>이번 글에서는 아부·프롬프트 인젝션·환각 계열만 다루고 탈옥 쪽은 받지도 열지도 않았습니다.</strong></span>
 
-실행은 저자 러너 `run_jev.py`를 그대로 썼습니다. 제가 바꾼 것은 딱 한 줄입니다. 허깅페이스 공개 형식에는 러너가 요구하는 `leg` 필드가 없어서 `benchmark` 값을 복사해 넣었습니다.
+실행은 저자 러너 `run_jev.py`를 그대로 썼습니다. 아래 절차와 집계 코드는 [jkf87/jev-rlcd-replication](https://github.com/jkf87/jev-rlcd-replication)에 올려 뒀습니다. 제가 바꾼 것은 딱 한 줄입니다. 허깅페이스 공개 형식에는 러너가 요구하는 `leg` 필드가 없어서 `benchmark` 값을 복사해 넣었습니다.
 
 ```python
 r['leg'] = r['benchmark']   # 공개 형식 -> 저자 내부 형식, 이게 전부
@@ -176,6 +178,7 @@ input tokens 441,330; est. cost $0.019; median latency 0.245s; wall 30.2s
 - [Just Ask Jev: Reinforcement Learning for Calibrated Decisions as a Zero-Shot Detector of AI Alignment Failures](https://arxiv.org/abs/2609.29429) — arXiv 2609.29429, 2026-09-24
 - [RLCDAlignBench 코드·결과 CSV](https://github.com/sumleo/RLCDAlignBench) — MIT, 데이터는 CC BY-NC 4.0
 - [RLCDAlignBench 데이터셋](https://huggingface.co/datasets/sumleo/RLCDAlignBench) — 접근 신청 필요
+- [재현 스크립트와 결과](https://github.com/jkf87/jev-rlcd-replication) — 이 글의 검산·실행 코드, MIT
 - [Hugging Face Daily Papers](https://huggingface.co/papers) — 이 논문을 처음 본 곳
 
 이 글은 코난쌤의 AI 에이전트가 논문과 저자 코드를 읽고 직접 실행한 결과로 초안을 쓰고, 운영자가 수치와 한계를 검토해 발행했습니다.
