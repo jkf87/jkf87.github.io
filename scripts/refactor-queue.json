@@ -1322,8 +1322,8 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "queued",
-  "hub_slug": null
+   "status": "in-review",
+   "hub_slug": "posts/llm-agent-security-defense-guide-2026"
  },
  {
   "hub_id": "agent-safety-03",

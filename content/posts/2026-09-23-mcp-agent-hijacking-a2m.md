@@ -10,7 +10,8 @@ tags:
   - 벤치마크
 draft: true
 refactor_hub: agent-safety-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-security-defense-guide-2026
 ---
 
 ## 결론 먼저
