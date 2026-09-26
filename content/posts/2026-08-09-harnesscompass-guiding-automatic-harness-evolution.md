@@ -17,7 +17,8 @@ paper_url: https://arxiv.org/abs/2608.01918
 description: "자동 하네스 진화의 과적합·신호 부족·컴포넌트 간섭을 일반화 게이트와 궤적 검증 피드백, 트랙 분리 진화로 해결한 HarnessCompass. 미지 작업 60.4%로 AHE 대비 반복 1/4에 더 높은 성능을 냈다."
 draft: true
 refactor_hub: harness-self-improve-20
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-self-evolution-design-guide-2026
 ---
 
 하네스를 자동 진화시키면 학습에 쓴 작업에만 맞아떨어지고 새 작업에서 무너진다는 문제를 정면으로 다룬 논문이 나옴. 해법이 제약 기반이라 실무에 그대로 적용할 수 있어서 정리함. 원문은 [arXiv:2608.01918](https://arxiv.org/abs/2608.01918).

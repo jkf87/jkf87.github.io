@@ -14,7 +14,8 @@ tags:
   - OpenClaw
 draft: true
 refactor_hub: harness-self-improve-06
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-harness-parts-design-guide-2026
 ---
 
 에이전트가 긴 작업을 시작하고 중간에 길을 잃는 경험은 흔함. METR 보고서가 작업 호라이즌이 7개월마다 두 배로 늘어난다고 하지만, 호라이즌이 길어진다고 끝까지 안정 실행되는 건 별개 문제임. Alibaba DreamX 팀의 진단은 기존 하네스가 task execution과 task state management를 같은 컨텍스트에서 처리한다는 것. 실행 히스토리가 길어지면 상태 추적이 무너지고 에이전트의 자기 완료 주장이 검증 없이 state로 받아들여짐.

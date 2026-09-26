@@ -10,7 +10,8 @@ tags:
 description: "멀티 에이전트 워크플로우에서 각 노드가 메모리를 검색해 프롬프트에 넣을 때 그 토큰이 입력 토큰으로 청구됩니다. TCA 논문의 5분해 비용 구조, 2패스 정확 계측법, 깊이 6에서 27.6%까지 오르는 주입 비중을 정리했습니다."
 draft: true
 refactor_hub: agent-memory-10
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-experience-learning-2026
 ---
 
 ## 결론 먼저

@@ -314,8 +314,8 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "queued",
-  "hub_slug": null
+  "status": "in-review",
+  "hub_slug": "posts/llm-agent-memory-design-guide-2026"
  },
  {
   "hub_id": "agent-memory-05",
@@ -540,6 +540,12 @@
     "title": "LLM 에이전트에 장기 메모리가 실제로 도움이 될까: MERIT 벤치마크 정리",
     "date": "2026-09-21",
     "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-22-llm-agent-latent-memory-disentanglement-lgm.md",
+    "title": "LLM 에이전트 메모리를 흑백 문서 대신 잠재 공간에서 풀어내는 방법: LGM 논문 정리 (arXiv 2609.18461)",
+    "date": "2026-09-22",
+    "reason": "0b 늦은 도착 — v2 중단 시점에 남은 미발행 초안, 허브 병합 대기"
    }
   ],
   "status": "queued",
@@ -728,8 +734,8 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "queued",
-  "hub_slug": null
+  "status": "in-review",
+  "hub_slug": "posts/llm-agent-experience-learning-2026"
  },
  {
   "hub_id": "agent-rl-01",
@@ -1248,6 +1254,12 @@
     "title": "LLM 에이전트가 몇 턴 뒤에 안전장치를 놓치는 이유: BLINDSPOT 벤치마크 정리 (arXiv 2609.16305)",
     "date": "2026-09-19",
     "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/jev-korean-alignment-check-2026-09-26.md",
+    "title": "AI 답변의 아부·환각·숨은 지시를 0.2초에 가려내는 법: 한국어 48문항 직접 측정",
+    "date": "2026-09-26",
+    "reason": "늦은 도착(late arrival) — 2026-09-26 PR #41 병합본, 에이전트 안전 탐지 주제로 편입"
    }
   ],
   "status": "queued",
@@ -3704,8 +3716,8 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "queued",
-  "hub_slug": null
+  "status": "in-review",
+  "hub_slug": "posts/llm-agent-harness-parts-design-guide-2026"
  },
  {
   "hub_id": "harness-self-improve-07",
@@ -4766,8 +4778,8 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "queued",
-  "hub_slug": null
+  "status": "in-review",
+  "hub_slug": "posts/llm-agent-self-evolution-design-guide-2026"
  },
  {
   "hub_id": "harness-self-improve-21",
@@ -6318,6 +6330,12 @@
     "title": "저장을 눌렀는데 DB엔 틀린 값이 들어감 — 화면 검증이 못 잡는 ERP 조용한 실패를 잰 ERPBench",
     "date": "2026-09-18",
     "reason": "논문 단일 요약(복제 판정 대상)"
+   },
+   {
+    "path": "posts/2026-09-21-recreationworld-hybrid-cua.md",
+    "title": "GUI 에이전트와 코딩 에이전트를 하나로: RecreationWorld 하이브리드 CUA 벤치마크 정리",
+    "date": "2026-09-21",
+    "reason": "0b 늦은 도착 — v2 중단 시점에 남은 미발행 초안, 허브 병합 대기"
    }
   ],
   "status": "queued",

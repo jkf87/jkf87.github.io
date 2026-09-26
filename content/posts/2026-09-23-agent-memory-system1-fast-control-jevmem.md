@@ -10,7 +10,8 @@ tags:
 description: 에이전트 메모리 시스템의 병목은 LLM 생성으로 메모리 제어를 돌리는 데 있습니다. System 1 경량 제어로 바꾼 Jev-Mem이 LoCoMo 0.777, 빌드 6.6배 빠름, 지연 0.93초를 달성한 결과를 정리했습니다.
 draft: true
 refactor_hub: agent-memory-04
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-memory-design-guide-2026
 ---
 
 ## 핵심 요약

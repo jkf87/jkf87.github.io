@@ -13,7 +13,8 @@ tags:
 coverImage: /images/memora-harmonic-memory-2026-07-06/hero.jpg
 draft: true
 refactor_hub: agent-memory-10
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-experience-learning-2026
 ---
 
 에이전트가 똑똑하다는 건 찰나의 추론을 잘한다는 뜻임. 문제는 그 찰나가 쌓여도 경험이 되지 않는다는 것. 대부분의 LLM 에이전트는 stateless라서 같은 사용자가 어제 무슨 이야기를 나눴는지 매번 처음부터 다시 유추함. Microsoft Research가 ICML 2026에서 발표한 Memora(arXiv:2602.03315)가 이 문제를 정면으로 다룸. 핵심 질문은 "메모리에서 추상화와 구체성을 동시에 가져갈 수 없을까"임.

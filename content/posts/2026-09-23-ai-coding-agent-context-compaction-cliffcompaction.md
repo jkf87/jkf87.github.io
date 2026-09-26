@@ -10,7 +10,8 @@ tags:
 description: "코딩 에이전트의 긴 컨텍스트 비용을 최대 50% 줄이면서 성능은 유지·향상시킨 CliffCompaction(arXiv 2609.26779)의 컴팩션 규칙, 테스트타임 스케일링, KernelBench 결과를 정리했습니다."
 draft: true
 refactor_hub: harness-self-improve-06
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-harness-parts-design-guide-2026
 ---
 
 ## 결론 먼저

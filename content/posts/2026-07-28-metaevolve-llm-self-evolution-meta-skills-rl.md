@@ -14,7 +14,8 @@ tags:
   - loop
 draft: true
 refactor_hub: harness-self-improve-20
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-self-evolution-design-guide-2026
 ---
 
 AlphaEvolve(구글이 만든 진화 검색 에이전트로, 코드 후보를 세대별로 변이하고 점수를 매겨 최적해로 나아가는 시스템) 같은 진화 검색 에이전트가 잘 되는 이유를 모델 능력이라고 믿기 쉬움. UIUC 연구진은 그게 아니라 외부 루프 설계 덕이라고 짚고, 그 안에서 필요한 "메타 스킬"을 모델에 직접 가르쳤음. 원문은 [arXiv:2607.21971](https://arxiv.org/abs/2607.21971).
