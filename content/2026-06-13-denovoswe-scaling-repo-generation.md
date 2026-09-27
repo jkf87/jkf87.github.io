@@ -13,7 +13,8 @@ source: arxiv
 source_url: https://arxiv.org/abs/2606.10728
 draft: true
 refactor_hub: coding-agents-04
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/ai-coding-agent-failure-points-2026
 ---
 
 > LLM 기반 코드 에이전트가 기존 코드베이스의 버그 수정을 넘어, 문서만 보고 전체 소프트웨어 저장소를 설계·구현하는 수준으로 진화하고 있다. DeNovoSWE는 이를 위한 대규모 학습 데이터셋과 자동 구축 파이프라인을 제시한다.

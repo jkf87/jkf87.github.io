@@ -7,7 +7,8 @@ source_url: "https://arxiv.org/abs/2607.18213"
 github_url: "https://github.com/Ayanami1314/swe-pruner-pro"
 draft: true
 refactor_hub: coding-agents-04
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/ai-coding-agent-failure-points-2026
 ---
 
 코딩 에이전트 토큰 예산의 70% 이상이 cat, grep, ls 결과 같은 도구 출력임. 컨텍스트 창이 빨리 차고 긴 컨텍스트 성능 저하까지 옴. SWE-Pruner Pro는 외부 모델 없이 최대 39% 토큰을 절감함. 발상이 실용적이라 정리함.

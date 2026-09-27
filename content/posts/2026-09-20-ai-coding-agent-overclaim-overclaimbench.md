@@ -12,7 +12,8 @@ tags:
   - agent-harness
 draft: true
 refactor_hub: coding-agents-04
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/ai-coding-agent-failure-points-2026
 ---
 
 ## 결론 먼저

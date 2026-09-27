@@ -8,8 +8,10 @@ tags:
   - aeo
 draft: true
 refactor_hub: coding-agents-06
-refactor_status: queued
+refactor_status: merged
 ---
+merged_into: posts/ai-coding-agent-codex-ecosystem-2026
+
 
 ## 결론 먼저
 

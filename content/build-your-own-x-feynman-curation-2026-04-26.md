@@ -11,7 +11,8 @@ tags:
 description: 파인만의 "What I cannot create, I do not understand"에서 출발한 큐레이션 레포가 49.6만 스타. AI 코딩 시대에 역설적으로 원리 학습 수요가 커지는 중.
 draft: true
 refactor_hub: coding-agents-03
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/ai-coding-agent-stack-guide-2026
 ---
 
 1. build-your-own-x. 누적 스타 **49.6만**. 어제 하루만 +1,431 찍고 트렌딩에 다시 올라옴. 클래식 레포인데 주기적으로 재진입함.

@@ -18,8 +18,10 @@ aliases:
   - aionui-open-source-cowork-ai-agent-2026-04-29/index
 draft: true
 refactor_hub: coding-agents-06
-refactor_status: queued
+refactor_status: merged
 ---
+merged_into: posts/ai-coding-agent-codex-ecosystem-2026
+
 
 AI 도구가 채팅창에서 에이전트로 넘어가는 중임. 예전에는 ChatGPT 창에 질문을 던지고 답을 복사해 쓰는 방식이 중심이었음. 지금은 Claude Code, Codex, Gemini CLI 같은 도구가 파일을 읽고, 코드를 고치고, 명령을 실행하고, 작업을 끝까지 밀고 감.
 

@@ -5,7 +5,8 @@ tags: [개발도구, Claude Code, 생산성]
 description: "복잡한 코드베이스를 인터랙티브 그래프로 변환해서 한눈에 파악하기"
 draft: true
 refactor_hub: coding-agents-05
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/ai-coding-agent-codebase-context-2026
 ---
 
 새 팀에 들어가서 받은 코드베이스가 20만 줄이라면?

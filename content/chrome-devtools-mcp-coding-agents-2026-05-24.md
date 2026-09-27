@@ -4,7 +4,8 @@ date: 2026-05-24
 tags: [chrome, devtools, mcp, ai-agent, debugging]
 draft: true
 refactor_hub: coding-agents-05
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/ai-coding-agent-codebase-context-2026
 ---
 
 **Q1. Chrome DevTools MCP가 뭔가요? 한 줄로 요약해주세요.**

@@ -16,7 +16,8 @@ source: https://arxiv.org/abs/2606.13673
 project: https://spatialclaw.github.io/
 draft: true
 refactor_hub: coding-agents-03
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/ai-coding-agent-stack-guide-2026
 ---
 
 ## 한 줄 요약

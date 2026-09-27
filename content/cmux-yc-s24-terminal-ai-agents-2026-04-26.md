@@ -12,7 +12,8 @@ tags:
 description: YC S24 창업자 Austin Wang이 만든 cmux는 단순 터미널이 아님. 수십~수백 개 AI 코딩 에이전트를 동시에 돌리는 워크플로우 전용 OS 레이어임. 메르체식 정리.
 draft: true
 refactor_hub: coding-agents-05
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/ai-coding-agent-codebase-context-2026
 ---
 
 ![cmux 메인 화면](./images/cmux-yc-s24-terminal-ai-agents-2026-04-26/main-first-image.png)
