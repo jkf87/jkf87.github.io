@@ -13,8 +13,10 @@ tags:
 description: "claude.com/pricing 비교표에서 Pro 플랜의 Claude Code 항목이 X로 표시돼 혼선이 커졌습니다. 가격 페이지, 도움말 문서, Max 플랜 안내가 서로 어떻게 충돌하는지 정리했습니다."
 draft: true
 refactor_hub: coding-agents-06
-refactor_status: queued
+refactor_status: merged
 ---
+merged_into: posts/ai-coding-agent-codex-ecosystem-2026
+
 
 - **가격 페이지**: [claude.com/pricing](https://claude.com/pricing)
 - **도움말 1**: [Using Claude Code with your Pro or Max plan](https://support.claude.com/en/articles/11145838-using-claude-code-with-your-pro-or-max-plan)

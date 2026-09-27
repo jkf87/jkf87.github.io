@@ -92,6 +92,12 @@ LLM 에이전트 보안 논문을 비교해 방어 설계 기준을 정리한 �
 
 - [[posts/ai-coding-agent-failure-points-2026|AI 코딩 에이전트가 조용히 무너지는 지점: 토큰 낭비·조용한 실패·거짓 보고 14편 비교]]
 
+## 코딩 에이전트 실행 환경(Codex 생태계) 정리
+
+Codex 앱·모바일·Windows 샌드박스와 AionUi 허브 등 코딩 에이전트 글 7편을 1차 출처 재검증으로 통합한 가이드입니다.
+
+- [[posts/ai-coding-agent-codex-ecosystem-2026|AI 코딩 에이전트 어디서 돌릴까: Codex 앱·모바일·Windows 샌드박스·AionUi 허브 7편 통합 가이드]]
+
 ## 오픈소스 개발 도구 비교
 
 유료 SaaS의 오픈소스 대안 도구를 비교하고 직접 설치·실행한 기록입니다.
