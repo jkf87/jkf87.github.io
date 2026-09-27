@@ -16,7 +16,8 @@ aliases:
   - fincept-terminal-cpp-finance-platform-2026-05-26/index
 draft: true
 refactor_hub: dev-tools-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/open-source-devtools-hands-on-2026
 ---
 
 블룸버그 터미널이 연간 2만 4천 달러임. 개인 투자자나 스타트업에겐 접근 불가능한 가격. 그런데 이걸 오픈소스로 만들려는 사람들이 있음.

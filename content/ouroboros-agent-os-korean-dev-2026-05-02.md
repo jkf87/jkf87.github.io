@@ -9,7 +9,8 @@ tags:
 description: AI 코딩이 실망스러운 이유는 모델이 아니라 인풋이 문제임. Zep 테크리드 Q00이 만든 Ouroboros는 소크라테스식 인터뷰로 명확성을 수치화하고, 수렴할 때까지 루프를 돌림. 3.5개월에 별 2,855개.
 draft: true
 refactor_hub: dev-tools-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/open-source-devtools-hands-on-2026
 ---
 
 AI 코딩 도구가 넘쳐나도 결과물이 실망스러운 이유가 있음. 모델 탓이 아니었음.

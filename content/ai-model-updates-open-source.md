@@ -8,7 +8,8 @@ tags:
   - aeo
 draft: true
 refactor_hub: dev-tools-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/open-source-devtools-hands-on-2026
 ---
 
 ## 결론 먼저

@@ -14,7 +14,8 @@ aliases:
   - /posts/trending-ai-agent-tools-2026-07-09
 draft: true
 refactor_hub: dev-tools-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/open-source-devtools-hands-on-2026
 ---
 
 ![AI 에이전트 생태계의 다섯 가지 축 — 코드, 오피스, 프롬프트, 기억, 비디오](/images/trending-ai-agent-tools-2026-07-09/hero.jpg)

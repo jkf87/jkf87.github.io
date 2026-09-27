@@ -17,7 +17,8 @@ aliases:
   - /posts/trackio-local-first-experiment-tracking-agents-2026-07-26
 draft: true
 refactor_hub: dev-tools-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/open-source-devtools-hands-on-2026
 ---
 
 ![Trackio 로고. 이 프로젝트의 흥미로운 지점은 예쁜 대시보드보다, 실험 로그를 로컬 SQLite에 쌓고 CLI와 SQL로 다시 읽을 수 있게 했다는 점이다.](/images/trackio-local-first-experiment-tracking-agents-2026-07-26/trackio-logo.png)

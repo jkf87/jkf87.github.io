@@ -9,7 +9,8 @@ tags:
 description: 구글맵 API 가격이 1,400% 올랐다. 어떤 개발자는 월 청구서가 $180에서 $2,400으로 뛰었다. 그러다가 헝가리 개발자 한 명이 자신이 9년간 운영해온 지도 인프라를 통째로 오픈소스로 풀어버렸다. OpenFreeMap. 월 $500 후원금으로 초당 10만 요청을 처리한다.
 draft: true
 refactor_hub: dev-tools-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/open-source-devtools-hands-on-2026
 ---
 
 지도는 인프라다. 그리고 인프라는 비용이다.

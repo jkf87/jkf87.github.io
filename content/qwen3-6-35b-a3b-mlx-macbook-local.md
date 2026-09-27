@@ -12,6 +12,8 @@ tags:
   - ai
   - quartz
 description: "Qwen3.6-35B-A3B(활성 3B MoE) MLX 4bit 모델을 맥북 32GB에서 직접 설치·다운로드하며 확인한 최신 저장소 정보, 네트워크 실측과 실무 팁을 정리합니다."
+verified_at: 2026-09-27
+draft: false
 ---
 
 > 모델: [mlx-community/Qwen3.6-35B-A3B-4bit](https://huggingface.co/mlx-community/Qwen3.6-35B-A3B-4bit)
@@ -123,7 +125,7 @@ KV 캐시 (8K 컨텍스트 기준): ~1-2 GB
 
 ### 예상 속도
 
-아래 표는 원래 글의 추정치입니다(2026-04, M4 32GB 기준). 블로그봇 재검증(2026-09-25)은 아래 검증 로그를 참고하세요.
+아래 표는 원래 글의 추정치입니다(2026-04, M4 32GB 기준). 블로그봇 실측(M2 Max, 2026-09-25·09-27)은 아래 검증 로그를 참고하세요.
 
 | 모드 | 예상 속도 (M4 32GB) |
 |------|---------------------|
@@ -187,13 +189,13 @@ from mlx_vlm.utils import load_image
 
 model, processor = load("mlx-community/Qwen3.6-35B-A3B-4bit")
 
-# 텍스트 전용
+ # 텍스트 전용
 messages = [{"role": "user", "content": "한국어로 Qwen3.6의 특징을 설명해줘."}]
-prompt = apply_chat_template(processor, messages)
+prompt = apply_chat_template(processor, model.config, messages)
 output = generate(model, processor, prompt, max_tokens=2048, temperature=0.7)
 print(output)
 
-# 이미지 + 텍스트
+ # 이미지 + 텍스트
 image = load_image("screenshot.png")
 messages = [{
     "role": "user",
@@ -202,7 +204,12 @@ messages = [{
         {"type": "text", "text": "이 스크린샷에서 무엇을 하고 있나요?"}
     ]
 }]
+prompt = apply_chat_template(processor, model.config, messages, num_images=1)
+output = generate(model, processor, prompt, image=image, max_tokens=2048)
+print(output)
 ```
+
+<span style="background-color: #fff59d"><strong>주의 (2026-09-27 실측)</strong></span>: 모델 카드 초판에 있던 `apply_chat_template(processor, messages)` 형태는 mlx-vlm 0.7.3에서 TypeError가 납니다. <span style="background-color: #fff59d"><strong>두 번째 인자로 model.config를 넘기고, 이미지를 쓸 때는 num_images=1을 추가</strong></span>해야 합니다. 위 코드는 이 실행에서 직접 돌아간 확인 버전입니다.
 
 ## Qwen3.5 대비 주요 변화
 
@@ -246,26 +253,30 @@ Qwen 공식 추천:
 
 ## FAQ
 
-### 16GB 맥북 실행 가능 여부
+### 16GB 맥북에서도 실행할 수 있나요?
 불가능합니다. 모델 다운로드만 20.4GB이므로 <span style="background-color: #fff59d"><strong>최소 24GB RAM, 안정적 사용을 위해 32GB RAM</strong></span>이 필요합니다. 디스크 여유 공간도 25GB 이상 확보하세요.
 
-### 첫 다운로드 소요 시간
+### 첫 다운로드는 얼마나 걸리나요?
 회선에 따라 크게 다릅니다. 블로그봇이 2026-09-25에 직접 측정했을 때 <span style="background-color: #fff59d"><strong>단일 스트림 0.53MB/s</strong></span>였고, 16분할 병렬 다운로드로 <span style="background-color: #fff59d"><strong>합산 0.3~5.6MB/s</strong></span>까지 시간대별로 변동했습니다.
 
 이 속도면 20.4GB를 받는 데 수 시간이 걸립니다. huggingface-cli 같은 재개 가능한 방법을 쓰고, 한 번에 끝내려 하지 말고 <span style="background-color: #fff59d"><strong>밤에 걸어두는 게 편합니다</strong></span>.
 
-### Qwen3.5 대비 업그레이드 가치
+### Qwen3.5에서 업그레이드할 가치가 있나요?
 에이전트 코딩과 MCP 능력이 크게 향상됐습니다. 특히 Terminal-Bench +10, MCPMark +10, NL2Repo +8.9 포인트 향상이 실질적입니다. 업그레이드를 권장합니다.
 
-### Claude 모델과의 비교
+### Claude 모델과 비교하면 어떤가요?
 특정 벤치마크에서는 Claude Sonnet 4.5와 동급이거나 능가합니다 (RealWorldQA, OmniDocBench 등). 다만 복잡한 다단계 추론이나 긴 문맥 이해에서는 클로드 모델이 여전히 우위일 수 있습니다.
 
-### 비디오 처리 지원
+### 비디오 처리도 지원하나요?
 예. VideoMME, VideoMMMU 등에서 높은 점수를 기록했고 비디오 이해 능력이 좋습니다. 단, 비디오 처리 시 VRAM 소모가 커지니까 긴 비디오는 주의가 필요합니다.
+
+### 모델 카드 파이썬 예제가 TypeError를 내는 이유는 뭔가요?
+
+mlx-vlm 0.7.3에서 `apply_chat_template` 시그니처가 바뀌어서입니다. 두 번째 인자로 `model.config`를 넘기고, 이미지 입력 시 `num_images=1`을 추가하면 됩니다. 2026-09-27 실측으로 확인한 수정 코드를 본문 채팅 모드 예제에 반영해 뒀습니다.
 
 ## 블로그봇이 직접 확인한 것 (검증 로그)
 
-2026-09-25 16:00 실행. 무엇을 확인했는지 요약하면: 설치 명령 실측, 모델 저장소 최신 정보 실측, 원본 모델 카드 전수 대조, 다운로드 속도 실측까지 입니다. <span style="background-color: #fff59d"><strong>추론 실측은 다음 실행으로 이월</strong></span>했습니다(아래 참고).
+2026-09-25 16:00 1차 실행에서 설치 명령, 모델 저장소 최신 정보, 원본 모델 카드 대조, 다운로드 속도를 실측했습니다. 2026-09-27 10:00 2차 실행에서 <span style="background-color: #fff59d"><strong>다운로드 완료 후 추론 실측(텍스트·비전·CLI)까지 마쳤습니다</strong></span>. 이제 이 글에 적힌 실행 경로는 전부 블로그봇이 이 머신에서 직접 돌려 확인했습니다.
 
 | 항목 | 값 |
 |------|-----|
@@ -329,16 +340,58 @@ $ # 16분할 병렬 (재개 가능) 관측치
 
 ![다운로드 실측 화면 — 단일 스트림과 16분할 병렬](media/qwen3-6-35b-a3b-mlx-macbook-local/verify-02-download-2026-09-25.png)
 
+### 확인 5: 추론 실측 (2026-09-27 2차 실행)
+
+다운로드는 2026-09-26 05:47에 4샤드 전부 완료됐습니다(dl-status.log ALL_DONE). 같은 sandbox에서 문서화된 세 경로를 순서대로 돌렸습니다.
+
+텍스트 생성(Python API):
+
+```bash
+$ .venv/bin/python gen-text.py .
+load_time_s=8.1          # 웜 상태
+gen_time_s=58.0          # 첫 실행: 20.4GB mmap 웨이트 first-touch 포함
+prompt_tokens=29 generation_tokens=93 finish_reason='stop'
+prompt_tps=0.53 generation_tps=67.73
+peak_memory=20.56        # MLX 보고값(GB)
+```
+
+비전 입력(Python API, 480x270 테스트 이미지):
+
+```bash
+$ .venv/bin/python gen-vision.py . own-test-image.png
+gen_time_s=47.1          # 이미지 인코딩 + 생성
+prompt_tokens=151 generation_tokens=74 finish_reason='stop'
+prompt_tps=3.37 generation_tps=64.19
+peak_memory=20.72        # MLX 보고값(GB)
+```
+
+문서화된 CLI 경로:
+
+```bash
+$ .venv/bin/python -m mlx_vlm.generate --model . --max-tokens 100 \
+    --temperature 0.0 --prompt "Describe this image." --image own-test-image.png
+ # "blue square / orange triangle / green oval" — 도형 3개를 모두 정확히 식별, EXIT=0
+```
+
+정리하면:
+
+- <span style="background-color: #fff59d"><strong>생성 속도는 MLX 보고 기준 텍스트 67.7 tok/s, 비전 64.2 tok/s</strong></span>입니다. 활성 3B MoE라 32GB 기기에서도 여유가 있습니다.
+- <span style="background-color: #fff59d"><strong>peak_memory는 텍스트 20.56GB, 비전 20.72GB</strong></span>로, 32GB에서 긴 컨텍스트를 더 얹으면 여유가 없는 구조입니다.
+- 첫 실행 벽시계(58초)에는 20.4GB 웨이트 first-touch가 포함됩니다. 재실행하면 로드가 8초대로 줄어듭니다.
+- 비전 프롬프트 토큰이 151로 텍스트(29)의 5배 넘게 나옵니다. 이미지 전처리 토큰이 붙기 때문입니다.
+
+![텍스트 생성 실측 — gen-text.py 결과](media/qwen3-6-35b-a3b-mlx-macbook-local/verify-03-textgen-2026-09-27.png)
+
+![비전 입력 실측 — gen-vision.py 결과](media/qwen3-6-35b-a3b-mlx-macbook-local/verify-04-vision-2026-09-27.png)
+
 ### 이번 실행에서 못 한 것
 
-20.4GB 다운로드가 이 실행 안에 끝나지 않았습니다(실측 대역폭 기준 수 시간 필요).
-
-모델 로드 시간, tok/s, RAM 사용량, 비전 입력 실측은 다음 실행으로 이월했습니다. 다운로드는 sandbox에서 <span style="background-color: #fff59d"><strong>재개 가능한 상태로 계속 진행</strong></span>합니다.
+2차 실행까지 마치고 남은 것은 두 가지입니다. 긴 컨텍스트(128K+) 입력과 여러 요청 동시 실행은 32GB RAM 한계로 확인하지 않았습니다. 벤치마크 점수는 원 모델 카드 보고값을 그대로 인용합니다.
 
 ## 한계와 막힌 부분
 
-- 이번 재검증은 설치·저장소 확인·문서 대조까지입니다. 추론 속도와 메모리 실측은 다음 실행에서 검증 로그에 추가됩니다.
-- 검증 기기는 <span style="background-color: #fff59d"><strong>M2 Max 32GB</strong></span>입니다. 본문의 M4 기준 속도 표는 원래 글의 추정치라서 그대로 뒀습니다.
+- 2026-09-27 2차 실행으로 추론 속도·메모리 실측까지 마쳤습니다(위 검증 로그 확인 5). 긴 컨텍스트(128K+)와 동시 실행 실측은 여전히 없습니다.
+- 검증 기기는 <span style="background-color: #fff59d"><strong>M2 Max 32GB</strong></span>입니다. 본문의 M4 기준 속도 표는 원래 글의 추정치라서 그대로 뒀고, M2 Max 실측치는 검증 로그를 보세요.
 - 긴 컨텍스트(128K+)는 32GB에서 OOM 가능성, 비전 처리 시 VRAM 추가 소모는 기존 주의 그대로입니다.
 - HF CDN 속도가 시간대별로 0.3~5.6MB/s까지 변동해서, 첫 다운로드는 회선 상태가 좋은 시간대를 노리는 게 낫습니다.
 
