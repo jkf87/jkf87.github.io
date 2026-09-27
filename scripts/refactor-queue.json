@@ -314,7 +314,7 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/llm-agent-memory-design-guide-2026"
  },
  {
@@ -734,7 +734,7 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/llm-agent-experience-learning-2026"
  },
  {
@@ -1328,8 +1328,8 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-   "status": "in-review",
-   "hub_slug": "posts/llm-agent-security-defense-guide-2026"
+  "status": "published",
+  "hub_slug": "posts/llm-agent-security-defense-guide-2026"
  },
  {
   "hub_id": "agent-safety-03",
@@ -2990,8 +2990,8 @@
     "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
    }
   ],
-  "status": "queued",
-  "hub_slug": null
+  "status": "in-review",
+  "hub_slug": "posts/open-source-devtools-hands-on-2026"
  },
  {
   "hub_id": "dev-tools-02",
@@ -3722,7 +3722,7 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/llm-agent-harness-parts-design-guide-2026"
  },
  {
@@ -4784,7 +4784,7 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/llm-agent-self-evolution-design-guide-2026"
  },
  {

@@ -13,7 +13,8 @@ description: "Google, Shopify, Etsy 등이 공동 개발한 UCP(Universal Commer
 image: images/ucp-universal-commerce-protocol/ucp-hero.png
 draft: true
 refactor_hub: dev-tools-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/open-source-devtools-hands-on-2026
 ---
 
 ## UCP가 뭔가요?

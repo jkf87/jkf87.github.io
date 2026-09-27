@@ -16,7 +16,8 @@ aliases:
 cover: images/n8n-mcp-ai-workflow-automation-2026-05-05/thumbnail.jpg
 draft: true
 refactor_hub: dev-tools-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/open-source-devtools-hands-on-2026
 ---
 
 ![n8n-MCP 4컷 요약 — AI가 n8n 워크플로우를 대신 짜주는 시대](images/n8n-mcp-ai-workflow-automation-2026-05-05/thumbnail.jpg)

@@ -17,7 +17,8 @@ aliases:
   - ace-step-ui-local-ai-music-suno-alternative-2026-04-29/index
 draft: true
 refactor_hub: dev-tools-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/open-source-devtools-hands-on-2026
 ---
 
 Suno나 Udio가 AI 음악 생성 시장을 꽤 빠르게 대중화했음. 프롬프트 몇 줄만 넣으면 보컬까지 붙은 노래가 나오니까, 음악을 몰라도 결과물을 뽑는 경험 자체가 완전히 달라졌음.

@@ -13,7 +13,8 @@ tags:
 description: 50K 스타 오픈소스 worldmonitor가 블룸버그 터미널을 대체할 수 있는지. 92개 거래소, 500+ 뉴스 피드, 7가지 시장 신호, 로컬 AI까지. 대체 가능한 부분과 불가능한 부분 정리.
 draft: true
 refactor_hub: dev-tools-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/open-source-devtools-hands-on-2026
 ---
 
 1. 월가에서 트레이더 한 명당 연 2만 4천 달러를 찍고 있는 기계가 있음. 블룸버그 터미널임. 원화로 연 3,300만원. 검정 바탕에 주황색 글씨, 마이클 블룸버그가 1981년부터 밀어붙인 그 단말기.

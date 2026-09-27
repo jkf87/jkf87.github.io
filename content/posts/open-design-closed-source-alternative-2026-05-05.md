@@ -16,7 +16,8 @@ aliases:
 cover: ../images/open-design-closed-source-alternative-2026-05-05/thumbnail.jpg
 draft: true
 refactor_hub: dev-tools-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/open-source-devtools-hands-on-2026
 ---
 
 ![Open Design 4컷 요약 — Claude Design의 오픈소스 대항마](../images/open-design-closed-source-alternative-2026-05-05/thumbnail.jpg)

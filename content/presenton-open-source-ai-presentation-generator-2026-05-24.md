@@ -4,7 +4,8 @@ date: 2026-05-24
 tags: [ai, presentation, open-source, mcp, tool]
 draft: true
 refactor_hub: dev-tools-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/open-source-devtools-hands-on-2026
 ---
 
 ![Presenton OG Image](images/presenton-2026-05-24/og-image.webp)

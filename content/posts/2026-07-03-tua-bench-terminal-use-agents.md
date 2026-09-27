@@ -15,7 +15,8 @@ description: 터미널 범용 과제 120개로 에이전트를 평가한 TUA-Ben
 source_url: "https://arxiv.org/abs/2606.28480"
 draft: true
 refactor_hub: dev-tools-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/open-source-devtools-hands-on-2026
 ---
 
 터미널 에이전트를 업무에 실제로 쓰는 입장에서 가장 궁금한 건 성능이 아니라 "어디까지 위임할 수 있는가"임. Meta AI·Duke·Stanford가 만든 TUA-Bench(터미널에서 벌어지는 문서·메일·미디어·시스템 관리 같은 범용 과제 120개로 에이전트 성공률을 재는 벤치마크)가 그 질문에 숫자로 답함. 최고 성능 조합의 성공률은 65.8%.
