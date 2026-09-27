@@ -11,7 +11,8 @@ tags:
 coverImage: /images/openskill-self-evolution/figure1.png
 draft: true
 refactor_hub: harness-self-improve-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-skill-lifecycle-guide-2026
 ---
 
 배포된 AI 에이전트에게 새로운 환경이 주어졌다고 칩시다. 정답도 없고, 가이드도 없고, 피드백도 없습니다. 오직 태스크 프롬프트 하나만 덩그러니 놓여 있죠.

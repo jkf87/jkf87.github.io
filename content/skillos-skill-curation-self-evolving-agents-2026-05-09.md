@@ -5,7 +5,8 @@ tags: [AI, LLM, agent, reinforcement-learning, skill-learning, paper-review]
 enableToc: true
 draft: true
 refactor_hub: harness-self-improve-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-skill-lifecycle-guide-2026
 ---
 
 ## 개요

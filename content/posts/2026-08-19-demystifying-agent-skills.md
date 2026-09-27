@@ -5,7 +5,8 @@ tags: [agent, skill, memory, paper-review]
 description: 스킬 효과의 65.7%가 절차 안정화에서 나오고 지식 주입은 4.5%에 불과함. 스킬 풀이 커져도 최종 성공률은 유지되는 이유와 스킬이 깨지는 세 지점을 실무 관점으로 정리함.
 draft: true
 refactor_hub: harness-self-improve-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-skill-lifecycle-guide-2026
 ---
 
 Princeton·Stanford·UCSD 팀이 에이전트 스킬이 실제로 어떻게 작동하는지 분해했음. 스킬을 "넣으면 성공률이 오르는가"가 아니라 왜 작동하고 어디서 깨지는지를 쪼갬. 원문은 [arXiv 2608.14036](https://arxiv.org/abs/2608.14036).
