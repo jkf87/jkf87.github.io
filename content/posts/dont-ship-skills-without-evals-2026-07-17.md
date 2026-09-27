@@ -16,7 +16,8 @@ aliases:
   - /posts/dont-ship-skills-without-evals-2026-07-17
 draft: true
 refactor_hub: harness-self-improve-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-skill-lifecycle-guide-2026
 ---
 
 스킬이 만능 도구처럼 쓰이는 시절에 정반대 문장을 던진 발표가 있어서 정리함. Google DeepMind의 Philipp Schmid가 AI Engineer 채널에서 한 "Don't ship skills without evals"임. 원본은 [발표 영상](https://www.youtube.com/watch?v=0vphxNt4wyk).

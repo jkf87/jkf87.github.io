@@ -55,12 +55,16 @@ tags:
 
 - [[posts/llm-agent-self-evolution-design-guide-2026|LLM 에이전트 하네스·스킬 자가진화 설계 가이드 (논문 7편의 실패 진단과 처방 비교)]]
 - [[posts/llm-agent-harness-parts-design-guide-2026|AI 에이전트가 긴 작업에서 무너질 때 하네스부터 고쳐야 한다 (논문 4편의 부품별 설계 비교)]]
+- [[posts/llm-agent-skill-lifecycle-guide-2026|LLM 에이전트 스킬은 쌓기만 하면 망한다 (생성·검증·압축·라우팅·보안 16편 재검증)]]
+- [[posts/llm-agent-safety-harness-evolution-2026|LLM 에이전트 보상 해킹과 안전 가드레일 어떻게 막나 (검증 한계·하네스 공진화 6편 총정리)]]
+- [[posts/llm-agent-optimization-policy-design-guide-2026|LLM 에이전트 최적화 루프 설계 기준: 탐색 정책을 하네스·에이전트·모델 가중치 어디에 둘까 (논문 5편 비교)]]
 
 ## 에이전트 보안 연구 정리
 
 LLM 에이전트 보안 논문을 비교해 방어 설계 기준을 정리한 글입니다.
 
 - [[posts/llm-agent-security-defense-guide-2026|LLM 에이전트 보안 설계 기준 정리 (2026 논문 7편 비교)]]
+- [[posts/llm-agent-harness-attack-surface-2026|AI 코딩 에이전트 어디까지 뚫리나: 악성 이슈·스킬 오염·하네스 권한상승 6편 총정리]]
 
 ## 코딩 에이전트 운영·신뢰 정리
 
@@ -97,6 +101,12 @@ LLM 에이전트 보안 논문을 비교해 방어 설계 기준을 정리한 �
 Codex 앱·모바일·Windows 샌드박스와 AionUi 허브 등 코딩 에이전트 글 7편을 1차 출처 재검증으로 통합한 가이드입니다.
 
 - [[posts/ai-coding-agent-codex-ecosystem-2026|AI 코딩 에이전트 어디서 돌릴까: Codex 앱·모바일·Windows 샌드박스·AionUi 허브 7편 통합 가이드]]
+
+## Claude Code 신기능·구독 안전 정리
+
+Claude Code 주간 신기능 정리 4편과 구독·인증 안전 글 3편을 1차 출처 재검증으로 통합한 가이드입니다.
+
+- [[posts/ai-coding-agent-claude-code-features-safety-2026|AI 코딩 에이전트 Claude Code 신기능 어디까지 살아남았나: Auto Mode·Computer Use 현재 상태와 Pro 구독 안전 가이드]]
 
 ## 오픈소스 개발 도구 비교
 

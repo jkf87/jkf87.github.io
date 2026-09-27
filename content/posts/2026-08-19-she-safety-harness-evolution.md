@@ -5,7 +5,8 @@ tags: [agent-safety, harness, LLM-agent]
 description: "SHE는 실패 트라젝토리를 3차원 진단해 하네스의 책임 아티팩트를 국소 수정하고 안전·유틸리티 동시 개선 시에만 채택함. ASR 5.5%, UA 47.6%, 크로스모델 이전까지 확인. 진화 모델 선택이 트레이드오프를 결정한다는 점 등 운영 교훈을 정리함."
 draft: true
 refactor_hub: harness-self-improve-03
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-safety-harness-evolution-2026
 ---
 
 논문: [Safety Harness Evolution (SHE), arXiv 2608.09885](https://arxiv.org/abs/2608.09885) (Shanghai AI Lab, Fudan, SJTU, HKUST, 2026-08-10)

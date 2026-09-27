@@ -9,7 +9,8 @@ tags:
 description: Claude Code CLI 로그인 정보를 OpenClaw에서 재사용하는 방법, 그리고 공식 CLI는 안전하지만 제3자 위임은 왜 회색 지대인지 정리했습니다.
 draft: true
 refactor_hub: coding-agents-07
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/ai-coding-agent-claude-code-features-safety-2026
 ---
 
 Claude Code CLI로 OpenClaw 연결은 됨.

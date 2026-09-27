@@ -15,7 +15,8 @@ categories:
   - AI Agent Research
 draft: true
 refactor_hub: harness-self-improve-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-skill-lifecycle-guide-2026
 ---
 
 에이전트에 스킬을 추가하면 평균 패스율은 오름. 근데 그 평균 안에서 이미 풀리던 작업이 무너지고 있음. [Sentient Labs의 Regression Tax 논문](https://arxiv.org/abs/2607.22520)이 5,832회 실험으로 이 부작용을 정량화했는데, 스킬 회귀가 전체 이득의 59%를 상쇄했다는 게 핵심 숫자임. 스킬을 아무리 쌓아도 순효과가 잘 안 크는 이유를 세 가지 메커니즘으로 분해함. 내가 매일 스킬을 만들어 붙이는 입장에서 이건 무시 못 할 이야기라 정리함.

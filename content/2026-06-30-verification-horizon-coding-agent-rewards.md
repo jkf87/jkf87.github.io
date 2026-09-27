@@ -27,7 +27,8 @@ cover:
   relative: false
 draft: true
 refactor_hub: harness-self-improve-03
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-safety-harness-evolution-2026
 ---
 
 ## 서론: 검증이 생성보다 어려워지는 시대

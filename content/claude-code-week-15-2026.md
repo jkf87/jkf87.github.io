@@ -9,7 +9,8 @@ tags:
 description: "Claude Code v2.1.92~v2.1.101 주간 다이제스트. Ultraplan 클라우드 계획 모드, Monitor Tool, /autofix-pr CLI 명령어, /team-onboarding 팀 온보딩 가이드 생성 기능을 소개합니다."
 draft: true
 refactor_hub: coding-agents-07
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/ai-coding-agent-claude-code-features-safety-2026
 ---
 
 # Week 15 · 4월 6–10일, 2026
