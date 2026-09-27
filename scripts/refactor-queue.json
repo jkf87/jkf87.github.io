@@ -1179,7 +1179,7 @@
   "hub_id": "agent-safety-01",
   "topic": "agent-safety",
   "treatment": "merge-synthesis",
-  "size": 11,
+  "size": 13,
   "keywords": [
    "arxiv",
    "공격",
@@ -1189,6 +1189,12 @@
    "전에"
   ],
   "members": [
+   {
+    "path": "posts/jev-alignment-detector-replication-2026-09-27.md",
+    "title": "AUROC 0.95인 AI 검사기가 실패의 8.8%만 잡았습니다: 논문 벤치마크 직접 재현",
+    "date": "2026-09-27",
+    "reason": "논문 재현(저자 코드·데이터 직접 실행) — 형제 글 jev-korean-alignment-check-2026-09-26도 이 허브 멤버"
+   },
    {
     "path": "posts/2026-07-18-badwam-world-action-drift-attack.md",
     "title": "로봇은 바른 미래를 상상하면서 잘못 행동함 — BadWAM이 보여준 검증 우회 공격",
