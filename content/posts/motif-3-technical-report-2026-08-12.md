@@ -16,7 +16,8 @@ authors:
 description: "Motif 3 테크니컬 리포트 분석. 총 314B에 토큰당 활성 13.2B, expert 384개 중 8개만 선택하는 구조와 에이전트용 post-training(MOPD)까지. 큰 전문가 조직을 토큰마다 일부만 호출하는 설계를 실무 관점으로 정리."
 draft: true
 refactor_hub: coding-agents-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/ai-coding-agent-design-consistency-2026
 ---
 
 숫자만 보면 또 큰 MoE(전문가 네트워크 여럿을 두고 토큰마다 일부만 호출하는 구조) 모델임. 총 314B parameter, token당 active는 약 13.2B, expert 384개 중 8개만 선택. 근데 [Motif 3 리포트](https://arxiv.org/abs/2608.09119)에서 볼 건 크기가 아니라 방향임. 노골적으로 agentic task를 보고 만든 모델이라는 것. 긴 문맥을 싸게 다루는 attention, expert가 서로 비슷해지지 않게 하는 MoE 안정화, 여러 specialist teacher를 한 모델에 합치는 post-training이 한 묶음으로 들어가 있음. 큰 전문가 조직을 토큰마다 일부만 호출하는 모델이라는 게 내 이해의 핵심임.

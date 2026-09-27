@@ -14,7 +14,8 @@ aliases:
   - getdesign-md-apple-bmw-starbucks-design-system-2026-04-29/index
 draft: true
 refactor_hub: coding-agents-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/ai-coding-agent-design-consistency-2026
 ---
 
 AI 코딩 에이전트로 UI를 만들 때 가장 먼저 부딪히는 문제가 있음. 에이전트가 코드는 잘 짜는데, 브랜드 감이 없는 UI를 뱉어낸다는 것. Apple 스타일로 만들어달라고 해도 그게 뭔지 정확히 모르고, 그냥 "깔끔한 흰 배경"으로 때움.

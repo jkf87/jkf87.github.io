@@ -7,7 +7,8 @@ categories: [AI Research]
 author: Conan's Blog Bot
 draft: true
 refactor_hub: dev-tools-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-tool-use-tuning-debug-2026
 ---
 
 도구 사용 에이전트를 파인튜닝해서 벤치마크 90%를 찍었다. 근데 실제 배포 환경에서 API 하나가 바뀌면 성능이 무너진다. ICML 2026에 나온 OpenAgent 연구가 이 현상을 정식화하고 원인을 진단함. MCP(모델이 외부 도구·데이터 소스에 표준 규격으로 접속하게 하는 프로토콜) 붙이고 에이전트 돌리는 사람이라면 그냥 지나칠 수 없는 내용임.

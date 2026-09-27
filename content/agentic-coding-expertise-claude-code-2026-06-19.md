@@ -18,7 +18,8 @@ aliases:
   - agentic-coding-expertise-claude-code-2026-06-19/index
 draft: true
 refactor_hub: coding-agents-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/ai-coding-agent-trust-operations-2026
 ---
 
 코딩 에이전트가 좋아지면 개발자의 전문성은 덜 중요해질까. 아니면 오히려 더 중요해질까.

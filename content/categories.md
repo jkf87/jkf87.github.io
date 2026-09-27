@@ -62,11 +62,25 @@ LLM 에이전트 보안 논문을 비교해 방어 설계 기준을 정리한 �
 
 - [[posts/llm-agent-security-defense-guide-2026|LLM 에이전트 보안 설계 기준 정리 (2026 논문 7편 비교)]]
 
+## 코딩 에이전트 운영·신뢰 정리
+
+코딩 에이전트 글 14편을 1차 출처 재검증으로 통합한 가이드입니다.
+
+- [[posts/ai-coding-agent-trust-operations-2026|AI 코딩 에이전트 어디까지 믿을 수 있나: 검증·운영 전략 14편 통합 가이드]]
+
+## 코딩 에이전트 디자인 일관성 정리
+
+코딩 에이전트·디자인 글 8편을 1차 출처 재검증으로 통합한 가이드입니다.
+
+- [[posts/ai-coding-agent-design-consistency-2026|AI 코딩 에이전트가 만든 UI가 어딘가 비슷할 때: DESIGN.md·getdesign.md·soul.md 통합 가이드]]
+
 ## 오픈소스 개발 도구 비교
 
 유료 SaaS의 오픈소스 대안 도구를 비교하고 직접 설치·실행한 기록입니다.
 
 - [[posts/open-source-devtools-hands-on-2026|오픈소스로 유료 SaaS를 갈아타도 되나 (지도·음악·실험추적·에이전트 도구 16종 직접 설치해 비교)]]
+
+- [[posts/llm-agent-tool-use-tuning-debug-2026|LLM 에이전트 도구 호출 비용 줄이고 실패 잡는 순서 (측정·훈련·조절·감사·디버깅 10편 통합)]]
 
 ## 사이트 안내
 

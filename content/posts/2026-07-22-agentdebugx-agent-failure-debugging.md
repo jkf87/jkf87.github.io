@@ -13,7 +13,8 @@ categories:
 summary: "LLM 에이전트의 실패 원인을 탐지→귀인→복구→재실행 폐루프로 처리하는 오픈소스 AgentDebugX. 귀인 정확도가 복구율을 2~3배 끌어올린다는 결과를 운영 관점에서 정리함."
 draft: true
 refactor_hub: dev-tools-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-tool-use-tuning-debug-2026
 ---
 
 에이전트 디버깅이 어려운 이유는 하나임. 에러가 보이는 지점과 에러를 만든 지점이 다르다는 것. 최종 답변이 틀렸어도 진짜 원인은 수십 단계 앞의 누락된 제약 조건이나 잘못된 핸드오프일 수 있음. AgentDebugX는 이 간극을 메우는 폐루프 디버깅 프레임워크임.

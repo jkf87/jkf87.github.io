@@ -10,7 +10,8 @@ tags:
 description: "Google Labs Code의 DESIGN.md는 색상값 몇 개를 적는 파일이 아니다. 코딩 에이전트가 브랜드의 시각 언어를 세션과 도구를 넘어 유지하도록 만드는, 디자인 시스템용 AGENTS.md에 가깝다."
 draft: true
 refactor_hub: coding-agents-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/ai-coding-agent-design-consistency-2026
 ---
 
 원본: [google-labs-code/design.md](https://github.com/google-labs-code/design.md)  
