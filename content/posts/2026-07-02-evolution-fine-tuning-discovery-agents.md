@@ -14,7 +14,8 @@ sources:
     url: "https://arxiv.org/abs/2606.29082"
 draft: true
 refactor_hub: harness-self-improve-04
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-optimization-policy-design-guide-2026
 ---
 
 에이전트로 최적화 과제를 돌릴 때마다 새 문제는 처음부터 다시 풀어야 했음. 진화 탐색으로 얻은 경험이 모델에 남지 않으니까. Evolution Fine-Tuning(EFT)은 그 궤적을 학습 데이터로 바꿔서 소형 모델 안에 경험을 박아넣는 방법임.

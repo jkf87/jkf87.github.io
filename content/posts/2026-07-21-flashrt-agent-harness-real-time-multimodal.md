@@ -5,7 +5,8 @@ description: "코딩 에이전트를 구조화된 워크플로(IR 변환→분�
 tags: ["agent", "harness", "LLM", "automation", "serving", "multimodal", "optimization"]
 draft: true
 refactor_hub: harness-self-improve-04
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-optimization-policy-design-guide-2026
 ---
 
 "에이전트한테 시키면 되겠네"라고 말은 쉬운데, 그냥 시키면 안 됨. FlashRT는 같은 에이전트라도 하네스 구조에 따라 결과가 극적으로 갈린다는 걸 인프라 최적화로 증명함. 하네스 설계자에게 그대로 적용되는 교훈이라 정리함.
