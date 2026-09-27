@@ -19,7 +19,8 @@ aliases:
   - gitnexus-knowledge-graph-code-agents-2026-04-27/index
 draft: true
 refactor_hub: coding-agents-05
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/ai-coding-agent-codebase-context-2026
 ---
 
 요즘 Cursor, Claude Code, Codex 같은 코딩 에이전트로 일하다 보면 비슷한 좌절을 만남. 작은 함수 하나 고치라고 시켰는데 그게 다른 파일의 콜체인을 깨버리는 일임. 잘 만든 모델이라도 그럼.

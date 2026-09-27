@@ -16,7 +16,8 @@ aliases:
   - understand-anything-codebase-knowledge-graph-2026-05-26/index
 draft: true
 refactor_hub: coding-agents-05
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/ai-coding-agent-codebase-context-2026
 ---
 
 새 팀에 합류했다. 코드베이스가 20만 줄. 어디서부터 읽어야 할지 모르겠다. — 이 경험, 개발자라면 누구나 해봤을 거다.

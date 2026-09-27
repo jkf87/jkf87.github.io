@@ -9,7 +9,8 @@ tags:
 description: "Anthropic이 발표한 NLA(Natural Language Autoencoders). AI의 내면 활성화를 자연어로 번역하는 기술. 연구진에게 직접 물어봤다."
 draft: true
 refactor_hub: coding-agents-05
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/ai-coding-agent-codebase-context-2026
 ---
 
 ![NLA 소개 영상](https://youtu.be/j2knrqAzYVY)

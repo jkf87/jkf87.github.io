@@ -4,7 +4,8 @@ date: 2026-05-24
 tags: [claude-code, plugin, anthropic, ai-coding, devtools]
 draft: true
 refactor_hub: coding-agents-05
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/ai-coding-agent-codebase-context-2026
 ---
 
 Claude Code의 플러그인 생태계가 어느덧 꽤 흥미로운 수준에 도달했습니다. Anthropic이 직접 운영하는 **claude-plugins-official** 리포지토리가 2,000스타를 돌파했고, 내부 플러그인 37개와 외부 파트너 플러그인 14개가 등록된 정식 디렉토리가 됐습니다. 이걸 어디서부터 어떻게 써야 할지, 인터뷰 형식으로 정리해봤습니다.
