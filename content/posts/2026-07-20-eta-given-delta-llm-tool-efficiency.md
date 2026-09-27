@@ -10,7 +10,8 @@ paper_title: "Eta Given Delta: Defining LLM Tool Efficiency With Marginal Tool U
 paper_authors: ["Kottamasu et al."]
 draft: true
 refactor_hub: dev-tools-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-tool-use-tuning-debug-2026
 ---
 
 에이전트 정확도가 같아도 도구를 10번 호출한 것과 3번에 끝낸 건 다른 이야기임. 근데 어떤 호출이 도움이 됐는지 잰 방법이 없었음. 이 논문이 그 측정기를 처음으로 정의함. 툴킷 정리를 결정할 근거가 필요한 사람에게 바로 쓸 수 있어서 정리함.

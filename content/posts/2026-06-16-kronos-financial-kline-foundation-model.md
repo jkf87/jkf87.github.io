@@ -6,7 +6,8 @@ tags: ["AI", "금융", "Kronos", "기반모델", "캔들스틱", "시계열", "�
 categories: ["AI 리서치 리뷰"]
 draft: true
 refactor_hub: dev-tools-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-tool-use-tuning-debug-2026
 ---
 
 주가 차트는 수십 년째 같은 형식으로 기록되고 있음. 시가·고가·저가·종가·거래량, 이 다섯 숫자의 반복임. 청화대 연구진이 이걸 토큰으로 쪼개서 GPT처럼 사전학습한 모델을 공개했음. Kronos임. 내가 볼 때 이건 "주가 예측기"라기보다, 반복 구조를 가진 업무 데이터에 언어모델 파이프라인을 이식할 수 있다는 증명 사례임.

@@ -68,6 +68,8 @@ LLM 에이전트 보안 논문을 비교해 방어 설계 기준을 정리한 �
 
 - [[posts/open-source-devtools-hands-on-2026|오픈소스로 유료 SaaS를 갈아타도 되나 (지도·음악·실험추적·에이전트 도구 16종 직접 설치해 비교)]]
 
+- [[posts/llm-agent-tool-use-tuning-debug-2026|LLM 에이전트 도구 호출 비용 줄이고 실패 잡는 순서 (측정·훈련·조절·감사·디버깅 10편 통합)]]
+
 ## 사이트 안내
 
 - [[about|운영자 소개]]
