@@ -11,7 +11,8 @@ tags:
 description: 애플, BMW, 스타벅스 디자인을 명령 하나로 AI 에이전트에 주입. 유명 브랜드 DESIGN.md를 모아둔 라이브러리 getdesign.md 소개.
 draft: true
 refactor_hub: coding-agents-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/ai-coding-agent-design-consistency-2026
 ---
 
 # getdesign.md — AI 코딩 에이전트에 유명 브랜드 디자인을 한 줄로 주입하는 법

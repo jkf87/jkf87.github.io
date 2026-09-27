@@ -16,7 +16,8 @@ aliases:
   - /posts/ai-first-design-yc-eve-bouffard-2026-07-30
 draft: true
 refactor_hub: coding-agents-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/ai-coding-agent-design-consistency-2026
 ---
 
 ![디자이너가 음성으로 의도를 말하고, 에이전트가 Paxel, SOTA Zine, machine-readable page, Startup School 브랜딩을 만들어내는 흐름. 이 글의 핵심은 “AI 디자인”이 이미지 생성이 아니라 작업 단위의 재구성이라는 점이다.](/images/ai-first-design-yc-eve-bouffard-2026-07-30/hero.svg)
