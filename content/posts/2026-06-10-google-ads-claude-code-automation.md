@@ -5,7 +5,8 @@ tags: ["Google Ads", "Claude Code", "자동화", "디지털마케팅", "광고�
 categories: ["AI 실전 활용"]
 draft: true
 refactor_hub: coding-agents-03
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/ai-coding-agent-stack-guide-2026
 ---
 
 "통장에 10,000달러가 있었어요. 그게 9,000, 8,000, 7,000... 월세가 나가니까 6,000에서 4,000, 3,000. 솔직히 겁날 정도였죠. 추가 수입도 없고, 남은 기간이 2주."

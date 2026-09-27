@@ -74,6 +74,12 @@ LLM 에이전트 보안 논문을 비교해 방어 설계 기준을 정리한 �
 
 - [[posts/ai-coding-agent-design-consistency-2026|AI 코딩 에이전트가 만든 UI가 어딘가 비슷할 때: DESIGN.md·getdesign.md·soul.md 통합 가이드]]
 
+## 코딩 에이전트 비용·통제 구조 정리
+
+코딩 에이전트 글 10편을 기초·실행 환경·실전·통제 구조로 통합한 가이드입니다.
+
+- [[posts/ai-coding-agent-stack-guide-2026|AI 코딩 에이전트 비용 아끼고 신뢰까지 확보하는 법: 로컬 LLM·free-claude-code·LLM-as-Code 비교]]
+
 ## 오픈소스 개발 도구 비교
 
 유료 SaaS의 오픈소스 대안 도구를 비교하고 직접 설치·실행한 기록입니다.

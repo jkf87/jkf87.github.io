@@ -12,7 +12,8 @@ tags:
 description: localhost:8082 프록시로 Claude Code의 Anthropic API 호출을 가로채 NVIDIA NIM 무료 티어, OpenRouter, DeepSeek, LM Studio, llama.cpp로 우회시킴. 하루 +3,975 스타.
 draft: true
 refactor_hub: coding-agents-03
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/ai-coding-agent-stack-guide-2026
 ---
 
 1. 어제부터 GitHub 트렌딩 1위로 free-claude-code가 올라옴. 누적 10,999스타. 하루에만 +3,975. 한국 시간 2026년 4월 26일 기준임.

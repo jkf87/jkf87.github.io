@@ -12,7 +12,8 @@ tags:
 description: "Stanford HAI의 AI Index 메인 페이지와 2026 리포트 안내를 바탕으로, 중요한 내용만 발췌해 한국어로 요약한 블로그 포스트."
 draft: true
 refactor_hub: coding-agents-03
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/ai-coding-agent-stack-guide-2026
 ---
 
 ![AI Index 2026 메인 커버](./images/stanford-ai-index-2026-report-key-points-korean-summary/cover.jpg)

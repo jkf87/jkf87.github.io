@@ -16,7 +16,8 @@ source: https://arxiv.org/abs/2606.15874
 project: https://arxiv.org/html/2606.15874v1
 draft: true
 refactor_hub: coding-agents-03
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/ai-coding-agent-stack-guide-2026
 ---
 
 ## 한 줄 요약
