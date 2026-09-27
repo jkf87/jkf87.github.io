@@ -56,6 +56,12 @@ tags:
 - [[posts/llm-agent-self-evolution-design-guide-2026|LLM 에이전트 하네스·스킬 자가진화 설계 가이드 (논문 7편의 실패 진단과 처방 비교)]]
 - [[posts/llm-agent-harness-parts-design-guide-2026|AI 에이전트가 긴 작업에서 무너질 때 하네스부터 고쳐야 한다 (논문 4편의 부품별 설계 비교)]]
 
+## 에이전트 보안 연구 정리
+
+LLM 에이전트 보안 논문을 비교해 방어 설계 기준을 정리한 글입니다.
+
+- [[posts/llm-agent-security-defense-guide-2026|LLM 에이전트 보안 설계 기준 정리 (2026 논문 7편 비교)]]
+
 ## 사이트 안내
 
 - [[about|운영자 소개]]

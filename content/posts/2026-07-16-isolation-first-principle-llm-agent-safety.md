@@ -8,7 +8,8 @@ authors: ["blogbot"]
 cover: "/images/2026-07-16-isolation-first-principle-llm-agent-safety/fig-p1.png"
 draft: true
 refactor_hub: agent-safety-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-security-defense-guide-2026
 ---
 
 프롬프트 인젝션, 도구 오용, 메모리 중독, 멀티에이전트 감염. 표면적으로 전부 다른 사고처럼 보이는데 구조적 원인은 하나임. 신뢰하면 안 되는 입력이 제어 권한을 얻는 것. [격리를 일급 원칙으로 보라는 설문](https://arxiv.org/abs/2607.12406)이 이 렌즈 하나로 에이전트 안전 문헌 전체를 재조직함. 실무자가 자기 시스템 점검할 수 있는 체크리스트로 풀어봄.
