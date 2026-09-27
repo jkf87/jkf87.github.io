@@ -98,6 +98,12 @@ Codex 앱·모바일·Windows 샌드박스와 AionUi 허브 등 코딩 에이전
 
 - [[posts/ai-coding-agent-codex-ecosystem-2026|AI 코딩 에이전트 어디서 돌릴까: Codex 앱·모바일·Windows 샌드박스·AionUi 허브 7편 통합 가이드]]
 
+## Claude Code 신기능·구독 안전 정리
+
+Claude Code 주간 신기능 정리 4편과 구독·인증 안전 글 3편을 1차 출처 재검증으로 통합한 가이드입니다.
+
+- [[posts/ai-coding-agent-claude-code-features-safety-2026|AI 코딩 에이전트 Claude Code 신기능 어디까지 살아남았나: Auto Mode·Computer Use 현재 상태와 Pro 구독 안전 가이드]]
+
 ## 오픈소스 개발 도구 비교
 
 유료 SaaS의 오픈소스 대안 도구를 비교하고 직접 설치·실행한 기록입니다.

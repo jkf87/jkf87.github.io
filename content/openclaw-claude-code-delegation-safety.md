@@ -4,7 +4,8 @@ date: 2026-04-20
 tags: [claude-code, openclaw, anthropic, tos]
 draft: true
 refactor_hub: coding-agents-07
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/ai-coding-agent-claude-code-features-safety-2026
 ---
 
 공식 Claude Code CLI 단독 사용은 안전합니다.  
