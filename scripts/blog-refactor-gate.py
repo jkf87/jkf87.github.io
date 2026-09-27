@@ -30,6 +30,15 @@ BANNED = r"혈압|혈당|당화|콜레스테롤|지방간|갑상선|건강검진
 SINGLE_SOURCE_HEAD = r"^\s*(?:[-*]\s*)?(?:\*\*)?(?:원문|원본|Source)(?:\*\*)?\s*[:：]"
 ARXIV = r"(?<!\d)(2\d{3}\.\d{4,5})(?!\d)"
 
+# 2026-09-27 추가. 논문 글에서 실제로 저지른 실패 세 가지를 기계로 막는다.
+#  1) 초록만 읽고 씀 → 저자 코드·데이터를 찾아봤다는 흔적을 요구
+#  2) 논문의 기여를 자체 발견으로 서술 → 신규성 주장 시 확인 기록을 요구
+#  3) 직접 만든 평가 문항의 라벨 누수 → 누수를 따져봤다는 서술을 요구
+CODE_HOST = r"github\.com|gitlab\.com|huggingface\.co|codeberg\.org|zenodo\.org"
+NO_CODE = r"코드가 공개되지 않|코드·데이터 미공개|공개된 코드가 없|저장소가 없"
+SELFMADE = r"제가 만든 문항|직접 만든 문항|합성 문항|합성 데이터|제가 지어낸|직접 만든 데이터셋"
+LEAK = r"라벨 누수|누수|leak|정답이 새|라벨을 인코딩"
+
 
 def split_fm(t):
     if t.startswith("---"):
@@ -127,6 +136,34 @@ def main():
         p = os.path.normpath(os.path.join(os.path.dirname(a.post), u)) if not u.startswith("/") else os.path.join(a.site_root, "content", u.lstrip("/"))
         if not os.path.isfile(p):
             fails.append(f"이미지 파일 없음: {u}")
+
+    # 논문을 인용하는 글은 두 가지를 frontmatter에 적어야 한다.
+    # 링크가 걸려 있다고 읽은 것이 아니고, 신규성 오귀속은 특정 단어로 드러나지 않는다.
+    # 그래서 트리거가 아니라 무조건 요구한다. 진술 자체가 빠뜨릴 수 없는 단계가 된다.
+    # 규칙 신설일. 이전 글에 소급하면 통과용 진술을 지어내게 되므로 이후 글에만 적용한다.
+    ATTEST_FROM = "2026-09-27"
+    if re.search(ARXIV, body) and (fm_get(fm, "date") or "9999") >= ATTEST_FROM:
+        sr = fm_get(fm, "sources_read")
+        if not sr:
+            fails.append("논문 인용 글에 sources_read 없음 "
+                         "(초록/본문/부록/코드/데이터 중 실제로 읽은 것을 적을 것)")
+        elif not re.search(r"본문|전문|full", sr):
+            fails.append(f"sources_read가 본문 읽기를 밝히지 않음: {sr[:60]!r} "
+                         "(초록만 읽고 쓰지 말 것)")
+        elif not re.search(CODE_HOST + r"|코드|code|데이터|없", sr):
+            fails.append("sources_read에 저자 코드·데이터 확인 여부가 없음 "
+                         "(확인했는데 없으면 '코드 없음'이라고 적을 것)")
+
+        nv = fm_get(fm, "novelty_vs_paper")
+        if not nv:
+            fails.append("논문 인용 글에 novelty_vs_paper 없음 "
+                         "(논문 기여 항목과 대조해, 어디까지가 논문 것이고 무엇이 내 것인지 한 줄로)")
+        elif len(nv) < 20:
+            fails.append(f"novelty_vs_paper가 너무 짧음({len(nv)}자): {nv!r}")
+
+    # 직접 만든 평가 문항을 쓰면 라벨 누수를 따져야 한다
+    if re.search(SELFMADE, body) and not re.search(LEAK, body):
+        fails.append("직접 만든 평가 문항을 썼는데 라벨 누수를 다루지 않음")
 
     lines = [l for l in body.splitlines() if l.strip()]
     quoted = sum(len(l) for l in lines if l.lstrip().startswith(">"))

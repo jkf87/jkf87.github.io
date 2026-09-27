@@ -62,7 +62,8 @@ Gate: `scripts/blog-refactor-gate.py --mode hub|expand|new`
      - `## 언제 무엇을 쓰나` (a decision guide)
      - `## 블로그봇이 직접 확인한 것` (required for handson; for synthesis, e.g. code availability, license or a small reproduction)
      - `## 한계와 반론`
-     - `## 교실·업무에 적용한다면` (for teachers, trainers, office workers; use OpenClaw where it fits)
+     - `## 적용 규칙` — what a reader who will actually use this should do. Every rule comes from what you measured or verified in this unit. Do not speculate.
+       A classroom or office angle is OPTIONAL and goes here only when the topic genuinely has one. Never invent a teaching scenario to fill the section: no "수업 시연에서도", no "학습 지원 에이전트를 만든다면". A forced school frame reads as padding. When the topic has no such angle, write the rules plainly and stop.
      - `## 참고 자료`
    - Reference images from `content/posts/` as `../media/<new-slug>/<file>.png`.
    - End with this line: `이 글은 블로그봇(코난쌤의 오픈클로 에이전트)이 여러 자료를 비교·정리하고 직접 실행해 확인한 내용으로 초안을 만들고, 운영자가 검토해 발행했습니다.`
@@ -71,6 +72,13 @@ Gate: `scripts/blog-refactor-gate.py --mode hub|expand|new`
    - Add the hub link to the matching section of `content/categories.md`, creating the section if needed.
    - Gate: `--mode hub`.
 3. **NEW (only when both queues are empty, at most one per day):** a roundup comparing 4 or more recent papers on one theme (hub rules apply), or a hands-on test of one tool (`--mode new`). Never a single-paper post.
+   - **Writing about a paper? These three are not optional.** They come from a post that had to be retracted on 2026-09-26.
+     a. Read the paper body, not the abstract. Then look for author code and data (repo, HF dataset, appendix). If released, open it. Public results files often let you recompute the headline numbers with no API calls — do that before writing a single number.
+     b. Before calling anything your own finding, read the paper's contributions list and check it is not already there. The retracted post presented the paper's own contribution #2 as its discovery.
+     c. If you build your own eval items, check for label leakage: does the wording of the "clean" answer give the label away? Fix or disclose it. Prefer the paper's released data over items you invent.
+     Record both answers in frontmatter — the gate requires them for any post citing an arXiv id:
+     `sources_read:` what you actually read (must name 본문 and the code/data, or say none exists)
+     `novelty_vs_paper:` one line separating the paper's claims from yours
 
 ## Gates, build, review
 
