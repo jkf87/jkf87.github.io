@@ -10,7 +10,8 @@ authors: ["Ruhan Wang", "Yucheng Shi", "Zongxia Li", "Haitao Mi", "Dongruo Zhou"
 affiliations: ["Tencent HY LLM Frontier", "Indiana University", "University of Maryland", "University of Georgia", "National University of Singapore"]
 draft: true
 refactor_hub: harness-self-improve-12
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-harness-optimization-benchmark-guide-2026
 ---
 
 하네스를 고쳐본 사람은 앎. 어려운 건 코드를 못 짜는 게 아니라 어디를 고쳐야 하는지 찾는 것임. "파일 삭제 전에 확인을 넣어줘" 하나가 프롬프트 생성, 도구 래퍼, 권한 정책, 상태 관리에 흩어져 있으니까. Harness Handbook은 이걸 행동 중심 지도로 푸는 접근임.

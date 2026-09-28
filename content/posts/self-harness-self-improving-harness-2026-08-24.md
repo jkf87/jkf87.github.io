@@ -11,7 +11,8 @@ tags:
   - loop
 draft: true
 refactor_hub: harness-self-improve-12
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-harness-optimization-benchmark-guide-2026
 ---
 
 모델 가중치를 고정한 채 에이전트가 자기 실행 데이터를 근거로 자기 하네스를 반복 개선하는 루프가 나옴. Shanghai AI Lab의 [Self-Harness](https://arxiv.org/abs/2606.09498). 하네스 자동 개선을 검토 중인 사람에게 절차가 참고가 돼서 정리함.

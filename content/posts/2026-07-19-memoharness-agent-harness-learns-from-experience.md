@@ -7,7 +7,8 @@ description: "MemoHarness는 프롬프트·도구·오케스트레이션 등 하
 source_url: "https://arxiv.org/abs/2607.14159"
 draft: true
 refactor_hub: harness-self-improve-12
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-harness-optimization-benchmark-guide-2026
 ---
 
 같은 모델, 같은 도구인데 프롬프트 구성과 오케스트레이션만 바꾸면 에이전트 성공률이 수십 포인트 움직임. 실무자라면 다 겪어본 일인데, 대부분의 최적화 연구는 프롬프트 튜닝에만 머물렀음. MemoHarness는 그 관심을 실행 환경 전체, 즉 하네스로 옮김. 하네스를 고정 구성이 아니라 경험으로 진화하는 학습 대상으로 취급한 것임.

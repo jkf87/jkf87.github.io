@@ -12,7 +12,8 @@ aliases:
   - /agentcompass
 draft: true
 refactor_hub: harness-self-improve-12
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-harness-optimization-benchmark-guide-2026
 ---
 
 에이전트 벤치마크 점수를 볼 때마다 드는 의심 하나. "이 점수, 모델 실력인가 하네스(에이전트를 실제로 돌리는 실행틀 — 프롬프트·도구·루프 설계 전체) 실력인가." AgentCompass(모델·하네스·실행 환경을 분리해 에이전트를 평가하는 통합 인프라)가 그 의심을 데이터로 확인해 줬음. 같은 모델인데 하네스를 바꾸면 점수가 유의미하게 움직임.

@@ -13,7 +13,8 @@ source_url: https://arxiv.org/abs/2607.02440
 description: "EvoPolicyGym은 코딩 에이전트가 RL 환경 피드백만 보고 실행 가능한 정책 코드를 반복적으로 개선하는 능력을 평가하는 최초의 벤치마크다. GPT-5.5가 16개 환경 전체에서 Top-2를 달성하며 압도적 1위."
 draft: true
 refactor_hub: harness-self-improve-12
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-harness-optimization-benchmark-guide-2026
 ---
 
 ## "에이전트가 코드를 수정하며 스스로 학습한다 — 누가 제일 잘하나?"

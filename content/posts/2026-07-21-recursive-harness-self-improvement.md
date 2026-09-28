@@ -19,7 +19,8 @@ cover:
   relative: true
 draft: true
 refactor_hub: harness-self-improve-12
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-harness-optimization-benchmark-guide-2026
 ---
 
 에이전트 성능은 모델만큼 실행 환경, 즉 하네스가 결정함. 근데 하네스 튜닝은 아직도 사람 수작업임. 시스템 프롬프트 고치고, 서브 에이전트 배치 바꾸고, 결과 전달 규약 손보는 일을 반복함. Sakana AI가 이 작업을 자동화한 RHI(Recursive Harness Self-Improvement)를 냈음. 결론부터면 하네스를 스스로 개정하게 만드니 몇 번 만에 비싼 추론 설정보다 싸게 좋은 성적이 나왔다는 것임.
