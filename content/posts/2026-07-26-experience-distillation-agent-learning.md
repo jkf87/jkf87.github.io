@@ -15,7 +15,8 @@ authors:
   - jkf87
 draft: true
 refactor_hub: harness-self-improve-18
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-experience-learning-methods-2026
 ---
 
 에이전트에게 in-context learning(프롬프트에 과거 예시를 실어 주는 것만으로 성능이 오르는 방식)은 확실한 이득임. 과거 시행착오를 컨텍스트에 넣어주면 이전 실수를 피함. 근데 컨텍스트가 사라지면 이득도 사라짐. Experience Distillation은 이걸 추가 환경 상호작용 없이 가중치에 묻어내는 방법임.

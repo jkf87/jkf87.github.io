@@ -16,7 +16,8 @@ authors:
 description: "하네스의 제어 결정(관찰·도구 호출·검증·제출)을 MDP로 정식화하고 기존 롤아웃 버퍼에서 오프라인 RL로 학습함. 제출 전 검증 행동이 전 도메인에서 증가했고 결과 개선은 버퍼 품질에 달림. 하네스 제어 학습의 실무 교훈을 정리함."
 draft: true
 refactor_hub: harness-self-improve-18
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-experience-learning-methods-2026
 ---
 
 source: arXiv:2607.05458

@@ -8,7 +8,8 @@ source_url: "https://arxiv.org/abs/2607.26784"
 authors: ["Zhejiang University", "NUS", "SJTU", "Meituan"]
 draft: true
 refactor_hub: harness-self-improve-18
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-experience-learning-methods-2026
 ---
 
 에이전트 강화학습은 각 작업을 독립 에피소드로 취급해서 경험이 사라짐. 비슷한 작업에 공통 해결 패턴이 있는데도 무시됨. SkillRise가 "작업을 풀면서 동시에 다음 작업에 쓸 스킬을 정리하는 단일 정책"을 제안했음. 원문은 [arXiv:2607.26784](https://arxiv.org/abs/2607.26784).

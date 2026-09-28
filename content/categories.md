@@ -69,6 +69,7 @@ tags:
 - [[posts/llm-agent-runtime-failure-repair-harness-2026|LLM 에이전트 실행 중 실패를 잡고 고치는 하네스: 감시·적응·수리 8편 비교]]
 
 - [[posts/llm-agent-rsi-reality-check-2026|LLM 에이전트 재귀적 자기개선, 어디까지 실제인가 — 서베이 2편·Meta^n·Frontis-MA1 비교]]
+- [[posts/llm-agent-experience-learning-methods-2026|LLM 에이전트 경험 학습 설계 가이드: 스킬 증류·강화학습·하네스 제어 21편 비교 (arXiv 18편 재검증)]]
 ## 에이전트 보안 연구 정리
 
 LLM 에이전트 보안 논문을 비교해 방어 설계 기준을 정리한 글입니다.

@@ -5,7 +5,8 @@ tags: [agent, LLM, harness, skill, RL, evaluation]
 description: "경험에서 뽑은 스킬을 실행 가능한 Program Function으로 감싸 발동 조건과 개입 방식을 코드로 명시한 HASP. 프롬프트 주입 대비 30점 차이가 났고 필터 없는 스킬 진화는 24점을 날렸다."
 draft: true
 refactor_hub: harness-self-improve-18
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-experience-learning-methods-2026
 ---
 
 과거 경험에서 뽑은 "스킬"을 프롬프트에 넣는 방식이 실전에서 무시된다는 문제를 정면으로 다룬 논문이 나옴. 결과 차이가 극단적이라 정리함. 원문은 [arXiv:2605.17734](https://arxiv.org/abs/2605.17734).
