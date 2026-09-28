@@ -8,7 +8,8 @@ source_url: "https://ruhan-wang.github.io/Harness-Handbook/"
 paper_url: "https://arxiv.org/abs/2607.13285"
 draft: true
 refactor_hub: harness-self-improve-13
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-harness-native-rl-guide-2026
 ---
 
 에이전트 하네스를 수정할 때, 사용자는 보통 이렇게 말한다. “이 명령에만 임시 환경변수를 넣게 해줘.” “파일 삭제 전에는 꼭 확인하게 해줘.” “이 도구는 승인 없이는 실행하지 말아줘.” 요구는 한 문장이다. 그런데 저장소를 열면 이 한 문장은 스키마, 프롬프트, 도구 설명, 실행 래퍼, 상태 관리, 테스트로 흩어진다.
