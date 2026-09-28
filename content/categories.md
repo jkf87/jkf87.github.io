@@ -70,6 +70,7 @@ tags:
 
 - [[posts/llm-agent-rsi-reality-check-2026|LLM 에이전트 재귀적 자기개선, 어디까지 실제인가 — 서베이 2편·Meta^n·Frontis-MA1 비교]]
 - [[posts/llm-agent-experience-learning-methods-2026|LLM 에이전트 경험 학습 설계 가이드: 스킬 증류·강화학습·하네스 제어 21편 비교 (arXiv 18편 재검증)]]
+- [[posts/llm-agent-harness-self-evolution-evidence-2026|LLM 에이전트 하네스 자가진화, 진짜 효과인지 확인하는 법: 검증·회귀·전이 10편 비교]]
 ## 에이전트 보안 연구 정리
 
 LLM 에이전트 보안 논문을 비교해 방어 설계 기준을 정리한 글입니다.
