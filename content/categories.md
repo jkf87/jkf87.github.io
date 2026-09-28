@@ -50,6 +50,7 @@ tags:
 - [[posts/llm-agent-experience-learning-2026|LLM 에이전트가 경험으로 배우게 하는 법 (파인튜닝 없는 학습 루프 8편 비교)]]
 
 ## 에이전트 자가진화·하네스 연구 정리
+- [[posts/llm-agent-harness-nooa-vs-prime-agent-2026|모델 그대로 두고 에이전트 성능 올리는 하네스 설계: NOOA와 Prime Agent 비교]]
 
 스킬·하네스가 스스로 개선되는 루프를 논문끼리 비교해 설계 기준으로 묶은 글입니다.
 
