@@ -137,3 +137,9 @@ Claude Code 주간 신기능 정리 4편과 구독·인증 안전 글 3편을 1�
 스킬(SKILL.md) 표준과 저장소 9곳을 직접 확인해 비교한 글입니다.
 
 - [[posts/ai-agent-skills-ecosystem-guide-2026|AI 코딩 에이전트 스킬, 어디서 가져와야 하나 — 저장소 9곳 직접 확인 비교]]
+
+## 하네스 verifier·루브릭 설계 정리
+
+암묵지(taste)를 검증 루브릭으로 바꾸는 절차를 다룬 옛 글 4편을 1차 출처 대조와 WCAG 명암비 재계산으로 통합한 가이드입니다.
+
+- [[posts/ai-agent-verifier-rubric-guide-2026|AI 에이전트 결과물이 '이건 아닌데'일 때: taste를 검증 루브릭으로 바꾸는 하네스 verifier 설계법]]

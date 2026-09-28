@@ -4448,8 +4448,8 @@
     "reason": "중복(같은 주제 재작성) — 더 긴 1편만 남김"
    }
   ],
-  "status": "queued",
-  "hub_slug": null
+  "status": "in-review",
+  "hub_slug": "posts/ai-agent-verifier-rubric-guide-2026"
  },
  {
   "hub_id": "harness-self-improve-17",
