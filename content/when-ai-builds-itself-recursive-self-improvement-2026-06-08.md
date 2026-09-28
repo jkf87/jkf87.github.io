@@ -12,7 +12,8 @@ source: anthropic-institute
 source_url: https://www.anthropic.com/institute/recursive-self-improvement
 draft: true
 refactor_hub: harness-self-improve-17
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-rsi-reality-check-2026
 ---
 
 "AI가 AI를 만든다" — 더 이상 SF가 아니다. Anthropic의 내부 데이터가 그것을 증명한다.

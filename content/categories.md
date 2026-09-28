@@ -68,6 +68,7 @@ tags:
 - [[posts/llm-agent-self-improvement-gates-2026|LLM 에이전트 자기개선은 어디서 고장 나나 — 검증 게이트 논문 5편 비교]]
 - [[posts/llm-agent-runtime-failure-repair-harness-2026|LLM 에이전트 실행 중 실패를 잡고 고치는 하네스: 감시·적응·수리 8편 비교]]
 
+- [[posts/llm-agent-rsi-reality-check-2026|LLM 에이전트 재귀적 자기개선, 어디까지 실제인가 — 서베이 2편·Meta^n·Frontis-MA1 비교]]
 ## 에이전트 보안 연구 정리
 
 LLM 에이전트 보안 논문을 비교해 방어 설계 기준을 정리한 글입니다.
