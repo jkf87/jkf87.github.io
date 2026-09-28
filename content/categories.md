@@ -58,6 +58,7 @@ tags:
 - [[posts/llm-agent-skill-lifecycle-guide-2026|LLM 에이전트 스킬은 쌓기만 하면 망한다 (생성·검증·압축·라우팅·보안 16편 재검증)]]
 - [[posts/llm-agent-safety-harness-evolution-2026|LLM 에이전트 보상 해킹과 안전 가드레일 어떻게 막나 (검증 한계·하네스 공진화 6편 총정리)]]
 - [[posts/llm-agent-optimization-policy-design-guide-2026|LLM 에이전트 최적화 루프 설계 기준: 탐색 정책을 하네스·에이전트·모델 가중치 어디에 둘까 (논문 5편 비교)]]
+- [[posts/llm-agent-environment-coevolution-guide-2026|LLM 에이전트 강화학습이 정체될 때는 환경부터: 에이전트·환경 공진화 접근 8편 비교]]
 - [[posts/llm-agent-harness-efficiency-adaptation-2026|LLM 에이전트 하네스가 성능·비용을 결정한다: 토큰 절감부터 161일 자기진화까지 13편 비교]]
 - [[posts/llm-agent-self-improvement-evaluation-2026|LLM 에이전트 자기 개선의 조건: 장기 실행·의도 전환·채점 오류를 잰 논문 11편 비교]]
 

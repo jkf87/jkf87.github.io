@@ -2444,7 +2444,7 @@
     "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/ai-coding-agent-trust-operations-2026"
  },
  {
@@ -2510,7 +2510,7 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/ai-coding-agent-design-consistency-2026"
  },
  {
@@ -2588,7 +2588,7 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/ai-coding-agent-stack-guide-2026"
  },
  {
@@ -2690,7 +2690,7 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/ai-coding-agent-failure-points-2026"
  },
  {
@@ -2756,7 +2756,7 @@
     "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/ai-coding-agent-codebase-context-2026"
  },
  {
@@ -2816,7 +2816,7 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/ai-coding-agent-codex-ecosystem-2026"
  },
  {
@@ -2876,7 +2876,7 @@
     "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/ai-coding-agent-claude-code-features-safety-2026"
  },
  {
@@ -2990,7 +2990,7 @@
     "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/open-source-devtools-hands-on-2026"
  },
  {
@@ -3068,7 +3068,7 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/llm-agent-tool-use-tuning-debug-2026"
  },
  {
@@ -3428,7 +3428,7 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/llm-agent-skill-lifecycle-guide-2026"
  },
  {
@@ -3482,7 +3482,7 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/llm-agent-harness-attack-surface-2026"
  },
  {
@@ -3536,7 +3536,7 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/llm-agent-safety-harness-evolution-2026"
  },
  {
@@ -3584,7 +3584,7 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/llm-agent-optimization-policy-design-guide-2026"
  },
  {
@@ -3878,8 +3878,8 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "queued",
-  "hub_slug": null
+  "status": "in-review",
+  "hub_slug": "posts/llm-agent-environment-coevolution-guide-2026"
  },
  {
   "hub_id": "harness-self-improve-09",
@@ -5672,7 +5672,7 @@
     "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/openclaw-2026-spring-updates-summary"
  },
  {
@@ -5738,7 +5738,7 @@
     "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/openclaw-2026-mid-spring-updates-guide"
  },
  {
