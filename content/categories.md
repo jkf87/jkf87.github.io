@@ -62,6 +62,7 @@ tags:
 - [[posts/llm-agent-harness-efficiency-adaptation-2026|LLM 에이전트 하네스가 성능·비용을 결정한다: 토큰 절감부터 161일 자기진화까지 13편 비교]]
 - [[posts/llm-agent-self-improvement-evaluation-2026|LLM 에이전트 자기 개선의 조건: 장기 실행·의도 전환·채점 오류를 잰 논문 11편 비교]]
 - [[posts/llm-agent-harness-verification-design-2026|LLM 에이전트 하네스에 검증을 심는 설계: 반증 가능한 계획·세계 모델·골 드리프트 5편 비교]]
+- [[posts/llm-agent-runtime-failure-repair-harness-2026|LLM 에이전트 실행 중 실패를 잡고 고치는 하네스: 감시·적응·수리 8편 비교]]
 
 ## 에이전트 보안 연구 정리
 
