@@ -15,7 +15,8 @@ aliases:
   - /posts/google-stitch-skills-agent-design-2026-07-12
 draft: true
 refactor_hub: harness-self-improve-15
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/ai-agent-skills-ecosystem-guide-2026
 ---
 
 ![Stitch Skills 워크플로우: 프롬프트 → 디자인 → 코드 → 실행 앱, 4컷 만화](/images/google-stitch-skills-agent-design-2026-07-12/stitch-skills-comic.png)

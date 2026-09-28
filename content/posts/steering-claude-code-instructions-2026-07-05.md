@@ -13,7 +13,8 @@ tags:
 coverImage: /images/steering-claude-code-instructions-2026-07-05/hero.jpg
 draft: true
 refactor_hub: harness-self-improve-15
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/ai-agent-skills-ecosystem-guide-2026
 ---
 
 Anthropic이 Claude Code에 지시 넣는 법을 정리했다. 방법이 일곱 가지다.

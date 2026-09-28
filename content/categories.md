@@ -131,3 +131,9 @@ Claude Code 주간 신기능 정리 4편과 구독·인증 안전 글 3편을 1�
 - [[contact|연락처]]
 - [[privacy-policy|개인정보처리방침]]
 - [[editorial-policy|콘텐츠 제작 원칙]]
+
+## 에이전트 스킬 생태계 정리
+
+스킬(SKILL.md) 표준과 저장소 9곳을 직접 확인해 비교한 글입니다.
+
+- [[posts/ai-agent-skills-ecosystem-guide-2026|AI 코딩 에이전트 스킬, 어디서 가져와야 하나 — 저장소 9곳 직접 확인 비교]]

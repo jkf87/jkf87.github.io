@@ -17,7 +17,8 @@ aliases:
   - mattpocock-skills-real-engineers-claude-2026-04-27/index
 draft: true
 refactor_hub: harness-self-improve-15
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/ai-agent-skills-ecosystem-guide-2026
 ---
 
 오늘자 깃허브 트렌딩 1위가 좀 의외임. 새로 나온 모델도 아니고 무슨 프레임워크도 아님. 그냥 한 사람이 "내가 매일 쓰는 클로드 스킬 폴더 그대로 던질게"라고 올린 레포임. 하루 만에 별 5,500개가 붙음.

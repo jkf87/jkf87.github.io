@@ -15,7 +15,8 @@ aliases:
   - /posts/last30days-skill-github-trending-2026-07-13
 draft: true
 refactor_hub: harness-self-improve-15
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/ai-agent-skills-ecosystem-guide-2026
 ---
 
 ![Reddit, X, YouTube, Hacker News, Polymarket, GitHub, 웹 신호가 하나의 30일 브리핑으로 합쳐지는 장면](/images/last30days-skill-github-trending-2026-07-13/hero.jpg)
