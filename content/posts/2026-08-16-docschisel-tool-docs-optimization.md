@@ -16,7 +16,8 @@ source_url: https://arxiv.org/abs/2608.10037
 description: "에이전트 도구 문서 자체를 최적화 대상으로 보고 실패 트레이스로 필드 단위로 다듬은 DocsChisel. 원본 대비 과제 성공률 95.89% 상승과 도구 설명 관리 실무 가이드를 정리했다."
 draft: true
 refactor_hub: harness-self-improve-21
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-fix-outside-model-2026
 ---
 
 에이전트가 도구를 못 쓰면 모델 탓부터 하게 되는데, 원인의 상당 부분이 도구 문서에 있다는 걸 보여준 논문이 나옴. 도구 설명 자체를 최적화 대상으로 다뤘다는 게 신선해서 정리함. 원문은 [arXiv:2608.10037](https://arxiv.org/abs/2608.10037).
