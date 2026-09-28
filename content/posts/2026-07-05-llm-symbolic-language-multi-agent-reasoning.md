@@ -5,7 +5,8 @@ description: "다중 에이전트가 컴팩트한 상징 언어를 자율 발명
 tags: [LLM, Multi-Agent, SymbolicCommunication, Reasoning, ICML2026, Efficiency, Evolution]
 draft: true
 refactor_hub: harness-self-improve-05
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-harness-efficiency-adaptation-2026
 ---
 
 멀티에이전트 파이프라인을 돌리면 토큰 비용이 곧 배포 비용임. 에이전트 간 통신을 자연어로 쭉 쓰는 게 기본값인데, ICML 2026 논문이 이 전제를 깨는 결과를 냈음. 원문은 [arXiv:2606.29354](https://arxiv.org/abs/2606.29354).

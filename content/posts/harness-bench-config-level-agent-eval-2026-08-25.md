@@ -5,7 +5,8 @@ tags: [agent, harness, benchmark, llm, evaluation]
 source: https://arxiv.org/abs/2605.27922
 draft: true
 refactor_hub: harness-self-improve-12
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-harness-optimization-benchmark-guide-2026
 ---
 
 같은 모델, 같은 태스크인데 하네스만 바꿨더니 점수 차이가 23.8점이 나왔다는 [Harness-Bench](https://arxiv.org/abs/2605.27922)(베이징대·Qihoo360)가 나옴. Agent = Model + Harness라는 주장의 실측 데이터라 정리함.

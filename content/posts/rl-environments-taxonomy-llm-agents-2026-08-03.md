@@ -16,7 +16,8 @@ aliases:
   - /posts/rl-environments-taxonomy-llm-agents-2026-08-03
 draft: true
 refactor_hub: harness-self-improve-08
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-environment-coevolution-guide-2026
 ---
 
 LLM 에이전트 성능 논의가 모델 이름과 포스트트레이닝 레시피에 몰려 있는데 정작 에이전트가 반복해서 실패하고 다시 배우는 훈련장, 즉 RL 환경 이야기가 빠져 있음. 이 빈 자리를 채운 택소노미 글이 있어서 정리함. 원문은 [Hanchung Lee의 블로그](https://leehanchung.github.io/blogs/2026/03/21/rl-environments-for-llm-agents/).

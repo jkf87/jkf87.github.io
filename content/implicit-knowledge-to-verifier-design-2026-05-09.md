@@ -13,7 +13,8 @@ aliases:
   - implicit-knowledge-to-verifier-design-2026-05-09/index
 draft: true
 refactor_hub: harness-self-improve-16
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/ai-agent-verifier-rubric-guide-2026
 ---
 
 # 암묵지를 종이로 끄집어내는 법

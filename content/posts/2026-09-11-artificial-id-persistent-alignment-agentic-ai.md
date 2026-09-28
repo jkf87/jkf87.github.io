@@ -5,7 +5,8 @@ tags: [agent, alignment, agentic-ai, llm, paper-review]
 description: "목표·재시도·정지 규칙을 내부 적응 드라이브로 옮기자는 제안과 20파라미터 컨트롤러 실험의 수치, persistence가 가져오는 exploit·드리프트 리스크, 정렬 경계 체크리스트까지 정리함."
 draft: true
 refactor_hub: harness-self-improve-09
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-harness-verification-design-2026
 ---
 
 지금의 에이전트 하네스는 목표, 재시도, 검증, 정지 규칙을 전부 사람이 외부에서 지정함. 이 논문은 그 결정 일부를 에이전트 내부의 적응 드라이브, 즉 artificial id(지속·정지·전환을 내부 상태에 반응해 결정하는 제어 장치)로 옮기자고 제안하고 가상 페트리접시 실험으로 전제를 확인했음. 원문은 [arXiv:2609.11911](https://arxiv.org/abs/2609.11911).

@@ -19,7 +19,8 @@ aliases:
   - openai-codex-record-replay-skills-2026-06-19/index
 draft: true
 refactor_hub: harness-self-improve-15
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/ai-agent-skills-ecosystem-guide-2026
 ---
 
 OpenAI Codex에 **Record & Replay**가 들어왔다. 이름 그대로다. 사용자가 Mac에서 반복 작업을 한 번 보여주면, Codex가 그 과정을 관찰해서 다시 쓸 수 있는 **스킬(skill)** 로 만든다.

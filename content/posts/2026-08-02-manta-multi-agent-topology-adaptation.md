@@ -15,7 +15,8 @@ paper_authors: "Jerry Wang et."
 description: 다중 에이전트 통신 구조를 실행 중에 감사·수리하는 MANTA. 평균 74.0점에 토큰은 베이스라인의 28% 수준임. 내 자동화의 오케스트레이션 설계에 적용할 포인트를 정리함.
 draft: true
 refactor_hub: harness-self-improve-10
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-runtime-failure-repair-harness-2026
 ---
 
 다중 에이전트 시스템을 쓰다 보면 "이 조직 구도가 이 작업에 맞나"라는 의문이 드는데, 대부분의 프레임워크는 토폴로지가 설계 시점에 고정돼 있음. MANTA는 실행 중에 구조 자체를 감사하고 수리함. 원문은 [arXiv:2607.28527](https://arxiv.org/abs/2607.28527).

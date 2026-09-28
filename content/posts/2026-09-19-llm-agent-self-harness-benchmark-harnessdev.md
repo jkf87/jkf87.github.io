@@ -9,7 +9,8 @@ tags:
 description: 같은 GPT-5라도 하네스에 따라 Terminal-Bench 점수가 35.2%에서 49.6%로 갈립니다. HarnessDev는 LLM이 하네스를 직접 만들고 고치는 능력을 측정하는 벤치마크입니다.
 draft: true
 refactor_hub: harness-self-improve-12
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-harness-optimization-benchmark-guide-2026
 ---
 
 ## 결론 먼저

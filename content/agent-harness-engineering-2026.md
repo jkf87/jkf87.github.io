@@ -9,7 +9,8 @@ tags:
 description: "AI 코딩 에이전트 성능을 모델 교체 없이 높이는 하네스 엔지니어링 개념, AGENTS.md, 훅, 컨텍스트 정책, 검증 루프를 정리했습니다."
 draft: true
 refactor_hub: harness-self-improve-13
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-harness-native-rl-guide-2026
 ---
 
 ## 결론 먼저

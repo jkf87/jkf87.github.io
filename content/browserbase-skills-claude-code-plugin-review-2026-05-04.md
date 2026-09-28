@@ -9,7 +9,8 @@ category: "AI 도구 리뷰"
 author: "코난쌤"
 draft: true
 refactor_hub: harness-self-improve-15
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/ai-agent-skills-ecosystem-guide-2026
 ---
 
 ## Claude Code가 브라우저를 직접 만진다

@@ -11,7 +11,8 @@ tags:
 description: "에이전트 RL 훈련 환경의 구성 요소(태스크, 하네스, 검증기, 상태, 설정)를 체계적으로 정리하고, 하네스·스캐폴딩·정책 등 에이전트 핵심 용어를 명확히 정의함."
 draft: true
 refactor_hub: harness-self-improve-13
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-harness-native-rl-guide-2026
 ---
 
 원문:

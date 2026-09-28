@@ -17,7 +17,8 @@ aliases:
 cover: images/dotnet-skills-ai-coding-agents-csharp-2026-05-24/thumbnail.jpg
 draft: true
 refactor_hub: harness-self-improve-15
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/ai-agent-skills-ecosystem-guide-2026
 ---
 
 ![dotnet/skills — AI 코딩 에이전트에게 .NET 전문성을 부여하는 방법](images/dotnet-skills-ai-coding-agents-csharp-2026-05-24/thumbnail.jpg)

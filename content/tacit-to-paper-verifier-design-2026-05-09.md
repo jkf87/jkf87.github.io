@@ -13,7 +13,8 @@ aliases:
   - tacit-to-paper-verifier-design-2026-05-09/index
 draft: true
 refactor_hub: harness-self-improve-16
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/ai-agent-verifier-rubric-guide-2026
 ---
 
 ## 1. 왜 이 글이 필요한가

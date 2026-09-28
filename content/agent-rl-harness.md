@@ -8,7 +8,8 @@ tags:
   - aeo
 draft: true
 refactor_hub: harness-self-improve-13
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-harness-native-rl-guide-2026
 ---
 
 ## 결론 먼저

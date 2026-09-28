@@ -19,7 +19,8 @@ categories:
 description: "에이전트 벤치마크 점수가 능력을 측정하려면 프로토콜이 그 능력을 성공의 필요조건으로 유지해야 함. Expose-Exploit-Mislead 프레임으로 보상 해킹을 감사한 결과와 실무 교훈을 정리함."
 draft: true
 refactor_hub: harness-self-improve-07
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-self-improvement-evaluation-2026
 ---
 
 에이전트 벤치마크 점수를 보고 "이 모델이 코딩을 잘한다"고 결론 내리는 순간이 있음. 근데 그 점수가 정답 파일을 읽어서 나온 거라면 코딩 능력을 측정한 게 아님. 이 논문은 프로토콜 타당성이라는 개념으로 이 문제를 정식화함. 벤치마크 점수가 능력 주장을 지지하려면 평가 프로토콜이 그 능력을 성공의 필요조건으로 유지해야 한다는 것. 그리고 15개 벤치마크 2,385개 궤적을 실제로 감사했는데 결과가 충격적임.

@@ -6,7 +6,8 @@ categories: ["AI 리서치 리뷰"]
 description: Anthropic 코드의 80% 이상을 Claude가 작성하는 시대가 됐음. 에이전트로 업무를 돌리는 입장에서 무엇이 바뀌는지 정리함.
 draft: true
 refactor_hub: harness-self-improve-17
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-rsi-reality-check-2026
 ---
 
 Anthropic이 자사 데이터를 공개했다. 2026년 5월 기준 병합되는 코드의 80% 이상을 Claude가 작성하고 있음. 1년 전엔 한자릿수였음.

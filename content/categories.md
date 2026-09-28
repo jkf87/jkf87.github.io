@@ -55,10 +55,23 @@ tags:
 
 - [[posts/llm-agent-self-evolution-design-guide-2026|LLM 에이전트 하네스·스킬 자가진화 설계 가이드 (논문 7편의 실패 진단과 처방 비교)]]
 - [[posts/llm-agent-harness-parts-design-guide-2026|AI 에이전트가 긴 작업에서 무너질 때 하네스부터 고쳐야 한다 (논문 4편의 부품별 설계 비교)]]
+- [[posts/llm-agent-harness-optimization-benchmark-guide-2026|LLM 에이전트 같은 모델인데 점수가 다를 때: 하네스 효과와 최적화 벤치마크 16편 정리]]
 - [[posts/llm-agent-skill-lifecycle-guide-2026|LLM 에이전트 스킬은 쌓기만 하면 망한다 (생성·검증·압축·라우팅·보안 16편 재검증)]]
 - [[posts/llm-agent-safety-harness-evolution-2026|LLM 에이전트 보상 해킹과 안전 가드레일 어떻게 막나 (검증 한계·하네스 공진화 6편 총정리)]]
 - [[posts/llm-agent-optimization-policy-design-guide-2026|LLM 에이전트 최적화 루프 설계 기준: 탐색 정책을 하네스·에이전트·모델 가중치 어디에 둘까 (논문 5편 비교)]]
+- [[posts/llm-agent-harness-native-rl-guide-2026|에이전트 강화학습은 배포 하네스 그대로 훈련하면 됩니다: OpenForge RL·Agent Lightning·LEGO-RL 비교]]
+- [[posts/coding-agent-harness-design-guide-2026|같은 모델인데 코딩 에이전트 결과가 다른 이유: 하네스 설계 1차 자료 10편 통합 정리]]
+- [[posts/llm-agent-environment-coevolution-guide-2026|LLM 에이전트 강화학습이 정체될 때는 환경부터: 에이전트·환경 공진화 접근 8편 비교]]
+- [[posts/llm-agent-harness-efficiency-adaptation-2026|LLM 에이전트 하네스가 성능·비용을 결정한다: 토큰 절감부터 161일 자기진화까지 13편 비교]]
+- [[posts/llm-agent-self-improvement-evaluation-2026|LLM 에이전트 자기 개선의 조건: 장기 실행·의도 전환·채점 오류를 잰 논문 11편 비교]]
+- [[posts/llm-agent-harness-verification-design-2026|LLM 에이전트 하네스에 검증을 심는 설계: 반증 가능한 계획·세계 모델·골 드리프트 5편 비교]]
+- [[posts/llm-agent-self-improvement-gates-2026|LLM 에이전트 자기개선은 어디서 고장 나나 — 검증 게이트 논문 5편 비교]]
+- [[posts/llm-agent-runtime-failure-repair-harness-2026|LLM 에이전트 실행 중 실패를 잡고 고치는 하네스: 감시·적응·수리 8편 비교]]
 
+- [[posts/llm-agent-rsi-reality-check-2026|LLM 에이전트 재귀적 자기개선, 어디까지 실제인가 — 서베이 2편·Meta^n·Frontis-MA1 비교]]
+- [[posts/llm-agent-experience-learning-methods-2026|LLM 에이전트 경험 학습 설계 가이드: 스킬 증류·강화학습·하네스 제어 21편 비교 (arXiv 18편 재검증)]]
+- [[posts/llm-agent-harness-self-evolution-evidence-2026|LLM 에이전트 하네스 자가진화, 진짜 효과인지 확인하는 법: 검증·회귀·전이 10편 비교]]
+- [[posts/llm-agent-fix-outside-model-2026|LLM 에이전트가 같은 실패를 반복할 때 모델 대신 고칠 곳: 지식·문서·워크플로·게이트 10편 비교]]
 ## 에이전트 보안 연구 정리
 
 LLM 에이전트 보안 논문을 비교해 방어 설계 기준을 정리한 글입니다.
@@ -122,3 +135,15 @@ Claude Code 주간 신기능 정리 4편과 구독·인증 안전 글 3편을 1�
 - [[contact|연락처]]
 - [[privacy-policy|개인정보처리방침]]
 - [[editorial-policy|콘텐츠 제작 원칙]]
+
+## 에이전트 스킬 생태계 정리
+
+스킬(SKILL.md) 표준과 저장소 9곳을 직접 확인해 비교한 글입니다.
+
+- [[posts/ai-agent-skills-ecosystem-guide-2026|AI 코딩 에이전트 스킬, 어디서 가져와야 하나 — 저장소 9곳 직접 확인 비교]]
+
+## 하네스 verifier·루브릭 설계 정리
+
+암묵지(taste)를 검증 루브릭으로 바꾸는 절차를 다룬 옛 글 4편을 1차 출처 대조와 WCAG 명암비 재계산으로 통합한 가이드입니다.
+
+- [[posts/ai-agent-verifier-rubric-guide-2026|AI 에이전트 결과물이 '이건 아닌데'일 때: taste를 검증 루브릭으로 바꾸는 하네스 verifier 설계법]]

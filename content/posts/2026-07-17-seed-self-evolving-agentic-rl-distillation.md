@@ -11,7 +11,8 @@ cover:
   relative: true
 draft: true
 refactor_hub: harness-self-improve-18
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-experience-learning-methods-2026
 ---
 
 에이전트 RL의 고질 문제는 보상이 에피소드 단위로만 떨어진다는 것임. 성공/실패는 알려주지만 어느 중간 결정이 옳았는지는 안 알려줌. SEED는 완료된 궤적에서 정책 스스로 교훈을 뽑아 토큰 단위 학습 신호로 되돌리는 구조로 이 간극을 메움.

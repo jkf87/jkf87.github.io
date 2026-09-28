@@ -15,7 +15,8 @@ aliases:
   - /nvidia-skills-agent-catalog-2026-05-22
 draft: true
 refactor_hub: harness-self-improve-15
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/ai-agent-skills-ecosystem-guide-2026
 ---
 
 원문: [NVIDIA/skills](https://github.com/NVIDIA/skills) (GitHub)

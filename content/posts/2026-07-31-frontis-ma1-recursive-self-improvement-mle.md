@@ -14,7 +14,8 @@ tags:
   - meta-evolution
 draft: true
 refactor_hub: harness-self-improve-17
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-rsi-reality-check-2026
 ---
 
 > **원문:** [Frontis-MA1: Training an AI4AI Model towards Recursive Self-Improvement in Machine Learning Engineering](https://arxiv.org/abs/2607.28568) — Horizon Research & Frontis.AI, 2026년 7월 30일.

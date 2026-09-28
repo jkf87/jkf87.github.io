@@ -14,7 +14,8 @@ authors: ["Yash Pandya", "Sahil Gupta", "Sarthak Harne", "Archana Yadav", "Kavya
 institution: "Microsoft Research"
 draft: true
 refactor_hub: harness-self-improve-08
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-environment-coevolution-guide-2026
 ---
 
 컴퓨터 사용 에이전트를 훈련하려면 합성 환경을 많이 만들면 된다고 믿기 쉬움. Microsoft Research의 Echoverse가 그 가설을 깨고 "깊이"가 진짜 병목임을 증명했음. 원문은 [arXiv:2607.28074](https://arxiv.org/abs/2607.28074).

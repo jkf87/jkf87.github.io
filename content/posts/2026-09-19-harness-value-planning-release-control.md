@@ -5,7 +5,8 @@ tags: [agent-harness, llm-agent, benchmark, verification, tau-bench]
 description: "τ²-bench 3,007개 궤적으로 에이전트 하네스를 분해한 논문 정리. 사전 작성 계획 주입은 성공률 +7.17pp, 읽기전용 종료 검증기는 거짓 완료를 57%에서 21%로 낮추는데 비용은 1센트 미만입니다."
 draft: true
 refactor_hub: harness-self-improve-19
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-harness-self-evolution-evidence-2026
 ---
 
 ## 결론 먼저
