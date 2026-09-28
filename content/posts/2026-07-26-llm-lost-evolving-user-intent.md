@@ -31,7 +31,8 @@ cover:
   hidden: false
 draft: true
 refactor_hub: harness-self-improve-07
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-self-improvement-evaluation-2026
 ---
 
 사용자가 대화하면서 요구를 바꾸는 건 예외가 아니라 일상임. 근데 그 상황에서 모델이 얼마나 무너지는지 정적 벤치마크는 전혀 못 봄. Microsoft Research가 그 빈틈을 측정했음. 원문은 [arXiv:2607.20734](https://arxiv.org/abs/2607.20734).

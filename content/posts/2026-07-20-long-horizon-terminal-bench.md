@@ -12,7 +12,8 @@ tags:
 description: "평균 88.9분·239 에피소드·980만 토큰짜리 터미널 과제 46개로 17개 모델을 측정한 Long-Horizon-Terminal-Bench. 최강 모델도 통과율 28.3%였고 실패 원인은 타임아웃·조기 종료·약한 자기 검증이었다."
 draft: true
 refactor_hub: harness-self-improve-07
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-self-improvement-evaluation-2026
 ---
 
 에이전트 벤치마크 점수는 좋아지는데 실무에서 반나절짜리 작업을 맡기면 무너짐. 그 차이를 정량화한 벤치마크가 나와서 정리함. 원문은 [arXiv:2607.08964](https://arxiv.org/abs/2607.08964).

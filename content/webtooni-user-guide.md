@@ -10,7 +10,8 @@ description: 웹툰이(Webtooni)의 완전 사용법을 안내합니다. 기본 
 publishDate: 2025-03-26
 draft: true
 refactor_hub: harness-self-improve-07
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-self-improvement-evaluation-2026
 ---
 
 # 웹툰이(Webtooni) 사용법 완전 가이드

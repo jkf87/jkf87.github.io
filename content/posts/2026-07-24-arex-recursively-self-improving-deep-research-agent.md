@@ -21,7 +21,8 @@ authors:
   - "BAAI"
 draft: true
 refactor_hub: harness-self-improve-07
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-self-improvement-evaluation-2026
 ---
 
 딥리서치 에이전트의 개선책은 대부분 "더 오래 검색하기"였음. AREX는 방향을 바꿔서 검증을 검색의 엔진으로 씀. 리서치 자동화 루프를 직접 굴리는 입장에서 베낄 게 많아서 정리함.

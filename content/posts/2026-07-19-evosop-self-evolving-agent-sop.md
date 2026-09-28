@@ -13,7 +13,8 @@ authors:
   - jkf87
 draft: true
 refactor_hub: harness-self-improve-07
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-self-improvement-evaluation-2026
 ---
 
 에이전트를 오래 굴리면 같은 도구 호출 시퀀스가 계속 반복됨. 그걸 그대로 두면 매번 추론 비용을 다시 지불하는 것. EvoSOP는 이 반복을 SOP(표준 작업 절차) 도구로 뽑아내서 압축함. 내 에이전트 운영에 그대로 적용할 수 있는 구조라 정리함.
