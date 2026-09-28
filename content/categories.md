@@ -60,6 +60,7 @@ tags:
 - [[posts/llm-agent-safety-harness-evolution-2026|LLM 에이전트 보상 해킹과 안전 가드레일 어떻게 막나 (검증 한계·하네스 공진화 6편 총정리)]]
 - [[posts/llm-agent-optimization-policy-design-guide-2026|LLM 에이전트 최적화 루프 설계 기준: 탐색 정책을 하네스·에이전트·모델 가중치 어디에 둘까 (논문 5편 비교)]]
 - [[posts/llm-agent-harness-native-rl-guide-2026|에이전트 강화학습은 배포 하네스 그대로 훈련하면 됩니다: OpenForge RL·Agent Lightning·LEGO-RL 비교]]
+- [[posts/coding-agent-harness-design-guide-2026|같은 모델인데 코딩 에이전트 결과가 다른 이유: 하네스 설계 1차 자료 10편 통합 정리]]
 - [[posts/llm-agent-environment-coevolution-guide-2026|LLM 에이전트 강화학습이 정체될 때는 환경부터: 에이전트·환경 공진화 접근 8편 비교]]
 - [[posts/llm-agent-harness-efficiency-adaptation-2026|LLM 에이전트 하네스가 성능·비용을 결정한다: 토큰 절감부터 161일 자기진화까지 13편 비교]]
 - [[posts/llm-agent-self-improvement-evaluation-2026|LLM 에이전트 자기 개선의 조건: 장기 실행·의도 전환·채점 오류를 잰 논문 11편 비교]]

@@ -11,7 +11,8 @@ tags:
 description: "런던에서 열린 AI Engineer Europe 2026 첫날 핵심 세션 정리. 에이전트 소프트웨어 패러다임, 하네스 엔지니어링, OpenClaw 보안 현실, 그리고 실전 체크리스트."
 draft: true
 refactor_hub: harness-self-improve-14
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/coding-agent-harness-design-guide-2026
 ---
 
 > "에이전트는 '기능'이 아니라 '새로운 소프트웨어 층'이다." — AI Engineer Europe 2026 Day 1 반복 테마

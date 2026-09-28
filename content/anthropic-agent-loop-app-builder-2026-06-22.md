@@ -13,7 +13,8 @@ tags:
 description: "Anthropic 엔지니어 Ash Prabaker와 Andrew Wilson이 AI Engineer 워크숍에서 설명한 장시간 실행 에이전트 하네스. 플래너-제너레이터-평가자 루프가 왜 단일 에이전트보다 강한지 정리함."
 draft: true
 refactor_hub: harness-self-improve-14
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/coding-agent-harness-design-guide-2026
 ---
 
 출처:

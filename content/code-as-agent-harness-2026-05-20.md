@@ -16,7 +16,8 @@ aliases:
   - code-as-agent-harness-2026-05-20/index
 draft: true
 refactor_hub: harness-self-improve-14
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/coding-agent-harness-design-guide-2026
 ---
 
 > 원문: [Code as Agent Harness: Toward Executable, Verifiable, and Stateful Agent Systems](https://arxiv.org/abs/2605.18747) (arXiv:2605.18747)
