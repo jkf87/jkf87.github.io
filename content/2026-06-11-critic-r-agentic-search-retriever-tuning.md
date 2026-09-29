@@ -12,7 +12,8 @@ source: arxiv
 source_url: https://arxiv.org/abs/2606.00590
 draft: true
 refactor_hub: agent-memory-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-rag-vs-knowledge-injection-2026
 ---
 
 Agentic search에서 **검색 품질이 병목**이다. Agent가 아무리 똑똑해도 Retriever가 구리면 답도 구리다. UMass Amherst에서 발표한 **Critic-R**은 이 병목을 두 단계로 공격한다: 추론 시점에 검색 실패를 복구하고, 그 경험으로 임베딩 모델을 파인튜닝한다.

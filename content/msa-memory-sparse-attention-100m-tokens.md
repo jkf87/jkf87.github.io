@@ -12,7 +12,8 @@ tags:
 description: "MSA(Memory Sparse Attention) 논문을 바탕으로, 왜 1억 토큰 메모리가 중요한지와 장기 컨텍스트 AI의 흐름을 교육·실무 관점에서 쉽게 정리한 글입니다."
 draft: true
 refactor_hub: agent-memory-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-rag-vs-knowledge-injection-2026
 ---
 
 ![MSA 논문 Figure 1](./images/msa-memory-sparse-attention-100m-tokens/figure-1.png)
