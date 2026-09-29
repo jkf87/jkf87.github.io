@@ -11,7 +11,8 @@ tags:
 description: "근거 없는 질문에 억지로 답하는 대신 스스로 판단해 기권하게 만드는 프롬프트 프레임워크 CoSQ를 정리함. 파인튜닝 없이 오답 커밋률을 13.1%에서 8.9%로 줄였음."
 draft: true
 refactor_hub: eval-benchmarks-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-evaluation-design-guide-2026
 ---
 
 LLM이 근거 없는 질문에 억지로 답하는 대신 스스로 판단해 답을 거절(기권)하게 만드는 프레임워크가 나왔음. CoSQ(Chain-of-Self-Questioning)는 파인튜닝 없이, 로짓 접근 없이, 프롬프트만으로 동작함. 원문은 [arXiv:2609.17516](https://arxiv.org/abs/2609.17516).

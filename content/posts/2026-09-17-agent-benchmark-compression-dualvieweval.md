@@ -11,7 +11,8 @@ tags:
 description: "결과와 트레이터 기반 과정 신호 6개를 같이 써서 미니셋 20개로 전체 점수를 예측하는 DualViewEval. 24~40배 압축에 MAE 3~6%, 최강 경쟁 대비 오차를 14.5~28.2% 낮췄다."
 draft: true
 refactor_hub: eval-benchmarks-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-evaluation-design-guide-2026
 ---
 
 에이전트 벤치마크 비용 문제를 압축으로 푼 논문이 나옴. APEX-Agents(경영 컨설팅 시나리오로 에이전트 능력을 평가하는 벤치마크)를 GPT-5.4로 전부 돌리면 API 비용이 약 7,100달러라는 숫자부터가 실감나서 정리함.
