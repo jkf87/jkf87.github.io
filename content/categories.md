@@ -71,6 +71,7 @@ tags:
 - [[posts/llm-agent-self-improvement-evaluation-2026|LLM 에이전트 자기 개선의 조건: 장기 실행·의도 전환·채점 오류를 잰 논문 11편 비교]]
 - [[posts/llm-agent-harness-verification-design-2026|LLM 에이전트 하네스에 검증을 심는 설계: 반증 가능한 계획·세계 모델·골 드리프트 5편 비교]]
 - [[posts/llm-agent-self-improvement-gates-2026|LLM 에이전트 자기개선은 어디서 고장 나나 — 검증 게이트 논문 5편 비교]]
+- [[posts/llm-agent-self-improvement-layers-2026|LLM 에이전트 자기 개선 어디까지 고쳐도 되나: 3계층·실행 피드백·보안 게이트 (서베이 3종 재검증)]]
 - [[posts/llm-agent-runtime-failure-repair-harness-2026|LLM 에이전트 실행 중 실패를 잡고 고치는 하네스: 감시·적응·수리 8편 비교]]
 
 - [[posts/llm-agent-rsi-reality-check-2026|LLM 에이전트 재귀적 자기개선, 어디까지 실제인가 — 서베이 2편·Meta^n·Frontis-MA1 비교]]
