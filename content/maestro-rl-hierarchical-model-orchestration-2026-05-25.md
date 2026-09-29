@@ -11,7 +11,8 @@ enableToc: true
 description: "4B 파라미터 오케스트레이터가 전문 모델들을 조율해 GPT-5와 Gemini-2.5-Pro를 능가하는 성능을 달성한 Maestro를 소개합니다."
 draft: true
 refactor_hub: agent-rl-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/agent-rl-reward-signal-comparison-2026
 ---
 
 ## Q. "큰 모델 하나 쓰면 되는데, 왜 굳이 여러 모델을 조율하죠?"

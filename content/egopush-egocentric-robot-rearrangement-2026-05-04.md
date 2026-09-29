@@ -15,7 +15,8 @@ aliases:
   - egopush-egocentric-robot-rearrangement-2026-05-04/index
 draft: true
 refactor_hub: agent-rl-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/agent-rl-reward-signal-comparison-2026
 ---
 
 # EgoPush: 로봇이 자기 눈으로만 물건을 밀어 재배치하는 뉴욕대 연구
