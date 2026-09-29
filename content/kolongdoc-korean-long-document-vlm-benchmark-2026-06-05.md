@@ -11,7 +11,8 @@ tags:
   - Marker-Inc-Korea
 draft: true
 refactor_hub: eval-benchmarks-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-benchmark-score-gap-guide-2026
 ---
 
 공공기관 보고서 60페이지. 표 7개, 그래프 4개, 본문 텍스트가 뒤엉킨 PDF가 있다. "3페이지의 예산액과 47페이지의 집행액의 차이를 구하라"는 질문에 Gemini 3.5 Flash는 **82.5%**의 정확도를 보였다. 같은 질문에 한국 오픈소스 VLM 대부분은 아예 답변을 생성하지 못했다. 메모리 부족(OOM)으로 죽어버렸다.
