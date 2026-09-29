@@ -10,7 +10,8 @@ tags:
 description: "롤백으로 상태를 되돌릴 때 성공 루트와 실패 원인 같은 반성 지식은 함께 가져가야 한다는 RIR 프레임워크를 정리했습니다. 3개 벤치마크에서 평균 성공률이 최대 6.57%p 올랐습니다."
 draft: true
 refactor_hub: agent-memory-08
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-long-horizon-state-2026
 ---
 
 ## 결론 먼저
