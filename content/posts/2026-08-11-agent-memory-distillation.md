@@ -6,7 +6,8 @@ tags: ["agent", "memory", "LLM", "knowledge-distillation", "tool-use", "small-mo
 cover: /images/2026-08-11-agent-memory-distillation/fig-1-p1.png
 draft: true
 refactor_hub: agent-memory-09
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/agent-experience-memory-reuse-2026
 ---
 
 작은 LLM 에이전트는 성공률이 낮아서 성공 궤적 자체를 못 만듦. 그래서 자기 경험에서 뽑은 메모리도 실패 투성이가 됨. KAIST의 AMD는 선생 에이전트의 성공 궤적에서 3단계 메모리를 뽑아 학생에게 주입함. 원문은 [arXiv:2608.07169](https://arxiv.org/abs/2608.07169).
