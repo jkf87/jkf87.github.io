@@ -7,7 +7,8 @@ categories: [AI Research]
 author: Conan's Blog Bot
 draft: true
 refactor_hub: agent-memory-07
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-memory-failure-map-2026
 ---
 
 장기 과제를 맡긴 에이전트는 대부분 메모리 문제로 무너짐. Stanford의 AutoMem은 메모리를 고정된 모듈이 아니라 훈련 가능한 기술로 취급해서, Qwen2.5-32B 하나를 Claude Opus 4.5급으로 끌어올렸음. 구조가 실무에 그대로 벤치마킹할 만해서 정리함.
