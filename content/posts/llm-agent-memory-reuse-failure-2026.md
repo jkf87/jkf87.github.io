@@ -85,7 +85,7 @@ novelty_vs_paper: "각 수치·벤치마크 설계·방법 명명은 해당 논�
 | CoBRA | 호출 | 필요 없는 도구 호출 비용 | 질문별 반사실 마진으로 경계 학습 | jEM 0.5883 vs 0.5466, 호출 −20.1%, <span style="background-color: #fff59d"><strong>오호출 99.9%→16.4%</strong></span>, 미호출 1.2% | Qwen3-4B·검색 도구 |
 | MemoryWalker | 학습 데이터 | 압축 트랜스크립트 학습 시 붕괴 | 조건부 불일치 정의+LogitTree·SDCC 보정 | EM 28.9→45.9(무압축 32.1), Claude Code에서 SDCC 37.5 | 정확 보정은 eviction 로그 필요 |
 | ROBORMBENCH | 채점 | 보상 함수가 문구에 과민 | 패러프레이즈 불변성 측정 | 2,390 궤적·21,673 패러프레이즈, SCR-후회 상관 r=0.882, 전용 보상모델이 안정 | 로봇 조작 도메인 |
-| gget virus | 인프라 | 데이터 검색의 정확도·재현성 부재 | 결정론적 검색 계층 | 에이전트 16.9~91.3% → 거의 100%(GPT-5.5 99.7%) | NCBI Virus 특화 |
+| gget virus | 인프라 | 데이터 검색의 정확도·재현성 부재 | 결정론적 검색 계층 | 에이전트 16.9~91.3% → GPT-5.5 99.7% | NCBI Virus 특화 |
 
 ![검증 장치를 붙였을 때 바뀐 수치 8쌍](../media/llm-agent-memory-reuse-failure-2026/chart-02-before-after-verified.png)
 
