@@ -17,7 +17,9 @@ source: arxiv
 source_url: https://arxiv.org/abs/2607.10463
 draft: true
 refactor_hub: agent-memory-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-memory-search-design-2026
+
 ---
 
 RAG(검색 증강 생성, 외부 문서를 검색해 그 내용을 근거로 답변하게 하는 방식) 파이프라인을 만들다 보면 질문이 세 개 생김. 언제 검색할지, 의미 검색과 키워드 검색 중 뭘 쓸지, 문장 단위로 정밀하게 가져올지 문단 통째로 읽을지. 대부분은 이걸 하드코딩으로 때움. GRASP는 이 세 결정을 강화학습 액션 공간에 넣어서 에이전트가 스스로 배우게 만듦. 그리고 그 정책이 인간의 독서 전략과 비슷하게 창발했다는 게 흥미로운 지점임.
