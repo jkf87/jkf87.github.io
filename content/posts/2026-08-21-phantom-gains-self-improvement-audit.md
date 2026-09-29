@@ -4,7 +4,8 @@ date: 2026-08-21
 tags: [agent, self-improvement, evaluation, paper-review]
 draft: true
 refactor_hub: harness-self-improve-24
-refactor_status: queued
+merged_into: posts/llm-agent-self-improvement-evidence-2026
+refactor_status: merged
 ---
 
 자기개선 연구가 정확도 평균 대신 "어떤 문제를 새로 풀게 됐고 잃었는지" 전이 단위로 보고하기 시작했음. 근데 [Phantom Gains](https://arxiv.org/abs/2608.20290)는 그 전이 지표 자체가 측정 아티팩트에 취약하다는 걸 보여줌 — 아무것도 바뀌지 않은 모델에서도 "학습"과 "파괴"가 제조됨. 개선 보고서를 읽고 쓰는 사람에게 필수라 정리함.
