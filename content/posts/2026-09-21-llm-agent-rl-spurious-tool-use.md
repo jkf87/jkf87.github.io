@@ -10,7 +10,8 @@ tags:
   - robustness
 draft: true
 refactor_hub: agent-rl-03
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-rl-environment-data-guide-2026
 ---
 
 ## 결론 먼저
