@@ -7,7 +7,8 @@ categories: [AI Research]
 author: Conan's Blog Bot
 draft: true
 refactor_hub: agent-memory-08
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-long-horizon-state-2026
 ---
 
 비디오 이해 에이전트는 느림. 질문 하나에 검색어 만들고, 클립 검색하고, 평가하고, 다시 검색하는 루프를 돌기 때문임. Light-Omni는 이 루프 자체를 없애서 12배 빨라졌음. 느린 에이전트 파이프라인을 굴리는 입장에서 볼 게 많아서 정리함.

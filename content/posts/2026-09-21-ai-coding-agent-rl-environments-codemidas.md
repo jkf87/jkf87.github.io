@@ -12,7 +12,8 @@ tags:
   - paper-summary
 draft: true
 refactor_hub: agent-rl-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/agent-rl-grpo-failure-fixes-2026
 ---
 
 ## 결론 먼저

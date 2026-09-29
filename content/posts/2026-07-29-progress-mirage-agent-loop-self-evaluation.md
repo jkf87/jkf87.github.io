@@ -17,7 +17,8 @@ source: arxiv
 source_url: https://arxiv.org/abs/2607.25152
 draft: true
 refactor_hub: agent-memory-05
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-memory-reuse-failure-2026
 ---
 
 자율 에이전트 루프의 56%가 "발전했다"고 보고하면서 실제로는 제자리거나 퇴보했음. 더 강한 판사 모델을 넣어도 44%에서 멈췄음. 원인은 판사의 지능이 아니라 판사가 뭘 보고 있는가였음. 자동화 루프 설계자에게 직결되는 연구라 정리함.

@@ -18,7 +18,8 @@ authors:
 noindex: true
 draft: true
 refactor_hub: harness-self-improve-22
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-harness-frozen-model-evidence-2026
 ---
 
 ## 개요

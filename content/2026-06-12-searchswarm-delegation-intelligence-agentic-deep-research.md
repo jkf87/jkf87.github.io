@@ -12,7 +12,8 @@ source: arxiv
 source_url: https://arxiv.org/abs/2606.09730
 draft: true
 refactor_hub: agent-memory-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-rag-vs-knowledge-injection-2026
 ---
 
 # SearchSwarm: 에이전트 LLM에 '위임 지능'을 가르치다

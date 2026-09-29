@@ -10,7 +10,8 @@ tags:
   - paper-notes
 draft: true
 refactor_hub: agent-rl-04
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-rl-verifiable-reward-design-2026
 ---
 
 RLVR(모델이 만든 답을 프로그램으로 검증해 그 결과를 보상으로 쓰는 강화학습 방식)이 수학·코드에서 잘 통하는 이유는 검증이 생성보다 싸기 때문임. 근데 실무 분석은 다름. 매출이 왜 떨어졌는지 진짜 원인 확인엔 전문가 조사가 필요하고 사후에도 애매한 경우가 남음. 검증 비대칭이 없는 것. TRACE(arXiv 2609.10315)는 이 질문을 뒤집음. 비대칭이 없으면 만들면 된다는 것. 개입을 먼저 샘플해서 데이터를 생성하고 숨겨둔 개입을 오라클 라벨로 써서 보상을 결정적으로 계산하는 방식임. 에이전트는 여전히 노이즈와 교란 변수가 낀 데이터를 SQL로 조사해야 해서 태스크는 어렵게 유지됨. 문제를 만드는 과정에서 검증자가 같이 나온다는 게 이 접근의 핵심임.

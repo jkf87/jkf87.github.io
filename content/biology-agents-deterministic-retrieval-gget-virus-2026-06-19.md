@@ -19,7 +19,8 @@ aliases:
   - biology-agents-deterministic-retrieval-gget-virus-2026-06-19/index
 draft: true
 refactor_hub: agent-memory-05
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-memory-reuse-failure-2026
 ---
 
 코딩 에이전트는 빠르게 좋아지고 있다. Claude Code, Codex, Gemini CLI 같은 도구는 이미 파일을 읽고, 코드를 고치고, 테스트를 돌리고, PR 수준 작업까지 처리한다.

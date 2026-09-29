@@ -14,7 +14,8 @@ authors:
   - jkf87
 draft: true
 refactor_hub: agent-memory-07
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-memory-failure-map-2026
 ---
 
 MCP가 표준화되면서 같은 도구 서버를 수많은 에이전트가 부르는 세계가 됐음. 근데 각 에이전트는 도구를 시도하고, 실패하고, 다시 배움. 같은 실수를 수십 번 반복하는 셈임. ToolAtlas는 이 문제를 도구 경험을 공급자 쪽에 저장하는 걸로 풀었음.

@@ -6,7 +6,8 @@ tags: [agent, long-horizon, memory, harness, LLM, coding-agent, ARC-AGI]
 description: 긴 호라이즌 태스크에서 600줄 프롬프트 대신 30줄로 최고 성능을 낸 programmatic memory 접근. 무손실 로깅 + 코드 검색이 복잡한 하네스를 이긴 실험을 실무 관점으로 정리함.
 draft: true
 refactor_hub: agent-memory-07
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-memory-failure-map-2026
 ---
 
 긴 호라이즌 태스크에서 에이전트 메모리 설계는 "뭘 버릴까"의 문제로 접근해 왔음. Duke 연구진의 PRO-LONG(메모리를 요약하지 않고 전부 로그로 쌓아 grep·스크립트로 검색하게 하는 접근)은 "버리지 말고 전부 쌓아서 코드로 찾아라"로 뒤집었음. 원문은 [arXiv:2607.20064](https://arxiv.org/abs/2607.20064).

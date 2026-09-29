@@ -13,7 +13,8 @@ description: "AKBE와 MUSE-Autoskill 두 논문을 함께 읽고, 에이전트 �
 image: images/agent-rl-optimization-akbe-muse-2026-05-28/akbe-framework.png
 draft: true
 refactor_hub: agent-memory-03
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-memory-operations-2026
 ---
 
 원문:

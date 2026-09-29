@@ -15,7 +15,8 @@ aliases:
   - /posts/reasoning-effort-llm-control-2026-07-29
 draft: true
 refactor_hub: agent-rl-04
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-rl-verifiable-reward-design-2026
 ---
 
 "Reasoning effort: low, medium, high"라는 메뉴가 이제 이상하지 않음. 모델을 고르던 시대에서 같은 모델 안에서 얼마나 오래 생각하게 할지 고르는 시대가 됨. Sebastian Raschka의 [Controlling Reasoning Effort in LLMs](https://magazine.sebastianraschka.com/p/controlling-reasoning-effort-in-llms)를 읽고 정리함 — 핵심은 reasoning effort가 prompt trick이 아니라 비용과 정확도 사이를 움직이도록 학습된 조절 노브라는 것.

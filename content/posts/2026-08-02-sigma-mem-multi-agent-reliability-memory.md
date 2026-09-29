@@ -14,7 +14,8 @@ authors:
   - conan
 draft: true
 refactor_hub: agent-memory-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-rag-vs-knowledge-injection-2026
 ---
 
 다중 에이전트 시스템이 실패하는 지점은 모델이 멍청해서가 아니라 신뢰 결정임 — 누구 말을 들을지. Σ-Mem은 이걸 기억으로 풂. 여러 모델을 섞어 쓰는 오케스트레이터를 굴리는 사람에게 직결되서 정리함.

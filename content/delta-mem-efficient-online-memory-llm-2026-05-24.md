@@ -10,7 +10,8 @@ enableToc: true
 description: "δ-mem은 동결된 LLM 백본에 compact online associative memory를 추가해, 8×8 상태 행렬만으로 MemoryAgentBench 1.31× 향상을 달성하는 경량 메모리 메커니즘이다."
 draft: true
 refactor_hub: agent-memory-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-rag-vs-knowledge-injection-2026
 ---
 
 ## δ-mem이 뭔가요?

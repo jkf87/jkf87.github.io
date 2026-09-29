@@ -80,8 +80,8 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "queued",
-  "hub_slug": null
+  "status": "in-review",
+  "hub_slug": "posts/llm-agent-rag-vs-knowledge-injection-2026"
  },
  {
   "hub_id": "agent-memory-02",
@@ -152,8 +152,8 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "queued",
-  "hub_slug": null
+  "status": "in-review",
+  "hub_slug": "posts/llm-agent-memory-search-design-2026"
  },
  {
   "hub_id": "agent-memory-03",
@@ -242,8 +242,8 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "queued",
-  "hub_slug": null
+  "status": "in-review",
+  "hub_slug": "posts/llm-agent-memory-operations-2026"
  },
  {
   "hub_id": "agent-memory-04",
@@ -410,8 +410,8 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "queued",
-  "hub_slug": null
+  "status": "in-review",
+  "hub_slug": "posts/llm-agent-memory-reuse-failure-2026"
  },
  {
   "hub_id": "agent-memory-06",
@@ -446,8 +446,8 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "queued",
-  "hub_slug": null
+  "status": "in-review",
+  "hub_slug": "posts/llm-agent-self-improvement-layers-2026"
  },
  {
   "hub_id": "agent-memory-07",
@@ -548,8 +548,8 @@
     "reason": "0b 늦은 도착 — v2 중단 시점에 남은 미발행 초안, 허브 병합 대기"
    }
   ],
-  "status": "queued",
-  "hub_slug": null
+  "status": "in-review",
+  "hub_slug": "posts/llm-agent-memory-failure-map-2026"
  },
  {
   "hub_id": "agent-memory-08",
@@ -602,8 +602,8 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "queued",
-  "hub_slug": null
+  "status": "in-review",
+  "hub_slug": "posts/llm-agent-long-horizon-state-2026"
  },
  {
   "hub_id": "agent-memory-09",
@@ -668,8 +668,8 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "queued",
-  "hub_slug": null
+  "status": "in-review",
+  "hub_slug": "posts/agent-experience-memory-reuse-2026"
  },
  {
   "hub_id": "agent-memory-10",
@@ -800,8 +800,8 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "queued",
-  "hub_slug": null
+  "status": "in-review",
+  "hub_slug": "posts/agent-rl-reward-signal-comparison-2026"
  },
  {
   "hub_id": "agent-rl-02",
@@ -890,8 +890,8 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "queued",
-  "hub_slug": null
+  "status": "in-review",
+  "hub_slug": "posts/agent-rl-grpo-failure-fixes-2026"
  },
  {
   "hub_id": "agent-rl-03",
@@ -956,8 +956,8 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "queued",
-  "hub_slug": null
+  "status": "in-review",
+  "hub_slug": "posts/llm-agent-rl-environment-data-guide-2026"
  },
  {
   "hub_id": "agent-rl-04",
@@ -1034,8 +1034,8 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "queued",
-  "hub_slug": null
+  "status": "in-review",
+  "hub_slug": "posts/llm-agent-rl-verifiable-reward-design-2026"
  },
  {
   "hub_id": "agent-rl-05",
@@ -4916,8 +4916,8 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "queued",
-  "hub_slug": null
+  "status": "in-review",
+  "hub_slug": "posts/llm-agent-harness-frozen-model-evidence-2026"
  },
  {
   "hub_id": "harness-self-improve-23",
@@ -4958,8 +4958,8 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "queued",
-  "hub_slug": null
+  "status": "in-review",
+  "hub_slug": "posts/llm-agent-harness-nooa-vs-prime-agent-2026"
  },
  {
   "hub_id": "harness-self-improve-24",
@@ -5006,8 +5006,8 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "queued",
-  "hub_slug": null
+  "status": "in-review",
+  "hub_slug": "posts/llm-agent-self-improvement-evidence-2026"
  },
  {
   "hub_id": "llm-course-notes-01",

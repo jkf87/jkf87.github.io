@@ -16,7 +16,8 @@ summary: "NVIDIA의 NOOA는 에이전트를 파이썬 객체로 보는 설계임
 cover: /images/2026-07-24-nooa-nvidia-object-oriented-agents/fig-1-p2.png
 draft: true
 refactor_hub: harness-self-improve-23
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-harness-nooa-vs-prime-agent-2026
 ---
 
 에이전트 프레임워크가 난립함. LangChain, OpenAI Agents SDK, Claude Agent SDK, smolagents, OpenClaw까지. 저마다 도구와 메모리와 트레이스를 주는데, 공통점은 에이전트 코드를 프롬프트 템플릿, 스키마, 콜백, 설정 파일로 쪼개놓는다는 것. [NVIDIA의 NOOA](https://arxiv.org/abs/2607.20709)는 여기에 단순한 질문을 던짐. "파이썬에 이미 추상화가 있으면 그걸 그대로 쓰면 안 되는가." 결론부터 말하면 253줄짜리 일반 파이썬 코드로 SWE-bench Verified(실제 GitHub 저장소의 이슈를 해결하는 코드를 작성하게 하는 코딩 벤치마크) 82.2%를 찍으며 오픈소스 하네스를 전부 이김. 왜 이런 게 되는지와 내가 가져갈 지점을 정리함.

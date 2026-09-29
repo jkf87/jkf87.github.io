@@ -13,7 +13,8 @@ aliases:
   - memforest-agent-memory
 draft: true
 refactor_hub: agent-memory-03
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-memory-operations-2026
 ---
 
 ## 왜 이 논문이 중요한가

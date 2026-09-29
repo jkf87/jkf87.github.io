@@ -10,7 +10,8 @@ tags:
   - paper-review
 draft: true
 refactor_hub: agent-memory-09
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/agent-experience-memory-reuse-2026
 ---
 
 메모리 기반 자기개선 에이전트가 실제로는 취약하다는 재평가가 나왔음. 실행 분산이 24개 케이스 중 17개(71%)에서 오히려 커졌고, 태스크 순서만 섞어도 +1.5% 개선이 -4.5% 하락으로 뒤집힘. 내 자기개선 루프 평가 방식을 고치게 되는 논문이라 정리함.

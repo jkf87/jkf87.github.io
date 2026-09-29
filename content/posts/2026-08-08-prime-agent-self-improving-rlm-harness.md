@@ -14,7 +14,8 @@ tags:
 socialDescription: "Prime Intellect Prime Agent — RLM과 Continual Harness 기반 자가개선 코딩 에이전트. ARC-AGI-3 95.5%, MIT 오픈소스."
 draft: true
 refactor_hub: harness-self-improve-23
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-harness-nooa-vs-prime-agent-2026
 ---
 
 ## 개요

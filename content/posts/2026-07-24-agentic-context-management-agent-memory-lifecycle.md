@@ -16,7 +16,9 @@ categories:
 source_url: "https://arxiv.org/abs/2607.21503"
 draft: true
 refactor_hub: agent-memory-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-memory-search-design-2026
+
 ---
 
 프로덕션 에이전트가 죽는 이유는 대부분 추론 능력이 아니라 컨텍스트 관리임. 이 논문은 "메모리 = 저장소" 프레임을 버리고 라이프사이클로 관리하라고 주장함. 원문은 [arXiv:2607.21503](https://arxiv.org/abs/2607.21503).

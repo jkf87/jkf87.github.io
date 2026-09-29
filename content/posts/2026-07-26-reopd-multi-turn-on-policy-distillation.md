@@ -20,7 +20,8 @@ authors:
   - conanssam
 draft: true
 refactor_hub: harness-self-improve-24
-refactor_status: queued
+merged_into: posts/llm-agent-self-improvement-evidence-2026
+refactor_status: merged
 ---
 
 에이전트용 소형 모델을 만드는 방법은 크게 RL과 증류임. 둘 다 비용 구조가 문제였는데, Microsoft Research가 증류 쪽 병목을 하나 없앰. 방법이 ReOPD(교사의 기존 궤적을 재활용해 환경 없이 학생을 훈련하는 오프라인 온폴리시 증류 기법)임. 직접 모델을 훈련하는 사람은 드물어도 "왜 요즘 작은 에이전트 모델이 잘 되는가"를 이해하는 데 필요해서 정리함.

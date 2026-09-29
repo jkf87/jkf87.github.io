@@ -16,7 +16,8 @@ aliases:
   - /posts/2026-07-11-sao-single-rollout-asynchronous-agentic-rl
 draft: true
 refactor_hub: agent-rl-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/agent-rl-grpo-failure-fixes-2026
 ---
 
 에이전트 코딩 워크로드를 RL로 돌리면 GPU가 가장 느린 롤아웃을 기다리며 놀아남. SAO(Single-rollout Asynchronous Optimization)는 이 병목을 그룹 샘플링 자체를 버리는 걸로 풀었고, GLM-5.2 훈련에 실제로 들어갔음. 설계 결정 몇 개가 따로 가져올 만해서 정리함.

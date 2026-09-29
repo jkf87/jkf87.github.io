@@ -14,7 +14,8 @@ aliases:
   - rl-for-agents-workshop-huggingface-2026-04-22/index
 draft: true
 refactor_hub: agent-rl-04
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-rl-verifiable-reward-design-2026
 ---
 
 Hugging Face가 2026년 4월 22일 공개한 라이브 워크샵 **"RL for Agents — Deep Dive on Training Agents with RL and Open Source"**(1시간 54분)를 스피커별로 정리한다.

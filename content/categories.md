@@ -48,8 +48,16 @@ tags:
 
 - [[posts/llm-agent-memory-design-guide-2026|LLM 에이전트 메모리 설계 기준 정리 (2026 논문 8편 비교)]]
 - [[posts/llm-agent-experience-learning-2026|LLM 에이전트가 경험으로 배우게 하는 법 (파인튜닝 없는 학습 루프 8편 비교)]]
+- [[posts/llm-agent-rag-vs-knowledge-injection-2026|LLM 에이전트에 문서를 기억시키는 네 갈래: RAG·KV 캐시·장기 메모리 논문 10편 비교]]
+- [[posts/llm-agent-memory-search-design-2026|LLM 에이전트 메모리와 검색 설계: 하이브리드 검색·컨텍스트 압축·포맷 이식성 9편 비교]]
+- [[posts/llm-agent-memory-operations-2026|에이전트 메모리를 학습시키고 고치고 통제하는 법: RL 학습·에러 추적·권한 관리 12자료 비교]]
+- [[posts/llm-agent-memory-reuse-failure-2026|LLM 에이전트 메모리·경험 재사용이 실패하는 지점: 오염·도구 충돌·거짓 보고 13자료 비교]]
+- [[posts/llm-agent-memory-failure-map-2026|LLM 에이전트 메모리가 실전에서 터지는 4개 지점: 쓰기·검색·주입·검증 14자료 비교]]
+- [[posts/llm-agent-long-horizon-state-2026|LLM 에이전트가 오래 돌아도 상태를 잃지 않는 설계: 수면 통합·외부 상태 뱅크·롤백 반성 6종 비교]]
+- [[posts/agent-experience-memory-reuse-2026|에이전트에 메모리를 넣었는데 성능이 떨어질 때: 재구성·쿼리 조건화·스킬화 7종 비교]]
 
 ## 에이전트 자가진화·하네스 연구 정리
+- [[posts/llm-agent-harness-nooa-vs-prime-agent-2026|모델 그대로 두고 에이전트 성능 올리는 하네스 설계: NOOA와 Prime Agent 비교]]
 
 스킬·하네스가 스스로 개선되는 루프를 논문끼리 비교해 설계 기준으로 묶은 글입니다.
 
@@ -62,15 +70,22 @@ tags:
 - [[posts/llm-agent-harness-native-rl-guide-2026|에이전트 강화학습은 배포 하네스 그대로 훈련하면 됩니다: OpenForge RL·Agent Lightning·LEGO-RL 비교]]
 - [[posts/coding-agent-harness-design-guide-2026|같은 모델인데 코딩 에이전트 결과가 다른 이유: 하네스 설계 1차 자료 10편 통합 정리]]
 - [[posts/llm-agent-environment-coevolution-guide-2026|LLM 에이전트 강화학습이 정체될 때는 환경부터: 에이전트·환경 공진화 접근 8편 비교]]
+- [[posts/agent-rl-reward-signal-comparison-2026|에이전트 강화학습에서 보상 신호를 어디서 얻나: 로봇·게임·이미지·문서 8종 비교]]
+- [[posts/agent-rl-grpo-failure-fixes-2026|에이전트 강화학습(GRPO)이 실패하는 다섯 지점과 논문별 해법: 11편 1차 출처 재검증]]
+- [[posts/llm-agent-rl-environment-data-guide-2026|LLM 에이전트 강화학습 환경·데이터 설계 기준: 실행 검증 합성과 측정 계약 8편 비교]]
+- [[posts/llm-agent-rl-verifiable-reward-design-2026|정답이 없는 업무에 강화학습 보상을 만드는 법: LLM 에이전트 RLVR 확장 10편 비교]]
 - [[posts/llm-agent-harness-efficiency-adaptation-2026|LLM 에이전트 하네스가 성능·비용을 결정한다: 토큰 절감부터 161일 자기진화까지 13편 비교]]
 - [[posts/llm-agent-self-improvement-evaluation-2026|LLM 에이전트 자기 개선의 조건: 장기 실행·의도 전환·채점 오류를 잰 논문 11편 비교]]
 - [[posts/llm-agent-harness-verification-design-2026|LLM 에이전트 하네스에 검증을 심는 설계: 반증 가능한 계획·세계 모델·골 드리프트 5편 비교]]
 - [[posts/llm-agent-self-improvement-gates-2026|LLM 에이전트 자기개선은 어디서 고장 나나 — 검증 게이트 논문 5편 비교]]
+- [[posts/llm-agent-self-improvement-layers-2026|LLM 에이전트 자기 개선 어디까지 고쳐도 되나: 3계층·실행 피드백·보안 게이트 (서베이 3종 재검증)]]
 - [[posts/llm-agent-runtime-failure-repair-harness-2026|LLM 에이전트 실행 중 실패를 잡고 고치는 하네스: 감시·적응·수리 8편 비교]]
 
 - [[posts/llm-agent-rsi-reality-check-2026|LLM 에이전트 재귀적 자기개선, 어디까지 실제인가 — 서베이 2편·Meta^n·Frontis-MA1 비교]]
 - [[posts/llm-agent-experience-learning-methods-2026|LLM 에이전트 경험 학습 설계 가이드: 스킬 증류·강화학습·하네스 제어 21편 비교 (arXiv 18편 재검증)]]
 - [[posts/llm-agent-harness-self-evolution-evidence-2026|LLM 에이전트 하네스 자가진화, 진짜 효과인지 확인하는 법: 검증·회귀·전이 10편 비교]]
+- [[posts/llm-agent-harness-frozen-model-evidence-2026|LLM 에이전트 하네스만 고쳐서 성능 올리기: 논문 6편 1차 출처 재검증 (동결 모델 진화 5편 + 하네스 교체 대조 1편)]]
+- [[posts/llm-agent-self-improvement-evidence-2026|AI 에이전트 자기개선 루프, 무엇이 진짜 이득인가: 측정·탐색·증류 논문 5편 비교]]
 - [[posts/llm-agent-fix-outside-model-2026|LLM 에이전트가 같은 실패를 반복할 때 모델 대신 고칠 곳: 지식·문서·워크플로·게이트 10편 비교]]
 ## 에이전트 보안 연구 정리
 

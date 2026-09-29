@@ -12,7 +12,8 @@ tags:
 description: "원본 문서와 KV 캐시를 버린 뒤에도 FFN 레이어에 잔차 벡터 하나만 넣으면 저장된 문장이 재구성되는 성질을 이용해 2M 토큰 리콜을 푼 논문을 정리함. GPU 메모리는 입력 길이와 거의 무관하게 일정함."
 draft: true
 refactor_hub: agent-memory-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-rag-vs-knowledge-injection-2026
 ---
 
 원본 문서와 KV 캐시를 전부 버린 뒤에도 FFN 레이어에 잔차 벡터 하나만 넣어주면 저장된 문장이 그대로 재구성됨. 고려대 논문이 이 성질로 200만 토큰 컨텍스트에서 단일 팩트 질문 정확도 50-80%를 냈고, 같은 조건의 training-free 기법들은 전부 0에 가까웠음.

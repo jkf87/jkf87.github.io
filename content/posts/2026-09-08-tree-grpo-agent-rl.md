@@ -10,7 +10,8 @@ tags:
 description: "에이전트 RL 롤아웃을 체인 대신 스텝 단위 트리로 샘플링해 같은 예산으로 약 1.5배 롤아웃을 얻고 결과 보상만으로 스텝 단위 선호학습 신호를 만드는 Tree-GRPO를 정리함."
 draft: true
 refactor_hub: agent-rl-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/agent-rl-grpo-failure-fixes-2026
 ---
 
 Tree-GRPO(ICLR 2026, Alibaba AMAP)는 에이전트 RL의 롤아웃을 독립 체인 대신 트리 탐색으로 뽑고 트리 노드를 Thought-Action-Observation 스텝 단위로 잡는 방법임. GRPO(같은 문제의 여러 답을 서로 비교해 학습하는 강화학습 알고리즘)의 트리 확장판임. 원문은 [arXiv:2509.21240](https://arxiv.org/abs/2509.21240), 코드는 [GitHub](https://github.com/AMAP-ML/Tree-GRPO)에 공개돼 있음.

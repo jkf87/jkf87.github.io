@@ -13,7 +13,8 @@ tags:
   - automation
 draft: true
 refactor_hub: agent-memory-05
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-memory-reuse-failure-2026
 ---
 
 source: arXiv 2608.01234

@@ -10,7 +10,8 @@ tags:
 draft: true
 description: "LLM 에이전트 장기 메모리를 원문 텍스트 검색 대신 희소 오토인코더로 잠재 그래프를 만들어 쿼리별로 풀어내는 LGM 논문을 정리했습니다. PersonaMem 평균 72.28, MemCoE 대비 +11.20p 수치와 구조를 함께 담았습니다."
 refactor_hub: agent-memory-07
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-memory-failure-map-2026
 ---
 
 ## 핵심 요약

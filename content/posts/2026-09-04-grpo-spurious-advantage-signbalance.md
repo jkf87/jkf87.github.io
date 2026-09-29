@@ -10,7 +10,8 @@ tags:
   - benchmark
 draft: true
 refactor_hub: agent-rl-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/agent-rl-grpo-failure-fixes-2026
 ---
 
 GRPO(같은 프롬프트에서 여러 응답을 뽑아 그룹 내 상대 비교로 학습하는 강화학습 알고리즘)는 그룹 내 보상 통계로 롤아웃별 어드밴티지 크기를 정하는데, "추론해서 맞힌 것"과 "찍어서 맞힌 것"을 구분 못 함. 찍어서 맞은 롤아웃에도 높은 크기가 붙어 그래디언트 가중치에 들어감. 이걸 가짜 어드밴티지(spurious advantage)라 부르는 [논문](https://arxiv.org/abs/2609.04063)이 나옴. 보상 설계의 숨은 구멍이라 정리함.
