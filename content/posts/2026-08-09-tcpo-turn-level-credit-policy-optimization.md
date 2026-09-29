@@ -13,7 +13,8 @@ tags:
 description: 매 턴 점수가 있어도 어느 턴이 공로인지는 모름. 이전 최고점·평행 궤적·반사실 대안 세 기준으로 점수를 크레딧으로 바꾼 TCPO를 에이전트 RL 설계 관점으로 정리함.
 draft: true
 refactor_hub: agent-rl-06
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-rl-credit-assignment-guide-2026
 ---
 
 에이전트 RL에서 검증자가 매 턴 점수를 준다고 "어느 턴이 공로인지" 아는 건 아님. Moore Threads의 TCPO가 점수→크레딧 변환 문제를 정의하고 풀었음. 원문은 [arXiv:2608.01667](https://arxiv.org/abs/2608.01667).
