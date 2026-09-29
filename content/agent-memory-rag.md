@@ -8,7 +8,8 @@ tags:
   - aeo
 draft: true
 refactor_hub: agent-memory-03
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-memory-operations-2026
 ---
 
 ## 결론 먼저

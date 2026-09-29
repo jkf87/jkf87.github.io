@@ -50,6 +50,7 @@ tags:
 - [[posts/llm-agent-experience-learning-2026|LLM 에이전트가 경험으로 배우게 하는 법 (파인튜닝 없는 학습 루프 8편 비교)]]
 - [[posts/llm-agent-rag-vs-knowledge-injection-2026|LLM 에이전트에 문서를 기억시키는 네 갈래: RAG·KV 캐시·장기 메모리 논문 10편 비교]]
 - [[posts/llm-agent-memory-search-design-2026|LLM 에이전트 메모리와 검색 설계: 하이브리드 검색·컨텍스트 압축·포맷 이식성 9편 비교]]
+- [[posts/llm-agent-memory-operations-2026|에이전트 메모리를 학습시키고 고치고 통제하는 법: RL 학습·에러 추적·권한 관리 12자료 비교]]
 
 ## 에이전트 자가진화·하네스 연구 정리
 - [[posts/llm-agent-harness-nooa-vs-prime-agent-2026|모델 그대로 두고 에이전트 성능 올리는 하네스 설계: NOOA와 Prime Agent 비교]]

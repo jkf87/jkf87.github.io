@@ -15,7 +15,8 @@ tags:
 slug: openai-founders-agent-personal-agi-core-memory-2026
 draft: true
 refactor_hub: agent-memory-03
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-memory-operations-2026
 ---
 
 2015년 7월, 샌프란시스코로 돌아가는 차 안.
