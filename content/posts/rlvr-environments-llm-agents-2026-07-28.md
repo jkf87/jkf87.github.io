@@ -16,7 +16,8 @@ aliases:
   - /posts/rlvr-environments-llm-agents-2026-07-28
 draft: true
 refactor_hub: agent-rl-04
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-rl-verifiable-reward-design-2026
 ---
 
 ![RLVR 환경을 데이터셋, 정책, 롤아웃, 루브릭이 연결된 훈련 루프로 표현한 이미지. 에이전트가 잘하는지를 묻는 시대에서, 무엇으로 반복 훈련시킬 것인지를 묻는 시대로 이동하고 있다.](/images/rlvr-environments-llm-agents-2026-07-28/hero.jpg)

@@ -73,6 +73,7 @@ tags:
 - [[posts/agent-rl-reward-signal-comparison-2026|에이전트 강화학습에서 보상 신호를 어디서 얻나: 로봇·게임·이미지·문서 8종 비교]]
 - [[posts/agent-rl-grpo-failure-fixes-2026|에이전트 강화학습(GRPO)이 실패하는 다섯 지점과 논문별 해법: 11편 1차 출처 재검증]]
 - [[posts/llm-agent-rl-environment-data-guide-2026|LLM 에이전트 강화학습 환경·데이터 설계 기준: 실행 검증 합성과 측정 계약 8편 비교]]
+- [[posts/llm-agent-rl-verifiable-reward-design-2026|정답이 없는 업무에 강화학습 보상을 만드는 법: LLM 에이전트 RLVR 확장 10편 비교]]
 - [[posts/llm-agent-harness-efficiency-adaptation-2026|LLM 에이전트 하네스가 성능·비용을 결정한다: 토큰 절감부터 161일 자기진화까지 13편 비교]]
 - [[posts/llm-agent-self-improvement-evaluation-2026|LLM 에이전트 자기 개선의 조건: 장기 실행·의도 전환·채점 오류를 잰 논문 11편 비교]]
 - [[posts/llm-agent-harness-verification-design-2026|LLM 에이전트 하네스에 검증을 심는 설계: 반증 가능한 계획·세계 모델·골 드리프트 5편 비교]]
