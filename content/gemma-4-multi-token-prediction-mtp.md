@@ -10,7 +10,8 @@ tags:
 description: "Gemma 4 모델의 Multi-Token Prediction (MTP) 기능을 Hugging Face Transformers로 사용하는 방법을 다룹니다. Speculative decoding을 통한 추론 가속화의 원리와 실제 코드를 포함합니다."
 draft: true
 refactor_hub: model-releases-03
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/open-weight-local-llm-selection-2026
 ---
 
 > 원문: [Gemma 4 Multi-Token Prediction (MTP) using Hugging Face Transformers](https://ai.google.dev/gemma/docs/mtp/mtp)

@@ -12,7 +12,8 @@ source: arxiv
 source_url: https://arxiv.org/abs/2606.02800
 draft: true
 refactor_hub: model-releases-03
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/open-weight-local-llm-selection-2026
 ---
 
 ![Cosmos 3](/images/2026-06-09-cosmos3-omnimodal-world-models/cosmos3-overview.png)
