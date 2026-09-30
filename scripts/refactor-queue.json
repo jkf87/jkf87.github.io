@@ -5285,9 +5285,8 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "reserved-d",
-  "note": "2026-09-30 병렬 레인 D가 처리한다. 다른 실행은 이 허브를 집지 말 것.",
-  "hub_slug": null
+  "status": "in-review",
+  "hub_slug": "posts/open-weight-local-llm-selection-2026"
  },
  {
   "hub_id": "model-releases-04",
@@ -5918,9 +5917,8 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "reserved-c",
-  "note": "2026-09-30 병렬 레인 C가 처리한다. 다른 실행은 이 허브를 집지 말 것.",
-  "hub_slug": null
+  "status": "in-review",
+  "hub_slug": "posts/llm-memory-saving-weights-vs-kv-cache-quantization-2026"
  },
  {
   "hub_id": "research-agents-01",

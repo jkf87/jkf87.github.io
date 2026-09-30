@@ -12,7 +12,8 @@ aliases:
   - 2bit-llm-quantization-oaem-2026-04-13/index
 draft: true
 refactor_hub: reasoning-efficiency-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-memory-saving-weights-vs-kv-cache-quantization-2026
 ---
 
 ## 들어가며: 왜 2비트 양자화가 중요한가?
