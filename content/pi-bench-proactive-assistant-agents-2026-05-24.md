@@ -10,7 +10,8 @@ enableToc: true
 description: "π-Bench은 100개 시나리오로 개인 비서 에이전트의 선제적 행동 능력을 평가하는 벤치마크다."
 draft: true
 refactor_hub: eval-benchmarks-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-benchmark-score-gap-guide-2026
 ---
 
 ## Q. 개인 비서 에이전트가 "알아서 잘하나요?"

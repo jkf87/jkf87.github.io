@@ -16,7 +16,8 @@ source: https://arxiv.org/abs/2606.05405
 project: https://agents-last-exam.org/
 draft: true
 refactor_hub: eval-benchmarks-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-benchmark-score-gap-guide-2026
 ---
 
 ## 한 줄 요약

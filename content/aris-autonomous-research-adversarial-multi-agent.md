@@ -15,7 +15,8 @@ aliases:
   - aris-autonomous-research-adversarial-multi-agent/index
 draft: true
 refactor_hub: multi-agent-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-multi-agent-design-guide-2026
 ---
 
 AI가 논문을 혼자 쓴다. 아이디어를 떠올리고, 실험을 돌리고, 결과를 분석하고, 원고를 작성하고, 리뷰어 코멘트까지 대응하는 전 과정을 한 번에.

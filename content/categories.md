@@ -74,6 +74,8 @@ tags:
 - [[posts/agent-rl-grpo-failure-fixes-2026|에이전트 강화학습(GRPO)이 실패하는 다섯 지점과 논문별 해법: 11편 1차 출처 재검증]]
 - [[posts/llm-agent-rl-environment-data-guide-2026|LLM 에이전트 강화학습 환경·데이터 설계 기준: 실행 검증 합성과 측정 계약 8편 비교]]
 - [[posts/llm-agent-rl-verifiable-reward-design-2026|정답이 없는 업무에 강화학습 보상을 만드는 법: LLM 에이전트 RLVR 확장 10편 비교]]
+- [[posts/llm-agent-onpolicy-distillation-teacher-design-2026|증류 교사를 어디서 얻나: LLM 에이전트 온폴리시 증류 교사 설계 4편 비교]]
+- [[posts/llm-agent-rl-credit-assignment-guide-2026|LLM 에이전트 강화학습 크레딧 할당 설계: 궤적 보상을 턴·스텝·토큰으로 쪼개는 12편 비교]]
 - [[posts/llm-agent-harness-efficiency-adaptation-2026|LLM 에이전트 하네스가 성능·비용을 결정한다: 토큰 절감부터 161일 자기진화까지 13편 비교]]
 - [[posts/llm-agent-self-improvement-evaluation-2026|LLM 에이전트 자기 개선의 조건: 장기 실행·의도 전환·채점 오류를 잰 논문 11편 비교]]
 - [[posts/llm-agent-harness-verification-design-2026|LLM 에이전트 하네스에 검증을 심는 설계: 반증 가능한 계획·세계 모델·골 드리프트 5편 비교]]
@@ -93,6 +95,9 @@ LLM 에이전트 보안 논문을 비교해 방어 설계 기준을 정리한 �
 
 - [[posts/llm-agent-security-defense-guide-2026|LLM 에이전트 보안 설계 기준 정리 (2026 논문 7편 비교)]]
 - [[posts/llm-agent-harness-attack-surface-2026|AI 코딩 에이전트 어디까지 뚫리나: 악성 이슈·스킬 오염·하네스 권한상승 6편 총정리]]
+- [[posts/llm-agent-safety-attack-eval-defense-guide-2026|LLM 에이전트는 어디서 무너지나: 공격·평가·방어 13종 총정리]]
+- [[posts/llm-agent-misalignment-safety-guide-2026|LLM 에이전트 미스얼라인먼트 어떻게 막나: Claude 협박률 96%→0%와 훈련·성찰·모니터 3층 정리]]
+- [[posts/ai-cybersecurity-glasswing-nday-2026|AI 사이버보안 어디까지 사실인가: Glasswing 1만 취약점·N-day 익스플로잇 실험·OpenMythos 재구현]]
 
 ## 코딩 에이전트 운영·신뢰 정리
 
@@ -144,6 +149,14 @@ Claude Code 주간 신기능 정리 4편과 구독·인증 안전 글 3편을 1�
 
 - [[posts/llm-agent-tool-use-tuning-debug-2026|LLM 에이전트 도구 호출 비용 줄이고 실패 잡는 순서 (측정·훈련·조절·감사·디버깅 10편 통합)]]
 
+## 멀티에이전트 설계·운영 정리
+
+멀티에이전트 LLM 연구를 비교해 설계 기준을 정리한 글입니다.
+
+- [[posts/llm-multi-agent-design-guide-2026|LLM 에이전트 팀 설계, 언제 이기고 언제 지나: 멀티에이전트 11편 통합 정리]]
+- [[posts/llm-multi-agent-failure-fixes-2026|LLM 에이전트 여러 개가 실패하는 4가지 지점과 해법: DarkForest·SearchOS·WebSwarm 비교]]
+- [[posts/llm-multi-agent-org-structure-2026|멀티 에이전트 오케스트레이션 실패 원인과 조직 설계 해법: $5,000 후기와 Fugu·ORCH 비교]]
+
 ## 사이트 안내
 
 - [[about|운영자 소개]]
@@ -162,3 +175,18 @@ Claude Code 주간 신기능 정리 4편과 구독·인증 안전 글 3편을 1�
 암묵지(taste)를 검증 루브릭으로 바꾸는 절차를 다룬 옛 글 4편을 1차 출처 대조와 WCAG 명암비 재계산으로 통합한 가이드입니다.
 
 - [[posts/ai-agent-verifier-rubric-guide-2026|AI 에이전트 결과물이 '이건 아닌데'일 때: taste를 검증 루브릭으로 바꾸는 하네스 verifier 설계법]]
+
+## 에이전트 벤치마크·평가 정리
+
+에이전트 벤치마크 점수와 실전 성과의 격차를 측정한 글을 모았습니다.
+
+- [[posts/llm-agent-benchmark-score-gap-guide-2026|터미널 벤치마크 82%가 실전 업무 1%로 무너지는 이유: LLM 에이전트 벤치마크 10종 비교]]
+- [[posts/llm-agent-evaluation-design-guide-2026|LLM 에이전트 평가 설계 가이드: 점수 다음에 볼 축·신뢰성·비용 — 벤치마크·연구 14종 비교]]
+- [[posts/ai-personalized-evaluation-guide-2026|AI가 내 취향에 맞는지 어떻게 평가하나: LLM Judge 개인화·취향 루브릭·이미지 벤치마크 6종 비교]]
+- [[posts/gui-agent-reliability-guide-2026|GUI 에이전트가 무너지는 4가지 지점과 검증 설계: MobileGym·Qwen-UI-Agent·ERPBench 비교]]
+
+## 브라우저·화면 작업에 AI 붙이기
+
+사람이 쓰는 브라우저·캡처·영상·문서 작업에 AI를 붙이는 도구와 기법을 옛 글 11편에서 통합 정리한 허브입니다.
+
+- [[posts/ai-agent-browser-screen-tools-guide-2026|AI 에이전트와 브라우저·화면 작업을 나눠 쓰는 법: ego lite, macshot, VOID, PolicyGuide 통합 정리]]

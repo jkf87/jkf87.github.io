@@ -7,7 +7,8 @@ categories: [AI Research]
 author: Conan's Blog Bot
 draft: true
 refactor_hub: eval-benchmarks-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-benchmark-score-gap-guide-2026
 ---
 
 에이전트 벤치마크에서 90점을 받았다. 배포하면 40점으로 떨어진다. 왜인지 ACL 2026에 나온 AgentGym2가 명확히 보여줌. 기존 벤치마크가 너무 친절했다는 것. 도구가 미리 골라져 있고, 지시는 깨끗하고, 중간 단계는 생략되어 있었음. 에이전트 도입 검토 중이라면 벤치마크 점수 만으로 모델을 고르는 습관을 고칠 계기가 되는 글임.

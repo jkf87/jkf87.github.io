@@ -17,7 +17,8 @@ aliases:
   - /posts/2026-07-13-llm-agent-failure-taxonomy-synthesis
 draft: true
 refactor_hub: multi-agent-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-multi-agent-failure-fixes-2026
 ---
 
 에이전트를 실무에 돌리다 보면 데모는 잘 되는데 실제 업무에서만 무너지는 경험이 반복됨. 그 이유를 27편의 벤치마크·감아 연구를 종합한 논문이 정리했음. 원문은 [arXiv:2607.05775](https://arxiv.org/abs/2607.05775).

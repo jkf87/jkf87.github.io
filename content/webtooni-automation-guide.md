@@ -10,7 +10,8 @@ description: 웹툰이(Webtooni)를 사용하여 AI 캐릭터를 자동으로 �
 publishDate: 2025-03-26
 draft: true
 refactor_hub: web-gui-agents-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/ai-agent-browser-screen-tools-guide-2026
 ---
 
 # 웹툰이-자동으로-만들어진다

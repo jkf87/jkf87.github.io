@@ -9,7 +9,8 @@ authors:
     url: "https://jkf87.github.io/"
 draft: true
 refactor_hub: agent-rl-06
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-rl-credit-assignment-guide-2026
 ---
 
 에이전트 RL에서 제일 골치 아픈 게 크레딧 할당임. 수십 번의 도구 호출 중 정확히 어느 것이 정답 도달에 기여했는지 결과 보상은 말을 안 해줌. TRACE는 동결된 참조 모델을 탐침으로 써서 턴 단위 보상을 계산해냈음. 추가 크리틱, 과정 라벨, 판단 모델 다 없이 작동함.

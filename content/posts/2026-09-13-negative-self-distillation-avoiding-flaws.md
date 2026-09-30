@@ -5,7 +5,8 @@ tags: [llm, rl, self-distillation, reasoning]
 description: "온폴리시 자기증류가 정답을 아는 가르침이라 자기교정 행동을 억제한다는 진단에서 출발해 모델 스스로 결함 추론 분포를 만들고 그것을 피하게 학습시키는 NSD를 정리함."
 draft: true
 refactor_hub: agent-rl-05
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-onpolicy-distillation-teacher-design-2026
 ---
 
 정답을 보여주며 가르치는 자기증류 대신 모델 스스로 '부정확한 추론자' 역할을 시켜 그 분포를 피하도록 학습시키는 방법이 7개 수학 벤치마크에서 일관되게 더 좋았다는 논문이 나왔음. Qwen3 1.7B/4B/8B에서 평균 +2.3/+7.5/+6.0% 개선이고 라벨도 외부 교사도 필요 없음. 원문은 [arXiv 2609.11699](https://arxiv.org/abs/2609.11699).

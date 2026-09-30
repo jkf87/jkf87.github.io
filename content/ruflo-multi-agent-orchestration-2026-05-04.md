@@ -15,7 +15,8 @@ aliases:
   - ruflo-multi-agent-orchestration-2026-05-04/index
 draft: true
 refactor_hub: multi-agent-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-multi-agent-design-guide-2026
 ---
 
 # Ruflo: Claude Code에 스웜·자가학습·페더레이션을 얹은 멀티에이전트 오케스트레이터

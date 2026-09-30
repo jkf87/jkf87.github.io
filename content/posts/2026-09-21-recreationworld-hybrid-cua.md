@@ -12,7 +12,8 @@ tags:
   - harness
   - rl
 refactor_hub: web-gui-agents-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/gui-agent-reliability-guide-2026
 ---
 
 ## 결론 먼저

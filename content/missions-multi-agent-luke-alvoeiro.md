@@ -5,7 +5,8 @@ tags: ["AI", "다중에이전트", "에이전트", "소프트웨어개발", "자
 description: "Luke Alvoeiro(Factory)의 AI Engineer Europe 발표를 통해 배우는 실무형 다중 에이전트 시스템. 5가지 패턴부터 구조화된 핸드오프, 역할별 모델 선택까지."
 draft: true
 refactor_hub: multi-agent-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-multi-agent-design-guide-2026
 ---
 
 무대 위에 선 남자가 한 문장을 던진다.

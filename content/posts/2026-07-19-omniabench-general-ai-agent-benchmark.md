@@ -6,7 +6,8 @@ description: "ToC·ToB·ToE 354개 도메인 1,431 과제로 범용 에이전트
 source_url: "https://arxiv.org/abs/2607.14989"
 draft: true
 refactor_hub: eval-benchmarks-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-evaluation-design-guide-2026
 ---
 
 에이전트 성능표를 보면 "몇 점"만 있고 어디가 약한지는 없음. 근데 실무는 약한 지점을 아는 게 중요함. 범용 에이전트를 역량별로 해부한 벤치마크가 나와서 정리함. 원문은 [arXiv:2607.14989](https://arxiv.org/abs/2607.14989).

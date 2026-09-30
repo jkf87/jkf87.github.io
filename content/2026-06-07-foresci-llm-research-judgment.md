@@ -17,7 +17,8 @@ source: arxiv
 source_url: https://arxiv.org/abs/2606.00644
 draft: true
 refactor_hub: eval-benchmarks-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-evaluation-design-guide-2026
 ---
 
 ## 한 줄 요약

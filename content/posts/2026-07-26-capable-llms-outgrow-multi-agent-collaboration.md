@@ -10,7 +10,8 @@ publication: "Nature Machine Intelligence"
 doi: "10.1038/s42256-026-01268-y"
 draft: true
 refactor_hub: multi-agent-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-multi-agent-failure-fixes-2026
 ---
 
 "에이전트를 더 붙이면 성능이 오른다"는 통념이 오래 지속됐음. 근데 프롬프트·도구·컴퓨트 예산이 제각각이라 깨끗한 비교가 없었음. Nature MI에 실린 이 연구는 처음으로 통제된 조건에서 이 질문에 답함. 결론은 단순하고 강력함. 단일 에이전트 기준 성능이 약 45%를 넘으면 에이전트를 추가하는 게 성능을 깎아먹는다는 것. 멀티에이전트 도입을 검토 중이라면 이 숫자부터 채점하고 시작해야 함.

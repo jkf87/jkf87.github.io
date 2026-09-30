@@ -13,7 +13,8 @@ tags:
   - Jev
 draft: true
 refactor_hub: agent-safety-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-safety-attack-eval-defense-guide-2026
 ---
 
 # AUROC 0.95인 AI 검사기가 실패의 8.8%만 잡았습니다: 논문 벤치마크 직접 재현

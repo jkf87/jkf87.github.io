@@ -6,7 +6,8 @@ tags: [LLM, Agent, Multi-Agent, Web Search, Deep Research]
 categories: [AI Research]
 draft: true
 refactor_hub: multi-agent-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-multi-agent-failure-fixes-2026
 ---
 
 딥 리서치 에이전트를 만들다 보면 항상 같은 벽에 부딪힘. 단일 ReAct 에이전트(생각-행동-관찰을 한 스텝씩 반복하며 도구를 부르는 표준 에이전트 루프)는 컨텍스트가 길어지면서 탐색이 얕아지고, 무작정 병렬로 나누면 이번엔 깊이를 못 파고. WebSwarm이라는 프레임워크가 이 "깊이냐 넓이냐" 딜레마를 재귀 위임으로 풀었음. 오케스트레이션 설계를 고민 중이라면 참고할 게 많은 구조임.

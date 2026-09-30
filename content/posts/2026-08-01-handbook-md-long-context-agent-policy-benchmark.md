@@ -5,7 +5,8 @@ tags: ["agent", "benchmark", "MCP", "long-context", "policy-compliance", "LLM"]
 description: "HANDBOOK.md는 65개 기업 태스크에서 20~124페이지 SOP를 지키는지를 측정함. 최고 모델도 strict 기준 36.2%에 그침. 즉각 요청이 규칙을 덮어쓰는 등 4가지 실패 패턴과 하네스 설계 교훈을 정리함."
 draft: true
 refactor_hub: eval-benchmarks-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-evaluation-design-guide-2026
 ---
 
 에이전트 벤치마크는 대부분 "할 수 있는가"를 물음. HANDBOOK.md는 다른 질문을 던짐. "해야 할 일만 했는가, 하지 말아야 할 일은 피했는가." 10개 가상 기업에 전문가가 작성한 20~124페이지짜리 SOP(표준 운영 절차 문서, 해야 할 일과 하지 말아야 할 일을 적은 사내 규정집)를 두고 82개 MCP 도구(MCP는 모델이 외부 도구와 데이터에 표준 프로토콜로 연결되게 하는 규격)로 실제 업무를 시킴. 결과가 뼈아픔. 최고 모델도 strict 기준 36.2%. 세 태스크 중 두 개를 실패함. 기업 자동화를 검토하는 사람이라면 이 숫자의 의미를 정확히 알아야 함.

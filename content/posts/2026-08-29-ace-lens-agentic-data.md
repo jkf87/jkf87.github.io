@@ -5,7 +5,8 @@ tags: [agent, llm, data-generation, survey]
 description: "에이전트 학습 데이터를 환경·과제·상호작용·검증기 (E,q,τ,v)로 분해하고 정확도·복잡도·다양성(ACE)으로 평가하는 프레임워크 서베이를 정리함. 실무에서 가장 먼저 무너지는 검증기와 난이도 보정 문제를 짚음."
 draft: true
 refactor_hub: eval-benchmarks-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-evaluation-design-guide-2026
 ---
 
 에이전트 훈련 데이터를 만들 때 판단 기준은 양이 아님. 이 서베이(arXiv 2608.27260)가 주장하는 핵심 과제는 단순히 더 많은 데이터를 생성하는 게 아니라 유효하고 정보량 있고 중복 없는 경험을 계속 배분하는 것. agentic RL이든 하네스 최적화든 자기 진화든 "어떤 경험을 샘플해 학습시킬 것인가"는 피할 수 없는 질문인데, 이 논문이 그 질문에 공통 언어를 줌.

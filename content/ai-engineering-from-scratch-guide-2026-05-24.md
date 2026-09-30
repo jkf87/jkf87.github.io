@@ -5,7 +5,8 @@ tags: [ai, education, llm, agent, open-source]
 image: images/ai-engineering-from-scratch-2026-05-24/og-image.jpg
 draft: true
 refactor_hub: web-gui-agents-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/ai-agent-browser-screen-tools-guide-2026
 ---
 
 **Q1. AI Engineering from Scratch가 뭔가요?**

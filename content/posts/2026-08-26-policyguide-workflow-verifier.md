@@ -4,7 +4,8 @@ date: 2026-08-26T19:05:00+09:00
 tags: [llm-agent, policy-compliance, runtime-guardrail, tau2-bench, verifier]
 draft: true
 refactor_hub: web-gui-agents-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/ai-agent-browser-screen-tools-guide-2026
 ---
 
 고객 서비스 에이전트의 정책 위반은 드라마틱한 해킹이 아니라 신원 확인 한 번을 건너뛰고 승인을 누르는 사소한 순간에 일어남. PolicyGuide는 이걸 정책 문서를 워크플로 그래프로 컴파일해서 외부에서 추적하는 걸로 품. 검증 설계의 방향이 명확해서 정리함.

@@ -8,7 +8,8 @@ tags:
   - paper-review
 draft: true
 refactor_hub: multi-agent-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-multi-agent-design-guide-2026
 ---
 
 에이전트를 여럿 두면 서로 봐주니까 더 똑똑해질 거라는 기대로 debate나 critique 루프를 달아본 적이 있다면 이 논문이 그 기대의 반쪽을 잘라냄. 시카고 대학교 팀이 11개 최적화 태스크에서 확인한 결과, 에이전트끼리 전체 해답을 주고받는 순간 제안들이 한 라운드 만에 서로 비슷해짐. 다양한 모델을 섞은 이유가 사라지는 것임. 논문은 이 손실에 인터랙션 텍스라는 이름을 붙였음.

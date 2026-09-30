@@ -12,7 +12,8 @@ tags:
 description: "macshot은 macOS에서 스크린샷, 주석, 화면 녹화, OCR, 스크롤 캡처까지 지원하는 무료 오픈소스 도구입니다. CleanShot X 대안을 찾는 분들에게 잘 맞습니다."
 draft: true
 refactor_hub: web-gui-agents-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/ai-agent-browser-screen-tools-guide-2026
 ---
 
 ![](./images/macshot-macos-screenshot-tool-preview.png)

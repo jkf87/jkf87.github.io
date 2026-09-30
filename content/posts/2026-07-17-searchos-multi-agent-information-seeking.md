@@ -12,7 +12,8 @@ tags:
 cover: /images/2026-07-17-searchos-multi-agent-information-seeking/fig-2-p4.png
 draft: true
 refactor_hub: multi-agent-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-multi-agent-failure-fixes-2026
 ---
 
 검색 에이전트가 긴 작업에서 길을 잃는 건 모델 능력 문제가 아니라 상태 관리 문제라는 관점의 논문이 나왔음. 계획·증거·실패 기록이 대화 이력이라는 휘발성 매체에만 있으니 잃어버린다는 것. 원문은 [arXiv:2607.15257](https://arxiv.org/abs/2607.15257).
