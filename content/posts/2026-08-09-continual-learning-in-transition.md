@@ -15,7 +15,8 @@ authors:
   - conanssam
 draft: true
 refactor_hub: ai-trends-misc-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-production-checklist-2026
 ---
 
 "파인튜닝하면 예전 능력을 까먹는다"가 continual learning의 전부였던 시절이 있었음. 근데 LLM 에이전트 시대에 이 틀이 흔들리고 있음. 에이전트는 배포 뒤에도 살아있고, 능력을 파일과 메모리에 쌓고, 그래디언트 없이도 개선됨. 이 서베이는 그 전환을 When·How·Where 세 축으로 정리함. 에이전트를 운영하며 "우리 시스템은 어디서 학습하고 있나"를 물을 때 지도가 되는 문서임.
