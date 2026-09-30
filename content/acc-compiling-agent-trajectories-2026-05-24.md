@@ -10,7 +10,8 @@ enableToc: true
 description: "ACC는 에이전트 궤적을 장문 컨텍스트 학습용 데이터로 자동 변환하는 방법이다."
 draft: true
 refactor_hub: ai-trends-misc-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/2026-09-30-llm-agent-reliability-synthesis
 ---
 
 ## Q. 에이전트가 남기는 '궤적'이란 게 뭔가요?

@@ -12,7 +12,8 @@ tags:
   - benchmark
 draft: true
 refactor_hub: ai-trends-misc-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/2026-09-30-llm-agent-reliability-synthesis
 ---
 
 롱호라이즌 에이전트가 왜 한 번에 무너지는지 물리학 프레임으로 측정한 논문이 나옴. 과장 없이 자기 검정까지 해서 정리할 가치가 큼. 원문은 [arXiv:2609.17419](https://arxiv.org/abs/2609.17419).

@@ -6,7 +6,8 @@ categories: ["AI Agent"]
 source_url: "https://arxiv.org/abs/2607.17947"
 draft: true
 refactor_hub: ai-trends-misc-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/2026-09-30-llm-agent-reliability-synthesis
 ---
 
 "내 에이전트가 자율적이다"라는 말의 기준이 애매했음. Autonomous Agency Scale(AAS, 아무도 시키지 않을 때 에이전트가 스스로 무엇을 하는지를 레벨 0-5로 재는 자율성 평가 척도)이 그 질문을 관측 가능한 테스트로 바꿔줌. 원문은 [arXiv:2607.17947](https://arxiv.org/abs/2607.17947).
