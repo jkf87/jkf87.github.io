@@ -18,7 +18,8 @@ aliases:
   - /posts/claude-opus-5-system-card-deep-dive-2026-07-25
 draft: true
 refactor_hub: model-releases-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/claude-mythos-gpt-5-6-trusted-access-2026
 ---
 
 ![Claude Opus 5 System Card 표지. 2026년 7월 24일 공개된 194페이지 분량의 문서다. 단순한 벤치마크 홍보문이 아니라, RSP 관점에서 재앙적 위험 임계값을 어디까지 따지는지 보여주는 문서에 가깝다.](/images/claude-opus-5-agentic-work-2026-07-25/figure-01.png)
