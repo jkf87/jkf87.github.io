@@ -11,7 +11,8 @@ source: huggingface
 source_url: https://huggingface.co/papers/2605.30280
 draft: true
 refactor_hub: multimodal-world-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/2026-realtime-multimodal-agent-comparison
 ---
 
 알리바라의 Qwen 팀이 로봇 조작(manipulation), 내비게이션(navigation), 궤적 예측(trajectory prediction)을 하나의 모델에서 처리하는 **Qwen-VLA**를 발표했습니다. 기존에는 태스크마다 전용 모델을 따로 쓰는 게 보통이었는데, 이걸 통합했다는 게 핵심입니다. 논문의 주요 내용을 Q&A로 정리해봤습니다.
