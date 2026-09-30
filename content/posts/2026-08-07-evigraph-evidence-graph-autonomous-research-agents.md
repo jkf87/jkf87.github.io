@@ -9,7 +9,8 @@ tags:
 description: "연구 에이전트의 주장을 실험 기록까지 추적 가능하게 만드는 typed evidence graph와 검증 루프를 자동화 관점에서 정리함."
 draft: true
 refactor_hub: research-agents-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/autonomous-research-agents-verification-guide-2026
 ---
 
 자율 연구 에이전트가 논문을 쓸 때 최대 문제는 주장의 출처가 추적 안 된다는 것임. EviGraph는 연구 과정 전체를 typed evidence graph로 표현해서 이걸 풂. 순차 파이프라인 대신 노드-엣지 그래프 상태로 연구를 다루고 매 단계 증거 체인을 검사하는 게 핵심임.
