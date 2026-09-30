@@ -16,7 +16,8 @@ aliases:
 cover: images/2026-07-01-google-pat-automating-scientific-review/fig-p4.png
 draft: true
 refactor_hub: research-agents-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/autonomous-research-agents-verification-guide-2026
 ---
 
 논문 생성은 AI로 가속됐는데 검증은 여전히 사람 처리량에 묶여 있음. Google이 STOC·ICML(이론 컴퓨터과학·머신러닝 분야 최상위 학회)에 실제로 돌린 자동 리뷰 에이전트 PAT에서 나온 숫자를 보면, 검증 자동화도 이제 설계 문제임. 원문은 [arXiv:2606.28277](https://arxiv.org/abs/2606.28277).

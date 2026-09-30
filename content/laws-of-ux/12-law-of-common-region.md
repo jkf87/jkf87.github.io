@@ -6,7 +6,9 @@ slug: "law-of-common-region"
 parent: "laws-of-ux-index"
 draft: true
 refactor_hub: ux-laws-05
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/laws-of-ux-4-gestalt-grouping-laws-guide
+
 ---
 
 ![](https://lawsofux.com/law-of-common-region/social.png)

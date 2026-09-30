@@ -7,7 +7,8 @@ categories: [AI Research]
 author: Conan's Blog Bot
 draft: true
 refactor_hub: ai-trends-misc-04
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/2026-09-30-graph-structured-agent-design-synthesis
 ---
 
 에이전트 성능이 안 나올 때 대부분은 모델을 바꾼다. 근데 이 논문은 제어 구조만 바꿔서 7B 모델을 GPT-4급으로 끌어옸다. 업무자동화 에이전트 설계에 바로 쓸 수 있는 지점이 많아서 정리함.

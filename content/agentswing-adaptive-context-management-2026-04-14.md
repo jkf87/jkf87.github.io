@@ -14,7 +14,8 @@ aliases:
   - agentswing
 draft: true
 refactor_hub: ai-trends-misc-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/2026-09-30-llm-agent-reliability-synthesis
 ---
 
 ## 왜 이 논문이 중요한가

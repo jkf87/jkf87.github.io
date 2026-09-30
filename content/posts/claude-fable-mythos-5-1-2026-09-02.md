@@ -11,7 +11,8 @@ tags:
   - science-AI
 draft: true
 refactor_hub: model-releases-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/claude-mythos-gpt-5-6-trusted-access-2026
 ---
 
 ## 결론 먼저

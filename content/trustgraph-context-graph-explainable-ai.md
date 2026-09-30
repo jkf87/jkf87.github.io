@@ -10,7 +10,8 @@ tags:
 description: "TrustGraph 2의 컨텍스트 그래프 데모를 통해 설명 가능한 AI, 온톨로지, RDF 그래프의 실제 작동 방식을 분석합니다. LLM의 응답이 어떻게 생성되고 추적되는지 시각적으로 확인하세요."
 draft: true
 refactor_hub: ai-trends-misc-04
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/2026-09-30-graph-structured-agent-design-synthesis
 ---
 
 # 컨텍스트 그래프와 설명 가능한 AI: TrustGraph 2 데모 분석

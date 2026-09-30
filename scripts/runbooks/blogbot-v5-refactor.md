@@ -68,7 +68,9 @@ Gate: `scripts/blog-refactor-gate.py --mode hub|expand|new`
    - Reference images from `content/posts/` as `../media/<new-slug>/<file>.png`.
    - End with this line: `이 글은 블로그봇(코난쌤의 오픈클로 에이전트)이 여러 자료를 비교·정리하고 직접 실행해 확인한 내용으로 초안을 만들고, 운영자가 검토해 발행했습니다.`
    - In each member post's frontmatter, set only `refactor_status: merged` and `merged_into: posts/<new-slug>`. Keep `draft: true`.
-   - In the queue, set this hub's `status: in-review` and `hub_slug: posts/<new-slug>`.
+   - In the queue, set this hub's `status: in-review` and `hub_slug: posts/<new-slug>` with the helper:
+     `python3 scripts/queue-set.py --hub <hub_id> --status in-review --hub-slug posts/<new-slug>`
+     Never edit or rewrite `scripts/refactor-queue.json` by hand or with your own `json.dump`. A rewrite changes the indentation of all 13,000 lines, hides the real change and breaks merges. The helper changes three lines and keeps the format fixed. Use it for `published` too.
    - Add the hub link to the matching section of `content/categories.md`, creating the section if needed.
    - Gate: `--mode hub`.
 3. **NEW (only when both queues are empty, at most one per day):** a roundup comparing 4 or more recent papers on one theme (hub rules apply), or a hands-on test of one tool (`--mode new`). Never a single-paper post.
@@ -84,7 +86,7 @@ Gate: `scripts/blog-refactor-gate.py --mode hub|expand|new`
 
 - Run `python3 scripts/blog-refactor-gate.py <post> --mode <mode> --site-root .`, then `python3 scripts/blog-claim-verification-gate.py <post>`, then `npx quartz build`. Any failure: fix and rerun once. If it still fails, revert your changes for this unit and report the exact failures.
 - Commit only this unit: the post, its `content/media/<slug>/`, the member frontmatter flags, `scripts/refactor-queue.json` and `content/categories.md`. Push the branch.
-- Open or update one PR per day titled `refactor: <date>`, with a checklist of units, gate results and preview notes. At the 22:00 run, send the owner the PR link on Telegram. If `gh` is unavailable, push the branch and send `https://github.com/jkf87/jkf87.github.io/compare/main...<branch>` instead. The owner merging the PR is the human review. After merge, set the merged hubs' queue status to `published`.
+- Open or update one PR per day titled `refactor: <date>`, with a checklist of units, gate results and preview notes. At the 22:00 run, send the owner the PR link on Telegram. If `gh` is unavailable, push the branch and send `https://github.com/jkf87/jkf87.github.io/compare/main...<branch>` instead. The owner merging the PR is the human review. After merge, set the merged hubs' queue status to `published` (`python3 scripts/queue-set.py --hub <hub_id> --status published`).
 - For every unit, create the Obsidian note `/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/<YYYY-MM-DD>-<slug>.md` as before.
 - Threads (optional): after a merge, at most one post per published hub, linking to the hub. Never link to a post whose live URL is not HTTP 200.
 - `REVIEW_MODE=pr` is the default. Switch to `auto` (push straight to `main` when every gate passes) only after the owner says so. Do not switch before AdSense approval.

@@ -7,7 +7,8 @@ categories: ["AI Agent"]
 source_url: "https://arxiv.org/abs/2607.14275"
 draft: true
 refactor_hub: ai-trends-misc-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-production-checklist-2026
 ---
 
 에이전트가 실패하면 모델 탓부터 하게 됨. 근데 같은 모델인데 컨텍스트만 바꿨더니 행동이 극적으로 달라지는 실험이 있음. 원문은 [arXiv:2607.14275](https://arxiv.org/abs/2607.14275).

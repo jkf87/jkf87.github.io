@@ -8,7 +8,8 @@ tags:
   - aeo
 draft: true
 refactor_hub: research-agents-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/autonomous-research-agents-verification-guide-2026
 ---
 
 ## 결론 먼저

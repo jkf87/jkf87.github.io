@@ -11,7 +11,8 @@ tags:
 description: "현대 LLM의 어텐션 변형인 MHA, GQA, MLA, SWA, Sparse, Hybrid 구조를 한국어로 한 번에 정리한 요약 글입니다."
 draft: true
 refactor_hub: reasoning-efficiency-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-reasoning-efficiency-cost-guide-2026
 ---
 
 ## TL;DR

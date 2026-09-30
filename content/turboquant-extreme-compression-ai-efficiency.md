@@ -10,7 +10,8 @@ tags:
 description: "Google Research의 TurboQuant는 LLM의 KV 캐시를 3비트까지 압축하면서도 정확도 손실 없이, H100에서 최대 8배 빠른 추론 속도를 달성하는 근본적 압축 알고리즘입니다."
 draft: true
 refactor_hub: reasoning-efficiency-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-memory-saving-weights-vs-kv-cache-quantization-2026
 ---
 
 ![TurboQuant hero animation](./images/turboquant/hero.gif)

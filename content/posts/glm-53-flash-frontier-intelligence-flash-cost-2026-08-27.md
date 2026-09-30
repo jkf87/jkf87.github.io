@@ -13,7 +13,8 @@ tags:
 description: "Z.ai가 공개한 GLM-5.3-Flash를 정리했습니다. 320B 총 파라미터, 18B 활성 파라미터, 1M context, sparse+linear attention, 시각 코딩 루프, 중국산 AI 칩 서빙까지 핵심을 봅니다."
 draft: true
 refactor_hub: model-releases-04
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/2026-open-model-release-comparison
 ---
 
 ## GLM-5.3-Flash 요약

@@ -12,7 +12,8 @@ aliases:
   - ece7115-4-modern-llm-architecture/index
 draft: true
 refactor_hub: llm-course-notes-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-training-cost-to-parallelism-guide-2026
 ---
 
 ECE7115 4강은 vanilla Transformer를 요즘 LLM 스타일로 바꾸는 핵심 선택지를 압축해서 보여준다. Pre-Norm, RMSNorm, RoPE, SwiGLU가 사실상 표준 조합에 가깝다는 점이 핵심이다.

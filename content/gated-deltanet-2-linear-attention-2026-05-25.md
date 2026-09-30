@@ -11,7 +11,8 @@ enableToc: true
 description: "NVIDIA가 발표한 Gated DeltaNet-2는 선형 어텐션 모델에서 삭제(erase)와 쓰기(write)를 분리해 긴 문맥 처리 성능을 크게 끌어올린 아키텍처입니다."
 draft: true
 refactor_hub: reasoning-efficiency-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-reasoning-efficiency-cost-guide-2026
 ---
 
 ## Transformer의 메모리 문제, 그리고 선형 어텐션

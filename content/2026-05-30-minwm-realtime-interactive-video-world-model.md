@@ -11,7 +11,8 @@ source: huggingface
 source_url: https://huggingface.co/papers/2605.30263
 draft: true
 refactor_hub: multimodal-world-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/2026-realtime-multimodal-agent-comparison
 ---
 
 ## minWM: 비디오 diffusion을 실시간 인터랙티브 월드 모델로

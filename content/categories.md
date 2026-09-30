@@ -55,6 +55,7 @@ tags:
 - [[posts/llm-agent-memory-failure-map-2026|LLM 에이전트 메모리가 실전에서 터지는 4개 지점: 쓰기·검색·주입·검증 14자료 비교]]
 - [[posts/llm-agent-long-horizon-state-2026|LLM 에이전트가 오래 돌아도 상태를 잃지 않는 설계: 수면 통합·외부 상태 뱅크·롤백 반성 6종 비교]]
 - [[posts/agent-experience-memory-reuse-2026|에이전트에 메모리를 넣었는데 성능이 떨어질 때: 재구성·쿼리 조건화·스킬화 7종 비교]]
+- [[posts/llm-agent-memory-roundup-2026-09-30|LLM 에이전트 메모리 최신 논문 7편 비교 (저장·확인·공개·학습)]]
 
 ## 에이전트 자가진화·하네스 연구 정리
 - [[posts/llm-agent-harness-nooa-vs-prime-agent-2026|모델 그대로 두고 에이전트 성능 올리는 하네스 설계: NOOA와 Prime Agent 비교]]
@@ -190,3 +191,60 @@ Claude Code 주간 신기능 정리 4편과 구독·인증 안전 글 3편을 1�
 사람이 쓰는 브라우저·캡처·영상·문서 작업에 AI를 붙이는 도구와 기법을 옛 글 11편에서 통합 정리한 허브입니다.
 
 - [[posts/ai-agent-browser-screen-tools-guide-2026|AI 에이전트와 브라우저·화면 작업을 나눠 쓰는 법: ego lite, macshot, VOID, PolicyGuide 통합 정리]]
+- [[posts/ai-agent-practical-guide-2026|AI 에이전트 실무 통합 가이드: 폰 서버 구축부터 GUI 에이전트 클릭 정확도·이미지 편집 규칙까지]]
+
+## AI 에이전트 실전 배포·동향 정리
+
+에이전트를 실무에 올릴 때 걸리는 지점과 2026년 흐름을 주제별로 비교한 글입니다.
+
+- [[posts/llm-agent-production-checklist-2026|LLM 에이전트 실무 배포, 모델을 안 바꾸고 고치는 다섯 계층 — 논문·플랫폼 10개 비교]]
+- [[posts/2026-09-30-llm-agent-reliability-synthesis|LLM 에이전트 신뢰성 총정리 — 오류 폭발·아첨·전략 고착과 이걸 잡은 설계들(2026년 논문 11편)]]
+- [[posts/2026-09-30-small-model-stack-synthesis|노트북에서 직접 만드는 소형 LLM 스택 — 10M 모델 학습·보정·온디바이스 배포·에이전트 감시]]
+- [[posts/2026-09-30-graph-structured-agent-design-synthesis|LLM 에이전트 성능을 그래프로 끌어올리기: 태스크 DAG·지식그래프·워크플로우 컴파일 6건 비교]]
+- [[posts/2026-09-30-ai-trends-loop-structure-synthesis|AI 에이전트 트렌드 2026 상반기 총정리: 모델 밖에서 성능을 만드는 구조 7가지]]
+- [[posts/ai-agent-demo-to-production-2026|AI 에이전트 데모에서 실전으로 넘어가는 조건: 2026년 사례 11건 비교]]
+- [[posts/llm-agent-success-signal-gap-2026|테스트는 통과하는데 성과는 그대로: LLM 에이전트 성공 신호의 맹점 6사례 비교]]
+
+## LLM 강의 노트 정리
+
+LLM 학습 비용과 병렬화를 다룬 강의노트를 한 흐름으로 묶은 글입니다.
+
+- [[posts/llm-training-cost-to-parallelism-guide-2026|LLM 학습 비용 계산부터 GPU 병렬화까지: ECE7115 강의노트 10편 한 흐름 정리]]
+
+## 모델 출시·선택 기준 정리
+
+2026년에 나온 상용·오픈 모델을 가격·벤치마크·접근 조건으로 비교한 글입니다.
+
+- [[posts/frontier-model-releases-2026-comparison|2026년 프론티어 모델 출시 6종 비교: Claude Opus·GPT-5.5 가격과 벤치마크 흐름 정리]]
+- [[posts/claude-mythos-gpt-5-6-trusted-access-2026|Claude Mythos는 왜 일반 공개 안 하나: 벤치마크 포화와 GPT-5.6·Opus 5 접근 통제 정리]]
+- [[posts/open-weight-local-llm-selection-2026|로컬 LLM 모델 선택 기준 2026: Qwen3.6, Gemma 4, Nemotron 오픈소스 모델 비교]]
+- [[posts/2026-open-model-release-comparison|오픈소스 모델 선택 기준 2026: Kimi K2.6·DeepSeek-V4·Solar Open 2·GLM-5.3 릴리즈 비교]]
+
+## 멀티모달·실시간 에이전트 정리
+
+영상·음성·행동을 함께 다루는 실시간 에이전트 연구를 비교한 글입니다.
+
+- [[posts/2026-realtime-multimodal-agent-comparison|실시간 멀티모달 LLM 에이전트 2026: StreamingClaw·Qwen-VLA·MHS까지 7건 비교]]
+
+## 추론 비용·메모리 절약 정리
+
+토큰·지연·메모리를 줄이는 기법을 같은 축으로 비교한 글입니다.
+
+- [[posts/llm-agent-reasoning-efficiency-cost-guide-2026|LLM 에이전트 추론 비용 줄이기: 토큰 낭비·도구 대기·KV 캐시 16편 통합 정리]]
+- [[posts/llm-memory-saving-weights-vs-kv-cache-quantization-2026|로컬 LLM 메모리 절약 두 갈래: 가중치 2비트(OA-EM)와 KV 캐시 압축(TurboQuant) 정리]]
+
+## 연구 자동화 에이전트 정리
+
+자율 연구 에이전트 시스템과 그 결과를 검증하는 벤치마크를 비교한 글입니다.
+
+- [[posts/autonomous-research-agents-verification-guide-2026|AI 연구 자동화의 현주소: 자율 연구 에이전트 시스템과 검증 벤치마크 11편 통합 정리]]
+
+## UX 법칙으로 자료 만들기
+
+Laws of UX의 법칙을 원전 연구 숫자와 함께 문서·발표·강의 자료 기준으로 옮긴 글입니다.
+
+- [[posts/laws-of-ux-10-laws-docs-classroom-guide|Laws of UX 법칙 10개 한줄 정리: 보고서·발표 자료·강의 자료에 바로 쓰는 법]]
+- [[posts/laws-of-ux-4-choice-speed-laws-guide|Laws of UX 선택·속도 법칙 4개 한줄 정리: 메뉴 개수·버튼 크기·반응 시간의 원전 기준]]
+- [[posts/laws-of-ux-3-memory-capacity-laws-guide|Laws of UX 기억 법칙 3개 한줄 정리: 7±2에서 4±1까지, 청킹·밀러의 법칙·작업 기억의 원전 기준]]
+- [[posts/laws-of-ux-9-complexity-familiarity-laws-guide|Laws of UX 복잡성·익숙함 법칙 9개 한줄 정리: 야콥·테슬러·포스텔·파레토·파킨슨 원전 기준]]
+- [[posts/laws-of-ux-4-gestalt-grouping-laws-guide|Laws of UX 그룹화 법칙 4개 정리: 근접성·유사성·공통영역·균일연결의 원전 기준과 우선순위]]

@@ -18,7 +18,8 @@ aliases:
   - project-fetch-phase-two-physical-agentic-ai-2026-06-19/index
 draft: true
 refactor_hub: multimodal-world-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/2026-realtime-multimodal-agent-comparison
 ---
 
 AI가 코드를 짜는 건 이제 놀랍지 않다. 그런데 그 코드가 브라우저나 서버가 아니라 **실제 로봇개**를 움직이기 시작하면 이야기가 달라진다.
