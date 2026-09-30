@@ -6344,8 +6344,8 @@
         "reason": "0b 늦은 도착 — v2 중단 시점에 남은 미발행 초안, 허브 병합 대기"
       }
     ],
-    "status": "queued",
-    "hub_slug": null
+    "status": "in-review",
+    "hub_slug": "posts/gui-agent-reliability-guide-2026"
   },
   {
     "hub_id": "web-gui-agents-02",

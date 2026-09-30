@@ -6,7 +6,8 @@ tags: ["agent", "GUI", "LLM", "harness", "automation", "tool-use", "RL", "Qwen",
 cover: ""
 draft: true
 refactor_hub: web-gui-agents-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/gui-agent-reliability-guide-2026
 ---
 
 **27B 모델이 실기기 모바일에서 92.2%의 성공률을 기록하며 GPT-5.6 Sol(85.4%), Claude Opus 4.8(84.7%), Seed 2.1 Pro(88.7%)를 모두 제쳤다.** 컴퓨터 사용(OSWorld)에서는 Opus 4.8(83.4%) 바로 다음인 79.5%, 웹 브라우저(WebArena)에서는 73.6%로 1위. 이것이 Alibaba Qwen 팀이 공개한 **Qwen-UI-Agent**의 성적표다.

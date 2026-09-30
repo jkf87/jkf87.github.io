@@ -5,7 +5,8 @@ tags: [agent, benchmark, gui-agent, cross-device, evaluation]
 description: "Android·Windows·Ubuntu를 아우르는 크로스 디바이스 GUI 에이전트 벤치마크 JarvisGUI. 원자 과제 최고 42.4%인데 멀티 디바이스 의존 과제는 최고 2%, 서브태스크 4개 이상에서 전 모델 0% 부근이었다."
 draft: true
 refactor_hub: web-gui-agents-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/gui-agent-reliability-guide-2026
 ---
 
 GUI 에이전트 벤치마크가 전부 단일 디바이스 관행에 맞춰 있다는 문제의식에서 만들어진 벤치마크가 나옴. 결과의 낙차가 극단적이라 정리함. 원문은 [arXiv:2609.10451](https://arxiv.org/abs/2609.10451)(EMNLP 2026 Main).
