@@ -8,7 +8,8 @@ tags:
   - aeo
 draft: true
 refactor_hub: ai-trends-misc-05
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/2026-09-30-ai-trends-loop-structure-synthesis
 ---
 
 ## 결론 먼저

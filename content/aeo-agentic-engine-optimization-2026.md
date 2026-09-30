@@ -11,7 +11,8 @@ tags:
 description: "AEO(Agentic Engine Optimization)의 의미와 llms.txt, skill.md, 토큰 최적화, AI 에이전트 친화 문서 구조를 실무 관점에서 정리했습니다."
 draft: true
 refactor_hub: ai-trends-misc-05
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/2026-09-30-ai-trends-loop-structure-synthesis
 ---
 
 ## 결론 먼저

@@ -15,7 +15,8 @@ aliases:
   - /posts/2026-08-29-anthropic-mhs-physical-agents
 draft: true
 refactor_hub: multimodal-world-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/2026-realtime-multimodal-agent-comparison
 ---
 
 Anthropic이 공개한 Model Hardware Standard, MHS의 핵심은 간단함. AI 에이전트가 현미경, 액체 핸들러, 로봇팔, 플레이트 리더 같은 물리 장비를 공통 방식으로 발견하고 제어하게 만드는 표준이라는 것. 아직 오픈소스는 아니고 research preview이며 첫 파트너는 과학 연구소와 고급 제조 현장임. 시작점은 Anthropic과 HHMI Janelia Research Campus의 협업이었음.

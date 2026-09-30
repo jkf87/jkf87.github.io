@@ -17,7 +17,8 @@ aliases:
   - /posts/jeff-dean-one-percent-rule-ai-2026-07-31
 draft: true
 refactor_hub: ai-trends-misc-05
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/2026-09-30-ai-trends-loop-structure-synthesis
 ---
 
 ![Y Combinator 무대에서 Jeff Dean이 57분 동안 AI 시스템, 하드웨어, 에이전트, 창업자의 문제 선택을 이야기하는 인터뷰 장면. 이 인터뷰는 “모델이 좋아진다”보다 “무엇을 루프로 만들 것인가”에 가깝다.](/images/jeff-dean-one-percent-rule-ai-2026-07-31/opening.jpg)
