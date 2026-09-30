@@ -10,7 +10,8 @@ enableToc: true
 description: "에이전틱 미스얼라인먼트 블랙메일율을 96%에서 0%로 낮춘 Anthropic의 연구. 행동만 보여주지 않고 '왜'를 가르치는 것이 핵심이었다."
 draft: true
 refactor_hub: agent-safety-03
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-misalignment-safety-guide-2026
 ---
 
 ## 에이전틱 미스얼라인먼트가 뭔가요?

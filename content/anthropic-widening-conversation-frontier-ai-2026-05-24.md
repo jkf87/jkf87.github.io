@@ -10,7 +10,8 @@ enableToc: true
 description: "Anthropic이 15개 종교·철학 전통과 구조적 대화를 시작하며, AI 가치 정렬을 기술을 넘어 광범위한 관점에서 접근한다."
 draft: true
 refactor_hub: agent-safety-03
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-misalignment-safety-guide-2026
 ---
 
 ![hero](images/anthropic-frontier-20260519/hero.jpg)
