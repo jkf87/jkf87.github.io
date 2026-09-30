@@ -6,7 +6,8 @@ slug: "working-memory"
 parent: "laws-of-ux-index"
 draft: true
 refactor_hub: ux-laws-03
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/laws-of-ux-3-memory-capacity-laws-guide
 ---
 
 ![](https://lawsofux.com/working-memory/social.png)
