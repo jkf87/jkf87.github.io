@@ -12,7 +12,8 @@ description: "장기 과제 에이전트가 무너지는 이유는 실행이 아
 coverImage: "/images/2026-07-16-structagent-long-horizon-causal-agent/fig-2-p3.png"
 draft: true
 refactor_hub: ai-trends-misc-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/2026-09-30-llm-agent-reliability-synthesis
 ---
 
 장기 과제 에이전트가 중간에 무너지는 경험은 다들 있음. StructAgent는 그 원인을 실행 능력이 아니라 상태 구조에서 찾았고, 검증자에게만 상태 확정 권한을 주는 설계로 소형 모델 성공률을 두 배로 올림. 자동화 파이프라인 설계에 바로 베낄 게 많아서 정리함.

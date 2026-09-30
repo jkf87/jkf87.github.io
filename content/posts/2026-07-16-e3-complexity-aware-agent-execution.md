@@ -5,7 +5,8 @@ description: "LLM 에이전트의 과잉 수행을 진단하고 난이도 추정
 tags: ["LLM", "agent", "efficiency", "task-complexity", "adaptive-execution"]
 draft: true
 refactor_hub: ai-trends-misc-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/2026-09-30-llm-agent-reliability-synthesis
 ---
 
 한 줄 바꾸면 끝나는 수정에 에이전트가 프로젝트 전체를 다시 읽는 건 다 아는 문제임. 이걸 정량화하고 구조적으로 고친 논문이 나왔음. 원문은 [arXiv:2607.13034](https://arxiv.org/abs/2607.13034).
