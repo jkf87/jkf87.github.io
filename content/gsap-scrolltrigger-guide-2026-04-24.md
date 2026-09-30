@@ -13,7 +13,8 @@ aliases:
   - gsap-scrolltrigger-guide-2026-04-24/index
 draft: true
 refactor_hub: web-gui-agents-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/ai-agent-browser-screen-tools-guide-2026
 ---
 
 ## ScrollTrigger가 뭔가

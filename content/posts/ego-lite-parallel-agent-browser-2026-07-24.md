@@ -16,7 +16,8 @@ aliases:
   - /posts/ego-lite-parallel-agent-browser-2026-07-24
 draft: true
 refactor_hub: web-gui-agents-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/ai-agent-browser-screen-tools-guide-2026
 ---
 
 ![ego lite README의 배너. 이 프로젝트가 말하는 핵심은 에이전트용 별도 브라우저가 아니라, 사람이 쓰는 브라우저 안에 에이전트용 작업공간을 함께 두는 것이다.](/images/ego-lite-parallel-agent-browser-2026-07-24/banner.png)

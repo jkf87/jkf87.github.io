@@ -10,7 +10,8 @@ tags:
   - paper-review
 draft: true
 refactor_hub: web-gui-agents-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/ai-agent-browser-screen-tools-guide-2026
 ---
 
 Mixture-of-Experts(MoE)는 GPT-4, Mixtral 등 대형 언어 모델의 핵심 아키텍처가 됐습니다. 수천억 파라미터 모델에서는 검증된 기법인데, **스마트폰에서 돌아가는 수억 파라미터 모델**에서도 효과가 있을까요? Meta가 이 질문에 대한 답을 내놨습니다.

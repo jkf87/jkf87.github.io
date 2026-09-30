@@ -184,3 +184,9 @@ Claude Code 주간 신기능 정리 4편과 구독·인증 안전 글 3편을 1�
 - [[posts/llm-agent-evaluation-design-guide-2026|LLM 에이전트 평가 설계 가이드: 점수 다음에 볼 축·신뢰성·비용 — 벤치마크·연구 14종 비교]]
 - [[posts/ai-personalized-evaluation-guide-2026|AI가 내 취향에 맞는지 어떻게 평가하나: LLM Judge 개인화·취향 루브릭·이미지 벤치마크 6종 비교]]
 - [[posts/gui-agent-reliability-guide-2026|GUI 에이전트가 무너지는 4가지 지점과 검증 설계: MobileGym·Qwen-UI-Agent·ERPBench 비교]]
+
+## 브라우저·화면 작업에 AI 붙이기
+
+사람이 쓰는 브라우저·캡처·영상·문서 작업에 AI를 붙이는 도구와 기법을 옛 글 11편에서 통합 정리한 허브입니다.
+
+- [[posts/ai-agent-browser-screen-tools-guide-2026|AI 에이전트와 브라우저·화면 작업을 나눠 쓰는 법: ego lite, macshot, VOID, PolicyGuide 통합 정리]]
