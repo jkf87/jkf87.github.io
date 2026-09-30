@@ -17,7 +17,8 @@ authors:
   - conanssam
 draft: true
 refactor_hub: ai-trends-misc-07
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-success-signal-gap-2026
 ---
 
 터미널 에이전트 훈련용 태스크를 자동으로 만드는 시스템이 여럿 나왔음. TermiGen, Endless Terminals 같은 것들. 공통 검증법은 구조 검사와 자가 풀기. 근데 이 검증이 "풀 수 있는가"만 알려줄 뿐 "적절한 난이도인가"는 못 알려줌. 너무 쉬워서 전부 통과하거나 너무 어려워서 전부 실패하거나 검증 코드가 깨져 있어도 통과함. CalibForge의 출발점은 단순하고 정확함. 태스크의 학습 가치는 솔버 행동으로만 판단할 수 있다는 것.
