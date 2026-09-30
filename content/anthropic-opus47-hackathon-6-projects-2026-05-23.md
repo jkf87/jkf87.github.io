@@ -14,7 +14,8 @@ enableToc: true
 description: "Anthropic이 2만 명 지원자 중 500명을 뽑아 일주일간 진행한 'Built with Opus 4.7' 해커톤. 의사, 목수 아들, 교사가 만든 6개 수상작을 자막 기반 인터뷰 형식으로 정리함."
 draft: true
 refactor_hub: ai-trends-misc-05
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/2026-09-30-ai-trends-loop-structure-synthesis
 ---
 
 원본 영상: 각 섹션에 링크로 첨부

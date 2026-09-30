@@ -15,7 +15,8 @@ cover:
   relative: false
 draft: true
 refactor_hub: ai-trends-misc-05
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/2026-09-30-ai-trends-loop-structure-synthesis
 ---
 
 논문 accept 받고 나서 가장 피곤한 건 연구가 아니라 디세미네이션임. 카메라레디 끝나면 곧바로 컨퍼런스 포스터, 발표 영상, 블로그 포스트를 손으로 만들어야 함. Microsoft Research가 이걸 하나의 파이프라인으로 묶었음. ResearchStudio-Reel(arXiv:2607.04438). 논문 PDF 한 부를 넣으면 포스터, 발표 영상, 블로그글이 한 번에 나오고 세 개 전부 서로 사실이 일치하며 PowerPoint나 Word에서 다시 열어서 수정할 수 있음.
