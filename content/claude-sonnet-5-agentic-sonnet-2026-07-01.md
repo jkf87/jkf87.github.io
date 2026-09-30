@@ -14,7 +14,8 @@ aliases:
   - "claude-sonnet-5"
 draft: true
 refactor_hub: model-releases-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/frontier-model-releases-2026-comparison
 ---
 
 > [!info] 한 줄 요약
