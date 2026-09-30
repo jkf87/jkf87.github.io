@@ -17,7 +17,8 @@ aliases:
 cover: images/local-coding-agents-open-weight-2026-06-29/hero-local-stack.png
 draft: true
 refactor_hub: model-releases-03
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/open-weight-local-llm-selection-2026
 ---
 
 클라우드 코딩 에이전트가 너무 좋아졌다. Codex도, Claude Code도 이제는 하루 업무의 기본 도구가 됐다. 그런데 바로 그래서 이상한 질문이 다시 중요해진다. **이걸 전부 내 컴퓨터 안에서 돌릴 수는 없을까?**

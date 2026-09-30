@@ -5,7 +5,8 @@ description: "Gemma 4 라인업과 핵심 벤치마크를 로컬 LLM 에이전�
 tags: [AI, LLM, Gemma, Google, open-weight, MoE]
 draft: true
 refactor_hub: model-releases-03
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/open-weight-local-llm-selection-2026
 ---
 
 구글이 Gemma 4를 Apache 2.0로 풀었음. 라인업이 2.3B부터 31B까지 다섯 단계라서 어늤 걸 로컬 워크플로우에 앉힐지 실제 선택 문제가 됨. 기술 보고서([arXiv:2607.02770](https://arxiv.org/abs/2607.02770)) 숫자를 기준으로 판단해봄.
