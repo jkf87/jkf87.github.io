@@ -154,6 +154,7 @@ Claude Code 주간 신기능 정리 4편과 구독·인증 안전 글 3편을 1�
 멀티에이전트 LLM 연구를 비교해 설계 기준을 정리한 글입니다.
 
 - [[posts/llm-multi-agent-design-guide-2026|LLM 에이전트 팀 설계, 언제 이기고 언제 지나: 멀티에이전트 11편 통합 정리]]
+- [[posts/llm-multi-agent-failure-fixes-2026|LLM 에이전트 여러 개가 실패하는 4가지 지점과 해법: DarkForest·SearchOS·WebSwarm 비교]]
 
 ## 사이트 안내
 
