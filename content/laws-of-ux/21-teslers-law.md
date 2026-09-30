@@ -6,7 +6,8 @@ slug: "teslers-law"
 parent: "laws-of-ux-index"
 draft: true
 refactor_hub: ux-laws-04
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/laws-of-ux-9-complexity-familiarity-laws-guide
 ---
 
 ![](https://lawsofux.com/teslers-law/social.png)
