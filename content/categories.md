@@ -155,6 +155,7 @@ Claude Code 주간 신기능 정리 4편과 구독·인증 안전 글 3편을 1�
 
 - [[posts/llm-multi-agent-design-guide-2026|LLM 에이전트 팀 설계, 언제 이기고 언제 지나: 멀티에이전트 11편 통합 정리]]
 - [[posts/llm-multi-agent-failure-fixes-2026|LLM 에이전트 여러 개가 실패하는 4가지 지점과 해법: DarkForest·SearchOS·WebSwarm 비교]]
+- [[posts/llm-multi-agent-org-structure-2026|멀티 에이전트 오케스트레이션 실패 원인과 조직 설계 해법: $5,000 후기와 Fugu·ORCH 비교]]
 
 ## 사이트 안내
 
