@@ -13,7 +13,8 @@ source: forward-future-loop-library
 source_url: https://signals.forwardfuture.ai/loop-library/
 draft: true
 refactor_hub: ai-trends-misc-05
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/2026-09-30-ai-trends-loop-structure-synthesis
 ---
 
 AI 에이전트를 잘 쓰는 사람과 못 쓰는 사람의 차이는 프롬프트 문장력보다 **반복 구조를 설계하느냐**에 있음.

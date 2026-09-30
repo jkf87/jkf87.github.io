@@ -7,7 +7,8 @@ categories: [AI]
 source: "https://www.anthropic.com/news/claude-for-teachers"
 draft: true
 refactor_hub: ai-trends-misc-05
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/2026-09-30-ai-trends-loop-structure-synthesis
 ---
 
 Anthropic이 학생용 AI 튜터가 아니라 **교사용 Claude**를 먼저 밀고 나왔다. 이 선택이 꽤 중요하다. AI가 교육을 바꾼다는 말은 오래됐지만, 실제 학교 현장에서 가장 먼저 병목이 터지는 곳은 학생의 질문창이 아니라 교사의 수업 준비 시간이다.
