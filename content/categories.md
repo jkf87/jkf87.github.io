@@ -55,6 +55,7 @@ tags:
 - [[posts/llm-agent-memory-failure-map-2026|LLM 에이전트 메모리가 실전에서 터지는 4개 지점: 쓰기·검색·주입·검증 14자료 비교]]
 - [[posts/llm-agent-long-horizon-state-2026|LLM 에이전트가 오래 돌아도 상태를 잃지 않는 설계: 수면 통합·외부 상태 뱅크·롤백 반성 6종 비교]]
 - [[posts/agent-experience-memory-reuse-2026|에이전트에 메모리를 넣었는데 성능이 떨어질 때: 재구성·쿼리 조건화·스킬화 7종 비교]]
+- [[posts/llm-agent-memory-roundup-2026-09-30|LLM 에이전트 메모리 최신 논문 7편 비교 (저장·확인·공개·학습)]]
 
 ## 에이전트 자가진화·하네스 연구 정리
 - [[posts/llm-agent-harness-nooa-vs-prime-agent-2026|모델 그대로 두고 에이전트 성능 올리는 하네스 설계: NOOA와 Prime Agent 비교]]
