@@ -171,3 +171,4 @@ Claude Code 주간 신기능 정리 4편과 구독·인증 안전 글 3편을 1�
 
 - [[posts/llm-agent-benchmark-score-gap-guide-2026|터미널 벤치마크 82%가 실전 업무 1%로 무너지는 이유: LLM 에이전트 벤치마크 10종 비교]]
 - [[posts/llm-agent-evaluation-design-guide-2026|LLM 에이전트 평가 설계 가이드: 점수 다음에 볼 축·신뢰성·비용 — 벤치마크·연구 14종 비교]]
+- [[posts/ai-personalized-evaluation-guide-2026|AI가 내 취향에 맞는지 어떻게 평가하나: LLM Judge 개인화·취향 루브릭·이미지 벤치마크 6종 비교]]
