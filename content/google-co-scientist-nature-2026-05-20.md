@@ -16,7 +16,8 @@ aliases:
   - /google-co-scientist-nature-2026-05-20
 draft: true
 refactor_hub: multi-agent-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-multi-agent-design-guide-2026
 ---
 
 원문: Accelerating scientific discovery with Co-Scientist (Nature, 2026)
