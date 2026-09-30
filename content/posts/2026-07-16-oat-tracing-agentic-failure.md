@@ -7,7 +7,8 @@ categories: ["AI Agent"]
 description: 성공 궤적 100개만으로 실패 스텝을 찾는 OAT. GPT-5 프롬프팅보다 +20% F1, 7ms 추론으로 에이전트 모니터링에 바로 쓸 만한 구조임.
 draft: true
 refactor_hub: ai-trends-misc-03
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/2026-09-30-small-model-stack-synthesis
 ---
 
 에이전트가 수백 스텝 짜리 작업에서 실패하면 "어디서 처음 틀렸나"를 찾는 데 몇 시간을 씀. 지금까지는 GPT-5 같은 프론티어 모델에 궤적 전체를 던지는 방법이 대세였음. OAT(성공 궤적만으로 실패 지점을 찾는 원클래스 이상 탐지 기법)는 그 비용 구조를 뒤집었음. 원문은 [arXiv:2607.12747](https://arxiv.org/abs/2607.12747).
