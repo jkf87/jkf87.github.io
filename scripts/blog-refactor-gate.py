@@ -36,8 +36,29 @@ ARXIV = r"(?<!\d)(2\d{3}\.\d{4,5})(?!\d)"
 #  3) 직접 만든 평가 문항의 라벨 누수 → 누수를 따져봤다는 서술을 요구
 CODE_HOST = r"github\.com|gitlab\.com|huggingface\.co|codeberg\.org|zenodo\.org"
 NO_CODE = r"코드가 공개되지 않|코드·데이터 미공개|공개된 코드가 없|저장소가 없"
-SELFMADE = r"제가 만든 문항|직접 만든 문항|합성 문항|합성 데이터|제가 지어낸|직접 만든 데이터셋"
-LEAK = r"라벨 누수|누수|leak|정답이 새|라벨을 인코딩"
+# 자체 제작 평가 문항 판정. '합성 데이터' 같은 낱말만으로 잡으면 논문이 쓴 합성 데이터를
+# 설명한 문장에 오탐한다(2026-09-30, 허브 1편이 걸림). 그래서 문장 단위로 본다:
+# 글쓴이 자신이 평가용 자료를 만들었다고 말하는 문장만 잡고, 저자·논문이 주어인 문장은 뺀다.
+SELF_SUBJECT = r"제가|내가|저는|블로그봇이|블로그봇은|이 글에서|이번 (?:측정|실험)"
+SELF_MADE = r"만든|만들었|지어낸|지어냈|제작한|제작했|구성한|구성했"
+EVAL_OBJ = r"문항|평가셋|테스트셋|데이터셋|합성 데이터|평가 데이터"
+THIRD_SUBJECT = r"저자|논문|연구진|연구팀|팀이|팀은|이들은|벤치마크가|벤치마크는"
+LEAK = r"라벨 누수|정답 누수|데이터 누수|label leak|leakage|라벨을 인코딩|정답이 새"
+
+
+def selfmade_eval_sentences(body: str) -> list[str]:
+    """글쓴이가 평가 문항·데이터를 직접 만들었다고 말하는 문장들."""
+    out = []
+    for sent in re.split(r"(?<=[.다요])\s+|\n", body):
+        if not re.search(SELF_MADE, sent) or re.search(THIRD_SUBJECT, sent):
+            continue
+        first_person = re.search(SELF_SUBJECT, sent) and re.search(EVAL_OBJ, sent)
+        object_first = re.search(
+            rf"(?:{EVAL_OBJ})[을를은는]?\s*(?:새로|직접)\s*(?:만들었|만든|지어냈|구성했)", sent
+        )
+        if first_person or object_first:
+            out.append(sent.strip())
+    return out
 
 
 def split_fm(t):
@@ -162,8 +183,11 @@ def main():
             fails.append(f"novelty_vs_paper가 너무 짧음({len(nv)}자): {nv!r}")
 
     # 직접 만든 평가 문항을 쓰면 라벨 누수를 따져야 한다
-    if re.search(SELFMADE, body) and not re.search(LEAK, body):
-        fails.append("직접 만든 평가 문항을 썼는데 라벨 누수를 다루지 않음")
+    selfmade = selfmade_eval_sentences(body)
+    if selfmade and not re.search(LEAK, body):
+        fails.append("직접 만든 평가 문항을 썼는데 라벨 누수를 다루지 않음 — "
+                     f"근거 문장: {selfmade[0][:80]!r} "
+                     "(자체 제작이 아니면 누가 만들었는지 주어를 밝혀 쓸 것)")
 
     lines = [l for l in body.splitlines() if l.strip()]
     quoted = sum(len(l) for l in lines if l.lstrip().startswith(">"))
