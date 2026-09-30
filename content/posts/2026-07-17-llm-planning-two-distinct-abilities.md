@@ -7,7 +7,8 @@ categories: ["AI 연구"]
 cover: ""
 draft: true
 refactor_hub: ai-trends-misc-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/2026-09-30-llm-agent-reliability-synthesis
 ---
 
 에이전트를 만들다 보면 답답한 순간이 반복됨. 모델은 커지고 추론도 길어지는데 "전체 경로가 있는지" 같은 질문에서만 계속 막힘. 이게 모델 성능 문제인지 뭔지 헷갈렸는데, 통계 측정 도구로 이걸 분해한 연구가 나옴. 결론부터 말하면 계획 능력은 하나가 아니라 둘이고, 둘 중 하나만 스케일링의 효과를 받음.

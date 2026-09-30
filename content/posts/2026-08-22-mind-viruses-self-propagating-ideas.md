@@ -5,7 +5,8 @@ tags: [agent, multi-agent, security, llm]
 description: 에이전트 하나를 감염시키면 그 에이전트가 다른 에이전트를 설득해 아이디어가 스스로 퍼짐. 시스템 프롬프트에 주입되는 자기수정 파일이 주요 감염 경로이고, 경고 문단 하나로 면역이 된다는 결과까지 정리함.
 draft: true
 refactor_hub: ai-trends-misc-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/2026-09-30-llm-agent-reliability-synthesis
 ---
 
 Anthropic와 EPFL이 다중 에이전트 LLM 시스템에서 "스스로 전파되는 생각"을 실증했음. 해킹도 프롬프트 인젝션 버그도 아니고 평범한 텍스트 대화만으로 전파됨. 원문은 [arXiv 2608.10218](https://arxiv.org/abs/2608.10218).
