@@ -17,7 +17,8 @@ aliases:
   - sciatlas-knowledge-graph-automated-research-2026-05-26/index
 draft: true
 refactor_hub: ai-trends-misc-04
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/2026-09-30-graph-structured-agent-design-synthesis
 ---
 
 요즘 AI로 논문 검색하다 보면 비슷한 좌절을 만남. Semantic Scholar, Google Scholar 같은 도구는 키워드나 벡터 유사도로 논문을 찾아줌. 비슷한 논문은 잘 찾는데, "이 연구가 어디서 왔고 어디로 가는지"는 못 봄. 인용망, 개념의 진화, 학제간 연결 같은 구조적 관계가 빠져 있음.
