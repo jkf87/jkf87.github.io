@@ -15,7 +15,8 @@ tags:
 description: "《이게 되네? 오픈클로 미친 활용법 50제》 출간 기념 무료 특강 소식을 정리했다. 예스24, 교보문고, 알라딘 이벤트 링크와 함께 빠르게 확인할 수 있다."
 draft: true
 refactor_hub: ai-trends-misc-06
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/ai-agent-demo-to-production-2026
 ---
 
 오픈클로(OpenClaw)에 관심 있는 분이라면 반가운 소식입니다. **《이게 되네? 오픈클로 미친 활용법 50제》 출간 기념 무료 특강 이벤트**가 열렸습니다.
