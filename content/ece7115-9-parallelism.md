@@ -10,7 +10,8 @@ tags:
 description: "ECE7115 9강 멀티 GPU/멀티 머신 병렬화를 데이터, 모델, 활성화, 집단 통신 관점으로 짧게 정리한 Quartz 노트."
 draft: true
 refactor_hub: llm-course-notes-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-training-cost-to-parallelism-guide-2026
 ---
 
 # ECE7115 9강 요약: Parallelism

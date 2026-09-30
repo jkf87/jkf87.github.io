@@ -11,7 +11,8 @@ tags:
 description: "ECE7115 2강 Transformer 기초를 정리한 노트. attention, seq2seq, tokenizer, residual, layer norm의 흐름을 짧게 정리한다."
 draft: true
 refactor_hub: llm-course-notes-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-training-cost-to-parallelism-guide-2026
 ---
 
 # ECE7115 2강: Transformer Basics

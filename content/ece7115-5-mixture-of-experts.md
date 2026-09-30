@@ -12,7 +12,8 @@ aliases:
   - ece7115-5-mixture-of-experts/index
 draft: true
 refactor_hub: llm-course-notes-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-training-cost-to-parallelism-guide-2026
 ---
 
 ECE7115 5강은 MoE가 왜 다시 뜨는지, 그리고 dense FFN과 뭐가 다른지에 초점을 맞춘다. 핵심은 더 많은 파라미터를 두되, 매 토큰에 모두 켜지지 않게 만드는 것이다.

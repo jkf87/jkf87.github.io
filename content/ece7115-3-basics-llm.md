@@ -11,7 +11,8 @@ tags:
 description: "ECE7115 3강 LLM Basics를 정리한 노트. pretraining, fine-tuning, prompting, BERT/T5/GPT 흐름을 짧게 정리한다."
 draft: true
 refactor_hub: llm-course-notes-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-training-cost-to-parallelism-guide-2026
 ---
 
 # ECE7115 3강: LLM Basics

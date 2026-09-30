@@ -12,7 +12,8 @@ aliases:
   - ece7115-6-scaling-laws/index
 draft: true
 refactor_hub: llm-course-notes-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-training-cost-to-parallelism-guide-2026
 ---
 
 ECE7115 6강은 큰 모델을 감으로 키우는 대신, 작은 실험에서 나온 scaling law로 큰 모델을 예측하는 방법을 정리한다. 데이터, 모델 크기, compute 배분을 같은 틀에서 보는 강의다.
