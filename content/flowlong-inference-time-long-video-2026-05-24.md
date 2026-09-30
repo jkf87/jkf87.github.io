@@ -10,7 +10,8 @@ enableToc: true
 description: "FlowLong은 manifold-constrained Tweedie matching으로 장편 비디오 생성의 일관성을 유지한다."
 draft: true
 refactor_hub: reasoning-efficiency-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-reasoning-efficiency-cost-guide-2026
 ---
 
 ## 긴 영상 생성, 왜 어려운가요?
