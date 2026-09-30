@@ -15,7 +15,8 @@ aliases:
   - /posts/kimi-k3-gpt2-lineage-2026-07-29
 draft: true
 refactor_hub: reasoning-efficiency-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-reasoning-efficiency-cost-guide-2026
 ---
 
 ![GPT-2에서 Kimi K3까지 이어지는 attention 계보도. 이 글의 핵심은 “그냥 커졌다”가 아니라, 기억을 다루는 방식이 단계적으로 바뀌었다는 점이다. 출처: ali, 22580: From GPT2 to Kimi3, Explained.](/images/kimi-k3-gpt2-lineage-2026-07-29/hero.jpg)

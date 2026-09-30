@@ -6,7 +6,8 @@ description: "추론 단계를 경매에 붙여 보정된 신뢰도+비용으로
 cover: "/images/2026-07-14-agora-auction-based-llm-agent-reasoning/fig-p1.png"
 draft: true
 refactor_hub: reasoning-efficiency-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-reasoning-efficiency-cost-guide-2026
 ---
 
 여러 LLM을 섞어 쓰는 시점에서 진짜 문제는 "누가 어느 단계를 처리하나"임. Agora는 이걸 경매로 풂. 단순한데 숨은 조건이 있어서 실무적으로 볼 게 많음.

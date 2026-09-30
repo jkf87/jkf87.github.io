@@ -27,7 +27,8 @@ affiliations:
   - University of New South Wales
 draft: true
 refactor_hub: reasoning-efficiency-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-reasoning-efficiency-cost-guide-2026
 ---
 
 ## 한 줄 요약
