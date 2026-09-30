@@ -97,6 +97,7 @@ LLM 에이전트 보안 논문을 비교해 방어 설계 기준을 정리한 �
 - [[posts/llm-agent-harness-attack-surface-2026|AI 코딩 에이전트 어디까지 뚫리나: 악성 이슈·스킬 오염·하네스 권한상승 6편 총정리]]
 - [[posts/llm-agent-safety-attack-eval-defense-guide-2026|LLM 에이전트는 어디서 무너지나: 공격·평가·방어 13종 총정리]]
 - [[posts/llm-agent-misalignment-safety-guide-2026|LLM 에이전트 미스얼라인먼트 어떻게 막나: Claude 협박률 96%→0%와 훈련·성찰·모니터 3층 정리]]
+- [[posts/ai-cybersecurity-glasswing-nday-2026|AI 사이버보안 어디까지 사실인가: Glasswing 1만 취약점·N-day 익스플로잇 실험·OpenMythos 재구현]]
 
 ## 코딩 에이전트 운영·신뢰 정리
 
