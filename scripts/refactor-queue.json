@@ -1496,7 +1496,8 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "queued",
+  "status": "reserved-b",
+  "note": "2026-09-30 병렬 레인 B가 처리한다. 다른 실행은 이 허브를 집지 말 것.",
   "hub_slug": null
  },
  {
@@ -1586,7 +1587,8 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "queued",
+  "status": "reserved-b",
+  "note": "2026-09-30 병렬 레인 B가 처리한다. 다른 실행은 이 허브를 집지 말 것.",
   "hub_slug": null
  },
  {
@@ -1628,7 +1630,8 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "queued",
+  "status": "reserved-b",
+  "note": "2026-09-30 병렬 레인 B가 처리한다. 다른 실행은 이 허브를 집지 말 것.",
   "hub_slug": null
  },
  {
@@ -1682,7 +1685,8 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "queued",
+  "status": "reserved-b",
+  "note": "2026-09-30 병렬 레인 B가 처리한다. 다른 실행은 이 허브를 집지 말 것.",
   "hub_slug": null
  },
  {
@@ -1748,7 +1752,8 @@
     "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
    }
   ],
-  "status": "queued",
+  "status": "reserved-b",
+  "note": "2026-09-30 병렬 레인 B가 처리한다. 다른 실행은 이 허브를 집지 말 것.",
   "hub_slug": null
  },
  {
@@ -1832,7 +1837,8 @@
     "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
    }
   ],
-  "status": "queued",
+  "status": "reserved-b",
+  "note": "2026-09-30 병렬 레인 B가 처리한다. 다른 실행은 이 허브를 집지 말 것.",
   "hub_slug": null
  },
  {
@@ -1886,7 +1892,8 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "queued",
+  "status": "reserved-b",
+  "note": "2026-09-30 병렬 레인 B가 처리한다. 다른 실행은 이 허브를 집지 말 것.",
   "hub_slug": null
  },
  {
@@ -5084,7 +5091,8 @@
     "reason": "타 대학 강의 요약·빈약"
    }
   ],
-  "status": "queued",
+  "status": "reserved-c",
+  "note": "2026-09-30 병렬 레인 C가 처리한다. 다른 실행은 이 허브를 집지 말 것.",
   "hub_slug": null
  },
  {
@@ -5144,7 +5152,8 @@
     "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
    }
   ],
-  "status": "queued",
+  "status": "reserved-d",
+  "note": "2026-09-30 병렬 레인 D가 처리한다. 다른 실행은 이 허브를 집지 말 것.",
   "hub_slug": null
  },
  {
@@ -5198,7 +5207,8 @@
     "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
    }
   ],
-  "status": "queued",
+  "status": "reserved-d",
+  "note": "2026-09-30 병렬 레인 D가 처리한다. 다른 실행은 이 허브를 집지 말 것.",
   "hub_slug": null
  },
  {
@@ -5282,7 +5292,8 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "queued",
+  "status": "reserved-d",
+  "note": "2026-09-30 병렬 레인 D가 처리한다. 다른 실행은 이 허브를 집지 말 것.",
   "hub_slug": null
  },
  {
@@ -5354,7 +5365,8 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "queued",
+  "status": "reserved-d",
+  "note": "2026-09-30 병렬 레인 D가 처리한다. 다른 실행은 이 허브를 집지 말 것.",
   "hub_slug": null
  },
  {
@@ -5594,7 +5606,8 @@
     "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
    }
   ],
-  "status": "queued",
+  "status": "reserved-d",
+  "note": "2026-09-30 병렬 레인 D가 처리한다. 다른 실행은 이 허브를 집지 말 것.",
   "hub_slug": null
  },
  {
@@ -6074,7 +6087,8 @@
     "reason": "lawsofux.com 파생 번역(복제)"
    }
   ],
-  "status": "queued",
+  "status": "reserved-c",
+  "note": "2026-09-30 병렬 레인 C가 처리한다. 다른 실행은 이 허브를 집지 말 것.",
   "hub_slug": null
  },
  {
@@ -6122,7 +6136,8 @@
     "reason": "lawsofux.com 파생 번역(복제)"
    }
   ],
-  "status": "queued",
+  "status": "reserved-c",
+  "note": "2026-09-30 병렬 레인 C가 처리한다. 다른 실행은 이 허브를 집지 말 것.",
   "hub_slug": null
  },
  {
@@ -6158,7 +6173,8 @@
     "reason": "lawsofux.com 파생 번역(복제)"
    }
   ],
-  "status": "queued",
+  "status": "reserved-c",
+  "note": "2026-09-30 병렬 레인 C가 처리한다. 다른 실행은 이 허브를 집지 말 것.",
   "hub_slug": null
  },
  {
@@ -6230,7 +6246,8 @@
     "reason": "lawsofux.com 파생 번역(복제)"
    }
   ],
-  "status": "queued",
+  "status": "reserved-c",
+  "note": "2026-09-30 병렬 레인 C가 처리한다. 다른 실행은 이 허브를 집지 말 것.",
   "hub_slug": null
  },
  {
@@ -6272,7 +6289,8 @@
     "reason": "lawsofux.com 파생 번역(복제)"
    }
   ],
-  "status": "queued",
+  "status": "reserved-c",
+  "note": "2026-09-30 병렬 레인 C가 처리한다. 다른 실행은 이 허브를 집지 말 것.",
   "hub_slug": null
  },
  {
