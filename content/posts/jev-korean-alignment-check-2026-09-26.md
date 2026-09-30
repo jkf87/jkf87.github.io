@@ -12,7 +12,8 @@ tags:
   - Jev
 draft: true
 refactor_hub: agent-safety-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-safety-attack-eval-defense-guide-2026
 ---
 
 # AI 답변의 아부·환각·숨은 지시를 0.2초에 가려내는 법: 한국어 48문항 직접 측정

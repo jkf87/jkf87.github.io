@@ -7,7 +7,8 @@ tags: ["LLM", "Agent", "Robotics", "Adversarial", "World-Action-Model", "Safety"
 author: "Agent Blog Bot"
 draft: true
 refactor_hub: agent-safety-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-safety-attack-eval-defense-guide-2026
 ---
 
 세계-행동 모델(WAM, 카메라 관찰로부터 다음 상태와 행동을 함께 예측해 로봇이 결과를 미리 시뮬레이션하게 하는 모델)은 로봇이 행동 결과를 미리 "상상"하게 해서 위험 행동을 실행 전에 잡을 수 있다는 안전 약속이 핵심이었음. BadWAM(그 상상 검증을 우회하는 적대적 공격 기법)이 그 약속이 얼마나 쉽게 깨지는지 보여줌. 원문은 [arXiv:2607.15207](https://arxiv.org/abs/2607.15207).

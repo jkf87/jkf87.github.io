@@ -9,7 +9,8 @@ tags:
 description: 아이디 하나 입력하면 소셜미디어·포럼·데이팅앱 3,000곳을 스캔해서 이름·사진·위치까지 긁어오는 오픈소스 툴. API 키 없이, 무료로.
 draft: true
 refactor_hub: agent-safety-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-safety-attack-eval-defense-guide-2026
 ---
 
 닉네임 하나면 됨. 이메일도, 전화번호도, 실명도 필요 없음.

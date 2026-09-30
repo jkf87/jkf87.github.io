@@ -10,7 +10,8 @@ tags:
   - policy
 draft: true
 refactor_hub: agent-safety-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-safety-attack-eval-defense-guide-2026
 ---
 
 AI가 사이버 공격의 도구가 된 지 꽤 됐습니다. 그런데 구체적으로 어느 단계에서, 얼마나 위험하게 쓰이고 있을까요? Anthropic이 1년간 832개 악성 계정을 분석해 MITRE ATT&CK 프레임워크에 매핑한 보고서가 어제(6월 3일) 발표됐습니다. 핵심 내용을 인터뷰 형식으로 정리해봤습니다.

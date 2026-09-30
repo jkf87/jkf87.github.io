@@ -95,6 +95,7 @@ LLM 에이전트 보안 논문을 비교해 방어 설계 기준을 정리한 �
 
 - [[posts/llm-agent-security-defense-guide-2026|LLM 에이전트 보안 설계 기준 정리 (2026 논문 7편 비교)]]
 - [[posts/llm-agent-harness-attack-surface-2026|AI 코딩 에이전트 어디까지 뚫리나: 악성 이슈·스킬 오염·하네스 권한상승 6편 총정리]]
+- [[posts/llm-agent-safety-attack-eval-defense-guide-2026|LLM 에이전트는 어디서 무너지나: 공격·평가·방어 13종 총정리]]
 
 ## 코딩 에이전트 운영·신뢰 정리
 
