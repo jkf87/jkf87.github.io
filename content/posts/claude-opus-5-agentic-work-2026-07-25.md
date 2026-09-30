@@ -16,7 +16,8 @@ aliases:
   - /posts/claude-opus-5-agentic-work-2026-07-25
 draft: true
 refactor_hub: model-releases-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/frontier-model-releases-2026-comparison
 ---
 
 ![Anthropic이 공개한 Claude Opus 5 종합 벤치마크 표. 첫 인상은 단순히 “점수가 올랐다”가 아니라, 코딩·지식 업무·컴퓨터 사용·자동화 워크플로우에서 Opus 5를 매일 쓰는 모델로 밀겠다는 포지셔닝이다.](/images/claude-opus-5-agentic-work-2026-07-25/figure-01.png)
