@@ -5,7 +5,8 @@ tags: ["AI생산성", "한국은행", "생산성역설", "Solow역설", "AI도�
 categories: ["AI 정책 리뷰"]
 draft: true
 refactor_hub: ai-trends-misc-07
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-success-signal-gap-2026
 ---
 
 한국은행이 5,512명 근로자에게 물었다. "AI 쓰시나요?" 절반 이상이 그렇다고 답했다. 그다음 질문이 본론이었다. "그래서, 일이 줄었나요? 더 많이 하게 됐나요?" 답은 묘하게 엇갈렸다. **일하는 시간은 줄었다. 하지만 하는 일은 늘지 않았다.**

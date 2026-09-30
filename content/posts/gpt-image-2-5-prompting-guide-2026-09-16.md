@@ -14,7 +14,8 @@ aliases:
   - /posts/gpt-image-2-5-prompting-guide-2026-09-16
 draft: true
 refactor_hub: web-gui-agents-03
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/ai-agent-practical-guide-2026
 ---
 
 ![노년의 뱃사람이 그물을 손질하는 사진 예제. 가이드가 말하는 photorealistic의 기준 — 주름, 모공, 필름 그레인까지 '보이는 디테일'을 프롬프트에 쓰라는 것이다.](/images/gpt-image-2-5-prompting-guide-2026-09-16/sailor-sunburst.webp)
