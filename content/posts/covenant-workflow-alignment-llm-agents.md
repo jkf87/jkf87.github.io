@@ -6,7 +6,8 @@ tags: ["LLM Agent", "Workflow Alignment", "Compiler Architecture", "Agent Safety
 description: "자연어 워크플로우 지시를 소스 코드로 컴파일해 에이전트 이탈을 막는 COVENANT를 정리함. 성공률 50%에서 83%, 위반률 42.5%에서 15.8%. 순회 제어와 노드 검증이 둘 다 필요하다는 구조를 실무 관점으로 풀었음."
 draft: true
 refactor_hub: ai-trends-misc-04
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/2026-09-30-graph-structured-agent-design-synthesis
 ---
 
 LLM 에이전트에게 "이 순서대로 처리하라"고 자연어로 지시하면 대부분의 경우 지시가 어겨짐. 단계를 건너뛰거나 허용되지 않은 분기를 선택하거나 올바른 단계를 틀린 인자로 실행함. COVENANT가 이 문제를 "프롬프트가 아니라 컴파일 대상"으로 재정의해서 워크플로우 준수율을 끌어올렸음. 원문은 [arXiv:2607.25400](https://arxiv.org/abs/2607.25400).

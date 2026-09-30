@@ -12,7 +12,8 @@ tags:
   - open-weights
 draft: true
 refactor_hub: model-releases-04
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/2026-open-model-release-comparison
 ---
 
 ![](/images/glm-5-3-post-training-coding-cyber-2026-08-14/hero-performance.png)

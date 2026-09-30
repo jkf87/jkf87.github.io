@@ -13,7 +13,8 @@ source: huggingface
 source_url: https://arxiv.org/abs/2606.03303
 draft: true
 refactor_hub: ai-trends-misc-04
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/2026-09-30-graph-structured-agent-design-synthesis
 ---
 
 ![LEAP 워크플로우 다이어그램](/images/2026-06-08-leap-agentic-formal-mathematics/figure-1.png)
