@@ -15,7 +15,8 @@ description: "DeepSeek-V4-Pro와 DeepSeek-V4-Flash 공개 소식을 정리합니
 socialImage: deepseek-v4-thumb.png
 draft: true
 refactor_hub: model-releases-04
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/2026-open-model-release-comparison
 ---
 
 # DeepSeek-V4-Pro / Flash 공개 정리: 100만 토큰 컨텍스트와 벤치마크 결과
