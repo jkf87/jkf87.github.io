@@ -17,7 +17,8 @@ aliases:
   - /posts/marin-open-development-llm-research-platform-2026-08-27
 draft: true
 refactor_hub: ai-trends-misc-06
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/ai-agent-demo-to-production-2026
 ---
 
 ![코난쌤 캐릭터가 배를 타고 데이터와 모델 블록 사이를 항해하는 그림. Marin을 볼 때 중요한 건 완성된 모델 하나가 아니라, 그 모델이 만들어지는 항로 전체라는 점이다.](/images/marin-open-development-llm-research-platform-2026-08-27/hero.png)
