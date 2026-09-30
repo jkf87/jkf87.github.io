@@ -7,7 +7,8 @@ description: "lawsofux.com의 UX 심리학 기반 법칙 30개를 6가지 카테
 featured_image: "https://lawsofux.com/law-of-pragnanz/social.png"
 draft: true
 refactor_hub: ux-laws-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/laws-of-ux-4-choice-speed-laws-guide
 ---
 
 ![](https://lawsofux.com/law-of-pragnanz/social.png)

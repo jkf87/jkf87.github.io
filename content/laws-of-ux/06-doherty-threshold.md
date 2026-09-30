@@ -6,7 +6,8 @@ slug: "doherty-threshold"
 parent: "laws-of-ux-index"
 draft: true
 refactor_hub: ux-laws-02
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/laws-of-ux-4-choice-speed-laws-guide
 ---
 
 ![](https://lawsofux.com/doherty-threshold/social.png)

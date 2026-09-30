@@ -6124,9 +6124,8 @@
     "reason": "lawsofux.com 파생 번역(복제)"
    }
   ],
-  "status": "reserved-c",
-  "note": "2026-09-30 병렬 레인 C가 처리한다. 다른 실행은 이 허브를 집지 말 것.",
-  "hub_slug": null
+  "status": "in-review",
+  "hub_slug": "posts/laws-of-ux-4-choice-speed-laws-guide"
  },
  {
   "hub_id": "ux-laws-03",
