@@ -9,7 +9,8 @@ tags:
 description: "ECE7115 0강 수업 소개를 정리한 노트. LLM 산업화 흐름, 수업 범위, 일정, 평가 방식을 짧게 정리한다."
 draft: true
 refactor_hub: llm-course-notes-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-training-cost-to-parallelism-guide-2026
 ---
 
 # ECE7115 0강: Course Introduction

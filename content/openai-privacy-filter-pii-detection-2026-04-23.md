@@ -11,7 +11,8 @@ tags:
 slug: openai-privacy-filter-pii-detection-2026-04-23
 draft: true
 refactor_hub: ai-trends-misc-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-production-checklist-2026
 ---
 
 1. OpenAI가 `openai/privacy-filter`를 Hugging Face에 공개함. 텍스트에서 개인정보(PII)를 자동 탐지해서 마스킹하는 전용 모델임.
