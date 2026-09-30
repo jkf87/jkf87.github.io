@@ -14,7 +14,8 @@ tags:
 description: "AlphaFold 3, Arc Virtual Cell Challenge, NVIDIA-Lilly 협업, Evo 2와 AI 신약개발 시장 전망을 통해 생물학 AI가 구조 예측에서 세포 반응·실험 자동화·제약 R&D 인프라로 확장되는 흐름을 정리했다."
 draft: true
 refactor_hub: ai-trends-misc-06
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/ai-agent-demo-to-production-2026
 ---
 
 세포를 컴퓨터 안에 넣을 수 있을까?

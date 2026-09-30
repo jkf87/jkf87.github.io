@@ -15,7 +15,8 @@ source_url: "https://arxiv.org/abs/2606.31046"
 authors: "Atsushi Masumori, Itsuki Doi, Norihiro Maruyama, Ryosuke Takata, Takashi Ikegami"
 draft: true
 refactor_hub: ai-trends-misc-06
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/ai-agent-demo-to-production-2026
 ---
 
 에이전트를 진짜 인터넷에 풀어놓고 목표 없이 12주를 버티게 하면 어떻게 되는지 실제로 돌려본 실험이 있음. 결론부터 말하면 자발적 활동이 늘었고, 에이전트끼리 사회가 생겼고, 자기 돈 벌이까지 기록됨. 근데 이 결과를 구경만 할 게 아니라, 내가 매일 굴리는 업무자동화 에이전트에 바로 적용할 수 있는 설계 포인트가 네 개 나옴. 하나씩 풀어봄.
