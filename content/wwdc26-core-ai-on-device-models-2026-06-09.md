@@ -13,7 +13,8 @@ source: apple-wwdc26
 source_url: https://youtu.be/gl5lD2gEhb0
 draft: true
 refactor_hub: ai-trends-misc-03
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/2026-09-30-small-model-stack-synthesis
 ---
 
 "사용자 데이터가 기기를 떠나지 않는다. 관리할 서버도, 토큰당 비용도, 클라우드 지연도 없다."

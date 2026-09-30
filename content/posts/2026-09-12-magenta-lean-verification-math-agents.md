@@ -5,7 +5,8 @@ tags: [paper, llm, agents, lean, verification, math, magenta]
 description: "자연어 문제를 Lean 4 명제로 바꾸고 기계 검증 증명까지 만드는 트레이닝 프리 파이프라인 Magenta. 7B 리저너로 IMO 2026 6문제 전부를 해결하고 AIME·HMMT 93문제는 100%를 기록했다."
 draft: true
 refactor_hub: reasoning-efficiency-01
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/llm-agent-reasoning-efficiency-cost-guide-2026
 ---
 
 검증 신호를 추론 루프 안에 넣는 것만으로 7B 모델이 IMO(국제수학올림피아드, 고교생 대표 국제 수학 경시대회) 만점을 낸 파이프라인이 나옴. 트레이닝 프리라서 구조만 보고 배울 수 있어서 정리함. 원문은 [arXiv:2609.11319](https://arxiv.org/abs/2609.11319).
