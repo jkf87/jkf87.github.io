@@ -19,7 +19,8 @@ aliases:
   - /posts/solar-open2-agentic-open-weight-2026-07-22
 draft: true
 refactor_hub: model-releases-04
-refactor_status: queued
+refactor_status: merged
+merged_into: posts/2026-open-model-release-comparison
 ---
 
 ![Solar Open 2를 에이전트용 command center로 재구성한 이미지. 250B MoE 모델이 여러 전문가 모듈, 긴 컨텍스트 타임라인, 문서·코드·도구 호출 흐름을 하나로 묶는다는 점을 시각화했다.](/images/solar-open2-agentic-open-weight-2026-07-22/hero.jpg)
