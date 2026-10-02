@@ -1,6 +1,8 @@
 {
- "why": "공개 유지가 확정된 글. 비공개 전환·큐 편입·허브 흡수·aliases 대상으로 쓰지 않는다(2026-09-26 0b 오작동 재발 방지).",
+ "why": "공개 유지가 확정된 글. 비공개 전환·큐 편입·허브 흡수·aliases 대상으로 쓰지 않는다(2026-09-26 0b 오작동 재발 방지). 2026-10-02 추가: 이 워크플로가 NEW 모드로 만든 비교 라운드업 2편(posts/llm-agent-memory-roundup-2026-09-30.md, posts/agent-harness-optimization-roundup-2026-10.md)은 운영자가 PR #55·#56 병합으로 공개를 확정했으므로 0b 지각 도착 처리에서 제외한다.",
  "originals": [
+  "posts/llm-agent-memory-roundup-2026-09-30.md",
+  "posts/agent-harness-optimization-roundup-2026-10.md",
   "ai-coding-harness-6-tools-review-2026-05-03.md",
   "skillopt-voice-memo-doc-2026-06-03.md",
   "autoresearchclaw-korean-asr-ai-paper-pipeline.md",
