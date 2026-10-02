@@ -1076,7 +1076,7 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/llm-agent-onpolicy-distillation-teacher-design-2026"
  },
  {
@@ -1172,7 +1172,7 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/llm-agent-rl-credit-assignment-guide-2026"
  },
  {
@@ -1268,7 +1268,7 @@
     "reason": "늦은 도착(late arrival) — 2026-09-26 PR #41 병합본, 에이전트 안전 탐지 주제로 편입"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/llm-agent-safety-attack-eval-defense-guide-2026"
  },
  {
@@ -1376,7 +1376,7 @@
     "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/llm-agent-misalignment-safety-guide-2026"
  },
  {
@@ -1418,7 +1418,7 @@
     "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/ai-cybersecurity-glasswing-nday-2026"
  },
  {
@@ -1496,7 +1496,7 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/llm-agent-production-checklist-2026"
  },
  {
@@ -1586,7 +1586,7 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/2026-09-30-llm-agent-reliability-synthesis"
  },
  {
@@ -1628,7 +1628,7 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/2026-09-30-small-model-stack-synthesis"
  },
  {
@@ -1682,7 +1682,7 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/2026-09-30-graph-structured-agent-design-synthesis"
  },
  {
@@ -1748,7 +1748,7 @@
     "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/2026-09-30-ai-trends-loop-structure-synthesis"
  },
  {
@@ -1832,7 +1832,7 @@
     "reason": "외부 원문 요약·소개(뉴스·키노트·인터뷰·저장소·릴리즈)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/ai-agent-demo-to-production-2026"
  },
  {
@@ -1886,7 +1886,7 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/llm-agent-success-signal-gap-2026"
  },
  {
@@ -3146,7 +3146,7 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/llm-agent-benchmark-score-gap-guide-2026"
  },
  {
@@ -3248,7 +3248,7 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/llm-agent-evaluation-design-guide-2026"
  },
  {
@@ -3302,7 +3302,7 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/ai-personalized-evaluation-guide-2026"
  },
  {
@@ -5084,7 +5084,7 @@
     "reason": "타 대학 강의 요약·빈약"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/llm-training-cost-to-parallelism-guide-2026"
  },
  {
@@ -5144,7 +5144,7 @@
     "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/frontier-model-releases-2026-comparison"
  },
  {
@@ -5198,7 +5198,7 @@
     "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/claude-mythos-gpt-5-6-trusted-access-2026"
  },
  {
@@ -5282,7 +5282,7 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/open-weight-local-llm-selection-2026"
  },
  {
@@ -5354,7 +5354,7 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/2026-open-model-release-comparison"
  },
  {
@@ -5438,7 +5438,7 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/llm-multi-agent-design-guide-2026"
  },
  {
@@ -5492,7 +5492,7 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/llm-multi-agent-failure-fixes-2026"
  },
  {
@@ -5534,7 +5534,7 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/llm-multi-agent-org-structure-2026"
  },
  {
@@ -5594,7 +5594,7 @@
     "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/2026-realtime-multimodal-agent-comparison"
  },
  {
@@ -5876,7 +5876,7 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/llm-agent-reasoning-efficiency-cost-guide-2026"
  },
  {
@@ -5912,7 +5912,7 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/llm-memory-saving-weights-vs-kv-cache-quantization-2026"
  },
  {
@@ -5996,7 +5996,7 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/autonomous-research-agents-verification-guide-2026"
  },
  {
@@ -6074,7 +6074,7 @@
     "reason": "lawsofux.com 파생 번역(복제)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/laws-of-ux-10-laws-docs-classroom-guide"
  },
  {
@@ -6122,7 +6122,7 @@
     "reason": "lawsofux.com 파생 번역(복제)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/laws-of-ux-4-choice-speed-laws-guide"
  },
  {
@@ -6158,7 +6158,7 @@
     "reason": "lawsofux.com 파생 번역(복제)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/laws-of-ux-3-memory-capacity-laws-guide"
  },
  {
@@ -6230,7 +6230,7 @@
     "reason": "lawsofux.com 파생 번역(복제)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/laws-of-ux-9-complexity-familiarity-laws-guide"
  },
  {
@@ -6272,7 +6272,7 @@
     "reason": "lawsofux.com 파생 번역(복제)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/laws-of-ux-4-gestalt-grouping-laws-guide"
  },
  {
@@ -6344,7 +6344,7 @@
     "reason": "0b 늦은 도착 — v2 중단 시점에 남은 미발행 초안, 허브 병합 대기"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/gui-agent-reliability-guide-2026"
  },
  {
@@ -6428,7 +6428,7 @@
     "reason": "논문 단일 요약(복제 판정 대상)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/ai-agent-browser-screen-tools-guide-2026"
  },
  {
@@ -6488,7 +6488,7 @@
     "reason": "외부 원문 1건 요약·번역(발표·영상·저장소 소개)"
    }
   ],
-  "status": "in-review",
+  "status": "published",
   "hub_slug": "posts/ai-agent-practical-guide-2026"
  }
 ]
