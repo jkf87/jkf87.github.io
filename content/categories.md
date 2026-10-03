@@ -240,6 +240,7 @@ LLM 학습 비용과 병렬화를 다룬 강의노트를 한 흐름으로 묶은
 자율 연구 에이전트 시스템과 그 결과를 검증하는 벤치마크를 비교한 글입니다.
 
 - [[posts/autonomous-research-agents-verification-guide-2026|AI 연구 자동화의 현주소: 자율 연구 에이전트 시스템과 검증 벤치마크 11편 통합 정리]]
+- [[posts/deep-research-agent-reliability-roundup-2026-10|딥리서치 에이전트가 틀리는 지점과 고치는 법: 2026년 9월 말 논문 6편 비교]]
 
 ## UX 법칙으로 자료 만들기
 
