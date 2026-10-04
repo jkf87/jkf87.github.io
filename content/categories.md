@@ -73,6 +73,7 @@ tags:
 - [[posts/coding-agent-harness-design-guide-2026|같은 모델인데 코딩 에이전트 결과가 다른 이유: 하네스 설계 1차 자료 10편 통합 정리]]
 - [[posts/llm-agent-environment-coevolution-guide-2026|LLM 에이전트 강화학습이 정체될 때는 환경부터: 에이전트·환경 공진화 접근 8편 비교]]
 - [[posts/agent-rl-reward-signal-comparison-2026|에이전트 강화학습에서 보상 신호를 어디서 얻나: 로봇·게임·이미지·문서 8종 비교]]
+- [[posts/agent-rl-credit-assignment-roundup-2026-10|LLM 에이전트 강화학습, 어떤 단계에 보상을 줄까: SHARPO·FAULT·DARS 4편 비교]]
 - [[posts/agent-rl-grpo-failure-fixes-2026|에이전트 강화학습(GRPO)이 실패하는 다섯 지점과 논문별 해법: 11편 1차 출처 재검증]]
 - [[posts/llm-agent-rl-environment-data-guide-2026|LLM 에이전트 강화학습 환경·데이터 설계 기준: 실행 검증 합성과 측정 계약 8편 비교]]
 - [[posts/llm-agent-rl-verifiable-reward-design-2026|정답이 없는 업무에 강화학습 보상을 만드는 법: LLM 에이전트 RLVR 확장 10편 비교]]
@@ -239,6 +240,7 @@ LLM 학습 비용과 병렬화를 다룬 강의노트를 한 흐름으로 묶은
 자율 연구 에이전트 시스템과 그 결과를 검증하는 벤치마크를 비교한 글입니다.
 
 - [[posts/autonomous-research-agents-verification-guide-2026|AI 연구 자동화의 현주소: 자율 연구 에이전트 시스템과 검증 벤치마크 11편 통합 정리]]
+- [[posts/deep-research-agent-reliability-roundup-2026-10|딥리서치 에이전트가 틀리는 지점과 고치는 법: 2026년 9월 말 논문 6편 비교]]
 
 ## UX 법칙으로 자료 만들기
 
