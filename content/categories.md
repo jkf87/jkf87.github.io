@@ -74,6 +74,7 @@ tags:
 - [[posts/llm-agent-environment-coevolution-guide-2026|LLM 에이전트 강화학습이 정체될 때는 환경부터: 에이전트·환경 공진화 접근 8편 비교]]
 - [[posts/agent-rl-reward-signal-comparison-2026|에이전트 강화학습에서 보상 신호를 어디서 얻나: 로봇·게임·이미지·문서 8종 비교]]
 - [[posts/agent-rl-credit-assignment-roundup-2026-10|LLM 에이전트 강화학습, 어떤 단계에 보상을 줄까: SHARPO·FAULT·DARS 4편 비교]]
+- [[posts/gui-agent-experience-routing-roundup-2026-10|GUI 에이전트 경험은 가중치에 넣을까 컨텍스트에 둘까: 2026년 9월 말 논문 6편 비교]]
 - [[posts/agent-rl-grpo-failure-fixes-2026|에이전트 강화학습(GRPO)이 실패하는 다섯 지점과 논문별 해법: 11편 1차 출처 재검증]]
 - [[posts/llm-agent-rl-environment-data-guide-2026|LLM 에이전트 강화학습 환경·데이터 설계 기준: 실행 검증 합성과 측정 계약 8편 비교]]
 - [[posts/llm-agent-rl-verifiable-reward-design-2026|정답이 없는 업무에 강화학습 보상을 만드는 법: LLM 에이전트 RLVR 확장 10편 비교]]
@@ -96,6 +97,7 @@ tags:
 
 LLM 에이전트 보안 논문을 비교해 방어 설계 기준을 정리한 글입니다.
 
+- [[posts/agent-security-defense-stack-roundup-2026-10|LLM 에이전트 가드레일 벤치마크 점수가 실전에서 안 맞는 문제: 10월 2일 방어 논문 6편 비교]]
 - [[posts/llm-agent-security-defense-guide-2026|LLM 에이전트 보안 설계 기준 정리 (2026 논문 7편 비교)]]
 - [[posts/llm-agent-harness-attack-surface-2026|AI 코딩 에이전트 어디까지 뚫리나: 악성 이슈·스킬 오염·하네스 권한상승 6편 총정리]]
 - [[posts/llm-agent-safety-attack-eval-defense-guide-2026|LLM 에이전트는 어디서 무너지나: 공격·평가·방어 13종 총정리]]
