@@ -11,7 +11,8 @@
   "skillopt-voice-memo-doc-2026-06-03.md",
   "autoresearchclaw-korean-asr-ai-paper-pipeline.md",
   "openclaw-windows-native-no-wsl.md",
-  "openclaw-book-recommendation-2026.md"
+  "openclaw-book-recommendation-2026.md",
+  "posts/agent-verifier-supervision-roundup-2026-10.md"
  ],
  "expand_targets": [
   "gemma4-codex-cli-local.md",
