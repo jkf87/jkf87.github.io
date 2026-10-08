@@ -56,6 +56,7 @@ tags:
 - [[posts/llm-agent-long-horizon-state-2026|LLM 에이전트가 오래 돌아도 상태를 잃지 않는 설계: 수면 통합·외부 상태 뱅크·롤백 반성 6종 비교]]
 - [[posts/agent-experience-memory-reuse-2026|에이전트에 메모리를 넣었는데 성능이 떨어질 때: 재구성·쿼리 조건화·스킬화 7종 비교]]
 - [[posts/llm-agent-memory-roundup-2026-09-30|LLM 에이전트 메모리 최신 논문 7편 비교 (저장·확인·공개·학습)]]
+- [[posts/llm-agent-context-compaction-roundup-2026-10|토큰 폭탄 터지기 전에: LLM 에이전트 컨텍스트 압축 논문 5편 심층 비교]]
 
 ## 에이전트 자가진화·하네스 연구 정리
 - [[posts/llm-agent-harness-nooa-vs-prime-agent-2026|모델 그대로 두고 에이전트 성능 올리는 하네스 설계: NOOA와 Prime Agent 비교]]
@@ -189,6 +190,7 @@ Claude Code 주간 신기능 정리 4편과 구독·인증 안전 글 3편을 1�
 - [[posts/llm-agent-evaluation-design-guide-2026|LLM 에이전트 평가 설계 가이드: 점수 다음에 볼 축·신뢰성·비용 — 벤치마크·연구 14종 비교]]
 - [[posts/ai-personalized-evaluation-guide-2026|AI가 내 취향에 맞는지 어떻게 평가하나: LLM Judge 개인화·취향 루브릭·이미지 벤치마크 6종 비교]]
 - [[posts/gui-agent-reliability-guide-2026|GUI 에이전트가 무너지는 4가지 지점과 검증 설계: MobileGym·Qwen-UI-Agent·ERPBench 비교]]
+- [[posts/llm-agent-stop-decision-roundup-2026-10|LLM 에이전트가 멈추지 않는 문제: 중단·질문·기권 판단 논문 6편 비교]]
 
 ## 브라우저·화면 작업에 AI 붙이기
 
