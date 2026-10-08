@@ -167,9 +167,24 @@ def evaluate(text: str) -> dict:
     add("T9_highlight_count", "soft", 5 <= len(bold) <= 14,
         "강조는 결론·숫자에만 5~14곳", None, {"bold": len(bold)})
 
+    # v2 (2026-10-08): 코난쌤이 고른 판 기준 — 결론 목록 + 형광펜, 본문 5천~8천 자
+    concl = section(body, "한눈에 보는 결론")
+    items = len(re.findall(r"^\s*(?:[-*]|\d+[.)])\s+", concl, re.M))
+    marks = len(re.findall(r"<span style=\"background-color|\*\*[^*]+\*\*", concl))
+    add("T10_conclusion_list_marked", "soft", items >= 3 and marks >= 2,
+        "결론은 목록 3~5개로 시작하고 항목마다 핵심 구절·숫자에 형광펜 (v2)",
+        None, {"items": items, "marks": marks})
+    # 글자 수(바이트 아님). 그림 줄과 링크 주소는 빼고 센다.
+    plain_body = re.sub(r"!\[[^\]]*\]\([^)]*\)", "", body)
+    plain_body = re.sub(r"\]\([^)]*\)", "]", plain_body)
+    plain_body = re.sub(r"<[^>]+>", "", plain_body)
+    size = len(plain_body)
+    add("T11_length", "soft", 5000 <= size <= 8000,
+        "본문 5천~8천 자, 1만 자 초과 금지 (v2, 고른 판 약 6천 자)", None, {"chars": size})
+
     hard_fail = [r["id"] for r in rules if r["level"] == "hard" and not r["pass"]]
     soft_fail = [r["id"] for r in rules if r["level"] == "soft" and not r["pass"]]
-    return {"kind": "blog-taste-gate", "taste_version": "v1-2026-10-08",
+    return {"kind": "blog-taste-gate", "taste_version": "v2-2026-10-08",
             "passed": not hard_fail, "hard_fail": hard_fail, "soft_fail": soft_fail, "rules": rules}
 
 
