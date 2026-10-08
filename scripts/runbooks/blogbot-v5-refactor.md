@@ -54,7 +54,7 @@ Gate: `scripts/blog-refactor-gate.py --mode hub|expand|new`
        - <member path 2>
      draft: false
      ```
-   - Owner taste (2026-10-08, overrides older voice notes where they conflict): read `scripts/taste/taste-v1.md` and one `scripts/taste/example-owner-approved-*.md` before writing, and match that voice.
+   - Owner taste (2026-10-08, overrides older voice notes where they conflict): read `scripts/taste/taste-v1.md`, then `scripts/taste/taste-v2.md` (v2 wins where they differ), then the primary example `scripts/taste/example-owner-approved-verifier.md`, and match that voice, length and layout.
    - Voice and polish: keep the owner's approved style from `scripts/runbooks/daily-blog-publish-v2-runbook.md`. Follow `## Default blog voice` (conanssam-voice kakao/plain 실무 정리체). Run `## Voice SpyRL gate` with A/B/C variants and publish the winner. Apply `## Highlight markup` (5–14 key expressions, conclusions and numbers only). Use `## Search-first title policy`, but never the single-paper template.
    - Use these sections:
      - `## 한눈에 보는 결론`
@@ -87,7 +87,7 @@ Gate: `scripts/blog-refactor-gate.py --mode hub|expand|new`
 
 - Run `python3 scripts/blog-refactor-gate.py <post> --mode <mode> --site-root .`, then `python3 scripts/blog-claim-verification-gate.py <post>`, then `python3 scripts/blog-taste-gate.py <post>` (fix every hard failure and the soft items it lists), then `npx quartz build`. Any failure: fix and rerun once. If it still fails, revert your changes for this unit and report the exact failures.
 - Commit only this unit: the post, its `content/media/<slug>/`, the member frontmatter flags, `scripts/refactor-queue.json` and `content/categories.md`. Push the branch.
-- Open or update one PR per day titled `refactor: <date>`, with a checklist of units, gate results and preview notes. At the 22:00 run, send the owner the PR link on Telegram. If `gh` is unavailable, push the branch and send `https://github.com/jkf87/jkf87.github.io/compare/main...<branch>` instead. The owner merging the PR is the human review. After merge, set the merged hubs' queue status to `published` (`python3 scripts/queue-set.py --hub <hub_id> --status published`).
+- Open or update one PR per day titled `refactor: <date>`, with a checklist of units, gate results and preview notes. At the end of every run that committed a unit, send the owner the PR link on Telegram. (The job has a trigger, `~/.openclaw/workspace-blogbot/scripts/blog_has_work.py`, that skips runs with no work, so there is no fixed 22:00 run any more.) If `gh` is unavailable, push the branch and send `https://github.com/jkf87/jkf87.github.io/compare/main...<branch>` instead. The owner merging the PR is the human review. After merge, set the merged hubs' queue status to `published` (`python3 scripts/queue-set.py --hub <hub_id> --status published`).
 - For every unit, create the Obsidian note `/Users/conanssam-m4/.openclaw/wiki/main/sources/blog-research/<YYYY-MM-DD>-<slug>.md` as before.
 - Threads (optional): after a merge, at most one post per published hub, linking to the hub. Never link to a post whose live URL is not HTTP 200.
 - `REVIEW_MODE=pr` is the default. Switch to `auto` (push straight to `main` when every gate passes) only after the owner says so. Do not switch before AdSense approval.
