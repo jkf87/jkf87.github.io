@@ -214,7 +214,8 @@ def evaluate(path: Path) -> CandidateReport:
     aphorism = len(APHORISM_RE.findall(body))
     binary_contrast = len(NOT_X_BUT_Y_RE.findall(body))
     rhetorical_qa = len(RHETORICAL_QA_RE.findall(body))
-    bold = len(BOLD_RE.findall(body))
+    # 2026-10-08 코난쌤 취향 v1: 목록 맨 앞 굵은 글씨는 항목 이름표라 강조로 세지 않는다.
+    bold = len(BOLD_RE.findall(re.sub(r"^(\s*(?:[-*]|\d+[.)])\s+)\*\*[^*]+\*\*", r"\1", body, flags=re.M)))
     images = IMAGE_RE.findall(body)
     # 2026-09-26: 공개 이미지는 content/media/<slug>/ 로 옮겼고 images/·assets 는 빌드에서 제외됐다.
     # 본문 이미지는 media/ 를 가리키는 상대경로여야 하고, 외부 핫링크와 빌드 제외 폴더는 위반이다.
@@ -229,7 +230,8 @@ def evaluate(path: Path) -> CandidateReport:
     concrete_words = ["Task", "Harness", "Verifier", "Reward", "RL", "LLM", "환경", "모델", "결과", "실험", "코드", "수치", "방법", "구조", "데이터"]
     metaphor_headings = 0
     for h in headings:
-        if ("—" in h or "-" in h or "," in h) and not any(w in h for w in concrete_words):
+        # 취향 v1: 쉼표가 든 서술형 제목("나눠서 맡기면 메모리는 줄고, …")은 정상이라 em dash만 본다.
+        if "—" in h and not any(w in h for w in concrete_words):
             metaphor_headings += 1
     numbers = len(re.findall(r"\b\d+(?:\.\d+)?%?\b", body))
     tables = len(TABLE_LINE_RE.findall(body))
@@ -267,12 +269,12 @@ def evaluate(path: Path) -> CandidateReport:
         penalty += 4 * rhetorical_qa
         tags.append("rhetorical_qa")
         notes.append(f"자문자답 문장 {rhetorical_qa}회")
-    if bold > 4:
-        penalty += min(18, (bold - 4) * 2.5)
+    if bold > 14:  # 취향 v1: 결론·숫자 강조 5~14곳은 정상
+        penalty += min(18, (bold - 14) * 2.5)
         tags.append("bold_overuse")
         notes.append(f"bold {bold}회")
     elif bold:
-        penalty += bold * 0.5
+        penalty += bold * 0.1
     if long_paras:
         penalty += long_paras * 2.0 + very_long_paras * 3.0
         tags.append("too_long_paragraph")
