@@ -191,6 +191,7 @@ Claude Code 주간 신기능 정리 4편과 구독·인증 안전 글 3편을 1�
 - [[posts/ai-personalized-evaluation-guide-2026|AI가 내 취향에 맞는지 어떻게 평가하나: LLM Judge 개인화·취향 루브릭·이미지 벤치마크 6종 비교]]
 - [[posts/gui-agent-reliability-guide-2026|GUI 에이전트가 무너지는 4가지 지점과 검증 설계: MobileGym·Qwen-UI-Agent·ERPBench 비교]]
 - [[posts/llm-agent-stop-decision-roundup-2026-10|LLM 에이전트가 멈추지 않는 문제: 중단·질문·기권 판단 논문 6편 비교]]
+- [[posts/long-horizon-agent-trajectory-eval-roundup-2026-10|최종 성공률만 보면 놓치는 에이전트 실패: 장기 실행 궤적 평가 논문 5편 비교]]
 
 ## 브라우저·화면 작업에 AI 붙이기
 
