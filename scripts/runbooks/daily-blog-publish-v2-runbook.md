@@ -118,6 +118,27 @@ python3 scripts/blog-voice-feedback-summary.py \
 
 Read `../memory/voice-feedback/latest-summary.md` when available before drafting. Use repeated AVOID tags as first-pass edit targets.
 
+### 2026-11-02 weekly feedback override
+
+The 829-report rollup found chronic defects that aggregate score alone did not stop. Apply these rules before drafting and again to the final post:
+
+- Paragraph target: average body paragraph length `<=180` characters. No prose paragraph may exceed `260` characters; split it at a change of claim, evidence, or action.
+- Do not merely accept an A/B grade. The final publish candidate must have zero occurrences of `too_long_paragraph`, `banned_phrase`, `korean_ai_slop`, `gpt5x_ai_diction`, `binary_contrast`, `aphorism`, `rhetorical_qa`, `question_heading`, `metaphor_heading`, `bold_overuse`, and `no_images`.
+- Replace AI-smooth wording with the concrete subject, action, number, command, or result. In particular, remove generic importance claims, era diagnoses, unsupported group attributions, poetic open/close/widen/narrow metaphors, and `A가 아니라 B다` framing.
+- Headings state the actual topic or result. Do not use a rhetorical question or a poetic/metaphorical heading.
+- Keep bold/highlighter use within the approved 5–14 high-signal expressions. List labels are excluded by the gate; do not use emphasis as decoration.
+- A passing multi-candidate comparison is not the publish gate. After copying and polishing the winner, run the final post by itself with strict mode:
+
+```bash
+python3 scripts/blog-voice-spyrl-gate.py \
+  content/posts/<slug>.md \
+  --allow-single \
+  --strict-publish \
+  --out ../memory/voice-feedback/<YYYY-MM-DD>-<slug>-final-spyrl.json
+```
+
+If `strictPublishViolations` is non-empty, revise and rerun. Do not build, commit, push, merge, or publish Threads until it is empty.
+
 
 ## Fire-your-SEO-Agency pass
 After the final post passes voice/content revision and before build, run a search/answer-engine structure pass inspired by `fire-your-seo-agency`. This is mandatory for cron blog work from 2026-08-27.
