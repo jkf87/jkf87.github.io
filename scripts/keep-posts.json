@@ -1,5 +1,5 @@
 {
- "why": "공개 유지가 확정된 글. 비공개 전환·큐 편입·허브 흡수·aliases 대상으로 쓰지 않는다(2026-09-26 0b 오작동 재발 방지). 2026-10-02 추가: 이 워크플로가 NEW 모드로 만든 비교 라운드업 2편(posts/llm-agent-memory-roundup-2026-09-30.md, posts/agent-harness-optimization-roundup-2026-10.md)은 운영자가 PR #55·#56 병합으로 공개를 확정했으므로 0b 지각 도착 처리에서 제외한다. 2026-10-03 추가: 같은 워크플로의 NEW 모드 라운드업(posts/agent-rl-credit-assignment-roundup-2026-10.md)도 병합 후 공개 유지 대상이므로 0b 지각 도착 처리에서 제외한다. 2026-10-04 추가: 같은 워크플로의 NEW 모드 라운드업(posts/deep-research-agent-reliability-roundup-2026-10.md, 커밋 dc617829, 병합 대기 중)도 병합 후 공개 유지 대상이므로 0b 지각 도착 처리에서 제외한다. 2026-10-05 추가: 같은 워크플로의 NEW 모드 라운드업(posts/gui-agent-experience-routing-roundup-2026-10.md, GUI 에이전트 경험 저장 위치 6편 비교)도 병합 대기 중이므로 0b 지각 도착 처리에서 제외한다. 2026-10-06 추가: 같은 워크플로의 NEW 모드 라운드업(posts/agent-security-defense-stack-roundup-2026-10.md, 에이전트 방어 스택 6편 비교)도 병합 대기 중이므로 0b 지각 도착 처리에서 제외한다. 2026-10-07 추가: 같은 워크플로의 NEW 모드 라운드업(posts/llm-agent-stop-decision-roundup-2026-10.md, 에이전트 중단·질문·기권 판단 6편 비교)도 병합 대기 중이므로 0b 지각 도착 처리에서 제외한다.",
+ "why": "공개 유지가 확정된 글. 비공개 전환·큐 편입·허브 흡수·aliases 대상으로 쓰지 않는다(2026-09-26 0b 오작동 재발 방지). 2026-10-02 추가: 이 워크플로가 NEW 모드로 만든 비교 라운드업 2편(posts/llm-agent-memory-roundup-2026-09-30.md, posts/agent-harness-optimization-roundup-2026-10.md)은 운영자가 PR #55·#56 병합으로 공개를 확정했으므로 0b 지각 도착 처리에서 제외한다. 2026-10-03 추가: 같은 워크플로의 NEW 모드 라운드업(posts/agent-rl-credit-assignment-roundup-2026-10.md)도 병합 후 공개 유지 대상이므로 0b 지각 도착 처리에서 제외한다. 2026-10-04 추가: 같은 워크플로의 NEW 모드 라운드업(posts/deep-research-agent-reliability-roundup-2026-10.md, 커밋 dc617829, 병합 대기 중)도 병합 후 공개 유지 대상이므로 0b 지각 도착 처리에서 제외한다. 2026-10-05 추가: 같은 워크플로의 NEW 모드 라운드업(posts/gui-agent-experience-routing-roundup-2026-10.md, GUI 에이전트 경험 저장 위치 6편 비교)도 병합 대기 중이므로 0b 지각 도착 처리에서 제외한다. 2026-10-06 추가: 같은 워크플로의 NEW 모드 라운드업(posts/agent-security-defense-stack-roundup-2026-10.md, 에이전트 방어 스택 6편 비교)도 병합 대기 중이므로 0b 지각 도착 처리에서 제외한다. 2026-10-07 추가: 같은 워크플로의 NEW 모드 라운드업(posts/llm-agent-stop-decision-roundup-2026-10.md, 에이전트 중단·질문·기권 판단 6편 비교)도 병합 대기 중이므로 0b 지각 도착 처리에서 제외한다. 2026-10-10 추가: 같은 워크플로의 NEW 모드 라운드업 2편(posts/tool-failure-detection-recovery-roundup-2026-10.md, posts/long-horizon-agent-trajectory-eval-roundup-2026-10.md)은 운영자가 PR #63 병합으로 공개를 확정했으므로 0b 지각 도착 처리에서 제외한다.",
  "originals": [
   "posts/llm-agent-context-compaction-roundup-2026-10.md",
   "posts/llm-agent-stop-decision-roundup-2026-10.md",
@@ -14,7 +14,9 @@
   "autoresearchclaw-korean-asr-ai-paper-pipeline.md",
   "openclaw-windows-native-no-wsl.md",
   "openclaw-book-recommendation-2026.md",
-  "posts/agent-verifier-supervision-roundup-2026-10.md"
+  "posts/agent-verifier-supervision-roundup-2026-10.md",
+  "posts/tool-failure-detection-recovery-roundup-2026-10.md",
+  "posts/long-horizon-agent-trajectory-eval-roundup-2026-10.md"
  ],
  "expand_targets": [
   "gemma4-codex-cli-local.md",

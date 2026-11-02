@@ -147,6 +147,24 @@ GRAND_CLOSINGS = [
     "바꿔놓을 겁니다", "새로운 기준입니다",
 ]
 
+# The weekly feedback rollup showed that a draft could still pass on aggregate
+# score while carrying the same high-frequency defects.  Multi-candidate mode
+# remains comparative, but the final publish candidate must clear these defects
+# individually when --strict-publish is used.
+STRICT_PUBLISH_TAGS = {
+    "too_long_paragraph",
+    "banned_phrase",
+    "korean_ai_slop",
+    "gpt5x_ai_diction",
+    "binary_contrast",
+    "aphorism",
+    "rhetorical_qa",
+    "bold_overuse",
+    "no_images",
+    "question_heading",
+    "metaphor_heading",
+}
+
 @dataclass
 class CandidateReport:
     path: str
@@ -357,6 +375,11 @@ def main() -> int:
     ap.add_argument("--out", help="Write JSON report")
     ap.add_argument("--min-score", type=float, default=70.0)
     ap.add_argument("--allow-single", action="store_true", help="Allow one candidate; still scores it")
+    ap.add_argument(
+        "--strict-publish",
+        action="store_true",
+        help="Final-post mode: require avg paragraph <=180 chars and zero chronic Voice SpyRL defects",
+    )
     args = ap.parse_args()
 
     paths = [Path(p) for p in args.candidates]
@@ -372,7 +395,16 @@ def main() -> int:
     ranked = sorted(reports, key=lambda r: (r.score, -r.suspicion), reverse=True)
     spy = sorted(reports, key=lambda r: (r.suspicion, -r.score), reverse=True)[0]
     winner = ranked[0]
-    passed = winner.score >= args.min_score and winner.grade in {"A", "B"}
+    strict_violations: list[str] = []
+    if args.strict_publish:
+        strict_violations = sorted(STRICT_PUBLISH_TAGS.intersection(winner.tags))
+        if winner.counts["avg_paragraph_chars"] > 180:
+            strict_violations.append("avg_paragraph_over_180")
+    passed = (
+        winner.score >= args.min_score
+        and winner.grade in {"A", "B"}
+        and not strict_violations
+    )
     result = {
         "kind": "blog-voice-spyrl-gate",
         "createdAt": datetime.now(timezone.utc).isoformat(),
@@ -381,6 +413,8 @@ def main() -> int:
         "winner": winner.path,
         "winnerScore": winner.score,
         "winnerGrade": winner.grade,
+        "strictPublish": args.strict_publish,
+        "strictPublishViolations": strict_violations,
         "spy": spy.path,
         "spySuspicion": spy.suspicion,
         "spyTags": spy.tags,
